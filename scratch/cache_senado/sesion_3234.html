@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>TERCER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO III</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 7</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Oscar Eduardo Ramírez Aguilar</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 23 de Febrero de 2021</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/3/SPO/PDF-WEB/SPO_No.7_23_FEBRERO_2021_SOLEMNE.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='96090'></a><p align="center"><strong>PRESIDENCIA DEL SENADOR</strong><br>
+  <strong>EDUARDO RAMÍREZ AGUILAR</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar:</strong> (17:52 horas) Solicito a  los presentes ponerse de pie.</p>
+<p align="center">(Todos de pie)</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a96090'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='96091'></a><p align="justify"><strong>VISITA  DEL LICENCIADO ALBERTO FERNÁNDEZ, PRESIDENTE DE LA REPÚBLICA ARGENTINA</strong></p>
+<p align="justify">Realizamos esta sesión  solemne para recibir la visita del licenciado Alberto Fernández, Presidente de  la República de Argentina.</p>
+<p align="justify">Para el Senado de la  República es un honor recibir la visita del Presidente de Argentina. </p>
+<p align="justify">La Cámara de Senadores del  Honorable Congreso de la Unión de los Estados Unidos Mexicanos, expresa la más  cordial bienvenida al Presidente de la República Argentina.</p>
+<p align="justify">Señor Presidente,  licenciado Alberto Fernández, sea usted bienvenido a esta sesión solemne del  Senado de la República.</p>
+<p align="justify">Celebramos esta sesión con  el ánimo de continuar la consolidación desde el ámbito parlamentario, de una  relación que es estratégica para nuestros países.<br>
+  <br>
+  Doy también la bienvenida a  la comitiva que acompaña al Presidente, en especial, al Excelentísimo señor  Felipe Solá, Ministro de Relaciones Exteriores, Comercio Internacional y Culto.</p>
+<p align="justify">Excelentísimo señor Carlos  Alfonso Tomada, Embajador de Argentina en México.</p>
+<p align="justify">Señor Julio Vitobello,  Secretario General de la Presidencia de la Nación.</p>
+<p align="justify">Señor Juan Pablo Biondi,  Secretario de Comunicación y Prensa.</p>
+<p align="justify">Señora Cecilia Todesca,  Vicejefa de Gabinete y Asesora Presidencial.</p>
+<p align="justify">Señor Carlos Selva,  Diputado Nacional.</p>
+<p align="justify">Señor Ricardo Forster,  Asesor Presidencial.</p>
+<p align="justify">Igualmente saludo la  presencia del Vicepresidente de la Cámara de Diputados, Xavier Azuara Zúñiga,  quien asiste con la representación de la presidenta de esa Cámara.</p>
+<p align="justify">Asimismo, doy la bienvenida  al licenciado Marcelo Ebrard Casaubón, Secretario de Relaciones Exteriores.</p>
+<p align="justify">Al maestro Maximiliano  Reyes Zúñiga, Subsecretario para América Latina y El Caribe.</p>
+<p align="justify">A la doctora Laura Elena  Carrillo Cubillas, Directora Ejecutiva de la Agencia Mexicana de Cooperación  Internacional para el Desarrollo.</p>
+<p align="justify">De igual forma, damos la  bienvenida a los servidores públicos de la Secretaría de Relaciones Exteriores  que nos acompañan.</p>
+<p align="justify">Me permito presentar a mis  compañeras Senadoras y Senadores de la Mesa Directiva presentes en esta sesión  solemne:</p>
+<p align="justify">La Senadora Imelda Castro  Castro.</p>
+<p align="justify">El Senador Jorge Carlos  Ramírez Marín.</p>
+<p align="justify">La Senadora Lilia Margarita  Valdez Martínez.</p>
+<p align="justify">La Senadora Verónica  Delgadillo García.</p>
+<p align="justify">La Senadora Nancy De la  Sierra Arámburo.</p>
+<p align="justify">La Senadora María Merced  González González.</p>
+<p align="justify">El Senador Ricardo  Velázquez Meza.</p>
+<p align="justify">La Senadora Verónica Camino  Farjat.</p>
+<p align="justify">La Senadora Eunice Renata  Romo Molina.</p>
+<p align="justify">También expresarle,  Distinguido y Excelentísimo Presidente, que nos acompañan:</p>
+<p align="justify">El Senador Ricardo Monreal  Ávila, Coordinador del grupo parlamentario del Partido Morena y Presidente de  la Junta de Coordinación Política.</p>
+<p align="justify">El Senador José Erandi  Bermúdez Méndez, Coordinador del grupo parlamentario del PAN.<br>
+  <br>
+  El Senador Miguel Ángel  Osorio Chong, Coordinador del grupo parlamentario del PRI, quien nos sigue en  plataforma.</p>
+<p align="justify">El Senador Dante Delgado,  Coordinador del grupo parlamentario de Movimiento Ciudadano, quien también se  encuentra siguiéndonos a distancia.</p>
+<p align="justify">La Senadora Geovanna del  Carmen Bañuelos De la Torre, Coordinadora del grupo parlamentario del PT.</p>
+<p align="justify">La Senadora Sasil De León  Villard, Coordinadora del grupo parlamentario de Encuentro Social.</p>
+<p align="justify">El Senador Miguel Ángel  Mancera Espinosa, Coordinador del grupo parlamentario del PRD.</p>
+<p align="justify">Ciudadano Presidente, en  virtud de la emergencia de salud pública ocasionada por la pandemia, el Senado  de la República ha implementado acciones para contener, prevenir y reducir la  incidencia de contagio del COVID-19, utilizando medios tecnológicos para  cumplir con las obligaciones constitucionales y legales.</p>
+<p align="justify">Asimismo, realizamos  sesiones en el salón del Pleno, con presencia mínima de Senadoras y Senadores.</p>
+<p align="justify">Las Senadoras y Senadores  que no se encuentran en el salón están conectados en esta sesión solemne por  medio de videoconferencia, con la posibilidad de interacción simultánea en  tiempo real, con quienes estamos presentes en el salón de sesiones.</p>
+<p align="justify">En virtud de lo anterior,  el Senado de la República en Pleno está siguiendo por diferentes medios esta  importante sesión solemne.</p>
+<p align="justify">Estimadas Senadoras y  Senadores, funcionarios de la Cancillería que nos acompañan, estamos reunidos  para celebrar una sesión solemne en honor de la visita a este Senado de la  República de su Excelencia, señor Alberto Fernández, Presidente de la República  Argentina, quien se encuentra acompañado de una comitiva y por el Excelentísimo  señor Embajador Carlos Alfonso Tomada, a quien felicito por su reciente  presentación de cartas credenciales.</p>
+<p align="justify">Señor Presidente Fernández,  desde este recinto legislativo, transmito al pueblo argentino y a los  familiares cercanos mis profundas condolencias por el fallecimiento del ex  presidente Carlos Saúl Menem, quien fue electo de manera democrática en las  urnas para estar al frente de su país durante dos mandatos.</p>
+<p align="justify">Este encuentro de alto  nivel es especialmente significativo debido al momento que nuestros países y el  mundo entero enfrentan por la pandemia.</p>
+<p align="justify">Los tiempos que vivimos han  demostrado los grandes valores de la humanidad, la empatía de las personas  entre naciones, pero del mismo modo se han puesto de manifiesto e incluso se  han agravado las injusticias y las desigualdades estructurales existentes.</p>
+<p align="justify">La crisis sanitaria que ha  tenido impactos económicos, sociales y políticos sin precedentes, también  impide que las personas gocen de manera plena y efectiva de muchos de sus  derechos humanos y libertades fundamentales. </p>
+<p align="justify">Antes de  continuar, en nombre de esta Cámara, que me honro en presidir, envío mis más  sentidas condolencias a los hogares argentinos que han sufrido la pérdida de un  ser querido a causa del COVID-19.<br>
+  <br>
+  Estamos  frente a una coyuntura de definición para no retroceder en los avances logrados  en los ámbitos de la salud, del empleo, de la vivienda, de la educación, del bienestar,  y en general para brindar una vida digna a nuestras poblaciones.</p>
+<p align="justify">Presidente  Alberto Fernández, reconozco el lugar de privilegio que usted otorga a México,  ya que como Presidente Electo fue el primer destino que visitó. Esto dejó en  evidencia las coincidencias e intereses compartidos por el gobierno que  encabeza el Presidente Andrés Manuel López Obrador para impulsar políticas  sociales, progresistas y humanistas que pongan en primer lugar la protección de  las poblaciones más vulnerables y desprotegidas.</p>
+<p align="justify">Quiero  compartirle que el Estado mexicano ha establecido como prioridades el  desarrollo con justicia para las personas excluidas y la austeridad republicana  en el ejercicio del presupuesto público.</p>
+<p align="justify">Asimismo,  tiene como eje central la lucha frontal contra la corrupción y la erradicación  de la impunidad en el gobierno, prácticas comunes y nocivas para el desarrollo  y crecimiento de cualquier país.</p>
+<p align="justify">Desde el  Poder Legislativo observamos con gran interés las leyes progresistas aprobadas  en Argentina como la regulación para legalizar el autocultivo del cannabis para  uso medicinal, así como aquellas que garantizan el respeto a los derechos  humanos y la autonomía de las mujeres y que, sin duda, representan un avance  para eliminar la discriminación que muchas veces padecen las mujeres y las  niñas.</p>
+<p align="justify">En esta  Cámara Alta, los grupos parlamentarios también han debatido y debaten para  abordar asuntos fundamentales que abonan al fortalecimiento de los derechos  humanos y de las libertades considerando todos los puntos de vista.</p>
+<p align="justify">Nuestra  Carta Magna otorga al Senado la facultad exclusiva para analizar la política  exterior bajo los principios constitucionales de no intervención, la  autodeterminación de los pueblos, la solución pacífica de las controversias y  la cooperación para el desarrollo, entre otros.</p>
+<p align="justify">Al  respecto, quiero recordar que México y Argentina han forjado sólidos lazos de  amistad desde el establecimiento formal de las relaciones diplomáticas en 1888  y han alcanzado un alto grado de integración en los ámbitos de cooperación  económica del comercio y de las inversiones.</p>
+<p align="justify">En cuanto  al diálogo político, configurado con base en el Acuerdo de Asociación  Estratégica de 2008, éste facilita la labor de interlocución y de consenso en  proyectos comunes.</p>
+<p align="justify">Quiero  destacar la cooperación entre las autoridades competentes de ambos países para  auxiliar a muchos nacionales mexicanos y argentinos que quedaron varados al  declararse el inicio de la pandemia, facilitando el retorno de los ciudadanos y  ciudadanas a sus lugares de residencia.</p>
+<p align="justify">Como una  señala alentadora y de esperanza en lo que va del año, México ya recibió dos  embarques para el envasado final de aproximadamente 12 millones de dosis con  miras a lograr la inmunización de la población.</p>
+<p align="justify">Este  proceso, conjunto de la elaboración de vacunas, tiene como finalidad última,  beneficiar a todos los países de América Latina y el Caribe.</p>
+<p align="justify">Vale la  pena señalar que la postura del Estado mexicano en los organismos  internacionales, como la Organización de las Naciones Unidas, es asegurar el  acceso universal, equitativo, oportuno y gratuito a los medicamentos, vacunas,  tratamientos y equipo médico necesarios para hacer frente a la pandemia.<br>
+  <br>
+  En este  mismo tono, México ha aprovechado la Presidencia Pro Tempore de la comunidad de  estados latinoamericanos y caribeños para promover la solidaridad, la  concertación política y la cooperación regional a fin de encontrar respuestas  coordinadas que abarquen el acceso a vacunas seguras en nuestra región, lo cual  será una tarea que nos permitirá superar los desafíos sanitarios.</p>
+<p align="justify">De la  misma forma, el presidente mexicano ha levantado la voz ante los países  integrantes del G20, del cual Argentina también es miembro, para que las  políticas de los estados lleven a cabo un rescate económico de abajo hacia  arriba, brindando, en primer lugar, ayuda a las personas más pobres y controlar  el endeudamiento público como elementos claves para apoyar la recuperación  económica.</p>
+<p align="justify">Señor  Presidente Fernández, en este Senado queremos expresarle nuestra gratitud por  su presencia y acompañamiento en los festejos del Bicentenario de la  Promulgación del Plan de Iguala, aprobado el 24 de febrero de 1821, que sentó  las bases para el nacimiento de un México soberano e independiente de toda  nuestra nación.</p>
+<p align="justify">Desde  esta tribuna hacemos un reconocimiento a los gobiernos de México y de Argentina  para continuar enfrentado juntos, con la mayor responsabilidad, los impactos y  los retos que nos ha impuesto la pandemia, así como los desafíos precedentes.</p>
+<p align="justify">Los dos  países tienen la capacidad y la voluntad para trabajar en la transformación de  sociedades más justas, incluyentes e igualitarias en condiciones adversas.</p>
+<p align="justify">Excelentísimo  señor Presidente, sea usted nuevamente bienvenido a esta casa del federalismo  mexicano.</p>
+<p align="justify">Conforme  al Acuerdo aprobado el pasado 16 de febrero, la celebración de esta sesión  solemne, el licenciado Alberto Fernández dirigirá un mensaje a la Asamblea.</p>
+<p align="justify">En  consecuencia, se le concede el uso de la palabra.</p>
+<p align="justify"><strong>El  licenciado Alberto Ángel Fernández, Presidente de la República Argentina:</strong> Buenas  tardes, Senadoras y Senadores. </p>
+<p align="justify">Muchísimas  gracias.</p>
+<p align="justify">Gracias,  señor Senador por sus palabras iniciales.</p>
+<p align="justify">Tengo una  gran alegría de poder compartir con ustedes algunas reflexiones en un tiempo  singular de la historia de la humanidad.</p>
+<p align="justify">Me  preguntaban, ¿cómo poder encarar este encuentro con ustedes?</p>
+<p align="justify">Y me  parece que es una buena ocasión para que pensemos juntos de dónde venimos, en  qué lugar estamos y hacia dónde queremos ir.</p>
+<p align="justify">Digo que  es un momento oportuno porque algo le pasó al mundo, algo absolutamente  impensado, algo absolutamente inesperado.</p>
+<p align="justify">Somos una  de las pocas generaciones que tiene el triste privilegio de haber tenido que  convivir en una pandemia.<br>
+  <br>
+  Esto no  le pasa a la humanidad permanentemente, ocurre muy de tanto en tanto. Una  pandemia que es capaz de asolar a todo el mundo por igual, una pandemia que no  discrimina entre pobres y ricos. Una pandemia que enferma a muchos y mata  a otros tantos. </p>
+<p align="justify">Y la verdad frente a tanto  dolor y frente a tanta muerte creo que es una buena oportunidad de la gente de  la política, esos somos nosotros, es una buena oportunidad, reflexionar un poco  sobre el lugar del que venimos, sobre el lugar donde estamos y sobre el lugar  al que queremos ir. </p>
+<p align="justify">Venimos, porque la pandemia  lo ha dejado en evidencia, de un sistema profundamente injusto, profundamente  injusto y que nadie sensatamente puede negarlo; hemos construido un sistema  económico profundamente débil, tan débil, un ser imperceptible a la vista  humana pudo dar vuelta a la realidad del mundo, no solamente se llevó la vida  de hombres y de mujeres, hizo caer los bonos de los Estados más poderosos, hizo  tambalear y caer a grandes empresas; ha dejado sin trabajo a millones de  personas y no ha distinguido nada. </p>
+<p align="justify">Y ante ese ser tan  minúsculo que no lo podemos ver, no tuvimos capacidad de reacción, no supimos  cómo enfrentarlo, no sabíamos cuándo nos atacaba, no sabíamos por dónde  llegaba. En esa incertidumbre nos ha tocado vivir y en esa incertidumbre, en  gran medida, todavía vivimos. </p>
+<p align="justify">Ahora bien, ¿cuál era la  fortaleza de ese sistema en el que vivíamos y al que no revisábamos lo  suficiente cuando la pandemia nos hizo presa? Era un sistema profundamente  injusto, donde la distribución del ingreso se concentraba en muy pocos y la  pobreza y la miseria se distribuía entre millones. </p>
+<p align="justify">Era un mundo profundamente  injusto, víctima de un cambio climático, producto de la acción humana que se  ocupó de contaminar el medio ambiente una y otra vez años tras año. De repente  nos dimos cuenta de que cuando el virus nos obligaba a quedarnos en nuestras  casas, el aire que se respiraba era más puro, el agua de los ríos era más  clara, el cielo se veía más diáfano, los animales se animaron a salir cuando  vieron que nosotros nos encerramos. Cuanta culpa tuvimos como humanidad para haber  construido semejante mundo. </p>
+<p align="justify">Era un mundo también  profundamente desigual, desigual entre nosotros, un mundo que no entendía  suficientemente la igualdad de los géneros. </p>
+<p align="justify">Un mundo que puso a la  mujer en un segundo lugar, inexplicablemente. Un mundo que discriminó según la  orientación sexual o la identidad de género de cada uno. Un mundo que en esas  condiciones no hacía buenas sociedades, hacía sociedades definitivamente muy  malas.  </p>
+<p align="justify">La pandemia de repente nos  dejó a todos en un mismo lugar, el lugar de la incertidumbre, el lugar del  miedo de no saber cómo enfrentar lo desconocido, y en América Latina nos  encontró dispersos, porque acaban de terminar cuatro años donde desde algún  lugar hicieron todo lo necesario para dividirnos, para separarnos, para ponernos  en lugares diferentes, en veredas enfrentadas, y ni siquiera frente a la  pandemia tuvimos la oportunidad de unirnos para ver qué podíamos hacer juntos,  para contarnos experiencias y ver cómo poder enfrentar semejante flagelo.</p>
+<p align="justify">Yo siempre digo que tuve  una sola ventaja: Que es que el virus llegó a nuestro continente tres meses  después que Europa y, la triste experiencia que vivió Europa nos ayudó a  nosotros a ver qué podíamos hacer para que no nos pasara lo mismo. <br>
+  <br>
+  Pero qué distinto hubiera  sido si hubiéramos podido juntarnos todos y enfrentar unidos el desafío de  combatir la pandemia. </p>
+<p align="justify">¿Qué nos ha dejado la  pandemia hoy? </p>
+<p align="justify">Nos ha dejado mucho dolor,  mucho pesar, mucha pena, gente que sufrió con la enfermedad y gente que se ha  ido, millones, lamentablemente, gente que no vamos a recuperar, todavía  luchamos con ese mundo desigual que existía antes de la pandemia, pero que  ahora se evidencia en cosas más miserables, la desigualdad ahora aparece  cuando, de todas las vacunas que se producen sólo 10 países la disfrutan y el  resto pelea tan sólo para que cumplan los contratos que firmamos con esos  productores y así quedamos solos peleando contra los poderosos, una vez más,  mendingando una vacuna con la que algunos lucran y por la que la falta de esa  vacuna muchos mueren y la desigualdad sigue presente. </p>
+<p align="justify">Ahora frente a tanto dolor  y tanta muerte, no deberíamos preguntarnos cómo encarar el futuro, porque es  una buena oportunidad, porque ante semejante crisis deberíamos preguntarnos  para qué sirvió. </p>
+<p align="justify">Yo siempre me preguntaba,  ¿cómo saldremos de esta pandemia?, yo creía que la pandemia nos iba a hacer  mejores, creía que frente a lo inexorable que era que todos estábamos expuestos  al virus y todos corríamos el mismo riesgo, era posible que cierto sentido de  solidaridad asomara la humanidad y por esa vía pudiéramos construir mejores  lazos hacia una sociedad más justa.</p>
+<p align="justify">Pero escuché decir a  alguien algo que es bastante cierto para mi pesar. Los que eran buenos antes de  la pandemia, se volvieron buenísimos después de la pandemia; pero los que eran  malos antes de la pandemia se volvieron peores después de la pandemia. </p>
+<p align="justify">Pero ¿en qué lugar queremos  pararnos nosotros? En el lugar de los que quieren salir mejores o en el lugar  de los que sólo quieren seguir medrando con este presente. </p>
+<p align="justify">Yo me quiero parar en el  primer lugar, en el lugar que nos obliga a ser mejores, porque definitivamente  vivimos en el continente más desigual del mundo, un triste designio que padece  Latinoamérica, en este lugar, como dije antes, la riqueza se concentra en pocos  y la miseria se distribuye en millones, han quedado condenados al pozo de la  pobreza, la marginalidad millones de habitantes de este continente, que han  quedado una y otra vez olvidados por las políticas implementadas. </p>
+<p align="justify">Acá en este continente se  ve mejor que en ningún otro lugar, eso de lo que le gusta hablar al Papa  Francisco cuando cuestiona el capitalismo. </p>
+<p align="justify">Acá en este lugar, en  América Latina estoy hablando, uno puede ver esa cultura del descarte permanentemente. </p>
+<p align="justify">Esa cultura que dice que  este mundo ha sido construido para los que estamos acá, el resto sobra, y  pensar un mundo para unos pocos, donde el resto queda olvidado. </p>
+<p align="justify">Ahora, nosotros no  deberíamos repensar eso, no estoy planteando, en nada de lo que digo, ponerle  fin a un sistema capitalista que se ha impuesto en el mundo. </p>
+<p align="justify">Estoy planteando si de una  vez por todas el capitalismo no tiene que tener una ética que ha perdido, estoy  planteando si de una vez por todas el capitalismo no debe tener un contenido  moral que ha ido perdiendo en el tiempo. </p>
+<p align="justify">El capitalismo nació con  algunas virtudes importantes, la virtud de pensar que alguien podía arriesgar  capital de trabajo, asociarse con alguien que aportaba al trabajo, generar  trabajo, generar producción, vender y hacer crecer, ese capitalismo fue muy  genuino, fue muy valioso. <br>
+  <br>
+  Siempre digo lo mismo, ese  fue el capitalismo de forma. </p>
+<p align="justify">Cuando un día se preguntó  por qué estos autos que construyo para una minoría no la pueden tener quienes  trabajan en mi empresa y empezó a pensar al producir los autos en masa para que  todos tuvieran acceso a lo que hoy es un automóvil, que es algo más accesible  para millones de personas. </p>
+<p align="justify">Ese capitalismo virtuoso  donde alguien invertía y alguien trabajaba, juntos producían y daban más  trabajo, todavía podemos recuperarla, tirando por la borda ese capitalismo  especulativo que medra con los derivados financieros, donde unos pocos hacen  fortuna en minutos y vuelven pobres minuto a minuto a millones de seres  humanos. </p>
+<p align="justify">¿No es momento de que  pensemos en cambiar todo eso?</p>
+<p align="justify">¿No es esta la hora de  darnos cuenta de que no podemos seguir así?</p>
+<p align="justify">Nosotros, le comentaba hoy  al Presidente en nuestro encuentro de la mañana, somos parte del mundo que  parece vivir en un limbo. </p>
+<p align="justify">El mundo tiene un mundo  central, donde los más poderosos tienen la riqueza que necesitan. </p>
+<p align="justify">Si hay que emitir dólares,  la FED emite dólares y arregla el problema de la economía norteamericana. </p>
+<p align="justify">Si hay que emitir euros, el  Banco Central Europeo emite los euros que hagan falta y las economías europeas  se pueden levantar en diez minutos. </p>
+<p align="justify">Los países pobres de tanto  en tanto se acuerdan de ellos.</p>
+<p align="justify">A veces les condonan  deudas.</p>
+<p align="justify">A veces les hacen quitas.</p>
+<p align="justify">A veces alguien se acuerda  de ellos y les dan más tiempo para pagar sus deudas.</p>
+<p align="justify">Pero en medio estamos los  países de renta media, a los que nadie atiende, ahí están muchos países  latinoamericanos, estamos muy lejos de ser parte de ese mundo central y estamos  muy cerca de parecernos a los países pobres, pero no nos dan los perdones que  les dan a los pobres y nos tratan como si fuéramos ricos.<br>
+  <br>
+  Y hasta cuándo podemos  seguir viendo esto sin reaccionar, sin alzar la voz, porque si no es este el  momento de alzar la voz para cambiar, no va a haber otro momento.</p>
+<p align="justify">No va a haber un momento  más crítico que este.</p>
+<p align="justify">No va a haber un momento en  donde las reglas establecidas se pongan más en crisis que este momento. </p>
+<p align="justify">No va a haber un tiempo  mejor que este para dar vuelta a la historia del mundo, como se da vuelta una  media. </p>
+<p align="justify">Y hay que dar vuelta a esa  medida porque si no vamos a seguir viviendo con más desigualdad y con más  injusticia. </p>
+<p align="justify">Ese es el desafío que  tenemos como continente.<br>
+  <br>
+  Primero, unirnos. </p>
+<p align="justify">Segundo, alzar nuestra voz  en el mundo. </p>
+<p align="justify">Y decir: &ldquo;<em>nosotros también tenemos derechos a crecer y  a desarrollarnos&rdquo;. </em></p>
+<p align="justify">Crecer y desarrollarnos  quiere decir simplemente que todos tengamos oportunidad de crecer y  desarrollarnos, no solamente algunos, que todos tengamos la oportunidad. </p>
+<p align="justify">Si todos no tenemos la  oportunidad, el mérito no alcanza.</p>
+<p align="justify">El mérito es una ficción. </p>
+<p align="justify">El mérito sin posibilidades  es nada. </p>
+<p align="justify">Ahora sí, si todos tenemos  la posibilidad de crecer y de desarrollarnos, ahí el mérito empieza a estallar. </p>
+<p align="justify">Pero pregúntense cuántos  hermanos latinoamericanos están hoy viviendo al margen, sin salud, sin educación, sin trabajo. Y  pregúntense cuánto tiempo más esta sociedad va a poder soportar eso, porque  tengo la certeza que no da para mucho más, no da para mucho más. </p>
+<p align="justify">Por eso es que aliento la esperanza de que este sea  el tiempo en que América Latina se ponga de pie y sea capaz de plantearle al  mundo su palabra revulsiva para cambiar el mundo, para hacerlo más igual, para  hacerlo más justo, para terminar con las discriminaciones en materia de raza,  en materia de sexo; para que la mujer deje de ser golpeada, para que la mujer  deje de ser asesinada, para que la mujer pueda progresar en su trabajo como  puede progresar cualquier hombre; para que no haya diferencias salariales entre  un hombre y una mujer. </p>
+<p align="justify">Cuánto tiempo más vamos a esperar para alzar la voz  y decir &ldquo;basta, este fue el punto final&rdquo;. Y empezar a escribir otra historia,  una historia que nos haga virtuosos, para que alguna vez alguien diga, como  decimos nosotros a nuestros próceres, mañana ustedes cuando celebren el  Bicentenario del Plan de Iguala van a estar recordando a esos hombres que  fueron capaces de levantarse y de darle la libertad a México, la independencia  y la autonomía, y tal vez ellos en aquel momento habrán dudado como nosotros,  en cómo hacerlo, pero tuvieron el coraje y la valentía de hacerlo. </p>
+<p align="justify">Es momento de darnos cuenta de que este es nuestro  tiempo; es el tiempo de unir esfuerzos; es el tiempo de trabajar con sensatez y  con racionalidad; es el tiempo de unirnos no para estar en contra de otros, es  el tiempo de unirnos para estar en favor de los nuestros, para que todos  nosotros, para que nuestros pueblos puedan crecer. </p>
+<p align="justify">Ese es el verdadero desafío que tenemos. </p>
+<p align="justify">Y bien decía el Senador que preside este encuentro,  que cuando fui electo, elegí salir por primera vez del país para venir a visitar  México. </p>
+<p align="justify">Y no era casual, leíamos en toda América Latina,  una América Latina que estaba viviendo cierto regreso al conservadurismo, que  acá en México finalmente había llegado un hombre con planteos tan simples como  enormes, un hombre que proponía ponerle contenido moral a la política,  convertir la ética de la política en un elemento constante, un hombre que decía  lo mismo que suelo decir yo, &ldquo;ocupémonos de los últimos, primero los últimos&rdquo;.<br>
+  <br>
+  Y pensé que acá, donde Latinoamérica termina en el  norte, tal vez podríamos trabajar muy juntos con allá donde el continente se  enangosta y termina en los mares del sur, el país más austral con el país más  norteño de la América Latina. </p>
+<p align="justify">Y tal vez juntos trazar un eje que cruce a toda  América Latina, impregne a la América Latina de este llamado de cambio, de este  llamado de transformación. </p>
+<p align="justify">Y tal vez sea el momento, las vueltas de la vida  hizo que en medio de la pandemia el virus nos una para que allí, en el país más  austral del continente, se produzca el contenido esencial de la vacuna que se  termina de elaborar aquí en el país más norteño del Continente Latinoamericano  y que desde aquí podamos llevar esa vacuna por el que hoy millones de  latinoamericanos luchan y esperan. </p>
+<p align="justify">Y tal vez ese sea el primer  cambio y el primer paso que podamos dar para trabajar unidos, no en contra de  nadie, en favor de todos.</p>
+<p align="justify">Allá en Argentina tenemos  un poeta por excelencia, que tenemos los argentinos, que se llamó José  Hernández, que escribió un largo poema que se llama <em>&ldquo;El Martín Fierro&rdquo;</em> y cuenta la historia de un gaucho y sus  desdichas, pero era un sabio el gaucho ese.</p>
+<p align="justify">En uno de sus versos  recuerda y recomienda que los hermanos sean unidos. Esa es la ley primera, <em>&ldquo;tengan unión verdadera en cualquier tiempo  que sea, porque si entre ellos pelean los devoran los de afuera&rdquo;.</em></p>
+<p align="justify">Recordémoslo, recordémoslo  y animémonos.</p>
+<p align="justify">Este no es el tiempo de los  otros. Este es nuestro tiempo.</p>
+<p align="justify">Acá no importa cómo piensa  cada uno, tenemos que ser capaces de construir en la diversidad. Acá no se  trata de construir, como dije recién, un discurso único, se trata de  escucharnos, de abrir nuestras cabezas.</p>
+<p align="justify">Tenemos los argentinos un  Premio Nobel que es nuestro orgullo, Adolfo Pérez Esquivel, Premio Nobel de la  Paz, que alguna vez dijo: <em>&ldquo;Los puños  cerrados no siembran, solo siembran los puños que se abren&rdquo;</em>.</p>
+<p align="justify">Abramos nuestras cabezas,  abramos nuestros puños y hagamos de América Latina el continente de la igualdad,  para sacarnos este triste estigma que hoy tenemos. </p>
+<p align="justify">Gracias,  México.</p>
+<p align="justify">Feliz de  estar con ustedes.</p>
+<p align="justify">Muchísimas  gracias a todos y todas.</p>
+<p align="justify"><strong>El  Presidente Senador Eduardo Ramírez Aguilar: </strong>Después de haber escuchado  el gran mensaje del Presidente Alberto Fernández, nos convoca a la reflexión  política, a la reflexión de hermandad internacional y hacer frente a esta situación  en la que el mundo atraviesa.</p>
+<p align="justify">Señor  Presidente Alberto Fernández, quiero hacerle entrega de un busto de un Senador  que es referente en nuestra historia de México, el Senador Belisario Domínguez,  quien falleció en 1913 a consecuencia de su empeño en la lucha por la libertad  de expresión.</p>
+<p align="justify">Para el  Senado de la República, Belisario Domínguez constituye un estandarte y un símbolo del compromiso por  el combate a las desigualdades. <br>
+  <br>
+  De manera muy respetuosa, le voy a hacer entrega de  este busto, que se lleve como obsequio, que esta institución siempre velará por  la libertad de todos los seres humanos.</p>
+<p align="justify">Su asistencia a esta sesión es muestra de la  importancia en mantener los contactos entre las instituciones públicas de  nuestros estados nacionales, que comparten vínculos geográficos, históricos y  culturales. </p>
+<p align="justify">Muchas gracias por acompañarnos en esta sesión  solemne. </p>
+<p align="justify">Agradezco a los distinguidos invitados e invitadas,  a todos.</p>
+<p align="justify">Solicito a las Senadoras y Senadores integrantes de  la comisión de cortesía, se sirvan acompañar a nuestros invitados e invitadas  hasta las puertas de este recinto.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a96091'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='96092'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify">Se cita a la siguiente sesión ordinaria el jueves  25 de febrero a las 11:00 horas en modalidad a distancia. Las Secretarías  Generales les remitirán oportunamente los enlaces digitales correspondientes  para la conexión. </p>
+<p align="justify">La plataforma electrónica estará disponible desde  las 10:00 horas.</p>
+<p align="justify">Muchas gracias, damos por finalizada esta sesión  solemne. </p>
+<p align="center">(Se  levantó la sesión a las 18:37 horas) </p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a96092'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

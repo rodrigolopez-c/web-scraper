@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 27</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Laura Itzel Castillo Juárez</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 28 de Octubre de 2025</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/2/PPO/PDF-WEB/PPO_No27_28-OCTUBRE-2025_SOLEMNE.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='123864'></a><p align="center"><strong>PRESIDE  LA SENADORA</strong><br>
+  <strong>LAURA  ITZEL CASTILLO JUÁREZ</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>(12:07  horas) Con el quórum de nuestra sesión ordinaria y con fundamento en lo  dispuesto por la fracción I del numeral 1 del artículo 56 del Reglamento del  Senado, y en el Acuerdo aprobado el día 22 de octubre pasado, iniciamos la  sesión solemne. </p>
+<p>Contaremos,  en esta conmemoración, con la asistencia del señor Peter Grohmann, Coordinador  Residente y representante designado del Secretario General de la Organización  de las Naciones Unidas en México, quien se encuentra en el salón contiguo.</p>
+<p>En  consecuencia, solicito a las Senadoras y Senadores, espero se encuentren en  este recinto: Alejandro Murat Hinojosa, Simey Olvera Bautista, Carolina  Viggiano Austria, Yeidckol Polevnsky Gurwitz, Amalia Dolores García Medina, Ana  Lilia Rivera Rivera, Geovanna Bañuelos, Luis Fernando Salazar Fernández, Karina  Isabel Ruiz Ruiz y Beatriz Silvia  Robles Gutiérrez, que puedan acudir a recibirlo, ya que se encuentra en el  salón contiguo y que lo acompañen al interior de este Pleno. </p>
+<p align="center">(La comisión cumple)</p>
+<p>En tanto, declaramos un receso.</p>
+<p align="center">(RECESO)</p>
+<p><strong>La Presidenta Senadora Laura  Itzel Castillo Juárez: </strong>Se  reanuda la sesión solemne. </p>
+<p>La Cámara de Senadores del Honorable Congreso de la  Unión de los Estados Unidos Mexicanos expresa la más cordial bienvenida al  señor Peter Grohmann, Coordinador Residente y Representante designado del  Secretario General de la Organización de las Naciones Unidas en México.</p>
+<p>Es un honor recibir su visita. </p>
+<p>Asimismo, reconocemos y agradecemos la presencia del  doctor Daniel Octavio Fajardo Ortiz, titular de la Unidad General de Enlace con  los Poderes Federales, quien acude en representación del Ministro Presidente de  la Suprema Corte de Justicia de la Nación.</p>
+<p>¡Bienvenido!</p>
+<p>También saludamos la presencia de los representantes  de la Organización de las Naciones Unidas y del personal de la Secretaría de  Relaciones Exteriores de nuestro país. </p>
+<p>¡Sean ustedes, todas y todos, bienvenidos y  bienvenidas!</p>
+<p>Al mismo tiempo, me permito presentar a mis  compañeras y compañeros Senadores y Senadoras de la Mesa Directiva presentes en  esta sesión solemne: </p>
+<p>La Senadora Verónica Noemí Camino Farjat,  Vicepresidenta. </p>
+<p>La Senadora Imelda Sanmiguel Sánchez,  Vicepresidenta. </p>
+<p>El Senador Jorge Carlos Ramírez Marín,  Vicepresidente. </p>
+<p> La Senadora Simey Olvera Bautista, Secretaria. </p>
+<p>La Senadora Mariela Gutiérrez Escalante, Secretaria. </p>
+<p>La Senadora Claudia Edith Anaya Mota, Secretaria  también. </p>
+<p>La Senadora Lizeth Sánchez García, Secretaria. </p>
+<p>La Senadora María Martina Kantún Can, Secretaria  también. </p>
+<p>El Senador Gustavo Sánchez Vásquez, Secretario. </p>
+<p>El Senador Néstor Camarillo Medina, también  Secretario. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a123864'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/Riiwnx6hGn4?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='123865'></a><p><strong>VISITA  DEL SEÑOR PETER GROHMANN, COORDINADOR RESIDENTE Y REPRESENTANTE DESIGNADO DEL  SECRETARIO GENERAL DE LA ORGANIZACIÓN DE LAS NACIONES UNIDAS EN MÉXICO</strong></p>
+<p>El día de hoy, en el Senado de la República  conmemoramos 80 años de la Organización de las Naciones Unidas. </p>
+<p>En 1945, en medio de las heridas que dejaron dos  guerras mundiales, los países del mundo decidieron crear un espacio para el  diálogo, la cooperación y la defensa de la dignidad humana. </p>
+<p>La ONU nació en el siglo XX como un compromiso  compartido para preservar la paz y garantizar los derechos fundamentales de  todas las personas. </p>
+<p>Desde entonces, esta organización ha alcanzado  logros fundamentales para la humanidad, entre ellos está la aprobación de la  Declaración Universal de los Derechos Humanos, el impulso a los procesos de  descolonización en Asia y África y la promoción de acuerdos para el desarrollo  sostenible que han mejorado la vida de millones de personas. </p>
+<p>La ONU también ha sido una institución decisiva en  la agenda del desarme nuclear. El Tratado de Tlatelolco en el que México jugó  un papel centro convirtió, a América Latina, en la primera zona libre de armas  nucleares en el mundo. </p>
+<p>Reconocemos, igualmente, los grandes avances que se  han impulsado. Esto, especialmente podríamos señalar como es el caso de la  Organización Internacional del Trabajo, que ha sido clave en la defensa del  empleo digno, la libertad sindical y la justicia social. </p>
+<p>La Convención sobre la Eliminación de Todas las  Formas de Discriminación Contra la Mujer, ha permitido avanzar en la igualdad  sustantiva entre mujeres y hombres y la declaración de las Naciones Unidas  Sobre los Derechos de los Pueblos Indígenas, representa un paso decisivo hacia  sociedades que enaltezcan la diversidad cultural.</p>
+<p>Hoy, en pleno siglo XXI, los desafíos son enormes,  la pobreza, la desigualdad, la crisis climática y las migraciones forzadas son  retos urgentes que debemos atender. </p>
+<p>En distintas regiones los conflictos armados  persisten y la violencia sigue cobrando vidas inocentes, como hemos visto  recientemente en el genocidio que se ha llevado a cabo en Gaza. </p>
+<p>La ONU, como institución, no es una más entre  tantas, su funcionamiento es la condición sin la cual no hay espacio para el  multilateralismo, el derecho internacional ni la protección de los derechos  humamos; sin embargo, reconocer su labor no exime al mundo de examinar sus  límites y operación. </p>
+<p> Como señaló el Secretario de Relaciones Exteriores,  Juan Ramón de la Fuente, la ONU se ha convertido, sin duda, en una institución  absolutamente indispensable, pero que, por lo mismo, requiere ineludiblemente,  urgentemente una reforma. </p>
+<p>Esta afirmación convoca a la reflexión: Si la  institución es fundamental, debe transformarse para seguir siendo eficaz y  garantizar el cumplimiento de su promesa, la paz. </p>
+<p>Además,  el Secretario de Relaciones Exteriores ha sido firme en señalar que un  multilateralismo democrático solo lo será si se elimina el derecho al veto que  mina la pluralidad y desarticula la posibilidad de diálogo. </p>
+<p>Este  país lleva todos los 80 años de vida de la ONU oponiéndose al uso de esta  herramienta. </p>
+<p>Por  otra parte, México ha asumido un papel activo en el desarme, la cooperación y  la defensa de la dignidad humana. </p>
+<p>Además,  tiene una responsabilidad especial, nuestra diplomacia ha insistido en que no  basta con invocar la fuerza, la legitimidad internacional descansa en el  derecho, en el diálogo y la cooperación; siempre, como dice nuestra Presidenta,  en coordinación, nunca en subordinación. </p>
+<p>Así  lo ha señalado también Héctor Vasconcelos, Representante Permanente de México  ante las Naciones Unidas al advertir que no se debe establecer un vínculo  automático entre delincuencia organizada y terrorismo, pues confundirlos lleva  a estrategias fallidas ante los órganos de la ONU. </p>
+<p>En  este sentido, México revindica la capacidad del multilateralismo para actuar  con precisión y ejecutar respuestas en consenso. </p>
+<p>Bajo  el liderazgo de nuestra Presidenta, la Doctora Claudia Sheinbaum Pardo, México  reafirma su compromiso con las Naciones Unidas y con una política exterior  guiada por el humanismo mexicano, que pone en el centro la vida, la justicia y  la dignidad de nuestros pueblos. </p>
+<p>Que  este aniversario sea un momento para reconocer los logros de la ONU, pero  también asumir con responsabilidad la urgencia de las transformaciones que el  mundo nos demanda. </p>
+<p>Muchas  gracias. </p>
+<p>Conforme  al Acuerdo aprobado para normar la celebración de esta sesión solemne, el señor  Peter Grohmann dirigirá un mensaje a la Asamblea. </p>
+<p>En  consecuencia, tiene usted el uso de la palabra. </p>
+<p><strong>El  Coordinador Residente y Representante designado del Secretario General de la  Organización de las Naciones Unidas, Peter Grohmann: </strong>Muy  buenos días a todos y todas. </p>
+<p>Es  un gran placer estar aquí en el Senado de la República. </p>
+<p>Quisiera  saludar a la Senadora Laura Itzel Castillo, Presidenta de la Mesa Directiva de  la Cámara de Senadores. </p>
+<p>A  la Mesa Directiva de la Cámara de Senadores. </p>
+<p> A  los diferentes presidentes de diferentes Cámaras. </p>
+<p>De  diferentes comisiones del Senado, con quienes además trabajamos muy cercano. </p>
+<p>A  todas las Senadoras y Senadores que están aquí. </p>
+<p>Muchas  amigas, muchos amigos. </p>
+<p>Muchísimas  gracias, por estar aquí. </p>
+<p>Al  representante de la Corte Suprema. </p>
+<p>A  los representantes de la Secretaría de Relaciones Exteriores. </p>
+<p>Y  a mis colegas de Naciones Unidas que están con nosotros aquí. </p>
+<p>De  las agencias, fondos y programas. </p>
+<p>Señoras  y señores. </p>
+<p>Agradezco  profundamente a esta Honorable Cámara de Senadores por convocar esta sesión  solemne para conmemorar el Octogésimo Aniversario de la Organización de las  Naciones Unidas. </p>
+<p>Es  un honor celebrar este aniversario en México, país fundador  de las Naciones Unidas y hoy en particular en el Senado de la República. </p>
+<p>Durante los 80 años, México ha defendido firmemente  los principios y propósitos de la Carta de las Naciones Unidas; su política  exterior se basa en los principios constitucionales de autodeterminación de los  pueblos, solución pacífica de las controversias, igualdad jurídica de los  estados, cooperación para el desarrollo y promoción de los derechos humanos. </p>
+<p>Esto, no son letras en papel. </p>
+<p>México vive el multilateralismo y sus decisiones en  la política exterior se han orientado consistentemente en estos principios. </p>
+<p>Y, como pudimos escuchar, en el conversatorio de  ayer, la voz de México en los foros internacionales se oye con atención. </p>
+<p>Senadoras y Senadores, conmemoramos este  aniversario en medio de crisis globales, profundas, conflictos violentos  horrendos, desigualdades crecientes y una confianza debilitada en las  instituciones internacionales. </p>
+<p>Surgen dudas sobre la eficacia del sistema  multilateral justo cuando más lo necesitamos.</p>
+<p>Para ofrecer soluciones duraderas en un mundo  multipolar, necesitamos reformar la gobernanza global, vivimos un tiempo en el  que los viejos poderes languidecen, nuevos poderes emergen y donde la igualdad  entre países, representada en la Asamblea General, cobra mayor relevancia. </p>
+<p>Ahora es el momento en que los países miembros de  la ONU tienen que tomar las decisiones acertadas sobre el futuro de su  organización. </p>
+<p>En este contexto el papel del Senado de la  República es más relevante que nunca, como Cámara encargada del análisis de la  política exterior, el Senado es uno de los garantes de la voz de México en el  mundo y de la continuidad de sus compromisos internacionales. </p>
+<p> Hoy es el momento para defender nuestros principios  con voz clara en el seno de las Naciones Unidas. </p>
+<p>Senadoras y Senadores, en el esfuerzo por renovar  el multilateralismo, el derecho internacional es su columna vertebral, el  derecho internacional es una de las grandes conquistas de nuestro tiempo, su  perfeccionamiento constante frente a un mundo cambiante es imprescindible. </p>
+<p>Su aplicación consecuente y no la aplicación  selectiva basada en intereses particulares es la base para la convivencia  pacífica entre pueblos y para la protección de los derechos fundamentales de  todas las personas. </p>
+<p>Su defensa global, requiere instituciones legítimas  y fuertes, tribunales independientes y transparentes y la cooperación entre las  naciones. </p>
+<p>En las últimas décadas el mundo ha construido un  entramado sin precedentes para hacer valer estos principios. </p>
+<p>Desde la Corte Internacional de Justicia, hasta la  Corte Penal Internacional, pasando por sistemas regionales de derechos humanos,  incluyendo la creación del Consejo de los Derechos Humanos, entre muchos otros. </p>
+<p>La arquitectura institucional da vida al ideal de  un orden internacional basado en el derecho y no en la fuerza. </p>
+<p>Y da una esperanza de justicia para millones. </p>
+<p>Sin embargo, cuando la comunidad internacional  guarda silencio ante la agresión o la violencia se debilitan los cimientos  mismos de la paz. </p>
+<p>Recordémoslo con claridad, las violaciones al  derecho internacional no pueden quedar impunes. </p>
+<p>La reforma al sistema global tendrá éxito  si reafirma claramente el respeto al derecho internacional y la necesidad de  fortalecer las instituciones multilaterales encargados del mismo. </p>
+<p>Senadoras  y Senadores, en los últimos cinco años hemos trabajado hombro a hombro con este  Senado en la construcción de un país más justo, igualitario y sostenible.</p>
+<p>Hemos acompañado reflexiones y reformas que  fortalecen los pilares del humanismo mexicano y la protección de los derechos  fundamentales. </p>
+<p>Hemos participado en desarrollar propuestas hacia  un sistema nacional de cuidados que reconozca el valor de trabajo de cuidados,  especialmente de las mujeres. </p>
+<p>Hemos contribuido con análisis y evidencia para la  implementación del Acuerdo de Escazú para la justicia ambiental y la defensa de  quienes protejan la naturaleza.</p>
+<p>Hemos trabajado junto a esta Cámara en el diseño de  un marco jurídico para la justicia cívica y la seguridad ciudadana que refuerza  la cultura de la paz y la prevención. </p>
+<p>Y celebramos con ustedes la aprobación de la Ley  General de la Alimentación Adecuada y Sostenible que garantiza el derecho  humano a una alimentación sana y suficiente. </p>
+<p>Estas son solo algunas muestras de lo que hemos  compartido.</p>
+<p> El nuevo Marco de Cooperación para el Desarrollo  Sostenible 2026-2031, que firmamos el pasado 24 de octubre con el secretario de  Relaciones Exteriores del Gobierno de México, nos brinda la gran oportunidad de  profundizar la cooperación entre el Sistema de Naciones Unidas y el Senado de  la República. </p>
+<p>El Marco de la Cooperación con México no busca  sustituir funciones del Estado ni duplicar esfuerzos. </p>
+<p>Su propósito es alinear, sumar y potenciar para que  los logros de las políticas públicas alcancen a más personas y a más  territorios en cuatro áreas estratégicos que son: la gobernanza y el Estado de  derecho, la inclusión social e igualdad sustantiva, la economía incluyente y  resiliente y medio ambiente y cambio climático.</p>
+<p>Y con cuatro ejes transversales que refuerzan su  enfoque de derechos: los derechos de las mujeres y las niñas, la movilidad  humana, los pueblos indígenas y afromexicanas y las juventudes como agentes de  cambio. </p>
+<p>Este nuevo marco de cooperación es el resultado de  un diálogo amplio con las instituciones y la sociedad mexicana, incluyendo el  Poder Legislativo. </p>
+<p>Les invitamos a usar este marco como base para  continuar y ampliar la exitosa colaboración entre el Senado de la República y  el Sistema de Naciones Unidas en los distintos temas que mejoren la vida de las  y los mexicanos.</p>
+<p>Senadoras y Senadores, en nombre de todo el Sistema  de las Naciones Unidas en México, deseo expresar nuestro más sincero  reconocimiento por su compromiso con los valores del multilateralismo, con la  justicia y con la cooperación internacional. </p>
+<p>Su trabajo legislativo reafirma que la política  exterior, los tratados y las reformas con enfoque de derechos no son solo actos  jurídicos, son también decisiones profundamente humanas que fortalecen la  convivencia, la igualdad y la paz. </p>
+<p>La Carta de las Naciones Unidas comienza con las  famosas palabras, <em>&ldquo;nosotros los pueblos&rdquo;</em>.</p>
+<p>Con los representantes del pueblo de México hagamos  de esto un compromiso vivo para un futuro del mundo con justicia, prosperidad  y, sobre todo, paz. </p>
+<p>Muchas gracias.</p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Muchas  gracias, señor Peter Grohmann. </p>
+<p>De  conformidad con lo dispuesto en el inciso c) del Resolutivo Segundo del Acuerdo  que norma esta sesión solemne, tenemos enseguida una ronda de participaciones  de personas representantes de los grupos parlamentarios en orden creciente,  hasta por cinco minutos. </p>
+<p>En  consecuencia, damos inicio con la intervención de la Senadora Amalia Dolores  García Medina, del grupo parlamentario de Movimiento Ciudadano, tiene la  palabra hasta por cinco minutos. </p>
+<p><strong>La  Senadora Amalia Dolores García Medina: </strong>Muy  buenos días, estimadas compañeras, compañeros, Senadoras, Senadores. </p>
+<p>Muy  estimado Peter Grohmann, coordinador residente del Sistema de Naciones Unidas,  aquí en nuestro país y, además, quien ha hecho un formidable trabajo  coordinando no solamente las causas, sino también estableciendo posibilidades  de una relación y un vínculo muy sólido con la Organización de las Naciones  Unidas, un saludo y un abrazo en estos 80 años en que se conmemora la fundación  de la Organización de las Naciones Unidas. </p>
+<p> Un  saludo al doctor Daniel Fajardo, quien viene en representación y es el enlace  del Presidente de la Suprema Corte de Justicia de la Nación en esta sesión. </p>
+<p>Señora  Presidenta.</p>
+<p>Compañeras  y compañeros, hoy, a los 80 años de existencia de la Organización de las  Naciones Unidas, habría que decir que si no existiera habría que crearla porque  su presencia es indispensable en nuestro planeta, especialmente el  multilateralismo que le caracteriza ha permitido que cientos, miles, millones  de seres humanos se vean representados en esa organización. </p>
+<p>Nació  para evitar guerras, en 1945. </p>
+<p>Pero  habría qué decir que tuvo y ha tenido su mayoría de edad al poner al centro  valores. De manera sustancial cuando a partir de 1948 se emitió la Declaración  Universal de los Derechos Humanos, valores centrados en derechos, los derechos  de las personas. </p>
+<p>Eso  ha sido lo sustancial de la Organización de las Naciones Unidas, pero, además,  es el espacio por excelencia para la negociación, aunque no sea el único, pero  es al que se acude mundialmente para atender los retos que ha vivido el  planeta. </p>
+<p>La  ONU, la Organización de las Naciones Unidas, es esencial porque pone en el  centro, reitero, el derecho y la existencia de instancias como la Corte Penal,  la Corte de Justicia, son parte de esa visión. </p>
+<p>No  solamente eso, sino que ha sido una instancia impulsora de tratados y  convenciones fundamentales para la defensa de los derechos de la humanidad. </p>
+<p>La  CEDAW, que ya fue mencionada por la presidenta de la Mesa Directiva, que es la  Convención Contra Toda Forma de Discriminación Contra las Mujeres.</p>
+<p>La  convención que protege los derechos de niñas, niños y adolescentes. </p>
+<p>La  Convención sobre trabajadores migrantes  y sus familias, la convención contra toda forma de discriminación hacia las  personas con discapacidad, que, por cierto, fue impulsada y promovida por un  mexicano ejemplar: Gilberto Rincón Gallardo; la Convención contra la Tortura y  otros tratos crueles, inhumanos y degradantes. </p>
+<p>Y podríamos seguir hablando de las distintas  convenciones que han surgido del impulso de la Organización de las Naciones  Unidas. </p>
+<p>En nuestro país tiene especial relevancia este  entramado porque la Constitución Política de los Estados Unidos Mexicanos, en  su artículo 133, establece que los tratados son parte de la ley suprema y nos  rigen y nos obligan. </p>
+<p>Hoy los desafíos que enfrenta la Organización de las  Naciones Unidas son distintos a los que enfrentó cuando nació, no es 1945 y hoy  enfrentamos retos ante el cambio climático. </p>
+<p>Y como ha dicho el Secretario de las Naciones  Unidas: En un momento en que empieza a terminar la era del calentamiento  global, para dar paso a la era de la ebullición, está en riesgo la vida en el  planeta. </p>
+<p>También se enfrenta al desafío de la presencia de  nuevas tecnologías, que han traído un avance maravilloso y extraordinario en el  conocimiento, pero que también significan retos si no se regulan, retos y  riesgos. Me refiero de manera destacada a la inteligencia artificial. </p>
+<p> También enfrenta el peligro la seguridad del planeta  por las guerras, porque sigue proliferando el uso de armas, porque los  arsenales nucleares ahí están y el Consejo de Seguridad, lamentablemente, con  el veto de uno sólo de sus integrantes puede frenar acuerdos sustanciales en  favor de los derechos de poblaciones y comunidades enteras. </p>
+<p>Y enfrentamos también un momento clave por la guerra  comercial y decisiones impredecibles que han sembrado la incertidumbre en este  momento de la humanidad. </p>
+<p>Afortunadamente, desde las Naciones Unidas se han  impulsado acuerdos que nos permiten tener una hoja de ruta, un mapa para  navegar, como los Objetivos de Desarrollo Sostenible acordados en 2015.</p>
+<p>Como el Pacto del Futuro, que plantea renovar el  compromiso para la cooperación internacional, pero también reformar a la ONU y  fortalecer el multilateralismo. </p>
+<p>Hoy, hay que decirlo, como se ha subrayado, no hay  otro planeta tierra, este es el único planeta tierra que tenemos y por eso  necesitamos el multilateralismo y apostarle al diálogo y a una organización  internacional, como lo es la Organización de las Naciones Unidas. </p>
+<p>Enhorabuena por las transformaciones en positivo que  se hagan y por el compromiso de múltiples gobiernos del mundo y también de  muchos pueblos a favor de los derechos y de valores que ponen en el centro a la  humanidad.</p>
+<p>Muchas gracias. </p>
+<p><strong>La Presidenta Senadora Laura  Itzel Castillo Juárez: </strong>A  continuación, tiene el uso de la palabra la Senadora Geovanna Bañuelos, del  grupo parlamentario del PT, hasta por cinco minutos. </p>
+<p><strong>La Senadora Geovanna  Bañuelos: </strong>Le agradezco,  señora Presidenta. </p>
+<p>A nombre propio y de mi grupo parlamentario, damos  la más cordial de las bienvenidas al señor Peter Grohmann, Coordinador  Residente y Representante de las Naciones Unidas. </p>
+<p>Hoy celebramos ocho décadas de la Organización de  las Naciones Unidas, un proyecto civilizatorio que nació de la tragedia de la  guerra y del anhelo de construir un orden internacional basado en la paz, la  cooperación y el respeto a la dignidad humana, ocho décadas en las que la ONU  ha sido faro y conciencia del mundo, testigo de los grandes desafíos de la  humanidad y espacio indispensable para la búsqueda de soluciones comunes. </p>
+<p>En 1945 México se comprometió con el  multilateralismo y los principios que dieron origen a las Naciones Unidas. </p>
+<p>Nuestro  país participó en la redacción de la Carta Fundacional, defendiendo la igualdad  soberana de los estados, la no intervención y la solución pacífica de las  controversias.</p>
+<p>De  igual forma, a lo largo de los años México ha mantenido una voz clara en  defensa del derecho internacional, de los derechos humanos, del desarme nuclear  y del desarrollo sostenible. </p>
+<p>Sin  embargo, 80 años después el mundo enfrenta una crisis profunda de violencia,  desigualdad y desconfianza, las guerras en distintas regiones, el cambio  climático, las migraciones forzadas y la exclusión económica nos recuerdan que  el sistema multilateral atraviesa un momento decisivo. </p>
+<p> Las  instituciones internacionales deben renovarse o corren el riesgo de quedar al  margen de las realidades que pretenden transformar. </p>
+<p>En  ese contexto, las palabras de nuestra Presidenta, la Doctora Claudia Sheinbaum  cobran especial relevancia, ella ha señalado que la ONU debe ser una  institución que promueva activamente la construcción de la paz. </p>
+<p>En  junio de este año hizo un llamado firme para que la Organización actúe de  manera decidida frente al conflicto en Medio Oriente. </p>
+<p>En  septiembre, reiteró su exigencia de poner fin al genocidio en Gaza y de detener  la agresión contra la población civil. </p>
+<p>Estas  son acciones que reafirman la coherencia histórica de nuestra política  exterior, la defensa de la autodeterminación de los pueblos, el rechazo al uso  de la fuerza y la apuesta, la apuesta a la diplomacia. </p>
+<p>La  ONU no debe limitarse a reaccionar ante los conflictos, sino asumir un papel  más activo en la prevención de las crisis humanitarias, en la gestión de  desastres naturales y en la reducción de las desigualdades estructurales que  amenazan la estabilidad global.</p>
+<p>Esa  es la visión que México defiende, una ONU más democrática, más representativa,  menos dominada por los intereses de unos pocos y más centrada en el bienestar  colectivo; una ONU que vuelva a ser la voz de los pueblos no de las potencias,  que recupere la autoridad moral y política para detener las guerras y  garantizar los derechos de quienes más sufren. </p>
+<p>Hoy,  al conmemorar su 80 aniversario, no solo rendimos homenaje a la historia de las  Naciones Unidas, sino que reafirmamos nuestro compromiso con su porvenir. </p>
+<p>Desde  este recinto, desde el Senado de la República el Partido del Trabajo respalda  la posición del gobierno de México, fortalecer el multilateralismo, defender la  paz y construir un mundo basado en la justicia y en la cooperación. </p>
+<p>Que  este aniversario sirva para renovar la esperanza en un orden internacional más  humano, más equitativo y verdaderamente solidario; porque la paz no se decreta,  se construye con voluntad, con diálogo y con justicia y, en esta tarea México  seguirá siendo un aliado firme de las Naciones Unidas y de los pueblos del  mundo. </p>
+<p>Por  su atención, muchísimas gracias a todas y todos ustedes. </p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez:</strong> Gracias, Senadora Bañuelos.</p>
+<p>Ahora  tiene el uso de la palabra la Senadora Carolina Viggiano Austria, del grupo  parlamentario del Partido Revolucionario Institucional, hasta por cinco  minutos. </p>
+<p><strong>La  Senadora Carolina Viggiano Austria:</strong> Gracias, señora  Presidenta, con su permiso. </p>
+<p>¡Señor  Peter Grohmann, bienvenido a este Senado de la República!</p>
+<p>La  Segunda Guerra Mundial marcó un hito en la historia de la humanidad, los países  aliados, incluidos a México, decidieron sustituir a la sociedad de las naciones  para crear una organización de carácter parlamentario, donde los países del  mundo pudiesen resolver en el diálogo las diferencias naturales de la  convivencia. </p>
+<p>México  fue uno de los países firmantes de la nueva Organización de las Naciones  Unidas.</p>
+<p> Mexicanos  destacados como Jaime Torres Bodet y Rosario Green tuvieron, a lo largo de esta  historia, papeles muy destacados. </p>
+<p>La  base fundacional de la ONU son derechos humanos; su primer instrumento fue la  Declaración Universal de los Derechos Humanos. </p>
+<p>Sobra  decir que muchos mexicanos han participado en comités de la ONU sobre derechos  humanos. </p>
+<p>Quiero  mencionar solo a algunos, Gilberto Rincón Gallardo, Amalia Gamio, Carlos Ríos,  Santiago Corcuera, entre muchos otros. </p>
+<p>Nuestro  país ha acompañado el trabajo de este organismo internacional que ha velado por  los derechos de todas las personas a lo largo de 80 años. </p>
+<p>Sin  embargo, desafortunadamente hoy el gobierno ha roto esa tradición de trabajo  conjunto. </p>
+<p>El  Comité relativo a la Convención sobre Desapariciones Forzadas ha implementado,  por primera vez en la historia, el proceso del artículo 34 de dicha convención,  dado que ha recibido 778 comunicaciones de ciudadanos y organizaciones civiles  sobre la desaparición de personas. </p>
+<p>Estos  indicios hacen suponer que en México se realiza la desaparición forzada de  forma sistemática, es decir, con etapas bien definidas, y generalizada en  amplios territorios de país. </p>
+<p>Estas  comunicaciones motivaron a que el pleno del comité solicitara a nuestro país un  informe sobre la situación. México respondió el 18 de septiembre, pero de forma  inédita pidió al comité reservar la información. </p>
+<p>Hace  unos días en el pleno de la ONU se dio aviso a la asamblea del inicio de este  proceso, el gobierno federal no aceptó el inicio del procedimiento, y  descalificó el trabajo del comité. </p>
+<p>Pareciera  que, para el representante de la ONU de nuestro país, Héctor Vasconcelos, y el  secretario de Relaciones Exteriores, 132 desaparecidos, 13 mil en lo que va del  año y 72 mil cuerpos; imagínense eso materialmente sin identificar, no es una  cuestión excepcional. </p>
+<p>Así  estamos transitando en las diversas revisiones que en los comités sobre  derechos humanos están realizando para México, se descalifican las  observaciones de la CEDAW, del Comité sobre Derechos de Personas con  Discapacidad, se desatienden las del Comité Sobre los Derechos del Niño que  pide la tipificación penal del reclutamiento forzado infantil, se rompen los  canales de diálogo y nuestro país pierde liderazgo internacional y confianza. </p>
+<p>En  estos momentos México no ocupa ninguna posición de los consejos internos de la  ONU. </p>
+<p>Así  las cosas. Este gobierno ha abandonado la rica herencia diplomática de nuestro  país y, sobre todo, su compromiso firmado hace 80 años en el seno de la ONU. </p>
+<p>Díganme,  ¿cómo podemos conmemorar estos 80 años? </p>
+<p>Desde  el PRI reconocemos este esfuerzo internacional por mantener la paz y el  diálogo, que conduzca una sociedad más justa e incluyente; fuimos parte de la  creación y evolución de la ONU, desde el partido creamos instituciones  coadyuvantes de diálogo internacional, como la Copppal. </p>
+<p> Es  por ello que exigimos un diálogo permanente y claro con todos los organismos  internacionales, y reiteramos que el PRI los comités de derechos humanos  siempre recibirán la atención para conducir sus observaciones. </p>
+<p>La  Segunda Guerra Mundial trajo los mayores horrores del siglo pasado, algunos  motivados por el populismo, que hoy sigue asolando a los países. </p>
+<p>Debemos  ser fuertes y recordar que la ONU se fundó en el interés de la democracia  parlamentaria y de la solución de los conflictos. </p>
+<p>Vivimos  ya una guerra fría, y hoy los países del mundo siguen viviendo una atención con  conflictos armados y crisis de derechos humanos. </p>
+<p>Necesitamos  rescatar el origen de la ONU con los principios de diálogo y solución pacífica  de las disputas. La democracia es parte de la creación de la ONU, el  debilitamiento de instituciones, especialmente el perder autonomía, el Poder  Judicial no coadyuva a estos principios que la ONU tuvo desde su fundación. </p>
+<p>Hoy  no podemos venir aquí a hablar de la ONU sin ni siquiera nos importan sus  recomendaciones, si ni siquiera nos apegamos a ellas. </p>
+<p>Por  eso hoy en el concierto de las naciones no puede terminar ahora, cuando debe  sumar mayor armonía para alcanzar la paz. </p>
+<p>Hoy,  más que nunca, es necesaria la ONU. </p>
+<p>Muchas  gracias. </p>
+<p><strong>La  Presidenta Senadora</strong> <strong>Laura Itzel Castillo Juárez:</strong> A  continuación, tiene el uso de la palabra la Senadora Ruth González Silva, del  grupo parlamentario del Partido Verde Ecologista de México, hasta por cinco  minutos. </p>
+<p><strong>La  Senadora Ruth González Silva: </strong>Gracias, señora Presidenta.  Muchas gracias. Con su venia, Presidenta. </p>
+<p>¡Señor Peter Grohmann, Coordinador Residente de las  Naciones Unidas en México, sea usted bienvenido a este, el Senado de la  República!</p>
+<p>¡A todos los distinguidos representantes del  Sistema de Naciones Unidas en México, bienvenidas y bienvenidos a todos!</p>
+<p>Compañeras y compañeros Senadores, hace 80 años el  mundo estaba devastado por la Guerra, la humanidad había tocado fondo y  entendió que la única manera de evitar repetir sus tragedias era construir un  proyecto colectivo basado en la cooperación, la dignidad humana y el derecho  internacional. </p>
+<p>Así nació la Organización de las Naciones Unidas,  fruto de la esperanza y de la responsabilidad, una arquitectura multilateral  que recuerda que ninguna nación por poderosa que sea puede enfrentar sola los  desafíos globales. </p>
+<p>Ocho décadas después la ONU sigue siendo el foro  más legítimo y representativo para el acuerdo entre los estados. </p>
+<p>Gracias a ella, se han impulsado avances, el  reconocimiento universal de los derechos humanos, la protección de la niñez,  las mujeres, las personas indígenas, afrodescendientes y con discapacidad. </p>
+<p> La cooperación para el desarrollo, la reducción de  la pobreza, la atención de desastres y la promoción de la ciencia y de la  cultura. </p>
+<p>México forma parte de este proyecto desde sus  inicios. </p>
+<p>En la Conferencia de San Francisco de 1945 fue una  voz lúcida en defensa de la autodeterminación de los pueblos, la solución  pacífica de controversias, la igualdad jurídica de los estados, la cooperación  internacional y el respeto irrestricto de los derechos humanos. </p>
+<p>Hoy esos principios siguen iluminando nuestra  política exterior. </p>
+<p>México sabe que la fortaleza de la ONU es también  nuestra propia fortaleza. </p>
+<p>Hemos presidido comités, impulsado tratados  humanitarios y contribuido en operaciones de paz. </p>
+<p>Desde ha Agenda 2030 hasta la protección de  migrantes; desde la seguridad alimentaria hasta la lucha contra el cambio  climático. </p>
+<p>Nuestro país ha propuesto soluciones a problemas  que no conocen fronteras. </p>
+<p>Hoy la ONU enfrenta conflictos que se multiplican,  golpes a la democracia y a los derechos humanos, crisis climática y pérdida  acelerada de biodiversidad. </p>
+<p>Desigualdades profundas y tecnologías disruptivas,  la guerra regresó al centro de la escena internacional y el sistema  multilateral se ve puesto a prueba como pocas veces en su historia. </p>
+<p>A 80 años de su creación, la ONU debe renovarse sin  renunciar a su esencia. </p>
+<p>Desde el grupo parlamentario del Partido Verde  Ecologista de México, sostenemos que sea esa renovación y que debe partir de  tres convicciones muy precisas. </p>
+<p>La primera. Consiste en reconocer que la paz no  puede ser únicamente la ausencia de conflicto armado; la paz se construye con  justicia social, con acceso a la educación y la salud, con oportunidades  dignas, con igualdad de género y con respeto a la diversidad. </p>
+<p>La ONU fuerte. Una ONU fuerte debe ser una ONU que  coloque la Agenda del Desarrollo Sostenible en el centro de sus decisiones. </p>
+<p>La segunda. Es que la lucha contra el cambio  climático es la prioridad de nuestro tiempo. </p>
+<p>Cada año batimos récord de temperatura, escasez de  agua, se intensifican los desastres naturales y se pierden ecosistemas  completos. </p>
+<p>El futuro colectivo está bajo amenaza. Por eso  también urge una acción climática contundente, vinculante y basada en la  ciencia, y</p>
+<p>La tercera convicción. Es que la ONU necesita ser  más representativa, más democrática y más eficaz. </p>
+<p>Las instituciones creadas en 1945 ya no reflejan  plenamente la realidad geopolítica del siglo XXI; se requiere una reforma del  Consejo de Seguridad que equilibre mejor las voces de los países y las regiones  del mundo, incluyendo aquellas que históricamente han tenido  menor presencia en la toma de decisiones globales. </p>
+<p> La  legitimidad del sistema depende de que todas las naciones se sientan  escuchadas.</p>
+<p>Desde  esta alta tribuna, el Partido Verde refrenda su convicción de que México debe  seguir siendo un defensor activo del multilateralismo, un país que tiende  puentes no muros, que apuesta por soluciones conjuntas no por la imposición y  que cree en la ley y no en la fuerza.</p>
+<p>Celebrar  80 años de la ONU es asumir que el destino de cada nación está ligado al  destino de todos.</p>
+<p>Si  la ONU avanza avanzamos como humanidad.</p>
+<p>Si  la ONU se fortalece también lo hace nuestra esperanza de un futuro pacífico y  justo.</p>
+<p>Muchas  gracias.</p>
+<p>Es  cuanto, señora Presidenta.</p>
+<p><strong>La Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Gracias, Senadora González  Silva.</p>
+<p>A continuación, tiene el uso de la palabra, el  Senador Marko Cortés Mendoza, del grupo parlamentario del Partido Acción  Nacional, hasta por cinco minutos.</p>
+<p><strong>El  Senador Marko Cortés Mendoza: </strong>Con el permiso de la  Presidenta.</p>
+<p>Saludo  a el doctor Daniel Octavio Fajardo, representante del Presidente de la Suprema  Corte.</p>
+<p>Saludo,  por supuesto, Peter Grohmann, Coordinador Residente de las Naciones Unidas en  México;</p>
+<p>¡Bienvenidos  al Senado de la República!</p>
+<p>Como  Presidente de la Comisión de Organismos Internacionales, impulsé que en el  Senado de la República se conmemorará el 80 Aniversario de la Organización  Nacional de las Naciones Unidas.</p>
+<p>Celebro  la realización de esta sesión solemne, porque el Senado además de ser pilar del  federalismo es y debe seguir siendo, garante de la política exterior del Estado  mexicano.</p>
+<p>Hoy  nos reunimos para recordar una fecha que marcó un antes y un después en la  historia del mundo.</p>
+<p>El  24 de octubre de 1945 se fundó la ONU, posterior a la Segunda Guerra Mundial  como un anhelo de paz, de diálogo ante los conflictos y de cooperación para  enfrentar desafíos globales.</p>
+<p>Además,  marcó el inicio de la etapa moderna de la política exterior mexicana, una  política multilateralista basada en el diálogo y la cooperación.</p>
+<p>A  partir de la Carta Fundacional de las Naciones Unidas en la que México  participó desde entonces, surgió el derecho internacional moderno, el sistema  para el mantenimiento de paz, el respeto al derecho humanitario y los grandes  marcos de cooperación global.</p>
+<p>Hoy  gracias a la ONU, el mundo cuenta con instituciones que salvan vidas todos los  días, como es el Programa Mundial de Alimentos, que combate el hambre en los  rincones más desfavorecidos del planeta o el Fondo de las Naciones Unidas para  la infancia, la UNICEF, que ha transformado la salud y la educación de millones  de niñas y niños.</p>
+<p> Como  la Organización Mundial de la Salud, que lidera los esfuerzos mundiales para  mejorar la salud pública, prevenir enfermedades y responder a emergencias  sanitarias, así como el alto comisionado para los refugiados, que ha dado  esperanza a millones de personas desplazadas, sin embargo, está claro que lo  logrado hasta el momento no es suficiente, </p>
+<p>Hoy  vivimos un contexto global muy complejo donde el multilateralismo enfrenta su  mayor prueba.</p>
+<p>Lo  demuestran las tensiones geográficas como la invasión Rusia a Ucrania, los  conflictos en Gaza, Sudán, las crisis climáticas que amenazan ecosistemas y  economías, los flujos migratorios sin precedentes, las violaciones a los  derechos humanos y el desmantelamiento institucional en varios países, incluido  el nuestro. </p>
+<p>El  pacto adoptado recientemente en la cumbre del futuro de la ONU reconoce que el  sistema multilateral vigente ya no refleja plenamente las realidades actuales y  que requiere reformas profundas. </p>
+<p>Se  reconoce que debe renovarse y fortalecerse con estructuras y determinaciones  ágiles, eficaces y contundentes. </p>
+<p>El  Pacto del Futuro fue un compromiso renovado de los líderes globales por  reconstruir la cooperación internacional frente a los desafíos del siglo XXI. </p>
+<p>Hace  80 años México fue parte de los 51 países fundadores de la ONU. </p>
+<p>A  lo largo de estas décadas México ha desempeñado un papel activo irrelevante,  por lo que hubiera sido deseable honrar esa historia y ese compromiso con la  presencia de la titular del Ejecutivo Federal en la semana de alto nivel y de  debate de la Asamblea General de septiembre pasado, como lo hicieron otros  jefes de Estado. </p>
+<p>No  obstante, el pacto para el futuro puede representar una oportunidad para México  que realinee sus compromisos internacionales con acciones nacionales. </p>
+<p>Amigas  y amigos, faltan cinco años para el cumplimiento de la Agenda 2030 del  desarrollo sostenible y México francamente está rezagado, integralmente México  no ha cumplido ninguno de los 17 objetivos de la Agenda 2030.</p>
+<p>Según  la reciente edición del Informe de Desarrollo Sostenible 2025, México tiene la  posición 72 de 167 países en el cumplimiento global de estos objetivos. Dicho  valor sitúa a México por debajo de la media, según los países miembros de la  OCDE. </p>
+<p>Por  eso, y concluyo casi, señora Presidenta. </p>
+<p>Hago  un firme llamado al gobierno federal a asumir la Agenda 2030 con total  seriedad, compromiso y congruencia.</p>
+<p>Hago  un firme llamado al gobierno federal a asumir las recomendaciones de los  organismos internacionales para cumplir ante el mundo y ante los mexicanos los  compromisos que como Estado mexicano hemos suscrito. </p>
+<p>Para  el grupo parlamentario de Acción Nacional es un honor participar en esta sesión  solemne en la que se conmemora a la Organización Internacional más importante  de nuestro planeta. </p>
+<p>Es  cuanto, señora Presidenta. </p>
+<p>Senadoras  y Senadores.</p>
+<p> <strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>A  continuación, tiene el uso de la palabra la Senadora Cynthia López Castro. </p>
+<p>En  el caso del grupo parlamentario del Partido Morena ha dividido sus  participaciones y, por lo tanto, es todo un reto porque según esto va a  participar en dos y medio minutos. </p>
+<p><strong>La  Senadora Cynthia Iliana López Castro: </strong>Muchas  gracias, señora Presidenta. </p>
+<p>Antes  que nada, quiero hacerle un gran reconocimiento a Peter Grohmann por su gran  trabajo al frente de Representante de Naciones Unidas en nuestro país. </p>
+<p>Y  quiero darle un fuerte aplauso a todos los que son encargados de diversas  instituciones, de diversas organizaciones de Naciones Unidas. </p>
+<p>Es  un honor tenerlos en el Senado de la República. </p>
+<p>¡Bienvenidos  a la casa del pueblo en esta &ldquo;Conmemoración de los 80 Años de la Organización  de las Naciones Unidas&rdquo;!</p>
+<p>Esta  organización que nació hace 80 años, un 26 de junio, después de la guerra. </p>
+<p>Habían  muerto más de 60 millones de personas en distintos países cuando 50 mandatarios  se sentaron a platicar de cómo tener paz en el mundo. </p>
+<p>Hace  80 años se fundó la ONU y, desde entonces hasta ahora, sigue siendo un puente  de unidad, de paz, de trabajo. </p>
+<p>Se  fundó con ganas de poder tener paz en el mundo que era lo que hacía mucha falta  en ese momento. </p>
+<p>Y  México estuvo ahí firmándolo. </p>
+<p>Después, en el 2015 se establecieron los 17  Objetivos de Desarrollo Sostenible. </p>
+<p>Y claro que México ha cumplido y ha cumplido, hoy  con la primera mujer Presidenta de México cumple el objetivo que habla de  equidad de género. </p>
+<p>Sí, porque hoy México no nada más tiene una del 11  por ciento de las mandatarias a nivel mundial que tienen una presidenta o una  primera ministra, México tiene paridad en ambas Cámaras. </p>
+<p>Y hoy México es un ejemplo en Naciones Unidas de  todo lo que hemos hecho a favor de las mujeres. </p>
+<p>México también ha cumplido otros objetivos de cambio  climático.</p>
+<p>Les quiero decir que, junto con mi compañera Andrea  Chávez, impulsamos una reforma para que afuera de las escuelas hubiera  forzosamente 30 kilómetros por hora.</p>
+<p>Así que sí cumplimos otro de los Objetivos de  Desarrollo Sostenible, que esta ley fue inspirada en la reunión que hubo de  movilidad de Naciones Unidas. </p>
+<p>Faltan cinco años para la revisión, que será en  2030, y estoy segura de que con nuestra Presidenta Claudia Sheinbaum México  empezará a palomear estos Objetivos de Desarrollo Sostenible. </p>
+<p> Quiero reconocer al secretario general de las  Naciones Unidas y, sin duda, el papel que México ha hecho en esta gran  organización que nos ha dado mucho. Y este es un ejemplo hoy en el Senado de la  República, Peter, que el Senado está vinculado con las Naciones Unidas para  toda la investigación que se hace y transformarlo en ley. </p>
+<p>Muchas gracias. </p>
+<p>¡Feliz Aniversario de Naciones Unidas!</p>
+<p><strong>La Presidenta Senadora Laura  Itzel Castillo Juárez: </strong>Honorable  Asamblea: </p>
+<p>Les informo que tenemos la visita de un grupo de  estudiantes del Diplomado Mujeres al Frente de la Política del Instituto  Estatal de las Mujeres en Nuevo León, quienes acuden por invitación de la  Senadora Amalia Dolores García Medina para conocer el desarrollo de los  trabajos legislativos en esta casa del federalismo. ¡Sean ustedes todas  bienvenidas!</p>
+<p>A continuación, tiene el uso de la palabra el  Senador Alejandro Murat Hinojosa, del grupo parlamentario del Partido Morena,  hasta por dos minutos y medio. </p>
+<p><strong>El Senador Alejandro Murat  Hinojosa: </strong>Amigas y amigos: </p>
+<p>Nelson Mandela decía: <em>&ldquo;que la paz no es la  ausencia de violencia, es la presencia de principios como la justicia, el  respeto a los derechos humanos, el estado de derecho y, lo más importante, la  colaboración entre los pueblos&rdquo; </em></p>
+<p>Este acto solemne que hoy realiza el Senado de la  República sólo reafirma que la paz en el mundo no es una prerrogativa, que se  debe de construir todos los días, así como nació en 1945 las Naciones Unidas,  después de dos grandes guerras. El esfuerzo colectivo más importante de la  humanidad para preservar la paz entre los pueblos para las presentes y futuras  generaciones. </p>
+<p>Tener este acto solemne, amigas y amigos, es  refrentar el compromiso que realizó las Naciones Unidas en 1948 con la  Declaración Universal del Respeto a los Derechos Humanos. Es reiterar nuestra  convicción de defender también la igualdad de género, como hoy lo hace la  Presidenta Claudia Sheinbaum, con la agenda más ambiciosa y referente de  igualdad a nivel internacional; defender los derechos de las niñas y los niños;  defender también los derechos de los pueblos originarios. </p>
+<p>Estar hoy aquí en este acto solemne es entender  también que el acompañamiento que realizó las Naciones Unidas para la  descolonización de África, Asia refrendan el compromiso  que tiene México en su Constitución de la no intervención y libre  autodeterminación de los pueblos, como la única vía pacífica para realizar los  cambios a nivel internacional. Estar hoy aquí es entender que el instrumento  más importante que se tiene en la política y en la política internacional, como  sucedió en la &ldquo;guerra fría&rdquo;, es el diálogo. Y cuando se agota el diálogo, más  diálogo. </p>
+<p>Así  también las Naciones Unidas en 1972 incorporó los nuevos cambios que tiene el  mundo, como son los cambios en el medio ambiente. Y como lo ha retomado la  Presidenta Claudia Sheinbaum en su política pública, para retener en México el  50 por ciento de energías renovables al final de su administración. </p>
+<p>Amigas  y amigos, la Agenda 2030 ha sido el proyecto más ambicioso que ha enarbolado  las Naciones Unidas en la época actual, pero también así tenemos que reconocer  que hoy hay crisis en el multilateralismo, la crisis de legitimidad cuando  vemos que las instituciones que se construyeron hace 80 años deben de tener  ajustes en la actualidad, porque ha cambiado el mundo bipolar y unipolar a uno  multipolar. </p>
+<p>Y  en ese sentido, en la legitimidad entender que el Consejo de Seguridad debe de  incorporar procesos más democráticos y al Sur global dentro de sus decisiones  para tener mayor alcance para poder prevenir guerras. </p>
+<p> La  crisis también que se tiene en eficacia, ante eventos como la pandemia y los  desastres naturales y, por supuesto, la movilidad social en donde hoy hay más  de 120 millones de ciudadanos del mundo desplazados y en donde se ha demostrado  que hemos tenido la incapacidad, en las Naciones Unidas, para dar respuesta. </p>
+<p>La  crisis también de la desigualdad, entendiendo que hoy hay un mundo más desigual  y que los organismos internacionales no han tenido la capacidad para construir  la igualdad y la prosperidad compartida. </p>
+<p>Hoy,  aquí refrendamos nuestra convicción ante el multilateralismo, pero también para  construir esquemas que permitan dar respuesta. Aquí también te reconocemos,  Peter, por tu labor como coordinar y Presidente de la ONU en México.</p>
+<p>Por  supuesto, a través de fortalecer la presencia de la ONU y, generar alianzas con  comunidades, municipios y empresas. </p>
+<p>Por  supuesto a las agencias y a los fondos mi más amplio reconocimiento y, en  especial reiterar que desde este Senado de la República estamos listos, como  alguna vez lo dijo Benito Juárez, y está aquí en letras de oro en el Senado: </p>
+<p><em>&ldquo;Entre  los individuos como entre las naciones, el respeto al derecho ajeno es la paz&rdquo;. </em></p>
+<p>Es  cuanto. </p>
+<p>Muchas  gracias, amigas y amigos. </p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez:</strong> Muchas gracias, Senador Murat Hinojosa. </p>
+<p>Quiero  darle la bienvenida, desde luego, a los representantes de diversas agencias de  la Organización de las Naciones Unidas que se encuentran aquí presentes, como  el representante de la ACNUR, el representante de UNICEF, el representante de  la FAO, el Alto Comisionado por los Derechos Humanos, la representación de  ONU-Hábitat y la Oficina de la ONU Contra Drogas y Delitos. </p>
+<p>¡Bienvenidos  sean todos y todas ustedes que se encuentran aquí presentes en este evento  solemne de conmemoración de los 80 años de la Organización de las Naciones  Unidas!</p>
+<p>Con  la última intervención, con la del Senador Alejandro Murat, concluimos esta  sesión solemne en la que, como hemos dicho, conmemoramos el Octagésimo  Aniversario de la Organización de las Naciones Unidas. </p>
+<p>El  Senado de la República reafirma su reconocimiento a todos los aportes que la  ONU ha dado a la humanidad a lo largo de estas ocho décadas en favor de la paz,  los derechos humanos y el desarrollo sostenible. Hoy vivimos momentos de  grandes desafíos y de profundas transformaciones. </p>
+<p>Por  ello, este aniversario no puede ser exclusivamente una celebración del pasado,  sino también, desde luego, un llamado a la acción en este presente y futuro.  Hacemos votos para que los estados miembros asuman con responsabilidad la  urgencia de los retos que enfrentamos, la desigualdad, el cambio climático, las  guerras, las migraciones forzadas y las amenazas constantes a los derechos  humanos. </p>
+<p>México  seguirá comprometido con los principios de la Carta de las Naciones Unidas,  reafirmando que la paz duradera solo puede sostenerse con base en la justicia  social, el respeto al derecho internacional y la defensa de la dignidad humana. </p>
+<p> Que este aniversario renueve nuestro  compromiso colectivo de construir un futuro con esperanza para las generaciones  venideras. </p>
+<p>Muchas felicidades, señor Peter Grohmann, le  deseamos mucho éxito. </p>
+<p>Gracias, compañeros y compañeras. </p>
+<p>A continuación, les solicito ponernos de pie  a fin de que podamos entonar nuestro Himno Nacional. </p>
+<p align="center">(Todos de pie entonan  el Himno Nacional)</p>
+<p>Favor de tomar  asiento. </p>
+<p>A nombre del Senado  de la República agradezco a las distinguidas invitadas e invitados que nos han  acompañado el día de hoy. </p>
+<p>Asimismo, solicito a  las personas Senadoras, integrantes de la comisión de cortesía, puedan  acompañar al representante de la ONU, al señor Peter Grohmann, cuando  decida retirarse de esta sala.</p>
+<p align="center">(La comisión cumple)</p>
+<p>Muchas gracias, compañeros. </p>
+<p>Se levanta la sesión solemne. </p>
+<p align="center">(Se levantó la sesión  a las 13:24 horas)</p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a123865'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

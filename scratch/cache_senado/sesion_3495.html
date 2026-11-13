@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>TERCER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO III</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 9</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Ana Lilia Rivera Rivera</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 21 de Febrero de 2024</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/3/SPO/PDF-WEB/SPO_No9_21-FEBRERO-2024_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='114498'></a><p align="center"><strong>PRESIDE LA SENADORA</strong><br>
+  <strong>ANA LILIA RIVERA RIVERA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera: </strong>(12:07  horas) Con el quórum de la sesión ordinaria, y con fundamento en lo dispuesto  por el artículo 56 fracción III del Reglamento del Senado y en el acuerdo de la  Mesa Directiva aprobada el pasado 13 de febrero, iniciamos la sesión solemne  para recibir la visita del señor Enaam Mayara, Presidente de la Cámara de  Consejeros del Reino de Marruecos. </p>
+<p align="justify">Por lo que solicito a las  Senadoras y los Senadores Marcela Mora, Bertha Alicia Caraveo Camarena, Ruth  Alejandra López Hernández, Gabriela Benavides Cobos, Antonio García Conejo,  Aníbal Ostoa Ortega, Indira Paola López Carreto y Daniel Gutiérrez Castorena,  acudan a recibir a nuestro invitado, el señor Enaam Mayara y a su comitiva </p>
+<p align="center">(La  comisión cumple)</p>
+<p align="justify">En tanto, se declara un  receso. </p>
+<p align="center">(RECESO)</p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Se reanuda la sesión  solemne. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a114498'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='114499'></a><p align="justify"><strong>VISITA DEL PRESIDENTE  DE LA CÁMARA DE CONSEJEROS DEL REINO DE MARRUECOS, SR. ENAAM MAYARA</strong></p>
+<p align="justify">La Cámara de Senadores del Honorable Congreso de la  Unión de los Estados Unidos Mexicanos, expresa la más cordial bienvenida al  señor Enaam Mayara, Presidente de la Cámara de Consejeros del Reino de  Marruecos. Es un honor recibir su visita. </p>
+<p align="justify">Asimismo, damos la bienvenida a los señores, espero  pronunciarlo bien, mis queridos amigos, estuve estudiando. </p>
+<p align="justify">Abdelfattah Lebbar, Embajador extraordinario y  Plenipotenciario del Reino de Marruecos en México. </p>
+<p align="justify"> Recibimos con mucho gusto a  nuestro compañero Abderrahmone Ouafa, Representante de la Cámara de Consejeros  ante el Parlamento Latinoamericano. </p>
+<p align="justify">Abdelkader Salama,  Representante de la Cámara de Consejeros ante el Parlamento Andino. </p>
+<p align="justify">Ahmed Lakhrif, Representante  Permanente de la Cámara de Consejeros ante el Parlamento Centroamericano. </p>
+<p align="justify">Y recibimos también al señor  Dakaria Lagnini, Jefe de Gabinete del Presidente. </p>
+<p align="justify">Asimismo, me permito  presentar a mis compañeras y compañeros, Senadores integrantes de la Mesa  Directiva presentes en esta sesión solmene. </p>
+<p align="justify">Al Senador Sergio Pérez  Flores, Vicepresidente. </p>
+<p align="justify">A la Senador Sylvana  Beltrones Sánchez, Vicepresidenta. </p>
+<p align="justify">A la Senadora Verónica  Camino Farjat. </p>
+<p align="justify">Al Senador Navor Alberto  Rojas Mancera. </p>
+<p align="justify">A la Senadora María  Guadalupe Saldaña Cisneros. </p>
+<p align="justify">A la Senadora Marcela Mora. </p>
+<p align="justify">Y también a la compañera y  amiga Senadora Olga Sánchez Cordero, Presidenta de la Comisión de Justicia. </p>
+<p align="justify">Señor Enaam Mayara, para el  Senado mexicano es un honor contar con su presencia y con la comitiva que lo  acompaña. </p>
+<p align="justify">Señor Presidente de la  Cámara de Consejeros del Reino de Marruecos, la relación entre nuestros países  data de hace más de 60 años y está regulada por 17 instrumentos bilaterales que  dan cuenta de la importancia de la actividad entre ambas naciones. </p>
+<p align="justify">Además, hemos encontrado  coincidencias en materia medioambiental, migratoria y promoción de los derechos  humanos. </p>
+<p align="justify">A nivel parlamentario  también hemos sido testigos del enorme interés que han mostrado con su  participación en foros regionales como el de presidentes y presidentas de  poderes legislativos de Centroamérica y la Cuenca del Caribe. </p>
+<p align="justify">En este contexto, celebramos  su visita y escucharemos su mensaje con sumo interés. </p>
+<p align="justify">Señor Enaam Mayara, tiene  usted el uso de la palabra. </p>
+<p align="justify"><strong>El Presidente de la Cámara de Consejeros del Reino de Marruecos, Enaam  Mayara: </strong>(Interpretación)  Excelentísima Presidenta del Senado, señora Ana Lilia Rivera.</p>
+<p align="justify">Honorables colegas parlamentarios; </p>
+<p align="justify">Señoras y señores, tengo el honor de expresarles en mi nombre mi gran  placer y orgullo de estar presente en este maravilloso país y en el prestigioso  espacio del Senado mexicano, uno de los símbolos de la democracia milenaria de  su país amigo.</p>
+<p align="justify"> También me complace que me hayan honrado con pronunciar este discurso  frente a su estimado Senado, honor que permanecerá firmemente en mi memoria y,  sin duda, en memoria de nuestras instituciones legislativas.</p>
+<p align="justify">Señora Presidenta, en efecto, además de valores en lazos históricos  compartimos también muchos retos y desafíos comunes en lo que es difícil  centrarse en este período de tiempo con el que me han honrado, así que  permítanme que me limite a subrayar algunos mensajes que considero esenciales.</p>
+<p align="justify">En primer lugar, queremos que sepan que desde Marruecos miramos con gran  admiración y aprecio los pasos dados por el amistoso pueblo mexicano para  consolidar su experiencia democrática y construir la paz en un entorno regional  e internacional muy complejo.</p>
+<p align="justify">En esta ocasión queremos felicitarles por la posición del liderazgo,  liderazgo que México ha llegado a ocupar en muchos campos y ámbitos. Y si  tuviera que elegir de entre todos sus campos, aquel que ustedes son,  verdaderamente, un modelo a seguir y un ejemplo digno de apreciar alabanza, es  lo que vemos ante nuestros ojos, se manifiesta magnífica escena hecha posible  por la paridad en su mejor y noble manifestación.</p>
+<p align="justify">No cabe duda de que todos aquellos que se sacrificaron por un México  libre, por un México desarrollado… (Fallas de origen) muy contentos y  orgullosos de conmemorar el 200 Aniversario de la Constitución; 150 de su restablecimiento  y que su Senado sea presidido por una mujer de la talla de la señora Ana Lilia  Rivera.</p>
+<p align="justify">Es difícil felicitar a un pueblo por los resultados de las elecciones de  su país con meses de antelación, pero hoy podemos decir enhorabuena sean cuales  sean los resultados de las próximas elecciones presidenciales. El pueblo  mexicano elegirá a una mujer en lo más alto de la pirámide del poder.</p>
+<p align="justify">Señora Presidenta, mis colegas parlamentarios en el segundo mensaje  quisiera destacar, es que Marruecos es un país que comparte con ustedes los  mismos valores de ambiciones. Es un país digno de confianza en la mano de la  amistad, de la cooperación, está atendida para la Cooperación Sur-Sur, alcance  todo su potencial en un sistema global que sufre muchos desequilibrios e impone  muchos retos a nuestros países.</p>
+<p align="justify">Al referirme de estos retos y desafíos me gustaría aprovechar esta  oportunidad para expresar mi profundo orgullo en la Cámara de Consejeros por  los resultados del Foro del Diálogo Parlamentario entre África, el Mundo Árabe  y de la América Latina y El Caribe.</p>
+<p align="justify">El foro que recibió el patrocinio de su Majestad, el rey Mohamed VI, fue  organizado por la Cámara de Consejeros los días 15 y 16 de este mes, es el  único foro parlamentario que puede unir y reunir a las instituciones  legislativas de tres grupos geopolíticos de gran prestigio, importancia y  estatus en el sistema de países que forman el Eje  Sur. </p>
+<p align="justify">Estamos muy orgullosos del  valioso discurso pronunciado por la Excelentísima Presidenta de su Senado  amigo, en este foro, junto con la participación de la Senadora Marcela Mora,  que felicitamos hoy por su elección, gracias por este honor y compromiso. </p>
+<p align="justify">Como saben, este foro se  caracterizó por las valiosas intervenciones de más de 40 países en presencia de  más de 30 presidentes y presidentas. </p>
+<p align="justify">Es un orgullo que la  declaración final de este foro incluya elogios unánimes y acoja con  satisfacción la iniciativa de su majestad el rey, destinada a garantizar el  acceso de los países del… (Fallas de origen) al océano Atlántico. </p>
+<p align="justify"> Y destacamos que esta  iniciativa haría de la fachada atlántica de Marruecos un punto de partido para  reforzar la conectividad logística entre nuestros países para facilitar el  intercambio de mercancías entre los países del sur y acercar las cadenas de producción  creadoras de riqueza a las fuentes de materias primas, especialmente en el  espacio geoeconómico afro-árabe-americano, donde se centran los recursos y las  materias primas mundiales. </p>
+<p align="justify">Señora Presidenta, recordar  a su excelencia los más importantes puntos de este foro nace de nuestra  convicción de la gran importancia y posición de nuestro Senado en el liderazgo  del Senado de los foros parlamentarios regionales, así como interés en su  aplicación en la realización de los objetivos de esta iniciativa conjunta en  los grandes retos contenidos en la declaración final que como consejos  legislativos tenemos la responsabilidad de hacer realidad tangible para los  pueblos del sur. </p>
+<p align="justify">Señora Presidenta; </p>
+<p align="justify">Honorables colegas  parlamentarios: </p>
+<p align="justify">El tercer y último punto o  idea principal se refiere a las relaciones bilaterales entre ambos países. </p>
+<p align="justify">Este año se cumplen 62 años  del establecimiento de relaciones diplomáticas entre ambos países, así como el  vigésimo aniversario de la histórica visita de su majestad el rey Mohamed VI, a  su país hermoso y amigo, visita que abrió perspectivas prometedoras en el curso  de las relaciones entre ambos países, haciendo de Marruecos que sea hoy el  primer socio comercial en el mundo árabe y el segundo en África en su país. </p>
+<p align="justify">No cabe duda de que, como  parlamentarios, tenemos la responsabilidad de promover estas relaciones a  ámbitos más amplios, extensos, a través de la diplomacia parlamentaria. </p>
+<p align="justify">En la Cámara de Consejeros  estamos dispuestos a trabajar juntos para establecer un foro parlamentario  económico marroquí-mexicano como un espacio para intercambiar experiencias en  diversos ámbitos, desarrollar iniciativas concretas y cooperación que  capitalicen las oportunidades comunes, especialmente el estatus regional de  Marruecos y su ubicación geográfica, así como el liderazgo, la ubicación  geográfica de México y su peso en su entorno regional. </p>
+<p align="justify">Compañeros, compañeras,  parlamentarios, para alcanzar este ambicioso objetivo estamos llamados como  instituciones legislativas y parlamentarios a estar en primera línea para  superar todos los obstáculos de cualquier mal entendido político histórico que  pueda impedir el avance de las relaciones entre nuestros dos países a los  mejores niveles y trabajar juntos para dar a las relaciones bilaterales una nueva  dinámica que equivalga a una asociación modelo para la cooperación Sur-Sur. </p>
+<p align="justify">Y no quisiera dejar pasar la  oportunidad de rendir un sincero homenaje a figuras parlamentarias de gran  experiencia política, de peso intelectual y académico, por el espíritu de  amistad y sinceridad que caracterizó su visita el año pasado a nuestra Cámara y  a través del Reino de Marruecos, la ex presidenta de su honorable consejo, la  señora Olga Sánchez Cordero.</p>
+<p align="justify">Y la señora Cora Cecilia  Pinedo de la Comisión de Relaciones Exteriores Asia-Pacífico -África.</p>
+<p align="justify">Y el honorable Héctor  Vasconcelos, presidente de la Comisión de Relaciones Exteriores del Senado de  México. </p>
+<p align="justify"> ¡Viva la amistad!</p>
+<p align="justify">¡Viva México!</p>
+<p align="justify">¡Viva Marruecos!</p>
+<p align="justify"><strong>La Presidenta Senadora Ana  Lilia Rivera Rivera: </strong>Muchas gracias, señor  Presidente. </p>
+<p align="justify">Muy buenas tardes.</p>
+<p align="justify">Honorable Parlamento.</p>
+<p align="justify">Honorable Senado de México: </p>
+<p align="justify">Con el fin de dar  cumplimiento al acuerdo de la Mesa Directiva para normar la sesión solemne que  hoy nos convoca, extiendo la más cordial bienvenida al muy Honorable señor  Enaam Mayara, Presidente de la Cámara de Consejeros del Reino de Marruecos. </p>
+<p align="justify">Es un honor contar con su  presencia esta tarde en el Senado de la República.</p>
+<p align="justify">Señor Mayara, desde América  Latina y El Caribe hemos observado con gran interés la labor de acercamiento y  la importancia que su Majestad el rey Mohamed VI, del Reino de Marruecos, ha  puesto en nuestra región para fortalecer los vínculos políticos, económicos,  comerciales, educativos y culturales. </p>
+<p align="justify">Sabemos de la serie de  reformas que ha llevado a cabo en beneficio de diversos grupos sociales en su  país, entre los que destacan las mujeres. </p>
+<p align="justify">Desde la esfera  parlamentaria podemos mencionar el auge en los vínculos que hemos estado  promoviendo para intensificar el diálogo entre nuestras regiones y ampliar  nuestro conocimiento acerca de los contextos que nos involucran. </p>
+<p align="justify">Ejemplo de ello es la  participación del Parlamento de Marruecos en foros regionales tan relevantes,  como el Parlamento Latinoamericano y Caribeño, el Foro de Presidentes de  Poderes Legislativos, el Parlamento Andino y el Parlamento Centroamericano. </p>
+<p align="justify">Al interior de estos  espacios se han podido generar diversos convenios de cooperación en beneficio  del desarrollo de las poblaciones de ambos continentes, debido a que abordan  temas tan sensibles en la actualidad como la migración, el comercio electrónico  y la sustentabilidad, entre otros, que nos conciernen a todos.</p>
+<p align="justify">Lo anterior, deja de  manifiesto la manera en que la diplomacia parlamentaria puede contribuir de  forma sustantiva a la consolidación de bases estratégica de entendimiento y  asociaciones entre países, favoreciendo así la Cooperación Sur-Sur, como una  vía alterna para el desarrollo de las naciones que se encuentran en  circunstancias similares en cuanto al potencial de sus economías y de apertura  a nuevos socios extranjeros, pero preocupadas por encontrar soluciones a los  problemas comunes.</p>
+<p align="justify">Reconocemos en el Reino de  Marruecos su ubicación geográfica privilegiada para abonar en el  robustecimiento de la Cooperación Sur-Sur y su liderazgo en los asuntos que  involucran a África y al mundo árabe, por su integración a diversas alianzas  para encontrar soluciones a los múltiples y complejos desafíos actuales.</p>
+<p align="justify">Por lo que se refiere a  nuestra relación bilateral, este año estaremos cumpliendo 62 años de su  establecimiento formal y podemos decir con orgullo que siempre nos hemos guiado  por los preceptos de la amistad, la solidaridad y el respeto, principios que  nos han encaminado a obtener resultados muy positivos, para abonar al diálogo político  y la cooperación. </p>
+<p align="justify"> Nuestros gobiernos comparten  la visión de la relevancia de fomentar sociedades democráticas, el respeto a  las leyes y, mantenerse a la vanguardia en las dinámicas en las que se  encuentran inmersas las personas. </p>
+<p align="justify">Una prioridad central ha  sido brindar dignidad y oportunidades a los grupos poblacionales que  históricamente habían sido marginados. </p>
+<p align="justify">México y Marruecos comparten  su preocupación ante los desafíos globales, frente a ello hemos ejercido una  activa participación en la búsqueda de soluciones a fenómenos tales, como, el  desplazamiento de personas, a las crisis climáticas, el cumplimiento de los  objetivos de la Agenda 2030 para el desarrollo sostenible y hemos alzado la  voz, de manera contundente, para detener la proliferación de las armas  nucleares. </p>
+<p align="justify">Señor Mayara, en este  recinto se analiza la política exterior que el gobierno mexicano ejerce y  vigilamos que su ejercicio siempre esté apegado a los principios  constitucionales, como son la autodeterminación de los pueblos, la no  intervención, la solución pacífica de controversias, la proscripción de la  amenaza o el uso de la fuerza en las relaciones internacionales; la igualdad  jurídica de los estados, la cooperación internacional para el desarrollo, el  respeto, la protección y promoción de derechos humanos y la lucha por la paz y  la seguridad internacionales. </p>
+<p align="justify">Al respecto, el Estado  mexicano está firmemente convencido que solamente actuando acorde a los  principios mencionados se pueden alcanzar soluciones justas, pacíficas y duraderas  para los múltiples conflictos que hoy nos encontramos enfrentando todos como  humanidad. </p>
+<p align="justify">Como presidenta del Senado  mexicano, estoy convencida que nuestras relaciones bilaterales se encuentran en  un momento óptimo, pero debemos reconocer que aún existen múltiples espacios  para seguir construyendo proyectos que beneficien no solamente a nuestros  países, sino también a las regiones a las que pertenecemos. </p>
+<p align="justify">Así quedó constatado en la  reciente realización del Congreso Parlamentario de la Cooperación Sur-Sur en la  que su país demostró los mejores esfuerzos como anfitrión, y México tuvo la  oportunidad de participar en sus trabajos con una delegación senatorial. </p>
+<p align="justify">Contar con su visita y la  delegación de alto nivel que hoy lo acompaña, representa para nosotros un  contundente, una contundente muestra de intenciones sinceras de profundizar el  acercamiento del Reino de Marruecos y México. </p>
+<p align="justify">Sean nuevamente bienvenidos  a esta Casa del Pacto Federal, deseamos que su visita tenga el mayor éxito y  que sea ejemplo para el mundo de cómo dos culturas tan distintas, milenarias y  a la vez tan iguales, se encuentran en sus diferencias con fundamento en el  reconocimiento de los valores que nos hermanan y nos fortalecen para el futuro  más próspero. Sí mi querido Presidente. </p>
+<p align="justify">¡Que viva Marruecos!</p>
+<p align="justify">¡Que viva México!</p>
+<p align="justify">¡Y que viva la amistad de  nuestros pueblos!</p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify">A nombre del Senado de la  República agradezco su visita y la de su comitiva a esta sesión solemne, su  asistencia es muestra de la importancia de mantener contactos entre nuestras  instituciones parlamentarias. </p>
+<p align="justify"> Agradezco a las distintas invitadas e invitados que  hoy han estado con nosotros e invito, al señor Enaam Mayara nos acompañe a la  toma de la fotografía oficial, y si son tan amables quienes hoy lo acompañan  puedan subir hasta este espacio para que podamos tomar la fotografía.</p>
+<p align="justify">Asimismo, a las Senadoras y a los Senadores  integrantes de la comisión de cortesía. </p>
+<p align="center">(Foto en el presídium)</p>
+<p align="justify">Solicito a mis compañeras y compañeros Senadores  permanezcamos en el salón de sesiones para continuar con la sesión ordinaria.</p>
+<p align="justify">Se levanta la sesión solemne. </p>
+<p align="center">(Se  levantó la sesión solemne a las 12:41 horas)</p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a114499'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 33</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Alejandro Armenta Mier</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 24 de Noviembre de 2022</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/2/PPO/PDF-WEB/PPO_No33_24-NOVIEMBRE-2022_SS_Act.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='107313'></a><p align="center"><strong>PRESIDE EL SENADOR</strong><br>
+  <strong>ALEJANDRO ARMENTA MIER</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> (12:36 horas) Con el mismo quórum de nuestra sesión ordinaria  de hoy, y con fundamento en lo dispuesto por el artículo 56, fracción III del Reglamento  del Senado, y en el artículo de la Mesa Directiva aprobado el pasado 15 de noviembre,  iniciamos la sesión solemne para recibir la visita del Presidente de la República  de Chile, Gabriel Boric Font.</p>
+<p align="justify">Solicito a la Secretaría dé lectura de las comisiones de  ceremonial que se han designado.</p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con gusto, señor Presidente.Doy lectura.</p>
+<p align="justify">Comisión de cortesía, Senadores Héctor Vasconcelos, Gina  Andrea Cruz Blackledge, Rogelio Israel Zamora Guzmán, José Narro Céspedes,  Sasil de León Villard, Miguel Ángel Mancera Espinosa, Elí César Cervantes Rojas,  Nancy Sánchez Arredondo, José Ramón Enríquez Herrera y Navor Rojas Mancera.</p>
+<p align="justify">Los Senadores que acabo de mencionar son los que comprenden  la comisión de cortesía para recibir al Presidente de Chile.</p>
+<p align="justify">La comisión de cortesía para la Embajadora Carmen Moreno  Toscano, son: Senadores Freyda Marybel Villegas Canché, Gina Andrea Cruz Blackledge,  Gabriela Benavides Cobos, Gricelda Valencia de la Mora, Antonio García Conejo y  Eunice Renata Romo Molina.</p>
+<p align="justify">La comisión de cortesía, para la Diputada Brenda Espinoza  López, en representación de la Cámara de Diputados, son: Senadores Cecilia Sánchez  García, Gina Andrea Cruz Blackledge, Graciela Gaitán Díaz, Katya Elizabet Ávila  Vázquez, Juan Manuel Fócil Pérez y Adolfo Gómez Hernández.</p>
+<p align="justify">Es cuanto, señor Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Solicito a las Senadoras y Senadores cumplir con su encargo.</p>
+<p align="justify">En tanto se declara un receso.</p>
+<p align="center">(Las comisiones cumplen)</p>
+<p align="center">(RECESO)</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Se reanuda la sesión solemne.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a107313'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='107314'></a><p align="justify"><strong>VISITA  DEL PRESIDENTE DE LA REPÚBLICA DE CHILE, GABRIEL BORIC FONT</strong></p>
+<p align="justify">La Cámara de Senadores del Honorable Congreso de la Unión  de los Estados Unidos Mexicanos expresa la más cordial bienvenida al Presidente  de la República de Chile, Gabriel Boric Font.</p>
+<p align="justify">¡Bienvenido, señor Presidente!</p>
+<p align="justify">¡Bienvenido a esta sesión solemne, es un honor recibir  su visita!</p>
+<p align="justify">Asimismo, damos la bienvenida a la Subsecretaria de  Relaciones Exteriores, licenciada Carmen Moreno Toscano.</p>
+<p align="justify">A la Diputada Brenda Espinoza López, Secretaria de la Mesa  Directiva de la Cámara de Diputados, que viene con la función de Presidenta de la  Cámara de Diputados.</p>
+<p align="justify">Doy también la bienvenida a quienes integran la comitiva  que nos visita.</p>
+<p align="justify">A la Embajadora Manahi Pakarati.</p>
+<p align="justify">A la Diputada Marcela Riquelme.</p>
+<p align="justify">Al Diputado Henry Leal.</p>
+<p align="justify">Al Senador Sebastián Keitel.</p>
+<p align="justify">Al Senador Francisco Huenchumilla</p>
+<p align="justify">A la embajadora Alicia Bárcena.</p>
+<p align="justify">A la señora Irina Karamanos.</p>
+<p align="justify">A la Ministra Antonia Urrejola.</p>
+<p align="justify">Al Senador Carmen Gloria Aravena</p>
+<p align="justify">Al Senador José Miguel Insulza</p>
+<p align="justify">A la Diputada Karol Cariola.</p>
+<p align="justify">A la Diputada Joanna Pérez.</p>
+<p align="justify">A su excelentísima señora Beatriz Sánchez.</p>
+<p align="justify">Y a la Embajadora Carola Muñoz.</p>
+<p align="justify">Desde luego, a la doctora Laura Elena Carrillo Cubillos.</p>
+<p align="justify">Me permito presentar a mis compañeras y compañeros Senadores  de la Mesa Directiva.</p>
+<p align="justify">Nos acompaña, señor Presidente, la Senadora Ana Lilia Rivera  Rivera, Vicepresidenta.</p>
+<p align="justify">La Senadora Alejandra Noemí Reynoso Sánchez, Vicepresidenta.</p>
+<p align="justify">Al Senador Eruviel Ávila Villegas, Vicepresidente.</p>
+<p align="justify">Así como a las Secretarias:</p>
+<p align="justify">Senadora Verónica Noemí Camino Farjat.</p>
+<p align="justify">Y a la Senadora Verónica Delgadillo García, que integran  esta Mesa Directiva.</p>
+<p align="justify">Señor Presidente, bienvenido al Palacio de la República  Mexicana, a la sede del federalismo de México. </p>
+<p align="justify">Tenemos  el honor de recibir a un político joven que proviene de las luchas sociales, de  las causas estudiantiles de Chile, cuyo liderazgo lo llevó a convertirse en el 2014  en el único candidato parlamentario independiente en ser electo. </p>
+<p align="justify">Su brillante  trayectoria es una muestra de que la efervescencia natural de los jóvenes, en todo  el mundo, se pueden materializar, pueden lograrse grandes objetivos a favor de las  sociedades en las que se desenvuelven. </p>
+<p align="justify">Su ejemplo,  sin duda, refleja los ideales de una nueva generación de políticos que en el ejercicio  de su derecho buscan la justicia y la inclusión. Además, es una muestra de que la  sociedad busca de manera cada vez más frecuente nuevas alternativas dejando de lado  las ideas recicladas que no han logrado transformaciones sustantivas. </p>
+<p align="justify">Es por ello,  que le damos la bienvenida, su excelencia, señor Gabriel Boric Font, Presidente  de la República de Chile. </p>
+<p align="justify">Las relaciones  de Chile con México tienen antecedentes históricos enormes, nuestra historia común,  hemos contado con grandes personajes entrañables que han aportado a nuestras naciones  cultura como la maestra Gabriela Mistral, quien contribuyó de manera fundamental  a combatir el analfabetismo en Latinoamérica. </p>
+<p align="justify">Sin duda,  Amado Alonso y Alonso Reyes han contribuido para el proceso de intercambio cultural. </p>
+<p align="justify">Más tarde,  en 1922, se recibió una invitación por parte de José Vasconcelos, Secretario de  Educación, con el propósito de colaborar en los planes de reforma educativa, la  parte educativa y cultural siempre ha hermanado a Chile y a México, hoy en día es  considerado un referente de la poesía universal destacando su Premio Nobel de Literatura  en 1945. </p>
+<p align="justify">Fue por  ello, que en este año se conmemoró en el Pleno del Senado el centenario de la llegada  a México de esta ilustre maestra y poetista.</p>
+<p align="justify">Desde la  Cámara alta, Presidente, hemos observado, con particular atención, los recientes  procesos sociales suscitados en Chile y que han derivado de una agenda progresista  que incluye un esfuerzo verdadero por materializar la equidad de género y ejercer  una justicia social hacia los grupos históricamente marginados. </p>
+<p align="justify">Es ejemplar  la propuesta de su gobierno, sustentada en principios feministas y de combate al  cambio climático. </p>
+<p align="justify">Sumándose  a ella iniciativas innovadoras para hacer frente a los nuevos retos que la tecnología  digital nos presenta, tales como la desinformación y las amenazas virtuales, compartimos  su visión.</p>
+<p align="justify">Es inaplazable  garantizar derechos sociales a los trabajadores.</p>
+<p align="justify">Es fundamental  la inclusión de todas las personas, sin importar sus orígenes, en atención a las  demandas históricas de los pueblos originarios, los dueños de la tierra.</p>
+<p align="justify">En este  sentido, el Senado de México hace esfuerzos colectivos para reconocer a los pueblos  originarios. </p>
+<p align="justify">Presidente  Boric, su presencia en el Senado, en este recinto, representa para nosotros un momento  fundamental en las relaciones bilaterales entre México y Chile para profundizar  en los acuerdos comerciales y de integración, como lo es la Alianza del Pacífico. </p>
+<p align="justify">Con más  de 10 años de existencia, esta alianza ubica a las principales economías del mundo,  ubica nuestra relación directa. </p>
+<p align="justify">Reconocemos  en Chile al primer país de Latinoamérica a nivel de economía. Algo están haciendo  fundamental en Chile, que tenemos también nosotros que observar en nuestra nación.  Por eso es importante su presencia.</p>
+<p align="justify">De igual  manera, se debe destacar la importancia que tiene la República de Chile, ser el  primer lugar entre las economías en América Latina, en competitividad internacional  en el 2022, ha sido fundamental. </p>
+<p align="justify">Chile tiene  mucho que enseñarle a México en materia de litio, para nosotros es muy importante. </p>
+<p align="justify">El gobierno  de la República inició un proceso para el desarrollo industrial del litio y convertirse  también en una palanca de desarrollo. </p>
+<p align="justify">Chile nos  lleva muchos años en el desarrollo industrial de este mineral, que es el oro blanco  del planeta.</p>
+<p align="justify">Además,  nuestras naciones sostienen relaciones económicas altamente fructíferas. Prueba  de ello es que de 1999 al 2022 Chile ha invertido más de mil 130 millones de dólares  en México, además de que existen más de 765 empresas chilenas en nuestro país. </p>
+<p align="justify">Importamos  en gran medida cobre refinado, filetes de pescado, madera, carne, entre otros. Es  por ello la importancia de fortalecer nuestra posición de vinculación con Latinoamérica  y Chile es un referente.</p>
+<p align="justify">Finalmente,  Presidente Boric, le reitero que para el Senado de la República es un honor contar  con la presencia de uno de los jóvenes mandatarios más importantes actualmente en  el mundo, lo cual sin duda es resultado del liderazgo democrático de su país. </p>
+<p align="justify">¡Bienvenido  a México!</p>
+<p align="justify">Conforme  al Acuerdo aprobado para normar la celebración de esta sesión solemne, el Presidente  Gabriel Boric Font, dirigirá un mensaje a la Asamblea. </p>
+<p align="justify">En consecuencia,  se le concede el uso de la palabra, señor Presidente. </p>
+<p align="justify"><strong>El  Presidente de la República de Chile, Gabriel Boric Font: </strong>Estimadas  y estimados miembros de este Honorable Senado, a través de ustedes me permito dirigirme  a nuestro hermano pueblo de México. </p>
+<p align="justify">Es para  mí realmente un honor estar presente en este estrado y en este lugar por el que  han pasado tantos hijos e hijas ilustres de esta hermosa patria. </p>
+<p align="justify">Y es también,  quiero que sepan, un motivo de gran emoción ratificar una vez más este vínculo entrañable  e imperecedero entre Chile y México, un vínculo del cual me siento profundamente  orgulloso de, como Presidente de Chile, estar representando ante ustedes. </p>
+<p align="justify">Honorables  Senadores y Senadoras, son más de 10 mil kilómetros los que separan el extremo norte  de México y el extremo austral de Chile, que es de donde provengo, la Patagonia.  Más de 10 mil kilómetros que atraviesan múltiples culturas y diversos paisajes,  que conforman nuestra América Latina mestiza.</p>
+<p align="justify">Somos dos  países distantes en materia geográfica, pero a la vez unidos por una larga historia  de encuentro entre nuestros pueblos, una historia de hermandad y cooperación, que  ha tenido, durante estos más de 200 años de vida independiente, grandes momentos,  que han quedado grabados en el corazón y en la memoria de nuestros pueblos.</p>
+<p align="justify">Uno de  esos momentos y que es imposible no recordar estando aquí, en vuestras tierras,  ocurrió exactamente hace 100 años, cuando el Estado mexicano invitó a una mujer  chilena a formar parte de su campaña de expansión de la educación, en particular,  en el campo, en el sector rural, donde estaban los más excluidos, un desafío que  fue mexicano pero que se transformó en latinoamericano, para el cual, y esta es  una tremenda enseñanza de hace 100 años, se invitaba a una mujer proveniente de  un lejano país, a una mujer pobre, a una mujer con ascendencia indígena, a una profesora,  a una poeta, a trabajar por la educación de los niños y niñas mexicanos.</p>
+<p align="justify">Esta mujer  era profesora, nacida en el centro norte de Chile, entre los cerros del Valle del  Elqui, una zona que hoy día es conocida por sus cielos privilegiados para mirar  el universo, para mirar las estrellas y que hoy día cuenta también con algunos de  los observatorios astronómicos más importantes del mundo.</p>
+<p align="justify">Si es que  alguna vez tienen a bien conocer nuestra Patria, los invito a recorrer los parajes  del Valle del Elqui, porque realmente son conmovedores.</p>
+<p align="justify">Quizá fueron  esos cielos abiertos los que permitieron a esta profesora rural mirar más allá y  aventurarse en el noble desafío de enseñar, de escribir y adentrarse en el mundo  de la poesía.</p>
+<p align="justify">Conversábamos  hoy día, en la escuela &ldquo;Gabriela Mistral&rdquo;, del sur de la Ciudad de México, que es  difícil pensar a Gabriela, si no hubiese sido maestra y poeta o poeta y maestra,  combatiendo prejuicios, abriéndose paso en una sociedad clasista, de hombres y privilegios,  colocó el amor por el conocimiento y la enseñanza como su principal herramienta  para enfrentar la adversidad, y vaya que lo logró.</p>
+<p align="justify">Fue esta  mujer, Lucila Godoy Alcayaga, conocida mundialmente como Gabriela Mistral, Premio  Nobel de Literatura en el año 1945, la que tuvo el privilegio de participar en ese  tremendo esfuerzo educativo a nivel nacional, que fue impulsado hace 100 años por  José Vasconcelos, cuyo espíritu ella tan sabiamente sintetiza en la Conferencia  de Veracruz muchos años después, en 1951, en la que fue también su Patria, con la  frase: &ldquo;El pan con paz y la paz con cultura&rdquo;.</p>
+<p align="justify">Esta historia  nos habla no solamente de aquellos lazos entrañables entre nuestros pueblos, sino  también de algo que forma parte de la cultura y la historia mexicana, mirar siempre,  mirar siempre a América Latina con generosidad, con solidaridad, como lo hizo Vasconcelos. </p>
+<p align="justify">Y aprovecho  de saludar, por supuesto, a su hijo, el Senador José Vasconcelos, quien nos acompaña  hoy y quien nos acompañó en Chile hace poquito.</p>
+<p align="justify">Muchas  gracias, José.</p>
+<p align="justify">Él miró  al extremo sur del continente y puso la vista en una maestra rebelde, sin título  universitario, que reconoció en ella la gran capacidad de aportar en la tarea de  fortalecer la educación del pueblo mexicano, y así fue. </p>
+<p align="justify">Y hoy día  más de mil 500 instituciones educativas a lo largo y ancho de México llevan el nombre  de Gabriela Mistral. </p>
+<p align="justify">Y quiero  que sepan que para nosotros es un honor cooperar también con estas instituciones  y fortalecer, a través de ellas, por los niños y niñas de México, por los niños  y niñas de Chile nuestro vínculo con ustedes. </p>
+<p align="justify">Eso es México  para nosotros, un país que expresa lo que somos como latinoamericanos porque, y  esto me interesa defenderlo con mucha fuerza, Chile es profundamente latinoamericano  también y le habla al mundo desde América Latina y le podremos hablar al mundo con  mucha más fuerza si somos capaces de trabajar por ese sueño de nuestros padres y  madres fundadoras, de nuestra América Latina Unida. </p>
+<p align="justify">Es enorme  y variado el pueblo que se reconoce en sus lazos de solidaridad y apoyos mutuos,  solo hoy día en esta escuela nos recibía el lenguaje zapoteca, zapoteco, el lenguaje  zapoteco, un estudiante y era para nosotros emocionante escuchar y pensaba en nuestra  patria, en Chile, cuántos estudiantes hoy en día podrán hablar en mapudungún, en  rapanui, en kunza. </p>
+<p align="justify">Que importante  potenciar también, aprovechando que estamos en la década de las lenguas indígenas  liderada por la UNESCO, la educación intercultural para rescatar las raíces de dónde  venimos, porque Chile y nuestra América Latina tenemos mucho que seguir aprendiendo  de las culturas y de los pueblos indígenas que dieron origen a nuestra patria.</p>
+<p align="justify">Es también  este, México, un país que ha hecho enormes esfuerzos por cooperar en las muchas  veces, difícil construcción de paz en nuestros países, como lo hacen ahora por ejemplo  con la promoción de los diálogos de paz entre los diferentes actores del conflicto  social y político en Venezuela, como lo hicieron hace 30 años con la firma de los  Acuerdos de Chapultepec, que fueron decisivos para el avance de la paz en El Salvador. </p>
+<p align="justify">Por eso  es que me siento tan emocionado de estar acá con ustedes hablando desde esta tribuna  tan privilegiada. </p>
+<p align="justify">Por eso  recibimos con tanta emoción y gratitud a Beatriz Gutiérrez Müller, quien hace tan  solo unas semanas nos visitó junto con su Secretaria de Educación para conmemorar  los 100 años de la llegada a México de nuestra poeta eterna Gabriela Mistral y nos  dejó, en el Museo de la Educación, de Santiago de Chile, un precioso mural que es  una réplica del que está también en la Secretaría de Educación acá.</p>
+<p align="justify">Son muchos  los ejemplos históricos y actuales que podemos dar sobre la relación cultural en  nuestros pueblos.</p>
+<p align="justify">La lucha  de Morelos, de Hidalgo, el sacrificio de Madero, la rebeldía de Villa y de Zapata  es ejemplo que han llegado hasta nuestra patria en rancheras, en corridos que ingresaron  a los hogares del Chile profundo hace ya casi un siglo, de la mano también del prolífico  cine mexicano que todavía acompañan e inspiran nuestra escena artística. </p>
+<p align="justify">Recuerdo  haber sido muy joven, lo soy todavía, debo haber tenido ocho años cuando extrañamiento  y sin entender muy bien por qué derramaba una lágrima, y eso que no soy de lágrima  fácil, cuando nos enteramos, en Chile, del fallecimiento de Mario Moreno, debo haber  tenido ocho años, debe haber sido a principios de los años ’90. </p>
+<p align="justify">Además,  el intercambio entre Chile y México ha sido profundo, pienso en, más allá de Gabriela  Mistral, artistas como Roberto Bolaños, que hizo gran parte de su obra aquí en México;  en artistas actuales como Mon Laferte, que nos enorgullece y nos lleva el corazón,  en donde ustedes, acá en México, le dieron la acogida que nosotros no supimos darle  en nuestro país. </p>
+<p align="justify">Pienso en  los versos de poetas como Octavio Paz, como Sor Teresa, como Sor Juana Inés de la  Cruz. </p>
+<p align="justify">Pienso en la influencia que ha tenido instancias de nuevo  tipo de cultura como &ldquo;31 Minutos&rdquo;. </p>
+<p align="justify">Hoy día, los jóvenes mexicanos, los niños mexicanos me  preguntaban por youtubers chileno que yo no conocía. </p>
+<p align="justify">Hay un intercambio entre nuestros jóvenes que se da mucho  más rápido, hay jóvenes chilenos que hablan con acento mexicano, producto de la  expansión de la cultura a través justamente de los youtubers. </p>
+<p align="justify">Pienso en el Fondo de Cultura Económica y el valiosísimo  esfuerzo de divulgación cultural o en el muralismo mexicano y su influencia en Chile. </p>
+<p align="justify">Por cierto, en el rol que jugaron las y los exiliados  que tras el golpe militar de 1973 vivieron esa entrañable solidaridad de los pueblos  y se erradicaron esta patria siendo tan bien y tan generosamente acogida, como puede  dar cuenta nuestro Senador José Miguel Insulza, que nos acompaña hoy. </p>
+<p align="justify">Cuando en nuestro país, hace 50 años, la democracia fue  despojada a sangre y fuego, México no sólo recibió a aquellos quienes fueron forzados  y obligados a abandonar el país, entre ellos, Tencha Allende, Tencha Bussi, sino  que hizo sistemáticos esfuerzos por el reconocimiento y condena internacional de  las violaciones a los derechos humanos que sistemáticamente ocurrieron en nuestro  país por casi 17 años. </p>
+<p align="justify">De esa experiencia internacional, nosotros hemos aprendido  también que cuando se violan los derechos humanos en pueblos de América Latina,  uno no puede callar. </p>
+<p align="justify">Y pienso y siento y palpita nuestro corazón latinoamericano  esa solidaridad que México tuvo en ese momento con nosotros. </p>
+<p align="justify">Por eso valoramos ese apoyo representado en los miles  de compatriotas que encontraron en México un refugio y que hicieron de esta patria  su hogar.</p>
+<p align="justify">Un hogar que, incluso hasta el día de hoy habitan muchos  de nuestros compatriotas. En nombre de ellos y de sus familias, muchísimas, muchísimas  gracias. </p>
+<p align="justify">Quisiera recordar además que esa solidaridad que fue  prestada a nuestros compatriotas en esas tierras estuvo presente de antes en nuestro  territorio. </p>
+<p align="justify">Tras el megaterremoto de 1960, hace ya más de medio siglo,  el gobierno de México decidió  realizar un  aporte financiero, pero que no fuera solamente en dinero, sino que fuera también  en arte y, hasta el día de hoy, cualquiera de ustedes que vaya a una de  las ciudades más importantes de Chile, la Ciudad  de Concepción, va a poder ver en la Casa del Arte de la Universidad el mural de  Jorge González Camarena, que junto a la colaboración de los mexicanos Salvador Almaraz,  Manuel Guillén, Javier  Arévalo  y los chilenos Albino Echeverría y Eugenio Brito,  realizaron entre noviembre de 1964 y abril de 1965 el mural llamado &ldquo;Presencia de  América Latina&rdquo;, cuyo relato está más vigente que nunca. </p>
+<p align="justify">Qué lindo y qué emocionante es ver los murales mexicanos. </p>
+<p align="justify">Ayer tuve la oportunidad de ver el del Palacio Nacional  y la verdad, es que es estremecedor. </p>
+<p align="justify">Ese relato nos demuestra el valor de la solidaridad y  la amistad entre nuestros pueblos que venimos hoy día a refrendar y a profundizar. </p>
+<p align="justify">En materia económica, la columna vertebral de nuestra  relación durante las últimas décadas ha sido el Tratado de Libre Comercio del año  1999 que, posteriormente fue profundizado con el Acuerdo de Asociación Estratégica  del año 2006, actualizado del año 2015 y que, con el Presidente López Obrador, el  día de ayer nos hemos comprometido a realizar una nueva actualización durante el  año 2023. </p>
+<p align="justify">A través de éste hemos podido poner en marcha planes  de acción que incorporan mecanismos que avanzan en equidad de género y en innovación  tecnológica. </p>
+<p align="justify">¡Qué alegría saber!, como nos contaba su Senadora, de  que el Senado y la Cámara de Diputados de México son instituciones paritarias. </p>
+<p align="justify">¡Qué orgullo!, nuestro respeto y esperamos poder pronto  seguir su ejemplo. </p>
+<p align="justify">Hoy, la calidad de socios estratégicos de México y Chile  se complementa, por cierto, con nuestra participación en el Foro de Cooperación Económica Asia-Pacífico y en la Alianza del  Pacífico, cuya cumbre número 17, con la presidencia pro tempore de México, se realiza  en estos días. </p>
+<p align="justify">Porque no se equivoquen, lo que se suspendió fue solamente  el encuentro de Presidentes como un acto de solidaridad al Presidente López Obrador  con el Presidente del Perú, Pedro Castillo, ante la insólita prohibición que le  hicieron para poder salir de su país.</p>
+<p align="justify">Pero la Alianza del Pacífico se siguió realizando, y de  hecho tenemos una delegación de parlamentarios y parlamentarias específicamente  dedicadas a este tema.</p>
+<p align="justify">Quiero que sepan que para nosotros esta alianza entre Perú,  Colombia, México, Chile, y a la que pronto esperamos se nos una Ecuador, también,  es fundamental.</p>
+<p align="justify">Me contaba el Presidente López Obrador que Veracruz ya  no es el principal puerto, sino que el principal puerto se ha trasladado hacia el  Pacífico, y eso justamente porque hoy día el Pacífico es el centro del mundo y,  por lo tanto, las relaciones que desde América Latina podamos hacer para unirnos  y aprender y relacionarnos con países que desconocemos como Malasia, Brunéi, Indonesia,  Japón, la misma China que me atribuyeron su presidencia injustamente recién, creo  que es fundamental.</p>
+<p align="justify">Quiero aprovechar de repetir lo que he planteado en los  foros internacionales que me ha tocado participar en representación de nuestro país,  Chile.</p>
+<p align="justify">Nuestros países se necesitan mutuamente, aquí nadie se  va a salvar por separado.</p>
+<p align="justify">Resultaba paradójico ver cómo en medio de la pandemia más  brutal que ha asolado a todo el mundo, quizás desde la gripe española en 1918, la  del Covid-19, cómo salimos todos inmediatamente a competir por quién conseguía más  rápido las vacunas en vez de haber colaborado y haber comprado juntos.</p>
+<p align="justify">Cómo ante la quema y pérdida del patrimonio humano de ese  pulmón, del Continente del mundo, que es desde las Amazonas, no éramos capaces de  actuar en conjunto, justamente, para protegerlo.</p>
+<p align="justify">Alegría el triunfo de Lula en Brasil, por cierto.</p>
+<p align="justify">Nuestra historia de cooperación social, económica y cultural  es la muestra más clara de que sólo avanzando juntas y juntos el camino del progreso  va a ser más fácil de transitar, que nadie se va a salvar por separado.</p>
+<p align="justify">Honorables Senadores y Senadoras, tenemos una relación  profunda basada en sólidas raíces culturales. También nuestra relación se basa en  los desafíos futuros que compartimos, la transición energética, el enfrentar la  crisis climática, la igualdad de género, el combate a la violencia, el combate al  narco.</p>
+<p align="justify">Por ello, espero que logremos intercambiar experiencias  y los invito a conocer a la delegación de parlamentarios que me acompañan hoy día:  A Marcela Riquelme, Henry Leal, Sebastián Keitel, Francisco Huenchumilla, Carmen  Gloria Aravena, José Miguel Insulza, Karol Cariola y la Diputada Joanna Pérez.</p>
+<p align="justify">Para nosotros es importante su presencia porque representan  también la amplitud del arco político chileno y esperamos poder traer también lecciones  y aprendizajes de este viaje.</p>
+<p align="justify">Me asiste la certeza que, y lo he repetido hasta el cansancio,  Chile necesita al mundo y el mundo necesita a Chile, pero mejor, el mundo necesita  a América Latina unida.</p>
+<p align="justify">Y para que América Latina esté unida necesitamos profundizar  nuestro intercambio comercial. Tenemos, por cierto, experiencia en materias primas,  pero no es solamente en materias primas lo que tenemos, América Latina no es sólo  un gran reservorio de materias primas para los países desarrollados del Primer Mundo. </p>
+<p align="justify">América  Latina es también fuente de conocimiento, de innovación, así lo demuestran nuestras  universidades, nuestros académicos y académicas.</p>
+<p align="justify">Así lo  demuestra nuestra vigorosa sociedad civil. </p>
+<p align="justify">Así lo  demuestran también nuestros movimientos sociales. </p>
+<p align="justify">Veo ahí  el derecho al voto de las mujeres consagrado en 1953, en México.</p>
+<p align="justify">El Movimiento  Estudiantil de 1968 que nos marcó a fuego, pese a no haber estado vivo, tal como  el grito de Córdoba.</p>
+<p align="justify">A principios  de siglo, la Masacre de Tlatelolco, en 1968, todavía está grabada a fuego en nuestros  corazones. </p>
+<p align="justify">Para profundizar  en esa relación, me hubiese encantado poder asistir a las tierras tapatías, a la  Feria del Libre de Guadalajara. Desgraciadamente en esta oportunidad no podré hacerlo,  pero espero prontamente ser parte de esta instancia porque es uno de los hitos más  relevantes de la vida cultural de nuestra América Latina, porque, además, íbamos  a conmemorar los 50 años de ese discurso hermoso que pronunciara Salvador Allende  en la Universidad de Guadalajara. </p>
+<p align="justify">Recuerdo  inevitablemente partes de ese discurso que se vive en la cabeza: &ldquo;Ser joven y no  ser revolucionario es una contradicción hasta biológica&rdquo;. </p>
+<p align="justify">Allende  decía en esa época: &ldquo;Nuestro gobierno está compuesto por laicos, marxistas y cristianos.  Y respetamos a los cristianos que representan el verbo de Cristo que echó a los  mercaderes del templo&rdquo;.</p>
+<p align="justify">Un tremendo  discurso que hasta el día de hoy nos estremece. </p>
+<p align="justify">No podremos  celebrarlo en Guadalajara, pero lo hacemos aquí desde el Honorable Senado mexicano. </p>
+<p align="justify">Pero lo  nuestro no es sólo historia, no es sólo nostalgia, es por sobre todo, futuro, para  seguir avanzando en los temas del futuro es que estamos acá, para compartirles el  llamado a trabajar en conjunto, aprender de nuestras experiencias enfrentando la  pandemia, el tremendo dolor y la brecha que se ha generado en nuestros pueblos a  propósito de la pandemia en nuestros niños y niñas. </p>
+<p align="justify">Hoy día  quiero que sepan, tiene que ser, es una prioridad para nuestra patria y queremos  conversar con ustedes cómo lo han hecho porque esos dos años, sin haber tenido interacción  en las escuelas, si no lo enfrentamos con mucha decisión, con mucha colaboración,  lo vamos a pagar muy caro en el futuro. </p>
+<p align="justify">Hoy vivimos  tiempos difíciles. </p>
+<p align="justify">Hacer política  es difícil.</p>
+<p align="justify">Hacer política  conlleva riesgos. </p>
+<p align="justify">Me acordaba  de este verso de Sor Juana Inés de la Cruz que decía: <em>&ldquo;Si los riesgos del mar  considerara, nadie se embarcara.</em></p>
+<p align="justify"><em>Si los riesgos  de construir una sociedad más justa.</em></p>
+<p align="justify"><em>Si los riesgos  de construir una patria más equitativa consideráramos a la hora de decidir entrar  en política, seguramente serían muy pocos los que estarían acá porque conlleva riesgos,  pero riesgos que llevan la pena correr&rdquo;. </em></p>
+<p align="justify">Nuestra  América Latina fue de los continentes que más aportó, tristemente, con muertes en  el Covid y esto tiene que ver con la profunda desigualdad de nuestras sociedades.  Es por eso que es importante que seamos capaces de hablar de cómo distribuimos la  riqueza que entre todos generamos, de una manera más justa y equitativa. </p>
+<p align="justify">Decir de  manera muy clara que nos importa el crecimiento, pero el crecimiento que es justo,  equitativo y sostenible en el tiempo, con nuestras comunidades, con nuestro medio  ambiente. </p>
+<p align="justify">Nos interesa  el crecimiento que incluye a los más desplazados, a los campesinos, a los indígenas,  a las mujeres. </p>
+<p align="justify">Permítanme  contarles que en Chile acabamos de presentar una reforma de pensiones, entiendo  que ustedes acaban de elevar a rango constitucional su sistema de pensiones, en  donde pretendemos hacernos cargo de un problema que tenemos en nuestro país, que  el sistema de capitalización individual, tal como lo conocimos desde los 80&rsquo;s en  adelante, fracasó, y que necesitamos incorporar solidaridad, solidaridad para hacerse  cargo, por ejemplo, del trabajo inmenso, pero no reconocido socialmente, que cumplen  las mujeres en nuestra patria y, seguramente, en toda América Latina. Esos trabajos  reproductivos no remunerados de cuidar a los niños, de llevar las casas, de cuidar  a los enfermos, a las personas mayores. </p>
+<p align="justify">Por eso  en Chile nos hemos propuesto avanzar en la valorización de los cuidados, en el reconocimiento  de los cuidados, pero también en corresponsabilidad, porque los hombres también  tenemos que hacernos cargo de esos roles que tradicionalmente se le otorgaron a  la mujer, pero que no tienen nada de naturales, acá ambos podemos realizar las mismas  tareas. </p>
+<p align="justify">Y por eso  también tenemos que igualar los salarios de las mujeres en el espacio público, cómo  es posible que hasta el día de hoy, en América Latina, por el mismo trabajo se pague  un 30 por ciento de sueldo menos. Esas injusticias tan naturalizadas durante demasiado  tiempo nos deben escandalizar y debemos en conjunto, países hermanos, trabajar para  poder erradicarlas. </p>
+<p align="justify">Han sido  dos años de pandemia, una guerra injusta, criminal, en Europa, que todavía no termina,  y una crisis social y política que se ha expandido de distintas maneras por prácticamente  todo el mundo; crisis migratorias recurrentes en el norte y en el sur; ustedes lo  viven en el Río Bravo, nosotros lo vivimos en el extremo norte de nuestra patria,  en Chacalluta. Y pensamos cómo lo importante, que es ver el fenómeno migratorio  con ojos de humanidad. </p>
+<p align="justify">Sabemos  que es durísimo para tanto quienes emigran, como para los pueblos que reciben migración  en cantidades a los que no están acostumbrados. Nos está pasando ahora en Chile  y tenemos que abordarlo en conjunto como América Latina.</p>
+<p align="justify">Insisto,  ningún país va a solucionar solo esto, no podemos mirar para el lado ante, por ejemplo,  la crisis que se está viviendo en Haití; no podemos mirar para el lado ante los  presos políticos en Nicaragua.</p>
+<p align="justify">No podemos  mirar para el lado cuando en cualquier país de nuestra América Latina se violen  los derechos humanos. </p>
+<p align="justify">Y permítanme  decírselos, porque acá no vengo a dictar cátedra, en nuestro país hace poco también  sufrimos violaciones a los derechos humanos y sabemos que acá en México también  lo han sufrido de manera muy fuerte. </p>
+<p align="justify">Veo en  sus pupitres, me alegro de que no es un tema político, sino que es totalmente transversal:  &ldquo;Nos faltan ellas&rdquo;. Me imagino que tiene que ver con los feminicidios. </p>
+<p align="justify">Once mujeres  todos los días asesinadas acá en México, ¡brutal! No naturalicemos estas violencias,  tenemos que combatirlas en conjunto. </p>
+<p align="justify">Y no me  cabe ninguna duda de que nuestros parlamentarios y parlamentarias también van a  estar disponibles para ello.</p>
+<p align="justify">Tenemos  una crisis climática que ha sido producto de cómo nosotros, seres humanos, hemos  concebido el desarrollo del planeta, en particular, los países hoy día más desarrollados.  Pero hoy día no basta con exigirles solamente a ellos, tenemos que comportarnos  todos a la altura, porque estamos en un momento en donde nos jugamos, quizá no la  vida nuestra, pero sí la vida nuestra y también la de las futuras generaciones. </p>
+<p align="justify">Hay y sigue  habiendo niños y niñas condenadas a vivir en la pobreza por el sólo hecho de nacer  en un determinado lugar. </p>
+<p align="justify">&ldquo;Piececitos de niño, azulosos de frío, ¡cómo os ven y no  os cubren, Dios mío! Cantaba Gabriela, a propósito de  su experiencia, justamente, en las montañas mexicanas. </p>
+<p align="justify">Y esa pobreza  nos tiene que seguir escandalizando y tenemos que seguir combatiéndola de manera  muy firme con políticas fiscales que se hagan cargo de la tremenda desigualdad que  existe en nuestras patrias. </p>
+<p align="justify">Honorables  Senadores y Senadoras, nuestros países no solamente tienen una historia en común,  sino por sobre todo, un futuro compartido. </p>
+<p align="justify">Quiero  invitarlos, invitarles a que trabajemos juntos y juntas en enfrentar unidos esta  agenda, y hagámoslo profundizando siempre nuestra democracia, porque en Chile lo  decimos con mucho orgullo, cuando tenemos problemas de convivencia, cuando tenemos  diferencias entre los diferentes sectores políticos, los problemas de nuestra Patria  los solucionaremos siempre con más democracia y no con menos.</p>
+<p align="justify">Quiero dejarles, Senadora, no me corresponde  a mí involucrarme en política interna, un abrazo fraterno en representación del  pueblo de Chile, porque sepan que allá, desde chiquititos, como lo recordaba la  Senadora, se nos enseña que México es un país amigo, así lo sentimos y así lo hemos  sentido en esta visita, breve, pero intensa y nos vamos con el corazón caliente.</p>
+<p align="justify">¡Que viva Chile! </p>
+<p align="justify">¡Y que viva México!</p>
+<p align="justify">Un abrazo grande.</p>
+<p align="justify"><strong>El Presidente Senador Alejandro  Armenta Mier: </strong>Presidente Gabriel Boric Font, gracias por su mensaje, por su  solidaridad, por su sentido latinoamericano.</p>
+<p align="justify">A nombre del Senado de la República, le agradezco  su visita y la de su comitiva a esta sesión solemne. Su asistencia a esta sesión  es muestra de la importancia de nuestras naciones para lograr fortalecer a nuestras  instituciones.</p>
+<p align="justify">Agradezco a las distinguidas invitadas, invitados,  que acompañan al señor Presidente. </p>
+<p align="justify">Lo invito a que nos tomemos la foto oficial  y que reciba un presente, por favor.</p>
+<p align="justify">Se levanta la sesión solemne.</p>
+<p align="center">(Se levantó la sesión solemne a las 14:07 horas)<strong> </strong></p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a107314'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

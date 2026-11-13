@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>TERCER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO III</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 16</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Ana Lilia Rivera Rivera</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 13 de Marzo de 2024</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/3/SPO/PDF-WEB/SPO_No16_13-Marzo-2024-SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='114874'></a><p align="center"><strong>PRESIDE LA SENADORA</strong><br>
+  <strong>ANA LILIA RIVERA RIVERA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Ana  Lilia Rivera Rivera: </strong>(11:48 horas) Con el quórum  de nuestra sesión ordinaria de hoy, iniciamos la sesión solemne, convocada para  la entrega del Premio al Mérito Literario &ldquo;Rosario Castellanos&rdquo;,  correspondiente al año 2023, al poeta Francisco Hernández. </p>
+<p align="justify">Para recibir a nuestro  galardonado se ha designado a la siguiente comisión de cortesía Senadores:  Susana Harp Iturribarría, Estrella Rojas Loreto, Ruth Alejandra López  Hernández, Gabriela Benavides Cobos, María Guadalupe Covarrubias Cervantes,  Casimiro Méndez Ortiz y Adolfo Gómez Hernández.</p>
+<p align="justify">Procedan, por favor,  compañeras y compañeros Senadores. </p>
+<p align="center">(La  comisión cumple)</p>
+<p align="justify">En tanto, se declara un  receso</p>
+<p align="center">RECESO</p>
+<p align="justify"><strong>La Presidenta Senadora Ana  Lilia Rivera Rivera: </strong>Se reanuda la sesión  solemne.</p>
+<p align="justify">Senadoras y Senadores,  distinguidos invitados que nos honran con su presencia. </p>
+<p align="justify">En el presídium nos  acompañan al poeta Francisco Hernández, quien recibirá el Premio al Mérito  Literario &ldquo;Rosario Castellanos&rdquo;, correspondiente a 2023. </p>
+<p align="justify">El Senador Sergio Pérez  Flores, Vicepresidente.</p>
+<p align="justify">La Senadora Alejandra Noemí  Reynoso Sánchez, Vicepresidenta.</p>
+<p align="justify">La Senadora Sylvana  Beltrones Sánchez, Vicepresidenta. <br>
+  El Senador Daniel Gutiérrez  Castorena, Secretario de esta Mesa Directiva. </p>
+<p align="justify">Y también está con nosotros  la Senadora Susana Harp Iturribarría, Presidenta de la Comisión de Cultura. </p>
+<p align="justify">Asimismo, damos la  bienvenida a familiares y amigos de nuestro galardonado, recibimos con mucho  gusto a la señora Leticia Arróniz. </p>
+<p align="justify">Al señor Hernán Bravo  Varela. </p>
+<p align="justify">La señora Gilda Leticia  Arróniz Jácome. </p>
+<p align="justify">La señora María Gabriela  Estrada Lavín. </p>
+<p align="justify">La señora María Félix  Guillermo Santiago. </p>
+<p align="justify">El señor Omar Luis Hernández  Bringas. </p>
+<p align="justify">La señora María de los  Ángeles Martínez De la Llera. </p>
+<p align="justify">El señor Gustavo Gómez  Arróniz.</p>
+<p align="justify">La señora Ana Paula Pulido  Perdigón. </p>
+<p align="justify">La niña Paula Gómez Pulido.</p>
+<p align="justify">El señor Juan Carlos  Gutiérrez Bonet. </p>
+<p align="justify">El señor Ezra David García  Alcázar.</p>
+<p align="justify">La señora Ana Elsa Pérez  Martínez. </p>
+<p align="justify">Y el señor Luis Jorge Arnaud  Ávila. </p>
+<p align="justify">Agradecemos su asistencia en  esta sesión solemne, en la que el Senado de la República celebra las letras  latinoamericanas. </p>
+<p align="justify">Como es de su conocimiento,  el 30 de marzo de 2021 se publicó en el Diario Oficial de la Federación el  decreto por el que se crea el Premio al Mérito Literario &ldquo;Rosario Castellanos&rdquo;  y se reforma el Reglamento del Senado de la República por el que se reconoce a  escritoras y escritores con obra consolidada, escrita en idioma español o en  cualquiera de las lenguas originarias de Latinoamérica y que pertenezca a los  géneros literarios de la narrativa, dramaturgia, poesía o ensayo. </p>
+<p align="justify">Este premio ha sido  entregado ya en dos ocasiones, la primera a la escritora Elsa María Cross y la  segunda a la Maestra Luisa Josefina Hernández Lavalle. </p>
+<p align="justify">Para esta ocasión, el 5 de  junio de 2023 la Comisión de Cultura emitió la convocatoria correspondiente en  la que establecieron las bases para la recepción de candidatas y candidatos al  Premio al Mérito Literario &ldquo;Rosario Castellanos 2023&rdquo;. </p>
+<p align="justify">Como resultado de lo  anterior, el 27 de febrero pasado aprobamos por unanimidad un acuerdo por el  que se estableció que el galardonado fuese el Poeta Francisco Hernández.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a114874'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='114875'></a><p align="justify">Solicito al Senador Daniel  Gutiérrez Castorena, Secretario de la Mesa Directiva, dé lectura a la semblanza  de la escritora Rosario Castellanos.</p>
+<p align="justify"> <strong>LECTURA DE LA SEMBLANZA DE  ROSARIO CASTELLANOS, A CARGO DEL SECRETARIO DE LA MESA DIRECTIVA, SENADOR  DANIEL GUTIÉRREZ CASTORENA</strong><strong> </strong></p>
+<p align="justify"><strong>El Secretario Senador Daniel  Gutiérrez Castorena: </strong>Con todo gusto, señora Presidenta. </p>
+<p align="justify">Rosario Castellanos  Figueroa, nació el 25 de mayo de 1925, en el entonces Distrito Federal, pues su  padre y madre se encontraban de paso en la capital, pero de inmediato fue  llevada a Comitán de Domínguez, Chiapas, donde vivió su infancia. </p>
+<p align="justify">Realizó sus estudios de  primaria y dos años de secundaria, para regresar a los 16 años a la capital y  después ingresar a la Escuela Nacional de Jurisprudencia de la Universidad  Nacional Autónoma de México; aunque poco tiempo después su vocación la llevó a  la carrera de Filosofía, concluyó la licenciatura y obtuvo el grado de maestría  en Filosofía en la UNAM, con una tesis sobre cultura femenina. </p>
+<p align="justify">Fue becaria en el Instituto  de Cultura Hispánica y por el Centro Mexicano de Escritores; realizó cursos de  postgrado en la Universidad de Madrid, regresó a México en 1952 y asumió la  dirección del Instituto Chiapaneco de la Cultura, donde imprimió el conocimiento  académico adquirido enmarcado en una amplia visión humana. </p>
+<p align="justify">Los textos escolares que  escribió para el Instituto Nacional Indigenista dan cuenta de su sensibilidad;  fue docente de 1962 a 1971 e impartió las cátedras de Literatura Contemporánea,  Novela Contemporánea y el Seminario de Crónica en la Facultad de Filosofía y  Letras de la UNAM. </p>
+<p align="justify">Fue considerada como parte  de la generación del medio siglo que estuvo integrada por escritores como Jaime  Sabines, Juan José Arreola, Jorge Ibargüengoitia, Juan Rulfo y Carlos Fuentes,  entre otros. Grupo en el que se destacó por su profunda reflexión sobre la  desigualdad de las mujeres y las personas indígenas. </p>
+<p align="justify">De la agudeza de su pluma  crítica surgieron obras de la literatura mexicana que hoy son imprescindibles,  en la que mostró aspectos culturales que, hasta entonces, no habían sido  tratados con la perspectiva femenina y desde la visión de los pueblos indígenas,  de la cual fue su portavoz a través de los libros. </p>
+<p align="justify">Ella, es una de las  escritoras más importantes del siglo XX. Dentro de sus obras más destacadas en  la prosa se encuentran: La novela Balún Canán, merecedora del Premio Chiapas.</p>
+<p align="justify">Oficio de Tinieblas,  galardonada con el Premio Sor Juana Inés de la Cruz.</p>
+<p align="justify">Con las dos antes  mencionadas y Ciudad Real ganó el Premio Javier Villaurrutia, tres obras que  integran el ciclo de Chiapas y la trilogía indigenista más importante de la  narrativa mexicana. </p>
+<p align="justify">Los convidados de agosto y  álbum de familia son dos textos que comparten un mismo eje narrativo, las  relaciones de dominación y sumisión de la mujer mexicana. </p>
+<p align="justify">La antología titulada Mujer  que Sabe Latín, constituye un trabajo muy valioso, en palabras de Martha Lamas.</p>
+<p align="justify">Ella es pionera intelectual  del feminismo mexicano. Sus obras, Apuntes para una Declaración de Fe y  Trayectoria del Polvo, marcan la pauta del resto de su poesía. La compilación  publicada en 1972, que lleva por título: Poesía no Eres Tú, ha generado diversos  estudios por su profundidad y significado.</p>
+<p align="justify">El Eterno Feminismo, es una  obra de la literatura mexicana publicada dos años después de su muerte, que se  convirtió en el ícono del movimiento feminista de México. Fue una auténtica  pionera que abrió espacios a la participación femenina en el arte, en la  cultura, en la política y en el servicio. </p>
+<p align="justify"> En 1971 fue designada como  embajadora de México ante el gobierno de Israel, y luego de presentar sus  cartas credenciales en el momento que este país atravesaba por grandes  tensiones, fue recibida por la admiración de ser una de las más destacadas  intelectuales de México.</p>
+<p align="justify">Al estallar la guerra de Yom  Kippur, en 1973, cuando la mayoría del cuerpo diplomático abandonó el país,  ella decidió continuar con su labor, por lo que fue catalogada como la  embajadora de la paz en la adversidad. </p>
+<p align="justify">Mostró, además, de capacidad  diplomática, inteligencia y profundo respeto por otra cultura, dedicó su vida a  la creación literaria con pulcritud.</p>
+<p align="justify">No alcanzaría esta sesión  solemne para presentar la semblanza de una mujer como Rosario Castellanos, su  desempeño en el ámbito de la enseñanza y la literaria dejó una huella  imborrable a pesar de su prematura muerte ocurrida el 7 de agosto de 1974.</p>
+<p align="justify">Dejó un legado  imprescindible que enorgullece a la patria que la vio nacer, es una autora  temporal porque sus textos no pierden vigencia. </p>
+<p align="justify">Por esa relevante  trayectoria sus restos descansan hoy en la Rotonda de las Personas Ilustres, en  cuya lápida está inscrito: <em>&ldquo;Sabed que  entre mis labios de granito quedaron detenidas las palabras&rdquo;. </em></p>
+<p align="justify">Como describiría la propia  Rosario Castellanos, salirse, se llevó su memoria, su risa, todo lo que era su  modo de ser río, de ser aire, de ser adiós y nunca. </p>
+<p align="justify">En México la enterramos bajo  la lluvia, la convertimos en parque público, en escuela, en lectura para todas  y todos. </p>
+<p align="justify">Le devolvimos a la tierra  como un símbolo. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>La Presidenta Senadora Ana  Lilia Rivera Rivera: </strong>Gracias,  Secretario. </p>
+<p align="justify">Aprovecho  para dar la bienvenida al Senador Noé Castañón, Vicepresidente de la Mesa  Directiva. </p>
+<p align="justify">Asimismo,  les informo que tenemos la visita de un grupo de alumnos de la escuela  secundaria &ldquo;Jorge de Castro Cancio&rdquo;. Nuestros visitantes acuden por invitación  del Senador Dante Delgado. Esperamos que su visita sea grata experiencia en su  formación. </p>
+<p align="justify">Muchas  gracias. </p>
+<p align="justify">¡Bienvenidas  y bienvenidos!</p>
+<p align="justify">Se  concede ahora el uso de la palabra a la Senadora Susana Harp Iturribarría, Presidenta  de la Comisión de Cultura, a nombre del Senado de la República. </p>
+<p align="justify"><strong>La Senadora Susana Harp  Iturribarría: </strong>Muchas gracias. Con su permiso, señora Presidenta.  Compañeras y compañeros: </p>
+<p align="justify">El  Maestro Francisco Hernández, que hoy se encuentra aquí, lo recibimos con todo  el cariño a él, a sus familiares, amigos y amigas que nos acompañan. </p>
+<p align="justify">¡Sean  bienvenidos y bienvenidas!</p>
+<p align="justify"> Para  el Senado de la República la mejor forma de homenajear la vida y la obra de  Rosario Castellanos es convocar en su nombre a otras personalidades de las  letras para reconocerle su trabajo. </p>
+<p align="justify">Las  y los integrantes de la Comisión de Cultura agradecemos profundamente a quienes  acompañaron este proceso como jurados. </p>
+<p align="justify">Gracias  a Annel Pérez, en representación de la UNAM. </p>
+<p align="justify">A  Ezra Alcázar, del Fondo de Cultura Económica. </p>
+<p align="justify">A  Juan Carlos Bonet, representante de la Secretaría de Cultura. </p>
+<p align="justify">A  José Luis Arnaud, de la Cámara Nacional de la Industria Editorial Mexicana. </p>
+<p align="justify">Quienes  incluyeron al maestro Francisco Hernández para la terna de candidatos para  recibir el Premio al Mérito Literario &ldquo;Rosario Castellanos&rdquo;. </p>
+<p align="justify">El  maestro Hernández es uno de los más grandes poetas mexicanos, es originario de  San Andrés Tuxtla, Veracruz, y autor de más de 46 libros con un estilo  inigualable. </p>
+<p align="justify">Sus  retrataos poéticos no tienen precedente en la literatura mexicana, pues el  maestro tiene una manera única de desestructurar la voz del hablante con versos  escritos en endecasílabos asonantes, como si fuera prosa y que parten de alguna  fotografía donde devela la añoranza, el desencanto por el mundo, el tiempo, la  muerte, la vida, la palabra, la existencia misma.</p>
+<p align="justify">En  toda su obra encontramos paisajes donde se combinan la niebla y las lluvias con  las largas extensiones de sembradío de tabaco, timbre de esa región de México,  acompañados de la música callada, de las sílabas que apelan a los silencios y a  la emoción universal que privilegia la vista. </p>
+<p align="justify">Esta  maravilla que despierta Hernández en sus lectores se debe en parte a la  creación de personajes sostenidos en su obra poética, casi desde sus comienzos. </p>
+<p align="justify">Poeta  de culto, le llaman algunos, anacrónico para otros. Sin lugar a duda, un poeta  de propuestas audaces y diferenciadas, vigentes en el tiempo de la post  modernidad. </p>
+<p align="justify">El  maestro absorbió y transformó el tono de algunos poetas decimonónicos y acude a  la historia documentada de los personajes con los que interactúa. </p>
+<p align="justify">Es  así que en su poesía prevalece la lírica y ejecuta una versión que atrae a las  y los lectores actuales. </p>
+<p align="justify">Francisco  Hernández, jamás se ha fundido con la poética de otros, ni con la estilística  de la época, sino que reelabora un discurso poético que incluye diversas formas  de las tendencias del romanticismo de la modernidad y la actualidad. </p>
+<p align="justify">La  expansión y la contención son características principales de su poesía, es  un escritor muy disciplinado y alejado de los reflectores que ha sido  reconocido en muchas ocasiones; Premio Nacional de Ciencias y Artes, Premio  Rubén Bonifaz Nuño, Premio Xavier Villaurrutia y creador emérito del Sistema Nacional  de Creadores de Artes, del Fonca, entre muchos, muchos otros más. </p>
+<p align="justify">Francisco Hernández es una  moneda de una sola cara y una sola cruz, no es sus personajes, pero sus  personajes sí son él, esa es su cara, la real e imaginaria, quien usa la voz  como la verdad del poeta, como un alto parlante con distintas salidas, cada una  con un filtro distinto. </p>
+<p align="justify"> Hoy nos permitimos hacerle  este homenaje, maestro, porque como usted mismo escribe, regreso, porque entre  tanto, se me olvida mucho, porque ya nadie vive fresco de bajo de mis párpados  y los nombres acostumbrados se diluyen en mi lengua. </p>
+<p align="justify">Enhorabuena, Francisco  Hernández. </p>
+<p align="justify">Gracias, Maestro. </p>
+<p align="justify">Es cuanto, señora Presidenta. </p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Muchas gracias, Senadora Harp  Iturribarría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a114875'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='114876'></a><p align="justify">Estimada Asamblea,  invitados, les pido, por favor, ponernos de pie para entrega del reconocimiento  Rosario Castellanos, correspondiente al año 2023 al Poeta Francisco Hernández. </p>
+<p align="justify"><strong>ENTREGA DEL PREMIO AL MÉRITO  LITERARIO &ldquo;ROSARIO CASTELLANOS&rdquo; 2023 AL CIUDADANO FRANCISCO HERNÁNDEZ</strong></p>
+<p align="center">(Con todos de pie se hace entrega del reconocimiento)</p>
+<p align="justify">Sírvanse tomar asiente, por  favor. </p>
+<p align="justify">Se concede el uso de la palabra  a nuestro galardonado, el Poeta Francisco Hernández. </p>
+<p align="justify"><strong>El  Ciudadano Francisco Hernández:</strong> Bueno, no necesito decirles  que, para un silencioso, ésta es la parte más difícil, es en la que tengo que  hablar, decir alguna cosa, por lo que la tentación de empezar a leer ya lo que  está escrito y puedo dárselos, es una tentación, pero también estoy muy  contento por muchas razones que difícilmente salen del corazón, pero que estén  aquí varias personas por las que daría mi vida. </p>
+<p align="justify">Por ejemplo, eso me hace muy feliz, me hace, que es el verdadero premio,  el gran premio de los que me han dado, no sé cuántos son, tres, cuatro, no sé,  tampoco sé, tampoco me fijo mucho esa numerología.</p>
+<p align="justify">Yo simplemente escribo en una libreta, en una hoja en blanco, estoy,  después de no escribir durante dos meses o dos años, no sé, de pronto se me  apareció una idea y estoy escribiendo el texto más largo de todos los años que  llevo escribiendo, un poema de siete páginas, imagínense lo poco que escribo,  si uno de siete páginas es el más largo que he hecho.</p>
+<p align="justify">En fin, todo eso me lleva a recordar los primeros textos, encontrar en  un pequeño librero que tenía mi padre un libro de Rubén Darío y otro de un tal  Salvador Díaz Mirón, y entonces darme cuenta de que podía escribirse de otra  manera y bucear el mundo extraño con palabras, qué es lo que podría nombrarse  de otra manera que pareciera igual y que, sin embargo, fuera distinta.</p>
+<p align="justify">Que ese era el verdadero reto, que eso era lo verdaderamente difícil,  ser otro siendo el mismo. Y es, a fin de cuentas, lo que he hecho durante todos  estos años, ya tengo 77, y entonces pienso que ya no falta mucho para seguir  escribiendo.</p>
+<p align="justify">Bueno, entonces, ahora les voy a leer algunos tres, cuatro textos de un,  de mi penúltimo libro, que se llama &ldquo;Odioso Caballo&rdquo;. Porque los caballos  siempre me han gustado, aunque me he subido creo que dos veces a uno.</p>
+<p align="justify"> Recuerdo una vez que allá en mi pueblo, un muchacho que tenía un caballo  y pasaba siempre por la casa, yo siempre salía a verlo pasar, hasta que un día  le dijo a mi mamá: &ldquo;Oiga, deje que su hijo se venga conmigo un rato y que lo  lleve yo a pasear por aquí, por las calles del pueblo y ya lo traigo&rdquo;.</p>
+<p align="justify">Mi mamá por fin accedió, me puso en la silla con él y empezó a caminar  por las calles. Entonces en una de esas calles empedradas, por supuesto, se le  acercan y le dicen que, en una cantina, le dijeron dónde, habían matado a su  papá. </p>
+<p align="justify">Entonces aquellos pasos tranquilitos para que el niño disfrutara se  convirtieron en un galope aterrador, y él corría, corría y corría con el  chamaquito ahí agarrado, hasta que se dio cuenta paró y se lo dio a una señora,  y le dijo: &ldquo;regréselo a su casa, yo tengo que ir a otro lado&rdquo;, y se siguió  corriendo a buscar el cadáver de su padre.</p>
+<p align="justify">Bueno, esa es una de las primeras experiencias que guardo de los  caballos.</p>
+<p align="justify">Por eso, quizás, ese libro, que fue el que escogí, el penúltimo, se  llama &ldquo;Odioso Caballo&rdquo;, que si se descompone un poquito se puede leer &ldquo;O Dios&rdquo;,  &ldquo;O Caballo&rdquo;, en qué quedamos ¿no? Esa es la importancia que para mí sigue  teniendo estos seres extraordinarios, que son los caballos. </p>
+<p align="justify">Entonces, les voy a leer  algunos textos de aquí, sobre todo en la primera parte de este libro eso se  llama justamente Odiosos Caballo, y empieza diciendo: </p>
+<p align="center"><em>&ldquo;Hoy amanecí montado en  Dios&rdquo;.</em></p>
+<p align="center"><em>&ldquo;Dios es un caballo de edad  indefinida, de colores cambiantes, al llover se despinta y en épocas de secas  asume el polvoriente e interminables caminos vecinales para más tarde mostrar  en el verano la voluntad de las selvas lluviosas y lo asfixian de los cielos  rasos.</em></p>
+<p align="center"><em>Al ubicarlo nuestros ojos se  tornan sus esclavos y niegan haberlo contemplado con sus crines al aire al  margen de otro aire creado por él, con proverbios y en salmos donde nada escapa  a la robustez de las civilizaciones que lo adoran.</em></p>
+<p align="center"><em>Dios no hace milagros porque  su continua invisibilidad es un milagro en sí, además del miedo capital que  podamos tenerle si con nosotros no resulta piadoso.</em></p>
+<p align="center"><em>Las riendas de la fe  tranquilizan dentro de sus valores verdaderos.</em></p>
+<p align="center"><em>Las espuelas de la templanza  nos permiten enloquecer de sacrilegios y nuestro espíritu, ya sin los temores  del infierno, se llena de alabanzas y de gozos&rdquo;.</em></p>
+<p align="justify">Otro más breve. </p>
+<p align="justify">Ya no aplaudan porque si no  leo todo el libro. </p>
+<p align="justify">Este es un poema breve que  se llama Playa Blanca y está dedicado a Begoña Irazábal. </p>
+<p align="center"><em>&ldquo;Al ver tus pies desnudos te  miro desnuda por completo.</em></p>
+<p align="center"><em>La playa es un pasillo de  mosaico cuando la recorres entre caballos blancos de claridad nerviosa,  perseguidores de gaviotas y graneros de espuma.</em></p>
+<p align="center"><em>Tu piel, ya desplegada,  inicia una estampida por el mosaico de quemantes grietas, aunque te ocultes  alcanzo a descubrirte entre los brazos de la brisa y en el centelleo del nombre  de cristal que atrás dejaste.</em></p>
+<p align="center"><em>Al recordar tus pies  desnudos, por encima me pasan los caballos&rdquo;.</em></p>
+<p align="justify">  Este me gusta especialmente  porque es mi casa de niño, mi casa de allá en el pueblo, de madera, de tejas,  de un patio grande, eso sí, con muchos árboles, donde transcurría mi forma de  vivir de aquel entonces.</p>
+<p align="justify">El poema se llama Mi casa se  cayó del caballo. </p>
+<p align="center"><em>&ldquo;Mi casa se cayó del  caballo, pero no se cayó.</em></p>
+<p align="center"><em>Se cayó de vieja con sus  llaves sin agua y ratas originarias de otros derrumbes.</em></p>
+<p align="center"><em>Su voz, hilo de madera, voz  escasa de mi casa, habla de lo incierto con certeza, secretea mensajes de tejas  partidas, señala sus ventanas sin cortinas ni cristales y acepta su vida nueva  sin paredes.</em></p>
+<p align="center"><em>Aquí naciste tú, dice mi  casa; aquí murió tu padre, cáncer de páncreas.</em></p>
+<p align="center"><em>Recuerda al río de nombre  náhuatl llenándonos de lodo hasta el resuello.</em></p>
+<p align="center"><em>Ahora ya no hay inundaciones  ni palmeras, seco respira el pozo y el patio se utiliza como estacionamiento.</em></p>
+<p align="center"><em>Me defenestró el tiempo,  como dicen que dicen los poetas.</em></p>
+<p align="center"><em>Fui la casa de </em><em>Usher por un ruidoso instante.</em></p>
+<p align="center"><em>Las risas de tus hermanos y tus hijos se han  perdido y frotan sin fulgor las buganvilias.</em></p>
+<p align="center"><em>Pintada de amarillo, como desde hace 100  años, se cayó mi casa, pero no se cayó, su voz continúa diciéndome al oído  &ldquo;nunca volverás a vivir en una casa, también tu porvenir se vino abajo&rdquo;.</em></p>
+<p align="justify">Este  es para mi padre, con el que no tuve una relación muy afectuosa, pero que, por  supuesto, no se me olvida. </p>
+<p align="justify">Se  llama &ldquo;Caballo paterno&rdquo; y está dedicado a mi amigo Marco Antonio Campos. </p>
+<p align="center">Dice: <em>&ldquo;No te asustes caballo paterno, yo soy el  responsable de los golpes en la puerta de tu capilla ardiente; vengo a pedirte  que salgas a mostrarme tu risa, tus clamores comunes y corrientes y las  caricias de tus manos fuertes, acostumbradas a levantar puentes postizos.</em></p>
+<p align="center"><em>¿Sigues persiguiendo animales salvajes en tu  sueño?</em></p>
+<p align="center"><em>Caballo paterno, mi madre te reinventa al  florear el rosario, que a estas alturas de sus años más parece una soga que un  lazo de cuentas bendecidas.</em></p>
+<p align="center"><em>Ella te nombra con diminutivos, finge  desconocer la fecha de tu muerte y entona aquella canción de su noviazgo  mientras riega su fila de macetas.</em></p>
+<p align="center"><em>Caballo paterno, retoza, respinga hasta donde  te espero; deja por un momento el establo subterráneo donde esa vejez tan de  nosotros anhela persistente los dolores del cáncer acorralados por la morfina.</em></p>
+<p align="center"><em>Ven, permite que la brisa desempolve la crin  de la osamenta, el envidiable asentamiento, los versos de Rubén Darío aún  repetidos por tu voz pastosa.</em></p>
+<p align="center"><em>Sal caballo paterno, hay mangos maduros en el  árbol del patio y las potrancas trotan por la calle con el calor mordiéndoles  la cola&rdquo;</em></p>
+<p align="justify">  También siempre tuve  problemas con mis pies, por el tamaño de mis pies, se burlaban mucho mis  hermanos, por supuesto, y luego los amigos, pero llegó un momento que dije creo  que se merecen un poema. </p>
+<p align="justify">Entonces, &ldquo;A mis pies&rdquo;. </p>
+<p align="center"><em>&ldquo;Mis pies me estorban, a  veces no requiero de una grieta o de un pedazo de ladrillo para trastabillar;  el zapato izquierdo choca con el derecho y caigo, son demasiado grandes, hasta  en sueños me resultan molestos.</em></p>
+<p align="center"><em>En una pesadilla reciente se  me apareció el chino de Farabeuf, ¿se acuerdan? El torturado y a pesar del  dolor que su imagen trasmite, pensé: A mí también deberían amputarme una  pierna, entre la rodilla y el tobillo. Así, avanzar sería un poco más simple,  sin caídas al menos, aunque tuviera que apoyarme en prótesis o muletas.</em></p>
+<p align="center"><em>Pero no, despierto y ahí  están los pies como aves de rapiña, dispuestos a continuar incomodando mis  desplazamientos y la búsqueda, por supuesto ardua, de zapatos a la medida.</em></p>
+<p align="center"><em>Ojalá pudiera acercarme a  dos o tres vejestorios de pies normales, tan presumidos siempre de su andar  juvenil, tan custodiados siempre por risueños idiotas y destruir, a patadas,  sus arrugados testículos microscópicos&rdquo;.</em></p>
+<p align="justify">¿Se acuerdan de Juan Gelman,  poeta argentino? Muy querido por nosotros, que ya murió. </p>
+<p align="justify">Su poesía está en el disco,  señor Gelman, me lo dieron como se obsequia la ventana de un hospital, poesía  en ladino esta vez, lenguaje dulce; música encubridora, originario espíritu,  pero no pude escucharla en ese instante. </p>
+<p align="justify">A veces, cuando ya están  dentro del féretro evitamos unir las facciones de los seres queridos. Por  fortuna, al día siguiente disfruto del compacto, usted aparece alto, más alto  que cúpula o muralla, llega al café con lentos movimientos y con ese hilito de  voz tan propio, tan del sur profundo recién salido de un cigarrillo rubio. </p>
+<p align="justify">Señor Gelman, ¿a qué sabe la  primera cucharada de exilio? ¿Cuánto duele su primer puntapié? ¿Lo vuelve a  uno, el destierro, un turista secreto, un muerto sin la muerte? </p>
+<p align="justify">Y si lo llamamos desarraigo,  tiene entonces el hocico de un perro  alimentado por tripas de inocente. </p>
+<p align="justify">Supongo,  don Juan, que también el exilio es un aire fresco, liberador, un pasaporte, el  calibre de otra clase de arma, un largo puente de sílabas donde la brisa, donde  la prisa, donde la risa es otra. </p>
+<p align="justify">Y  el bandoneón, señor Helman, reducido a pedazos, ¿es otra caricatura del exilio?</p>
+<p align="justify">No  lo distraigo más, admirado poeta. El riachuelo que cruza por Nepantla puede  considerarse gracias a usted un nuevo verso de Sor Juana. Y tres niños  uniformados recién salidos del colegio juegan a la rayuela en el parque de  enfrente sin saber nada de Cortázar ni de la maga que en algún sitio los  aguarda. </p>
+<p align="justify">Ya  voy a acabar, creo que éste ya es el último. </p>
+<p align="justify"> Como  les decía, no sé lo dije al principio o lo pensé, vengo de un lugar donde hay  mucho calor, quizá no hay mucho afecto, pero hay mucho calor. </p>
+<p align="justify">Por  eso así le puse a este poema, &ldquo;Mucho calor&rdquo;. </p>
+<p align="center"><em>&ldquo;Oprimo el botón del  ventilador,</em><br>
+  <em>para después sentarme en el  sofá.</em><br>
+<em>Mi madre se acomoda en su  sillón.</em></p>
+<p align="center"><em>Ella acaba de cumplir cien  años.</em><br>
+  <em>En este lugar espera a la  muerte.</em></p>
+<p align="center"><em>Lee vidas de santos  entregándose</em><br>
+  <em>a los recorridos del sudor y  al eco de los cascos</em><br>
+  <em>de los caballos contra las  piedras.</em></p>
+<p align="center"><em>Las fotografías de las  paredes</em><br>
+  <em>me interrogan, pero primero  me sacuden.</em></p>
+<p align="center"><em>No se explican mi presencia</em><br>
+  <em>sin cristal y sin marco.</em></p>
+<p align="center"><em>A pesar de su edad, mi madre  aún tiene fortaleza</em><br>
+  <em>para inventar y maldecir.</em></p>
+<p align="center"><em>Distingue mi silueta, deja  el libro</em><br>
+  <em>junto a sus dientes postizos</em><br>
+  <em>y me habla a través</em><br>
+  <em>del oleaje de la  temperatura.</em></p>
+<p align="center"><em>Pequeña venganza: la escucho</em><br>
+  <em>más no le contesto.</em></p>
+<p align="center"><em>Sus lágrimas, color agua de  guanábana,</em><br>
+  <em>resbalan por su rostro,</em><br>
+  <em>tan pálido y reseco como el  mío.</em><br>
+  <em>Ahora son las risas las que  cuelgan</em><br>
+  <em>de clavos en los muros.</em></p>
+<p align="center"><em>Hablo, grito, saco la lengua</em><br>
+  <em>para decir ahhh, pero simula</em><br>
+  <em>estar sorda.</em></p>
+<p align="center"><em>Un tocadiscos pone a flotar  un vals.</em><br>
+  <em>Un coro de salamandras  acompaña</em><br>
+  <em>lo austriaco del sonido.</em></p>
+<p align="center"><em>La voz de mi padre sale de  lo asfixiante</em><br>
+  <em>del ropero y pronuncia</em><br>
+  <em>el nombre de sastre que me  puso&rdquo;.</em></p>
+<p align="justify">Gracias.</p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Muchas gracias, señor Hernández. </p>
+<p align="justify"> Les solicito ponernos de pie a fin de entonar  el Himno Nacional Mexicano. </p>
+<p align="center">(Todos  de pie entonan el Himno Nacional)</p>
+<p align="justify">Favor de tomar asiento. </p>
+<p align="justify">El Senado de la República agradece a la banda de música de la Secretaría  de Marina su participación en esta ceremonia solemne.</p>
+<p align="justify">Asimismo, expreso nuestro agradecimiento por su presencia en esta sesión  solemne a todas y todos nuestros distinguidos invitados. </p>
+<p align="justify">Solicito a las Senadoras y a los Senadores integrantes de las comisiones  de cortesía, se sirvan acompañar a nuestras invitadas e invitados hasta las  puertas de este recinto. </p>
+<p align="center">(Las comisiones cumplen)</p>
+<p align="justify">Damos por finalizada la sesión solemne. </p>
+<p align="justify">Y les solicito a mis compañeras y compañeros Senadores, permanezcan en  sus lugares para continuar con la sesión ordinaria. </p>
+<p align="center">(Se  levantó la sesión a las 12:45 horas)</p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a114876'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

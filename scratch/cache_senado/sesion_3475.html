@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>TERCER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO III</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 27</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Ana Lilia Rivera Rivera</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 15 de Noviembre de 2023</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/3/PPO/PDF-WEB/PPO_No27-15-NOVIEMBRE-2023-SS_ACT.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113484'></a><p align="center"><strong>PRESIDE EL SENADOR</strong><br>
+  <strong>CHECO PÉREZ FLORES</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Checo  Pérez Flores: </strong>(11:10 horas) Con el quórum de nuestra sesión  ordinaria de hoy y, en cumplimiento al Acuerdo aprobado el pasado 8 de  noviembre, iniciamos la sesión solemne para develar en el Muro de Honor del  Senado de la República la inscripción: &ldquo;2023, Año del Bicentenario del Heroico  Colegio Militar&rdquo;.</p>
+<p align="justify">Acude, como invitado a esta  sesión solemne, el General Luis Cresencio Sandoval González, titular de la  Secretaría de la Defensa Nacional. </p>
+<p align="justify">Y para recibirlo se designa,  en comisión, a las Senadoras y a los Senadores: Félix Salgado Macedonio,  Josefina Vázquez Mota, Manuel Añorve Baños, Cora Cecilia Pinedo Alonso, Marcela  Mora, Miguel Ángel Mancera Espinosa, Mónica Fernández Balboa, Juan Antonio  Martín del Campo Martín del Campo, Ángel García Yáñez, Cristóbal Arias Solís y María  Soledad Luévano Cantú</p>
+<p align="justify">En tanto, se declara un  receso.</p>
+<p align="center">(RECESO)</p>
+<p align="center"><strong>PRESIDE LA SENADORA</strong><br>
+  <strong>ANA LILIA RIVERA RIVERA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Ana  Lilia Rivera Rivera: </strong>Se reanuda la sesión. </p>
+<p align="justify">Solicito a las Secretaría dé  cuenta con los antecedentes que originan esta sesión solemne. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113484'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113485'></a><p align="justify"><strong>DEVELACIÓN  EN EL MURO DE HONOR DEL SENADO DE LA REPÚBLICA LA LEYENDA: &ldquo;2023, AÑO DEL  BICENTENARIO DEL HEROICO COLEGIO MILITAR&rdquo;</strong></p>
+<p align="justify"><strong>El Secretario Senador Navor  Alberto Rojas Mancera: </strong>Con gusto, señora Presidenta, doy cuenta. </p>
+<p align="justify">El Senador Higinio Martínez Miranda presentó, en la  sesión del 15 de febrero del 2023, un proyecto de decreto por el cual proponía  inscribir en el Muro de Honor del Senado de la República, en letras doradas, la  leyenda: &ldquo;2023, Año del Bicentenario del Colegio Militar&rdquo;. </p>
+<p align="justify">Se turnó a las Comisiones Unidas de Defensa  Nacional; y de Reglamentos y Prácticas Parlamentarias para su estudio y  dictamen correspondiente, las y los integrantes de dichas comisiones aprobaron,  el 22 de marzo del año en curso, el dictamen con proyecto de Decreto por el que  se inscribe en el Muro de Honor del Senado de la República la leyenda: &ldquo;2023,  Año del Bicentenario del Heroico Colegio Militar&rdquo;.</p>
+<p align="justify">En el dictamen se valoran, entre otros elementos,  que las entrañas del Colegio Militar nacen los héroes nacionales, mujeres y  hombres, que conviven a diario, no sólo geográficamente, sino con elementos que  definen y culturalizan a quien son parte de esta institución militar y que  diariamente mujeres y hombres son forjados, educados y adiestrados en la  profesión de las armas, herramientas que usan para su labor y que una vez  graduados pondrán al servicio de la patria. </p>
+<p align="justify">Una vez aprobado el dictamen se remitió a la Mesa  Directiva para someterlo a consideración del Pleno.</p>
+<p align="justify">Al dictamen se le dio primera lectura, se le  dispensó su segunda lectura y se aprobó el 25 de abril.</p>
+<p align="justify">El Decreto fue publicado en el Diario Oficial de la  Federación el 3 de mayo pasado. </p>
+<p align="justify">Es cuanto, señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Ana  Lilia Rivera Rivera: </strong>En observancia al Decreto antes señalado en esta  sesión solemne, develaremos la leyenda: &ldquo;2023, Año del Bicentenario del Heroico  Colegio Militar&rdquo;.</p>
+<p align="justify">Para tal efecto, damos la bienvenida al General  Luis Cresencio Sandoval González, Secretario de la Defensa Nacional.</p>
+<p align="justify">Asimismo, agradezco la presencia del General de  División Diplomado de Estado Mayor, Gabriel García Rincón, Subsecretario de la  Defensa Nacional. </p>
+<p align="justify">El General del División Diplomado de Estado Mayor,  José Alfredo González Rodríguez, Oficial Mayor de la Secretaría de la Defensa  Nacional. </p>
+<p align="justify">El General de División Diplomado de Estado Mayor,  Jaime González Ávalos, Inspector y Contralor del Ejército y Fuerza Armada. </p>
+<p align="justify">El General de División Diplomado de Estado Mayor,  Ricardo Trevilla Trejo, Jefe de Estado Mayor Conjunto de la Defensa Nacional. </p>
+<p align="justify">En General de División Piloto Aviador Diplomado de  Estado Mayor Aéreo, Bertín Hernández Mercado, Comandante de la Fuerza Aérea  Mexicana. </p>
+<p align="justify"> El General de División  Diplomado de Estado Mayor, David Córdova Campos, Comandante de la Guardia  Nacional. </p>
+<p align="justify">El General de División  Diplomado de Estado Mayor, David Rivera Medina, Director General de Educación  Militar y Rector de la Universidad del Ejército y Fuerza Aérea Mexicana.</p>
+<p align="justify">Y el General de Brigada  Diplomado de Estado Mayor, Jorge Antonio Maldonado Guevara, Director del  Heroico Colegio Militar. </p>
+<p align="justify">Asimismo, me permito  presentar a mis compañeras y compañeros Senadores de la Mesa Directiva,  presentes en esta sesión solemne. </p>
+<p align="justify">Al Senador Sergio Pérez  Flores, Vicepresidente de la Mesa Directiva. </p>
+<p align="justify">La Senadora Alejandra  Reynoso Sánchez, Vicepresidenta Segunda de la Mesa Directiva. </p>
+<p align="justify">El Senador Navor Alberto  Rojas Mancera, Secretario de la Mesa Directiva. </p>
+<p align="justify">Y la Senadora María Guadalupe  Saldaña Cisneros, Secretaria de la Mesa Directiva. </p>
+<p align="justify">Asimismo, nos honra con su  presencia en el presídium el Senador Félix Salgado Macedonio, Presidente de la  Comisión de Defensa Nacional. </p>
+<p align="justify">Es un honor, para el Senado  de la República, dar la bienvenida al personal de la Secretaría de la Defensa  Nacional y a los Cadetes del Heroico Militar que nos acompañan en este recinto. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify">En cumplimiento al Acuerdo  aprobado, se concede el uso de la palabra al Senador Félix Salgado Macedonio, Presidente  de la Comisión de Defensa Nacional, hasta por cinco minutos.<br>
+  <br>
+  <strong>El Senador  Félix Salgado Macedonio:</strong> Honorable Asamblea, saludo  con afecto al General Secretario de la Defensa Nacional, Luis Cresencio  Sandoval González y, a las autoridades que lo acompañan, entre ellos el Director  del Heroico Colegio Militar, el General Jorge Antonio Maldonado Guevara, así  como a los invitados especiales, destacados y respetados Cadetes. </p>
+<p align="justify">El día de hoy, en esta  sesión trascendental nos reunimos en este recinto para conmemorar, con profundo  orgullo, 200 años de la existencia del Heroico Colegio Militar, un bicentenario  se dice fácil, pero pocas instituciones logran consolidar su prestigio y  cimientos sólidos para transformar y defender la vida de una nación. </p>
+<p align="justify">Recordemos su valentía en  1847, cuando aquel 13 de septiembre dieron una cátedra de patriotismo al  combatir al ejército estadounidense en el Castillo de Chapultepec. </p>
+<p align="justify">No debemos olvidar la <em>&ldquo;Marcha de la Lealtad&rdquo;</em> cuando  acompañaron y defendieron al Presidente Francisco I. Madero hacia el Palacio  Nacional, sirviendo de guardia, protegiéndolo de carroñeros que entonces  asechaban a la Ciudad de México. </p>
+<p align="justify">Qué decir de la <em>&ldquo;Columna de la Legalidad&rdquo;</em>, en 1920  cuando acompañaron al Presidente Carranza, de la Ciudad de México con rumbo a  Veracruz demostrando siempre su lealtad a la patria, al pueblo de México y a  las instituciones. </p>
+<p align="justify"> Muchas vidas, muchos  sacrificios y acontecimientos de la historia nacional  quedarán grabados en las letras doradas que hoy develaremos en el Muro de Honor  de este Senado. </p>
+<p align="justify">En ellas quedará plasmado el espíritu inquebrantable de sus cadetes y la  excelencia de una institución que desempeña un papel fundamental en la  formación y transformación de nuestro país. </p>
+<p align="justify">Aprovecho para expresar nuestro agradecimiento a nuestras Fuerzas  Armadas que han dado respuesta al pueblo de México tras desastres naturales con  el Plan DN-III, como el que azotó al puerto de Acapulco, ayudando a gente que  pierde todo tras una vida de esfuerzos. </p>
+<p align="justify">Los militares desplegados en el estado de Guerrero, muchos de ellos con  formación del Heroico Colegio Militar enaltecen a la institución de la cual  proceden, brindando esperanza y bienestar a la población. </p>
+<p align="justify">No puedo dejar de lado decir que esta iniciativa fue impulsada por mi  compañero Senador Higinio Martínez para que se inscribiera con letras de oro el  nombre de nuestro amado Heroico Colegio Militar. </p>
+<p align="justify">Y a todos mis compañeros de la Comisión de Defensa Nacional y compañeros  de Cámara, nuestra gratitud por apoyar y acompañar esta decisión. </p>
+<p align="justify">Al develar estas letras doradas no solo rendimos homenaje al pasado  ilustre del Heroico Colegio Militar, sino que también celebramos con optimismo  su presente y miramos con esperanza hacia el futuro: que estas letras doradas  sirvan como fuente de inspiración para las generaciones venideras,  exhortándolos a seguir el ejemplo de honor, lealtad y patriotismo. </p>
+<p align="justify">Muchas felicidades. </p>
+<p align="justify">¡Que viva el Heroico Colegio Militar! </p>
+<p align="justify">¡Que viva México! </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Muchas gracias, Senador Salgado Macedonio. </p>
+<p align="justify">Informo a nuestros distinguidos invitados que también nos acompaña en el  presídium la Senadora Claudia Edith Anaya Mota, Secretaria de la Mesa  Directiva. </p>
+<p align="justify">¡Bienvenida, Senadora!</p>
+<p align="justify">Conforme al Acuerdo aprobado, tiene el uso de la tribuna el General Luis  Cresencio Sandoval González, titular de la Secretaría de la Defensa Nacional. </p>
+<p align="justify"><strong>El Ciudadano Secretario de Defensa Nacional, Luis Cresencio Sandoval  González: </strong>Senadora Ana Lilia Rivera  Rivera, Presidenta de la Mesa Directiva de la Honorable Cámara de Senadores. </p>
+<p align="justify">Senador Eduardo Ramírez Aguilar, Presidente de la Junta de Coordinación  Política de este cuerpo legislativo. </p>
+<p align="justify"> Distinguidos líderes de las fracciones parlamentarias. </p>
+<p align="justify">Apreciables Senadoras y Senadores que integran la LXV Legislativa del  Congreso de la Unión. </p>
+<p align="justify">Generales, Jefes, Oficiales, Cadetes y personal de tropa. </p>
+<p align="justify">Representantes de los medios de comunicación. </p>
+<p align="justify">A todos, muy buenos días. </p>
+<p align="justify">Primeramente, quiero externar a los integrantes del Ejército, Fuerza  Aérea y Guardia Nacional y, en especial, a quienes tenemos como alma mater, al  Heroico Colegio Militar, nos enorgullece que esta soberanía rinda un homenaje a  nuestro histórico plantel por sus 200 años de probada lealtad institucional. </p>
+<p align="justify">Reconocimiento que además honra a la memoria de quienes a lo largo de la  historia como hijos del Colegio Militar y teniendo por guía el cumplimiento del  deber, han servido a la patria con decoro y dignidad, defendiendo su  integridad, independencia y soberanía con la vida misma. </p>
+<p align="justify">De ahí la importancia del acto que hoy nos reúne y que mucho agradecemos  a todos ustedes, Senadoras y Senadores de la República, porque estamos seguros  de que se funda en su convicción y en las facultades que la Carta Magna asigna  al Congreso de la Unión, entre ellas, la de levantar y sostener a las  instituciones armadas de la Unión y reglamentar su organización y reglamentar  su organización y servicio. </p>
+<p align="justify">Aspectos sumamente  importantes que permiten al instituto armado estar listo y siempre preparado  para cumplir no sólo con las misiones relacionadas con la Defensa de la Nación,  sino también las referentes a acciones sociales, cívicas, de desarrollo  nacional y de apoyo a la población ante desastres. </p>
+<p align="justify">Tareas vitales, con las que  los soldados de México contribuimos decididamente en el bienestar de cada  connacional. </p>
+<p align="justify">Dicha facultad propicia  coincidencias entre la Cámara de Senadores y el Instituto Armado al  corresponderle a este órgano legislativo la ratificación de los nombramientos  que el Ejecutivo Federal haga de coroneles y demás jefes superiores del  Ejército, de la Armada y Fuerza Aérea Nacionales y la autorización para  permitir la salida de tropas nacionales fuera de los límites del país, entre  otras. </p>
+<p align="justify">Pero la coincidencia más  significativa es que al velar por las entidades federativas que ustedes  representan, lo hacen también por el interés superior de la patria, interés  superior que también es de los soldados de México y de los integrantes de la  Guardia Nacional. </p>
+<p align="justify">En consecuencia, es muy  satisfactorio que en el Muro de Honor de este recinto legislativo quede grabada  con letras de oro la leyenda &ldquo;2023, Año del Bicentenario del Heroico Colegio  Militar&rdquo;. </p>
+<p align="justify">Emblemático plantel que se  debe al pueblo de México, de donde han surgido los mexicanos en uniforme  militar, que a lo largo de 200 años se han formado en sus aulas y en las  diversas etapas de nuestra historia han dado muestra de su patriotismo, su  lealtad y su institucionalidad. </p>
+<p align="justify">La historia misma se ha  encargado de marcar en sus páginas gloriosas estos hechos heroicos de los hijos  del Colegio Militar.</p>
+<p align="justify">Recordemos que fueron  cadetes de este plantel, quienes en 1828 se mantuvieron al lado del Presidente  Guadalupe Victoria, durante los disturbios del Plan de Montaño; demostrando,  por primera vez, su lealtad a las instituciones legalmente establecidas. </p>
+<p align="justify"> Fueron cadetes de este  plantel quienes, en la gesta heroica de 1847, dieron la más pura muestra de  amor a la patria, al defender con su vida el honor nacional, cimentando las  bases de nuestra identidad que más tarde sería el bastión principal para hacer  frente a la segunda intervención francesa en 1862. </p>
+<p align="justify">También fueron cadetes de  este plantel, quienes el 9 de febrero de 1913, dieron prueba de lealtad  institucional al escoltar al Presidente Francisco I. Madero del Castillo de  Chapultepec a Palacio Nacional ante la revuelta que pretendía alterar el orden  constitucional. </p>
+<p align="justify">Acto que siete años después  fue emulado en la conocida columna de la legalidad cuando en 1920 los alumnos  de esta institución educativa militar acompañaron al Presidente Venustiano  Carranza en el traslado de los poderes nacionales de esta ciudad capital hacia  Veracruz, destacando el hecho histórico, conocido como la <em>&ldquo;Última carga al Sable&rdquo;</em> por los Cadetes de caballería ocurrido el  día 9 de mayo de ese mismo año. </p>
+<p align="justify">Con ese legado de lealtad y  compromiso institucional a dos siglos de distancia, hoy el Heroico Colegio  Militar se constituye en el plantel más longevo y emblemático que con vocación  educativa, vanguardista ha evolucionado en aras de una formación castrense de  excelencia para las mujeres y hombres, futuros mandos del Ejército Mexicano y  de la Guardia Nacional. </p>
+<p align="justify">De su herencia bicentenaria y del amor a la patria emergieron valores  que ahora son parte de todo nuestro instituto armado, y de su aplicación han  surgido el permanente respeto y respaldo a las instituciones legalmente  establecidas, el arraigo, sentido social, en beneficio del pueblo y, sobre  todo, la incuestionable lealtad institucional.</p>
+<p align="justify">Apreciables Senadoras y Senadores, los soldados de tierra y aire, y los  integrantes de la Guardia Nacional respetamos y también reconocemos su valioso  trabajo en favor de nuestro país. Tengan la certeza de que mucho valoramos el  gesto que han tenido con este acto solemne, por todo lo que ha representado el  Heroico Colegio Militar para México en sus primeros doscientos años, y hoy en  este recinto parlamentario quedará testimonio de ello.</p>
+<p align="justify">Tan alta distinción nos impulsa a seguir cumpliendo con determinación  cada una de nuestras misiones encaminadas al bienestar de la sociedad. Por  ello, ratificamos el compromiso de seguir preservando el legado de valores en  esta insignia del colegio para que siga siendo una opción educativa para  aquellos jóvenes mexicanos que deseen superarse profesionalmente y servir a la  patria desde la carrera de las armas.</p>
+<p align="justify">Con esa convicción el honor, lealtad, patriotismo, valor y abnegación  seguirán siendo virtudes que se constituyen en normas de actuación de cada  oficial graduado del Heroico Colegio Militar, y así continuaremos trabajando  todos los días en todos los rincones del territorio nacional y bajo cualquier  circunstancia por el bien de la sociedad, por México y sus instituciones.</p>
+<p align="justify">Seguiremos auxiliando a la sociedad en casos de desastre con la  aplicación de los planes DN-III-E y Guardia Nacional, asistencia, trabajando  hombro con hombro con los gobiernos y con sus autoridades como lo hicimos  durante la pandemia de COVID-19 y lo hacemos actualmente en el estado de  Guerrero ante los efectos del huracán &ldquo;Otis&rdquo;.</p>
+<p align="justify"> Ante situaciones como ésta, hoy más que nunca nuestro país demanda la  suma de esfuerzos de gobiernos, instituciones y sociedad. Así, hoy más que  nunca, el Senado de la República y el instituto armado nos une, un objetivo  común, la seguridad y bienestar de cada mexicano.</p>
+<p align="justify">Con ese sentir, hoy más que nunca, las fuerzas de tierra, aire y la  Guardia Nacional seguiremos danto todo por la grandeza de México.</p>
+<p align="justify">Nuevamente muchas gracias, Senadoras y Senadores por esta sesión solemne  en honor al Heroico Colegio Militar.<br>
+  Y muchas gracias, muchas gracias por su atención.</p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Muchas gracias por su mensaje, General Secretario.</p>
+<p align="justify">Compañeras y compañeros Senadores; invitados que nos acompañan en esta  sesión solemne. </p>
+<p align="justify">Señoras y Señores.</p>
+<p align="justify">Pueblo de México.</p>
+<p align="justify">Como es de su conocimiento, posterior a la consumación de la  Independencia, el 11 de octubre de 1823 el Ministro de Guerra, General José  Joaquín de Herrera, tuvo a bien expedir el Decreto de creación del Colegio  Militar convocando a todos los jóvenes estudiantes de los cuerpos castrenses a  que se concentraran en la Fortaleza de San Carlos, ubicada en Perote, Veracruz,  para convertirse en sede del heroico y glorioso Colegio Militar. </p>
+<p align="justify">Hace 200 años se fundó el  Colegio Militar, donde iniciaron las primeras muestras de heroísmo, sacrificio  y abnegación por la patria. </p>
+<p align="justify">Esta institución castrense  fue instituida para convertirse en uno de los sistemas defensivos más  importantes de la época virreinal y que constituyó como la sede donde  inicialmente se formaron los primeros cuadros de mando del Ejército mexicano. </p>
+<p align="justify">A 200 años de la fundación,  esta sesión solemne que el Senado de la República ha organizado reviste  especial interés para rendir un merecido homenaje al lugar donde ha tenido su  origen la formación de hombres y mujeres de guerra en defensa de la nación  mexicana. </p>
+<p align="justify">Celebramos los 200 años del  plantel educativo de formación militar de mayor legado, tradición e historia  que ha entregado a nuestra patria dos siglos de honor y de lealtad. </p>
+<p align="justify">En el marco de esta sesión  solemne conmemorativa al Bicentenario del Heroico Colegio Militar, el Senado de  la República aprobó el Decreto publicado en el Diario Oficial de la Federación  por el cual se deberá inscribir con letras doradas en el Muro de Honor de este  salón de sesiones la leyenda &ldquo;2023, Bicentenario del Heroico Colegio Militar&rdquo;.</p>
+<p align="justify">Celebrar la fundación del  Heroico Colegio Militar adquiere un mayor significado por lo que representa en  la historia de México, al convertirse en una institución bicentenaria educativa  donde mujeres y hombres mexicanos inician su formación militar, forjando así el  legado histórico que perdura hasta nuestros días. </p>
+<p align="justify">A dos siglos de distancia,  las y los mexicanos gozamos de esa herencia de valores, tradiciones y prestigio  que se atesoraron imborrables, no sólo en los libros de historia, sino en la  memoria colectiva nacional con su contribución en la formación de esta gran  nación llena de pasajes de lucha y de fragor que todos recordamos y celebramos. </p>
+<p align="justify">Esta institución ha sido  formadora de hombres y mujeres de incuestionable lealtad a las instituciones,  lealtad que ha sido sometida a múltiples pruebas amalgamadas en cada acto  glorioso de la lucha por la formación de la patria, alcanzando su punto álgido  al finalizar el movimiento revolucionario, quedando la lealtad institucional  como mayor contribución del Ejército mexicano a nuestra nación. </p>
+<p align="justify">Esta bicentenaria tradición  de lealtad del Colegio Militar, a todas y a todos los mexicanos, de todos los  estratos sociales, nos llena de orgullo. </p>
+<p align="justify">El Heroico Colegio Militar  ha sido cuna de reconocidos personajes que han dado ejemplo de liderazgo en  históricas batallas, de iniciativa para profesionalizar al instituto armado,  pero, sobre todo, personajes que se han destacado a través de acciones realizadas  en beneficio del pueblo de México. </p>
+<p align="justify"> Hoy podemos afirmar que  destacadas y destacados militares, descendientes del Heroico Colegio Militar,  fueron llamados a enfocar el esfuerzo institucional en aras de la seguridad y  el desarrollo colectivo, destacando la materialización de proyectos  prioritarios con los que se busca fortalecer la infraestructura estratégica  para impulsar el crecimiento de México y el bienestar de la ciudadanía. </p>
+<p align="justify">El Ejército mexicano, noble  y comprometida institución, refrenda que es y ha sido una leal institución que  siempre ha brindado el apoyo determinante a la sociedad. </p>
+<p align="justify">¿Cómo no reconocer a sus  integrantes, que su actuar sin dilación se ha manifestado en favor de las  personas damnificadas y la población afectada por el reciente huracán &ldquo;Otis&rdquo;?</p>
+<p align="justify">Así como también recordamos  con orgullo manifiesto su invaluable participación durante la pandemia mundial  ocasionada por el COVID-19, en la que se volcaron todas las capacidades  institucionales del Ejército, Fuerza Aérea y Guardia Nacional, transportando  medicamentos e insumos, activando campañas de vacunación y habilitando  hospitales. </p>
+<p align="justify">Esto es sólo un ejemplo de  lo importante que es la contribución que ha dado a México las y los hijos del  Heroico Colegio Militar al país en dos siglos de lealtad institucional, de  tradición y gloria, importancia que debemos valorar recordando sus hazañas,  conservando sus recintos, pero, sobre todo, fortaleciendo a esta noble  institución en todos sus aspectos para que continúe siendo semillero de mexicanas  y mexicanos con un alto sentido de lealtad, del honor y del deber, así como  encargados de la dirección de la defensa de la Patria y, hoy en día, en apoyo a  la seguridad pública con el respaldo legal de nuestra Constitución. </p>
+<p align="justify">Amables asistentes, con la  develación en el Muro de Honor de esta Cámara de Senadores de la leyenda:  &ldquo;2023, bicentenario del Heroico Colegio Militar&rdquo;, el Senado de la República  reconoce al Ejército mexicano y a sus integrantes y se une al esfuerzo de  preservar nuestros valores históricos contribuyendo con este acto a conservar y  atesorar la historia nacional y, en particular, la del Heroico Colegio Militar. </p>
+<p align="justify">Concluyo mi intervención  enviando una calurosa felicitación a las y los Cadetes, Oficiales y a todo el  personal del Heroico Colegio Militar por el Bicentenario de este plantel  educativo militar el cual, después de 200 años, sigue formando hombres y  mujeres con virtudes de honor, lealtad, disciplina, patriotismo y valor.</p>
+<p align="justify">Y no quiero concluir sin  antes expresar un pensamiento que escribí hace unos momentos. </p>
+<p align="justify">Me dijo el general, hace  unos momentos, que el Senado de la República impone. </p>
+<p align="justify">Si levanta su cara, General,  ahí está lo que impone.</p>
+<p align="center"><em>Colegio Heroico Militar, con  el laudo debido a nuestro celo, </em><br>
+  <em>velen siempre con amor  profundo, </em><br>
+<em>así cual brilla el sol sobre  la esfera mire brillar en nuestra mano el mundo.</em></p>
+<p align="center"><em>Libre y llena de honor  nuestra Bandera de firmeza y de heroísmo ejemplo.</em></p>
+<p align="center"><em>Nunca luchen contra el  hermano.</em></p>
+<p align="center"><em>Ama la patria y hallarás por  templo el corazón del pueblo mexicano.</em></p>
+<p align="center"><em>&ldquo;¡Que viva el Heroico  Colegio Militar!&rdquo;</em></p>
+<p align="justify">Solicito a las y los Coordinadores  de los grupos parlamentarios. </p>
+<p align="justify">A los integrantes de la  Junta Directiva de la Comisión de Defensa Nacional. </p>
+<p align="justify"> Y al General Secretario de  la Defensa Nacional, Luis Cresencio Sandoval González, me acompañen a la base  del Muro de Honor para la develación de la leyenda: &ldquo;2023, Año del Bicentenario  del Heroico Colegio Militar&rdquo;.</p>
+<p align="justify">Les informo que previo a la  develación escucharemos el Himno del Colegio Militar. </p>
+<p align="justify">Concluida la develación entonaremos  nuestro Himno Nacional como acto final de esta sesión solemne. </p>
+<p align="justify">Favor ponerse de pie. </p>
+<p align="center">(Todos de  pie)</p>
+<p align="center">(Develación  de la leyenda)</p>
+<p align="justify"><strong>La Secretaria Senadora  Claudia Edith Anaya Mota: </strong>En estos momentos  escucharemos el Himno del Heroico Colegio Militar.</p>
+<p align="center">(Entonan  el Himno del Heroico Colegio Militar)</p>
+<p align="center">(Se entona  el Himno Nacional)</p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Le pedimos que  permanezcamos en el salón de sesiones para continuar con la sesión ordinaria.</p>
+<p align="justify">Se levanta la sesión solmene</p>
+<p align="center">(Se levantó la sesión a las 12:00 horas)</p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113485'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

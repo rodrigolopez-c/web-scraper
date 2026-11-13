@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 13</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Mónica Fernández Balboa</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Ordinaria Celebrada<br>en la Ciudad de M&eacute;xico, el 12 de Marzo de 2020</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/2/SPO/PDF-WEB/SPO_No.13_12_MARZO_2020.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='88974'></a><p align="center"><strong>PRESIDENCIA DE LA SENADORA</strong><br>
+  <strong>MÓNICA FERNÁNDEZ BALBOA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>(12:26 horas) Solicito a la Secretaría informe a la Asamblea el  resultado del cómputo de asistencia de las señoras Senadoras y los señores  Senadores. <br>
+  <br>
+  <strong>La Secretaria Senadora Katya Elizabeth Ávila Vázquez: </strong>Honorable Asamblea, conforme al registro de asistencia, se han  acreditado 72 ciudadanas Senadoras y ciudadanos Senadores. </p>
+<p align="justify">En consecuencia, hay quórum, señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Se abre la sesión ordinaria del día de hoy. Se encuentra disponible en  el monitor de sus escaños el Orden del Día; con lo cual se informa de los  asuntos que corresponden a la agenda de esta sesión. </p>
+<p align="justify">Compañeras Senadoras y compañeros Senadores, de conformidad con el Orden  del Día de esta sesión, procederemos a la recepción del informe anual de  labores del Instituto Nacional de Transparencia, Acceso a la Información y  Protección de Datos Personales. </p>
+<p align="justify">La presentación de este informe se normará por el Acuerdo de la Mesa  Directiva que aprobamos el 11 de febrero. </p>
+<p align="justify">El Doctor Francisco Javier Acuña Llamas, Comisionado Presidente, y las  Comisionadas y los Comisionados del Instituto Nacional de Transparencia, Acceso  a la Información y Protección de Datos Personales, están en el salón contiguo a  este recinto. </p>
+<p align="justify">Esta Presidencia designa a las siguientes Senadoras y Senadores para que  inviten a pasar al Comisionado Presidente y a las Comisionadas y los  Comisionados del Inai a nuestro salón de plenos: </p>
+<p align="justify">Senador Daniel Gutiérrez Castorena, Senadora Beatriz Paredes Rangel,  Senadora Nancy De la Sierra Arámburo, Senadora Eunice Renata Romo Molina,  Senador Miguel Ángel Mancera Espinosa y Senadora Martha Guerrero Sánchez. </p>
+<p align="justify">Sonido al escaño de la Senadora Paredes, ¿con qué objeto?</p>
+<p align="justify"><strong>La Senadora Beatriz Elena Paredes Rangel: </strong>(Desde su escaño) Señora Presidenta, sólo para comprender que, aunque no  está incorporado en el Orden del Día, que se circuló por escrito. </p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Perdón que la interrumpa, Senadora, esta es otra nueva sesión. </p>
+<p align="justify"><strong>La Senadora Beatriz Elena Paredes Rangel: </strong>(Desde su escaño) Otra sesión, perfecto. Le agradezco mucho, señora  Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>En la siguiente sesión quedó incorporado el dictamen. </p>
+<p align="justify"><strong>La Senadora Beatriz Elena Paredes Rangel: </strong>(Desde su escaño) Y felicitaciones por la sesión solemne, señora  Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Gracias, Senadora Paredes Rangel. </p>
+<p align="justify">Les ruego que puedan acompañar a las Comisionadas y Comisionados del  Instituto Nacional de Transparencia, Acceso a la Información y Protección de  Datos Personales. </p>
+<p align="center">(La comisión cumple)</p>
+<p align="justify">Se reanuda la sesión.<br>
+  <br>
+  Saludamos la  presencia del Doctor Francisco Javier Acuña Llamas, Comisionado Presidente del  Instituto Nacional de Transparencia, Acceso a la Información y Protección de  Datos Personales.</p>
+<p align="justify">Asimismo, saludo la  visita de las Comisionadas y los Comisionados Óscar Mauricio Guerra Ford,  Blanca Lilia Ibarra, María Patricia Kurczyn Villalobos, Rosendoevgueni  Monterrey Chepov, Josefina Román Vergara y Joel Salas Suárez, quienes acuden a  esta soberanía con la finalidad de cumplir con la entrega del Informe 2019.</p>
+<p align="justify">Igualmente, damos  la bienvenida a las y los servidores públicos del Instituto Nacional de  Transparencia, Acceso a la Información y Protección de Datos Personales, que  acuden a presenciar la entrega de este Informe de Labores.</p>
+<p align="justify">¡Sean todos y todas  bienvenidos!</p>
+<p align="justify">El Informe de  Labores del Inai se presenta en cumplimiento de lo que marca el Artículo 6º de  la Constitución Política de los Estados Unidos Mexicanos.</p>
+<p align="justify">Conforme al Acuerdo  aprobado, hará uso de la palabra el Comisionado Presidente, hasta por veinte  minutos, concluida su intervención tendrán el uso de la palabra las Senadoras y  los Senadores para presentar una ronda de preguntas.</p>
+<p align="justify">Estas  intervenciones de cada grupo parlamentario se harán en orden progresivo y de  manera consecutiva, por un tiempo máximo de hasta tres minutos.</p>
+<p align="justify">La Mesa Directiva  acordó la participación del Senador Álvarez Icaza al inicio de dichas  intervenciones, las cuales podrán ser formuladas desde su escaño si así lo  desea.</p>
+<p align="justify">Durante las  preguntas de las Senadoras y los Senadores, el Comisionado Presidente ocupará  su lugar en el presídium.</p>
+<p align="justify">Para dar respuesta  a dichos cuestionamientos, el Comisionado Presidente del Instituto hará uso de  la palabra hasta por diez minutos en una sola intervención.</p>
+<p align="justify">Las respuestas no  darán lugar a réplicas.</p>
+<p align="justify">Al término de la  anterior intervención, esta Presidencia dará formal recepción al Informe.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a88974'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='88975'></a><p align="justify"><strong>INFORME  ANUAL DE LABORES DEL INSTITUTO NACIONAL DE  TRANSPARENCIA, ACCESO A LA INFORMACIÓN Y  PROTECCIÓN DE DATOS PERSONALES</strong></p>
+<p align="justify">En consecuencia,  tiene la palabra el Doctor Francisco Javier Acuña Llamas, Comisionado  Presidente del Instituto Nacional de Transparencia, Acceso a la Información y  Protección de Datos Personales, hasta por veinte minutos.</p>
+<p align="justify"><strong>El Comisionado  Presidente del Instituto Nacional de Transparencia, Acceso a la Información y  Protección de Datos Personales, Francisco Javier Acuña Llamas: </strong>Muy buenas tardes,  señoras y señores Senadores.</p>
+<p align="justify">Con la venia de los  integrantes de la Mesa Directiva del Senado de la República saludo con respeto  a toda la Soberanía.</p>
+<p align="justify">A la señora  Senadora Mónica Fernández Balboa, señora Presidenta de la Mesa Directiva.</p>
+<p align="justify">A la Senadora María  Guadalupe Murguía Gutiérrez, Vicepresidenta.<br>
+  Al Senador Salomón Jara Cruz, Vicepresidente.</p>
+<p align="justify">Al Senador Ramírez Marín.</p>
+<p align="justify">A la Senadora Nancy De la Sierra Arámburo.</p>
+<p align="justify">A la Senadora Katya Elizabeth Ávila Vázquez.</p>
+<p align="justify">Señoras y señores Senadores, gracias.</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: ¡</strong>Bienvenido!</p>
+<p align="justify"><strong>El Comisionado Presidente del Instituto Nacional de Transparencia,  Acceso a la Información y Protección de Datos Personales, Francisco Javier  Acuña Llamas: </strong>Hoy, 12 de marzo, con la representación de  mis compañeras y compañeros Comisionados Blanca Lilia Ibarra, Josefina Román,  María Patricia Kurczyn, y mis compañeros Comisionados Óscar Guerra Ford, Joel  Salas Suárez y Eugenio Monterrey, agradeciendo la asistencia de mis colegas  comisionadas y comisionados, integrantes del Sistema Nacional de Transparencia,  comparezco ante el Pleno del Senado de la República para reseñar las  actividades desarrolladas por el Inai entre octubre del 2018 y septiembre del  2019.</p>
+<p align="justify">El Inai es fruto legítimo de la democratización mexicana, forma parte de  la estructura ampliada del Estado; su gestación y desarrollo ha sido acompañado  por el compromiso, la sensibilidad y la perspectiva de Estado de varias  generaciones de ciudadanos y de un amplio número de actores políticos y  sociales, incluidos los que integran la Cámara de Senadores en su actual  composición parlamentaria, por haber sido legisladores en ambas Cámaras en los  últimos tres lustros.</p>
+<p align="justify">El Inai es una institución joven, pero se desempeña con la experiencia  acumulada de casi dos décadas. Más de quince años invertidos en la tutela del  derecho humano que tiene la gente a reclamar información pública y, de modo  progresivo, a garantizar en paralelo el derecho humano a la protección de datos  personales que se encuentran en posesión de personas privadas e instituciones públicas. </p>
+<p align="justify">El Inai, por su  condición de órgano constitucional autónomo, tiene en su ADN una evidente  vocación a la rendición de cuentas.</p>
+<p align="justify">Como quería don  Daniel Cosío Villegas, el Inai puede y debe contribuir a hacer cada vez más  pública la vida pública. </p>
+<p align="justify">Con ese talante  institucional venimos a rendir cuentas al país de nuestro desempeño por intermedio  de la Cámara Alta. </p>
+<p align="justify">La sociedad  mexicana se mueve y con razones contundentes recupera el espacio público,  reafirma sus libertades y exige respeto a los derechos. </p>
+<p align="justify">El Inai es un  catalizador del ambiente y el ánimo público, es un termómetro sensible y receptivo  del pulso que ha tomado, entre otros grandes rubros, la agenda de las mujeres,  por ejemplo. </p>
+<p align="justify">Expresamos nuestros  respetos a las Senadoras integrantes de la Legislatura de la Paridad de Género  por la prestancia y determinación que han mostrado para acompañar las políticas  y acciones que se desplieguen en el futuro inmediato para atender los justos  reclamos ante la injustificada y abrumadora violencia contra las mujeres. <br>
+  <br>
+  El Inai es  receptivo y proactivo ante la nueva agenda social y ante el curso inédito que  han tomado los acontecimientos en los últimos días. </p>
+<p align="justify">La globalización  exige al Inai ser un instrumento técnico y neutral para la identificación de la  verdad pública frente a catástrofes naturales como en el 2017 o pandemias como  la que se ha reconocido recientemente. </p>
+<p align="justify">El Inai presta el  servicio de hacer público lo que es público, convenciendo y hasta venciendo la  resistencia de las instituciones y las dependencias a entregar de primera vez,  sin excusas ni cortapisas, sin pretextos, toda cuanta información existente y  disponible se ha requerido por la ciudadanía a título individual o anónimo y,  en paralelo, la grave responsabilidad de ser la máxima autoridad administrativa  protectora de la privacidad. </p>
+<p align="justify">El modelo mexicano  mixto o bifrontal vino a resolver caso por caso la tensión entre esos dos  derechos, que en otros países son tutelados por organismos diferentes. </p>
+<p align="justify">Sin temor a  equivocarme, señoras y señores Senadores, puedo asegurar que el Inai, activo  del Estado mexicano, ha cosechado un liderazgo internacional; participa en las  principales redes internacionales de cooperación en materia de acceso a la  información y protección de datos personales, tales como la Conferencia  Internacional de Comisionados de Información; la Red de Transparencia y Acceso  a la Información, RTA; la Red Iberoamericana de Protección de Datos; la Red  para la Integridad, la cual presidió en parte del período del Inai, y la  Conferencia Internacional de Autoridades de Protección de Datos y Privacidad. </p>
+<p align="justify">Reconozco en esto a  todos, pero en especial, la tarea de mi compañera Kurczyn, Coordinadora de la  Comisión de Asuntos Internacionales. </p>
+<p align="justify">Genuina expresión  de liderazgo de México en el ámbito internacional es la declaratoria como sede  la Primera Asamblea Global de la Privacidad, prevista para el 12 de octubre del presente año, y que  sin ser Presidente, un servidor, para entonces, del Inai, me corresponderá  coordinar, gracias a la generosa confianza de mis compañeros de pleno.</p>
+<p align="justify">La complejidad del  ejercicio del poder bajo el principio de legalidad en México nos llevó a  experimentar un enfoque sistémico o integral que ha generado un conjunto de  sistemas que, a su vez, se interconectan dentro de un metasistema. </p>
+<p align="justify">Esta lógica de la  interinstitucionalización de los procesos y los procedimientos democráticos  presupone que las partes juegan un papel esencial para garantizar el  funcionamiento del todo, que es el Estado de derecho. </p>
+<p align="justify">En el diseño  sistémico, el papel de la información púbica es insumo clave para el ejercicio de las funciones de  los diversos sistemas que, a su vez, integran el metasistema. </p>
+<p align="justify">El Inai participa  activamente con diversas atribuciones en el Sistema Nacional de Transparencia,  el cual preside.</p>
+<p align="justify">El Inai participa  en el Sistema Nacional de Anticorrupción, como uno de los siete integrantes del  Comité Coordinador; en el Sistema Nacional de Archivos y en el Sistema Nacional  de Fiscalización; el Sistema Nacional de Transparencia, que encabeza el Inai y  que, desde su edificación, en los trabajos de permanente coordinación de pares  locales, ha coordinado mi compañero Eugenio Monterrey Chepov.<br>
+  <br>
+  Durante el periodo  de una destacada labor en el impulso a la armonización de las leyes estatales,  a la Ley General de Archivos, durante este 2020 vencerá el plazo para esta  tarea, pero desde ahora se avanza firme en el reconocimiento de la gestión  documental como el arma con la cual se pueden asentar, conforme a las  tecnologías de cada época, los registros de cada decisión pública, y así  explicar todo acto de autoridad, tarea en la que reconozco la labor de  coordinación de mi compañera Josefina Román.</p>
+<p align="justify">En el período que  se informa asumimos por unanimidad sumarnos al ejercicio de la función pública  bajo la nueva era, asimilando la disciplina presupuestal con rigurosa  austeridad del gasto institucional y también la de sostener con firmeza la lupa  que permite examinar los recovecos donde la corrupción se esconde…</p>
+<p align="justify"><strong>La Presidenta  Senadora Mónica Fernández Balboa: </strong>Perdón, señor Presidente. </p>
+<p align="justify">Si nos permite, si  me permite un segundo, le quiero pedir a todos los visitantes que están en los  pasillos de la parte de atrás, a todos los asesores que están en los  corredores, que, por favor, desalojen el recinto, porque el murmullo no permite  oír y escuchar las palabras de este informe a todas las Senadoras y Senadores  de la parte de atrás. </p>
+<p align="justify">Les ruego, por  favor, desalojar el inmueble; les ruego, por favor, salir de este salón de  Plenos. </p>
+<p align="justify">Y les pido a todos  su atención y respeto al orador. </p>
+<p align="justify">Adelante, por  favor, señor Presidente. </p>
+<p align="justify"><strong>El Doctor Francisco  Javier Acuña Llamas, Comisionado Presidente del Instituto Nacional de  Transparencia, Acceso a la Información y Protección de Datos Personales: </strong>Muchas gracias, señora  Presidenta. </p>
+<p align="justify">Ahí, donde la  corrupción se esconde y anida para contribuir a su destierro cuando sea posible  a su erradicación. </p>
+<p align="justify">Ejemplo de lo  anterior fueron los esfuerzos conducidos desde el Sistema Nacional de  Anticorrupción, el Inai permitió los ajustes y la definición en muchos de los  formatos de la llamada Declaración 3 de 3, para lograr un reporte más profuso y  claro de la situación patrimonial, fiscal y de intereses de los funcionarios de  todos los niveles, que aplica a partir de este año. </p>
+<p align="justify">También relevante  al seno de esta instancia fue la posibilidad de hacer valer la excepción a la  regla de reserva de información por actos de corrupción, hecho que permite  cercenar los intentos de ocultar o negar información en casos palpables de este  tipo de conductas. </p>
+<p align="justify">Histórica también,  en el periodo que se informa, es la facultad reconocida al Inai por parte de la  Suprema Corte de Justicia de la Nación para ordenar a las procuradurías o  fiscalías que abran en versión pública información de la averiguación previa o  carpeta de investigación, si fuera referente a violaciones graves de derechos  humanos y delitos de lesa humanidad, como lo hicimos con arrojo este Pleno a  finales de 2014, respecto del penoso caso de Ayotzinapa. </p>
+<p align="justify">Se trata de un hito  a favor de los criterios aperturistas de la información que fortalece la  autoridad del Inai sin lugar a dudas, resoluciones como las que obligó entonces  a la PGR a elaborar una versión pública de la averiguación pública completa del  caso de Odebrecht, pendiente de cumplimiento por cierto, y aquellas ligadas a  los más de 50 recursos relacionados con la condonación de créditos fiscales en  los que el Inai ordenó, desde un primer momento, la apertura de la información  y la publicación de las listas de gastos en publicidad oficial y que el SAT  abrió por orden del juez de amparo. <br>
+  <br>
+  La Plataforma  Nacional de Transparencia es el instrumento tecnológico nacional más importante  para el ejercicio del derecho de acceso a la información y de los derechos  ARCO, para la interposición y atención de los recursos de revisión, para la  consulta de las obligaciones de transparencia y para la presentación de  denuncias ante el incumplimiento de éstas últimas. </p>
+<p align="justify">Desde el inicio de  operación en mayo de 2016, a través de la Plataforma Nacional de Transparencia,  los más de ocho mil sujetos obligados de los tres órdenes de gobierno han  recibido más de un millón 500 mil solicitudes de acceso a la información. </p>
+<p align="justify">Los 33 organismos  garantes aquí representados, nuevamente agradezco solidaridad, más de 80 mil  recursos de revisión para su atención, y que cuenta con más de tres mil 22 millones de registros de información y obligaciones de  transparencia para la consulta de la ciudadanía. </p>
+<p align="justify">Más de 70 mil servidores públicos han cargado tres mil millones de  registros de información, posicionándose como la herramienta digital por excelencia  y única en su género. </p>
+<p align="justify">La plataforma, además, permite que el ciudadano coadyuve con los  organismos garantes al interponer denuncias por incumplimiento con la  publicación de obligaciones de transparencia, de esta manera se generan  incentivos para mejorar la calidad de la información al corregir posibles  fallas en su carga o la omisión de la misma.</p>
+<p align="justify">En abril de 2019, se instrumentó un rediseño de la funcionalidad de  simplificación de la imagen de la plataforma, orientándola hacia la utilidad,  la usabilidad y la intuitividad en la navegación. Los resultados se reflejan en  un incremento, sí, del 90 por ciento de usuarios del SIPOT, que es el Sistema  de Portales de Obligaciones de Transparencia, que alcanzaron un millón 22 mil  hasta el periodo reportado; un incremento del 23 por ciento en el uso del  Sistema de Solicitudes, SISAI, por sus siglas, que alcanzó un millón 700 mil.</p>
+<p align="justify">Gracias a la Plataforma Nacional de Transparencia se ha podido encausar  un aumento del 41.2 por ciento en la presentación de solicitudes respecto al  mismo periodo anterior y, sí, un 176 por ciento en interposición de recursos de  revisión.</p>
+<p align="justify">Además, incrementó en 527 por ciento el número de denuncias por  incumplimiento de obligaciones de transparencia gracias a la simplificación del  proceso para realizarlas, alcanzando 22 mil hasta el periodo que se informa, 22  mil denuncias.</p>
+<p align="justify">Todos los días se realizan un promedio de dos mil solicitudes en el  país, de ellas, 6 de cada 10 son realizadas y gestionadas por medio de la  Plataforma Nacional de Transparencia.</p>
+<p align="justify">Cabe destacar que existe una tendencia incremental para utilizar esta  vía. Reconozco la constancia y el denodado esfuerzo de mi compañero Óscar  Guerra Ford desde el momento del inicio de esta fórmula, solución que en su  momento fue experimental y que, con el paso, el ensayo y el error ha venido a  convertirse en lo que señalaba.</p>
+<p align="justify">Vamos hacia el Estado abierto.</p>
+<p align="justify">El Inai desde hace seis años se ha sumado a la promoción del gobierno  abierto y a la implementación de políticas públicas con ese enfoque, en aras de  alcanzar la transparencia proactiva, guía que estimula la participación  ciudadana y la saludable incidencia de la sociedad en la trama y ejecución de  la gestión pública.</p>
+<p align="justify">El gobierno abierto es la evolución natural de la transparencia y la  rendición de cuentas.<br>
+  <br>
+  Tuvo destacados ejercicios en el periodo, uno de ellos fue el Parlamento  Abierto, figura a través de la cual se abren los procesos legislativos a la  participación de la gente, más allá de la representación que ya tiene a través de  las señoras y señores legisladores. Con el Senado, esta Legislatura se ha  reiniciado el prometedor proyecto, gracias, señoras y señores Senadores, por  esta oportunidad de ser útiles al Inai, al seno de esta Cámara Alta.</p>
+<p align="justify">Otra muestra de los alcances del gobierno abierto durante el periodo  fueron las aproximaciones sucesivas a la justicia abierta, la cual también  presenta mecanismos de participación ciudadana para dar pie a nuevos tiempos en  la democracia judicial, la interiorización de la opinión de la sociedad civil  organizada en algunos procesos de decisión administrativa y hasta de la  sustantiva de los poderes judiciales.</p>
+<p align="justify">El Inai, del brazo de los organismos garantes de transparencia de los  estados y con el concierto y el concurso de las organizaciones de la sociedad  civil de renombre nacional e internacional y con otras que de manera espontánea  han venido creciendo formándose para este cometido, mantuvo un amplio y notorio  esfuerzo en los ejercicios locales inspirados en la filosofía del gobierno abierto.</p>
+<p align="justify">Reconozco el esfuerzo coordinado por mi compañero Joel Salas Suárez en  esta importantísima faceta de la función polivalente del Inai en sus muy  diversos campos de contacto y desarrollo con la sociedad. Al cierre de este  informe estábamos en el umbral de los dos millones de solicitudes de  información ingresadas a los sujetos obligados del ámbito federal. De ese  total, un nuevo número histórico, más de 279 mil se registraron de octubre de  2018 a septiembre de 2019.</p>
+<p align="justify">Las solicitudes analizadas confirman reducción en la concentración  geográfica de las grandes ciudades, noticia optimista en cuanto a la difusión  de los derechos de acceso a la información y de protección de datos, ya que  refleja un expansivo uso y adopción de los mismos en la República, y que mucho  se debe al trabajo diario que hacen todos y cada uno de los 32 órganos garantes  del Estado mexicano, me refiero a órganos garantes estatales de nuestra  Federación.</p>
+<p align="justify">Mientras que las solicitudes son analizadas por tema, se observa un  aumento en lo referente a justicia y salud.</p>
+<p align="justify">Otra buena noticia cuantificada es el alza en solicitudes en materia de  datos personales, 14 por ciento con respecto del periodo anterior, hombres y  mujeres, casi por igual, quieren acceder a sus expedientes médicos, tarjetones  de pago, documentos personales o conocer sus aportaciones a la subcuenta de  vivienda y el acceso a la información, que con ello se confirma que es la  vereda que hace posible andar en ese camino, antes azaroso, impredecible o  definitivamente adverso por la burocratización.</p>
+<p align="justify">Estamos seguros de que defender la privacidad es parte de nuestra  contribución a la época moderna, por eso, al cabo de estos 12 meses, se  presentó un alza del 27 por ciento en los medios de impugnación interpuestos  ante el Inai con respecto de los derechos de acceso, rectificación, cancelación  y oposición, más conocidos como ARCO. En el sector público, igualmente, luego  de las labores zanjadas en el Pleno, en el 91 por ciento de los casos el Inai  ha fallado en favor del ciudadano reclamante.</p>
+<p align="justify">Resulta oportuno anotar aquí algunas razones por las cuales la gente  ejerció sus derechos ARCO en el periodo. Por ejemplo, aclarar comprobantes  fiscales digitales, apoyar a la identificación de fraude, cancelar datos en  sistemas de crédito gubernamentales, enmendar documentos con datos personales  de otras personas, dirimir controversias en casos de datos relacionados con  pensiones por orfandad, entre otras; esclarecer confusiones en semanas  cotizadas, explicar facturaciones emitidas a favor del particular y acceder a  expedientes derivados de denuncias.<br>
+  <br>
+  El Inai también estuvo para brindar orientación y consulta al sector  público y privado de manera permanente, y para imponer multas a quienes  incumplieron con la legalidad en el ámbito de los sujetos responsables del  mercado, el ámbito del sector privado de la economía. Las sanciones económicas  sumaron, en este periodo, 112 millones de pesos, y se concentraron en su  mayoría en los sectores de servicios financieros y de seguros, información en  medios masivos y comercio al por menor. </p>
+<p align="justify">Parte importante de la labor del Inai es la vigilancia permanente del  cumplimiento de las obligaciones de transparencia de los sujetos obligados. De  octubre de 2018 a septiembre de 2019 los sistemas de verificación del cumplimiento  de las distintas leyes en la materia maduraron y avanzaron. En portales de  información o transparencia, respuestas a solicitudes de información, labores  de las unidades de transparencia o acciones de capacitación, el Inai efectuó la  inspección correspondiente tres veces al año, para confirmar, al final, un  comportamiento que pueda reflejar de manera estandarizada la vocación de  compromiso efectivo de cada institución.</p>
+<p align="justify">Para el caso de las obligaciones de transparencia, el promedio general  de cumplimiento de los sujetos obligados a lo indicado en la Ley General de  Transparencia y Acceso a la Información Pública fue 25 puntos más alto que el  periodo anterior. No obstante, reconocemos que hay campo para seguir mejorando,  sea en el trabajo de sujetos obligados específicos o en fracciones de artículos  específicos que ya hemos detectado.</p>
+<p align="justify">Otro dato digno de presumirse es que en la verificación de 2017, por  ejemplo, que fue de ensayo, solamente dos sujetos obligados obtuvieron 100  puntos, o sea, 100 por ciento de cumplimiento de esas obligaciones, mientras  que para 2018 fueron 351 los que alcanzaron 100 por ciento, cuando en este  período que se informa el número, los 900 sujetos obligados que el Inai  acompaña en el deber de hacer efectivo el derecho de acceso a la información y  la transparencia, propiamente a través de los portales institucionales, superó  el número de 530 sujetos obligados que alcanzaron el 100 por ciento.</p>
+<p align="justify">Hemos escuchado en algunos medios que algunos sujetos obligados, y con  razón, exponen que han obtenido 100 por ciento en sus deberes de transparencia,  lo que no quiere decir, necesariamente en todos los términos, que esas  instituciones sean absolutamente transparentes, como la ley en sus exigencias  lo establece, porque las mediciones que efectuó el Inai son como los exámenes  de salud, reflejan un comportamiento al momento en el que se efectúan y puede  haber por desgracia regresiones, estancamientos y/o por supuesto avances, que  ha sido la tendencia que nos toca hoy comunicar. </p>
+<p align="justify">Jornadas cívicas, foros, programas de sensibilización, talleres,  conferencias, concursos múltiples, caravanas por la transparencia y la  privacidad han beneficiado acerca de 600 mil ciudadanos en el ejercicio de los  derechos de acceso a la información y de protección de datos personales.  Además, se generaron nuevas publicaciones que permitió enriquecer el material  editorial del Instituto, Comité Editorial que encabeza mi compañera la  Comisionada Blanca Lilia Ibarra Cadena, así como el seguimiento directo a las  acciones de contacto y de vinculación con la sociedad.</p>
+<p align="justify">Las actividades de promoción, vinculación y atención a la sociedad han  permitido un contacto directo con grupos de población vulnerable como  indígenas, migrantes, personas en situación de pobreza, adultos mayores, mujeres  en situación de violencia, personas con alguna discapacidad y además de niños,  adolescentes, jóvenes, organizaciones de la sociedad civil, abarcando  prácticamente todas las regiones del país. <br>
+  <br>
+  El Inai tiene una perspectiva de Estado, como corresponde a un organismo  constitucional autónomo, no compite ni disputa, ni riñe con ninguna institución  pública, ni actor político, ni sujeto obligado, simplemente cumple con los  mandatos constitucionales y legales que tiene en materia de derecho de acceso a  la información pública y protección de datos personales. De no hacerlo así,  estaría traicionando la confianza de los ciudadanos, la legitimidad y el  prestigio de la Cámara de Senadores, que nos ha nombrado a los comisionados que  integran el Inai. </p>
+<p align="justify">Se avecina la necesidad por el término del mandato de dos compañeros  comisionados del Pleno que esta Cámara Alta lleve a cabo las labores  correspondientes para renovar ambos cargos para la integración de la  colegialidad, como lo establece la Constitución en la legislación vigente.  Nuestros compromisos con la democracia, con la República, con la Constitución y  con los ciudadanos, honrar y ser leales a esos deberes, son la mejor manera de  cumplir con el país y de estar a la altura de las expectativas de los  ciudadanos, de la sociedad.</p>
+<p align="justify">Este es el último informe de labores que me corresponde presentar como  Comisionado Presidente del Pleno de este organismo, ocasión propicia para  reiterar mi gratitud a mis compañeras y compañeros comisionados y comisionadas,  María Patricia Kurczyn, Blanca Lilia Ibarra Cadena, Josefina Román Vergara,  Óscar Mauricio Guerra Ford, Eugenio Monterrey Chapov y Joel Salas Suárez, ha  sido un privilegio aprender de ustedes y con ustedes esta hazaña de encaminar  los servicios de esta institución clave para la democracia mexicana. Asimismo,  y muy especialmente a todas las y los colaboradores, servidores públicos, sin  los cuales sería impensable avanzar en la consolidación de la garantía de los  derechos que tutelamos, es decir, el caminar hacia la democracia que hemos  construido gracias a la valentía de tantos que visibles y otros anónimos  sortean con ahínco, democracia que urge defender y expandir cada día. </p>
+<p align="justify">Agradezco, de manera personal y rompiendo protocolos, a mi familia, a mi  esposa, María del Rocío y a mis hijos, Sara, Victoria y Javier, por haberme  acompañado en las duras y en las maduras y por haberles quitado muchas horas  que debí invertir en mi deber de padre y esposo. Quiero agradecer a las señoras  y señores Senadores por la atención que nos han brindado, el Inai es una  institución de 7 integrantes pares, quien habla a nombre de ellos por una  cuestión de mera representatividad es a quien se le ha dado la oportunidad, que  siempre agradeceré y reconoceré, a mis compañeros para cumplir este desempeño  de un ciclo que se termina. </p>
+<p align="justify">Estoy seguro, estoy seguro de que mis compañeros de Pleno tomaremos la  decisión más afortunada, para encargar a otro compañero o compañera a hacer lo  que a mí de manera modesta me tocó realizar. </p>
+<p align="justify">Agradezco a todas y a toda su atención. </p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Gracias, Comisionado Presidente, Doctor Francisco Javier Acuña Llamas,  muchas gracias. </p>
+<p align="justify">Vamos a iniciar con la ronda de preguntas, y tiene la palabra, hasta por  tres minutos, el Senador Emilio Álvarez Icaza.</p>
+<p align="justify"><strong>El Senador Emilio Álvarez Icaza Longoria: </strong>Buenos días, señora Presidenta. </p>
+<p align="justify">Solicito que sea integrado íntegramente mi texto al Diario de los  Debates, que por obvio de tiempo no podré desarrollar, y solicitarle al  Comisionado Presidente, que posteriormente haga respuesta por escrito a los  planteamientos que le haré yo al final le haré entrega. Muy buenos días,  Comisionado Presidente y comisionados, comisionadas, integrantes del Inai,  bienvenidos a este diálogo republicano y democrático, una grande alegría  tenerlos acá. </p>
+<p align="justify">El acceso a la información y la transparencia son principios  indispensables de una sociedad basada en un sistema de libertades y derechos,  el desarrollo de un gobierno respetuoso del Estado social y democrático de  derecho, que represente y cumpla las expectativas sustantivas y necesidades de  la ciudadanía. <br>
+  <br>
+  La rendición de cuentas es un ejercicio básico para la construcción de  una democracia sustantiva y de calidad. Saludamos con mucho su presencia, como  responsable de uno de los órganos autónomos más importantes. </p>
+<p align="justify">Estoy absolutamente convencido que proteger la autonomía del Inai como  oro molido de nuestro sistema política democrático es vital. Hemos podido  constatar la incomodidad existente entre algunas autoridades por el ejercicio  de sus facultades, no obstante defender las facultades constitucionales de los  órganos autónomos como contrapeso y modelo democrático es absolutamente  indispensable. </p>
+<p align="justify">Quiero compartir alguna preocupación, algunos temas con ustedes. El  gobierno federal actual muestra, sin duda, una idea de apertura, pero no hay  una plena transparencia. </p>
+<p align="justify">Desde el comienzo de esta administración federal, aumentaron casi 500  por ciento los recursos de revisión, dada la necesidad de las personas para  recibir correctamente la información y garantizar su derecho al que se le está  limitando por vía de la respuesta. </p>
+<p align="justify">En este contexto, pienso yo, el derecho a la verdad está amenazado.  Llama la atención, quel solo en el último año de ejercicio se ejerció el 14 por  ciento de las solicitudes de información de toda la historia del Inai.</p>
+<p align="justify">Y, por supuesto, llama la atención el incremento de algo que usted  mencionó en los últimos dos meses, no es de sorprender que los sujetos  obligados más solicitados, valga la redundancia, sean el IMSS y el ISSSTE, en  mi opinión, por la crisis médica que estamos pasando. Un desafío que tenemos es  lo que está pasando en materia de la secrecía y falta de información en lo que  se refiere a las entidades del Estado mexicano, respecto a las acciones en  materia de seguridad pública. Por ejemplo, las Fuerzas Armadas no contamos con  qué pasa por ejemplo con la letalidad. </p>
+<p align="justify">¿Cuántas personas  se están muriendo producto de las sanciones del Estado mexicano en materia de  seguridad? Tampoco contamos con información de qué está pasando con el  desplazamiento interno forzado. </p>
+<p align="justify">Esos dos temas  vitales creo tendrían que ser necesariamente abordados. En el tema que dejo más  a detalle se podrá desarrollar, pero por obvio de tiempo no me extenderé.</p>
+<p align="justify">Me voy a las preguntas,  señora Presidenta. </p>
+<p align="justify">¿Por qué hay  opacidad en todos los datos relacionados con las acciones de las instancias de  seguridad, especialmente en materia de letalidad de las Fuerzas Armadas? ¿Qué  se puede hacer ante esto?</p>
+<p align="justify">¿Por qué no  implementar, desde la Red de Transparencia y Acceso a la Información, un  programa específico para sujetos obligados, a efecto de realizar la  sensibilización con el objeto de abordar y profundizar la información sobre el  uso letal de la fuerza, por parte de los agentes del Estado, o por ejemplo  respecto al desplazamiento interno forzado?</p>
+<p align="justify">Termino. </p>
+<p align="justify">En el marco de  transparencia proactiva, ¿qué acciones de generación, publicación y difusión  pudiera hacer el Inai para disminuir las asimetrías de información en torno a  temas de derechos humanos, violencias, inseguridad y víctimas?</p>
+<p align="justify">Por su atención,  muchísimas gracias. </p>
+<p align="justify">Reiterándoles la  vitalidad de tener un órgano constitucional autónomo que garantice el derecho de  acceso a la información. </p>
+<p align="justify">Muchas gracias,  buen día. </p>
+<p align="right"><br><br><img src="/informacion/img/ver_documento.png" border></p>
+<p align="justify"><strong>La Presidenta  Senadora Mónica Fernández Balboa:</strong> Gracias, Senador Álvarez Icaza. <br>
+  <br>
+  Les ruego a todas y  a todos que nos podamos ajustar al tiempo de tres minutos para hacer las  preguntas al Comisionado Presidente del Instituto Nacional de Transparencia,  Acceso a la Información y Protección de Datos Personales. </p>
+<p align="justify">Tiene la palabra el  Senador Antonio García Conejo, del grupo parlamentario del PRD. </p>
+<p align="justify"><strong>El Senador Antonio  García Conejo:</strong> Con su permiso, señora Presidenta y demás  integrantes de la Mesa Directiva. Compañeras y compañeros Senadores. Medios de  comunicación y público aquí presente. </p>
+<p align="justify">Hoy es un día muy especial, estamos hablando de temas, que desde mi  punto de vista, más relevantes para una sociedad democrática, para una sociedad  que pueda tomar las mejores decisiones.</p>
+<p align="justify">Por eso me honro en venir a nombre del grupo parlamentario del Partido  de la Revolución Democrática, a darle la bienvenida a usted, señor Doctor  Francisco Javier Acuña, bienvenido a este cuerpo colegiado y representación de  las entidades federativas, usted como Comisionado del Instituto Nacional de  Transparencia, Acceso a la Información y Protección de Datos Personales. </p>
+<p align="justify">Señoras y señores, no es un tema menor, es un tema de mucha relevancia.  Una sociedad bien informada con la veracidad va a poder tomar o hacer análisis  y va a poder tomar las mejores decisiones, si no se garantiza eso pues muy  difícil vamos a poder dar resultados. </p>
+<p align="justify">Saludo la presencia de los Comisionados y Comisionadas, así como a su  equipo, Comisionado ¡Presidente. Bienvenidas y bienvenidos al Senado!</p>
+<p align="justify">Desde el grupo parlamentario del Partido de la Revolución Democrática,  hacemos un reconocimiento a todas y a todos ustedes por el trabajo que  desarrollan en este órgano constitucional autónomo, en el cual se encuentra  reflejado en los avances y retos contenidos en este Informe de Labores 2019. </p>
+<p align="justify">Celebramos que este informe presente un aumento en el número de  solicitudes de información por parte de las y los ciudadanos. De igual forma  aplaudimos la presentación de diversas resoluciones históricas que ha realizado  el pleno de este órgano constitucional autónomo y los cuales constituyen una  herramienta más para lograr una sociedad más democrática, plural e informada. </p>
+<p align="justify">Respecto a estos avances y retos, desde el grupo parlamentario del Partido  de la Revolución Democrática, queremos plantearle una cuestión respecto a los  derechos de acceso, rectificación, cancelación y oposición a la información que  manejan los particulares, más conocidos como los derechos ARCO. </p>
+<p align="justify">Quiero señalar, brevemente, que estos derechos están salvaguardados en  el artículo 16 constitucional, párrafo segundo, y por la Ley Federal de  Protección de Datos Personales en Posesión de particulares, la cual tiene como  finalidad garantizar el tratamiento legítimo, controlado e informado de los  datos de las personas físicas que garanticen su privacidad. </p>
+<p align="justify">De esta manera los derechos ARCO solo pueden ser ejercidos por las  personas titulares de los datos en cuestión, así como por su tutor o  representante legal, con estos derechos los usuarios tienen la facultad de:</p>
+<p align="justify">Primero. Conocer en todo momento quién dispone de sus datos y para qué  están siendo utilizados. <br>
+  <br>
+  Segundo. Solicitar la rectificación de sus datos en caso de que resulten  incompletos o inexactos. </p>
+<p align="justify">Tercero. Solicitar la cancelación de estos por no ajustarse a las  disposiciones aplicables. </p>
+<p align="justify">Cuarto. Oponerse al uso de sus datos si es que fueron obtenidos sin su  consentimiento. </p>
+<p align="justify">De esta forma, y concluyo, el incumplimiento de los principios  comprendidos en la ley  por parte de quienes detentan, termino, señora Presidenta, y/o administran los datos, constituye una vulneración a su  protección y tiene como consecuencia una sanción. </p>
+<p align="justify">De acuerdo con el Informe de Labores 2019, ha existido un aumento considerable  en la solicitud de acceso, rectificación, cancelación y oposición de estos  derechos. Por ello queremos preguntarle, Comisionado Presidente. </p>
+<p align="justify">¿Qué mecanismos se han instrumentado para protección de los derechos  ARCO y si para la protección de estos derechos es necesario modificar el marco  jurídico, en particular las leyes de protección de datos? </p>
+<p align="justify">Por su respuesta, muchas gracias y, desde el grupo parlamentario del  Partido de la Revolución Democrática, queremos refrendar nuestro compromiso con  las tareas que desarrolla el Inai y su papel en el sistema democrático de  nuestro país. </p>
+<p align="justify">¡Bienvenido, Comisionado Presidente!</p>
+<p align="justify">Gracias. </p>
+<p align="center"><strong>PRESIDENCIA DE LA SENADORA</strong><br>
+  <strong>MARÍA GUADALUPE MURGUÍA GUTIÉRREZ</strong></p>
+<p align="justify"><strong>La Presidenta  Senadora María Guadalupe Murguía Gutiérrez:</strong> Gracias, Senador  García Conejo. </p>
+<p align="justify">Tiene el uso de la  palabra la Senadora Eunice Renata Romo Molina, del grupo parlamentario del  Partido Encuentro Social, hasta por tres minutos. </p>
+<p align="justify"><strong>La Senadora Eunice  Renata Romo Molina:</strong> Muchísimas gracias, señora Presidenta, con su permiso. </p>
+<p align="justify">Comisionado  Francisco Javier Acuña Llamas, Comisionado Presidente del Instituto Nacional de  Transparencia, Acceso a la Información y Protección de Datos Personales, sea  usted ¡bienvenido!</p>
+<p align="justify">También damos la  bienvenida a los distintos funcionarios del Instituto y a los órganos garantes  locales que se encuentran en el recinto.</p>
+<p align="justify">Hemos recibido y  revisado el informe presentado por el organismo autónomo que usted preside.</p>
+<p align="justify">Tengo una serie de  inquietudes que iba a introducir, pero me parece que es muy poquito el tiempo  para hablar de transparencia, me enfocaré en cuatro temas. <br>
+  Los temas son: </p>
+<p align="justify">Medidas de  austeridad del Instituto. </p>
+<p align="justify">Seguimiento y  verificación de los Sujetos Obligados.</p>
+<p align="justify">Avance en la  implementación del Sistema Nacional de Transparencia. <br>
+  <br>
+  Y la armonización e implementación de la Ley  General de Archivos. </p>
+<p align="justify">Voy a entrar directamente a las preguntas. </p>
+<p align="justify">¿Para el Instituto, el recorte presupuestal de 2019  impactó negativamente en la garantía de algún derecho frente al mismo?</p>
+<p align="justify">¿Qué medidas de austeridad han implementado como  Instituto? </p>
+<p align="justify">Respecto al Sistema Nacional de Transparencia ¿qué  ha hecho el Instituto para convertirse en una instancia más cerca a las  personas, sobre todo con la población en situación de vulnerabilidad y para  garantizar la utilidad social de este derecho? </p>
+<p align="justify">Respecto a la  relación que tienen con los sujetos obligados ¿cuáles han sido las mejoras de  la interoperabilidad para quienes están obligados a reportar la información con  millones de registros y para que puedan hacerlo de forma sencilla, rápida,  expedita y en tiempo y forma?</p>
+<p align="justify">Me detendré en la  Ley General de Archivos. </p>
+<p align="justify">Con la reciente  entrada en vigor de la Ley General de Archivos, se establecen las bases para la  organización, conservación y administración de todos aquellos documentos que  implican el interés público y que sirven de sustento para garantizar el derecho  a la información. </p>
+<p align="justify">Bajo el nuevo  ordenamiento el Inai, junto con el Archivo General de la Nación, serán los  responsables de salvaguardar la garantía de este derecho en el transcurso del  tiempo mediante el resguardo de archivos públicos. Esto desde una dimensión  histórica implica a su vez el ejercicio del derecho a la verdad, fundamentado  en la Constitución a partir de 2014. </p>
+<p align="justify">En el presente  informe, aunque hay avances, vemos que aún tenemos muchos pendientes en la  implementación de esta ley. </p>
+<p align="justify">En esta Soberanía  estamos atentos al funcionamiento en los hechos de esta nueva ley para que en  caso de ser necesario podemos impulsar las modificaciones y las mejoras  necesarias. </p>
+<p align="justify">Respecto a esto  quiero preguntarle ¿cuál es la ruta crítica que se ha planteado el Instituto  para lograr una implementación más eficiente de la Ley General de Archivos?</p>
+<p align="justify">En ese mismo tema,  de acuerdo con experiencia que ha tenido el Instituto, ¿existe realmente la  capacidad por parte de los diversos sujetos obligados para cumplir con la nueva  regulación de esta ley general? </p>
+<p align="justify">Por sus respuestas,  por su atención, muchísimas gracias. </p>
+<p align="justify"><strong>La Presidenta  Senadora María Guadalupe Murguía Gutiérrez: </strong>Gracias, Senadora  Eunice Romo.<br>
+  <br>
+  Tiene el uso de la palabra, hasta por tres minutos, el Senador Miguel  Ángel Lucero Olivas, del grupo parlamentario del PT. </p>
+<p align="justify"><strong>El Senador Miguel Ángel Lucero Olivas: </strong>Muchas gracias. Con su venia, señora Presidenta. Senadoras y Senadores:</p>
+<p align="justify">Me da mucho gusto recibir en este recinto del Senado de la República al  Comisionado Presidente del Instituto Nacional de Transparencia, Acceso a la  Información y Protección de Datos Personales, el Doctor Francisco Javier Acuña  Llamas, así como a su equipo de trabajo. </p>
+<p align="justify">¡Sean ustedes bienvenidos!</p>
+<p align="justify">Hoy las y los Senadores de la República, habremos de celebrar un  ejercicio republicano de rendición de cuentas mediante la presentación del Informe  de Labores 2019 del Inai. </p>
+<p align="justify">La transparencia al acceso a la información y la protección de datos  personales son derechos humanos reconocidos en la Constitución Política de los  Estados Unidos Mexicanos. Por lo que debe el Estado respetar, garantizar y  promover el protegerlos, no solamente se trata de tres derechos humanos, sino  de principios básicos de cualquier democracia consolidada. </p>
+<p align="justify">A través de la transparencia las autoridades tienen la obligación de proveer  toda la información pública a la ciudadanía. De esta manera las y los  ciudadanos tenemos la oportunidad de evaluar la actuación del Estado mexicano,  esto nos permite conocer el destino y uso de nuestros impuestos, conocer la  implementación de las políticas públicas de diversos órganos del estado y, en  consecuencia, participar de manera activa en la vida pública nacional. </p>
+<p align="justify">En suma, la información es la materia prima que nos permite ejercer de  manera plena nuestros derechos políticos. </p>
+<p align="justify">Hoy, no solamente tienen acceso a datos como nuestro nombre, domicilio,  sino también se tiene la posibilidad de recopilar nuestros datos biométricos,  así como nuestra actividad diaria tanto física como virtual.</p>
+<p align="justify">Como consecuencia de la era digital, los particulares están en la  posibilidad de conocer incluso como pensamos. </p>
+<p align="justify">Para proteger nuestros datos personales y, en consecuencia, nuestra  privacidad y nuestra identidad, así como organizar el acceso a la información  pública, el artículo 6o. de la Constitución General, creó al organismo  constitucional autónomo conocido como el Inai. Como se puede notar, esa  institución es un pilar fundamental para el ejercicio del derecho al buen  gobierno. </p>
+<p align="justify">En el grupo parlamentario del Partido del Trabajo, refrendamos nuestro  compromiso respecto a la autonomía constitucional del Inai, ya que consideramos  que esta característica es la que lo dota de legitimidad e imparcialidad  necesarias para ejercer sus funciones, solo una institución ajena a las  dinámicas políticas cuenta con la posibilidad real de obligar a las autoridades  para que liberen la información pública. </p>
+<p align="justify">En este sentido le pregunto lo siguiente:</p>
+<p align="justify">¿Qué medidas está implementando el Inai para proteger los datos  personales de millones de usuarios de Internet ante la voracidad de empresas de  minería de datos?<br>
+  <br>
+  ¿Qué acciones está tomando para que las conversaciones privadas a través  de plataformas digitales no puedan utilizarse con fines de marketing y estén  completamente blindadas?</p>
+<p align="justify">¿Se cuenta con algún reglamento o protocolo para evitar que en nuestro  país se presente un caso como el de Cambridge Analytica, en donde se usaron los  datos personales de los usuarios para influenciar una elección?</p>
+<p align="justify">Por otro lado, durante el sexenio pasado se hizo un cambio significativo  en el acceso a la información y a los sitios de Internet del gobierno federal. </p>
+<p align="justify">Se homologó la imagen del gobierno federal de 2012 al 2018 y se concentró  toda la información en el portal gob.mx; sin embargo, esta acción ha sido  duramente criticada por expertos, activistas y ciudadanos, ya que localizar la  información en el portal es prácticamente imposible. </p>
+<p align="justify">El diseño web actual del gobierno federal que ha heredado de la  administración anterior hace nugatorio el acceso a la información ciudadana. </p>
+<p align="justify">¿En su opinión cuál debería de ser el modelo de gobierno digital que  debe implementar el gobierno de México?</p>
+<p align="justify">Por su atención, muchas gracias. </p>
+<p align="center"><strong>PRESIDENCIA DE LA SENADORA</strong><br>
+  <strong>MÓNICA FERNÁNDEZ BALBOA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Gracias, Senador Lucero Olivas. </p>
+<p align="justify">Tiene la palabra la Senadora Alejandra Lagunes Soto Ruiz, del grupo  parlamentario del PVEM, hasta por tres minutos. </p>
+<p align="justify"><strong>La Senadora Alejandra Lagunes Soto Ruiz: </strong>Muchas gracias, señora Presidenta. ¡Bienvenido! Comisionado Presidente, Doctor  Francisco Javier Acuña Llamas. </p>
+<p align="justify">Compañeras y compañeros Senadores, el desarrollo de la tecnología,  sumado a mayores demandas por un estado abierto, ha provocado que los gobiernos  publiquen enormes cantidades de datos para ponerlos a disposición de las  personas, la transparencia, como es de esperarse no ha estado alejada de este  desarrollo y ha sido profundamente influenciada por esta corriente de gobiernos  abiertos, así cientos de gobiernos han aprovechado estas tecnologías para  construir plataformas electrónicas en las que se puede descargar y consultar  miles de datos públicos. </p>
+<p align="justify">Sin embargo, estudios sobre la transparencia, advierten que ahí donde  los grandes datos existen en abundancia corremos el riesgo de generar confusión  en lugar de claridad y aumentar la desconfianza en las instituciones. </p>
+<p align="justify">Por ello, para que la publicación de información se traduzca a un  efectivo acceso a la información se debe de tomar en cuenta criterios de legibilidad  y de visibilidad, es decir, que cualquier persona lo pueda encontrar y  entender. </p>
+<p align="justify">En sus informes el Inai habla de los millones de registros cargados y de  sujetos obligados incluidos en la Plataforma Nacional de Transparencia. Esto  es, sin duda, un enorme esfuerzo institucional tanto del Inai como de los  sujetos obligados; sin embargo, pareciera que con el desarrollo de estas  herramientas a veces quisiéramos enterrar a las personas en un mar de  información donde cada vez es más difícil encontrar lo que se busca, donde es  complicado que personas sin conocimiento de manejo de datos masivos puedan  utilizar y puedan consultar los datos.<br>
+  <br>
+  Hay fracciones en las que aún con el uso de filtros se descargan cientos  de miles de registros, la transparencia electrónica puede convertirse en un  obstáculo para acceder a la información a ciertas personas, es decir, la  legibilidad de la información funciona solo para ciertos sectores, mientras que  para otros lo hace más complejo. </p>
+<p align="justify">Presidente Comisionado, además del lanzamiento de herramientas como la  de comisiones abiertas y la de transparencia en publicidad oficial, ¿cómo ha  enfrentado el Inai el reto de incrementar la claridad y la legibilidad de los  cientos de miles de datos publicados en el SIPOT y con ello garantizar el  acceso a la información de todas las personas de todos los grupos sociales?</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify">Gracias, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Gracias, Senadora Alejandra Lagunes.</p>
+<p align="justify">Tiene la palabra el Senador Clemente Castañeda, del grupo parlamentario  de Movimiento Ciudadano, hasta por tres minutos.</p>
+<p align="justify">Les voy a rogar nuevamente a todas las personas que están de visita en  este Pleno y que están en los pasillos y en la parte de atrás, que puedan  desalojar los mismos porque sus murmullos no dejan que las Senadoras y los  Senadores puedan escuchar bien.</p>
+<p align="justify">Adelante, Senador Castañeda.</p>
+<p align="justify"><strong>El Senador Clemente Castañeda Hoeflich: </strong>Con su permiso, señora Presidenta.</p>
+<p align="justify">Bienvenido Comisionado Presidente y Comisionadas y Comisionados  integrantes del pleno, del Instituto Nacional de Transparencia, Acceso a la  Información y Protección de Datos Personales.</p>
+<p align="justify">Movimiento Ciudadano lo ha dicho desde hace muchos años, para nosotros el  Inai es una herramienta imprescindible para el combate a la corrupción, para la  rendición de cuentas, así como para cerrar la puerta a la discrecionalidad en  la asignación de recursos públicos y vigilancia permanente del quehacer  gubernamental.</p>
+<p align="justify">Sin embargo, y a pesar de las críticas que podríamos hacerle al Inai,  transcurrido el primer año de la nueva administración, no sólo reconocemos su  utilidad, sino su fundamental labor para contener los intentos de regresar a  una época en la que no había más información que la palabra del Presidente.</p>
+<p align="justify">La relevancia que hoy tiene como nunca antes el Inai resalta en los  datos que reporta en su Informe de Labores.</p>
+<p align="justify">Tan sólo en el año pasado hubo un incremento en más del 22 por ciento en  el número total de solicitudes de información pública respecto al año anterior;  pasamos de 228 mil a 280 mil solicitudes, es decir, los mexicanos quieren saber  más sobre su gobierno.</p>
+<p align="justify">Sin embargo, en contra sentido a esta inquietud ciudadana, también se  informa que hubo un incremento de 70 por ciento en la presentación de recursos  de revisión ante la respuesta del gobierno; es decir, los mexicanos no están  conformes con las respuestas de su gobierno.</p>
+<p align="justify">Para esta Administración, las declaratorias de inexistencia de  información se han vuelto deporte nacional, y me refiero al gobierno federal.<br>
+  <br>
+  Ya desde hace algunos meses encendimos las alarmas con los datos que  aportó el Comisionado Salas respecto al aumento desproporcionado en las  declaratorias de inexistencia de información por parte del gobierno federal en  comparación con las administraciones anteriores.</p>
+<p align="justify">Los ejemplos de esta opacidad abundan sobre el proceso de compra de  pipas por parte de Pemex, del que todavía poco se sabe.</p>
+<p align="justify">La adjudicación para la construcción de la refinería de Dos Bocas.</p>
+<p align="justify">El proceso de cancelación del Aeropuerto de Texcoco y el proyecto del  nuevo Aeropuerto de Santa Lucía.</p>
+<p align="justify">Los procesos de adjudicación directa del Tren Maya.</p>
+<p align="justify">Los alcances de los programas sociales que no cuentan con reglas de  operación.</p>
+<p align="justify">El costo y metros cuadrados utilizados para habitar el Palacio Nacional  como residencia del Presidente de la República y de su familia.</p>
+<p align="justify">El presupuesto y el personal que manejan los superdelegados en cada  estado.</p>
+<p align="justify">Los contratos que celebra el nuevo Centro Nacional de Inteligencia en  Materia de Seguridad.</p>
+<p align="justify">El número de operaciones inusuales reportadas por los bancos ante la  Unidad de Inteligencia Financiera.</p>
+<p align="justify">Los montos ejercidos por la Guardia Nacional a la fecha.</p>
+<p align="justify">El alcance de la investigación sobre el enriquecimiento y conflicto de  interés del Director de la Comisión Federal de Electricidad, y un largo  etcétera.</p>
+<p align="justify">Esta información, compañeras y compañeros, que debería de tener carácter  público, se la tenemos que estar regateando permanentemente al gobierno  federal, y la información es un derecho, y los derechos no se regatean.</p>
+<p align="justify">Por eso me parece que el Inai debe de contribuir a corregir estas graves  omisiones institucionales, debe aportar frente a quienes tienen otros datos,  los datos de a deveras, y contribuir a terminar con la opacidad gubernamental.</p>
+<p align="justify">El Inai, compañeras y compañeros, debe ser una institución de la verdad  para este país.</p>
+<p align="justify">Y termino, porque si la corrupción tiene un cómplice éste se llama  opacidad, porque podrá haber mañaneras y discursos del Presidente todos los  días, pero no los confundamos como ejercicios de transparencia, las evidencias  sólo confirman que salir en medios diariamente no se trata de un ejercicio de  rendición de cuentas.</p>
+<p align="justify">Defendamos al Inai, defendamos su autonomía.</p>
+<p align="justify">Muchas felicidades por su labor.</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Gracias, Senador Clemente Castañeda.<br>
+  <br>
+  Tiene la palabra el Senador Mario Zamora Gastélum, del grupo  parlamentario del PRI.</p>
+<p align="justify"><strong>El Senador Mario Zamora Gastélum: </strong>Con su permiso, señora Presidenta.</p>
+<p align="justify">A nombre de las y los Senadores del grupo parlamentario del PRI saludo  con respeto al Doctor Francisco Javier Acuña Llamas, Comisionado Presidente del  Instituto Nacional de Transparencia, Acceso a la Información y Protección de  Datos Personales, Inai.</p>
+<p align="justify">Hablar del Inai es hablar de un organismo trascendental para la vida  democrática de México, pues, como sabemos, garantiza los derechos fundamentales  de acceso a la información pública y el de protección de datos personales.</p>
+<p align="justify">Hoy más que nunca, la transparencia es un eje fundamental para el  ejercicio del servicio público en todas sus manifestaciones, y es el Inai la  institución que funciona como contrapeso democrático, pues a través de éste es  que se informa al ciudadano sobre diversos temas que son de su interés, por  ejemplo, de cómo se gastan los recursos públicos, del cumplimiento de los  objetivos de trabajo de las funciones públicas, de la ejecución y resultados de  políticas públicas, entre otros.</p>
+<p align="justify">Sin duda, el Informe de Labores correspondiente al periodo de octubre  del 2018 a septiembre del 2019 que nos ha presentado, refleja la importancia de  este organismo para todos los mexicanos, muestra de ello es que desde su  creación han recibido casi 2 millones de solicitudes, de las cuales 279 mil se  registraron este último año.</p>
+<p align="justify">Durante este último año, el Inai se ha enfrentado a un nuevo contexto  social y político, el cual ha resuelto sobre la pertinencia del acceso a la  información sobre asuntos relacionados con los proyectos de la nueva  administración, el cumplimiento de compromiso de las administraciones  anteriores y condonaciones fiscales, entre otros.</p>
+<p align="justify">Es por lo anterior que el Inai debe fortalecerse y blindarse ante  cualquier intento que quiera violentar su autonomía, pues lo hemos visto en  otros órganos autónomos, como son los energéticos y recientemente la Comisión  Nacional de los Derechos Humanos.</p>
+<p align="justify">Es por ello que las y los Senadores del PRI estaremos siempre atentos  para que este órgano garantista de derechos fundamentales, y que es crucial  para la vida democrática e institucional de este país, continúe con esa  independencia.</p>
+<p align="justify">No permitiremos que el Inai sea secuestrado por intereses ajenos a la  transparencia y rendición de cuentas, más bien todo lo contrario, que responda  de cara a la ciudadanía de forma imparcial y con la ley en la mano.</p>
+<p align="justify">Las y los Senadores del PRI queremos reconocerle el trabajo del  Comisionado Presidente, Doctor Francisco Javier Acuña, quien desde su encargo y  visión ha salvaguardado la autonomía de este órgano, ha atendido las solicitudes  de información de los ciudadanos fortaleciendo el sistema de derechos de este  país.</p>
+<p align="justify">Y sabemos que, aunque este año concluye su encargo, seguros estamos que  nos deja un Inai fuerte e independiente.</p>
+<p align="justify">Por ello, le quiero hacer dos preguntas:</p>
+<p align="justify">Ante el contexto actual que viven los organismos autónomos de nuestro  país, quienes han sido objeto de descalificaciones e intromisiones por parte  del gobierno federal, desde las facultades del Inai ¿cómo fortalecer al Estado  democrático y el pleno ejercicio de los derechos fundamentales de la  transparencia y protección de datos personales?<br>
+  <br>
+  Y la segunda, ante un mundo tan dinámico como el que tenemos hoy, en  donde el intercambio y cooperación internacional es fundamental para mejorar  los sistemas de información e implementación de mecanismos de transparencia,  ¿con qué países u organismos ha trabajado en materia de transparencia?, ¿en qué  ha consistido?, ¿cuáles han sido los resultados y qué se ha aplicado en México?</p>
+<p align="justify">Gracias, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Gracias, Senador Zamora Gastélum.</p>
+<p align="justify">Tiene la palabra la Senadora Xóchitl Gálvez Ruiz, del grupo  parlamentario del PAN, hasta por tres minutos. </p>
+<p align="justify"><strong>La Senadora Bertha Xóchitl  Gálvez Ruiz: </strong>Muchas gracias, señora Presidenta. </p>
+<p align="justify">Yo lamento que en  este Senado de la República haya tan poco interés en estos temas, pero bueno. </p>
+<p align="justify">Comisionado  Presidente, sea usted bienvenido a este Senado de la República. </p>
+<p align="justify">Para el grupo  parlamentario de Acción Nacional, su presencia, Comisionado, es muy esperada, pues  tenemos mucho interés en conocer el contenido de su informe anual de labores…</p>
+<p align="justify">Ahora sí.</p>
+<p align="justify">Para el grupo  parlamentario de Acción Nacional, su presencia, Comisionado Presidente, es muy  esperada, pues tenemos mucho interés en conocer el contenido de su informe  anual de labores. Esto, porque a lo largo del último año hemos atestiguado lo  que puede percibirse como indicio de un importante retroceso en materia de  transparencia en nuestro país. </p>
+<p align="justify">Incluso el propio  Instituto ha dado a conocer datos que nos obligan a poner atención, el Inai  señala que en este gobierno se han multiplicado las respuestas de supuestas  inexistencias a las solicitudes de información. </p>
+<p align="justify">Como referencia,  durante el primer año del sexenio 2006-2012 hubo 3 mil 800 declaraciones de  inexistencia; en el primer año del sexenio 2012-2018 hubo 5 mil 600; pero en el  primer año del actual gobierno la cifra si disparó a 14 mil 800. Se trata de un  cambio sustantivo, según las propias cifras del Comisionado Joel Salas. </p>
+<p align="justify">Este notable  aumento en las respuestas de las distintas instituciones y dependencias del  gobierno aseguran que la información no existe, lleva a pensar que hay un ánimo  de ocultamiento contrario a la máxima publicidad y transparencia. </p>
+<p align="justify">Si a esto agregamos  que el Instituto Mexicano para la Competitividad, IMCO, reporta que casi el 80  por ciento de las compras del gobierno han sido por adjudicación directa o por  invitaciones restringidas sin licitación pública. </p>
+<p align="justify">Se prende la alerta  de lo que podría ser, insisto, una regresión a los peores tiempos de la  opacidad gubernamental. </p>
+<p align="justify">También, hemos  visto cómo el Instituto ha tenido que obligar al gobierno a entregar  información que evidentemente tiene en su poder y que debería ser absolutamente  pública, como la del Aeropuerto de Santa Lucía, el Tren Maya, o la de los  enfrentamientos de militares con civiles, además de todas las que mi compañero  Clemente Castañeda ha señalado. <br>
+  <br>
+  Asimismo, hemos  visto cómo el gobierno incurre en reiterados desacatos respecto a las  resoluciones del Inai. </p>
+<p align="justify">Por todo esto,  solicito atentamente, Comisionado Presidente, que nos comente cómo interpreta  el Instituto esta situación. </p>
+<p align="justify">Cómo justificar el  aumento en las negativas del gobierno a entregar información al público; cómo  explicar esta opacidad tan escandalosa en las compras de gobierno; cómo se  puede fortalecer al Inai frente a esta ola de opacidad y el derecho de acceso a  la información. </p>
+<p align="justify">Por ejemplo, hoy en  la mañana escuché a la periodista Miriam Moreno quien solicitó información al  Subsecretario Encinas sobre sus visitas de trabajo a centro de readaptación,  tanto federales como estatales y con quiénes se entrevistó; sin embargo, la  repuesta fue que la información está reservada por 5 años. </p>
+<p align="justify">¿Usted considera  que esa información debe ser reservada? ¿Por qué reservar, si no está  solicitando se informe de qué trataron esas reuniones?</p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify">Y reitero a usted  que las y los Senadores de Acción Nacional están con el Inai y con todos sus  integrantes.</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>La Presidenta  Senadora Mónica Fernández Balboa: </strong>Gracias, Senadora Xóchitl Gálvez. </p>
+<p align="justify">Tiene la palabra el  Senador Daniel Gutiérrez Castorena, del grupo parlamentario del Partido Morena. </p>
+<p align="justify"><strong>El Senador Daniel  Gutiérrez Castorena: </strong>Con su venia, señora Presidenta. Compañeras y  compañeros Senadores:</p>
+<p align="justify">Doctor Francisco  Javier Acuña Llamas, Comisionado Presidente del Instituto Nacional de  Transparencia, Acceso a la Información y Protección de Datos Personales, Inai,  sea bienvenido al Senado de la República. </p>
+<p align="justify">El derecho a la  información está plasmado en el artículo 6o. de la Constitución Política de los  Estados Unidos Mexicanos, señalándose expresamente que está garantizado por el  Estado. Tal garantía se lleva a cabo a través de la legislación de la materia y  mediante el funcionamiento del Instituto Nacional de Transparencia, Acceso a la  Información y Protección de Datos Personales, Inai y sus equivalentes en cada  una de las entidades federativas. </p>
+<p align="justify">Un Estado que se  considera moderno, transparente y democrático no puede deslindarse de la  obligación de informar a la ciudadanía sobre los diversos aspectos de su  organización y de su funcionamiento, así como de los otros entes que reciben o  ejercen recursos públicos. </p>
+<p align="justify">La ley es expresa  al señalar que el derecho humano de acceso a la información comprende solicitar,  investigar, difundir, buscar y recibir información; por lo tanto, está  relacionado con otros derechos, tales como el de la libertad de prensa, la  investigación académica y científica, la difusión de ideas, el acceso a la  verdad y al conocimiento. <br>
+  <br>
+  Como es ampliamente  conocido, el gobierno de la cuarta transformación está empeñado en una lucha  frontal y definitiva contra toda fórmula de corrupción, de despilfarro de  recursos y de opacidad en el gasto público.</p>
+<p align="justify">Desde el Senado de  la República, los legisladores de Morena estamos comprometidos en avanzar hacia  nuevos esquemas normativos que enriquezcan y profundicen la rendición de  cuentas, la transparencia en el gasto, la austeridad republicana en el  ejercicio presupuestal, el acceso a la información, la protección de datos  personales, así como la defensa de la vida privada. </p>
+<p align="justify">En ejercicio pleno  de su autonomía, de acuerdo con el mandato constitucional, el Inai tiene competencia  para conocer sobre los asuntos relacionados, con el acceso a  la información pública y la protección de datos personales de cualquier  autoridad, entidad, órgano u organismo que forme parte de alguno de los Poderes  Legislativo, Ejecutivo y Judicial, órganos autónomos, partidos políticos,  fideicomisos y fondos públicos, así como de cualquier persona física, moral o  sindicatos, que reciba y ejerza recursos públicos o realice actos de autoridad  en el ámbito federal, con excepción de aquellos asuntos jurisdiccionales que  corresponden a la Suprema Corte de Justicia de la Nación.</p>
+<p align="justify">En el Senado de la  República nos congratulamos que, mediante su comparecencia, Doctor Acuña  Llamas, se dé cumplimiento legal a la obligación de laborar y presentar un  informe anual de actividades y de la evaluación general en materia de acceso a  la información pública en el país, así como del ejercicio de su actuación  institucional durante el periodo que contempla. </p>
+<p align="justify">En aras de  profundizar en esa evaluación de resultados, me permito formularle las  siguientes preguntas: </p>
+<p align="justify">Ante el fallo de la  Suprema Corte de Justicia sobre los recursos presentados por el Instituto  Nacional de Estadística y Geografía, Inegi, contra resoluciones del Inai, ¿qué  nos puede decir sobre el cumplimiento por parte del Inegi a dicho fallo? </p>
+<p align="justify">¿Qué acciones se  han emprendido para que los sujetos obligados garanticen el cumplimiento de sus  obligaciones ante las dificultades administrativas, normativas y operativas en  la materia?</p>
+<p align="justify">¿Cuáles son los  principales problemas que tiene detectados el Inai en la operación práctica del  Sistema Nacional de Transparencia, integrado por el Instituto, los organismos  garantes de las entidades federativas, la Auditoría Superior de la Federación,  el Archivo General de la Nación y el Inegi?</p>
+<p align="justify">Finalmente,  ¿considera usted conveniente que pueda consolidarse la normatividad relativa al  Instituto mediante una nueva legislación que fusione los contenidos vigentes de  la Ley General de Transparencia y Acceso a la Información, publicado en el  Diario Oficial de la Federación el 4 de mayo de 2015, y de la Ley Federal  publicada en el Diario Oficial de la Federación el 9 de mayo de 2016 o  considera usted que el actual sistema dual sigue siendo adecuado?</p>
+<p align="justify">Muchas gracias de  antemano por sus respuestas. </p>
+<p align="justify"><strong>La Presidenta  Senadora Mónica Fernández Balboa: </strong>Gracias, Senador Gutiérrez Castorena. <br>
+  <br>
+  Tiene nuevamente la  palabra el Doctor Francisco Javier Acuña Llamas, para responder a  las preguntas formuladas por los Senadores y Senadoras, por un tiempo  aproximado de diez minutos. </p>
+<p align="justify"><strong>El Comisionado Presidente del Instituto Nacional de Transparencia,  Acceso a la Información y Protección de Datos Personales, Francisco Javier  Acuña Llamas:</strong> Primeramente, señores Senadores y Senadoras,  integrantes de la Mesa Directiva que preside esta sesión parlamentaria de  rendición de cuentas del Inai, a las señoras Senadoras y Senadores que  encabezan los grupos parlamentarios e integran la Jucopo.</p>
+<p align="justify">Reconozco de manera cumplida, respetuosamente, reconociendo la omisión,  a las y los integrantes del Consejo Consultivo del Inai, que han sido constantes  en su frecuencia, en sus extrañamientos, en sus sugerencias, en sus consejos,  en su guía, para vertebrar actuaciones clave.</p>
+<p align="justify">La austeridad de la institución se debe mucho en los términos  conseguidos por las sugerencias muy puntuales que el Consejo nos ha hecho  llegar y no solamente en esos términos, sino incluso en otros muchos momentos  clave en los que esta institución se ha visto con la enorme responsabilidad de  resultar ágil, audaz, sensible, sensitiva y también práctica, para llegar a la  sociedad con soluciones que hagan ver su utilidad indiscutible.</p>
+<p align="justify">Quiero reconocer así, a la Coordinadora General de Organismos Garantes  de nuestro país, la compañera Comisionada de Jalisco, la Presidenta Cynthia  Cantero; a los coordinadores de las comisiones temáticas y a los coordinadores  regionales que nos acompañan en este momento.</p>
+<p align="justify">No voy a responder en orden, porque algunas de las preguntas que nos han  hecho el favor de hacer, el Senador Emilio Álvarez Icaza, el Senador Antonio  García Conejo, la Senadora Eunice Romo Molina, el Senador Miguel Ángel Lucero,  la Senadora Alejandra Lagunes, el Senador Clemente Castañeda, Presidente de la  Comisión de Transparencia; el Senador Mario Zamora, la Senadora Bertha Xóchitl  Gálvez y el Senador Daniel Gutiérrez Castorena, tienen en común un dato  revelador, enorme coincidencia de los diversos grupos parlamentarios a través  de sus voceros, señoras y señores Senadores, en la preocupación del tema del  derecho a la privacidad y del derecho a responder ante la exigencia ciudadana para  hacer y encontrar en el Inai un refugio efectivo ante una desprotección  generalizada en el mundo por la globalización.</p>
+<p align="justify">El Internet es un campo desregulado, no se puede hacer nada desde la  circunstancia de la legislación mexicana. </p>
+<p align="justify">Señoras y señores Senadores, aprovechamos la oportunidad para pedirles  que nos ayuden, precisamente, mejorando, reformando, como ya existen algunas  reformas de reciente cuño, de reciente formulación en esta alta Cámara,  precisamente para pertrechar y mejorar notoriamente la Ley Federal de  Protección de Datos Personales entre Particulares, que quedó rebasada  notoriamente por la Ley General de Protección de Datos Personales en el Sector  Público.</p>
+<p align="justify">Muchísimas de las condiciones de vanguardia que la Ley General de Datos  Personales ya contiene, no las contiene, en cambio, la Ley Federal. Requerimos,  como órgano garante máximo a nivel administrativo, de esta tutela del mercado  que involucra a más de cuatro millones de sujetos responsables que contienen,  tratan y permanentemente transfieren datos personales.</p>
+<p align="justify">Es inmenso el campo competencial. El Inai con su actual plantilla y con  su circunstancia, efectivamente, de un recorte presupuestal importantísimo en  el año 2018 para el 2019, que se vino a incrementar con un 5 por ciento más  para llegar a un 26 por ciento aproximadamente respecto de la cifra que llegó a  tener en su momento de mayor dotación presupuestal, nos colocan, señoras y  señores Senadores, efectivamente, en una condición límite para poder garantizar  el ejercicio progresivo y sostenido de nuestra misión.</p>
+<p align="justify">Hemos hecho, indiscutiblemente, mucho más con mucho menos. Nos hemos  ajustado de manera solícita e indiscutible a las rigurosas condiciones de la  austeridad. Hemos ido dócilmente, sin ningún tipo de duda, a reducir nuestros  salarios antes, incluso, que la Ley de Austeridad lo estableciera de manera  firme.</p>
+<p align="justify">Ninguno de los comisionados quisimos, de ninguna manera, ir a plantear  controversia en relación a la disminución de nuestros sueldos. Nosotros no  definimos nuestros sueldos, los sueldos de los comisionados del Inai eran los  sueldos que tenían los comisionados del Ifai, respetuosamente decirlo, con una  cuarta parte del cumplimiento de obligaciones y de deberes institucionales por  el ensanchamiento competencial que el Inai alcanzó al convertirse en  institución nacional.</p>
+<p align="justify">El Inai respalda la función de los organismos garantes de transparencia.  El Sistema Nacional de Transparencia está de pie, está firme, trabaja  diariamente. El Inai tiene una vocación de compañerismo con los órganos  garantes locales. De ninguna manera el Inai, jamás, puede pretender convertirse  en tutor, en corrector y menos aún en mecanismo que sojuzgue o aplaste la  credibilidad y el prestigio de las instituciones similares para cada uno de los  estados, incluida la Ciudad de México.</p>
+<p align="justify">Acompañamos con procesos de asistencia permanente en ámbito tecnológico,  en capacitación y en el respaldo político que damos a los señores y a las  señoras comisionadas de los estados aquí presentes en esta Cámara alta, que  siempre seguirá representando, en muchos sentidos, a la Federación y a los  estados que la informan y conforman.</p>
+<p align="justify">Desde luego que entonces requerimos una reforma importante y completa a  la Ley Federal de Protección de Datos Personales entre Particulares. Requerimos  resolver de manera clara la portabilidad, que sigue estando muy poco  establecida y que de esa manera no puede llegar a resolverse para ser  operativamente funcional.</p>
+<p align="justify">Requerimos que se homologuen las condiciones que ya dijimos tiene la Ley  Federal con la del sector público y requerimos vigorosamente dos cosas más, que  se asiente de manera categórica una posición que haga que desde la ley nos  evite caer en el entrampamiento y en el estancamiento impotente del Inai frente  a los grandes servidores universales de protección de datos, bueno, de manejo  de información internacional, la internet y sus grandes, grandes servidores  internacionales.</p>
+<p align="justify">Hemos sucumbido una y otra vez, aunque hemos intentado regular y fijar  topes a sus excesos en el manejo y en el maltrato sistemático e inevitable por  la globalización y sus efectos instantáneos de la información, a los datos  íntimos, a la imagen, a la propia imagen y a los derechos de la vida privada de  personas que no tengan, hay que decirlo por la graduación distinta, la condición  de figuras públicas, aunque los voluntariamente famosos o públicos también  tenemos derecho a protecciones en momentos clave y en aspectos de nuestra vida  privada.</p>
+<p align="justify">Necesitamos que se confirme que somos igualmente una institución potente  en sus capacidades institucionales frente al mercado y especialmente ante el  ámbito internacional. Los servidores internacionales con una facilidad olímpica  cambian su dirección de los servidores en otra parte del mundo y la  extraterritorialidad no nos está dada, se requiere que esta Cámara alta, que es  indiscutiblemente a donde podemos venir a encontrar refugio y respaldo para  cumplir las misiones que tenemos, tome cartas en el asunto y ya existen muy  buenas iniciativas para acercarnos a estos puntos delicados.<br>
+  <br>
+  Requerimos que también se vertebre en esa formulación legislativa una  reforma para que las instituciones privadas, las empresas y aun los servidores  profesionales del ámbito del mercado, una vez que han detectado una filtración  o un descuido, una negligencia que haga correr datos personales en demérito de  sus usuarios, clientes, proveedores, lo anuncie de inmediato al Inai, para que  se puedan establecer las medidas de seguridad y el seguimiento de los  protocolos rigurosos que la ley sí establece ya.</p>
+<p align="justify">Se requiere, así las cosas, pues, respecto de los datos biométricos,  naturalmente una custodia. El Inai es también la máxima autoridad  administrativa en el campo del sector público, en el que se encuentran las más  grandes bases de datos de la población, como es el caso del padrón electoral,  por poner un ejemplo, o las enormes bases de datos del sector salud, como es la  de IMSS o la del ISSSTE, las de la Secretaría de Educación respecto de todos  los educandos de este país y de los profesores, así como de los trabajadores administrativos  de esas instituciones.</p>
+<p align="justify">Requerimos, desde luego, su respaldo para  vencer así las cosas, las barreras legales que nos atan y que no nos permiten,  por ejemplo, llegar al máximo reconocimiento del ámbito europeo que es donde se  encuentra la máxima normativa de vanguardia en el mundo y poder llevar a puerto  de manera satisfactoria y pronto la adecuación de la legislación mexicana en  esta materia, respecto del reglamento de protección de datos de la Unión  Europea, que es un punto que hemos solicitado gracias a la Secretaría de  Relaciones Exteriores para hacer los trámites, pero que se avanzaría o se  aceleraría de encontrar una regulación actualizada que cumpla estos escollos o  estas disfunciones o limitaciones que contienen esas leyes, esa ley concretamente. </p>
+<p align="justify">A la Senadora Alejandra Lagunes, por supuesto que hay medida para  asegurar los miles de datos personales publicados, deberes de seguridad,  medidas técnicas, físicas y administrativas, el Inai también está obligado a  cumplir la Ley General de Protección de Datos Personales en posesión de sujetos  obligados y puede haber auditorías voluntarias de los sujetos obligados para  medir su condición, para medir sus flaquezas o sus debilidades frente al enorme  problema de tener o experimentar filtraciones que pongan en peligro la base de  datos que ostentan por la condición de ser responsables de la naturaleza del  servicio público que llevan a cabo. </p>
+<p align="justify">Desde luego que sobre nuevos proyectos tecnológicos en esta segunda  etapa del Inai, pondrá en el presente año el buscador nacional, los buscadores  temáticos sobre adquisiciones, sueldos, salarios y directorio que permitirán  obtener información específica a nivel nacional, lo que permitirá una mayor  explotación de la plataforma nacional de transparencia en beneficio de la  ciudadanía. </p>
+<p align="justify">Reconozcamos, señoras y señores Senadores, 20 años escasos en la  caminata progresiva y no sin grandes adversidades en momentos clave, son nada  en la vida de una República de la edad de la nuestra. Este es un asunto que  apenas la globalización agudizó y potenció. Por eso hemos sostenido  respetuosamente que esta institución no es una moda pasajera ni es tampoco una  figura de ornato, viene a cumplir un contrapeso básico para que la función del  ejercicio del poder sea rectilínea, sea sólida, sea concisa y veraz ante la  opinión pública. Gracias, señoras y señores Senadores, porque el ejercicio de  rendición de cuentas que hacemos nos permite encontrar eco en su atención. </p>
+<p align="justify">Seguramente ustedes, desde la perspectiva de sus potencias y de sus facultades  parlamentarias, podrán hacer, desde luego y ojalá así sea, los reclamos  concretos que quepa hacer a las instituciones gubernativas, para que el  desarrollo de sus competencias se ciña a los ámbitos y a los encauzamientos que  la ley establece.</p>
+<p align="justify">El Inai es una institución técnica, jurídica y de control, no puede, no  debe sojuzgar ni prejuzgar, aunque sí lo hace de manera individualizada y cada  semana en el Inai, resolvemos cientos de asuntos y en cada ocasión exponemos de  manera visible e identificada problemas que nos llevan a una serie de  preocupantes, nuevos indicadores o signos que, desde luego, no vienen a  facilitar ni a aconsejar el mejor momento que hay en el país, no solamente de  un sujeto obligado ni del responsable de la máxima administración pública, que  indudablemente las cifras y los datos que mi compañero Joel Salas hizo valer o  hizo comunicar hace unas semanas, pues tienen toda la constancia que eso  amerita. </p>
+<p align="justify">El Inai debe ser un compañero de la función pública de todas las  administraciones, el Inai debe ser un verdadero respaldo para las instituciones  púbicas, lo dije antes, el Inai no puede ni debe confrontarse, debe convencer a  las instituciones públicas; el Inai debe conseguir por liderazgo institucional  y solidez de autoridad, hacer ver a los gobernantes de todos los planos, de  todos los poderes públicos y de todas las instituciones, incluidos los  sindicatos, los propios partidos políticos, que no ha sido fácil el ejercicio  de acercarnos a ellos con éxito, que conviene bien a las instituciones que  ellos representan, que haya un convencido ejercicio puntual del derecho al  acceso a la información pública, porque además les permite a ellos mismos  vigilar el cumplimiento en todos los niveles jerárquicos, hasta los más  elementales y poder así saber que lo que establecen, ofrecen, señalan o  aseguran se cumplan cabalmente. </p>
+<p align="justify">El Inai ha sido y será siempre un colaborador externo respetuoso,  técnico, neutral, desde luego jamás sometido y, desde luego, jamás cómplice de  situaciones que puedan parecer inadecuadas. </p>
+<p align="justify">El Inai lo demostró en los años anteriores, con recomendaciones, que no  fueron recomendaciones, con advertencias y órdenes que dejaron clara su  autoridad y el Inai lo sigue haciendo de manera cuidadosa para de ninguna  manera desalentar la mejor voluntad que hay en los sujetos obligados, tenemos  una relación permanente con la Secretaria de la Función Pública que representa  al Ejecutivo Federal, hemos trabajado con ella y con su equipo, enormes  proyectos y creo que esperamos que el próximo año en la revisión del informe  similar que corresponda a quien me suceda, podamos dar mejores cuentas. </p>
+<p align="justify">La inexistencia, la declaración de incompetencia y el exceso en el  fincamiento de reservas ha sido cíclico en la evolución de este derecho. </p>
+<p align="justify">Al principio la inexistencia se convirtió en una salida muy cómoda, no  había las normativas ni los mecanismos de exigencia que ahora hay. </p>
+<p align="justify">La sociedad es más crítica cada vez con todos los que ejercemos la  función pública, el Inai se ve inmerso en la misma condición, el Inai también  es escrutado severamente por solicitudes de acceso a la información que se  generan desde cualquier plano y que exigen que nosotros no podamos ser falaces  al hablar y al asegurar cuando ordenamos lo que exigimos a las autoridades, sujetos  obligados y no pudiéramos cumplir con lo propio. </p>
+<p align="justify">Esa exigencia ciudadana efectivamente, ha volcado a ejercer con mayor  tenacidad y sin sucumbir a las malas respuestas o a las respuestas  insatisfactorias, o incompletas y por eso es que sí, se han incrementado de  manera importantísima los recursos de revisión, sí se presenta para el Inai,  por eso a ustedes les pedimos, para que con la Colegisladora en el momento de  la votación presupuestal, nos ayuden a cuidar que la dotación presupuestal no  vaya a decrecer más, porque la siete ponencias a ciencia cierta, lo debo  confesar, estamos rebasados en el ejercicio progresivo que aumenta cada día.</p>
+<p align="justify">Cada día las solicitudes de acceso son más juiciosas, más minuciosas,  más llevadas a planos en los que las propias instituciones se ven muchas veces  en conjetura de saber cumplir, es cierto, hay campos históricamente intocables  para el escrutinio ciudadano, no ha sido sencillo ni fácil a lo largo de estos  años convencer a las dependencias del sector de la seguridad pública y de la  seguridad nacional, que este es un deber constitucional y legal, de manera  paulatina y progresiva hemos avanzado mucho con ellos, hemos sostenido un  diálogo permanente, asistencia, capacitación y siempre que algunos de ellos nos  busca, antes que se genere, desde luego, un recurso de revisión que tenga que  resolverse en los términos que corresponda con la ley, así sea cualquier  institución, debo reconocer con sonrojo, porque soy abogado, que hemos tenido,  y lo digo por el justicialismo que quizás profese por la formación profesional  que tengo a la mismísima Suprema Corte de Justicia, como a todos los titulares  de los poderes públicos, incluida, respetuosamente, señoras y señores  Senadores, a esta Soberanía como a la anterior integración en el ámbito de sus  desarrollos.</p>
+<p align="justify">Sí, hay indicadores que nos deben preocupar y que sólo ustedes nos  pueden ayudar a remontar. </p>
+<p align="justify">Por ejemplo, de octubre de 2015 a septiembre de 2016, el número de días  hábiles para responder sobre datos personales era 6.1 y en información pública  13.2; luego con la exigencia redoblada de la ley, quiero decir que no era lo  mismo en términos cabales el número varió y llegamos en 2017 a tener 8.1 de  días hábiles para que se responda en materia de datos personales, en el sector  público a 12.3 día en materia de acceso a la información pública; sin embargo,  ha habido un corrimiento de 8.1 a 9.0 de días hábiles en el retraso, días  hábiles, estamos hablando casi de 20 días, naturalmente, naturales, y de 12.3 a  12.7 días en el caso de la información pública, en términos reales puede ser  incluso mucho más complejo responder en tiempo una solicitud que verse sobre la  cuestión de datos personales que sobre la información pública. </p>
+<p align="justify">Sí, la información pública es un bien público que debe custodiarse; el  Inai, efectivamente nació para respaldar el derecho ciudadano y exigir con  cabalidad y con veracidad la información. Todos los días, efectivamente los  problemas que surgen de nuevo y aquellos que también se vuelcan o se refieren  al pasado, con los datos que hablan para comparar, como corresponde a la  ciudadanía en el ejercicio cabal de su entendimiento, los comportamientos  públicos de todo el elenco de casi 900 instituciones, debo reconocer que se ha  avanzado formidablemente. </p>
+<p align="justify">Los resultados de  la última verificación lo confirman, más de 500 sujetos obligados de los más  grandes, todos ellos casi, así lo puedo decir, obtuvieron el 100 por ciento. Naturalmente  en los recursos es cuando encontramos algunas situaciones que merecen atención. </p>
+<p align="justify">Solicitamos que  ustedes nos ayuden en sus convenciones parlamentarias y de manera conjunta en  legislatura colegiada, en conferencia con la Cámara de Diputados, hacer ver, de  la mejor manera posible, a los sujetos obligados, todos los poderes públicos  que es necesario que volvamos a erradicar la inexistencias, la incompetencia  que no se acredita y, por supuesto que no se abuse, una vez más de la reserva,  porque hay una inercia, hay una tendencia casi instintiva a agotar la reserva,  aun cuando los asuntos no lo merezcan en tiempos cabales. </p>
+<p align="justify">La labor correctora  que hace el Inai, se agota todos los días, pero resulta desde luego  insuficiente. La República demanda mecanismos de escrutinio y de corrección de  la función pública de todos los sujetos obligados del país y sin su ayuda y sin  la oportunidad de venir a rendir cuentas, el Inai sería una voz clamante en el  desierto. Quiero agradecer, una vez más, y reconocer a los miembros del Consejo  Consultivo por la respetuosa omisión a mis pares locales, como les decimos  siempre con respeto, que ha sido posible, con dificultades mucho más grandes,  institucionalmente en algunas zonas del país. </p>
+<p align="justify">Se avecinan tiempos  que no dejan de poner en riesgo la integridad de los plenos o de la  configuración de los organismos garantes del país. También esperamos que desde  esta Cámara se establezcan las vías de conciliación para encontrar eco en los  ámbitos de los gobiernos estatales para que no se deja a la deriva ni al vaivén  de las circunstancias políticas de cada momento, la situación de estos órganos  garantes que sin ellos es imposible cumplir con el federalismo, que sigue  siendo indiscutiblemente una vocación histórica del Estado mexicano. <br>
+  <br>
+  Gracias, señoras y  señores Senadores por la oportunidad que me han dispensado. Aseguro que de  parte de mis compañeras y compañeros haremos llegar, cumplidamente, la  satisfacción plena y completa de cada uno de los puntos que nos han entregado  las señoras y señores Senadores que hicieron uso de la voz, reconociendo que su  atención para el Inai es determinante. </p>
+<p align="justify">Muchísimas gracias,  de verdad. </p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa:</strong> Gracias por su  intervención, Doctor Francisco Javier Acuña Llamas. </p>
+<p align="justify">Informo a la  Asamblea que la Senadora Cecilia Sánchez García, hizo llegar a esta Presidencia  unas preguntas por escrito para el Comisionado Presidente, las cuales hago  entrega en este momento. </p>
+<p align="justify">Doctor Francisco  Javier Acuña Llamas, Presidente del Instituto Nacional de Transparencia, Acceso  a la Información y Protección de Datos Personales.</p>
+<p align="justify">Honorable Asamblea.  Señoras y señores Comisionados:</p>
+<p align="justify">Reiteramos nuestro  reconocimiento al Comisionado Presidente del Instituto Nacional de  Transparencia, Acceso a la Información y Protección de Datos Personales,  Francisco Javier Acuña Llamas y hacemos extensivo el mismo a las Comisionadas y  a los señores Comisionados del Inai, en este ejercicio de informe a esta Soberanía. </p>
+<p align="justify">En el marco de la  rendición del Informe de Labores del Instituto que corresponde al periodo  octubre 2018 a septiembre 2019, el Senado materializa un ejercicio de rendición  de cuentas, conforme lo establece el artículo 6o., apartado A, fracción VIII de  la de la Constitución Política de los Estados Unidos Mexicanos.</p>
+<p align="justify">Rendir cuentas de  nuestra actuación es el ejercicio al que estamos obligados todos los servidores  públicos y responde al principio de transparencia que rige el actuar de este  organismo autónomo constitucional. </p>
+<p align="justify">Celebramos la  presentación de este informe y queremos manifestar nuestro apoyo al Instituto  para que México continúe por el camino de la transparencia. </p>
+<p align="justify">Queremos hacer un  reconocimiento público al Doctor Francisco Javier Acuña Llamas, quien durante  tres años se ha desempeñado como Comisionado Presidente de esta gran  institución y próximamente el seno de esta institución resolverá un nuevo periodo  para sus presidencias. </p>
+<p align="justify">La gestión del Doctor  Acuña coincidió con la puesta en marcha de un conjunto de decisiones mandatadas  por la ley que fortalecieron la transparencia en México. Bajo su Presidencia y  atinada conducción se puso en marcha la Plataforma Nacional de Transparencia,  la cual es un sistema informático que permite a los sujetos obligados y  organismos garantes en materia de transparencia y acceso a la información,  cumplir con los procedimientos, obligaciones y disposiciones señaladas en la  legislación en la materia. </p>
+<p align="justify">También queremos  reconocer la labor y el pulcro desempeño realizado por la Comisionada María  Patricia Kurczyn Villalobos y el Comisionado Joel Salas Suárez, quienes han  prestado un gran servicio a la nación y este año 2020 concluirán su  responsabilidad, ambos entregan muy buenas cuentas. </p>
+<p align="justify">Igualmente  reconocemos el excelente trabajo, de equipo en conjunto, de la Comisionada  Blanca Lilia Ibarra. <br>
+  <br>
+  La Comisionada Josefina Román Vergara. </p>
+<p align="justify">El Comisionado Óscar Mauricio Guerra Ford. </p>
+<p align="justify">Y el Comisionado Rosendoevgueni Monterrey Chepov,  por lograr un excelente trabajo en conjunto. </p>
+<p align="justify">Por todo lo anterior, esta Mesa Directiva agradece  la presencia de todos ustedes, del Doctor Francisco Javier Acuña Llamas,  Comisionado Presidente del Inai, así como de todos los servidores públicos de  esta institución en este ejercicio de rendición de cuentas de un ente público  autónomo ante el Senado de la República. </p>
+<p align="justify">Dicho informe se turnará a la Comisión de  Anticorrupción, Transparencia y Participación Ciudadana. </p>
+<p align="justify">Le vamos a pedir a la comisión designada para que  se sirva acompañar a nuestros invitados a las puertas del recinto cuando deseen  salir, pero primero les pedimos que si nos acompañan aquí para la foto oficial.</p>
+<p align="center">(La comisión cumple)</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a88975'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='88976'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify">Y se cita a la sesión ordinaria que se celebrará  inmediatamente para desahogar los dictámenes de la Comisión Para la Igualdad de  Género y de la Comisión de Seguridad Social, de conformidad con el Resolutivo  Segundo del Acuerdo de la Junta de Coordinación Política para promover acciones  legislativas que tengan por objeto la protección, ampliación y salvaguarda de  los derechos de las mujeres y niñas en el marco de las celebraciones del Día  Internacional de las Mujeres. </p>
+<p align="justify">Informo a la Asamblea que el sistema electrónico  para el registro de asistencia de las Senadoras y Senadores estará abierto a  partir de este momento. </p>
+<p align="justify">Se levanta esta sesión. </p>
+<p align="center">(Se levantó la sesión a las 14:10 horas<strong>)</strong></p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a88976'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

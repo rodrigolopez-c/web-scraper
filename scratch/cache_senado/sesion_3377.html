@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 23</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Alejandro Armenta Mier</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 25 de Octubre de 2022</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/2/PPO/PDF-WEB/PPO_No23_25-OCTUBRE-2022_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106796'></a><p align="center"><strong>PRESIDE EL SENADOR </strong><br>
+  <strong>ALEJANDRO ARMENTA MIER</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>(17:56 horas) Con el quórum de nuestra sesión vespertina de hoy,  iniciamos la sesión solemne convocada para la entrega del reconocimiento &ldquo;Dr.  Jesús Kumate Rodríguez&rdquo;, correspondiente al año 2022.</p>
+<p align="justify">Solicito a la Secretaría dé lectura a las comisiones de cortesía que han  sido designadas para recibir y acompañar a nuestros invitados distinguidos a  esta sesión solemne.</p>
+<p align="justify"><strong>El Secretario Senador José Narro Céspedes:</strong> Doy lectura a las  comisiones protocolarias de esta sesión solemne:</p>
+<p align="justify">Comisión de cortesía; Diputada Noemí Berenice Luna Ayala, Senador José Alfredo Botello Montes, Senadora Gabriela Benavides Cobos. </p>
+<p align="justify">Comisión de cortesía que acompaña al doctor Guilebaldo Cruz Cortés:</p>
+<p align="justify">Los Senadores Lilia Margarita Valdez Martínez, Graciela Gaitán Díaz, Elí  César Cervantes Rojas, Adolfo Gómez Hernández, y Susana Harp Iturribarría. </p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier: </strong>Se solicita a las comisiones designadas acudan a  las puertas de este recinto a fin de cumplir con su cometido.</p>
+<p align="center">(Las comisiones cumplen)</p>
+<p align="justify">Doy la bienvenida a la  Presidenta Diputada Noemí Berenice Luna Ayala, en representación del Presidente  de la Cámara de Diputados y al doctor Guilebaldo Cruz Cortés, galardonado con  el reconocimiento &ldquo;Dr. Jesús Kumate Rodríguez 2022&rdquo;, a sus invitados y  familiares.</p>
+<p align="justify">Asimismo, damos la  bienvenida al Diputado Emmanuel Reyes Carmona, Presidente de la Comisión de  Salud de la Cámara de Diputados.</p>
+<p align="justify"> A la Diputada Angélica  Ivonne Cisneros Luján, Presidenta de la Comisión de Seguridad Social de la  Cámara de Diputados.</p>
+<p align="justify">A la licenciada Paulina  Rodríguez Kumate.</p>
+<p align="justify">Al doctor Abelardo Meneses  García, Director General del Instituto Nacional de Cancerología.</p>
+<p align="justify">Al doctor Felipe Cruz Vega,  Presidente de la Academia Mexicana de Cirugía.</p>
+<p align="justify">Al doctor Ramiro López  Elizalde, Director Médico Normativo del Instituto de Seguridad y Servicios  Sociales de los Trabajadores del Estado.</p>
+<p align="justify">A la Diputada Selene Ávila.</p>
+<p align="justify">¡Bienvenida!</p>
+<p align="justify">Al doctor Efrén Encinas  Torres, en representación del Gobernador del Estado de Sinaloa, Rubén Rocha.</p>
+<p align="justify">Al doctor Ismael Francisco  Herrera Benavente, Director de la Facultad de Medicina del Estado de San Luis  Potosí.</p>
+<p align="justify">Favor de tomar asiento.</p>
+<p align="justify">Quiero darles la  bienvenida, nos acompañan familiares y amigos del doctor Emmanuel Reyes Carmona  y de nuestro homenajeado.</p>
+<p align="justify">Por supuesto que esta gran  comitiva es relevante, toda vez que por primera ocasión se otorga este  reconocimiento al doctor Guilebaldo Cruz Cortés.</p>
+<p align="justify">¡Sean ustedes bienvenidos y  bienvenidas!</p>
+<p align="justify">Este reconocimiento se creó  para premiar a las enfermeras y a los enfermeros, a los médicos, a los hombres,  mujeres y demás personal del sector salud que se han distinguido por sus  méritos a favor de la salud de las personas en México por la pandemia del  covid-19, por lo que este reconocimiento tuvo que posponerse.</p>
+<p align="justify">Pero el día de hoy lo  hacemos por la importancia, por lo que significa reconocer al personal médico  en su dedicado trabajo, esfuerzo, pasión y compromiso, así como por su  responsabilidad con la vida de las y los mexicanos.</p>
+<p align="justify">Doctor Guilebaldo, le  reconocemos su entrega y dedicación, su esfuerzo, su pasión por salvar vidas.</p>
+<p align="justify">El doctor Jesús Kumate  Rodríguez es una figura médica mexicana de las más importantes por sus grandes  aportaciones al sector salud para combatir enfermedades que afectaron a nuestro  país, además de ocupar representaciones en el sector salud como director de  diversos hospitales y por haber sido secretario de Salud.</p>
+<p align="justify">Este reconocimiento, que  fue iniciativa de Senadoras y Senadores de la Comisión de Salud y que contamos con la presencia de  nuestra presidenta de la Comisión, la Senadora Lilia Margarita, en esta Mesa  Directiva. </p>
+<p align="justify">Queremos desde luego, en su caso, doctor Guilebaldo  Cruz Cortés, señalar que él es originario de Oaxaca, realizó su postgrado en la  Escuela de Salud Pública, con aval de la Universidad Nacional Autónoma de  México.</p>
+<p align="justify"> Diplomado en epidemiología y maestría en ciencias  médicas y biológicas de la Universidad Autónoma Benito Juárez de Oaxaca.</p>
+<p align="justify">Trabajó para el ISSSTE en el servicio de urgencias  y, posteriormente, en el Departamento de Medicina Preventiva de la  subdelegación médica del Instituto.</p>
+<p align="justify">En la misma Facultad de Medicina y Cirugía en donde  fue director, realizó trabajo docente frente a grupo y jornadas médicas para  las comunidades, con el otorgamiento de consultas médicas gratuitas.</p>
+<p align="justify">Por su contribución, recibió el reconocimiento de  la sociedad Interamericana de Historia y Filosofía de la Medicina en la  Benemérita Universidad Autónoma de Puebla, mi alma máter. </p>
+<p align="justify">Así como el <em>Honoris  Causa</em> por el Instituto Mexicano de Líderes de Excelencia.</p>
+<p align="justify">Ha colaborado en la edición de artículos y  revistas, libros, entre otros. </p>
+<p align="justify">Actualmente es presidente de la Academia de Salud  Pública en la Facultad de Medicina y Cirugía de la Universidad Autónoma Benito  Juárez de Oaxaca.</p>
+<p align="justify">Por estas razones es que los Senadores y Senadores  decidieron otorgar este gran reconocimiento al doctor Guilebaldo Cruz Cortés. </p>
+<p align="justify">Muchas felicidades, doctor, estamos seguros de que  sus contribuciones al sector médico, a la sociedad y a nuestra patria son  dignos de reconocimiento y por eso el día de hoy lo galardonamos como la  primera persona en recibir este reconocimiento. </p>
+<p align="justify">Muchas felicidades, la República le reconoce su  honor, su valentía, su coraje y su amor por la vida.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106796'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106797'></a><p align="justify">Solicito a la Senadora Sylvana Beltrones, Secretaria  de la Comisión de Salud, dé lectura de la semblanza del doctor Jesús Kumate  Rodríguez. </p>
+<p align="justify"><strong>LECTURA DE LA SEMBLANZA DEL DOCTOR JESÚS KUMATE  RODRÍGUEZ, A CARGO DE LA SENADORA SYLVANA BELTRONES SÁNCHEZ, SECRETARIA DE LA  COMISIÓN DE SALUD</strong><strong></strong></p>
+<p align="justify"><strong>La Senadora Sylvana Beltrones Sánchez:</strong> Gracias. Con su venia, señor  Presidente. Bienvenidos a todos los invitados al Senado de la República. </p>
+<p align="justify">Nació en Mazatlán, Sinaloa en 1924, Jesús Kumate  Rodríguez fue un médico cirujano egresado de la Escuela Médico Militar, en  1946, comprometido con la salud y su combate, en 1963 obtuvo el doctorado en  ciencias por la Escuela Nacional de Ciencias Biológicas del Instituto  Politécnico Nacional; realizó estudios de postgrado en diversas ciudades de  Estados Unidos y Europa. </p>
+<p align="justify">El doctor Jesús Kumate Rodríguez fue una de las  figuras médicas mexicanas más importantes de las últimas décadas por sus  innumerables contribuciones y beneficios que permitieron erradicar devastadoras  enfermedades que afectaron a nuestro país en el pasado. </p>
+<p align="justify">Como ejemplo de sus aportaciones, se debe recordar  la creación del Programa de Vacunación Universal en 1992, con el cual se logró,  por primera vez, erradicar del país la viruela y eliminar la mortalidad por  sarampión y paludismo; implementó la vacunación en los niños menores de cinco  años contra seis enfermedades: difteria, tétanos, poliomielitis, sarampión,  tosferina y tuberculosis. </p>
+<p align="justify">El esquema de vacunación gratuito fue un  seguimiento a la política de salud que puso en marcha el doctor Kumate Rodríguez. </p>
+<p align="justify"> En su desempeño como secretario de Salud, le  correspondió enfrentar en México el brote de cólera en 1991, por lo que se creó  el Programa de Prevención y Control de Cólera y se conformaron las brigadas  para el control de esta enfermedad en todo el territorio nacional. </p>
+<p align="justify">Se destacó como un inminente investigador en  infectología pediátrica, área que coordinó y estimuló en el Hospital Infantil  de México y en el Centro Médico Nacional Siglo XXI del IMSS, como director del  Instituto de Investigaciones Biomédicas y jefe de división de inmunoquímica. </p>
+<p align="justify">Le correspondió ser el primer coordinador de los  institutos nacionales de salud y subsecretario de servicio de salud, desde  donde replanteó la misión de la vigilancia epidemiológica que tuvo importante  impacto en el combate del paludismo. </p>
+<p align="justify">Como resultado de su labor, en 1995 se consolidó el  Programa de Reforma del Sector Salud que confirió una alta prioridad a la  atención de las adicciones y el abatimiento de los problemas asociados.</p>
+<p align="justify">Además de sus sobresalientes aportaciones al campo  médico, el doctor Kumate desempeñó numerosos cargos nacionales e  internacionales, entre los que figuran los de presidente de la Academia  Nacional de Medicina, así como integrante de las sociedades mexicanas de  bioquímica, infectología, inmunología e investigación pediátrica. </p>
+<p align="justify">Fue miembro del Consejo Consultivo de la UNICEF y  presidente del Consejo Ejecutivo de la Organización Mundial de Salud, autor de  21 libros y más de 400 artículos, entre otros, de sus incontables trabajos de  divulgación científica. </p>
+<p align="justify">Recibió diversos premios y reconocimientos, tanto  nacionales, como internacionales; sus contribuciones son innumerables y los  reconocimientos otorgados fueron bien merecidos, fue un ser humano preocupado  por la calidad de vida de los más desprotegidos en el mundo, principalmente en  nuestro país.</p>
+<p align="justify">Con este reconocimiento que en esta sesión se  otorgará, por primera vez, el Senado de la República ofrece un significativo y  valioso homenaje a quienes dedican su vida de forma destacada a la promoción,  defensa, ejercicio, protección e investigación de la salud. </p>
+<p align="justify">En homenaje a la labor de este gran hombre de  ciencia y gran médico, es que el Senado de la República entrega hoy este  reconocimiento que lleva su nombre: doctor Jesús Kumate Rodríguez, para premiar  a las enfermeras y los enfermeras, médicas y médicos y demás personal del  sector salud que se han distinguido por sus méritos a favor de la salud de las  personas en México. </p>
+<p align="justify">El Senado de la República agradece su entrega y su  pasión demostrada, en aras de asegurar la salud de todas las mexicanas y  mexicanos.</p>
+<p align="justify">Es cuanto, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier:</strong> Muchas gracias, Senadora Beltrones Sánchez. </p>
+<p align="justify">Se concede el uso de la palabra a la Senadora Lilia  Margarita Valdez Martínez, Presidenta de la Comisión de Salud.</p>
+<p align="justify"> <strong>La Senadora Lilia Margarita  Valdez Martínez:</strong> Muchísimas gracias, señor Presidente. </p>
+<p align="justify">Primero que nada, una muy sincera disculpa por el  retrasito de más de dos horas que hemos tenido, pero la vida del Senado, la  vida parlamentaria así es, se planea de un modo y pues las necesidades nos  hacen corregir el rumbo.</p>
+<p align="justify">Agradezco muchísimo, deveras, a todos los  secretarios de salud, de casi 20 estados, de los 20 estados que nos acompañan,  y los saludo con mucho afecto.</p>
+<p align="justify">En la persona de la doctora Irasema Kondo, que es  secretaria de salud de mi estado, de mi querido estado de Durango.</p>
+<p align="justify">Bienvenida, doctora, bienvenidos todos y todas. </p>
+<p align="justify">Hoy es un día de felicidad, amigas y amigos. Hoy es  un día de alegría, ahorita las caras de tristeza, las caras de cansancio aquí  no caben, este es un día de honor, este es un día de justicia, un día de reconocimientos,  méritos y agradecimientos, que es la palabra del alma, la memoria del alma es  saber agradecer a todos y a todas cuando se recibe algo tan importante como un  esfuerzo para mantener la salud y nunca esperar a cambio nada. </p>
+<p align="justify">En el  marco del Mes de la Salud y del Día del Médico, el Senado de la República  entrega por vez primera el premio &ldquo;Dr. Jesús Kumate Rodríguez&rdquo;, una idea que  nació en el corazón del Senador, hoy gobernador, Miguel Ángel Navarro para  honrar la memoria del doctor Jesús Kumate, precursor de aquella gran frase, que  es parteaguas en la salud del pueblo de México, &ldquo;Todos los niños todas las  vacunas&rdquo;.</p>
+<p align="justify">Elegir a  quién distinguir con este premio en un gremio conformado Senadores y Senadoras  por más de 305 mil médicos, personas, mujeres y hombres que día a día dedican  su conocimiento, su esfuerzo y experiencia, no nada más en los consultorios  atendiendo a las familias, la clínica o el hospital.</p>
+<p align="justify">Yo sé que  fue una tarea compleja porque ese ejército blanco también tiene sus trincheras  en la investigación, en las aulas formando a más personal de salud o en otras  actividades que fortalecen la profesión.</p>
+<p align="justify">Este  premio que hoy entrega el Senado de la República se suma a la &ldquo;Medalla  Belisario Domínguez&rdquo; que se otorga desde hace 68 años para reconocer la  trayectoria de personajes de la sociedad civil.</p>
+<p align="justify">Se suma a  la presea &ldquo;Elvia Carrillo Puerto&rdquo; destinada a galardonar a mujeres que se  distinguen por la defensa de otras mujeres. Y al premio &ldquo;Rosario Castellanos&rdquo;  destinado a quienes se destacan en las letras.</p>
+<p align="justify">Este  premio, que es la primera vez, busca, busca en corto tiempo tener el mismo peso  y el mismo premio que los anteriores, ni más, ni menos.</p>
+<p align="justify">Estamos  aquí arropados por todos ustedes que representan no sólo a esta, sino a otras  generaciones de médicos y médicas que también han luchado por la construcción  de un mejor país, por un país más justo, en el cual el derecho al acceso a los  servicios de salud sea universal, ese es un sueño de todos los médicos y  médicas de este país, que la salud sea para todos, que no sea un privilegio,  que no sea una venta o una compra si tienes con qué.</p>
+<p align="justify">Es el  sueño que debemos lograr solamente unidos y con los esfuerzos de todos y todas.</p>
+<p align="justify"> Hoy el  premio &ldquo;Dr. Jesús Kumate Rodríguez&rdquo; se entrega a un médico oaxaqueño, el doctor  Guilebaldo Cruz Cortés, reconocido por su labor social en función de las  comunidades de esa entidad del país tan pluricultural, en la cual él ha  impulsado programas de vacunación, prevención de enfermedades como el cólera,  capacitación para pasantes, para médicos familiares y en medicina preventiva.</p>
+<p align="justify">Estoy  orgullosa, y en nombre de toda la Comisión de Salud satisfecha de este proceso  de selección, en el cual contamos con el acompañamiento permanente del jurado  evaluador conformado por los médicos, los doctores.</p>
+<p align="justify">Abelardo  Meneses García, muchas gracias, doctor. Felipe Cruz Vega, muchísimas gracias,  sabemos que no fue fácil, pero ha sido una tarea ejemplar.</p>
+<p align="justify">El doctor  Ramiro López Elizalde, muchísimas gracias para la institución. Y yo sé que no  hubo nada que hacer ahí, pero felicito también, además del doctor, a la  institución, el ISSSTE, creo que es un motivo para seguir haciendo todo en  favor de la salud.</p>
+<p align="justify">Al doctor  Efrén Encinas Torres, muchísimas gracias. Y al doctor Ismael Francisco Herrera  Benavente, que es representante, son representantes del estado de Sinaloa.</p>
+<p align="justify">Un saludo  a nuestro querido Gobernador Rubén Rocha Moya. Hoy el Senado de la República  instituye este que es el primero de muchos galardones que recibirán médicos y  médicas de todo el país por trayectoria, por peso social de nuestra sociedad.</p>
+<p align="justify">Este  premio, amigos y amigas, la recibe un médico, lo recibe un médico, pero este  premio es para todas y todos los médicos de México. Este premio simboliza el  esfuerzo, el compromiso, la pasión de todo el gremio, es honor a quien ha  mantenido, amigos y amigas, a este país de pie junto con muchos otros.</p>
+<p align="justify">Pero este  país ha aguantado, ha tolerado despojos, pandemias, malos tratos y, sin  embargo, sigue de pie, y el gremio médico tiene mucho que ver. </p>
+<p align="justify"> Honor a  quien honor merece. Este Senado de la República reconoce en el doctor, en usted  doctor Cruz Cortés, a todos los médicos, y es el primero, esto es historia.</p>
+<p align="justify">Legisladores  y legisladoras, no es el momento de regatearle la salud al pueblo de México,  nada por encima de la salud. No es el momento de estarnos fijando si es primero  la salud o es primero el cemento; si es primero la salud o es primero el  vidrio, aquí México le urge que los volteemos a ver.</p>
+<p align="justify">Afortunadamente  en México ya hay equipos, ya hay gobiernos que están volteando a ver a los  mexicanos y a las mexicanas.</p>
+<p align="justify">No nos  vamos a conformar con encender el edificio por todas las enfermedades, vamos  por mayor recurso, vamos por mayor infraestructura, tenemos que derrotar al  cáncer, tenemos que derrotar a las enfermedades raras, tenemos que hacer que  nuestros niños y nuestras niñas coman, y hoy es un día para decir, de aquí en  adelante, &ldquo;la salud es primero&rdquo;.</p>
+<p align="justify">Amigos y  amigas, muchísimas gracias por su presencia, muchísimas gracias por su  paciencia y, sobre todo, muchísimas gracias a los médicos y a las médicas por  todo el esfuerzo para sostener a México de pie, se los agradecemos.</p>
+<p align="justify">Muchas  gracias.</p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Gracias, Senadora  Presidenta de la Comisión de Salud.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106797'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106798'></a><p align="justify"><strong>ENTREGA DEL RECONOCIMIENTO &ldquo;DR. JESÚS KUMATE  RODRÍGUEZ 2022&rdquo;</strong> <strong>AL DR. GUILEBALDO CRUZ CORTÉS</strong></p>
+<p align="justify">Les  solicito ponerse de pie para la entrega del reconocimiento &ldquo;Dr. Jesús Kumate  Rodríguez&rdquo; y del diploma correspondiente al doctor Guilebaldo Cruz Cortés.</p>
+<p align="center">(Todos de  pie)</p>
+<p align="justify">La Cámara  de Senadores del Honorable Congreso de la Unión, en el marco del Día Mundial de  la Salud, acordó otorgar el reconocimiento &ldquo;Dr. Jesús Kumate Rodríguez&rdquo; al  doctor Guilebaldo Cruz Cortés como reconocimiento a sus amplios méritos a favor  de la salud de las personas en México.</p>
+<p align="justify">Senado de  la República, octubre del 2022.</p>
+<p align="center">(Entrega  de reconocimiento)</p>
+<p align="justify">Sírvanse  tomar asiento, Honorable Asamblea.</p>
+<p align="justify">Se  concede el uso de la palabra al doctor Guilebaldo Cruz Cortés, galardonado con  el reconocimiento &ldquo;Dr. Jesús Kumate Rodríguez&rdquo; correspondiente al año 2022.</p>
+<p align="justify"><strong>El Dr.  Guilebaldo Cruz Cortés: </strong>Gracias, señor Presidente.  Buenas tardes.</p>
+<p align="justify">Saludo  con afecto y respeto a las y los Senadores presentes. </p>
+<p align="justify">A los representantes personales del Secretario de  Salud federal, doctor Jorge Carlos Alcocer Varela. </p>
+<p align="justify">Del maestro Zoé Robledo Aburto, Director General  del IMSS. </p>
+<p align="justify">Y el representante personal del Director General  del ISSSTE. </p>
+<p align="justify">A los Secretarios y Secretarias de Salud del país. </p>
+<p align="justify">A la Directora de la Facultad de Medicina y Cirugía  de la Universidad Autónoma &ldquo;Benito Juárez&rdquo; de Oaxaca, la doctora Martha Silvia  Martínez, mi alma mater. </p>
+<p align="justify">A mi familia y amigos. </p>
+<p align="justify">Especialmente a mis hijos Beatriz Areli, Elí  Abraham y Guille Martín. </p>
+<p align="justify">A mi nieto Fernando. </p>
+<p align="justify">Y a la enfermera Martha Cruz Martínez. </p>
+<p align="justify">Los doctores Leonor Pérez Martínez, Gustavo Pedraza  Alba y Wendy Reyna González. </p>
+<p align="justify"> A todos los presentes en este recinto. </p>
+<p align="right"><em>&ldquo;¿Quieres ser médico, hijo mío?</em></p>
+<p align="right"><em>Aspiración es esta de un alma generosa, de un  espíritu ávido de ciencia.</em></p>
+<p align="right"><em>¿Deseas que los hombres te tengan por un Dios que  alivia sus males y ahuyenta de ellos el espanto?</em></p>
+<p align="right"><em>¿Has pensado bien en lo que ha de ser tu vida? Sé  médico, hijo&rdquo;.</em></p>
+<p align="right"><em>Consejos de Esculapio. Medicina griega. </em></p>
+<p align="justify">Ser médico es la oportunidad única que tiene el ser  humano de poder demostrar que se puede ayudar sin la necesidad de tener una  retribución o un bien a cambio, tomar el camino de atención aún a pesar de  abandonar el cansancio y el ocio para cualquier otro momento. Es estar  convencido de quien vive para servir, sirve para vivir. </p>
+<p align="justify">Mi reconocimiento a las y los médicos que se  enfrentaron cuan soldados rasos al enemigo más feroz que hubiéramos conocido,  el virus SARS-CoV-2, Covid-19, quien nos mostró cuán vulnerables somos y cuánta  necesidad tenemos de aprender de solidaridad y educación para la salud.</p>
+<p align="justify">No omito mencionar que nuestro país fue  estadísticamente quien más pérdida de personal de salud tuvo en esta pandemia,  situación que viví en carne propia por lo que agradezco a quienes me atendieron  y brindaron atención médica en la ciudad de Oaxaca y al doctor Hans de Jesús  Cruz Bolaños en el hospital ABC de esta ciudad. </p>
+<p align="justify">El reconocimiento &ldquo;Jesús Kumate Rodríguez&rdquo; valora  el quehacer de hombre y mujeres que se han dedicado a este arte convertido en  la más noble de las profesiones humanas. </p>
+<p align="justify">Hace 37 años que egresé como médico para  incorporarme a la Secretaría de Salud dándome la oportunidad de recorrer mi  estado colaborando con el entonces Instituto Nacional Indigenista y en sus  albores el IMSS-Coplamar, siendo entonces cuando en los brotes de cólera y  sarampión tuve la oportunidad de saludar personalmente al doctor Jesús Kumate  Rodríguez, participando también en los días nacionales de vacunación que  después se convirtieron en semanas nacionales de salud. </p>
+<p align="justify">En el ISSSTE fungí como responsable de medicina  preventiva realizando labores en las Unidades de Medicina Familiar. El IMSS fue  sede de mi internado de pregrado, por lo que soy afortunado en conocer al  sistema de salud de México.</p>
+<p align="justify">La vida me dio oportunidad de realizarme como  docente en la Facultad de Medicina y Cirugía, hasta llegar a ser director de la  misma, por lo cual tuve que sembrar en los demás compañeros este espíritu de  atención y de promoción de la salud en la población. Me queda muy claro que hay  mucho por hacer. </p>
+<p align="justify">Por eso, les solicito a los representantes del  sector salud volteen hacia el primer nivel de atención, los médicos generales y  familiares, apoyando desde su formación y reformando todos aquellos incentivos  que requieren los médicos internos y los médicos pasantes, con beneplácito pude  ver que el secretario de Salud solicita una ampliación para las becas de los  médicos en formación. </p>
+<p align="justify">Contratemos  a médicos y médicas mexicanos que pueden y quieren atender en comunidades  alejadas, pero con un salario digno que les permita retribuir su esfuerzo. </p>
+<p align="justify">Sean, pues, señores representantes del sector  salud, portavoz hasta el Presidente. Y, Senadores, trabajen incansablemente  porque el presupuesto se amplíe para este sector, nuestro sector salud.</p>
+<p align="justify">Honremos con eso la memoria del doctor Jesús Kumate  Rodríguez, quien pasó a la historia con el eslogan: &ldquo;Todos los niños, todas las  vacunas&rdquo;, señalando hoy por la salud de todos los mexicanos. </p>
+<p align="justify">Los médicos y las médicas de México. </p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"> <strong>El Presidente Senador Alejandro  Armenta Mier: </strong>Solicito  a la Asamblea ponerse de pie para entonar nuestro Himno Nacional Mexicano. </p>
+<p align="center">(Todos de pie entonan el Himno  Nacional)</p>
+<p align="justify">Favor de tomar asiento. </p>
+<p align="justify">A nombre del Senado de la República, expreso  nuestro agradecimiento por su presencia en esta sesión solemne, estimado doctor  Guilebaldo. </p>
+<p align="justify">A la Diputada Noemí Berenice Luna Ayala. A nuestro  galardonado. Así como a todas y todos nuestros distinguidos invitados por su  asistencia a esta sesión solemne. </p>
+<p align="justify">Solicito a las Senadoras y Senadores, integrantes  de las comisiones de cortesía, se sirvan acompañan a nuestros invitados e  invitadas hasta las puertas de este recinto. </p>
+<p align="center">(La comisión cumple)</p>
+<p align="justify">Damos por finalizada la sesión solemne.</p>
+<p align="justify">Por lo que les ruego, a los Senadores y Senadoras,  mantenerse en sus lugares para continuar con la sesión vespertina.</p>
+<p align="justify">Se levanta la sesión solemne. </p>
+<p align="center">(Se levantó la sesión a  las 18:32 horas)<strong> </strong></p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106798'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>TERCER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO III</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 6</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Ana Lilia Rivera Rivera</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 14 de Febrero de 2024</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/3/SPO/PDF-WEB/SPO_No6_14-FEBRERO-2023-SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='114393'></a><p align="center"><strong>PRESIDE LA SENADORA</strong><br>
+  <strong>ANA LILIA RIVERA RIVERA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera: </strong>(12:35 horas) Con  fundamento en lo dispuesto por el artículo 56, fracción III del Reglamento del  Senado, y en el Acuerdo de la Mesa Directiva, aprobado el día de ayer. Damos  inicio a la sesión solemne para recibir la visita del señor Ricardo Cifuentes  Lillo, Presidente de la Cámara de Diputadas y Diputados de la República de  Chile. </p>
+<p align="justify">Por lo que solicito a las Senadoras y Senadores  Bertha Alicia Caraveo Camarena, Ángel García Yáñez, Rogelio Israel Zamora  Guzmán, Antonio García Conejo, Jesús Lucía Trasviña, Nancy Sánchez Arredondo y  Daniel Gutiérrez Castorena, acudan a recibir a nuestros invitados y a su  comitiva a este recinto. </p>
+<p align="justify">Asimismo, le pedimos al Senador Antonio Martín  del Campo Martín del Campo, para que nos acompañe a trasladar a nuestros  invitados a este recinto.</p>
+<p align="center"> (La comisión cumple)</p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify">Se reanuda la sesión solemne. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a114393'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='114394'></a><p align="justify"><strong>VISITA  DEL PRESIDENTE DE LA CÁMARA DE DIPUTADAS Y DIPUTADOS DE LA REPÚBLICA DE CHILE, DIPUTADO  RICARDO CIFUENTES LILLO</strong></p>
+<p align="justify">La Cámara de Senadores del Honorable Congreso  de la Unión de los Estados Unidos Mexicanos, expresa la más cordial bienvenida  al Excelentísimo señor Ricardo Cifuentes Lillo, Presidente de la Cámara de  Diputadas y Diputados de la República de Chile. </p>
+<p align="justify">Es un honor recibir su visita. </p>
+<p align="justify">Asimismo, damos la bienvenida a la  Excelentísima señora Beatriz Sánchez Muñoz, Embajadora de Chile en México. </p>
+<p align="justify">El Honorable Diputado de la República de Chile, señor Sergio  Bobadilla Muñoz, en representación del Partido Unión Democrática Independiente,  por la Región de Biobío. </p>
+<p align="justify"> El  Honorable Diputado de la República de Chile, señor Miguel Ángel Calixto Águila, Diputado  Independiente de la Región de Aysén, General Carlos Ibáñez del Campo. </p>
+<p align="justify">El  Honorable señor Hitler Saavedra Casternoque, Congresista de la República del  Perú, por la región de Loreto. </p>
+<p align="justify">Y  el Honorable señor Isaac Mita Alanoca, Congresista de la República del Perú,  por la región de Tagna, representante del Partido Perú Libre.</p>
+<p align="justify">Me  permito presentar a mis compañeras y compañeros que integran la Mesa Directiva,  presentes en esta sesión solemne. </p>
+<p align="justify">Al  Senador Checo Pérez Flores, Vicepresidente. </p>
+<p align="justify">La  Senadora Alejandra Noemí Reynoso Sánchez, Vicepresidenta. </p>
+<p align="justify">La Senadora Sylvana Beltrones Sánchez,  Vicepresidenta. </p>
+<p align="justify">Asimismo, a la Senadora Verónica Noemí Camino  Farjat. Secretaria</p>
+<p align="justify">Senador Ricardo Velázquez Meza. Secretario</p>
+<p align="justify">Senador Navor Alberto Rojas Mancera. Secretario</p>
+<p align="justify">Senador Daniel Gutiérrez Castorena. Secretario</p>
+<p align="justify">Conforme al Acuerdo aprobado para normar la  celebración de esta sesión solemne el señor Presidente de la Cámara de  Diputadas y Diputados de la República de Chile dará un mensaje a la Asamblea. </p>
+<p align="justify">En consecuencia, tiene usted el uso de la palabra,  señor Ricardo Cifuentes Lillo.</p>
+<p align="justify"><strong>El Presidente de la Cámara de Diputadas y Diputados de la  República de Chile, Ricardo Cifuentes Lillo: </strong>Muy buenas tardes. </p>
+<p align="justify">Quiero  saludar a la señora Presidenta, Senadora Ana Lilia Rivera; a los señores Vicepresidentes,  Alejandra Reynoso, Sylvana Beltrones, Checo Pérez y a los Secretarios, Verónica  Camino Farjat, Daniel Gutiérrez y Navor Rojas. </p>
+<p align="justify">Es  para mí un honor haber sido invitado a entregar un mensaje ante el Senado de la  República de México, en representación de la Cámara de Diputadas y Diputados de  Chile, sustento esta afirmación en los lazos de amistad y colaboración que han  unido a nuestros países desde la madrugada del 16 de septiembre de 1810 en  México con el Grito de Dolores y en Chile la mañana del 18 de septiembre del  mismo año, cuando se crea la primera junta de gobierno. </p>
+<p align="justify">Que  al igual que en el &ldquo;Grito de Dolores&rdquo; en México significó el inicio del proceso  de Independencia de la Corona de España. </p>
+<p align="justify">Son  muchos los hechos significativos que nos han unido a través de la historia,  entre ellos el primer Tratado de Comercio entre ambos países, suscrito en 1823,  posteriormente en el 31 se firmó el Tratado de Amistad, Comercio y Navegación. </p>
+<p align="justify">En  otro ámbito, cabe señalar el reconocimiento y la relación diplomática que en  1862 Chile estableció con el Presidente Benito Juárez durante la Segunda  Intervención Militar de Francia en México, ofreciendo el apoyo militar, ayuda  solidaria y la posibilidad de asilo en nuestra patria. </p>
+<p align="justify"> En el terreno de la cultura, México tiene una  alta valoración de nuestra poeta Gabriela Mistral, Premio Nobel de Literatura y  gran educadora que dejó importantes huellas en México. </p>
+<p align="justify">Por nuestra parte, hemos tenido una gran  valoración de sus contemporáneos como Alonso Reyes y José Vasconcelos, padre  del actual Senador del mismo nombre. </p>
+<p align="justify">Este último invitó a México a Gabriela Mistral  para participar en un importante y novedoso proyecto de educación, no podemos  dejar de mencionar la amistad que Gabriela tuvo con la educadora mexicana Palma  Guillén, amistad de la cual se han publicado la valiosa correspondencia que  ambas obtuvieron. </p>
+<p align="justify">A partir de esa experiencia mexicana es que a  figura de Gabriela Mistral oriunda de mi región se agiganta como una referente  latinoamericana y universal. </p>
+<p align="justify">Pablo Neruda vivió en México, vinculado a la  intelectualidad mexicana, entre ellos José Revuelta, Clemente Orozco, Diego  Rivera y Siqueiros, en México Neruda concluyó su Canto General, ahí se hizo la  primera edición de esa magnifica obra, el aprecio que Neruda tenía por México  le llevó a optar por exiliarse en este país cuando se sintió amenazado por la  dictadura gobernante, su muerte, cuya causa aún no está suficientemente  aclarada lo impidió. </p>
+<p align="justify">El escritor Roberto Bolaño vivió algunos años  en México ganando experiencia que ayudaron a su formación literaria, agrego a  nuestro poeta Nicanor Parra, que recibió aquí el importante Premio Juan Rulfo. <br>
+  <br>
+  Me parece de particular importancia mencionar  que con motivo del devastador terremoto de la Ciudad de Chillán 1939, el  gobierno de México donó a Chile la construcción de una escuela con un obsequio  adicional, dos murales creados por dos grandes artistas, David Alfaro Siqueiros  y Javier Guerrero, obviamente la escuela se llama México y en ella se conservan  ambas obras de arte. </p>
+<p align="justify">Estimadas y estimados Senadores, las relaciones  diplomáticas entre México y Chile, que se establecieron en 1831 se rompieron en  1973 por el cruento golpe de Estado seguido por la dictadura cívico-militar que  perduró por 17 años en un acto de repudio y dignidad del gobierno de México por  decisión de su Presidente Luis Echeverría, rompió relaciones diplomáticas y  consulares con el gobierno de facto que se impuso en Chile con las armas, una  consecuencia del drama chileno que significó la llegada a México de miles de  compatriotas que buscaron asilo en este país, donde fueron generosamente  acogidos, entre ellos la familia del expresidente Salvador Allende y muchos  intelectuales y trabajadores que continuaron con sus vidas en México. </p>
+<p align="justify">Las relaciones diplomáticas se reanudaron  plenamente bajo el gobierno democráticamente electo Presidente Patricio Aylwin,  recién en 1990. </p>
+<p align="justify">Hoy México y Chile se encuentran en distintos  foros internacionales, Naciones Unidas, la OEA, la OCDE, la Asociación  Latinoamericana de Integración, entre otros. Y, por cierto, la Alianza del  Pacífico con grandes coincidencias. </p>
+<p align="justify">A lo  anterior agregamos los muchos acuerdos bilaterales suscritos entre ambos países  desde el retorno de la democracia en Chile, como el de la protección y restitución  de bienes culturales, cooperación técnica, científica, cultural y educativa, el  trabajo de tradición y el acuerdo de cooperación para combatir el narcotráfico,  estos son otros hechos que reflejan la unión, las identidades e intereses  compartidos entre nuestros dos países.</p>
+<p align="justify"> Señoras y  señores Senadores, he querido hacer este repaso de antecedentes porque son  demostrativos de los sólidos vínculos que nos unen; pero quisiera abordar un  tema que es uno de los motivos de nuestra presencia ante ustedes, me refiero a  la Alianza del Pacífico, iniciativa en la que participó el expresidente de  Chile, Sebastián Piñera, trágicamente fallecido hace algunos días, y que  integra a México, Colombia, Chile y Perú.</p>
+<p align="justify">La Alianza  ha tenido importantes logros, tales como construir un área de integración con  libre circulación de bienes, servicios, capitales y personas, y cero por ciento  de aranceles para el 99 por ciento de los productos que se transan.</p>
+<p align="justify">Además, se  ha avanzado en el desarrollo y el bienestar socioeconómico y la inclusión  social, iniciativa que ha significado la eliminación de varias, o, perdón, de  visas entre ciudadanos de los países miembros, la creación de una plataforma de  movilidad académica y estudiantil, la integración bursátil y la formación del  Consejo Empresarial.</p>
+<p align="justify">El éxito de  la Alanza del Pacífico ha significado que hoy cuente con 63 estados  observadores, y cinco países que han solicitado su incorporación a la Alianza  como miembros plenos.</p>
+<p align="justify">Entre la  fortaleza que tiene la Alianza del Pacífico está la de representar en conjunto  la octava economía mundial con una población de 231 millones de habitantes y un  PIB que supera los dos mil 300 billones de dólares.</p>
+<p align="justify">Sus  sistemas financieros son sólidos y tienen relaciones comerciales a través del  Tratado de Libre Comercio con más de 63 países en el mundo.</p>
+<p align="justify">Entre los  retos de la Alianza del Pacífico está continuar impulsando el crecimiento y  desarrollo económico sostenible para superar la pobreza y las desigualdades  mejorando la productividad, promoviendo la innovación, mejorando la calidad de  nuestro capital humano para enfrentar un mundo cambiante utilizando nuevas  tecnologías para la producción de bienes y servicios, mejorando la eficiencia y  la eficacia del Estado y ampliando su rol como agente activador y de articulación  del esfuerzo de las empresas privadas y públicas.</p>
+<p align="justify">En  noviembre del año 2022, en sesión solemne, en donde el Senado de México recibió  al Presidente Gabriel Boric, se mencionó la importancia de la Alianza del  Pacífico y del Océano Pacífico como el nuevo centro del mundo.</p>
+<p align="justify">Otro reto a  enfrentar son los problemas comunes que incluso van más allá de la Alianza del  Pacífico, me refiero al grave problema del calentamiento global y sus  consecuencias como las sequías, las inundaciones, los huracanes, los daños a  los ecosistemas disminuyendo la biodiversidad y el debilitamiento de la capa de  ozono.</p>
+<p align="justify">Las grandes  potencias como Estados Unidos y la República Popular China, son las más grandes  contaminadoras manifestándose reacias a comprometerse con propuestas eficaces  para disminuir significativamente el efecto invernadero.</p>
+<p align="justify">Otro de los  retos compartidos que nos afectan, el que ustedes conocen bien, es la  delincuencia y el crimen organizado, particularmente este último daña  gravemente a la sociedad en su conjunto porque promueve la corrupción, la  violencia e impacta la estabilidad democrática y la confianza en las  instituciones del Estado.</p>
+<p align="justify">El crimen  organizado responde a estructuras muchas veces transnacionales que dedican no  solo al narcotráfico, sino, además, a la trata de personas, al tráfico de armas  y municiones, al tráfico ilícito de migrantes, al cibercrimen, al sicariato, al  lavado de dinero y delitos medioambientales como el robo de madera.</p>
+<p align="justify"> El tráfico  de armas y municiones es un medio fundamental para la proliferación de las  acciones del crimen organizado, el que posee estructuras complejas para actuar y se moderniza en el uso de  la nueva tecnología de manera más rápida que los estados. </p>
+<p align="justify">Para combatir el crimen organizado no basta con  penalizaciones más drásticas, más bien significan acciones que nos corresponden  enfrentar de manera compartida, la primera como acción preventiva es resolver  el problema de la pobreza y de la marginación social que son esferas donde las  organizaciones criminales reclutan y se apropian de mujeres, hombres y niños  para el comercio de la droga, la prostitución, los trabajos forzados y la venta  de órganos. </p>
+<p align="justify">Otro recurso fundamental para el combate contra  el crimen organizado es la articulación entre países y dentro de cada país la  coordinación entre las policías, las fuerzas armadas, las organizaciones  comunales, la sociedad civil y los sectores empresariales para definir  estrategias e involucrarse en acciones contra la criminalidad. </p>
+<p align="justify">Por último, una educación en valores tanto en  el hogar como en la enseñanza formal en todos sus niveles. </p>
+<p align="justify">Es ineludible no hacer referencia a la  importancia de la paz en el mundo, hoy la guerra en Ucrania, la guerra en la  Franja de Gaza y otros conflictos bélicos han significado millones de víctimas  entre muertos y migrantes. </p>
+<p align="justify">Destrucción de ciudades, degradación de los  suelos, contaminación del medio ambiente, desabastecimiento de alimentos, no  puede descartarse la posibilidad de una escalada de la conflictividad con  riesgo de una conflagración mundial. </p>
+<p align="justify">Por ello, la necesidad de negociaciones  eficaces dirigidas a resolver los graves conflictos bélicos, respetando el  derecho internacional en la que nuestros países deben involucrarse activamente.</p>
+<p align="justify">Estimadas y estimados Senadoras y Senadores, como  parlamentario no puedo dejar de abordar el trabajo de la Comisión  Interparlamentaria de Seguimiento a la Alianza del Pacífico, CISAP, entidad que  surge como iniciativa del Congreso de Chile, la que incorpora a los  parlamentarios de los países que integran la Alianza del Pacífico cuyo  propósito fundamental es coadyuvar para dar mayor eficacia a las disposiciones  del Acuerdo Marco de la Alianza y sus acuerdos complementarios. </p>
+<p align="justify">Los parlamentos y los gobiernos se coordinan,  se complementan en las relaciones internacionales correspondiendo a los  parlamentos la diplomacia parlamentaria, quedando en los gobiernos la relación  entre los estados. </p>
+<p align="justify">Los parlamentos, como representantes de la  pluralidad ciudadana, han adquirido legítima presencia en un mundo globalizado  participando en distintos foros con sus propias propuestas, o de ser necesario,  buscando hacer viable la propuesta de sus respectivos gobiernos. </p>
+<p align="justify">Este es el caso de la CISAP, cuya actividad en  el marco de la Alianza del Pacífico se ha orientado, entre otras iniciativas, a  promover acciones para enfrentar la crisis climática, el manejo de los  desastres naturales, el desarrollo de las Pymes, las migraciones de la  cooperación, la cooperación Intra-Alianza, la gobernanza y la seguridad.</p>
+<p align="justify">Sobre este último tema, el de la seguridad,  hemos tenido una especial preocupación, se trata de una responsabilidad de  todos y de todas. De no enfrentarla con decisión pueden surgir movimientos  paramilitares o grupos de autodefensa que asuman el rol que corresponde al  Estado y sus instituciones en conjunto con la sociedad civil. </p>
+<p align="justify"> El tema de seguridad fue aprobado por la CISAP  a fines del año 2022, pero es necesario concretarlo.</p>
+<p align="justify">En Chile la iniciativa se concretó en  septiembre recién pasado en una reunión entre parlamentarios, jefes de las  policías y el subsecretario de prevención del delito quien depende del  Ministerio del Interior. </p>
+<p align="justify">En Perú han iniciado algunas acciones y están  pendientes aún en México y en Colombia. </p>
+<p align="justify">Deseo, respetuosamente, instar al Senado de la  República de México, entre cuyas funciones está la diplomacia parlamentaria, a  involucrarse siempre que lo tenga a bien en esta iniciativa, los parlamentarios  en el mundo actual tienen el deber de articularse y trabajar colaborativamente  para llevar la voz ciudadana a las instancias globales y regionales. </p>
+<p align="justify">Debemos ser capaces de combatir unidos la  vergüenza de las desigualdades sociales.</p>
+<p align="justify">Trabajar juntos para que nuestros países tengan  planes articulados de manejo de los desastres. </p>
+<p align="justify">Cooperar para encarar en conjunto las  enfermedades de alto costo que condenan a los más desposeídos. </p>
+<p align="justify">Estimadas y estimados colegas parlamentarios  del Senado de México, no puedo dejar de mencionar y hacerles un especial  reconocimiento en este año 2024 de doble conmemoración para ustedes, los 200  años del establecimiento del Senado, refrendados en el Acta y Constitución de  1824. Dicha Constitución dispuso que el Poder Legislativo de la Federación  estaría depositado en un Congreso General integrado por dos Cámaras, una de  Diputados y una de Senadores. </p>
+<p align="justify">La Constitución de 1857, por su parte, en un  contexto convulso, llevó a la supresión del Senado, teniendo estipulado que el  Poder Legislativo fuese unicameral y los 150 años de su restablecimiento, ya  que en 1874 este Senado de la República fue restaurado e inició sus trabajos a  partir del primer período ordinario del año legislativo con la apertura del  Congreso, asumiendo facultades exclusivas en el terreno internacional, entre  las que se destacan la aprobación de los tratados y convenciones diplomáticas  celebradas en el Ejecutivo. </p>
+<p align="justify">Si me permiten mencionar algo de Chile, en los  últimos años nuestro país ha vivido un proceso de efervescencia social y  reflexión institucional, pero que el pueblo soberanamente ha rechazado dos  procesos de cambio constitucional. Esto nos desafía a estar a la altura de los  tiempos y de las necesidades estructurales. </p>
+<p align="justify">Quiero agradecer, finalmente, la solidaridad  concreta y el objeto de México ante los trágicos incendios que han afectado a  tantos compatriotas en Chile y que ha cobrado más de un centenar de víctimas  fatales y miles de afectados física, material y psicológicamente. </p>
+<p align="justify">La primera ayuda internacional que llegó al  Aeropuerto de Santiago fue precisamente la de México. </p>
+<p align="justify">Señora Presidenta, señoras y señores Vicepresidentes,  señoras y señores Senadores:</p>
+<p align="justify">En nombre de la Cámara de Diputadas y Diputados  de Chile, agradezco y valoro la posibilidad y el privilegio de dirigirme a  ustedes, parlamentarios de un país que admiro, para entregar este mensaje,  reiterando la importancia de la larga historia de amistad y colaboración de  Chile y México y su continuidad en el futuro. </p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"> <strong>La Presidenta Senadora Ana Lilia  Rivera Rivera: </strong>Muy buenas  tardes, compañeras, compañeros Senadores. </p>
+<p align="justify">Extiendo la más cordial bienvenida al muy Honorable  señor Ricardo Cifuentes Lillo, Presidente de la Cámara de Diputadas y Diputados  de la República de Chile; así como a los Diputados Miguel Ángel Calisto Águila  y Sergio Enrique Bobadilla Muñoz. </p>
+<p align="justify">También agradezco la presencia de la delegación  del Congreso de la República del Perú, encabezada por el señor Isaac Mita Alanoca,  que hoy nos acompaña, Presidente de la Comisión Interparlamentaria de  Seguimiento a la Alianza del Pacífico; y del Congresista Hitler Saavedra  Casternoque. </p>
+<p align="justify">Asimismo, saludo a nuestra Excelentísima Embajadora  de Chile en México. </p>
+<p align="justify">En primer lugar, a nombre de mis compañeras y  compañeros Senadores, deseo expresar nuestra profunda solidaridad con el pueblo  de Chile por los devastadores incendios que han tenido lugar recientemente en  su territorio. Respetuosamente le pido que sea el conducto para expresar  nuestras condolencias a los familiares de las víctimas mortales de tan  terribles acontecimientos. </p>
+<p align="justify">Hace un momento les mencionaba que esas  imágenes que vimos en televisión, muchos, millones de seres humanos nos hacen  pensar que la tragedia no solamente es para Chile, es una tragedia para el  mundo. </p>
+<p align="justify">México y Chile sabemos lo que es experimentar  los efectos devastadores que pueden ocasionar los fenómenos naturales. Frente a  ello, siempre hemos tenido grandes muestras de solidaridad, como debe ser,  entre dos naciones hermanas.</p>
+<p align="justify">Del mismo modo, lamentamos el fallecimiento del  expresidente Sebastián Piñera, este Pleno rindió un minuto de silencio ante  ambos lamentables acontecimientos, honrando el profundo vínculo de solidaridad  y apoyo mutuo que ha trascendido nuestras propias fronteras en múltiples  ocasiones fortaleciéndonos en la adversidad.</p>
+<p align="justify">Amigos y amigas, la República de Chile y México  hemos construido una relación sólida, caracterizada por una gran amistad y  entendimiento a lo largo de más de 200 años, solamente pausada durante el  período de la dictadura militar, durante este tiempo cientos de chiles  encontraron, en tierras mexicanas, un espacio de refugio, desde el cual muchos  de ellos sembraron en el corazón de los mexicanos, la importancia de una  conciencia social que permanece vigente y que recordamos con aprecio por sus  invaluables aportes a nuestra sociedad.</p>
+<p align="justify">Después de este suceso nuestros gobiernos continuaron  trabajando en lograr mayores acuerdos en los ámbitos político, económico,  comercial, cultural, académico y científico. En este sentido, me gustaría  destacar el papel de nuestros congresos para analizar, intercambiar ideas y  generar consensos para que dichos acuerdos fueran aprobados en nuestras  respectivas cámaras, creando así el sólido andamiaje en el que se sustenta  nuestra relación. </p>
+<p align="justify">Es importante recordar, que cuando la República  de Chile retomó el camino de la democracia, nuestros parlamentos reaccionaron  de manera inmediata, entusiasta y comprometida para escribir nuestras líneas de  entendimiento, fue en 1991 cuando congresistas de ambos países decidieron  trabajar juntos e intercambiar experiencias legislativas mediante el  establecimiento de una reunión interparlamentaria, la cual tuvo su primera  edición un año después; es decir, en 1992. </p>
+<p align="justify"> Así, a la fecha hemos realizado 10 encuentros  de esta naturaleza, en los cuales las y los participantes han debatido sobre  los temas que en esos momentos comprendían la agenda bilateral y el contexto  internacional que repercutía en los asuntos comunes. Al final de estos  intercambios ambas delegaciones obtuvieron valiosos documentos conjuntos, que  reflejan el espíritu de colaboración entre nuestros pueblos y que fueron  suscritos. </p>
+<p align="justify">No obstante, desde el 2014, por diferentes  circunstancias y por las agendas al interior de ambos congresos no se ha podido  continuar con este ejercicio de diplomacia parlamentaria, por lo que considero  de una prioridad retomarlo, ya que en estos espacios se puede aportar mayor  elemento e ideas desde la esfera legislativa que abonan al saludable estado de  la relación bilateral. </p>
+<p align="justify">Quiero reconocer el entusiasmo e invaluable  apoyo del Congreso de Chile para impulsar y dar seguimiento a los trabajos que  se llevan a cabo dentro de la Comisión Interparlamentaria de Seguimiento, sobre  todo, a la Alianza del Pacífico, uno de varios mecanismos que conforman este  proyecto de integración regional del que somos parte y que junto con Colombia y  Perú estamos impulsando, cuyo presidente también tenemos el honor de que hoy se  encuentre entre nosotros. </p>
+<p align="justify">Muchas gracias, congresista Isaac Mita Alanoca.</p>
+<p align="justify">Como sabemos, la Alianza del Pacífico  representa uno de los proyectos más ambiciosos por su alcance económico,  político, educativo y social, acompañado de lo anterior por la integración de  la Comisión Interparlamentaria que hoy está representando y trabajando con todo  ahínco para incorporar a la seguridad como un tema prioritario dentro de su  agenda de actividades. </p>
+<p align="justify">La dinámica internacional nos demanda crear  iniciativas multilaterales, acordes a las nuevas realidades y establecer hojas  de ruta que brinden soluciones al ritmo que la sociedad va necesitando en un  desarrollo vertiginoso. </p>
+<p align="justify">La evaluación que hoy nosotros tenemos que ver,  de frente al desarrollo de la tecnología nos hace abrir nuevos horizontes de  apoyo mutuo y de integración en nuestros pueblos ante la evolución de la  inteligencia artificial; las nuevas formas de hacer negocios, el incremento de  la movilidad humana entre las naciones y las actuales, modalidades en las que  nos relacionamos, como son solo algunos de los factores que se abordarán en  estos mecanismos de acuerdo regional. </p>
+<p align="justify">Por lo que es importante seguir construyendo  juntos un presente y un futuro sobre bases para el bienestar de nuestros  pueblos. </p>
+<p align="justify">Estoy convencida que reforzando las voluntades  de cooperación en todas las áreas en las que se ve involucrada la diplomacia  parlamentaria se generarán diversos y valiosos compromisos a favor de nuestras  poblaciones y al posicionamiento y fortalecimiento de América Latina y El  Caribe en el concierto de naciones. </p>
+<p align="justify">Muchas gracias, muy Honorable señor Ricardo  Cifuentes Lillo. </p>
+<p align="justify">¡Bienvenido!</p>
+<p align="justify">Y de nueva cuenta, agradezco la presencia del Presidente  de la Comisión de Interparlamentarios de Seguimiento a la Alianza del Pacífico. </p>
+<p align="justify">Gracias a toda la comitiva que hoy nos  acompaña. </p>
+<p align="justify">Bienvenido a México, el Senado de la República,  que es la casa del Pacto Federal de esta gran Nación, se siente honrada con su  presencia. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"> A  nombre del Senado de la República agradecemos su visita, y la de su comitiva, a  esta sesión solemne; su asistencia es muestra de la importancia de mantener  contactos entre instituciones parlamentarias. </p>
+<p align="justify">Por  eso agradecemos a las distinguidas personalidades que hoy nos han acompañado. Y  los invitamos nos acompañen para que nos tomemos la foto oficial. </p>
+<p align="center">(Foto oficial en el presídium)</p>
+<p align="justify">Solicito  a las Senadoras y los Senadores integrantes de la comisión de cortesía, se  sirvan acompañar a nuestros invitados hasta las puertas de este recinto cuando  deseen retirarse. </p>
+<p align="center">(La comisión cumple)</p>
+<p align="justify">Asimismo,  insto a mis compañeras y compañeros Senadores permanezcamos en el salón de  sesiones para continuar con la sesión ordinaria. </p>
+<p align="justify">Se  levanta la sesión solemne. </p>
+<p align="center">(Se levantó la sesión a las 13:08 horas) </p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a114394'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

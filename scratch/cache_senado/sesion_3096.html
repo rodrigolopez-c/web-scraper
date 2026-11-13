@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Extraordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 5</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Martí Batres Guadarrama</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Extraordinaria Celebrada<br>en la Ciudad de M&eacute;xico, el 16 de Mayo de 2019</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/1/PPE/PDF-WEB/PPE_No._5_16_MAYO_2019.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83028'></a><p align="center"><strong>PRESIDENCIA DEL SENADOR</strong><br>
+  <strong>MARTÍ BATRES GUADARRAMA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>(12:53 horas) Solicito a la  Secretaría informe a la Asamblea el resultado del cómputo de asistencia de las  señoras Senadoras y de los señores Senadores.</p>
+<p align="justify"><strong>La Secretaria Senadora  Antares Guadalupe Vázquez Alatorre: </strong>Con base en el registro electrónico,  informo a la Asamblea que se han acreditado 106 ciudadanas Senadoras y  ciudadanos Senadores.</p>
+<p align="justify">En  consecuencia, hay quórum, señor Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Se abre la sesión  extraordinaria del Senado de la República, correspondiente al jueves 16 de mayo  de 2019, en el marco del periodo de sesiones extraordinarias del segundo receso  del primer año de ejercicio constitucional de la LXIV Legislatura, a que fue  convocada por la Comisión Permanente del Honorable Congreso de la Unión. El  Orden del Día está disponible en el monitor de sus escaños; con lo cual se  informa de los asuntos que corresponden a la agenda de hoy.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83028'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83029'></a><p align="center">ACTA DE LA SESIÓN EXTRAORDINARIA DE LA CÁMARA DE SENADORES CELEBRADA EL MARTES CATORCE<br>
+  DE MAYO DE DOS MIL DIECINUEVE.</p>
+<p align="center">PRESIDE EL SENADOR<br>
+  MARTÍ BATRES  GUADARRAMA  </p>
+<table border="1" align="center" class="forma_tabla">
+  <tr>
+      <td width="200" valign="top"></td>
+      <td width="500" valign="top"><p align="justify">En la Ciudad de México a las doce horas con    tres minutos del día martes catorce de mayo de dos mil diecinueve,    encontrándose presentes ciento cinco ciudadanos senadores, según relación    anexa, la Presidencia declaró abierta la sesión.</p></td>
+  </tr>
+    <tr>
+      <td width="200" valign="top"><p align="center"><em>(Lectura del Orden del Día)</em></p></td>
+      <td width="500" valign="top"><p align="justify">La Presidencia dio por conocido el    contenido del Orden del Día de la sesión de esta fecha, debido a la    publicación en la Gaceta del Senado y a su difusión.</p></td>
+    </tr>
+    <tr>
+      <td width="200" valign="top"><p align="center"><em>(Acta de la sesión anterior)</em></p></td>
+      <td width="500" valign="top"><p align="justify">Se aprobó en votación económica el acta de    la Sesión extraordinaria vespertina celebrada el jueves nueve de mayo de dos    mil diecinueve.</p></td>
+    </tr>
+    <tr>
+      <td width="200" valign="top"><p align="center"><em>(Comunicaciones)</em></p></td>
+      <td width="500" valign="top"><p align="justify">Se recibió de la Cámara de Diputados,    oficio por el que comunica que declaró terminados sus trabajos correspondientes    al Periodo de Sesiones Extraordinarias del Segundo Receso del Primer Año de    Ejercicio de la Sexagésima Cuarta Legislatura.-&nbsp;&nbsp;<em>Quedó de    enterado.</em></p></td>
+    </tr>
+    <tr>
+      <td width="200" valign="top"><p align="center"><em>(Dictámenes de primera lectura)</em></p></td>
+      <td width="500" valign="top"><p align="justify">Se dio primera lectura a un dictamen de las    Comisiones Unidas de Trabajo y Previsión Social; Para la Igualdad de Género y    de Estudios Legislativos, Primera, el que contiene proyecto de decreto por el    que se reforman, adicionan y derogan diversas disposiciones de la Ley Federal    del Trabajo y de la Ley del Seguro Social, en materia de personas    trabajadoras del hogar.-&nbsp;<em>Quedó&nbsp;de primera lectura.Intervino la    senadora Martha Lucía Micher Camarena, para solicitar la dispensa de la    segunda lectura del dictamen. Con dispensa de trámites se puso a discusión,    después del siguiente asunto a discusión, a petición de la Comisión para la    Igualdad de Género.</em></p></td>
+    </tr>
+    <tr>
+      <td width="200" height="4018" valign="top"><p align="center"><em>(Dictamen a discusión)</em></p></td>
+      <td width="500" valign="top"><p align="justify">Se    sometió a consideración de la Asamblea, un dictamen de las Comisiones Unidas    de Puntos Constitucionales; Para la Igualdad de Género; y de Estudios    Legislativos, con proyecto de decreto por el que se reforman diversos    artículos de la Constitución Política de los Estados Unidos Mexicanos.-&nbsp;<em>Para    presentar el dictamen, intervinieron los senadores: Martha Lucía Micher    Camarena a nombre de la Comisión para la Igualdad de Género; Oscar Eduardo    Ramírez Aguilar a nombre de la Comisión de Puntos Constitucionales; Manuel    Añorve Baños a nombre de la Comisión de Estudios Legislativos. En los    posicionamientos de los Grupos Parlamentarios, intervinieron los senadores:&nbsp;Sasil    De León Villard del PES; Ma. Leonor Noyola Cervantes&nbsp;del    PRD;&nbsp;Gabriela Benavides Cobos del&nbsp;PVEM;&nbsp;Geovanna del Carmen    Bañuelos de la Torre&nbsp;del PT;&nbsp;Indira Kempis Martínez&nbsp;de    MC;&nbsp;Nuvia Magdalena Mayorga Delgado&nbsp;del&nbsp;PRI;&nbsp;Kenia López    Rabadán&nbsp;del PAN;&nbsp;Bertha Alicia&nbsp; Caraveo Camarena&nbsp;de    MORENA.&nbsp;En la discusión en lo general, intervinieron los senadores:    Emilio Álvarez Icaza Longoria; Josefina Vázquez Mota del PAN, a favor;    Verónica Martínez García del PRI, a favor; Alejandra Noemí Reynoso Sánchez    del PAN, a favor; Gina Cruz Blackledge del PAN, a favor; Rocío Adriana Abreu    Artiñano de MORENA, a favor; Freyda Marybel Villegas Canché de MORENA, a    favor.</em></p>
+        <p align="center">        PRESIDE LA    SENADORA <br>
+        MÓNICA FERNÁNDEZ    BALBOA</p>
+        <p align="justify"><em>Continuando    con la discusión en lo general, intervinieron los senadores: &nbsp;Patricia    Mercado Castro de MC, a favor; Xóchitl Gálvez Ruiz del PAN, a favor; Miguel    Ángel Mancera Espinosa del PRD, a favor; Martha Cecilia Márquez Alvarado del    PAN, a favor; Citlalli Hernández Mora de MORENA, a favor; Nestora Salgado    García de MORENA, a favor; Verónica Delgadillo García de MC, a favor; José    Narro Céspedes de MORENA, a favor; Martha Guerrero Sánchez de MORENA, a    favor; Lucía Trasviña Waldenrath de MORENA, a favor; Verónica Noemí Camino    Farjat del PVEM, a favor; Blanca Estela Piña Gudiño de MORENA, a favor. La    presidencia informó de los artículos reservados por los senadores:</em> <br>
+          <em>Ricardo Monreal Ávila de MORENA:</em>        </p>
+        <ul>
+          <li><em>Del artículo 41, reforma la fracción I, del    tercer párrafo; reforma el segundo párrafo del apartado A, de la fracción V;    asimismo, el inciso a) del párrafo quinto del apartado A.</em></li>
+            <li><em>Del artículo 6o, reforma los párrafos octavo,    décimo primero y décimo tercero de la fracción VIII del apartado A; y reforma    el párrafo segundo de la fracción V del apartado B;</em></li>
+            <li><em>Del artículo 26, reforma el párrafo tercero del    apartado B, y el párrafo segundo del apartado C;</em></li>
+            <li><em>Del artículo 27, reforma el párrafo décimo en su    fracción XIX, en su segundo párrafo;</em></li>
+            <li><em>Del artículo 28, reforma los párrafos séptimo y    octavo, y el párrafo segundo de la fracción XII del párrafo 20;</em></li>
+            <li><em>Del artículo 76, reforma la fracción XII;</em></li>
+            <li><em>Del artículo 96, se adiciona un tercer párrafo;</em></li>
+            <li><em>Del artículo 97, reforma el primer párrafo;</em></li>
+            <li><em>Del artículo 99, reforma el octavo párrafo de la    fracción décima;</em></li>
+            <li><em>Del artículo 100, reforma el segundo párrafo;</em></li>
+            <li><em>Del artículo 102, reforma el párrafo sexto del    apartado B;</em></li>
+            <li><em>Del artículo 116 reforma el párrafo tercero de la    fracción II; el cuarto párrafo de la fracción III; y el inciso a) de la    fracción IV.</em></li>
+        </ul>
+        <p align="justify"><em>Sen. Héctor Vasconcelos y    Sen. Marybel Villegas Canche de MORENA:</em>          </p>
+        <ul>
+          <li><em>Del artículo 41, propuesta de adición de un    último párrafo.</em></li>
+        </ul>
+        <p align="justify"><em>Sen. Blanca Estela Piña Gudiño de MORENA:</em>          </p>
+        <ul>
+          <li><em>Del artículo 63, reforma el primer párrafo.</em></li>
+        </ul>
+        <p align="justify"><em>Sen. Martí Batres Guadarrama de MORENA:</em>          </p>
+        <ul>
+          <li><em>Del artículo 30, adiciona en el inciso b), su    fracción II;</em></li>
+            <li><em>Del artículo 34, adiciona en su primer párrafo.</em></li>
+        </ul>
+        <p align="justify"><em>Sen. Julen Rementeria Del Puerto del PAN:</em>          </p>
+        <ul>
+          <li><em>Del artículo 41, segundo párrafo;</em></li>
+            <li><em>Del artículo 52, la adición de un segundo    párrafo;</em></li>
+            <li><em>Del artículo 56, la adición de un cuarto párrafo.</em></li>
+        </ul>
+        <p align="justify"><em>Sen. Kenia López Rabadán del PAN:</em>          </p>
+        <ul>
+          <li><em>Del artículo 41, se reforma el tercer párrafo;</em></li>
+            <li><em>Del artículo 115, se adiciona un segundo párrafo a la fracción I,    corriéndose los párrafos.</em></li>
+        </ul>
+        <p align="justify"><em>Sen. Julen Rementeria Del Puerto del PAN:</em>          </p>
+        <ul>
+          <li><em>Del artículo 81, reforma el primer párrafo.</em></li>
+        </ul>
+        <p align="justify"><em>Sen. Alejandra Noemi Reynoso Sánchez del    PAN:</em>          </p>
+        <ul>
+          <li><em>Del artículo 89, reforma su fracción tercera.</em></li>
+        </ul>
+        <p align="justify"><em>Sen. Kenia López Rabadán del PAN:</em>          </p>
+        <ul>
+          <li><em>Del artículo 122, propone la adición de un segundo párrafo al inciso    a) de la fracción VI del apartado A.</em></li>
+        </ul>
+        <p align="justify"><em>Sen. Jorge Carlos Ramírez Marin del PRI:</em>          </p>
+        <ul>
+          <li><em>Del artículo 4o, adición de un segundo párrafo, recorriendo los    actuales.</em></li>
+        </ul>
+        <p align="justify"><em>Sen. Beatriz Paredes Rangel del &nbsp;PRI:</em>          </p>
+        <ul>
+          <li><em>Del artículo 2o, apartado a fracción VII.</em></li>
+        </ul>
+        <p align="justify"><em>Sen. Mario Zamor del PRI:</em>          </p>
+        <ul>
+          <li><em>Del artículo 94, reforma el tercer párrafo;</em></li>
+            <li><em>Del artículo 41, segundo párrafo;</em></li>
+            <li><em>Reforma el segundo transitorio.</em></li>
+        </ul>
+        <p align="justify"><em>Sen. Manuel Añorve Baños del PRI</em>          </p>
+        <ul>
+          <li><em>Reforma el artículo tercero transitorio.</em></li>
+        </ul>
+        <p align="justify"><em>Sen. Claudia Edith Anaya Mota del PRI:</em>          </p>
+        <ul>
+          <li><em>Del artículo 35, reforma la fracción segunda.</em></li>
+        </ul>
+        <p align="justify"><em>Sen. Nuvia Mayorga del PRI:</em>          </p>
+        <ul>
+          <li><em>Del artículo 50, adición de un segundo párrafo.</em></li>
+        </ul>
+        <p align="justify"><em>Sen. Manuel Añorve Baños del PRI:</em>          </p>
+        <ul>
+          <li><em>Del artículo 90, reforma el segundo párrafo.</em></li>
+        </ul>
+        <p align="justify"><em>Sen. Sylvana Beltrones del PRI:</em>          </p>
+        <ul>
+          <li><em>Del artículo 116, reforma el segundo párrafo;</em></li>
+            <li><em>Del artículo 122, reforma el primer párrafo de la fracción V del    apartado A.</em></li>
+        </ul>
+        <p align="justify"><em>Sen. Mario Zamora del PRI:</em>          </p>
+        <ul>
+          <li><em>Propuesta de adición de un artículo quinto transitorio.</em></li>
+        </ul>
+        <p align="justify"><em>Sen. Claudia Edith Anaya Mota del PRI:</em>          </p>
+        <ul>
+          <li><em>Del artículo 78, reforma el primer párrafo.</em></li>
+        </ul>
+        <p align="justify"><em>Senadores del Grupo Parlamentario del MC</em>          </p>
+        <ul>
+          <li><em>Del artículo 41, se reforma la fracción I del tercer párrafo; el    segundo párrafo del apartado A de la fracción V.</em></li>
+            <li><em>Del artículo 6o, se reforman los párrafos octavo, décimo primero,    décimo tercero de la fracción VIII, del apartado A; el párrafo segundo de la    fracción V del apartado B;</em></li>
+            <li><em>Del artículo 26, se reforma el tercer párrafo de apartado B y el    segundo párrafo del apartado C;</em></li>
+            <li><em>Del artículo 27, se reforma el segundo párrafo de la fracción XIX.</em></li>
+            <li><em>Del artículo 28, se reforman los párrafos séptimo, octavo y vigésimo    primero.</em></li>
+            <li><em>Del artículo 70, se reforma el párrafo segundo.</em></li>
+            <li><em>Del artículo 96, se reforma el primer párrafo.</em></li>
+            <li><em>Del artículo 97, se reforma el primer párrafo</em></li>
+            <li><em>Del artículo 99, se reforma el párrafo octavo de    la fracción X;</em></li>
+            <li><em>Del artículo 100, se reforma el segundo párrafo.</em></li>
+            <li><em>Del artículo 102, se reforma el sexto párrafo del    apartado B.</em></li>
+            <li><em>Del artículo 116, se reforma el párrafo tercero    de la fracción II; el cuarto párrafo de la fracción III; y el inciso a de la    fracción IV.</em></li>
+            <li><em>Del artículo 122, reforma primer párrafo de la    fracción segunda; el primer párrafo de la fracción IV; el inciso a) del tercer    párrafo de la fracción VI, todos del apartado A.</em></li>
+            <li><em>Del artículo 122, se reforman las fracciones II,    III, IV, V, VI, VII, XI, del apartado A; y el quinto y sexto párrafo del    apartado B.</em></li>
+        </ul>
+        <p align="justify"><em>Sen. Eduardo Enrique Murat Hinojosa del PVEM:</em>          </p>
+        <ul>
+          <li><em>Del artículo 116, se reforma segundo párrafo    fracción I;</em></li>
+        <li><em>Del artículo 122, se reforma el primer párrafo de    la fracción II; el primer párrafo de la fracción III; el sexto párrafo de la    fracción V; y el inciso a), del párrafo tercero de la fracción VI, todos del    apartado A.</em></li>  </ul>
+        <p align="justify"><em>Sen. Miguel Angel Mancera del PRD:</em>        </p>
+        <ul>
+          <li><em>Del artículo 41, reforma el segundo párrafo; la    fracción I del párrafo tercero; el segundo párrafo del apartado A; y el    inciso a) del quinto párrafo.</em></li>
+            <li><em>Del artículo 6o, reforma los párrafos octavo,    décimo primero y décimo tercero de la fracción VIII del apartado A; y reforma    el segundo párrafo del apartado C;</em></li>
+            <li><em>Del artículo 27, se reforma el segundo párrafo de    la fracción XIX de su octavo párrafo del artículo.</em></li>
+            <li><em>Del artículo 28, reforma los párrafos séptimo,    octavo y vigésimo primero;</em></li>
+            <li><em>Del artículo 76, reforma la fracción XII;</em></li>
+            <li><em>Del artículo 96, se adiciona un tercer párrafo;</em></li>
+            <li><em>Del artículo 97, se reforma el párrafo I;</em></li>
+            <li><em>Del artículo 99, se reforma el párrafo séptimo de la fracción X;</em></li>
+            <li><em>Del artículo 100, se reforma el párrafo segundo;</em></li>
+            <li><em>Del artículo 102, reforma el sexto párrafo del apartado B;</em></li>
+            <li><em>Del artículo 116, reforma el tercer párrafo de la fracción II; el    cuarto párrafo de la fracción III; y el inciso a) de la fracción IV.</em></li>
+        </ul>
+        <ul>
+          <p align="center">PRESIDE EL    SENADOR <br>
+          MARTÍ BATRES    GUADARRAMA</p></ul>
+        <p align="justify"><em>Hacen    uso de la palabra los senadores: Ricardo Monreal Ávila de MORENA, para    informar del retiro de todas las reservas del partido; Mauricio Kuri González    del PAN, para informar del retiro de todas las reservas de su partido; Miguel    Ángel Osorio Chong del PRI, para informar del retiro de todas las reservas de    su partido; Dante Delgado Rannauro de MC, para informar del retiro de todas    las reservas de su partido; Enrique Murat Hinojosa de PVEM, para informar del    retiro de todas las reservas de su partido; Miguel Ángel Mancera Espinosa del    PRD, para informar del retiro de todas las reservas de su partido; Martí    Batres Guadarrama de MORENA, para informar del retiro de su reserva. En    votación nominal, se emitieron un total de 120 votos: 120 votos a favor, 0 en    contra y 0 abstenciones. En consecuencia, quedó aprobado en lo general y en    lo particular el&nbsp;proyecto de decreto por el que se reforman diversos    artículos de la Constitución Política de los Estados Unidos Mexicanos, en    materia de paridad de género.&nbsp;Se remite a la Cámara de Diputados para    los efectos de artículo 72 constitucional.</em></p></td>
+    </tr>
+    <tr>
+      <td width="200" valign="top"></td>
+      <td width="500" valign="top"><p align="center">PRESIDE LA SENADORA<br>
+        MÓNICA FERNÁNDEZ BALBOA</p></td>
+    </tr>
+    <tr>
+      <td width="200" valign="top"></td>
+      <td width="500" valign="top"><p align="justify">Se sometió a consideración de la Asamblea,    de las Comisiones Unidas de Trabajo y Previsión Social; Para la Igualdad de    Género y de Estudios Legislativos, Primera, el que contiene proyecto de    decreto por el que se reforman, adicionan y derogan diversas disposiciones de    la Ley Federal del Trabajo y de la Ley del Seguro Social, en materia de    personas trabajadoras del hogar.-&nbsp;<em>Para presentar el dictamen    intervinieron los senadores: Napoleón Gómez Urrutia a nombre de la Comisión    de Trabajo y Previsión Social; Martha Lucía Micher Camarena a nombre de loa    Comisión para la Igualdad de Género; Mayuli Latifa Martínez Simón, a nombre    de la Comisión de Estudios Legislativos, Primera. En los posicionamientos de    los Grupos Parlamentarios, intervinieron los senadores Katya Elizabeth Ávila    Vázquez del PES; Omar Obed Maceda Luna del PRD; Gabriela Benavides Cobos del    PVEM; Miguel Ángel Lucero Olivas del PT;&nbsp;Patricia Mercado de MC;Nuvia    Magdalena Mayorga Delgado del PRI;&nbsp;Bertha Xóchitl Gálvez Ruiz del PAN;    M. Citlalli Hernández Mora de MORENA. En&nbsp;la discusión en lo    general,&nbsp;Intervinieron&nbsp;los senadores: Ovidio Salvador Peralta    Suárez de MORENA, a favor; Josefina Vázquez Mota del PAN, a favor;&nbsp;Claudia    Edith Anaya Mota del PRI, a favor.&nbsp;Se informó de las reservas    presentadas. Hace uso de la palabra el&nbsp;senador&nbsp;Omar Obed Maceda    Luna del PRD,&nbsp; para retirar sus reservas presentadas a los artículos 331    Bis; 331 Ter y el 542; así como los artículos Transitorios Segundo Tercero y    Cuarto; y proponía la adición de un Artículo Quinto Transitorio.. En votación    nominal, se emitieron un total de 117 votos: 117 votos a favor, 0 en contra y    0 abstenciones.</em></p>
+        <p align="center">        PRESIDE EL    SENADOR<br>
+        MARTÍ BATRES    GUADARRAMA</p>
+        <p align="justify"><em>Fue aprobado en lo general y en lo    particular en un solo acto y se remitió al Ejecutivo Federal.&nbsp;Se informó    a la Asamblea que, con motivo de la aprobación de la reforma a diversas    disposiciones de la Ley Federal del Trabajo, en materia de Justicia Laboral,    Libertad Sindical y Negociación Colectiva, publicada en el Diario Oficial de    la Federación el pasado primero de mayo de dos mil diecinueve, de entre ellas    los artículos 5o., 49 y 336 del ordenamiento en referencia, que también    forman parte del Decreto en materia de personas trabajadoras del hogar. Por    tanto, es necesario realizar algunos ajustes de técnica legislativa a los    artículos mencionados.</em><br>
+          <em>Se consultó a la asamblea si se admiten las    modificaciones de técnica legislativa referidas sean aplicadas por esta Mesa    Directiva. Fue aprobado, las Secretarías Parlamentarias de ambas Cámaras    realizarán las modificaciones de técnica legislativa.</em></p></td>
+    </tr>
+    <tr>
+      <td width="200" valign="top"></td>
+      <td width="500" valign="top"><p align="justify">El Presidente de la Mesa Directiva, previo    acuerdo de los Coordinadores de los Grupos Parlamentarios, citó a la    siguiente Sesión Extraordinaria para el jueves 16 de mayo de 2019, a las    11:00 horas.</p></td>
+    </tr>
+    <tr>
+      <td width="200" valign="top"></td>
+      <td width="500" valign="top"><p align="justify">La Presidencia dio por concluida la sesión    a las dieciocho horas con treinta y dos minutos.</p></td>
+    </tr>
+    <tr>
+      <td width="200" valign="top"></td>
+      <td width="500" valign="top"><p align="justify">Fin de la sesión.</p></td>
+    </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83029'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83030'></a><p align="right"><strong>ASISTENCIA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="http://www.senado.gob.mx/64/asistencias/2019_05_14/4"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">El acta  de la sesión extraordinaria anterior se encuentra publicada en la Gaceta Parlamentaria  de este día.</p>
+<p align="justify">En  consecuencia, consulte la Secretaría a la Asamblea, en votación económica, si  se aprueba el acta referida.</p>
+<p align="justify"><strong>La Secretaria Senadora  Antares Guadalupe Vázquez Alatorre: </strong>Consulto a la Asamblea, en  votación económica, si se aprueba el acta mencionada. Quienes estén por la  afirmativa, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea asiente)</p>
+<p>Quienes  estén por la negativa, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p align="justify">Aprobada  el acta, señor Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Pasamos al siguiente  asunto. </p>
+<p align="justify">En virtud  de que la Comisión Permanente… </p>
+<p align="justify">Sonido en  el escaño de la Senadora Xóchitl Gálvez, por favor. </p>
+<p align="justify"><strong>La Senadora Bertha Xóchitl  Gálvez Ruiz: </strong>(Desde su escaño)<strong> </strong>Gracias, señor Presidente. </p>
+<p align="justify">Yo  simplemente sé que ya la Junta de Coordinación Política abordó este tema, pero  es muy delicado lo que estamos viviendo en la Ciudad de México, con más de 140  horas de emergencia ambiental con el ozono y las partículas de PM2.5, que está  comprobadísimo por todos los científicos, que generan un grave daño a la salud. </p>
+<p align="justify">¿Qué  quisiera yo plantear, urgir al gobierno federal, a que se nombre al titular de  la CAMe, porque es un problema de verdad, de verdad muy delicado. Que se  establezca en los protocolos   que están  pendientes, sabemos que no se han hecho, para que no vuelva a suceder esta  contingencia ambiental, porque si bien es cierto, ayer hubo lluvia, fue lluvia  ácida, entonces no modificó en gran medida esta emergencia,  y sí creo que este Senado de la República  tiene que pronunciarse, además de la Junta de Coordinación Política, en la  urgencia de tener titular en la CAMe y la urgencia de tener un protocolo para  poder definir este tipo de emergencias ambientales y no volvamos a vivir lo que  se vivió o se está viviendo en la   capital de la República. </p>
+<p align="justify">Muchas  gracias. </p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Valoro la importancia de la  información y el contenido de lo que usted señala, no obstante, el  extraordinario sólo puede abordar los temas para los cuales expresamente fue  convocado. </p>
+<p align="justify">Sin  embargo, pondremos de nuestra parte los buenos oficios de la Mesa Directiva  para buscar la vía por la que pueda abordarse este tema. </p>
+<p align="justify">Le  informo que la Comisión Permanente del Congreso de la Unión el día de ayer lo  abordó en alguna parte de sus diversas aristas, pero podremos insistir por  otras vías en este mismo tema. <br>
+  A usted,  gracias, Senadora Xóchitl Gálvez. </p>
+<p align="justify">Senador  Murat, sonido en su escaño, por favor. </p>
+<p align="justify"><strong>El Senador Eduardo Enrique  Murat Hinojosa: </strong>(Desde su escaño) Señor Presidente,  muchas gracias. </p>
+<p align="justify">Como  Presidente de la Comisión de Medio Ambiente, Recursos Naturales y Cambio  Climático, me quiero sumar al llamado de la Senadora Xóchitl Gálvez, y lo que  yo le pediría es que terminando la contingencia, que convoquemos, nosotros como  legisladores, a un trabajo en comisión, para que se establezcan los protocolos  que no estuvieron presentes en estos días y que lo hagamos ahora con los demás  gobernadores y en las entidades. </p>
+<p align="justify">Eso es lo  que yo pediría. </p>
+<p align="justify">Muchas  gracias. </p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Gracias, por sus  comentarios. </p>
+<p align="justify">De igual  manera, le señalo que no lo puede abordar el periodo extraordinario, en virtud  de que este tema no está enlistado en la convocatoria, en el Decreto de  convocatoria del periodo extraordinario, pero por otras vías podríamos  abordarlo y pondremos nuestros buenos oficios, para que un tema tan delicado,  urgente e importante pueda abordarse. </p>
+<p align="justify">Gracias,  Senador Murat Hinojosa. </p>
+<p align="justify">En virtud  de que la Comisión Permanente del Honorable Congreso de la Unión…</p>
+<p align="justify">Sonido en  el escaño de la Senadora Lilly Téllez, por favor. </p>
+<p align="justify"><strong>La Senadora Lilly Téllez: </strong>(Desde su  escaño)  Gracias, señor Presidente. </p>
+<p align="justify">Entiendo  lo que usted está mencionando de que se sale del tiempo y que no procede en  este momento, pero creo que Xóchitl Gálvez tiene toda la razón, este es el  Senado de la República, hay una emergencia, una situación sumamente grave en la  Ciudad de México. </p>
+<p align="justify">Yo le  quiero pedir, respetuosamente, desde este escaño, a la Jefa de Gobierno,  Claudia Sheinbaum, que para la próxima no tarde tanto tiempo en alertar a la  población, hay muchas personas enfermas, porque tardaron en hacernos ver a la  ciudadanía la gravedad de lo que está pasando. </p>
+<p align="justify">Este es  el Senado de la República y está bien que estemos viendo los temas que  corresponden, pero lo que realmente importa en este momento, a la gente que  vivimos en la Ciudad de México, es la situación tan grave como nunca se había  visto de los contaminantes. </p>
+<p align="justify">Gracias. </p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Gracias, Senadora Lilly  Téllez. </p>
+<p align="justify">  Agradecemos  los comentarios de Senadoras y Senadores y los presentaré ante la Mesa  Directiva, con todo gusto, otros temas semejantes y correlacionados se han  estado abordando en la Mesa Directiva, en materia de medio ambiente. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83030'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83031'></a><p align="justify"><strong>COMUNICACIÓN</strong></p>
+<p align="justify">Informo  que la Comisión Permanente del Honorable Congreso de la Unión, aprobó la  licencia para separarse de sus funciones legislativas a la Senadora Claudia  Ruiz Massieu Salinas. </p>
+<p align="justify">Por lo  tanto, esta Cámara de Senadores convocó a su suplente, la ciudadana Mercedes  del Carmen Guillén Vicente, para protestar el cargo de Senadora de la  República. </p>
+<p align="justify">En tal  virtud, en reunión de la Mesa Directiva esta mañana, se ha tomado la protesta  de ley correspondiente a la ciudadana Mercedes del Carmen Guillén Vicente. A  partir de la protesta de hoy por la mañana, la Senadora Mercedes del Carmen  Guillén Vicente, se ha integrado de manera inmediata a sus tareas legislativas. </p>
+<p align="justify">¡Bienvenida,  Senadora Guillén Vicente!</p>
+<p align="justify">También  quiero informar a esta Asamblea que el día de ayer la Comisión Permanente del  Honorable Congreso de la Unión aprobó un Decreto por el que se reforma la  convocatoria de la Comisión Permanente para que las Cámaras del Honorable  Congreso de la Unión celebren sesiones extraordinarias, convocatoria emitida el  pasado 6 de mayo de 2019, para que durante el desarrollo de las sesiones  extraordinarias del Senado se designe a Senadoras y Senadores integrantes de la  Comisión Permanente. </p>
+<p align="justify">En otras  palabras, a los ocho temas para los cuales fue convocado el periodo  extraordinario de sesiones, en el caso del Senado, se ha agregado uno más, que  es la designación de Senadoras o Senadores, para formar parte de la Comisión  Permanente, en el caso de que hubiera licencias de Senadoras o Senadores que  formen parte de la Comisión Permanente. </p>
+<p align="justify">Esta  modificación aprobada ayer por la Comisión Permanente, ha sido publicada ya en  el Diario Oficial de la Federación el día de hoy. </p>
+<p align="justify">Por lo  tanto, quiero informar que la finalidad de dicho asunto fue modificar el objeto  de convocatoria para incluir como tema de la Cámara de Senadores, la  designación de un integrante de la Comisión Permanente del Honorable Congreso de  la Unión.</p>
+<p align="justify">Como  consecuencia de la licencia concedida a la Senadora Claudia Ruiz Massieu  Salinas, quien fuera elegida como integrante de dicha comisión. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83031'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83032'></a><p align="justify">Por lo  tanto, la Junta de Coordinación Política ha suscrito un Acuerdo por el que se  designa a un integrante de la Comisión Permanente del Honorable Congreso de la  Unión, correspondiente al segundo receso del primer año de ejercicio de la LXIV  Legislatura. </p>
+<p align="justify">Solicito  a la Secretaría dé lectura al Acuerdo señalado.</p>
+<p align="justify"><strong>JUNTA DE COORDINACIÓN POLÍTICA</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  Antares Guadalupe Vázquez Alatorre: </strong>Doy  lectura, señor Presidente. </p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-05-16-1/assets/documentos/Acuerdo_JCP_nuevo_integrante_CP.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es cuanto, señor Presidente. </p>
+<p><strong>El  Presidente Senador Martí Batres Guadarrama: </strong>Muchas gracias. </p>
+<p>Está a su consideración el Acuerdo. </p>
+<p>  Al no haber oradoras ni  oradores registrados, háganse los avisos a que se refiere el artículo 58 del  Reglamento del Senado para informar de la votación. Ábrase el sistema  electrónico por tres minutos para recoger la votación nominal del Acuerdo. </p>
+<p align="right"><a href="http://www.senado.gob.mx/64/votacion/3403"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Quiero  saludar la presencia de estudiantes de la Universidad &ldquo;Cristóbal Colón&rdquo;, de  Veracruz, de su facultad de derecho, invitados por el Senador Dante Delgado. </p>
+<p align="justify">¡Bienvenidos!</p>
+<p align="justify">De igual  manera esta Mesa Directiva quiere extender una afectuosa felicitación al  Senador Omar Obed Maceda Luna, que el día de hoy es su cumpleaños. </p>
+<p align="justify">¡Felicitaciones!</p>
+<p align="justify"><strong>La Secretaria Senadora  Antares Guadalupe Vázquez Alatorre: </strong>Señor Presidente, conforme  al registro electrónico, se emitieron 102 votos a favor, cero en contra y cero  abstenciones. </p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Queda aprobado el Acuerdo. </p>
+<p align="justify">En  consecuencia, se designa por el grupo parlamentario del PRI, como integrantes  de la Comisión Permanente del Honorable Congreso de la Unión, correspondiente  al segundo receso del primer año de ejercicio de la LXVI Legislatura, como  titular, al Senador Manuel Añorve Baños, y como sustituto, al Senador Jorge  Carlos Ramírez Marín. Comuníquese a la Comisión Permanente del Honorable  Congreso de la Unión.</p>
+<p align="justify">Continúe  la Secretaría con los asuntos de la agenda.</p>
+<p align="justify">Perdón.</p>
+<p align="justify">Senadora  Verónica Delgadillo, sonido en su escaño, por favor.</p>
+<p align="justify"><strong>La Senadora Verónica  Delgadillo García: </strong>(Desde su escaño) Muchas  gracias, señor Presidente.</p>
+<p align="justify">Comentarle,  señor Presidente, que en virtud de las expresiones de mis compañeras y mis compañeros  Senadores, hace un momento, sobre la crisis medioambiental que tenemos en la  ciudad, y también frente a la crisis de cambio climático que está enfrentando  nuestro país, y la necesidad de trabajar en conjunto por la protección del  medio ambiente de México, es que quiero a través de su conducto y del conducto  de la Junta de Coordinación Política, exhortar a este Senado a que pudiéramos  tener un periodo extraordinario para tratar los temas de medio ambiente.</p>
+<p align="justify">Y si es  que si ya se tiene considerado tener un periodo extraordinario, que se pueda  incluir en el mismo la discusión de una agenda verde, de una agenda de  protección al medio ambiente.</p>
+<p align="justify">Nuestro  país ya no puede esperar más, la naturaleza está reclamando de una forma muy  clara que tenemos que tomar medidas en este Senado para enfrentar esta crisis.</p>
+<p align="justify">En  resumen, señor Presidente, solicitar que para este Senado sea prioridad la  discusión de la agenda verde en un próximo periodo extraordinario.</p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Muchas gracias, Senadora  Delgadillo García.</p>
+<p align="justify">La Mesa  Directiva tomará en cuenta sus puntos de vista expresados aquí; pero, por otro  lado, también le informa que es necesario presentar iniciativas al respecto  para que esto pueda realizarse tanto en la forma como en el contenido.</p>
+<p align="justify">  Sonido en el escaño de la  Senadora Verónica Delgadillo.</p>
+<p align="justify"><strong>La  Senadora Verónica Delgadillo García: </strong>(Desde su escaño)  Atendiendo al señalamiento que usted hace, señor Presidente, quiero compartirle  que ya hay un amplio número de iniciativas presentadas tanto por mi grupo  parlamentario, como por otros grupos, en torno al medio ambiente.</p>
+<p align="justify">Entonces si podríamos hacer  los mecanismos necesarios para poder descongelar esas iniciativas y que  pudiéramos estar discutiéndolo lo más pronto posible.</p>
+<p align="justify">Es cuanto.</p>
+<p align="justify"><strong>El  Presidente Senador Martí Batres Guadarrama: </strong>Sí, pero necesitaría  también presentarse iniciativa para cualquier convocatoria al periodo  extraordinario.</p>
+<p align="justify">Gracias, Senadora Verónica  Delgadillo.</p>
+<p align="justify">Continúe la Secretaría con  los asuntos de la agenda.</p>
+<p align="justify"><strong>La  Secretaria Senadora Antares Guadalupe Vázquez Alatorre: </strong>Se han agotado los asuntos  de la agenda, señor Presidente.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83032'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83033'></a><p><strong>CITA</strong></p>
+<p><strong>El  Presidente Senador Martí Batres Guadarrama: </strong>Se cita a la siguiente  sesión extraordinaria a realizarse el día martes 21 de mayo a las 12:00 horas.</p>
+<p>Se levanta la sesión.</p>
+<p align="center">(Se levantó la sesión a las  13:14 horas)</p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong><br>
+        <strong>de la Cámara de Senadores del Congreso<br>
+      de los Estados Unidos Mexicanos</strong></p>
+<p align="center"><strong>Av. Paseo de la Reforma 135,</strong><br>
+  <strong>Colonia Tabacalera, Alcaldía Cuauhtémoc,</strong><strong><br>
+  Ciudad de México</strong></p>
+      <p align="center"><strong>Teléfonos: 53-45-30-00<br>
+      Exts. 5405/5406</strong></p>
+      <p align="center"><strong>Internet: http://www.senado.gob.mx</strong></p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83033'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

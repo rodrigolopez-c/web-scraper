@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA COMISI&Oacute;N PERMANENTE<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Receso Comisi&oacute;n Permanente</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 10</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Laura Itzel Castillo Juárez</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 17 de Junio de 2026</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/2/SPO/PDF-WEB/C.P_No10_17-JUNIO-2026_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='127878'></a><p align="center"><strong>PRESIDE  LA SENADORA</strong><br>
+  <strong>LAURA  IZTEL CASTILLO JUÁREZ</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>(11:14  horas) Con el quórum de la sesión pública del día de hoy, y con fundamento en  lo dispuesto por el artículo 53 de las Reglas Básicas para el funcionamiento de  la Comisión Permanente, y en el Acuerdo aprobado el pasado 10 de junio,  iniciamos la sesión solemne para conmemorar el 75° Aniversario de la Fundación  de la Sede Subregional en México de la Comisión Económica para América Latina y  el Caribe, CEPAL. </p>
+<p>Solicito  a las personas Legisladoras, Diputado Joaquín Zebadúa Alva, el Diputado Marcelo  de Jesús Torres Cofiño, el Senador Jorge Carlos Ramírez Marín, la Senadora  Lizeth Sánchez García y la Senadora Carolina Viggiano Austria, acudan a recibir  al doctor José Manuel Salazar-Xirinachs, secretario ejecutivo de la CEPAL. </p>
+<p>Asimismo,  solicito a las personas Legisladoras, Senadora Julieta Ramírez Padilla,  Diputado Reginaldo Sandoval Flores, Diputado Ricardo Madrid Pérez, Senador  Manuel Huerta Ladrón de Guevara, Senador Óscar Cantón Zetina y a la Diputada  María Teresa Ealy Ortiz, acudan a recibir a las demás distinguidas  personalidades que han sido invitadas a este acto solemne.</p>
+<p align="center">(Las  comisiones cumplen)</p>
+<p>En  tanto, declaramos un receso. </p>
+<p align="center">(RECESO)</p>
+<p> <strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Se  reanuda la sesión solemne. </p>
+<p>Les  pedimos a todos y a todas ustedes guardar silencio y el debido respeto a  nuestros invitados. </p>
+<p>Muy  buenos días tengan todas y todos ustedes.</p>
+<p>A  nombre de la Comisión Permanente del Honorable Congreso de la Unión, les damos  la más cordial bienvenida a esta sesión solemne, la cual conmemora el 75  Aniversario de la Sede Subregional en México de la Comisión Económica para  América Latina y el Caribe, CEPAL.</p>
+<p>En  el marco de esta conmemoración de enorme importancia para México y para el  Sistema de las Naciones Unidas, nos da mucho gusto recibir la visita del doctor  José Manuel Salazar-Xirinachs, Secretario Ejecutivo de la CEPAL, quien ha  viajado a nuestro país para participar en este importante acto. </p>
+<p>De  igual manera, damos la bienvenida a las personas que integran la distinguida  delegación de las Naciones Unidas que le acompaña. </p>
+<p>Sean  ustedes bienvenidos a la Cámara de Senadoras y Senadores, sede de los trabajos  de la Comisión Permanente y casa del federalismo en México, la cual, como  decimos en nuestro país, es también su casa. </p>
+<p>Saludamos  la distinguida presencia de la Secretaria de Medio Ambiente y Recursos  Naturales, la distinguida Doctora Alicia Bárcena Ibarra.</p>
+<p>De  la Subsecretaria de Relaciones Exteriores para América Latina y el Caribe, la  Maestra Raquel Serur Smeke. </p>
+<p>También  del Vocal de la Junta de Gobierno del Instituto para la Protección al Ahorro  Bancario, el Doctor Alfredo Federico Navarrete Martínez. </p>
+<p>Destaco  la presencia del licenciado Juan Ramiro Robledo Ruiz, titular de la Unidad de  Enlace Legislativo de la Secretaría de Gobernación, quien acude en  representación de la licenciada Rosa Icela Rodríguez Velázquez, titular de esta  dependencia. </p>
+<p>Asimismo,  el doctor Leonardo Lomelí Vanegas, Rector de nuestra Máxima Casa de Estudios,  la Universidad Nacional Autónoma de México, UNAM.</p>
+<p>Saludamos  la presencia de mis compañeras y compañeros integrantes de la Mesa Directiva,  la Diputada Kenia López Rabadán, Vicepresidenta de la Comisión Permanente y  Presidenta de la Cámara de Diputadas y Diputados.</p>
+<p>De  la Senadora Verónica Noemí Camino Farjat, Vicepresidenta de la Comisión  Permanente. </p>
+<p>Del  Diputado Joaquín Zebadúa Alva, Vicepresidente también de la Comisión  Permanente.</p>
+<p>Y  de nuestras compañeras Secretarias de la Directiva, María Martina Kantún Can. </p>
+<p>Y  la Senadora Juanita Guerra Mena. </p>
+<p>Agradecemos  la presencia de la Senadora Amalia García Medina, Presidenta de la Comisión  para el Seguimiento de la Implementación de la Agenda 2030 de la Cámara de  Senadoras y Senadores, promotora de este importante evento. </p>
+<p> Así  como a todos nuestros compañeros y compañeras Legisladoras integrantes de esta  Honorable Comisión Permanente, y de las Senadoras y Senadores invitados que el  día de hoy nos acompañan. </p>
+<p>Un  aplauso. </p>
+<p>Y,  por supuesto, de las personas integrantes del cuerpo diplomático acreditado en  nuestro país. </p>
+<p>Sean  bienvenidas y bienvenidos a la casa del federalismo. </p>
+<p>Así  como a todos los invitados especiales que el día de hoy nos acompañan, así como  especialmente al Subsecretario de Agricultura y Desarrollo Rural, Leonel Cota  Montaño. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a127878'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='127879'></a><p><strong>CONMEMORACIÓN DEL SEPTUAGÉSIMO QUINTO ANIVERSARIO  DE LA FUNDACIÓN DE LA SEDE SUBREGIONAL DE LA COMISIÓN ECONÓMICA PARA AMÉRICA  LATINA Y EL CARIBE EN MÉXICO</strong><strong></strong></p>
+<p>Honorable  Asamblea, la CEPAL fue creada en el año de 1948, en un mundo marcado por las  heridas de la Segunda Guerra Mundial, el cual comenzaba a reconfigurar un orden  económico internacional que no atendía, con justicia, las necesidades de los  países latinoamericanos. </p>
+<p>Desde  entonces, esta Comisión del Sistema de las Naciones Unidas, se propuso abrir un  camino propio para pensar el desarrollo desde las problemáticas que  caracterizan a nuestra región. </p>
+<p>El  16 de junio de 1951, durante el cuarto período de sesiones de la CEPAL,  celebrado en México, se aprobó una histórica resolución que estableció una sede  regional de la CEPAL en nuestro país. </p>
+<p>Aquella  oficina nació con la responsabilidad de atender los problemas económicos de 10  países: Costa Rica, Cuba, El Salvador, Guatemala, Haití, Honduras, México,  Nicaragua, Panamá y República Dominicana. </p>
+<p>75  años después, podemos afirmar que esta sede subregional ha sido fundamental  para la cooperación técnica, la integración regional y el diseño de políticas  públicas orientadas al desarrollo. </p>
+<p>La  CEPAL ha sido también una de las más importantes escuelas del pensamiento  latinoamericano; sus originales aportes permitieron comprender que el  desarrollo requiere analizar, críticamente, la desigualdad, la dependencia  tecnológica y el papel del Estado en la construcción de la prosperidad  compartida. México ha contribuido, de manera decisiva, a esa tradición. </p>
+<p>Economistas  destacados, como Víctor Urquidi, Juan Noyola Vázquez e Ifigenia Martínez  hicieron, desde la CEPAL, aportes fundamentales al estudio de la integración  regional, la inflación estructural y los desequilibrios del desarrollo. </p>
+<p>México  también ha aportado tres secretarios ejecutivos a la CEPAL: Gustavo Martínez  Cabañas, Carlos Quintana, y nuestra compañera y amiga Alicia Bárcena Ibarra,  primera mujer en dirigir este organismo. </p>
+<p>Cuya  presencia hoy honra esta sesión solemne. </p>
+<p>Bajo el liderazgo de nuestra Presidenta, la Doctora  Claudia Sheinbaum Pardo, primera mujer Presidenta en más de 200 años de vida  independiente.</p>
+<p> México ha retomado una visión de desarrollo con  justicia social que enfatiza la importancia del salario digno, la  sustentabilidad y la vocación social del Estado. </p>
+<p>En ese camino los aportes de la CEPAL han sido  fundamentales para ampliar el debate en torno al desarrollo, cuestionar viejos  dogmas económicos, y fortalecer políticas orientadas a la prosperidad  compartida. </p>
+<p>Desde esta Comisión Permanente expresamos nuestro  profundo reconocimiento a la CEPAL por 75 años de trabajo desde México al  servicio de nuestros pueblos, de la cooperación regional y del  multilateralismo. </p>
+<p>Muchas gracias. </p>
+<p>Antes de continuar, queremos saludar también la  presencia de la Doctora Graciela Márquez Colín, Presidenta de la Junta de  Gobierno del Instituto Nacional de Estadística y Geografía. </p>
+<p>Honorable Asamblea, con base en el Acuerdo aprobado  por este Pleno tendremos hoy el honor de escuchar la participación de diversas  personalidades invitadas. </p>
+<p>Iniciamos con la intervención del Doctor José  Manuel Salazar-Xirinachs, Secretario Ejecutivo de la Comisión Económica para  América Latina y el Caribe, CEPAL. </p>
+<p>Si gusta pasar a tribuna. </p>
+<p>Doctor Salazar-Xirinachs,  tiene usted el uso de la palabra. </p>
+<p><strong>El Secretario Ejecutivo de la Comisión Económica  para América Latina y el Caribe, CEPAL, José Manuel Salazar-Xirinachs: </strong>Muy buenos días. </p>
+<p>Estimada Senadora Laura Itzel Castillo Juárez,  Presidenta de la Cámara de Senadoras y Senadores. </p>
+<p>Estimada Raquel Serur, Subsecretaria de Relaciones  Exteriores para América Latina y el Caribe. </p>
+<p>Estimada Secretaria Alicia Bárcena, Secretaria del  Medio Ambiente y Recursos Naturales, y exsecretaria ejecutiva de la CEPAL. </p>
+<p>Estimado Alfredo Navarrete Martínez, miembro de la  Junta de Gobierno del Instituto para la Protección al Ahorro Bancario. Y  también cepalino de corazón. </p>
+<p>Estimada Senadora Amalia García Medina. </p>
+<p>Estimado Rector de la UNAM y apreciado amigo,  doctor Leonardo Lomelí. </p>
+<p>Estimadas Embajadoras y Embajadoras, estimadas y  estimados representantes de las Agencias de Naciones Unidas en México. </p>
+<p>Estimada Allegra Baiocch, Coordinada Residente del  Sistema de Naciones Unidas en México. </p>
+<p>Queridas y queridos Colegas de la sede de CEPAL en  México. </p>
+<p>Amigos y amigas, permítanme iniciar con esa palabra  que figura entre las más hermosas en cualquier idioma, gracias, gracias por la  generosidad de esta sesión y por el gesto desinteresado de reconocer la  trayectoria y el aporte de una institución a un país y a una región. </p>
+<p> Éste es un lugar excepcional para conmemorar el 75  aniversario de la sede subregional de la CEPAL en México. </p>
+<p>Y no solo por la imponencia de este recinto, sino  también por lo que representa, un espacio institucional para deliberar, para  hacer política, para plasmar en el texto de las leyes los grandes acuerdos de  una nación. </p>
+<p>Son esos acuerdos y su gestión efectiva los que  permiten a un país avanzar, superar brechas, mejorar las condiciones de vida su  población. Es decir, desarrollarse, que es otra forma de decir transformarse. </p>
+<p>Fue la transformación económica y social de los  países de América Latina que inspiró la fundación de la CEPAL en 1948. </p>
+<p>Y fue esa misma ambición de desarrollo la que  impulsó el establecimiento de la oficina en México tres años después. </p>
+<p>Yo no había nacido, entonces. </p>
+<p>Habrá pocos acá, que recuerden el México en 1951. </p>
+<p>En ese momento las mujeres mexicanas no habían  logrado aún el reconocimiento de su derecho al voto, aunque estaban cerca. </p>
+<p>Los tranvías los recorrían esta ciudad. </p>
+<p>La industrialización había traído migraciones  masivas a los centros urbanos de América Latina, pero la pobreza aquejaba a la  mayoría de las personas y las carencias en materia de salud, educación y  protección social eran inmensas. </p>
+<p>Fue una época de grandes retos, es cierto, pero  también una época de grandes sueños. </p>
+<p>Sobre las ruinas de la posguerra se levantaban  planes de reconstrucción, el mundo atravesaba una ola independentista, poniendo  fin a proyectos colonizadores que estudiaron vigentes durante años, durante  siglos, de hecho. </p>
+<p>En el seno de las Naciones Unidas se sentaban las  bases del sistema multilateral. </p>
+<p>En nuestra región los países daban pasos hacia una  mayor integración económica y política, y un grupo de economistas revolucionaba  la forma de pensar y de entender el desarrollo.</p>
+<p>Esa revolución se gestó, en buena medida en la  CEPAL, en Santiago de Chile y aquí en México. </p>
+<p>Aquel fue el origen del pensamiento futuralista y  una tradición intelectual que hoy, con gran orgullo llamamos cepalina. </p>
+<p>Por la CEPAL de México transitaron grandes mentes  del pensamiento económico latinoamericano, entre quienes esta mañana quisiera  destacar a tres mexicanos. </p>
+<p>A Víctor Urquidi, quien formuló un planteamiento  sobre el proceso de integración centroamericana, que a la vez impulsó el  desarrollo industrial a escala regional. </p>
+<p>A Juan Noyola, quien aportó el concepto de  inflación estructural al entender que el incremento de los precios no se debía  principalmente a las condiciones monetarias, sino a desequilibrios  estructurales, como la rigidez de la oferta agrícola, la dependencia de las  importaciones y la desigual distribución del ingreso. </p>
+<p> Y a Ifigenia Martínez, quien aplicó las ideas del  estructuralismo al análisis de la desigualdad; así como en otros temas del  desarrollo y crecimiento de las economías latinoamericanas.</p>
+<p>Cito las palabras de Ifigenia Martínez: </p>
+<p>&ldquo;La desigualdad en México no es un accidente, sino  el resultado de estructuras productivas heterogéneas que concentran beneficios  en unos sectores imagina a otros&rdquo;. </p>
+<p>Una frase que podríamos escribir hoy mismo para  cualquiera de nuestros países en América Latina y el Caribe. </p>
+<p>Es muy emotivo y un gran honor contar con la  presencia en esta sesión de Alfredo Navarrete Martínez como homenaje a Ifigenia  Martínez, quien fue un pilar en la fundación de la oficina de CEPAL en México  y, sin duda, alguien que ayudó a forjar el carisma y la vocación de servicio  que hoy caracterizan a nuestro equipo subregional.  </p>
+<p>Ahora bien, la huella de esa oficina va mucho más  allá de pensamientos y teorías. </p>
+<p>Por ejemplo, desde la subsede Subregional se puso  la semilla tras el terrible terremoto en Managua en 1972 de lo que hoy es la  metodología más extendida en el mundo para la evaluación de los años de los  desastres naturales. </p>
+<p>Ese trabajo se hizo de la mano de otro gran  economista, don David Ibarra, como en ese caso, la CEPAL también ha acompañado  directamente a los países, a través de la asistencia técnica en el diseño,  implementación y evaluación de políticas públicas de diversos ámbitos, en la  búsqueda de soluciones concretas a problemas muy reales. </p>
+<p>En México destacan los aportes recientes al debate  sobre incremento de salarios mínimo, el fortalecimiento de canal de valor y la  integración de una perspectiva de género en la política pública. </p>
+<p>Tan sólo, la semana pasada, presentábamos en la  Secretaría de Economía un trabajo que hicimos conjuntamente con la Organización  Internacional del Trabajo y esa misma Secretaría. </p>
+<p>Una propuesta normativa de estándares para el  desarrollo productiva que conduzca a la igualdad de género y a la sociedad del  cuidado en los parques industriales de México. </p>
+<p>Un proyecto que se marca en el compromiso de  Tlatelolco y la Estrategia de Género para la Política de Desarrollo Productivo  en México. </p>
+<p>También la semana pasada inauguramos la primera  versión en México de la Escuela Latinoamericana de Estudios de Desarrollo de la  CEPAL la Elades, de la mano de la Universidad Nacional Autónoma de México,  porque para la CEPAL es crucial seguir siendo no sólo un  espacio de reflexión y de propuestas frescas, sino de formación de la próxima  generación de líderes y gobernantes de países de la región. </p>
+<p>Como  he venido insistiendo desde que asumí la Secretaría Ejecutiva, es necesario  repensar y reimaginar los retos del desarrollo en América Latina y El Caribe,  porque ninguna organización prospera sobre las glorias de su pasado, sino sobre  su utilidad y su vigencia para los desafíos de la actualidad.</p>
+<p>Ese  es nuestro compromiso firme con los países de la región, propuestas nuevas y  oportunas sin abandonar por supuesto el sello cepalina.</p>
+<p> Y  es que mi pensamiento en la CEPAL ha habido constantes, tales como la atención,  la transformación productiva, la preocupación sobre los efectos corrosivos de  la desigualdad y el análisis de la relación entre la economía internacional,  por lo que en múltiples publicaciones de la CEPAL a través de décadas se  llamaron los factores externos, y las características estructurales de las  economías nacionales o los factores internos, sin olvidar los retos  institucionales de gobernanza y de economía política de las transformaciones.</p>
+<p>En  el pensamiento de la CEPAL ha habido, pues, constantes, pero como es  consustancial al pensamiento crítico también ha habido revisiones y  actualizaciones de los diagnósticos y de las recomendaciones para ajustarlos a  las circunstancias que están en constante movimiento.</p>
+<p>Sobre  ese tema planeo ahondar en mi charla magistral, pero basta decir que nos  encontramos desplegando toda una línea de trabajo en torno a la gestión de las  transformaciones indispensables, los cómo del desarrollo.</p>
+<p>Y  también sobre el análisis de la geopolítica y de la geoeconomía para acompañar  a los países con propuestas de asistencia técnica que les permite no sólo  reaccionar al nuevo contexto global, sino también encontrar en él oportunidades  y aprovecharlas para impulsar su desarrollo.</p>
+<p>Amigas  y amigos, la escogencia de México como sede subregional de la CEPAL no fue  azarosa, el tiempo ha demostrado que fue una decisión especialmente sabia.</p>
+<p>A  lo largo de su historia, México se ha distinguido por su vocación  latinoamericanista y por una diplomacia que combina al mismo tiempo el respeto  a la soberanía y la promoción de la acción colectiva entre estados.</p>
+<p>Es  algo que deseo reconocer de forma explícita en épocas en que surgen liderazgos  caracterizados por la fuerza, es inspirador recordar que también hay liderazgos  internacionales que se caracterizan por la solidaridad y el beneficio mutuo.</p>
+<p>Es  una realidad que aprecio como Secretario Ejecutivo de la CEPAL, pero más aún  como costarricense y como centroamericano.</p>
+<p>Ya  desde la resolución que le dio origen la oficina de la CEPAL en México estuvo  dedicada al estudio los problemas económicos de Costa Rica, Cuba, El Salvador,  Guatemala, Haití, Honduras, México, Nicaragua, Panamá y República Dominicana.</p>
+<p>Y  también desde sus orígenes tuvo como objetivo estratégico contribuir a impulsar  el proceso de integración económica en Centroamérica, que entonces se  encontraba en ciernes.</p>
+<p>La  tesis central detrás de ese esfuerzo era el convencimiento de que para alcanzar  mayores niveles de desarrollo los países pequeños necesitaban no sólo  diversificar y fortalecer sus sectores productivos, sino también enfrentar  unidos el poder de las grandes potencias económicas y los mercados  internacionales.</p>
+<p>Como  señalé, este tipo de razonamientos está en la base del pensamiento cepalina.</p>
+<p>Entender  que nuestras dinámicas de desarrollo no ocurren en el vacío, sino que son fruto  de la interacción, del intercambio y de la inserción internacional. Eso es de  la interdependencia.</p>
+<p>Es  oportuno recordar esa lectura de hace 75 años.</p>
+<p> La  memoria existe como registro del pasado, como archivo de los eventos y las  ideas que alguna vez ocurrieron, pero existe también como guía, como luz para  navegar parajes inciertos. Y hoy atravesamos uno de esos parajes.</p>
+<p>Convergen  en este momento, por un lado, megatendencias que llevan décadas en estación, en  áreas como la tecnología, el cambio climático y la demografía; y, por otro, con  cambios abruptos, verdaderas rupturas de hace apenas un par de años o incluso  de algunos meses.</p>
+<p>No  reconocemos hoy el mundo en que entramos a este siglo, aquel era un mundo de  reglas, unipolar, pero con respeto al sistema multilateral, de apuesta por el  intercambio y por un campo de juego nivelado, de aprecio con la cooperación  internacional basada en valores y en la ciencia para resolver problemas comunes  y planetarios, y para buscar y mantener la paz. </p>
+<p>Ese  mundo cambió para siempre, pero no sabemos todavía en qué dirección definitiva.  Nos encontramos, para usar esa maravillosa expresión de Octavio Paz, en la  búsqueda del presente. </p>
+<p>Más  allá de las recomendaciones específicas en distintas áreas sustantivas, nuestra  propuesta sigue teniendo en el corazón una identidad cepalina, apostarle a la  acción colectiva, confiar en el diálogo pragmático y la búsqueda de acuerdos,  analizar nuestro entorno y desarrollar estrategias ajustadas a nuestras  realidades específicas, para eso estamos aquí y aquí seguiremos. </p>
+<p>La  sede subregional en México ha sido ejemplo de cómo la proximidad y el  entendimiento profundo de las realidades locales fortalecen la capacidad de  respuesta de la CEPAL y consolidan su papel como referente regional. Este acto  solemne es un gran honor que México le concede a la CEPAL.</p>
+<p>Tengan  la plena certeza de que la CEPAL también refrenda aquí su compromiso con México  y con la región. </p>
+<p>Gracias  de nuevo por este espléndido gesto y por demostrarnos cada día la calidez sin  límites de la hospitalidad mexicana. </p>
+<p>Muchas  gracias. </p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Muchas  gracias por su mensaje, Doctor Salzar-Xirinachs. </p>
+<p>Antes  de continuar queremos igualmente saludar la presencia del personal diplomático  que nos acompaña. </p>
+<p>El  Excelentísimo señor Pablo Heriberto Abarca Mora, Embajador Extraordinario y  Plenipotenciario de la República de Costa Rica. </p>
+<p>El  Excelentísimo señor Eugenio Martínez Enríquez, Embajador Extraordinario y  Plenipotenciario de la República de Cuba. </p>
+<p>El  Excelentísimo señor Edgar Armando Gutiérrez Girón, Embajador Extraordinario y  Plenipotenciario de la República de Guatemala. </p>
+<p>El  Excelentísimo señor Hubert Labbe, Embajador Extraordinario y Plenipotenciario  de la República de Haití. </p>
+<p> La  Excelentísima señora Eleonora Ortez Williams, Embajadora designada de la  República de Honduras. </p>
+<p>El  Excelentísimo señor Juan Carlos Gutiérrez Madrigal, Embajador Extraordinario y  Plenipotenciario de la República de Nicaragua. </p>
+<p>Y  el Excelentísimo señor Juan Bolívar Díaz Santana, Embajador Extraordinario y  Plenipotenciario de la República Dominicana. </p>
+<p>Sean  todos y todas bienvenidos. </p>
+<p>Ahora  tiene el uso de la tribuna la Maestra Raquel Serur, Subsecretaria para América  Latina y el Caribe de la Secretaría de Relaciones Exteriores. </p>
+<p><strong>La  subsecretaria de Relaciones Exteriores, Raquel Serur Smeke: </strong>Muy  buenos días tengan todas y todos ustedes.</p>
+<p>Senadora  Laura Itzel Castillo Juárez, presidenta de la Mesa Directiva del Senado de la  República; </p>
+<p>Diputada  Kenia López Rabadán, presidenta de la Mesa Directiva de la Cámara de Diputados; </p>
+<p>Senadoras  y Senadores de la República. </p>
+<p>Doctora  Alicia Bárcena, Secretaria de Medio Ambiente y Recursos Naturales. </p>
+<p>Doctor  José Manuel Zalazar-Xirinachs, Secretario Ejecutivo de la Comisión Económica  para América Latina y el Caribe. </p>
+<p>Señor  Jorge Mario Martínez Piva, Director de la sede Subregional de CEPAL en México. </p>
+<p>Licenciado  Alfredo Navarrete, Vocal de la Junta de Gobierno del Instituto para la  Protección y Ahorro Bancario. </p>
+<p>Representantes  del Sistema de Naciones Unidas. </p>
+<p>Integrantes  del cuerpo diplomático. </p>
+<p>Distinguidas  y distinguidos invitados. </p>
+<p>Querido  Rector Leonardo Lomelí. </p>
+<p>Amigas  y amigos todos, permítanme transmitirles un cordial saludo del secretario de  Relaciones Exteriores, Roberto Velasco Álvarez. </p>
+<p>Comparecer  ante esta Soberanía en una ceremonia solemne siempre tiene un significado  especial. </p>
+<p>El  Senado de la República es, por mandato constitucional, un espacio fundamental  para la conducción de la política exterior de México. Es aquí donde los grandes  principios de nuestra actuación internacional encuentran expresión republicana,  deliberación democrática y sentido de Estado.</p>
+<p>Por  ello, celebrar en este recinto el 75 Aniversario de la sede subregional de la  CEPAL en México no es sólo un acto protocolario, es un reconocimiento a una  institución que ha acompañado algunas de las discusiones más relevantes sobre  el desarrollo de nuestro país y de nuestra región. </p>
+<p> Esta  también una oportunidad para reflexionar sobre el momento histórico que vivimos  y sobre el papel que México debe seguir desempeñando en América Latina y el  Caribe. </p>
+<p>Hace  75 años, en 1951, la CEPAL estableció su sede subregional en México con una  misión clara. Fortalecer su presencia en México y Centroamérica, generar  conocimiento aplicado, brindar asistencia técnica de alto nivel y contribuir al  diseño de políticas públicas frente a los desafíos del desarrollo.</p>
+<p>Desde  entonces, la CEPAL en México ha sido mucho más que una Oficina Regional de  Naciones Unidas, ha sido un espacio de pensamiento, de diálogo y de  construcción institucional; ha sido una casa para el análisis riguroso de  nuestras economías, de nuestras desigualdades y de nuestras capacidades  productivas; ha sido, sobre todo, una aliada estratégica para pensar el  desarrollo desde América Latina y para América Latina y el Caribe. </p>
+<p>A  lo largo de estas siete décadas y media, la CEPAL ha contribuido a formular una  idea profundamente vigente: que el desarrollo no puede medirse únicamente por  el crecimiento económico; que el bienestar verdadero exige igualdad, inclusión,  sostenibilidad, productividad, derechos, cohesión social y capacidades  públicas. </p>
+<p>Esa  visión ha marcado generaciones de políticas públicas en la región y ha ayudado  a demostrar que la justicia social no es un complemento del desarrollo, sino  una de sus condiciones esenciales.</p>
+<p>México  reconoce esa contribución, la reconoce porque la historia de CEPAL también  forma parte de la historia de nuestras propias discusiones nacionales. </p>
+<p>Desde  los grandes debates sobre industrialización, integración regional y cambio  estructural, hasta las agendas contemporáneas sobre transición energética,  economía del cuidado, movilidad humana, transformación digital, seguridad  alimentaria, cambio climático y reducción de las brechas. </p>
+<p>La  CEPAL ha aportado evidencia, pensamiento crítico y propuestas concretas y hoy,  en un contexto internacional especialmente complejo, esa contribución resulta  más necesaria que nunca. </p>
+<p>Vivimos  una época de profundas transformaciones geopolíticas; el orden internacional  enfrenta tensiones crecientes, las instituciones multilaterales atraviesan  presiones inéditas, las cadenas globales de valor se reconfiguran, la movilidad  humana plantea desafíos humanitarios, económicos y políticos de gran escala y,  al mismo tiempo, la revolución tecnológica abre oportunidades extraordinarias,  pero también riesgos de exclusión si no somos capaces de cerrar las brechas que  aún dividen a nuestras sociedades. </p>
+<p>Frente  a ese escenario, México tiene una convicción clara, la respuesta no puede ser  el repliegue, la fragmentación ni la indiferencia; la respuesta debe ser más  cooperación, más diálogo, más integración regional y un multilateralismo más  eficaz, más representativo y cercano a las necesidades reales de nuestros  pueblos. </p>
+<p>La  política exterior de México parte de principios firmes, la defensa de nuestra  soberanía, como lo ha dicho reiteradamente nuestra Presidenta Claudia Sheinbaum  Pardo, la no intervención, la solución pacífica de las controversias, la  cooperación internacional para el desarrollo y el respeto al derecho  internacional. </p>
+<p>Pero  esos principios no son una fórmula estática, son una guía viva para actuar con  responsabilidad en un mundo que cambia, son la base sobre la cual México  construye alianzas, promueve soluciones y defiende una visión de desarrollo con  bienestar. </p>
+<p> En  esa visión, América Latina y el Caribe ocupan un lugar central; México no  concibe su futuro de espaldas a la región. Al contrario. entendemos que muchos  de nuestros desafíos son compartidos y que muchas de nuestras respuestas  también deben serlo. </p>
+<p>La  integración regional no es una consigna, es una herramienta concreta para  enfrentar problemas comunes, desde la seguridad alimentaria y la salud pública,  hasta la transición energética, la conectividad, la innovación, el desarrollo  productivo y las causas estructurales de la migración. </p>
+<p>Por  eso, la relación entre México y la CEPAL es estratégica, porque la CEPAL aporta  algo indispensable para la acción pública, capacidad técnica, memoria  institucional, pensamiento regional y una mirada integral del desarrollo. </p>
+<p>En  un tiempo en que abundan las respuestas simples a problemas complejos, la CEPAL  nos recuerda la importancia del diagnóstico serio, de la evidencia, de la  planeación y de la cooperación. </p>
+<p>La  sede subregional, en México, cumple, además, una función específicamente,  especialmente valiosa, su mandato la vincula directamente con México,  Centroamérica, Cuba, Haití y República Dominicana; es decir, con una subregión  profundamente diversa, con enormes capacidades, pero también con desafíos  estructurales que requieren respuestas integrales. </p>
+<p>Esa  cercanía territorial y técnica le permite acompañar, a los gobiernos con  conocimiento de primera mano, con sensibilidad política y con propuestas  adaptadas a nuestras realidades. </p>
+<p>Desde  la Cancillería mexicana vemos a la CEPAL, en la CEPAL a una socia natural para  impulsar una agenda regional que coloque a las personas en el centro, una  agenda que combine crecimiento con igualdad, productividad con derechos,  apertura económica con desarrollo de capacidades, sostenibilidad ambiental con justicia social y transformación  tecnológica con inclusión. </p>
+<p>México quiere seguir trabajando con la CEPAL para  impulsar una agenda regional centrada en el bienestar de las personas, una  agenda que fortalezca la integración regional contribuya a atender las causas  estructurales de la desigualdad y la movilidad humana, y permita aprovechar las  oportunidades de la transformación tecnológica y de la transición hacia modelos  de desarrollo más sostenibles e incluyentes. </p>
+<p>Este aniversario no debe verse únicamente como una  conmemoración de logros pasados, debe ser también una convocatoria al futuro; a  75 años de su establecimiento en México la sede subregional de la CEPAL está  llamada a seguir siendo un espacio de pensamiento latinoamericano renovado  capaz de responder a los desafíos de una época distinta, pero con una  convicción permanente. El desarrollo solo tiene sentido si mejora la vida de  las personas. </p>
+<p>Con motivo de esta conmemoración México refrenda su  reconocimiento a la CEPAL, a su secretario ejecutivo, a su equipo en México y a  todas las generaciones de especialistas, funcionarias, funcionarios, académicas  y académicos que han contribuido a construir esta trayectoria. </p>
+<p>Refrendamos también nuestra voluntad de seguir  fortaleciendo esta relación estratégica, lo hacemos con responsabilidad, con  gratitud y con visión de futuro; porque México cree en el multilateralismo,  cree en la cooperación, cree en América Latina y el Caribe, y está convencido  de que una región más integrada, más próspera y con mayor capacidad de acción  colectiva contribuirá también a construir un orden internacional más justo,  incluyente y sostenible. </p>
+<p> La CEPAL ha sido durante 75 años una voz  indispensable para pensar el desarrollo latinoamericano, hoy México celebra esa  voz, la reconoce y la convoca a seguir caminando con nosotros. </p>
+<p>Muchas felicidades a la sede subregional de la  CEPAL en México. </p>
+<p>Y muchas gracias, a ustedes por escuchar. </p>
+<p><strong>La  Presidenta Senadora</strong> <strong>Laura Itzel Castillo Juárez:</strong> Muchas gracias por su mensaje, señora  Subsecretaria. </p>
+<p>Quiero resaltar que nos acompaña el día de hoy a  esta sesión solemne la señora Allegra Baiocchi, Coordinadora Residente del  Sistema de Naciones Unidas en México. </p>
+<p>¡Bienvenida!</p>
+<p>Así como también el licenciado Pedro Matar,  Director General de Coordinación Política de la Secretaría de Relaciones  Exteriores. </p>
+<p>¡Bienvenido!</p>
+<p>Y al Doctor Pablo Yanes, Secretario de Planeación,  Ordenamiento Territorial y Coordinación Metropolitana del Gobierno de la Ciudad  de México. </p>
+<p>¡Bienvenido!</p>
+<p>Enseguida se concede el uso de la palabra a la  Maestra Alicia Bárcena Ibarra, Secretaria de Medio Ambiente y Recursos  Naturales del gobierno federal. </p>
+<p><strong>La Secretaria de Medio Ambiente y Recursos  Naturales, Alicia Bárcena Ibarra: </strong>Me  colma la emoción. Así es de que los saludo. Muy buenas tardes a todas, a todos. </p>
+<p>Para mí es un profundo honor participar en esta  ceremonia solemne por el 75 aniversario de la sede subregional de la CEPAL en  México en esta casa del federalismo y en la más alta tribuna de la República. </p>
+<p>Realmente agradezco de corazón a la Mesa Directiva  de la Comisión Permanente del Honorable Congreso de la Unión y muy  especialmente a su Presidenta, la Senadora Laura Itzel Castillo. </p>
+<p>Porque realmente, quiero, además, aprovechar la  ocasión para felicitarla públicamente, porque será la próxima secretaria de las  mujeres. </p>
+<p>Y eso nos honra a todas las mexicanas. </p>
+<p>Saludo, por supuesto, con enorme afecto a José  Manuel Salazar- Xirinachs, colega de Naciones Unidas, secretario ejecutivo de  la CEPAL. </p>
+<p>A Allegra Baiocchi. </p>
+<p>A Raquel Serur, Subsecretaria para América Latina y  el Caribe. </p>
+<p>Y a Alfredo Navarrete, porque es Alfredo Navarrete  Martínez, hijo de Ifigenia Martínez. </p>
+<p>Gracias por estar aquí. </p>
+<p> Quiero saludar, por supuesto, a mucha gente, pero  tengo que agradecer, en primer lugar, a la Senadora Amalia García, porque ella  hizo posible este evento maravilloso, gracias, Senadora. </p>
+<p>Y, desde luego, saludar a Kenia López Rabadán.</p>
+<p>A los Diputados y Senadores que hoy nos acompañan,  que hoy nos acompañan, que ha sido un placer.</p>
+<p>A Verónica Noemí, realmente muchas gracias. </p>
+<p>A María Martina Kantún Can, muchas gracias por  acompañarnos. </p>
+<p>A Yeidckol que anda por ahí allá, por ahí la vi, a  Yeidckol Polevnsky. </p>
+<p>Y, desde luego, pues al cuerpo diplomático,  Embajadoras, Embajadores. </p>
+<p>Quiero saludar, en particular a Jorge Mario  Martínez y a todo el personal de la CEPAL que está aquí, de la oficina de  México. </p>
+<p>Que son ustedes, hoy, los festejados, los  verdaderos autores de estos 75 años. </p>
+<p>No es que tengan 75 años, pero ustedes lograron  esta maravillosa continuidad. </p>
+<p>Y la verdad, es que la presencia de la CEPAL habla  de algo muy profundo. </p>
+<p>Primero que nada, ustedes dirán. </p>
+<p>¿Y qué hace la secretaria de Medio Ambiente y  Recursos Naturales en este evento? </p>
+<p>Pues es que resulta que yo tuve el privilegio de  dirigir la CEPAL 14 años y eso transformó mi ser, mi manera de pensar, mi  manera de ser, mi manera de vivir, mi manera de entender la región…</p>
+<p>De entender el mundo, porque es pensar desde la  región hacia el mundo y no al revés. </p>
+<p>Y eso es lo que es la CEPAL, esa enorme riqueza  humana, cultural en donde aprendimos a fondo, que la desigualdad sigue siendo  la principal barrera para liberar todo nuestro potencial en América Latina y el  Caribe. </p>
+<p>Y estoy muy emocionada, y se me nota, lo sé. </p>
+<p>Pero quiero decir que hoy en México, pues avanzamos  bajo el liderazgo de otra mujer que es Claudia Sheinbaum Pardo, a quien yo  saludo desde aquí. </p>
+<p>Y que la verdad es que, este homenaje que se le  brinda a la CEPAL es merecido, porque la CEPAL nos ha dado ideas, nos ha dado  propuestas cuando nos faltan respuestas y ha defendido principios contra viento  y marea. </p>
+<p>Esta oficina fue cuestionada, muchas veces, igual  que la oficina de Buenos Aires, igual que la de Santiago que, además, fue  creada y fue cuestionada en la época de la dictadura de Pinochet. </p>
+<p>Fue realmente un logro que la CEPAL sobreviviera  como un organismo autónomo que piensa desde adentro, desde sí. </p>
+<p> Y eso es lo que nos reúne hoy. </p>
+<p>No es solamente un aniversario, nos convoca  realmente una historia compartida y, sobre todo, una convicción profundamente  latinoamericana, porque el desarrollo no ocurre por inercia, ni por accidente,  se construye, se construye con una visión de largo plazo, con instituciones  sólidas y con voluntad política. </p>
+<p>Y eso es lo que tenemos que lograr. </p>
+<p>Y esta subsede, que son generaciones de mujeres y  hombres han demostrado que de verdad es posible, es posible y que el desarrollo  no es una concesión del destino ni una simple consecuencia del mercado. </p>
+<p>Es una construcción colectiva. </p>
+<p>Eso es lo que es el desarrollo, y colectiva también  de cada país, cada país tiene que ir definiendo su propio desarrollo. </p>
+<p>Es cierto que se requieren decisiones valientes,  cooperación entre iguales, un compromiso permanente con la dignidad y la  igualdad de nuestras sociedades. </p>
+<p>Por eso esta subsede regional, Jorge Mario, muchas  gracias y a todo el personal, al servicio de los diez países, que hoy están  aquí, los embajadores a quienes saludo con mucho afecto siguen siendo una  institución clave para pensar la realidad desde la región  y para la región, y un laboratorio de propuestas concretas para enfrentarlo de  manera conjunta. </p>
+<p>La sede además ha sido un puente entre el  conocimiento y la acción pública; entre la evidencia y la decisión de Estado;  entre el análisis técnico y las urgencias de la calle; ahí donde las voces a  veces han encontrado solamente problemas aislados.</p>
+<p>La CEPAL le dio estructura al pensamiento y también  se fundó sobre la base de la desigualdad, sobre la igualdad como el horizonte.  No es la equidad, es la igualdad, la titularidad de derechos.</p>
+<p>¿O no, Pablo?, que tú lo trabajaste con nosotros  también. Ya nos abandonaste de CEPAL, pero no importa; pero también eres  cepalino, porque cepalino nunca se olvida.</p>
+<p>Cuando uno entra a la CEPAL, te entra en la sangre  y no se te va nunca y eso es lo que somos nosotros, cepalinos. </p>
+<p>Y la verdad es que yo desde ahora pienso que no  puede haber justicia social sin justicia ambiental.</p>
+<p>Y la CEPAL ha sido también instrumental en el  Acuerdo de Escazú, en este acuerdo que genera derechos, el acceso a la  información, a la participación ciudadana y a la justicia.</p>
+<p>Y eso también creo que hay que reconocer.</p>
+<p>Pero hagamos memoria, porque aquí hay cosas muy  importantes que decir.</p>
+<p>Uno, que, en junio de 1951, aquí en la Ciudad de  México, nació una propuesta audaz, eso es lo que es la CEPAL, la oficina  subregional de México.</p>
+<p>Una propuesta audaz, un espacio de pensamiento para  una región decidida a comprender sus propios desafíos y a construir su propio  camino de desarrollo buscando, sí, fortalecer la cooperación y la integración  regional que tanta falta nos hace.</p>
+<p> Desde aquí se tejió una comunidad de ideas entre  países de Mesoamérica y del Caribe, de habla hispana; una comunidad que ha  trascendido generaciones y coyunturas políticas.</p>
+<p>Y México se convirtió en la plataforma de este  diálogo, en taller de políticas públicas, en un motor silencioso, pero muy real  de la integración latinoamericana y caribeña.</p>
+<p>Y a la par, el pensamiento crítico cepalino fue  consolidándose con el estructuralismo latinoamericano como cimiento de un  proyecto de desarrollo que se basa en la industrialización, la cooperación, el  regionalismo abierto, frente a la visión pasiva de una región condenada a la  periferia.</p>
+<p>Recordarán ustedes esta tesis de Previz del  centro-periferia, nosotros no podemos seguirnos considerando países de  periferia, tenemos que volver al centro y ser parte del centro.</p>
+<p>Y de verdad tenemos que pensar con cabeza propia,  construir capacidades productivas y negociar nuestra inserción en el mundo con  mayor justicia.</p>
+<p>México ha tenido con la CEPAL una relación  especialmente fecunda, no sólo ha sido sede generosa de esta institución, sino  protagonista de debates que han enriquecido el pensamiento latinoamericano  sobre desarrollo, integración, sostenibilidad e igualdad.</p>
+<p>En estas oficinas cruzaron la reflexión económica  más sofisticada con las grandes preguntas de nuestro tiempo.</p>
+<p>Y aquí quiero reconocer a Leonardo Lomelí, Rector  de la UNAM, porque fue muchas veces sede de muchos de estos debates.</p>
+<p>Muchas gracias, querido Leonardo, por tu gran  contribución.</p>
+<p>Y además pues las huellas, las huellas de los  mexicanos, Gustavo Martínez Cabañas, Víctor Urquidi, Juan Noyola, Ramón  Fernández y Fernández, David Ibarra.</p>
+<p>Y hoy quiero recordar, en particular, a Ifigenia  Martínez, porque hoy cumpliría 101 años, hoy es el día de su cumpleaños.</p>
+<p>Así es de que justo hoy, justo hoy, querido Alfredo  Federico Navarrete, tu madre cumpliría 101 años.</p>
+<p>Y realmente debo decir que a Ifigenia Martínez la  admiramos por muchas razones.</p>
+<p>Porque fue la referente de la democracia mexicana;  porque fue un ejemplo de causas sociales; porque siempre luchó de manera  inquebrantable por la igualdad de las mujeres y porque fue una de las voces más  críticas contra el modelo neoliberal.</p>
+<p>Así es que hoy le rendimos a ella también un muy  cálido homenaje. </p>
+<p>Sobre estos hombros de gigantes se fortaleció  entonces esta escuela de pensamiento que reivindicó la reflexión autónoma sobre  el desarrollo regional.</p>
+<p>Ellos y ella demostraron que las ideas sí importan,  que las estadísticas no son neutras.</p>
+<p>Graciela Márquez, aquí nos  acompaña. </p>
+<p>Y  ha sido central el Inegi en la participación de la CEPAL.</p>
+<p> En  la Comisión de Estadísticas de Las Américas, Graciela Márquez, en particular el  Inegi, han sido centrales, porque es el mejor instituto de estadística de  América Latina y el Caribe. </p>
+<p>Y  quiero decir que además en México, la CEPAL encontró un anfitrión generoso,  comprometido, que ha manifestado su compromiso profundo con el multilateralismo  y la cooperación regional. </p>
+<p>Comprende  desafíos, claro, la desigualdad, la pobreza, que no es lo mismo la pobreza que  la desigualdad. </p>
+<p>Y  la igualdad sustantiva de las mujeres, la crisis climática, la migración, y que  hay respuestas compartidas, pactos de lago aliento. No podemos responder  aisladamente, tenemos que ir juntos. </p>
+<p>Y  por eso, cuando Andrés Manuel López Obrador tomó posesión, ese mismo día, ahí  en la comida, se firmó un pacto entre los presidentes de México, Guatemala,  Honduras y El Salvador, para producir el Plan de Desarrollo Integral de  Centroamérica y México, para abordar las causas estructurales de la migración,  porque la migración no puede ser una obligación, tiene que ser una opción. </p>
+<p>¿Pero  cuáles son esas causas?</p>
+<p>Una  de ellas es la pobreza. </p>
+<p>Otra  es la violencia. </p>
+<p>Otra  la tremenda desigualdad, la discriminación. </p>
+<p>Y,  por cierto, ya más recientemente, el cambio climático.</p>
+<p>Por  eso, sí estamos conscientes creo, y sobre todo los cepalinos, que América  Latina y el Caribe sigue siendo la región más desigual del mundo. </p>
+<p>México  ha logrado superar este enorme desafío gracias a la salida de la pobreza de  millones de mexicanos y también a otro factor en donde yo creo que la CEPAL  contribuyó que fue el balance del salario mínimo, porque México estaba  atrasado, era 40 años atrás. </p>
+<p>El  salario mínimo, en México, era menor que el de cualquier otro país del mundo. </p>
+<p>¿Y  que hicieron los gobiernos de esta cuarta transformación? </p>
+<p>Elevar  el salario mínimo que es la llave maestra para salir de la pobreza. </p>
+<p>El  empleo, el salario. </p>
+<p>Y  creo que los datos que tenemos de cómo ha descendido la pobreza y que aún  persisten brechas estructurales, no son una condena. </p>
+<p>Son  un llamado, nos recuerdan que la desigualdad no es un accidente, es el  resultado de estructuras productivas fiscales, comerciales y de desigualdades  de poder. Eso también es muy importante estas asimetrías que hay de poder  todavía. </p>
+<p>Y  creo por eso que la CEPAL, querido José Manuel, es indispensable para alumbrar  este camino, estos caminos y que nos den cambio, para combatir privilegios que  niegan derechos. Eso es lo que es la CEPAL. </p>
+<p> Y  por eso a veces es tan combatida, claro, porque tiene posiciones claras para  combatir la desigualdad, la pobreza y los privilegios. </p>
+<p>Y  eso, claro, a veces la voz es incómoda, verdad, es vigente, pero necesaria,  necesaria siempre. Su acción tiene que ser, tiene que continuar, tenemos que  apoyar a esta institución para reorientar el modelo económico, para cerrar  brechas estructurales, para poner la igualdad en el centro. </p>
+<p>Y  a lo largo de estas décadas, esta sede, gracias a Jorge Mario y a todo el  personal de la CEPAL, se han ido perfeccionando como un bien público regional. </p>
+<p>Esta  oficina es un bien público regional porque tiene metodologías para medir la  desigualdad, porque se han estudiado la relación entre política macroeconómica,  choques externos y vulnerabilidad, porque se ha promovido diálogos precisamente  para fortalecer el salario como uno de los instrumentos centrales de política  pública. </p>
+<p>En  esta historia obviamente que resuenan voces conocidas, Raúl Prébisch, el  generosísimo Raúl, que nos decía: &ldquo;antes de hacer cualquier cosa, observe,  luego piense, luego actúe&rdquo;. </p>
+<p>Nos  falta observar, ver, captar, entender y de ahí entonces pensar y luego actuar,  por supuesto. </p>
+<p>Y  creo, entonces, que Raúl Prébisch, Celso Furtado, Aníbal Pinto, Osvaldo Sunkel  y Juan Noyola, un gran mexicano, nos ayudaron a analizar nuestros desafíos  desde nuestras propias categorías y a diseñar nuestras propias respuestas. </p>
+<p>Hoy  vivimos una época de transformaciones muy profundas, pero muy parecidas a las  que vivió cuando CEPAL tuvo su origen en 1948 y en 1951.</p>
+<p>Parecidas,  aunque ahora se añade un desafío enorme, que es la crisis climática, que  también define nuestro desarrollo.</p>
+<p>Y  la revolución tecnológica, que cambia sin duda la forma de producir, de cómo  trabajamos, de cómo aprendemos.</p>
+<p>Y  las tensiones geopolíticas, que nos están reconfigurando todos los días y que  tenemos además problemas muy particulares en México, a diferencia del resto de  la región, que sin duda nos interpelan todos los días para poder construir  sociedades más inclusivas. </p>
+<p>Lo  que está en juego ya no es el ritmo del crecimiento económico, es la  posibilidad misma de un futuro viable, justo, sostenible; la posibilidad de una  respuesta y de una promesa democrática que se traduzca en vida digna para las  niñas, los niños, las nuevas generaciones. </p>
+<p>Por  eso la CEPAL tiene una responsabilidad renovada, ayudar a una transición, a una  transición ahora sí desde el lugar donde hablo yo, a una transición ecológica  justa que combine crecimiento económico, protección ambiental, reducciones de  desigualdades y bienestar social, porque no habrá sostenibilidad sin igualdad,  tampoco habrá igualdad duradera sin sostenibilidad. </p>
+<p>Son  dos agendas, Amalia, que tú has trabajado tanto en la Agenda 2030, que sabemos  que es una sola agenda de dignidad humana. </p>
+<p>Y  ningún país puede enfrentarlo solo, la respuesta sólo puede ser un repliegue.  No puede ser el &ldquo;sálvese quien pueda&rdquo;, tiene que ser una respuesta colectiva,  una respuesta conjunta de América Latina y El Caribe. </p>
+<p> Amigas  y amigos, los aniversarios tienen sentido cuando nos ayudan a proyectar el  futuro. </p>
+<p>Setenta  y cinco años después de la creación de esta subsede regional, vale la pena  preguntarnos. </p>
+<p>¿Qué  región queremos? ¿Qué queremos construir en los próximos años, en las próximas  décadas? </p>
+<p>¿Una  región fragmentada, desconfiada entre sí o una región que se reconoce como  comunidad de destino?</p>
+<p>O  quizá también una región que esté marcada por la igualdad y no por la  desigualdad persistente; una región que busque la justicia social. </p>
+<p>Al  celebrarse esta trayectoria de la CEPAL, quiero recordar las palabras de Carlos  Fuentes, y decía Carlos Fuentes: &ldquo;No hay presente vivo con pasado muerto ni  futuro posible que no contenga la experiencia del pasado y la esperanza del  presente&rdquo;. </p>
+<p>Hoy  por eso aquí honramos, honramos la experiencia acumulada de la CEPAL, de su  sede en México, pero, sobre todo, porque tenemos esperanza de un futuro  distinto para América Latina y el Caribe, porque la historia de la CEPAL, y en  particular de esta subsede de México, es la historia de posibilidades de una  mayor integración, de sociedades más igualitarias, de un desarrollo que ponga a  las personas y a las mujeres en el centro. </p>
+<p>Yo  ya dije, las mujeres solamente queremos una cosa: el poder. </p>
+<p>No,  no es cierto, queremos igualdad, pero también el poder, cómo que no, claro que  sí. </p>
+<p>¿O  no, chicas? Sí, por supuesto. </p>
+<p>Y  que la experiencia de estos años ilumine nuestro camino, que la esperanza del  presente fortalezca nuestra voluntad para tomar decisiones difíciles; que la  política pública, que la academia, que los parlamentos, que la sociedad civil  trabajemos juntos para pensar juntos el futuro y, sobre todo, para construirlo. </p>
+<p>Creo  que el entrañable período que me tocó dirigir desde la CEPAL construimos algo,  y es que dijimos que el horizonte es la igualdad; el camino, el cambio  estructural.</p>
+<p>Así  es que no es una aspiración abstracta, es una condición indispensable para  sociedades prósperas, democráticas y sostenibles. </p>
+<p>Esa  es la tarea que heredamos hoy, la responsabilidad que asumimos y el futuro que  estamos llamadas y llamados a construir. </p>
+<p>Muchas  gracias. </p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez:</strong> Muchas gracias, Maestra Bárcena Ibarra. </p>
+<p>A  continuación, tiene el uso de la tribuna el Doctor Alfredo Federico Navarrete  Martínez, Vocal de la Junta de Gobierno del Instituto para la Protección al  Ahorro Bancario. </p>
+<p><strong>El  Vocal de la Junta de Gobierno del Instituto para el Ahorro Bancario, Alfredo  Federico Navarrete Martínez:</strong> Muchas gracias. Muy buenos  días a todas y a todos. </p>
+<p> Senadora  Laura Itzel Castillo, Presidenta de la Mesa Directiva de la Comisión Permanente  del Congreso. </p>
+<p>Diputada  Kenia López, Vicepresidenta de la Comisión Permanente del Congreso. </p>
+<p>Maestra  Raquel Serur, Subsecretaria para América Latina y el Caribe. </p>
+<p>Doctora  Alicia Bárcena, Secretaria de Medio Ambiente y Recursos Naturales. </p>
+<p>Muchísimas  gracias, mi querida Secretaria por esas bellas y generosas palabras hacia mi  madre. Se le aprecia muchísimo. </p>
+<p>Doctor  José Manuel Salazar-Xirinich, Secretario Ejecutivo de la comisión. </p>
+<p>Senadora  Noemí Camino, también miembro de la Comisión Permanente. </p>
+<p>Veo  también aquí a la Senadora Amalia Gracía. Muchísimas gracias por la invitación,  Senadora. </p>
+<p>Veo  también aquí a la Doctora Graciela, a nuestro Rector Lomelí. </p>
+<p>Muchísimas  gracias a todos los miembros de la Comisión Permanente de este Honorable  Congreso de la Unión. </p>
+<p>Amigas  y amigos todos, considero un honor, y también agradezco esta invitación…</p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez:</strong> No se escucha muy bien, si puede subir el volumen. </p>
+<p><strong>El  Vocal de la Junta de Gobierno del Instituto para el Ahorro Bancario, Alfredo  Federico Navarrete Martínez: </strong>¿Ahí?</p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez:</strong> Sí. </p>
+<p>Adelante. </p>
+<p><strong>El  Vocal de la Junta de Gobierno del Instituto para el Ahorro Bancario, Alfredo  Federico Navarrete Martínez:</strong> Considero un honor, está  muy alto, considero un honor y también agradezco esta invitación que me ha  hecho esta Comisión Permanente y la propia CEPAL, para conmemorar el 75  Aniversario de la Subsede regional de este organismo. </p>
+<p>Para  cualquier profesional de la economía y para todo aquel que, desde el ámbito  académico productivo, en los sectores público o privado haya mostrado su  interés en la historia y la política del desarrollo económico de la región  latinoamericana. </p>
+<p>Las  siglas de la CEPAL evocan la presencia señera de un centro del pensamiento que  ha ejercido una influencia notable en el diseño y prácticas de políticas  públicas de alcance multisectorial, en el área Latinoamericana y del Caribe. </p>
+<p>En  mi caso, tal interés se acrecenta, dado que mis padres, el Doctor Alfredo  Navarrete Romero y la maestra Ifigenia Martínez Hernández, ambos economistas,  estuvieron ligados al quehacer inicial de la CEPAL. </p>
+<p>La  influencia de la CEPAL fue decisiva en la formación intelectual de mi maestra  Martínez Ifigenia, en particular en su carácter de cofundadora de la subsede y  más tarde como Directora de la Escuela Nacional de Economía hoy Facultad de  Economía de la UNAM. </p>
+<p> Dio  a conocer a conocer a varias generaciones de economistas, los postulados y  políticas elaboradas y difundidas por este organismo, que fueron fundamentales  para que los países del área emprendieran la ruta de crecimiento, que entonces  y ahora resultan indispensables en el quehacer económico. </p>
+<p>El  llamado pensamiento cepalino defendía la industrialización, la reducción de la  dependencia externa y un papel activo del Estado en el desarrollo. </p>
+<p>Sumando  rigor académico y sensibilidad social, los economistas adscritos a esta  corriente pugnaron desde una visión estructuralista por un desarrollo más  equitativo que fortaleciera el consumo de las grandes mayorías y evitar un  deterioro de la demanda agregada. </p>
+<p>La  redistribución del ingreso se convertía así en condición sine qua non para  alcanzar un mercado interno más dinámico. </p>
+<p>Encabezado  en su primer año de existencia por Gustavo Martínez Cabañas. Por cierto. muy  amigo de mi mamá. se encomendó a este abogado y economista mexicano sentar las  bases sobre las que luego operó la CEPAL. </p>
+<p>Durante  los siguientes años, este secretario ejecutivo desarrollo una fructífera  carrera dentro del Sistema de Naciones Unidas y en el sector público y  académica de su país. </p>
+<p>Tomó  luego la batuta el argentino Raúl Prébisch, quien desde el organismo desarrollo  y esclareció la teoría de la dependencia, explicada a partir de una economía internacional que operaba  sobre un sistema centro-periferia que en su propio diseño encubaba una relación  desigual entre los países industrializados y en los de desarrollo. </p>
+<p>Tal contradicción por necesidad se traducía luego  en un deterioro de los términos de intercambio desfavorable para los socios más  débiles de la ecuación. </p>
+<p>A Prébisch le sucedieron otros economistas notables  que ajustándose a paradigmas de nuevo cuño mantenían la misión del organismo al  tiempo que su visión se enriquecía con la inclusión de exigencias más  recientes. </p>
+<p>Sin pretender ser exhaustivo pienso en el uruguayo  Enrique Iglesias, el guatemalteco Gert Rosenthal, el colombiano José Antonio  Ocampo, la mexicana Alicia Bárcena, y actualmente el costarricense, el Doctor  Salazar-Xirinachs. </p>
+<p>En ocasiones con organismos de integración  subregional, agencias especializadas, como el Programa de Naciones Unidas para  el Desarrollo y con agencias promotoras del desarrollo en países avanzados,  como la Sociedad Alemana para la Cooperación Internacional. </p>
+<p>Desde Santiago irradiaban ideas y propuestas hacia  sectores específicos dando cabida política, que desde la última década del  siglo pasado se empezaron a llevar sustentables; enfatizando la necesidad de  que éstas se extendieran por igual a los ámbitos social, económico y ambiental,  de forma que el paso hacia el bienestar tuviera carácter permanente, y no  meramente coyuntural. </p>
+<p>Siempre ha llamado mi atención que en esos años  ubicados a mediados del siglo XX el carácter inclusivo que se sigue del  desarrollo se abordara también fuera del campo estricto de la economía. </p>
+<p>Así, desde otras artes y oficios, como la  cinematografía, se abrió paso a la denuncia como la que Luis Buñuel hiciera al  describir el drama de &ldquo;Los Olvidados&rdquo;. </p>
+<p> Un poco más tarde en espacios caracterizados  entonces por inercias conservadoras, como las de un sector de la iglesia  católica, empezaron a soplar vientos nuevos que hablaban de la necesidad de una  teología con carácter deliberador. </p>
+<p>Esta observación sugiere que el reclamo de equidad  proviene de muy distintos ámbitos y culturas, puede tal demanda ser objeto de  disquisición, pero al final se le reconoce como un derecho innato y  consustancial a la dignidad humana que resulte indispensable en cualquier  intento de construcción social. </p>
+<p>Este principio de igual se reconoce desde el  Capítulo I de la Constitución Política de los Estados Unidos Mexicanos donde se  definen los derechos humanos y las garantías que norman la vida de los  mexicanos. </p>
+<p>Lo anómala se reconoce más bien de la exclusión del  otro y en el rechazo de culturas ajenas, como ocurría en los tiempos en que el  historiador británico, Eric John Hobsbawm, describía como la edad de los  extremos, dominada en la Europa de la primera mitad del siglo pasado por  dictaduras nacionalistas. </p>
+<p>Con el tiempo al calor de políticas económicas  impulsadas en los años ochenta por Ronald Reagan desde la Casa Blanca o la  señora Margaret Thatcher desde Downing Street, renacieron corrientes de  pensamiento liberal que se creían superadas, incluso, antes del nacimiento de  la CEPAL, cuando las aportaciones teóricas de John Maynard Keyne o la señora  Joan Robinson pusieron en duda la eficacia y absoluto libre mercado, que lo  enfoco en el clásico de Alfred Marshall daba por sentado. </p>
+<p>El postulado de la CEPAL acertó al reclamar con una  fuerte presencia del Estado y una inversión privada que aprovechó las  oportunidades abiertas por aquel, se sentarían las bases para un crecimiento  sostenido. </p>
+<p>Los economistas de la CEPAL insistían en que la  tarea pendiente para la región latinoamericana era no solo incorporar el  proceso técnico en sus procesos productivos, sino conjugar crecimiento con  equidad, como bien lo explica en su célebre tesis, expuesta en  industrialización América Latina el chileno Fernando Fajnzylber.</p>
+<p>Esta perspectiva histórica necesariamente  simplificada llevaría a la pregunta siguiente. </p>
+<p>¿Cuál es hoy la perspectiva de desarrollo para  América Latina? </p>
+<p>En medio de presiones de todo tipo por parte de los  Estados Unidos y con la recomposición de las corrientes de comercio  internacional merced al nuevo mercantilismo, impulsado desde Washington. </p>
+<p>¿Qué destino tiene la relación comercial de los  países de área con aquel otro? </p>
+<p>Que es el principal consumidor de los bienes  producidos en la región. </p>
+<p>Los términos de intercambio de los que hablara  Prébisch permiten entrever una relación comercial sostenible entre los  participantes en tal intercambio. </p>
+<p>¿Cuáles son, en suma, las transformaciones para el  desarrollo de la que esta urge, de la región latinoamericana y del Caribe? </p>
+<p>La cooperación comercial, reforzada por tratados  que imponen obligaciones jurídicas a los países firmantes, ha sido al mismo  tiempo un elemento potenciador de la riqueza y el bienestar. </p>
+<p>Durante la reflexión y el análisis, la CEPAL ha  ayudado a los países del área latinoamericana enfrentar el embate arancelario  que viene del Norte. </p>
+<p> Es verdad, como dice el organismo en sus  perspectivas del comercio internacional de América Latina y el Caribe 2025,  que, durante el primer año de su aplicación, las tarifas impuestas por los  Estados Unidos tuvieron una región y un impacto menor al esperado, ya que los  aranceles anunciados desde abril del 25 se estabilizaron en niveles inferiores  a los anunciados inicialmente y los países afectados mayoritariamente se  abstuvieron de represalias comerciales. </p>
+<p>Pero, en cambio, para el año en curso, de acuerdo  con la Organización Mundial de Comercio, los flujos de comercio global se verán  afectados sustancialmente y alcanzarán tasas mucho menores a los de años  previos, toda vez que se han diluido los factores transitarios que antes  amortiguaron la caída. </p>
+<p>En la misma publicación, la CEPAL advierte que la  incertidumbre que ha producido la recomposición de la política comercial de los  Estados Unidos impactará negativamente a los flujos de inversión extranjera  directa, especialmente en aquellos sectores que destinan su producción hasta  que el mercado. </p>
+<p>Por ende, luego de una etapa inicial de contención  y control de daños, en el largo plazo, deberían buscarse opciones para una  diversificación de la relación comercial, buscando atenuar riesgos futuros. </p>
+<p>Esta opción entraña dificultades en el plano  político, si se tiene en cuenta que junto a una integración reconocida o no,  enfrentamos el reto de mitigar los riesgos. </p>
+<p>Creo, en suma, que debemos felicitarnos por la  influencia virtuosa que la CEPAL ha desplegado en los países del área. </p>
+<p>Cabe esperar que esta relación benéfica para todos  se prolongue por muchos años más. </p>
+<p>Terminaré citando a ese gran latinoamericano que  fue Mario Benedetti, recordando que:</p>
+<p align="right"><em>&ldquo;En amores, tanto como en la economía global, en la  calle, codo a codo, </em><br>
+  <em>somos mucho más que dos&rdquo;. </em></p>
+<p>Muchísimas gracias. </p>
+<p><strong>La Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Muchas gracias Doctor Navarrete Martínez. </p>
+<p>Agradezco profundamente las intervenciones de  nuestros distinguidos invitados en esta sesión solemne. </p>
+<p>Sus reflexiones nos han permitido reconocer la  profundidad histórica de la CEPAL y la importancia que esta institución  mantiene para los debates actuales sobre el desarrollo en nuestra región. </p>
+<p>Sin duda alguna, a 75 Años de la Fundación de su  sede subregional en México, la CEPAL sigue aportando herramientas para pensar  los grandes desafíos de América Latina y el Caribe desde una perspectiva  propia. </p>
+<p>De entre todos estos aportes, quisiera destacar dos  aspectos muy importantes, el debate sobre el salario y la importancia de la  economía circular. </p>
+<p>Durante mucho tiempo se afirmó que aumentar el  salario mínimo provocaría de manera inevitable inflación, desempleo y  desequilibrio económico. </p>
+<p>La experiencia de México ha desmentido estos dogmas  neoliberales. </p>
+<p> Hoy, sabemos que una política salarial responsable  puede fortalecer el mercado interno, reducir la pobreza laboral y mejorar la  distribución del ingreso. </p>
+<p>La experiencia mexicana en los últimos ocho años ha  demostrado que recuperar el poder adquisitivo del salario, puede ir de la mano  de una política económica responsable y de una política social orientada al  bienestar. </p>
+<p>Entre 2018 y 2024, más de 13.5 millones de personas  salieron de la pobreza en nuestro país. </p>
+<p>Este resultado se vincula con el aumento histórico  del salario mínimo y con el reconocimiento constitucional de los programas sociales  que han contribuido a sentar las bases de un Estado constitucional de  bienestar, esto es, la cuarta transformación. </p>
+<p>Otro  campo fundamental de los aportes de la CEPAL es la economía circular.</p>
+<p>En  fechas recientes este organismo ha insistido en que la sostenibilidad requiere  transformar la forma en que producimos, consumimos y gestionamos nuestros  residuos.</p>
+<p>En  México, el Senado de la República aprobó a finales de 2025 la Ley General de  Economía Circular, la cual busca incrementar la vida útil de los productos,  minimizar los residuos, promover su aprovechamiento y reconocer la labor de las  personas recicladoras.</p>
+<p>La  agenda en torno al desarrollo de la CEPAL abre oportunidades para la  innovación, los empleos verdes, la reconversión productiva y el cuidado del  medio ambiente, bajo el liderazgo de nuestra Presidenta Claudia Sheinbaum Pardo  nuestro país reafirma una visión de desarrollo que antepone la justicia social,  la sustentabilidad y la igualdad sustantiva.</p>
+<p>Por  todo ello, deseo que este acto haya expresado el reconocimiento que México  otorga a la CEPAL y a la Cooperación Regional, como vías para fortalecer el  diálogo, el multilateralismo y el desarrollo con justicia social.</p>
+<p>A  nombre de la Comisión Permanente del Honorable Congreso de la Unión, agradezco  la visita del Doctor José Manuel Salazar-Xirinachs, secretario ejecutivo de la  CEPAL; así como la presencia de su distinguida delegación.</p>
+<p>Solicito,  por tanto, a las personas Legisladores, integrantes de las comisiones de  cortesía, que se sirvan a acompañar a nuestros distinguidos invitados y a la  delegación cuando concluya su permanencia en este recinto.</p>
+<p>Por  tanto, reiteramos nuestro agradecimiento a todos y a todas las invitadas el día  de hoy, a todos los funcionarios públicos, al cuerpo diplomático, los  embajadores y todos y todas las asistentes a este importante evento, que es la  sesión solemne para conmemorar el 75 Aniversario de la CEPAL.</p>
+<p>¡Y  que tenga larga vida!</p>
+<p>Muchas  gracias.</p>
+<p>Se  levanta la sesión solemne.</p>
+<p align="center">(Se  toma foto en el presídium)</p>
+<p align="center"> (Se levantó la sesión  a las 12:45 horas)</p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a127879'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

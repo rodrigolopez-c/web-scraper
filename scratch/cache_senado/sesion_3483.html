@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>TERCER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO III</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 33</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Ana Lilia Rivera Rivera</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Ordinaria Celebrada<br>en la Ciudad de M&eacute;xico, el 05 de Diciembre de 2023</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/3/PPO/PDF-WEB/PPO_No33_5-DICIEMBRE-2023-MATUTINA.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113808'></a><p align="center"><strong>PRESIDE  LA SENADORA</strong> <br>
+  <strong>ANA  LILIA RIVERA RIVERA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Ana  Lilia Rivera Rivera:</strong> (12:30 horas) Solicito a la Secretaría  informe a la Asamblea el resultado del cómputo de asistencia de las Senadoras y  Senadores.</p>
+<p align="justify"><strong>La Secretaria Senadora  Martha Cecilia Márquez Alvarado:</strong> Con gusto, señora  Presidenta. Honorable Asamblea, conforme al registro de asistencia, se han  acreditado 83 ciudadanas Senadoras y Senadores presentes. En consecuencia, hay  quórum, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Ana  Lilia Rivera Rivera: </strong>Se abre la sesión matutina del martes 5 de  diciembre del año 2023, correspondiente al primer periodo ordinario de sesiones  del tercer año de ejercicio de la LXV Legislatura. El Orden del Día está  publicado en la Gaceta Parlamentaria de hoy y disponible en el monitor de sus  escaños, con lo cual se informa de los asuntos que corresponden a la agenda.</p>
+<p align="right"><strong>ORDEN DEL DÍA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/65/gaceta_del_senado/documento/139810"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">El acta de la sesión  ordinaria del miércoles 29 de noviembre se encuentra publicada en la Gaceta  Parlamentaria de este día.</p>
+<p align="right"><strong>ACTA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/65/gaceta_del_senado/documento/139802"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/65/asistencias/2023_11_29/27"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">En  consecuencia, consulte la Secretaría a la Asamblea, en votación económica, si  se aprueba el acta referida.</p>
+<p align="justify"><strong>La  Secretaria Senadora Martha Cecilia Márquez Alvarado:</strong> Consulto a la Asamblea, en votación económica, si se aprueba el acta referida.  Quienes estén porque se apruebe, favor de levantar la mano.</p>
+<p align="center">(La  Asamblea asiente)</p>
+<p align="justify">Quienes  estén porque se rechace, favor de levantar la mano.</p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p align="justify">Quienes  se abstengan, favor de levantar la mano.</p>
+<p align="justify">Sí  se aprueba el acta de sesión ordinaria del 29 de noviembre, señora Presidenta.</p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Aprobada  el acta de la sesión ordinaria del 29 de noviembre de 2023.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113808'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113809'></a><p align="justify">Honorable  Asamblea, como es de su conocimiento, en la madrugada de este día ocurrió el  lamentable fallecimiento de nuestro compañero el Senador Juan Pablo Adame  Alemán. </p>
+<p align="justify">El  Senador Juan Pablo Adame Alemán fue también Diputado Federal de la LXII  Legislatura en los años 2012 a 2015; durante este periodo integró la Comisión Permanente  en el Receso de mayo-agosto 2014, en la que se desempeñó como Secretario de la  Mesa Directiva.</p>
+<p align="justify"> En  la sesión del 6 de septiembre de presente año rindió su protesta para iniciar  funciones legislativas como integrante del Senado; en esa misma fecha presentó  dos asuntos: Un proyecto de Decreto para reformar diversas disposiciones de la  Ley General de Salud, en materia de apoyos a personas cuidadoras de enfermos  con cáncer. Y un punto de Acuerdo para exhortar a implementar campañas de  prevención y concientización, con el propósito de informar a la población sobre  los riesgos y medidas de prevención relacionadas con el cáncer. </p>
+<p align="justify">El  punto de Acuerdo logró el apoyo de la Asamblea para la dispensa de trámites y  obtuvo la aprobación de este Pleno. </p>
+<p align="justify">Les  solicito que nos pongamos de pie y guardemos un minuto de silencio en su  memoria. </p>
+<p align="justify"><strong>MINUTO  DE SILENCIO</strong></p>
+<p align="center">(Todos  de pie guardan un minuto de silencio) </p>
+<p align="justify">Favor  de tomar asiento. </p>
+<p align="justify">¡Descanse  en paz, Juan Pablo Adame Alemán! </p>
+<p align="justify">A  nombre del Senado de la República, manifiesto las condolencias a su familia,  amigos y familiares. </p>
+<p align="justify">Muchas gracias. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113809'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113810'></a><p align="justify">Honorable Asamblea, a partir  de la licencia que se autorizó el pasado 29 de noviembre a la Senadora Kenia  López Rabadán, se ha convocado a la ciudadana Yadhira Yvette Tamayo Herrera,  para que rinda la protesta correspondiente. </p>
+<p align="justify">La ciudadana Tamayo Herrera  se encuentra en el salón contiguo, por lo que solicito a los Senadores Julen  Rementería del Puerto, Estrella Rojas Loreto, Mayuli Latifa Martínez Simón,  Gina Andrea Cruz y Juan Antonio Martín del Campo, así como Rocío Abreu,  Gabriela Benavides y Mario Zamora, acompañen a la ciudadana Herrera Tamayo al  Pleno, para que pueda tomar y rendir su protesta de ley. </p>
+<p align="center">(La  comisión cumple)</p>
+<p align="justify"><strong>La Secretaria Senadora Martha  Cecilia Márquez Alvarado:</strong><strong> </strong>Favor  de ponerse de pie. </p>
+<p align="justify"><strong>PROTESTA  DE LEY</strong></p>
+<p align="center">(Todos  de pie)<strong> </strong></p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera:</strong><strong> </strong>Ciudadana Yadhira Yvette  Tamayo Herrera, esta Soberanía le ha convocado para que rinda su protesta  constitucional y legal como Senadora de la República. </p>
+<p align="justify">En consecuencia, le  pregunto: ¿Protesta guardar y hacer guardar la Constitución Política de los  Estados Unidos Mexicanos, las leyes que de ella emanen y desempeñar leal y  patrióticamente el cargo que el pueblo le ha conferido, mirando en todo por el  bien y prosperidad de la Unión?</p>
+<p align="justify"><strong>La Ciudadana Yadhira Yvette  Tamayo Herrera:</strong> ¡Sí protesto!</p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Si así no lo hiciera, que  la Nación se lo demande.</p>
+<p align="justify">¡Felicidades, compañera  Senadora!</p>
+<p align="justify">Le solicito pase a ocupar el  escaño que le ha sido asignado, a fin de que se incorpore de manera inmediata a  nuestros trabajos. </p>
+<p align="justify">Continúe la Secretaría con los asuntos de la  agenda.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113810'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113811'></a><p align="justify"><strong>COMUNICACIONES</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  Claudia Esther Balderas Espinoza:</strong> Se recibieron las siguientes comunicaciones.</p>
+<p align="justify">Del Senador Napoleón Gómez Urrutia, del grupo  parlamentario del Partido Morena, con la que remite su informe de actividades  legislativas, correspondiente al primer año de ejercicio. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ofic_Informe_Actividades_Sen_Napoleon_Gomez.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113811'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113812'></a><p align="justify">Del Senador Carlos Aceves del Olmo, del grupo  parlamentario del PRI.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ofic_Informe_Actividades_Sen_Calos_Aceves.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113812'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113813'></a><p align="justify">De la Senadora Alejandra Lagunes Soto Ruíz, del  grupo parlamentario del PVEM. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ofic_Informe_Actividades_Sen_Alejandra_Lagunes.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113813'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113814'></a><p align="justify">Del Senador Emilio Álvarez Icaza Longoria, del  Grupo Plural. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ofic_Informe_Actividades_Sen_Emilio_Icaza.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113814'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113815'></a><p align="justify">De la Comisión de Federalismo y Desarrollo  Municipal, con la que se remiten sus respectivos informes de actividades del  segundo año de ejercicio, todo de la Legislatura en curso.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ofic_Informe_Actividades_Com_Federalismo_y_Desarrollo_Municipal.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113815'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113816'></a><p align="justify">De la Comisión de Derechos de la Niñez y la  Adolescencia. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113816'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113817'></a><p align="justify">De la Comisión de Federalismo y Desarrollo  Municipal, con las que se remiten los correspondientes programas anuales de  trabajo para el tercer año de ejercicio de la actual Legislatura. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ofic_Programa_de_Trabajo_Com_Federalismo_y_Desarrollo_Municipal.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113817'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113818'></a><p align="justify">De la Senadora Blanca Estela Piña Gudiño, del grupo  parlamentario del Partido Morena, con la que remite el informe de su  participación en el III Congreso Internacional de Secundaria Básica &ldquo;Por una  Escuela Inclusiva&rdquo;, celebrado en la Habana, Cuba, de 20 al 23 de noviembre del  año en curso. <strong> </strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ofic_Informe_Actividades_Sen_Blanca_Pina.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Ana  Lilia Rivera Rivera:</strong> La Asamblea ha quedado enterada de todas las  comunicaciones.</p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113818'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113819'></a><p align="justify"><strong>La Secretaria Senadora  Claudia Esther Balderas Espinoza:</strong> También recibimos una comunicación del Senador  Víctor Oswaldo Fuentes Solís, del grupo parlamentario del PAN, relativo al  proyecto de Decreto por el que se reforma la Ley del Impuesto Sobre la Renta,  en materia de deducciones a personas físicas de honorarios por prestación de  servicios profesionales de veterinarios. El documento refiere una solicitud de  excitativa a comisiones, respecto a una iniciativa que se emitió en la Cámara  de Diputados. <strong> </strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/SolExt_excitativa_151_isr_gastos_veterinarios_5_dic.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Ana  Lilia Rivera Rivera:</strong> Remítase a la Colegisladora para los efectos que  corresponda.</p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113819'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113820'></a><p align="justify"><strong>SECRETARÍA DE GOBERNACIÓN</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  Claudia Esther Balderas Espinoza:</strong> Se recibieron seis oficios de la Secretaría de  Gobernación, con similares de la Secretaría de Marina, con los que nos remiten  los siguientes informes de resultados. </p>
+<p align="justify">Uno, sobre la participación de 492 elementos de la  Armada de México, en el Ejercicio Multinacional &ldquo;RIMPAC 2022&ldquo;, en la Fase  Hawái, que se llevó a cabo del 29 de junio al 4 de agosto de 2022, en Estados  Unidos de América &ldquo;.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ofic_SeGob_Salida_Tropas_RIMPAC_2022.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113820'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113821'></a><p align="justify">Otro, sobre la participación de elementos de la  Armada de México en el Ejercicio Multinacional &ldquo;TRADEWINDS 2022&ldquo;, llevado a  cabo del 7 al 21 de mayo de 2022.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ofic_SeGob_Salida_Tropas_TRADEWINDS_2022.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113821'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113822'></a><p align="justify">Uno más, sobre la participación de 140 elementos de  la Armada de México en el Ejercicio Operativo UNITAS LXIII, realizado en la  Ciudad de Río de Janeiro, Brasil del 10 al 24 de septiembre de 2022&ldquo;. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ofic_SeGob_Salida_Tropas_UNITAS_LXIII.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113822'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113823'></a><p align="justify">Otro, sobre la participación de 130 elementos de la  Armada de México en el Ejercicio Multinacional UNITAS LXIV 2023. Y en los  festejos conmemorativos del Bicentenario de la Armada de Colombia, llevados a  cabo del 8 al 25 de julio de 2023, en Cartagena de Indias, República de Colombia. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ofic_SeGob_Salida_Tropas_UNITAS_LXIV.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113823'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113824'></a><p align="justify">Uno más, sobre la  participación de 50 elementos de las Fuerzas del Cuerpo de Infantería de Marina  de los Estados Unidos de América en el Ejercicio Bilateral Anfibio 2023,  llevado a cabo en Isla Santa Margarita, Baja California Sur, del 9 al 21 de  julio del año en curso.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ofic_SeGob_Paso_Tropas_EUA_Ejercicio_Bilateral_Anfibio.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113824'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113825'></a><p align="justify">Y otro sobre la  participación de 130 elementos de la Armada de México en el Ejercicio  Multinacional &ldquo;TRADEWINDS 2023&rdquo;, llevado a cabo en Guyana, del 1 al 30 de julio  del año actual.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ofic_SeGob_Salida_Tropas_TRADEWINDS_2023.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Remítanse todos los expedientes a la Comisión de Marina. </p>
+<p align="justify">Continúe  la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113825'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113826'></a><p align="justify"><strong>La Secretaria Senadora  Claudia Esther Balderas Espinoza:</strong> Recibimos otro oficio de  la Secretaría de Gobernación, con el informe de resultados del viaje que el  Presidente de los Estados Unidos Mexicanos, Andrés Manuel López Obrador,  realizó a San Francisco, California, Estados Unidos de América, del 15 al 17 de  noviembre del año en curso.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ofic_SeGob_Informe_Viaje_a_San_Francisco_CA.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Remítase a las Comisiones  de Relaciones Exteriores y de Relaciones Exteriores América del Norte. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113826'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113827'></a><p align="justify"><strong>BANCO DE MÉXICO</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  Claudia Esther Balderas Espinoza:</strong> Se recibió un oficio del  Banco de México, con el  que se nos hace  llegar el informe en el que se analiza la inflación, la evolución económica y  el comportamiento de los indicadores económicos del país en el trimestre  julio-septiembre de 2023, así como la ejecución de la ejecución de política  monetaria y, en general, las actividades del Instituto Central, durante dicho  período, en el contexto de la situación económica nacional e internacional,  aprobado por la Junta de Gobierno.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ofic_Informe_Trimestral_Banco_de_Mexico.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Remítase a la Comisión de  Hacienda y Crédito Público. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113827'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113828'></a><p align="justify"><strong>SECRETARÍA DE HACIENDA Y  CRÉDITO PÚBLICO</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  Claudia Esther Balderas Espinoza:</strong> Se recibió un oficio de la  Secretaría de Hacienda y Crédito Público, con el que nos envía informe sobre la  evolución de las finanzas públicas, incluyendo los requerimientos financieros  del sector público y su saldo histórico, los montos de endeudamiento interno  neto, el canje o refinanciamiento de obligaciones del Erario Federal, en los  términos de la Ley Federal de Deuda Pública, y el costo total de las emisiones  de deuda interna y externa, correspondientes al mes octubre de 2023. Asimismo,  la recaudación federal participable que sirvió de base para el cálculo del pago  de las participaciones a las entidades federativas, así como el pago de las  mismas, desagregada por tipo de fondo y por entidad federativa, efectuando en  ambos casos la comparación correspondiente con el mes de octubre de 2022 y se  proporciona la información sobre la evolución de la recaudación para el mes octubre  de 2023.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ofic_Informe_Hacienda.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Remítase a la Comisión de  Hacienda y Crédito Público. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113828'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113829'></a><p align="justify"><strong>INSTITUTO FEDERAL DE  TELECOMUNICACIONES</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  Claudia Esther Balderas Espinoza: </strong>Se recibió un oficio del  Instituto Federal de Telecomunicaciones, con el que nos hace llegar su tercer  informe trimestral de actividades de 2023. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ofic_IFT_Informe_Trimestral.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Remítase a las Comisiones  de Radio, Televisión y Cinematografía y de Comunicaciones y Transportes.</p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113829'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113830'></a><p align="justify"><strong>RESPUESTAS A ACUERDOS  PROMOVIDOS POR LEGISLADORES</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  Claudia Esther Balderas Espinoza:</strong><strong> </strong>Se  recibieron catorce oficios de diversas dependencias con respuestas a Acuerdos  aprobados por la Cámara de Senadores y por la Comisión Permanente.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/65/gaceta_del_senado/documento/139805"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Hago de su conocimiento  que estas comunicaciones se recibieron en la Secretaría de la Mesa Directiva.  Remítase la documentación a las y los Legisladores promoventes, según  corresponda. La misma se encuentra publicada en la Gaceta Parlamentaria.</p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113830'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113831'></a><p align="justify"><strong>CÁMARA DE DIPUTADOS</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  Claudia Esther Balderas Espinoza:</strong> Se recibió de la Cámara de  Diputados, MINUTA PROYECTO DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 6 DE LA  LEY GENERAL DE ACCESO DE LAS MUJERES A UNA VIDA LIBRE DE VIOLENCIA, en materia  de violencia económica. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Minuta_Ref_Art_6_LGAMVLV.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Túrnese a las Comisiones  Unidas Para la Igualdad de Género; y de Estudios Legislativos, Segunda. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113831'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113832'></a><p align="justify"><strong>La Secretaria Senadora  Claudia Esther Balderas Espinoza:</strong> De la Cámara de Diputados  recibimos MINUTA PROYECTO DE DECRETO POR EL QUE SE EXTINGUE EL ORGANISMO  DESCENTRALIZADO DE LA ADMINISTRACIÓN PÚBLICA FEDERAL, NO SECTORIZADO,  DENOMINADO NOTIMEX, AGENCIA DE NOTICIAS DEL ESTADO MEXICANO, Y SE ABROGA LA LEY  QUE CREA LA AGENCIA DE NOTICIAS DEL ESTADO MEXICANO.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Minuta_NOTIMEX.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Hago de su conocimiento  que de conformidad con el numeral 2 del artículo 176 del Reglamento del Senado  de la República, se turnó directamente a las Comisiones Unidas de Radio,  Televisión y Cinematografía; y de Estudios Legislativos, Segunda, el 1 de  diciembre pasado. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113832'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113833'></a><p align="justify"><strong>La Secretaria Senadora  Claudia Esther Balderas Espinoza:</strong> Asimismo, recibimos de la Colegisladora  MINUTA PROYECTO DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 376 Y SE ADICIONA  UN ARTÍCULO 376 TER A LA LEY GENERAL DE SALUD, en materia de registro sanitario  de medicamentos, devuelto para los efectos del inciso e) del artículo 72  constitucional.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Minuta_Ref_Art_376_y_376_Ter_Ley_General_de_Salud.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Túrnese a las Comisiones  Unidas de Salud; y de Estudios Legislativos, Segunda. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113833'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113834'></a><p align="justify"><strong>La Secretaria Senadora  Claudia Esther Balderas Espinoza:</strong> Por último, la Cámara de  Diputados nos hizo llegar una MINUTA PROYECTO DE DECRETO POR EL QUE SE REFORMA  EL ARTÍCULO 17, FRACCIÓN I, PRIMER PÁRRAFO Y FRACCIÓN II DE LA LEY DE PLANEACIÓN, en  materia de elaboración de programas institucionales con perspectiva de género. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Minuta_Ref_Art_17_Ley_de_Planeacion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Ana  Lilia Rivera Rivera: </strong>Túrnese a las Comisiones Unidas de Gobernación; y  de Estudios Legislativos, Primera. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113834'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113835'></a><p align="justify"><strong>SECRETARÍA  DE GOBERNACIÓN</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  Claudia Esther Balderas Espinoza:</strong> Recibimos un oficio de la Secretaría de  Gobernación, con el que remite una nueva terna para la designación de una Ministra  de la Suprema Corte de Justicia de la Nación que cubrirá la vacante del  ciudadano Arturo Zaldívar Lelo de Larrea, las tres candidatas propuestas son  las ciudadanas: </p>
+<p align="justify">1. Bertha María Alcalde Luján.<br>
+  <br>
+  2. Lenia Batres Guadarrama.<br>
+  <br>
+  3. María Eréndira Cruz Villegas Fuentes. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Nueva_Terna_SCJN.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Ana  Lilia Rivera Rivera: </strong>Hago de su conocimiento que de conformidad con el  numeral 1 del artículo 67 de la Ley Orgánica del Congreso General de los  Estados Unidos Mexicanos, el expediente correspondiente se turnó directamente a  la Comisión de Justicia desde el 1 de diciembre pasado. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113835'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113836'></a><p align="justify">Honorable Asamblea, a propósito de la recepción de  la terna para la designación de quien cubra la vacante existente en la Suprema  Corte de Justicia de la Nación, esta Mesa Directiva ha suscrito un Acuerdo por el  que se establece el procedimiento para la elección correspondiente.</p>
+<p align="justify">Dicho Acuerdo, está publicado en la Gaceta  Parlamentaria para su conocimiento. </p>
+<p align="justify">Por lo que solicito a la Secretaría dé lectura.</p>
+<p align="justify"><strong>MESA DIRECTIVA</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruiz: </strong>Sí, señora Presidenta. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Acuerdo_MD_Ministra_05122023.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es todo, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Está a discusión el Acuerdo. En virtud de no haber oradoras ni oradores,  consulte la Secretaría a la Asamblea, en votación económica, si es de aprobarse  el Acuerdo presentado.</p>
+<p align="justify"><strong>La Secretaria Senadora Martha Cecilia Márquez Alvarado: </strong>Consulto a la Asamblea, en votación económica, si es de aprobarse el  Acuerdo. Quienes estén porque se apruebe, favor de levantar la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque se rechace, favor de levantar la mano.</p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Quienes se abstengan, favor de levantar la mano.</p>
+<p align="justify">Aprobado el Acuerdo, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Aprobado el Acuerdo por el que se establece el procedimiento para la  elección de una Ministra de la Suprema Corte de Justicia de la Nación.  Comuníquese.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113836'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113837'></a><p align="justify">Informo  a esta Honorable Asamblea que tenemos la visita de un grupo de integrantes de  la Asociación de Consejeros Agregados y Enlaces de Policías Acreditados en  México. Nuestros visitantes acuden por invitación del grupo parlamentario del  Partido Morena.</p>
+<p align="justify">¡Sean  bienvenidas y bienvenidos a esta sesión!</p>
+<p align="justify">Compañeras  y compañeros Senadores, los integrantes de la Mesa Directiva y de la Junta de  Coordinación Política suscribimos un Acuerdo por el que se establecen las  disposiciones aplicables a las y los Senadores que opten por la elección  consecutiva en el proceso electoral 2023-2024.</p>
+<p align="justify"><strong>MESA  DIRECTIVA Y JUNTA DE COORDINACIÓN POLÍTICA</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Acuerdo_MD_y_JCP_Proceso_Electoral.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">El Acuerdo está publicado en la Gaceta Parlamentaria, con lo que se hace  de su conocimiento.</p>
+<p align="justify">Está a discusión el Acuerdo. Al no haber oradoras ni oradores  registrados, consulte la Secretaría a la Asamblea, en votación económica, si es  de aprobarse el Acuerdo presentado.</p>
+<p align="justify"><strong>La Secretaria Senadora Martha Cecilia Márquez Alvarado: </strong>Con gusto, señora Presidenta.</p>
+<p align="justify">Consulto a la Asamblea, en votación económica, si es de aprobarse el  Acuerdo.</p>
+<p align="justify">Quienes estén porque se apruebe, favor de levantar la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque se rechace, favor de levantar la mano.</p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Quienes se abstengan, favor de levantar la mano.</p>
+<p align="justify">Aprobado el Acuerdo, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Aprobado el Acuerdo por el que se establecen disposiciones aplicables a  las y los Senadores que opten por la elección consecutiva en el proceso  electoral 2023-2024.</p>
+<p align="justify">Publíquese en el portal de internet del Senado.</p>
+<p align="justify">Comuníquese a las Secretarías Generales, a la Contraloría Interna, a la  Coordinación de la Comunicación Social y a la Dirección General del Canal del  Congreso.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113837'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113838'></a><p align="justify">En otro apartado de la agenda del día, informe la Secretaría sobre los  dictámenes inscritos para su primera lectura.</p>
+<p align="justify"><strong>La Secretaria Senadora Claudia Esther Balderas Espinoza: </strong>Doy cuenta, señora Presidenta.</p>
+<p align="justify">Tenemos un dictamen de las Comisiones Unidas de Salud; de Hacienda y  Crédito Público; y de Estudios Legislativos, Segunda, con proyecto de Decreto  por el que se reforman, adicionan y derogan diversas disposiciones de la Ley de  Coordinación Fiscal y de la Ley General de Salud, en materia de federalización  del Sistema de Salud para el Bienestar.</p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE SE REFORMAN, ADICIONAN Y DEROGAN DIVERSAS  DISPOSICIONES DE LA LEY DE COORDINACIÓN FISCAL Y DE LA LEY GENERAL DE SALUD</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Dict_Com_Salud_HyCP_y_ELS_Ley_General_de_Salud.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113838'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113839'></a><p align="justify">También  tenemos un dictamen de las Comisiones Unidas de Relaciones Exteriores Europa;  de Relaciones Exteriores; y de Educación, con proyecto de Decreto por el que se  aprueba el Convenio entre el Gobierno de los Estados Unidos Mexicanos y el  Gobierno de Georgia sobre la Cooperación Educativa y Cultural, suscrito en la  Ciudad de México el 23 de agosto de 2022.</p>
+<p align="justify"><strong>CONVENIO  ENTRE EL GOBIERNO DE LOS ESTADOS UNIDOS MEXICANOS Y EL GOBIERNO DE GEORGIA  SOBRE LA COOPERACIÓN EDUCATIVA Y  CULTURAL, SUSCRITO EN LA CIUDAD DE MÉXICO EL 23 DE AGOSTO DE 2022</strong></p>
+<p align="justify"><strong>(Dictamen  de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Dict_Com_REE_RE_y_Educacion_Convenio_entre_Gob_MEX_y_Gob_Georgia.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113839'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113840'></a><p align="justify">Asimismo,  tenemos un dictamen de las Comisiones Unidas de Reglamentos y Prácticas  Parlamentarias; y de Estudios Legislativos, Segunda, con proyecto de Decreto  por el que se reforman los artículos 2, numeral 1; 147, numeral 2; 150,  numerales 2 y 3; 183, numeral 2; y 190, numeral 1, fracción X del Reglamento  del Senado de la República, en materia de trabajo en comisiones unidas.</p>
+<p align="justify"><strong>PROYECTO  DE DECRETO POR EL QUE SE REFORMAN LOS ARTÍCULOS 2, NUMERAL 1; 147, NUMERAL 2;  150, NUMERALES 2 Y 3; 183, NUMERAL 2; Y 190, NUMERAL 1, FRACCIÓN X DEL  REGLAMENTO DEL SENADO DE LA REPÚBLICA</strong></p>
+<p align="justify"><strong>(Dictamen  de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Dict_Com_Reglamentos_y_Practicas_Parlamentarias_y_ELS_Trabajo_en_Comisiones_Unidas.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113840'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113841'></a><p align="justify">Tenemos  dos dictámenes de las Comisiones Unidas de Derechos de la Niñez y de la  Adolescencia; y de Estudios Legislativos, Segunda, el que contiene proyecto de  Decreto por el que se reforman la fracción XI del artículo 57 de la Ley General  de los Derechos de Niñas, Niños y Adolescentes; y la fracción III del artículo 266 Bis del Código Penal  Federal, en materia de suspensión del ejercicio de profesión por delitos  cometidos por empleados públicos. </p>
+<p align="justify"><strong>PROYECTO  DE DECRETO POR EL QUE SE REFORMAN LA FRACCIÓN XI DEL ARTÍCULO 57 DE LA LEY  GENERAL DE LOS DERECHOS DE NIÑAS, NIÑOS Y ADOLESCENTES; Y LA FRACCIÓN III DEL  ARTÍCULO </strong><strong>266 BIS DEL CÓDIGO PENAL FEDERAL</strong></p>
+<p align="justify"><strong>(Dictamen  de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Dict_Com_DNyA_Art_57_LGDNNyA_y_Art_266_CPF.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113841'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113842'></a><p align="justify">Y otro, con proyecto de Decreto por el que se  reforman y adicionan diversas disposiciones del Código Nacional de  Procedimientos Penales, en materia de protección de niñas, niños y  adolescentes. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL  QUE SE REFORMAN Y ADICIONAN DIVERSAS DISPOSICIONES DEL CÓDIGO NACIONAL DE  PROCEDIMIENTOS PENALES</strong></p>
+<p align="justify"><strong>(Dictamen  de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Dict_Com_DNyA_y_ELS_Ref_Adic_Div_Disp_CNPP.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Son todos los dictámenes de primera lectura, señora  Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Ana  Lilia Rivera Rivera: </strong>Los dictámenes se encuentran publicados en la  Gaceta Parlamentaria de hoy. </p>
+<p align="justify">Con fundamento en lo dispuesto por los artículos  193 y 195 del Reglamento, quedan de primera lectura. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113842'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113843'></a><p align="justify">Pasamos a la discusión de un dictamen de las Comisiones  Unidas de Relaciones Exteriores; y de Relaciones Exteriores Europa, con punto  de Acuerdo por el que se ratifica el nombramiento expedido por el titular del  Poder Ejecutivo Federal a favor de la ciudadana Ana Berenice Díaz Ceballos,  como Embajadora Extraordinaria y Plenipotenciaria de México en la República  Checa.</p>
+<p align="justify">El dictamen se encuentra publicado en la Gaceta  Parlamentaria de hoy, por lo que solicito a la Secretaría dé lectura. </p>
+<p align="justify"><strong>RATIFICACIÓN DE  NOMBRAMIENTO DE LA CIUDADANA ANA BERENICE DÍAZ CEBALLOS PARADA, COMO EMBAJADORA  EXTRAORDINARIA Y PLENIPOTENCIARIA DE MÉXICO EN LA REPÚBLICA CHECA</strong></p>
+<p align="justify"><strong>(Dictamen a discusión)</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  Claudia Esther Balderas Espinoza: </strong>Doy cuenta, señora Presidenta. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Dict_Com_RE_y_REE_Embajador_en_Rep_Checa.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es todo, señora Presidenta.</p>
+<p align="justify"> <strong>La  Presidenta Senadora Ana Lilia Rivera Rivera: </strong>En  consecuencia, se concede el uso de la palabra al Senador Héctor Vasconcelos,  para presentar el dictamen a nombre de la Comisión de Relaciones Exteriores, en  términos de lo dispuesto por el artículo 196 del Reglamento del Senado, hasta  por cinco minutos. </p>
+<p align="justify"><strong>El  Senador Héctor Vasconcelos: </strong>Senadora  Presidenta. Honorable Asamblea: </p>
+<p align="justify">Después  del examen correspondiente al interior de las Comisiones Unidas de Relaciones  Exteriores; y de Relaciones Exteriores, Europa, ponemos a consideración de este  Pleno la designación que hiciera el Presidente de la República a favor de la  ciudadana Ana Berenice Díaz Ceballos Parada, designada como Embajadora  Extraordinaria y Plenipotenciaria de México en la República Checa. </p>
+<p align="justify">El  territorio de la República Checa une el Occidente del continente europeo con el  Oriente de tal continente; en sus poco más de 100 años de vida independiente,  esa nación enfrentó algunos de los cambios geopolíticos más dramáticos del  siglo XX: el colapso del Imperio Austrohúngaro, la invasión nazi y la  dominación soviética. </p>
+<p align="justify">Estas  experiencias contrastan con los tiempos de estabilidad que esa nación también  vivió y que podrían ejemplificarse con los períodos en los que sus destinos  fueron dirigidos por el gran escritor Václav Havel. El drama de la historia  checa se va reflejado en las páginas de dos de sus autores más ilustres, me  refiero a Franz Kafka y Milan Kundera, cuya obra refleja la angustia, el  desasosiego, la deshumanización y la alienación que atravesaron millones de  personas durante el siglo pasado en Europa. </p>
+<p align="justify">Recientemente  las relaciones diplomáticas entre México y la República Checa cumplieron un  centenario de existencia; nuestros vínculos son una rica historia de  coincidencias y de valores compartidos. </p>
+<p align="justify">Un  ejemplo destacado de nuestra buena relación quedó simbolizado por la admiración  que diversos círculos de la sociedad mexicana del siglo XX sentían por el  presidente checoslovaco Tomás Masaryk. </p>
+<p align="justify">Como  reconocimiento a la lucha del Presidente Masaryk para democratizar su nación y  defender su independencia, una de las calles más reconocidas en la Ciudad de  México lleva desde entonces su nombre. Dentro de su plan de trabajo, la Ministra  Berenice Díaz Ceballos manifestó su interés por dinamizar el diálogo político  que se da entre ambas naciones en el marco que ofrece el mecanismo de consultas  políticas, así como impulsando el diálogo interparlamentario entre los dos  países. </p>
+<p align="justify">En  lo económico, expuso su intención de promover la firma y la ratificación del  Acuerdo Global Modernizado entre México y la Unión Europea con las autoridades  checas, e impulsar las acciones necesarias para aprovechar las oportunidades  que ofrece el mercado checo. </p>
+<p align="justify">En  comisiones unidas coincidimos por unanimidad que la Ministra Díaz Ceballos  cuenta con una notable trayectoria diplomática desarrollada durante 25 años  como miembro del Servicio Exterior Mexicano. </p>
+<p align="justify">Su  experiencia abarca los campos multilateral, bilateral y consular, por lo que  posee las herramientas indispensables para llevar a cabo el plan de trabajo que  presentó ante esta soberanía. </p>
+<p align="justify">Colegas  Senadoras y Senadores, en razón de lo anterior, me permito someter, para  aprobación de este Pleno, el dictamen que presentamos esta mañana. </p>
+<p align="justify">Es  cuanto, señora Presidenta. </p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Muchas  gracias, Senador Vasconcelos. </p>
+<p align="justify"> Se  concede el uso de la tribuna a la Senadora Gabriela Benavides Cobos, quien, a nombre de  la Comisión de Relaciones Exteriores Europa, presenta el dictamen con fundamento en el  artículo 196 del Reglamento del Senado, hasta por cinco minutos. </p>
+<p align="justify"><strong>La  Senadora Gabriela Benavides Cobos: </strong>Gracias,  señora Presidenta. Con su permiso. Senadoras y Senadores: </p>
+<p align="justify">El  día de hoy, a nombre de la Comisión de Relaciones Exteriores Europa, presento a  consideración el dictamen para ratificar a la ciudadana Ana Berenice Díaz  Ceballos Parada como Embajadora Extraordinaria y Plenipotenciaria de México en  la República Checa. </p>
+<p align="justify">En  primer término, y de manera personal, quiero agradecer y reconocer a cada uno  de los integrantes de las comisiones, de la Comisión de Relaciones Exteriores y  de la Comisión de Relaciones Exteriores, Europa, por este intenso trabajo y  colaboración que va a seguir en estos días, sin ninguna duda, pero que da  frutos, y es precisamente este el fruto de trabajo de comisiones. </p>
+<p align="justify">Con  fecha 14 de noviembre del año en curso, la Mesa Directiva de esta Honorable  Asamblea turnó a las Comisiones Unidas de Relaciones Exteriores y de Relaciones  Exteriores, Europa, para su estudio y elaboración, el dictamen correspondiente  relativo al expediente del nombramiento que el Presidente hace, en uso de sus  facultades, a la C. Ana Berenice Díaz Ceballos Parada, que ha trabajado por más  de 30 años en la Secretaría de Relaciones Exteriores; es miembro del Servicio  Exterior Mexicano desde el año de 1998 y desde junio de 2016 se desempeñó como Cónsul  General de México en Vancouver, Canadá. </p>
+<p align="justify">Cuenta con la experiencia en  los temas bilaterales, como aquí ya se mencionó. </p>
+<p align="justify">Además, ha publicado  diversos ensayos sobre temas relacionados con las Relaciones Internacionales. </p>
+<p align="justify">Egresada de la licenciatura  en Relaciones Internacionales de la Universidad Iberoamericana. </p>
+<p align="justify">Hay que decir que nuestro  país estableció relaciones diplomáticas con la República Checoslovaca el 27 de  julio de 1922. </p>
+<p align="justify">En la última década las  relaciones bilaterales se han profundizado en lo político, lo económico, lo  comercial, la cooperación, la innovación tecnológica, lo social y lo cultural,  ámbitos en los que se advierte un enorme potencial para dinamizar la relación y  multiplicar los intercambios. </p>
+<p align="justify">La ciudadana Ana Berenice  Díaz Ceballos Parada presentó su plan de trabajo de manera conveniente en el  que se expuso como puntos estratégicos para la República Checa que México es un  puente privilegiado para los contactos con América Latina y América del Norte,  tanto por los  lazos históricos que nos  unen como por el hecho de ser México el único país en América que cuenta con el  Acuerdo de Libre Comercio, Cooperación Global y Diálogo Político Institucional con  la Unión Europea y el estatus de socio estratégico de la Unión Europea. </p>
+<p align="justify"> Además, agregó que  continuará trabajando para mantener y reforzar el diálogo en ámbitos  bilaterales, regional y multilateral en sus diferentes vertientes como  política, desarrollo económico y comercial. </p>
+<p align="justify">Asimismo, fomentará la  cooperación con instituciones y empresas de diferente índole tanto públicas  como privadas con el fin de profundizar la presencia de nuestro país, México,  en la República Checa.</p>
+<p align="justify">Además, se comprometió a  difundir de manera constante y utilizando las nuevas redes sociales y  tecnológicas la imagen de México, su riqueza cultural y gastronómica e  impulsará el estudio del español dentro de la comunidad estudiantil checa con  miras a acercar más a nuestras sociedades. </p>
+<p align="justify">Finalmente, consideró que en  el contexto que se enfrenta en el continente europeo será permanente un monitoreo y  análisis de la situación política de ese país y de la región. </p>
+<p align="justify">Tengan la certeza que una  vez que concluyó el intercambio de ideas entre la ciudadana designada como  Embajadora Extraordinaria y Plenipotenciaria de México en la República Checa se puedo constatar que  Ana Berenice Díaz Ceballos Parada reúne las cualidades y requisitos necesarios  para desempeñar eficazmente el cargo designado. </p>
+<p align="justify">Por lo anteriormente  expuesto, las y los integrantes de las Comisiones Unidas de Relaciones  Exteriores y de Relaciones Exteriores, Europa, sometemos a su consideración la  ratificación del nombramiento antes citado para que el Pleno de esta soberanía  convalide la aprobación que tuvo lugar en el seno de comisiones respecto el  propósito del dictamen de referencia. </p>
+<p align="justify">Es cuanto. </p>
+<p align="justify">Muchas gracias, señora  Presidenta. </p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Gracias, Senadora Benavides  Cobos.</p>
+<p align="justify">Está a discusión. Al no  haber oradoras ni oradores registrados, háganse los avisos a que se refiere el artículo 58 del  Reglamento del Senado para informar de la votación.</p>
+<p align="justify">Ábrase el sistema  electrónico por dos minutos para recoger la votación nominal del dictamen. </p>
+<p align="justify"><strong>La  Secretaria Senadora Claudia Esther Balderas Espinoza: </strong>¿Algún Senador o Senadora  que falte de emitir su voto? Sigue abierto el sistema. </p>
+<p align="justify">Sigue abierto el sistema,  Senador Mancera. </p>
+<p align="justify">¿Algún Senador o Senadora  que falte de emitir su voto? Sigue abierto el sistema. </p>
+<p align="justify">Servicios Parlamentarios,  apoyar a la Senadora, por favor, Verónica Martínez.</p>
+<p align="justify">¿Algún Senador o Senadora  que falte de emitir su voto? Sigue abierto el sistema. </p>
+<p align="right"><strong>VOTACIÓN</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/65/votacion/4555"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Conforme al sistema, se  emitieron 84 votos a favor, cero en contra y cero abstenciones, señora  Presidenta. </p>
+<p align="justify"> Y uno de la Senadora Olga  Sánchez Cordero. </p>
+<p align="justify">¿El sentido de su voto,  Senadora? A favor. </p>
+<p align="justify"><strong>La Presidenta Senadora Ana  Lilia Rivera Rivera: </strong>Aprobado el dictamen con  punto de Acuerdo. </p>
+<p align="justify">En consecuencia, se ratifica  el nombramiento expedido por el titular del Poder Ejecutivo Federal a favor de  la ciudadana Ana Berenice Díaz Ceballos Parada, como Embajadora Extraordinaria  y Plenipotenciaria de México en la República Checa. Comuníquese. </p>
+<p align="justify">En el salón contiguo a este  recinto se encuentra la ciudadana Ana Berenice Díaz, por lo que solicito a las  Senadoras y los Senadores, Héctor Vasconcelos, Gabriela Benavides Cobos, Gina  Cruz, Antonio García, Bertha Alicia Caraveo, Freyda Marybel Villegas y María  Soledad Luévano, la inviten a pasar al interior de este salón de sesiones y la  acompañen durante el acto de su protesta.</p>
+<p align="center">(La  comisión cumple)</p>
+<p align="justify"><strong>La Secretaria Senadora  Claudia Esther Balderas Espinoza:</strong><strong> </strong>Se  registra el voto de la Senadora Mayuli Latifa, a favor. </p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Ciudadana Ana Berenice Díaz Ceballos Parada, le informo que el Senado de la  República ha ratificado el nombramiento que ha expedido en su favor el  representante del Poder Ejecutivo Federal como Embajadora Extraordinaria y  Plenipotenciaria de México en la República Checa. </p>
+<p align="justify">En  consecuencia, le pregunto:</p>
+<p align="justify">¿Protesta  guardar y hacer guardar la Constitución Política de los Estados Unidos  Mexicanos, las leyes que de ella emanen y desempeñar leal y patrióticamente el  cargo que se le ha conferido, mirando en todo por el bien y la prosperidad de  la Unión?</p>
+<p align="justify"><strong>La Ciudadana Ana Berenice  Díaz Ceballos Parada:</strong> ¡Sí protesto!</p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Sí así no lo hiciera, que  la Nación se lo demande. </p>
+<p align="justify">¡Felicidades, señora  Embajadora!</p>
+<p align="justify">A nombre del Senado de la  República le deseo éxito en su encargo. </p>
+<p align="justify">La invito acercarse a esta  Mesa Directiva para recibir la constancia de su nombramiento. </p>
+<p align="justify">Y solicito a la comisión  designada acompañe a la señora Ana Berenice Díaz Ceballos Parada cuando desee  retirarse del salón. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113843'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113844'></a><p align="center"><strong>PRESIDE EL  SENADOR</strong> <br>
+  <strong>CHECO  PÉREZ FLORES</strong></p>
+<p align="justify"><strong>El  Presidente Senador Checo Pérez Flores:</strong> Tenemos ahora la discusión de un dictamen de las Comisiones Unidas de Medio  Ambiente, Recursos Naturales y Cambio Climático; y de Estudios Legislativos,  Segunda, con proyecto de Decreto por el que se reforma el párrafo 6 del  artículo 87 Bis 2 de la Ley General del Equilibrio Ecológico y la Protección al  Ambiente, en materia de clínicas veterinarias públicas. </p>
+<p align="justify">Dicho dictamen considera una minuta del 29 de noviembre de 2022, se le  dio primera lectura en la sesión del pasado 7 de noviembre.</p>
+<p align="justify"> <strong>DECRETO  POR EL QUE SE REFORMA EL PÁRRAFO SEXTO DEL  ARTÍCULO 87 BIS 2 DE LA LEY GENERAL DEL  EQUILIBRIO ECOLÓGICO Y LA PROTECCIÓN AL AMBIENTE</strong></p>
+<p align="justify"><strong>(Dictamen  de segunda lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Dict_Com_Medio_Ambiente_Art_87_Medio_Ambiente.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Debido  a que el dictamen se encuentra publicado en la Gaceta Parlamentaria del día de  hoy consulte la Secretaría a la Asamblea, en votación económica, si autoriza  que se omita su lectura.</p>
+<p align="justify"> <strong>La  Secretaria Senadora Alejandra Lagunes Soto Ruíz:</strong> Consulto a la Asamblea, en votación económica, si autoriza que se omita la  lectura del anterior dictamen. Quienes estén por la afirmativa, favor de  levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén por la negativa, favor de levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Quienes se abstengan, favor de levantar la mano. </p>
+<p align="justify">Sí se omite la lectura, señor Presidente. </p>
+<p align="justify"><strong>El  Presidente Senador Checo Pérez Flores:</strong> Se  concede el uso de la palabra al Senador Raúl Bolaños Cacho Cué, para presentar  el dictamen a nombre de la Comisión de Medio Ambiente, Recursos Naturales y  Cambio Climático, en términos de lo dispuesto por el artículo 196 del  Reglamento del Senado, hasta por cinco minutos. </p>
+<p align="justify"><a name="_Hlk135311466"><strong>El Senador Raúl Bolaños  Cacho Cué</strong></a><strong>: </strong>Muchas  gracias. Con la venia de la Presidencia. Muy buenas tardes. Compañeras y  compañeros Senadores: </p>
+<p align="justify">Acudo  a esta tribuna para presentar a nombre de la Comisión de Medio Ambiente,  Recursos Naturales y Cambio Climático, dos dictámenes que reforman la Ley  General del Equilibrio Ecológico y la Protección al Ambiente, en aspectos de  gran relevancia para nuestro bienestar. El primero de ellos se refiere a una  minuta enviada por la Colegisladora  en materia de clínicas veterinarias. </p>
+<p align="justify">Con  este dictamen aprobamos establecer la obligación para que las autoridades  federales se coordinen con los municipios y alcaldías de la Ciudad de México  para promover el establecimiento de clínicas veterinarias públicas que suministren  a los animales atención médica preventiva y, en caso de enfermedad, les brinden  tratamiento médico expedito avalado por el personal médico veterinario. </p>
+<p align="justify">El  segundo dictamen contempla cuatro iniciativas en materia en captación de agua  pluvial, el estrés hídrico es un desafío apremiante que no solo afecta a  nuestro entorno natural, sino que también tiene consecuencias significativas  para la vida de todas y todos los mexicanos. </p>
+<p align="justify">Es  crucial que tomemos consciencia de esta problemática, y más importante aún, que  nos movilicemos para atenderla de forma efectiva. </p>
+<p align="justify">Actualmente  enfrentamos una crisis histórica en México, la demanda de agua supera la oferta  disponible, la escasez reduce la capacidad de producir alimentos, lo que  impacta en la seguridad alimentaria, perjudica directamente a la agricultura, a  la salud pública y a la biodiversidad. Los ecosistemas acuáticos y terrestres  se ven amenazadas por la disminución de los caudales de ríos y la degradación  de los humedales. </p>
+<p align="justify">Y  un problema grave que ya hemos atestiguado en otras partes del mundo y en  nuestro país son los conflictos locales y regionales ante la falta de este  vital líquido. </p>
+<p align="justify">México  es un país altamente vulnerable a los efectos negativos del cambio climático y  la escasez de agua se irá intensificando ante el aumento de la temperatura  global. </p>
+<p align="justify">A  nivel mundial por el Acuerdo de Paris se estableció que las naciones deberíamos  de hacer todas las acciones necesarias para evitar el aumento de la temperatura  a más de dos grados centígrados, y se estableció como límite el 1.5 grados  centígrados. </p>
+<p align="justify"> Desafortunadamente  hace unos meses el Centro Europeo de Meteorología a Mediano Plazo y el Programa  de Observación de la Tierra de la Unión Europea, reportaron que el umbral de  1.5 grados ya había sido rebasado. </p>
+<p align="justify">Por  eso el planeta sufre en diferentes regiones ondas de calor cada vez más  críticas, y esto ya está sucediendo en México.</p>
+<p align="justify">Es  imperativo que tomemos medidas concretas para resolver el estrés hídrico en  México por medio de estas propuestas de reforma que presentamos mis compañeras  y compañeros Senadores, Manuel Velasco, Israel Zamora, entre otras y otros  compañeros Senadores y un servidor, cuyas iniciativas contaron con el apoyo de  las comisiones dictaminadoras; proponemos reformar la ley para que las  dependencias de la Administración Pública Federal, el Poder Legislativo Federal  y el Poder Judicial de la Federación realicen la instalación de sistemas de  captación de agua pluvial mediante los lineamientos que emita la Semarnat. </p>
+<p align="justify">Que  toda la información con la que se cuente en esta materia se publique en el  Sistema Nacional de Información Ambiental y de Recursos Naturales, que se  reduzca la huella ecológica en todas las instalaciones, que se instalen huertos  hidropónicos o urbanos, y que tengan infraestructura para eficiencia  energética, estaciones de carga para vehículos eléctricos, estacionamientos  para bicicletas y bebederos de agua. </p>
+<p align="justify">Con  esta reforma se podrá contar con sistemas de captación de agua pluvial que  permitan capturarla, recolectarla y aprovecharla de manera sostenible. </p>
+<p align="justify">Compañeras  y compañeros Senadores, les invito a que voten a favor de esta reforma  legislativa, demos pasos contundentes para adaptarnos a los efectos negativos  del cambio climático, al aumento de la temperatura y, sobre todo, a los  fenómenos meteorológicos que cada vez irán incrementando en nuestro país. </p>
+<p align="justify">Las  acciones y políticas públicas que realicemos deberán ser integrales, es decir,  considerar la recarga de acuíferos, la conservación de cuencas, la distribución  eficiente del agua, la reducción de fugas de agua, el fortalecimiento de la  educación y la consciencia ambiental. </p>
+<p align="justify">El  estrés hídrico en México es un problema complejo que requiere un esfuerzo  conjunto de la sociedad, de las autoridades y las empresas. </p>
+<p align="justify">Tenemos  el deber de preservar este recurso vital para las generaciones futuras y  garantizar un futuro sostenible para nuestro país. </p>
+<p align="justify">Es  un desafío que no podemos posponer, actuemos ahora, porque el agua es vida, y  la vida depende de nuestras acciones, darle solución no es una opción, es una  necesidad por nuestro planeta. </p>
+<p align="justify">Muchas  gracias, señor Presidente.</p>
+<p align="justify"><strong>El  Presidente Senador Checo Pérez Flores:</strong> Gracias, Senador Bolaños Cacho. </p>
+<p align="justify">A  continuación, se concede el uso de la palabra al Senador Rafael Espino de la  Peña para presentar el dictamen a nombre de la Comisión de Estudios  Legislativos, Segunda, en términos de lo dispuesto por el artículo 196 del  Reglamento del Senado, hasta por cinco minutos. </p>
+<p align="justify">Realizará  la presentación de dos dictámenes en una intervención, por lo que nos  ajustaremos al tiempo, Senador.</p>
+<p align="justify"> <a name="_Hlk145501620"><strong>El Senador Rafael Espino de  la Peña: </strong></a> Muchas gracias, señor Presidente, con su permiso. </p>
+<p align="justify">El  primer dictamen que posicionamos reforma el párrafo sexto del artículo 87 Bis 2  de la Ley General del Equilibrio Ecológico y Protección al Ambiente, en materia  de establecimiento de clínicas veterinarias públicas. </p>
+<p align="justify">Este  tema primero es muy importante ya que se trata de seres vivos que comparten  nuestro entorno, el caso específico de las mascotas de compañía que llegan en  ocasiones a considerarse hasta parte de las familias. </p>
+<p align="justify">Proporcionar  atención médica preventiva es una iniciativa que beneficia a la comunidad y a  los animales en diversas formas, ya sean nuestras mascotas o aquellos que viven en  estado salvaje, desempeñan un papel fundamental en nuestra sociedad, acompañan  a las personas. </p>
+<p align="justify">Sin embargo, a menudo, nos  enfrentamos a una triste realidad, muchos de estos animales no reciben la  atención médica que merecen. </p>
+<p align="justify">La propuesta de este  dictamen tiene un doble objetivo, el primero, proporcionar atención médica  preventiva que incluye vacunas, estudio de salud regulares, desparasitación y  consejos sobre el cuidado apropiado de las mascotas para garantizarles una  atención médica adecuadas. </p>
+<p align="justify">Y el segundo objetivo,  brindar un tratamiento expedito avalado por médicos veterinarios capacitados,  certificados para que estos animales puedan enfrentar sus problemas de salud,  esto incluye cirugías, tratamientos de enfermedades, rehabilitación y otros  servicios médicos especializados para buscar el bienestar y reducir su  sufrimiento o prevenir enfermedades. </p>
+<p align="justify">En contexto, la creación de  estas clínicas públicas, también tendrán un impacto positivo en la comunidad en  general, vamos a reducir la propagación de enfermedades entre animales y  mejorar la salud pública, vamos a prevenir la transmisión de enfermedades  zoonóticas, además con ello, se va a fomentar la adopción responsable de  animales y evitaremos el abandono de mascotas, debido a problemas de salud no  resuelto. </p>
+<p align="justify">Para esta iniciativa, es  necesario que se trabaje con responsabilidad compartida, asimismo la aceptación  de este proyecto de Decreto es una oportunidad para demostrar nuestro  compromiso con el bienestar animal y mejorar la calidad de vida de los  animales. </p>
+<p align="justify">El segundo dictamen es el  que adiciona y reforma disposiciones de la Ley General del Equilibrio Ecológico  y la Protección al Ambiente, en materia de captación de agua pluvial que ya se  refirió el Senador Raúl Bolaños. </p>
+<p align="justify">El agua de lluvia es un  recurso valioso y a menudo subestimado, es esencial para la vida y para la  gestión sostenible, es un desafío global cada vez más apremiante. </p>
+<p align="justify">En este sentido, la  captación de agua pluvial es una solución que marca una diferencia  significativa en la conservación y uso responsable del recurso hídrico. </p>
+<p align="justify">Imaginemos durante un  momento la cantidad de agua que cae del cielo durante una lluvia promedio y que  se desperdicia; este recurso natural puede ser una fuente invaluable de  abastecimiento para diversas aplicaciones. </p>
+<p align="justify">El procedimiento que se  plantea implica recolectar y almacenar el agua de lluvia que cae en superficies  impermeables como techos para su uso posterior. </p>
+<p align="justify"> Un dato importante es que la  Comisión Nacional del Agua y la Secretaría de Medio Ambiente y Recursos  Naturales cada año, nos dice que en México caen cerca de 711 milímetros de  lluvia por año, lo que se traduce a un billón 489 millones de metros cúbicos. </p>
+<p align="justify">El agua de lluvia no se  aprovecha como debiera para recargar los mantos acuíferos, la gran mayoría de  la precipitación se pierde y se va directamente al drenaje, muy acucioso e  importante también por la sequía que está azotando actualmente a la gran parte  del territorio nacional. </p>
+<p align="justify">Hay que saber que  actualmente no hay tecnología suficiente para captar, almacenar y aprovechar el  agua pluvial, los beneficios son múltiples, reduce la presión sobre nuestros  recursos hídricos finitos a medida que enfrentamos desafíos relacionados con la  ya mencionada sequía y con el cambio climático. </p>
+<p align="justify">Cada gota de agua que  podemos recoger o reutilizar cuenta en forma efectiva para mitigar también  inundaciones urbanas y se reducen los escurrimientos de las aguas pluviales. </p>
+<p align="justify">En segundo lugar, la  captación de agua pluvial promueve la autosuficiencia y la independencia en el  suministro del recurso, lo que puede ser particularmente beneficioso en  comunidades con acceso limitado a este bien. <br>
+  <br>
+  En este sentido, las  propuestas vertidas en este dictamen pueden ser una solución sostenible y de  bajo costo  que no solo debe ser  implementada en edificios públicos, sino también en hogares, escuelas,  empresas; ya que los sistemas son de simple diseño y de mantenimiento, estos  constan de canalizaciones y sistemas de filtración que dirigen el agua recogida  hacia tanques de almacenamiento  donde se  pueden utilizar para regar jardines, inodoros, lavadoras y otros enseres  domésticos que necesitan el agua. </p>
+<p align="justify">Además de sus beneficios  medioambientales y económicos, la captación de agua pluvial fomenta una mayor  consciencia sobre el valor del recurso y la necesidad de cuidar todos nuestros  recursos naturales.</p>
+<p align="justify">Estamos dando un paso  importante hacia la sostenibilidad, cumplir con nuestros compromisos ecológicos  nacionales e internacionales, a la conservación de nuestro planeta para dejar  un mejor mundo a las generaciones futuras. </p>
+<p align="justify">Cada gota de agua que  recolectemos es un paso hacia un futuro más sostenible. </p>
+<p align="justify">Los exhorto a apoyar estos  dos dictámenes que son para el beneficio colectivo. </p>
+<p align="justify">Muchas gracias por su  atención.</p>
+<p align="justify"><strong>El  Presidente Senador Checo Pérez Flores: </strong>Muchas gracias, Senador  Espino de la Peña. </p>
+<p align="justify">Como lo permite el artículo  198 del Reglamento del Senado y debido a que el dictamen que nos ocupa consta  de un solo artículo, se discutirá en lo general y en lo particular en un solo  acto.</p>
+<p align="justify">Está a discusión. </p>
+<p align="justify">Informo a la Asamblea, que  el grupo parlamentario del PVEM, entregó el texto de su intervención sobre los  dos dictámenes para ser insertado en el Diario de los Debates.</p>
+<p align="justify"> <strong>Intervención del grupo  parlamentario del PVEM.</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><br><br><img src="/informacion/img/ver_documento.png" border></p>
+<p align="justify">Al no haber más intervenciones ni registros de  reservas, ábrase el sistema electrónico por dos minutos para recoger la  votación nominal en lo general y en lo particular del proyecto del Decreto.  Háganse los avisos a que se refiere el artículo 58 del Reglamento para informar  de la votación. </p>
+<p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruiz: </strong>Se registra el voto de la Senadora Olga Sánchez  Cordero, a favor. </p>
+<p align="justify"><strong>El Presidente Senador Checo  Pérez Flores: </strong>Sonido en el escaño de la Senadora Beatriz Paredes, por favor. </p>
+<p align="justify"> <strong>La Senadora Beatriz Paredes  Rangel: </strong>(Desde su escaño) Gracias. Disculpe, una consulta. </p>
+<p align="justify">Creí escuchar que se  mencionó que la Senadora Olga Sánchez Cordero votó a favor.</p>
+<p align="justify">¿Es correcto?, pero no se  encuentra en el recinto. </p>
+<p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruiz: </strong>Al salir dejó su voto,  Senadora. </p>
+<p align="justify">Dejó su voto a favor y se retiró. </p>
+<p align="justify"><strong>La Senadora Beatriz Paredes Rangel: </strong>¿Votó  manual?</p>
+<p align="justify"><strong>El Presidente Senador Checo Pérez Flores: </strong>De  acuerdo a lo que da fe la Secretaría, fue su voto realizado de manera manual,  Senadora Beatriz Paredes.</p>
+<p align="justify">¿El sentido de su voto?</p>
+<p align="justify">Senadora Sigue abierto el sistema.</p>
+<p align="justify"><strong>La Secretaria Senadora Alejandra Lagunes Soto Ruíz: </strong>Sigue abierto el sistema.</p>
+<p align="justify">¿Algún Senador o Senadora que falte de emitir su voto?</p>
+<p align="justify">Senador Damián, sigue abierto el sistema.</p>
+<p align="justify">¿Alguna Senadora o Senador que falte de emitir su voto?</p>
+<p align="justify">El sistema sigue abierto?</p>
+<p align="justify"><strong>El Presidente Senador Checo Pérez Flores: </strong>Sonido  en el escaño de la Senadora Olga Sánchez.</p>
+<p align="justify"><strong>La Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>(Desde su escaño) Muchas gracias.</p>
+<p align="justify">Aquí estuve en la votación pasada y estoy en esta.</p>
+<p align="justify">Gracias.</p>
+<p align="justify"><strong>El Presidente Senador Checo Pérez Flores: </strong>Gracias,  Senadora.</p>
+<p align="justify">Sigue abierto el sistema, Senador Dante Delgado.</p>
+<p align="justify"><strong>La Secretaria Senadora Alejandra Lagunes Soto Ruíz: </strong>Vuelvo a preguntar.</p>
+<p align="justify">si falta alguna Senadora o Senador de emitir su voto. </p>
+<p align="justify">El sistema sigue abierto.</p>
+<p align="justify">Senador Ramírez Marín.</p>
+<p align="justify">Senador Madero.</p>
+<p align="justify">El sistema sigue abierto.</p>
+<p align="justify"><strong>El Presidente Senador Checo Pérez Flores: </strong>Informe  la Secretaría el resultado de la votación. </p>
+<p align="right"><strong>VOTACIÓN</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/65/votacion/4556"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Secretaria Senadora Alejandra Lagunes Soto Ruíz: </strong>Con 85 votos a favor, cero en contra y cero abstenciones, se cierra el  sistema.</p>
+<p align="justify"><strong>El Presidente Senador Checo Pérez Flores: </strong>Queda  aprobado en lo general y en lo particular el Decreto por el que se reforma el  párrafo sexto del artículo 87 Bis 2 de la Ley General del Equilibrio Ecológico  y la Protección al Ambiente, en materia de clínicas veterinarias públicas. Se  remite al Ejecutivo Federal para los efectos del artículo 72 constitucional.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113844'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113845'></a><p align="justify">Pasamos ahora a la segunda lectura de un dictamen de las Comisiones  Unidas de Medio Ambiente, Recursos Naturales y Cambio Climático; y de Estudios  Legislativos, Segunda, con proyecto de Decreto por el que se reforman y  adicionan diversas disposiciones de la Ley General del Equilibrio Ecológico y  la Protección al Ambiente, en materia de captación de agua pluvial.</p>
+<p align="justify">Este dictamen considera las siguientes iniciativas: Tres de Senadores  del grupo parlamentario del Partido Verde Ecologista de México, del 31 de mayo  al 6 de septiembre de 2022; y del 13 de abril de 2023. Y, una, de la Senadora  Xóchitl Gálvez Ruiz, del 27 de abril de 2023. Se le dio primera lectura en la  sesión del 7 de noviembre pasado.</p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSAS  DISPOSICIONES DE LA LEY GENERAL DEL EQUILIBRIO ECOLÓGICO Y LA PROTECCIÓN AL  AMBIENTE</strong></p>
+<p align="justify"><strong>(Dictamen de segunda lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Dict_MARN_Captacion_agua_Pluvial_Actualizado_07112023.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Debido  a que el dictamen se encuentra publicado en la Gaceta Parlamentaria de este día  consulte la Secretaría a la Asamblea, en votación económica, si autoriza que se  omita su lectura.</p>
+<p align="justify"> <strong>La Secretaria Senadora Alejandra Lagunes Soto Ruíz: </strong>Consulto a la Asamblea, en votación económica, si autoriza se omita la  lectura del dictamen. Quienes estén porque se omita, favor de levantar la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque no se omita, favor de levantar la mano.</p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Quienes se abstengan, favor de levantar la mano.</p>
+<p align="justify">Sí se omite la lectura, señor presidente.</p>
+<p align="justify"><strong>El Presidente Senador Checo Pérez Flores: </strong>Gracias.</p>
+<p align="justify">La presentación de este dictamen se cumplió con las intervenciones de  los Senadores Raúl Bolaños Cacho Cué y del Senador Rafael Espino de la Peña, en  sus participaciones iniciales.</p>
+<p align="justify">Está a discusión en lo general.</p>
+<p align="justify">Por tanto, se concede el uso de la voz a la Senadora Beatriz Paredes  Rangel, del grupo parlamentario del PRI, hasta por cinco minutos, para hablar a  favor.</p>
+<p align="justify">Sonido en el escaño de la Senadora Beatriz Paredes.</p>
+<p align="justify"><strong>La Senadora Beatriz Paredes Rangel: </strong>(Desde  su escaño) Quiero felicitar a quienes presentaron esta iniciativa e invitar a  mis colegas Senadoras y Senadores a votar a favor de la misma.</p>
+<p align="justify">De todos es conocido la compleja situación hídrica que afecta a nuestro  país. México es una nación que tiene una distribución irregular de los recursos  hídricos.</p>
+<p align="justify">En el sur de nuestro país hay abundancia de agua dulce que incluso en  esos torrentes extraordinarios de los ríos de Tabasco y Chiapas muchas veces se  desborda y causa inundaciones.</p>
+<p align="justify">Y en las zonas del norte de nuestro país cuando la sequía golpea hay  enorme riesgo de que las personas padezcan sed y los hatos ganaderos fallezcan  por la ausencia del líquido vital.</p>
+<p align="justify">La sabiduría popular, la sabiduría campesina de mucho tiempo atrás  diseñó mecanismos para la captación del agua pluvial: ollas de agua, pequeños  espacios en donde solían recolectar el agua, formas de construcción de sus  casas para recoger con el diseño específico de las techumbres agua de lluvia, y  esta sabiduría popular después fue recopilada y sistematizada por una  institución denominada Conaza, la Comisión Nacional de Zonas Áridas.</p>
+<p align="justify">Es por eso que para muchas regiones de nuestro país el que se puedan  rescatar estas precipitaciones pluviales y haya captación sistemática,  recopilación, registro y recuperación del agua de lluvia y no se desperdicie,  así como que logremos retener el agua de nuestros grandes ríos es fundamental.</p>
+<p align="justify">Por eso vamos a votar a favor de este dictamen y los exhortamos a que  cuidemos el líquido vital. </p>
+<p align="justify"> Y exigimos al gobierno de la República se prepare una política integral  que nos permita tener una visión de cuidado, protección y las inversiones  necesarias para desarrollar el cuidado del agua…</p>
+<p align="justify"><strong>El Presidente Senador Checo Pérez Flores: </strong>Permítame,  Senadora.</p>
+<p align="justify">Permítame un segundo, por favor.</p>
+<p align="justify"><strong>La Senadora Beatriz Paredes Rangel: </strong>(Desde  su escaño) Adelante, señor Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Checo Pérez Flores: </strong>Quiero  solicitar a la Asamblea que nos permita guardar el orden y que  permita a la Senadora continuar con su intervención.<strong> </strong></p>
+<p align="justify">Solicito a nuestros  invitados que, por favor, nos permitan continuar con el desarrollo de la sesión  y escuchar a la oradora en su participación. </p>
+<p align="justify">Adelante, por favor. </p>
+<p align="justify"><strong>La Senadora Beatriz Paredes  Rangel: </strong>(Desde su escaño) Gracias, señor Presidente. </p>
+<p align="justify">No hay problema, sé que  cuando algunos de nuestros colegas Senadores padezcan de sed, recordarán esta  intervención y podrán tener claro la trascendencia que tiene este vital  líquido, no solo para los mexicanos, sino para toda la humanidad. </p>
+<p align="justify">El agua será el líquido más  trascendental para el mundo, el agua dulce, en los próximos siglos. </p>
+<p align="justify">Muchas gracias, por su  atención. </p>
+<p align="justify"><strong>El Presidente Senador Checo  Pérez Flores: </strong>Gracias, Senadora Paredes Rangel. </p>
+<p align="justify">Al no haber más oradoras ni  oradores registrados consulto a la Asamblea si existe el interés el reservar  algún artículo del proyecto de Decreto. En virtud de que no hay artículos  reservados.</p>
+<p align="justify">Ábrase el sistema  electrónico por dos minutos para recoger la votación nominal en lo general y en  lo particular del proyecto de Decreto. Háganse los avisos a que se refiere el  artículo 58 del Reglamento para informar de la votación. </p>
+<p align="justify">Sonido en el escaño de la  Senadora Caraveo, por favor. </p>
+<p align="justify"><strong>La Senadora Bertha Alicia  Caraveo Camarena: </strong>(Desde su escaño) Sí, señor Presidente, quiero que  registren mi voto de la anterior, por estar en una comisión. </p>
+<p align="justify">Gracias. </p>
+<p align="justify"><strong>El Presidente Senador Checo  Pérez Flores: </strong>Con mucho gusto. Tome nota la Secretaría. </p>
+<p align="justify">Sonido en el escaño de la  Senadora Patricia Mercado. </p>
+<p align="justify"><strong>La Senadora Patricia  Mercado: </strong>(Desde su escaño) Solamente también para que  registre mi voto a favor en la anterior, porque estábamos en una reunión de  comisión extraordinaria. </p>
+<p align="justify">Gracias. </p>
+<p align="justify"><strong>El Presidente Senador Checo  Pérez Flores: </strong>Con gusto. Tome nota la Secretaría.</p>
+<p align="justify"> <strong>La Secretaria Senadora Alejandra  Lagunes Soto Ruiz: </strong>¿Alguna Senadora o Senador que falte de emitir su  voto? El sistema sigue abierto. </p>
+<p align="justify"><strong>El Presidente Senador Checo  Pérez Flores: </strong>Informe la Secretaría del resultado de la votación. </p>
+<p align="right"><strong>VOTACIÓN</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/65/votacion/4557"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La  Secretaria Senadora Alejandra Lagunes Soto Ruíz: </strong>Señor<strong> </strong>Presidente,  conforme al registro en el sistema electrónico, se emitieron 84 votos a favor,  cero en contra y cero abstenciones. </p>
+<p align="justify"><strong>El  Presidente Senador Checo Pérez Flores: </strong>Aprobado en lo general y en  lo particular el proyecto de Decreto por el que se reforman y adicionan  diversas disposiciones de la Ley General del Equilibrio Ecológico y la  Protección al Ambiente, en materia de captación de agua pluvial. Se remite a la  Cámara de Diputados para los efectos del artículo 72 constitucional. </p>
+<p align="justify">Informo que el proyecto  requiere ajustes de técnica legislativa, en cumplimiento de lo que dispone el  artículo 211 del Reglamento del Senado. </p>
+<p align="justify">Se convocará a las  Secretarías Técnicas de las respectivas comisiones para asegurar la correcta  elaboración de la norma, sin alterar el fondo de lo aprobado por esta Asamblea. </p>
+<p align="justify">La Mesa Directiva estará  atenta a vigilar la debida elaboración del proyecto. </p>
+<p align="justify"><strong>La  Secretaria Senadora Alejandra Lagunes Soto Ruíz: </strong>La Senadora Citlalli pide  que se registre su voto a favor en los dos dictámenes. </p>
+<p align="justify">Gracias, señor Presidente. </p>
+<p align="justify"><strong>El  Presidente Senador Checo Pérez Flores: </strong>Tome nota la Secretaría de  la solicitud de la Senadora Citlalli y de la Senadora Marybel Villegas también  que se registre su voto a favor. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113845'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113846'></a><p align="justify">Compañeras y compañeros  Senadores, informo a ustedes que recibimos en la Mesa Directiva un dictamen de  las Comisiones Unidas de Hacienda y Crédito Público; y de Estudios  Legislativos, Segunda, con proyecto de Decreto por el que se reforman,  adicionan y derogan diversas leyes financieras, en materia de procedimiento  administrativo. </p>
+<p align="justify">Consulte la Secretaría a la  Asamblea, en votación económica, si autoriza que el dictamen se incorpore a la  agenda de este día para su trámite. </p>
+<p align="justify"><strong>La  Secretaria Senadora Alejandra Lagunes Soto Ruíz: </strong>Consulto a la Asamblea, en  votación económica, si autoriza se integre a los asuntos de hoy el dictamen  referido por la Presidencia. Quienes estén por la afirmativa, favor de levantar  la mano. </p>
+<p align="center">(La  Asamblea asiente)</p>
+<p align="justify">Quienes estén por la  negativa, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p align="justify">Quienes se abstengan, favor  de levantar la mano. </p>
+<p align="justify">Sí se autoriza su  incorporación, señor Presidente. </p>
+<p align="justify"><strong>El  Presidente Senador Checo Pérez Flores: </strong>El dictamen está disponible  en el monitor de sus escaños, por lo que solicito a la Secretaría consulte  ahora a la Asamblea, en votación económica, si autoriza que se omita su  lectura.</p>
+<p align="justify"> <strong>PROYECTO DE DECRETO POR EL  QUE SE REFORMAN, ADICIONAN Y DEROGAN DIVERSAS LEYES FINANCIERAS</strong></p>
+<p align="justify"><strong>(Dictamen de primera  lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Dictamen_Hacienda.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruíz: </strong>Consulto a la Asamblea, en votación económica, si  autoriza se omita la lectura del dictamen. Quienes estén por la afirmativa,  favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén por la negativa, favor de levantar la  mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Quienes se abstengan, favor de levantar la mano. </p>
+<p align="justify">Sí se autoriza, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Checo  Pérez Flores: </strong>Queda de primera lectura. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113846'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113847'></a><p align="justify">Honorable Asamblea, les  informo que recibimos de las y los Senadores integrantes de las Comisiones Unidas  de Justicia; y de Estudios Legislativos, Segunda, así como de Diputadas y  Diputados de diversos grupos parlamentarios, un proyecto de Decreto por el que  se expide la Ley General de Mecanismos Alternativos de Solución de  Controversias, y se reforma y adiciona la Ley Orgánica del Poder Judicial de la  Federación y la Ley Orgánica del Tribunal Federal de Justicia Administrativa. El  asunto se tiene por presentado y se turnó a las Comisiones Unidas de Justicia;  y de Estudios Legislativos, Segunda. </p>
+<p align="justify"><strong>INICIATIVA  CON PROYECTO DE DECRETO POR EL QUE SE EXPIDE LA LEY GENERAL DE MECANISMOS  ALTERNATIVOS DE SOLUCIÓN DE CONTROVERSIAS, Y SE REFORMA Y ADICIONA LA LEY ORGÁNICA  DEL PODER JUDICIAL DE LA FEDERACIÓN Y LA LEY ORGÁNICA DEL TRIBUNAL FEDERAL DE  JUSTICIA ADMINISTRATIVA</strong></p>
+<p align="justify"><strong>(Presentada  por las Senadoras y Senadores integrantes de las Comisiones Unidas de Justicia;  y de Estudios Legislativos, Segunda, así como de Diputadas y Diputados de  diversos grupos parlamentarios)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Iniciativa_Com-Justicia_y_ELG2_Mecanismos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113847'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113848'></a><p align="justify">Les informo que las solicitudes de excitativa,  iniciativas, proposiciones con punto de Acuerdo se publicarán en la Gaceta  Parlamentaria con el trámite correspondiente y los textos de la agenda política  se integrarán al Diario de los Debates. </p>
+<p align="justify"><strong>EXCITATIVAS</strong></p>
+<p align="justify">Del Senador Víctor Oswaldo Fuentes Solís, del grupo  parlamentario del PAN, relativa al proyecto de Decreto por el que se reforma el  artículo 27 de la Constitución Política de los Estados Unidos Mexicanos, en  materia de yacimientos de piedra caliza. Se emite excitativa a las Comisiones  Unidas de Puntos Constitucionales; y de Estudios Legislativos, Segunda.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/SolExt_Sen_Fuentes_art_27_cpeum_5_de_diciembre_2023.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113848'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113849'></a><p align="justify">Del Senador Víctor Oswaldo Fuentes Solís, del grupo  parlamentario del PAN, relativa al proyecto de Decreto por el que se adiciona  un párrafo tercero al artículo 325 del Código Penal Federal. Se emite  excitativa a las Comisiones Unidas de Justicia; y de Estudios Legislativos,  Segunda.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/SolExt_Sen_Fuentes_cpf_transporte_privado_de_plataforma.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113849'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113850'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE  DECRETO POR EL QUE SE REFORMAN LOS ARTÍCULOS 21, 140, 150, 167, 314 Y 420 DEL  CÓDIGO NACIONAL DE PROCEDIMIENTOS PENALES </strong></p>
+<p align="justify"><strong>(Presentada  por el Senador Luis David Ortiz Salinas, del grupo  parlamentario de Movimiento Ciudadano)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ini_MC_Sen_Luis_Ortiz_Ref_Art_21_140_150_167__314_420_CNPP.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113850'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113851'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE  DECRETO POR EL QUE SE ADICIONA UN QUINTO PÁRRAFO AL ARTÍCULO 47 DEL REGLAMENTO  DEL SENADO DE LA REPÚBLICA  </strong></p>
+<p align="justify"><strong>(Presentada  por el Senador Gustavo Madero Muñoz, del Grupo Plural)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ini_SG_Sen_Gustavo_Madero_Adic_Art_47_Reglamento_del_Senado.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113851'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113852'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE  DECRETO POR EL QUE SE REFORMAN DIVERSAS DISPOSICIONES DE LA LEY DEL SEGURO  SOCIAL Y DE LA LEY DEL INSTITUTO DE SEGURIDAD Y SERVICIOS SOCIALES </strong></p>
+<p align="justify"><strong>(Presentada  por la Senadora Patricia Mercado, del grupo parlamentario  de Movimiento Ciudadano)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ini_MC_Sen_Patricia_Mercado_Pension_por_Viudez.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113852'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113853'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE  DECRETO POR EL QUE SE INSCRIBE EN EL MURO DE HONOR DEL SENADO DE LA REPÚBLICA  LA LEYENDA &ldquo;A LAS SUFRAGISTAS QUE NUNCA SE RINDIERON NI ABANDONARON LA LUCHA  POR LA LIBERTAD&rdquo;  </strong></p>
+<p align="justify"><strong>(Presentada  por el Senador Miguel Ángel Osorio Chong)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ini_SG_Sen_Miguel_Osorio_Letras_Oro_Sufragistas_que_nunca_se_rindieron.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113853'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113854'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE  DECRETO POR EL QUE SE REFORMA Y ADICIONA EL ARTÍCULO 19 DE LA LEY DE CAMINOS,  PUENTES Y AUTOTRANSPORTE FEDERAL </strong></p>
+<p align="justify"><strong>(Presentada  por los Senadores Manuel Añorve Baños, Carlos Humberto  Aceves del Olmo, Claudia Edith Anaya Mota, Sylvana Beltrones Sánchez, Nancy de  la Sierra Arámburo, Ángel García Yáñez, Verónica Martínez García, Beatriz  Paredes Rangel, Cecilia Margarita Sánchez García y Mario Zamora Gastélum, del  grupo parlamentario del PRI)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Inic_PRI_diversos_senadores_art_19_LCPyAF.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113854'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113855'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN LOS ARTÍCULOS 1 DE LA  LEY DEL IMPUESTO AL VALOR AGREGADO Y 9 DE LA LEY DEL IMPUESTO SOBRE LA  RENTA   </strong></p>
+<p align="justify"><strong>(Presentada  por los Senadores Manuel Añorve Baños, Carlos Humberto  Aceves del Olmo, Claudia Edith Anaya Mota, Sylvana Beltrones Sánchez, Nancy de  la Sierra Arámburo, Ángel García Yáñez, Verónica Martínez García, Beatriz  Paredes Rangel, Cecilia Margarita Sánchez García y Mario Zamora Gastélum, del  grupo parlamentario del PRI)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Inic_PRI_diversos_senadores_art_1_9_ISR.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113855'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113856'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE  DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 98 DE LA CONSTITUCIÓN POLÍTICA DE LOS  ESTADOS UNIDOS MEXICANOS   </strong></p>
+<p align="justify"><strong>(Presentada  por el Senador Juan Manuel Fócil Pérez, del grupo  parlamentario del PRD)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ini_PRD_Sen_Juan_Focil_Art_98_CPEUM.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113856'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113857'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE  DECRETO POR EL QUE SE MODIFICA EL ARTÍCULO 28 DE LA CONSTITUCIÓN POLÍTICA DE  LOS ESTADOS UNIDOS MEXICANOS  </strong></p>
+<p align="justify"><strong>(Presentada  por los Senadores Manuel Añorve Baños, Carlos Humberto  Aceves del Olmo, Claudia Edith Anaya Mota, Sylvana Beltrones Sánchez, Nancy de  la Sierra Arámburo, Ángel García Yáñez, Verónica Martínez García, Beatriz  Paredes Rangel, Cecilia Margarita Sánchez García y Mario Zamora Gastélum, del  grupo parlamentario del PRI)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ini_PRI_Senadores_Art_28_CPEUM_Actualizado_07112023.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113857'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113858'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE  DECRETO POR EL QUE SE ADICIONA UN PÁRRAFO SÉPTIMO Y SE RECORREN LOS  SUBSECUENTES AL ARTÍCULO 4º. DE LA CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS  MEXICANOS </strong></p>
+<p align="justify"><strong>(Presentada  por el Senador Ricardo Velázquez Meza, del grupo  parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Inic_Morena_Sen_Ricardo_Velazquez_CPEUM.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113858'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113859'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE  DECRETO POR EL QUE SE REFORMAN LOS ARTÍCULOS 129 Y 300 DEL REGLAMENTO DEL  SENADO DE LA REPÚBLICA   </strong></p>
+<p align="justify"><strong>(Presentada  por el Senador Gilberto Herrera Ruiz, del grupo  parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ini_Morena_Sen_Gilberto_Ruiz_Evaluacion_de_Impacto_Legislativo.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113859'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113860'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE  DECRETO POR EL QUE SE ADICIONA UN  CAPÍTULO XI Y LOS ARTÍCULOS 204 Y 205 AL TÍTULO VII DE LA LEY DEL IMPUESTO SOBRE LA RENTA Y SE  RECORREN LOS SUBSECUENTES </strong></p>
+<p align="justify"><strong>(Presentada  por los Senadores Manuel Añorve Baños, Carlos Humberto  Aceves del Olmo, Claudia Edith Anaya Mota, Sylvana Beltrones Sánchez, Nancy de  la Sierra Arámburo, Ángel García Yáñez, Verónica Martínez García, Beatriz  Paredes Rangel, Cecilia Margarita Sánchez García y Mario Zamora Gastélum, del  grupo parlamentario del PRI)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ini_PRI_Senadores_Art_204_205_Ley_ISR_Actualizado_07112023.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113860'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113861'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE  DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 77 DE LA LEY DE INSTITUCIONES DE  CRÉDITO   </strong></p>
+<p align="justify"><strong>(Presentada  por el Senador Ricardo Monreal Ávila, del grupo  parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ini_Morena_Sen_Monreal_Ref_Art_77_Ley_De_Instituciones_de_Credito.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113861'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113862'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE  DECRETO POR EL QUE SE ADICIONA LA DENOMINACIÓN DEL CAPÍTULO XVIII Y LOS  ARTÍCULOS 91, 92 Y 93 DE LA LEY GENERAL DE PROTECCIÓN CIVIL  </strong></p>
+<p align="justify"><strong>(Presentada  por los Senadores Manuel Añorve Baños, Carlos Humberto  Aceves del Olmo, Claudia Edith Anaya Mota, Sylvana Beltrones Sánchez, Nancy de  la Sierra Arámburo, Ángel García Yáñez, Verónica Martínez García, Beatriz  Paredes Rangel, Cecilia Margarita Sánchez García y Mario Zamora Gastélum, del  grupo parlamentario del PRI)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Ini_PRI_Senadores_Art_91_92_93_Ley_Proteccion_Civil_Actualizado_07112023.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113862'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113863'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE  DECRETO POR EL QUE SE ADICIONA LA LEY GENERAL DE PROTECCIÓN CIVIL  </strong></p>
+<p align="justify"><strong>(Presentada  por la Senadora María Guadalupe Saldaña Cisneros, del  grupo parlamentario del PAN)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/Inic_PAN_Sen_Gpe_Saldana_proteccion_civil.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113863'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113864'></a><p align="justify"><strong>PROPOSICIONES  CON PUNTO DE ACUERDO</strong></p>
+<p align="justify">De la Senadora  Gloria Sánchez Hernández, del grupo parlamentario del Partido Morena, con punto  de Acuerdo por el que se exhorta a la Sección Mexicana de la Comisión  Internacional de Límites y Aguas para que se abstenga de suscribir el Acta 330,  si ésta acredita cambios en el Tratado Internacional de Aguas de 1944;  asimismo, se exhorta al gobierno de México para que, en su caso, no autorice la  ejecución de la citada Acta. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/PA_Morena_Sen_Gloria_Sanchez_Exhorta_a_la_Com_Internacional_de_Limites_y_Agua.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113864'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113865'></a><p align="justify">De la Senadora  Sylvana Beltrones Sánchez, del grupo parlamentario del PRI, con punto de Acuerdo por el que se exhorta la  Secretaría de Salud federal a que informe sobre la insuficiencia de la  cobertura de vacunación en México. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/PA_PRI_Sen_Sylvana_cobertura_de_vacunacion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113865'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113866'></a><p align="justify">Del Senador  Rogelio Israel Zamora Guzmán, del grupo parlamentario del PVEM, con punto de  Acuerdo por el que se exhorta a la Secretaría de Seguridad Ciudadana de la  Ciudad de México para que, a través de la Subsecretaría de Control de Tránsito,  analice la viabilidad de reforzar las acciones de vigilancia en los andadores  peatonales de las demarcaciones territoriales de la Ciudad de México, para que  los motociclistas no hagan uso de estos. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/PA_PVEM_Sen_Rogelio_Zamora_andadores_peatonales.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113866'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113867'></a><p align="justify">De los  Senadores Geovanna Bañuelos, Martha Cecilia Márquez Alvarado, Cora Cecilia  Pinedo Alonso y Joel Padilla Peña, del grupo parlamentario del PT, con punto de  Acuerdo por el que se exhorta a la Comisión Nacional del Agua y a los sistemas  de servicio de agua potable y alcantarillado de las entidades federativas y de  los municipios para que, remitan a esta honorable Asamblea un informe  pormenorizado acerca de las acciones y medidas que se están llevando y se  realizarán para enfrentar un inminente desabasto de agua durante el año 2024,  como resultado de la grave sequía que se ha experimentado durante el año 2023 en  distintas regiones de nuestro país. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/PA_GPPT_desabasto_de_agua.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113867'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113868'></a><p align="justify">Del Senador  Ricardo Velázquez Meza, del grupo parlamentario del Partido Morena, con punto  de Acuerdo por el que se exhorta a la Secretaría de Salud para que, fortalezca  las campañas contra el Virus Sincitial Respiratorio, a fin salvaguardar la  integridad y vida de la población mexicana. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/PA_Morena_Sen_RVM_virus_sincical.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113868'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113869'></a><p align="justify">Del Senador  Rafael Espino de la Peña, del grupo parlamentario del Partido Morena, con punto  de Acuerdo por el que se exhorta a diversas autoridades para que informen sobre  las acciones que han realizado y que tienen programadas para la certificación,  capacitación y profesionalización de los elementos policiales de las  instituciones de seguridad pública. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/PA_Morena_Sen_Espino_certificado_policial.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113869'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113870'></a><p align="justify">De los  Senadoras Geovanna Bañuelos, Martha Cecilia Márquez Alvarado, Cora Cecilia Pinedo Alonso y Joel Padilla Peña  del grupo parlamentario del PT, con punto de Acuerdo por el que se exhorta a la  Secretaría de Trabajo y Previsión Social y a sus homólogas en las 32 entidades  federativas a llevar a cabo mesas de trabajo con el sector público y privado,  con la finalidad de redoblar esfuerzos en la estrategia, mecanismos y políticas  que permitan a las personas con discapacidad ingresar, permanecer y  desarrollarse dentro de un ambiente laboral. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/PA_PT_Sens_Exhorrta_a_la_Sec_de_Trabajo_y_Prevension_Social_Actualizado_04122023.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113870'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113871'></a><p align="justify">Del Senador  Checo Pérez, del grupo parlamentario del Partido Morena, con punto de Acuerdo  por el que se exhorta a la Cámara de Diputados del Congreso de la Unión para  que, dentro de los plazos que establece la legislación aplicable, resuelva la  solicitud de declaración de procedencia formulada por la Fiscalía General de la  República en contra de Uriel Carmona Gándara, Fiscal General del estado de  Morelos. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/PA_Morena_Sen_Checo_juicio_de_procedencia_Uriel_Carmona.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113871'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113872'></a><p align="justify">De la Senadora  María Guadalupe Saldaña Cisneros, del grupo parlamentario del PAN, con punto de  Acuerdo por el que se solicita la comparecencia de la persona encargada de la  Dirección General de FONATUR, a fin de que informe sobre el proceso de  enajenación de los terrenos del proyecto Loreto-Nopoló, así como el programa de  trabajo para continuar apoyando el desarrollo de ese destino turístico. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/3/2023-12-05-1/assets/documentos/PA_PAN_Sen_MGSC_fonatur_loreto.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113872'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113873'></a><p align="justify"><strong>AGENDA  POLÍTICA</strong></p>
+<p align="justify">De las Senadoras y Senadores del grupo parlamentario  del Partido Morena, para referirse a la situación política del país.</p>
+<p align="justify">De las Senadoras y Senadores del grupo parlamentario  del PAN, para referirse a la situación política del país.</p>
+<p align="justify">De las Senadoras y Senadores del grupo parlamentario  del PRI, para referirse a la situación política del país.</p>
+<p align="justify">Continúe la Secretaría con los asuntos de la  agenda. </p>
+<p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruiz: </strong>Se han agotado los asuntos de la agenda. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113873'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113874'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify"><strong>El Presidente Senador Checo  Pérez Flores: </strong>Se cita a la siguiente sesión ordinaria, este mismo día, en quince  minutos. </p>
+<p align="justify">A partir de este momento se abre el sistema  electrónico para que registren su asistencia. </p>
+<p align="justify">Se levanta la sesión.</p>
+<p align="center">(Se levantó la sesión a las  14:09 horas)<strong> </strong></p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113874'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

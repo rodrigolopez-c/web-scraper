@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>TERCER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA COMISI&Oacute;N PERMANENTE<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO III</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Receso Comisi&oacute;n Permanente</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 1</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Oscar Eduardo Ramírez Aguilar</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n de Instalaci&oacute;n Celebrada<br>en la Ciudad de M&eacute;xico, el 30 de Abril de 2021</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/3/SPR/PDF-WEB/C.P._No.1-30-ABRIL-2021.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97171'></a><p align="center"><strong>PRESIDENCIA  PROVISIONAL DEL DIPUTADO</strong><br>
+  <strong>MARCO  ANTONIO ADAME CASTILLO</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El  Presidente Provisional Diputado Marco Antonio Adame Castillo: </strong>(13:35  horas) Doy lectura al artículo 118, numeral 2 de la Ley Orgánica del Congreso  General de los Estados Unidos Mexicanos.</p>
+<p align="justify">Artículo  118. Numeral 2. La Mesa Directiva de la Comisión Permanente deberá elegirse  conforme al siguiente procedimiento:</p>
+<p align="justify">a) Los  Diputados y Senadores se reunirán bajo la Presidencia Provisional de la persona  a quien corresponda el primer lugar por orden alfabético de apellidos, o de  estos y de nombres si hubiese dos o más apellidos iguales. </p>
+<p align="justify">b) Para  su auxilio, el Presidente provisional designará a dos secretarios.</p>
+<p align="justify">c) Los  Diputados y Senadores elegirán por mayoría, en votación por cédula, un  Presidente, un Vicepresidente y cuatro Secretarios; de estos últimos, dos  deberán ser Diputados y dos Senadores. </p>
+<p align="justify">Con  base en lo que disponen los artículos 118 de la Ley Orgánica, al que di  lectura, y 171 del Reglamento para el Gobierno Interior del Congreso General,  esta Presidencia Provisional designa como integrantes de la Secretaría a la  Diputada María Guillermina Alvarado Moreno y a la Diputada Adriana Paulina  Teissier Zavala. Les ruego pasen a ocupar su lugar. </p>
+<p align="justify">Proceda  la Secretaría a pasar lista de asistencia de las ciudadanas legisladoras y los  ciudadanos legisladores que han sido electos para integrar la Comisión  Permanente. </p>
+<p align="justify"><strong>La  Secretaria Diputada María Guillermina Alvarado Moreno: </strong>Con  gusto, señor Presidente. </p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/permanente/CP64-3ASPR/Asistencia/686"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Señor Presidente, hay una asistencia de 25  legisladores y legisladoras. </p>
+<p>Hay quórum, señor Presidente. </p>
+<p><strong>El Presidente Provisional  Diputado Marco Antonio Adame Castillo: </strong>Se abre la sesión.</p>
+<p>El Orden del Día de la sesión está colocado en sus  lugares para su conocimiento.</p>
+<p align="right"><strong>ORDEN DEL DÍA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_comision_permanente/documento/117441"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97171'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97172'></a><p align="justify">En consecuencia, y a fin de dar cumplimiento a lo  dispuesto por el artículo 118 de la Ley Orgánica del Congreso General de los  Estados Unidos Mexicanos, solicito a la Secretaría dé lectura a un Acuerdo que  han presentado las legisladoras y los legisladores de los grupos parlamentarios  en relación con la Mesa Directiva. </p>
+<p align="justify"><strong>COMISIÓN  PERMANENTE</strong></p>
+<p align="justify"><strong>La Secretaria Diputada María  Guillermina Alvarado Moreno: </strong>Gracias,  señor Presidente. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-30-1/assets/documentos/1_Acuerdo_MDCP_Mesa_Directiva.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El  Presidente Provisional Diputado Marco Antonio Adame Castillo: </strong>En consecuencia, solicito a la Secretaría consulte a la Asamblea, en  votación económica, si es de aprobarse el Acuerdo. </p>
+<p align="justify"><strong>La  Secretaria Diputada María Guillermina Alvarado Moreno: </strong>Gracias, señor Presidente. Consulto a la Asamblea, en votación económica,  si es de aprobarse el anterior Acuerdo. Quienes estén porque se apruebe, favor  de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén  porque no se apruebe, favor de levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Aprobado el Acuerdo,  señor Presidente. </p>
+<p align="justify"><strong>El  Presidente Provisional Diputado Marco Antonio Adame Castillo: </strong>Muchas gracias. </p>
+<p align="justify">En  consecuencia, y a fin de dar cumplimiento a lo dispuesto por el artículo 118 de  la Ley Orgánica del Congreso General, se va a proceder a la elección de la Mesa  Directiva de la Comisión Permanente, en los términos del Acuerdo que acaba de  ser aprobado. Se instruye a Servicios Parlamentarios para que distribuya las  cédulas de votación a las ciudadanas legisladoras y a los ciudadanos  legisladores. </p>
+<p align="justify">Solicito a la  Secretaría se sirva llamar a las ciudadanas legisladoras y a los ciudadanos  legisladores por orden de lista, a efecto que pasen a depositar su voto en la  urna que se encuentra al frente de este presídium.</p>
+<p align="justify"><strong>La Secretaria Diputada  Paulina Teissier Zavala:</strong> Gracias, señor Presidente.</p>
+<p align="justify">Se solicita a las  ciudadanas legisladoras y a los ciudadanos legisladores pasen a depositar su  voto al ser llamados por orden de lista.</p>
+<p align="center">(Votación  y escrutinio)</p>
+<p align="justify"><strong>El Presidente  Provisional Diputado Marco Antonio Adame Castillo:</strong> Permítame, Secretaria.</p>
+<p align="justify"><strong>El Senador Eduardo  Ramírez Aguilar: </strong>Solicito una moción suspensiva, de unos cinco minutos,  para generar un nuevo Acuerdo, que fue omisión en la redacción.</p>
+<p align="justify">Entonces, quisiera  pedirle un espacio, si tiene a bien otorgarlo, para desarrollar esta elección  de Mesa Directiva y tener el consenso unánime en este arranque.</p>
+<p align="justify"><strong>El Presidente  Provisional Diputado Marco Antonio Adame Castillo:</strong> Estamos ante una situación que invita a la revisión.</p>
+<p align="justify">En aras de favorecer el  consenso que requiere esta Comisión Permanente y de lograr en el primer acto de  decisión la máxima unidad y legitimidad, se concede un receso de cinco minutos.</p>
+<p align="center">(Receso)</p>
+<p align="justify"><strong>El Presidente  Provisional Diputado Marco Antonio Adame Castillo: </strong>Voy a proceder  indicando los pasos que vamos a seguir para dar absoluta claridad y  transparencia para la elección de la Mesa Directiva, toda vez que se suspendió  una votación a petición de los representantes de los grupos parlamentarios.<br>
+  <br>
+  Está una urna al frente de nosotros con  votos depositados, hay material que está en manos de las legisladoras y  legisladores y vamos entonces a cuidar escrupulosamente cada paso e indicación  para que todos estemos en condiciones de secundar el Acuerdo que se ha  alcanzado y de darle plena legitimidad de origen a la Mesa Directiva y a la  Comisión Permanente.</p>
+<p align="justify">En consecuencia, solicito a la  Secretaría dé lectura al Acuerdo recién recibido.</p>
+<p align="justify"><strong>La Secretaria Diputada  María Guillermina Alvarado Moreno: </strong>Doy lectura al Acuerdo.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-30-1/assets/documentos/2_Acuerdo_MDCP_Mesa_Directiva.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es todo, señor Presidente.</p>
+<p align="justify"><strong>El Presidente  Provisional Diputado Marco Antonio Adame Castillo: </strong>Solicito a la  Secretaría consulte a la Asamblea, en votación económica, si se aprueba el Acuerdo  al que se acaba de dar lectura.</p>
+<p align="justify"><strong>La Secretaria Diputada  María Guillermina Alvarado Moreno: </strong>Gracias. Consulto a la Asamblea, en  votación económica, si es de aprobarse el Acuerdo al que se acaba de dar  lectura. Quienes estén porque se apruebe, favor de levantar la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque no se apruebe,  favor de levantar la mano.</p>
+<p align="center">(La Asamblea no  asiente)</p>
+<p align="justify">Aprobado el Acuerdo, señor Presidente.</p>
+<p align="justify"><strong>El Presidente  Provisional Diputado Marco Antonio Adame Castillo: </strong>En consecuencia,  realizaremos un nuevo procedimiento de votación por cédula para elegir a los  integrantes de la Mesa Directiva conforme el acuerdo recién aprobado.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97172'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97173'></a><p align="justify">Solicito  al personal de apoyo retire la urna transparente, retire los materiales que se  distribuyeron entre las legisladoras y los legisladores en la votación  anterior.</p>
+<p align="justify">Le  pido a Servicios Parlamentarios me informe en el momento en que se haya  cumplido esta instrucción.</p>
+<p align="justify">Me  informan que el material ha sido retirado.</p>
+<p align="justify"><strong>ELECCIÓN  DE LA MESA DIRECTIVA</strong></p>
+<p align="justify">A fin  de dar cumplimiento a lo dispuesto por el artículo 118 de la Ley Orgánica del  Congreso General, se va a proceder a la elección de la Mesa Directiva de la  Comisión Permanente en los términos del Acuerdo que acaba de ser aprobado.</p>
+<p align="justify">Se  instruye a Servicios Parlamentarios para que distribuyan las cédulas de  votación a las ciudadanas legisladoras y a los ciudadanos legisladores.</p>
+<p align="justify">Solicito  a la Secretaría se sirva llamar a las ciudadanas legisladoras y a los  ciudadanos legisladores por orden de lista, a efecto de que pasen a depositar  su voto en la urna que se encuentra al frente de este presídium.</p>
+<p align="justify"><strong>La  Secretaria Diputada Adriana Paulina Teissier Zavala: </strong>Se  solicita a las ciudadanas legisladoras y a los ciudadanos legisladores pasen a  depositar su voto al ser llamados por orden de lista.</p>
+<p align="center">(Votación  y escrutinio)</p>
+<p align="justify">¿Falta  alguna ciudadana legisladora o ciudadano legislador de pasar a depositar su  voto?</p>
+<p align="justify">Señor Presidente,  se emitieron 25 votos en favor de la planilla integrada por las legisladoras y  los legisladores siguientes:</p>
+<p align="justify">Presidente,  Senador Eduardo Ramírez Aguilar.</p>
+<p align="justify">Vicepresidencia,  Senadora Imelda Castro Castro.</p>
+<p align="justify">Vicepresidencia,  Diputado Marco Antonio Adame Castillo. </p>
+<p align="justify">Vicepresidencia,  Diputada Dulce María Sauri Riancho. </p>
+<p align="justify">Secretaria,  Diputada María del Carmen Almeida Navarro. </p>
+<p align="justify">Secretaria,  Diputada Fabiola Raquel Guadalupe Loya Hernández. </p>
+<p align="justify">Secretario,  Diputado Gerardo Fernández Noroña. </p>
+<p align="justify">Secretaria,  Senadora Elvia Marcela Mora Arellano. </p>
+<p align="justify">Secretaria,  Senadora Ana Lilia Rivera Rivera. </p>
+<p align="justify">Secretario,  Senador Jesús Horacio González Delgadillo. </p>
+<p align="justify">Secretario,  Senador Manuel Añorve Baños. </p>
+<p align="justify">Es  cuanto, señor Presidente. <br>
+  <br>
+  <strong>El  Presidente Provisional Diputado Marco Antonio Adame Castillo:</strong> Hecha la lectura, la Mesa Directiva de la Comisión Permanente del Congreso  General de los Estados Unidos Mexicanos que funcionará durante el segundo  receso del tercer año de ejercicio de la LXIV Legislatura del Honorable  Congreso de la Unión, queda integrada de la siguiente manera: </p>
+<p align="justify">Presidente,  Senador Eduardo Ramírez Aguilar.</p>
+<p align="justify">Vicepresidencia,  Senadora Imelda Castro Castro.</p>
+<p align="justify">Vicepresidencia,  Diputado Marco Antonio Adame Castillo. </p>
+<p align="justify">Vicepresidencia,  Diputada Dulce María Sauri Riancho. </p>
+<p align="justify">Secretaria,  Diputada María del Carmen Almeida Navarro. </p>
+<p align="justify">Secretaria,  Diputada Fabiola Raquel Guadalupe Loya Hernández. </p>
+<p align="justify">Secretario,  Diputado Gerardo Fernández Noroña. </p>
+<p align="justify">Secretaria,  Senadora Elvia Marcela Mora Arellano. </p>
+<p align="justify">Secretaria,  Senadora Ana Lilia Rivera Rivera. </p>
+<p align="justify">Secretaria,  Senador Jesús Horacio González Delgadillo. </p>
+<p align="justify">Secretaria,  Senador Manuel Añorve Baños.</p>
+<p align="justify">Solicito  a las legisladoras y los legisladores que han sido electos, pasen a tomar posesión  de sus cargos. </p>
+<p align="justify"><strong>La  Secretaria Senadora Ana Lilia Rivera Rivera: </strong>Se les  solicita a los presentes ponerse de pie.</p>
+<p align="center">(Todos  de pie)</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97173'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97174'></a><p align="center"><strong>PRESIDENCIA  DEL SENADOR</strong><br>
+  <strong>EDUARDO  RAMÍREZ AGUILAR</strong></p>
+<p align="justify"><strong>DECLARATORIA</strong></p>
+<p align="justify"><strong>El  Presidente Senador Eduardo Ramírez Aguilar: </strong>Con  fundamento en los artículos 120 de la Ley Orgánica del Congreso General de los  Estados Unidos Mexicanos y 173 del Reglamento para el Gobierno Interior del  Congreso General de los Estados Unidos Mexicanos, la Comisión Permanente, que  funcionará durante el segundo receso del tercer año de ejercicio de la LXIV  Legislatura del Congreso de la Unión, se declara formalmente instalada. </p>
+<p align="justify"><strong>La  Secretaria Senadora Ana Lilia Rivera Rivera: </strong>Les  solicito ocupar sus lugares. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97174'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97175'></a><p align="justify"><strong>COMISIONES  DE CORTESÍA</strong></p>
+<p align="justify"><strong>El  Presidente Senador Eduardo Ramírez Aguilar: </strong>La Mesa  Directiva hará las comunicaciones correspondientes al Poder Ejecutivo Federal,  a la Suprema Corte de Justicia de la Nación y a las legislaturas locales de las  entidades federativas para informar de la instalación de la Comisión Permanente  que funcionará durante el Segundo Receso del Tercer Año de Ejercicio de la LXIV  Legislatura. </p>
+<p align="justify">Legisladores  y legisladoras: Informo a ustedes que esta Mesa Directiva ha suscrito el Acuerdo  por el que se establecen las reglas básicas para el funcionamiento de la  Comisión Permanente del Honorable Congreso de la Unión. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97175'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97176'></a><p align="justify">Cabe señalar que el Acuerdo contempla la  posibilidad de realizar sesiones plenarias a distancia. Dicho acuerdo fue  distribuido oportunamente a los grupos parlamentarios de la Cámara de Senadores  y a la Secretaría de Servicios Parlamentarios de la Cámara de Diputados, el  acuerdo está disponible en el monitor de sus escaños. De esa manera se hace de  su conocimiento.</p>
+<p align="justify"><strong>MESA DIRECTIVA</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-30-1/assets/documentos/Acuerdo_MDCP_Reglas_Basicas.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">En consecuencia, está a discusión el Acuerdo.  Al no existir oradores, consulte la Secretaría a la Asamblea, en votación  económica, si es de aprobarse. </p>
+<p align="justify"><strong>La Secretaria Senadora  Ana Lilia Rivera Rivera: </strong>Consulto a la Asamblea, en votación económica, si  es de aprobarse el anterior Acuerdo. Quienes estén porque se apruebe, favor de  levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque se rechace, favor  de levantar la mano. </p>
+<p align="center">(La Asamblea no  asiente)</p>
+<p align="justify">Aprobado, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador  Eduardo Ramírez Aguilar: </strong>Aprobado el Acuerdo por el que se establecen  las reglas básicas para el funcionamiento de la Comisión Permanente del  Honorable Congreso de la Unión. Se instruye a la Secretaría publicar el Acuerdo  en el portal electrónico de manera permanente. Comuníquese. <br>
+  <br>
+  Pasamos  al siguiente asunto. </p>
+<p align="justify"><strong>La  Secretaria Senadora Ana Lilia Rivera Rivera: </strong>Se va a  dar lectura al Orden del Día de la próxima sesión. (Leyó)</p>
+<p align="justify">Es  todo, señor Presidente.</p>
+<p align="justify"><strong>El  Presidente Senador Eduardo Ramírez Aguilar: </strong>Muchas  gracias, Senadora Secretaria. </p>
+<p align="justify">Quiero  dar la bienvenida en la instalación de esta Comisión Permanente, donde  cumpliremos con nuestros deberes constitucionales a favor de nuestra República,  sabiendo que los momentos en los que México atraviesa y el mundo entero, por  una pandemia, no ha sido obstáculo para desarrollar las actividades  legislativas, hemos utilizado la tecnología, la plataforma digital, nos da la  posibilidad de construir acuerdos y consensos y leyes que son de beneficio para  nuestra sociedad mexicana. </p>
+<p align="justify">Asimismo,  estamos en medio de un proceso  electoral y no ha sido motivo ni será motivo en esta Comisión Permanente para  desarrollar el buen desempeño de nuestro trabajo, por lo que exhorto a  conducirnos con un debate de altura, con una postura que permita construir en  México un tránsito mejor hacia nuestra democracia. </p>
+<p align="justify">Les agradezco a cada uno de los integrantes por  apoyar la instalación de esta comisión, pero además agradezco de manera  especial su voto para presidir esta Comisión Permanente.</p>
+<p align="justify">Gracias.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97176'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97177'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify">Se cita a sesión de la Comisión Permanente el  próximo jueves 6 de mayo a las 11:00 horas, en modalidad a distancia. </p>
+<p align="justify">Las Secretarías Generales les remitirán  oportunamente los enlaces digitales correspondientes. La plataforma electrónica  que utilizaremos estará disponible desde las 10:00 horas para el registro de su  asistencia. </p>
+<p align="justify">Se levanta la sesión. </p>
+<p align="center">(Se  levantó la sesión a las 14:31 horas) </p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Comisión Permanente del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97177'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

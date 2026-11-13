@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA COMISI&Oacute;N PERMANENTE<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Receso Comisi&oacute;n Permanente</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 1</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Mónica Fernández Balboa</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica de la Comisi&oacute;n Permanente Celebrada<br>en la Ciudad de M&eacute;xico, el 01 de Mayo de 2020</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/2/SPR/PDF-WEB/C.P_No._1_1_MAYO_2020.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='89792'></a><p align="center"><strong>PRESIDENCIA  PROVISIONAL DEL SENADOR</strong><br>
+  <strong>MANUEL AÑORVE BAÑOS</strong></p>
+<p align="justify"><strong>APERTURA</strong><strong> </strong></p>
+<p align="justify"><strong>El Presidente Senador Manuel Añorve Baños:</strong> (15:34 horas) Doy  lectura al artículo 118 de la Ley Orgánica del Congreso General de los Estados  Unidos Mexicanos: </p>
+<p align="justify">1.- El mismo día en  que las Cámaras acuerden su respectiva clausura de sesiones ordinarias, los  Diputados y Senadores que hubieran sido nombrados como miembros de la Comisión  Permanente, se reunirán a efecto de elegir a su Mesa Directiva en el recinto  que corresponda conforme al artículo anterior.</p>
+<p align="justify">2.- La Mesa  Directiva de la Comisión Permanente, deberá elegirse conforme al siguiente  procedimiento:</p>
+<p align="justify">a) Los Diputados y  Senadores se reunirán bajo la Presidencia Provisional de la persona a quien  corresponda el primer lugar por orden alfabético de apellidos, o de éstos y de  nombres si hubiere dos o más apellidos iguales. </p>
+<p align="justify">b) Para su auxilio,  el Presidente provisional designará a dos Secretarios.</p>
+<p align="justify">c) Los Diputados y  Senadores elegirán por mayoría, en votación por cédula un Presidente, un Vicepresidente  y cuatro Secretarios; de estos últimos, dos deberán ser Diputados y dos  Senadores. </p>
+<p align="justify">Con base en lo que  disponen los artículos 118 de la Ley Orgánica del Congreso General de los  Estados Unidos Mexicanos; y 171 del Reglamento para el Gobierno Interior del  Congreso General, esta Presidencia provisional designa a las siguientes  Legisladoras como Secretarías: Senadora Verónica Camino Farjat y Diputada Rocío  Barrera Badillo.<br>
+  Honorable Asamblea, hago de su conocimiento que el  pasado 28 de abril se publicó, en la Gaceta del Senado, el aviso firmado por la  Senadora Mónica Fernández Balboa, Presidenta del Senado de la República, para  informar a las y los integrantes de la Comisión Permanente del H. Congreso de  la Unión de la celebración de esta sesión, a efecto de elegir a quienes  integrarán su Mesa Directiva y para declarar formalmente la instalación de este  órgano. Dicho aviso también se publicó en el Diario Oficial de la Federación el  30 de abril de 2020.</p>
+<p align="justify">Proceda la Secretaría a pasar lista de asistencia  de las ciudadanas legisladoras y los ciudadanos legisladores que han sido  electos para integrar la Comisión Permanente. </p>
+<p align="justify"><strong>La Secretaría Senadora Verónica Noemí  Camino Farjat: </strong>Sí,  señor Presidente. </p>
+<p align="justify">Se va a proceder a pasar lista de las legisladoras  y los legisladores que integran la Comisión Permanente.</p>
+<p align="right"><strong>LISTA DE ASISTENCIA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/permanente/CP64-2ASPR/Asistencia/613"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Señor Presidente, hay una asistencia de 36  legisladoras y legisladores. </p>
+<p align="justify">Por lo tanto, hay quórum. </p>
+<p align="justify"><strong>El Presidente  Senador Manuel Añorve Baños:</strong> Se abre la sesión. El Orden del Día de la sesión está colocado en sus  lugares para su conocimiento. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a89792'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='89793'></a><p align="justify">En consecuencia y a fin de dar cumplimiento a lo  dispuesto por el artículo 118 de la Ley Orgánica del Congreso General de los  Estados Unidos Mexicanos, solicito a la Secretaría dé lectura a un Acuerdo que  han presentado las legisladoras y los legisladores de los grupos parlamentarios  en relación con la Mesa Directiva. </p>
+<p align="justify"><strong>ACUERDO DE LA COMISIÓN PERMANENTE</strong></p>
+<p align="justify"><strong>La Secretaria Diputada Rocío Barrera  Badillo: </strong>Doy lectura, señor  Presidente. </p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/Acuerdo_MD-CP_Integracion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es cuanto, señor  Presidente.<br>
+  <br>
+  En consecuencia,  solicito a la Secretaría consulte a la Asamblea, en votación económica, si es  de aprobarse el Acuerdo. </p>
+<p align="justify"><strong>La Secretaria  Diputada Rocío Barrera Badillo:</strong> Sí, señor Presidente.</p>
+<p align="justify">Consulto a la  Asamblea, en votación económica, si es de aprobarse el anterior Acuerdo.</p>
+<p align="justify">Quienes estén  porque se apruebe, favor de levantar la mano. </p>
+<p align="center">(La Asamblea  asiente)</p>
+<p align="justify">Quienes estén  porque se rechace, favor de levantar la mano. </p>
+<p align="center">(La Asamblea no  asiente)</p>
+<p align="justify">Aprobado el Acuerdo,  señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Manuel Añorve Baños:</strong> Gracias, señora  Secretaria. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a89793'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='89794'></a><p align="justify"><strong>ELECCIÓN DE LA MESA DIRECTIVA</strong></p>
+<p align="justify">En consecuencia, y  a fin de dar cumplimiento a lo dispuesto por el artículo 118 de la Ley Orgánica  del Congreso General de los Estados Unidos Mexicanos, se va a proceder a la  elección de la Mesa Directiva de la Comisión Permanente, en los términos del  Acuerdo que acaba de ser aprobado.</p>
+<p align="justify">Se instruye a  Servicios Parlamentarios para que distribuya las cédulas de votación a las  ciudadanas legisladoras y a los ciudadanos legisladores. </p>
+<p align="justify">Solicito a la  Secretaria se sirva llamar a las ciudadanas Legisladoras y a los ciudadanos Legisladores  por orden de lista, a efecto de que pasen a depositar su voto en la urna que se  encuentra al frente de este presídium. </p>
+<p align="justify"><strong>La Secretaria  Diputada Rocío Barrera Badillo:</strong> Se solicita a las ciudadanas legisladoras y a los  ciudadanos legisladores pasen a depositar su voto al ser llamados por orden de  lista. </p>
+<p align="center">(Votación y  escrutinio)</p>
+<p align="justify"><strong>La Secretaria  Senadora Verónica Noemí Camino Farjat: </strong>Falta algún  legislador o legisladora por emitir su voto. </p>
+<p align="justify">Se procede a  realizar el escrutinio.</p>
+<p align="justify"><strong>El Presidente  Senador Manuel Añorve Baños: </strong>Informo a la Asamblea que, conforme al pase de lista, la ciudadana Geovanna  Bañuelos no pasó lista, para su conocimiento.<br>
+  <br>
+  <strong>La Secretaria  Diputada Rocío Barrera Badillo: </strong>Señor Presidente, se emitieron 34 votos en favor y  dos abstenciones de la planilla integrada por las Legisladoras y los Legisladores  siguientes:</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/Cedula_MD.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es cuanto, señor  Presidente.</p>
+<p align="justify"><strong>El Presidente  Senador Manuel Añorve Baños: </strong>Gracias Diputada Secretaria.</p>
+<p align="justify">En consecuencia, la  Mesa Directiva de la Comisión Permanente del Congreso General de los Estados  Unidos Mexicanos que funcionará durante el segundo receso del segundo año de  ejercicio de la LXIV Legislatura del Honorable Congreso de la Unión, queda  integrada como lo ha señalado ya la Secretaría. </p>
+<p align="justify">Solicito a las  legisladoras y a los legisladores que han sido electos, pasen a tomar posesión  de sus cargos.</p>
+<p align="center">(Los Legisladores  cumplen)</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a89794'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='89795'></a><p align="center"><strong>PRESIDENCIA DE LA  SENADORA</strong><br>
+  <strong>MÓNICA FERNÁNDEZ  BALBOA</strong></p>
+<p align="justify"><strong>La Presidenta  Senadora Mónica Fernández Balboa: </strong>Les ruego a todos ponerse de pie. </p>
+<p align="center">(Todos de pie)</p>
+<p align="justify"><strong>DECLARATORIA</strong><strong> </strong></p>
+<p align="justify">Con fundamento en  los artículos 120 de la Ley Orgánica del Congreso General de los Estados Unidos  Mexicanos; y 173 del Reglamento para el Gobierno Interior del Congreso General  de los Estados Unidos Mexicanos, la Comisión Permanente que funcionará durante  el segundo receso del segundo año de ejercicio de la LXIV Legislatura del  Congreso de la Unión, se declara formalmente instalada. </p>
+<p align="justify">Les solicito ocupar  sus lugares.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a89795'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='89796'></a><p align="justify"><strong>COMISIONES DE CORTESÍA</strong></p>
+<p align="justify">La Mesa Directiva  hará las comunicaciones correspondientes al Poder Ejecutivo Federal, a la Suprema Corte  de Justicia de la Nación y a las legislaturas locales de las entidades  federativas para informar de la instalación de la Comisión Permanente que  funcionará durante el segundo receso del segundo año de ejercicio de la LXIV  Legislatura. <br>
+  <br>
+  Recibimos una comunicación del grupo parlamentario  del Partido Morena por la que solicita cambios en la condición de titular y  sustituto de sus miembros que son integrantes de la Comisión Permanente. </p>
+<p align="justify">Dé lectura la Secretaría a la comunicación, por  favor.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a89796'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='89797'></a><p align="justify"><strong>COMUNICACIÓN</strong></p>
+<p align="justify"><strong>El Secretario Diputado Sergio Carlos  Gutiérrez Luna: </strong>Doy  lectura, señora Presidenta, a la comunicación indicada.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/Modificacion_integrantes_MORENA.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es todo, señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández  Balboa: </strong>La Asamblea queda  enterada. Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a89797'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='89798'></a><p align="justify">Compañeras Legisladoras  y compañeros Legisladores, les informo que el Senado de la República remitió a  la Comisión Permanente, votos aprobatorios de diversas legislaturas de los  estados y de la Ciudad de México, en relación con el proyecto de Decreto por el  que se reforma y adiciona el artículo 4o. de la Constitución Política de los  Estados Unidos Mexicanos, en materia de bienestar. </p>
+<p align="justify">Consulte la  Secretaría a la Asamblea, en votación económica, si autoriza incorporar el  asunto al Orden del Día de la sesión de hoy.</p>
+<p align="justify"><strong>El Secretario Diputado  Sergio Carlos Gutiérrez Luna: </strong>Consulto a la Asamblea, en votación económica, si  se autoriza que se incorpore el asunto referido en la agenda del Orden del Día.  Quienes estén porque se autorice, favor de levantar la mano. </p>
+<p align="center">(La Asamblea  asiente)</p>
+<p align="justify">Quienes estén  porque no se autorice, favor de levantar la mano.</p>
+<p align="center">(La Asamblea no  asiente)</p>
+<p align="justify">Sí, se autoriza,  señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta  Senadora Mónica Fernández Balboa: </strong>Solicito a la Secretaría dé cuenta con los  votos recibidos y realice el escrutinio a que se refiere el artículo 135 de la  Constitución Política de los Estados Unidos Mexicanos. </p>
+<p align="justify"><strong>CÁMARA DE SENADORES</strong></p>
+<p align="justify"><strong>La Secretaria  Senadora Nadia Navarro Acevedo: </strong>Procedo a dar cuenta. Se recibieron comunicaciones  de 23 legislaturas de los estados y de la Ciudad de México, por las que  informan de su voto aprobatorio al proyecto de Decreto por el que se reforma y  adiciona el artículo 4o. de la Constitución Política de los Estados Unidos  Mexicanos, en Materia de Bienestar. </p>
+<p align="justify">Informo a la  Asamblea que los votos aprobatorios al proyecto de Decreto por el que se  reforma y adiciona el artículo 4o. de la Constitución Política de los Estados  Unidos Mexicanos, en materia de bienestar, son de las legislaturas de los  estados de:</p>
+<p align="justify">Baja California,  aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/1_BC_bienestar_01042020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Baja California Sur, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/2_BCS_bienestar_31032020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Campeche, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/3_campeche_bienestar_01042020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Chiapas, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/4_chiapas_bienestar_27032020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Coahuila, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/5_coahuila_bienestar_03042020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Colima, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/6_colima_bienestar_27032020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Durango, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/7_durango_Bienestar_26032020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Estado de México, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/8_mexico_bienestar_26032020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Guerrero, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/9_guerrero_bienestar_28032020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Hidalgo, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/10_hidalgo_bienestar_07042020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Jalisco, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/11_Jalisco_bienestar_27032020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Michoacán, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/12_michoacan_bienestar_27042020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Morelos, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/13_morelos_bienestar_02042020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Nayarit, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/14_nayarit_bienestar_08042020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Oaxaca, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/15_oaxaca_bienestar_26032020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>San Luis Potosí, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/16_SLP_bienestar_06042020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Sinaloa, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/17_sinaloa_bienestar_01042020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Tabasco, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/18_tabasco_26032020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Tlaxcala, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/19_tlaxcala_bienestar_27032020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Veracruz, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/20_veracruz_bienestar_02042020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Yucatán, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/21_yucatan_bienestar_08042020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Zacatecas, aprobatorio.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/22_zacatecas_bienestar_08042020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Y un voto aprobatorio de la Legislatura de la  Ciudad de México. </p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/23_cdmx_bienestar_03042020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Lo que suma un  total de 23 votos aprobatorios. </p>
+<p align="justify">En consecuencia,  esta Secretaría da fe de la emisión de 23 votos aprobatorios del proyecto de  Decreto de referencia. </p>
+<p align="justify">Les solicito  ponerse de pie para la declaratoria correspondiente. </p>
+<p align="center">(Todos de pie)</p>
+<p align="justify"><strong>La Presidenta  Senadora Mónica Fernández Balboa: </strong>Verificada la aprobación de la mayoría de  las legislaturas de los estados y de la Ciudad de México al proyecto  de Decreto por el que se reforma y adiciona el artículo 4o. de la Constitución  Política de los Estados Unidos Mexicanos, en Materia de Bienestar.</p>
+<p align="justify">A efecto de dar cumplimiento a lo que establece el artículo 135 de la  Constitución Política de los Estados Unidos Mexicanos y una vez computado el  voto aprobatorio de la mayoría de las legislaturas de los estados y la Ciudad  de México: </p>
+<p align="justify">&ldquo;La Comisión Permanente del Congreso de la Unión declara aprobado el Decreto  por el que se reforma y adiciona el artículo 4o. de la Constitución Política de  los Estados Unidos Mexicanos, en Materia de Bienestar&rdquo; Se remite al Diario  Oficial de la Federación para su publicación.</p>
+<p align="justify">¡Felicidades al Congreso!</p>
+<p align="justify">La Comisión Permanente seguirá atenta para recibir las resoluciones que  emitan otras legislaturas sobre este asunto, mismas que se integrarán al expediente.</p>
+<p align="justify">Favor de tomar asiento.</p>
+<p align="justify">Gracias.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a89798'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='89799'></a><p align="justify">Se recibió también de la Secretaría de Gobernación un oficio con el  nombramiento a favor del ciudadano Horacio Duarte Olivares, como Administrador  General de Aduanas del Servicio de Administración Tributaria de la Secretaría  de Hacienda y Crédito Público.</p>
+<p align="justify">Consulte la Secretaría a la Asamblea, en votación económica, si autoriza  incorporar el asunto al Orden del Día de la sesión de hoy.</p>
+<p align="justify"><strong>El Secretario Diputado Sergio Carlos Gutiérrez Luna:</strong> Consulto a la Asamblea, en votación económica, si autoriza que se  incorpore el asunto referido en la agenda del día. Quienes estén porque se  autorice, favor de levantar la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque no se autorice, favor de levantar la mano.</p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Sí se autoriza, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Gracias, señor Secretarío.</p>
+<p align="justify">Solicito a la Secretaría dé lectura a la comunicación.<br>
+  <br>
+  <strong>SECRETARÍA DE GOBERNACIÓN</strong></p>
+<p align="justify"><strong>El Secretario Diputado Sergio Carlos  Gutiérrez Luna:</strong> Doy lectura, señora Presienta.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/segob_titular_aduanas.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es todo, señora Presidenta. <br>
+  <br>
+  <strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>En consecuencia, con fundamento en los artículos 59 y 60 del Reglamento  para el Gobierno Interior del Congreso General de los Estados Unidos Mexicanos,  solicito a la Secretaría consulte a la Asamblea, en votación económica, si el  asunto señalado se considera de urgente resolución y se pone a discusión de  inmediato.</p>
+<p align="justify"><strong>El Secretario Diputado Sergio Carlos Gutiérrez Luna: </strong>Consulto a la Asamblea, en votación económica, si el asunto referido por  la Presidenta de la Mesa Directiva, se considera de urgente resolución. Quienes  estén por la afirmativa, favor de levantar la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén por la negativa, favor de levantar la mano.</p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Sí se autoriza, señora Presidenta, por 28 votos a favor y cuatro en  contra.</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>En consecuencia, está a discusión el nombramiento al que se ha hecho  referencia.</p>
+<p align="justify">Han pedido la palabra los Senadores: Malú Micher, Julen Rementería,  Marcela Mora, Higinio Martínez, Reginaldo Sandoval y Julen Rementería. </p>
+<p align="justify">Tiene el uso de la palabra, el Senador Julen Rementería del Puerto, del  grupo parlamentario del PAN,en contra. </p>
+<p align="justify"><strong>El Senador Julen Rementería del Puerto:</strong> Con su permiso, señora Presidenta.</p>
+<p align="justify">Quiero, en primer lugar, saludar a todas y a todos mis compañeros  Diputadas y Senadores, en la conformación de esta Comisión Permanente, deseando  que las cosas salgan bien y que, así como se empezó con un acuerdo que pudo dar  viabilidad al desarrollo de esta sesión, puedan ir transcurriendo muchos de los  asuntos que seguramente nos vamos a encontrar en una condición que hoy México  enfrenta, que es bien complicada.</p>
+<p align="justify">Y al referirme a la complicación que vive México tenemos que hacer  alusión precisamente a toda la parte económica y al hablar de la parte  económica no podemos, de ninguna manera, dejar de lado lo que está pasando  precisamente en ese lugar, en donde la persona que se pretende hoy ratificar  para ese puesto pues va a tener que enfrentar como los problemas del día a día.</p>
+<p align="justify">El comercio exterior en nuestro país hoy demanda de personas con una  capacidad y conocimiento verdaderamente extraordinario, y aun cuando de la  persona que es propuesta no tenemos en lo particular ningún inconveniente con  él, con quien sí lo tenemos es con su perfil, con su expertise, con su  experiencia, porque no la manifiesta, porque no tiene en su currículum ninguna  experiencia para ello y requiere, como incluso el propio Presidente lo ha  dicho, que es un asunto muy complicado, es un &ldquo;monstruo de mil cabezas&rdquo; y por  supuesto que esos &ldquo;monstruos de mil cabezas&rdquo; necesitan gente con experiencia. </p>
+<p align="justify">Y miren si no, lo  que está pasando ahora por ejemplo en Pemex, se reporta el día de ayer la  pérdida más grande en la historia que pueda tener esa empresa. <br>
+  <br>
+  Van a decir: Sí,  son condiciones exógenas, pero también las hay las condiciones internas, porque  tenemos que contar con cómo se ha venido desarrollando toda la política  enérgica en nuestro país y que, por supuesto, hoy ante la contingencia del  precio del barril del petróleo, pues tiene que ver con esta situación que ha  complicado la existencia y la viabilidad de la empresa. </p>
+<p align="justify">Ya hay quien ha  sacado cuentas. Se pierden en Pemex 252 millones de pesos a la hora; cuando  acabe esta sesión se habrán perdido más de mil millones de pesos, cuando se  tienen que ocupar para otra cosa. </p>
+<p align="justify">Y así, lo pongo  solo como un ejemplo, porque eso puede pasar también en las aduanas, porque se  necesita gente con experiencia, se necesita gente comprometida, pero que además  lo sepa; que pueda hacer proa, seguramente lo puede ser, pero que tenga  experiencia, que los problemas de México no se resuelven nada más con buena  voluntad o con 90 por ciento de honestidad, se requiere la honestidad y se  requiere también la experiencia, la capacidad demostrada en aquel lugar en  donde van a desarrollar las labores. </p>
+<p align="justify">Por eso es que no  estamos de acuerdo en que simplemente se proponga a una persona que no tiene  capacidad demostrada en esa área, para poder conducir algo que es tan  complicado. </p>
+<p align="justify">Por las aduanas de  este país pasan todas las mercancías, las que tienen que pasar y a la mejor  otras que no debieran de pasar, y se necesita gente que sepa del comercio  exterior que lo promueva, que pueda ser ahora en esta emergencia económica algo  que signifique la diferencia.</p>
+<p align="justify">Ya no estamos de  acuerdo en que se siga experimentando con perfiles que no lo cubren, que no  cubren los requisitos para estar ahí, que pueden ser muy buenos para otras  cosas. </p>
+<p align="justify">Y no es la primera  vez que hablamos de esto, ha sido una discusión reiterada en los nombramientos en distintas áreas, por  decir en la Secretaría de Energía y de ahí para allá en todo lo que tiene que  ver con los órganos dependientes de ella o los autónomos. </p>
+<p align="justify">¿Es momento,  realmente de estar a favor de México? Sí, sí lo es. </p>
+<p align="justify">Es momento de  construir unidad y lograr un acuerdo económico que reactive a este país, que lo  ponga en la ruta de enfrentar con éxito esta crisis que nos plantea muchas  cosas, la cuestión mundial pero también la interna; las malas decisiones  políticas que se han tomado. </p>
+<p align="justify">Y no estamos de  acuerdo en que se siga proponiendo a personas, que aun cuando puedan ser eso,  buenas personas, no tienen la capacidad para desarrollar sus funciones en una  tarea tan importante como ésta. </p>
+<p align="justify">Es cuanto, señora  Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa:</strong> Gracias, Senador  Rementería del Puerto. <br>
+  <br>
+  Tiene la palabra el  Senador Higinio Martínez, del grupo parlamentario del Partido Morena. </p>
+<p align="justify"><strong>El Senador Higinio  Martínez Miranda:</strong> Gracias, señora Presidenta. Compañeras y compañeros legisladores:</p>
+<p align="justify">¿Soy yo la persona  indicada, como Senador de la República, como integrante de esta Comisión  Permanente, para venir a defender el nombramiento de Horacio Duarte Olivares,  en este cargo que el Presidente de la República está proponiendo? Yo digo que  sí, porque de todos los aquí presentes soy el que más lo conozco. </p>
+<p align="justify">Muchos saben,  tenemos el mismo origen, somos paisanos, tenemos una trayectoria política desde  hace 35 años, que es muy difícil mantener en política, cuando todavía él andaba  en los 16, 17 años, desde entonces a esta fecha, porque lo conozco voy a decir,  en contra de lo que dice el Senador Julen, claro que tiene la capacidad, y no  porque lo conozca yo, o la trayectoria que brevemente habré de exponer, claro  que tiene la capacidad, no solo la gente de Veracruz la tiene, tiene la  capacidad porque el último cargo que ha ocupado es subsecretario en este país,  subsecretario federal. </p>
+<p align="justify">Para ser nombrado  subsecretario federal en el área del trabajo debe de tener algo, para que  además de ser Subsecretario del Trabajo le hayan encomendado la zona norte del  país para tratar el tema migratorio en este último año, debe tener algo para  que se le diera esa otra tarea de atender, en particular, en la frontera norte  el tema migratorio. Eso es lo último.</p>
+<p align="justify">Pero me voy para  que veamos cómo se ha ido haciendo una experiencia: Regidor, Secretario del  Ayuntamiento en gobiernos distintos; alcalde, Diputado local, Diputado federal;  actividades políticas electorales distintas, en este caso. </p>
+<p align="justify">Tiene la  honestidad, se lo puedo decir, usted no dudó y eso es bueno, Senador Julen,  darle una oportunidad a la gente, es una persona honesta. ¿Sabe qué es lo  primero que se requiere en aduanas? Una persona honesta, íntegra, discúlpeme,  pero es lo primero que se requiere para tratar y hacer el máximo esfuerzo para  combatir y terminar con la corrupción. </p>
+<p align="justify">Pero sino solo  fuera necesaria la honestidad, tiene la capacidad con ese repaso breve que  acabo de hacer de una experiencia administrativa. Tiene el conocimiento  jurídico para abordar el tema, tiene la capacidad de liderazgo para encabezar  una lucha tal vez de la más difícil que pueda existir en las encomiendas en ese  cargo. </p>
+<p align="justify">No solo él debe ser  el único honesto, debe de tener la capacidad, y la tiene, para reunir a mujeres  y hombres que lo acompañen en esta empresa; tiene el conocimiento jurídico,  tiene la capacidad, tiene la experiencia, tiene el ánimo, es una gente honesta,  tiene la confianza del Presidente y, discúlpenme, para ese tipo de cargos,  porque escuché algunos comentarios, no ahorita, de que era otra vez una gente  cercana al Presidente. </p>
+<p align="justify">¿Y qué quieren?  ¿Que ponga a quién? El Presidente, primero, es su facultad de proponer, para  este caso, y tiene que proponer a quien él está pensando, y hay que  reconocerlo, es el tercer intento, donde pueda ponerse orden en esa área donde  la corrupción es tremenda todos lo sabemos. </p>
+<p align="justify">Entonces yo les  pediría a todas y a todos ustedes, porque urge, porque nadie está en desacuerdo  de los aquí presentes, se los puedo asegurar, nadie está en desacuerdo en el  combate a la corrupción de todos. </p>
+<p align="justify">Yo he escuchado a  todos los partidos, cuando menos ahora en este Senado de la República, todos  estamos a favor de que se termine, de que se combata a la corrupción. No  podemos esperar más tiempo, es un cargo también, por cierto, muy delicado, es  un cargo que sabemos que tiene sus riesgos por cómo estamos viendo y que  esperamos que el Presidente de la República después de que se haga oficial este  nombramiento, si se aprueba, le dé todo el respaldo por supuesto para esto. <br>
+  <br>
+  Confíe, Senador  Julen, yo le pido que hay gente hay mexicanos que necesitan una oportunidad. </p>
+<p align="justify">Aquí espero que la  mayoría celebremos, pero esperaría que usted y otros Senadores y Senadoras le  diera un voto de confianza, no se pierde nada. Al contrario, que vaya con el  respaldo de esta Comisión Permanente para que, en su momento, en su caso se  pueda exigir, nosotros también, cuentas. </p>
+<p align="justify">Es una persona que  va a cumplir, estoy muy convencido, muy seguro, con el encargo que el  Presidente le está proponiendo. </p>
+<p align="justify">No más. </p>
+<p align="justify"><strong>La Presidenta  Senadora Mónica Fernández Balboa: </strong>Gracias, Senador Higinio Martínez. </p>
+<p align="justify">Sonido al escaño del  Senador Rementería del Puerto, ¿con qué objeto?</p>
+<p align="justify"><strong>El Senador Julen  Rementería del Puerto: </strong>(Desde su escaño) Por alusiones, señora Presidenta. </p>
+<p align="justify">Yo quisiera decir  que todas estas cualidades que ha mencionado el Senador que me antecedió en el  uso de la voz, se le pueden reconocer, ni siquiera se las regatee. </p>
+<p align="justify">Cuando yo hice uso  de la voz, en la tribuna, a lo que me refería era precisamente a que además de  cualidades como las que ha dicho el Senador bien, y que las podrá tener, él  menciona que lo conoce y que tiene una trayectoria reconocida, desde regidor,  diputado, alcalde, representante del INE y todo eso, muy bien, pero no se  mencionó una sola actividad relacionada con el comercio exterior. </p>
+<p align="justify">Y yo quiero decirle  algo, el Senador que renunció, que era compañero de nosotros, que pidió  licencia, fue a ocupar ese cargo y que ahora renunció al puesto y viene, pues también  en su momento se dijo de todas estas cualidades, que tenía cercanía con el  Presidente.</p>
+<p align="justify">A ver, entendemos,  si ganó Morena, va a gobernar Morena y los resultados buenos serán de Morena;  si son malos, serán de Morena. Eso es lógico. </p>
+<p align="justify">Aquí el tema es que  las personas que se pongan, que puedan tener el perfil ese, pero que además  tengan experiencia. </p>
+<p align="justify">A México le urge  gente con capacidad en las dependencias; lo que viene pasando en dependencias  como la que mencioné en Pemex, el propio IMSS y en algunas más, en la propia  Comisión Federal de Electricidad, que sí son gentes cercanas al Presidente, qué  bueno que lo sean, pero qué no hay gentes cercanas al Presidente que también  tengan expertise en los temas que tienen que abordar. Estoy seguro de que sí. </p>
+<p align="justify">¿Por qué no se  buscan esos perfiles que le sirva y que pudiera, en todo caso, hasta  comparecer?</p>
+<p align="justify">No me refiero a la  persona que hoy se propone, sino a este tipo de nombramientos, porque de lo que  estamos hablando es de un puesto de la mayor importancia en nuestro país, es de  los de primera línea. </p>
+<p align="justify">Si bien en la  estructura, digamos escalafonaria, pudiera parecer subordinado a otros, la  Dirección General de Aduanas en México es algo que tiene una relevancia enorme,  y que se tiene que dar a quien conozca el comercio exterior. <br>
+  <br>
+  A mí me parece que  no es suficiente la probidad y toda esa trayectoria que tiene en los  conocimientos, sí, pero en otras áreas. </p>
+<p align="justify">Hay que buscar a  alguien que esté aquí, no tengo, no he tenido y no tendré nada en contra de él,  no tengo por qué hacerlo, el asunto es que yo lo que quisiera es que se buscara  gente que realmente sacara, perdón por la expresión, &ldquo;al buey de la barranca&rdquo; en  muchas de las áreas en las que de repente se necesita apurar el paso, y más  ahora en la crisis en la que tenemos. </p>
+<p align="justify">Y ejemplos ahí  están, los tenemos muchos lamentablemente, en el caso de las políticas que se  vienen llevando a cabo y de las direcciones que están encomendadas a personas  que no tienen conocimiento. </p>
+<p align="justify">Lo que hay que  buscar es que así como se dieron relevos o se están dando relevos, se necesita  poner a la gente adecuada, pero además proponer que en otras áreas también haya  movimientos, entre otras, en Pemex, porque me parece que claramente no ha dado  el ancho y necesita hacerse un movimiento también. </p>
+<p align="justify">Y ojalá también se  pensara y se busque a personas con capacidad, porque claramente no basta. </p>
+<p align="justify">Qué bueno, es  requisito y celebro que ese sea un requisito, que sea honesto, pero que además  también conozca, ayudaría. ¿A poco no, Senadores? ¿A poco no, compañeros?</p>
+<p align="justify">Eso es lo que  estamos pidiendo que en México se empiece a tomar en serio la política, el  quehacer político y se ponga a la gente que sea honesta, pero que además  también pueda con el encargo. </p>
+<p align="justify">Es cuanto, señora  Presidenta. </p>
+<p align="justify"><strong>La Presidenta  Senadora Mónica Fernández Balboa: </strong>Gracias, Senador Rementería del Puerto. </p>
+<p align="justify">Se ha anotado para  hablar a favor, el Senador Senador Enríquez Herrera. </p>
+<p align="justify">Tiene la palabra la  Senadora Marcela Mora Arellano, para hablar en contra, del grupo parlamentario  del Partido Encuentro Social. </p>
+<p align="justify"><strong>La Senadora Elvia  Marcela Mora Arellano: </strong>(Desde su escaño) Preferiría hacerlo desde aquí.  Buenas tardes a todas y a todos. </p>
+<p align="justify">Les deseo también  un buen desarrollo de esta Comisión Permanente, bienvenidos al Senado de la  República. </p>
+<p align="justify">Voy a hablar en  contra del nombramiento de Horacio Duarte para la Administración de Aduanas  porque creo que la Subsecretaría de Empleo y Productividad Laboral pierde a un  garbanzo de a libra. </p>
+<p align="justify">Creo que Jóvenes  Construyendo el Futuro es un programa central para el impulso y promoción del  bienestar de este país y el licenciado Horacio Duarte, con el respaldo de la Secretaria  Luisa Alcalde, hizo y está haciendo un trabajo extraordinario con los jóvenes,  con chavos y chavas que están siendo tratados en la dignidad necesaria, son  jóvenes construyendo el futuro.</p>
+<p align="justify">Es por eso que pedí  la palabra en contra, creo que Jóvenes Construyendo el Futuro está perdiendo a  un gran líder.<br>
+  <br>
+  Sin embargo, y por  otro lado, menester decir que votaré a favor, esperando que replique con  excelencia con la que suele dirigir los encargos y encomiendas, esto que le  viene si lo votamos a favor.</p>
+<p align="justify">Quiero decir que  puede, y no sólo puede, lo va a demostrar y aquí va a rendir cuentas. </p>
+<p align="justify">¡Enhorabuena y  muchas felicidades a Horacio Duarte!</p>
+<p align="justify">Mucha suerte. </p>
+<p align="justify"><strong>La Presidenta  Senadora Mónica Fernández Balboa</strong>: Gracias, Marcela Mora.</p>
+<p align="justify">Tiene la palabra la  Senadora Malú Micher Cámarena, para hablar a favor. </p>
+<p align="justify"><strong>La Senadora Martha  Lucía Micher Camarena: </strong>Gracias, señora Presidenta. </p>
+<p align="justify">Primero, hay que  hacer un buen reconocimiento a nuestro compañero Ahued. </p>
+<p align="justify">Quiero agradecer a  nuestro compañero Ricardo Ahued su desempeño frente a aduanas, es  extraordinario el trabajo que ha hecho, tiene sus razones para regresar al  Senado y celebramos, le daremos la bienvenida, pero también celebramos el  trabajo que ha desempeñado en aduanas. </p>
+<p align="justify">A ver, aquí vienen  a hablarnos de trayectorias, vienen a hablarnos de experiencia, vienen a  hablarnos de principios, vienen a hablarnos, vienen a dar unas clases aquí, que  la verdad dan pena, ahora resulta que tenías que haber sido presidente  municipal para ser presidente municipal, tenías que haber sido dirigente para  ser dirigente. </p>
+<p align="justify">Qué vergüenza, si  aquí tuvimos un Presidente de la República que ni licenciado era, hombre, no  tenía ni siquiera una graduación en su carrera. ¿Ya se les olvidó? </p>
+<p align="justify">A nosotras no se  nos olvida, a nosotros no se nos olvida que no se nace, nos vamos haciendo en  la práctica, con gran experiencia, como la que tiene Horacio Duarte en este  momento para ocupar un puesto importantísimo, como es a cargo de la Dirección  de Aduanas. </p>
+<p align="justify">¿Por qué estamos  avalando esta decisión extraordinaria del Presidente de la República?</p>
+<p align="justify">Porque aquí estamos  hablando de tres principios: de lealtad, de principios y de convicciones. </p>
+<p align="justify">¿Y por qué estamos  defendiendo a Horacio Duarte para esto? Porque sí tiene trayectoria, sí tiene  experiencia, además de tener frente a él un proyecto de nación, como el que ha  defendido desde hace más de 30 años, porque cargo que ha ocupado lo ha  desempeñado perfectamente bien y no ha sido director o dirigente de juventudes  para hacer lo que está haciendo en este momento precisamente con las y los  jóvenes, no ha tenido que tener ese éxito. </p>
+<p align="justify">Pero, además,  fíjense qué curioso, las aduanas en gobiernos anteriores al de Morena, al de la  4T, dejaron entrar de todo: droga, armas, medicinas, zapatos. </p>
+<p align="justify">Se vino para abajo como nunca el mercado del zapato durante las gestiones  del PAN y del PRI, como nunca. Y vienen aquí a romperse las vestiduras y a  decir &ldquo;no, es que no tiene experiencia&rdquo;. </p>
+<p align="justify">Para la información, les voy a decir que Horacio Duarte Olivares fue  quien documentó y acreditó el fraude de Felipe Calderón. Yo pregunto ¿se  necesita o no experiencia para poder acreditar un fraude como el que hizo  Felipe Calderón? ¡Por favor! No me vengan con que no tiene experiencia.<br>
+  <br>
+  Y ahí les va otra carta de presentación, por si no les servía, fue quien  acompañó a su servidora en la comisión investigadora de los hijos de Martha  Sahagún y quien me ayudó y asesoró en la revisión, precisamente, que le pedimos  a la Dirección de Aduanas, porque los hijitos de Martha metieron whisky,  chamarras, zapatos, droga y lo que se les dio la gana. Y fue Horacio Duarte  quien en esa investigación acreditó toda la irregularidad con la que se estaban  manejando en esa Dirección de Aduanas.</p>
+<p align="justify">Así es que, con todo respeto, a mí no me vengan a rasgarse las  vestiduras y a decir que no ha tenido experiencia, que no tiene trayectoria,  cuando aquí han tenido a presidentes ineptos, a personas fraudulentas  acreditadas, estudiadas, investigadas por Horacio Duarte.</p>
+<p align="justify">Así es que bienvenido Horacio. Sí, celebro que se vaya a ese lugar  porque es un gran abogado, ha sido un gran defensor de la transparencia, de la  honestidad, su actuar es extraordinario, cuenta con todo nuestro apoyo y, sí,  es una muy buena decisión del Presidente.</p>
+<p align="justify">Celebramos el cargo que ahora va a ocupar, seguramente alguien más  estará con él en ese espacio que deja frente a Jóvenes Construyendo el Futuro,  pero sabemos que en las aduanas, el fraude, la falta de transparencia el &ldquo;me  hago del ojo chiquito y no veo cómo pasan y pasan cosas ilegales en las  aduanas&rdquo; ya no va a ser posible.</p>
+<p align="justify">Gracias al Senador Ahued y bienvenido, muy bienvenido, Horacio Duarte  Olivares, en su nuevo cargo frente a la Dirección de Aduanas.</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Gracias, Senadora Malu Micher. </p>
+<p align="justify">Tiene la palabra la Senadora Antares Vázquez Alatorre, del grupo  parlamentario del Partido Morena.</p>
+<p align="justify"><strong>La Senadora Antares Guadalupe Vázquez Alatorre:</strong> Gracias, Señora Presidenta.</p>
+<p align="justify">Suele confundirse términos en muchas cosas, pero en este caso se habla  de capacidad como sinónimo de experiencia y se dice que Horacio Duarte no tiene  capacidad, se repitió reiteradamente.</p>
+<p align="justify">Es muy distinto tener capacidad a tener experiencia, la capacidad es  probada en el caso de Horacio Duarte, es una persona que ha pasado muchas  pruebas sumamente duras en contra de la corrupción, específicamente de grandes  personajes del PAN que, por cierto, no tenían ni capacidad ni experiencia y  fueron presidentes de la República, entre otras.</p>
+<p align="justify">Entonces, ¿quién tiene experiencia en aduanas? ¿Los administradores que  han estado hasta antes que llegara la 4T? ¡Ay, han tenido mucha experiencia!  Tal experiencia y tal capacidad que han logrado administrar las aduanas, pues  bueno, para cómo están ahora, en donde el contrabando es lo de menos, en donde  es el imperio de la corrupción y en donde ahora nos está costando tanto trabajo  poner freno a la corrupción. </p>
+<p align="justify">¿Esos eran los de la experiencia y la capacidad?</p>
+<p align="justify">Entonces, ¿queremos de esas cosas? Yo no, yo no votaría a favor de  ratificar a alguien de esa experiencia y de esa capacidad.</p>
+<p align="justify">Es muy importante destacar que afortunadamente los seres humanos tenemos  una capacidad que termina el día que nos morimos, que es la de aprendizaje. Hay  muchos estudios que hablan al respecto en la academia, al respecto de la  capacidad de aprendizaje a lo largo de toda la vida y, por cierto, entre los  conocimientos que las personas adquirimos hay diferentes rangos de  posibilidades. <br>
+  <br>
+  El conocimiento procedimental es de los más básicos, de los más bajitos,  de los más rápidos de aprender. </p>
+<p align="justify">Es decir, yo nunca había sido Senadora, he ido aprendiendo y hay muchos  aquí que lo han hecho, quiero pensar. Quiero pensar que todos aprendimos a  caminar un día sin experiencia y lo hicimos, y ahí la llevamos, todavía nos  sostenemos en pie.</p>
+<p align="justify">Ese es el conocimiento más básico que todas y todos podemos adquirir de  manera muy rápida, y los procedimientos que se hagan en aduanas, por muy  complejos que sean, están descritos. </p>
+<p align="justify">Lo que no es tan fácil de adquirir, el tipo de conocimiento complejo del  que carecen muchos, desgraciadamente, muchos y muchas, es el conocimiento que  requiere el concurso no solo del conocimiento procedimental, sino de una  perspectiva ética, de valores, de formas complejas de ver el panorama, de poder  leer la realidad, entender la realidad en toda su complejidad. De ese que no es  tan sencillo de adquirir Horacio Duarte ha dado pruebas contundentes de  poseerlo.</p>
+<p align="justify">Entonces, yo no tengo la menor duda que Horacio Duarte, a diferencia de  muchos de sus antecesores, antes del 2018, seguramente hará un extraordinario  papel, porque ha demostrado con creces que ha tenido este conocimiento complejo  desde hace muchos años.</p>
+<p align="justify">Es cuanto, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Gracias Senadora Antares Vázquez. </p>
+<p align="justify">Tiene la palabra el Diputado Reginaldo Sandoval Flores.</p>
+<p align="justify"><strong>El Diputado Reginaldo Sandoval Flores:</strong> Con su permiso,  señora Presidenta.</p>
+<p align="justify">Miren, estamos ante una decisión sumamente importante, nuestra economía  es de las economías más abiertas del mundo y en el área de aduanas es sumamente  fundamental el que la dirige, el que la coordine, un hombre como Horacio  Duarte.</p>
+<p align="justify">No tenemos la menor duda que lo principal para cubrir una  responsabilidad de ese tamaño es la honestidad. Él reúne el perfil de los  funcionarios del gabinete de la 4T al 100 por ciento o a más del 100 por ciento.  Es un hombre con una trayectoria política claramente definida en la izquierda,  la justicia, la libertad, la democracia.</p>
+<p align="justify">Y, miren, lo más cercano que tiene la sociedad mexicana del tema de las  aduanas es en el gobierno de Vicente Fox, en el tema del apellido Bribiesca,  una tristeza, porque en esas aduanas se produce una corrupción enorme. Ustedes  recordarán también la historia del &ldquo;coopelas o cuello&rdquo;. ¿Por dónde entró todo  el contrabando que se hizo para acumular ese montón de dinero que encontraron  ahí en esa casa? Que no sabemos, al final, con quién quedaron esos millones de  dólares.</p>
+<p align="justify">Se requiere, entonces, de un hombre con firmeza. Es un abogado  excelente, pero, sobre todo, esas características que les acabo de mencionar.  Miren, es el área yo creo que de los gobiernos anteriores que se encontraron  ahora con menos innovación tecnológica, ni siquiera cámaras para ver, que la  cámara cuente los contenedores, porque imagínense la cantidad de contenedores  que pasan por el tema de las aduanas sin revisar, la cantidad de cosas que  ocurren en ese tema de las aduanas, se requiere un hombre con firmeza, con  mucha disposición de que México cambió, que el principal fenómeno que hay que  combatir porque es el engranaje que movió a todo el modelo neoliberal, es la  corrupción y esa hay que quitarla, hay que desterrarla de todas las áreas del  gobierno, de todas las áreas de la vida pública. <br>
+  <br>
+  Nuestro Presidente,  todos los días en las mañaneras, el principal eje es el combate a la  corrupción, porque éste es el engranaje que movió al modelo neoliberal durante  36 años, no tenemos ninguna duda. </p>
+<p align="justify">Y también los  invito a todos, sobre todo a los que no quieren mover la forma de pensar, nos  dicen a nosotros que ya no volvamos al pasado, que ya no revisemos el pasado,  pero tampoco se quieren mover porque lo más difícil es cambiar de esquema  mental y no quieren entender que estamos en una lógica de construcción de un  modelo de desarrollo y un ejercicio político diferente al modelo neoliberal, ya  no es el eje, ya no es el presupuesto el eje de la gobernanza que llegó a darse  hasta la clase política con el tema de los &ldquo;moches&rdquo;. </p>
+<p align="justify">Y yo acepto el  debate de Pemex, pero hoy no estamos hablando de Pemex, hoy estamos hablando de  la propuesta del Presidente para nombrar responsable de aduanas, porque ahí  también sostengo que hay una visión diferente, solo la visión de la ganancia,  de la utilidad y del mercado no funciona para revisar ahora la política en  México. </p>
+<p align="justify">Por eso nosotros,  como grupo parlamentario del PT, aprobamos y felicitamos la decisión de nuestro  Presidente de la República de proponer a Horacio como responsable de aduanas,  no tengo ninguna duda que hará un papel excepción en favor de México y en favor  de la propuesta de la 4T. </p>
+<p align="justify">Muchísimas gracias. </p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa:</strong> Gracias, Diputado  Reginaldo Sandoval. </p>
+<p align="justify">Se han anotado  también para hablar a favor, el Diputado Sergio Gutiérrez Luna y el Senador  Ramón Enríquez. </p>
+<p align="justify">Como no hemos  aprobado, no hemos llegado a la parte de la aprobación del Reglamento, nos  vamos a tratar de regir por el Reglamento del Congreso. </p>
+<p align="justify">Entonces, el  Reglamento del Congreso dice que pueden hablar hasta seis individuos en pro y  seis individuos en contra, además de los miembros de la comisión dictaminadora,  pero como hicimos de obvia y urgente resolución no hay comisión dictaminadora. </p>
+<p align="justify">Entonces faltaría  una persona para hablar a favor, si nos vamos a este Reglamento, y pondría a  consideración de ustedes que le damos la palabra también al único orador más  que lo solicitó, en el orden que lo han solicitado. </p>
+<p align="justify">Tiene la palabra el  Diputado Sergio Gutiérrez Luna, del grupo parlamentario del Partido Morena. </p>
+<p align="justify"><strong>El Diputado Sergio  Gutiérrez Luna:</strong> Con su venia, señora Presidenta. </p>
+<p align="justify">Para mí es un  honor, un gusto y un privilegio estar hoy aquí hablando a favor de la  ratificación de la designación de Horacio Duarte Olivares, como Director  General de Aduanas del Servicio de Administración Tributaria. </p>
+<p align="justify">Horacio Duarte  Olivares es una persona singular, es una persona que tiene las características  necesarias para ese cargo. </p>
+<p align="justify">¿Cuáles son esas  características? ¿Qué se requiere para ese cargo? Yo considero que tres  características, ciertas cualidades personales, cualidades técnicas y  cualidades políticas. <br>
+  <br>
+  Todas esas  características convergen en Horacio Duarte Olivares, características  personales, es una persona sensible, es buen amigo, pero también tiene mano  firme, es alguien que no va a tolerar la corrupción, que no va a tolerar la  impunidad, que va a ejercer el mandato que le encomendó el Presidente de la  República para sanear, para depurar esa cloaca que ha sido históricamente las  aduanas de México, sus cualidades personales se lo permiten. </p>
+<p align="justify">Cualidades  técnicas. Horario Duarte, es un abogado de primera, es una persona conocedora  del derecho, es un litigante nato, es alguien que toda su vida ha defendido  causas justas en tribunales, en medios, a través de la ley con la Constitución  en la mano; es alguien que sabe argumentar en lo personal y sabe argumentar  ante tribunales. Todos sabemos que gran parte del problema de las aduanas es la  evasión de impuestos. Eso se tiene que litigar, porque quienes no quieren pagar  se defienden en tribunales, usan resquicios legales para evitar y enterar a la  nación lo que tienen la obligación de hacer. </p>
+<p align="justify">Horario Duarte, es  la persona indicada para defender, en los tribunales, al Estado mexicano y  obligar a las personas que no quieren pagar sus contribuciones en materia de  comercio exterior, que lo hagan. Cualidades políticas. También las tiene  Horacio Duarte, es un político de primer nivel, ha sido Diputado local,  Diputado federal, presidente municipal, representante de partido y también  funcionario federal, es alguien que construye, es alguien que dialoga, es  alguien que entiende. </p>
+<p align="justify">Y en su último reto  como Subsecretario del Empleo en la Secretaría del Trabajo lo demostró, y les  voy a dar un solo dato, él tenía una meta, su primer año, una meta para llegar  al número de jóvenes que requería el programa, esa meta era de 12 meses y él la  cumplió en siete meses, antes de que la meta llegara a su fin, él ya había  trabajado y había cumplido con el mandato que le dio el Presidente, con  trabajo, con esfuerzo, con dedicación, con entereza, con compromiso, compromiso  con México.</p>
+<p align="justify">Horario Duarte,  tiene un compromiso con México, le espera un reto grande porque en las aduanas  se tiene que impedir el contrabando, la evasión fiscal, el tráfico de armas que  tanto daño nos ha hecho; impedir que ingresen también sustancias ilícitas, es  un gran reto. Para un gran reto una gran persona y, sin duda, sin duda la  persona indicada es Horacio Duarte Olivares. </p>
+<p align="justify">Hoy votaremos a  favor de su ratificación porque es lo que México necesita. </p>
+<p align="justify">Es cuanto, señora  Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa:</strong> Gracias, Diputado Gutiérrez Luna.</p>
+<p align="justify">Se ha cumplido lo  que marca el Reglamento, sin embargo, hay un orador todavía registrado. </p>
+<p align="justify">Yo les quiero pedir  que le permitamos el uso de la palabra al Senador Ramón Enríquez, del grupo  parlamentario de Movimiento Ciudadano, sin poner a consideración si está  votado. </p>
+<p align="justify">Gracias. </p>
+<p align="justify"><strong>El Senador José  Ramón Enríquez Herrera:</strong><strong> </strong>Gracias, señora Presidenta. Estimadas y distinguidas Senadoras,  Diputadas. Compañeros Legisladores: </p>
+<p align="justify">A este país le urge tener funcionarios públicos con emoción social, con  amor a nuestro país y, por supuesto, con grandes perfiles. </p>
+<p align="justify">Hoy Movimiento Ciudadano no cuestiona la formación académica de Horacio  Duarte Olivares ni sus capacidades, lo que sí entendemos que en el mundo del  conocimiento del Siglo XXI lo más importante es la relación y las estratégicas  internacionales. <br>
+  <br>
+  Ya se dijo, México es uno de los países con fronteras abiertas y  comercialmente uno de los que ha establecido mayores compromisos y acuerdos  internacionales. Por eso hoy, ante la crisis sanitaria, ante los números que  hoy nos conmueven más de 19 mil, específicamente 19 mil 224 seres humanos  infectados, mil 859 decesos.</p>
+<p align="justify">Hoy Movimiento Ciudadano le da ese voto de confianza. </p>
+<p align="justify">¿Por qué? Porque urge un titular en aduanas, solicitamos el cerco  sanitario, lo dijimos en esta tribuna, Movimiento Ciudadano, que era importante  precisamente la prevención, la parte más inteligente para poder mitigar el progreso del  Covid-19. </p>
+<p align="justify">No solamente la  migración, no solamente el comercio exterior, es importante hablar del cerco  sanitario en este momento. </p>
+<p align="justify">Por eso, no  solamente urge el Titular de Aduanas, sino urgen resultados. </p>
+<p align="justify">Ya lo especificó el  Ejecutivo Federal que es un monstruo de mil cabezas y tendrá un compromiso, un  compromiso muy grande el licenciado Horacio Duarte; un compromiso porque tendrá  que rendir cuentas y los gobiernos tienen derecho a proponer. </p>
+<p align="justify">Nosotros en este  momento ratificamos a través del voto de confianza, pero si revisamos el  artículo 13 de la Constitución, todos iguales ante la ley. </p>
+<p align="justify">Yo creo que ya es  momento de avanzar y de hacer una propuesta para poder precisamente no tener  este debate, que podamos tener perfiles perfectamente dimensionados,  específicos para cada área de la administración pública. </p>
+<p align="justify">El comercio  exterior, lo decía el Senador Rementería, pues es de alta especialidad, es un  tema importante en la relación y en la economía de nuestro país. </p>
+<p align="justify">Reiteramos ese voto  de confianza, pero también pedimos a todos ustedes, al grupo mayoritario que,  si no da resultados, sean ustedes mismos los que levanten la mano y la voz para  hacer una remoción. </p>
+<p align="justify">Hoy estamos ante  una circunstancia muy importante y creo que es un papel que no puede estar  acéfalo y que hoy más que nunca necesitamos resultados en aduanas y en toda la  Administración Pública Federal. </p>
+<p align="justify">Enhorabuena y que  dé resultados para que tengamos mejoras, precisamente, en el cerco sanitario,  la migración y el comercio exterior.</p>
+<p align="justify"><strong>La Presidenta  Senadora Mónica Fernández Balboa: </strong>Gracias, Senador Enríquez Herrera. </p>
+<p align="justify">Al no haber más  oradoras ni oradores registrados, solicito a la Secretaría proceda a recoger la  votación nominal del nombramiento del ciudadano Horacio Duarte Olivares, como  Administrador General de Aduanas del Servicio de Administración Tributaria de  la Secretaría de Hacienda y Crédito Público. </p>
+<p align="justify">Les informo que,  con fundamento en los artículos 78, fracción VII de la Constitución Política de  los Estados Unidos Mexicanos, y 158 del Reglamento para el Gobierno Interior  del Congreso, la ratificación que nos ocupa requiere mayoría simple. </p>
+<p align="justify"><strong>El Secretario  Diputado Sergio Carlos Gutiérrez Luna: </strong>Se va a recoger la  votación nominal del nombramiento. <br>
+  <br>
+  Se solicita a las  legisladoras y a los legisladores ponerse de pie, manifestar el sentido de su  voto y su nombre, por favor. </p>
+<p align="justify">Iniciamos del lado  derecho. </p>
+<p align="right"><a href="https://www.senado.gob.mx/permanente/CP64-2ASPR/Votaciones/nominales/documento/3625"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Señora Presidenta,  le comunico que se emitieron 29 votos a favor, seis en contra y cero  abstenciones. </p>
+<p align="justify"><strong>La Presidenta  Senadora Mónica Fernández Balboa: </strong>En consecuencia, la Comisión Permanente del  Honorable Congreso de la Unión, en uso de las facultades que le confiere el  artículo 78, fracción VII de la Constitución Política de los Estados Unidos  Mexicanos, ratifica el nombramiento que el Presidente de la República expidió  en favor del ciudadano Horacio Duarte Olivares, como Administrador General de  Aduanas del Servicio de Administración Tributaria de la Secretaría de Hacienda  y Crédito Público. Comuníquese. </p>
+<p align="justify">Procederemos ahora  a tomar la protesta del ciudadano Horacio Duarte Olivares, como Administrador  General de Aduanas del Servicio de Administración Tributaria de la Secretaría  de Hacienda y Crédito Público. </p>
+<p align="justify">En el salón  contiguo a este recinto se encuentra el Administrador General de Aduanas que  acaba de ser ratificado, por lo que solicito al Diputado Mario Delgado Carrillo  y al Senador Miguel Ángel Navarro, lo inviten a pasar al interior de este salón  de sesiones y lo acompañen durante el acto de su toma de protesta.</p>
+<p align="center">(La comisión  cumple)</p>
+<p align="justify"><strong>El Secretario Diputado Sergio Carlos Gutiérrez Luna:</strong> Favor de ponerse de pie. </p>
+<p align="center">(Todos de pie)</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa:</strong> Ciudadano Horacio Duarte Olivares, la Comisión Permanente del Honorable  Congreso de la Unión ha ratificado el nombramiento que el titular del Poder  Ejecutivo Federal expidió a su favor como Administrador General de Aduanas del  Servicio de Administración Tributaria de la Secretaría de Hacienda y Crédito  Público.</p>
+<p align="justify">En consecuencia, le pregunto: ¿Protesta guardar y hacer guardar la  Constitución Política de los Estados Unidos Mexicanos, las leyes que de ella emanen  y desempeñar leal y patrióticamente el cargo que se le ha conferido, mirando en  todo por el bien y la prosperidad de la Unión?</p>
+<p align="justify"><strong>El ciudadano Horacio Duarte Olivares: </strong>¡Sí, protesto!</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Si así no lo hiciere, que la Nación se lo demande.</p>
+<p align="justify">¡Felicidades, ciudadano Horacio Duarte Olivares!</p>
+<p align="justify">A nombre de la Comisión Permanente del Honorable Congreso de la Unión,  le deseo éxito en su encargo. Y solicito a la comisión designada acompañe al  ciudadano Horacio Duarte Olivares cuando desee retirarse del salón.</p>
+<p align="center">(La comisión cumple)</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a89799'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='89800'></a><p align="justify">Compañeras legisladoras y compañeros  legisladores: Informo a ustedes que esta Mesa Directiva ha suscrito un Acuerdo  por el que se establecen las reglas básicas para el funcionamiento de la Comisión  Permanente del Honorable Congreso de la Unión.</p>
+<p align="justify">El Acuerdo está disponible en el monitor de  sus escaños y publicado en la Gaceta Parlamentaria. De esa manera, se hace de  su conocimiento.</p>
+<p align="justify"><strong>MESA DIRECTIVA</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/Acuerdo_reglas_basicas_CP.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">En consecuencia, está a discusión.</p>
+<p align="justify">Al no haber oradoras ni oradores registrados,  solicito a la Secretaría consulte a la Asamblea, en votación económica, si es  de aprobarse el Acuerdo.</p>
+<p align="justify"><strong>El Secretario Senador Manuel Añorve Baños:</strong> Consulto a la  Asamblea, en votación económica, si es de aprobarse el anterior Acuerdo.  Quienes estén porque se apruebe, favor de levantar la mano.</p>
+<p align="center">(La Asamblea  asiente)</p>
+<p align="justify">Quienes estén porque se rechace, favor de  levantar la mano.</p>
+<p align="center">(La Asamblea no  asiente)</p>
+<p align="justify">Aprobado, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández  Balboa: </strong>Aprobado el Acuerdo por el que se establecen las reglas básicas para el  funcionamiento de la Comisión Permanente del Honorable Congreso de la Unión. Se  instruye a la Secretaría publicar  el Acuerdo en el portal electrónico de manera permanente. Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a89800'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='89801'></a><p align="justify">Del mismo modo, la Mesa Directiva suscribió un  Acuerdo en relación con la integración de las comisiones de trabajo, de la  Comisión Permanente del Honorable Congreso de la Unión. El Acuerdo está  publicado en la Gaceta Parlamentaria y disponible en el monitor de sus escaños.</p>
+<p align="justify">Solicito a la Secretaría dé lectura al Acuerdo. </p>
+<p align="justify"><strong>El Secretario  Senador Manuel Añorve Baños:</strong> Doy lectura al Acuerdo. </p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/Acuerdo_Integracion_Comisiones-CP.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es todo, señora Presidenta.<br>
+  <br>
+  <strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Está a discusión el Acuerdo. No habiendo ningún orador u oradora  registrados, consulte la Secretaría a la Asamblea, en votación económica, si es  de aprobarse el Acuerdo de conformación de comisiones.</p>
+<p align="justify"><strong>El Secretario Senador Manuel Añorve Baños:</strong> Consulto a la Asamblea, en votación económica, si es de aprobarse el  anterior Acuerdo. Quienes estén porque se apruebe, favor de levantar la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque se rechace, favor de levantar la mano.</p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Aprobado, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Aprobado el Acuerdo en relación con la integración de las comisiones de  trabajo de la Comisión Permanente del Honorable Congreso de la Unión.</p>
+<p align="justify">Se instruye a las Secretarías Generales del Senado a proporcionar el  apoyo técnico y logístico necesario a las comisiones para sus reuniones de  instalación y para los trabajos que habrán de desarrollar durante el receso.</p>
+<p align="justify">Se solicita a las comisiones que se instalen a la brevedad, a efecto de  estar en posibilidad de iniciar sus trabajos. Comuníquese.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a89801'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='89802'></a><p align="justify">Asimismo, la Mesa Directiva suscribió un Acuerdo en relación con el  registro en línea de asuntos para el Orden del Día. El Acuerdo está publicado  en la Gaceta Parlamentaria y en el monitor de sus escaños, con lo que se hace  de su conocimiento y, en consecuencia, está a discusión.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/Acuerdo_MD_registro_Asuntos_Linea.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">En virtud que no hay oradoras ni oradores  registrados, consulte la Secretaría a la Asamblea, en votación económica, si es  de aprobarse el Acuerdo.</p>
+<p align="justify"><strong>El Secretario Senador Manuel Añorve Baños:</strong> Consulto a la  Asamblea, en votación económica, si es de aprobarse el anterior Acuerdo.  Quienes estén porque se apruebe, favor de levantar la mano.</p>
+<p align="center">(La Asamblea  asiente)</p>
+<p align="justify">Quienes estén porque se rechace, favor de  levantar la mano.</p>
+<p align="center">(La Asamblea no  asiente)</p>
+<p align="justify">Aprobado, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández  Balboa: </strong>Aprobado el Acuerdo en relación con el registro en línea de asuntos para  el Orden del Día. Publíquese en la Gaceta Parlamentaria y comuníquese a los  grupos parlamentarios y a las comisiones.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a89802'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='89803'></a><p align="justify">También la Mesa Directiva suscribió un  Acuerdo por el que se establecen los criterios para que sus comisiones de  trabajo cumplan con las obligaciones específicas de carga de información en la  Plataforma Nacional de Transparencia y en relación con el micrositio de la  Comisión Permanente. El  Acuerdo está publicado en la Gaceta Parlamentaria y el monitor de sus escaños,  por lo que se hace de su conocimiento de esta manera. </p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-05-01-1/assets/documentos/Acuerdo_CP_Obligaciones_Transparencia.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">En consecuencia, está a discusión.<br>
+  <br>
+  Al no haber ningún orador ni oradora registrados,  consulte la Secretaría a la Asamblea, en votación económica, si es de aprobarse  el Acuerdo. </p>
+<p align="justify"><strong>El Secretario Senador Manuel Añorve Baños: </strong>Consulto a la Asamblea, en votación  económica, si es de aprobarse el anterior Acuerdo. Quienes estén porque se  apruebe, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque se rechace, favor de levantar  la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Aprobado, señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández  Balboa: </strong>Aprobado el Acuerdo  por el que se establecen los criterios para que sus comisiones de trabajo  cumplan con las obligaciones específicas de carga de información en la  Plataforma Nacional de Transparencia y en relación con el micrositio de la  Comisión Permanente. Publíquese en la Gaceta Parlamentaria y comuníquese a las  comisiones. </p>
+<p align="justify">Pasamos al siguiente asunto.</p>
+<p align="justify"><strong>El Secretario Senador Manuel Añorve Baños: </strong>Se va a dar lectura al Orden del Día de la  próxima sesión. (Leyó) </p>
+<p align="justify">Es cuanto, señora Presidenta. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a89803'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='89804'></a><p><strong>CITA</strong></p>
+<p><strong>La Presidenta Senadora Mónica Fernández  Balboa: </strong>Gracias, señor  Secretario. Se cita a sesión de la Comisión Permanente el próximo miércoles 6  de mayo a las 11:00 horas. </p>
+<p>Se levanta la sesión. </p>
+<p align="center">(Se levantó la  sesión a las 17:27 horas) </p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Comisión Permanente del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a89804'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

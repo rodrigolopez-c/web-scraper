@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 25</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Martí Batres Guadarrama</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 09 de Abril de 2019</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/1/SPO/PDF-WEB/SPO_No._25_9_ABRIL_2019_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='82522'></a><p align="center"><strong>PRESIDENCIA  DEL SENADOR</strong><br>
+  <strong>MARTÍ  BATRES GUADARRAMA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Martí Batres Guadarrama: </strong>(13:08 horas) Con la presencia de un grupo de alumnas y alumnos de la  Carrera de Administración Pública y Gobierno de la Universidad de Anáhuac  Norte, invitados por la Presidencia.</p>
+<p align="justify">¡Sean  ustedes bienvenidas y bienvenidos!</p>
+<p align="justify">También  saludo la presencia de personalidades, como el periodista Genaro Lozano y el  activista Jaime Morales, que se encuentran presentes.</p>
+<p align="justify">Con el quórum de nuestra sesión ordinaria del día de  hoy, y con fundamento en lo dispuesto por el artículo 56, fracción III del  Reglamento del Senado, y en el Acuerdo de la Mesa Directiva, aprobado el pasado  miércoles 3 de abril para normar esta sesión solemne, damos inicio a la misma  para recibir la visita del Señor Xavier Bettel, Primer Ministro del Gran Ducado  de Luxemburgo.</p>
+<p align="justify">Se abre la sesión solemne.</p>
+<p align="justify">El Señor Xavier Bettel se encuentra en el salón  contiguo.</p>
+<p align="justify">En consecuencia, se designan a las Senadoras y  Senadores siguientes, para que reciban al señor Xavier Bettel, Primer Ministro  del Gran Ducado de Luxemburgo: Margarita Valdez, Héctor Vasconcelos, Gustavo  Madero, Manuel Añorve, Patricia Mercado, Nancy De la Sierra, Rogelio Zamora,  Antonio García Conejo, Katya Elizabeth Ávila y Radamés Salazar Solorio.<br>
+  Por favor, cumpla la comisión con su cometido.</p>
+<p align="center">(La comisión cumple)</p>
+<p align="justify">Se designan también a las Senadoras y Senadores:  Citlalli Hernández Mora, Gina Cruz Blackledge, Miguel Ángel Lucero Olivas y  Antonia Cárdenas Mariscal, para que reciban al Subsecretario de Relaciones  Exteriores, Julián Ventura Valero.<br>
+  Solicito a las Senadoras y a los Senadores cumplir con  su encargo, y mientras tanto se declara un receso.</p>
+<p align="center">(La comisión cumple)</p>
+<p align="center">(Receso)</p>
+<p align="justify"><strong>El  Presidente Senador Martí Batres Guadarrama: </strong>Se reanuda la sesión solemne.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a82522'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='82523'></a><p align="justify"><strong>VISITA DEL SEÑOR XAVIER BETTEL, PRIMER MINISTRO DEL  GRAN DUCADO DE LUXEMBURGO</strong></p>
+<p align="justify">Realizamos esta sesión con motivo de la importante  visita del Primer Ministro del Gran Ducado de Luxemburgo, Señor Xavier Bettel.</p>
+<p align="justify">Las relaciones diplomáticas entre México y Luxemburgo  fueron establecidas desde el año de 1947, en el marco de las relaciones con los  países integrantes de la Unión Europea al ser uno, Luxemburgo, de los seis  miembros fundadores de la Comunidad Económica Europea, antecesora de la misma.</p>
+<p align="justify">México y Luxemburgo han firmado una serie de acuerdos,  convenios y tratados que han consolidado su amistad y sus contactos  comerciales.</p>
+<p align="justify">Para México, Luxemburgo ha sido un símbolo de buena  relación, pero sobre todo de diálogo y concertación fructífera.</p>
+<p align="justify">En este contexto, la Cámara de Senadores del Honorable  Congreso de la Unión de los Estados Unidos Mexicanos, expresa la más cordial  bienvenida al Señor Xavier Bettel, Primer Ministro del Gran Ducado de  Luxemburgo.</p>
+<p align="justify">¡Bienvenido!</p>
+<p align="justify">Doy también la bienvenida al señor Julián Ventura  Valero, Subsecretario de Relaciones Exteriores.</p>
+<p align="justify">También nos acompañan la Embajadora Sylvie Lucas,  Embajadora Extraordinaria y Plenipotenciaria del Gran Dudado de Luxemburgo ante  los Estados Unidos, concurrente para los Estados Unidos Mexicanos.</p>
+<p align="justify">El señor Marc Baltes, asesor económico del Primer  Ministro</p>
+<p align="justify">El señor Patrick Hemmer, asesor diplomático del Primer  Ministro.</p>
+<p align="justify">La señora Liz Thielen, agregada de prensa del Primer  Ministro.</p>
+<p align="justify">El señor Thomas Barschkis, Cónsul Honorario del Gran  Ducado de Luxemburgo en México.</p>
+<p align="justify">El señor Nicolas Mackel, Director Ejecutivo de  Luxembourg for Finance.</p>
+<p align="justify">¡Sean bienvenidos y bienvenidas!</p>
+<p align="justify">Distinguido Señor Xavier Bettel, están presentes en el  presídium de esta sesión solemne.<br>
+  La Senadora Mónica Fernández Balboa, Vicepresidenta.</p>
+<p align="justify">La Senadora María Guadalupe Murguía Gutiérrez,  Vicepresidenta.<br>
+  <br>
+  El Senador Jorge Carlos Ramírez Marín, Vicepresidente.</p>
+<p align="justify">Asimismo, la Senadora Antares Guadalupe Vázquez  Alatorre, Secretaria.</p>
+<p align="justify">La Senadora Verónica Delgadillo, Secretaria.</p>
+<p align="justify">Y la Senadora Verónica Camino Farjat, Secretaria.</p>
+<p align="justify">Conforme al Acuerdo aprobado el día miércoles 3 de  abril para esta sesión solemne, el Señor Xavier Bettel dirigirá un mensaje a la  Asamblea. </p>
+<p align="justify">En consecuencia, se le concede el uso de la palabra al  Señor Xavier Bettel, Primero Ministro del Gran Ducado de Luxemburgo. </p>
+<p align="justify">Tiene usted la palabra. </p>
+<p align="justify"><strong>El  Señor Xavier Bettel, Primer Ministro del Gran Ducado Luxemburgo:</strong></p>
+<p align="justify"><strong>(Interpretación)</strong></p>
+<p align="justify">Señor Presidente en el Senado, representante del  gobierno, quisiera decirle qué gusto tengo de estar aquí frente a ustedes, aquí  en la casa de la democracia mexicana. </p>
+<p align="justify">También tengo un profundo respeto por todos los  parlamentarios de la Cámara Alta y de la Cámara Baja, porque yo también fui Diputado  durante 13 años antes de tener la función de Primer Ministro. </p>
+<p align="justify">Agradezco a su Presidente por haberme invitado, porque  la última vez que vino un Primer Ministro de Luxemburgo, discúlpenme mi español,  ¿se escucha bien? Entonces todo bien. La última vez que el Primer Ministro de  Luxemburgo vino a México yo tenía siete años, fue en 1980, era tiempo de  volverse a ver, aprender a conocerse mejor y poder intercambiar. </p>
+<p align="justify">Agradezco a su Presidente que quiso, precisamente,  insistir sobre las relaciones actuales y futuras entre mi país, mi continente y  su país. </p>
+<p align="justify">Compartimos los mismos valores, los mismos principios  regionales e internacionales para servir a nuestros pueblos y nuestros países. </p>
+<p align="justify">En el plan económico y comercial, nuestros dos países  son socios que funcionan bien, ustedes son nuestro segundo socio comercial en  América Latina y las empresas de Luxemburgo son interesadas por el mercado  mexicano, por ejemplo el sector de la industria automotriz, finanzas, logística  y satélites. </p>
+<p align="justify">Y varias empresas de Luxemburgo también están aquí en  México, como nuestra compañía de flete aéreo, Cargolux que sirve aquí en la  Ciudad de México, en Guadalajara, o nuestro operador de satélite que trabaja en  la capacidad del programa mexicano conectado aquí en México, México conectado. </p>
+<p align="justify">También hay posibilidad de desarrollo en el mundo  financiero. Ya hemos visto que las relaciones se desarrollaron muchísimo, el  lugar de Luxemburgo es el segundo lugar y en este campo hay un gran potencial  entre México y Luxemburgo para los fondos de pensiones que pueden invertir en  Luxemburgo. </p>
+<p align="justify">El lugar financiero de Luxemburgo se desarrolló  también en algo que es importante, la finanza verde. El Luxembourg Green Exchange  constituye la primera bolsa en el mundo exclusivamente dedicada a la finanza  verde, la cooperación entre nuestros países podrá ser reforzada en este campo.<br>
+  <br>
+  Voy a hablar de la finanza verde, porque es algo que  me importa mucho, y la gente que encontré aquí también, su Presidente, el  Alcalde de la Ciudad de México, dan mucha importancia al medio ambiente.</p>
+<p align="justify">Yo sé que la mayoría de ustedes, y yo también, el  objetivo es la reelección, para los políticos, la mayoría de nosotros queremos  seguir en el mundo político y las decisiones que tomamos en el medio ambiente  no siempre son muy populares. </p>
+<p align="justify">Tenemos también una responsabilidad con relación a las  generaciones futuras, porque las decisiones que tomamos hoy tendrán  consecuencias para mañana, y tenemos que demostrar que ecología y economía no  son enemigos y que se puede llegar a tener un desarrollo económico, al mismo  tiempo que respetamos algunos criterios ecológicos que serán importantes ahora  y después, pero vamos a ver cómo aliar unos y otros. </p>
+<p align="justify">Mi país tiene un fondo que fue creado en 2017 para  respetar los bosques en América Central; nuestra colaboración, señoras y  señores, es financiera y política, y trabajamos en las grandes instituciones  internacionales y creemos en el multilateralismo y el intercambio con los  demás. </p>
+<p align="justify">Trabajamos en las Naciones Unidas, trabajamos para la  Agenda 2030 del Desarrollo Sostenible, y saludo su compromiso en el mundo  internacional y su respeto del pacto sobre la migración. </p>
+<p align="justify">Quisiera subrayar, no sé si saben, mi vecino Bélgica  tiene su Primer Ministro, porque quiso respetar los compromisos de su país sobre  el pacto sobre migración, Michel que es un amigo, es el Ministro y quiso dejar  su puesto, porque quiso explicar que las migraciones eran un problema, mientras  que son funciones globales que queremos; debemos encontrar soluciones globales.</p>
+<p align="justify">Y no quisiera que el Mar Mediterráneo se vuelva el  futuro cementerio de la gente que no quiso sobrevivir, que quiso, perdón,  sobrevivir en otro país que el suyo. Habrá la necesidad de una solución global  que deberemos encontrar para estas cuestiones. </p>
+<p align="justify">Desde el principio hemos apoyado el pacto y nos  comprometemos entre los Estados para apoyar la migración. Somos también socios  a nivel europeo y permítanme hablar de mi país antes de hablar de Europa. </p>
+<p align="justify">Soy Primer Ministro desde hace seis años y la  responsabilidad política es también de querer hacer avanzar nuestro país. Hace  poco encontré una Senadora de Jalisco, y dijo que es la región donde se produce  el mejor tequila, sabrán de lo que se trata. </p>
+<p align="justify">Hemos hablado ella y yo de los derechos de las  mujeres, aquí me parece lógico que tengan por la Constitución una  representación paritaria y no es evidente para todo el mundo. Y en algunos  países las mujeres tienen apenas el derecho de voto o de manejar, y no hablo  del siglo pasado, hablo de los últimos meses. </p>
+<p align="justify">Así que en Luxemburgo quise también una política en  favor de las mujeres, quise facilitar el hecho que la esposa no debe escoger  entre la familia y el trabajo, debemos facilitarle que el hecho de tener hijos,  no significa dejar de trabajar y encontrarse en una situación precaria y muchas  veces de divorcio. </p>
+<p align="justify">También tener el tiempo suficiente para los niños y el  gobierno decidió que atrás de los estatutos una mujer debía tener una razón  psicológica médica para poder abortar, ahora ya no.</p>
+<p align="justify">El antiguo gobierno cambió y ahora la mujer puede  abortar pero debe consultarlo y explicar su elección a una asociación.<br>
+  Encontré estos textos similares y muy humanos. </p>
+<p align="justify">¿Por qué una mujer debería explicar la decisión más  difícil que debe tomar a un desconocido para justificar su elección? </p>
+<p align="justify">Hemos cambiado la ley, por lo tanto.</p>
+<p align="justify">Esta elección pertenece a la mujer, que debe discutir  esto con su esposo, pero es una elección personal y no es el Estado, el  gobierno, quien debe decir de qué manera la gente debe vivir.</p>
+<p align="justify">Y cambié la ley sobre el matrimonio entre personas del  mismo sexo. Deben saber que esta ley no es por el hecho de querer reivindicar  algo, sino reconocer también una situación que existe. Estamos conscientes del  número de jóvenes que se suicidan porque no pudieron aceptar su propia  sexualidad cuando se vive en una sociedad.</p>
+<p align="justify">Quiero decir que leí hoy en la mañana un artículo que  hablaba de Brunéi, donde son lapidadas las mujeres que tienen relaciones fuera  de su matrimonio, y yo sé que México, lo digo, señor Presidente, no para darle  gusto, está en avances sobre otros países en todas estas cuestiones, sé que  México no es todo el país, la Ciudad de México no representa a todo el país,  por supuesto, y hay mucho trabajo que hacer todavía.</p>
+<p align="justify">Como legisladores, no lo tomen a mal, no están para  decidir cómo la gente debe vivir, como Senadores están ahí para ver la  realidad, que vean que las sociedades son más avanzadas de lo que creen. Y  decirles que la homosexualidad no es una elección, quiero decir que hay que  aceptarse a sí mismo. Tuve miedo de hablar de esto por cómo iba a reaccionar mi  familia, cómo iban a reaccionar mis padres, mis amigos si soy gay, pero tuve  que aceptarme a mí mismo.</p>
+<p align="justify">Eso significa que la homosexualidad no es una  elección; la homofobia es una elección.</p>
+<p align="justify">También a nivel de la sociedad hay evolución, nuestros  gobiernos separaron la Iglesia del Estado, pero no era así antes. Fue una  verdadera revolución, más bien una evolución y era necesario.</p>
+<p align="justify">Hablo de estos valores para informarles de esta Europa  donde tuve la suerte de nacer. Sí, tuve la suerte de nacer en un continente  donde no conocí la guerra, viví en paz. Hice mis estudios en Luxemburgo, en  Francia y también estuve en el Instituto Erasmus, en Grecia.</p>
+<p align="justify">Estudié derecho durante 11 años, estudié el derecho  ortodoxo y el marítimo no lo utilicé todos los días en Luxemburgo, pero así  aprendí a conocer los demás.</p>
+<p align="justify">Hoy el proyecto de paz es también un proyecto de  valor, porque nunca debe olvidarse, hablé de la sexualidad, pero también soy un  demócrata y tenía una abuela rusa ortodoxa, un abuelo polaco judío, una abuela  francesa atea y otros católicos, así que en mi propio país, en mi territorio,  nadie ha estado condenado a muerte por el hecho de tener sangre judía,  homosexual o demócrata. No olvidemos que la paz es algo que hay que  salvaguardar siempre.</p>
+<p align="justify">Y es para esta Europa abierta, tolerante, donde cada  hombre y mujer tiene la misma oportunidad, sin distinción de color, raza o  sexualidad. Y su país, queridos Senadores, es un país muy importante para  nuestra Unión Europea.</p>
+<p align="justify">Felicito el acuerdo, de principio, que fue firmado en  abril del año pasado, sobre el Acuerdo de Asociación Económica entre la Unión  Europea y México. Nuestro país va a apoyar este Acuerdo, que va a reforzar los  vínculos económicos, políticos y culturales entre nuestros países, y eso es muy  benéfico.<br>
+  <br>
+  La Unión Europea es el tercer socio de México. Después  del Acuerdo de Libre Comercio de 2008 las inversiones hacia México se han  triplicado para apoyar el comercio fundado sobre estas reglas.</p>
+<p align="justify">Permítanme cuando hablo de la Unión Europea, abordar  un tema que me gusta menos, pero que es la realidad. Yo mismo fui alcalde de la  capital de Luxemburgo, hice muchos matrimonios, pero también fui abogado y me  ocupé de muchos divorcios también. Luego el Brexit, que es un divorcio difícil.</p>
+<p align="justify">Algunas personas quisieron hacerme creer que nos  separamos y mañana todo estaría mejor, pero hace más de dos años que discutimos  de la salida y no hemos encontrado cómo vamos a gestionar la situación con Gran  Bretaña.</p>
+<p align="justify">Otra vez, ahí tienen un papel importante algunas  personas durante la campaña electoral, que dijeron cosas falsas. El día después  del referéndum dijeron que había que combatir las noticias falsas, un día  después en Bruselas. </p>
+<p align="justify">Hoy todo mundo tenemos que denunciar las noticias falsas  que algunos dicen durante una campaña electoral, porque todos tenemos una  responsabilidad con relación a los medios de comunicación, que hacen su trabajo  y otros que son pseudo medios, que quieren transmitir un mensaje falso.</p>
+<p align="justify">Hay que invertir en el periodismo profesional, hay que  denunciar lo que es falso y hacerlo su interés, porque algún día sus electores  ya no les van a creer, pero creerán en lo que vieron en Twitter o en Facebook.  Ahí tendremos todos un problema, así que debemos combatir las informaciones falsas.</p>
+<p align="justify">Y con el Reino Unido, la separación sí se está  haciendo. La gente votó por la separación del Reino Unido de la Unión Europea,  pero en realidad mucha gente quería quedarse en Europa. Eso no nos da gusto, pero  es triste que sea la separación con Europa. No siempre fue fácil la relación  con el Reino Unido, pero es un socio confiable. </p>
+<p align="justify">Como lo dije, quizá tengo nostalgia, pero tengo gran  respeto por los países que vinieron a liberarnos, jóvenes británicos,  canadienses, americanos, que vinieron a luchar por nuestra libertad y muchos ni  siquiera saben dónde está Luxemburgo en un mapa, pero vinieron a combatir para  nosotros y vinieron a salvarnos, serán nuestros amigos siempre. </p>
+<p align="justify">Termino, señor Presidente, porque sabemos que los  políticos tienen un tiempo muy limitado y usted habrá sido tan diplomático y  voy a terminar sobre la cooperación. </p>
+<p align="justify">Mi país es parte de los pocos países con un por ciento  del GNP, de invertir en el desarrollo, y ustedes lo saben todos aquí, la  política de cooperación no es popular. La mayoría de sus electores cuando  hablan de cooperación dicen: por qué ayudan a los otros, no a los nuestros, qué  importa que ayuden a alguien al final del mundo, pero no, se trata de  solidaridad. </p>
+<p align="justify">Nos preguntamos si vamos a comer caliente o frío y los  de África se preguntan si van a comer una vez durante la semana. </p>
+<p align="justify">Y para mí, invertir en la gente, invertir en el  potencial humano de unos y otros es la mejor prevención, la mejor estabilidad,  y también nuestro país tiene un programa en África Central donde trabajamos  también con El Salvador, es un programa bien definido, donde queremos seguir  avanzando ahí y su plan de desarrollo de América del Norte para ver una  estabilidad en la región. <br>
+  <br>
+  Les voy a dar un ejemplo, en Luxemburgo, al construir  en Cabo Verde, hemos decidido crear una escuela hotelera y en el Cabo Verde el  turismo se desarrolla y todos los que encontraron un empleo son los que  tuvieron una carrera en esa escuela hotelera de Cabo Verde. Así que invertir en  la gente es para mí la mejor prevención y es mejor que invertir en las armas. </p>
+<p align="justify">Apoyamos también proyectos con México, El Salvador  para los riesgos medioambientales, con el &ldquo;ahuyama&rdquo; que coopera también con El  Salvador y pudimos intercambiar con el Presidente sobre una mayor cooperación  en este campo de medio ambiente y nos comprometemos también con Centroamérica,  y hemos empezado también cooperación con Sica, Sistema de Integración  Centroamericana, basada en San Salvador, sobre todo para las mujeres  empresarias y los grupos vulnerables. </p>
+<p align="justify">Permítame, señor Presidente, porque tuve un  intercambio con su Presidente sobre los grandes desafíos que van a tener y nos  habló de la producción, y me permití hablar de la corrupción como la gente que  encontré a nivel nacional y a nivel regional, la corrupción. La corrupción no  es únicamente una cuestión de presupuesto, la corrupción es antes que nada el  hecho de no ser un estado de derecho. </p>
+<p align="justify">Un país donde el dinero decide quién tiene el poder y  quien tendrá el contrato no es una democracia y debo animar a su Presidente a  luchar contra la corrupción. </p>
+<p align="justify">Cómo explicar a sus ciudadanos, a sus votantes de  vivir en una democracia, si el hecho que cada funcionario va a tener  privilegios sobre otros.</p>
+<p align="justify">La corrupción es como un corsario, si no lo mata desde  el principio y el cáncer que representa la corrupción va a ganar.</p>
+<p align="justify">Les deseo a su Asamblea, a su Presidente, a su  gobierno, a continuar sus buenas relaciones, tomar el multilateralismo, hacer  un país tolerante, les digo también, señor Presidente de lo que escuché  regional, se acepta a la gente como son y compartimos un punto común, entre  otros, en muchos puntos comunes, la diversidad es coloreada, es alegre, la  diversidad es pura alegría, la diversidad es riqueza y es nuestro patrimonio  cultural, lingüístico, culinario, o económico, o religioso, o sexual o  político, eso es el Password de una sociedad y esa diversidad es nuestra  riqueza, así aunque seamos diferentes, pero con el respeto unos para otros. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>El  Presidente Senador Martí Batres Guadarrama:</strong> Hoy recibimos con orgullo al Primer Ministro de  Luxemburgo, Señor Xavier Bettel. </p>
+<p align="justify">Sabemos cómo el resto de las y los mexicanos, de los  avances que han logrado en su nación. </p>
+<p align="justify">Luxemburgo nos recuerda la importancia del respeto a  las comunidades políticas, en el Gran Ducado, cuya población tiene un  importante componente de personas nacidas en otros países, los extranjeros no  son excluidos de la participación política, votan y participan en la vida  social y política. </p>
+<p align="justify">Este es un gran ejemplo para las naciones del  hemisferio occidental, en donde aún hay quienes excluyen a los extranjeros no  sólo de la participación, sino de la documentación mínima que les permita  transitar y ejercer sus derechos humanos.<br>
+  Luxemburgo nos recuerda también la relevancia de  respetar las identidades nacionales más allá de su peso geopolítico, un pequeño  Estado-nación es tan importante como uno grande y la potencia no se mide por el  poder de destrucción o amenaza, sino por la capacidad de convivir juntos los  más diversos pueblos.</p>
+<p align="justify">Luxemburgo es también un fascinante nudo lingüístico,  tal vez la lección relevante es que lo natural en medio de la diversidad no es  la lucha, las contradicciones y las exclusiones, sino la cooperación, es como  decimos acá, un mundo donde caben muchos mundos.</p>
+<p align="justify">Luxemburgo es también ejemplo de democracia  participativa, donde se consulta a las comunidades.</p>
+<p align="justify">En las primeras dos décadas de este nuevo siglo, debo  hacer este reconocimiento, Luxemburgo recogió un derecho muy importante, el  derecho de las parejas del mismo sexo a celebrar en igualdad el contrato de  matrimonio.</p>
+<p align="justify">Y usted, Primer Ministro, ha sido pionero en ejercer  ese derecho y al mismo tiempo actuar en la vida pública, es fácil imaginar las  dificultades que ha tenido que enfrentar.</p>
+<p align="justify">Y es también admirable su éxito. </p>
+<p align="justify">Hacemos votos para que estos ejemplos, tanto en lo  nacional como en lo personal, dejen de ser extraordinarios y se vuelvan derecho  normal, cotidiano, ordinario, reconocido de todas y de todos en los países del  mundo. </p>
+<p align="justify">El primer Senado de la República con paridad de  género, como parte del Estado laico mexicano, se complace en recibirlo en una  época de importantes cambios políticos en nuestro país. </p>
+<p align="justify">Le informo que en la capital de la República, aquí en  esta Ciudad de México, se aprobó hace una década el matrimonio igualitario.  Aunque este derecho aún no existe a nivel nacional plenamente, pero  recientemente este Senado, en la primera decisión legislativa que tomó, acordó  reformar las leyes de seguridad social para garantizar la seguridad social para  parejas del mismo sexo, fue la primera decisión legislativa de esta  Legislatura. </p>
+<p align="justify">Termino diciéndole lo siguiente. </p>
+<p align="justify">A este Senado le interesa el intercambio de  información, la colaboración sobre diversos temas para profundizar no sólo la  información, sino también la transformación en los temas de avanzada o con  posturas de avanzada en temas como derechos humanos, migración, cooperación  para el desarrollo económico, bienestar social; diversidad étnica, sexual,  cultural, igualdad de género y promoción de la paz y de la amistad entre todas  las naciones del mundo. </p>
+<p align="justify">¡Señor Primer Ministro, Xavier Bettel, sea usted  bienvenido!</p>
+<p align="justify">Muchas gracias por su visita. </p>
+<p align="justify">Muchas gracias, señor Primer Ministro, Xavier Bettel,  le reiteramos nuestro beneplácito por su presencia en el Senado de la República  y agradecemos la profundidad de su mensaje en este recinto. </p>
+<p align="justify">Del mismo modo agradecemos la presencia del  Subsecretario de Relaciones Exteriores, Julián Ventura Valero.</p>
+<p align="justify">Igualmente agradecemos a los distinguidos invitados y  a las distinguidas invitadas que nos han acompañado en esta sesión solemne. <br>
+  En  consecuencia, solicito a las Senadoras y a los Senadores Héctor Vasconcelos,  Gustavo Madero, Manuel Añorve, Margarita Valdez, Patricia Mercado, Nancy De la  Sierra, Israel Zamora, Antonio García Conejo, Katya Elizabeth Ávila, Radamés  Salazar Solorio, Citlalli Hernández Mora, Gina Andrea Cruz Blackledge, Miguel  Ángel Lucero Olivas y Antonia Cárdenas Mariscal, se sirvan acompañar a nuestros  invitados hasta las puertas de este recinto.</p>
+<p align="center">(La  comisión cumple)</p>
+<p align="justify">Damos  por finalizada la sesión solemne. </p>
+<p align="justify">Y  se solicita a las Senadoras y Senadores permanecer en sus lugares para  continuar con la sesión ordinaria del día.</p>
+<p align="center">(Se  levantó la sesión solemne a las 13:54 horas)</p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a82523'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

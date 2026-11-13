@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA COMISI&Oacute;N PERMANENTE<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Receso Comisi&oacute;n Permanente</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 9</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Martí Batres Guadarrama</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica de la Comisi&oacute;n Permanente Celebrada<br>en la Ciudad de M&eacute;xico, el 18 de Junio de 2019</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/1/SPR/PDF-WEB/C.P_No._9_18_JUNIO_2019.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83665'></a><p align="center"><strong>PRESIDENCIA DEL SENADOR</strong><br>
+  <strong>MARTÍ BATRES GUADARRAMA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>(11:20 horas) Solicito a la  Secretaría pasar lista de asistencia.</p>
+<p align="justify"><strong>El Secretario Diputado  Itzcóatl Tonatiuh Bravo Padilla: </strong>Señoras y señores  legisladores, la Secretaría dará inicio a la lista de presentes.</p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN</strong></p>
+<p align="right"><br><br><img src="/informacion/img/ver_documento.png" border></p>
+<p>Señor  Presidente, tenemos presentes 37 legisladores. Hay quórum.</p>
+<p><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Se abre la sesión de la  Comisión Permanente del Honorable Congreso de la Unión del martes 18 de junio  de 2019, correspondiente al segundo receso del primer año de ejercicio de la  LXIV Legislatura. <a name="_Toc11756149">El Orden del Día está disponible en el  monitor de sus escaños, con el cual se informa de los asuntos que corresponden  a la agenda de hoy.</a> Si algún legislador requiere la edición impresa, la  puede solicitar a la Secretaría Parlamentaria. </p>
+<p align="center">ACTA DE LA SESIÓN CELEBRADA EL VIERNES <br>
+  CATORCE DE JUNIO DE DOS MIL DIECINUEVE.</p>
+<p align="center">PRESIDE EL SENADOR <br>
+  MARTÍ BATRES GUADARRAMA</p>
+<table border="1" align="center" class="forma_tabla">
+  <tr>
+      <td width="264" valign="top"></td>
+      <td width="269" valign="top"><p align="justify">En la Ciudad de México a    las doce horas con diecinueve minutos del viernes catorce de junio de dos mil    diecinueve, con una asistencia de treinta y cinco legisladores, la    Presidencia declaró abierta la sesión.</p></td>
+  </tr>
+    <tr>
+      <td width="264" valign="top"><p align="center"><em>(Lectura del Orden del Día)</em></p></td>
+      <td width="269" valign="top"><p align="justify">La Presidencia dio por    conocido el contenido del Orden del Día de la sesión de esta fecha,    publicación en la Gaceta del Senado y a su difusión.</p></td>
+    </tr>
+    <tr>
+      <td width="264" valign="top"><p align="center"><em>(Acta de la sesión anterior)</em></p></td>
+      <td width="269" valign="top"><p align="justify">Se aprobó en votación    económica el acta de la Sesión de celebrada el miércoles doce de junio de dos    mil diecinueve.</p></td>
+    </tr>
+    <tr>
+      <td width="264" valign="top"></td>
+      <td width="269" valign="top"><p align="justify">El presidente de la Mesa    Directiva informó que el único asunto que se desahogaría en sesión plenaria,    sería la Reunión de Trabajo con el licenciado Marcelo Luis Ebrard Casaubón,    titular de la Secretaría de Relaciones Exteriores y a la doctora Graciela    Márquez Colín, titular de la Secretaría de Economía, para informar sobre los    resultados obtenidos en los esfuerzos de negociación, respecto de las medidas    arancelarias anunciadas y, en su caso, las implicaciones con los temas del    Tratado entre los Estados Unidos Mexicanos, los Estados Unidos de América y    Canadá.-<br>
+        La    Presidencia de la Mesa Directiva declaró un receso para recibir el licenciado    Marcelo Luis Ebrard Casaubón, titular de la Secretaría de Relaciones    Exteriores y a la doctora Graciela Márquez Colín, titular de la Secretaría de    Economía.</p>
+        <p align="center">(R    E C E S O)</p>
+        <p align="justify">La    Presidencia de la Mesa Directiva, reanudó la sesión.</p>
+        <p align="justify">Hicieron    uso de la palabrael licenciado Marcelo Luis Ebrard Casaubón, titular de la    Secretaría de Relaciones Exteriores y a la doctora Graciela Márquez Colín,    titular de la Secretaría de Economía, con la finalidad de explicar, en    consideración del ramo de su competencia, los temas a informar.</p>
+        <p align="justify">Se    dio paso a la ronda de preguntas, en la que intervinieron los legisladores:    diputado Porfirio Muñoz Ledo de MORENA; senador Miguel Ángel Mancera Espinosa    del PRD; senadora Verónica Noemí Camino Farjat del PVEM; senadora Sasil de    León Villard del PES;Senadora Nancy De La Sierra Arámburo del PT; diputado    Itzcóatl Tonatiuh Bravo Padilla del MC; senadora Beatriz Elena Paredes Rangel    del PRI;senador Damián Zepeda Vidales del PAN, y senador Oscar Eduardo    Ramírez Aguilar de MORENA.<br>
+          Para    dar respuesta a las preguntas formuladas, intervinieron los funcionarios: la    Dra. Graciela Márquez Colín, Secretaria de Economía y el Lic. Marcelo Luis    Ebrard Casaubón, Secretario de Relaciones Exteriores.</p>
+        <p align="justify">En    la réplica, intervinieron los legisladores: diputada Verónica Beatriz Juárez    Piña del PRD; senadora Verónica Noemí Camino Farjat delPVEM, senadora Sasil    De León Villard del PES; diputado Reginaldo Sandoval Flores del PT; senador    Dante Delgado de MC;</p>
+        <p align="justify">diputada    Dulce María Sauri Riancho del PRI; diputado Juan Carlos Romero Hicks del PAN,    y Diputada Dolores Padierna Luna deMORENA.</p>
+        <p align="justify">Para    para exponer las consideraciones finales, hicieron uso de la palabra los    titulares de las Secretarías: la Dra. Graciela Márquez Colín, Secretaria de    Economía y el Lic. Marcelo Luis Ebrard Casaubón, Secretario de Relaciones    Exteriores.</p>
+        <p align="justify">El    Senador Martí Batres Guadarrama, Presidente de la Comisión Permanente del    Congreso de la Unión dio el mensaje final.</p></td>
+    </tr>
+    <tr>
+      <td width="264" valign="top"></td>
+      <td width="269" valign="top"><p align="justify">La Presidencia se citó a    la siguiente sesión el martes 18 de junio, a las 10:00 horas.</p></td>
+    </tr>
+    <tr>
+      <td width="264" valign="top"></td>
+      <td width="269" valign="top"><p align="justify">La Presidencia dio por    concluida la sesión a las dieciséis horas con treinta y nueve minutos.</p></td>
+    </tr>
+    <tr>
+      <td width="264" valign="top"></td>
+      <td width="269" valign="top"><p align="justify">Fin de la sesión.</p></td>
+    </tr>
+</table>
+<p align="justify">El acta de la sesión  anterior se encuentra publicada en la Gaceta Parlamentaria de la Comisión  Permanente de este día. En consecuencia, consulte  la Secretaría a la Asamblea, en votación económica, si se aprueba el acta  referida. </p>
+<p align="justify"><strong>El Secretario Diputado  Itzcóatl Tonatiuh Bravo Padilla: </strong>Se consulta a la Asamblea,  en votación económica, si es de aprobarse el acta de la sesión anterior.  Quienes estén por la afirmativa, favor de levantar la mano.</p>
+<p align="center">(La  Asamblea asiente)</p>
+<p>Quienes  estén por la negativa, favor de levantar la mano.</p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p align="justify">Por el  consenso de los presentes, señor Presidente, se aprueba el acta.</p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Muchas gracias, señor  Secretario. Aprobada el acta.</p>
+<p align="justify">Pasamos  al siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83665'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83723'></a><p align="justify"><strong>SECRETARÍA DE HACIENDA Y  CRÉDITO PÚBLICO</strong></p>
+<p align="justify"><strong>El Secretario Diputado Itzcóatl  Tonatiuh Bravo Padilla: </strong>Se  recibió de la Secretaría de Hacienda y Crédito Público, oficio con el que se  remite la información relativa al pago de las participaciones a las entidades  federativas correspondiente al mes de mayo de 2019, desagregada por tipo de  fondo, de acuerdo con lo establecido en la Ley de Coordinación Fiscal y por  entidad federativa, efectuando la comparación correspondiente al mes de mayo de  2018. </p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/informe_shcp_mayo_2018.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El  Presidente Senador Martí Batres Guadarrama: </strong>Se turna a las Comisiones  de Hacienda y Crédito Público de la Cámara de Senadores y de la Cámara de  Diputados. </p>
+<p align="justify">Pasamos al siguiente  asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83723'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83746'></a><p align="justify"><strong>CONGRESOS DE LOS ESTADOS</strong></p>
+<p align="justify"><strong>El Secretario  Diputado Itzcóatl Tonatiuh Bravo Padilla: </strong>Del  Congreso de la Ciudad de México, se recibió oficio con el que remite proyecto  de Decreto por el que se adicionan y reforman diversas disposiciones de la Ley  General en Materia de Delitos Electorales, de la Ley General de Instituciones y  Procedimientos Electorales y de la Ley General de Partidos Políticos. </p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/ConEdos_Ofi_LGMDE_LGIyPE_LGPP_CDMEX.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El  Presidente Senador Martí Batres Guadarrama: </strong>Se turna a las Comisiones  Unidas de Gobernación; y de Estudios Legislativos de la Cámara de Senadores. </p>
+<p align="justify">Pasamos al siguiente  asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83746'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83763'></a><p align="justify"><strong>El Secretario Diputado  Itzcóatl Tonatiuh Bravo Padilla: </strong>También  del Congreso de la Ciudad de México, se recibió oficio con el que remite  proyecto de Decreto por el que se adiciona el inciso d) a la fracción VI del  artículo 41 de la Constitución Política de los Estados Unidos Mexicanos y se  reforma el penúltimo párrafo del artículo 41 de la Constitución Política de los  Estados Unidos Mexicanos. </p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/ConEdos_Ofi_art41_CPEUM_CDMEX.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El  Presidente Senador Martí Batres Guadarrama: </strong>Se turna a las Comisiones  Unidas de Puntos Constitucionales; y de Estudios Legislativos, Primera de la  Cámara de Senadores. </p>
+<p align="justify">Pasamos al siguiente  asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83763'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83784'></a><p align="justify"><strong>El Secretario Diputado  Itzcóatl Tonatiuh Bravo Padilla: </strong>Del  Congreso del Estado de Nayarit, se recibió oficio con el que remite voto  aprobatorio al proyecto de Decreto por el que se reforman los artículos 2o.,  4o., 35, 41, 52, 53, 56, 94 y 115 de la Constitución Política de los Estados  Unidos Mexicanos, en materia de paridad de género. </p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/ConEdos_voto_aprobatorio_nayarit.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El  Presidente Senador Martí Batres Guadarrama: </strong>La Asamblea ha quedado  enterada. Se integrará el voto al expediente correspondiente en virtud de la  declaratoria constitucional emitida el pasado 5 de junio de 2019. </p>
+<p align="justify">Pasamos al siguiente  asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83784'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83816'></a><p align="justify"><strong>El Secretario Diputado  Itzcóatl Tonatiuh Bravo Padilla: </strong>Del  Congreso del Estado de Sonora, se recibió oficio con el que remite voto  aprobatorio del proyecto de Decreto por el que se reforman, adicionan y derogan  diversas disposiciones de los artículos 3o., 31 y 73 de la Constitución  Política de los Estados Unidos Mexicanos, en materia educativa. </p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/ConEdos_voto_aprobatorio_sonora.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El  Presidente Senador Martí Batres Guadarrama: </strong>La Asamblea ha quedado  enterada. Se integrará el voto correspondiente al expediente en virtud de la  declaratoria constitucional emitida el pasado 15 de mayo de 2019. </p>
+<p align="justify">Pasamos al siguiente  asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83816'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83820'></a><p align="justify"><strong>El Secretario Diputado  Itzcóatl Tonatiuh Bravo Padilla: </strong>Del  Congreso del Estado de Colima, se recibió oficio con el que remite exhorto al  Congreso de la Unión, a través de las Cámaras de Diputados y Senadores, con el  objeto de que se analice la legislación de la materia y no se permita más en  nuestro país el transporte de carga en camiones de doble remolque, por el  peligro que representan para la sociedad y el alto costo que implica para las  finanzas públicas el mantenimiento y reparación de la infraestructura vial. </p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/ConEdos_Ofi_mantenimiento_repara_infra_vial_colima.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El  Presidente Senador Martí Batres Guadarrama: </strong>Se remite a las Comisiones  de Comunicaciones y Transportes de la Cámara de Senadores y de la Cámara de  Diputados.</p>
+<p align="justify">Pasamos al siguiente  asunto.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83820'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83841'></a><p align="justify"><strong>El Secretario Diputado Itzcóatl  Tonatiuh Bravo Padilla: </strong>Del  Congreso del Estado de México, se recibió oficio con el que remite exhorto al Senado de la República  y a la Secretaría de Relaciones Exteriores, para que garanticen que la adhesión  del Estado Mexicano al T-MEC y cualquier otro Tratado, Acuerdo o Convenio  Internacional, no implique la suscripción del acta UPOV 91 de la Unión  Internacional para la Protección de Obtenciones Vegetales; y se exhorta a los Diputados federales a hacer un análisis y desechar  la iniciativa que reforma y adiciona diversas disposiciones de la Ley Federal  de Variedades Vegetales. </p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/ConEdos_Ofi_t-mec_UPOV91_edomex.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El  Presidente Senador Martí Batres Guadarrama: </strong>Se remite a la Comisión de  Relaciones Exteriores de la Cámara de Senadores y a la Comisión de Desarrollo y  Conservación Rural, Agrícola y Autosuficiencia Alimentaria de la Cámara de  Diputados, así como a la Comisión de Agricultura, Ganadería, Pesca y Desarrollo  Rural del Senado de la República.</p>
+<p align="justify">Pasamos al siguiente  asunto.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83841'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83842'></a><p align="justify"><strong>COMUNICACIÓN</strong></p>
+<p align="justify"><strong>El Secretario Diputado  Itzcóatl Tonatiuh Bravo Padilla: </strong>Se  recibió comunicación de la Senadora Sasil De León, con la que remite informe  sobre su participación en la Segunda Parte de la Sesión Ordinaria de la  Asamblea Parlamentaria del Consejo de Europa, realizada en Estrasburgo,  Francia, del 8 al 12 de abril de 2019.</p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/ComLeg_Sen_sasil_de_Leon_cons_europa_8_al_12_abril_2019.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El  Presidente Senador Martí Batres Guadarrama: </strong>La Asamblea ha quedado  enterada.</p>
+<p align="justify">Publíquese en la Gaceta  Parlamentaria.</p>
+<p align="justify">Pasamos al siguiente  asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83842'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83843'></a><p align="justify"><strong>MEMORIAL DE PARTICULARES</strong></p>
+<p align="justify"><strong>El Secretario Diputado  Itzcóatl Tonatiuh Bravo Padilla: </strong>Se  recibió del Instituto Tecnológico Superior de Xalapa, oficio con el que remite informe  de resultados de la auditoría externa a la matrícula del instituto.</p>
+<p align="right"><br><br><img src="/informacion/img/ver_documento.png" border></p>
+<p align="justify"><strong>El  Presidente Senador Martí Batres Guadarrama: </strong>Se turna a la Comisión de  Educación de la Cámara de Diputados.</p>
+<p align="justify">Pasamos al siguiente  asunto.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83843'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83844'></a><p align="justify">Informo a la Asamblea que  la Mesa Directiva suscribió una iniciativa con proyecto de Decreto por el que  se modifica el Decreto por el que la Comisión Permanente del Congreso de la  Unión convoca al Senado de la República a celebrar un segundo periodo  extraordinario de sesiones, publicado en el Diario Oficial de la Federación el  13 de junio de 2019.</p>
+<p align="justify">El  propósito de la iniciativa es integrar al objeto de convocatoria la  ratificación de dos Consejeros Independientes del Consejo de Administración de  Petróleos Mexicanos, toda vez que el decreto antes señalado únicamente se  refería a la designación de un Consejero de dicha empresa, y la propuesta  enviada por el titular del Ejecutivo Federal al Senado de la República atiende  a la existencia de dos vacantes.</p>
+<p align="justify">Solicito  a la Secretaría dé lectura a la iniciativa.</p>
+<p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR EL  QUE SE MODIFICA EL DECRETO POR EL QUE LA COMISIÓN PERMANENTE DEL CONGRESO DE LA  UNIÓN CONVOCA AL SENADO DE LA REPÚBLICA A UN SEGUNDO PERIODO DE SESIONES  EXTRAORDINARIAS, PUBLICADO EN EL DIARIO OFICIAL DE LA FEDERACIÓN EL 13 DE JUNIO  DE 2019</strong></p>
+<p align="justify"><strong>(Presentada por las y los integrantes de la  Mesa Directiva de la Comisión Permanente del H. Congreso de la Unión)</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  Mónica Fernández Balboa: </strong>Doy lectura a la  iniciativa, señor Presidente.</p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/Inic_Modifica_Decreto_Periodo_Extra.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es cuanto, señor  Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>En consecuencia, con  fundamento en los artículos 59 y 60 del Reglamento para el Gobierno Interior  del Congreso de la Unión, solicito a la Secretaría consulte a la Asamblea, en  votación económica, si la iniciativa en referencia se considera de urgente  resolución y se pone a discusión de inmediato.</p>
+<p align="justify"><strong>La Secretaria Senadora  Mónica Fernández Balboa: </strong>Consulto a la Asamblea, en  votación económica, si el asunto referido por el Presidente de la Mesa  Directiva se considera de urgente resolución. Quienes estén por la afirmativa, favor de levantar la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén por la negativa, favor de levantar la mano.</p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Sí se  autoriza, por unanimidad, señor Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Muchas gracias, señora  Secretaria.</p>
+<p align="justify">En  consecuencia, está a discusión el siguiente:</p>
+<p align="center">Proyecto  de Decreto:</p>
+<p align="justify">Decreto  por el que se reforma el numeral 5 de la fracción III del Artículo Tercero del Decreto  por el que la Comisión Permanente del Congreso de la Unión convoca al Senado de  la República a celebrar un segundo periodo de sesiones extraordinarias, publicado  en el Diario Oficial de la Federación el 13 de junio de 2019.</p>
+<p align="justify">Artículo Único. Se reforma el numeral 5 de la fracción III  del Artículo Tercero del Decreto por el que la Comisión Permanente de Congreso  de la Unión convoca al Senado de la República a celebrar un segundo periodo de  sesiones extraordinarias, publicado en el Diario Oficial de la Federación el 13  de junio de 2019, para quedar como sigue:</p>
+<p align="justify">5.- Ratificación, en su caso, de dos Consejeros  Independientes del Consejo de Administración de Petróleos Mexicanos.</p>
+<p align="center">Transitorios</p>
+<p align="justify">Primero.- El presente Decretó  entrará en vigor el día de su aprobación.</p>
+<p align="justify">Segundo.- Publíquese en el  Diarlo Oficial de la Federación.</p>
+<p align="justify">Está a  discusión el proyecto.</p>
+<p align="justify">En virtud  de que no hay oradores, proceda la Secretaría a recoger la votación nominal del  proyecto de Decreto, en lo general y en lo particular.</p>
+<p align="justify"><strong>La Secretaria Senadora  Mónica Fernández Balboa: </strong>Como indica, señor  Presidente. Se va a recoger la votación nominal del proyecto de Decreto.</p>
+<p align="justify">Iniciaremos  por el lado derecho del salón.</p>
+<p align="justify">Se  solicita a las legisladoras y a los legisladores ponerse de pie y manifestar el  sentido de su voto y su nombre, por favor.</p>
+<p align="justify">¿Hay  alguna legisladora o legislador que falte de emitir su voto?</p>
+<p align="justify">Procederemos,  por favor, a la votación de la Mesa Directiva. </p>
+<p align="right"><a href="http://www.senado.gob.mx/64/votacion/3416"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Pregunto,  si falta alguna legisladora o legislador de emitir su voto<a name="_Toc11756161">.</a></p>
+<p align="justify">Señor Presidente, le informo que se emitieron 32 votos a favor, cero en  contra y cero abstenciones. </p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Muchas gracias, señora Secretaria. </p>
+<p align="justify">En  consecuencia, queda aprobado en lo general y en lo particular el Decreto por el  que se modifica el numeral 5 de la fracción III del Artículo Tercero del Decreto  por el que la Comisión Permanente del Congreso de la Unión convoca al Senado de  la República a celebrar un segundo periodo de sesiones extraordinarias,  publicado en el Diario Oficial de la Federación el 13 de junio de 2019.  Comuníquese este Decreto a las Cámaras del Congreso y publíquese en el Diario  Oficial de la Federación. </p>
+<p align="justify">Muchas  gracias a todas y a todos. </p>
+<p align="justify">El seguimiento a la reunión  de trabajo de este órgano del pasado viernes 14 de junio, por los titulares de  la Secretaría de Relaciones Exteriores y de la Secretaría de Economía, informo  a la Asamblea que en la sesión plenaria de la Comisión Permanente, que se  celebrará el miércoles 26 de junio de 2019, se integrará, mediante acuerdo, el  grupo plural de trabajo que acompañará al Secretario de Relaciones Exteriores  en las negociaciones con el gobierno de los Estados Unidos de América en  materia arancelaria y migratoria. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83844'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83845'></a><p align="justify">Compañeras y compañeros, informo a ustedes que las iniciativas y las  proposiciones con punto de Acuerdo que quedaron pendientes en el Orden del Día  de esta sesión se turnarán a comisiones, los turnos se publicarán en la Gaceta Parlamentaria  de la Comisión Permanente. </p>
+<p align="justify"><strong>INICIATIVA  CON PROYECTO DE DECRETO POR EL QUE SE REFORMA LA FRACCIÓN IV DEL ARTÍCULO 170  DE LA LEY FEDERAL DEL TRABAJO</strong></p>
+<p align="justify"><strong>(Presentada  por la Diputada Janet Melanie Murillo Chávez, del grupo parlamentario del PAN)</strong></p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96541"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83845'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83875'></a><p align="justify"><strong>INICIATIVA  CON PROYECTO DE DECRETO POR EL QUE SE DECLARA EL AÑO 2021 COMO EL &ldquo;AÑO DE LA  EDUCACIÓN, CENTENARIO DE LA SECRETARÍA DE EDUCACIÓN PÚBLICA&rdquo;, AL CONMEMORAR EL  CENTENARIO DE LA CREACIÓN DE LA SECRETARÍA DE EDUCACIÓN PÚBLICA</strong></p>
+<p align="justify"><strong>(Presentada  por la Diputada Cynthia López Castro, del grupo parlamentario del PRI)</strong></p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/Inic_PRI_Dip_cynthia_lopez_.anio_2021_AECSEP.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83875'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83876'></a><p align="justify"><strong>INICIATIVA  CON PROYECTO DE DECRETO POR EL QUE SE REFORMAN, ADICIONAN Y DEROGAN DIVERSAS  DISPOSICIONES DEL CÓDIGO FISCAL DE LA FEDERACIÓN, DEL CÓDIGO NACIONAL DE  PROCEDIMIENTOS PENALES, DE LA LEY FEDERAL CONTRA LA DELINCUENCIA ORGANIZADA Y  DE LA LEY DE SEGURIDAD NACIONAL</strong></p>
+<p align="justify"><strong>(Presentada  por el Senador Samuel Alejandro García Sepúlveda, del grupo parlamentario de  Movimiento Ciudadano)</strong></p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/Inic_MC_Sen_samuel_garcia_LF_contra_delincuencia_organizada_LSN.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83876'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83877'></a><p align="justify"><strong>INICIATIVA  CON PROYECTO DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 37 DE LA LEY FEDERAL  DE PRESUPUESTO Y RESPONSABILIDAD HACENDARIA</strong></p>
+<p align="justify"><strong>(Presentada  por la Diputada Fabiola Raquel Guadalupe Loya Hernández, del grupo  parlamentario de Movimiento Ciudadano)</strong></p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/Inic_MC_Dip_fabiola_loya_art._37_lfprh.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83877'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83878'></a><p align="justify"><strong>INICIATIVA  CON PROYECTO DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 38 DE LA LEY ORGÁNICA  DE LA ADMINISTRACIÓN PÚBLICA FEDERAL; ARTÍCULOS 7 Y 33 DE LA LEY GENERAL DE  EDUCACIÓN; ARTÍCULOS 50, 116 Y 137 DE LA LEY GENERAL DE LOS DERECHOS DE LAS  NIÑAS, NIÑOS Y ADOLESCENTES; Y ARTÍCULO 3 DE LA LEY GENERAL DE SALUD</strong></p>
+<p align="justify"><strong>(Presentada  por la Senadora Cora Cecilia Pinedo Alonso, del grupo parlamentario del PT)</strong></p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96662"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83878'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83879'></a><p align="justify"><strong>INICIATIVA  CON PROYECTO DE DECRETO POR EL QUE SE ADICIONA UN PÁRRAFO TERCERO AL ARTÍCULO  40 DE LA LEY GENERAL DE LOS DERECHOS DE NIÑAS, NIÑOS Y ADOLESCENTES</strong></p>
+<p align="justify"><strong>(Presentada  por las Diputadas Verónica Beatriz Juárez Piña y Claudia Reyes Montiel, del  grupo parlamentario del PRD)</strong></p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96543"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83879'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83880'></a><p align="justify"><strong>INICIATIVA  CON PROYECTO DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 212 DE LA LEY GENERAL  DE SALUD</strong></p>
+<p align="justify"><strong>(Presentada  por la Diputada Ana Priscila González García, del grupo parlamentario de  Movimiento Ciudadano)</strong></p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96538"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83880'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83881'></a><p align="justify"><strong>INICIATIVA  CON PROYECTO DE DECRETO POR EL QUE SE ADICIONA UN SEGUNDO PÁRRAFO AL ARTÍCULO 190 DE LA  LEY DEL SEGURO SOCIAL</strong></p>
+<p align="justify"><strong>(Presentada  por el Diputado Edelmiro Santiago Santos Díaz, del grupo parlamentario del  Partido Morena)</strong></p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96540"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83881'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83882'></a><p align="justify"><strong>INICIATIVA  CON PROYECTO DE DECRETO POR EL QUE SE ADICIONAN LAS FRACCIONES III Y IV AL  ARTÍCULO 228 DEL CÓDIGO PENAL FEDERAL</strong></p>
+<p align="justify"><strong>(Presentada  por el Diputado Edelmiro Santiago Santos Díaz, del grupo parlamentario del  Partido Morena)</strong></p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96539"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83882'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83883'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR EL QUE SE REFORMA EL  ARTÍCULO 41 DE LA CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS</strong></p>
+<p align="justify"><strong>(Presentada por el Senador Ricardo Monreal Ávila, del grupo  parlamentario del Partido Morena)</strong></p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/Ini_MORENA_Paridad_Partidos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83883'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83884'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR EL QUE SE REFORMA LA  FRACCIÓN XIX DEL PÁRRAFO DÉCIMO DEL ARTÍCULO 27 DE LA CONSTITUCIÓN POLÍTICA DE  LOS ESTADOS UNIDOS MEXICANOS</strong></p>
+<p align="justify"><strong>(Presentada por el Senador Ricardo Monreal Ávila, del grupo  parlamentario del Partido Morena)</strong></p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/Ini_MORENA_Paridad_Tribunales_Agrarios.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83884'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83885'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR EL QUE SE REFORMA EL  ARTÍCULO 116 DE LA CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS</strong></p>
+<p align="justify"><strong>(Presentada por el Senador Ricardo Monreal Ávila, del grupo  parlamentario del Partido Morena)</strong></p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/Ini_MORENA_Paridad_LyPJ_locales.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83885'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83886'></a><p align="justify"><strong>INICIATIVA CON PROYECTO  DE DECRETO POR EL QUE SE REFORMAN LOS ARTÍCULOS 96, 99 Y 100 DE LA CONSTITUCIÓN  POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS.</strong></p>
+<p align="justify"><strong>(Presentada por el  Senador Ricardo Monreal Ávila, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/Ini_MORENA_CPEUM_Paridad_PJF_y_CJF.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83886'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83887'></a><p align="justify"><strong>PROPOSICIONES  CON PUNTO DE ACUERDO</strong></p>
+<p align="justify">De la Senadora Alejandra Noemí Reynoso Sánchez,  del grupo parlamentario del PAN, con punto de Acuerdo por el que se exhorta a  las Secretaría de Salud para homologar los procedimientos de firma de contrato,  recepción de productos, requisitos de remisión y facturación, así como pago de  todas las instituciones y dependencias de gobierno que se vayan a abastecer  mediante la licitación LA-012000991-E82-2019 para la &ldquo;Contratación consolidada  de bienes terapéuticos (medicamentos, material de curación, material  radiológico y de laboratorio), para el segundo semestre del ejercicio fiscal  2019&rdquo;. Se turna a la Segunda  Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96567"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83887'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83888'></a><p align="justify">De la Diputada Dulce María Sauri Riancho, del  grupo parlamentario del PRI, con punto de Acuerdo por el que se exhorta a la  Secretaría de Gobernación; y a la Secretaría de Seguridad y Protección  Ciudadana, para que envíen a esta Soberanía un informe detallado sobre la  estrategia para implementar la nueva política migratoria y el impacto  presupuestal que generaría su implementación. Asimismo, se exhorta a la  Secretaría de Comunicaciones y Transportes; y al Banco Nacional de Obras y  Servicios Públicos, para que, envíen un informe sobre el estado que guarda el  proceso de venta del avión presidencial, así como un balance del costo  beneficio que se derivaría de la venta de dicha aeronave. Se turna a la Primera Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96551"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83888'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83889'></a><p align="justify">Del Diputado Alan Jesús Falomir Sáenz, del  grupo parlamentario de Movimiento Ciudadano, con punto de Acuerdo por el que se  exhorta a la Comisión Federal de Electricidad; a la Comisión Reguladora de  Energía; y a la Secretaria de Hacienda y Crédito Público, instruyan las  acciones necesarias para cambiar las tarifas eléctricas en el estado de  Chihuahua. Se turna a la Tercera  Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96544"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83889'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83890'></a><p align="justify">De las Diputadas Verónica Beatriz Juárez Piña y  Claudia Reyes Montiel, del grupo parlamentario del PRD, con punto de Acuerdo  por el que se exhorta al titular del Poder Ejecutivo; y al Fiscal General de  Justicia del estado de Tlaxcala, para que, implementen las acciones  correspondientes para erradicar el incremento de los feminicidios en el estado,  y a la investigación y castigo a los responsables del feminicidio de la joven  que fue incendiada. Se turna a la Primera Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96563"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83890'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83891'></a><p align="justify">Del  Diputado David Bautista Rivera, del grupo parlamentario del Partido  Morena, con punto de Acuerdo  por el que se exhorta al Instituto Nacional de Salud Pública, así como a la Secretaría de Salud del  estado de Puebla a realizar investigaciones con base en los nuevos factores de  riesgo que han generado el aumento acelerado del cáncer en el estado de Puebla,  del 2018 a la actualidad, para disminuir la tasa de mortalidad en materia de  cáncer en el estado de Puebla. Se turna a la Segunda Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96552"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83891'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83892'></a><p align="justify">De la Diputada Saraí Núñez Cerón, del grupo  parlamentario del PAN, con punto de Acuerdo por el que se exhorta al titular  del Poder Ejecutivo Federal, para que decline su inasistencia a la Reunión  Cumbre del G20, que se llevará a cabo el 28 y 29 de junio en Japón. Se turna a  la Segunda  Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96561"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83892'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83893'></a><p align="justify">Del Diputado Itzcóatl Tonatiuh Bravo Padilla,  del grupo parlamentario de Movimiento Ciudadano, con punto de Acuerdo por el  que se solicita se constituya un grupo de trabajo, para que, coadyuve y dé  seguimiento al acuerdo de fecha 7 de junio de 2019 entre México y Estados  Unidos y posibles acuerdos subsecuentes. Se turna a la Segunda Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96546"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83893'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83894'></a><p align="justify">De los Senadores Omar Obed Maceda Luna, Miguel  Ángel Mancera Espinosa y Juan Manuel Fócil Pérez, del grupo parlamentario del  PRD, con punto de Acuerdo por el que se exhorta a la Mesa Directiva del Senado  de la República, a crear un módulo de atención ciudadana para dar orientación  en diversos trámites y canalizar a las instituciones correspondientes para su  solución. Se remite a la Mesa  Directiva de la Cámara de Senadores.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96666"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83894'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83895'></a><p align="justify">De la Senadora Minerva Citalli Hernández Mora,  del grupo parlamentario del Partido Morena, con punto de Acuerdo por el que se  exhorta al Banco de México a que diseñe e implemente una estrategia integral, a  fin de resolver en el mediano plazo los problemas derivados del desuso de  monedas fraccionarias, y que prevenga y combata las prácticas abusivas de  redondeo realizadas en contra de los consumidores en México. Se turna a la  Tercera Comisión.</p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/PA_Morena_Sen_citlalli_Hdz_banco_de_mexico_moneda_fracc.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83895'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83896'></a><p align="justify">De la Senadora María Guadalupe Saldaña  Cisneros, del grupo parlamentario del PAN, con punto de Acuerdo por el que se  exhorta al Presidente de la República; al titular de la Secretaría de  Comunicaciones y Transportes; y al titular de la Secretaría de Medio Ambiente y  Recursos Naturales del Gobierno Federal, a tomar diversas y urgentes medidas  para la debida evaluación del impacto ambiental del proyecto del Nuevo  Aeropuerto Internacional de Santa Lucía. Se turna a la Tercera Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96564"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83896'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83897'></a><p align="justify">De la Diputada Soraya Pérez Munguía, del grupo  parlamentario del PRI, con punto de Acuerdo por el que se exhorta a la  Secretaría de Hacienda y Crédito Público, para que incremente la partida  presupuestal en materia de recursos humanos y técnicos, orientadas a fortalecer  a la agencia de seguridad, energía y ambiente, dada su trascendente labor con  la protección del medio ambiente. Se turna a la Tercera   Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96555"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83897'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83898'></a><p align="justify">De la  Diputada Fabiola Raquel Guadalupe Loya Hernández, del grupo parlamentario de  Movimiento Ciudadano, con punto de Acuerdo por el que se exhorta a la  Secretaría de Hacienda y Crédito  Público, para que, en el diseño y presentación del Presupuesto de Egresos de la  Federación 2020, se asegure el cumplimiento del artículo 37 de la Ley Federal  de Presupuesto y Responsabilidad Hacendaria. Se turna a la Tercera  Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96547"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83898'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83899'></a><p align="justify">Del Senador Omar Obed Maceda Luna, del grupo  parlamentario del PRD, con punto de Acuerdo por el que se solicita a la  Fiscalía General de la República a remitir a esta Soberanía, un informe  relacionado a las detenciones de los ciudadanos Irineo Mújica y Cristóbal  Sánchez, y por el que se condena el asesinato del ecologista mexicano José Luis  Álvarez Flores. Se turna a la Primera Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96673"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83899'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83900'></a><p align="justify">Del Diputado Azael Santiago Chepi, del grupo  parlamentario del Partido Morena, con punto de Acuerdo por el que se exhorta a  los titulares de las Secretarías de Bienestar y de Educación Pública a impulsar  un programa urgente de desarrollo de infraestructura educativa en comunidades  donde se localicen ductos de Petróleos Mexicanos, como medida adicional para  fortalecer el &ldquo;Plan de Desarrollo para el Bienestar&rdquo;. Se turna a la Segunda Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96548"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83900'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83901'></a><p align="justify">De la Diputada Nohemí Alemán Hernández, del  grupo parlamentario del PAN, con punto de Acuerdo por el que se exhorta al  Ejecutivo Federal, al titular de la Procuraduría Federal de Protección de  Niñas, Niños y Adolescentes; y al Sistema Nacional de Protección Integral de  Niñas, Niños y Adolescentes, para que, refuercen las acciones en la  construcción de una política pública exitosa, que permita identificar y generar  estrategias para prevenir y disminuir la tasa de homicidios de niños y niñas en  nuestro país. Se turna a la Primera Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96559"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83901'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83902'></a><p align="justify">De la Diputada Dulce María Sauri Riancho, del  grupo parlamentario del PRI, con punto de Acuerdo por el que se solicita a la  Secretaría de Hacienda y Crédito Público haga del conocimiento de esta  Soberanía, los criterios jurídicos y técnico-presupuestales en que sustentará  la aplicación del Artículo Cuarto Transitorio del Decreto por el que se crea el  organismo público descentralizado, con personalidad jurídica y patrimonio  propio, no sectorizado, denominado corredor interoceánico del Istmo de  Tehuantepec, publicado en el  Diario Oficial de la Federación el 14 de junio pasado. Se turna a la Tercera Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96560"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83902'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83903'></a><p align="justify">De la Diputada Adriana Gabriela Medina Ortiz,  del grupo parlamentario de Movimiento Ciudadano, con punto de Acuerdo por el  que se exhorta a la Fiscalía General de la República, a redoblar los esfuerzos  orientados a la capacitación de fiscales y personal ministerial en general, en  materia de extinción de dominio y a considerar la vialidad jurídica de buscar  la aplicación de esta figura, en todos los casos de corrupción que sean de su  competencia. Se turna a la Primera Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96565"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83903'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83904'></a><p align="justify">De la Senadora Nestora Salgado García, del  grupo parlamentario del Partido Morena, con punto de Acuerdo relativo a la  protección de personas periodistas y defensoras de derechos humanos. Se turna a  la Primera  Comisión.</p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/PA_morena_Sen_nestora_periodistas_y_defensoras.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83904'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83905'></a><p align="justify">De la Senadora María Guadalupe Saldaña  Cisneros, del grupo parlamentario del PAN, con punto de Acuerdo por el que se  exhorta a la Secretaria de Bienestar a restablecer el Programa Prospera; y a  que informe las causas de su desmantelamiento, así como las acciones para  sustituir sus beneficios en materia de salud, nutrición, educación y combate de  la pobreza, sobre todo en niños y jóvenes. Se turna a la Tercera Comisión.</p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/PA_PAN_Sen_Gpe_Salda%C3%B1a_salud_nutricion_edu_y_pobreza_ninos_jovenes.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83905'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83906'></a><p align="justify">De la Diputada Soraya Pérez Munguía, del grupo  parlamentario del PRI, con punto de Acuerdo por el que se exhorta a la  autoridad federal para las Zonas Económicas Especiales, a informar sobre el  estatus de la zona económica especial de Tabasco y, en su caso, dados los  señalamientos de que la van a desaparecer, indicar qué se hará con las  intenciones de inversión que ya fueron comprometidas. Se turna a la Tercera Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96562"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83906'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83907'></a><p align="justify">Del Diputado Jorge Alcibíades García Lara, del  grupo parlamentario de Movimiento Ciudadano, con punto de Acuerdo por el que se  exhorta al titular de la Secretaría de Medio Ambiente y Recursos Naturales,  para que, dentro del ámbito de sus atribuciones legales, promueva la  suscripción de convenios de colaboración con los ejecutivos estatales, a fin de  realizar acciones conjuntas para fortalecer los sistemas de monitoreo de  calidad del aire que operan en las entidades federativas, con objeto de ampliar  a un mayor número de ciudades, la infraestructura de estaciones de monitoreo.  Se turna a la Tercera  Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96569"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83907'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83908'></a><p align="justify">Del Diputado Azael Santiago Chepi, del grupo  parlamentario del Partido Morena, con punto de Acuerdo por el que se exhorta a  diversas autoridades a fortalecer las medidas de prevención, protección y  procuración de justicia a niños y adolescentes para garantizar el interés  superior de la niñez en el marco de los derechos humanos. Se turna a la Primera Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96550"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83908'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83909'></a><p align="justify">De la Diputada María de los Ángeles Gutiérrez  Valdez, del grupo parlamentario del PAN, con punto de Acuerdo por el que se  exhorta a la Secretaría de Economía, para que, informe sobre la ejecución del  presupuesto en la distribución correspondiente entre federación, estados y  municipios de los recursos del Fondo para el Desarrollo Regional Sustentable de  Estados y Municipios Mineros. Se turna a la Tercera Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96568"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83909'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83910'></a><p align="justify">De los Diputados del grupo parlamentario del  PRI, con punto de Acuerdo por el que se solicita a la titular de la Jefatura de  Gobierno de la Ciudad de México, un informe pormenorizado del estatus y  operación de las cámaras del Centro de Comando, Control, Cómputo,  Comunicaciones y Contacto Ciudadano de la Ciudad de México, conocido como C-5.  Se turna a la Primera  Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96575"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83910'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83911'></a><p align="justify">De la Senadora Nestora Salgado García, del  grupo parlamentario del Partido Morena, con punto de Acuerdo por el que se  exhorta a los gobiernos de las 32 entidades federativas para que implementen  campañas y programas tendientes a prevenir la violencia contra las niñas y los  niños. Se turna a la Primera  Comisión.</p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/PA_MORENA_Sen_nestora_campanas_violencia_contra_ninos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83911'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83912'></a><p align="justify">De la Diputada Lizbeth Mata Lozano, del grupo  parlamentario del PAN, con punto de Acuerdo por el que se exhorta al titular  del Poder Ejecutivo Federal a través de la Secretaría de Comunicaciones y  Transportes; y al organismo de Caminos y Puentes Federales de Ingresos y  Servicios Conexos, para que realicen las acciones necesarias, a efecto de  liberar de manifestantes, las plazas de cobro de las carreteras concesionadas  en el estado de Baja California. Se turna a la Tercera Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96573"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83912'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83913'></a><p align="justify">De los  Diputados del grupo parlamentario del PRI, con punto de Acuerdo por el que se  exhorta al gobierno federal para que se asignen a las entidades y municipios  fronterizos, la infraestructura y recursos necesarios para hacer frente a los  desafíos en materia migratoria, derivados de los compromisos acordados entre  los gobiernos de los Estados  Unidos Mexicanos y Estados Unidos de América. Se turna a la Tercera  Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96576"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83913'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83914'></a><p align="justify">De la Diputada Dolores Padierna Luna, del grupo  parlamentario del Partido Morena, con punto de Acuerdo por el que se exhorta a  la Secretaría de Medio Ambiente y Recursos Naturales; y a los gobiernos de las  entidades federativas, a que tomen medidas para el adecuado monitoreo de la  calidad del aire en el país. Se turna a la Tercera Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96570"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83914'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83915'></a><p align="justify">De los Diputados del grupo parlamentario del  PRI, con punto de Acuerdo por el que se exhorta a la Secretaría de Gobernación  a explicar los posibles actos de corrupción y tráfico de influencias, que se  derivaron de la resolución de no declaratoria de Alerta de Género para la  Ciudad de México. Se turna a la Primera Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96574"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83915'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83916'></a><p align="justify">Del Senador Ernesto Pérez Astorga, del grupo  parlamentario del Partido Morena, con punto de Acuerdo relativo a presuntas  irregularidades financieras por parte del gobierno del estado de Veracruz,  durante la administración 2016-2018. Se turna a la Tercera Comisión.</p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/PA_morena_Sen_ernesto_astorga_irregularidades_veracruz_216-2018.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83916'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83917'></a><p align="justify">De los Diputados del grupo parlamentario del  PRI, con punto de Acuerdo por el que se exhorta al gobierno federal para que  emprenda las acciones necesarias, a fin de garantizar el pleno ejercicio de los  derechos de libertad de expresión y prensa. Asimismo, que fortalezca las  medidas de protección a periodistas y actualice los protocolos de actuación y  auxilio, ante el aumento de amenazas, homicidios y extorsiones en contra de los  comunicadores en diversas entidades federativas del país. Se turna a la Primera Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96577"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83917'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83918'></a><p align="justify">De la Diputada Mirtha Iliana Villalvazo Amaya,  del grupo parlamentario del Partido Morena, con punto de Acuerdo por el que se  exhorta a la Secretaría de Economía; y a la Secretaría de Relaciones  Exteriores, a implementar acciones para lograr un equilibrio en el mercado  azucarero. Se turna a la Segunda  Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96572"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83918'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83919'></a><p align="justify">De los  Diputados del grupo parlamentario del PRI, con punto de Acuerdo por el que se  exhorta a la Secretaría de Seguridad Pública y Protección Ciudadana, para que,  en coordinación con las entidades federativas, establezcan una estrategia  nacional de seguridad en carreteras federales y estatales, a fin de reducir el  número de accidentes  vehículares y disminuir los índices de mortandad. Se turna a la Primera  Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96578"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83919'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83920'></a><p align="justify">Del Diputado Eulalio Juan Ríos Fararoni, del  grupo parlamentario del Partido Morena, con punto de Acuerdo por el que se  exhorta a la Fiscalía General de la República, para que informe el estado que  guarda la carpeta de investigación de la denuncia presentada en contra de Jorge  Wincker Ortíz, Fiscal General del estado de Veracruz, por su probable  participación en la constitución de delitos relacionados con la procuración y  administración de justicia. Se turna a la Segunda Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96571"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83920'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83921'></a><p align="justify">Del Senador Jorge Carlos Ramírez Marín, del  grupo parlamentario del PRI, con punto de Acuerdo por el que se exhorta a la  Jefa de Gobierno de la Ciudad de México, a resolver de manera urgente, la  crisis de inseguridad y en particular el alza de secuestros que se vive en la  entidad. Se turna a la Primera  Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96592"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83921'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83922'></a><p align="justify">De la Diputada Mirtha Iliana Villalvazo Amaya, del  grupo parlamentario del Partido Morena, con punto de Acuerdo por el que se  exhorta a la Secretaría de Comunicaciones y Transportes; a la Secretaría de  Medio Ambiente y Recursos Naturales; y la Procuraduría Federal de Protección al  Ambiente, a implementar acciones, con el fin de proteger la conservación  ambiental en el tramo carretero las Varas-Puerto Vallarta. Se turna a la Tercera Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96556"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83922'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83923'></a><p align="justify">Del Senador Alejandro Armenta Mier, del grupo  parlamentario del Partido Morena, con punto de Acuerdo por el que se exhorta al  gobierno del estado de Puebla; y a la Secretaría de Comunicaciones y  Transportes, a que agilicen y concluyan las labores de rehabilitación de la  totalidad de las rutas y caminos de evacuación del volcán Popocatépetl. Se  turna a la Tercera  Comisión.</p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-06-18-1/assets/documentos/PA_morena_sen_armenta_volcan_popocatepetl.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83923'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83924'></a><p align="justify">De la Diputada Mirtha Iliana Villalvazo Amaya,  del grupo parlamentario del Partido Morena, con punto de Acuerdo por el que se  exhorta a los titulares de las secretarías de Relaciones Exteriores; de Marina;  de Medio Ambiente y Recursos Naturales, para que realicen las acciones  necesarias para generar medidas de prevención y protección a las especies  marinas afectadas por las embarcaciones cubanas. Se turna a la Segunda Comisión.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96557"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83924'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83925'></a><p align="justify">Los textos de las  intervenciones del rubro de efemérides y de agenda política se integrarán al  Diario de los Debates. </p>
+<p align="justify"><strong>EFEMÉRIDE</strong></p>
+<p align="justify">Del Diputado Arturo Escobar y Vega, del grupo parlamentario  del PVEM, relativa al Día Mundial de la Lucha contra la Desertificación y la  Sequía.</p>
+<p align="right"><a href="http://www.senado.gob.mx/64/gaceta_comision_permanente/documento/96579"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83925'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83926'></a><p align="justify"><strong>AGENDA POLÍTICA</strong></p>
+<p align="justify">De las legisladoras y los legisladores del grupo  parlamentario del PAN, para referirse a la situación política nacional.</p>
+<p align="center">(No se registran  intervenciones)</p>
+<p>De las legisladoras y los legisladores del grupo parlamentario  del PRI, para referirse a la situación política nacional.</p>
+<p align="center">(No se registran  intervenciones) </p>
+<p align="justify">Continúe la Secretaría. <a name="_Toc11756163"></a></p>
+<p align="justify"><strong>La  Secretaria Senadora Mónica Fernández Balboa: </strong>Doy  lectura al Orden del Día de la próxima sesión. (Leyó)</p>
+<p align="justify">Señor Presidente, se han  agotado los asuntos en cartera. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83926'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83927'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify"><strong>El  Presidente Senador Martí Batres Guadarrama: </strong>Muchas gracias, señora  Secretaria. <a name="_Toc11756164">Se  levanta la sesión y se cita a la siguiente el miércoles 26 de junio de 2019 a  las 11:00 horas en este recinto plenario de la Cámara de Senadores.</a></p>
+<p align="center">(Se levantó la sesión a las  11:43 horas)</p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Comisión Permanente del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83927'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

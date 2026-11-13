@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 1</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Olga María del Carmen Sánchez Cordero Dávila</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Junta Previa Celebrada<br>en la Ciudad de M&eacute;xico, el 29 de Agosto de 2021</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/1/PPO/PDF-WEB/PPO_No1_29-AGOSTO-2021_JP.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='99816'></a><p align="center"><strong>PRESIDE EL SENADOR</strong><br>
+  <strong>EDUARDO RAMÍREZ AGUILAR</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>(12:15 horas) Compañeras Senadoras y compañeros  Senadores:</p>
+<p align="justify">En cumplimiento a lo dispuesto por el numeral 5 del  artículo 61 de la Ley Orgánica del Congreso General, se les convocó a esta  Junta Previa en modalidad presencial. En acatamiento de las disposiciones  sanitarias y de seguridad emitidas por la autoridad competente debemos observar  rigurosamente las disposiciones sanitarias y de seguridad emitidas, por lo que  les pido su comprensión y solicito que, sin excepción alguna, cumplamos con las  medidas de previsión correspondientes.</p>
+<p align="justify">Solicito a la Secretaría informe a la Asamblea el  resultado del cómputo de asistencia de las Senadoras y los Senadores, para  conocer si existe el quórum reglamentario.</p>
+<p align="justify"><strong>La Secretaria Senadora Lilia Margarita Valdez  Martínez: </strong>Con gusto, señor  Presidente. Honorable Asamblea, de acuerdo al sistema electrónico de asistencia,  informo que se encuentran presentes 88 ciudadanas Senadoras y ciudadanos  Senadores.</p>
+<p align="justify">En consecuencia, hay quórum, señor Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>En cumplimiento del artículo 61, párrafo 5 de la Ley  Orgánica del Congreso General, y de conformidad con el citatorio publicado el  25 de agosto del presente año, se abre la Junta Previa del primer año de  ejercicio de la LXV Legislatura de la Cámara de Senadores.</p>
+<p align="justify">El Orden del Día está disponible en la Gaceta y en la  plataforma digital, con lo cual se informa de los asuntos que corresponden a la  Junta Previa de este día.</p>
+<p align="right"><strong>ORDEN DEL DÍA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/120074"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Pasamos  al siguiente asunto.</p>
+<p align="justify">Continúe  la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a99816'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='99817'></a><p align="justify"><strong>COMUNICACIONES</strong></p>
+<p align="justify"><strong>La  Secretaria Senadora Lilia Margarita Valdez Martínez: </strong>Se recibió comunicación de la Senadora Olga Sánchez Cordero, con la que  informa su reincorporación a sus funciones legislativas, a partir del 26 de  agosto de 2021.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-08-29-1/assets/documentos/Cominicacion_Sanchez_Cordero.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El  Presidente Senador Eduardo Ramírez Aguilar: </strong>La  Asamblea queda enterada. Comuníquese a las Secretarías Generales.<br>
+  <br>
+  Antes de iniciar con la votación, solicito me cubra la  Vicepresidenta Lupita Murguía, quiero hacer uso de la palabra en la tribuna.</p>
+<p align="center"><strong>PRESIDE LA SENADORA</strong><br>
+  <strong>MARÍA GUADALUPE MURGUÍA GUTIÉRREZ</strong></p>
+<p align="justify"><strong>La Presidenta Senadora María Guadalupe Murguía  Gutiérrez: </strong>Se concede el uso  de la palabra al Senador Eduardo Ramírez Aguilar, Presidente de la Mesa  Directiva del Senado.</p>
+<p align="justify"><strong>El Senador Eduardo Ramírez Aguilar: </strong>Muchas gracias.</p>
+<p align="justify">Saludo con mucho cariño y afecto a todas las Senadoras  y Senadores.</p>
+<p align="justify">Se cumplen 200 años de la independencia en Chiapas.  Allá en mi tierra natal, Comitán, se llevó a cabo una celebración democrática  porque fue hace 200 años que decidimos independizarnos, y es el primer  antecedente de consulta popular que podemos tener en nuestra República.</p>
+<p align="justify">Se dieron cita los chiapanecos tres años después para  solicitar la Federación con México. Los chiapanecos somos mexicanos por  decisión propia.</p>
+<p align="justify">Coinciden 200 años con la culminación de un año de  ejercicio frente a la Mesa Directiva. Quiero expresarles a cada una y a cada  uno mi reconocimiento por su consejo, por su posición, por su ánimo de  construir un mejor país cada uno con nuestras ideas, cada quien, aportando  desde su plataforma ideológica, así se construye México.</p>
+<p align="justify">Esta es la esencia, la casa del federalismo mexicano.  Un federalismo que debemos defender, pero además garantizar, por eso venimos  ante esta Cámara, no solamente a hacer leyes que beneficien al pueblo de  México, venimos a atender fuentes internacionales para que sean aprobados  instrumentos jurídicos en el mundo y poder estar conectados con los demás  países. </p>
+<p align="justify">El Senado tiene una gran aportación, culmina la LXIV  Legislatura y sintámonos orgullos de ello, LXIV Legislatura que le dio cauce a  grandes reformas constitucionales, que aquí se construyeron con el consenso de  todos los grupos parlamentarios. </p>
+<p align="justify">Estoy convencido, igual que ayer, cuando iniciamos,  vamos a tener ese espíritu de fortalecer nuestros lazos de entendimiento, no se  construye la República con el pensamiento de un solo poder, no se construye la República  con un solo partido mayoritario, no se construye la República con solamente un  sector de la población, la República se construye con el pensamiento y la  aportación de todos los mexicanos y mexicanas. </p>
+<p align="justify">Gracias a mis compañeros de mi grupo parlamentario de  Morena por su confianza, por su amistad, por su comprensión, porque gracias a  ustedes pude ser presidente y me dieron su voto, depositaron en mí para dirigir  los debates. </p>
+<p align="justify">Gracias a los grupos parlamentarios del PRI, de Acción  Nacional, del Partido del Trabajo, del Verde Ecologista, del Encuentro Social,  del PRD, del Movimiento Ciudadano, todos y cada uno de ustedes hicieron posible  que, en medio de la pandemia y en medio de un proceso electoral, el más grande  de la historia, no tuviéramos parálisis legislativa. </p>
+<p align="justify">Gracias a todos y a todas, no me resta más que  decirles que me voy satisfecho, que me voy con el deber cumplido y me voy a  incorporar como un Senador que seguirá construyendo grandes acuerdos a favor de  la transformación de México, a favor de los más necesitados, los más pobres,  ese es el espíritu y la esencia de nuestra participación en la política. <br>
+  <br>
+  Sigamos haciendo patria, no nos cansemos, defendamos  el federalismo y como lo dije hace un momento, hace 200 años, Chiapas decidió  independizarse, Chiapas y los chiapanecos somos mexicanos por decisión y por  convicción democrática. </p>
+<p align="justify">Muchas gracias, les aprecio a cada una y a cada uno de  ustedes. </p>
+<p align="justify">Es cuanto, Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora María Guadalupe Murguía  Gutiérrez: </strong>Gracias, Senador Ramírez Aguilar.</p>
+<p align="center"><strong>PRESIDE EL SENADOR</strong><br>
+  <strong>EDUARDO RAMÍREZ AGUILAR</strong></p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>Sonido en el escaño de la Senadora Xóchitl Gálvez. </p>
+<p align="justify"><strong>La Senadora Xóchitl Gálvez Ruiz:</strong> (Desde su escaño) Señor Presidente, quisiera  reconocerle su disposición, su capacidad, su talento, desde que nos hizo favor  de comunicarnos que buscaría usted la Presidencia, cumplió al pie de la letra,  de verdad, muchas, muchas felicidades. Y también quisiera reconocer al Tribunal  del Poder Judicial de la Federación por la paridad, 250 mujeres, 250 hombres,  muchas felicidades, porque por primera vez en la historia, tendremos un  Congreso paritario en la Cámara de Diputados, pero a usted, señor Presidente,  mi más sincero reconocimiento. </p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>Gracias, Senadora Xóchitl Galvéz. </p>
+<p align="justify">Sonido en el escaño del Senador Miguel Ángel Mancera. </p>
+<p align="justify"><strong>El Senador Miguel Ángel Mancera Espinosa: </strong>(Desde su escaño) Gracias, señor Presidente. </p>
+<p align="justify">En nombre del grupo parlamentario del PRD, quisiera externar  nuestro reconocimiento a su labor, reconocerlo porque fue  siempre articulador de acuerdos, de importantes acuerdos en el Senado de la  República, porque su conducción desde la Presidencia de la Mesa Directiva fue  muy importante, porque usted siempre mostró sencillez, nunca perdió piso en el  encargo y ha permitido que fluyera esta línea de trabajo de la LXIV  Legislatura. </p>
+<p align="justify">La  verdad, nuestro reconocimiento, señor Presidente, estoy seguro de que en la LXV  seguiremos trabajando con usted como Senador, pero desde ahora con Antonio  García Conejo, con Juan Manuel Fócil le reconocemos en todo lo que vale el  trabajo como presidente del Senado de la República. </p>
+<p align="justify">Enhorabuena,  muchas felicidades. </p>
+<p align="justify"><strong>El  Presidente Senador Eduardo Ramírez Aguilar:</strong> Sonido  en el escaño del Senador Alejandro Armenta. </p>
+<p align="justify"><strong>El  Senador Alejandro Armenta Mier: </strong>(Desde su escaño) Gracias,  señor Presidente. Compañeras y compañeros Senadores: </p>
+<p align="justify">El  grupo parlamentario de Morena, las y los compañeros, sin duda reconocemos el  trabajo de esta Mesa Directiva, de todas y todos los integrantes y reconocemos  tu conducción, señor Presidente, porque a lo largo de este año, pese a las  complicaciones que el COVID nos generó, pese a la circunstancia inédita de  poner en marcha un mecanismo tecnológico que no nos permitió estar cerca, pero  eso no significó que se impidiera nuestro trabajo hubo, sin duda, un gran flujo  de iniciativas de leyes que se procesaron para lograr los propósito de la  República. <br>
+  <br>
+  Destacada,  sin duda, tu capacidad, su liderazgo y la coordinación con la Mesa Directiva y  con los grupos parlamentarios. Nuestro reconocimiento a tu trabajo puntual,  democrático y eficaz. </p>
+<p align="justify">¡Felicidades  a todas y a todos!</p>
+<p align="justify"><strong>El  Presidente Senador Eduardo Ramírez Aguilar:</strong> Gracias, Senador Armenta Mier. </p>
+<p align="justify">Sonido  en el escaño de la Senadora Geovanna.</p>
+<p align="justify"><strong>La  Senadora Geovanna del Carmen Bañuelos de la Torre: </strong>(Desde  su escaño) Gracias, señor Presidente. A nombre propio y de mi grupo  parlamentario, el del Partido del Trabajo, sumarnos a esta felicitación por el  extraordinario desempeño que tuviste al frente de la Presidencia del Senado de  la República. </p>
+<p align="justify">Expresarte  nuestro beneplácito y el reconocimiento de muchas cualidades de las que, sin  duda, hiciste gala en este año; esa posibilidad de tener siempre apertura con  la Presidencia de la Mesa que dignamente condujiste, el tener la posibilidad de  intercambiar diversos puntos de vista, esa característica tuya de conciliador,  de concertador, de ser tan incluyente en los temas que, sin duda, marcaron el  rumbo de esta Legislatura y particularmente del año pasado, pues queremos  reconocértelo. </p>
+<p align="justify">En el  grupo parlamentario del Partido del Trabajo estamos muy contentos con el  desempeño que toda la Mesa Directiva, particularmente nuestra secretaria Nancy  De la Sierra y, evidentemente bajo tu conducción tuvieron en este año que, como  bien lo menciona el Senador Armenta, y todos nosotros lo vivimos, ha sido  particularmente complejo el poder hacer coincidir agenda política, el poder  construir acuerdos dadas las circunstancias extraordinarias a las que todos nos  enfrentamos provocadas por el COVID-19. </p>
+<p align="justify">Enhorabuena,  debes, sin duda, concluir este exitoso ciclo de tu vida profesional y política  muy orgulloso y con la frente en alto del papel que desempeñaste  representándonos a todos nosotros en la honrosa encomienda que el Pleno te  concedió hace un año como presidente de la Mesa Directiva. </p>
+<p align="justify">Felicidades,  Senador Eduardo Ramírez. </p>
+<p align="justify"><strong>El  Presidente Senador Eduardo Ramírez Aguilar:</strong> Gracias, Senadora Bañuelos de la Torre. </p>
+<p align="justify">Sonido  en el escaño del Senador Osorio. </p>
+<p align="justify"><strong>El  Senador Miguel Ángel Osorio Chong:</strong> (Desde su escaño)  Gracias, señor Presidente. Compañeras y compañeros Senadores: A nombre del  grupo parlamentario del PRI y también permítanme lo hacer a nombre de su  servidor, el reconocimiento a Eduardo Ramírez, Senador de la República a quien  lo he visto evolucionar desde hace ya varios años en su natal Chiapas.</p>
+<p align="justify">Y que aquí vino a consolidar ese aprendizaje, y me  refiero particularmente sí al asumirse como presidente de la Mesa Directiva,  pero actuar políticamente, a hacer política, a poder compartir, entenderse,  tener cercanía con todos los grupos aquí representados más allá del peso  específico de cada grupo parlamentario, le reconozco a Eduardo Ramírez, y a  nombre de mi grupo parlamentario ese estilo de hacer de la Mesa Directiva un  espacio de unidad, de trabajo, en favor de las y los mexicanos a través de  acuerdos que merecen que se logren en el Senado de la República. </p>
+<p align="justify">Muchas felicidades, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>Gracias, Senador Osorio Chong, por sus palabras. <br>
+  <br>
+  Sonido en el escaño del Senador Guadiana. </p>
+<p align="justify"><strong>El Senador Santana Armando Guadiana Tijerina: </strong>(Desde su escaño) Con la venia de todas las Senadoras  y Senadores de todos los grupos parlamentarios.</p>
+<p align="justify">Quiero felicitar al Senador, al amigo, hermano que ha  sido, eres y serás siempre, al menos en un servidor, y la forma en que has  trabajado en el grupo parlamentario de Morena, y como lo expresó el Senador  Osorio, tu habilidad política para ayudarle a nuestro coordinador Ricardo  Monreal en los acuerdos y tejer con todos los grupos políticos grupos  parlamentarios de diferentes partidos políticos en viendo y sacando lo mejor de  cada uno de ellos a favor de México, que esa es la labor más importante en ti,  y has hecho honor, has cumplido en esta labor que se te ha encomendado en la  Mesa Directiva como presidente, has cumplido con tu estado de Chiapas, con tu  pueblo Comitán, y paisanos, y has honrado la memoria de tu paisano el Senador  Belisario Domínguez, también no solamente chiapaneco, sino paisano del poblado  de la ciudad de Comitán, eso es de lo más importante, yo creo que es la labor  que has desarrollado. </p>
+<p align="justify">Te auguro en tu futuro, en tu trabajo político, en los  años venideros, que te va a ir muy bien porque vas a seguir trabajando a favor  de Chiapas y a favor de México. </p>
+<p align="justify">Felicidades, Senador, hermano, Eduardo Ramírez  Aguilar. </p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>Gracias, Senador Guadiana Tijerina, por sus palabras. </p>
+<p align="justify">Senadora Sasil De León. </p>
+<p align="justify"><strong>La Senadora Sasil de León Villard: </strong>(Desde su escaño) Senador y Presidente de la Mesa,  Eduardo Ramírez, quiero reconocer tu trabajo al frente de esta Mesa del Senado  en la que concluye esta LXIV Legislatura a nombre propio y de mi grupo  parlamentario por la apertura, por la paciencia y la tenacidad con lo que lo  hiciste durante todo este año. </p>
+<p align="justify">Reconocer también a quienes te acompañaron en esta  Mesa, a la vicepresidenta Imelda, a las Secretarias Nancy, María Merced,  Margarita, Alejandra, Verónica Delgadillo y Verónica Martínez. </p>
+<p align="justify">Muchísimas felicidades. Y enhorabuena. </p>
+<p align="justify">Gracias por el trabajo que hicieron por este Senado de  la República. Gracias, Lalo, por la paciencia y, de nueva cuenta, tolerancia y  el tacto que has tenido, la capacidad de hacer acuerdos. </p>
+<p align="justify">Te felicito y te reconozco mucho. </p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>Gracias, estimada Sasil. </p>
+<p align="justify">Sonido en el escaño de la Senadora Nuvia Mayorga. </p>
+<p align="justify"><strong>La Senadora Nuvia Mayorga Delgado: </strong>(Desde su escaño) Todo mi reconocimiento, creo que  hiciste un extraordinario trabajo siempre platicando y el que estuvieras  dialogando acá abajo, no solamente en la Presidencia desde el pleno allá  arriba, y a que todo mundo le diste el lugar a cada uno de los Senadores,  haciendo una política verdadera, viéndonos como compañeros y respetándonos como  grupos parlamentarios. </p>
+<p align="justify">Muchas felicidades. </p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>Gracias, Senadora Mayorga Delgado. <br>
+  <br>
+  Senadora Guadalupe Murguía. </p>
+<p align="justify"><strong>La Senadora María Guadalupe  Murguía Gutiérrez: </strong>(Desde su escaño)  Presidente Eduardo Ramírez, quiero reconocer la disposición siempre de escucha,  de búsqueda de acuerdos, no solo para tomar estas decisiones que permitan al  Senado llevar a cabo sus trabajos, sino también en los grandes asuntos que nos  ha tocado resolver y decidir aquí en el Senado trascendentes para el país. </p>
+<p align="justify">Quiero, asimismo, reconocer la conducción del Presidente,  siempre respetuosa, siempre con apertura y con un respeto a la ley y a la  Constitución. </p>
+<p align="justify">Presidente, te debes sentir muy satisfecho por el  desempeño de tu trabajo, porque tienes el reconocimiento y el aprecio de todos  nosotros. </p>
+<p align="justify">Gracias, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Eduardo  Ramírez Aguilar: </strong>Muchas gracias,  Senadora Murguía Gutiérrez, por sus palabras. </p>
+<p align="justify">Sonido en el escaño del Senador Israel. </p>
+<p align="justify"><strong>El Senador Rogelio Israel  Zamora Guzmán: </strong>(Desde su escaño)  Gracias, señor Presidente. </p>
+<p align="justify">Quiero también felicitarte por tu gran labor, creo  que tu mediación fue clave, primero, para la construcción de un debate que  siempre fue respetuoso, gracias a tu conducción; también porque fuiste clave en  el equilibrio de las fuerzas que debe haber en el Pleno, por respeto también a  todas las personas que son representadas por las distintas fuerzas políticas  aquí, precisamente representadas en el Senado; pero también porque fuiste clave  en la construcción de muchos acuerdos.</p>
+<p align="justify">Representaste, creo, dignamente al pueblo  chiapaneco, que históricamente ha aportado grandes hombres para la construcción  de grandes reformas para nuestro país, para la construcción de la República que  tú comentaste. </p>
+<p align="justify">También, creo que se puede resumir tu trabajo como  un trabajo sobresaliente. </p>
+<p align="justify">En el Partido Verde te felicitamos, a nombre de mi  partido te extendemos esa felicitación. </p>
+<p align="justify">Y también quisiera felicitar a todos mis compañeros  que concluimos ya esta LXIV Legislatura, que pasará a la historia por ser la  Legislatura en que comenzó un cambio verdadero, porque creo que el cambio  verdadero está en nosotros.</p>
+<p align="justify">Muchísimas felicidades, querido Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Eduardo  Ramírez Aguilar: </strong>Gracias por sus  palabras, Senador Zamora Guzmán.</p>
+<p align="justify">Sonido en el escaño del Senador Añorve. </p>
+<p align="justify"><strong>El Senador Manuel Añorve Baños: </strong>(Desde su escaño) Muchísimas  gracias. </p>
+<p align="justify">Quiero felicitarte, Eduardo, por tu conducción, por  tu profesionalismo, donde has demostrado, desde tu formación política, tu  estado de origen Chiapas, donde también fuiste y tuviste una gran  responsabilidad, que en esa formación, como aquí se ha dicho, la demostraste  por el conocimiento de la pluralidad política que tu responsabilidad te  obligaba; lo hiciste con el corazón en la mano, pero tomando decisiones que en  la Mesa Directiva se deben de tomar respetando a la Asamblea y respetando a los  diversos grupos parlamentarios.<br>
+  <br>
+  No solamente te lo digo como Senador de la República  desde mi curul, te lo digo, y lo digo públicamente, porque tuve también la  oportunidad de ser secretario contigo en una Comisión Permanente inédita, donde  los temas fueron inéditos, donde se vivió un debate álgido, donde se vivió un  debate permanente y he tenido la oportunidad de ser integrante de una  Permanente siempre, muchas veces cuando he sido legislador, y lo hiciste con  responsabilidad y lo hiciste con hombría, porque fuiste respetuoso, tomaste  decisiones que la Asamblea decidía. </p>
+<p align="justify">Y por supuesto, Lalo, este es un legado para ti. ¿Y  sabes para quién más? Para tu familia, porque cuando sales con la frente en  alto puedes decir: misión cumplida.</p>
+<p align="justify">Bendiciones, Lalo. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>El Presidente Senador Eduardo  Ramírez Aguilar: </strong>Gracias por sus  palabras tan sentidas, Senador Añorve Baños. </p>
+<p align="justify">Sonido en el escaño del Senador José Narro. </p>
+<p align="justify"><strong>El Senador José Narro Céspedes: </strong>(Desde su escaño) Quisiera  felicitar a todas y a todos, a Margarita  Valdez, que jugó un papel muy importante; a María Merced, a Nancy De la Sierra.  Todas son importantes. </p>
+<p align="justify">A la compañera Imelda, como Vicepresidenta, jugó un  gran papel y quiero reconocérselo. Todas. María Guadalupe Saldaña también, como  Vicepresidenta. A Jorge Carlos Ramírez Marín, también a Verónica Delgadillo, a  Verónica Camino, a Verónica Martínez, fue la Mesa Directiva de las tres  Verónicas.</p>
+<p align="justify">A Marcela Mora, también, compañera Senadora; a  Alejandra Lagunes Soto, que también es parte.</p>
+<p align="justify">Y a ti, Eduardo, que lo más importante es que fuiste Presidente  de la Mesa Directiva, no fuiste presidente de un grupo, de una fracción, fuiste  presidente de todos. </p>
+<p align="justify">Lograste conjuntar el esfuerzo, la unidad, la  fortaleza institucional de este Senado de la República. Lograste, al interior  de Morena, que compañeros que estaban, como Mario, como Martí Batres, se  integraran nuevamente al proyecto y que entendieran que aquí somos un gran  equipo, y que a veces se gana y a veces se pierde, pero que todos estamos en un  solo proyecto, que es el proyecto de nuestro presidente, el proyecto de la  cuarta transformación.</p>
+<p align="justify">Y a todos, precisamente a ti, Eduardo, que trabajaste  duro por el tema de Chiapas, indígenas, lo del café, de forma muy importante,  que están pendientes algunos de ellos, pero que sabemos que donde estés ahí vas  a dar la batalla por tu gente.</p>
+<p align="justify">Entonces, quiero reconocerte y reconocerles a todos, a  Margarita, que jugó un papel también muy importante, a lo mejor los más  pequeños, que se ven más pequeños, jugaron un papel fundamental en el desempeño  de esta Mesa Directiva.</p>
+<p align="justify">Mis felicitaciones a todas, a todos y un abrazo. Y al  conductor de esta Mesa Directiva, que fue Eduardo, todas mis felicitaciones.</p>
+<p align="justify">Adelante, Eduardo.</p>
+<p align="justify">Muchas felicidades.</p>
+<p align="justify"><strong>El Presidente  Senador Eduardo Ramírez Aguilar:</strong> Muchas  gracias por sus palabras, Senador Narro Céspedes.<br>
+  <br>
+  Sonido en el escaño del Senador Dante.</p>
+<p align="justify"><strong>El Senador Dante  Delgado:</strong> (Desde su escaño) Gracias. Buenos  días, compañeras y compañeros Senadores:</p>
+<p align="justify">Compañeras Vicepresidentas, Secretarias de la Mesa  Directiva. Desde luego que es extensivo para todas ustedes el reconocimiento  del grupo parlamentario de Movimiento Ciudadano.</p>
+<p align="justify">Deseo significar el trabajo del presidente de la Mesa  Directiva del Senado, porque se trata de un integrante de la nueva generación  de actores de la vida pública del país. Por un lado, preparado y por otro lado  comprometido, y está comprometido con una institución tan respetable como es la  Cámara Alta del Congreso de la Unión, y también está comprometido, como lo ha  acreditado, con su entidad.</p>
+<p align="justify">Quiero hoy reconocer el trabajo que ha desempeñado como  integrante de la Junta de Coordinación Política, el espléndido trabajo que  realizó como presidente de la Comisión de Puntos Constitucionales, que logró,  con la orientación política de la Junta, llevar adelante reformas  constitucionales, la mayoría de gran calado. Hay una en la que definitivamente  nosotros hemos votado y seguiremos en contra.</p>
+<p align="justify">Queremos también significarlo en su ejercicio como Presidente  de la Mesa Directiva durante el tercer periodo del ejercicio legislativo de la  LXIV Legislatura del Senado de la República, que concluye pasado mañana, el 31  de agosto. Estoy seguro de que, al reintegrarse a sus labores como un Senador,  que tiene el reconocimiento por su actitud,  por su preparación, por su compromiso y, sobre todo, por el respeto que le merecen  todas sus compañeras y compañeros, que nos ha impresionado gratamente su  ejercicio. </p>
+<p align="justify">No cambie su forma de ser, la política exige sensatez,  congruencia, visión de futuro, los triunfos no son permanentes, las derrotas no  son definitivas, precisamente por ello debe de haber siempre espacios para el  debate y para la construcción de acuerdos, y por su propio origen y naturaleza  el Poder Legislativo es uno de esos espacios.</p>
+<p align="justify">Puede usted tener la satisfacción del deber cumplido,  porque en el espacio del Senado que a usted le tocó presidir se pudieron  construir espacios de entendimiento y acuerdo.</p>
+<p align="justify">Enhorabuena, continúe así.</p>
+<p align="justify">Seguramente las integrantes y los compañeros  integrantes de la Mesa Directiva, a quien una a una felicitamos y reconocemos  por haber desempeñado con profundo respeto y solidaridad con todos sus  compañeros la conducción de los trabajos durante ese tercer periodo del  ejercicio legislativo.</p>
+<p align="justify">Gracias.</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify">Imelda se ha significado, pero todas las Secretarias y  todos los Vicepresidentes nuestro reconocimiento.</p>
+<p align="justify">Enhorabuena.</p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>Gracias por sus palabras para esta Mesa Directiva, y  que tendré muy presente.<br>
+  <br>
+  Sonido en el escaño de la Senadora Marcela Mora.</p>
+<p align="justify"><strong>La Senadora Elvia Marcela Mora Arellano:</strong> (Desde su escaño) Muchas gracias, señor Presidente.</p>
+<p align="justify">Quiero destacar y agradecer el trabajo de esta Mesa  con la que concluimos la LXIV Legislatura. Una Mesa conformada mayoritariamente  por mujeres, mención especial a la Secretaria de la Mesa Directiva, mi  compañera Eunice Romo, y a la Vicepresidenta Imelda, igual para todas y todos.</p>
+<p align="justify">Ricardo, Nancy, María Merced, Verónica, Verónica,  Guadalupe, Alejandra. Quiero agradecer a todos los colaboradores del equipo que  encabeza y dirige el doctor Garita.</p>
+<p align="justify">Muchas gracias por todo lo que hacen para que esto  salga adelante.</p>
+<p align="justify">También quiero agradecer a tu equipo, Lalo. A Publio,  a Patsy, a Roger. No quiero omitir a nadie.</p>
+<p align="justify">Tuve la oportunidad de participar como Secretaria de  la Mesa Directiva de la Comisión Permanente y me consta la altura de miras, la  capacidad en la construcción de acuerdos y el sumo respeto con que se trataron  a todas y todos.</p>
+<p align="justify">Gracias, Lalo, porque tal cual lo dijo el Senador  Añorve, y lo refrendo, fue una Permanente muy compleja, y la sacamos adelante  gracias a los buenos oficios de todos, pero tú tuviste una participación  destacada.</p>
+<p align="justify">&ldquo;Okolaval&rdquo;, Eduardo Ramírez, &ldquo;Okolaval&rdquo;.</p>
+<p align="justify">¡Viva Chiapas! Pa&rsquo; delante.</p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>&ldquo;Okolaval&rdquo;, Marce. Gracias.</p>
+<p align="justify">Sonido en el escaño de la Senadora Kenia López  Rabadán.</p>
+<p align="justify"><strong>La Senadora Kenia López Rabadán: </strong>Muchas gracias, señor Presidente.</p>
+<p align="justify">Quedó claro que rugió el Jaguar en el Senado. Muchísimas  felicidades, amigo.</p>
+<p align="justify">Es para tu estado y para la política un placer haberte  tenido de Presidente en esta institución, porque no es fácil quitarte de filias  y fobias, porque es muy complicado aspirar a ser institucional cuando tenemos  una carga ideológica, y tú lo lograste Lalo, muchas felicidades.</p>
+<p align="justify">Hemos tenido historias en las que no han podido  liberarse ni de la presión del régimen, ni de la carga partidista, tú lo  hiciste muy bien y eso se te reconocerá a lo largo de tu historia política. </p>
+<p align="justify">Solamente decirte gracias porque nos respetaste,  porque aquí cada grupo parlamentario y cada mujer y cada hombre en este Senado  representa un alago, a alguien, a mujeres en nuestras entidades federativas que  quieren vivir mejor, a hombres que quieren vivir mejor, más allá de nuestras  diferencias nos respetaste, respetaste a tu grupo mayoritario, pero también  respetaste a la oposición y eso te engrandece como político. </p>
+<p align="justify">Muchísimas gracias por este esfuerzo institucional, al  Senado le urge que esto se repita. </p>
+<p align="justify">Muchísimas gracias, querido Eduardo Ramírez. </p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>Gracias, Senadora López Rabadán, por sus palabras. <br>
+  <br>
+  Sonido en el escaño de la Senadora Malú Micher. </p>
+<p align="justify"><strong>La Senadora Martha Lucía Micher Camarena: </strong>(Desde su escaño) Mira, hasta esto eres capaz de  llevar a cabo. </p>
+<p align="justify">Mi querido Eduardo, mi querido Jaguar, desde que te  conocí en esta Legislatura, sabía que eras nuestro gran aliado, tener un  aliado, hombre, Senador, presidiendo una comisión, como la Comisión de Puntos  Constitucionales y habiendo presidido la Mesa Directiva como lo hiciste, ha  sido un orgullo para nosotros. </p>
+<p align="justify">En la escuela nos calificaban y nos ponían 10 ó 10  excelente. </p>
+<p align="justify">Sí me lo permites, como pedagoga que soy, te califico  con 10 excelente, y no solamente porque en la concesión que hiciste, en el  diálogo, en el respeto, en la inclusión, en la serenidad con la que te  condujiste, jamás renunciaste a lo que representas, a ser un gran hombre de la  izquierda progresista de este país, el ceder la palabra con respeto nunca  representó que renunciaras a lo que eres, un hombre chiapaneco, bien hecho, un  hombre respetuoso de las mujeres y un hombre que pocas veces lo encontramos  aliado de todas nosotras.</p>
+<p align="justify">Muchas gracias a todo su equipo, gracias a Publio a  toda la Mesa Directiva, a Magy, a María Mercedes, a nuestra querida Nancy, a  Imelda, por supuesto, a todas nuestras compañeras, porque de verdad, han hecho  un extraordinario trabajo. </p>
+<p align="justify">Gracias, gracias al equipo, gracias al equipo, por  supuesto al doctor Garita, todas y todos han sido extraordinarios, pero la  conducción que ha tenido y la manera en que te has referido a cada quién, ha  sido para mí un ejemplo, ¿por qué? Porque aprendí mucho de ti, me quería ver  ahí y decía: tengo que tener esta serenidad como la que tiene Eduardo. </p>
+<p align="justify">Muchísimas gracias por tu ejemplo, por tu trabajo, por  tu dedicación, y ahora sí, regresa a los brazos de tu familia, mi querido  Eduardo, que no la cobran cañón, gracias. </p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>Gracias, gracias, querida Senadora Micher Camarena, por sus palabras. </p>
+<p align="justify">Senador Héctor Vasconcelos, sonido en su escaño. </p>
+<p align="justify"><strong>El Senador Héctor Vasconcelos: </strong>(Desde su escaño) Muy buenos días a todas y a todos. </p>
+<p align="justify">Quiero sumarme a este extraordinario reconocimiento  que está recibiendo el Senador Ramírez, al terminar su periodo como Presidente de  la Mesa Directiva. Es evidente que todas las fracciones parlamentarias estamos  de acuerdo en reconocer tu extraordinaria capacidad legislativa, tu capacidad  de operación política, algo crucial en este espacio, pero quiero agregar  también, un reconocimiento a tu capacidad como amigo. </p>
+<p align="justify">Muchas gracias, Eduardo y los mejores augurios que te  esperen muchas cosas buenas en el futuro, tanto personal como político. </p>
+<p align="justify">Quiero extender la felicitación a todas y a todos los  demás miembros de la Mesa Directiva que hoy terminan sus funciones, creo que tuvieron  que operar en un año particularmente difícil, tanto por las circunstancias y  los cambios a los que obligó la pandemia, pero también  transitamos por la elección intermedia de este sexenio. De manera que en  circunstancias sumamente difíciles hicieron todas y todos, un trabajo  extraordinario. </p>
+<p align="justify">Muchas  felicitaciones.</p>
+<p align="justify"><strong>El  Presidente Senador Eduardo Ramírez Aguilar:</strong> Gracias, estimado Senador Héctor  Vasconcelos. <br>
+  <br>
+  Sonido  en el escaño de la Senadora Martha Márquez. </p>
+<p align="justify"><strong>La  Senadora Martha Cecilia Márquez Alvarado:</strong> (Desde  su escaño) Gracias, señor Presidente. </p>
+<p align="justify">El  artículo 39 de la Constitución dice que la soberanía reside esencialmente y  originalmente en el pueblo, y a este Senado le llamamos soberanía, porque cada  uno de los Senadores que estamos aquí representamos a nuestros estados y  representamos las necesidades de los ciudadanos. </p>
+<p align="justify">Sin  duda, mi voz no ha sido cómoda para la bancada mayoritaria, pero me respetaste.  Desde que asumiste la Presidencia me respetaste y eso te lo agradezco. </p>
+<p align="justify">El  Senado, como institución, tuvo un error en un tema personal de violencia  política de género y cuando te llamé para hacerte el reclamo de esa situación,  me mostraste todo tu apoyo. </p>
+<p align="justify">Gracias,  Eduardo, gracias por tu acompañamiento, fuiste un caballero, fuiste una persona  de comportamiento correcto a pesar de tener el poder, te lo agradezco y cuentas  con mi apoyo. </p>
+<p align="justify"><strong>El  Presidente Senador Eduardo Ramírez Aguilar:</strong> Gracias, Senadora Márquez Alvarado,  por sus palabras. </p>
+<p align="justify">Senador  Álvarez Icaza. Sonido en su escaño. </p>
+<p align="justify"><strong>El Senador Emilio Álvarez Icaza  Longoria:</strong> (Desde su escaño) Muchas gracias, señor  Presidente. </p>
+<p align="justify">La  representación de un órgano de Estado no es tarea fácil. La representación de  un órgano de Estado cuya característica principal es la pluralidad, no es tarea  fácil. </p>
+<p align="justify">Tener  la identidad propia, pero a su vez la representación plural es un gran desafío,  y a nombre propio y de la iniciativa ahora que represento acá en el Senado,  quiero felicitarte, Senador Eduardo Ramírez, porque has sabido, con mucha  capacidad, representar esa pluralidad de un órgano de Estado, nos has  representado dignamente y eso se agradece, porque eso también ayuda a recuperar  la confianza en el Senado. </p>
+<p align="justify">La  mayoría de la gente fuera de aquí no piensa bien del Senado, pero un desempeño  de capacidad y de altura ayuda a recuperar la confianza de la gente en estas  instituciones.</p>
+<p align="justify">Reconozco  en ti un hombre de una extraordinaria capacidad de diálogo, pero en tiempos de  polarización como los que hoy vivimos, ese diálogo es más valorado y más  necesario. Ojalá que tu capacidad de diálogo y tolerancia se reprodujera mucho  más, porque necesitamos construir puentes y entendimientos.</p>
+<p align="justify">El país  vive procesos de separación y conflicto y tu ejemplo de diálogo ha sido  extraordinario, tu capacidad para dialogar, desempeñar tu función, pero  acercarse a la oposición, estar con la mayoría de dónde vienes y te reconocen  como tal, me parece que es de la más extraordinaria importancia. La  particularidad de tu Presidencia en la pandemia ha sido muy difícil.</p>
+<p align="justify">Hay un  hecho histórico de que inauguramos las votaciones a distancia y eso quedará  entonces en la posibilidad de hacer nuevas formas legislativas y  parlamentarias, qué bueno que se pudo impulsar eso. Y también hay que estar  claros, no estuvimos exentos de controversias, no estuvimos exentos de  diferencias, pero tu capacidad de diálogo ayudó a enfrentarlas de la mejor  manera. <br>
+  <br>
+  Y sí,  sí tuvimos diferencias, hubo cosas en las que no estuvimos de acuerdo, pero tu  capacidad de tolerancia, diálogo y respeto, subrayo respeto, ayudó a sortearlas  de la mejor manera y este trabajo es un trabajo en colectivo.</p>
+<p align="justify">Y  quiero agradecer también el acompañamiento, la tolerancia y la buena conducción  de Imelda Castro. Muchas gracias, Imelda, por tu trabajo y, de Guadalupe  Murguía como Vicepresidentas y Verónica Martínez. </p>
+<p align="justify">Me  siento absolutamente representado en estas mujeres maravillosas y capaces,  muchísimas gracias por su representación institucional, porque también a  ustedes les tocó una conducción muy importante en un tiempo difícil. </p>
+<p align="justify">Gracias  por su trabajo.</p>
+<p align="justify">Y a  las Secretarias de la Mesa, a Nancy de la Sierra mi cariño y respeto, a María Merced González, a Margarita Valdez,  a Verónica Delgadillo. </p>
+<p align="justify">Estuvo también un tiempo importante, y la quiero  mencionar, a la Verónica Camino. </p>
+<p align="justify">También quiero mencionar con mucho interés a Ricardo  Velázquez y a Eunice Romo. </p>
+<p align="justify">A Alejandra Lagunes, por supuesto. </p>
+<p align="justify">Muchísimas gracias, Ale, por tu trabajo y presencia. </p>
+<p align="justify">Les agradezco su afán porque ustedes se reúnen antes,  trabajan, revisan, implica mucho tiempo de sacrificio personal. </p>
+<p align="justify">Gracias a todas ustedes. </p>
+<p align="justify">Gracias a Ricardo por su entrega y por su  representación. </p>
+<p align="justify">Es un honor trabajar con ustedes, muchas gracias. </p>
+<p align="justify">Por supuesto quiero agradecer a la Secretaría General de  Servicios Parlamentarios, al doctor Garita, y a todo su equipo que tras  bambalinas hace que esto funcione, muchísimas gracias. </p>
+<p align="justify">Al Secretario Técnico de la Mesa Directiva, al doctor  Publio, muchas gracias por su trabajo, por su esmero, porque a veces hay que  operar las cosas, verdad, en su nombre a su equipo mi reconocimiento, por  favor. </p>
+<p align="justify">Y también en ocasiones no se ve, pero sin su apoyo no  se puede hacer, al Secretario Administrativo, al doctor Farah, muchas gracias  por todo el apoyo del equipo administrativo que en estos momentos de pandemia  han tenido más trabajo que nadie, junto con todo el equipo del Senado. </p>
+<p align="justify">Termino agradeciendo al personal del Senado. </p>
+<p align="justify">Este año fue triste porque perdimos colegas Senadoras  y Senadores. </p>
+<p align="justify">Este año fue triste porque se nos fueron trabajadoras  y trabajadores por la pandemia. </p>
+<p align="justify">En su memoria hagamos el mejor trabajo. </p>
+<p align="justify">Eduardo, muchísimas gracias por tu trabajo y por tu  esmero.<br>
+  <br>
+  Y a todas las compañeras muchísimas gracias. </p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>Gracias por sus palabras, Senador Álvarez Icaza, para  esta Mesa Directiva. </p>
+<p align="justify">Sonido en el escaño de la Senadora Lilly Téllez. </p>
+<p align="justify"><strong>La Senadora Lilly Téllez: </strong>(Desde su escaño) Senador Eduardo Ramírez, muy breve  para agradecer su forma de respetar la ley, de respetar los tiempos, de dejar  que las minorías nos expresáramos conforme nos tocaba, según el Reglamento, a  veces se supone que no se debe felicitar a alguien por respetar la ley, porque  esa es la obligación, pero en estos momentos creo que sí se debe hacer, se lo  expreso no solo con reconocimiento y gratitud, sino también con la admiración  porque usted en ese cargo tan importante no se puso por encima de nosotros que  somos sus pares, nunca se le olvidó que todos somos Senadores e hizo usted una  conducción impecable del Senado. </p>
+<p align="justify">A usted y a Imelda Castro les estaré siempre  agradecida por haber escuchado a las minorías, por no arrebatar la palabra, por  no dar manotazos, por dejar expresarnos. </p>
+<p align="justify">Muchas gracias a ambos. </p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>Gracias, Senadora Lilly Téllez, por sus palabras. </p>
+<p align="justify">Senador Julen Rementería, sonido en su escaño. </p>
+<p align="justify"><strong>El Senador Julen Rementería del Puerto: </strong>(Desde su escaño) Muchas gracias, señor Presidente. </p>
+<p align="justify">Quisiera decir simplemente eso, gracias por hacer de  una manera muy digna el trabajo al que estaba obligado, pero más allá de la  obligación se notó, se vio que hay la convicción, y eso realmente honra más a  la persona que conduce. </p>
+<p align="justify">Sé que en algunos asuntos había lo mejor en Eduardo  Ramírez en el interior una idea distinta a la que aquí expresábamos y, sin  embargo, siempre supo diferenciar lo que es Eduardo Ramírez con lo que es el Presidente  de la Mesa Directiva. </p>
+<p align="justify">Y no solamente en la Mesa, antes de este encargo tan  importante, lo hizo, me consta, participo en esa Comisión en la de Puntos Constitucionales,  ahí nos dio, ahí se veía ya el tamaño de la persona por llegar a construir, a  lograr acuerdos, a no imponerse, a pesar de que lo podría haber hecho. </p>
+<p align="justify">Sé que es difícil y sé que habrá habido muchas  presiones que a lo mejor nunca no las va a contar, pero lo que importa son los  resultados y la muestra del trato que dio a la oposición, a la Cámara en su  conjunto, pero particularmente a la  oposición. </p>
+<p align="justify">Así que diría que debe sentirse a gusto, conforme.  Como lo dijo hace un rato en su intervención, con la satisfacción de haber  cumplido con esta obligación tan alta como es la de presidir el Senado de la  República. </p>
+<p align="justify">No cualquiera logra lo que se ha logrado y el  reconocimiento prácticamente de todas las fuerzas políticas y de cada una y  cada uno de los legisladores. </p>
+<p align="justify">Muchísimas gracias por haber hecho bien su trabajo. </p>
+<p align="justify">Te felicito, Lalo, de verdad. <br>
+  <br>
+  <strong>El Presidente Senador Eduardo  Ramírez Aguilar: </strong>Gracias, Senador  Rementería  del Puerto, por sus palabras. </p>
+<p align="justify">Sonido en el escaño del Senador Mario Zamora. </p>
+<p align="justify"><strong>El Senador Mario Zamora  Gastélum: </strong>(Desde su escaño)  Muchas gracias. </p>
+<p align="justify">Primero que nada, saludar a todas nuestras  compañeras y compañeros Senadores, un gusto verlos a todos bien. </p>
+<p align="justify">Felicitar a la Mesa Directiva, hacer mención  especial de mi paisana Imelda Castro. </p>
+<p align="justify">Y particularmente, mi querido Jaguar, no voy a ser  redundante, creo que lo que estamos escuchando es una buena muestra de quien  hace las cosas bien, de quien trabaja bien y de quien cumple su  responsabilidad. </p>
+<p align="justify">Solo concluiría: Ruge Jaguar, y que siga rugiendo  más fuerte en Chiapas. </p>
+<p align="justify"><strong>El Presidente Senador Eduardo  Ramírez Aguilar: </strong>Gracias por tus  palabras, estimado Mario. </p>
+<p align="justify">Sonido en el escaño del Senador Manuel Velasco. </p>
+<p align="justify"><strong>El Senador Manuel Velasco  Coello: </strong>(Desde su escaño) En  la fracción parlamentaria del Partido Verde, las Senadoras y los Senadores que  integramos este grupo parlamentario nos sentimos muy orgullosos del trabajo que  realizaron todos los integrantes de la Mesa Directiva, pero de manera muy  particular el trabajo que desempeñó al frente el Presidente de la Mesa  Directiva, el Senador Eduardo Ramírez. </p>
+<p align="justify">Nos da mucho gusto el reconocimiento de todas las  fracciones que estamos integrados en este Senado de la República que reconocen  el trabajo del Senador Eduardo Ramírez, y nos sumamos a él, un trabajo plural,  un trabajo de apertura, de diálogo, de inclusión y en todo momento evitando la  polarización. </p>
+<p align="justify">Muchas felicidades y nuestro mayor reconocimiento a  toda la Mesa Directiva.</p>
+<p align="justify"><strong>El Presidente Senador Eduardo  Ramírez Aguilar: </strong>Gracias, estimado  Senador Velasco Coello. </p>
+<p align="justify">Sonido en el escaño del Senador Américo. </p>
+<p align="justify"><strong>El Senador Américo Villarreal  Anaya: </strong>(Desde su escaño)  Muchas gracias. </p>
+<p align="justify">Nada más dirigiéndome a nuestro compañero el Senador  Eduardo y, de esta forma, a todos los integrantes de la Mesa Directiva y a toda  la gente que coadyuvó para este periodo legislativo, una cordial y reconocida  felicitación en el sentido del apego institucional que tuvo de esta alta  representatividad en la Cámara de Senadores, apegándose a las leyes y  reglamentos que la rigen, y su particularidad de hacerlo de una forma decente,  ordenada y cordial, que eso deja una marca y un ejemplo a seguir para que  podamos seguir debatiendo y argumentando, seguramente con todos los integrantes  de esta Cámara, por el bien de México. </p>
+<p align="justify">Muchas felicidades. </p>
+<p align="justify"><strong>El Presidente Senador Eduardo  Ramírez Aguilar: </strong>Gracias, Senador  Villarreal  Anaya, por sus palabras. <br>
+  <br>
+  Sonido en el escaño del Senador Antonio García  Conejo. </p>
+<p align="justify"><strong>El Senador Antonio García  Conejo: </strong>(Desde su escaño)  Gracias, señor Presidente. </p>
+<p align="justify">No pensaba hablar, porque ha sido un número muy  importante de Senadoras y Senadores que han expresado muchas cosas bonitas,  cosas que sin duda te llevarás como recuerdo, pero no quiero quedarme callado,  quiero expresarte, Lalo, como te decimos de cariño, señor Presidente, esa  visión que tienes de hombre de Estado. </p>
+<p align="justify">México está necesitado de mujeres y hombres con esa  visión, incluyentes, tolerantes, de diálogo, de acuerdos. Usted lo ha sabido  hacer muy bien. Le reconozco.</p>
+<p align="justify">Me sumo a todo lo que han expresado mis compañeras y  compañeros, a ese reconocimiento. </p>
+<p align="justify">No ha sido nada fácil,  sin duda porque detrás de esta conducción, tuya y de todas las compañeras que  te han acompañado en la Mesa Directiva, también ese reconocimiento, mi  reconocimiento, atrás hay un gran sacrificio, sobre todo en lo personal, de la  familia. No es nada fácil y ustedes han logrado llevar a cabo esta conducción  de esta soberanía. </p>
+<p align="justify">Felicidades, mi querido Presidente y a todas las  compañeras, a Imelda y a todas las demás que te acompañaron.</p>
+<p align="justify">Muchas felicidades.</p>
+<p align="justify">Gracias.</p>
+<p align="justify"><strong>El Presidente  Senador Eduardo Ramírez Aguilar: </strong>Muchas  gracias, Senador García Conejo, por sus palabras.</p>
+<p align="justify">Sonido en el escaño de la Senadora Beatriz.</p>
+<p align="justify"><strong>La Senadora  Beatriz Paredes Rangel:</strong> (Desde su escaño)  Muchas gracias, señor Presidente y a toda la distinguida y querida Mesa  Directiva que hoy se releva.</p>
+<p align="justify">La Presidencia de cualquiera de las Cámaras del  Congreso siempre es una enorme prueba, está uno en el centro de la atención,  cualquier yerro en el manejo del Reglamento, cualquier palabra equívoca,  cualquier exceso. Es al mismo tiempo una enorme oportunidad, pero un gran  riesgo.</p>
+<p align="justify">Saliste, no solo bien del riesgo, te elevaste, querido  Eduardo, volaste.</p>
+<p align="justify">Quiero felicitar tu conducción prudente, madura,  democrática, y saludar a toda tu Mesa Directiva: Vicepresidentas,  Vicepresidentes, cuando lo estuvieron, a nuestra querida sinaloense y a todas  nuestras compañeras, a Lupita, a todas, no quiero llevarme un rato en la  mención de sus nombres, pero nuestro reconocimiento.</p>
+<p align="justify">Y Verónica Martínez, que como debutante en la Mesa  Directiva lo hizo extraordinariamente.</p>
+<p align="justify">Un abrazo.</p>
+<p align="justify">Adelante, sigue volando, tienes alas extensas, vas a  llegar muy alto.</p>
+<p align="justify"><strong>El Presidente  Senador Eduardo Ramírez Aguilar:</strong> Gracias. Gracias por sus sentidas palabras<strong> </strong>Senadora Paredes Rangel.<br>
+  <br>
+  Sonido en el escaño de la Senadora Marybel Villegas.</p>
+<p align="justify"><strong>La Senadora Freyda  Marybel Villegas Canché:</strong> (Desde su escaño)  Gracias.</p>
+<p align="justify">Primero que nada, felicitar a toda la Mesa Directiva,  a las Secretarias, a las Vicepresidencias y un reconocimiento especial a mi  amigo Lalo, a nuestro Presidente.</p>
+<p align="justify">Nos sentimos muy orgullosos en el grupo parlamentario  escuchar los reconocimientos de todos los grupos parlamentarios de conocer tu  gran oficio político, tu talento y que eres hoy una nueva clase política  nacional. Nos sentimos muy orgullosos.</p>
+<p align="justify">Finalmente, que has sido un orgullo para representar a  la institución tan importante que es el Senado de la República. Nos dejas muy  contentos dentro del grupo parlamentario, eres un hombre de instituciones, lo  has demostrado, que más allá del partido político en el que estamos siempre  representaste dignamente al Senado.</p>
+<p align="justify">Felicidades, Eduardo.</p>
+<p align="justify">Te queremos.</p>
+<p align="justify"><strong>El Presidente  Senador Eduardo Ramírez Aguilar:</strong> Gracias, estimada Senadora Villegas Canché.</p>
+<p align="justify">Sonido en el escaño del Senador Damián Zepeda.</p>
+<p align="justify"><strong>El Senador Damián  Zepeda Vidales: </strong>(Desde su escaño)  Gracias, señor Presidente.</p>
+<p align="justify">El Senado de la República, representa la pluralidad de  pensamiento que existe en México, o sea, está integrado como un reflejo de las  distintas visiones que tenemos en este país y los órganos de gobierno,  particularmente la Mesa Directiva, deben representar precisamente esa  pluralidad.</p>
+<p align="justify">No es sencillo lograrlo, porque las personas, cada uno  de nosotros, tenemos una dualidad, un cargo que es institucional y un  pensamiento individual válido, una preferencia política, un respaldo a un  partido político, a un proyecto. Lograr el equilibrio y estar al frente de la  Presidencia de la Mesa Directiva, respetar y saber conducir con objetividad y  con respeto a las distintas visiones, creo que merece un reconocimiento y tú lo  has logrado muy bien.</p>
+<p align="justify">No tenía el gusto de conocerte antes de este Senado,  pero ha sido verdaderamente un gusto conocer a un político profesional, serio y  lo que considero un hombre de Estado. </p>
+<p align="justify">En mi opinión, el país está muy dividido y muy  polarizado el día de hoy, y hacen falta voces, particularmente en el partido del  gobierno, que tengan claridad, que tengan prudencia, que sepan escuchar y que sepan lograr consensos, porque aquí de  lo que se trata es de lograr acuerdos para el bien del país. </p>
+<p align="justify">Enhorabuena, Eduardo, lo has hecho muy bien,  felicidades.</p>
+<p align="justify">Siéntete orgullosos del trabajo que realizaste.</p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>Muchas gracias a cada una y a cada uno de ustedes por  las palabras aquí expresadas.</p>
+<p align="justify">No tengo más que decirles gracias por su confianza.</p>
+<p align="justify">Y agradezco la compañía de todas las integrantes de la  Mesa Directiva, a la Senadora Lilia Margarita, a la Senadora María Merced  González, a la Senadora Nancy De la Sierra, a ellas un fuerte aplauso.<br>
+  <br>
+  A la Senadora Verónica Delgadillo, a la Senadora  Alejandra Lagunes, nuestras distinguidas Secretarias y muy comprometidas.</p>
+<p align="justify">Y también a Marcela Mora, Eunice Romo, que fungieron  también como Secretarias de esta Mesa.</p>
+<p align="justify">Saludo también con mucho cariño y reconozco el trabajo  de la paciencia que nos tuvieron las Vicepresidentas, en momentos complicados  les tocó llevar a ellas la conducción del debate. A la Senadora Imelda Castro  que, sin duda, Sinaloa debe sentirse muy, pero muy contentos porque hizo un  trabajo extraordinario nuestra Senadora Imelda Castro Castro.</p>
+<p align="justify">El reconocimiento de esta Cámara para ti.</p>
+<p align="justify">Nuestro reconocimiento para una abogada, política,  queretana, nuestra Senadora Lupita Murguía, como así le expresamos.</p>
+<p align="justify">Muchas felicidades, Lupita, por tus buenas formas que  has tenido en estos tres años para ser nuestra Vicepresidenta.</p>
+<p align="justify">Quiero hacer un reconocimiento especial al Senador  Jorge Carlos Ramírez Marín, quien fue un Vicepresidente durante dos años y  medio, y que también hizo un trabajo extraordinario y con mucha sabiduría  legislativa.</p>
+<p align="justify">¡Felicidades!</p>
+<p align="justify">A la Senadora Verónica Martínez, quien con ella cierra  la LXIV Legislatura, aprendió muy rápido, y está preparada y llamada también  para grandes decisiones.</p>
+<p align="justify">Muchas gracias a todos y cada uno de ustedes:</p>
+<p align="justify">Vamos a continuar a darle cumplimiento a lo dispuesto  por el párrafo 5 del artículo 61 de la Ley Orgánica del Congreso General.</p>
+<p align="justify">Procederemos a la elección de la Mesa Directiva que  conducirá los trabajos de la Cámara de Senadores durante el primer año de  ejercicio constitucional de la LXV Legislatura.</p>
+<p align="justify">Informo a la Asamblea que se entregarán sobres  personalizados para la votación.</p>
+<p align="justify">Se encontrarán la cédula que deberá marcar la  selección que ustedes determinen para depositar en la urna una vez que la  Secretaría los llame por orden de lista.</p>
+<p align="justify">Solicito al personal de apoyo proceda a distribuir las  cédulas de votación a las Senadoras y los Senadores.</p>
+<p align="center">(Se hace entrega de sobres personalizados)</p>
+<p align="justify">Sonido en el escaño de la Senadora Nadia. </p>
+<p align="justify"><strong>La Senadora Nadia Navarro Acevedo: </strong>Paso a la tribuna. </p>
+<p align="justify">Muchas gracias, señor Presidente. Compañeras y  compañeros Senadores:</p>
+<p align="justify">Agradezco al Presidente de la Mesa Directiva y a  quienes integran la misma, por esta consideración de permitirme dirigirme a  ustedes con una breve reflexión. <br>
+  <br>
+  Desde Acción Nacional reconocemos lo saludable que  resulta el ejercicio de la alternancia, lo importante que reviste la pluralidad  en la inclusión y la construcción de un país democrático. </p>
+<p align="justify">Históricamente, la integración de la Mesa Directiva ha  representado ese compromiso con la pluralidad, con la representatividad de  todas las fuerzas políticas que integramos este poder soberano. </p>
+<p align="justify">La Presidencia de la Mesa Directiva requiere de una voz,  con un profundo compromiso con la legalidad, con un profundo compromiso con la  justicia, pero, sobre todo, con un compromiso de inclusión, de tolerancia, que  robustece y seguirá robusteciendo a la democracia. </p>
+<p align="justify">De ahí  que la pluralidad enriquezca el debate siempre gestado en el respeto y el  diálogo, por eso nos parece muy importante comentar que, desde Acción Nacional,  requerimos y exigimos, de manera puntual, que a la Mesa Directiva regrese la  naturaleza rotativa que anteriormente la práctica parlamentaria había dado.</p>
+<p align="justify">Y que  esa pluralidad siempre abone a la construcción del México que todas y todos  deseamos, pero que, sobre todo, responda a las necesidades más sentidas de las  y los mexicanos. </p>
+<p align="justify">Mal  empieza una Legislatura que, requiriendo de diálogo y construcción de acuerdos,  omita ejercer el oficio que enaltece al parlamentario, y lamentable resulta  enterarnos por los medios de comunicación de la designación presidencial que  hoy votaremos. </p>
+<p align="justify">Por  supuesto celebramos siempre que las mujeres cada vez puedan adquirir espacios  dentro de la representatividad del órgano que dirige este Senado. </p>
+<p align="justify">Por  supuesto celebramos que la votación también incluya espacios de manera puntual  para el grupo parlamentario que es el segundo en este Senado. </p>
+<p align="justify">No  queremos cerrar este espacio ni que inicie la votación, sin decir que desde  aquí y de manera muy respetuosa, vamos a celebrar todas las veces que las  decisiones importantes de este Senado sean comunicadas a todos los grupos  parlamentarios, que no solo se nos busque cuando requieren las dos terceras  partes; que no solo retomemos un valor cuando no existan las condiciones para  las dos terceras parte y que quiera hablar solo la mayoría. </p>
+<p align="justify">Que  este inicio de la Legislatura que vamos a tener sea la extraordinaria  oportunidad para construir consensos, acuerdos y legalidad. </p>
+<p align="justify">De  nuestra parte, de parte de Acción Nacional, va nuevamente el compromiso por  construir un México mejor. Va nuevamente un compromiso por representar y  reforzar a las instituciones que hacen de este México un país democrático. Va  nuevamente el compromiso con las mujeres, con los niños y con el pueblo de  México. </p>
+<p align="justify">Muchas  gracias. </p>
+<p align="justify"><strong>El  Presidente Senador Eduardo Ramírez Aguilar:</strong> Sonido en el escaño del Senador Ricardo Monreal. </p>
+<p align="justify">Va a  utilizar la tribuna. <br>
+  <br>
+  <strong>El  Senador Ricardo Monreal Ávila: </strong>Muchas gracias, ciudadano  Presidente. Ciudadanas Legisladoras, ciudadanos Legisladores: </p>
+<p align="justify">Vamos a  iniciar una nueva Legislatura. Vamos a iniciar una nueva etapa de la vida  pública del país en el Congreso mexicano y por eso debemos de ser muy claros al  inicio.</p>
+<p align="justify">El  titular del Ejecutivo Federal, el Presidente Andrés Manuel López Obrador, ha  sido respetuoso con el Congreso mexicano. </p>
+<p align="justify">Expreso  categóricamente que el grupo parlamentario de Morena y sus aliados decidió  presentar como candidata a presidir la Mesa Directiva, a la licenciada Olga  Sánchez Cordero, nadie más. </p>
+<p align="justify">En el  grupo parlamentario de Morena y sus aliados hay madurez, hay autonomía, hay independencia, todos y  todas somos mayores de edad, no negamos, y mal haríamos, el vínculo que nos une  política, ideológica y moralmente con el Presidente Andrés Manuel López  Obrador. </p>
+<p align="justify">Nunca en Morena vamos a negar esa posibilidad,  afinidad, no solo desde el punto de vista político, sino programático porque  esta tercera o esta segunda, o después de los tres años, en el grupo  parlamentario de Morena y sus aliados pretendemos profundizar la vida  democrática del país. </p>
+<p align="justify">Y vamos a reforzar el cambio de régimen.</p>
+<p align="justify">No les debe de extrañar a ningún partido que así sea,  vamos a acompañar al Presidente de la República estos tres años y vamos a  intentar evitar fisuras, divisiones o desencuentros con el titular del  Ejecutivo Federal. </p>
+<p align="justify">Nosotros queremos decirles a los grupos parlamentarios  diversos a los nuestros, van a tener siempre nuestro respeto, nuestra actitud  ha sido invariable de escuchar, de atender y de lograr acuerdos.</p>
+<p align="justify">Acabamos de expresar todos los grupos parlamentarios  el reconocimiento a una Mesa Directiva que actúo con imparcialidad, con  profesionalismo, con apertura. Así va a ser con la doctora Sánchez Cordero,  porque la doctora Olga Sánchez Cordero tiene un origen de legitimidad, ella fue  electa Senadora de la República y simplemente ocupó temporalmente el cargo de Secretaria  de Gobernación, y para nosotros lo hizo con elegancia, dignidad y profesionalismo. </p>
+<p align="justify">Y ahora gana el Senado de la República al  reincorporarse. </p>
+<p align="justify">Por eso les decimos a los grupos parlamentarios, al  Partido Acción Nacional, tendrán siempre nuestro respeto, lo que digan, lo que  hagan, lo que expresen, es su estrategia política y aquí la vamos a respetar la  mayoría, no hay ninguna discusión sobre de eso. </p>
+<p align="justify">Y le decimos al PRI, vamos a respetar su posición  política en los debates, en las votaciones y en su estrategia política. </p>
+<p align="justify">Y le decimos a Movimiento Ciudadano que, invariablemente,  tendrá nuestro respeto, junto con el PRD. </p>
+<p align="justify">Y este bloque se ha conformado o si han actuado de  manera individual nosotros procuraremos lograr acuerdos y consensos, como  siempre lo hemos hecho, tres años nos han bastado para conocernos y saben que,  en Morena, quienes conducimos al grupo parlamentario, lo hacemos con honor, con  respeto a la palabra, nunca hemos traicionado nuestra palabra. <br>
+  <br>
+  Por eso es conveniente ir a la elección plural de la  Mesa.</p>
+<p align="justify">En mi grupo parlamentario se ha debatido y se ha deliberado sobre la composición de la Mesa plural y  pudiera asistirnos la razón jurídica y legal de por mayoría decidir la Mesa  Directiva. </p>
+<p align="justify">Sería un error, sería un despropósito, en la que yo  no comparto ni estoy de acuerdo. Y así lo comenté el día de ayer con Senadoras  y Senadores. Por eso, tenemos que continuar en ese propósito. </p>
+<p align="justify">Les quiero decir a los grupos parlamentarios que  profundicemos el diálogo, el debate, no importan las horas que nos tardemos.  Así también lo acordamos el día de ayer en el grupo parlamentario de Morena y  sus aliados; defendamos nuestras posiciones con pasión, con entusiasmo, con  nuestra verdad. </p>
+<p align="justify">A nadie debe de advertir ni desaliento ni demérito  que el debate nos haga diferentes, es parte de la esencia política y de la  pluralidad.</p>
+<p align="justify">México es plural y México va a seguir siendo plural,  por eso Morena actuará a la altura de las circunstancias que el país exige. </p>
+<p align="justify">Les refrendo a los coordinadores de los grupos  parlamentarios y las coordinadoras toda nuestra disponibilidad, toda, de poder  lograr acuerdos amplios, consensos por el bien del país. </p>
+<p align="justify">No vamos a cansarnos de dialogar y de buscarlos en  un ambiente que nos permita avanzar en nuestro país y en la República. </p>
+<p align="justify">Por eso, bienvenida, doctora Olga Sánchez Cordero, y  deseo que la mayoría de esta Asamblea pueda refrendar la decisión de que usted  sea nuestra presidenta. </p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>El Presidente Senador Eduardo  Ramírez Aguilar: </strong>Solicito a la  Secretaría continúe.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a99817'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='99818'></a><p align="justify"><strong>ELECCIÓN DE LA MESA DIRECTIVA</strong></p>
+<p align="justify"><strong>La Secretaria Senadora Lilia  Margarita Valdez Martínez: </strong>Con  gusto, señor Presidente. </p>
+<p align="justify">Informo a la Presidencia que se entregaron 96 sobres  y no fueron entregados 31 sobres, de un total de 127.</p>
+<p align="justify">Procedo a nombrar a las señoras Senadoras y los  señores Senadores, a fin de que pasen a depositar su cédula en la urna. </p>
+<p align="justify">Nada más entregamos la cédula de Senador Ovidio  Peralta. </p>
+<p align="justify">¿Algún otro compañero o compañera que no tenga su  sobre, su cédula a la mano?</p>
+<p align="justify">Se entregó uno más, señor Presidente. </p>
+<p align="justify">Procedo a nombrarlos. </p>
+<p align="justify">¿Falta algún compañero de emitir su voto o alguna  compañera? </p>
+<p align="justify">Se va a realizar el conteo, el escrutinio de los  votos. </p>
+<p align="center"> (Se realiza el escrutinio)</p>
+<p align="justify">Señor Presidente, de 125 cédulas entregadas de cédulas  existentes, se entregaron 98; 29 no fueron entregadas, de las cuales 79 cédulas  están en pro de la planilla que voy a leer a continuación. </p>
+<p align="justify">Presidencia: Senadora Olga Sánchez Cordero.</p>
+<p align="justify">Vicepresidencia: Senador José Narro Céspedes.</p>
+<p align="justify">Vicepresidencia: Senadora Alejandra Noemí Reynoso  Sánchez. </p>
+<p align="justify">Vicepresidencia: Senador Jorge Carlos Ramírez Marín.</p>
+<p align="justify">Secretaria: Senadora Verónica Noemí Camino Farjat. </p>
+<p align="justify">Secretaria: Senadora Verónica Delgadillo García. </p>
+<p align="justify">Secretaria: Senadora Nancy De la Sierra Arámburo.</p>
+<p align="justify">Secretaria: Senadora María Celeste Sánchez Sugía. </p>
+<p align="justify">17 votos fueron emitidos por otras diversas planillas,  lo que nos da un total de 97 votos; y 1 abstención. </p>
+<p align="justify">Es cuanto, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>En consecuencia, la Mesa Directiva de la Cámara de  Senadores que conducirá los trabajos durante el primer año de ejercicio de la  LXV Legislatura fue electa como sigue. </p>
+<p align="justify">Presidenta: Senadora Olga Sánchez Cordero.</p>
+<p align="justify">Vicepresidente: Senador José Narro Céspedes.</p>
+<p align="justify">Vicepresidenta: Senadora Alejandra Noemí Reynoso  Sánchez.</p>
+<p align="justify">Vicepresidente: Senador Jorge Carlos Ramírez Marín. </p>
+<p align="justify">Secretaria: Senadora Verónica Noemí Camino Farjat.</p>
+<p align="justify">Secretaria: Senadora Verónica Delgadillo García.</p>
+<p align="justify">Secretaria: Senadora Nancy De la Sierra Arámburo.</p>
+<p align="justify">Secretaria: Senadora María Celeste Sánchez Sugía.</p>
+<p align="justify">¡Felicidades a toda la Mesa que dirigirá los trabajos  arrancando la LXV Legislatura!</p>
+<p align="justify">¡Felicidades a todas y a todos!</p>
+<p align="justify">Saludo con cariño, ya para entregarle la estafeta a la  Senadora Olga Sánchez, a mi familia que me acompaña, a mi esposa Sofía, muchas  gracias por acompañarme, a mi hija Yazmín, a mis familiares y amigos, mil  gracias. </p>
+<p align="justify">De regreso a casa. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a99818'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='99819'></a><p align="justify">Solicito a la Senadora Olga Sánchez Cordero acuda a  este presídium para que rinda su protesta constitucional y legal. </p>
+<p align="justify"><strong>La Secretaria Senadora Lilia  Margarita Valdez Martínez: </strong>Se  les solicita a las señoras Senadoras y a los señores Senadores ponerse de pie  para el acto de protesta de la Presidenta de la Mesa Directiva, como lo  disponen los artículos 128 constitucional, 62 de la Ley Orgánica del Congreso y  33 de Reglamento del Senado. </p>
+<p align="justify">Por favor, Senadores y Senadoras, todos de pie.</p>
+<p align="center">(Todos de pie)</p>
+<p align="center"><strong>PRESIDE  LA SENADORA</strong><br>
+  <strong>OLGA  SÁNCHEZ CORDERO</strong></p>
+<p align="justify"><strong>PROTESTA DE LEY</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Olga  Sánchez Cordero: </strong>Protesto guardar  y hacer guardar la Constitución Política de los Estados Unidos Mexicanos, las  leyes que de ella emanen y desempeñar leal y patrióticamente el cargo de  presidenta de la Mesa Directiva del Senado de la República que se me ha  conferido, mirando en todo por el bien y por la prosperidad de la Unión.</p>
+<p align="justify">Y si así no lo hiciere, que la Nación me lo demande. </p>
+<p align="justify">Solicito mantenerse de pie, y a las y los  integrantes de la Mesa Directiva que acaba de ser electa, acudan a este  presídium para el acto de su protesta. </p>
+<p align="justify">Ciudadanas y ciudadanos Senadores: Senador José  Narro Céspedes, Vicepresidente. </p>
+<p align="justify">Senadora Alejandra Noemí Reynoso Sánchez, Vicepresidenta. </p>
+<p align="justify">Senador Jorge Carlos Ramírez Marín, Vicepresidente. </p>
+<p align="justify">Senadora Verónica Noemí Camino Farjat, Secretaria.</p>
+<p align="justify">Senadora Verónica Delgadillo García, Secretaria.</p>
+<p align="justify">Senadora Nancy De la Sierra Arámburo, Secretaria. </p>
+<p align="justify">Senadora María Celeste Sánchez Sugía, Secretaria. </p>
+<p align="justify">¿Protestan guardar y hacer guardar la Constitución  Política de los Estados Unidos Mexicanos, las leyes que de ella emanen y  desempeñar leal y patrióticamente los cargos de Vicepresidenta, Vicepresidentes,  Secretarias y Secretario de la Mesa Directiva que se les han conferido, mirando  en todo por el bien y  prosperidad de la Unión? </p>
+<p align="justify"><strong>Las Ciudadanas Senadoras y Senadores:</strong> ¡Sí, protesto!</p>
+<p align="justify"><strong>La Presidenta Senadora Olga Sánchez Cordero:</strong> Si no lo hicieran así, que  la Nación se los demande.</p>
+<p align="justify">Solicito a las y los  integrantes de la Mesa Directiva pasen a ocupar sus lugares para el desempeño  de sus funciones.</p>
+<p align="justify">¿Con qué objeto, Senador  Dante Delgado?<br>
+  <br>
+  <strong>El Senador Dante Delgado:</strong> (Desde su escaño)  Simplemente para manifestar, por parte del grupo parlamentario de Movimiento  Ciudadano, la bienvenida al Senado de la República a usted, en su carácter de  Senadora, y manifestarle a usted y a las compañeras y compañeros que forman  parte de la Mesa Directiva electa, que habrán de asumir sus responsabilidades a  partir de este momento, pero con toda la responsabilidad a partir del 1 de  septiembre, en términos de la Constitución, al instalar los trabajos de la LXV  en sesión conjunta, deseamos valorar el profesionalismo de las personas que  integran la Mesa Directiva y en particular la trayectoria que le acredita a  usted como digna Presidenta del Senado de la República.</p>
+<p align="justify">Movimiento Ciudadano en todo  momento coadyuvará para el trabajo de responsabilidad administrativa en este  Pleno y participará de manera irrenunciable en los trabajos de coordinación  política dentro de la Junta de Coordinación Política.</p>
+<p align="justify">Bienvenida.</p>
+<p align="justify">Muchas felicidades a usted y  muchas felicidades a las compañeras y compañeros que hoy, por su capacidad y  trabajo reconocido, se les ha dado un voto de confianza.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga Sánchez Cordero:</strong> Muchas gracias, Senador.  Muchas gracias.</p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí Camino Farjat:</strong> Se solicita a todos  mantenerse de pie para la declaratoria de instalación de esta Cámara.</p>
+<p align="center">(Todos de pie)</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a99819'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='99820'></a><p align="justify"><strong>DECLARATORIA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Olga Sánchez Cordero:</strong> En cumplimiento a lo que  dispone el artículo 61 de la Ley Orgánica del Congreso General, la Cámara de  Senadores se declara legalmente instalada para el desempeño de sus funciones,  correspondiente al primer periodo ordinario de sesiones del primer año de  ejercicio constitucional de la LXV Legislatura.</p>
+<p align="justify">Favor de tomar asiento.</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify">Sonido en el escaño del  Senador Mancera.</p>
+<p align="justify"><strong>El Senador Miguel Ángel Mancera Espinosa:</strong> (Desde su escaño) Gracias,  señora Presidenta.</p>
+<p align="justify">En el mismo sentido del  Senador Dante Delgado, el grupo parlamentario quiere darle la más cordial de  las bienvenidas, desearle mucho éxito en la tarea y, de igual forma, a mis  compañeras y compañeros en la Mesa Directiva.</p>
+<p align="justify">Sin duda es una Mesa  Directiva que, tengo la plena convicción, habrá de conducir todos los trabajos  con una clara línea de diálogo y, por supuesto, de concertación en todos los  trabajos que vamos a desempeñar.</p>
+<p align="justify">¡Bienvenida, querida maestra!</p>
+<p align="justify">Y, por supuesto, le deseo  mucho éxito; y, por supuesto, también a mis compañeras y compañeros de la Mesa  Directiva.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga Sánchez Cordero:</strong> Muchas gracias. <br>
+  <br>
+  Sonido en el escaño de la Senadora Beatriz Paredes, y  posteriormente de Paty Mercado.</p>
+<p align="justify"><strong>La Senadora Beatriz Paredes Rangel: </strong>(Desde su escaño) Gracias, señora Presidenta.</p>
+<p align="justify">Felicitando a la Mesa Directiva que ha rendido  protesta en estos momentos.</p>
+<p align="justify">Señora Presidenta, usted ha estado llamada a pasar a  la historia. </p>
+<p align="justify">Ya dejó huella en la Corte con su paso progresista,  consistente, profesional; lo hizo como primera mujer Secretaria de Gobernación;  y tengo la certidumbre que lo hará como una gran Presidenta del Senado.</p>
+<p align="justify">Sabe que cuenta con legisladores comprometidos por  México.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga Sánchez Cordero: </strong>Muchas gracias.</p>
+<p align="justify">Sonido en el escaño de la Senadora Patricia Mercado,  por favor.</p>
+<p align="justify"><strong>La Senadora Patricia Mercado: </strong>(Desde su escaño) Muchas gracias, señora Presidenta.</p>
+<p align="justify">También para darle la bienvenida como Presidenta de  este Senado.</p>
+<p align="justify">Es usted una figura política de mucha relevancia en  nuestro país, y se ha asumido como feminista, mostrando que el feminismo es una  propuesta política para toda la sociedad, para pacificarla, para igualarla,  para crecer con inclusión, para proteger el medio ambiente, su gran compromiso  con el reconocimiento de los derechos sexuales y reproductivos.</p>
+<p align="justify">Y algo que en esta Cámara tenemos que terminar de  decidir a partir de la propuesta que usted dejó hace tres años, para transitar  de una política punitiva a una política de regulación del uso de cannabis, todo  eso usted representa.</p>
+<p align="justify">Sabemos de estas convicciones que usted tiene y,  bueno, simplemente reforzar lo que ya mi Coordinador Dante Delgado le ha dicho,  porque, sin duda, quiero decirle, quiero decirle a todas mis compañeras y  compañeros que el Senado gana teniéndola a usted ahora aquí como Presidenta.</p>
+<p align="justify">Gracias.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga Sánchez Cordero: </strong>Muchas gracias, Paty. Muchas gracias.</p>
+<p align="justify">También está solicitando la palabra Malú Micher y  también el Senador Emilio Álvarez Icaza.</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>La Senadora Martha Lucía Micher Camarena: </strong>(Desde su escaño) Gracias, señora Presidenta.</p>
+<p align="justify">Estimada compañera de lucha, estimada Olga, estimada  compañera de Morena.</p>
+<p align="justify">Donde te plantas, donde has estado, has transformado  la vida de las mujeres, y para nosotras es un gran orgullo.</p>
+<p align="justify">Eres una feminista que nos representa.<br>
+  <br>
+  Aquí yo aplico el affidamento. Me fío de ti y sé que  nos representas, y me siento muy orgullosa del lugar donde estás, porque estás  haciendo historia, hiciste historia en la Suprema Corte, hiciste historia en la  Secretaría de Gobernación, y ahora estás haciendo historia como Presidenta de  la Mesa Directiva.</p>
+<p align="justify">No nacemos, nos hacemos.</p>
+<p align="justify">Me da mucho gusto saberte ahí, saber que tengo una aliada,  y que las mujeres su vida sexual y reproductiva, sus derechos humanos de las  niñas, de todas las mujeres seguirán avanzando contigo ahí, contigo aquí al  lado de nosotras.</p>
+<p align="justify">Como dice el poeta &ldquo;Si sabe usted contar, no cuente  hasta uno, dos, tres, sino hasta lo que usted quiera, y cuenta con nosotras,  con nosotros&rdquo;.</p>
+<p align="justify">Este grupo parlamentario que por mayoría la eligió y  con el voto y el apoyo de todas y todos aquí, nos sentiremos muy orgullosas y  orgullosos de su desempeño.</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga Sánchez Cordero: </strong>Muchas gracias, Malú por tus palabras.</p>
+<p align="justify">Tiene la palabra el Senador Emilio Álvarez Icaza,  sonido, por favor.</p>
+<p align="justify"><strong>El Senador Emilio Álvarez Icaza Longoria: </strong>(Desde su escaño) Gracias, señora Presidenta.</p>
+<p align="justify">Saludo a su persona, a la nueva integración de la Mesa  Directiva.</p>
+<p align="justify">Saludo a los vicepresidentes, a la vicepresidenta, a  las secretarias que nos representan, es un gran orgullo. Y en lo particular, Presidenta,  quiero decirle mi grande alegría.</p>
+<p align="justify">Hay un momento país distinto, hay una serie de  desafíos en horizonte importantes.</p>
+<p align="justify">Las elecciones pasadas cambian un tiempo, y viene  entonces una necesidad de construir acuerdos.</p>
+<p align="justify">Viene un momento de tender puentes, de construir en  pluralidad, y su trayectoria es una grande esperanza para ese fin, Presidenta.</p>
+<p align="justify">Ha dejado una huella muy significativa en el Judicial,  en el Ejecutivo y no tengo duda que así será en el Legislativo. </p>
+<p align="justify">La hora de vuela y la experiencia y, sobre todo, hay  que reconocerlo, usted ha sido una aliada fundamental en la transición  democrática. </p>
+<p align="justify">Celebro, Presidenta, su presencia, como celebro la  presencia de luchadores sociales como José Narro, de Celeste o de Verónica y  también como capacidad de inteligencia, sagacia y lucha de Alejandra Reynoso y  de Carlos Ramírez Marín, así como de otros compañeros, porque vamos a necesitar  de su tolerancia, de su inteligencia y su capacidad. </p>
+<p align="justify">Enhorabuena, muchísimas gracias. </p>
+<p align="justify">¡Felicidades!</p>
+<p align="justify"><strong>La Presidenta Senadora Olga Sánchez Cordero: </strong>Muchísimas gracias, Emilio, de verdad, gracias. <br>
+  <br>
+  Tiene la palabra el Senador Santana Armando Guadiana  Tijerina, por favor; después la Senadora Sasil de León Villard y, por último,  me ha pedido la palabra el Senador Manuel Añorve Baños. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>El Senador Santana Armando Guadiana Tijerina: </strong>(Desde su escaño) Solamente no voy a extenderme mucho.</p>
+<p align="justify">Con la venia de todas las Senadoras y Senadores de  esta Asamblea.</p>
+<p align="justify">Pues claro, felicitar a la Senadora de Yucatán,  Verónica Camino; la Senadora Celeste, aquí en la Ciudad de México; a la  Senadora Reynoso, de Guanajuato; a la Senadora Verónica Delgadillo, de Jalisco;  ya, el Senador Ramírez Marín, también de Yucatán y, por supuesto, a nuestra  ahora Presidenta, la Senadora Olga Sánchez Cordero Dávila.</p>
+<p align="justify">Y me da mucho orgullo, como coahuilense, sabemos que  todos los antecedentes, por lo Dávila, son de por allá de Coahuila, de la  sierra de Arteaga, en donde tengo yo parientes cercanos también, y que nos  sentimos muy orgullosos y como mujer de lo más destacado que ha venido a este  Senado de la República, no solamente en esta anterior Legislatura y ahora que  en esta ahora empezamos, sino en la historia del Senado de la República.</p>
+<p align="justify">Usted ha sido la primera notaria mujer en la Ciudad de  México y luego ser miembro de la Suprema Corte para un abogado, siento yo que  es el orgullo mayor profesional que pudo haber tenido como ministra de la  Suprema Corte, Secretaria de Gobernación y ahora Presidenta del Senado, más no  puede pedir en su carrera profesional, estamos seguros que van a cumplir la  nueva Mesa Directiva y usted al frente de la misma, como miembro también del  grupo a mucho orgullo de Morena y considerando siempre los liderazgos y la  participación de todos los grupos parlamentarios de los distintos partidos  políticos. </p>
+<p align="justify">Felicidades, paisana, de Coahuila, de la Sierra de  Arteaga. </p>
+<p align="justify">¡Enhorabuena!</p>
+<p align="justify"><strong>La Presidenta Senadora Olga Sánchez Cordero: </strong>Muchas gracias, Armando, muchas, muchas gracias. </p>
+<p align="justify">Sasil, por favor.</p>
+<p align="justify"><strong>La Senadora Sasil de León Villard: </strong>(Desde su escaño) Señora Presidenta, solo para decirle  a nombre propio y de mis compañeras del grupo parlamentario de Encuentro  Social, que nos sentimos dignamente representadas por usted como Presidenta del  Senado, que la felicitamos y vamos a estar respaldado todos sus trabajos y  decisiones que tome como Presidenta del Senado, a la Mesa Directiva, a los Vicepresidentes,  a la vicepresidenta y a las Secretarias, desearles el mayor de los éxitos. </p>
+<p align="justify">¡Enhorabuena!, Presidenta, Ministra, Exsecretaria de  Gobernación. </p>
+<p align="justify">¡Bienvenida y felicidades!</p>
+<p align="justify"><strong>La Presidenta Senadora Olga Sánchez Cordero: </strong>Muchas gracias Sasil, muchas, muchas gracias. </p>
+<p align="justify">Tiene la palabra el Senador Manuel Añorve Baños.<br>
+  <br>
+  <strong>El Senador Manuel Añorve Baños: </strong>(Desde su escaño) Muchas gracias, por supuesto que me  sumo a esta felicitación.</p>
+<p align="justify">Aquí se ha dicho de su paso extraordinario en la  Suprema Corte de Justicia de la Nación, la Secretaría de Gobernación, siendo la  notaría mujer en la Ciudad de México, por primera vez, haciendo historia; pero  yo quiero referirme a su paso impecable en la Universidad Nacional Autónoma de  México, en la Facultad de Derecho, donde usted ha hecho una extraordinaria  historia también en esa gran universidad que es del pueblo de México y donde  tuve la oportunidad de ser su alumno, donde tuve la oportunidad de estar con  usted en cinco materias y donde no solo lo que le estoy diciendo es un cumplido  ganado, es algo que a mí me consta. </p>
+<p align="justify">Felicidades  a toda la Mesa Directiva, y felicidades a usted, nuevamente. </p>
+<p align="justify">Gracias. </p>
+<p align="justify"><strong>La  Presidenta Senadora Olga Sánchez Cordero: </strong>Muchas  gracias, mi querido Manuel, por recordarme esa etapa tan hermosa de mi vida,  que fue ser maestra de la Facultad de Derecho en la UNAM. </p>
+<p align="justify">Muchas  gracias, Manuel. </p>
+<p align="justify">Tiene  la palabra el Senador Rogelio Israel Zamora Guzmán.</p>
+<p align="justify"><strong>El  Senador Rogelio Israel Zamora Guzmán: </strong>(Desde  su escaño) Gracias, señora presidenta. </p>
+<p align="justify">Mis  compañeras y mis compañeros Senadores del Partido Verde Ecologista de México  nos sentimos muy complacidos por la integración de esta Mesa Directiva, creemos  que el beneplácito que les otorgó esta Soberanía a través del voto que acabamos  de realizar no es una acción gratuita, sino es un reconocimiento a la gran  trayectoria de cada uno de los integrantes de la Mesa y, por supuesto, en  especial por la Presidenta, que como mis compañeros ya han expresado, ha hecho  historia en la historia misma del notariado mexicano, pero también en las  cuestiones del interior a través de la Secretaría de Gobernación.</p>
+<p align="justify">Y  estamos confiados en los resultados que hemos visto de sus otros cargos que  también desempeñará, de manera muy digna, y en representación de muchas mujeres  mexicanas y de muchos mexicanos este alto honor que es ser la Presidenta de la  Mesa Directiva. </p>
+<p align="justify">Un  fuerte abrazo a cada uno de mis compañeros, y estaremos trabajando de manera  muy activa con cada uno de ustedes. </p>
+<p align="justify">Muchas  gracias. </p>
+<p align="justify"><strong>La  Presidenta Senadora Olga Sánchez Cordero:</strong> Muchas  gracias, Rogelio, muchas gracias. </p>
+<p align="justify">Tiene  la palabra la Senadora Geovanna Bañuelos de la Torre. <strong></strong></p>
+<p align="justify"><strong>La  Senadora Geovanna del Carmen Bañuelos de la Torre:</strong> Gracias, señora Presidenta. </p>
+<p align="justify">A  nombre propio y de mi grupo parlamentario, el del Partido del Trabajo,  felicitar a todos los integrantes recién electos de la nueva Mesa Directiva, en  particular a usted, desearle todo el éxito en esta importante encomienda en la  conducción de los trabajos del Senado de la República, sabedores de esa gran  capacidad de diálogo y de concertación que la distingue, la ha distinguido  siempre. <br>
+  <br>
+  Decirle  que en nuestro grupo parlamentario usted tiene una mano amiga, tiene un grupo  de Senadoras y de Senadores aliados de su función de la cuarta transformación y  que esperamos que este inicio de la LXV Legislatura y el inicio de los trabajos  que usted habrá de conducir en el Senado sean para bien de esta institución y,  evidentemente, para bien de México. </p>
+<p align="justify">Enhorabuena,  felicidades a todas y a todos ustedes, particularmente a usted, señora Presidenta.</p>
+<p align="justify"><strong>La  Presidenta Senadora Olga Sánchez Cordero:</strong> Gracias, Geovanna, muchas gracias. </p>
+<p align="justify">Le  pediría al Vicepresidente José Narro, si me puede cubrir, porque quiero  dirigirles unas palabras en el pódium. </p>
+<p align="center"><strong>PRESIDE  EL SENADOR</strong><br>
+  <strong>JOSÉ  NARRO CÉSPEDES</strong></p>
+<p align="justify"><strong>EL  Presidente Senador José Narro Céspedes:</strong> Adelante, Presidenta. </p>
+<p align="justify"><strong>La  Senadora Olga Sánchez Cordero:</strong> Compañeras y compañeros  Senadores. </p>
+<p align="justify">Es un  honor compartir nuevamente con ustedes este recinto de la democracia, sede del  debate, de la libre manifestación de las ideas y principalmente del consenso  republicano. </p>
+<p align="justify">Me  llena de entusiasmo regresar al Senado de la República, en donde siempre me he  sentido en casa, así me lo han hecho sentir ustedes desde el primer día, y les  estoy muy agradecida. </p>
+<p align="justify">Ser  representante de las entidades de la Federación en esta Cámara, nos permite, a  cada uno, a cada una de los aquí presentes, continuar aportando al momento  histórico que vive este país. </p>
+<p align="justify">Sí, un  momento de cambio y de transformación lidereada por los ideales y principios  que representa la cuarta  transformación de igualdad, justicia y no discriminación, que estoy segura que  estos valores todas y todos los compartimos. </p>
+<p align="justify">De manera personal y profesional fue un honor y un  privilegio poder servir al pueblo de México desde la Secretaría de Gobernación,  como la primera mujer en su cargo. </p>
+<p align="justify">El trabajo que realizamos frente a esta Secretaría,  demostró que es posible ejercer el poder y hacer política, pero de una manera renovada. </p>
+<p align="justify">También me dejó claro que aún hay mucho por hacer para  fortalecer la gobernabilidad democrática del país y lograr que las y los  mexicanos puedan ejercer y defender sus derechos a plenitud. </p>
+<p align="justify">Estoy convencida que la tarea de transformar a México tiene  diversos escenarios de acción y uno de los más virtuosos es el escenario  legislativo. </p>
+<p align="justify">Por ello, como Senadoras y Senadores, somos defensores  de la democracia y de los valores que le dan vida al pacto federal. </p>
+<p align="justify">Asumir la Presidencia de la Mesa Directiva para mí es  un honor. </p>
+<p align="justify">Aportaré toda mi experiencia para trabajar desde el  diálogo y del consenso, para impulsar acuerdos y lograr la coordinación de las  diversas voces políticas en beneficio del pueblo de México, así como lo he  hecho en todos los espacios en los que he defendido los derechos humanos y los  derechos de todas y todos. <br>
+  <br>
+  Estoy convencida de que la labor del Poder Legislativo  es transparente, es honesta y es inclusiva, con esta idea llego a este cargo a  sabiendas de que la LXV Legislatura tiene la responsabilidad de actuar de  manera decidida para concretar en los próximos tres años las reformas  primordiales para la edificación de un México más justo, más incluyente, más  equitativo. </p>
+<p align="justify">Pondré todo mi empeño en conducir los esfuerzos de  esta Cámara de Senadores en ese sentido. </p>
+<p align="justify">La agenda legislativa se diseñó pensando en las  necesidades de la sociedad mexicana, pero también en el porvenir democrático. </p>
+<p align="justify">Esta agenda legislativa es fuerte, es integral, pero  también requiere de sinergias efectivas para llevarse a cabo. </p>
+<p align="justify">Todas y todos sabemos que dar soluciones a los  planteamientos y exigencias sociales que nos atañen no es fácil, pero es lo  justo; requiere dejar atrás diferencias políticas para enfocarnos en lo  sustancial, el bienestar de las y los mexicanos. </p>
+<p align="justify">A mis colegas Senadoras les digo que me incorporo a  participar actuando por y para las mujeres de México. </p>
+<p align="justify">Sigamos juntas. </p>
+<p align="justify">Sí, sigamos juntas en el gran trabajo que ustedes ya  están realizando.</p>
+<p align="justify">Sí, juntas, abriendo espacios para que más mujeres  hagan historia. </p>
+<p align="justify">La participación plural tiene un efecto multiplicador  y nos permitirá luchar por lo que requiere este país. </p>
+<p align="justify">Seguiremos con las puertas abiertas para dialogar de  manera franca, sin prejuicios  ideológicos. Y actuaré siempre de esa manera, porque la lealtad va más allá de  la alternancia, va más allá de los partidos. La lealtad más grande es con  nuestro pueblo, con el pueblo de México. </p>
+<p align="justify">Quiero aquí agradecer. Muchas gracias a todos los  grupos parlamentarios por haber depositado su confianza en mi persona: al  Partido Acción Nacional, al Partido Revolucionario Institucional, al Partido  Movimiento Ciudadano, al Partido Verde Ecologista de México, al Partido  Encuentro Social, al Partido del Trabajo, al Partido de la Revolución Democrática,  al Partido de Morena y al Senador independiente. </p>
+<p align="justify">Muchas gracias, estaré en comunicación permanente  con cada una y cada uno de los integrantes de los grupos parlamentarios, como  lo hice en mi función de Secretaria de Gobernación con todos los gobernadores  de este país, con la gobernadora y la jefa de gobierno, que estuvimos en una  constante, fluida y respetuosa comunicación. </p>
+<p align="justify">Y compartirles que cuando presenté mi renuncia  recibí un gran cúmulo, no solamente de reconocimientos, sino también de que me  van a extrañar muchos de estos gobernadores, la gobernadora y la jefa de  gobierno. Desde aquí les agradezco sus mensajes que en llamadas telefónicas y  también por diversos medios electrónicos hicieron a mi persona. </p>
+<p align="justify">Quiero desde aquí decirles a todas y a todos los  gobernadores, porque aquí estamos en el pacto federal, que fue para mí un  honor, de verdad, y diría hasta un placer, tener esta comunicación permanente  con todos ellos, con la gobernadora y con la jefa de gobierno.</p>
+<p align="justify">Muchas gracias. <br>
+  <br>
+  También  agradecer el acompañamiento de la Mesa Directiva en esta nueva gran aventura. </p>
+<p align="justify">Gracias. </p>
+<p align="center"><strong>PRESIDE LA  SENADORA</strong><br>
+  <strong>OLGA SÁNCHEZ  CORDERO</strong></p>
+<p align="justify"><strong>La Presidenta Senadora  Olga Sánchez Cordero: </strong>La Secretaría  informará por escrito de la instalación de la Cámara de Senadores y la elección  de la Mesa Directiva al titular del Poder Ejecutivo Federal, al Presidente de  la Suprema Corte de Justicia de la Nación y a las legislaturas de las entidades  federativas y de la Ciudad de México. </p>
+<p align="justify">La Cámara de  Diputados quedará debidamente notificada en la sesión de Congreso General, a  celebrarse el 1 de septiembre del presente año. </p>
+<p align="justify"><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Les solicitamos a todas las Senadoras y Senadores ponerse de pie para  entonar el Himno Nacional Mexicano.</p>
+<p align="center">(Entonación del Himno Nacional)</p>
+<p align="justify"><strong>La Presidenta Senadora Olga Sánchez Cordero: </strong>¡Viva! </p>
+<p align="justify">Favor de tomar asiento.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a99820'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='99821'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify">Senadoras y Senadores,  se cita a la primera sesión ordinaria de la Cámara, el jueves 2 de septiembre a  las 11:00 horas en este recinto del Senado, en la modalidad presencial.</p>
+<p align="justify">Asimismo, se les  recuerda la cita a la sesión de Congreso General en el recinto de la Honorable  Cámara de Diputados, el miércoles 1 de septiembre a las 17:00 horas.</p>
+<p align="justify">Se da, entonces, por  finalizada esta Junta Previa.</p>
+<p align="center">(Se  levantó la sesión a las 14:36 horas)</p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a99821'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

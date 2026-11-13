@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 28</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Alejandro Armenta Mier</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 25 de Abril de 2023</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/2/SPO/PDF-WEB/SPO_No28_25-ABRIL-2023_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109270'></a><p align="center"><strong>PRESIDE EL SENADOR</strong> <br>
+  <strong>ALEJANDRO ARMENTA MIER</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Alejandro  Armenta Mier: </strong>(12:28  horas) Con el quórum de nuestra sesión ordinaria de hoy, y con fundamento en lo  dispuesto por el artículo 56, fracción III del Reglamento del Senado y en el  Acuerdo de la Mesa Directiva, aprobado este día, iniciamos la sesión solemne  para conmemorar el 175 Aniversario de las Relaciones Diplomáticas entre México  y la República de Guatemala. </p>
+<p align="justify">El Acuerdo está publicado en la Gaceta  Parlamentaria, por lo que solicito a la Secretaría dé lectura. </p>
+<p align="justify"><strong>La Secretaria Senadora Martha  Cecilia Márquez Alvarado: </strong>Doy lectura a la comisión para recibir al Diputado  Manuel Eduardo Conde Orellana, Presidente de la Comisión de Relaciones  Exteriores del Congreso de la República de Guatemala, se designa a las  Senadoras y Senadores, Héctor Vasconcelos, Nadia Navarro Acevedo, Jorge Carlos  Ramírez Marín, Alejandra León Gastélum, Rogelio Israel Zamora Guzmán, Antonio  García Conejo, Bertha Alicia Caraveo Camarena, Nancy Sánchez Arredondo, José  Ramón Enríquez Herrera y César Cravioto Romero. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro  Armenta Mier: </strong>Solicito  a las Senadoras y Senadores cumplir con el encargo.</p>
+<p align="center">(La comisión cumple)</p>
+<p align="justify">En tanto, se declara un receso. </p>
+<p align="center">(RECESO)</p>
+<p align="justify"> <strong>El Presidente Senador  Alejandro Armenta Mier:</strong> Informarles que se encuentran con nosotros  diversos líderes sociales: empresarios, comerciantes, profesionistas, líderes  sociales de la Ciudad de Puebla, invitados por Rebeca Bañuelos. </p>
+<p align="justify">¡Bienvenidos!, compañeras y compañeras que hoy van  a presenciar esta sesión solemne, en honor a las relaciones entre la República  hermana de Guatemala y de México.</p>
+<p align="justify">¡Sean bienvenidas y bienvenidos! al Senado de la  República. </p>
+<p align="justify">Se reanuda la sesión solemne, convocada para  distinguir la relación diplomática con nuestro país vecino del sur, como  muestra de afecto y de amistad. </p>
+<p align="justify">El 6 de septiembre de 1848, México y Guatemala  formalizaron relaciones diplomáticas, por lo que en este año se conmemoran 175  años de esa vinculación. </p>
+<p align="justify">Entre los gobiernos de Guatemala y México se han  suscrito más de 40 Acuerdos Bilaterales, lo que pone en evidencia la profunda y  dinámica relación de cooperación entre nuestras naciones. </p>
+<p align="justify">México y Guatemala sustentan su política exterior  en los principios fundamentales de contribuir al mantenimiento de la paz, la  libertad, el respeto y la defensa de los derechos humanos, así como el  fortalecimiento de los procesos democráticos e instituciones internacionales  que garanticen el beneficio mutuo y equitativo entre los estados. Además, de  una sólida relación diplomática entre nuestras naciones. </p>
+<p align="justify">Es por ello que le doy la bienvenida, al Senado de  la República, al Diputado Manuel Eduardo Conde Orellana, presidente de la  Comisión de Relaciones Exteriores del Congreso de la República de Guatemala. </p>
+<p align="justify">¡Sea bienvenido, señor Diputado!</p>
+<p align="justify">Le doy la bienvenida al maestro Maximiliano Reyes  Zúñiga, Subsecretario de América Latina y del Caribe. </p>
+<p align="justify">Al señor Romeo Ruíz Armento, Embajador de México en  Guatemala. </p>
+<p align="justify">Al señor Marco Chicas Sosa, Embajador de Guatemala  en México. </p>
+<p align="justify">Asimismo, saludo la presencia de las distinguidas  personalidades integrantes de diversas representaciones diplomáticas  acreditadas en México, es un honor recibir la visita de todas y de todos  ustedes a esta sesión solemne. </p>
+<p align="justify">Me permito presentar a mis compañeras Senadoras y  Senadores de la Mesa Directica que se encuentra con nosotros. </p>
+<p align="justify">A la Senadora Vicepresidenta Ana Lilia Rivera  Rivera. </p>
+<p align="justify">A la Senadora Alejandra Noemí Reynoso Sánchez,  Vicepresidenta. </p>
+<p align="justify">A la Secretaria Senadora Martha Cecilia Márquez  Alvarado.</p>
+<p align="justify">Y a quien ha sido destacada promovente de esta  sesión solemne, a la Senadora Beatriz Paredes Rangel, Presidenta de la Comisión  de Relaciones Exteriores América Latina y El Caribe, en el Senado de la  República. </p>
+<p align="justify">Solicito a la Asamblea ponerse de pie para entonar  nuestros himnos nacionales. </p>
+<p align="center">(Todos de pie entonan el Himno  Nacional de México)</p>
+<p align="center">(Todos de pie entonan el Himno  Nacional de Guatemala)</p>
+<p align="justify">Favor de tomar asiento.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109270'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109271'></a><p align="justify"><strong>CONMEMORACIÓN DEL 175 ANIVERSARIO DEL INICIO DE LAS RELACIONES  DIPLOMÁTICAS ENTRE MÉXICO Y LA REPÚBLICA DE GUATEMALA</strong></p>
+<p align="justify">Honorable señor Manuel Conde Orellana, Presidente  de la Comisión de Relaciones Exteriores del Congreso de nuestra hermana  República de Guatemala y representante en este acto solemne de nuestra hermana  República, a la cual nos unen los primeros 175 años de relaciones diplomáticas  francas y amistosas. </p>
+<p align="justify">Maestro Maximiliano Reyes Zúñiga, Subsecretario para América Latina y El Caribe.</p>
+<p align="justify">Compañeras y compañeros,  Honorable Asamblea:</p>
+<p align="justify">Licenciada Sandra  Mayorga, esposa del Honorable Diputado Manuel Conde, bienvenida. </p>
+<p align="justify">Estimados funcionarios de  la embajada de Guatemala en México y de la Secretaría de Relaciones Exteriores,  señores Cónsules; Cónsules Honorarios que nos distinguen con su presencia. </p>
+<p align="justify">Intervención, busca  reconocer con profundidad el papel que ha jugado Guatemala y México en la  concurrencia con nuestros hermanos países de América Latina y El Caribe. </p>
+<p align="justify">Sin duda su presencia  honra esa amistad franca, señor legislador. </p>
+<p align="justify">En esta sesión solemne,  honramos 175 años del establecimiento de los vínculos y la amistad entre  Guatemala y México. </p>
+<p align="justify">Debo destacar que esta  iniciativa surge a propuesta de la Senadora Beatriz Paredes Rangel, presidenta  de la Comisión de Relaciones Exteriores de América Latina y El Caribe, la cual  tuvo la anuencia de todos los Coordinadores de los grupos parlamentarios  integrados en esta Asamblea Legislativa.</p>
+<p align="justify">En 1848 nuestros países  habían declarado como naciones independientes y soberanas, decidieron avanzar  para iniciar una larga historia amistosa, sólida. </p>
+<p align="justify">Nuestra frontera común de  casi mil kilómetros en las que coinciden tres estados: Chiapas, Tabasco y  Campeche, y 22 municipios de México con 5 departamentos y 24 municipios de  Guatemala, también es un espacio de mexicanos y guatemaltecos. </p>
+<p align="justify">Es un espacio donde  conviven familias, conviven tradiciones, donde el proceso de transculturización  nos identifica. </p>
+<p align="justify">Uno de los temas más  relevantes de la relación bilateral, sin duda, es el tránsito de la migración. </p>
+<p align="justify">Nuestra frontera común es  una zona que aspira a la prosperidad y el desarrollo económico, al respecto de  los derechos humanos y a la inclusión. </p>
+<p align="justify">El Senado de la República  firma su solidaridad con víctimas y familiares que en ese tránsito pierden la  vida. </p>
+<p align="justify">La migración implica una  serie de fenómenos que es necesario seguir abordando para encontrar soluciones,  sin duda, nuestros países se han hermanado para atender ese fenómeno  poblacional. </p>
+<p align="justify"> Hace tres años, en  febrero del 2020, el Senado de la República realizó una sesión solemne en honor  a la visita del presidente Alejandro Giammattei, el primer mandatario de  Latinoamérica que recibió el Pleno de esta Cámara en su actual conformación. </p>
+<p align="justify">Recientemente en febrero  de este año, el señor Embajador Mario Búcaro Flores, ministro de Relaciones  Exteriores de Guatemala acompañó al Senador Eduardo Ramírez, expresidente del  Senado en la inauguración de la exposición fotográfica &ldquo;El jaguar y el  Quetzal&rdquo;. </p>
+<p align="justify">Hoy, reafirmamos que  estas ceremonias son una pequeña, pero muy significativa muestra de la voluntad  de esta soberanía para contribuir con nuestra relación. </p>
+<p align="justify">Por ello deseamos que  nuestros amigos guatemaltecos confíen en que México es un país solidario, que  los recibe con cariño, que recibe a refugiados de América Latina y  de cualquier parte del mundo, a las personas que buscan trabajar y vivir en  paz. Siempre, siempre será para ellos México su casa. </p>
+<p align="justify">Estimado  colega, presidente de la Comisión de Relaciones Exteriores del Congreso de la  República de Guatemala, valoramos y agradecemos su presencia, la de su comitiva  y del señor embajador Chica Sosa y su equipo.</p>
+<p align="justify">Les  reiteramos nuestro aprecio, nuestra amistad, y les solicitamos sean el amable  conducto para transmitir al pueblo guatemalteco nuestros mejores deseos de un  futuro próspero común.</p>
+<p align="justify">Agradecemos  a las invitadas y a los invitados que nos acompañan a esta sesión solemne, y de  manera especial a las y los distinguidos embajadores y al cuerpo diplomático  que nos honra con su presencia, la cual al Senado de la República nos llena de  orgullo y de satisfacción.</p>
+<p align="justify">En ese  contexto, se concede ahora el uso de la palabra al Senador Eduardo Ramírez Aguilar,  Presidente de la Comisión de Puntos Constitucionales.</p>
+<p align="justify">Adelante,  señor Senador.</p>
+<p align="justify"><strong>El  Senador Eduardo Ramírez: </strong>Muchas gracias, estimado  Presidente, Senador Alejandro Armenta. Saludo a la Mesa Directiva.</p>
+<p align="justify">Y doy la  más cordial de las bienvenidas al Diputado Manuel Conde, representante del  Congreso de Guatemala.</p>
+<p align="justify">¡Sea  bienvenido!, a la casa del federalismo mexicano.</p>
+<p align="justify">Saludo  también al Subsecretario de Relaciones Exteriores, a Maximiliano Reyes Flores.</p>
+<p align="justify">¡Bienvenido!</p>
+<p align="justify">A Romeo  Ruiz, amigo Embajador de México en Guatemala.</p>
+<p align="justify">¡Bienvenido!</p>
+<p align="justify">Quiero  agradecer la oportunidad que se me da para hablar a nombre del Senado de la  República a propuesta de la Senadora Beatriz Paredes, presidenta de la Comisión  de Relaciones Exteriores, de América Latina y El Caribe, por haberme propuesto  ante la Junta de Coordinación Política.</p>
+<p align="justify">Estamos  en una sesión solemne reunidos para conmemorar el 175 Aniversario de la  Relación México-Guatemala, relaciones diplomáticas.</p>
+<p align="justify"> Esta  relación inició el 6 de septiembre de 1848. Como naciones compartimos una  historia, compartimos desde la época prehispánica la civilización y la cultura  maya; compartimos momentos de definición en la independencia de América, de  Centroamérica frente a la corona española.</p>
+<p align="justify">Por eso  no es casual que Guatemala y México transiten en la cooperación y en la buena  fe y el entendimiento de sus pueblos. Los ecos de la independencia de América  Latina se escuchaban desde los primeros años del siglo XIX, ejemplo de esto fue  el levantamiento de Totonicapán, allá con Atanasio Tzul, un indígena que  promovió una independencia genuina y natural.</p>
+<p align="justify">Sin  embargo, el proceso de independencia de Centroamérica culminó el 15 de  septiembre de 1821. Con el rompimiento de sus lazos con la corona española se  integró al imperio mexicano. En 1823 las cinco naciones de la República  Centroamericana se unieron y se disolvió en definitiva en 1939. Siete años  después, un 21 de marzo de 1847, se fundó la República de Guatemala a través  del decreto número 15, firmado por el presidente Rafael Carrera. </p>
+<p align="justify">Si bien,  es cierto, Centroamérica logró su emancipación sin violencia. </p>
+<p align="justify">También  es cierto que durante la historia de este país se dividieron en dos corrientes,  por un lado, los conservadores en Guatemala, y por el otro lado los liberales.  Los conservadores querían mantener los privilegios en la Iglesia; mientras que  los liberales querían cortar esos privilegios y fortalecer su autonomía y su  independencia y fortalecer el comercio local. </p>
+<p align="justify">Estas dos  corrientes de pensamiento ideológico no solamente acontecieron en México y en  Guatemala, acontecieron en toda la América a través de lo que se conoce como lo  que es el federalismo, a través de la división de poderes, inspiradas en John  Locke, en Montesquieu, en Juan Jacob Rousseau. </p>
+<p align="justify">Éste fue  el momento del parteaguas que en Guatemala se sienta a través de tres épocas:  La época republicana de 1821 a 1871, la época liberal de 1871 a 1944 y,  después, la época revolucionaria de 1944 a 1954. Llegaron dos períodos  posteriores, que es la contrarrevolución y el conflicto armado de 1954 a 1996. </p>
+<p align="justify">A partir  del año 1996 se establece un período de paz, de concordia en esta nación  Centroamericana, donde por primera vez fueron firmados esos acuerdos y se  mantienen, incluso, monumentos a la paz en la capital de Guatemala, pero  también en una ciudad que tiene límites, que tuve la oportunidad de ser alcalde  en aquella época, se establece un nuevo monumento de la paz allá en Comitán,  Chiapas, en el año 2008. </p>
+<p align="justify">Este  precedente es importante porque la paz se hace para que nunca más los cuerpos  militares estén frente al poder y sean la democracia auténtica y la democracia  civil la que impere en el país de Guatemala. </p>
+<p align="justify">Nos une  entre México y Guatemala, como bien lo señaló el presidente de la Mesa  Directiva, cinco departamentos: Huehuetenango, Quetzaltenango, Retalhuleu. Y  estos departamentos tienen una convivencia, como todos bien saben, yo soy  originario del estado de Chiapas, ahí en Chiapas se mantiene una relación de  cooperación internacional en materia de comercio, pero también en materia turística,  también en la gastronomía, y también en nuestro lenguaje, cuando alguien se  refiere a un muchacho y se dice &ldquo;muchá&rdquo;, nosotros entendemos porque tenemos el  mismo lenguaje. Cuando nos referimos a un niño allá en Guatemala y en los  límites de Chiapas también se utiliza la palabra &ldquo;patojo&rdquo;.</p>
+<p align="justify">Tenemos  tantas cosas en común entre Chiapas y Guatemala, que mis hermanos allá del  Soconusco, el 70 % de la economía depende del tránsito entre guatemaltecos y  mexicanos, que se llevan productos mexicanos para comercializarse allá en la  República de Guatemala. </p>
+<p align="justify"> Hablar, entonces, de nuestra cooperación y de  nuestra relación diplomática es emular a dos culturas que en la parte  prehispánica estuvieron juntas. Nosotros arrancamos este año con la buena  relación diplomática en un encuentro que denominamos el encuentro del Jaguar y  el encuentro del Quetzal, se llevó a cabo en la casa de Xicoténcatl, el antiguo  palacio del Senado. </p>
+<p align="justify">El Quetzal es el símbolo de la cultura de los  guatemaltecos; mientras que el Jaguar representa una unión entre la cultura  maya de las que compartimos en comunión en el sur de México y en la parte de  Centroamérica. </p>
+<p align="justify">Por eso, es que para este Senado hoy tenemos una  gran congratulación para poder establecer más años de cooperación y estoy  cierto que así va a ser, tenemos un respeto profundo a los migrantes que vienen  en mejores búsquedas de oportunidades, somos un país solidario y fraterno. Y  déjenme dar una aportación, la mayor productividad que se da de café en el sur  de México se hace en Chiapas.</p>
+<p align="justify">Y gracias a la mano de obra que viene de Guatemala,  que vienen por cierto bien pagados, con sus integrantes de su familia, ahora  tenemos en puerta una discusión que seguramente se va a aprobar, darle  asistencia de seguridad social a los jornaleros agrícolas temporales. </p>
+<p align="justify">Y les tengo una mejor y buena noticia, siete días  es el permiso que tienen de estancia quienes nos visitan de manera turística.  En próximos días seguramente vamos a aprobar para que llegue a estar a 21 días  la estancia de las familias guatemaltecas en los límites de la frontera sur. </p>
+<p align="justify">Este Senado trabaja con sentido hospitalario,  humanitario y dejen reconocer este día a esta gran patria que son ustedes. </p>
+<p align="justify">Guatemala, gente buena. Guatemala, gente  trabajadora. Y México siempre los va a recibir con los brazos abiertos. </p>
+<p align="justify">Como decía José Martí: <em>&ldquo;haga hombres quien  quiera hacer pueblos&rdquo;.</em> Y nosotros estamos haciendo patria y tener ese  espíritu de una América unida.</p>
+<p align="justify">Es cuanto, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Muchas gracias, Senador Eduardo  Ramírez. </p>
+<p align="justify">Conforme al Acuerdo aprobado para normar la  celebración de esta sesión solemne en la Comisión de Relaciones Exteriores del  Congreso de la República de Guatemala, el Honorable Diputado Manuel Eduardo  Conde Orellano, dirigirá un mensaje a la Asamblea. </p>
+<p align="justify">En consecuencia, se le concede el uso de la  palabra. Adelante, señor Diputado.</p>
+<p align="justify"><strong>El Diputado Manuel Eduardo Conde Orellano: </strong>Señor Presidente del Senado de la  República. Señores y señoras miembros de la Mesa Directiva. Senadora Beatriz  Paredes, querida amiga; </p>
+<p align="justify">Señores Senadores y Senadoras de la República;  Señores Embajadores, Romeo Ruiz Armento y Marco Tulio Chica; Señores Cónsules  Honorarios; Invitados especiales; Señores miembros de las representaciones  diplomáticas; Señores representantes de los medios de comunicación; Invitados  especiales: </p>
+<p align="justify">Representa un privilegio y un honor para mí estar  este día en este Senado, puedo decirles que me siento en casa, mi mundo es el  mundo parlamentario, mi mundo es el Congreso de la República de mi país, soy  tercera generación de congresistas en familia, así que llegar a este recinto,  casa de la democracia mexicana, es venir a casa, es sentirme en familia. </p>
+<p align="justify"> Y por esa razón quisiera, en primer orden,  agradecer a México, a su gente, a su pueblo, todo lo que ha dado a mi país,  todo lo que nos ha dado México. Más allá de una buena vecindad, México ha sido  con Guatemala un pueblo solidario, un pueblo amable, un pueblo fraterno. Y eso  muchas veces se pone a prueba en los momentos de dificultad. </p>
+<p align="justify">México sabe lo que es vivir un terremoto, en  Guatemala lo vivimos en 1976. Y quiero decirles que nunca olvidaré cuando el  pueblo mexicano se hizo presente con la entidad Conasupo y nos llevaban  alimentos a los pueblos devastados por el terremoto. Nunca olvidaré los  rescatistas, nunca olvidaré las brigadas que en ese momento llegaron al país.</p>
+<p align="justify">Cuando digo &ldquo;primero agradecer&rdquo; es también  agradecer a México, lo que México hizo por nosotros cuando asumimos el reto de  terminar la lucha armada interna, que en aquel momento llevaba 31 años de  vigencia. </p>
+<p align="justify">En 1991 México abrió sus puertas, abrió su mente,  abrió su corazón y sus brazos para que se desarrollaran en México los diálogos  por la paz de Guatemala. Tuve el enorme privilegio de ser presidente del equipo  negociador que por parte del gobierno llevó a cabo esa negociación con la  Unidad Revolucionaria Nacional Guatemalteca (URNG), que aglutinaba a los grupos  guerrilleros guatemaltecos. Y fue México, fueron sus autoridades y fue su  pueblo el que supo ser solidario con nosotros. </p>
+<p align="justify">Afortunadamente, para 1996 alcanzamos la firma del  Acuerdo de Paz Firme y Duradera, y así como México creyó en nosotros en 1991 y  concluimos en 1996 ese esfuerzo, me honra mucho decirles a ustedes que son la  representación democrática del pueblo de México, que ese esfuerzo valió la  pena, que de 1996 a la fecha nunca más se ha emplazado un arma entre hermanos  guatemaltecos, que desde ese momento nunca más volvimos a vivir la experiencia  de la muerte entre hermanos. </p>
+<p align="justify">Eso se sembró en territorio mexicano, ese esfuerzo  lo iniciamos acá. </p>
+<p align="justify">Y con mucha satisfacción, pero con mucha  responsabilidad, afirmo que eso en lo que México nos acompañó dio ese fruto,  que 25 años después nos llena de satisfacción y de alegría, no sólo por haber  callado las armas, sino por haber sido capaces de abrirle las puertas anchas a  la reconciliación.</p>
+<p align="justify">Y aquellos hermanos que un día portaron un arma  perteneciendo a los grupos guerrilleros o aquellos hermanos que portaban las  armas por ser miembros del Ejército o ser miembros de las patrullas civiles o  ser miembros de los comisionados militares, esos hermanos se rencontraron en  paz, esos hermanos hoy trabajan unidos, esos hermanos volvieron a sus pueblos,  volvieron a sus tradiciones y costumbres y hoy son gente que trabaja unida  buscando el desarrollo y la prosperidad de sus comunidades. </p>
+<p align="justify">El ser ejemplo para muchos países que han vivido la  experiencia de las luchas armadas internas y poder decir esto en este recinto  me llena de satisfacción y me llena de compromiso para seguir trabajando en mi  país, por esa construcción de la paz social en la que estamos encaminados, pero  no podía menos que dar gracias a México, y en este lugar y ante ustedes,  señoras y señores Senadores, porque es lo menos que podemos hacer. </p>
+<p align="justify">Ahora quiero llamar a unas reflexiones. </p>
+<p align="justify">Primero. Como bien lo decía o lo han dicho quienes  me antecedieron en el uso de la palabra: Guatemala y México sabemos de dónde  venimos, sabemos en dónde estamos y sabemos hacia dónde vamos, y eso nos une  aún más, la vida en común no solo en nuestras zonas fronterizas. En nuestras  zonas fronterizas es una feliz realidad.</p>
+<p align="justify">Tenemos familias guatemaltecas viviendo en México y  familias mexicanas viviendo en Guatemala. </p>
+<p align="justify"> Tenemos familias que se han unido casando hijos e  hijas, tenemos compadres y comadres que bautizan hijos en las zonas fronterizas  y eso nos une y eso nos estrecha y eso nos identifica, pero más que eso tenemos  muchos jóvenes guatemaltecos formándose en universidades mexicanas.</p>
+<p align="justify">Tenemos muchos emprendedores mexicanos haciendo  empresas en Guatemala. Tenemos la presencia de importantes grupos empresariales  mexicanos que son atraídos por la economía de nuestro país; nos precia decir  que tenemos 23 años de tener una estabilidad cambiaria y monetaria que es  atractiva para la inversión y los grupos empresariales mexicanos han acudido,  con cierto, a buscar su participación en la economía guatemalteca. </p>
+<p align="justify">Tenemos mucho en común, tenemos retos, tenemos  ideales, tenemos objetivos. Hoy, que vivimos en un mundo globalizado podemos  decir que las relaciones entre Guatemala y México son de la cotidianidad; los  vuelos que nos trasladan de un país a otro, las vías de carretera que nos  comunican. Tenemos ocho puestos fronterizos y estamos por activar tres  fronteras de atención común, eso es la unidad que estamos viviendo entre  Guatemala y México.</p>
+<p align="justify">Tenemos espacios que debemos cuidar, compartimos la  Cuenca de Mirador que la que tiene la presencia de la Metrópoli más importante  de la civilización Maya, es un territorio en común la Cuenca de Mirador y es  responsabilidad nuestra mexicana y guatemalteca cuidar ese espacio para  ofrecerlo al mundo como uno de los recintos en los cuales vivió una  civilización que, comparada con otras civilizaciones superó, por mucho, la  ciencia, la investigación, la medicina, la arquitectura. Y eso es nuestro, es  de México y de Guatemala y es algo que debemos cuidar. </p>
+<p align="justify">Tenemos tanto en común, nos apreciamos de saber y  sentir que la democracia en México se consolida, que las instituciones  democráticas funcionan en México, pero de la misma manera, en Guatemala  consolidamos la democracia y caminamos por la ruta correcta en el  fortalecimiento de nuestras instituciones democráticas.</p>
+<p align="justify">Tenemos retos en común. Uno de los grandes retos en  común nos representa las migraciones irregulares, las migraciones irregulares  que ya no son solo de centroamericanos que buscan llegar más al norte de  México, pero que tienen que transitar por Guatemala ya por México, esas  migraciones irregulares, hoy, son también de gente que viene del Caribe, de  personas asiáticas, de gente que viene de otras latitudes pero que  necesariamente tienen que cruzar nuestros territorios. </p>
+<p align="justify">Esas migraciones  irregulares  nos han llevado a muchos de  los guatemaltecos a sufrir tragedias en suelo mexicano, pero tengo  que reconocer y tengo que expresar la gratitud  de Guatemala, porque hemos visto la voluntad de la institucionalidad mexicana  en términos de la investigación, en términos de juzgamiento, en términos del  castigo, y por qué no decirlo también, en términos de la reparación justa para  aquellos que por razones ingratas han dejado sus vidas calcinados o bien,  ahogados dentro de un contenedor. </p>
+<p align="justify">México se ha portado como  se debe portar, la institucionalidad mexicana ha funcionado, ha sido  responsable y tenemos gratitud también por eso. </p>
+<p align="justify">Las migraciones  irregulares, emigrar es un derecho humano, pero regularizar esas migraciones es  deber de Guatemala y de México, y en eso hemos sido solidarios acompañantes,  hemos sido solidarios ejecutores de las medidas que corresponden de uno o del  otro lado de las fronteras. </p>
+<p align="justify">Con eso en común, podemos  decir que hay otros flagelos que también enfrentamos con valor y decisión  dentro del marco de nuestras legislaciones, enfrentamos los flagelos de la  droga, enfrentamos los flagelos del tráfico de armas y los flagelos de la trata  de personas, pero eso lo hacemos en común, nuestros sistemas de seguridad están  muy bien comunicados, están muy bien coordinados, y hacemos esa lucha  permanentemente. </p>
+<p align="justify"> Dicho esto, me permito  ahora mencionar en este recinto, tenemos más quehacer, tenemos cada día más  quehacer para generar el desarrollo y la prosperidad en nuestros pueblos. </p>
+<p align="justify">Tenemos todavía más  quehacer para sacar a muchos guatemaltecos y mexicanos de la pobreza, para  sacarlos de la marginación y para sacarlos a espacios de oportunidad y ese  deber lo tenemos quienes estamos en la toma de decisiones, ese deber lo tenemos  quienes podemos influir positivamente para cambiar la vida de esta gente y eso  también nos identifica con México. </p>
+<p align="justify">Vemos que en México hay  un esfuerzo sostenido para llevar el desarrollo a los lugres más lejanos, a los  lugares más olvidados y en Guatemala estamos también en ese esfuerzo. </p>
+<p align="justify">Esa causa común nos  permite hoy, mañana, pasado mañana, saber que México tiene en Guatemala un  solidario acompañante en sus esfuerzos, y Guatemala tiene en México un  solidario acompañante en sus esfuerzos. </p>
+<p align="justify">Dicho esto, yo me permito  terminar mi alocución diciéndoles, ustedes hoy representan a un país ejemplar  para el mundo, ustedes hoy representan a un país que supo insertarse en el  primer mundo, insertarse en los comercios internacionales, insertarse en los  esfuerzos colectivos válidos y legítimos dentro del marco de una democracia que  ustedes construyen cada día. Eso para nosotros es un ejemplo, eso para nosotros  es una motivación y eso para nosotros es un reto. </p>
+<p align="justify">Les invito   de todo corazón a que visiten Guatemala, les  invito de todo corazón a que lleguen a nuestro país, que puedan ver que tenemos  también mucho que ofrecer, que tenemos mucho que dar y que estamos como  ustedes, dispuestos a compartirlo.</p>
+<p align="justify">Gracias, hermanos  mexicanos, gracias, hermanos Senadores, gracias hermanos parlamentarios, porque  hoy la diplomacia parlamentaria es y debe ser esa diplomacia que una a nuestros  pueblos, que una a quienes estamos en las posiciones políticas, que una a  quienes estamos dispuestos a transformar nuestros países para que sen  sociedades mejores, que sean sociedades en las que dé gusto vivir y que sean  sociedades en las que nuestros esfuerzos se vean reflejados en el bienestar de  todos, de todos los mexicanos y de todos los guatemaltecos. </p>
+<p align="justify">Gracias por este espacio  que me han brindado, gracias por esta oportunidad y celebro, como celebran  ustedes, 175 años de vida, de relaciones diplomáticas ininterrumpidas, 175 año  que no han servido para aprender unos de otros, 175 años que deben de estar en  la memoria de las generaciones presentes y futuras. </p>
+<p align="justify">Gracias,  hermanos mexicanos, ha sido para mí un honor, un privilegio y un gusto enorme  poder dirigirme a ustedes.</p>
+<p align="justify">Muchas  gracias.</p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Señor Presidente y Diputado  Conde Orellana, muchas gracias por su mensaje.</p>
+<p align="justify">A nombre  del Senado de la República le agradezco su visita y la de su comitiva a esta  sesión solemne.</p>
+<p align="justify">Su asistencia  a esta sesión es muestra de la importancia de mantener los contactos entre  nuestras instituciones parlamentarias.</p>
+<p align="justify"> Agradezco  a las distinguidas invitadas e invitados que hoy acompañan al señor Diputado  Manuel Eduardo Conde Orellana, y de la misma forma les pido que nos acompañen  para la fotografía oficial.</p>
+<p align="justify">Si son  tan gentiles, José Luis Alvarado Valenzuela, al señor Daniel Ruiz, al señor  Martín Alonso Borrego, a la señora Dora Elizabeth Olmedo Santos, al señor Romeo  Ruiz Armenta, a la licenciada Sandra Mayorga, al excelentísimo señor Marco  Tulio Gustavo, al señor Carlos Reyes, al señor Javier Dávila Torres, al señor  Raúl Rocha Cantú y al señor Federico José Villacorta Mirón, sin son tan  gentiles.</p>
+<p align="center">(Toma de  foto en el presídium)</p>
+<p align="justify">Muchas  gracias.</p>
+<p align="justify">Vamos a  continuar con esta sesión solemne.</p>
+<p align="justify">Solicito  a las Senadoras y a los Senadores integrantes de la comisión de cortesía se  sirvan acompañar a nuestras invitadas e invitados hasta las puertas de este  recinto, cuando ellos deseen retirarse. </p>
+<p align="justify">En ese  mismo sentido, quiero darle la bienvenida y agradecer la presencia al cuerpo  diplomático que hoy nos acompaña. </p>
+<p align="justify">Al señor  Embajador de Hungría, Excelentísimo señor Zoltán. </p>
+<p align="justify">Al señor  Embajador de la República de Paraguay, Excelentísima señora Gloria Amarilla  Acosta.</p>
+<p align="justify">Al cuerpo  diplomático que nos acompaña con la Embajadora de la República Dominicana,  Excelentísima señora María Isabel Castillo Báez. </p>
+<p align="justify">Al señor  Embajador del Reino de Tailandia, Excelentísimo señor Paisan. </p>
+<p align="justify">A la  señora Embajadora de Ucrania, Excelentísima señora Oksana. </p>
+<p align="justify">¡Bienvenida!</p>
+<p align="justify">Al señor  Embajador de la República Bolivariana de Venezuela, Excelentísimo señor  Francisco Javier Arias Cárdenas. </p>
+<p align="justify">Al señor  Embajador de la República de Costa Rica, Excelentísimo señor Pablo Heriberto  Abarca. </p>
+<p align="justify">Así como  al señor Embajador de la República de Argelia Democrática y Popular,  Excelentísimo señor Belcans. </p>
+<p align="justify">Y, desde  luego, a los integrantes del cuerpo diplomático de Australia, la señora  Patricia Oloms, encargada de negocios. </p>
+<p align="justify">Al  encargado de negocios de la República de Haití, el señor Rodiling. </p>
+<p align="justify">Así como  al encargado de negocios de la República de Honduras, el señor Dimas Alexi  Escobar. </p>
+<p align="justify">Como de  Rumania, Excelentísimo señor Gabriel Lazurca. </p>
+<p align="justify">De la  República de Austria, al Ministro Joans, encargado de negocios. </p>
+<p align="justify"> Así como  al encargado del cuerpo diplomático, Excelentísimo señor Óscar Lorenzo. </p>
+<p align="justify">También  del Estado Plurinacional de Bolivia, nos acompaña el ingeniero Ricardo Aguirre,  Primer Secretario. </p>
+<p align="justify">Como de  la República de Nicaragua, su Excelentísimo señor Juan Carlos Gutiérrez. </p>
+<p align="justify">A la  representación de la República Portuguesa, Excelentísimo señor Manuel María  Camacho. </p>
+<p align="justify">Al  representante de la República Libanesa, Excelentísimo señor Samick. </p>
+<p align="justify">De la  República de Cóte, Excelentísimo señor Robert Lee. </p>
+<p align="justify">Y de la  República de Ecuador, Ministro Alfonso Polo. </p>
+<p align="justify">Muchas  gracias, distinguidos Ministros e integrantes del cuerpo diplomático de  nuestros países hermanos. </p>
+<p align="justify">Solicito  a las Senadoras y a los Senadores integrantes de la comisión de cortesía se  sirvan acompañar a nuestro representante de la República hermana de Guatemala  hasta las puertas de este recinto.</p>
+<p align="center">(La  comisión cumple)</p>
+<p align="justify">Se  levanta la sesión y muchas gracias por su presencia. </p>
+<p align="center">(Se levanta la sesión  solemne a las 13:32 horas)</p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109271'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

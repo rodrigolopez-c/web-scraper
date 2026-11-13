@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA COMISI&Oacute;N PERMANENTE<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Receso Comisi&oacute;n Permanente</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 8</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Mónica Fernández Balboa</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica de la Comisi&oacute;n Permanente Celebrada<br>en la Ciudad de M&eacute;xico, el 29 de Junio de 2020</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/2/SPR/PDF-WEB/CP._No.8_29_JUNIO_2020.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='91596'></a><p align="center"><strong>PRESIDENCIA  DE LA SENADORA</strong><br>
+  <strong>MÓNICA  FERNÁNDEZ BALBOA</strong></p>
+<p align="justify"><strong>La  Presidenta Senadora Mónica Fernández Balboa: </strong>(10:24  horas) Solicito a la Secretaría pasar lista de asistencia. Buenos días a todas  y a todos. </p>
+<p align="justify"><strong>La Secretaria Senadora Nadia Navarro Acevedo: </strong>Señoras y señores legisladores, daré inicio a la lista de asistencia.</p>
+<p align="right"><a href="https://www.senado.gob.mx/permanente/CP64-2ASPR/Asistencia/620"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Señora Presidenta, tenemos asistencia de  37 ciudadanas y ciudadanos legisladores. Existe quórum para iniciar la sesión. <br>
+  <br>
+  <strong>La Presidenta Senadora  Mónica Fernández Balboa </strong>En virtud de que existe el quórum  reglamentario, se abre la sesión de la Comisión Permanente del Honorable  Congreso de la Unión del lunes 29 de junio de 2020, correspondiente al segundo  receso del segundo año de ejercicio de la LXIV Legislatura. El Orden del Día  está disponible al monitor de sus escaños, con lo cual se informa de los  asuntos que corresponden a la agenda de hoy. Si algún legislador o legisladora  requiere la edición impresa, la puede solicitar a la Secretaría Parlamentaria. </p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-06-29-1/assets/documentos/Acta_CP_28_de_junio_de_2020.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">El acta de la sesión del 28 de junio se  encuentra publicada en la Gaceta de la Comisión Permanente de este día. En  consecuencia, consulte la Secretaría a la Asamblea, en votación económica, si  se aprueba el acta de la sesión anterior. </p>
+<p align="justify"><strong>La Secretaria Senadora  Nadia Navarro Acevedo: </strong>Consulto a la Asamblea, en votación económica,  si se aprueba el acta de la sesión del 28 de junio. Quienes estén por la  afirmativa, por favor levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén por la negativa, favor de  levantar la mano. </p>
+<p align="center">(La Asamblea no  asiente)</p>
+<p align="justify">Aprobada el acta de la sesión del 28 de  junio, señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora  Mónica Fernández Balboa: </strong>Muchas gracias. Aprobada el acta de la sesión  del 28 de junio de 2020.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a91596'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='91597'></a><p align="justify">Se recibió de Diputadas y de Diputados  una iniciativa con proyecto de Decreto por el que la Comisión Permanente del  Honorable Congreso de la Unión convoca a la Cámara de Diputados a celebrar un  primer periodo extraordinario de sesiones durante el segundo receso del segundo  año de ejercicio de la LXIV Legislatura. 
+</p>
+<p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE LA COMISIÓN PERMANENTE DEL HONORABLE CONGRESO DE  LA UNIÓN, CONVOCA A LA CÁMARA DE DIPUTADOS A CELEBRAR UN PRIMER PERIODO DE  SESIONES EXTRAORDINARIAS</strong> <strong>DURANTE EL SEGUNDO  RECESO DEL SEGUNDO AÑO DE EJERCICIO DE LA LXIV LEGISLATURA</strong></p>
+<p align="justify"><strong>(Presentada por las  Diputadas y los Diputados de diversos grupos parlamentarios)</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-06-29-1/assets/documentos/Ini_morena_primer_periodo.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">En virtud de que la iniciativa se  encuentra disponible en el monitor de sus escaños y publicada en la Gaceta de  la Comisión Permanente, solicito a la Secretaría consulte a la Asamblea, en  votación económica, si se omite su lectura. </p>
+<p align="justify"><strong>El Secretario Diputado  Sergio Carlos Gutiérrez Luna: </strong>Consulto a la Asamblea, en votación económica,  si se omite la lectura. Quienes estén por la afirmativa, favor de levantar la  mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén por la negativa, favor de  levantar la mano. </p>
+<p align="center">(La Asamblea no  asiente)</p>
+<p align="justify">Abstenciones. </p>
+<p align="justify">Se autoriza la omisión de la lectura,  señora Presidenta. <br>
+  <br>
+  <strong>La  Presidenta Senadora Mónica Fernández Balboa: </strong>Ha  solicitud de los promoventes, y con fundamento en los artículos 59 y 60 del  Reglamento para el Gobierno Interior del Congreso General de los Estados Unidos  Mexicanos, solicito a la Secretaría consulte a la Asamblea, en votación  económica, si se dispensan todos los trámites, se considera de urgente  resolución y se pone a discusión de inmediato el proyecto de decreto. </p>
+<p align="justify"><strong>El  Secretario Diputado Sergio Carlos Gutiérrez Luna: </strong>Consulto  a la Asamblea, en votación económica, si el asunto referido por la Presidenta  de la Mesa Directiva se considera de urgente resolución. Quienes estén por la  afirmativa, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea asiente)</p>
+<p align="justify">Quienes  estén por la negativa, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p align="justify">Abstenciones. </p>
+<p align="justify">Sí se  autoriza, señora Presidenta. </p>
+<p align="justify"><strong>La  Presidenta Senadora Mónica Fernández Balboa: </strong>En  consecuencia, está a discusión el siguiente proyecto de Decreto, mismo que le  pido al Secretario dar lectura, por favor. </p>
+<p align="justify"><strong>El  Secretario Diputado Sergio Carlos Gutiérrez Luna: </strong>Doy  lectura al Decreto. </p>
+<p align="justify">Decreto  por el que la Comisión Permanente del Honorable Congreso de la Unión convoca a  la Cámara de Diputados a un primer periodo extraordinario de sesiones durante  el segundo receso del segundo año del ejercicio de la LXIV Legislatura. </p>
+<p align="justify">Primero.-  Con fundamento en los artículos 67 y 78, fracción IV de la Constitución  Política de los Estados Unidos Mexicanos, la Comisión Permanente convoca a la  Cámara de Diputados del Honorable Congreso de la Unión a un periodo de sesiones  extraordinarias cuya apertura se celebrará el martes 30 de junio de 2020, a las  12:00 horas, y concluirá una vez que se hayan abordado los temas y asuntos por  los que se convocó. </p>
+<p align="justify">Segundo.-  En el desarrollo de sus sesiones la Cámara de Diputados deberá acatar las  medidas establecidas por las autoridades del sector salud para atender la  emergencia sanitaria generada por el virus SARS-CoV2, en particular la  obligación de no realizar reuniones o congregaciones de más de 50 personas para  disminuir los riesgos de contagio. </p>
+<p align="justify">Tercero.-  En el periodo de sesiones extraordinarias la Cámara de Diputados se ocupará de  discutir y aprobar exclusivamente los siguientes asuntos:</p>
+<p align="justify">1.  Acuerdos de los órganos de gobierno:</p>
+<p align="justify">? De la  Junta de Coordinación Política y de la Mesa Directiva por el que se establecen  las reglas para el desarrollo de la sesión extraordinaria del 30 de junio de  2020.</p>
+<p align="justify">? De la  Conferencia para la Dirección y Programación de los Trabajos Legislativo por el  que se establecen medidas para la práctica de pruebas para detectar el virus  SARS-CoV2. </p>
+<p align="justify">? De la  Conferencia para la Dirección y Programación de los Trabajos Legislativos por  el que se determina el número de asesores que podrán ingresar al registro  legislativo y reducir la probabilidad de contagio. </p>
+<p align="justify">? De la  Junta de Coordinación Política por el que se reanuda el proceso de elección de  Consejeras y Consejeros del Consejo General del Instituto Nacional Electoral.<br>
+  <br>
+  2.  Comunicaciones por las que se da cuenta al Pleno de las minutas remitidas por  la Cámara de Senadores, con relación a las reformas legislativas sobre el  T-MEC, lo anterior en cumplimiento al proceso que se establece en el artículo  72 de la Constitución Política de los Estados Unidos Mexicanos. </p>
+<p align="justify">3.  Discusión y, en su caso, aprobación de las minutas que se reciban por parte de  la Cámara de Senadores, con relación a las reformas legislativas sobre el  T-MEC, lo anterior en cumplimiento al proceso que establece el artículo 72 de  la Constitución Política de los Estados Unidos Mexicanos, que consisten en: </p>
+<p align="justify">Proyecto  de Decreto por el que se expide la Ley Federal de Protección a la Propiedad  Industrial. </p>
+<p align="justify">Proyecto  de Decreto por el que se expide la Ley de Infraestructura de la Calidad y se  abroga la Ley Federal sobre Metrología y Normalización.</p>
+<p align="justify">Proyecto  de decreto por el que se reforman y adicionan diversas disposiciones del Código  Penal Federal.</p>
+<p align="justify">Proyecto  de Decreto por el que se reforman y adicionan diversas disposiciones de la Ley  Federal de Derecho de autor. </p>
+<p align="justify">Cuarto.-  Se solicita a la Presidencia de la Cámara de Diputados que al momento de  recibir las minutas con proyecto de Decreto materia del periodo extraordinario,  que le remita la Colegisladora, someta dichos proyectos a la consideración del  Pleno con dispensa de todos los trámites para su discusión y votación. </p>
+<p align="justify">Quinto.-  La Cámara de Diputados convocará, a través de su Presidencia, a sesiones en las  fechas que sean oportunas para completar el proceso legislativo que establece  el artículo 72 constitucional de las minutas materia del presente Decreto. </p>
+<p align="justify">Sexto.-  Una vez que se consideren atendidos los asuntos referidos en el resolutivo  tercero del presente decreto, la Presidencia de la Cámara de Diputados podrá  emitir la declaratoria de clausura a través de comunicación dirigida a sus  integrantes y notificar a la Colegisladora. </p>
+<p align="justify">Séptimo.-  De conformidad con el artículo 72, inciso j), último párrafo de la Constitución  Política de los Estados Unidos Mexicanos publíquese, el presente decreto en el  Diario Oficial de la Federación. </p>
+<p align="center">Transitorio</p>
+<p align="justify">Único.-  El presente decreto entrará en vigor el día de su publicación en el Diario  Oficial de la Federación.</p>
+<p align="justify">Senado  de la República, sede de la Comisión Permanente del Honorable Congreso de la  Unión, a 29 de junio de 2020.</p>
+<p align="center">Senadora  Mónica Fernández Balboa. Presidenta.</p>
+<p align="center">Diputado  Sergio Carlos Gutiérrez Luna. Secretario.</p>
+<p align="justify">Es  cuanto, señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa:</strong> Gracias, señor Secretario. Previo a la  discusión del proyecto de Decreto, solicito a la Secretaría consulte a la  Asamblea, en votación económica, si autoriza que la discusión del proyecto de Decreto  se realice en lo general y en lo particular en un solo acto. <br>
+  <br>
+  <strong>El Secretario  Diputado Sergio Carlos Gutiérrez Luna:</strong> Consulto a la Asamblea, en votación económica, si se autoriza que la discusión  del proyecto de Decreto se realice en lo general y en lo particular en un solo  acto. Quienes estén por la afirmativa, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea asiente)</p>
+<p align="justify">Quienes  estén por la negativa, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p align="justify">Sí se  autoriza, señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Mónica  Fernández Balboa:</strong> En consecuencia, está a discusión. Al no  haber oradoras ni oradores registrados, proceda la Secretaría a recoger la  votación nominal del proyecto de Decreto en lo general y en lo particular, por  favor. </p>
+<p align="justify"><strong>El  Secretario Diputado Sergio Carlos Gutiérrez Luna:</strong> Se va  a recoger la votación nominal. Iniciaremos por el lado derecho del salón. Se  solicita a las y los legisladores que activen el micrófono de su escaño y  manifiesten el sentido de su voto. Se les solicita que hecho lo anterior,  desactiven su micrófono. </p>
+<p align="justify">¿Alguien  más del Pleno que falte por emitir su voto? Procedo a tomar la votación de la  mesa Directiva.</p>
+<p align="right"><a href="https://www.senado.gob.mx/64/votacion/3629"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Se obtuvieron 37 votos a favor, es  decir, señora Presidenta, por unanimidad se reúnen más de las dos terceras  partes que exige la fracción IV del artículo 78 constitucional. </p>
+<p align="justify">Por lo tanto, se aprueba. </p>
+<p align="justify"><strong>La  Presidenta Senadora Mónica Fernández Balboa:</strong> En consecuencia, queda  aprobado en lo general y en lo particular el proyecto de Decreto por el que la  Comisión Permanente convoca a la Cámara de Diputados a un primer periodo de  sesiones extraordinarias durante el segundo receso del segundo año de ejercicio  de la LXIV Legislatura. Comuníquese este Decreto al Ejecutivo Federal, a las  Cámaras del Honorable Congreso de la Unión y a la Suprema Corte de Justicia de  la Nación. Publíquese en el Diario Oficial de la Federación. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a91597'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='91598'></a><p align="justify">Se recibió también de Diputadas y  Diputados, una iniciativa con proyecto de Decreto por el que la Comisión  Permanente del Honorable Congreso de la Unión convoca a la Cámara de Diputados  a celebrar un segundo período extraordinario de sesiones durante el segundo receso  del segundo año de ejercicio de la LXIV Legislatura.</p>
+<p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE LA COMISIÓN PERMANENTE DEL HONORABLE CONGRESO DE  LA UNIÓN, CONVOCA A LA CÁMARA DE DIPUTADOS A CELEBRAR UN SEGUNDO PERIODO DE  SESIONES EXTRAORDINARIAS</strong> <strong>DURANTE EL SEGUNDO  RECESO DEL SEGUNDO AÑO DE EJERCICIO DE LA LXIV LEGISLATURA</strong></p>
+<p align="justify"><strong>(Presentada por las  Diputadas y los Diputados de diversos grupos parlamentarios)</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-06-29-1/assets/documentos/Ini_morena_segundo_periodo.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">En virtud de que la iniciativa se  encuentra disponible en el monitor de sus escaños y publicada en la Gaceta de  la Comisión Permanente, solicito a la Secretaría consulte a la Asamblea, en  votación económica, si se omite la lectura. </p>
+<p align="justify"><strong>La Secretaria Senadora  Nadia Navarro Acevedo:</strong> Consulto a la Asamblea, en votación económica,  si se omite la lectura. Quienes estén por la afirmativa, favor de levantar la  mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén por la negativa, favor de  levantar la mano.</p>
+<p align="center">(La Asamblea no  asiente)</p>
+<p align="justify">Sí se autoriza, señora Presidenta. </p>
+<p align="justify"><strong>La  Presidenta Senadora Mónica Fernández Balboa:</strong> A solicitud de los  promoventes y con fundamento en los artículos 59 y 60 del Reglamento para el  Gobierno Interior del Congreso General de los Estados Unidos Mexicanos,  solicito a la Secretaría consulte a la Asamblea, en votación económica, si se  dispensan todos los trámites, se considera de urgente resolución y se pone a  discusión de inmediato el proyecto de Decreto. </p>
+<p align="justify"><strong>La Secretaria Senadora  Nadia Navarro Acevedo:</strong> Consulto a la Asamblea, en votación económica,  si el asunto referido por la Presidenta de la Mesa Directiva se considera de  urgente resolución. Quienes estén por la afirmativa, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify"> Quienes estén por la negativa, favor de  levantar la mano.</p>
+<p align="center">(La Asamblea no  asiente)</p>
+<p align="justify">Sí se autoriza, señora Presidenta. </p>
+<p align="justify"><strong>La  Presidenta Senadora Mónica Fernández Balboa:</strong> En consecuencia, está  a discusión el siguiente proyecto de Decreto que solicito a la Secretaría dé  lectura. <br>
+  <br>
+  <strong>La  Secretaria Senadora Nadia Navarro Acevedo:</strong> Decreto por el que la Comisión Permanente del Honorable Congreso de la Unión  convoca a la Cámara de Diputados a un segundo periodo extraordinario de  sesiones durante el segundo receso del segundo año de ejercicio de la LXIV  Legislatura. </p>
+<p align="justify">Primero.-  Con fundamento en los artículos 67 y 78, fracción IV de la de la Constitución Política de los  Estados Unidos Mexicanos, la Comisión Permanente convoca a la Cámara de  Diputados del Honorable Congreso de la Unión a un segundo periodo de sesiones  extraordinarias, que se realizará el miércoles 22 de julio de 2020 a las 12:00  horas, y concluirá una vez que se hayan abordado los temas y asuntos para los  que se convocó. </p>
+<p align="justify">Segundo.-  En el desarrollo de sus sesiones la Cámara de Diputados deberá acatar las  medidas establecidas por las autoridades del sector salud atender la emergencia  sanitaria generada por el virus SARS-CoV2,  en particular la obligación de no realizar reuniones o congregaciones de más de  50 personas, para disminuir los riesgos de contagio. </p>
+<p align="justify">Tercero.- En este segundo periodo de sesiones  extraordinarias, la Cámara de Diputados se ocupará de discutir y aprobar exclusivamente  los siguientes asuntos: </p>
+<p align="justify">1. Comunicaciones. </p>
+<p align="justify">2. Acuerdo de la Junta de Coordinación Política por el  que se eligen a cuatro Consejeras y Consejeros Electorales del Consejo General  del Instituto Nacional Electoral. </p>
+<p align="justify">Cuarto.- Una vez que se consideren atendidos los  asuntos referidos en el resolutivo tercero del presente Decreto, la Presidencia  de la Cámara de Diputados podrá emitir la declaratoria de clausura a través de  comunicación dirigida a sus integrantes y notificada a la Colegisladora. </p>
+<p align="justify">Quinto.- De conformidad con el artículo 72, inciso j),  último párrafo de la Constitución Política de los Estados Unidos Mexicanos,  publíquese el presente Decreto en el Diario Oficial de la Federación. </p>
+<p align="center">Transitorio </p>
+<p align="justify">Único.- El presente Decreto entrará en vigor el día de  su publicación en el Diario Oficial de la Federación. </p>
+<p align="center">Senado de la República, sede de la Comisión Permanente  del Honorable Congreso de la Unión, a 29 de junio de 2020. </p>
+<p align="center">Senadora Mónica Fernández Balboa, Presidenta. </p>
+<p align="center">Diputado Sergio Carlos Gutiérrez Luna, Secretario. </p>
+<p align="justify">Es cuanto, señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Previo a la discusión del proyecto de Decreto, solicito  a la Secretaría consulte a la Asamblea, en votación económica, si autoriza que  la discusión del proyecto de Decreto se realice en lo general y en lo  particular en un solo acto. <br>
+  <br>
+  <strong>La Secretaria Senadora Nadia Navarro Acevedo:</strong> Consulto a la Asamblea, en votación económica, si se  autoriza que la discusión del proyecto de Decreto se realice en lo general y en  lo particular en un solo acto. Quienes estén por la afirmativa, favor de  levantar la mano. </p>
+<p align="center">(La Asamblea asiente) </p>
+<p align="justify">Quienes estén por la negativa, favor de levantar la  mano. </p>
+<p align="center">(La Asamblea no asiente) </p>
+<p align="justify">Sí se autoriza, señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>En consecuencia, está a discusión. </p>
+<p align="justify">Al no haber oradoras ni oradores registrados, consulte  la Secretaría a la Asamblea la votación nominal del proyecto de Decreto. </p>
+<p align="justify"><strong>La Secretaria Senadora Nadia Navarro Acevedo:</strong> Se va a recoger la votación nominal. Iniciaremos por  el lado derecho del salón. </p>
+<p align="justify">Se solicita a las y los legisladores que activen el micrófono de su  escaño y manifiesten el sentido de su voto. Se les solicita también que una vez  hecho lo anterior, desactiven el mismo. </p>
+<p align="right"><a href="https://www.senado.gob.mx/64/votacion/3630"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Señora Presidenta, se  emitieron un total de 37 votos, todos a favor, cero en contra y cero  abstenciones. </p>
+<p align="justify">Como resultado de la  votación, se reúnen las dos terceras partes de mayoría que exige la fracción IV  del artículo 78 constitucional. </p>
+<p align="justify"><strong>La Presidenta Senadora  Mónica Fernández Balboa: </strong>En consecuencia, queda aprobado en  lo general y en lo particular el proyecto de Decreto por el que la Comisión Permanente  convoca a la Cámara de Diputados a un segundo periodo de sesiones  extraordinarias durante el segundo receso del segundo año de ejercicio de la  LXIV Legislatura. Comuníquese este Decreto al Ejecutivo Federal, a las Cámaras  del Honorable Congreso de la Unión y a la Suprema Corte de Justicia de la  Nación. Publíquese en el Diario Oficial de la Federación. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a91598'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='91599'></a><p align="justify"><strong>PROPOSICIÓN CON PUNTO DE ACUERDO</strong></p>
+<p align="justify">Compañeras y compañeros  legisladores, informo que la proposición con punto de Acuerdo del Senador Primo  Dothé Mata, del grupo parlamentario de Morena, por el que se exhorta al  Director General del Instituto del Fondo Nacional de Vivienda para los  Trabajadores a cancelar los contratos a proveedores de soluciones de cobranza  que apoyan en las diferentes etapas de la recuperación de crédito, en virtud de  los sistemáticos abusos cometidos en perjuicio de los trabajadores  derechohabientes; así como a establecer mecanismos para recuperar todas las  carteras de clientes otorgadas por adjudicación directa a los proveedores en  mención, inscrito en el Orden del Día de esta sesión, se turna a la Tercera  Comisión. </p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/2/2020-06-29-1/assets/documentos/PA_Sen_Primo_Sistematicos_Derechohabientes.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Pasamos al siguiente  asunto. </p>
+<p align="justify"><strong>El Secretario Diputado  Sergio Carlos Gutiérrez Luna:</strong> Doy lectura al Orden  del Día de la próxima sesión. (Leyó) </p>
+<p align="justify">Señora Presidenta, se  han agotado los asuntos de cartera. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a91599'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='91600'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora  Mónica Fernández Balboa: </strong>Gracias. Se levanta la sesión y se  cita a la siguiente el miércoles 8 de julio de 2020 a las 12:00 horas. </p>
+<p align="justify">La Mesa Directiva les  avisará oportunamente la modalidad de nuestra próxima sesión. </p>
+<p align="center">(Se levantó la sesión a las 10:52 horas<a name="_GoBack"></a>) </p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Comisión Permanente del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a91600'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

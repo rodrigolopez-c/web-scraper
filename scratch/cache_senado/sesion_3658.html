@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 14</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Laura Itzel Castillo Juárez</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 30 de Septiembre de 2025</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/2/PPO/PDF-WEB/PPO_No14_30-SEPTIEMBRE-2025_SOLEMNE.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/cavDTBNCzjU?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='123299'></a><p align="center"><strong>PRESIDE  LA SENADORA</strong><br>
+  <strong>LAURA  ITZEL CASTILLO JUÁREZ</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>(11:03  horas) Con el quórum de nuestra sesión ordinaria, conforme a la fracción VII  del artículo 56 del Reglamento del Senado, y en el acuerdo aprobado el 18 de  septiembre pasado, iniciamos la sesión solemne para la entrega del Premio al  Mérito Literario &ldquo;Rosario Castellanos&rdquo;, correspondiente al año 2024, a la  escritora Silvia Molina. </p>
+<p>Pido  a las Senadoras Beatriz Mojica Morga, María Martina Kantún Can, Susana Harp  Iturribarria, Ivideliza Reyes Hernández, Maki Esther Ortiz Domínguez y Amalia  Dolores García Medina, acudan a recibir a nuestra galardonada, la escritora  Silvia Molina. </p>
+<p>En  tanto, declaramos un receso. </p>
+<p align="center">(La  comisión cumple)</p>
+<p align="center">(RECESO)</p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Se  reanuda la sesión solemne.</p>
+<p>Senadoras  y Senadores;</p>
+<p>Distinguidas  personas invitadas que nos honran con su presencia: </p>
+<p> En  el presídium nos acompañan la escritora Silvia Molina, quien recibirá el Premio  al Mérito Literario &ldquo;Rosario Castellanos&rdquo;, correspondiente al año 2024.</p>
+<p>El  poeta Mardonio Carballo, quien acude en representación del Presidente de la  Suprema Corte de Justicia de la Nación.</p>
+<p>Y  la Senadora Beatriz Mojica Morga, Presidenta de la Comisión de Cultura. </p>
+<p>También  nos acompaña Gabriel Guerra Castellanos, hijo de Rosario Castellanos. </p>
+<p>La  Senadora Verónica Noemí Camino Farjat, Vicepresidenta. </p>
+<p>La  Senadora Imelda Margarita Sanmiguel Sánchez, Vicepresidenta. </p>
+<p>La  Senadora Mariela Gutiérrez Escalante. </p>
+<p>La  Senadora María Martina Kantún Can.</p>
+<p>Ambas  Secretarias. </p>
+<p>También  nos acompañan las hijas de nuestra galardonada, la licenciada Silvia Verónica  Molina Pérez y la licenciada Claudia Molina Pérez, bienvenidas.</p>
+<p>Así  como María Cristina García Cepeda.</p>
+<p>Valentina  Torres Septién.</p>
+<p>La  doctora Rosa Beltrán Álvarez.</p>
+<p>La  licenciada Isabel Margarita Ortiz Aja.</p>
+<p>La  licenciada Ángeles González Gamio.</p>
+<p>El  maestro Marcos Medrano.</p>
+<p>Gerardo  Jaramillo Herrera. </p>
+<p>La  maestra María del Socorro Venegas Pérez. </p>
+<p>Y  Diego Echeverría Cepeda. </p>
+<p>También  le damos la bienvenida a la Diputada Alma Lidia De la Vega Sánchez, Presidenta  de la Comisión de Cultura y Cinematografía, quien acude en representación de la  Cámara de Diputados. </p>
+<p>Hacemos  también mención especial de la presencia de la licenciada Mónica María Salcedo  Medrano, el maestro Ezra David García Alcázar, la maestra Paola Morán Leyva y  de Nadia López también, quienes integraron el jurado de este Premio y por ello  les agradecemos en todo lo que vale esta importancia colaboración. </p>
+<p>Del  mismo modo, damos las gracias por su asistencia a todas las demás personas que  nos acompañan en esta sesión solemne que honra a las letras. </p>
+<p>Como  es de su conocimiento, el 30 de marzo de 2021 se publicó en el Diario Oficial  de la Federación el Decreto por el que se crea el Premio al Mérito Literario  &ldquo;Rosario Castellanos&rdquo; y se reforma el Reglamento del Senado de la República  para reconocer a escritoras y escritores con obra consolidada escrita en idioma  español o en cualquiera de las lenguas originarias de Latinoamérica y que  pertenezcan a los géneros literarios de la narrativa, dramaturgia, poesía o  ensayo. </p>
+<p> Este  premio ya ha sido entregado en tres oportunidades, la primera a la escritora  Elsa María Cross y Anzaldúa, la segunda a la maestra Luisa Josefina Hernández y  Lavalle, y la tercera al poeta Francisco Hernández.</p>
+<p>Para  esta ocasión, recuerdo a ustedes que el 6 de noviembre de 2024 la Comisión de  Cultura emitió la convocatoria correspondiente en la que establecieron las  bases para la recepción de candidatas y candidatos al Premio al Mérito  Literario &ldquo;Rosario Castellanos&rdquo; 2024.</p>
+<p>Como  resultado de lo anterior, el 29 de abril pasado aprobamos por unanimidad un  acuerdo por el que se estableció que la galardonada fuese la escritora Silva  Molina.</p>
+<p>En  consecuencia, solicito a la Senadora María Martina Kantún Can, Secretaria de la  Mesa Directiva, dé lectura a la semblanza de la escritora &ldquo;Rosario  Castellanos&rdquo;. </p>
+<p><strong>La  Secretaria Senadora María Martina Kantún Can: </strong>Muy  buenos días a todos. </p>
+<p>Bienvenidos  a su casa, al Senado de la República. </p>
+<p>Hoy  nos convoca la memoria de una mujer que es raíz y vuelo de nuestra cultura:  Rosario Castellanos Figueroa, nacida el 25 de mayo de 1925 en el entonces  Distrito Federal. </p>
+<p>Pero  ese sólo fue un tránsito, porque su destino la llevó pronto a Comitán de  Domínguez, Chiapas, tierra donde su infancia echó hondas raíces. </p>
+<p>Desde  temprana edad el conocimiento fue su horizonte.</p>
+<p>Tras  sus estudios iniciales, retornó a la capital a los 16 años, con la intención de  abrazar la jurisprudencia en la Universidad Nacional Autónoma de México. </p>
+<p>Sin  embargo, su vocación profunda la condujo a la filosofía donde no solo obtuvo la  licenciatura, sino también la maestría, con una tesis sobre la cultura femenina  que prefiguraba su destino intelectual. </p>
+<p>Empezó  como becaria del Instituto de Cultura Hispanoamericana y en el Centro Mexicano  de Escritores, pero su espíritu inquieto la trasladó hasta la Universidad de  Madrid. </p>
+<p>A  su regreso, en 1952 asumió la dirección del Instituto Chiapaneco de la Cultura,  sembrando ahí la sabiduría adquirida, con una visión amplia y humana; su  sensibilidad la llevó a escribir textos escolares en el Instituto Nacional  Indigenista y, más tarde, de 1962 a 1971 a enseñar en la Facultad de Filosofía  y Letras de la UNAM, donde impartió literatura contemporánea, novela  contemporánea y crónica. </p>
+<p>Integrante  de la llamada generación del medio siglo, junto a plumas como Jaime Sabines,  Juan Rosé Arreola, Juan Rulfo, Jorge Ibargüengoitia y Carlos Fuentes; pero  Rosario Castellanos tenía una visión especial que la distinguió en dar voz a lo  silenciado: &ldquo;La desigualdad de las mujeres y los pueblos indígenas&rdquo;. </p>
+<p>De  su pluma, nacieron obras imprescindibles; en la prosa, Balún Canán, Oficio de  Tinieblas y Ciudad Real que conforman la trilogía indigenista más importante de  nuestra narrativa. </p>
+<p>Los  Convidados de Agosto y Álbum de Familia abordan las relaciones de poder y  sometimiento de la mujer mexicana. </p>
+<p> En  la reflexión feminista: Mujer que Sabe Latín, Apuntes para una Declaración de  Fe, Trayectoria del Polvo y la célebre compilación Poesía No Eres Tú. </p>
+<p>Dieron  causa a un pensamiento que aún nos ilumina y en el eterno feminismo publicada  tras su muerte, su voz se volvió estandarte de este movimiento que transformó  México. </p>
+<p>Su  carrera trascendió las letras, en 1971 fue nombrad embajadora en Israel, donde,  en medio de tensiones y guerras, permaneció firme, siendo recordada como la  embajadora de la paz en la adversidad. </p>
+<p>En  ella, convivieron la diplomática capaz y de escritora insigne, la mujer que  supo conjugar inteligencia con respeto y sensibilidad. </p>
+<p>El  7 de agosto de 1974, la muerte sorprendió a Rosario Castellanos demasiado  pronto, pero su legado inmenso e imperecedero la hizo merecedora de reposar en  la Rotonda de Personas Ilustres, donde una inscripción nos recuerda: &ldquo;Sabe, que  entre mis labios de granito quedaron detenidas las palabras&rdquo;. </p>
+<p>Decía  ella misma que partida era levantarse la memoria, la risa, el río y el aire. </p>
+<p>En  México, la despedimos bajo la lluvia y la convertimos en parque, en escuela, en  libro abierto para todas y todos, la devolvimos a la tierra como símbolo, como  certeza de que su voz no se apaga. </p>
+<p>Rosario  Castellanos no solo pertenece al pasado, su palabra sigue vigente, viva,  necesaria.</p>
+<p>Es,  y será por siempre, orgullo de la patria. </p>
+<p>Muchas  gracias. </p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez:</strong> Muchas gracias, Senadora Secretaria.</p>
+<p>Ahora,  se le concede el uso de la palabra a la senadora Beatriz Mojica Morga,  Presidenta de la Comisión de Cultura, a nombre del Senado de la República. </p>
+<p><strong>La  Senadora Beatriz Mojica Morga: </strong>Con su venia, presidenta  Senadora Laura Itzel Castillo, Presidenta de la Cámara de Senadores y  Senadoras. </p>
+<p>Diputada  Alma Lidia de la Vega Sánchez, presidenta de la Comisión de Cultura, en  representación de la Cámara de Diputados. </p>
+<p>Saludamos  a Gabriel Guerra Castellanos, hijo de Rosario Castellanos. </p>
+<p>Muchas  gracias por acompañarnos. </p>
+<p>Les  damos la bienvenida a todas y todos ustedes. </p>
+<p>A  las hijas de nuestra galardonada, la licenciada Silvia Verónica Molina Pérez. </p>
+<p>Y  a la licenciada Claudia Molina Pérez. </p>
+<p>Muchísimas  gracias. </p>
+<p>Al  poeta Mardonio en representación de la Suprema Corte. </p>
+<p> Muchas  gracias por acompañarnos. </p>
+<p>Agradecemos  mucho el trabajo que hicieron nuestros jurados en este Premio &ldquo;Rosario  Castellanos&rdquo;. </p>
+<p>Muchísimas  gracias por su apoyo, porque sin ello no sería posible el día de hoy entregar  este importante Premio &ldquo;Rosario Castellanos&rdquo;. </p>
+<p>Estamos,  sin lugar a dudas…</p>
+<p>Y  saludamos a todos los invitados. </p>
+<p>Muchísimas  gracias por acompañarnos. </p>
+<p>Estamos,  sin lugar a dudas, en esta celebración y reconocimiento de una gran mujer que  representa este premio, que es Rosario Castellanos, que ha sido guía del  feminismo mexicano, que nos ha inspirado a miles y miles de mujeres en nuestro  país para seguir en la ruta del fortalecimiento de las mujeres. </p>
+<p>Y  por ello, éste es uno de los premios que tiene el Senado de la República que ha  sido importante, hay que decirlo, está también un poco desfasado, vamos a  entregar el premio 2024, porque la pandemia nos desfasó un poco el premio. </p>
+<p>Estamos  muy contentos porque este día el Senado de la República se honra al entregar el  Premio al Mérito Literario &ldquo;Rosario Castellanos&rdquo; 2024 a una mujer cuya voz ha  sido puente entre la intimidad y la historia, entre la memoria individual y la  memoria colectiva. </p>
+<p>Démosle  un gran aplauso a Silvia Molina, por favor. </p>
+<p>Hablar  de Silvia Molina es recorrer los caminos de la literatura mexicana en las  últimas cinco décadas, es recordar a la narradora, ensayista, investigadora y  promotora cultural; que con la misma pasión nos condujo desde las páginas de  &ldquo;La mañana debe ser gris&rdquo;. </p>
+<p>Ya  me autografió por aquí. </p>
+<p>Su  primera novela premiada por el Xavier Villaurrutia, hasta relatos y ensayos que  hoy forman parte de nuestro universo literario. </p>
+<p>Su  narrativa se caracteriza por una honestidad que sacude y una ternura que  reconcilia, su obra amplia y diversa se despliega en cuentos, novelas,  literatura infantil y juvenil, ensayos críticos y textos de difusión histórica. </p>
+<p>Silvia  Molina nos ha mostrado que la palabra escrita puede habitar en todas las  edades, que los niños y las niñas también necesitan libros que despierten la  imaginación, y que las nuevas generaciones merecen un acceso vivo y cercano a  nuestras raíces. </p>
+<p>En  sus páginas hemos encontrado declaraciones que nos anidan en el corazón, como  ella mismo escribió: &ldquo;Tenía derecho a vivir una vida más estimulante de la que  me enseñaron a esperar. Si deseas algo y no haces para obtenerlo, estás  perdida&rdquo;. </p>
+<p>Esta  declaración de fuerza y libertad resume quizá la esencia de la literatura  mujeres y hombres que buscan su lugar, que desafían los límites impuestos, y  que se atreven a imaginar otra vida posible. </p>
+<p>Como  Rosario Castellanos, Silvia Molina ha dado a la palabra un sentido emancipador,  ambas escritoras comparten el gesto de escribir desde la consciencia social.</p>
+<p> Castellanos  habló de la desigualdad y la necesidad de la educación; Molina, desde su propia  trinchera ha mostrado que la escritura es una manera de existir con plenitud y  de resistir al olvido. </p>
+<p>En  cada novela, en cada cuento, en cada ensayo Silvia Molina ha tenido puentes  entre la intimidad y la historia nacional. Ha narrado la vida cotidiana, los  dilemas del amor y la libertad; pero también los ecos de nuestra historia.  Además, ha sabido escuchar las voces que han sido silenciadas y darles un  espacio en la literatura mexicana. </p>
+<p>Al  otorgarle este reconocimiento, no solo celebramos su trayectoria, sino también  la permanencia de la palabra como herramienta de dignidad. </p>
+<p>La  obra de Silvia Molina nos recuerda que la literatura es  una forma de vivir en libertad, de construir comunidad y de tender la mano a  quienes vendrán después de nosotras. </p>
+<p>Silvia Molina ha construido un universo literario  con novelas como &ldquo;La Familia vino del Norte&rdquo;, &ldquo;Los Inviernos de Lulú&rdquo;, en donde  se revela la manera en que los hilos familiares también tejen la identidad del  país. </p>
+<p>Sus cuentos reunidos en volúmenes como la Bata  Roja, o Dulce Compañía nos acercan a personajes que viven entre la ternura y la  incertidumbre como un realismo íntimo que interpela a cada lector. </p>
+<p>Con sensibilidad y claridad ha demostrado que los  niños y niñas son lectores capaces de pensar, preguntar y de soñar. </p>
+<p>En este terreno, Silvia Molina ha cumplido una  doble labor, sembrar amor por la lectura y al mismo tiempo defender el derecho  de la niñez a imaginar futuros distintos. </p>
+<p>Así pues, en nombre de la Comisión de Cultura del  Senado de la República, expreso mi más profundo respeto y admiración a Silvia  Molina, su obra nos acompaña, nos enseña y nos inspira. </p>
+<p>El Premio al Mérito Literario &ldquo;Rosario  Castellanos&rdquo;, que entrega hoy el Senado de la República desde el 2021 a  escritoras, escritores destacados en distintos géneros, una trayectoria  reconocida. </p>
+<p>Que este premio lleve también un mensaje claro,  México reconoce a sus creadoras y a sus creadores, a las mujeres que, con la  fuerza de la palabra, han transformado la vida cultural de la nación. </p>
+<p>Muchas felicidades, Maestra Silvia Molina, este  homenaje es para usted y también para todas y todos los lectores que han  encontrado en sus páginas la certeza de que siempre podemos aspirar a una vida  más luminosa. </p>
+<p>Muchísimas gracias. </p>
+<p>Y muchas felicidades.</p>
+<p>Y hay que seguir leyendo. </p>
+<p><strong>La Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Solicito ponerse de pie para hacer la entrega a la  escritora Silvia Molina del Premio al Mérito Literario &ldquo;Rosario Castellanos&rdquo;,  correspondiente al año 2024. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a123299'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='123300'></a><p><strong>ENTREGA DEL PREMIO AL MERITO LITERARIO &ldquo;ROSARIO  CASTELLANOS&rdquo; 2024, A LA ESCRITORA SILVIA MOLINA</strong></p>
+<p align="center">(Con  todos de pie se entrega el Premio Literario)</p>
+<p>Sírvanse tomar  asiento.</p>
+<p>Ahora tiene el uso de  la tribuna nuestra galardonada, la escritora Silvia Molina.</p>
+<p><strong>La Ciudadana Silvia  Molina:</strong> Muy buenas tardes.</p>
+<p>Senadora Laura Itzel  Castillo Juárez, presidenta de la Mesa Directiva del Senado de la República.</p>
+<p>Señoras y señores  senadores;</p>
+<p>Gabriel Guerra  Castellanos;</p>
+<p>Queridos amigos y  familia:</p>
+<p>Soy hija de un  campechano ilustre, que fue escritor, periodista, gobernador de su estado y  oficial mayor, subsecretario y secretario de Gobernación de la República,  Héctor Pérez Martínez; un intelectual que amó a Campeche y a nuestro país y  sostuvo en todo lo que pudo al exilio español.</p>
+<p>Murió prematuramente  cuando yo tenía un año y ya no pude gozarlo ni vivir en su tierra natal. </p>
+<p>Mi madre, María Celis  Campos, sonorense, hermana de tres generales de división revolucionarios, quedó  viuda joven con cinco hijos y sin dinero. </p>
+<p>Yo la veía sufrir  para sacarnos adelante y una tarde, siendo todavía niña, le pregunté si mi  padre en realidad no les había dejado nada, no nos había heredado algo, por  poquito que fuera y me respondió: tu padre les heredó un nombre limpio, algún  día comprenderás y cuidarás su apellido.</p>
+<p>Nunca pensé que iba a  ser escritora como él, lo fui haciendo sin darme cuenta. </p>
+<p>Cuando iba a publicar  mi primer libro &ldquo;La mañana debe seguir gris&rdquo;, decidí no usar su apellido, era  una responsabilidad grande para mí y, además, yo quería hacer mi propia  carrera, buena o mala, pero por mí misma y mi circunstancia, de ahí mi  seudónimo Silvia Molina. </p>
+<p>Lo que les acabo de  contar es el núcleo de mi obra, &ldquo;La búsqueda del padre en Imagen de Héctor&rdquo;,  &ldquo;El deseo de hacer mío De Veras&rdquo;, &ldquo;Campeche&rdquo;, es decir, la búsqueda de mis  raíces, &ldquo;Ascensión Tun&rdquo;, &ldquo;Campeche&rdquo;, &ldquo;Punta del Ala del país&rdquo;, &ldquo;Las letras del  siglo XIX en Campeche&rdquo; y varios libros más.</p>
+<p>En las fiestas  familiares mis tíos, los generales Celis, hablaban de la revolución, de las  batallas en las que participaron. </p>
+<p>¿Te acuerdas mano, en  Celaya, cuando te dieron en el brazo?</p>
+<p>Nombraban a sus jefes  y amigos Álvaro Obregón, Benjamín Gil, Ignacio Pesqueira, Gilberto Limón,  Francisco Serrano y a otros generales y murmuraban algo que me intrigaba  sobremanera. </p>
+<p> Uno de ellos, Manuel, que fue jefe del Estado Mayor  del general Benjamín Gil de la Secretaría de Guerra y Marina y también jefe del  Departamento de Infantería de la misma, había estado escondido un año en un  sótano.</p>
+<p>Iban a catear la casa de mi abuela y no lo  encontraban porque habían construido una falsa pared en el sótano. </p>
+<p>Investigando, descubrí que había sido serranista y  estaba contra la reelección de su jefe, Álvaro Obregón, el que llamaba a los  Celis &ldquo;mis muchachitos&rdquo;, porque eran casi unos niños cuando se fueron con él. </p>
+<p>Mi tío se salvó de la muerte en Huitzilac, de ahí  mi novela &ldquo;La familia vino del norte&rdquo;.</p>
+<p>Muerto mi padre, cuando yo era niña, a mi casa  llegaban los domingos a comer los exiliados españoles que nunca lo olvidaron,  entre otros, los poetas, León Felipe, que era como su hermano, y Juan Rejano,  que le escribió: &ldquo;todo lo mexicano que ya es mío lo amé por ti, por ti latió  esta tierra para que mi dolor no se perdiese en la oscura osamenta del  planeta&rdquo;. </p>
+<p>Iban  los pintores, Miguel Prieto, José Moreno Villa. </p>
+<p>Los  médicos, ninguno nos cobraba la consulta, lo que era un respiro para mi madre. </p>
+<p>José  Lema Pinto, nuestro pediatra. </p>
+<p>Victoriano  Acosta, nuestro cirujano.</p>
+<p>Rafael  Fraile, el doctor de cabecera de mi padre y de don Indalecio Prieto.</p>
+<p>Venían,  también, los editores, los científicos y los políticos. </p>
+<p>La  lista es larga. </p>
+<p>De  esa etapa acomodé mis recuerdos, de niña, en la república española, en un  pañuelo. </p>
+<p>Y  mi más reciente novela &ldquo;El tío Rafael o la huida del peregrino&rdquo;. </p>
+<p>Aprendí  a leer tarde. </p>
+<p>En  mi época, la dislexia, no se trataba, era una discapacidad desconocida. </p>
+<p>Cuando  descubrí el milagro de encontrarle a la unión de las letras un significado,  sentí, por primera vez, que nunca más viviría avergonzada de no saber leer, que  había otros mundos y otras personas que me acompañarían toda la vida. </p>
+<p>Los  únicos momentos en que perdía el miedo, a un entorno que no podía entender, era  cuando mi madre y mis hermanos me leían o me contaban cuentos que sabían o  inventaban para mí, lo que fue siempre una manera de darme seguridad y decirme  lo que tanto me querían. </p>
+<p>Su  lectura me hacía feliz y, por eso, también empecé a escribir literatura  infantil para mis hijas. Algo que seguí haciendo, aunque fueron creciendo,  porque me gustó el reto. Escribir para niños es más difícil de lo que se cree. </p>
+<p>Pertenezco  a una generación de escritores bastante disgregada, no nos conocíamos,  empezamos solos. </p>
+<p> Por  lo tanto, sin conciencia de grupo, sin congregarnos en una publicación  periódica. </p>
+<p>Trabajamos,  cada uno en lo suyo, como niños aplicados a hacer bien la tarea y punto.</p>
+<p>&ldquo;Escribir  es una manera de vivir&rdquo;, dijo Flaubert, y así lo hicimos hasta que los  encuentros literarios y las ferias del libro nos fueron reuniendo, es decir,  nos encontramos ya formados, leídos y, cosa curiosa, no rompimos con las  generaciones anteriores, los leímos con agrado y respeto.</p>
+<p>Una  de mis escritoras favoritas ha sido Rosario Castellanos porque reconocí en  ella, de alguna manera, mi sureste al ser humano marginado, el infierno de la  explotación y de las pasiones humanas que se sufren en la intimidad. </p>
+<p>Rosario  fue una escritora inteligente, culta, de disciplina, irónica e ingeniosa que se  exigía demasiado y que moldeó sus palabras con una tinta hecha de sufrimiento  y, sin embargo, siempre la salvaron la ironía y el sentido del humor. </p>
+<p>Su  obra es notoriamente autobiográfica y como dicen ahora de auto ficción, y parte  de ella feminista e indigenista. Estas palabras no le gustaban, pero la  enaltecen. </p>
+<p>Su  escritura es tan literaria que es difícil dejar de leerla, sobre todo cuando  habla de sí misma. </p>
+<p>Rosario  Castellanos tenía eso que Orwell llama &ldquo;entusiasmo estético&rdquo;, la percepción de  la belleza en el mundo externo y en las palabras, y su acertada combinación, el  placer en el impacto de un sonido sobre otro, en una buena prosa, en el rito de  un poema o un relato.</p>
+<p>José  Emilio Pacheco escribió que la obra de Rosario Castellanos era una de las más  importantes que se habían escrito en México, lo mismo en el verso que en la  prosa narrativa o en el ensayo. </p>
+<p>Perdón,  me perdí. </p>
+<p>Dijo  que escribir no sólo era para ella el descubrimiento del mundo interior, sino  el deber que nos acerca a los demás y da nombre y sentido a las palabras.</p>
+<p>Su  primera etapa como escritora versa sobre Chiapas y el mundo complejo de su  niñez: Balún Canán, Ciudad Real, Oficio de Tinieblas. </p>
+<p>Escribió  a partir de sus vivencias y experiencias de su condición de mujer, de  chiapaneca ladina, sometedora y sometida, y de una intelectual que buscaba la  libertad para los oprimidos y para ella misma, la justicia para los otros, la  educación para los débiles, el alivio de las heridas y el dolor, la democracia  para todos.</p>
+<p>La  segunda etapa se desarrolla alejada de su terruño y está cimentada en la  ciudad, donde sus personajes femeninos tampoco se salvan de la agobiante vida  cotidiana. </p>
+<p>Para  esta gran mujer que ejerció todos los géneros literarios y el periodismo con  una dedicación absoluta, el trabajo fue una tabla de salvación gracias a la  cual sublimó sus angustias.</p>
+<p>Escribió  de la soledad un tema central en su obra, decía que ésta era la otra cara del  amor y de la muerte. </p>
+<p>Sus  poemas son pequeñas joyas que hieren al lector, su prosa sencilla y precisa es  melancólica y desgarradora, pulida, rotunda. </p>
+<p> En  fin, escuchen esto: &ldquo;Advertencia al que llega.</p>
+<p>No me toques el brazo izquierdo. Duele de tanta  cicatriz. Dicen que fue un intento de suicidio, pero yo no quería más que  dormir profunda, largamente, como duerme la mujer que es feliz&rdquo;.</p>
+<p>Agradezco profundamente a las instituciones que me  han dado cobijo y son mis casas: el Seminario de Cultura Mexicana, la Academia  Mexicana de la Lengua y la Fundación para las Letras Mexicanas, la generosidad  que me han demostrado. </p>
+<p>Y al Senado de la República la distinción de este  prestigioso premio, nada más que en el centenario de esta extraordinaria mujer,  que ha sido otorgado a escritores que admiro: Elsa Cross y Francisco Hernández,  y a otra campechana, Luisa Josefina Hernández, a quien Rosario le dedicó  &ldquo;Tablero de damas&rdquo;. </p>
+<p>Doy las gracias también al jurado del premio por su  voto. Si la vida es una aventura, la literatura es una reflexión sobre lo que  uno recuerda de la vida, es una búsqueda de nosotros mismos, un repaso sobre el  mundo y la condición humana. </p>
+<p>Recibir esta distinción que otorga el Senado de la  República es para mí una gran responsabilidad, cuidar otro nombre, un honor  inmenso y un aliento para seguir adelante. </p>
+<p>Les expreso mi asombro por el hecho de que el día  de hoy me haya tocado estar aquí con ustedes honrando a esta escritora  universal y recordándola como la gran intelectual que fue Rosario Castellanos. </p>
+<p>Muchas gracias.</p>
+<p><strong>La Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Muchas gracias a la Maestra Silvia Molina. </p>
+<p>La literatura abre mundos,  nos acerca a lo diferente y es espejo de culturas, deseos, horizontes. Más allá  de su valor estético, es el arte de la palabra, de la artesanía, de la  escritura. Sí, artesanía de la escritura, texto viene de textil, de tejer, la  creación literaria teje historias, construye dramas y metáforas.</p>
+<p>El  Premio &ldquo;Rosario Castellanos&rdquo; hace honor a una mujer comprometida, cuya obra dio  voz a las mujeres, a los pueblos indígenas y a quienes habían sido  históricamente silenciados, ha abordado distintos géneros, y en todos hizo  aportes.</p>
+<p>Este  galardón que otorga el Senado de la República fortalece, enriquece y honra a la  literatura mexicana; fue concebido para reconocer a escritoras y escritores  consolidados en los géneros de la narrativa, la dramaturgia, la poesía o el  ensayo, con la finalidad de destacar la importancia de lo producido en México.</p>
+<p>Hoy,  Silvia Molina es ganadora con el Premio al Mérito Literario &ldquo;Rosario  Castellanos&rdquo; por su prolífica y destacada trayectoria como narradora, ensayista  y editora, así como por su valiosa contribución a la literatura infantil. </p>
+<p>Nacida  en la Ciudad de México, su producción, como nos consta, esta producción  literaria ha sido un medio para la difusión del estado de Campeche, donde  también ha vivido como nos cuenta y retratado su historia a su gente, sus  costumbres y sus tradiciones. </p>
+<p>Este  premio celebra la trayectoria de escritores y escritoras para fortalecer y  poner en alto a la literatura mexicana, por lo que estamos muy orgullosas de  entregarlo a una mujer que ha dedicado su vida a contribuir a la cultura de  nuestro país. </p>
+<p>Sin  duda, es tiempo de mujeres y es tiempo de escritoras. </p>
+<p>¡Muchas  felicidades a Silvia Molina!</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a123300'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='123301'></a><p>Honorable Asamblea, como aquí también ha dado  cuenta la misma galardonada, hubo un premio que se le otorga al Mérito  Literario &ldquo;Rosario Castellanos&rdquo; 2022 a la escritora Luisa Josefina Hernández y  Lavalle, quien falleció el 16 de enero de 2023. </p>
+<p>Yo les solicitaría que nos pusiéramos de pie  y que le guardáramos un minuto, no de silencio, sino de aplausos a Luisa  Josefina Hernández y Lavalle. </p>
+<p><strong>MINUTO DE APLAUSOS</strong></p>
+<p align="center">(Todos de pie brindan  un minuto de aplausos)</p>
+<p>¡Descanse en paz Luisa Josefina Hernández y  Lavalle! </p>
+<p>Ahora les solicito que continuemos de pie  para entonar el Himno Nacional. </p>
+<p align="center">(Se entona Himno  Nacional)</p>
+<p>Favor de tomar asiento. </p>
+<p>Expresamos nuestro agradecimiento por su  presencia en esta sesión solemne a todas y a todos nuestros distinguidos  invitados. </p>
+<p>En consecuencia, solicito a las senadoras y  senadores integrantes de las comisiones de cortesía se sirvan a acompañar a las  personas invitadas hasta las puertas de este recinto. </p>
+<p align="center">(Las comisiones  cumplen)</p>
+<p>Y damos por finalizada la sesión solemne. </p>
+<p>Muchas felicidades a Silvia Molina. </p>
+<p align="center">(Se levantó la sesión  a las 11:57 horas)</p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a123301'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

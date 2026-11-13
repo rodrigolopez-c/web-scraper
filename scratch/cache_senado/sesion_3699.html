@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 10</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Laura Itzel Castillo Juárez</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 25 de Febrero de 2026</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/2/SPO/PDF-WEB/SPO_No10_25-FEBRERO-2026_SOLEMNE.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='125485'></a><p align="center"><strong>PRESIDE LA SENADORA</strong><br>
+  <strong>LAURA ITZEL CASTILLO JUÁREZ</strong></p>
+<p><strong>APERTURA</strong><strong> </strong></p>
+<p><strong>La Presidenta  Senadora Laura Itzel Castillo Juárez:</strong> (10:50 horas) Compañeras y compañeros.  Distinguidas personas invitadas: </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a125485'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/tXoojNm0QIQ?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='125486'></a><p><strong>CONMEMORACIÓN  DEL CUADRAGÉSIMO ANIVERSARIO DEL INSTITUTO BELISARIO DOMÍNGUEZ</strong></p>
+<p>Como sabemos,  la Cámara de Senadores cuenta con el Instituto Belisario Domínguez, órgano  encargado de realizar investigaciones sobre el desarrollo nacional, estudios  derivados de la agenda legislativa y análisis de la coyuntura en campos  correspondientes a los ámbitos de competencia de este órgano legislativo. </p>
+<p>Esto con el fin  de contribuir a la deliberación y la toma de decisiones legislativas, así como  de apoyar el ejercicio de sus facultades de supervisión y control, de  definición del proyecto nacional y de promoción de la cultura cívica y  ciudadana.</p>
+<p>A 40 años del  inicio de su desarrollo institucional, el Instituto Belisario Domínguez  constituye el área especializada de la Cámara de Senadoras y Senadores para la  investigación estratégica, el análisis legislativo y la generación de  conocimiento público, basado en evidencia. </p>
+<p>El Instituto  fue concebido en el año de 1984 como el Centro de Informática Legislativa. </p>
+<p>En 1995 se  transformó en Instituto de Investigaciones Legislativas. </p>
+<p>Y a partir del  2007 cambió su denominación a Instituto Belisario Domínguez, redefiniendo su  estructura y fortaleciendo su labor. </p>
+<p>En este  sentido, esta sesión tiene el propósito de reconocer las contribuciones de este  órgano técnico especializado y difundir su trabajo. </p>
+<p> Saludamos  respetuosamente al Senador Ignacio Mier Velazco, Coordinador del grupo  parlamentario de Morena, y Presidente de la Junta de Coordinación Política,  como también del Instituto Belisario Domínguez. </p>
+<p>A María de los  Ángeles Bonilla  Rodríguez, Directora General del Instituto Belisario Domínguez. </p>
+<p>Así como también a la Senadora Virginia Magaña Fonseca, Presidenta de la  Comisión para la Medalla Belisario Domínguez. </p>
+<p>Así como también el reconocimiento y el saludo a quienes integran este  Instituto como investigadores e investigadoras. </p>
+<p>¡Bienvenidos a esta sesión del Pleno, bienvenidos a todos y todas  ustedes!</p>
+<p>Dicho lo anterior, iniciamos con las participaciones de las personas  Senadoras de los diversos grupos parlamentarios, las cuales se llevarán a cabo  en forma ascendente por un tiempo máximo de siete minutos. </p>
+<p>En consecuencia, le cedemos el uso de la palabra al Senador Néstor  Camarillo Medina, del grupo parlamentario de Movimiento Ciudadano. </p>
+<p><strong>El Senador Néstor Camarillo Medina: </strong>Con tu venia, señora Presidenta. </p>
+<p>Senadoras y Senadores, cientos de discursos se han pronunciado en México  para hablar de Belisario Domínguez; sin embargo, hoy no basta con mencionarlo  desde esta sesión solemne histórica y hablar del 40 Aniversario del Instituto  que lleva su nombre nos exige algo más profundo: Una reflexión y un compromiso.</p>
+<p>Belisario Domínguez no nació convertido en símbolo, se convirtió en un  símbolo por la coherencia entre su palabra y su deber; no fue primero calle ni  medalla ni instituto, fue médico, periodista, alcalde y Senador; fue padre, fue  ciudadano, pero, sobre todo, fue conciencia frente al poder desbordado,  conciencia frente al silencio cómodo, conciencia frente al miedo. </p>
+<p>El Instituto Belisario Domínguez cuenta con más de cuatro décadas de  historia, brindando información exhaustiva, rigorosa y actualizada a quienes  tenemos el honor de ocupar un escaño en el Senado de la República. </p>
+<p>No siempre llevó este nombre, fue en 2007 cuando se determinó denominarlo  Belisario Domínguez, en homenaje a uno de los más altos referentes del  parlamentarismo mexicano. </p>
+<p>Y no es un homenaje menor, es una exigencia permanente, porque el  Instituto no es sólo un órgano técnico, es la inteligencia legislativa del  Senado, es el espacio donde las ideas se estudian antes de convertirse en  norma, es el puente entre el dato y la decisión pública.</p>
+<p>Que sea un órgano de investigación legislativa significa que, con  información objetiva, con análisis comparado, con trabajo estrictamente apegado  al Estado de derecho, nos ayuda a tomar decisiones con responsabilidad y  conciencia; significa que el debate no se sustenta en ocurrencias, sino en  evidencias. </p>
+<p>Y ojalá nunca se pierda esa autonomía, ojalá nunca renuncie a su misión  por el conocimiento libre, objetivo y de nivel. </p>
+<p> Todos conocemos la historia de Belisario Domínguez, pero a veces parece  que olvidamos su enseñanza. Aquel discurso que ni siquiera alcanzó a pronunciar  en tribuna le costó la vida, su cuerpo fue hallado con señales de violencia  brutal, incluso se afirmó que le fue cortada la lengua como intento simbólico de  silenciar la palabra que había incomodado al poder. </p>
+<p>Intentaron callarlo  físicamente, pero no pudieron callar su legado, porque su discurso circuló,  porque hubo ciudadanos que lo leyeron, porque hubo conciencia que despertó,  porque cuando la verdad encuentra convicción trasciende la censura. </p>
+<p>Y aquí es donde el  aniversario del Instituto cobra plena vigencia, los tiempos cambian, las formas  evolucionan, pero la tentación de silenciar al que piense distinto no  desaparece. Hoy difícilmente veríamos una escena tan literal como aquella, pero  guardando las proporciones todavía existen intentos linchamiento, de  descalificación sistemática, de censura y de presión institucional para callar  las voces incómodas, y eso le hace daño a México. </p>
+<p>Le hace daño a la  división innecesaria alimentada por narrativas de odio. Le hace daño a la  intolerancia, disfrazada de mayoría. Le hace daño cualquier forma de abuso de  autoridad. </p>
+<p>Cada vez que desde  cualquier poder se pretende limitar la libre expresión de pensamiento, se falta  a la memoria de Belisario Domínguez. Cada vez que se descalifica a quien piensa  distinto se debilita el espíritu parlamentario. </p>
+<p>Cada vez que el  debate se sustituye por el insulto, la democracia retrocede. El Senado es la  casa del federalismo y la máxima tribuna del país, aquí debe prevalecer el  debate de altura, la confrontación de ideas con respeto, la pluralidad con  fortaleza y no como amenaza. </p>
+<p>El Instituto  Belisario Domínguez nos recuerda que el servicio público debe ejercerse con  información adecuada y con apego a la verdad, nos recuerda que la libertad de  pensamiento, la libertad de expresión y la libertad de conciencia no son  concesiones del poder, son derechos inherentes de la República. </p>
+<p>Celebrar 40 años del  Instituto no debe ser solo un acto protocolario, debe ser un compromiso  renovado, con el conocimiento serio, con la investigación rigurosa y con la  dignidad parlamentaria. Que este aniversario nos recuerde que la libertad no se  defiende con silencio, que la democracia no se fortalece con imposición, que el  poder sin contrapesos se desborda. </p>
+<p>Cierro, recordando al  propio Belisario Domínguez Palencia: &ldquo;Vuestro deber es imprescindible y la  patria espera de vosotros que sabréis cumplirlo&rdquo;. </p>
+<p>Compañeras y  compañeros Senadores: Intentarlo callarlo cortándole la lengua, pero no  pudieron callar su ejemplo. </p>
+<p>Hoy, 40 años después  de la creación del Instituto que lleva su nombre, el mejor homenaje no es la  ceremonia, es la valentía. </p>
+<p>Que nunca este Senado  la prudencia sea excusa para el silencio ni la mayoría pretexto para la  intolerancia, porque cuando el Parlamento calla, la República se debilita y,  cuando el Parlamento habla con verdad, la nación se fortalece. </p>
+<p>Muchas gracias. </p>
+<p><strong>La Presidenta  Senadora Laura Itzel Castillo Juárez:</strong> Muchas gracias, Senador Camarillo Medina. </p>
+<p> A continuación, tiene  el uso de la palabra la Senadora Liz Sánchez, del grupo parlamentario del  Partido del Trabajo, hasta por siete minutos. </p>
+<p><strong>La Senadora Lizeth  Sánchez García:</strong> Con su venia, señora Presidenta. </p>
+<p>Senadoras y  Senadores, hoy nos convoca una fecha de profundo significado para la vida  institucional del Senado de la Republica el Cuadragésimo Aniversario del  Instituto Belisario Domínguez.</p>
+<p>Celebrar cuatro  décadas de construcción de inteligencia legislativa, de fortalecimiento técnico  del Parlamento y de servicio al interés público desde el conocimiento, el  análisis y la responsabilidad institucional. </p>
+<p>Hablar de Belisario  Dominguez, es hablar de una tradición republicana que nos interpela todavía  hoy, la del valor civil, la verdad dicha de frente y el compromiso con el  pueblo por encima de cualquier cálculo personal. </p>
+<p>Belisario Domínguez  Palencia, nacido en Comitán, Chiapas en 1863, fue médico, humanista, servidor de los más humildes, y después Senador de la  República. </p>
+<p>Su vida pública estuvo marcada por una convicción profunda, sostener la  verdad con firmeza entera. Esa no fue una frase retórica en él, fue una forma  de vivir y una forma de actuar políticamente. </p>
+<p>Atendió a las personas más pobres como médico, recorrió zonas  marginadas, fundó espacios de participación cívica, escribió con valentía  contra los abusos del poder, y ya como Senador levantó su voz frente a la  usurpación y la violencia del régimen huertista. </p>
+<p>En tiempos de miedo habló con claridad, en tiempos de silencio impuesto  nombró la ilegitimidad por su nombre. </p>
+<p>Y por esa congruencia, por ese coraje fue perseguido, martirizado y  asesinado en octubre de 1913. </p>
+<p>Su muerte no silenció su palabra, la volvió ejemplo, Belisario Domínguez  encarna la dimensión ética del quehacer parlamentario. </p>
+<p>Nos recuerda que legislar no es solo producir normas, sino defender  principios, que debatir no es solo confrontar posiciones, sino cuidar a la  República, que ocupar un escaño no es un privilegio, sino una responsabilidad  histórica. </p>
+<p>Por eso es profundamente significativo que el Instituto de Investigación  del Senado lleve su nombre. </p>
+<p>El Instituto Belisario Domínguez es un órgano especializado encargado de  realizar investigaciones estratégicas sobre el desarrollo nacional, estudios  derivados de la agenda legislativa y análisis de coyuntura, con el fin de  contribuir a la deliberación y la toma de decisiones legislativas, así como la  de apoyar las facultades de supervisión y control del Senado y la promoción de  la cultura cívica y ciudadana. </p>
+<p>Y algo fundamental, su trabajo debe regirse por principios de  relevancia, objetividad, imparcialidad, oportunidad y eficiencia. </p>
+<p>En una época de sobreinformación, polarización y decisiones públicas  cada vez más complejas el trabajo legislativo requiere evidencia, análisis  técnico, perspectiva comparada, evaluación de impactos y comprensión de la  coyuntura. </p>
+<p> El Instituto es precisamente una pieza clave para que el Senado delibere  mejor, decida mejor y rinda mejores resultados a la nación. Desde el Partido  del Trabajo reconocemos la importancia del Instituto Belisario Domínguez para  el quehacer legislativo por al menos cuatro razones: </p>
+<p>Primera, porque aporta insumos técnicos y objetivos que elevan la  calidad del debate parlamentario. </p>
+<p>Segunda, porque ayuda a vincular la agenda legislativa con los grandes  problemas nacionales, evitando que la discusión se quede en la coyuntura  inmediata o en la improvisación. </p>
+<p>Tercera, porque fortalece la función de control, supervisión y  evaluación del Senado, que es esencial en una democracia constitucional. </p>
+<p>Cuarta, porque contribuye a acercar el conocimiento legislativo a la  ciudadanía alimentando una cultura cívica, informada y plural. </p>
+<p>A 40 años de origen institucional la mejor forma de honrar al Instituto  es proyectarlo hacia el futuro con ambición republicana. La prospectiva del  Instituto Belisario Domínguez debe estar a la altura de los retos del siglo  XXI, transformación digital, inteligencia artificial, crisis climática,  desigualdad, seguridad, derechos humanos, cambio demográfico, nuevas dinámicas  del trabajo y reconfiguración geopolítica. </p>
+<p>El Senado necesita un Instituto cada vez más sólido, con capacidades  analíticas de frontera, mayor articulación interdisciplinaria, más difusión  pública de sus hallazgos y una vinculación todavía más estrecha con las  comisiones legislativas, sin perder jamás su carácter técnico, plural y  objetivo. También necesita seguir siendo un espacio de pensamiento libre y  riguroso, un referente de análisis legislativo y de políticas públicas con  prestigio nacional e internacional al servicio del interés general. </p>
+<p>Compañeras y compañeros, celebrar al Instituto Belisario Domínguez es  celebrar una idea de Senado, un Senado que debate con argumentos, que decide  con responsabilidad y que actúa con visión de Estado.</p>
+<p>Que el ejemplo de Belisario Domínguez, su verdad, su valentía y su deber  republicano siga inspirando nuestro trabajo. Y que el Instituto que lleva su  nombre, continúe por muchas décadas más fortaleciendo un Poder Legislativo  informado, democrático y al servicio del pueblo de México. </p>
+<p>Es cuanto, señora Presidenta. Muchas gracias. </p>
+<p><strong>La Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Muchas gracias, Senadora Liz Sánchez. </p>
+<p>A continuación, tiene el uso de la palabra el Senador Manuel Añorve  Baños, del grupo parlamentario del Partido Revolucionario Institucional, hasta  por siete minutos.</p>
+<p><strong>El Senador Manuel Añorve Baños: </strong>Con el permiso de la  Presidenta. </p>
+<p>Compañeras y compañeros Senadores, quiero iniciar mi intervención  saludando y reconociendo a las compañeras y compañeros que en las diversas  tareas administrativas de investigación y de dirección formal, parte de este  gran grupo de trabajo del Instituto Belisario Domínguez. </p>
+<p>Sin su labor, esta institución no tendría el prestigio y el alcance que  ha logrado a lo largo de estos cuarenta años. </p>
+<p>Saludo también a las personalidades que se encuentran presentes y que ha  tenido el honor de presidir y conducir los trabajos de este organismo. </p>
+<p> Esta mañana, el Senado mexicano reconoce el aporte de su órgano técnico  por excelencia, el Instituto Belisario Domínguez. Este espacio surgió como una  necesidad parlamentaria para contar y procesar mayores volúmenes de  información, y los cuales pudieran ser analizados y que tuvieran utilidad en la  redacción y discusión de leyes. </p>
+<p>A ese primer organismo se le denominó, quiero recordarlo, Centro de  Información Legislativa, y en el cual, para la sistematización de la  información, predominaban las computadoras. Esta primera etapa nos hace pensar  que ese centro de informática es quizás un primer antecedente parlamentario del  uso actual de la Inteligencia Artificial. </p>
+<p>Una década después la investigación se abrió paso entre las computadoras  y surgió el Instituto de Investigaciones Legislativas del Senado. Este  Instituto fue un paso muy importante para que el Senado no sólo analizara la  información y datos provenientes de fuera, ahora se podría generar productos  propios, conforme a las inquietudes y requerimientos de las y los legisladores. </p>
+<p>Años después, el famoso ILSEN, tomó el nombre del insigne Senador  Chiapaneco, como aquí se ha dicho, Belisario Domínguez, y es a partir del 2013  cuando le conocemos simplemente como el Instituto Belisario Domínguez. </p>
+<p>Con este cambio de nombre no sólo se encomendó al Instituto la creación  de productos de investigación y apoyos propios, sino también se fortaleció su  capacidad editorial y organización interna. </p>
+<p>Dicen, Gary King y Sidney Verba, que plantear las preguntas adecuadas es  quizás lo más importante en una investigación. </p>
+<p>Por ello, no tengo duda que, a lo largo de estos años, nuestras y  nuestros investigadores han planteado preguntas pertinentes que han  cristalizado en publicaciones, cuadernos de trabajo, fichas y análisis que han  llegado a manos de Senadoras y Senadores. </p>
+<p>Han realizado preguntas con base en nuestra realidad nacional, pero  siempre con una visión global, plural, tan necesaria para esta Cámara revisora  de la política exterior. También el Instituto ha laborado cientos de  publicaciones, las cuales muchas de ellas han permeado en el debate público y  han fortalecido la arenga parlamentaria. </p>
+<p>De igual manera, el Instituto ha formado profesionales en el ámbito  legislativo y ha capacitado de forma constante al personal del Senado. Con  ello, ha contribuido también a la profesionalización de las actividades  parlamentarias, la cual no es posible sin insumos y sin asesores y asesoras que  cuenten con condiciones laborales adecuadas para el desempeño de su actividad. </p>
+<p>De esta forma, conmemorar los 40 años del Instituto Belisario Domínguez es  celebrar un espacio que ha favorecido la profesionalización de la labor  legislativa en beneficio del sistema democrático. No es casual que el Instituto  haya pasado de interpretar a investigar, y que este cambio haya tenido como  marco la transición de la democracia en México.</p>
+<p>Este hecho no es  menor y confirma la vocación que este Instituto adquirió cuando se le denominó  con el nombre del Senador Belisario Domínguez. Así, el IBD, como también le  conocemos, es reflejo del deseo de ilustre Senador de difundir la labor  legislativa en pleno derecho de los más altos ideales constitucionales de  libertad de expresión, de imprenta y de trabajo.</p>
+<p>En los años que tuve  la oportunidad de estar al frente de este Instituto, tuve la oportunidad de  constatar el trabajo profesional y siempre en beneficio del debate  parlamentaria de las y los investigadores.</p>
+<p> Quiero decirles que  estoy convencido que, con esta ceremonia, Senadoras y Senadores, debemos  refrendar el compromiso de la profesionalización de nuestra labor. Nuestro  compromiso en el grupo parlamentario del PRI es con el debate serio e informado  a través de insumos verificables, sólidos y que contribuyan a la discusión  democrática, que es el pilar del parlamento.</p>
+<p>No me resta más que  felicitar a nombre del grupo parlamentario del PRI, que me toca coordinar, a  todas y todos los integrantes de este Instituto, algunos con diez, 15, 20 años  o más de servicio y que, sin duda, ya forman parte de la historia legislativa de  México.</p>
+<p>Muchas gracias por  esta oportunidad de reconocer su trabajo, el cual honra a este Senado de la  República y a la memoria de nuestro Senador Belisario Domínguez.</p>
+<p>¡Muchas felicidades y  enhorabuena!</p>
+<p>Gracias, señora  Presidenta.</p>
+<p><strong>La Presidenta  Senadora Laura Itzel Castillo Juárez:</strong> Muchas gracias, Senador Manuel Añorve.</p>
+<p>A continuación, tiene  el uso de la palabra el Senador Manuel Velasco Coello, del grupo parlamentario  del Partido Verde Ecologista de México, hasta por siete minutos.</p>
+<p><strong>El Senador Manuel  Velasco Coello: </strong>Con su venia, señora Presidenta. Compañeras y compañeros Senadores de la  República:</p>
+<p>Hoy es un día muy  importante para el Senado de la República, porque celebramos el 40 aniversario  del Instituto Belisario Domínguez, una institución que se ha convertido en un  pilar del quehacer legislativo. Son cuatro décadas de acompañar el trabajo  parlamentario con investigación, análisis técnico y producción de conocimiento  al servicio de las decisiones públicas. </p>
+<p>Cuatro décadas  fortaleciendo el debate informado, la deliberación democrática y la  construcción de mejores leyes para México.</p>
+<p>El Instituto nació en  1985, en el contexto de la transición democrática. Ha sido testigo de  alternancias históricas, de gobiernos divididos, de reformas estructurales, y  más recientemente de la etapa de transformación iniciada en 2018, así como de  un hecho histórico al tener por primera vez en nuestra historia la primera  mujer Presidenta de México.</p>
+<p>Hoy, como hace 40  años, el Instituto está llamado a responder a los grandes desafíos de su  tiempo.</p>
+<p>Vivimos una nueva era  de cambios acelerados, transformaciones en el derecho internacional, en el  comercio global, en la energía, en los flujos migratorios, en la gobernanza, y  de manera destacada en la revolución tecnológica y la Inteligencia Artificial.</p>
+<p>Por eso, las naciones  que invierten agresivamente en conocimiento, innovación y desarrollo  tecnológico están construyendo bases más sólidas para el bienestar de sus  pueblos.</p>
+<p>En esta nueva etapa,  el acompañamiento técnico y científico al Poder Legislativo será fundamental  para diseñar políticas públicas eficaces, marcos jurídicos modernos y  mecanismos de justicia acordes con una nueva realidad global.</p>
+<p>La irrupción de la  Inteligencia Artificial transformará profundamente la forma en que concebimos  el Estado de derecho, la representación popular y la estructura misma del  trabajo legislativo. </p>
+<p> Frente a ello, el  Senado cuenta con el respaldo de instituciones sólidas, como el Instituto  Belisario Domínguez, cuya aportación es y seguirá siendo estratégica. </p>
+<p>Su contribución ha  generado ideas, debates, análisis rigurosos y herramientas técnicas que elevan  la calidad del trabajo parlamentario. </p>
+<p>En los próximos años  su papel será aún más relevante para profundizar las transformaciones que  México demanda. </p>
+<p>De esta manera, el  Instituto honra el legado del doctor Belisario Domínguez, quien convocó a cada  mexicana y mexicano a asumir con valentía la responsabilidad histórica de  defender a la República. </p>
+<p>Don Belisario  Domínguez comprendía que la salud de la nación depende del compromiso cívico,  del valor moral y de la libertad de expresión. Su llamado fue claro, no  permitir que el miedo se impusiera sobre la dignidad.</p>
+<p>Por ello, es  recordado como el más grande héroe civil de la nación y paladín de la libertad  de expresión.</p>
+<p>Por esta razón, los  40 años del Instituto Belisario Domínguez son motivo de orgullo, pero también  de compromiso renovado. Debe continuar siendo faro de conocimiento, conciencia  crítica y soporte técnico del Senado de la República. </p>
+<p>Es muy importante  comprender el conocimiento como una herramienta al servicio de la pluralidad,  del diálogo y de la construcción de acuerdos. Debemos verlo como un elemento de  cohesión y de unidad política, tomarlo como un facilitador para la suma de esfuerzos  en torno a objetivos comunes.<br>
+  <br>
+  El conocimiento sirve  para procurar el entendimiento entre las fuerzas políticas que integramos el  Senado de la República, mucho más ahora que requerimos escucharnos, acercar los  puntos de vista y poner las coincidencias por encima de las divergencias.</p>
+<p>Porque cuando el  conocimiento ilumina el debate, la democracia se fortalece. </p>
+<p>Cuando el diálogo  sustituye a la confrontación, la República avanza. </p>
+<p>Y cuando ponemos a  México por encima de cualquier diferencia, honramos nuestra responsabilidad  histórica, justo como nos lo marca el legado de don Belisario Domínguez. </p>
+<p>Que el Instituto  Belisario Domínguez siga siendo conciencia crítica, brújula técnica y motor  intelectual del Senado. </p>
+<p>Que su voz siga  orientando nuestras decisiones. </p>
+<p>Y que su ejemplo nos  recuerde siempre con el valor, la razón y la palabra libre, son la esencia de  la vida republicana. </p>
+<p>Sigamos construyendo  con conocimiento y con unidad el México que nuestra historia nos exige y que  nuestro pueblo merece. </p>
+<p>Por su atención,  muchas gracias. </p>
+<p><strong>La Presidenta  Senadora Laura Itzel Castillo Juárez: </strong>Gracias, Senador  Manuel Velasco. </p>
+<p>A continuación, tiene  el uso de la palabra la Senadora Sasil De León Villard. </p>
+<p> Y les decimos que la Senadora Mayuli Latifa Martínez Simón, del grupo  parlamentario del Partido Acción Nacional, nos señaló que su intervención se  integrara directamente al Diario de Debates. </p>
+<p><strong>Intervención de la Senadora Mayuli Latifa  Martínez Simón.</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2026-02-25-1/assets/documentos/INT_Sen_Mayuli_ID156941.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>La Senadora Sasil De  León Villard, del grupo parlamentario de Morena, hasta por siete minutos. </p>
+<p><strong>La Senadora Sasil De  León Villard: </strong>Gracias, señora Presidenta. Con su permiso. Compañeras y compañeros  Senadores. Integrantes del Instituto Belisario Domínguez. Ciudadanas y  ciudadanos que nos acompañan: </p>
+<p>Hoy es un día  especialmente significativo, pues conmemoramos 40 años de una institución fundamental para la vida parlamentaria de  nuestro país: el Instituto Belisario Domínguez del Senado de la República. </p>
+<p>Decir &ldquo;cuatro décadas&rdquo; puede parecer sencillo, pero detrás de esa cifra  hay un trabajo constante, retos permanentes y una labor rigurosa y comprometida  que día con día ha contribuido al fortalecimiento de nuestra democracia. </p>
+<p>No es casual que nuestro Instituto lleve el nombre de Belisario  Domínguez, se trata de un reconocimiento a un hombre que tuvo el valor de alzar  la voz en uno de los episodios más terribles de nuestra historia y cuyo ejemplo  llega hasta nuestros días. </p>
+<p>No es casual que la Medalla Belisario Domínguez sea el reconocimiento  civil más importante que otorga el Senado de la República y que si figura,  labrada en bronce y en cuadro, sea parte de la cotidianidad del Senado de la  República. </p>
+<p>Es nuestra manera de reconocer al médico que estudió en París, pero que  siempre atendió a los más necesitados sin cobrarle un solo centavo. </p>
+<p>Es el hombre que dejó su natal Comitán para venir a la Ciudad de México a  cumplir con su deber cívico.</p>
+<p>Es el periodista comprometido con los ideales de justicia y con la  libertad de expresión.</p>
+<p>Es el esposo y padre de familia que dejó el calor del hogar para venir a  vivir a hoteles y hostales en la capital.</p>
+<p>Es el Senador que alzó la voz ante el asesinato del presidente Madero y  la traición a la democracia. </p>
+<p>Como Senador por el estado de Chiapas, tierra de profundas raíces  históricas y grandes luchadores, me llena de orgullo que el nombre de un  chiapaneco ilustre encabece este esfuerzo institucional. </p>
+<p>En Belisario vive la voz del sur, la voz de las regiones que durante  muchos años fueron marginadas, la voz de quienes exigieron un México más justo  e igualitario. </p>
+<p>Senadoras y Senadores, a lo largo de los años el Senado ha asumido con  compromiso de ser un poder abierto a la pluralidad, al escrutinio público, al  diálogo con la academia, con la ciudadanía y con las organizaciones de la  sociedad civil. </p>
+<p>En ese contexto, resulta evidente que las transformaciones del país no  pueden llevarse a cabo de espaldas a la sociedad ni pueden sustentarse  únicamente en la inercia política del momento. </p>
+<p>El diseño de políticas públicas, la discusión de reformas legales y la  toma de decisiones legislativas requieren un soporte analítico, riguroso, capaz  de aportar evidencia, contexto y orientación técnica. </p>
+<p>Los congresos modernos no pueden concebirse sin un órgano sólido de  investigación y de apoyo parlamentario.</p>
+<p> El servicio de información e investigación de la Biblioteca del  Parlamento de Canadá, las funciones de la Biblioteca del Congreso de Estados  Unidos y las múltiples instituciones de investigación de las democracias  europeas, demuestran que legislar en el siglo XXI exige conocimiento  especializado, datos verificables y análisis estratégico. </p>
+<p>No hay deliberación pública de calidad sin información confiable, no hay  control parlamentario eficaz sin sustento técnico, no hay visión de Estado sin  reflexión profunda. </p>
+<p>Por ello, la labor del Instituto Belisario Domínguez es especial para la  agenda parlamentaria y para el fortalecimiento de la cultura ciudadana. </p>
+<p>No se trata únicamente de producir documentos o diagnóstico, sino que más  bien se trata de dotar al Senado de herramientas sólidas para legislar mejor,  con evidencia, con perspectiva histórica, con análisis comparado y con rigor  metodológico. </p>
+<p>Hoy, en este contexto, en las grandes transformaciones de la vida pública  de México, el papel del Instituto cobra una relevancia aún mayor, los gobiernos  emanados de este movimiento han asumido el compromiso de transformar las  estructuras que por décadas reprodujeron desigualdad, corrupción y privilegios. </p>
+<p>Transformar no significa improvisar. Transformar implica estudiar,  diagnosticar, evaluar impactos, diseñar políticas con sustento técnico; implica  legislar con responsabilidad social y con visión a largo plazo. </p>
+<p>Hoy más que nunca  requerimos un Instituto Belisario Fuerte, autónomo en su quehacer técnico,  comprometido con la objetividad y abierto al diálogo plural. </p>
+<p>La pluralidad no es  una concesión, es la esencia de la democracia y el Instituto, al generar  información accesible y rigurosa, permite que el debate parlamentario se eleve  por encima de la descalificación y se sostenga en argumentos verificables. </p>
+<p>El Instituto  Belisario Domínguez es y debe seguir siendo conciencia técnica del Senado,  apoyo fundamental para que la pluralidad democrática se traduzca en mejores  leyes para México. </p>
+<p>Señoras y señores, la  Presidenta de la República, la Doctora Claudia Sheinbaum Pardo ha informado que  en los libros de texto se integrarán las vidas de las heroínas mexicanas, y es  correcta esta decisión. </p>
+<p>Por ello sirva esta  sesión solemne no solo para reconocer las cuatro décadas de nuestro Instituto y  para conmemorar, por supuesto, a don Belisario Domínguez, sino también para  recordar ese histórico discurso contra Victoriano Huerta, que fue impreso clandestinamente  por María Hernández Zarco, una valiente impresora. </p>
+<p>Hernández Zarco,  asumió el riesgo de publicar y difundir las críticas que el Senador chiapaneco,  en pleno régimen huertista había dicho, bajo el título: Palabras de un muerto. </p>
+<p>María Hernández  Zarco, fue nieta del liberal Francisco Zarco, no hay duda, que origen es  destino. </p>
+<p>Desde esta tribuna  reitero mi reconocimiento a todas y a todos quienes han formado parte del  Instituto Belisario Domínguez, durante estas cuatro décadas; investigadoras,  investigadores, personal técnico y administrativo por su labor que ha  contribuido, sin lugar a dudas, a que el Senado esté a la altura de los  desafíos nacionales. </p>
+<p> Que el ejemplo de don  Belisario Domínguez nos inspire siempre a defender la democracia con valentía,  que su memoria nos recuerde que la palabra puede ser más poderosa que la  imposición, y que estos 40 años sean el punto de partida para una nueva  consolidación institucional al servicio del pueblo de México. </p>
+<p>¡Que viva el  Instituto Belisario Domínguez! ¡Que viva Belisario Domínguez! ¡Que viva México!</p>
+<p>Gracias. </p>
+<p><strong>La Presidenta  Senadora Laura Itzel Castillo Juárez:</strong> Muchas gracias, Senadora De León Villard. </p>
+<p>A continuación, tiene  el uso de la palabra la Senadora Virginia Magaña Fonseca, Presidenta de la  Comisión de la Medalla Belisario Domínguez. </p>
+<p>Les informo que  tenemos la visita de un grupo de estudiantes de la licenciatura en contaduría,  de la Universidad Autónoma del Estado de México, Centro Universitario Ecatepec.  Quienes acuden por invitación de la Senadora Gina Gerardina Campuzano González. </p>
+<p>¡Sean bienvenidas y  bienvenidos al Senado de la República!</p>
+<p>Tiene la palabra la  Senadora Fonseca, Virginia Magaña Fonseca. </p>
+<p><strong>La Senadora Virginia  Magaña Fonseca:</strong> Gracias, Senadora. Con la venia de la Presidencia. </p>
+<p>Hoy conmemoramos 40  años del Instituto Belisario Domínguez, un órgano fundamental del Senado de la  República que, desde su creación ha acompañado el trabajo parlamentario con  investigación, análisis y reflexión estratégica. </p>
+<p>Este aniversario,  además de una fecha simbólica, es también una oportunidad para reconocer el  valor del conocimiento público al servicio de la democracia. </p>
+<p>Porque legislar no es un únicamente debatir ideas, es tomar decisiones  que impactan directamente la vida de las personas. Y esas decisiones deben de  estar respaldadas por información confiable y una comprensión profunda de los  retos nacionales. </p>
+<p>A lo largo de las cuatro décadas el Instituto ha cumplido con esa tarea,  producir estudios, análisis comparados, evaluaciones de políticas públicas y  documentos técnicos que fortalecen el trabajo de comisiones del Pleno y de cada  Senadora y Senador. </p>
+<p>Su labor ha contribuido a elevar la calidad del debate legislativo y a  ofrecer herramientas objetivas para la toma de decisiones. </p>
+<p>El trabajo del Instituto no se queda en los anaqueles, incide  directamente en dictámenes y reformas constitucionales, es conocimiento  aplicado que fortalece cada etapa del proceso legislativo. </p>
+<p>En este sentido, el Instituto Belisario Domínguez ha sido un aliado  estratégico del Senado de la República, su trabajo ha permitido identificar  problemáticas estructurales, anticipar escenarios, evaluar impactos y proponer  rutas de acción. </p>
+<p>Ha acercado el conocimiento especializado a la labor legislativa y ha  contribuido a que nuestras decisiones estén bien fundamentadas. </p>
+<p> El nombre que lleva este Instituto representa una convicción profunda,  la defensa de la verdad, el valor civil y el compromiso con el interés público. </p>
+<p>Como lo expresó Belisario Domínguez: Vigilen de cerca todos los actos  públicos de nuestros gobernantes, elógienlos cuando hagan bien, critíquenlos  siempre que obren mal, seamos imparciales en nuestras apreciaciones, digamos  siempre la verdad y sostengámosla con firmeza entera y muy clara. Nada de  anónimos ni seudónimos, nada de silencios. </p>
+<p>Esta reflexión sigue plenamente vigente, resume la responsabilidad que  tenemos como legisladoras y legisladoras, observar, evaluar, corregir y actuar  con base en la verdad y en el interés general. </p>
+<p> Ese espíritu sigue vigente cada vez que una investigación mejora una  ley, cada vez que un análisis riguroso permite corregir una política, y cada  vez que el instituto técnico abre sus nuevas posibilidades para atender las  necesidades de la ciudadanía. </p>
+<p>Hoy quiero reconocer a todas las personas que han formado parte del  Instituto a lo largo de estos años, investigadoras, investigadores, personal  técnico y administrativo. Su trabajo ha sido constante, y muchas veces  discreto, pero su impacto ha sido decisivo para fortalecer esta Cámara. </p>
+<p>Compañeras y compañeros, un Senado fuerte es aquel que escucha, que  aprende y que legisla con responsabilidad. </p>
+<p>Que este aniversario sea también un compromiso renovado con un  parlamentario que toma decisiones informadas, que actúa con seriedad y que pone  en el centro del bienestar del país. </p>
+<p>Que estos 40 años nos recuerden que legislar con evidencia es legislar  con responsabilidad, y que el conocimiento debe seguir siendo el pilar del  Senado de la República. </p>
+<p>Sigamos impulsando un Poder Legislativo sustentado en el conocimiento,  que delibere con base en evidencia y que legisle con responsabilidad para el  desarrollo de nuestro país, de nuestro querido México. </p>
+<p>Es cuanto. </p>
+<p>Muchas gracias. </p>
+<p><strong>La Presidenta  Senadora</strong> <strong>Laura Itzel Castillo Juárez:</strong> Muchas gracias, Senadora  Magaña Fonseca, Presidenta de la Comisión de la Medalla Belisario Domínguez. </p>
+<p>Reiteremos nuestro saludo respetuoso al Senador Ignacio Mier Velazco,  quien es además de Coordinador del grupo parlamentario de Morena, Presidente de  la Junta de Coordinación Política y Presidente del Instituto Belisario  Domínguez. </p>
+<p>También nuestro saludo a María de los Ángeles Bonilla Rodríguez,  Directora General del Instituto Belisario Domínguez. </p>
+<p>Y al personal técnico, administrativo. </p>
+<p>Y a los investigadores que se encuentran el día de hoy presentes en este  reconocimiento y en esta sesión solmene que brindamos para el Instituto  Belisario Domínguez en su Cuarenta Aniversario. </p>
+<p> Quiero decirle que esta Cámara de Senadoras y Senadores, se enorgullece  de que podamos contar con una institución con las características como las  tiene este importante Instituto. </p>
+<p>Hace cuarenta años, un 26 de diciembre de 1985, esta Cámara con visión  de futuro creó este Centro de Informática Legislativa, precursor del Instituto  que ahora lleva el nombre de este héroe mexicano. </p>
+<p>Se creó en un México que entonces iniciaba complejos procesos de  apertura. </p>
+<p>Este órgano legislativo advirtió la relevancia de respaldar las  iniciativas con un enfoque basado en el conocimiento técnico científico. </p>
+<p>Así nació el Cilsen, pionero en la profesionalización del trabajo  parlamentario. </p>
+<p>En el año 2007 adoptó el nombre de Instituto Belisario Domínguez. </p>
+<p>Su nombre, como ya lo han dicho quienes me antecedieron en el uso de la  palabra, rinde honor al Senador Belisario Domínguez Palencia, emblemático  defensor de la democracia y de la libertad de expresión en este país. </p>
+<p>Belisario Domínguez nos enseñó que la palabra, cuando está respaldada  por la razón y la ética es el arma más poderosa de la República. </p>
+<p>Es, precisamente esa herencia la que este Instituto ha sabido honrar, la  de poner el conocimiento al servicio de las causas justas. </p>
+<p>A lo largo de estas cuatro décadas, el Instituto ha sido testigo de la  evolución democrática de nuestra patria. </p>
+<p>La prioridad ha sido siempre contar con un grupo de mujeres y hombres  con sólido perfil académico y compromiso institucional, capaces de actuar con  imparcialidad técnica, rigor metodológico y honestidad intelectual. </p>
+<p>El valor de este Instituto radica en su capacidad de decirnos no lo que  queremos oír, sino lo que necesitamos saber. </p>
+<p>Sus investigadoras e investigadores deben tener esa invaluable cualidad  de conocer el detalle del funcionamiento del Poder Legislativo. </p>
+<p>Sus dinámicas internas y sus urgencias, pero sin perder jamás la  perspectiva crítica y la distancia objetiva que da la investigación  parlamentaria. </p>
+<p>Precisamente es aquí donde queremos hacer un reconocimiento profundo,  pero también un llamado, un reconocimiento a la entrega, la disciplina, la  inteligencia de cada mujer y cada hombre que integra este órgano, pero también,  y con el mismo afecto y respeto.</p>
+<p>Sí, pues con el mismo afecto y respeto, los exhortamos a seguir  trabajando y cada vez a aportar más y más para este Instituto y para este  órgano legislativo. </p>
+<p>Conociendo las altas capacidades de las y los investigadores, los  conminamos a redoblar esfuerzos, a profundizar en su vínculo con los  órganos de toma de decisiones, con la Junta de Coordinación Política, con la  Mesa Directiva, con las distintas comisiones ordinarias y extraordinarias. </p>
+<p>Ahí es donde se forja  el consenso, donde se debate y donde se determinan las cuestiones específicas  que marcan el rumbo de nuestro país.</p>
+<p> Investigar sabemos  que no es legislar, pero la investigación es la base fundamental de nuestros  procesos legislativos.</p>
+<p>Le da un respaldo  técnico, le da un sustento argumentativo y bases sólidas y, desde luego, un  proceso y un propósito ético.</p>
+<p>Una ley sin estudio  es un ejercicio vacío. Una reforma sin análisis es a veces una aventura.</p>
+<p>Por eso, necesitamos  que el conocimiento producido desde el Instituto Belisario Domínguez no sea  sólo un insumo de consulta, sino la base de un apoyo efectivo para enriquecer  las deliberaciones que damos aquí en el Senado de la República, de quienes tenemos  esta alta responsabilidad de legislar de cara al pueblo de México.</p>
+<p>Quiero reconocer  también el trabajo y los estudios que han aportado en torno a cuestiones  relativas a la misma reforma electoral o los aportes que hicieron para la  realización del Congreso feminista que llevamos a cabo en este año, producto  del cual se elaboró este libro que es la &ldquo;Cronología de la Igualdad Sustantiva  en México&rdquo;.</p>
+<p>Quiero decir que este  documento es un documento importante donde se recoge información fundamental,  con esta lucha que se ha dado durante tantos años a favor de la igualdad entre  hombres y mujeres, y cómo se ha venido legislando, cómo se ha venido transformando  la normatividad para tener lo que actualmente tenemos en nuestro país en  materia de igualdad sustantiva, hasta llegar a las propuestas que hizo nuestra  Presidenta, la Doctora Claudia Sheinbaum Pardo.</p>
+<p>Hoy, el Instituto  Belisario Domínguez debe de ser el centro de pensamiento en tiempo real, capaz  de analizar temas tan diversos como el cambio climático, la Inteligencia  Artificial, las nuevas realidades sociales, la situación de la economía mundial  y nacional, entre muchos temas más.</p>
+<p>Este aniversario nos  invita a la reflexión profunda y a la acción decidida.</p>
+<p>El Instituto  Belisario Domínguez de hoy debe de ser el vínculo perfecto de sus tres  dimensiones:</p>
+<p>1. La visión  fundacional, aquella que inició con un apoyo técnico y calificado para el  quehacer parlamentario.</p>
+<p>2. La experiencia  acumulada que le permite entender la complejidad de la vida parlamentaria y  legislativa de México.</p>
+<p>3. El compromiso  intelectual para deconstruir los grandes temas nacionales, analizarlos con  objetividad y aportarlos en forma de ideas que construyan acuerdos.</p>
+<p>En un mundo saturado  de ruido y de información efímera, el Instituto Belisario Domínguez debe  representar el valor de la pausa reflexiva, el dato duro y el conocimiento  objetivo que pueda impactar en las comisiones donde se dictamina; en los  órganos de gobierno donde se propone el rumbo legislativo; y en el Pleno que  decide su aprobación.</p>
+<p>Por todas estas  razones, esta sesión solemne es más que un acto protocolario. </p>
+<p>Es un acto, considero  yo, de compromiso. </p>
+<p>Es el reconocimiento  de la Cámara de Senadoras y Senadores a la importancia de fortalecer su  conciencia crítica. </p>
+<p> ¡Muchas felicidades a todos y a todas ustedes!</p>
+<p>Muchas gracias. </p>
+<p>De esta forma, finalizamos nuestra sesión solemne conmemorativa del  Cuadragésimo Aniversario del Instituto Belisario Domínguez. </p>
+<p>Les agradezco a todas y a todos, su presencia en este importante acto.</p>
+<p>Y solicito a mis compañeras y compañeros Senadores permanezcan en el  salón para poder reanudar nuestras actividades de la sesión ordinaria. </p>
+<p>Y, bueno, se encuentra aquí con nosotros la Directora General del  Instituto Belisario Domínguez, María de los Ángeles Bonilla Rodríguez, para  quien pido un aplauso y un reconocimiento. </p>
+<p>Se levanta la sesión solemne.</p>
+<p align="center">(Se levantó la sesión solemne a las 11:48  horas) </p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a125486'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

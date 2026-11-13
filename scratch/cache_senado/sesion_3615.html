@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA COMISI&Oacute;N PERMANENTE<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Receso Comisi&oacute;n Permanente</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 1</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Gerardo Fernández Noroña</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n de Instalaci&oacute;n Celebrada<br>en la Ciudad de M&eacute;xico, el 30 de Abril de 2025</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/1/SPR/PDF-WEB/CP_No1_30-ABRIL-2025.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='119945'></a><p align="center"><strong>PRESIDENCIA PROVISIONAL DE LA DIPUTADA</strong><br>
+  <strong>MÓNICA ANGÉLICA ÁLVAREZ NEMER</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>La  Presidenta Diputada Mónica Angélica Álvarez Nemer: </strong>(17:15  horas) Favor de tomar asiento. </p>
+<p>Gracias.</p>
+<p>Muchas  gracias nuevamente. </p>
+<p>Buenas  tardes a todas y a todos. Y agradezco al público asistente desaloje los  pasillos para poder dar inicio. </p>
+<p>Doy  lectura al artículo 118, numeral 2, de la Ley Orgánica del Congreso General de  los Estados Unidos Mexicanos. </p>
+<p><em>&ldquo;Artículo 118. La Mesa  Directiva de la Comisión Permanente deberá elegirse conforme al siguiente  procedimiento: </em></p>
+<p><em>A. Las Diputadas, los Diputados  y Senadores se reunirán bajo la Presidencia provisional de la persona a quien  corresponda el primer lugar por orden alfabético de apellidos, o de éstos, y de  nombre, si hubiere dos o más apellidos iguales. </em></p>
+<p><em>B. Para su auxilio, el  presidente provisional designará a los secretarios.</em></p>
+<p><em>C. Los Diputados y las Diputadas  y los Senadores y Senadoras elegirán por mayoría, en votación por cédula, un  presidente, un vicepresidente y cuatro secretarios. De éstos últimos, dos  deberán ser Diputados y dos Senadores&rdquo;. </em></p>
+<p>Con  base en lo que disponen los artículos 118 de la Ley Orgánica, al que di  lectura, y 171 del Reglamento para el Gobierno Interno del Congreso General,  esta Presidencia provisional designa como integrantes de la Secretaría a la Diputada  Maiella Martha Gabriela Gómez Maldonado y al Diputado José Mario Iñiguez  Franco.</p>
+<p>Por  favor, les pido ocupen sus lugares. </p>
+<p align="center">(Los Secretarios cumplen)</p>
+<p>Nos  reunimos hoy en este recinto a efecto de elegir a quienes integrarán la Mesa  Directiva de la Comisión Permanente del segundo receso del primer año de  ejercicio de la LXVI Legislatura y declarar formalmente la instalación de este  órgano, como lo disponen los artículos 118, de la Ley Orgánica del Congreso; y  171, del Reglamento para el Gobierno Interior del Congreso General. </p>
+<p>Proceda  la Secretaría a pasar lista de asistencia de las personas ciudadanas Legisladoras  que han sido electas para integrar la Comisión Permanente. </p>
+<p><strong>La  Secretaria Diputada Maiella Martha Gabriela Gómez: </strong>Procedo  a pasar lista de las Legisladoras y Legisladores que integran la Comisión  Permanente. </p>
+<p>¿Falta  algún ciudadano Legislador o Legisladora en pasar asistencia? ¿Falta algún  ciudadano?</p>
+<p>Sí.  Se registra la asistencia de la Senadora Lilly Téllez. </p>
+<p>Algún  Diputado, algún Legislador o Legisladora…</p>
+<p>La  Senadora Blanca Judith Díaz Delgado, se registra asistencia. </p>
+<p align="right"><strong>LISTA DE ASISTENCIA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/permanente/CP66-1ASPR/Asistencia/1037"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Señora Presidenta, hay una asistencia de 35 Legisladoras  y Legisladores. Hay quórum. </p>
+<p><strong>La Presidenta Diputada  Mónica Angélica Álvarez Nemer: </strong>Se abre la sesión. </p>
+<p>El Orden del Día de la sesión está colocado  en sus lugares para su conocimiento.</p>
+<p>En consecuencia, y a fin de dar cumplimiento  a lo dispuesto por el artículo 118 de la Ley Orgánica del Congres General de  los Estados Unidos Mexicanos, solicito a la Secretaría dé lectura a un acuerdo  que han presentado las Legisladoras y los Legisladores de los grupos  parlamentarios, en relación con la Mesa Directiva. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a119945'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='119946'></a><p><strong>COMISIÓN  PERMANENTE</strong></p>
+<p><strong>El Secretario Diputado  José Mario Iñiguez Franco: </strong>Doy lectura a una propuesta de acuerdo de los  representantes de los grupos parlamentarios.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-04-30-2/assets/documentos/Acuerdo_Comisi%C3%B3n_Permanente_30042025.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es cuanto, señora Presidenta.</p>
+<p> <strong>La  Presidenta Diputada Mónica Angélica Álvarez Nemer: </strong>Muchas  gracias. En consecuencia, solicito a la Secretaría que consulte a la Asamblea,  en votación económica, si es de aprobarse el Acuerdo. </p>
+<p><strong>El  Secretario Diputado José Mario Iñiguez Franco: </strong>Con  su permiso. Consulto a la Asamblea, en votación económica, si es de aprobarse  el anterior Acuedo. Quienes estén porque se apruebe, por favor, levantar la  mano. </p>
+<p align="center">(La  Asamblea asiente)</p>
+<p>Quienes  estén porque no se apruebe, por favor, levantar la mano. </p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p>Quienes  se abstengan, favor de levantar la mano. </p>
+<p>Aprobado  el Acuerdo, señora Presidenta. </p>
+<p><strong>La  Presidenta Diputada Mónica Angélica Álvarez Nemer: </strong>Muchas  gracias. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a119946'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='119947'></a><p>En  consecuencia, se va a proceder a la elección de la Mesa Directiva de la  Comisión Permanente, en los términos del Acuerdo que acaba de ser aprobado. </p>
+<p>Se  instruye al personal de Servicios Parlamentarios a distribuir las cédulas de  votación, a las personas ciudadanas Legisladoras. </p>
+<p align="center">(El  personal de apoyo cumple)</p>
+<p>¿Algún  Legislador falta de recibir su cédula de votación? </p>
+<p>Pregunto  nuevamente si a algún Legislador le hace falta de recibir su cédula de  votación.</p>
+<p>Por  favor, levante la mano. </p>
+<p>Solicito  a la Secretaría se sirva llamar a las personas ciudadanas Legisladoras por  orden de lista, a efecto de que pasen a depositar su voto en la urna que se  encuentra al frente de este presídium. </p>
+<p><strong>ELECCIÓN  DE MESA DIRECTIVA</strong></p>
+<p><strong>El Diputado José Mario Iñiguez Franco:</strong> Se solicita a las ciudadanas Legisladoras y a los  ciudadanos Legisladores pasen a depositar su voto al ser llamados por orden de  lista. </p>
+<p align="center">(Votación y escrutinio)</p>
+<p>¿Falta alguna ciudadana Legisladora o ciudadano Legislador de pasar a  depositar su voto? </p>
+<p>¿Falta alguna ciudadana o ciudadano Legislador o Legisladora  para depositar su voto? </p>
+<p>Se va a realizar el escrutinio. </p>
+<p><strong>El  Secretario Diputado José Mario Iñiguez Franco: </strong>Señora  Presidenta, se emitieron 33 votos en favor de la planilla integrada por los  siguientes Legisladores y Legisladoras: </p>
+<p>Presidencia,  el Senador José Gerardo Rodolfo Fernández Noroña.</p>
+<p> Vicepresidencia,  Diputado Sergio Carlos Gutiérrez Luna.</p>
+<p>Vicepresidencia,  Senadora Imelda Castro Castro. </p>
+<p>Vicepresidencia,  Diputada Diana Estefanía Gutiérrez Valtierra. </p>
+<p>Secretaría,  Diputada María de los Dolores Padierna Luna. </p>
+<p>Secretaría Senadora Mayuli Latifa Martínez Simón.</p>
+<p>Secretaría Senadora Carolina Viggiano Austria.</p>
+<p>Secretaría Senador Jorge Carlos Ramírez Marín.</p>
+<p>Secretaría Senador Alejandro González Yáñez y</p>
+<p>Secretaría del Diputado Pablo Vázquez Ahued.</p>
+<p>Y un voto a favor de otra planilla.</p>
+<p>Es cuanto, señora Presidenta.</p>
+<p><strong>La Presidenta Diputada Mónica Angelica Álvarez  Nemer: </strong>Gracias Diputado. En  consecuencia, con fundamento en los artículos 118 de la Ley Orgánica del  Congreso General y 172 del Reglamento para el Gobierno Interior del Congreso  General, la Mesa Directiva de la Comisión Permanente del Congreso General de  los Estados Unidos Mexicanos, que funcionará durante el Segundo Receso del  Primer Año de Ejercicio de la Sexagésima Sexta Legislatura del Honorable  Congreso de la Unión, queda integrada de la siguiente manera:</p>
+<p>¿Con qué objeto? Diputada Lilia Aguilar Gil.</p>
+<p><strong>La Diputada Lilia Aguilar Gil: (Desde su escaño) </strong>Señora<strong> </strong>Presidenta, sólo ver si puede registrar mi  asistencia de Lilia Aguilar Gil, del Partido del Trabajo. Gracias.</p>
+<p><strong>La Presidenta Diputada Mónica Angelica Álvarez  Nemer:</strong> Gracias, Diputada y se  toma nota, y le pido a la Secretaría lo registre, por favor.</p>
+<p>Solicito a las Legisladoras y Legisladores que han  sido electos pasen a tomar posesión de sus cargos. </p>
+<p>¡Enhorabuena!</p>
+<p>Gracias y buena tarde a todos y a todas. </p>
+<p align="center">(Los  Legisladores cumplen)</p>
+<p><strong>El  Secretario Senador Jorge Carlos Ramírez Marín: </strong>Se solicita a los presentes ponerse de pie.</p>
+<p align="center">(Todos de pie)</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a119947'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='119948'></a><p align="center"><strong>PRESIDE EL SENADOR</strong> <br>
+  <strong>GERARDO FERNÁNDEZ NOROÑA</strong></p>
+<p><strong>DECLARATORIA</strong></p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Con  fundamento en los artículos 120 de la Ley Orgánica del Congreso General de los  Estados Unidos Mexicanos y 173 del Reglamento para el Gobierno Interior del  Congreso General de los Estados Unidos Mexicanos, la Comisión Permanente que  funcionará durante el segundo receso del primer año de ejercicio de la LXVI Legislatura  del Congreso de la Unión se declara formalmente instalada. </p>
+<p>Solicito  tomar sus lugares. </p>
+<p><strong>El  Secretario Senador Jorge Carlos Ramírez Marín: </strong>Favor  de tomar sus lugares.</p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>La  Mesa Directiva hará las comunicaciones correspondientes al Poder Ejecutivo, a  la Suprema Corte de Justicia de la Nación, a las Legislaturas de las entidades  federativas y de la Ciudad de México para informar de la instalación de la  Comisión Permanente que funcionará durante el Segundo Receso del Primer Año de  Ejercicio de la LXVI Legislatura. </p>
+<p>Compañeras  y compañeros Legisladores, informo a ustedes que esta Mesa Directiva ha  elaborado un proyecto de Acuerdo por el que se establecen las Reglas Básicas para  el funcionamiento de la Comisión Permanente del Congreso de la Unión. Dicho  documento se ha distribuido a los grupos parlamentarios representados en este  órgano.</p>
+<p>Estaremos  atentos a cualquier observación, en su caso, para ser incorporados a lo largo  de la semana, con la finalidad de que en la próxima sesión estemos en condición  de votar el Acuerdo correspondiente.</p>
+<p>Informo  a la Asamblea que el registro de asuntos para el Orden del Día de la siguiente  sesión se hará a través de la plataforma informática habilitada y que está en  funcionamiento para tal efecto.</p>
+<p>El  registro electrónico estará habilitado desde hoy y hasta las 13:00 horas del  día anterior a la sesión.</p>
+<p>La  información necesaria para el acceso a la plataforma informática será  distribuida a los enlaces de los grupos parlamentarios que concurren a la  Comisión Permanente.</p>
+<p>En  caso de no poder hacer registro en la plataforma informática, los asuntos  podrán entregarse en formato impreso en la Presidencia de la Comisión  Permanente antes del horario señalado. </p>
+<p>Continúe  la Secretaría con los asuntos de la agenda. </p>
+<p><strong>El  Secretario Senador Jorge Carlos Ramírez Marín: </strong>Doy  lectura al Orden del Día de la próxima sesión. (Leyó)</p>
+<p>Señor  Presidente, se han agotado los asuntos en cartera. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Antes  de dar la cita, a nombre de esta Mesa Directiva, y en lo personal, agradecemos  muchísimo la confianza depositada en nosotros. </p>
+<p>Es  un gran honor y estaremos a disposición de esta Asamblea para cumplir a  cabalidad la responsabilidad que se nos ha otorgado. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a119948'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='119949'></a><p><strong>CITA</strong></p>
+<p>Se cita a la siguiente sesión el próximo  miércoles 7 de mayo de 2025 a las 11:00 horas en este recinto. </p>
+<p>Se levanta la sesión. </p>
+<p align="center">(Se levantó la sesión a las 17:47 horas) </p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a119949'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>TERCER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;"><br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO III</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo </td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 27</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Oscar Eduardo Ramírez Aguilar</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;"> Celebrada<br>en la Ciudad de M&eacute;xico, el 29 de Abril de 2021</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/3//PDF-WEB/SPO_No.27_29-ABRIL_2021_MATUTINA.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97154'></a><p align="center"><strong>PRESIDENCIA DEL SENADOR</strong><br>
+  <strong>EDUARDO RAMÍREZ AGUILAR</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>(10:34 horas) Vía  sesiones.senado.gob.mx. Compañeras Senadoras y compañeros Senadores:</p>
+<p align="justify">Se les convoco a esta  sesión a distancia bajo el fundamento del Acuerdo de la Junta de Coordinación  Política aprobado el 1 de febrero de 2021.</p>
+<p align="justify">Solicito a la Secretaría  informe a la Asamblea el resultado del cómputo de asistencia de las señoras  Senadoras y los señores Senadores.</p>
+<p align="justify"><strong>La Secretaria Senadora Nancy De la Sierra Arámburo:</strong> Con gusto, señor  Presidente. Muy buenos días.</p>
+<p align="justify">Honorable Asamblea,  conforme al registro de asistencia, se han acreditado 69 Senadoras y Senadores  presentes.</p>
+<p align="justify">En consecuencia, hay  quórum. </p>
+<p align="justify">Y les reiteramos que  utilicen su dispositivo para tomar su asistencia y, si no, lo hagan a través de  sus enlaces legislativos.</p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar:</strong> Se abre la sesión del  jueves 29 de abril de 2021, correspondiente al segundo periodo ordinario de  sesiones del tercer año de la LXIV Legislatura.</p>
+<p align="justify">Para aquellos que faltan de  manifestar su asistencia, les recuerdo que pueden registrarla a través de sus  enlaces.</p>
+<p align="justify">El Orden del Día se  encuentra publicado en la Gaceta del Senado. Asimismo, se encuentra disponible  en plataforma digital.</p>
+<p align="right"><strong>ORDEN DEL DÍA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/117335"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">El acta de sesión del martes 27 de abril se  encuentra publicada en la Gaceta Parlamentaria.</p>
+<p align="right"><strong>ACTA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/117336"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/asistencias/2021_04_27/24"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Solicito a la Secretaría consulte a la Asamblea, en  votación económica, si es de aprobarse el acta referida.</p>
+<p align="justify"><strong>La Secretaria Senadora  Nancy De la Sierra Arámburo:</strong> Consulto a la Asamblea, en votación económica, si  es de aprobarse el acta de la sesión del 27 de abril. Quienes estén porque se  apruebe, favor de levantar la mano y mantenerla arriba.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque se rechace, favor de levantar  la mano y les pido la mantengan levantada. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Quien se abstenga.</p>
+<p align="justify">Aprobada, señor Presidente.</p>
+<p align="justify"><strong>El Presidente Senador  Eduardo Ramírez Aguilar:</strong> Aprobada el acta del martes 27 de abril de 2021.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97154'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97155'></a><p align="justify"><strong>COMUNICACIONES</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  María Merced González González: </strong>Se recibió del Senador Dante Delgado, del grupo  parlamentario de Movimiento Ciudadano comunicación en relación con la reunión  de trabajo de las Comisiones Unidas de Radio, Televisión y Cinematografía; y de  Estudios Legislativos, Segunda, convocada para el dictamen de la iniciativa con  proyecto de Decreto de la Ley de Transparencia, Prevención y Combate de  Prácticas Indebidas en Materia de Contratación de Publicidad.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-29-1/assets/documentos/Oficio_Sen_Dante_Dictamen.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador  Eduardo Ramírez Aguilar:</strong> La comunicación anterior esta publicada en la Gaceta Parlamentaria y de  esa forma se hace del conocimiento a la Asamblea.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97155'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97156'></a><p align="justify"><strong>La Secretaria Senadora  María Merced González González:</strong> Se recibió del Senador Omar Obed Maceda Luna,  comunicación con la que informa su reincorporación a sus actividades  legislativas, a partir del 28 de abril de 2021.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-29-1/assets/documentos/Incorporacion_PRD_Sen_Obed.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Eduardo  Ramírez Aguilar:</strong> La Asamblea queda enterada.</p>
+<p align="justify">Hago de su conocimiento que el Senador Omar Obed,  suplente del Senador Juan Zepeda, tomó protesta el 18 de diciembre de 2018.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97156'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97157'></a><p align="justify"><strong>La Secretaria Senadora  María Merced González González:</strong> También se recibió del Senador Omar Obed Maceda  Luna, comunicación con la que manifiesta su voluntad de incorporarse al grupo  parlamentario del PRD, a partir del 28 de abril de 2021.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-29-1/assets/documentos/Com_Sen.Omar_Maceda_incorporarse_PRD.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador  Eduardo Ramírez Aguilar:</strong> La Asamblea queda enterada. Comuníquese a la Secretaría.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97157'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97158'></a><p align="justify"><strong>La Secretaria Senadora  María Merced González González:</strong> Se recibió de la Senadora Minerva Hernández Ramos,  comunicación con la que informa su reincorporación a sus actividades  legislativas, a partir del 29 de abril de 2021.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-29-1/assets/documentos/Reincorporacion_Sen_Minerva_Hernandez.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador  Eduardo Ramírez Aguilar:</strong> La Asamblea queda enterada.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97158'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97159'></a><p align="justify"><strong>SECRETARÍA DE GOBERNACIÓN</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  María Merced González González:</strong> Se recibió de la Secretaría de Gobernación, oficio  con el que remite al Ejecutivo Federal la designación de la ciudadana Luz María  Anaya Domínguez como Magistrada integrante de la Sala Superior del Tribunal  Federal de Justicia Administrativa.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-29-1/assets/documentos/SEGOB_Magistrada_TFJA.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador  Eduardo Ramírez Aguilar:</strong> Informo a la Asamblea que, de conformidad con nuestra Ley Orgánica del  Congreso General de los Estados Unidos Mexicanos, se turnó directamente a la  Comisión de Justicia el 28 de abril de 2021.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97159'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97160'></a><p align="justify"><strong>PROCURADURÍA AGRARIA</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  María Merced González González:</strong> Se recibió de la Procuraduría Agraria, oficio con  el que remite el segundo informe de labores, correspondiente al ejercicio 2020.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-29-1/assets/documentos/Informe_Procuraduria_Agraria-Labores.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador  Eduardo Ramírez Aguilar:</strong> Se remite a la Comisión de Reforma Agraria.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97160'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97161'></a><p align="justify"><strong>CONTRALORÍA INTERNA</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  María Merced González González:</strong> Se recibió de la Contraloría Interna de la Cámara  de Senadores, oficio con el que remite el informe detallado y ejecutivo  semestral de auditoría del ejercicio presupuestal de la Cámara de Senadores,  correspondiente al periodo julio-diciembre de 2020.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-29-1/assets/documentos/Oficio_Informe_Contraloria.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Eduardo  Ramírez Aguilar:</strong> Se informa a la Asamblea que el informe queda en poder de la Secretaría  para consulta de los Senadores. Se pondrá a consideración de la Asamblea en la  próxima sesión. En caso de aprobarse se informará a la Auditoría Superior de la  Federación.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97161'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97162'></a><p align="justify"><strong>CÁMARA DE DIPUTADOS</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  María Merced González González:</strong> Se recibió de la Cámara de Diputados, minuta  proyecto de Decreto por el que se reforman y adicionan diversas disposiciones  de la Ley de Aviación Civil, en materia de servicio de transporte aéreo.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-29-1/assets/documentos/Minuta_Ley_Aviacion_Civil_29042021.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador  Eduardo Ramírez Aguilar:</strong> Informo a la Asamblea que, con fundamento en el artículo 67 de la Ley  Orgánica del Congreso General, se dió turno directo a las Comisiones Unidas de  Comunicaciones y Transportes; y de Estudios Legislativos, Segunda, este día.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97162'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97163'></a><p align="justify"><strong>La Secretaria Senadora  María Merced González González:</strong> También se recibió de la Cámara de Diputados,  minuta proyecto de Decreto por el que se expide la Ley Federal de Fomento a la  Cocina Mexicana.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-29-1/assets/documentos/Minuta_ley_fomento_cocina_mexicana.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador  Eduardo Ramírez Aguilar:</strong> Se turna a las Comisiones Unidas de Cultura; y de Estudios  Legislativos.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97163'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97164'></a><p align="justify">En otro apartado de la agenda, tenemos la lectura de un dictamen de  las Comisiones Unidas de Radio, Televisión y Cinematografía; y de Estudios  Legislativos, Segunda, el que contiene proyecto de Decreto por el que se expide  la Ley para la Transparencia, Prevención y Combate de Prácticas Indebidas, en  materia de contratación de publicidad. </p>
+<p align="justify"><strong>PROYECTO  DE DECRETO POR EL QUE SE EXPIDE LA LEY PARA LA TRANSPARENCIA, PREVENCIÓN Y  COMBATE DE PRÁCTICAS INDEBIDAS EN MATERIA DE CONTRATACIÓN DE PUBLICIDAD</strong></p>
+<p align="justify"><strong>(Dictamen  de primera lectura)</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-29-1/assets/documentos/Dic_Com_Radio_Ley_Trasnparencia_Publicidad.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Debido a que el dictamen se  encuentra en la Gaceta Parlamentaria del día de hoy y disponible en la  plataforma digital, queda de primera lectura.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97164'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97165'></a><p align="justify">También tenemos de primera  lectura  de un dictamen de las Comisiones  Unidas de Justicia; y de Estudios Legislativos, Segunda, que contiene proyecto  de Decreto por el que se expide la Ley de la Fiscalía General de la República y  se reforman, adicionan y derogan diversas disposiciones de distintos  ordenamientos.</p>
+<p align="justify"><strong>PROYECTO  DE DECRETO POR EL QUE SE EXPIDE LA LEY DE LA FISCALÍA GENERAL DE LA REPÚBLICA,  SE ABROGA LA LEY ORGÁNICA DE LA FISCALÍA GENERAL DE LA REPÚBLICA Y SE REFORMAN,  ADICIONAN Y DEROGAN DIVERSAS DISPOSICIONES DE DISTINTOS ORDENAMIENTOS LEGALES</strong></p>
+<p align="justify"><strong>(Dictamen  de primera lectura)</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-29-1/assets/documentos/Dictamen_justicia_FGR.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Debido a que el dictamen se  encuentra publicado en la Gaceta Parlamentaria y disponible en plataforma  digital, y con fundamento en el Reglamento del Senado, queda de primera  lectura.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97165'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97166'></a><p align="justify">Asimismo, tenemos la  primera lectura de un dictamen de la Comisión de Defensa Nacional, que contiene  proyecto de Decreto por el que se autoriza para permitir la salida de elementos  del Ejército y Fuerza Aérea Mexicanos para que participen en el &quot;Comando  2021&quot;, a realizarse en la ciudad de Bogotá, Colombia, del 23 de agosto al  3 de septiembre de 2021.</p>
+<p align="justify"><strong>PROYECTO  DE DECRETO POR EL QUE SE AUTORIZA AL EJECUTIVO FEDERAL PARA PERMITIR LA SALIDA  DE ELEMENTOS DEL EJÉRCITO Y FUERZA AÉREA MEXICANOS PARA QUE PARTICIPEN EN LA  COMPETENCIA INTERNACIONAL &ldquo;FUERZAS COMANDO 2021&rdquo;, A REALIZARSE EN LA CIUDAD DE  BOGOTÁ, COLOMBIA, DEL 23 DE AGOSTO AL 3 DE SEPTIEMBRE DE 2021</strong></p>
+<p align="justify"><strong>(Dictamen  de primera lectura)</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-29-1/assets/documentos/Dict_Defensa_Nacional_Fuerzas_Comando_2021_Bogota.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Debido a que se el dictamen  encuentra publicado en la Gaceta Parlamentaria y disponible en plataforma  digital, queda de primera lectura.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97166'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97167'></a><p align="justify">De igual forma, tenemos la  primera lectura de un dictamen de la Comisión de Defensa Nacional, que contiene  proyecto de Decreto para permitir la salida de elementos del Ejército y Fuerza  Aérea Mexicanos para participar en el Festival Internacional de Música  &quot;Spasskaya Tower&quot;, a realizarse en la ciudad de Moscú, Rusia, del 27  de agosto al 5 de septiembre de 2021.</p>
+<p align="justify"><strong>PROYECTO  DE DECRETO POR EL QUE SE AUTORIZA AL EJECUTIVO FEDERAL PARA PERMITIR LA SALIDA  DE ELEMENTOS DEL EJÉRCITO Y FUERZA AÉREA MEXICANOS PARA PARTICIPAR EN EL  FESTIVAL INTERNACIONAL DE MÚSICA &ldquo;SPASSKAYA TOWER&rdquo;, A REALIZARSE EN LA CIUDAD  DE MOSCÚ, RUSIA, DEL 27 DE AGOSTO AL 5 DE SEPTIEMBRE DE 2021</strong></p>
+<p align="justify"><strong>(Dictamen  de primera lectura)</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-29-1/assets/documentos/Dict-Defensa_Fuerzas_Musica_Tower_Moscu.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Con fundamento en lo  dispuesto en los artículos 193 y 195 del Reglamento del Senado, queda de  primera lectura.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97167'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97168'></a><p align="justify">Del mismo modo, tenemos la  primera lectura de un dictamen de la Comisión de Relaciones Exteriores, que  contiene proyecto de Decreto por el que se aprueba el Acuerdo sobre el  reconocimiento mutuo y la protección de las denominaciones de las bebidas  espirituosas entre los Estados Unidos Mexicanos y el Reino Unido de la Gran  Bretaña e Irlanda del Norte.</p>
+<p align="justify"><strong>ACUERDO  SOBRE EL RECONOCIMIENTO MUTUO Y LA PROTECCIÓN DE LAS DENOMINACIONES DE LAS  BEBIDAS ESPIRITUOSAS ENTRE LOS ESTADOS UNIDOS MEXICANOS Y EL REINO UNIDO DE LA  GRAN BRETAÑA E IRLANDA DEL NORTE, HECHO EN LA CIUDAD DE MÉXICO EL 30 DE  NOVIEMBRE DE 2020</strong></p>
+<p align="justify"><strong>(Dictamen  de primera lectura)</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-29-1/assets/documentos/Dict_RE_Reconocimiento_Mutuo_Bretana.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Se encuentra publicado en  la Gaceta Parlamentaria, y con fundamento en el Reglamento del Senado queda de  primera lectura.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97168'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97169'></a><p align="justify">Asimismo, tenemos la  primera lectura de un dictamen de las Comisiones Unidas de Hacienda y Crédito  Público; y de Estudios Legislativos, Segunda, que contiene proyecto de Decreto  por el que se reforman y adicionan diversas disposiciones de la Ley General de  Títulos y Operaciones de Crédito, en materia de pagaré electrónico.</p>
+<p align="justify"><strong>PROYECTO  DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSAS DISPOSICIONES DE LA LEY  GENERAL DE TÍTULOS Y OPERACIONES DE CRÉDITO</strong></p>
+<p align="justify"><strong>(Dictamen  de primera lectura)</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-29-1/assets/documentos/Dic_HCP_Pagare_Electronico.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Debido a que el dictamen se  encuentra publicado en la Gaceta Parlamentaria y con fundamento en el  Reglamento del Senado, queda de primera lectura.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97169'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='97170'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify">Se cita a la siguiente  sesión ordinaria este mismo día, dentro de diez minutos, en modalidad a  distancia.</p>
+<p align="justify">Les solicito puedan volver  a pasar lista para poder incorporarnos a los trabajos de la siguiente sesión y  tener el tiempo necesario para la discusión de este gran debate nacional en las  próximas horas.</p>
+<p align="justify">Se levanta la sesión.</p>
+<p align="center">(Se  levantó la sesión a las 10:42 horas)</p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a97170'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 26</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Alejandro Armenta Mier</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 20 de Abril de 2023</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/2/SPO/PDF-WEB/SPO_No26_20-ABRIL-2023_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109189'></a><p align="center"><strong>PRESIDE EL SENADOR</strong><br>
+  <strong>ALEJANDRO ARMENTA MIER</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> (12:17 horas) Solicito a la Secretaría informe a esta  Asamblea el resultado del cómputo de asistencia de las señoras y señores  Senadores.</p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con gusto, señor Presidente. Honorable Asamblea,  conforme al registro de asistencia, se han acreditado 72 ciudadanas Senadoras y  ciudadanos Senadores. En consecuencia, hay quórum, señor Presidente.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109189'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109190'></a><p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> Honorable Asamblea, antes de iniciar esta ceremonia  solemne, quiero llamar la atención de ustedes para solicitarles un minuto de  silencio, en virtud de que el pasado martes 18 de los corrientes falleció el  doctor Pablo González Casanova.</p>
+<p align="justify">El doctor González Casanova, fue Rector de la máxima  casa de estudios en México, de 1970 a 1972, y creador del sistema de los  Colegios de Ciencias y Humanidades para el Bachillerato de la UNAM.</p>
+<p align="justify">En su trayectoria se destacó por haber sido  condecorado por la Unesco con el Premio Internacional José Martí por su  defensa, por la identidad de los pueblos indígenas de América Latina.</p>
+<p align="justify"> Les solicito que nos pongamos de pie y que guardemos  un minuto de silencio en su memoria.</p>
+<p align="justify"><strong>MINUTO DE SILENCIO</strong></p>
+<p align="center">(Todos de pie guardan un minuto de silencio)</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify">¡Descanse en paz el ilustre mexicano don Pablo  González Casanova!</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109190'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109191'></a><p align="justify">En cumplimiento a los Acuerdos de la Junta de  Coordinación Política, referentes a la inscripción en el Muro de Honor de la  leyenda &ldquo;Benito Juárez, Benemérito de las Américas&rdquo;, se abre la sesión solemne  en el Senado de la República.</p>
+<p align="justify">Acude como invitado a esta sesión solemne el ingeniero  Salomón Jara Cruz, Gobernador del Estado de Oaxaca.</p>
+<p align="justify">Para recibir al señor gobernador se designa en  comisión a las siguientes Senadoras y Senadores, Adolfo Gómez Hernández, Raúl  Bolaños Cacho Cué, Geovanna Bañuelos, María Soledad Luévano Cantú, Guadalupe  Covarrubias Cervantes y Imelda Castro Castro.</p>
+<p align="justify">Esta Presidencia solicita a la comisión designada  acudir a las puertas de este recinto a fin de cumplir su cometido.</p>
+<p align="justify">En tanto se declara un receso.</p>
+<p align="center">(La comisión cumple)</p>
+<p align="center">(RECESO)</p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Damos  la bienvenida a alumnos de la Universidad Autónoma de San Luis Potosí,  invitados por el Senador Marco Gama. </p>
+<p align="justify">¡Bienvenidos!,  jóvenes universitarios al recinto del Senado de la República. </p>
+<p align="justify">También  queremos recibir a productores agrícolas, artesanos, a hombres y mujeres del  municipio de Tecamachalco y de Huixcolotla, tierra agrícola.</p>
+<p align="justify">¡A  todas y a todos bienvenidos al Senado de la República!</p>
+<p align="justify">Muchas  gracias. </p>
+<p align="justify">Honorable  Asamblea, nos visitan un grupo de estudiantes de la licenciatura en Ciencias  Políticas y Administración Pública de la Universidad Autónoma de Tlaxcala, del  Campus Calpulalpan, invitados por la Senadora Cecilia Sánchez García. </p>
+<p align="justify">¡Sean  bienvenidas y bienvenidos!, a esta sesión solemne que convoca el Senado de la  República. </p>
+<p align="justify">Reiterar  la presencia de comerciantes y empresarios, invitados por el señor Alejandro  Alonso Serapio.</p>
+<p align="justify">Muchas  gracias, compañeras y compañeros. </p>
+<p align="justify">Se  reanuda la sesión solemne. </p>
+<p align="justify"> Solicito  a la Secretaría dé cuenta con los antecedentes que originan esta sesión  solemne. </p>
+<p align="justify"><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con  gusto, señor Presidente. </p>
+<p align="justify">El 21  de marzo de 1806, en San Pablo Guelatao, Oaxaca, nació Benito Pablo Juárez  García. </p>
+<p align="justify">En 1831  fue nombrado regidor del Ayuntamiento de la capital del estado de Oaxaca por  elección popular. </p>
+<p align="justify">Dos  años después fue electo Diputado al Congreso del Estado. </p>
+<p align="justify">Y para  1848 fue electo Gobernador del Estado de Oaxaca. </p>
+<p align="justify">Fue  nombrado Ministro de Justicia e Instrucción Pública en 1855, cargo desde el que  promulgó la ley conocida como Ley Juárez, instrumentó que sirvió para abolir  los privilegios de militares y clérigos. </p>
+<p align="justify">En  reconocimiento a la defensa de la independencia y libertad de su patria, el 2  de mayo de 1865, el Congreso de Colombia aprobó decreto que declara a Juárez  &ldquo;Benemérito de las Américas&rdquo;. </p>
+<p align="justify">Dos  años después, el 11 de mayo de 1867, el Congreso dominicano proclamó al  Presidente Juárez &ldquo;Benemérito de las Américas&rdquo;. </p>
+<p align="justify">En  México, el 18 de abril de 1873, el Congreso de la Unión decretó declarar a  Benito Juárez &ldquo;Benemérito de la Patria&rdquo; en grado heroico y fijar su nombre con  letras de oro en el salón de sesiones de la Cámara de Diputados. </p>
+<p align="justify">El 1 de  marzo de 2022, el Senador Raúl Bolaños Cachó Cué presentó, a nombre propio y de  los integrantes de la Mesa Directiva, presento un proyecto de Decreto para  inscribir en el Muro de Honor del Senado de la República la leyenda &ldquo;Benito  Juárez, Benemérito de las Américas&rdquo;. </p>
+<p align="justify">El 18  de octubre de 2022 se aprobó el Decreto para inscribir con letras doradas en el  Muro de Honor del Senado de la República la leyenda &ldquo;Benito Juárez, Benemérito  de las Américas&rdquo;. </p>
+<p align="justify">Es  cuanto, señor Presidente. </p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Honorable  Asamblea, en consecuencia y en cumplimiento al Decreto antes señalado en esta  sesión solemne, develaremos la leyenda &ldquo;Benito Juárez, Benemérito de las  Américas&rdquo;, para ello damos la bienvenida al ingeniero Salomón Jara Cruz,  Gobernador Constitucional del Estado de Oaxaca. </p>
+<p align="justify">Bienvenido,  señor Gobernador.</p>
+<p align="justify">A la  Diputada Eva Diego Cruz. A la Diputada Elvia Gabriela Pérez. Al Diputado Samuel  Gurrión Matías.</p>
+<p align="justify">Y  asimismo saludamos la presencia del Diputado al Congreso de la Unión José  Antonio Estefan.</p>
+<p align="justify">Muchas  gracias.</p>
+<p align="justify">De  igual forma a todas las y los invitados que asisten a nuestra sesión solemne. </p>
+<p align="justify">Quiero  compartirle que se encuentra con nosotros el señor Óscar Guerra y la señora  Azucena Rasgado, también presentes.</p>
+<p align="justify"> El  señor Álvaro Pradini, invitados del señor Gobernador.</p>
+<p align="justify">En  esta sesión solemne nos acompaña en la Mesa Directiva la Senadora  Vicepresidenta Ana Lilia Rivera Rivera.</p>
+<p align="justify">La  Senadora Verónica Noemí Camino Farjat, Secretaria.</p>
+<p align="justify">El  Senador Ricardo Velázquez Meza, Secretario.</p>
+<p align="justify">Asimismo,  los Senadores del estado de Oaxaca, Susana Harp, Adolfo Gómez Hernández, así  como Raúl Bolaños Cacho Cué. </p>
+<p align="justify">A  todas y todos ustedes, ¡bienvenidos!</p>
+<p align="justify">Solicito  a la Secretaría informe del formato a realizarse para el desahogo de esta  sesión solemne. </p>
+<p align="justify"><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con  gusto, señor Presidente. </p>
+<p align="justify">La  sesión solemne se realizará conforme al siguiente formato:</p>
+<p align="justify">Mensaje  del Senador Alejandro Armenta Mier, Presidente de la Mesa Directiva del Senado  de la República. </p>
+<p align="justify">Intervención  de la Senadora Susana Harp Iturribarría. </p>
+<p align="justify">Intervención  del Senador Adolfo Gómez Hernández. </p>
+<p align="justify">Intervención  del Senador Raúl Bolaños Cacho Cué. </p>
+<p align="justify">Mensaje  del ingeniero Salomón Jara Cruz, Gobernador del Estado de Oaxaca. </p>
+<p align="justify">Mensaje  del Senador Ricardo Monreal Ávila, Presidente de la Junta de Coordinación  Política. </p>
+<p align="justify">Develación  en el Muro de Honor de la inscripción &ldquo;Benito Juárez, Benemérito de las  Américas&rdquo;. </p>
+<p align="justify">Entonación  del Himno Nacional Mexicano.</p>
+<p align="justify">Y  clausura de la sesión solemne. </p>
+<p align="justify">Es  cuanto, señor Presidente.</p>
+<p align="justify"><strong>DEVELACIÓN EN EL MURO DE HONOR DE LA LEYENDA  &ldquo;BENITO JUÁREZ, BENEMÉRITO DE LAS AMÉRICAS&rdquo;</strong></p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Muchas  gracias, Secretaria. </p>
+<p align="justify">Debo  reiterar también la bienvenida al señor Jaime Bolaños, titular de la Unidad de  Normatividad y Enlace Legislativo de la Auditoría Superior de la Federación.</p>
+<p align="justify">¡Bienvenido!,  señor Jaime Bolaños. </p>
+<p align="justify"> Honorable  Asamblea, le doy la bienvenida a este Senado de la República a las y los  invitados que nos acompañan al palacio de la República, la sede la República,  que representa el Senado de México. </p>
+<p align="justify">Este  evento es uno de los más importantes, sin duda, porque conmemoramos a quien ha  llevado el nombre de México a escenarios internacionales, al prócer de la  nación oaxaqueño, mexicano, Benemérito de las Américas, don Benito Pablo Juárez  García. </p>
+<p align="justify">El día  de hoy inscribiremos en el Muro de Honor de este recinto legislativo la leyenda  &ldquo;Benito Juárez, Benemérito de las Américas&rdquo;. </p>
+<p align="justify">De  origen indígena, fue un joven dedicado al campo, quien quiso estudiar y logró  el título de abogado. </p>
+<p align="justify">El  Presidente Juárez podía leer textos en latín, francés e inglés.</p>
+<p align="justify">Don  Benito Juárez fue electo regidor al ayuntamiento de la capital de Oaxaca,  electo Diputado al Congreso del Estado; fue el primer gobernador indígena de  Oaxaca; ministro de Justicia e Instrucción Pública en México; y también fue el  primer y único Presidente hasta este momento indígena en nuestro país. </p>
+<p align="justify">Hay  que resaltar que durante un momento de nuestra historia en donde el racismo no  se ocultaba, el Presidente Benito Juárez se sobrepuso a los pensamientos  racistas de la época. </p>
+<p align="justify">Juárez  fue un gran reformador, su obra y aportaciones realmente han sido ejemplares  para todas las generaciones, incluso trascendiendo fronteras. En su tiempo  buscó la separación del poder clerical y abolir los privilegios, que por siglos  una minoría detentó a costa del pueblo. </p>
+<p align="justify">Hoy en  día esta gran lucha ha sido una inspiración para buscar separar el poder  económica del poder político, quitar los privilegios que tenían unos cuantos y  combatir la corrupción y buscar el bienestar de las y los mexicanos. </p>
+<p align="justify">Don  Benito Juárez ha sido reconocido como &ldquo;Benemérito de las Américas&rdquo; a nivel  internacional, en países como Colombia y República Dominicana. </p>
+<p align="justify">En  México, desde 1973 el Congreso de la Unión que en ese entonces era unicameral,  decretó declarar a Benito Juárez como &ldquo;Benemérito de la Patria&rdquo; en grado  heroico y fijar su nombre con letras de oro en su salón de sesiones. </p>
+<p align="justify">El día  de hoy fijaremos su nombre recordando sus grandes contribuciones a la Nación,  aquí en el salón de sesiones del Senado de la República, que estas letras  doradas nos sirvan como inspiración de que el trabajo, por más duro que sea,  siempre debe ser por el bien de la Nación, pues Juárez siempre fue un  implacable defensor de la libertad, de la independencia y siempre veló por el  cumplimiento de la ley, con honradez y con firmeza. </p>
+<p align="justify">¡Que  viva el &ldquo;Benemérito de la Patria!</p>
+<p align="justify">¡Que  viva Juárez!</p>
+<p align="justify">En  cumplimiento al Acuerdo aprobado, se concede el uso de la palabra a la Senadora  Susana Harp.</p>
+<p align="justify">Adelante,  Senadora.</p>
+<p align="justify"> <strong>La  Senadora Susana Harp Iturribarría:</strong> Con su permiso, señor  Presidente. Compañeras y compañeros. Saludo con mucho respeto al señor  Gobernador del estado de Oaxaca. A nuestros compañeros legisladoras y  legisladores. </p>
+<p align="justify">Bienvenidos,  paisanas, paisanos. </p>
+<p align="justify">Los  mexicanos y mexicanas compartimos una misma historia, un espacio territorial  común y reconocemos acontecimientos y personalidades a quienes honramos por la  relevancia de sus actos en vida y que tienen que ver con la conformación del  Estado, la Nación y la cultura que reconocemos como propia. </p>
+<p align="justify">Celebro  que el Pleno del Senado de la República aprobara inscribir en letras doradas la  leyenda: &ldquo;Benito Juárez, Benemérito de las Américas&rdquo;, y lo celebro porque este  hombre ilustre de Oaxaca, de origen indígena luchó como pocos por llevar  adelante sus ideales para construir una patria diferente, más justa y más plena  de libertades. </p>
+<p align="justify">Benito  Juárez fue Ministro de Justicia, legislador local, legislador federal, Gobernador  Interino de Oaxaca y Presidente de esta República, entre otras tantas  responsabilidades públicas a lo largo de su vida; mantuvo una lucha persistente  contra los líderes que promovían el centralismo durante el siglo XIX. Sus ideas  fueron fuente de inspiración de la Constitución de 1857 y de un profundo  contenido liberal.</p>
+<p align="justify">Fue  hecho prisionero cuando se negó a ser partícipe del Plan de Tacubaya, de  acuerdo con el cual se desconocería la Constitución vigente; fue perseguido por  las tropas francesas durante la guerra de Reforma, pero al final nos legó las  leyes de reforma y él inició el procedimiento para la restauración del Senado  de la República como un órgano del Poder Legislativo, proceso que ya no le tocó  ver en vida. </p>
+<p align="justify">La  Guerra de Reforma  no era para él sólo una confrontación para controlar el poder de la Iglesia y  las tendencias monárquicas de aquellos tiempos, sino un movimiento que sentaría  las bases del Estado mexicano como un poder autónomo al poder clerical y  caciquil con una entidad responsable y proveedora de justicia y libertad a los  habitantes de nuestra nación. </p>
+<p align="justify">Estimados amigos y amigas,  Juárez es a nuestra patria lo que Voltaire, Rousseau, Franklin o Jefferson lo  fueron para sus respectivas naciones. </p>
+<p align="justify">Hombres como él, muy pocos,  luchador incansable, reconocido como Benemérito de las Américas, precisamente  por sus actos en beneficio a la patria. </p>
+<p align="justify">Es el lugar al que todos  hacen referencia, pero que al final pocos, muy pocos se entregan de manera  desinteresada, porque no es la figura o el tiempo que le tocó vivir lo que hace  grandes a las personas, sino la congruencia y determinación con la que  enfrentaron su momento, porque como él mismo decía: </p>
+<p align="justify"><em>&ldquo;Los hombres no son nada, los principios lo son todo&rdquo;. </em></p>
+<p align="justify">¡Que viva siempre el legado  de Don Benito Juárez! </p>
+<p align="justify">¡Y que viva Oaxaca! </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Muchas gracias, Senadora Susana Harp. </p>
+<p align="justify"> Le cedemos el uso de la  palabra ahora al Senador Adolfo Gómez Hernández. </p>
+<p align="justify"><strong>El Senador Adolfo  Gómez Hernández: </strong><em>&ldquo;Nunca abuses del poder  humillando a tus semejantes, porque el poder termina y el recuerdo perdura&rdquo;.</em></p>
+<p align="justify">Con el permiso de la  Presidencia. Con su permiso, señor Gobernador. Compañeras y compañeros  Senadoras y Senadores: </p>
+<p align="justify">Es para mí un honor  pronunciarme en esta sesión solemne, la cual se realiza para develar en el Muro  de Honor de este recinto legislativo, la inscripción con letras doradas la  leyenda: &ldquo;Benito Juárez, Benemérito de las Américas&rdquo;. </p>
+<p align="justify">Es lo menos que podemos  hacer como representantes del pueblo, recordar a aquel indígena zapoteco, que  desafió todo tipo de reto y que aseguró un lugar central en la historia por su  defensa de un país en aras de crecimiento; aquel indio que pese a las  dificultades que encontró a su paso se abrió camino desde sus modestos  orígenes, quien inició su carrera en el servicio público, antes de haber  concluido sus estudios de jurisprudencia como regidor del ayuntamiento de Oaxaca. </p>
+<p align="justify">Como Diputado de la  legislatura estatal, presentó una iniciativa para que fueran confiscadas las  antiguas propiedades de Hernán Cortés en beneficio del estado de Oaxaca y  otras, para que la Villa de Cuilápam cambiara de nombre a Guerrerotitlán, y los  restos mortales de Vicente Guerrero fueran considerados patrimonio estatal. </p>
+<p align="justify">Fue Secretario de Gobierno,  Gobernador del Estado de Oaxaca. </p>
+<p align="justify">Durante el gobierno del Juan  Álvarez, fue ministro de Justicia, posteriormente, ya como Presidente de la  República le correspondió enfrentar dos episodios clave en la historia de  México, en los cuales estuvo en peligro la independencia y la soberanía de la  nación. Ello me hace reflexionar que la historia de México, sin duda alguna no  sería la misma si no hubieran existido las leyes de reforma y el enfrentamiento  con éxito de la intervención francesa. </p>
+<p align="justify">Preservando la independencia  de México. </p>
+<p align="justify">Es obvio que en México no  sólo hubo crecimiento y construcción a partir de la lucha juarista, pero tampoco podemos negar lo valioso que  nos heredó Juárez a transformar nuestro país en una República libre y  democrática al campear el rostro de nuestra patria. Sin esto no habría forma de  entender el México de hoy. </p>
+<p align="justify">En la lucha y obra del Benemérito de las Américas  podemos ver la construcción de una nación, la creación de diversas leyes que  dieron un giro a nuestra nación y que se sintetiza en el espíritu de una época  mejor y de resultados para un país, siendo ahora un ejemplo único de fuerza de  voluntad para crear acuerdos en beneficio de nuestro hermoso país. </p>
+<p align="justify">Por ello, el día de hoy, me congratulo enormemente y  celebro que se devele, en el Muro de Honor de este recinto legislativo, la  inscripción con letras doradas la leyenda &ldquo;Benito Juárez, Benemérito de las  Américas&rdquo;. </p>
+<p align="justify">¡Viva Juárez! ¡Viva México! ¡Viva los pueblos  originarios!</p>
+<p align="justify">Es cuanto.</p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Mucha gracias, Senador Gómez Hernández. </p>
+<p align="justify"> Continuamos con la participación del Senador Raúl  Bolaños Cacho Cué. </p>
+<p align="justify">La Senadora Susana Harp, el Senador Adolfo Gómez y el  Senador Raúl Bolaños Cacho Cué, son Senadores del estado libre y soberano de  Oaxaca. </p>
+<p align="justify"><strong>El Senador Raúl Bolaños Cacho  Cué: </strong>Con la venia de la  Presidencia. </p>
+<p align="justify">Estimadas compañeras y compañeros Senadores,  distinguido ciudadano gobernador constitucional del estado de Oaxaca, ingeniero  Salomón Jara Cruz. </p>
+<p align="justify">¡Bienvenido!, a ésta su casa, la casa de las leyes. </p>
+<p align="justify">Distinguidas Diputadas, autoridades e invitados que  hoy nos acompañan. </p>
+<p align="justify">A todos, muy bienvenidos. </p>
+<p align="justify">Juárez, su nombre es patria, es sinónimo de justicia  y libertad, de carácter y valentía, Juárez, su nombre es visión, paz e  inspiración, es el legado del México moderno, el que se transforma y se  enaltece, el que se reconoce en sus leyes, en su calma y en su grandeza, el que  avanza día con día con el trabajo de sus mujeres y hombres. </p>
+<p align="justify">Juárez ha sido bandera y fe, coraza y escudo para  proteger a la nación en los momentos más álgidos de su historia. Y hoy, como  desde hace más de siglo y medio, Juárez se convierte en signo permanente de  México, y por eso honramos su nombre que se inscribe en la mente de todos, pero  que habrá de resplandecer en letras de oro en este recinto y en nuestro  porvenir para siempre. </p>
+<p align="justify">El más universal de todos los oaxaqueños, uno de los  hombres más ilustres de México y de los más célebres libertadores de América,  Benito Pablo Juárez García es, sin duda, un personaje fundamental en la  conformación del Estado mexicano, en el ideario nacional y en la historia del  mundo entero. </p>
+<p align="justify">Hoy rendimos honores a un hombre, que, en los  momentos más oscuros de la nación, se mantuvo incólume en defensa de nuestro  país con férrea inflexibilidad voluntad al servicio de México; oaxaqueño,  surgido del pueblo, que por su condición de cuna y raza padeció  indiscriminación y justicia, pero que sin importar las circunstancias tuvo la  generosidad y el mérito inconmensurables de legarnos patria y libertad, patria  para transformarla, libertad para engrandecerla. </p>
+<p align="justify">Presentamos nuestro reconocimiento al eminente  político, herencia propia de la sangre zapoteca, orgullosamente oaxaqueña,  quien con carácter y valentía inquebrantables personificó grandes momentos. </p>
+<p align="justify">Por ello es comprensible que la transformación, que  hoy anhelamos, sea imposible sin la herencia de carácter y voluntad que nos ha  legado Juárez. </p>
+<p align="justify">Su sed de conocimiento encaminó sus pasos por las  escarpadas sierras del estado, hasta llegar a la ciudad de Oaxaca, en aquel  tiempo, a lo largo del camino, quedaron impresas las plantas de sus pies  desnudos y, más tarde, su pensamiento político en la República entera. </p>
+<p align="justify">La geografía nos hace testigos del periplo de su  vida, Guelatao es el origen de la biografía del hombre, Oaxaca el punto de  partida de la historia del ilustre personaje nacional, y México su destino  final. </p>
+<p align="justify">Juárez dedicó  su capacidad intelectual y ética a la política por considerarla una actitud  superior al hombre, y desde la formación académica la vislumbró como esa noble  tarea de dirigir bien a la sociedad. </p>
+<p align="justify"> Su vida entera es una lección de moral cívica, no sólo  para México, sino para toda la humanidad, por lo que el pensamiento del  Benemérito de las América lo convierte ya en un símbolo universal.</p>
+<p align="justify">Con el transcurso de los años su figura lejos de  extinguirse se agiganta día con día, al igual que sus pasiones, su actitud  justa, que son clara y certera brújula para guiar el porvenir de la nación.</p>
+<p align="justify">Porque Juárez vislumbró un México potente y vigoroso,  un país que heredó independiente y por el que luchó con todo el brío para  defender esa conquista libertaria frente a las tropas del Ejército Francés de  Napoleón III cuando comprobó con hechos sus propias palabras, que la causa más  grande y más sagrada para los pueblos y para los hombres es la defensa de la  patria.</p>
+<p align="justify">Juárez apuntaló un México de oportunidades para todos.  Él cimentó un país de leyes y derechos, comprendió que la ley escrita requiere  de la política para imprimirle ese aliento vital como fuerza superior al  derecho.</p>
+<p align="justify">Nos dejó muestra de que es la realidad humana y social  las que deben de regir nuestra labor parlamentaria.</p>
+<p align="justify">El nombre de Benito Juárez ya está inscrito en el  corazón de nuestras libertades, su recuerdo nos demanda estar a la altura,  sobreponer los intereses del Estado mexicano, construir todos los días la  República con la que Juárez soñó, defender nuestra soberanía como Juárez lo  hizo.</p>
+<p align="justify">Debemos de seguir su ejemplo y debemos de sentirnos  profundamente orgullosos de ser oaxaqueños, de ser juaristas y de ser  mexicanos.</p>
+<p align="justify">Así con la visión de don Benito Juárez García, signo  permanente de México, vislumbremos la patria libre, fuerte y justa que debemos  de vivir día con día y que habremos de heredar a las generaciones por venir y  al mundo entero.</p>
+<p align="justify">Por ello no alcanzan las palabras y sobran las razones  para escribir su nombre en letras doradas donde quiera que se le mencione.</p>
+<p align="justify">¿Qué viva Benito Juárez!</p>
+<p align="justify">¡Que viva Oaxaca!</p>
+<p align="justify">¿Y que viva México!</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Honorable Asamblea:</p>
+<p align="justify">Se concede el uso de la palabra al ingeniero Salomón  Jara Cruz, Gobernador Constitucional del Estado de Oaxaca.</p>
+<p align="justify"><strong>El Gobernador de Oaxaca, Salomón Jara Cruz: </strong>Co su permiso, Presidente Senador Alejandro Armenta  Mier. Senadoras y Senadores de la República. Amigas y amigos, invitados:</p>
+<p align="justify">Como Senador con licencia y como gobernador  constitucional del estado de Oaxaca es para mí un honor y un privilegio volver  a esta tribuna para honrar la obra y la memoria del principal protagonista de  la segunda independencia, la restauración de nuestra República, el hoy  Benemérito de las Américas, quien nació en 1806 en el corazón de la montaña,  Guiela Tao, &ldquo;laguna de encanto&rdquo;, Ben Zaa, &ldquo;donde nace la gente de las nubes&rdquo;,  una pequeña aldea habitada por tan sólo 20 familias zapotecas.</p>
+<p align="justify"> Fueron ese año y esa tierra noble y sencilla los que  vieron pasar los primeros años de Pablo Benito, hijo de doña Brígida y de don  Marcelino, una de esas familias humildes en cuyo seno se forjaría el alma y el  carácter del personaje más importante, el mejor presidente y el más grande  estadista y patriota de nuestra historia. </p>
+<p align="justify">Y este  Senado no podía haber elegido un mejor momento para convocarnos al  reconocimiento del recuerdo imborrable del mexicano más universal, digno  representante de la gran generación de oaxaqueños del cincuenta y siete, hombre  de leyes, principios y valores, pionero de la lucha en los tribunales contra la  injusticia y el despojo a las comunidades indígenas, siempre promotor del  sometimiento de la justicia al imperio de la ética y la moral, enemigo del  saqueo, el dispendio, la corrupción y los privilegios. </p>
+<p align="justify">Como  Presidente de la Suprema Corte de Justicia de la Nación y como Presidente de la  República demostró que se puede ejercer el servicio público de manera digna,  congruente, honesta y sin ser presa de facciones o intereses de grupo. </p>
+<p align="justify">Por  ello, es y será por siempre orgullo y ejemplo inquebrantable que trasciende el  tiempo y las fronteras. </p>
+<p align="justify">En la  actual coyuntura política el legado de Juárez debe ser revalorado y  reinterpretado a la luz de su propio contexto histórico. </p>
+<p align="justify">Juárez  encabezó la lucha contra las estructuras coloniales, unió a una nación  desgarrada y vulnerada por una anexión y una guerra injusta que nos llevó a  perder más de la mitad de nuestro territorio. </p>
+<p align="justify">Resistió  y venció la intervención francesa. </p>
+<p align="justify">Condujo,  restauró y salvaguardó la República y la dignidad de nuestro pueblo. </p>
+<p align="justify">Consumó  la segunda Independencia de México y venció, también, el intento de reconquista  monárquica. </p>
+<p align="justify">Por  todo ello y más, Juárez, el hombre, el padre fundador y el guardián de la  Patria, es la roca sobre la que está edificado el Estado nacional mexicano. </p>
+<p align="justify">Al  gobernar para los más pobres y ser un ejemplo de obediencia a la buena ley,  Juárez transformó a México en un país de leyes y de instituciones. </p>
+<p align="justify">El  respeto a la autoridad y a lo que ella representa, desde el punto de vista  social y colectivo, es uno de los principales atributos y herencias de nuestras  comunidades originarias. </p>
+<p align="justify">Por  ello, en el subyace la herencia de la raíz indígena y se hacen presentes los  valores sobre lo que él sustenta hoy nuestro sistema social comunitario. </p>
+<p align="justify">El alma  indígena del juarismo ha logrado trascender el tiempo porque la nuestra es una  nación pluricultural marcada históricamente por la injusticia y la desigualdad. </p>
+<p align="justify">De ahí  nuestra convicción de trabajar por un país en el que no exista la simulación,  los privilegios ni leyes e instituciones al servicio exclusivo de élites. </p>
+<p align="justify">Un país  de bienestar para que las mayorías, para que los de abajo, en donde el amor al  pueblo sea la motivación y la guía del ejercicio del poder público. </p>
+<p align="justify">Porque  si algo nos enseñó el Presidente Juárez, y esto es algo que todos los días nos  recuerda el Presidente de la República, es que:</p>
+<p align="justify"> <em>&ldquo;El poder sólo se vuelve virtud  cuando se pone al servicio de la gente&rdquo;. </em></p>
+<p align="justify">Y, por  eso, Juárez vive y forma parte del actual momento estelar que atraviesa la vida  política de México. </p>
+<p align="justify">Desde  cualquier perspectiva histórica Juárez es un ejemplo de humildad, dignidad,  convicción y congruencia, la correcta interpretación política de su papel  histórico constituye el alma y el espíritu del proyecto de transformación,  bienestar y justicia social del cual formamos parte la mayoría de quienes hoy  estamos aquí. </p>
+<p align="justify">Nunca  antes se había retomado los principios y valores juaristas como hoy en la  actualidad: la atención prioritaria a los más pobres, la política de bienestar  y el combate a la desigualdad, la lucha contra la corrupción y los privilegios,  la promoción de la educación como herramienta transformadora, la reivindicación  histórica de la dignidad de los pueblos originarios, la separación del poder  político, del poder económico y la conducción de los asuntos públicos bajo los  principios de honestidad y de austeridad. </p>
+<p align="justify">Todo  ello forma parte de ese ejemplo con el que el Presidente Juárez nos enseñó a  entender la razón de ser del servicio a la patria, mantener como guía los  principios y las convicciones de quienes han buscado, como Juárez, la libertad,  la igualdad, la justicia y la felicidad del pueblo es un compromiso y una  responsabilidad indeclinable. </p>
+<p align="justify">Quienes  basamos nuestra acción política en el juarismo rechazamos la hipocresía, la  oligarquía, el neoporfirismo y el intervencionismo extranjero; combatimos a las  minorías corruptas y defendemos la soberanía y la dignidad de nuestra patria. </p>
+<p align="justify">Honor y  gloria al Benemérito de las Américas, pues tal y como señaló Jesús Urueta en  1901, Benito Juárez, más allá de sus palabras, no yace bajo su lápida mortuoria  convertido en ceniza, está dentro de nuestras almas convertido en idea, en  sentimiento, en aspiración, cariño a la patria y deseo y libertad. </p>
+<p align="justify">En  nuestro estado Juárez es el espíritu de la primavera oaxaqueña y la hoja de  ruta que nos orienta a seguir transformando nuestra historia. </p>
+<p align="justify">Bien  haría en intentar aprender la importancia hoy de gobernar desde abajo para las  mayorías, priorizando siempre a los más pobres y excluidos, cultivando el  cariño y el apoyo del pueblo de México y de Oaxaca. </p>
+<p align="justify">Muchas  gracias. </p>
+<p align="justify">¡Que  viva Juárez! ¡Que viva Oaxaca! ¡Y que viva México! </p>
+<p align="justify">Muchas  gracias. </p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Ahora  tiene el uso de la palabra el Senador Ricardo Monreal Ávila, Presidente de la  Junta de Coordinación Política. </p>
+<p align="justify"><strong>El  Senador Ricardo Monreal Ávila: </strong>Ciudadano Presidente. Estimados  Senadores y Senadoras. </p>
+<p align="justify">Ciudadano  Gobernador, compañero Senador, Salomón Jara, bienvenido a su casa, junto con  los Poderes del Estado y junto con los invitados especiales que hoy asisten a  este evento sinigual. </p>
+<p align="justify">Estimados  amigos y amigas: </p>
+<p align="justify">Ponciano  Arriaga, presidente del Constituyente de 1857, al expresar las razones para la  promulgación de nuestra Carta Magna, señalaba que no se debían satisfacer las  exigencias de la vanidad y el amor propio. </p>
+<p align="justify"> Decía  también que las pasiones pequeñas y miserables deben guardar silencio cuando se  trata de los más grandes intereses del país, en ocasiones la justicia es  tardía, pero siempre llega.</p>
+<p align="justify">Cuando  Raúl Bolaños, Senador por Oaxaca, me planteaba la inscripción en el Muro de  Honor de Benito Juárez, con rapidez me vino a la memoria: ¿y porque no está  Benito Juárez en los Muros de Honor del Senado? Justicia tardía, pero hoy  tenemos la dicha, todos los que aquí estamos, de ser testigos de esta  inscripción en letras doradas del &ldquo;Benemérito de las Américas&rdquo;, don Benito  Juárez. </p>
+<p align="justify">Sí, hoy  plasmamos en el Muro de Honor de este Senado Mexicano este nombre que inspiró  cambios fundamentales de la República y que logró que aún hoy su acción y su  coherencia se mantengan inalterables. </p>
+<p align="justify">Desde  la Constitución de 1857, Juárez se hacía sentir, y a pesar de que esta Asamblea  Constituyente suprimió al Senado Mexicano y depositó el sistema legislativo en  una sola de las cámaras, la Cámara de Diputados, esta institución que  integramos nunca ha dejado de ser un vínculo de unión y de igualdad, un  vehículo de equilibrio de los estados que en conjunto conforman nuestra Nación,  como lo afirmara Francisco Zarco. </p>
+<p align="justify">Recuerdo  la desaparición del Senado en la conformación del Poder Legislativo, porque a  pesar de ser una pieza consolida en ese momento en la estructura parlamentaria  global, su discusión no concluyó en el &rsquo;57 y la razón le fue otorgada a los  defensores del sistema bicameral años después. </p>
+<p align="justify">El  Senado se afirmaba, se afirmaba, compensa el equilibrio de poderes, representa  a los estados, frena el despotismo del Ejecutivo y los descarríos del Congreso. </p>
+<p align="justify">Guillermo  Prieto, en su espléndida participación de entonces, dejó firme que el Senado  debía reinstalarse y mantenerse en una instancia de contrapeso, incluso para la  labor jurisdiccional.</p>
+<p align="justify">En el  momento en Juárez participó era parte de una generación que había heredado las  preocupaciones, las carencias y las pugnas que por más de tres décadas buscan  identidad nacional, había sorteado esta generación muchas vicisitudes,  conflictos internos, así como la invasión extranjera del vecino norteño con la  dolorosa pérdida de más de la mitad de nuestro territorio nacional. </p>
+<p align="justify">Juárez  impuso e impulsó las libertades, impuso un estilo propio que aún se recuerda,  impulsó las libertades, formó parte del pensamiento para hacerlas efectivas y  protegerlas. </p>
+<p align="justify">Recordemos,  en esta época surge también el juicio  de amparo, institución creada por Mariano Otero, Crescencio Rejón y otros más. </p>
+<p align="justify">Y tiene lugar las reformas religiosas, la clara  definición del federalismo y los alcances para el desarrollo social y económico  del país. </p>
+<p align="justify">Grandes hombres formaban parte aquella generación,  Melchor Ocampo, León Guzmán, Joaquín Ruiz, Francisco Zarco, José Antonio  Gamboa, José María Mata, Joaquín García Granados, Valentín Gómez Farías,  Ponciano Arriaga, Olvera, y otros más. </p>
+<p align="justify">La opinión mayoritaria de esta pleya de hombres  también fue unánime, siempre respecto a la abolición de la censura y el valor  de la conciencia pura. </p>
+<p align="justify">La base de prosperidad de un país, según aquellos  hombres era la unidad nacional. </p>
+<p align="justify">Yo afirmo ahora en el siglo XXI, que la base de  prosperidad de nuestra nación es la unidad y la reconciliación mexicana. </p>
+<p align="justify"> Recordemos que después de la Constitución del 57, se  presentó una cruenta lucha entre el poder civil y el poder eclesiástico, aquel  año se acudió a elecciones, en las que Ignacio Comonfort resultó electo  Presidente constitucional frente a candidatos como Benito Juárez, Ignacio  Ramírez, el Nigromante y Santos Degollado. </p>
+<p align="justify">El abogado oaxaqueño de extirpe indígena, Benito  Juárez era la cabeza de la Suprema Corte de Justicia de la Nación, frente a  nombres tan relevantes como el de Ponciano Arriaga, por ejemplo, o González  Ortega Jesús, no fueron contiendas menores, pero Juárez salió avante. </p>
+<p align="justify">El Presidente Comonfort, ante la rebelión y la  confrontación con la Iglesia y los sectores conservadores, acudió a la  conciliación nacional, pero su llamado no fue atendido y ante la radicalización  de las partes, Benito Juárez es encarcelado y las guarniciones de México y  Tacubaya dan la espalda al Ejecutivo Federal para apoyar que, a Zuluaga,  iniciando un golpe de Estado y promoviendo levantamientos en todo el país. </p>
+<p align="justify">Ante el vacío institucional dejado por la  Presidencia de Comonfort y habiéndose suprimido la figura de vicepresidente de  la República, las disposiciones normativas señalaban quien asumía temporalmente  el cargo de Presidente era el presidente de la Corte y en ese momento preciso  era Juárez el Presidente de la Corte y asume las riendas como Presidente  interino en 1858. </p>
+<p align="justify">La Nación dividida por sus convicciones y creencias  se dirigía a un obscuro sendero cuando los caminos se bifurcaban entre  conservadores y liberales, dando inicio a la Guerra de Reforma, se disuelve el  Congreso, se otorgan facultades extraordinarias al Ejecutivo, comienza entonces  el gobierno itinerante de Juárez.  Juárez enfrenta el golpe de Estado y asume el mando. </p>
+<p align="justify">Por ende, a pesar de las vicisitudes y la dramática  persecución, de la que fue objeto su gobierno al instalarse en Veracruz, hace  valer la promulgación del conjunto normativo, que conocemos como &ldquo;Leyes de la  Reforma o Leyes de Reforma&rdquo;. </p>
+<p align="justify">La guerra civil fratricida y sanguinaria escala en  gravedad, y trascurren así los meses en la incertidumbre de derrotas y triunfos  aislados que no definen con claridad la situación para ninguno de los bandos. </p>
+<p align="justify">Esta revuelta genera una gran complejidad porque se  luchaba por suprimir fueros militares, pero también religiosos, por declarar a  los ciudadanos iguales ante la ley para permitir la libertad religiosa y la  libertad de expresión en los medios de comunicación, se arrancan, de manos  muertas, bienes y terrenos por la ley de iglesias de la época, que prohibía el  cobro de derechos y diezmos, y por lo que sería más tarde, la Ley de  Nacionalización de Bienes Eclesiásticos, complementaria de la Ley de  Desamortización de los Bienes de la Iglesia. </p>
+<p align="justify">También la revuelta se dio por la Ley del Estado Civil  de las Personas y el Registro Civil, que hacían de lado el control de la  Iglesia sobre la formación de la familia, transformándola en un contrato civil,  que además se hacía cargo del registro de nacimientos y defunciones. </p>
+<p align="justify">Igualmente, una ley que poco se conoce, la Ley de  Exclaustración, exclaustración de monjas y frailes, así como la Ley de la  Libertad de Cultos. Es decir, ahí inició el paso de un Estado laico, liberal y  democrático y una república representativa y federal. </p>
+<p align="justify">Fue una larga travesía en la cual naciones extranjeras  también se unieron para exigir la deuda mexicana contraída, aumentando y  abusando de los préstamos otorgados. Juárez decide suspender el pago de la  deuda. </p>
+<p align="justify"> Se suspende también por los países poderosos la relación  con nosotros, y se puso en riesgo la ampliación de límites territoriales de los  extranjeros en la frontera sur y en la península de Baja California, que  estaban acechadas por los gobiernos expansionistas. </p>
+<p align="justify">Había una amenaza seria contra la independencia de la  nación, no solamente de Estados Unidos que, por cierto, pretendía quedarse con  el Istmo de Tehuantepec, o cuando menos de sus recursos y de libre tránsito. </p>
+<p align="justify">Recordemos el Tratado McLane-Ocampo, pero no solo era  Estados Unidos, era Europa con las tres poderosas naciones: Francia, España e  Inglaterra. </p>
+<p align="justify">Así fue venciendo resistencias en años difíciles  Juárez, la balanza se inclinó finalmente hacia el constitucionalismo. </p>
+<p align="justify">En 1860 la actitud del general González Ortega fue  encomiable al entrar con el ejército liberal a las calles metropolitanas a  principios de 1861. Y después el presidente Juárez acompañado de sus ministros  hizo lo propio ofreciendo una amnistía tan amplia como la sana política  aconsejara.</p>
+<p align="justify">Era la primera etapa que Juárez salía victorioso en  una etapa tan cruenta y dolorosa habiéndose enfrentado a la facción más  organizada y más audaz que hubiese ocurrido en México.</p>
+<p align="justify">Al reinstalar el Congreso también se reinstalan y se  reinician trabajos en el Colegio Electoral. </p>
+<p align="justify">Juárez vuelve a obtener la mayoría absoluta de  sufragios y se declara presidente constitucional frente a Lerdo de Tejada,  Miguel, que más tarde muere, y frente a Jesús González Ortega.</p>
+<p align="justify">Ante este hecho de ganar la Presidencia de manera  constitucional se observa un hecho extraordinariamente admirable, Francisco  Zarco, Ignacio Ramírez, &ldquo;El Nigromante&rdquo;, Ignacio de la Llave, Guillermo Prieto,  Jesús González Ortega y Melchor Ocampo, miembros de su gabinete renuncian todos  para dejar en libertad al Presidente Juárez y recomponer su gabinete frente a  las nuevas condiciones.</p>
+<p align="justify">La crisis política no se detuvo, no se detuvo. La  situación financiera ahogaba al país, pero con aplomo frente al estado de cosas  que prevalecía y convencido de que el respeto a la ley es fundamental para  garantizar el orden, el presidente Juárez afirmó: </p>
+<p align="justify"><em>&ldquo;No  permitiré un solo acto que conculque los derechos legítimos, pero seré severo e  inexorable con los trasgresores de la ley y los perturbadores de la paz  pública&rdquo;.</em></p>
+<p align="justify">La situación política era complicada, muy complicada.  Por eso Juárez cuando suspende los pagos se presenta un pretexto para invadir  de nueva cuenta nuestra nación, comienza la invasión y tenemos en las costas  mexicanas los ejércitos de Inglaterra, España y Francia.</p>
+<p align="justify">Sólo Francia se mantuvo, pero fue dolorosa su derrota,  hasta la del 5 de mayo de Puebla. También frente a la hostilidad y frente a  este Estado grave de la nación se envía a un príncipe del extranjero,  tristemente recordado, Maximiliano de Habsburgo, que encuentra su fin hacia  1867, fusilado como un ejemplo para todos quienes pretendieran venir a gobernar  nuestro país desde el exterior, príncipe austriaco.</p>
+<p align="justify">Juárez de nuevo resiste y resiste a los franceses, y  resiste a los norteamericanos, y resiste a las naciones hostiles, por eso su  frase inmortal, que el pueblo y el gobierno respeten los derechos de todos. <br>
+  <em>&ldquo;¡Porque  entre los individuos como entre las naciones, el respeto al derecho ajeno es la  paz!&rdquo;.</em></p>
+<p align="justify">Al final, Senadoras y Senadores, el constitucionalismo  se impuso, la guerra nos dio una lección muy dolorosa, perdimos  territorio hombres y mujeres masacrados, pero el Presidente Juárez nos enseñó  que el pueblo mexicano es el árbitro de su suerte. </p>
+<p align="justify">Concluida  la lucha señaló que su deber era convocar a pueblo para que sin ninguna presión ni legítima influencia este  eligiera a la persona en quien quisiera confiar. </p>
+<p align="justify">Sólo  son breves relatos de lo que es este gigante oaxaqueño, indígena de estirpe. </p>
+<p align="justify">Y, por  eso, yo reclamo lo tardío de este homenaje que hoy concluiremos y que somos  testigo de honor. </p>
+<p align="justify">Estimado  gobernador: </p>
+<p align="justify">Usted  que fue parte de esta Cámara y que es de estirpe mixteca, zapoteca y muy  cercana a la mixteca, y a todas las etnias de su tierra, le damos la bienvenida  porque usted también sabrá honrar a Juárez en los hechos. </p>
+<p align="justify">¡Saludos!</p>
+<p align="justify">Muchas  gracias. </p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Muchas  gracias, Senador Ricardo Monreal. </p>
+<p align="justify">Solicito  a las y los Coordinadores de los grupos parlamentarios, a los integrantes de la  Junta Directiva de la Comisión de Cultura. </p>
+<p align="justify">A las  Senadoras y los Senadores representantes del estado de Oaxaca y al Gobernador  del Estado, nos acompañen, a los integrantes de la Mesa Directiva, para la  develación de la leyenda &ldquo;Benito Juárez, Benemérito de las Américas&rdquo; en el muro  de este salón de sesiones. </p>
+<p align="justify">Las  demás personas que nos acompañan en este recinto, favor de permanecer en sus  lugares y les solicito ponerse de pie. </p>
+<p align="center">(Todos  de pie, se realiza la develación de la leyenda)</p>
+<p align="justify"><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Senadoras  y Senadores, por favor, regresar a nuestros lugares para entonar nuestro Himno  Nacional. </p>
+<p align="center">(Todos  de pie entonan el Himno Nacional)</p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>A  nombre del Senado de la República deseo expresar nuestro agradecimiento a  nuestros distinguidos invitados, encabezados por el  Gobernador Constitucional del Estado de Oaxaca, y Senador con licencia,  ingeniero Salomón Jara Cruz, y a todas y a todos los invitados a esta sesión  solemne.</p>
+<p align="justify">Antes  de concluir la sesión quiero recordarle a la Asamblea que por tratarse de una  sesión solemne me veo imposibilitado en ceder el uso de la palabra a las y los  compañeros que me lo han solicitado.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109191'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109192'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify">Se da por finalizada esta sesión  solemne. Y se cita a sesión ordinaria de la Cámara, de Senadoras y Senadores,  el martes 25 de abril a las 11:00 horas. </p>
+<p align="justify">Se levanta la sesión. </p>
+<p align="center">(Se levantó la sesión solemne a las 13:45 horas)<strong> </strong></p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109192'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

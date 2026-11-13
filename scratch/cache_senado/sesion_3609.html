@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 25</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Gerardo Fernández Noroña</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 10 de Abril de 2025</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/1/SPO/PDF-WEB/SPO_No25_10-ABRIL-2025_SOLEMNE.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='119687'></a><p align="center"><strong>PRESIDE EL SENADOR</strong><br>
+  <strong>JORGE CARLOS RAMÍREZ MARÍN</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>El Presidente Senador Jorge Carlos Ramírez Marín: </strong>(13:11 horas) Con  fundamento en lo dispuesto por el artículo 56, fracción III del Reglamento del  Senado y en el acuerdo de la Mesa Directiva aprobado el pasado 8 de abril  iniciamos la sesión solemne para recibir la visita de la doctora Francia Elena  Márquez Mina, Vicepresidenta de la República de Colombia.</p>
+<p>Solicito a los Senadores  y Senadores designados en la comisión de recepción, acudan a recibir a nuestra  invitada, la doctora Francia Elena Márquez Mina y a su comitiva.</p>
+<p align="center">(La comisión cumple)</p>
+<p align="center"><strong>PRESIDE EL SENADOR</strong><br>
+  <strong>GERARDO FERNÁNDEZ NOROÑA</strong></p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña:</strong> Honorable Asamblea, justo  estaba con la Vicepresidenta Francia Márquez Mina.</p>
+<p>La Secretaria de  Gobernación tuvo que retirarse, está justo atendiendo a madres buscadoras. </p>
+<p>Entonces, pido a la  comisión de cortesía: Senador Alejandro Murat Hinojosa, Senador J. Félix  Salgado Macedonio, Senadora Imelda Sanmiguel Sánchez, Senadora Anabell Ávalos  Zempoalteca, Senadora Yeidckol Polevnsky Gurwitz, Senadora Amalia Dolores  García Medina, Senadora Cecilia Guadalupe Guadiana Mandujano, Senadora Maki  Esther Ortiz Domínguez, Senadora Hime del Carmen Redin Morales, Senadora Karina  Ruiz Ruiz y Senadora Simey Olvera Bautista. </p>
+<p>Por favor, pasen al salón  de protocolo a invitar a nuestra distinguida Vicepresidenta de Colombia,  Francia Márquez Mina. </p>
+<p align="center">(La comisión cumple)</p>
+<p> Informo a la Asamblea que  tenemos la visita de un grupo de personas jubiladas y pensionadas de la  Secretaría de Finanzas, de la Ciudad de México, quienes acuden por invitación  de la senadora Laura Itzel Castillo Juárez. </p>
+<p>¡Sean bienvenidas y  bienvenidos a esta sesión del Senado de la República!</p>
+<p>También informo a esta  Asamblea que tenemos la visita de estudiantes y catedráticos de la carrera de  derecho de la Facultad de Derecho y Ciencias Sociales de la Universidad  Autónoma de Tamaulipas, quienes acuden por invitación de la senadora Olga  Patricia Sosa Ruiz. </p>
+<p>¡Sean bienvenidos y  bienvenidas, a la casa del federalismo!</p>
+<p>Estamos en receso, pero… a  ver, sonido en el escaño de la senadora Margarita Valdez. </p>
+<p><strong>La Senadora Lilia Margarita Valdez Martínez:</strong> (Desde su escaño) Nada  más para solicitar atentamente que en las votaciones anteriores sea  considerada, aquí andaba cerquita, pero no alcancé a llegar, nada más para lo  conducente. </p>
+<p>Gracias. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>Igual que tomen nota de  mi voto, a favor, en ambas votaciones, para el Diario de los Debates, porque no  tengo el don de la omnipresencia. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a119687'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='119688'></a><p>En este momento está  llegando la Vicepresidenta de Colombia, la doctora Francia Márquez Mina.</p>
+<p>¡Bienvenida a esta Cámara  de Senadores!</p>
+<p>Se reanuda la sesión  solemne. </p>
+<p><strong>VISITA  DE LA VICEPRESIDENTA DE LA REPÚBLICA DE COLOMBIA, DRA. FRANCIA ELENA MÁRQUEZ MINA</strong></p>
+<p>La Cámara de Senadores  del Honorable Congreso de la Unión de los Estados Unidos Mexicanos expresa la  más cordial bienvenida a la doctora, la compañera Vicepresidenta de la hermana  República de Colombia, Francia Elena Márquez Mina. </p>
+<p>¡Bienvenida, es un honor  recibir su visita!</p>
+<p>Damos también la  bienvenida a la señora Pilar Vargas Álvarez, encargada de Negocios de la  Embajada de la República de Colombia en México. </p>
+<p>¡Bienvenida!</p>
+<p>A la señora Venus  Pandales, Secretaria privada de la Vicepresidenta de la República de Colombia. </p>
+<p>¡Bienvenida!</p>
+<p>A la señora Alejandra  Pérez, Coordinadora de Cooperación y Asuntos Internacionales de la Vicepresidenta  de la República de Colombia. </p>
+<p>Y a la señora Jenny  Fermina, asesora de la Vicepresidente de la República de Colombia. </p>
+<p> Asimismo, a la señora  María Eugenia Mejía, Consejera de la Embajada de la República de Colombia en  México. </p>
+<p>Y al señor Alfredo  Molano, Cónsul de la República de Colombia en México. </p>
+<p>¡Sean bienvenidas y  bienvenidos a esta su casa!</p>
+<p>Me permito presentar a  mis compañeras y compañeros Senadores integrantes de la Mesa Directiva  presentes en esta sesión solemne. </p>
+<p>La Senadora Imelda Castro  Castro, Vicepresidenta. </p>
+<p>La Senadora Karla  Guadalupe Toledo Zamora, Vicepresidenta.</p>
+<p>El Senador Jorge Carlos  Ramírez Marín, Vicepresidente. </p>
+<p>La Senadora Verónica  Camino Farjat, Secretaria integrante de la Mesa Directiva. </p>
+<p>La Senadora Jasmine María  Bugarín. </p>
+<p>La Senadora Lizeth  Sánchez García. </p>
+<p>Y son también parte de la  Mesa Directiva, no nos acompañan en este momento en el presídium, la Senadora  Julieta Andrea Ramírez Padilla, la Senadora Imelda Sanmiguel Sánchez y la  Senadora Claudia Edith Anaya. </p>
+<p>Ah, está aquí la Senadora  Imelda Sanmiguel Sánchez. Perdón, aquí nos acompaña en el presídium. </p>
+<p>Y la Senadora Claudia  Edith Anaya Mota, también. </p>
+<p>Doctora Francia Elena  Márquez Mina, para el Senado Mexicano es un honor contar con su presencia y de  la comitiva que la acompaña. </p>
+<p>Conforme al Acuerdo  aprobado para normar esta sesión, se concede el uso de la palabra, el uso de la  tribuna, a la doctora Francia Elena Márquez Mina, Vicepresidenta de la  República de Colombia. </p>
+<p><strong>La Vicepresidenta de la República de Colombia,  Francia Elena Márquez Mina: </strong>Muchas gracias. </p>
+<p>Un saludo especial al  Honorable Senado de la República de México. </p>
+<p>Saludo especial al señor  Presidente de la Mesa Directiva del Senado de la República de México, Gerardo  Fernández Noroña. </p>
+<p>A la Vicepresidenta de la  Mesa Directiva del Senado de la República de México, Imelda Castro Castro. </p>
+<p>A la Vicepresidenta de la  Mesa Directiva del Senado de la República, Karla Guadalupe Toledo Zamora. </p>
+<p>Al Vicepresidente de la  República del Senado de México, al Senador Jorge Carlos Ramírez Marín. </p>
+<p>A la Secretaria de la  Mesa Directiva del Senado, Verónica Noemí Camino Farjat. </p>
+<p> Al Presidente de la Junta  de Coordinación Política del Senado de la República de México, Adán Augusto  López Hernández. </p>
+<p>A la Senadora de la  República de México, Beatriz Mojica Morga. </p>
+<p>Al encargado de negocios  de comercio ante el gobierno de México y el gobierno de Colombia Pilar Vargas  Álvarez. </p>
+<p>Y un saludo especial a  todos los Honorables Senadores y Senadoras. </p>
+<p>Y, por supuesto un saludo  al Pueblo Mexicano. </p>
+<p>Señor Presidente del  Senado. </p>
+<p>Honorables Senadores y Senadoras. </p>
+<p>Al Pueblo Mexicano:</p>
+<p>Quiero extender un  especial saludo a la Presidenta de la República de México, Claudia Sheinbaum.</p>
+<p>Gracias por su dignidad,  como mujeres nos sentimos orgullosas y sentimos que usted no solo es la  Presidenta de México, usted es la Presidenta de todas las mujeres  latinoamericanas. </p>
+<p>Gracias por abrirme las  puertas de este recinto, símbolo de la Soberanía y de la resistencia del pueblo  mexicano. </p>
+<p>Estoy aquí como Vicepresidenta  de la República, pero también como mujer afrodescendiente, como hija de pueblos  que históricamente han cargado la exclusión y la marginalidad. </p>
+<p>Según datos oficiales,  más del 3.1 millones de mexicanos y mexicanas se reconocen como  afrodescendientes. Esto representa el 2.4 por ciento de la población mexicana. </p>
+<p>México es un país de casi  130 millones de habitantes, aunque el porcentaje de la población  afrodescendiente sea modesto respecto a otros grupos poblacionales, cada vida  importa. </p>
+<p>Por tanto, la garantía de  los derechos de la población afromexicano es una necesidad.</p>
+<p>Es necesario crear  políticas públicas, programas y proyectos destinados a destinación de  presupuestos nacionales, para la garantía de los derechos de la población afro  en el país de México. </p>
+<p>Sé que los pueblos  afromexicanos, como el pueblo afrodescendiente en el continente, continúa  viviendo situaciones de exclusión y marginalidad. </p>
+<p>Sé que las mujeres  afrodescendientes, aún la esperanza de vida es menor al promedio nacional de  cada una nuestras naciones. </p>
+<p>Por tanto, trabajar por  el acceso a la educación, a los derechos básicos, al desarrollo, trabajar por  erradicar la pobreza y la superación de las inequidades y las desigualdades es  necesario hoy en América Latina, en el Caribe y en el mundo. </p>
+<p>La población  afromexicana, afrodescendiente, en América Latina, enfrenta desafíos históricos  de discriminación y de racismo sistemático. </p>
+<p> En nuestro país hemos  trabajado para asumir una agenda históricamente aplazada, reconociendo que el Presidente  Gustavo Petro y que hoy se dirige a ustedes, somos el primer gobierno  progresista que ocupa el Estado para transformar las inequidades y  desigualdades históricas. </p>
+<p>En campaña prometimos  crear una estructura que trabajara por la garantía de los derechos de las  mujeres, de la población afrocolombiana raizal y palenquera de la población  indígena, que trabajar por la dignidad de la población LGBTIQ+, de la población  con discapacidad, de la población campesina, que hoy se ha reconocido como un  sujeto de derechos en nuestro país. </p>
+<p>Asimismo, nos hemos  comprometido en trabajar por la distribución de los recursos del Estado  llevando el acceso a agua potable, a educación para la juventud, y llevando  soluciones que transformen esas inequidades en los territorios más vulnerables  de nuestro pueblo. </p>
+<p>Por eso creamos el  Ministerio de la Igualdad, que hoy me honra decir que como Vicepresidenta fue  una tarea que me colocó el presidente. </p>
+<p>Y hoy puedo decirle al  pueblo colombiano y a América Latina que Colombia avanza en cerrar las brechas  de inequidad y de desigualdad tan profundas en nuestra sociedad. </p>
+<p>Hemos creado el Sistema  Nacional de Cuidado, y cuando hablamos de cuidado las mujeres sabemos de qué  estamos hablando, porque hemos cargado sobre nuestros hombros la  responsabilidad de cuidar. </p>
+<p>Y hoy cuando la vida está  tan convulsionada, Colombia que se avanza como vanguardia de construir una  sociedad del cuidado, que reconstruya el tejido social de nuestra sociedad tan  roto por el conflicto armado y la exclusión; proponemos a México, a América  Latina y al Caribe ser una región cuidadora, trabajar juntos en un sistema  regional de cuidado.</p>
+<p>Hoy cuando la vida se  pone en riesgo en el planeta una civilización del cuidado es necesaria. </p>
+<p>Después de 31 años  abordamos una reparación histórica para el pueblo afrodescendiente, y es que  después de 31 años de abandono, olvido y exclusión, avanzamos en la  reglamentación de la Ley 70 de 1993 que reconoce el derecho a la identidad  cultural, el derecho a la propiedad colectiva de las tierras y el derecho a una  opción propia de futuro de los pueblos afrodescendientes. </p>
+<p>Esto que hemos avanzado  es una revolución para la región y, sobre todo, una revolución que permite el  reconocimiento de la propiedad colectiva es parte de la lucha por la reforma  agraria, que sabemos que en nuestro país y en Latinoamérica le ha costado vida  a nuestros líderes y lideresas de izquierda y progresistas. </p>
+<p>Invitamos al Congreso de  México a legislar en favor de las poblaciones más vulnerables, excluidas, a  legislar en favor de los derechos de las mujeres; a legislar para sembrar la  esperanza a la juventud, a legislar para a hacer de México, de Latinoamérica  una región, la región de la vida; legislar en favor de la vida poniendo la vida  en el centro. </p>
+<p>Creamos la Comisión  Intersectorial Nacional de Reparaciones Histórica que aborde los desafíos del  racismo sistemático, del colonialismo y de la esclavitud que todavía nos  persigue hasta nuestros días. </p>
+<p>Desde esta comisión  proponemos la restauración de la dignidad de las poblaciones racializadas que  siguen viviendo los impactos y las consecuencias de esos sistemas de opresión. </p>
+<p> Invitamos a toda la  región a trabajar juntos por una agenda de reparación histórica que reconstruya  la memoria de los pueblos originarios, la memoria de los pueblos  afrodescendientes. </p>
+<p>Por último, decir que  estamos convencidos de que ha llegado el momento de que América Latina, el  Caribe y el Continente Africano caminen juntos frente a las guerras  comerciales, las crisis migratorias, el colapso climático y el orden  internacional que perpetua las desigualdades coloniales. </p>
+<p>Hoy más que nunca es  urgente reconectar nuestras diásporas, no solo desde la memoria, sino también  desde la diplomacia, la cooperación y la cultura y el comercio. </p>
+<p>Colombia se está  esforzando por reconectar su alianza con el Continente Africano.</p>
+<p>Por eso hoy proponemos,  en este recinto, la necesidad de trabajar por la cooperación entre el sur  global, hoy cuando la economía se amenaza, cuando el bienestar se pone en  riesgo, cuando las guerras se exacerban en muchos lugares de planeta. </p>
+<p>Sabemos que ayer Colombia  recibió la presidencia Pro Tempore en la Celac, y sabemos que el presidente  Gustavo Petro propuso en esa cumbre de mandatarios la necesidad de trabajar con  la Unión Africana, de trabajar con el Caribe y, por supuesto, de trabajar con  la Unión Europea para hacer un bloque de cambio, de transformación que restaure  y reafirme la dignidad de nuestros pueblos. </p>
+<p>Muchas gracias, Honorables  Senadores. </p>
+<p>Gracias, Senadoras. </p>
+<p>Gracias por seguir  levantando la voz de las mujeres en este recinto. </p>
+<p>Y gracias por seguirle  apostando a la dignidad de un pueblo. </p>
+<p>Seguimos trabajando hasta  que la dignidad se haga costumbre. </p>
+<p><strong>EL Presidente Senador Gerardo Fernández Noroña:</strong> A nombre del Senado de  la República, agradezco la visita de la compañera Vicepresidenta de la  República de Colombia, Francia Elena Márquez Mina. </p>
+<p>Como lo comentaba nuestra  Vicepresidenta de Colombia, aquí en México nos tardamos un poco para que una  mujer llegara a la Presidencia, 200 años y hoy tenemos una extraordinaria  compañera en la lideresa, la compañera Presidenta Claudia Sheinbaum Pardo. </p>
+<p>Y, yo quiero recuperar,  justo de ayer en la reunión en la Celac, algunas palabras por ella expresadas.</p>
+<p>Ella pidió que se  convoque a una Cumbre por el Bienestar Económico de América Latina y el Caribe,  para hacer una realidad, una mayor integración económica regional en la patria  grande, sobre la base de la prosperidad compartida y el respeto a la soberanía  de nuestras naciones, debe estar siempre en el centro la dignidad humana y el  respeto al rumbo que cada pueblo ha determinado para su misión. </p>
+<p>Pidió también rechazar el  racismo que tanto daño sigue haciendo en pleno siglo XXI, rechazar el clasismo,  la violación a derechos humanos y la criminalización de hermanos de nuestro  continente que, por alguna causa han tenido la necesidad de migrar hacia el  norte. </p>
+<p> Dirijo de manera muy  firme, también es menester decirlo fuerte y claro, rechazamos, como lo ha hecho  históricamente México, las sanciones y bloqueos comerciales que sólo dañan el  bienestar de los pueblos y no construye regiones de paz y prosperidad.</p>
+<p>No al bloqueo a Cuba.</p>
+<p>No al bloqueo a  Venezuela.</p>
+<p>Sumamos nuestra voz en lo  que vale para exigir respeto a los pueblos. </p>
+<p>Al sufrido pueblo de  Haití, precursor de las luchas de independencia, un pueblo afroamericano, y que  se debate desde hace muchas décadas en una represión, una pobreza y una  desigualdad vergonzosa. </p>
+<p>Tendemos la mano a la  patria grande, efectivamente, que compartimos las preocupaciones aquí  manifestadas de construir un sistema regional de cuidados, de hacer una agenda  de reparación histórica a los pueblos originarios y a los pueblos afro, de  origen africano, que hoy son parte de nuestras naciones e identidades y una  cooperación con el sur global en una verdadera prosperidad compartida. </p>
+<p>Yo cierro pidiendo que  sea conducto para mandarle un abrazo fraterno al presidente Gustavo Petro,  desearle el mayor de los éxitos al frente de la Celac y de su responsabilidad  al frente de Colombia.</p>
+<p>Porque si bien aquí nos  habíamos tardado 200 años en que una presidenta fuera mujer, en Colombia se  habían tardado 200 años en que un hombre o una mujer de izquierda condujera los  destinos del hermano pueblo de Colombia.</p>
+<p>Los felicitamos  ampliamente, y… </p>
+<p>No me queda más que  manifestar que para nosotros, quien lo hubiera dicho, quien lo hubiera pensado,  que una mujer surgida del profundo corazón del pueblo colombiano, de origen  afrocolombiano, luchadora social, comprometida con las mejores causas de su pueblo,  pudiera venir a dar un mensaje a la Cámara de Senadores en México, que lo  hiciera con esa dignidad, con ese compromiso, con ese reconocimiento siempre de  su origen y de su pertenencia al pueblo colombiano, al cual sirve con  honestidad, con pasión, con enorme amor. </p>
+<p>De verdad, es para este  Senado de la República una dignidad enorme tenerla presente y haber escuchado  su mensaje. </p>
+<p>Muchísimas gracias. y </p>
+<p>¡Larga vida al pueblo de  Colombia!</p>
+<p>¡Larga vida a la  hermandad entre los pueblos de la patria grande! y </p>
+<p>¡Larga vida a los hombres  y mujeres que prestan sus servicios con principios, con honestidad y con  patriotismo a nuestros pueblos! </p>
+<p>Muchas gracias. </p>
+<p>Creo que tengo que dar  por formalmente clausurada. </p>
+<p>Agradezco a las  distinguidas personas que han asistido a esta sesión solemne. </p>
+<p> Invito a la Vicepresidenta Francia Elena Márquez Mina, nos acompañe para  la toma de la fotografía oficial. </p>
+<p align="center">(Toma de foto oficial en el presídium)</p>
+<p>Solicito a las personas senadoras integrantes de la comisión de cortesía,  se sirvan acompañar a nuestros invitados hasta las puertas de este recinto,  cuando deseen retirarse.</p>
+<p>Asimismo, solicito a mis compañeras y compañeros Senadores, permanezcamos  en el salón de sesiones para continuar con la sesión ordinaria.</p>
+<p>Se levanta la sesión solemne.</p>
+<p>Se levantó la sesión solemne a las 13:41 horas. <strong> </strong></p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a119688'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>TERCER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO III</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 31</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Ana Lilia Rivera Rivera</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 30 de Abril de 2024</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/3/SPO/PDF-WEB/SPO_No31_30-ABRIL-2024_SS_ARMADA.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='115522'></a><p align="center"><strong>PRESIDE LA SENADORA</strong><br>
+  <strong>ANA LILIA RIVERA RIVERA</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>La Presidenta Senadora Ana Lilia Rivera Rivera:</strong> (12:30 horas) Con el quórum de nuestra sesión  ordinaria y con fundamento en lo dispuesto por la fracción VIII del artículo 56  del Reglamento del Senado, iniciamos la sesión solemne convocada para la  entrega de la &ldquo;Medalla de Honor Armada de México&rdquo;, al Almirante José Rafael  Ojeda Durán.</p>
+<p>Para recibir a nuestro galardonado, se ha designado a  las Senadoras y los Senadores Jesús Lucía Trasviña, Roberto Juan Moya Clemente,  Ángel García Yáñez, Noé Castañón, Gabriela Benavides, Cora Cecilia Pinedo,  Miguel Ángel Mancera, Indira Paola López, Víctor Oswaldo Fuentes Solís, Omar  Holguín Franco, Maura Hernández Fernández, Nancy Sánchez Arredondo y Navor  Alberto Rojas Mancera, para que procedan, por favor, a acompañarlo a que  ingrese a este Pleno y a este recinto.</p>
+<p align="center">(La comisión cumple)</p>
+<p>En tanto, se declara un receso.</p>
+<p align="center">(RECESO)</p>
+<p><strong>La Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Se reanuda la sesión solemne.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a115522'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='115523'></a><p><strong>ENTREGA DE LA MEDALLA DE HONOR &ldquo;ARMADA DE MÉXICO&rdquo; 2023, AL  CIUDADANO ALMIRANTE JOSÉ RAFAEL OJEDA DURÁN</strong><strong></strong></p>
+<p>Senadoras, Senadores y distinguidos invitados que nos  honran con su presencia, tanto en el presídium como en los palcos.</p>
+<p>En primer lugar, queremos dar la bienvenida a nuestro  galardonado con la &ldquo;Medalla de Honor Armada de México&rdquo; al Almirante José Rafael  Ojeda Durán, Secretario de Marina.</p>
+<p>A la Senadora Verónica Martínez García, Presidenta de  la Comisión de Marina.</p>
+<p>Al Senador Sergio Pérez Flores, Vicepresidente.</p>
+<p> La Senadora Noemí Reynoso Sánchez, Vicepresidenta.</p>
+<p>Al Senador Noé Castañón, Vicepresidente.</p>
+<p>Y a la Senadora Sylvana Beltrones Sánchez,  Vicepresidenta.</p>
+<p>Asimismo, saludamos a la Senadora Verónica Camino  Farjat, la Senadora Cora Cecilia Pinedo Alonso, al Senador Ricardo Velázquez  Meza, al Senador Navor Rojas Mancera, la Senadora María Guadalupe Saldaña,  Marcela Mora y al Senador Daniel Gutiérrez Castorena, Secretarias y Secretarios  respectivamente, de la Mesa Directiva.</p>
+<p>Asimismo, damos la bienvenida al Almirante José Luis  Arellano Ruíz, Subsecretario de Marina.</p>
+<p>Al Almirante César Carlos Preciado Velázquez, Oficial  Mayor de Marina.</p>
+<p>Al Almirante Alfredo Hernández Suárez, Jefe de Estado  Mayor General de la Armada.</p>
+<p>Al Almirante Julio César Pescina Ávila, Inspector y  Contralor General de la Marina.</p>
+<p>El ViceAlmirante Alfredo Ramón Enríquez Delgado,  Comandante del Cuartel General del Alto Mando de la Armada de México.</p>
+<p>Así como a la familia de nuestro galardonado, el  Almirante Ojeda Durán.</p>
+<p>Agradecemos su asistencia a esta sesión solemne.</p>
+<p>Como es de su conocimiento, el 25 de octubre de 2021  se publicó en el Diario Oficial de la Federación el Decreto por el que el  Senado de la República instituye la &ldquo;Medalla de Honor Armada de México&rdquo; con  motivo del Bicentenario de la creación de la Armada de México.</p>
+<p>Previo a ello, con el propósito de incorporar la  creada condecoración a la normatividad interna del Senado, el Senador Eruviel  Ávila Villegas presentó sendas iniciativas para adicionar tanto el Reglamento  del Senado como la Ley Orgánica del Congreso General, ambas iniciativas fueron  aprobadas por este Pleno con el apoyo de todas y todos las fuerzas políticas  representadas en este Senado, así como fueron publicadas en el Diario Oficial  de la Federación el 22 de septiembre de 2023 y el 9 de diciembre de  2022, respectivamente. </p>
+<p>La  presea en cuestión se instauró para premiar a los hombres y mujeres mexicanos  que hayan distinguido por sus méritos académicos, profesionales, cívicos, por  su relevancia social o cualquier otra circunstancia que se estime que se  instituyan acciones o hechos considerados durante la presentación de sus  servicios que de manera ordinaria o extraordinaria les hayan sido encomendados.</p>
+<p>Para  lograr este propósito, el 23 de noviembre de 2023, la Comisión de Marina emitió  la convocatoria correspondiente en la que establecieron las bases para la  recepción de candidatas y candidatos a la &ldquo;Medalla de Honor Armada de México&rdquo;.</p>
+<p>Como  resultado de lo anterior, el pasado 21 de febrero, aprobamos por unanimidad el  acuerdo por el que se estableció que el galardonado fuese el Almirante José  Rafael Ojeda Durán.</p>
+<p>Les  informo, además, que esta será la primera vez que el Senado de la República  entregue la &ldquo;Medalla de Honor Armada de México&rdquo;.</p>
+<p> Por lo tanto, se concede el uso de la  palabra a la Senadora Verónica Martínez García, Presidenta de la Comisión de  Marina. </p>
+<p><strong>La Senadora Verónica  Martínez García: </strong>Con su venia, señora Presidenta. Compañeras y compañeros  Senadores:</p>
+<p>Distinguido personal naval e invitados  especiales y familiares que hoy nos acompañan. </p>
+<p>Es un honor para mí acudir ante ustedes,  a nombre de la Comisión de Marina, en esta sesión solemne histórica, con motivo  del Bicentenario de la Creación de la Armada de México. </p>
+<p>Somos la primera Legislatura que  otorgamos esta Medalla de Honor, con ella reconoceremos a mujeres y hombres  mexicanos que se han distinguido por sus valiosos méritos en la prestación de  los servicios al sector marítimo nacional. </p>
+<p>La Armada de México, compuesta por más  de 75 mil mujeres y hombres leales a la  patria, ha demostrado que el espíritu de profesionalismo y sacrificio por la  defensa de nuestro país son compatibles con los valores de honor, deber,  lealtad y patriotismo. </p>
+<p>Para mí es un gran privilegio que el  legado de esta presea inicie con el reconocimiento al Almirante secretario de  Marina, José Rafael Ojeda Durán. </p>
+<p>Nacido en el estado de Veracruz. </p>
+<p>Ingresó a la histórica Escuela Naval en  el año de 1969. </p>
+<p>En 1974 se gradúo como ingeniero  geógrafo e ingeniero mecánico naval en el Centro de Estudios Superiores  Navales. </p>
+<p>Ha realizado los cursos de mando naval,  estado mayor naval, maestría en seguridad nacional. </p>
+<p>Es miembro de la Legión de Honor  Mexicana y diplomado del Centro Superior de Estudios de la Defensa Nacional de  Madrid, España, instituto que le otorgó el distintivo Altos Estudios  Estratégicos para Oficiales Superiores Iberoamericanos. </p>
+<p>Entre los cargos que ha ocupado  destacan: </p>
+<p>Jefe de Estado Mayor de Zonas Navales. </p>
+<p>Director General Adjunto de Seguridad y  Bienestar Social. </p>
+<p>Director General de Recursos Humanos. </p>
+<p>Director General de Investigación y  Desarrollo. </p>
+<p>Subdirector General del Instituto de  Seguridad Social para las Fuerzas Armadas Mexicanas. </p>
+<p>Antes de su actual designación fungió  como Inspector y Contralor General de la Marina. </p>
+<p>Su experiencia de mando abarca los  diferentes niveles operativos de la Armada, lo que incluye la comandancia de  diferentes tipos de buques, recibiendo en 1987 el reconocimiento especial a la  operatividad y eficiencia, otorgado por la Fuerza Naval del Pacífico. </p>
+<p> Además,  ha sido comandante de flotilla de Guardacostas, de Sector, Zona, Regiones  Navales y de la Fuerza Naval del Pacífico. </p>
+<p>En el  ámbito académico se ha desempeñado como profesor militar y jefe de carrera del  cuerpo general en la Heroica Escuela Naval. </p>
+<p>Ha sido  conferencista en el Centro de Estudios Superiores Navales, en la Escuela  Superior de Guerra de la Secretaría de Defensa Nacional y director de tesis de  cursantes de Seguridad Nacional y de Estado Mayor. </p>
+<p>Se ha  hecho merecedor a las condecoraciones de Perseverancia, de sexta a primera  clase; así como de Perseverancia Excepcional, de tercera, segunda y primera  clase.</p>
+<p>Condecoración  Estrella de las Fuerzas Armadas de Ecuador, en grado Gran Estrella al Mérito  Militar. </p>
+<p>Condecoración  Orden Cruz Peruana al Mérito Naval, en grado Gran Cruz. </p>
+<p>Condecoración  al Mérito Docente Naval. </p>
+<p>Condecoración  de Servicios Distinguidos, otorgada por el Ejército y Fuerza Aérea Mexicanos. </p>
+<p>Condecoración  al Mérito Especial, por su loable participación como Secretario de Marina en  las acciones de planeación, coordinación supervisión y dirección del Plan Marina  Covid-19.</p>
+<p>A lo  largo de su trayectoria, el Almirante Ojeda ha cosechado una serie de logros  que han transformado a la Secretaría de Marina en una institución a la  vanguardia eficiente y efectiva. </p>
+<p>Su  decisión de crear la Dirección de Igualdad de Género e Inclusión, así como la  implementación de políticas de igualdad de género y la capacitación del  personal naval en la materia, son medidas ejemplares que demuestran su  compromiso con la mayor construcción de una Armada de México con mayor equidad  e inclusión. </p>
+<p>Gracias,  Almirante Ojeda, por su visión progresista. </p>
+<p>Compañeras  y compañeros Senadores, hoy estamos reconociendo a un gran hombre con 55 años  de servicio activo a favor de nuestro país.</p>
+<p>El Secretario  Almirante es el integrante de mayor rango en la Armada de México, ha  desempeñado sus servicios en diferentes unidades y establecimientos en  funciones tanto operativas, administrativas, académicas, de staff y de alta  gerencia. </p>
+<p>Su  legado al frente de la Secretaría de Marina es una muestra de su compromiso  inquebrantable con México, un ejemplo a seguir para las nuevas generaciones de  marinas y marinos. </p>
+<p>Querido  Almirante: Como primera mujer Presidenta de la Comisión de Marina en el Senado  de la República, y a nombre de mis compañeras y compañeros integrantes de la  Comisión de Marina, quiero agradecerle y reconocerle también sus atención y  disposición para analizar cada uno de los asuntos que desde esta comisión se le  plantearon.</p>
+<p>Hemos  recibido, tanto de usted como de su equipo de trabajo, un trato amable y  profesional que nos ha permitido trabajar en sinergia cada uno desde sus  trincheras, velando siempre por el bien de nuestra nación. </p>
+<p> El  Senado de la República le otorga esta presea en reconocimiento a sus 55 años de  servicio y entrega, en una de las instituciones más importantes del país:  nuestra querida Armada de México. </p>
+<p>Reconocemos  también a su familia, a sus amigos, a su equipo de trabajo, que estoy segura  del orgullo que es para ustedes estar presentes en este momento tan importante  para nuestro querido Almirante Rafael Ojeda Durán. </p>
+<p>Señor Secretario,  a partir del día de hoy, con usted se inicia una tradición que año con año un  integrante del sector marítimo nacional recibirá esta condecoración.</p>
+<p>En  nombre del Senado de la República y del pueblo de México, le expreso nuestro  más profundo reconocimiento a su gran labor. </p>
+<p>¡Muchas  felicidades, Almirante Ojeda!, que su legado siga inspirando a las futuras  generaciones de marinas y marinos. </p>
+<p>Muchas  gracias. </p>
+<p><strong>La Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Muchas gracias, Presidenta de la Comisión de Marina. </p>
+<p>Solicito  a todos los presentes ponerse de pie para la entrega de la &ldquo;Medalla de Honor Armada de México&rdquo;, correspondiente al  año 2023, al Almirante José Rafael Ojeda Durán. </p>
+<p>La  Cámara de Senadores del Honorable Congreso de la Unión otorga la &ldquo;Medalla de  Honor Armada de México&rdquo;, al Almirante José Rafael Ojeda Durán, como merecido  reconocimiento a su destacada trayectoria en el sector marítimo nacional y su  intachable labor al frente de la Secretaría Marina Armada de México. </p>
+<p align="center">Ciudad  de México, 30 de abril de 2024.</p>
+<p>Firman:  La Senadora Ana Lilia Rivera Rivera, Presidenta de la Mesa Directiva del Senado  de la República y la Senadora Verónica Martínez García, Presidenta de la  Comisión de Marina. </p>
+<p align="center">(Todos  de pie)</p>
+<p align="center">(Entrega  de medalla al galardonado)</p>
+<p>Muchas  gracias, Almirante Ojeda Durán. </p>
+<p>Se  concede el uso de la palabra a nuestro galardonado, el Almirante José Rafael  Ojeda Durán. </p>
+<p><strong>El  Almirante José Rafael Ojeda Durán:</strong> Han pasado 204 años  desde que el Benemérito de la Patria, don Vicente Guerrero, se dirigiera a su  propia sangre para inscribir, en la bitácora de nuestro país, una de las  consignas más sublimes, que, desde el nacimiento del México independiente hasta  la fecha, ha marcado el destino de quienes hemos decidido vivir al servicio de  la Nación: </p>
+<p align="right"><em>&ldquo;La Patria es Primero&rdquo;.</em></p>
+<p>&ldquo;A la  Patria y a nuestro pueblo no se les traiciona&rdquo;;</p>
+<p> &ldquo;A la  Patria y a nuestro pueblo se les defiende&rdquo;;</p>
+<p>&ldquo;Por  la Patria y por nuestro pueblo hasta la vida misma&rdquo;;</p>
+<p>Muy  buenos días a todos.</p>
+<p>Como  marino naval es un honor encontrarme  en este recinto que simboliza la voluntad de nuestro pueblo y, por tanto, la  democracia de nuestra Nación. </p>
+<p>Con respeto y cordialidad me dirijo a cada una y uno  de ustedes. </p>
+<p>Senadora Ana Lilia Rivera Rivera, Presidenta de la  Mesa Directiva del Honorable Senado de la República. </p>
+<p>Senadora Verónica Martínez García, Presidenta de la  Comisión de Marina, muchas gracias por sus palabras. </p>
+<p>Senadoras y Senadores de la LXV Legislatura de esta Honorable  Cámara. </p>
+<p>Señoras y señores, hace 55 años decidí emprender una  travesía que con el paso de los años se convirtió en mi vida, durante ésta, más  de cinco décadas, y desde que ingresé al servicio de la Armada de México como  cadete de la heroica Escuela Naval Militar, escalé sucesivamente cada una de  las diferentes jerarquías navales y conocí así el orgullo de ser subordinado y  la responsabilidad de tener el mando; siempre fue en compañía de mi familia, a  quien aquí presente les agradezco a mi señora, a mis hijos, a mi hermana, a mis  nietos, a mi nieta, que no pudo venir hoy, a la cual adoro, a mi hijo, a todos  ustedes, a mi yerno, a mi suegra. </p>
+<p>Muchas gracias por acompañarnos durante estos 55 años. </p>
+<p>Gracias. </p>
+<p>Los últimos cinco años he tenido he tenido el alto  honor de servir a México al frente de una institución colmada, de un glorioso  pasado y un sublime patriotismo. </p>
+<p>El día de hoy este Honorable Senado de la República me  hace merecedor de una presea que llena de orgullo, el propio nombre de esta  medalla lo dice todo, &ldquo;Honor Armada de México&rdquo;.  </p>
+<p>Es un acto de suma justicia recibir esta deferencia en  nombre de cada integrante de la institución a la que represento. </p>
+<p>Les agradezco a todas y todos los integrantes de la  Secretaría de Marina, Armada de México, porque esta medalla no es mía, yo la  vengo a recibir a nombre de todas y todos ustedes. </p>
+<p>Las filas de mujeres y hombres de la Secretaría de  Marina, Armada de México son el alma de esta institución en cuyos fines ha  estado contribuir a la seguridad, a la paz y al bienestar de nuestro pueblo;  son la honestidad, son el trabajo, el valor y la entrega de las y los marinos  mexicanos los factores que hacen posible fortalecer la seguridad de esta Nación  y, por ende, de la ciudadanía. </p>
+<p>A la LXV Legislatura de esta Honorable Cámara les  agradezco infinitivamente esta distinción que como institución nos inspira a  impulsar, a seguir dando todo por nuestro querido México. </p>
+<p> De la dimensión del honor que significa esta presea es  la responsabilidad que tenemos como institución de continuar correspondiendo a  nuestro pueblo por su confianza y por su apoyo. </p>
+<p>Tengan por seguro que desde nuestra posición y desde  el fondo de nuestros corazones seguiremos haciendo todo lo que esté en nuestras  manos para cumplir las misiones encomendadas siempre con absoluta lealtad a las  y los mexicanos. </p>
+<p>Señoras y señores, estar hoy aquí me hace mirar en  retrospectiva, y eso inevitablemente implica grandes reflexiones. </p>
+<p>En otro momento de su vida Don Vicente Guerrero  también sentenció: <em>&ldquo;La constancia ha sido  mi deber y lo ha sido consagrar la vida a la sociedad en que nací, generosos  son los pueblos con el</em><em> esclavo de la nación soberana&rdquo;.</em></p>
+<p>No  conozco otros amaneceres que no estén dedicados a velar por el bien común, por  el bien de la patria, tal como cada marino naval lo hace y como lo hemos hecho  yo, solamente por el amor de México. </p>
+<p>Que la  historia hable por nuestras acciones, en tanto desde la Secretaría de Marina,  Armada de México, continuaremos actuando con honestidad, con honradez y con  legalidad, porque somos gente de bien, de valores y de trabajo, marinos de  apoyo, de solidaridad y de asistencia, marinos de honor, de deber, de lealtad y  de patriotismo, marinos guiados por la fuerza, por la razón y por la ley. </p>
+<p>Muchísimas  gracias. </p>
+<p><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Muchas  gracias, Almirante Ojeda Durán. </p>
+<p>Muchas  gracias, Almirante, por su extraordinario papel desempeñado en este México  nuestro, tan necesitado de hombres buenos, pero sobre todo de mexicanos bien  nacidos. </p>
+<p>Distinguido  Almirante Rafael Ojeda Durán: </p>
+<p>Sea  usted cálidamente bienvenido a la Casa del Pacto Federal, apreciables  familiares, amistades e invitados especiales del señor Almirante Secretario, es  un gusto tenerles en el Senado de la República, distinguidas autoridades que  nos invitan, que nos acompañan como invitados especiales, perdón, del señor  Almirante, es un gusto tenerlos, tenerlas aquí, en el Senado de la República. </p>
+<p>Pueblo  de México, es un honor presidir esta sesión para celebrar y reconocer el  servicio del Almirante José Rafael Ojeda Durán, a través de la entrega, la  &ldquo;Medalla de Honor Armada de México&rdquo;, reconocimiento que no sólo le honra en lo  particular, sino que también resalta la dedicación y el compromiso  excepcionales de la Secretaría de Marina, para proteger y servir a nuestra  nación. </p>
+<p>El  Almirante Ojeda Durán ha demostrado un liderazgo sobresaliente en su carrera  militar, destacando por su valentía, integridad y profundo sentido de deber a  lo largo de más de 50 años en la institución, su trayectoria ejemplar no sólo  ha fortalecido las capacidades operativas de la Armada de México, sino que  también ha contribuido significativamente a la seguridad y soberanía de nuestro  país. </p>
+<p>Bajo su  liderazgo, la Secretaría de la Marina ha desempeñado un papel fundamental en la  protección y seguridad del Estado mexicano, su labor abarca una amplia gama de  responsabilidades que van desde coordinar la defensa de nuestras fronteras  marítimas hasta liderear la lucha contra el crimen organizado y el  narcotráfico. </p>
+<p> A lo  largo de su historia, el Almirante Ojea no sólo ha sido un personaje  indispensable para garantizar la seguridad de los mares y costas de México,  sino que también ha jugado un papel crucial en la protección de la soberanía  nacional y de la integridad de nuestro territorio. </p>
+<p>En  tiempos de crisis y desastres naturales, el Almirante secretario ha destacado  por su rápida capacidad de respuesta y su compromiso con la ayuda humanitaria,  su visión estratégica ha sido clave para coordinar cientos de operaciones de  búsqueda y rescate.</p>
+<p>Así  como para ayudar a distribuir ayuda y atención médica, como fue el caso de la  terrible pandemia de Covid-19, además su trabajo al frente de diversos cargos  públicos ha sido fundamental a la hora de mitigar el impacto de desastres como  huracanes, terremotos e inundaciones, brindando asistencia vital a las comunidades afectadas. </p>
+<p>Señor Almirante Secretario, ha llevado a cabo una  labor insustituible en la protección y defensa del Estado mexicano garantizando  la seguridad de nuestras aguas territoriales, la integridad de nuestras  fronteras, sobre todo, marítimas y la protección de las y los mexicanos, su  compromiso y dedicación son dignos de reconocimiento y admiración, y por eso el  Estado mexicano se honra en hacer la entrega de la primera &ldquo;Medalla de Honor  Armada de México&rdquo; a su persona.</p>
+<p>Al entregarle este reconocimiento, el Senado de la  República expresa su gratitud por su servicio desinteresado y su liderazgo  excepcional.</p>
+<p>Esta distinción es un testimonio del profundo respeto  y admiración que sentimos hacia usted todas y todos los miembros de la  Secretaría de Marina que trabajan para proteger a nuestra nación y que en su  persona hoy lo vemos reflejado.</p>
+<p>Esta distinción es un testimonio de nuestro profundo  agradecimiento por su valiente labor, su notable contribución al bienestar de  nuestro país.</p>
+<p>En nombre del Senado de la República le extendemos  nuevamente nuestra más amplia y sincera felicitación y reconocimiento por su  excepcional servicio.</p>
+<p>Que su legado continúe inspirando a futuras  generaciones de marinas y marinos y servidores públicos.</p>
+<p>¡Muchas felicidades! Almirante José Rafael Ojeda  Durán.</p>
+<p>Solicito ponernos de pie a fin de entonar nuestro  glorioso Hino Nacional.</p>
+<p align="center">(Todos de pie entonan el Himno Nacional)</p>
+<p>¡Viva México!</p>
+<p>¡Viva la Secretaría de Marina!</p>
+<p>Favor de tomar asiento.</p>
+<p>El Senado de la República agradece a la Banda  Sinfónica de la Secretaría de Marina su participación en esta  sesión solemne. </p>
+<p>Asimismo,  expreso nuestro agradecimiento por su presencia a todas y todos nuestros  distinguidos invitados. </p>
+<p>A la  familia de nuestro galardonado.</p>
+<p> Solicito a las Senadoras y a los  Senadores integrantes de la comisión de cortesía se sirva acompañar a nuestras  invitadas e invitados de honor hasta las puertas de este recinto. </p>
+<p align="center">(La comisión cumple)</p>
+<p>Así damos por finalizada esta sesión  solemne. </p>
+<p>Solicito a mis compañeras y compañeros  Senadores permanezcan en sus lugares para continuar con nuestra sesión  ordinaria. </p>
+<p align="center">(Se levantó la sesión solemne a las 13:08 horas)</p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a115523'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

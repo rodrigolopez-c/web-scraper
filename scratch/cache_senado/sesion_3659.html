@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 16</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Laura Itzel Castillo Juárez</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 01 de Octubre de 2025</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/2/PPO/PDF-WEB/PPO_No16_1-OCTUBRE-2025_SOLEMNE.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='123302'></a><p align="center"><strong>PRESIDE LA SENADORA</strong> <br>
+  <strong>LAURA ITZEL CASTILLO JUÁREZ</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>La Presidenta Senadora Laura Itzel Castillo Juárez: </strong>(10:54 horas) Solicito a las Senadoras y a los  Senadores de la comisión de cortesía Reyna Celeste Ascencio Ortega, María del  Rocío Corona Nakamura, Laura Estrada Mauro, Verónica del Carmen Díaz Robles y  Enrique Inzunza Cázarez, acudan a recibir a nuestros invitados.</p>
+<p align="center">(La comisión cumple)</p>
+<p>Honorable Asamblea, con el quórum de nuestra sesión  ordinaria y con fundamento en el artículo 56 del Reglamento del Senado y en el  Acuerdo aprobado el día de ayer 30 de septiembre, iniciamos la sesión solemne  para conmemorar el LX Aniversario del Asalto al Cuartel de la Ciudad Madera, en  el Estado de Chihuahua. </p>
+<p>Senadoras y Senadores, distinguidas personas  invitadas que nos honran con su presencia.</p>
+<p>En el presídium nos acompañan la maestra María del  Rosario Piedra Ibarra, Presidenta de la Comisión Nacional de los Derechos  Humanos. </p>
+<p>El maestro Félix Arturo Medina Padilla,  Subsecretario de Derechos Humanos, Población y Migración de la Secretaría de  Gobernación. </p>
+<p>De manera muy especial le damos la bienvenida al  señor Florencio Lugo Hernández, único sobreviviente del Asalto al Cuartel de  Ciudad Madera, Chihuahua. ¡Sea usted bienvenido!</p>
+<p>Asimismo, están aquí en este presídium la Senadora  Verónica Noemí Camino Farjat, Vicepresidenta. </p>
+<p>La Senadora Imelda Sanmiguel Sánchez,  Vicepresidenta. </p>
+<p>El Senador Jorge Carlos Ramírez Marín,  Vicepresidente. </p>
+<p> La Senadora Mariela Gutiérrez Escalante,  Secretaria. </p>
+<p>También nos acompaña en este presídium la Senadora  Jasmine María Bugarín, Secretaria de la Mesa Directiva. </p>
+<p>También damos la bienvenida al señor Froylán  Vladimir Enciso Higuera, titular de la Unidad  para la Defensa de los Derechos Humanos de la Secretaría de Gobernación. </p>
+<p>El señor Arnoldo Jáquez, presidente municipal de  Madera, Chihuahua.</p>
+<p>Así como a familiares de las personas caídas en el  Asalto al Cuartel, las señoras y señores Alma Gómez Caballero. </p>
+<p>Bertha Amelia Scobell Gaytán. </p>
+<p>Luz María Gaytán Nayares. </p>
+<p>Raúl Florencio Lugo Hernández, sobreviviente. </p>
+<p>Janeth Lugo Robles. </p>
+<p>Evangelina Acosta Hernández. </p>
+<p>Teresa Scobell Gaytán, y </p>
+<p>Eva  Scobell Gaytán. </p>
+<p>Igualmente,  agradecemos la asistencia de todas las demás personas que nos acompañan en esta  significativa sesión solemne. </p>
+<p>Honorable  Asamblea, esta sesión es para con LX Aniversario del Asalto al Cuartel de  Ciudad Madera, en el estado de Chihuahua, hecho ocurrido la mañana del 23 de  septiembre de 1965, que tuvo como protagonista a integrantes del Grupo Popular  Guerrillero, fundado en 1964 en Chihuahua y, conformado por campesinos,  maestros y miembros del Partido Popular Socialista. </p>
+<p>Este  grupo había hecho importantes esfuerzos para denunciar los abusos de los  caciques de este estado y reclamar el reparto agrario de las tierras de los  latifundios. </p>
+<p>Ante  eso, la respuesta del gobierno fue aumentar la presencia militar en Chihuahua y  vigilar de cerca las actividades de los integrantes de este grupo, es por ello  que tomaron una postura radical y decidieron efectuar el asalto al cuartel  militar, el cual resultó en un sangriento suceso que cobró la vida de varias  personas.</p>
+<p>Sin  duda, este es un acontecimiento de suma relevancia en la historia contemporánea  de nuestro país. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a123302'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/H0wwUzalnnM?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='123303'></a><p>En  cumplimiento del inciso b) del Resolutivo Tercero del Acuerdo aprobado, se concede el uso de la palabra a los grupos  parlamentarios en orden creciente, hasta por diez minutos </p>
+<p>Por  tanto, tiene el uso de la palabra la Senadora María del Rocío Corona Nakamura, del grupo  parlamentario del Partido Verde Ecologista de México, hasta por diez minutos.</p>
+<p> <strong>CONMEMORACIÓN  DEL LX ANIVERSARIO DEL ASALTO AL CUARTEL DE CIUDAD MADERA EN EL ESTADO DE  CHIHUAHUA</strong></p>
+<p><strong>La  Senadora María del Rocío Corona Nakamura:</strong> Con su venia, señora Presidenta. </p>
+<p>Bienvenida,  Presidenta de la Comisión Nacional de Derechos Humanos, la Maestra María del  Rosario Piedra Ibarra. </p>
+<p>Saludamos  con afecto al Subsecretario de Gobernación para Asuntos de Derechos Humanos. </p>
+<p>Bienvenido,  también esta es su casa. </p>
+<p>En  la madrugada del 23 de septiembre de 1965, hace ya 60 años, un grupo formado  por campesinos, estudiantes, maestros rurales, líderes agrarios atacó el  cuartel militar de la cabecera municipal de Ciudad Madera, Chihuahua; se trata  de un grupo pequeño en cantidad, pero gigante en espíritu y moral que tenía la  intención de desarmar al destacamento y desafiar la presencia militar. </p>
+<p>También  no quiero omitir la presencia del ciudadano presidente municipal del municipio  donde, lamentablemente acontecieron estos sucesos. </p>
+<p>¡Bienvenido!  Así como los familiares y el único sobreviviente en este hecho tan lamentable. </p>
+<p>Para  llevar a cabo su sueño de dar inicio a la insurrección, que permitiera sentar  las bases para generar un urgente y necesario cambio social profundo, y lo  lograron. </p>
+<p>Después  de seis décadas, es un hecho que no solo se ha reconocido como una de las  primeras expresiones armadas organizadas en nuestro país en la segunda mitad  del pasado siglo XX, que no solo inauguró la guerrilla contemporánea y que  incluso contribuyó a la formación de organizaciones posteriores, como por  ejemplo la Liga Comunista 23 de Septiembre, que adoptó su nombre en recuerdo de  los caídos en su lucha de Ciudad Madera. </p>
+<p>Fue  más que eso, un grito de hartazgo por las desigualdades, un alto a la represión  local y un basta decidido a la falta de acceso a la tierra y a la justicia. </p>
+<p>Condiciones  a las que eran sometidos los maestros rurales, estudiantes y campesinos de la  sierra chihuahuense, que los tenían condenados a un espiral sin salida de  pobreza rural, disputas agrarias y la presencia permanente intimidatoria y  abusiva de las Fuerzas Armadas. </p>
+<p>Condiciones  que no solo lo padecían ellos, también toda la población de este país a manos  de gobiernos que no los comprendían ni los entendían. </p>
+<p>Por  eso este hecho se convirtió en un grito social en toda la nación, que pedía  libertad, justicia, tierra y una transformación de la vida pública y política  que les ofreciera oportunidades y mejores condiciones de vida. A ellos y a  todos por igual. </p>
+<p>Tristemente  la respuesta de las autoridades a este reclamo y exigencia legítima del pueblo  mexicano no fue la necesaria, se limitó a la represión.</p>
+<p>Se  echó a andar el aparato del Estado para llevar a cabo estrategias militares de  contrainsurgencia, desapariciones, despliegue de centenares de tropas, retenes  en salidas de población, patrullajes aéreos, ocupación de zonas estratégicas e,  incluso, el envío de unidades especializadas y el uso de aeronaves para  intimidar y rastrear a los sobrevivientes. </p>
+<p> Se  dio paso a una innumerable cantidad de maltratos a vecinos y presuntos  simpatizantes, así como detenciones arbitrarias y masivas para someterlos a  tortura, violencia y hasta desaparición forzosa. </p>
+<p>El  recuento es simple, más violaciones a derechos humanos que marcaron para la  posterioridad, nuestra maltrecha memoria pública; porque en este hecho hubo  varios heridos, y también perdieron la vida seis soldados que recibieron altos  honores, y se le dio funeral de Estado. </p>
+<p>En  contraparte, también hubo varios heridos, como Ramón Mendoza, Guadalupe Scobell  Gaytán, presentes en el hecho. </p>
+<p>También  perdimos ocho mexicanos valientes que ofrecieron su vida por la patria, Arturo  Gámiz García, Pablo Gómez Ramírez, Emilio Gámiz, Antonio Scobell, Óscar  Sandoval Salinas, Miguel Quiñones Pedroza, Rafael Martínez Valdivia y Salomón  Gaytán. </p>
+<p>A  quienes en clara señal de menosprecio institucional se les negó un funeral, y  fueron enterrados en una fosa común por orden de la autoridad estatal; pero ni  así se impidió que la historia ni la sociedad les otorgara su reconocimiento. </p>
+<p>Por  eso a 60 años de este hecho histórico, quienes integramos el Partido Verde  Ecologista de México en el Senado de la República, nos unimos a su  conmemoración por 60 años, pero también al reconocimiento de quienes dieron su  vida en ese día y en la lucha posterior. </p>
+<p>Y  hacemos eco de las voces que seis décadas después todavía claman por la  reparación simbólica de los daños y el acceso a la verdad de los hechos. </p>
+<p>Y  la vez refrendamos nuestro compromiso con la transformación de este país para  seguir garantizando y consolidando un Estado como el que hoy en día tenemos,  garante de justicia y de derechos en donde por el bien de todos primero sean  los pobres. </p>
+<p>En  este acto solemne es de hacer reconocimiento reivindicar la importancia de no  dejar olvidado el episodio de Madera en este municipio, de Chihuahua. </p>
+<p>Este  Senado de la República debe seguir fungiendo como umbral para hacer vale la voz  de millones de mexicanas y mexicanos, y recordar al México libre e  independiente que el magisterio, campesinos y estudiantes anhelaron con su  lucha. </p>
+<p>Por  ello, en un momento en el que impera la paz y tranquilidad debemos seguir  generando diálogos y acuerdos para que actos como el del 23 de septiembre nunca  más vuelvan a ocurrir. </p>
+<p>Sin lugar a dudas, en este momento histórico, las  armas fueron la respuesta a las demandas legítimas de la población ante la  exclusión social y la represión del gobierno y el Ejército, que no podemos  permitir, nuevamente, enfrentamientos tales que pongan en peligro al sector  primario, donde las y los mexicanos perdieron la vida en aquellos sucesos que  han dejado testimonio de un anhelo verdadero de justicia. </p>
+<p>Por ello, debemos recordar para no volver a  repetir, tengamos presente y tengamos memoria. </p>
+<p>En el Partido Verde, la memoria de estos valientes  héroes y heroínas anónimas, jamás serán olvidados, porque su lucha es para  nosotros un ideal y convicción para trabajar a favor del bienestar común, de la  reivindicación agraria y de mejorar las condiciones de vida para todas y todos  los mexicanos. </p>
+<p> Desde esta tribuna, el Partido Verde hace un  llamado especial a la juventud, alzar la voz, a denunciar cualquier acto  ilícito y a jamás perder la esperanza de un México en paz. </p>
+<p>Ustedes representan el presente y el futuro de  nuestro país, su corazón valiente y su espíritu aguerrido deben ser sus mejores  armas para seguir impulsando un estado democrático y mantener el acceso a la  justicia, la equidad laboral, la participación ciudadana y el respeto a la  dignidad humana. </p>
+<p>Siempre por la vía institucional.</p>
+<p>Chihuahua, 1965. Una fecha que, sin lugar a dudas,  no olvidaremos en este Senado de la República, porque representa no sólo un  movimiento social, sino una lección de vida para reafirmar los principios de  justicia, igualdad y democracia que conducen a las causas de una buena  gobernabilidad. </p>
+<p>Por su atención, muchas gracias. </p>
+<p>Es cuanto, señora Presidenta. </p>
+<p><strong>La Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Muchas gracias, Senadora Corona  Nakamura. </p>
+<p>Tiene ahora el uso de la palabra la senadora  Carolina Viggiano Austria, del grupo parlamentario del Partido Revolucionario  Institucional, hasta por diez minutos. </p>
+<p><strong>La Senadora Carolina Viggiano Austria: </strong>Gracias. Con el permiso de la Presidenta de este  Senado. </p>
+<p>Esta mañana conmemoramos los 60 Años del Asalto al  Cuartel de Ciudad Madera, Chihuahua. </p>
+<p>¡Sean todos bienvenidos a su casa!</p>
+<p>Lo hacemos enalteciendo la memoria de estos  mexicanos que la madrugada del 23 de septiembre de 1965 dieron una nueva  dimensión al despertar social. </p>
+<p>Por ello, quiero saludar y dar la bienvenida a esta  Cámara a todas las personas invitadas que integran los diversos colectivos de  aquella entidad que honran este hecho histórico. </p>
+<p>Este movimiento originado en la Ciudad de Madera  fue la búsqueda por cristalizar el ideal de un país justo, así como de una  sociedad con oportunidades, libertad y justicia. </p>
+<p>También este hecho resignificó la lucha social en  México, ya que aceleró el proceso de cambio en nuestro país y confirmó que el  camino para las conquistas sociales eran la vía institucional de los procesos  electorales. </p>
+<p>Sin embargo, esta conmemoración nos hace recordar  el valor de miles de mexicanas y mexicanos que sacrificaron su vida por los más  altos valores que guían a nuestra nación.</p>
+<p>Nos hace recordar que estas luchas nos pertenecen a  todas y todos, ya que al reflexionar este hecho histórico no reconocemos todos  en el deseo de un mejor país.</p>
+<p>Asimismo, esta gesta tiene hoy una actualidad muy  importante, ya que sus proclamas, manifiestos e ideales son parte de la  convicción de miles de mexicanas y mexicanos. </p>
+<p>Así, vemos una lucha auténtica del pueblo frente a  un gobierno que, tal como lo dicen en su desplegado contra el gobernador, se  coludió con los caciques, es decir, con quienes explotaban a las y los  campesinos.</p>
+<p> Exigieron al gobierno someter al orden y a la ley a  quienes les dañaban y hoy esta demanda cobra relevancia cuando pensamos en las  regiones de México que actualmente se encuentran bajo el asedio del  narcotráfico y de la delincuencia organizada en general.</p>
+<p>También estos campesinos revolucionarios eran  conscientes de que el Ejército era una clase explotada al servicio del poder. </p>
+<p>Hoy la Marina Armada de México es un triste ejemplo  de un cuerpo castrense preso de la ambición y del poder político. </p>
+<p>Asimismo, antes del Asalto al Cuartel de Madera,  los revolucionarios le señalaron al gobernador: usted, con sus torpezas y sus  caprichos ha agravado todos los males del Estado.</p>
+<p>Le hemos pedido que reconozca su incapacidad,  renuncie y salga del Estado que tan mal ha servido. </p>
+<p>Hoy estas palabras resuenan ante la indiferencia de  varios gobernadores en entidades como Sinaloa, la cual tiene más de un año de  sitio criminal. </p>
+<p>Estas reflexiones no deben sorprendernos, ya que,  de acuerdo con varios historiadores, el Asalto al Cuartel de Madera fue pensado  por el primer grupo guerrillero en México que pretendió justificar desde la  reflexión teórica y el análisis la realidad de su lucha armada.</p>
+<p>La trascendencia de este grupo revolucionario  encuentra eco y es inspiración de la Liga Comunista 23 de Septiembre, la cual  pretendió honrar con su nombre a los jóvenes guerrilleros que buscaron salvar a  México de la miseria y de la injusticia. </p>
+<p>Carlos Fuentes señalaba que: <em>&ldquo;La historia de  México era un conjunto de espejos, los cuales se encontraban y en ocasiones se  correspondían en su visión de la historia&rdquo;. </em></p>
+<p>Lo anterior cobra relevancia cuando pensamos en el  23 de septiembre, pero de 1913, fecha en la que el destino quiso que desde otra  trinchera la nación mexicana luchara contra la opresión.</p>
+<p>En aquella ocasión, el Senado fue escenario de una  álgida discusión que tuvo por objeto el rechazo de varios legisladores al  discurso que redactó y distribuyó Belisario Domínguez contra el usurpador  Victoriano Huerta. </p>
+<p>En este discurso el senador Domínguez denunció el  camino a la ruina al que iba la nación y nos dejó una misión, la patria os  exige que cumpláis con vuestro deber, aún con el peligro y aún con la seguridad  de perder la existencia. </p>
+<p>Hoy, al conmemorar los 60 años del Asalto al  Cuartel de Madera, estas palabras tienen un profundo sentido y también son muy  importantes para los tiempos que vivimos.</p>
+<p>Son el recordatorio de nuestra lucha constante por  la democracia y las libertades. </p>
+<p>Son también una advertencia de que estas gestas e  ideales no son herencia de unos pocos, sino que son herencia de quien los  sienta suyos y quien trabaje día a día por alcanzarlos.</p>
+<p>Y me voy a permitir aquí, en aras de esta reflexión  y con el permiso de nuestros invitados, decirle a la Presidenta de la Comisión  Nacional de Derechos Humanos que hoy está aquí, Rosario Ibarra de Piedra.</p>
+<p> Usted está aquí sentada hoy cómodamente, mientras  en unas horas el Juicio de Amparo, que protege los  derechos de los ciudadanos que se van a proteger contra los abusos del poder,  usted no ha levantado la voz ni para defender a los desaparecidos.</p>
+<p>Usted  está sentada siempre del lado del poder, con una gran comodidad. </p>
+<p>No  está acorde con lo que conmemoramos hoy.</p>
+<p>Usted  decidió estar justamente del lado de los poderosos, no del lado de los  desaparecidos. </p>
+<p>No  está usted luchando porque tengamos un presupuesto para encontrarlos, este es  el tema.</p>
+<p>El  tema son la justicia, los derechos humanos. </p>
+<p>Justamente  eso, señora Piedra, justamente eso. </p>
+<p>Yo  quisiera que usted no tuviera el corazón de piedra y que luche por los  desfavorecidos…</p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>…Senadora,  le pedimos que se ajuste al tema.</p>
+<p><strong>La  Senadora Carolina Viggiano Austria: </strong>Por la justicia, por  los derechos humanos. </p>
+<p>Ese  es el tema. </p>
+<p>Es  el tema justamente del que he estado hablando todo este tiempo. </p>
+<p>Y  estos son solamente distractores o acaso esta es una fiesta para una  chihuahuense. </p>
+<p>¿Acaso  es eso?</p>
+<p>No,  ésta es una conmemoración histórica.</p>
+<p>Esta  es una conmemoración histórica…</p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>…Senadora,  por favor, le pedimos respeto y que se ajuste al tema porque estamos en una  sesión solemne. </p>
+<p><strong>La  Senadora Carolina Viggiano Austria: </strong>Termino, señora  Presidenta, termino con mucho gusto, porque usted es una mujer respetuosa,  presidenta. </p>
+<p>Por  ello, esta sesión solemne honra no sólo a los integrantes del grupo popular  guerrillero; sino los más altos valores de México, sus luchas históricas y las  cuales bien pueden sintetizarse en la frase inmortal de Vicente Guerrero: </p>
+<p><em>&ldquo;¡La  Patria es Primero!&rdquo;</em></p>
+<p>Señora  Ibarra:</p>
+<p><em>&ldquo;¡La  Patria es Primero!&rdquo;</em></p>
+<p>No  su confort y su comodidad. </p>
+<p>¡Bienvenidos  sean todos!</p>
+<p>Gracias  por venir a la casa del federalismo.</p>
+<p> <strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Les  pedimos que se ajusten al tema que se está tratando, tenemos los espacios para  la discusión dentro de nuestro Pleno, pero en este momento estamos en una  sesión solemne. </p>
+<p>Tiene  la palabra el Senador Mario Humberto Vázquez Robles, del grupo parlamentario  del Partido Acción Nacional, hasta por diez minutos. </p>
+<p><strong>El  Senador Mario Humberto Vázquez Robles: </strong>Aquí  un poco más cerca de ustedes. Con su permiso, señora Presidenta. </p>
+<p>Me  da mucho gusto de recibir y dirigirme, desde esta alta tribuna, a los  distinguidos y distinguidas chihuahuenses aquí presentes, especialmente a don  Florencio Lugo, sobreviviente de aquel hecho histórico. </p>
+<p>También,  por supuesto, a Janeth Lugo. </p>
+<p>A  Alma Gómez Caballero. </p>
+<p>Saludos,  Alma. </p>
+<p>Teresa  Escobedo. </p>
+<p>Eva  Escobedo.</p>
+<p>Evangelina  Acosta. </p>
+<p>Y  la señora… creo que me faltó alguien ¿verdad?</p>
+<p>Bertha  Escobedo. </p>
+<p>Saludo,  por supuesto, también a la Presidenta de la Comisión Nacional de Derechos  Humanos, a Rosario Piedra.</p>
+<p>Hablar  hoy, en esta sesión solemne, es más que recordar un episodio histórico, es  traer al presente la voz de un pueblo que cuando se agotan los cauces de la  justicia, cuando se cierran las puertas de la legalidad y cuando el poder se  vuelve sordo ante el sufrimiento, decide levantarse. </p>
+<p>Eso  fue el Asalto al Cuartel de Madera, un amanecer del 23 de septiembre de 1965,  que sigue vivo aquí 60 años después. </p>
+<p>Fue  la consecuencia inevitable de un sistema que había perdido la escucha, estaba  sordo, había perdido la conciencia. </p>
+<p>Fueron  maestras y maestros rurales, estudiantes normalistas, campesinos y luchadores  sociales quienes, con la convicción como su arma principal, decidieron que  callar era claudicar. </p>
+<p>Los  acaecidos Antonio Scobell, Arturo Gámiz, Pablo Gómez, Salomón Gaytán, Emilio  Gámez, Óscar Sandoval, Miguel Quiñones y Rafael Martínez Valdivia, y sus  compañeros, sabían que probablemente no vencerían, pero entendían que hay  causas que no se miden por la victoria, sino por la dignidad. </p>
+<p>Hablamos  de una atmósfera asfixiante en la que el presidente y los gobernadores obraban  como reyes dotados de poderes incontrastables frente a una ciudadanía cuyos  derechos habían sido conculcados en nombre del progreso, la unanimidad y la  estabilidad, de un país en el cual los medios eran bocinas, simplemente bocinas  del poder. </p>
+<p> Los  representantes populares eran simplemente representantes del gobierno y no al  revés, y no de la población, donde empresarios cómplices también, y  beneficiarios, medios timoratos, organizaciones sociales mediatizadas y una  ciudadanía apática, mantenían el estatus quo que negaba derechos y cancelaba  horizontes. </p>
+<p>Para  los disidentes campesinos que clamaban tierra y quienes acompañaban sólo  existían tres opciones: la cooptación, es decir, entregarse; la irrelevancia o  la represión. </p>
+<p>Fue  así como los opositores al partido en el gobierno decidieron elegir entre ser  la gota que lentamente erosionaba la roca o la ola que todo lo avasalla. </p>
+<p>Los  jóvenes de Madera, idealistas como todos los jóvenes, se decidieron por lo  segundo y en ello les fue la vida.</p>
+<p>Tras  la tragedia vino el escarnio a sus cuerpos y a su memoria. <em>&ldquo;Querían tierra,  ahora tráguensela&rdquo;,</em> dijo el gobernador Giner.</p>
+<p>Una  acción por demás miserable y repulsiva que buscó no sólo derrotarlos  físicamente, sino borrar el sentido político y moral de su sacrificio. </p>
+<p>En  los últimos años México ha construido instituciones que hoy están en riesgo,  una democracia que ha permitido alejarse de tendencias o tentaciones armadas.</p>
+<p>El  diálogo democrático, la alternancia en el poder y el reconocimiento mutuo de  que, de entrada, aunque pensemos distinto, todos buscamos el bien de México, el  bien común. </p>
+<p>Esas  son las herramientas que hoy nos permiten dirimir diferencias sin violencia y,  por supuesto, construir un país mejor. </p>
+<p>Madera  no es hecho aislado, fue parte de una larga historia de Chihuahua, una tierra  que, como dijo Fernando Jordán en &ldquo;Crónica de un país bárbaro&rdquo;, se niega a ser  domesticada; una tierra que no se arrodilla ante el poder y que ha hecho de la  rebeldía un modo de existir. </p>
+<p>No  se puede ser distinto en la sierra, en la intrincada sierra de Chihuahua o en  el desierto. </p>
+<p>Desde  las rebeliones indígenas que resistieron el dominio colonial, pasando por el  primer levantamiento revolucionario en el desierto, en Cuchillo Parado, o en  San Isidro, en Guerrero, en la sierra, hasta los grandes despertares cívicos de  1983, cuando la ciudadanía y el PAN lograron los primeros triunfos de la  democracia. </p>
+<p>En  1986 se tuvo que enfrentar lo que denominaron el fraude patriótico y finalmente  en 92 la alternancia política en el estado llegó. </p>
+<p>Chihuahua  ha sido la conciencia incómoda de México, el almacén de tempestades que sacude  al país cada vez que se olvidan sus principios. </p>
+<p>Tan  incómodo ha sido en nuestra historia, que el propio régimen en su momento,  durante los ochenta intentó desacreditar a los chihuahuenses llamándonos los  Bárbaros del Norte, cuando miles de ciudadanos libre emprendieron la gran  caravana por la dignidad para denunciar el fraude electoral en 1986.</p>
+<p>No  entendió el régimen que no era un insulto, sino una descripción involuntaria de  nuestra esencia.</p>
+<p> Sí  somos bárbaros, pero en el sentido más profundo del término, indómitos, libres,  resilientes porque no hemos permitido que el poder doblegue nuestra voluntad. </p>
+<p>Lo  recordó también José Fuentes Mares, gran pensador chihuahuense cuando escribió  que: <em>&ldquo;la libertad no se implora se conquista&rdquo;</em></p>
+<p>Ésta  ha sido nuestra lección al país, las libertades, los derechos, la democracia  misma no son regalo de un gobierno, son conquista del pueblo, del pueblo  organizado, del ciudadano consciente, del espíritu rebelde que no tolera la  injusticia. </p>
+<p>Por  eso, el eco de Madera no es un asunto pasado, resuena hoy aquí y ahora, porque  vemos cómo se repiten las viejas tentaciones del poder; cuando se desmantelan  los órganos autónomos que vigilan al gobierno, cuando se legisla de espalda al  pueblo en engañándolo, pensando que va a ser escuchado; cuando se usa la  justicia como arma política, cuando se calla a la prensa, se critica y se  persigue a quien disiente. </p>
+<p>Y,  sobre todo, cuando el poder desde el poder se construyen narrativas ajenas a la  realidad para negar el dolor, justificar los fracasos o imponer verdades  oficiales. </p>
+<p>Se  cierran también las voces del diálogo, se apagan las voces de la sociedad y se  traiciona al pacto democrático que da sentido a nuestra República. </p>
+<p>Cuando  se niega, en primera instancia a escuchar a las madres buscadoras que claman  por sus hijos.</p>
+<p>Cuando  se manipula el presupuesto para premiar lealtades, en lugar de garantizar  derechos. </p>
+<p>Cuando  se imponen verdades oficiales para ocultar fracasos. Todo eso no es nuevo en la  política, el mismo rostro autoritario de siempre de aquellos tiempos. </p>
+<p>Honrar  a los caídos de Madera no significa solamente discursos ni placas, significa  defender la independencia del Poder Judicial, fortalecer el Estado de derecho,  exigir transparencia y no permitir jamás que el miedo nos paralice y se  normalice. </p>
+<p>Significa  que los pueblos, cuando son traicionados, se levantan; que la dignidad, cuando  es herida, despierta fuerzas que ningún régimen, escúchenme, ningún régimen  puede contener. </p>
+<p>Compañeras  y compañeros, nuestra responsabilidad hoy no es quedarnos en la nostalgia del  pasado, sino reconocer en el pasado las lecciones para el presente, que el  sacrificio de Gámiz, de Gómez, de Gaytán, Scobell, y entre otros más, sea una  advertencia y una guía.</p>
+<p>México  no necesita caudillos que se crean dueños de la verdad…</p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez:</strong> Senador, concluya, por favor. </p>
+<p><strong>El  Senador Mario Humberto Vázquez Robles:</strong> …necesita instituciones, voy a concluir, necesita instituciones sólidas,  libertades plenas y un Estado que sirva al pueblo y no lo manipule y no se  sirva de él. </p>
+<p>Recordar  Madera, es recordar que la República vive cuando se honra la dignidad de su  pueblo, que nunca más un gobierno confunda autoridad con autoritarismo ni  progreso con sometimiento. </p>
+<p>Que  nunca más se cierren las puertas del diálogo ni se apaguen las voces de la  sociedad. Ese es el juramento que hoy hacemos hoy en este homenaje a los caídos  en Madera. </p>
+<p>Muchas  gracias.</p>
+<p> <strong>La  Presidenta Senadora</strong> <strong>Laura Itzel Castillo Juárez:</strong> A  continuación, tiene el uso de la palabra el Senador Gerardo Fernández Noroña,  del grupo parlamentario del Partido Morena, hasta por cinco minutos, ya que han  dividido su tiempo con otra Senadora. </p>
+<p><strong>El Senador Gerardo Fernández  Noroña:</strong> Muchas gracias, señora Presidenta. </p>
+<p>¡Sean  bienvenidos, bienvenidas todas las personas hoy presentes!</p>
+<p>En  especial Rosario Piedra Ibarra, Presidenta de la Comisión Nacional de Derechos  Humanos, hija de Rosario Ibarra de Piedra; pero ella es ella, ella acompañó a  Rosario Ibarra de Piedra en muchísimas luchas por esclarecer estos crímenes de  Estado. </p>
+<p>La  oposición no pierde oportunidad de meter la agenda política por la puerta  trasera, hoy estamos aquí revindicando un hecho importantísimo, relevantísimo,  que había sido olvidado. </p>
+<p>El  pasado 23 de septiembre estuvimos en Ciudad Madera, me tocó acompañar a la  Senadora Andrea Chávez, hicimos un compromiso de que habría esta sesión hoy  aquí. </p>
+<p>Me  decía un compañero mío, es el equivalente al grito de Dolores. </p>
+<p>Y  yo lo primero que pensé que exageraba, y luego dije: Tiene razón. 13 jóvenes  tomaron las armas para abrir el camino de la democracia a la libertad, la  justicia y la transformación del país. Hoy hay gente que no quiere ni  despeinarse para cualquier cosa menor.</p>
+<p>Y  estos jóvenes, en la mañana, algunos de ellos con hijos, con hijas, se  despidieron de sus seres queridos y salieron, no a hacer una protesta, no a  hacer una lucha, sino a jugarse y a pagar con su vida el compromiso de  transformación de la patria. </p>
+<p>Semejante  generosidad, semejante entrega, 13 contra más de 100 militares que había en el  Cuartel Madero. </p>
+<p>Es  una gesta más que heroica, es una gesta más que sobresaliente, que fue  olvidada, olvidada por el régimen del PRI, que aquí vino a decir, tenemos toda  la tarde para discutir la Ley de Amparo, en vez de honrar la memoria de estos  jóvenes, de estos hombres que perdieron la vida en esa acción revolucionaria. </p>
+<p>Decía  Alberto Posse en &ldquo;Cuadernos de Praga&rdquo;, refiriéndose al Che Guevara, que pagó  con su vida los sueños de transformación del mundo, porque se fue a Bolivia a  hacer una revolución, decía: <em>&ldquo;Los seres humanos no deberían ser medidos por  lo que hicieron, sino por lo que intentaron a hacer&rdquo;. </em></p>
+<p>Y  estos jóvenes en Madera intentaron asaltar el cielo, intentaron hacer una  revolución armada que acompañara el pueblo y que diera un alto definitivo a la  injusticia, a la pobreza, a la desigualdad, a la barbarie, a la brutalidad que  se vivía en la década de los sesentas y desde décadas anteriores; 60 años se  cumplieron, se dice fácil, en unos mañanas se cumplen 57 años de la brutal  masacre del 2 de octubre. </p>
+<p>En  septiembre se cumplen también 57 años de jóvenes que sobrevivieron al asalto  del Cuartel Madera y que fueron a Tesopaco, Sonora, y que perdieron ahí la  vida, ocho de ellos también. </p>
+<p>¿Cómo  se atreve alguien a venir aquí a no honrar la memoria de estos gigantes?</p>
+<p> Metiendo  una agenda deleznable por la puerta trasera a faltarle al respeto a los  familiares, a faltarle al respecto a la memoria de esta gente que nos abrió  camino, y que gracias a ellos estamos aquí en este régimen de libertades, de  democracia, de justicia, de profunda transformación, de revolución sin  violencia. </p>
+<p>Se  necesita ser caradura para faltar al respeto de esta manera a la memoria de  estos revolucionarios. </p>
+<p>Respeto, respeto a una ceremonia solemne. </p>
+<p>Respeto  a quienes pagaron su vida sus sueños de transformación y de entrega. </p>
+<p>Respeto  a quien tuvo la dignidad bien plantada en el corazón. </p>
+<p>Respeto  a los familiares que aquí todavía traen la herida abierta de la pérdida de sus  seres queridos. </p>
+<p>¡Larga  vida a Arturo Gámiz García! </p>
+<p>A Pablo Gómez Ramírez, primero, profesor rural y  líder del grupo; segundo, médico y profesor. </p>
+<p>Emilio Gámiz García, estudiante y hermano de Arturo  Gámiz.</p>
+<p>Antonio Scobell Gaytán, campesino.</p>
+<p>A Miguel Quiñones Pedroza, profesor rural.</p>
+<p>A Óscar Sandoval Salinas, estudiante. </p>
+<p>A Rafael Martínez Valdivia, profesor rural. </p>
+<p>A Salomón Gaytán Aguirre, campesino. </p>
+<p>No querían más que aportar su vida y su compromiso  a la transformación del país. </p>
+<p>Esta soberanía rinde un merecido y sentido  homenaje, con eso termino.</p>
+<p>A quienes efectivamente fueron sepultados en una  fosa común, se le condenó al olvido, se les condenó a las familias a la  persecución y al desprecio y hoy están aquí con la frente en alto y con el  corazón &ldquo;henchido de orgullo&rdquo; diciendo:</p>
+<p><em>&ldquo;Luchamos para que este país fuera lo que hoy es&rdquo;. </em></p>
+<p>Muchas gracias. </p>
+<p><strong>La Presidenta Senadora Laura Itzel Castillo Juárez: </strong>A continuación, tiene el uso de la palabra la  senadora Andrea Chávez Treviño, del grupo parlamentario del Partido Morena,  hasta por cinco minutos. </p>
+<p><strong>La Senadora Andrea Chávez Treviño: </strong>Gracias, señora Presidenta. Con el permiso de don  Florencio Lugo y del pueblo de México. </p>
+<p>Arturo Gámiz García. Presente. </p>
+<p>Pablo Gómez Ramírez. Presente. </p>
+<p> Miguel Quiñones Pedroza. Presente. </p>
+<p>Antonio Scobell Gaytán. Presente.</p>
+<p>Óscar Sandoval Salinas. Presente. </p>
+<p>Rafael Martínez Valdivia. Presente. </p>
+<p>Emilio Gámiz García. Presente. </p>
+<p>Salomón Gaytán Aguirre. Presente. </p>
+<p>Ramón Mendoza. Presente. </p>
+<p>Guadalupe Scobell Gaytán. Presente. </p>
+<p>Francisco Ornelas Gómez. Presente. </p>
+<p>Juan Fernández Adame. Presente. </p>
+<p>Florencio Lugo. Presente. </p>
+<p>Ningún estallido o insurgencia, o levantamiento  popular nace de la noche a la mañana, como cantada Cita Rosa, <em>&ldquo;no hay  revoluciones tempranas, crecen desde el pie&rdquo;.</em></p>
+<p>Pero hay que reconocer que, en el caso de  Chihuahua, nuestra tierra era muy fértil para que nuevamente floreciera la  semilla emancipadora. </p>
+<p>O vamos a olvidar que tan sólo 50 años antes de los  Héroes de Madera brotó en Chihuahua el mayor levantamiento social de la  historia reciente de América Latina. </p>
+<p>La Revolución Mexicana nació en los remotos pueblos  y rancherías de los municipios chihuahuenses de Guerrero y Coyame del Sotol,  pero fue tan profunda que transformó de país al país. </p>
+<p>A poco creían que en poco menos de medio siglo los  chihuahuenses nos olvidaríamos de Pancho Villa, el mejor gobernador de nuestra  historia, el que bajó el precio de la carne, el que abrió escuelas, como pocos,  el que devolvió el poder a los campesinos pobres, frente a los grandes  terratenientes. </p>
+<p>Escribiendo este discurso recordé una dolorosa  anécdota que tiene ya casi dos siglos, y es que cuando el ejército francés  logró aplastar el levantamiento de la Comuna de París, decidió fusilar a todos  los rebeldes que tuvieran canas en su cabello. </p>
+<p>¿Saben por qué? Porque esos eran los mismos que ya  se habían levantado en armas tres décadas atrás, porque esos ya sabían que el  pueblo organizado en las calles podía hacer temblar al poder monárquico y nunca  más en lo que les quedase de vida, se resignarían a vivir como súbditos de la  corona. </p>
+<p>Y ¿qué creen? Algunos de quienes se alzaron en  armas en Madera hace hoy 60 años, eran herederos directos de los  revolucionarios de la región, decepcionados por lo que el priismo caciquil y  autoritario había hecho con el legado de Zapata y Villa.</p>
+<p>El pueblo de Chihuahua descubrió en tiempos de la  Revolución Mexicana, que los poderosos no eran invencibles, pero que el pueblo  organizado sí lo era y con ese recuerdo aunado a la durísima realidad que  sufría el campesinado en los grandes latifundios, con los grandes latifundistas  dueños de la tierra que devastaban los bosques de la Sierra Tarahumara y que  tenían al pueblo olvidado, abandonado, empobrecido, echaron cuentas y la  ecuación les daba: Revolución de nuevo.</p>
+<p> Tras el martirio cobarde los Héroes de Madera,  enmarcado en los tiempos oscuros de Gustavo Díaz Ordaz y del gobiernito de  Giner en Chihuahua, la derecha tembló de miedo, consciente de que la dignidad  se contagia y permea por siglos en la memoria de los pueblos, y buscaron  manipular la historia, insinuando básicamente que un grupo de ignorantes  violentos intentó romper la paz social. </p>
+<p>Nada más lejos de la realidad, los insurgentes  fueron doctores como Pablo Gómez, profesores como Arturo Gámiz y por supuesto  también campesinos formados magistralmente por el dolor profundo que la  desigualdad y la injusticia causan el alma de quien vive con los ojos bien  abiertos y con el corazón rebosante de amor. </p>
+<p>Cobardes e ignorantes aquellos que se atreven a  cuestionar el actuar desesperado de quienes sabiendo que iban a morir, tomaron  en sus manos la responsabilidad histórica de pelear contra la injusticia y la  represión.</p>
+<p>A quienes descontextualizan la valentía de los  Héroes de Madera les comparto la frase impactante de Anatole France, cuando  recordaba la fría guillotina que acabó con la vida de Robespierre. </p>
+<p>¿Qué amigo de la patria quiere sobrevivir en el  momento en que no está permitido servirla y defender la inocencia oprimida? </p>
+<p>¿Qué se puede objetar a un hombre que tiene razón y  que sabe morir por su país? </p>
+<p>Tú duermes Robespierre, ustedes duermen: Arturo,  Pablo, Emilio, Antonio, Oscar, Miguel, Rafael, Salomón, están presentes, no han  muerto, florecerán como semillas en el corazón del pueblo mexicano que hoy vive  una transformación histórica y que a 60 años no sólo no olvida, sino que lo  recuerda como lo que son: precursores de una sociedad más justa, más  igualitaria y más digna.</p>
+<p>Creía el cobarde, el gobernador, Práxedes Giner  Durán, que arrojándolos a una fosa común y burlándose de ellos, afirmando que  tierra pedían y tierra tuvieron.</p>
+<p>Nos íbamos a olvidar de ellos, pero no contaron con  la memoria indómita de sus familias y amigos y mucho menos contaron con que 60  años después, la primera Presidenta en la historia de nuestro país, la Doctora  Claudia Sheinbaum, emanada de las mejores luchas sociales, declararía mediante  decreto sus sepulturas como lugar de memoria donde hoy un monumento imponente,  inaugurado la semana pasada, recuerda la memoria de los mejores de los  nuestros. </p>
+<p>Hoy nadie sabe dónde yace el cuerpo del tirano. </p>
+<p>Desgraciadamente los Héroes de Madera tuvieron que  entregarlo todo y por ello la izquierda decidió a partir de los setentas  organizarse políticamente en partidos, porque entendimos que militar  políticamente en un partido, en un colectivo, en una organización, es  precisamente entregar todos un poco para que unos pocos no tengan que  entregarlo todo.</p>
+<p>Y se los digo con prudencia, pero también con amor. </p>
+<p>¿Creen que mi pueblo, ese que se despierta a las  cinco para ir a la maquila, o para cultivar la tierra haciéndole frente a la  sequía, se ha olvidado de Pancho Villa, de los Héroes de Madera? </p>
+<p>¿Creen que nuestra gente cayó en el conformismo y  renunció a luchar por construir una patria mejor? </p>
+<p> Por supuesto que no. </p>
+<p>Por eso hoy tenemos una herramienta política capaz  de hacer realidad la revolución pacífica de las conciencias, sin  insurrecciones, sin violencia, porque hoy tenemos a Morena, el partido político  que construyó nuestro propio pueblo resistiendo décadas de agravios para  desterrar pacíficamente la corrupción, la desigualdad y la injusticia.</p>
+<p>Hoy la izquierda decidió dar la batalla política,  económica y cultural en México y vaya que la estamos ganando. </p>
+<p>¡Que viva la Sierra Tarahumara! ¡Que viva Madera! ¡Que  viva Chihuahua! ¡Que viva don Florencio Lugo! ¡Y las familias hermosas de los  Héroes caídos en Madera!</p>
+<p>Muchísimas  gracias. </p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Con  esta intervención concluye la participación de los grupos parlamentarios.  Compañeros senadores y compañeras Senadoras. Distinguidos invitados y  familiares: </p>
+<p>Hoy  llevamos a cabo esta sesión solemne para recordar el Aniversario del Intento de  Asalto al Cuartel de Ciudad Madera en el estado de Chihuahua, a 60 años. </p>
+<p>Nos  reunimos en esta Soberanía para conmemorar la dignidad, la valentía y el  profundo amor por el pueblo de quienes dieron su vida en este hecho del 23 de  septiembre de 1965.</p>
+<p>Trece  jóvenes, maestros, estudiantes y campesinos entregaron sus vidas por un México  más justo. </p>
+<p>Doce  de ellos no alcanzaban los 25 años. </p>
+<p>Enfrentaron  la injusticia desafiando el poder de los caciques y terratenientes, amparados  por el gobernador Práxedes Giner Durán. Cansados de los abusos, explotación y  despojos, sin encontrar alternativas por la vía pacífica, atacaron el Cuartel  de Ciudad Madera, Chihuahua. </p>
+<p>Arturo  Gámiz García, maestro rural, fue quien encabezó este acto de rebeldía,  conciencia y dignidad. </p>
+<p>Junto  a él Emilio Gámiz García.</p>
+<p>Salomón  Gaytán Aguirre. </p>
+<p>Pablo  Gómez Ramírez. </p>
+<p>Juan  Antonio Scobell Gaytán.</p>
+<p>Rafael  Martínez Valdivia.</p>
+<p>Miguel  Quiñones Pedroza.</p>
+<p>Óscar  Sandoval Salinas. </p>
+<p>Guadalupe  Scobell.</p>
+<p>Ramón  Mendoza. </p>
+<p>Florencio  Lugo. </p>
+<p>Francisco  Ornelas, y </p>
+<p> Matías  Fernández. </p>
+<p>No  buscaban solamente tomar un cuartel, buscaban iniciar un proceso de  transformación profunda. </p>
+<p>Querían  cambiar el rumbo de nuestra historia. </p>
+<p>Querían  justicia para los campesinos despojados. </p>
+<p>Libertad  para los estudiantes reprimidos. </p>
+<p>Dignidad  para los trabajadores explotados. </p>
+<p>Querían  que el bosque, la tierra y el agua volvieran a manos del pueblo. </p>
+<p>Ese  intento, aunque militarmente fallido, inauguró una nueva fase de la lucha  popular, la insurgencia armada que recogía las gestas villistas, zapatistas y  jaramillistas, y que, más tarde, darían origen a la Liga Comunista 23 de  Septiembre. Madera se convirtió en símbolo, en semilla, en llamado.</p>
+<p>Porque  los Héroes de Madera no fueron un hecho aislado, fueron el faro de una  generación que creyó que la vía pacífica estaba clausurada y que ante la  represión y el silencio había que responder con dignidad, con la vida. Hoy, en  este tiempo, en que la memoria florece, celebramos el Decreto de la Presidenta,  la Doctora Claudia Sheinbaum Pardo, quien declaró sitio de memoria la tumba  colectiva donde yacen los combatientes caídos de Ciudad Madera. </p>
+<p>Agradecemos  la presencia de Florencio Lugo, sobreviviente. </p>
+<p>De  todos los familiares y amigos que hoy nos acompañan. </p>
+<p>Del  Subsecretario de Gobernación, el Maestro Arturo Medina. </p>
+<p>Y,  desde luego, la presencia de Rosario Piedra Ibarra, Presidenta de la Comisión  Nacional de Derechos Humanos.</p>
+<p>Y,  además, reconocemos las dos recomendaciones emitidas por la CNDH, que dan  cuenta de la represión sistemática y autoritarismo de Estado que se sufría en  aquella época, por lo que optaron por la vía armada al no encontrar opciones de  participación ni de organización democrática. </p>
+<p>Estas  recomendaciones muestran que la represión fue una política constante, no un  hecho aislado. </p>
+<p>Su  reconocimiento contribuye a la memoria histórica y reivindica a quienes  enfrentaron la injusticia y la violencia por buscar ni más ni menos que un país  más justo. </p>
+<p>No  olvidamos a Madera, no olvidamos a sus combatientes, no olvidamos que la lucha  por la democracia en México ha sido escrita con sangre, con lágrimas, con  dignidad y con esperanza. </p>
+<p>Recordarles  es reconocer que durante décadas los gobiernos autoritarios negaron las graves  violaciones a los derechos humanos, que se extendieron desde la segunda mitad  del siglo XX hasta hace algunos años. </p>
+<p> Porque rememorar a los Héroes de Madera es  reivindicar la lucha por la tierra, por la justicia, por el derecho a soñar con  un país diferente; es mantener viva la llama de la democracia para que las  futuras generaciones no olviden por lo que se ha luchado, para que nadie más,  nunca más tenga que empuñar las armas ni entregar su vida por el derecho a la  justicia y a la libertad. </p>
+<p>Por eso hoy, desde esta tribuna, con orgullo  y responsabilidad proclamamos honor y gloria a los jóvenes del 23 de septiembre  de 1965.</p>
+<p>¡Vivan los Héroes del Asalto al Cuartel  Madera!</p>
+<p>¡Viva México, con justicia y con memoria!</p>
+<p>Muchas gracias, compañeros. </p>
+<p>A continuación, les solicito ponernos de pie  a fin de entonar nuestro Himno Nacional. </p>
+<p align="center">(Todos de pie entonan  del Himno Nacional)</p>
+<p>Los invitamos a tomar asiento. </p>
+<p>El Senado de la República agradece la  presencia de todas y todos en esta sesión solemne. </p>
+<p>Damos por finalizada la sesión. </p>
+<p>Invitamos a las compañeras y compañeros a que  permanezcan en sus lugares, a los compañeros Senadores, para continuar con la  sesión ordinaria. </p>
+<p>Damos entonces por finalizada la sesión  solemne e invitamos a los compañeros invitados y familiares para que suban para  tomar la foto. </p>
+<p align="center">(Se levantó la sesión  a las 12:02 horas) </p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a123303'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

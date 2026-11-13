@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>TERCER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;"><br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO III</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo </td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 23</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Oscar Eduardo Ramírez Aguilar</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;"> Celebrada<br>en la Ciudad de M&eacute;xico, el 20 de Abril de 2021</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/3//PDF-WEB/SPO_No.23_20_ABRIL_2021_MATUTINA.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='96975'></a><p align="center"><strong>PRESIDENCIA DEL SENADOR</strong><br>
+  <strong>EDUARDO RAMÍREZ AGUILAR</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>(11:20 horas)<strong> </strong>Vía.  Sesiones.senado.gob.mx.<strong> </strong>Bajo el  Acuerdo de asistencia de la Junta de Coordinación Política, solicito a la  Secretaría informe el resultado del cómputo. </p>
+<p align="justify"><strong>La Secretaria Senadora Lilia Margarita Valdez  Martínez:</strong> Honorable Asamblea, conforme al registro de  asistencia, se han acreditado 66 señoras Senadoras y señores Senadores. </p>
+<p align="justify">En consecuencia, hay quórum, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez  Aguilar:</strong> Se abre la sesión del martes 20 de abril de 2021,  correspondiente al segundo período ordinario de sesiones del tercer año de la  LXIV Legislatura. Para aquellos que faltan manifestar su asistencia, les  recuerdo que pueden hacerlo a través de sus enlaces. </p>
+<p align="justify">El Orden del Día se encuentra publicado en la Gaceta del Senado, con lo  cual se informa de los asuntos que corresponden a la sesión de hoy. Asimismo,  se encuentra disponible en la plataforma digital.</p>
+<p align="right"><strong>ORDEN DEL DÍA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/116966"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">El acta de la sesión del jueves 15 de abril  se encuentra publicada en la Gaceta y disponible en la plataforma digital.</p>
+<p align="right"><strong>ACTA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/116967"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/asistencias/2021_04_15/20"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Solicito a la Secretaría consulte a la Asamblea, en votación económica,  si es de aprobarse el acta referida. </p>
+<p align="justify"><strong>La Secretaria Senadora Lilia Margarita Valdez  Martínez:</strong> Consulto a la Asamblea, en votación económica, si  es de aprobarse el acta de la sesión del 15 de abril. Quienes estén porque se  apruebe, favor de levantar la mano. Y les pido la mantengan levantada unos  segundos. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque se rechace, favor de levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Se aprueba, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez  Aguilar:</strong> Se aprueba el acta de la sesión del 15 de abril de  2021. </p>
+<p align="justify">Continúe la Secretaría.</p>
+<p align="justify">Como es de su conocimiento, en la sesión del 17 de marzo del 2021 se  designaron 13 Consejeras y Consejeros Honoríficos del Consejo Nacional  Ciudadano del Sistema Nacional de Búsqueda de Personas, con el propósito de  cuidar las condiciones sanitarias que reduzcan los riesgos de contagio, se les  informa que el día de hoy en la Sala Ifigenia Martínez, de la Mesa Directiva,  se tomó protesta a 12 de las y los Consejeros, resta por cumplir con la  protesta el Consejero Álvaro Martos en fecha posterior. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a96975'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='96976'></a><p align="justify"><strong>CÁMARA DE DIPUTADOS</strong></p>
+<p align="justify"><strong>La Secretaria Senadora Lilia Margarita Valdez Martínez:</strong> Se recibió de la  Cámara de Diputados, minuta proyecto de Decreto por el que se reforman y  adicionan diversas disposiciones de la Ley de Hidrocarburos, en materia de  permisos para realizar actividades en la industria de hidrocarburos. </p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-20-1/assets/documentos/Minuta_Ley_Hidrocarburos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar:</strong> Informo a la  Asamblea, que de conformidad con el numeral 2 el artículo 176 se turna  directamente a las Comisiones Unidas de Energía; y de Estudios Legislativos,  Segunda. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a96976'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='96977'></a><p align="justify">Informo que la Junta de Coordinación Política  remitió un Acuerdo por el que se modifica la integración de comisiones, el  Acuerdo se encuentra publicado en la Gaceta Parlamentaria y disponible en  plataforma digital, por lo que solicito a la Secretaría dé lectura al Acuerdo. </p>
+<p align="justify"><strong>JUNTA DE COORDINACIÓN POLÍTICA</strong></p>
+<p align="justify"><strong>La Secretaria Senadora Ruth Alejandra López Hernández:</strong> Doy lectura al  Acuerdo. </p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-20-1/assets/documentos/Acuerdo_Comisiones_JUCOPO.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es todo, señor Presidente. <br>
+  <br>
+  <strong>El Presidente Senador Eduardo Ramírez  Aguilar: </strong>Está a discusión el Acuerdo. </p>
+<p align="justify">Al no haber participaciones, consulte la Secretaría a la Asamblea, en  votación económica, si es de aprobarse el Acuerdo presentado. </p>
+<p align="justify"><strong>La Secretaria Senadora Ruth Alejandra López  Hernández: </strong>Consulto a la Asamblea, en votación  económica, si es de aprobarse el Acuerdo. Quienes estén porque se apruebe,  favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque se rechace, favor de levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Aprobado el Acuerdo, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>Aprobado el Acuerdo por el que se modifica la integración de comisiones.  Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a96977'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='96978'></a><p align="justify">Me han solicitado, a través de los enlaces legislativos, participaciones  antes de iniciar nuestra sesión. </p>
+<p align="justify">Por lo que se le concede el uso de la palabra a la Senadora Sylvana  Beltrones Sánchez, del grupo parlamentario del PRI. </p>
+<p align="justify">Sonido en su dispositivo. </p>
+<p align="justify"><strong>La Senadora Sylvana Beltrones Sánchez: </strong>Gracias, señor Presidente. Buenos días, compañeras, compañeros. </p>
+<p align="justify">Me permito hacer una referencia a la sensible partida de una mujer  sonorense ejemplar, la doctora Alicia Arellano Tapia, que nos deja a todos un  legado de experiencia, lucha y perseverancia, fue una de las dos primeras  Senadoras selectas, junto con María Lavalle Urbina en la XLVI Legislatura. </p>
+<p align="justify">Lo fue en una época en que la mujer mexicana era prácticamente vetada de  la participación política en activo, también fue la primera mujer electa en  Sonora, en su natal Magdalena de Kino y posteriormente de la capital del  estado, haciendo verdadera política en tiempos reservados, exclusivamente para  hombre. </p>
+<p align="justify">Gracias a ello, de Sonora y en el país, se  estableció un precedente que, hoy convertido  en legado, motivó e inspiró a muchas generaciones de mujeres a participar en la  política. </p>
+<p align="justify">Recordemos que la doctora Alicia Arellano fue objeto de múltiples  homenajes y reconocimientos, incluso aquí en el Senado, distinguida por su gran  trayectoria a lo largo de su vida, rompió paradigmas y abrió brechas,  dejándonos un legado imborrable como ejemplo de lucha y participación. </p>
+<p align="justify">Por lo anterior, señor Presidente, solicito a usted un minuto de  silencio en reconocimiento a su vida y aprovecho para enviarle mis profundas  condolencias a la Gobernadora de Sonora, Claudia Pavlovich Arellano por el  sensible fallecimiento de su señora madre. </p>
+<p align="justify">Es cuanto. <br>
+  <br>
+  <strong>El Presidente Senador Eduardo Ramírez  Aguilar: </strong>En atención a la solicitud que ha presentado la  Senadora Sylvana Beltrones, por el sensible fallecimiento de la ciudadana  Alicia Arellano Tapia, quien tiene un antecedente, como una de las primeras  legisladoras en este Senado de la República, vamos a brindarle un minuto de  silencio. </p>
+<p align="justify">Pido a todos ponerse de pie. </p>
+<p align="justify"><strong>MINUTO DE SILENCIO</strong></p>
+<p align="center">(Todos de pie guardan un minuto de silencio)</p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify">Sonido en el dispositivo de la Senadora Aurelia Esthela Villarreal  Zavala, del grupo parlamentario del PAN.</p>
+<p align="justify"><strong>La Senadora Audelia Esthela Villarreal  Zavala: </strong>Con su venia, señor Presidente. </p>
+<p align="justify">Los habitantes del municipio del Mulegé, en mi estado Baja California  Sur, están muy preocupados ante la posibilidad de que una fuente de trabajo,  como es la empresa El Boleo, no reciba la autorización para continuar  actividades en su zona concesionada. </p>
+<p align="justify">Son más de mil 761 empleos directos y más de siete mil personas  beneficiadas de nuestro estado que se verían afectadas si la empresa cierra sus  operaciones, provocándose una crisis muy severa en esa región, caracterizada,  además, por la falta de empleo. </p>
+<p align="justify">Desde sus orígenes, en 1885, El Boleo ha extraído cobre y otros  minerales en la zona aledaña a Santa Rosalía, es una empresa emblemática en la  región, con altos estándares ambientales que contribuye en lo social, en lo  económico, lo laboral, lo fiscal, con Baja California Sur y con México. </p>
+<p align="justify">Por ello, hoy presento un punto de acuerdo para solicitar al titular del  Ejecutivo Federal que reconsidere su posición frente a El Boleo, y a la  Semarnat, para que dentro del marco legal resuelva la autorización de impacto  ambiental, presentada por la empresa. </p>
+<p align="justify">Nuestra preocupación ante esta situación de incertidumbre es el futuro de  los habitantes de Mulegé que requieren hoy más que nunca de nuestro apoyo y  solidaridad para mantener esta fuente de trabajo tan relevante en Baja  California Sur. </p>
+<p align="justify">Es cuanto, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez  Aguilar: </strong>Se le concede el uso de la palabra al Senador José  Narro Céspedes, del grupo parlamentario del Partido Morena. </p>
+<p align="justify">Recordándoles que su participación, son de dos minutos.</p>
+<p align="justify"><strong>El Senador José Narro Céspedes: </strong>Queremos en este día recordar a nuestro compañero, a nuestro General  Emiliano Zapata, a 102 años de la traición que lo llevó a la tumba. </p>
+<p align="justify">La traición de estos gobiernos neoliberales que, mediante el aparente  apoyo a combatir la pobreza, buscaron consolidarse como una opción que nunca  transformó, que siempre llevó a más campesinos a la pobreza en nuestro país y  al olvido. </p>
+<p align="justify">La traición que se dio en el tema agrario, porque no se cumplió durante  muchos años el tema de la tierra, el tema del agua, con su contaminación y el  acaparamiento del agua por las grandes empresas, los recursos naturales que han  sido devastados por este modelo que no tiene freno más que la ambición y el  objetivo de la ganancia extrema. <br>
+  <br>
+  Hoy aquí queremos rendir homenaje a un hombre que supo defender a su  comunidad, Anenecuilco, que supo defender a su gente y que supo defender al  campesinado y a los pueblos indígenas de nuestro país. </p>
+<p align="justify">Por eso, la lucha Zapatista se levanta en México como símbolo de la  justicia y de la dignidad.</p>
+<p align="justify">Como símbolo de los derechos que el campo se merece.</p>
+<p align="justify">Como esa lucha por lograr la autosuficiencia y la soberanía alimentaria.</p>
+<p align="justify">Como esa lucha para que haya crédito eficiente y barato.</p>
+<p align="justify">Como esa lucha para evitar que las tierras se sigan concentrado en las  grandes trasnacionales y sea fruto únicamente de la corrupción y de la ambición  de algunos. </p>
+<p align="justify">Hoy necesitamos justicia en el campo a partir de que se terminen de  resolver los problemas agrarios.</p>
+<p align="justify">Necesitamos justicia en el campo para que el ejido tenga personalidad  jurídica, tenga reconocimiento en el artículo 27 constitucional, el ejido y la  propiedad social de la tierra. </p>
+<p align="justify">Hoy necesitamos cambios para que haya realmente justicia agraria, apoyos  al campo y lograr que recuperemos esta autosuficiencia y que los campesinos y  las comunidades indígenas salgan del olvido y del abandono, salgan de la  violencia, dado que los grupos de la delincuencia se han ido apoderando de  franjas muy importantes del territorio. </p>
+<p align="justify">Hoy recordamos esos 102 años del asesinato de nuestro General que vive  en los corazones de los campesinos mexicanos. </p>
+<p align="justify">Hoy también recordamos este 17 de abril que se cumplieron también años  del Día Internacional de la Lucha Campesina a nivel mundial después de aquella  matanza de 17 campesinos en Brasil, y que el 17 de abril fue declarado Día de  la  Lucha Campesina. </p>
+<p align="justify">Hoy aquí estamos de  pie reclamando justicia y dignidad para nuestro campo y para nuestra gente.</p>
+<p align="justify">Por eso hoy le  pedimos aquí a nuestro presidente de la Mesa Directiva que acuerde, que nos  apoye con un minuto de silencio, de homenaje a Emiliano Zapata; a miles de campesinos  que han caído por la lucha y a esta lucha digna por el progreso, por el  desarrollo, por la autosuficiencia y la soberanía del campo mexicano a través  de la producción de los alimentos que tanto requiere la patria. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>El Presidente Senador  Eduardo Ramírez Aguilar: </strong>Ha solicitado el Senador José Narro un minuto de  silencio en conmemoración del líder agrarista Emiliano Zapata, por lo que pido  respetuosamente brindemos el minuto a petición del Senador. </p>
+<p align="center">(Todos de pie  guardan un minuto de silencio)</p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify">Tomen asiento.</p>
+<p align="justify">Se le concede el  uso de la palabra a la Senadora Ruth Alejandra López Hernández, de Movimiento  Ciudadano. </p>
+<p align="justify">Sonido en su  escaño. <br>
+  <br>
+  <strong>La Senadora Ruth  Alejandra López Hernández: </strong>(Desde su escaño) Gracias, señor Presidente. </p>
+<p align="justify">Hoy es 20 de abril,  es el 4-20 y es la hora de que este Senado regule el cannabis para que consumir  no sea criminalizado, para que consumir no sea razón de ir a la cárcel, para  que no sea un motivo para ser estigmatizado o estigmatizada. </p>
+<p align="justify">Es una pena que  este Senado tenga congelado este tema por posibles miedos o cálculos  electorales. </p>
+<p align="justify">El Senado de la  República tiene la responsabilidad de corregirle la plana a la Cámara de  Diputados para dar pasos serios hacia las libertades de las personas. </p>
+<p align="justify">En Movimiento  Ciudadano estamos bien puestos para regular con base en evidencia, para que no  se criminalice y se respeten los derechos de las y los consumidores. </p>
+<p align="justify">Es cuanto, señor  Presidente. </p>
+<p align="justify"><strong>El Presidente  Senador Eduardo Ramírez Aguilar: </strong>Sonido en el escaño de la Senadora Lilia  Margarita Valdez, del grupo parlamentario del Partido Morena. </p>
+<p align="justify">Sonido en la  tribuna, por favor. </p>
+<p align="justify"><strong>La Senadora Lilia  Margarita Valdez Martínez: </strong>Gracias, señor Presidente. </p>
+<p align="justify">Creo que es  conocido de todo México, y desgraciadamente de todo el mundo, el accidente del  pasado 27 de marzo que enlutó a la familia del compañero, del médico Miguel  Ángel Luna Calvo, conocido médico y querido médico en el estado de Durango.</p>
+<p align="justify">Es por eso que  presento un proyecto de decreto por el que se adiciona una fracción XI al  artículo 58, recorriendo las subsecuentes, y se reforma la fracción IV, del  artículo 61, de la Ley General de Turismo, en donde propongo que en estos  parques de diversiones se debe de contar con el personal médico, paramédico y  equipo funcional para la atención prehospitalaria de urgencias, de acuerdo al  tamaño de los inmuebles, edificaciones, servicios turísticos, así como el foro  de usuarios para que acudan a las mismas. </p>
+<p align="justify">En otras palabras,  de acuerdo al riesgo y a la vulnerabilidad de los usuarios, de los turistas, de  nuestros niños, debe de ser la atención y la precaución que se tenga en ese  sentido. </p>
+<p align="justify">También propongo  que se debe de recibir del prestador de servicios turísticos los bienes y  servicios de calidad, acordes con la naturaleza y cantidad de la categoría que  ostente el establecimiento elegido, así como la atención prehospitalaria de  urgencias en el caso de un accidente o percance dentro del establecimiento. Y,  en los casos necesarios, las ambulancias aéreas que sean necesarias, que sean  requeridas para esa atención. </p>
+<p align="justify">Insisto en que esta  iniciativa sea tomada en cuenta por ustedes, compañeros, Senadores y Senadoras,  para prevenir en futuros no lejanos la muerte de nuestros pequeños hijos. </p>
+<p align="justify">Por eso, propongo  el proyecto de decreto en el que se adiciona la fracción. </p>
+<p align="justify">Solicito su turno  directo a estas comisiones para su respectivo análisis y estudio. </p>
+<p align="justify">Muchísimas gracias,  señor Presidente. </p>
+<p align="justify"><strong>El Presidente  Senador Eduardo Ramírez Aguilar: </strong>Tomamos nota, Senadora Margarita. <br>
+  <br>
+  Se le concede el  uso de la palabra al Senador Miguel Ángel Mancera Espinosa, del grupo  parlamentario del PRD. </p>
+<p align="justify">Sonido en su dispositivo.</p>
+<p align="justify"><strong>El Senador Miguel Ángel Mancera Espinosa:</strong> Muchas gracias, señor Presidente. Compañeras Senadoras y compañeros  Senadores:</p>
+<p align="justify">Hago uso de la palabra, señor Presidente, para recordar al escritor  mexicano, al Premio Nobel de Literatura, Octavio Paz, quien el día de ayer, 19  de abril, cumplió 23 años de fallecido.</p>
+<p align="justify">Dada la relevancia de su obra y a manera de evocación de este ilustre  mexicano, también quiero solicitarle, presidente, guardar un minuto de  silencio.</p>
+<p align="justify">Y de la misma manera señalar que desde hace algunas semanas y dada la  carga de trabajo que se ha tenido, se ha enlistado para discusión y votación el  dictamen de la Comisión de Cultura sobre el punto de acuerdo para exhortar a la  Secretaría de Cultura a fin de que se informe a esta soberanía sobre el estado  de conservación y catalogación del acervo bibliográfico, artístico y plástico  de Octavio Paz.</p>
+<p align="justify">Estoy consciente que hemos tenido esta agenda cargada por temas de  primera importancia, sin embargo, este asunto, presidente, sobre el acervo del  poeta, es significativo pues, como el dictamen lo señala, existe preocupación  en el medio cultural sobre el destino y cuidado de esta herencia para todas y  para todos los mexicanos.</p>
+<p align="justify">Por lo que ojalá podamos darle curso en la primera oportunidad, de  conformidad con los trabajos que realiza la Mesa Directiva y se tome en  consideración este asunto que hoy comento.</p>
+<p align="justify">Gracias, señor Presidente.</p>
+<p align="justify">Es cuanto.</p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez  Aguilar:</strong> Sonido en el dispositivo de la Senadora Lucía  Trasviña, del grupo parlamentario del Partido Morena.</p>
+<p align="justify"><strong>La Senadora Jesús Lucía Trasviña Waldenrath:</strong> Gracias, señor Presidente. Compañeras, compañeros Senadores:</p>
+<p align="justify">Quiero referirme específicamente a la situación que se plantea sobre la  operación de la minera El Boleo.</p>
+<p align="justify">La Secretaría de Economía desmiente que se vaya a cerrar esta fuente de  trabajo, sin embargo, quiero advertir que no hay una resolución final sobre la  mina El Boleo. Lo que la mina El Boleo, que es una empresa surcoreana, está  buscando es la ampliación de la superficie de sus operaciones, no una nueva  concesión. Y así lo dijo nuestro presidente.</p>
+<p align="justify">La compañía solicitó la ampliación por 436 hectáreas contiguas a las  hectáreas que actualmente está operando. No hay un resolutivo final, en tanto,  la noticia no debe ser maliciosa, hay que informar al pueblo con veracidad, hay  que respetar al pueblo en sus decisiones. </p>
+<p align="justify">La minera El Boleo no se cierra, no se cierra. De manera que estamos en  momentos de reflexionar y llevar la verdad por delante para el pueblo, porque  es un derecho del pueblo.</p>
+<p align="justify">Gracias.<br>
+  <br>
+  <strong>El Presidente Senador Eduardo Ramírez  Aguilar:</strong> Sonido en el dispositivo de la Senadora Gloria Sánchez  Hernández.</p>
+<p align="justify"><strong>El Senador Napoleón Gómez Urrutia:</strong> Señor Presidente, quisiera hacer uso de la palabra…</p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez  Aguilar:</strong> Sí, Senador.</p>
+<p align="justify">Senadora Gloria Sánchez.</p>
+<p align="justify"><strong>La Senadora Gloria Sánchez Hernández:</strong> Gracias, señor Presidente. Compañeras y compañeros:</p>
+<p align="justify">¡Abril de victorias para Cuba! </p>
+<p align="justify">El día de ayer, a 60 años de la fallida invasión del imperialismo en  tierras cubanas, se agiganta la gesta de héroes y mártires de… (Fallas de  origen) infringida por los patriotas cubanos al imperio y sus mercenarios fue  una prueba más de la decisión soberana de un pueblo para respaldar el proceso  de transformaciones iniciado el 1 de enero de 1959.</p>
+<p align="justify">Una de sus grandes realizaciones es el internacionalismo, que se  manifiesta con el trabajo solidario de las brigadas de médicos Henry Reeve, que  está siendo postulada para el Premio Nobel de la Paz 2021.</p>
+<p align="justify">¡Viva Cuba Libre! ¡Viva nuestra América! </p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez  Aguilar:</strong> Se le concede el uso de la palabra al Senador  Napoleón Gómez Urrutia.</p>
+<p align="justify">Sonido en su dispositivo. </p>
+<p align="justify"><strong>El Senador Napoleón Gómez Urrutia: </strong>Gracias.</p>
+<p align="justify">Quiero referirme a los dos comentarios que han hecho la Senadora del  PAN, por Baja California Sur, y la compañera de Lucía Trasviña, sobre el tema  de la mina El Boleo, en Baja California, y quiero informarles la realidad de lo  que sucede porque se ha deformado, se ha utilizado mucho en contra de la  declaración que hizo el presidente de la República y también del candidato a  gobernador del estado de Baja California Sur, del grupo político Morena, Víctor  Castro.</p>
+<p align="justify">La realidad es que esta empresa presentó una solicitud, la tengo aquí,  de impacto ambiental para ampliar las inversiones en exploración por 446  hectáreas, no una extensión de esta concesión que ya tienen.</p>
+<p align="justify">La empresa genera mil 769 empleos directos e indirectos, tiene un  impacto sobre 7 mil personas, es casi el 13 por ciento del empleo de todo el  municipio de Mulegé, pero la empresa no está cerrando, ni está cerrada como se  ha querido, creo que, por desconocimiento, quiero pensarlo por mala fe,  manifestando y opinando.</p>
+<p align="justify">Le envío una carta al señor presidente de la República, aquí la tengo  también la copia sellada y fechada, el día de antier, precisamente aclarándole  con la copia de la carta de la empresa.</p>
+<p align="justify">Ya hizo el trámite la empresa, el presidente de la empresa me pidió una  cita como dirigente del Sindicato Nacional de Mineros porque todos esos  trabajadores son miembros de nuestra organización, están afiliados al sindicato  de Mineros.<br>
+  <br>
+  Mañana a la una de la tarde recibo al presidente de esta compañía, al  director general y a otros dos directores, pero no están pidiendo una  ampliación de la concesión, es un permiso de impacto ambiental de la Semarnat  precisamente para continuar las tareas de exploración porque lo que no quieren  es que se cierre la mina porque se han venido agotando los yacimientos.</p>
+<p align="justify">Nosotros, los trabajadores, el Sindicato Nacional de Mineros, estamos  muy interesados y preocupados por esta situación, así lo hemos informado al  presidente de la República, al candidato al gobierno del estado de Baja  California, al profesor Víctor Castro, que ha estado trabajando con nosotros de  la mano junto con la empresa y el sindicato para resolver y aclarar este  conflicto que creo que es producto de un mal entendido, sobre todo.</p>
+<p align="justify">En fin, quería aclararlo, y pues aquí están las cartas, si quieren con  mucho gusto puedo proporcionarle la de la empresa dirigida directamente a mí y  la que yo le envío al presidente de la República.</p>
+<p align="justify">Gracias,señor Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Eduardo Ramírez Aguilar: </strong>Se le concede el uso de la palabra al Senador Gustavo Madero.</p>
+<p align="justify">Sonido en su dispositivo.</p>
+<p align="justify"><strong>El Senador Gustavo Madero Muñoz: </strong>Muchas gracias, señor Presidente.</p>
+<p align="justify">Quiero hacerle mención al tema, señor presidente.</p>
+<p align="justify">El Presidente de la República finalmente el día de hoy se puso la vacuna  para poder dar una señal de confianza, de poder impulsar entre toda la  población con su liderazgo el ejemplo desde su posición, y en eso es muy  admirable que lo haya hecho el día de hoy.</p>
+<p align="justify">Quiero, sin embargo, presidente, también señalar que lo hizo sin el uso  del cubrebocas, y que a mi juicio esto unifica el acto ejemplar de un líder  nacional de querer ayudar a la población a generar los criterios de lo que  debemos hacer colectivamente para superar la pandemia.</p>
+<p align="justify">En todo el mundo está reconocido con datos que el cubrebocas y el  distanciamiento son las mejores medidas, junto con la vacuna, para superar esta  pandemia.</p>
+<p align="justify">Yo quisiera hacerle un exhorto por esta vía al presidente de la  República para que tuviera la humildad de actuar como todos los millones de  mexicanos nos piden que actuemos, que usemos el cubrebocas parejo, sin  excepciones.</p>
+<p align="justify">Lo felicito por haberse puesto la vacuna, aunque tarde, pero no le  felicito, más bien hago un exhorto para que también su ejemplo nos ayude a que  mucha gente de la población tome esta práctica como una medida para superar  esta crisis, esta pandemia.</p>
+<p align="justify">Acaba de haber un estudio donde sale que en México pudo haberse evitado  más de  190 mil muertes, precisamente si  las autoridades hubieran actuado de manera diferente, y menciona el estudio  precisamente del presidente de la República. </p>
+<p align="justify">Ese es mi comentario, presidente, con mucho respeto. </p>
+<p align="justify">Felicitarlo por la vacuna y hacer un extrañamiento, un exhorto para la  utilización del cubrebocas de manera ejemplar por el presidente de la  República. </p>
+<p align="justify">Muchas gracias.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a96978'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='96979'></a><p align="justify"><strong>El Presidente Senador Eduardo Ramírez  Aguilar:</strong> En otro apartado de la agenda, tenemos la primera  lectura de un dictamen de las Comisiones Unidas de Trabajo y Previsión Social;  y de Estudios Legislativos, Segunda, que contiene proyecto de Decreto por el  que se reforman, adicionan y derogan diversas disposiciones de la Ley Federal  del Trabajo, de la Ley del Seguro Social, de la Ley Instituto del Fondo  Nacional de la Vivienda para los Trabajadores, del Código Fiscal de la  Federación, de la Ley del Impuesto Sobre la Renta, de la Ley del Impuesto al  Valor Agregado, de la Ley Federal de los Trabajadores al Servicio del Estado, Reglamentaria  del Apartado B) del artículo 123 Constitucional, de la Ley Reglamentaria de la  Fracción XIII Bis del Apartado B y del artículo 123 de la Constitución Política  de los Estados Unidos Mexicanos, en materia de subcontratación laboral. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE  SE REFORMAN, ADICIONAN Y DEROGAN DIVERSAS DISPOSICIONES DE LA LEY FEDERAL DEL  TRABAJO; DE LA LEY DEL SEGURO SOCIAL; DE LA LEY INSTITUTO DEL FONDO NACIONAL DE  LA VIVIENDA PARA LOS TRABAJADORES; DEL CÓDIGO FISCAL DE LA FEDERACIÓN; DE LA  LEY DEL IMPUESTO SOBRE LA RENTA; DE LA LEY DEL IMPUESTO AL VALOR AGREGADO; DE  LA LEY FEDERAL DE LOS TRABAJADORES AL SERVICIO DEL ESTADO, REGLAMENTARIA DEL  APARTADO B) DEL ARTÍCULO 123 CONSTITUCIONAL; DE LA LEY REGLAMENTARIA DE LA FRACCIÓN  XIII BIS DEL APARTADO B DEL ARTÍCULO 123 DE LA CONSTITUCIÓN POLÍTICA DE LOS  ESTADOS UNIDOS MEXICANOS</strong></p>
+<p align="justify"><strong>(Dictamen de  primera lectura)</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/64/3/2021-04-20-1/assets/documentos/Dict_Trabajo_Subcontratacion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Debido a que el dictamen se encuentra  publicado en la Gaceta Parlamentaria de hoy y disponible en la plataforma  digital, y con fundamento en lo dispuesto por los artículos 193 y 195 del  Reglamento del Senado, queda de primera lectura. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a96979'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='96980'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify">Se cita a la siguiente sesión, en este mismo  día, dentro de 15 minutos en modalidad a distancia. </p>
+<p align="justify">El enlace que utilizaron en la sesión recién  concluida se mantiene para conectarse en la sesión a la que se acaba de citar. </p>
+<p align="justify">Desde este momento queda disponible la  plataforma electrónica para el registro de su asistencia en la siguiente  sesión. </p>
+<p align="justify">Solicito vuelvan a registrar su asistencia. </p>
+<p align="justify">Se levanta la sesión. </p>
+<p align="center">(Se levantó la sesión a las 11:48 horas) </p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a96980'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 14</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Gerardo Fernández Noroña</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Ordinaria Celebrada<br>en la Ciudad de M&eacute;xico, el 03 de Octubre de 2024</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/1/PPO/PDF-WEB/PPO_No14_03-OCTUBRE-2024-VESPERTINA.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117276'></a><p align="center"><strong>PRESIDE EL SENADOR</strong></p> 
+<p align="center"><strong>GERARDO FERNÁNDEZ NOROÑA</strong></p>
+  
+<p><strong>APERTURA</strong></p>
+
+<p><strong>El Presidente Senador Gerardo Fernández Noroña:</strong> (15:02 horas) Solicito a la Secretaría informe a la Asamblea el resultado del cómputo de asistencia de las Senadoras y Senadores.</p> 
+  <p><strong>La Secretaria Senadora Verónica Noemí Camino Farjat:</strong> Con gusto, señor Presidente. Honorable Asamblea, conforme al registro de asistencia, se han acreditado 66 ciudadanas Senadoras y ciudadanos Senadores. En consecuencia, hay quórum, señor Presidente. </p>
+  <p><strong>El Presidente Senador Gerardo Fernández Noroña:</strong> Se abre la sesión vespertina del jueves 3 de octubre de 2024, correspondiente al primer período ordinario de sesiones del primer año de ejercicio de la LXVI Legislatura. El Orden del Día está publicado en la Gaceta Parlamentaria del día de hoy y disponible en el monitor de sus escaños; con lo cual se informa de los asuntos que correspondan a la agenda. </p>
+<p align="right"><strong>ORDEN DEL DÍA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/gaceta_del_senado/documento/144500"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>El acta de la sesión matutina de hoy, 3 de octubre de 2024, se encuentra publicada en la Gaceta Parlamentaria de este día. </p>
+<p align="right"><strong>ACTA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/gaceta_del_senado/documento/144501"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/asistencias/2024_10_03/12"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">&nbsp;</p>
+<p>En consecuencia, consulte la Secretaría a la Asamblea, en votación económica, si se aprueba el acta referida. </p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino Farjat:</strong> Con gusto, señor Presidente. Consulto a la Asamblea, en votación económica, si se aprueba el acta referida. Quienes estén porque se apruebe, favor de levantar la mano. </p>
+
+<p align="center">(La Asamblea asiente)</p>
+
+<p>Quienes estén porque se rechace, favor de levantar la mano.</p>
+<p align="center">(La Asamblea no asiente)</p>
+<p>Quienes se abstengan, favor de levantar la mano.</p>
+<p>Aprobada el acta, señor Presidente. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña:</strong> Aprobada el acta de la sesión matutina del 3 de octubre de 2024.</p>
+
+<p>Quiero de una vez, quiero pedir a los representantes de los medios que desalojen el salón de sesiones, si quieren hacer alguna entrevista lo hagan fuera del salón de sesiones. </p>
+<p>Hemos dado oportunidad de que ingresen a pesar de estar funcionando el Pleno, con el compromiso de que salgan del salón una vez iniciada la sesión.</p>
+<p>Quiero pedir a los representantes de los medios de comunicación salir del Pleno de sesiones. </p>
+<p>Representantes de los medios de comunicación, no nos permiten continuar con la sesión. </p>
+<p>Y hay un compromiso de los representantes de los medios de que iniciando la sesión saldrían del salón de plenos. </p>
+<p>Vuelvo a solicitar a los representantes de los medios salir del salón de sesiones. </p>
+<p>Muchas gracias. </p>
+<p>Compañeras Senadoras y compañeros Senadores, quiero reconocer la madurez política de Legisladoras y Legisladores, de todos los grupos parlamentarios, y particularmente de la oposición, quienes mantuvieron un comportamiento respetuoso y republicano el pasado 1 de octubre en la sesión de Congreso General en que tomó protesta nuestra Presidenta Constitucional, la compañera Presidenta Claudia Sheinbaum Pardo, lo cual permitió que la transmisión del Poder Ejecutivo se desarrollara con la solemnidad que el acto amerita. </p>
+<p>Asimismo, en lo que corresponde al Senado de la República, y en mi calidad de Presidente de esta Mesa Directiva, ofrezco una disculpa ya que la Presidencia del Congreso de la Unión no incorporó a los representantes de la oposición en las comisiones de cortesía. </p>
+<p>Reconozco que con esto se faltó a las reglas de sana convivencia, al reconocimiento de la pluralidad que esta Soberanía tiene, como lo es el Congreso de la Unión. </p>
+<p>Por lo que reitero la disculpa, y tengan la certeza de que, en lo que a mí corresponde, seguiremos reflejando la pluralidad en todos los actos de este Senado. </p>
+<p>Senador Vargas, ¿con qué objeto? Sonido en el escaño del Senador. </p>
+<p><strong>El Senador Enrique Vargas del Villar: </strong>(Desde su escaño) Le agradezco, señor Presidente, las disculpas. Las aceptamos. </p>
+<p>Y esperemos que México siga cambiando, entra una mujer como Presidenta de la República, Acción Nacional estuvo a la altura. </p>
+<p>Y esperemos que en México salgamos adelante todas y todos los mexicanos. </p>
+<p>Muchas gracias, señor Presidente. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña:</strong> Muchas gracias por su intervención, Senador Vargas del Villar. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117276'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117277'></a><p><strong>COMUNICACIONES</strong></p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino Farjat:</strong> Con gusto, señor Presidente. Se recibieron comunicaciones de las siguientes comisiones, con las que informan que quedaron formalmente instaladas: </p>
+<p>De la Comisión de Asuntos Frontera Sur, con la que remite oficio con el que informa que ha quedado formalmente instalada.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-10-03-2/assets/documentos/Comunicaci%C3%B3n_Com_Frontera_Sur.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117277'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117278'></a><p>De la Comisión de Derechos de la Niñez y de la Adolescencia, con la que remite oficio con el que informa que ha quedado formalmente instalada.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-10-03-2/assets/documentos/Comunicaci%C3%B3n_Com_Derechos_de_la_Ni%C3%B1ez.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117278'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117279'></a><p>De la Comisión de Desarrollo Municipal, con la que remite oficio con el que informa que ha quedado formalmente instalada.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-10-03-2/assets/documentos/Comunicaci%C3%B3n_Com_Desarrollo_Municipal.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117279'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117280'></a><p>De la Comisión de Hacienda y Crédito Público, con la que remite oficio con el que informa que ha quedado formalmente instalada.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-10-03-2/assets/documentos/Comunicaci%C3%B3n_Com_Hacienda_y_Cr%C3%A9dito_P%C3%BAblico.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117280'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117281'></a><p>De la Comisión de Gobernación, con la que remite oficio con el que informa que ha quedado formalmente instalada.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-10-03-2/assets/documentos/Comunicaci%C3%B3n_Com_Gobernaci%C3%B3n.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117281'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117282'></a><p>De la Comisión de Juventud, con la que remite oficio con el que informa que ha quedado formalmente instalada.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-10-03-2/assets/documentos/Comunicaci%C3%B3n_Com_Juventud.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117282'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117283'></a><p>De la Comisión Para la Igualdad de Género, con la que remite oficio con el que informa que ha quedado formalmente instalada.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-10-03-2/assets/documentos/Comunicaci%C3%B3n_Com_Para_la_Igualdad_de_G%C3%A9nero.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117283'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117284'></a><p>De la Comisión de Relaciones Exteriores, América Latina y el Caribe, con la que remite oficio con el que informa que ha quedado formalmente instalada.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-10-03-2/assets/documentos/Comunicaci%C3%B3n_Com_Relaciones_Exteriores_Am%C3%A9rica_Latina_y_el_Caribe.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117284'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117285'></a><p><strong>MESA  DIRECTIVA</strong></p>
+<p>Desahogaremos enseguida el Acuerdo suscrito por los integrantes de la  Mesa Directiva por el que se mandata emitir el proyecto de convocatoria para la  elección de la Presidencia de la Comisión Nacional de los Derechos Humanos. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-10-03-2/assets/documentos/Acuerdo_CNDH.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Dicho Acuerdo está publicado en  la Gaceta Parlamentaria del día y se encuentra disponible en el monitor de sus  escaños para su conocimiento. </p>
+<p>Está a discusión el Acuerdo. En  virtud de no haber oradoras ni oradores registrados, consulte la Secretaría a  la Asamblea, en votación económica, si es de aprobarse el Acuerdo presentado. </p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con gusto, señor  Presidente. Consulto a la Asamblea, en votación económica, si es de aprobarse  el Acuerdo. Quienes estén porque se apruebe, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén porque se rechace,  favor de levantar la mano. </p>
+<p align="center">(La Asamblea no  asiente)</p>
+<p>Quienes se abstengan, favor de  levantar la mano. </p>
+<p>Aprobado el Acuerdo, señor  Presidente. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Aprobado el  Acuerdo. Se mandata a las Comisiones Unidas de Derechos Humanos; y de Justicia  a emitir el proyecto de convocatoria para la elección de la Presidenta o Presidente  de la Comisión Nacional de los Derechos Humanos. Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117285'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117286'></a><p>Pasamos al desahogo del Acuerdo de la Mesa Directiva para la realización  de la sesión solemne, relativa a la Conmemoración del Bicentenario de la  Instauración del Senado de la República en México. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-10-03-2/assets/documentos/Acuerdo_MD_Sesi%C3%B3n_Solemne.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Dicho Acuerdo está publicado en  la Gaceta Parlamentaria de este día y se encuentra disponible en el monitor de  sus escaños para su conocimiento. Está a discusión el Acuerdo. En virtud de no  haber oradoras ni oradores registrados, consulte la Secretaría a la Asamblea,  en votación económica, si es de aprobarse el Acuerdo presentado. <br>
+  <strong>           </strong><br>
+  <strong>La Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con gusto, señor  Presidente. Consulto a la Asamblea, en votación económica, si es de aprobarse  el Acuerdo presentado. Quienes estén porque se apruebe, favor de levantar la  mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén porque se rechace,  favor de levantar la mano. </p>
+<p align="center">(La Asamblea no  asiente)</p>
+<p>Quienes se abstengan, favor de  levantar la mano. </p>
+<p>Aprobado el Acuerdo, señor  Presidente. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Aprobado el Acuerdo  para la realización de la sesión solmene, el próximo 8 de octubre, relativa a  la Conmemoración del Bicentenario de la Instauración del Senado de la República  en México. Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117286'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/w_6XfSZCF_E?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='117287'></a><p>Honorable Asamblea, el siguiente  asunto del Orden del Día es la discusión del dictamen que se ha incorporado, de  la Comisión de Energía, por el que se acuerda la idoneidad del ciudadano Juan  José Paullada Figueroa para ser ratificado como Consejero Independiente del  Consejo de Administración de Petróleos Mexicanos, por el período comprendido de  la fecha de aprobación y hasta el 8 de diciembre de 2025. </p>
+<p>El dictamen fue recibido esta  mañana y está disponible en la Gaceta del Senado y en el monitor de sus  escaños. Sin embargo, como es de su conocimiento, el numeral 1 del artículo 193  del Reglamento del Senado, señala que los dictámenes se publican, cuando menos  24 horas antes de la sesión del Pleno en la que son puestos a debate y  votación. </p>
+<p>Pero para este caso particular,  la Ley de Petróleos Mexicanos señala que el Senado de la República cuenta con  un plazo de 30 días naturales para resolver sobre el asunto, por lo que voy a  solicitar a la Secretaría que consulte a la Asamblea, en votación económica, si  autoriza dispensar el requisito de publicación de 24 horas a efecto de que el  dictamen pueda ser discutido y votado en esta misma sesión. </p>
+<p>Proceda la Secretaría. </p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con gusto, señor  Presidente. Consulto a la Asamblea, en votación económica, si autoriza que se  dispense el requisito de 24 horas de publicación del dictamen. Quienes estén  por la afirmativa, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén por la negativa,  favor de levantar la mano. </p>
+<p align="center">(La Asamblea no  asiente)</p>
+<p>Quienes se abstengan, favor de  levantar la mano. </p>
+<p>Sí se autoriza, señor Presidente.</p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>En consecuencia,  procedemos al desahogo del dictamen.</p>
+<p>Como ya mencioné, el dictamen  está publicado en la Gaceta Parlamentaria del día. Por lo que solicito a la  Secretaría dé lectura.</p>
+<p> <strong>RATIFICACIÓN DE NOMBRAMIENTO DEL CIUDADANO JUAN  JOSÉ PAULLADA FIGUEROA, COMO CONSEJERO INDEPENDIENTE DEL CONSEJO DE  ADMINISTRACIÓN DE PETRÓLEOS MEXICANOS</strong></p>
+<p><strong>(Dictamen a discusión)</strong></p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con gusto. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-10-03-2/assets/documentos/Dictamen_Consejero_PEMEX.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es cuanto, señor Presidente.</p>
+<p> <strong>El Presidente Senador Gerardo Fernández Noroña: </strong>Como escuchamos, el  dictamen solo se pronuncia sobre la idoneidad de la persona propuesta por el  entonces titular del Ejecutivo Federal y, por ello, se propone un punto de  Acuerdo que pondremos a consideración de la Asamblea. </p>
+<p>Una vez concluida la discusión  realizaremos una votación económica para consultar si se aprueba el dictamen. </p>
+<p>En caso de ser aprobado,  pasaremos a una votación nominal para consultar a la Asamblea si ratifica el  nombramiento del ciudadano Juan José Paullada Figueroa como Consejero  Independiente del Consejo de Administración de Petróleos Mexicanos. </p>
+<p>Tiene la palabra la Senadora  Laura Itzel Castillo Juárez para presentar el dictamen a nombre de la Comisión  de Energía, en términos de lo dispuesto por el artículo 196 del Reglamento del  Senado, hasta por cinco minutos. </p>
+<p><strong>La Senadora Laura Itzel Castillo Juárez: </strong>Muchas gracias, señor  Presidente. </p>
+<p>Como ustedes saben, el Consejo de  Administración de Petróleos Mexicanos es el órgano supremo de administración de  Pemex, es responsable de definir las políticas, lineamientos y la visión  estratégica de Petróleos Mexicanos, sus empresas productivas subsidiarias y sus  filiales. </p>
+<p>La propuesta que se está haciendo  el día de hoy, y que se aprobó en la Comisión de Energía su idoneidad, es del  licenciado en derecho por la Universidad Anáhuac, el licenciado Juan José  Paullada Figueroa. </p>
+<p>Él cuenta con maestría en  Administración Pública por la Universidad del Sur de California. </p>
+<p>Tiene estudios de postgrado en  economía por la Universidad de Boston y estudios de postgrado en derecho fiscal  en el International Tax Program de la Universidad de Harvard. </p>
+<p>En el ámbito profesional se ha  desempeñado como socio y director del despacho Paullada, Guevara y Asociados  S.C., por más de 20 años. </p>
+<p>Ha sido Procurador Fiscal de la  Federación y director general del Fideicomiso Liquidador de Instituciones y  Organizaciones Auxiliares de Crédito, Fideliq, además de diversos cargos en la  Secretaría de Hacienda y Crédito Público. </p>
+<p>Ha ejercido sus funciones como Consejero  Independiente de energía. </p>
+<p>Y, de conformidad con lo  dispuesto por el artículo 15, fracción III de la Ley de Petróleos Mexicanos,  los consejeros independientes son propuestos por el Ejecutivo Federal quien  envía la designación acompañada de la documentación que lo acredita en el  cumplimiento de todos los requisitos para poder ocupar ese cargo. </p>
+<p>El consejero Paullada ha  trabajado directamente en el Capemex, y es una persona muy experimentada con  muchos años en el servicio que hace aportaciones muy importantes para el  consejo. </p>
+<p>Se vio este caso en la Comisión  de Energía y, por unanimidad de los ahí presentes, se aprobó el dictamen de  idoneidad de Juan José Paullada Figueroa. </p>
+<p>Los estaríamos invitando a que  votaran todos y todas a favor de esta designación. </p>
+<p>Eso sería todo. Muchas gracias. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>Muchas gracias,  Senadora Castillo Juárez. </p>
+<p> Han solicitado la palabra, a  favor, solo dos Senadores, entonces, solo habrá esas dos intervenciones. </p>
+<p>El Senador Agustín Dorantes Lámbarri,  del grupo parlamentario del PAN, tiene la palabra. </p>
+<p>Y después hará uso de la palabra  el Senador Waldo Fernández González, del PVEM. </p>
+<p>Tiene la palabra, Senador  Dorantes Lámbarri. </p>
+<p><strong>El Senador Agustín Dorantes Lámbarri: </strong>Con su venia, señor  Presidente. Compañeras y compañeros Senadores: </p>
+<p>Claro que nos podemos poner de  acuerdo, claro que podemos llegar a consensos y claro que podemos sumar y  construir a partir de nuestras diferencias. Hoy en la Comisión de Energía  ratificamos por unanimidad a Juan José Paullada Figueroa, como Consejero  Independiente del Consejo de Administración de Petróleos Mexicanos hasta el 8  de diciembre de 2025. </p>
+<p>Este consenso se logró pensando  en que Pemex mejore, que tenga finanzas sanas y que su Consejo de  Administración sea cada vez más independiente. </p>
+<p>Juan José tendrá una gran  responsabilidad, pues Pemex, como saben bien, enfrenta muchos retos. El sector  energético en general enfrenta muchos retos, pero tenemos que ver hacia el  futuro y actuar de forma coordinada. </p>
+<p>La energía es un motor para el  desarrollo, es una de las claves más importantes para que la economía crezca y  para que todas y todos progresemos. Esto es porque la energía, además de  estimular el crecimiento económico, también nos ayuda a que las mexicanas y  mexicanos que se encuentran en pobreza puedan salir de ella. </p>
+<p>Les pongo un ejemplo: La falta de  acceso a la electricidad limita las oportunidades que tienen las y los jóvenes  para tener educación, salud y otros servicios. </p>
+<p>Lo que quiero transmitir es que  la energía es un motor que mueve a nuestro país, ese México que necesita que  construyamos puentes y que trabajemos en equipo, que nos organicemos para que  el sector energético sea eficiente y sea sostenible. </p>
+<p>Tenemos que legislar en favor de  la generación de energía limpia, responsable, accesible y económica para las  familias mexicanas. </p>
+<p>Además, por el bien del planeta,  necesitamos avanzar, avanzar urgentemente hacia una transición energética que  nos permita depender menos de fuentes contaminantes. </p>
+<p>México tiene un potencial enorme  y como Senadores nuestro compromiso es asegurar que este potencial se convierta  en beneficio a las familias de forma tangible, que dejemos de contaminar al  generar energía, que paguemos menos por la energía, que no tengamos apagones,  que las empresas tengan certeza de que tendrán el suministro confiable para que  decidan invertir y generar empleos en México. </p>
+<p>Nuestro mayor reto es garantizar  que las decisiones que tomemos hoy en este Senado construyan el México del  mañana, un México más competitivo, un México más limpio, un México con mayores  oportunidades para todas y para todos. </p>
+<p>Yo estoy convencido que, desde el Senado de la República, podemos hacer  equipo por el bien de nuestro país. </p>
+<p>Es cuanto, señor Presidente. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Muchas gracias, Senador Dorantes Lámbarri. </p>
+<p> Tiene el uso de la palabra el  Senador Waldo Fernández González, del grupo parlamentario del PVEM. </p>
+<p><strong>El Senador Waldo Fernández González: </strong>Gracias, señor  Presidente. Senadoras y Senadores: </p>
+<p>Uno de los principales sectores  en el país es, sin duda, el sector energético, la exploración y la producción  del petróleo se consideran un asunto estratégico.</p>
+<p>Por ende, todo lo relacionado con  la empresa Petróleos Mexicanos es igualmente estratégico.</p>
+<p>No en vano la Presidenta Claudia  Sheinbaum ha incluido, como uno de sus 100 puntos, su fortalecimiento para el  mayor desarrollo del país. </p>
+<p>Este día, con gran compromiso y  sentido de responsabilidad y en cumplimiento de lo que mandata la ley, estamos  dando un paso más en la construcción del fortalecimiento del sector energético,  al aprobar el dictamen mediante el cual se ratifica al ciudadano Juan José  Paullada Figueroa, como Consejero Independiente del Consejo de Administración  de Petróleos Mexicanos. </p>
+<p>Como es sabido, las actividades  que lleva el Consejo de Administración de Petróleos Mexicanos se ven reflejadas  en el avance del sector energético nacional, ya que, entre otras, tiene a su  cargo la aprobación y actualización anual del plan de negocios de Petróleos  Mexicanos. </p>
+<p>El establecimiento de las  prioridades y políticas relacionadas con las actividades de producción, que  dicho por la Presidenta Sheinbaum, su objetivo será para el consumo nacional,  la comercialización de hidrocarburos, la seguridad y el presupuesto. </p>
+<p>No menos importante es la  facultad del Consejo de Administración de Petróleos Mexicanos para establecer  las directrices y prioridades, relacionadas con la protección al medio  ambiente, a lo cual se suma la emisión, a propuesta del Comité de Auditoría, de  los lineamientos en la materia y evaluación del desempeño, para garantizar la  legítima operación y desempeño ambiental de esta empresa productiva del Estado,  sus empresas subsidiarias y sus empresas filiales. </p>
+<p>Asimismo, y con el objeto de  fortalecer a Petróleos Mexicanos, el Consejo de Administración debe aprobar las  prioridades en materia de inversión, la celebración de alianzas estratégicas y  asociaciones, establecer o ajustar los precios de los bienes y servicios que  brinde; establecer los lineamientos y procedimientos, entre otros, para el  desmantelamiento de las instalaciones, aspecto que no es menor ya que implica  tomar diversas previsiones de seguridad industrial y protección ambiental. </p>
+<p>Las actividades que lleva a cabo  el Consejo de Administración de Petróleos Mexicanos a que me he referido,  coincidirán conmigo, demandan que sus integrantes cuentan con probada capacidad  y, en ese sentido, como ya han referido los compañeros que me antecedieron en  la palabra, la trayectoria del ciudadano Paullada Figueroa es destacable, pues  se ha desempeñado como procurador fiscal de la Federación.</p>
+<p>Además, de haber desempeñado  diversos cargos en el fideicomiso liquidador de instituciones y organizaciones  auxiliares de crédito y haberse desempeñado como docente. </p>
+<p> A esto, se suma la experiencia  adquirida a lo largo de cinco años como Consejero Independiente del Consejo de  Administración de Petróleos Mexicanos y que, sin duda, acreditan el  cumplimiento de los requisitos para ocupar el cargo. </p>
+<p>Por todos estos factores que  hemos mencionado, nuestra bancada va a votar a favor, señalando adicionalmente  que en la comisión fue votado por unanimidad el ciudadano que hemos mencionado. </p>
+<p>Es cuanto, señor Presidente. </p>
+<p>Gracias, Senadoras y Senadores. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña:</strong> En virtud de no  haber más oradoras ni oradores, pasaremos a votar, de manera económica, el  dictamen por referirse únicamente a la idoneidad de la persona propuesta.<br>
+  <br>
+  Consulte la Secretaría a la  Asamblea, en votación económica, si se aprueba el dictamen. </p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat:</strong> Con gusto, señor Presidente. Consulto a la Asamblea, en votación  económica, si se aprueba el dictamen referido. Quienes estén por la afirmativa,  favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén por la negativa,  favor de levantar la mano. </p>
+<p align="center">(La Asamblea no  asiente)<br>
+  <br>
+  Quienes se abstengan, favor de  levantar la mano. </p>
+<p>Aprobado, señor Presidente. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña:</strong> Está aprobado el  Acuerdo sobre la idoneidad del ciudadano Juan José Paullada Figueroa como Consejero  Independiente del Consejo de Administración de Petróleos Mexicanos, por el  periodo comprendido de la fecha de aprobación y hasta el 8 de diciembre de  2025. </p>
+<p>Para cumplir con lo que disponen  los artículos 15 de la Ley de Petróleos Mexicanos y 243 del Reglamento del  Senado, realizaremos la votación nominal para resolver si se ratifica el  nombramiento del ciudadano Juan José Paullada Figueroa. </p>
+<p>Les recuerdo que para la  ratificación del nombramiento se deben reunir dos tercios de votos favorables  de las Senadoras y Senadores presentes.</p>
+<p>En consecuencia, ábrase el  sistema electrónico de votación hasta por tres minutos para recoger la votación  nominal. Háganse los avisos a que se refiere el artículo 58 del Reglamento del  Senado para informar de la votación. </p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat: </strong>Pregunto si falta algún Senador o Senadora por emitir su voto. Sigue  abierto el sistema. </p>
+<p>Pregunto nuevamente si falta  algún Senador o Senadora por emitir su voto. Sigue abierto el sistema. </p>
+<p>Pregunto si falta algún Senador o  Senadora por emitir su voto. Sigue abierto el sistema.</p>
+<p align="right"><strong>VOTACIÓN</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/votacion/4724"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Señor Presidente, conforme al  registro en el sistema electrónico, se emitieron 95 votos a favor, cero en  contra y cero abstenciones. Por lo que hay unanimidad. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña:</strong> En consecuencia, se  ratifica, por unanimidad, el nombramiento del ciudadano Juan José Paullada  Figueroa como Consejero Independiente del Consejo de Administración de Petróleos  Mexicanos, por el periodo comprendido de la fecha de aprobación y hasta el 8 de  diciembre de 2025. Comuníquese. </p>
+<p>El ciudadano Juan José Paullada  Figueroa se encuentra en el salón contiguo. </p>
+<p>En consecuencia, solicito a las  Senadoras y Senadores Laura Itzel Castillo Juárez, Agustín Dorantes Lámbarri,  Pablo Guillermo Angulo Briceño, Waldo Fernández Gonzalo, Yeidckol Polevnsky  Gurwitz, Alejandra Barrales Magdaleno, Claudia Tello Espinosa, Óscar Cantón  Zetina y Cecilia Guadalupe Guadiana Mandujano, lo inviten a pasar a este  recinto a fin de que rinda la protesta correspondiente. </p>
+<p align="center">(La comisión cumple)</p>
+<p>Quiero aprovechar, que va la  comisión por el Consejero elegido, para, esta Mesa Directiva, extender una  cordial y afectuosa felicitación con motivo de su cumpleaños el próximo domingo  6 de octubre, a la Senadora Amalia García Medina. </p>
+<p>¡Muchas felicidades, señora  Senadora!</p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Se solicita a las  señoras Senadoras y señores Senadores, y al público asistente, sirvan ponerse  de pie. </p>
+<p align="center">(Todos de pie)</p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña:</strong> Ponerse de pie, por  favor, Senadoras, Senadores, se va a tomar solemne protesta. </p>
+<p>Todavía hay algunos Senadores que  no se han puesto de pie. </p>
+<p>Les pido, por favor, respetar la  solemnidad, el momento. </p>
+<p>Senadoras de la bancada de Acción  Nacional, si pueden ponerse de pie, por favor. </p>
+<p>Muchas gracias. </p>
+<p>Ciudadano Juan José Paullada  Figueroa, el Senado de la República le ha ratificado como Consejero  Independiente del Consejo de Administración de Petróleos Mexicanos, a partir de  esta fecha y hasta el 8 de diciembre de 2025. </p>
+<p>En consecuencia, le pregunto: </p>
+<p>¿Protesta guardar y hacer guardar  la Constitución política de los Estados Unidos Mexicanos, las leyes que de ella  emanen y desempeñar leal y patrióticamente el cargo que se le ha conferido,  mirando en todo por el bien y prosperidad de la Unión?</p>
+<p><strong>El Ciudadano Juan José Paullada Figuera: </strong>¡Sí, protesto!</p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>Si así no lo hiciera,  que la Nación se lo demande. </p>
+<p>A nombre del Senado de la  República, le deseo éxito en su encargo. </p>
+<p> ¡Muchísimas felicidades!</p>
+<p>Invito al Consejero Paullada  Figueroa, nos acompañe en el presídium para que reciba la constancia de su  nombramiento. </p>
+<p align="center">(Se hace entrega del  nombramiento)</p>
+<p>Ya pueden tomar asiento,  Senadoras y Senadores. </p>
+<p>Solicito  a la comisión designada acompañe al Consejero Juan José Paullada cuando desee  retirarse del salón de sesiones. </p>
+<p align="center">(La comisión cumple) </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117287'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117288'></a><p><strong>EFEMÉRIDES</strong></p>
+<p>Honorable Asamblea, hay dos  efemérides por desahogar, seré muy puntual en la que corresponde a la Mesa  Directiva del aniversario de la Promulgación del Plan de San Luis. </p>
+<p>El ciudadano Francisco I. Madero,  enfrentó a la dictadura de Porfirio Díaz y dice en su Plan de San Luis, después  de haberse fugado de la cárcel de San Luis Potosí: </p>
+<p align="right"><em>&ldquo;Fui a una elección, sabiendo que me podrían hacer  fraude y me lo hicieron, fui a la Cámara de Diputados a pedir la nulidad de la  elección sabiendo que me la podían negar y me la negaron. </em></p>
+<p align="right"><em>No sería yo hombre si no convoco al pueblo de México  a las armas&rdquo;. </em></p>
+<p>Dice en ese documento histórico,  tan importante el Plan de San Luis, donde además hace un recuento de los  agravios que la dictadura de Porfirio Díaz tenía en contra del pueblo de México  y de las libertades que deberían regir en nuestra patria. </p>
+<p>Hoy, 5 de octubre de 1910, se  cumplen 114 años de la promulgación del Plan de San Luis, que dio inicio a la  rebelión, a la revolución armada, la primera del siglo XX en el mundo y que  abrió los cauces de una profunda transformación de nuestra patria. </p>
+<p>El propio Francisco I. Madero, en  los primeros días posteriores a la proclamación del Plan de San Luis, acudió a  territorio nacional, porque había tenido que trasladarse a territorio de los  Estados Unidos, y vio con desesperación que parecía no haber prendido el  llamado revolucionario. </p>
+<p>Sin embargo, en muy poco tiempo,  y en la Batalla de Ciudad Juárez, Chihuahua, la Revolución había triunfado en  su primera etapa y se conseguía la renuncia de Porfirio Díaz, se instauraba una  Presidencia provisional, y con León de la Barra, y se habría el camino de la  transformación. </p>
+<p>Sirva esta mención para reconocer  la valentía, la firmeza, la contribución a la transformación de la patria que  hizo un demócrata, un hombre convencido de la participación del pueblo y  paradójicamente convencido de las transformaciones pacíficas de la patria.</p>
+<p>¡Larga vida a Francisco I.  Madero! </p>
+<p>Y, ¡Larga vida al Plan de San  Luis!</p>
+<p>Muchas gracias por su atención.</p>
+<p> <strong>Posicionamiento  del Senador Gilberto Hernández Villafuerte</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-10-03-2/assets/documentos/Inter_Sen_Gilberto_Plan_San_Luis.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117288'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/o-5pFQ77w3Y?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='117289'></a><p>Honorable Asamblea, un 5 de  octubre, pero de 1813, en el marco del Congreso de Anáhuac, realizado en la  actual ciudad de Chilpancingo, Guerrero, el general José María Morelos y Pavón,  emitió un decreto en el que declaró la abolición de la esclavitud, reafirmando  el ideal de una nación igualitaria para todos los habitantes de nuestro  territorio. </p>
+<p>Con este motivo, la Mesa  Directiva acordó una ronda de participaciones de los grupos parlamentarios,  para referirse a dicha conmemoración, y con esta efeméride terminarían los  trabajos de esta sesión vespertina. </p>
+<p>Tiene el uso de la palabra, hasta  por cinco minutos la Senadora Yeidckol Polevnsky Gurwitz, a nombre del grupo  parlamentario del PT. </p>
+<p><strong>La Senadora Yeidckol Polevnsky Gurwitz: </strong>Gracias, señor  Presidente. </p>
+<p>En el Congreso de Anáhuac, José  María Morelos y Pavón, declaró: </p>
+<p align="right"><em>&ldquo;Debe de alejarse del América la esclavitud y todo  lo que a ella huela&rdquo;. </em></p>
+<p>En 1813, José María Morelos  vislumbró un México libre, un México libre y justo, al declarar la abolición de  la esclavitud para todos los que habían sido sojuzgados, acto que cimentó la  lucha por los derechos humanos y la igualdad de nuestro país. </p>
+<p>El 5 de octubre se conmemora el  aniversario que más que una gesta heroica marcó un antes y un después en  nuestra historia. </p>
+<p>La abolición de la esclavitud fue  un triunfo de la voluntad popular, una victoria de la justicia sobre la  opresión, un testimonio del anhelo de libertad que siempre ha habitado en el  corazón de nuestro noble pueblo. </p>
+<p>Ese fue el primer paso hacia la  construcción de una sociedad más incluyente; en ese día, el generalísimo José  María Morelos y Pavón, con una visión clara y política promulgó el decreto que  abolió la esclavitud en nuestro territorio. </p>
+<p>Este acto fue un grito de  libertad que resonó en cada rincón de nuestra tierra, la conquista de América  trajo como consecuencia el saqueo y también la explotación y la esclavitud. </p>
+<p>La esclavitud de la población  africana, arrancada vilmente de sus tierras, traídos a América con el vil  propósito de ser vendidos para realizar tareas forzosas que enriquecieran a  unos cuantos. </p>
+<p>Con el paso del tiempo, esa  población ya liberada se convirtió en parte de nuestros pueblos originarios y  se convirtió también en mucha de la riqueza que hoy tenemos gracias a ellos. </p>
+<p>Y que, con la reforma, que mandó  nuestro querido Presidente Andrés Manuel López Obrador, convirtió a todos, a  todos esos pueblos originarios de origen africano en sujetos de derecho. </p>
+<p>Al conmemorar este hito histórico  reafirmamos nuestra comprensión con los valores de libertad, de igualdad, de  fraternidad que inspiraron a nuestros antepasados. </p>
+<p>El Partido del Trabajo honra la  memoria de los que lucharon y sacrificaron todo por un México más justo. </p>
+<p>El legado de Morelos nos invita a  reflexionar sobre el México que heredaremos a futuras generaciones. </p>
+<p> Sigamos construyendo un país  donde la justicia social sea una realidad palpable y la igualdad una garantía  para todas y todos. </p>
+<p>Hoy, todas y todos, debemos  trabajar de la mano para construir una sociedad donde todos los mexicanos  tengan las mismas oportunidades.</p>
+<p>La abolición de la esclavitud nos  recuerda que el progreso es posible cuando nos unimos en torno a ideales  comunes. </p>
+<p>¡Que viva la libertad!</p>
+<p>¡Que viva la igualdad!</p>
+<p>¡Que viva la fraternidad!</p>
+<p>¡Que viva México!</p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>Muchas  gracias, Senadora Polevnsky Gurwitz. </p>
+<p>Muchas gracias por su  intervención. </p>
+<p>Senadora María del Rocío Corona  Nakamura, del PVEM, tiene el uso de la palabra.</p>
+<p><strong>La Senadora María del Rocío Corona Nakamura: </strong>Con su venia, señor  Presidente. </p>
+<p>El día de hoy conmemoramos una  fecha mucho muy importante. </p>
+<p>Yo nací en Guadalajara, Jalisco,  donde un 6 de diciembre de 1810, Miguel Hidalgo y Costilla hizo la abolición de  la esclavitud, pero esto fue la semilla que dio origen a todo un movimiento que  dio continuidad el generalísimo Siervo de la Nación, José María Morelos y  Pavón. </p>
+<p>Que es lo que el día de hoy nos  invita a estar aquí reunidos. </p>
+<p>A lo mejor no sabemos valorar qué  significado ni esa gran trascendencia que tenía. </p>
+<p>En el grupo parlamentario del  Partido Verde Ecologista de México nos sumamos a la conmemoración de las  efemérides sobre la abolición de la esclavitud.<br>
+  <br>
+  Este hecho no puede pasar  desapercibido porque la esclavitud y el esclavismo ha sido prácticas deshumanas  que se propagaron en largas etapas de la historia.</p>
+<p>Y aunque muchas de ellas fueron  abolidas legalmente en gran parte del mundo en el siglo XIX, muchas naciones  han perpetuado hasta nuestros días sistemas y prácticas de esclavitud que  violentan derechos fundamentales en pleno siglo XXI. </p>
+<p>Por ello, es importante  reflexionar y retroceder en el tiempo para conocer las demandas de las luchas  abstencionistas de la abolición y la reivindicación de sus derechos en el  devenir histórico.</p>
+<p> Como Poder Legislativo, y garante  de los derechos fundamentales instituidos en nuestra Constitución Política, es  imprescindible velar y evaluar constantemente, en el Estado mexicano y sus  instituciones, garantizar el conjunto de prerrogativas sustentadas en la  dignidad humana cuya realización efectiva resulta indispensable para el  desarrollo integral de las personas y de nuestra nación. </p>
+<p>En el México independiente, en el  marco del Congreso de Anáhuac, realizado en el actual Chilpancingo, Guerrero,  el 5 de octubre de 1813, el generalísimo José María Morelos y Pavón emitió un  decreto en el que declaró la abolición de la esclavitud y la liberación de los  esclavos, acción con la que se reafirmó la idea de una nación justa e  igualitaria para todos los habitantes del territorio. </p>
+<p>Con este decreto, Morelos,  ideólogo de la Independencia, su sentir como legislador y también que supo  organizar y estructurar este movimiento de lucha, intentó dar continuidad al  bando emitido contra la esclavitud expedida el 6 de diciembre de 1810, en  Guadalajara, Nueva Galicia, hoy Jalisco, estado de la República, al que  orgullosamente represento, por el Jefe del Ejército Insurgente, Miguel Hidalgo  y Costilla, en donde se declaró abolida la esclavitud en América dentro del  marco de la guerra de Independencia de México, que con el mismo propósito fue  la manera en que el movimiento insurgente estableció garantías que proclamaban  la libertad de las castas que buscaban una emancipación del dominio español. </p>
+<p>Este hecho  marca un hito en nuestra historia naciente y  fue el detonante para el surgimiento de movimientos y luchas de los oprimidos  para eliminar la esclavitud y vivir en plena libertad, proceso que duró muchos  decenios más; sin embargo, la esclavitud mutó, y no es una reliquia del pasado  que creíamos abolida, su versión moderna cuenta actualmente con unos 50  millones de personas, de acuerdo con las últimas estimaciones mundiales de la  Organización Internacional del Trabajo, la trata de personas, el matrimonio  forzado, la esclavitud sexual y el trabajo infantil son las principales formas  en las que se manifiesta la esclavitud en pleno siglo XXI, y, lamentablemente,  afecta a la población más vulnerable del planeta. </p>
+<p>Nuestro país no es ajeno a esta  realidad, por ello, es de primer orden fijar posturas en estas fechas tan  importantes y primordialmente trabajar desde nuestro ámbito de competencia para  erradicar cualquier tipo de explotación, servidumbre y trabajo forzoso que  violente derechos fundamentales de las mexicanas y los mexicanos, que sea una  verdadera abolición de la esclavitud en donde a nadie más se limiten sus  derechos humanos y que la dignidad humana sea la que prevalezca, el respeto. </p>
+<p>Por su atención, muchas gracias. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>Muchas  gracias, Senadora Corona Nakamura. </p>
+<p>Tiene la palabra la Senadora  Claudia Edith Anaya Mota, del grupo parlamentario del PRI.</p>
+<p><strong>La Senadora Claudia Edith Anaya Mota: </strong>Muchas gracias, señor  Presidente. </p>
+<p>Morelos entendió siempre la  esencia del ser humano, ubicó como nadie esa dignidad que nace con nosotros y  que ninguna fuerza en la tierra debiera poder arrancar. </p>
+<p>No ha sido justo jamás que  hombres y mujeres, hermanados por la naturaleza, se vean sometidos bajo el yugo  de la esclavitud, bajo cadenas que oprimen tanto el cuerpo como el espíritu, la  justicia es lo que sostiene nuestra libertad. </p>
+<p> Los tiranos, aquellos que buscan  sujetar al próximo a su voluntad, olvidan lo más sagrado de nuestra existencia:  la libertad. </p>
+<p>La libertad no es un don que  otorgan los poderosos, es un derecho natural e inalienable que brota en el  corazón de cada hombre y cada mujer. </p>
+<p>La libertad es parte de nuestro  espíritu. <br>
+  La lucha de la Independencia, de este país, no podía dejar de estar  acompañada por la lucha, por la independencia de sus hombres y mujeres. </p>
+<p>Sacar a la población sometida a la oscuridad en la opresión sería también  la vía para encontrar la luz de una patria libre. </p>
+<p>Esta batalla, por romper cadenas, se sostuvo bajo la premisa de que, en  una nación verdaderamente libre, no puede haber esclavos, no puede haber seres  que sean considerados como objetos o como posesiones de otros. </p>
+<p>Los líderes independentistas recorrían la patria exponiendo lo siguiente:  &ldquo;Hermanos recordad siempre que el fundamento de nuestra lucha no es la mera  conquista de las tierras ni el simple cambio de gobernantes, luchamos por la  igualdad de todos los seres humanos, por el reconocimiento de los derechos  universales que nos unen como especie.</p>
+<p>No podemos llamar a nuestra patria libre si en ella perdura la  esclavitud. Seremos verdaderamente libres cuando todos los que habitan en este  suelo sientan la brisa de la libertad y el peso de las cadenas sea tan solo un  recuerdo de tiempos oscuros que nunca volverán. </p>
+<p>Esa manera de esclavitud que existía en 1800 ha cambiado, hoy tenemos  nuevas maneras de esclavitud, los trabajos forzados, la trata de personas, pero  hoy ya no tenemos a esos héroes independentistas. Habíamos de encontrarlos,  debiéramos localizarlos. </p>
+<p>Hoy esas personas que viven en la opresión también necesitan que les  ayudemos a romper esas cadenas, también necesitan que les ayudemos a encontrar  la libertad. La opresión, en cualquiera de sus manifestaciones, es inaceptable,  motivo por el cual es fundamental que desde este Senado de la República  encontremos en cada una y en cada uno de nosotros a un héroe independentista. </p>
+<p>Saquemos adelante lo mejor de nosotros mismos, trabajemos en equipo y  hagamos de ésta una nación verdaderamente libre. </p>
+<p>Es cuanto, señor Presidente, muchas gracias. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Muchas gracias, Senadora Anaya Mota. </p>
+<p>Cierra esta lista de intervenciones por la efeméride la Senadora Edith  López Hernández, del grupo parlamentario del Partido Morena. </p>
+<p><strong>La  Senadora Edith López Hernández: </strong>Con el permiso de la Presidencia de la Mesa Directiva. Compañeras y  compañeros Senadores: </p>
+<p>Hago uso de esta tribuna para conmemorar un acontecimiento histórico que  reafirmó la idea de una nación justa e igualitaria, como parte fundamental de  nuestro proceso de independencia.</p>
+<p> Bien sabemos que el 5 de octubre  de 1813 el general José María Morelos y Pavón, afrodescendiente, emitió un  decreto de la abolición de la esclavitud y la liberación de los esclavos. </p>
+<p>Además, con esta acción se puso  fin a cualquier práctica que estuviera asociada a la esclavitud y se  establecieron facultades para que cada pueblo llevara a cabo elecciones libres. </p>
+<p>Nuestra historia nos resalta que  entre el siglo XVI y finales del siglo XIX, alrededor de 12.5 millones de  africanos y africanas fueron sacadas a la fuerza de sus tierras de origen y  traídos a América. </p>
+<p>Sabemos que la esclavitud fue  abolida en distintos momentos y diferentes circunstancias. Así, tenemos como  uno de ellos, y con anterioridad al Decreto de Morelos, la expedición y  publicación, el Decreto de Abolición de la Esclavitud, emitido por don Miguel  Hidalgo y Costilla, en fecha 6 de diciembre de 1810.</p>
+<p>En la conmemoración de estas  fechas no podemos tampoco dejar de mencionar la Declaración General de  Principios, contenida en los Sentimientos de la Nación, que escribió el 14 de  septiembre de 1813 José María Morelos, con el apoyo de Andrés Quintana Roo. </p>
+<p>Por tal motivo, hoy, que vivimos  la plena transformación de nuestra vida pública y social, seguimos honrando y  dando vigencia a estos ideales que acaban con toda forma de esclavitud y  opresión. </p>
+<p>Esa es nuestra vocación como  Senadores y Senadoras para consolidar nuestra nación como una República  democrática, representativa y fraterna. </p>
+<p>Rememorando el pensamiento de  Morelos, plasmado en el artículo 15 de su obra, que sostiene que la esclavitud  se acabe para siempre, lo mismo que las castas. </p>
+<p>Que este día sirva para rendir  homenaje y conmemorar su pensamiento y obra plasmada en los Sentimientos de la  Nación, misma que fue recogida en la Constitución de Apatzingán de 1814 para  refrendar y dar plena vigencia a principios que actualmente la sociedad y el  pueblo mexicano defienden para consolidar a México como un país democrático,  libre y soberano, verdaderamente independientemente, en el que la premisa  básica para gobernar es la de servir en favor del derecho de ciudadanas y  ciudadanos a ser felices.</p>
+<p>Pues en estas líneas y en estas  letras están los compañeros hombres, pero también es conmemorar que, junto con  ellos, también estamos las mujeres, que no eran visibles, pero que estábamos,  porque en las revoluciones y todo lo que se ha hecho también somos partícipes. </p>
+<p>Muchas gracias. </p>
+<p>(Habló en dialecto)</p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>Muchas  gracias, Senadora López Hernández. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117289'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/woRwHUlPuBk?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='117290'></a><p> Han pedido, ya para culminar esta  sesión, tres Senadores la palabra para temas también de efeméride. Tienen hasta  dos minutos. </p>
+<p>Tiene el uso de la palabra el  Senador Alfonso Cepeda Salas, por el Día Mundial del Docente. </p>
+<p><strong>El Senador Alfonso Cepeda Salas: </strong>Muchas gracias, señor  Presidente. </p>
+<p>De forma muy breve, quiero  agradecer que me den el uso de la tribuna para informar a ustedes y recordarle  al pueblo de México que el día 5 de octubre se conmemora el Día Mundial de los  Docentes. </p>
+<p>La Unesco, la Organización  Internacional del Trabajo, en 1966 establecieron esa fecha para revalorar en  todo el mundo lo que hacen los docentes, las docentes, en todos los países, y  una recomendación relativa a la condición que se está tornando difícil del  personal docente de la educación superior en el mundo.</p>
+<p>Establecieron criterios de  referencia en cuanto a los derechos y responsabilidades del personal docente,  un consenso internacional que reconoce el papel esencial del personal docente  en el progreso de la educación y la importancia de su contribución al desarrollo  de niños, niñas, jóvenes y de la sociedad. </p>
+<p>El 5 de octubre es un día para  celebrar cómo las y los docentes están transformando permanentemente la  educación, para reflexionar sobre el apoyo que necesitan, a efecto de desplegar  plenamente su talento y vocación, y repensar el camino que queda por delante  con respecto a la profesión a nivel mundial. </p>
+<p>La conmemoración de 2024 se  centra en el tema: Valorar la voz docente hacia un nuevo contrato social para  la educación, que subraya la necesidad de reconocer y aprovechar el  conocimiento experto y los aportes de las y los docentes a la educación. </p>
+<p>Muchas gracias, señor Presidente. </p>
+<p>Gracias, compañeros. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>Gracias,  por respetar el tiempo. </p>
+<p>Tiene  la palabra el Senador Saúl Monreal Ávila, para el tema de salarios dignos. </p>
+<p>Pues  no está, así es que no habrá tema de salarios dignos. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117290'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117291'></a><p>Senador Luis Alfonso Silva Romo,  en política exterior, del grupo parlamentario del PVEM. </p>
+<p><strong>INTERVENCIONES</strong></p>
+<p><strong>El Senador Luis Alfonso Silva Romo: </strong>Muchas gracias, señor  Presidente. Con la venia de la Mesa Directiva. Compañeras y compañeros  Legisladores. Pueblo de México que nos sigue a través de la transmisión del  Canal del Congreso. </p>
+<p>Y también a todas y a todos los  hermanos de todo el mundo, que estoy seguro de que sintonizan esta transmisión. </p>
+<p>Desde el Senado de la República  quiero hacer un recuento de lo que ha ocurrido en nuestro México en los últimos  seis años. <br>
+  Sin duda, el Presidente López  Obrador y este gran movimiento que está cambiando a nuestro país, vienen a  pacificar a nuestra patria, vienen a dignificar lo que significa la función  pública y parte fundamental de la función pública es generar paz, es generar  acuerdos. </p>
+<p>Por eso, el Presidente López  Obrador ha hecho y ha hecho muy bien cuando pidió perdón al pueblo Yaqui. </p>
+<p>La Presidenta, la doctora Claudia  Sheinbaum Pardo también ha pedido perdón, no a título personal, sino como  representante del Estado por todo lo que ha ocurrido, como la matanza de los  jóvenes en el &rsquo;68, el 2 de octubre que acabamos de conmemorar. </p>
+<p>El Presidente López Obrador envió  una carta privada al Rey de España pidiéndole que pidieran perdón por todas las  vejaciones, abusos que hubo a los pueblos originarios durante la Conquista y  los más de 300 años de virreinato. </p>
+<p>El Rey de España decidió hacer  pública esta carta y soberbiamente dijo que nunca iba a pedir perdón, y es por  ello que en la reciente toma de protesta que tuvo la doctora Claudia Sheinbaum  Pardo, como Presidenta constitucional de la República de los Estados Unidos  Mexicanos, dijo que no iba a invitar al Rey de España, en tanto no pidiera  perdón. </p>
+<p>Y nos acabamos de enterar,  recientemente, que un legislador de un partido político español, un legislador  de las Cortes de Aragón, partido político que, por cierto, las y los Senadores  del PAN en la anterior legislatura invitaron aquí a dar comentarios, pues ha  ofendido a nuestra Presidenta…</p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña:</strong> Si puede terminar su  intervención, Senador. </p>
+<p><strong>El Senador Luis Alfonso Silva Romo: </strong>…termino, señor  Presidente. </p>
+<p>Desde el Senado de la República  queremos hacer votos para que el pueblo español, que no son todos, son algunos  cuantos representantes, para que el pueblo español logre que llegue la justicia  a España.</p>
+<p>Y así como hoy tenemos en México  el humanismo mexicano, para que florezca también el humanismo español y  recordarles que pedir perdón genera nuevos horizontes, pedir perdón solamente  engrandece. </p>
+<p>Gracias. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña:</strong> Continúe  la Secretaría. </p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino Farjat:</strong> Se  recibieron comunicaciones de las siguientes comisiones, con las que informa…</p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña:</strong> Un  momento. </p>
+<p>Desde la  sesión pasada, el Senador Loera, efectivamente me había solicitado la palabra. </p>
+<p>El  Senador Loera. </p>
+<p><strong>El Senador Juan Carlos Loera De la  Rosa:</strong> (Desde su escaño) Gracias, señor Presidente. </p>
+<p>Ya no  está el Senador que le iba a dar alguna respuesta, pero que quede el  testimonio. </p>
+<p> Cómo se  atreve, el Senador Vásquez, a mancillar la memoria del 2 de octubre y mezclarla  con una acción politiquera, lo que no se olvida o lo que más bien no puede  recordar el Senador Vásquez es cuáles son las causas del movimiento estudiantil  del 2 de octubre que lucharon por la justicia, por la libertad, por la libertad  de reunión, por la libertad de protestar y por la democratización de la  educación. </p>
+<p>Cómo se  atreve, el Senador, a mezclarlo con este movimiento politiquero que fue la  lucha por el agua en el estado de Chihuahua, que estuvo patrocinada por la  oligarquía chihuahuense, por aquellos mismos que lucharon en contra de las  libertades y en contra de la justicia y que fueron herederos de los gobiernos  represores, encabezados por los exgobernadores de apellido Baeza, de allá de  por Delicias, que por cierto son los herederos de Gustavo Díaz Ordaz. </p>
+<p>Es  cuanto, señor Presidente. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña:</strong> Muchas  gracias, Senador Loera De la Rosa. </p>
+<p>Senador  Saúl Monreal Ávila, tiene dos minutos; con él terminan las intervenciones. </p>
+<p><strong>El Senador Saúl Monreal Ávila:</strong> Muchas  gracias, ciudadano Presidente. Con su venia. </p>
+<p>Estamos  próximos a aprobar una reforma constitucional en materia de salarios, con el  fin de asegurar sueldos dignos y estabilidad económica para las y los  trabajadores. Esto refleja la voluntad de la &ldquo;Cuarta Transformación&rdquo; de poner  al pueblo de México en el centro de sus políticas. </p>
+<p>Al  proporcionar salarios justos y condiciones de trabajo adecuadas les aseguramos  a las y los trabajadores un equilibrio económico que se traduce en hogares en  armonía, bienestar y tranquilidad para millones de familias mexicanas. </p>
+<p>En tal  sentido, considero que las maestras, maestros, policías y personal de la salud  merecen toda nuestra consideración y las y los legisladores tenemos la  obligación de visibilizar la noble labor de estos servidores públicos  encargados de la educación, la salud y seguridad de nuestro país. </p>
+<p>Es por lo  expresado, en palabras anteriores, que en coincidencia con el proyecto de la  &ldquo;Cuarta Transformación&rdquo; y previendo la aprobación de la reforma constitucional  en materia de salarios dignos, se requerirá armonizar el marco jurídico  secundario y, uno de ellos es la Ley Federal del Trabajo, en materia de  salarios dignos a maestras y maestros, a las y los policías y al personal de la  salud para que obtengan un salario mínimo de al menos 16 mil 767 pesos con 68  centavos. </p>
+<p>El  proyecto de la &ldquo;Cuarta Transformación&rdquo; se encuentra al lado de las y los  trabajadores al servicio de la Nación, por lo que vamos a luchar siempre para  que sean gratificados debidamente todos los servidores. </p>
+<p>La  &ldquo;Cuarta Transformación&rdquo; se compromete con este nuevo enfoque de estabilidad  económica para las familias mexicanas, creando un país donde todas y todos  tengan acceso a una vida digna, justa y segura. </p>
+<p>Es  cuanto, ciudadano Presidente. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña:</strong> Gracias,  Senador Monreal Ávila. </p>
+<p>Continúe  la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117291'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117292'></a><p><strong>COMUNICACIONES</strong></p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat:</strong> Con gusto, señor  Presidente. </p>
+<p>Se recibieron comunicaciones de las siguientes  comisiones, con las que informan que quedaron formalmente instaladas:</p>
+<p>Comisión de Asuntos de la Frontera Norte. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-10-03-2/assets/documentos/Comunicaci%C3%B3n_Com_Asuntos_de_la_Frontera-Norte.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117292'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117293'></a><p>Comunicaciones y Transportes. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-10-03-2/assets/documentos/Com-Comunicaci%C3%B3n_y_Transportes.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117293'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117294'></a><p>Participación Ciudadana. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-10-03-2/assets/documentos/Comunicaci%C3%B3n_Com_Participaci%C3%B3n_Ciudadana.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117294'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117295'></a><p>Y, Reglamentos y Prácticas Parlamentarias. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-10-03-2/assets/documentos/Comunicaci%C3%B3n_Com_Reglamentos_y_Pr%C3%A1cticas_Parlamentarias.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña:</strong> La Asamblea ha quedado enterada. </p>
+<p>Continúe la Secretaría con los asuntos de la  agenda.</p>
+<p> <strong>La  Secretaria Senadora Verónica Noemí Camino Farjat:</strong> Se han agotado los asuntos  de la agenda, señor Presidente. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117295'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117296'></a><p><strong>CITA</strong></p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña:</strong> Se cita a la sesión solemne el próximo martes  8 de octubre a las 11:00 horas, en el recinto de Xicoténcatl número 9, en  conmemoración del Bicentenario de la Instauración del Senado de la República en  México. </p>
+<p>Al término de dicha sesión solemne,  realizaremos la sesión ordinaria de ese mismo día. </p>
+<p>Se levanta la sesión. </p>
+<p align="center">(Se levantó la sesión a las  16:14 horas) </p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117296'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

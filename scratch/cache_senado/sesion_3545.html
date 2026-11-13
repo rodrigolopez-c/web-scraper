@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 7</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Gerardo Fernández Noroña</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Ordinaria Celebrada<br>en la Ciudad de M&eacute;xico, el 18 de Septiembre de 2024</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/1/PPO/PDF-WEB/PPO_No7_18-SEPTIEMBRE-2024-MATUTINA.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116974'></a><p align="center"><strong>PRESIDE  EL SENADOR</strong> <br>
+  <strong>GERARDO  FERNÁNDEZ NOROÑA</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>(11:36  horas) Solicito a la Secretaría informe a la Asamblea el resultado del cómputo  de asistencia de las Senadoras y Senadores.</p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con  gusto, señor Presidente.</p>
+<p>Honorable  Asamblea, conforme al registro de asistencia, se han acreditado 89 ciudadanas  Senadoras y ciudadanos Senadores. En consecuencia, hay quórum, señor  Presidente.</p>
+<p>Rectifico,  señor Presidente, 91 ciudadanas Senadoras y ciudadanos Senadores. Por lo tanto,  hay quórum. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Se  abre la sesión del miércoles 18 de septiembre de 2024, correspondiente al  primer periodo ordinario de sesiones del primer año de ejercicio de la LXVI  Legislatura. El Orden del Día está publicado en la Gaceta Parlamentaria del día  de hoy y disponible en el monitor de sus escaños, con lo cual se informa de los  asuntos que corresponden a la agenda.</p>
+<p align="right"><strong>ORDEN DEL DÍA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/gaceta_del_senado/documento/144072"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>El acta de la sesión del 13 de septiembre de  2024 se encuentra publicada en la Gaceta Parlamentaria  de este día.</p>
+<p align="right"><strong>ACTA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/gaceta_del_senado/documento/144071"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/asistencias/2024_09_13/5"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>En consecuencia, consulte la Secretaría a la  Asamblea, en votación económica, si se aprueba el acta referida.</p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat: </strong>Con gusto. Consulto a la Asamblea, en votación económica, si se aprueba  el acta referida. Quienes estén porque se apruebe, favor de levantar la mano.</p>
+<p align="center">(La  Asamblea asiente)</p>
+<p>Quienes estén porque se rechace, favor de  levantar la mano.</p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p>Quienes se abstengan, favor de levantar la  mano.</p>
+<p>Aprobada el acta, señor Presidente.</p>
+<p><strong>El Presidente Senador Gerardo Fernández  Noroña: </strong>Aprobada el acta de la sesión del 13 de septiembre de 2024. </p>
+<p>Continúe la Secretaría. </p>
+<p align="justify">&nbsp;</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116974'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116975'></a><p><strong>COMUNICACIONES</strong></p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat: </strong>Se recibieron las siguientes comunicaciones: </p>
+<p>De la Senadora María Guadalupe Murguía  Gutiérrez, Coordinadora del grupo parlamentario del PAN, con la que informa del  nombramiento del Senador Enrique Vargas del Villar, como Vicecoordinador del  grupo parlamentario.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Ofic_PAN_Nombramiento_Enrique_Vargas_Vicepresidente.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116975'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116976'></a><p>Del Senador Manuel Añorve Baños, Coordinador  del grupo parlamentario del PRI, con la que informa los nombramientos del  Senador Pablo Guillermo Angulo Briceño como el Vicecoordinador de Asuntos  Políticos, y del Senador Néstor Camarillo Medina como Vicecoordinador  Parlamentario y de Debate.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Ofic_PRI_Designa_Sen_Pablo_Guillermo_Vicecoordinador.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador Gerardo Fernández  Noroña: </strong>La Asamblea ha quedado enterada. Comuníquese a la Junta de Coordinación  Política y a las Secretarías Generales. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116976'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116977'></a><p><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat: </strong>Con gusto. </p>
+<p>Se recibió también una comunicación del  Senador Ángel García Yáñez, del grupo parlamentario del PRI, con la que remite  su informe de actividades legislativas, correspondiente al tercer año de  ejercicio de la LXV Legislatura.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Ofic_Informe_Actividades_Sen_Angel_Garcia.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador Gerardo Fernández  Noroña: </strong>La Asamblea ha quedado enterada. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116977'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116978'></a><p><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat: </strong>Asimismo, se recibieron sendas comunicaciones de las Comisiones de  Estudios Legislativos y de Puntos Constitucionales con las que informan que el  3 de septiembre pasado quedaron instaladas.</p>
+<p align="right"><strong>DOCUMENTOS</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Ofic_Comision_Estudios_Legislativos_Instalacion_Realizada.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Com_Puntos_Constitucionales_Instalacion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>La  Asamblea ha quedado enterada. Remítanse a la Junta de Coordinación Política. </p>
+<p>Continúe  la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116978'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116979'></a><p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>De  la misma forma, se recibieron las siguientes comunicaciones:</p>
+<p>Del  Senador Manuel Velasco Coello, Coordinador del grupo parlamentario del PVEM.  (Sin oficio)</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116979'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116980'></a><p>Del  grupo parlamentario del PT, con las que remiten sus respectivas agendas  legislativas correspondientes al primer año de ejercicio de esta LXVI  Legislatura. (Sin oficio)</p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Esta  Asamblea ha quedado enterada. </p>
+<p>Continúe  la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116980'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116981'></a><p><strong>DIRECCIÓN  DE ASUNTOS JURÍDICOS </strong><br>
+  <strong>DEL  SENADO DE LA REPUBLICA</strong></p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat: </strong>Se recibieron tres oficios de la Dirección de Asuntos Jurídicos del  Senado de la Republica, con los que comunica que la Suprema Corte de Justicia  de la Nación informa:</p>
+<p>Oficio con el  Acuerdo de 25 de abril de 2024, con motivo de la admisión a trámite de la  Declaratoria General de Inconstitucionalidad 2/2024, relativa al artículo 8 de  la Ley Federal de Cinematografía.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/SCJN_Ley_Federal_de_Cinematografia.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Asimismo,  informo que lo anterior se hizo del conocimiento de las Senadoras y Senadores  integrantes de la LXV Legislatura el 14 de mayo de 2024. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116981'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116982'></a><p>En uno de los dos resolutivos de la sentencia  recaída en la acción de inconstitucionalidad 154/2023, promovida por la  Comisión Nacional de los Derechos Humanos, en contra de los artículos 610,  fracción II, en la porción normativa &ldquo;que hubiere cumplido la edad exigida por  la legislación sustantiva de cada entidad federativa&rdquo;, y IV; así como 638,  fracción II y 554 del Código Nacional de Procedimientos Civiles y Familiares,  publicado en el Diario Oficial de la Federación el 7 de junio de 2023.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/SCJN_Codigo_Nacional_de_Procedimientos_Civiles_y_Familiares.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116982'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116983'></a><p>Y en el otro sobre la Declaratoria de  Inconstitucionalidad 5/2024, derivado de la resolución del amparo en revisión  819/2023, en la que se declaró la inconstitucionalidad del artículo 29-A,  cuarto párrafo del Código Fiscal de la Federación, para los efectos del plazo  de noventa días a que se refieren los artículos 107, fracción II, párrafo  tercero de la Constitución Política de los Estados Unidos Mexicanos y 232 de la  Ley de Amparo.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/SCJN_Ley_de_Amparo.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador Gerardo Fernández  Noroña: </strong>La Asamblea ha quedado enterada. Se comunicará a las Senadoras y  Senadores para su conocimiento. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116983'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116984'></a><p><strong>SECRETARÍA  DE GOBERNACIÓN</strong><strong> </strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat:</strong> Se recibió un oficio de la Secretaría de Gobernación, con el que remite  de la Secretaría de Marina, el informe sobre los resultados de la participación  del Ejercicio Multinacional &ldquo;TRADEWINDS 2024&ldquo;, que se llevó a cabo del 3 al 17  de mayo del año actual en el país de Barbados.<strong></strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/SeGob_Salida_Tropas_TRADEWINDS_2024.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> Remítase a la Comisión de Marina. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116984'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116985'></a><p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat:</strong> También de la Secretaría de Gobernación, se recibió un oficio con el  que remite de la Comisión de Amnistía, su Informe Anual 2024, relativo a las  solicitudes de amnistía pendientes y resueltas, así como de los supuestos por  los cuales se han concedido.<strong></strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Informe_Com_Amnistia_2024.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> Remítase a la Comisión de Gobernación. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116985'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116986'></a><p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat:</strong> Asimismo, se recibió un oficio de la Secretaría de Gobernación, con el  que remite similar de la Secretaría de la Defensa Nacional, con el informe  sobre los resultados de la participación en la conmemoración del &ldquo;XLV  Aniversario de la Constitución del Ejército de Nicaragua&ldquo;, que se realizó en la  ciudad de Managua, Nicaragua, del 28 de agosto al 4 de septiembre del año en  curso.  <strong></strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Informe_DN_Ejercito_Nicaragua.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> Remítase a la Comisión de Defensa Nacional. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116986'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116987'></a><p><strong>SECRETARÍA  DE HACIENDA Y CRÉDITO PÚBLICO</strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat:</strong> Se recibió un oficio de la Secretaría de Hacienda y Crédito Público,  con el que remite información relativa a la evolución de las finanzas públicas,  incluyendo los requerimientos financieros del sector público y su saldo  histórico, los montos de endeudamiento interno neto, el canje o  refinanciamiento de obligaciones del Erario Federal, y el costo total de las  emisiones de deuda interna y externa correspondiente al mes de julio de 2024. Asimismo,  se informa sobre la recaudación federal participable que sirvió de base para el  cálculo del pago de las participaciones a las entidades federativas, así como  el pago de las mismas, desagregada por tipo de fondo y por entidad federativa,  efectuando en ambos casos la comparación correspondiente con el mes de julio de  2023. <strong></strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/SeGob_Hacienda_Informe_Julio.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> Remítase a la Comisión de Hacienda y Crédito Público. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116987'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116988'></a><p><strong>INSTITUTO  MEXICANO DEL SEGURO SOCIAL</strong><strong> </strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat:</strong> Se recibió un oficio del Instituto Mexicano del Seguro Social, con el que remite el  informe sobre la composición y situación financiera de las inversiones del  Instituto Mexicano del Seguro Social, correspondiente al segundo trimestre de  2024. <strong> </strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Ofic_Informe_Situacion_Financiera_IMSS.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> Remítase a la Comisión de Seguridad Social. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116988'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116989'></a><p><strong>SUPREMA  CORTE DE JUSTICIA DE LA NACIÓN</strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat:</strong> Se recibió un oficio de la Suprema Corte de Justicia de la Nación, con  el que remite la terna para designar a una Magistrada de la Sala Regional  Especializada del Tribunal Electoral del Poder Judicial de la Federación. <strong></strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/SCJN_Magistrada_ETEPJF.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> Túrnese a la Comisión de Justicia. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116989'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116990'></a><p><strong>CONSEJO DE  LA JUDICATURA FEDERAL</strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat:</strong> Igualmente, se recibió un oficio del Consejo de la Judicatura Federal  con el que remite del Instituto Federal de Especialistas de Concursos  Mercantiles, su Informe Semestral de Labores, correspondiente al periodo  diciembre 2023-mayo 2024. <strong></strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Ofic_Informe_Semestral_IFECOM.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> Remítase a la Comisión de Justicia. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116990'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116991'></a><p><strong>BANCO  DE MÉXICO</strong><strong> </strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat:</strong> Se recibió un oficio del Banco de México,  con el que remite informe en el que se analiza la inflación, la evolución  económica y el comportamiento de los indicadores económicos del país en el  trimestre abril-junio de 2024, así como la ejecución de la política monetaria  y, en general, las actividades del Banco de México durante dicho periodo, en el  contexto de la situación económica nacional e internacional, aprobado por la  Junta de Gobierno del Banco.<strong> </strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Ofic_Informe_Trimestral_Banco_de_Mexico.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> Remítase a la Comisión de Hacienda y Crédito Público. </p>
+<p>Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116991'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116992'></a><p><strong>INSTITUTO  FEDERAL DE TELECOMUNICACIONES</strong><strong> </strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat:</strong> Se recibió un oficio del Instituto Federal  de Telecomunicaciones, con el que remite el segundo informe trimestral de  actividades 2024, en cumplimiento de los artículos 28, párrafo veinte, fracción  VIII de la Constitución Política de los Estados Unidos Mexicanos y 20, fracción  XI de la Ley Federal de Telecomunicaciones y Radiodifusión. <strong> </strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Ofic_Informe_Actividades_IFT.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> Remítase a la Comisión de Radio, Televisión y Cinematografía. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116992'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116993'></a><p><strong>COMISIÓN  NACIONAL DE LOS DERECHOS HUMANOS</strong><strong> </strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat:</strong> Se recibió un oficio de la Comisión Nacional  de los Derechos Humanos, con el que nos hace llegar el informe especial sobre  el impacto de la introducción del maíz transgénico en los DESCA del pueblo de  México. <strong> </strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Ofic_Informe_de_la_CNDH.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> Remítase a la Comisión de Derechos Humanos. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116993'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116994'></a><p><strong>INSTITUTO  NACIONAL ELECTORAL</strong><strong> </strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat:</strong> Se recibió un oficio del Instituto Nacional  Electoral, con el que remite los lineamientos para el padrón de registro  voluntario de perfiles de redes sociales de mujeres que ocupan un cargo público  de elección popular. <strong> </strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Ofic_INE_Lineamientos_Padron_Registro.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> La Asamblea ha quedado enterada, remítase a las Senadoras para su  conocimiento, dicho documento se publicará en la Gaceta Parlamentaria. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116994'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116995'></a><p><strong>CONSEJO  NACIONAL DE EVALUACIÓN DE LA POLÍTICA </strong><br>
+  <strong>DE  DESARROLLO SOCIAL</strong><strong> </strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat:</strong> Se recibieron dos oficios del Consejo  Nacional de Evaluación de la Política de Desarrollo Social con los que informa:</p>
+<p>En uno, de la realización de tres  evaluaciones de impacto con el objetivo de medir los efectos que han tenido los  programas en la población beneficiaria. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Coneval_Programas_en_Poblacion_Beneficiaria.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116995'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116996'></a><p>Y en el otro, de seis evaluaciones integrales  de la política social vinculada con los derechos de alimentación, educación,  medio ambiente, salud, trabajo y vivienda 2023-2024. <strong> </strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Coneval_Evaluaciones_Integrales_de_la_Politica_Social.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> Remítase a la Comisión de Bienestar.</p>
+<p>Hago de su conocimiento que los documentos se  encuentran publicados en la Gaceta Parlamentaria  para su consulta. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116996'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116997'></a><p><strong>CONGRESOS  DE LOS ESTADOS</strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat:</strong> Se recibió un oficio del Congreso del Estado  de Chiapas, con el que remite el voto aprobatorio de la minuta proyecto de  Decreto por el que se reforman,  adicionan y derogan diversas disposiciones de la Constitución Política de los  Estados Unidos Mexicanos, en materia de reforma al Poder Judicial. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Congreso_Chiapas_Minuta_Reforma_Poder_Judicial.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>La Asamblea ha quedado enterada. Dicho documento se integrará al  expediente en virtud de la declaratoria de reforma constitucional, emitida el  pasado 13 de septiembre. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116997'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116998'></a><p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat: </strong>Se recibieron oficios del Congreso del Estado de Chihuahua, con los que  se declara integrada para el periodo comprendido del 1 de septiembre de 2024 al  31 de agosto de 2027, correspondiente a la LXVIII Legislatura, y de la  instalación y conformación de la Mesa Directiva para el primer periodo  ordinario de sesiones del primer año de ejercicio de la propia Legislatura. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Congreso_CHIH_Apertura_y_Eleccion_MD.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>La Asamblea ha quedado enterada. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116998'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116999'></a><p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat: </strong>Se recibieron oficios del Congreso de la Ciudad de México, con los que  informan de la clausura de los trabajos correspondientes al segundo periodo de  receso del tercer año de ejercicio de la II Legislatura.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Congreso_CDMX_Clausura_de_Trabajos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116999'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117000'></a><p>Y de la elección de la Mesa Directiva, la Declaratoria de Instalación y  la apertura de los trabajos correspondientes al primer período ordinario de  sesiones del primer año de ejercicio de la III Legislatura. </p>
+<p align="right"><strong>DOCUMENTOS</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Congreso_CDMX_Eleccion_MD.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Congreso_CDMX_Declaracion_de_Instalacion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Congreso_CDMX_Apertura_de_Trabajos_Primer_Periodo.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>La Asamblea ha quedado enterada. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117000'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117001'></a><p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat: </strong>Se recibió un oficio del Congreso del Estado de Coahuila de Zaragoza,  con el que remite punto de Acuerdo por el que se exhorta al Senado de la  República a analizar la iniciativa presentada por el Ejecutivo Federal por las  que se reforman y adicionan diversas disposiciones de la Ley Orgánica del Banco  del Bienestar y la Ley Federal de Presupuesto y Responsabilidad Hacendaria, en  materia de fortalecimiento del Banco del Bienestar, procurando hacer uso del modelo  de parlamento abierto.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Congreso_Coahuila_PA_Fortalecimiento_Banco_Bienestar.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Túrnese a la Comisión de Hacienda y Crédito Público.</p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117001'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117002'></a><p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat: </strong>Se recibieron también oficios de los siguientes congresos estatales:</p>
+<p>Del Congreso de Nuevo León, con el que informa de la instalación y  apertura del primer período ordinario de sesiones y de la elección de la Mesa  Directiva que fungirá durante el primer año de ejercicio de la LXXVIII  Legislatura.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Congreso_NL_Instalacion_Apertura_y_Eleccion_MD.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117002'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117003'></a><p>Del Congreso de Quintana Roo, con el que informa de la integración de la  Mesa Directiva que fungirá durante el primer año de ejercicio de la XVII  Legislatura. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Congreso_Quintana_Roo_Integracion_MD.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117003'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117004'></a><p>Y del Congreso de Sonora, con el que informa de la toma de protesta de  los Diputados electos que integran la LXIV Legislatura. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Congreso_Sonora_Toma_Protesta_Diputados.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>La Asamblea ha quedado enterada. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117004'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117005'></a><p><strong>COMISIÓN PERMANENTE</strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat: </strong>Se recibió un oficio de la  Comisión Permanente, con el que remite el inventario de asuntos turnados del  segundo receso del tercer año de la LXV Legislatura. (Sin oficio)</p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Les informo que el listado  de asuntos, con el trámite respectivo, se publicará en la Gaceta Parlamentaria. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117005'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117006'></a><p>Dé cuenta la Secretaría con  los oficios que nos hizo llegar la Secretaría de Gobernación y los turnos que  se han asignado a los asuntos recibidos. </p>
+<p><strong>SECRETARIA  DE GOBERNACIÓN</strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat: </strong>Doy cuenta, señor  Presidente. Recibimos oficios con instrumentos internacionales a los que se  asigna el turno que mencionaré:</p>
+<p>El Convenio 176 sobre  Seguridad y Salud en las Minas, adoptado en Ginebra, el 22 de junio de 1995. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Convenio_176_Seguridad_y_Salud_de_las_Minas_Ginebra_SeGob.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Se turna a las Comisiones Unidas de Organismos Internacionales; de  Relaciones Exteriores; y de Minería.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117006'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117007'></a><p>El Protocolo de Adhesión del Reino Unido de Gran Bretaña e Irlanda del  Norte al Tratado Integral y Progresista de Asociación Transpacífico, hecho en  Auckland y Bandar Seri Begawan, el 16 de julio de 2023. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Tratado_Integral_y_Progesista_Asociacion_Transpacifico_SeGob.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Se turna a las Comisiones Unidas de Relaciones Exteriores,  Asia-Pacífico; de Relaciones Exteriores; y de Economía. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117007'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117008'></a><p>El Acuerdo entre los Estados Unidos Mexicanos y el Reino Hachemita de  Jordania sobre Cooperación y Asistencia Mutua en Asuntos Aduaneros, firmado en  la Ciudad de México, el 15 de abril de 2024. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Ofic_SeGob_Acuerdo_Entre_Mex_y_Jordania_Asuntos_Aduaneros.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Se turna a las Comisiones Unidas de Relaciones Exteriores,  Asia-Pacífico; de Relaciones Exteriores; y de Hacienda y Crédito Público. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117008'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117009'></a><p>Las Actas Finales de la Conferencia de Plenipotenciarios (Guadalajara  2010), de la Unión Internacional de Telecomunicaciones, firmadas en  Guadalajara, el 22 de octubre de 2010.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/SeGob_Actas_Finales_Conferencia_Plenipotenciarios_GDL2010.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117009'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117010'></a><p>Y las Actas Finales de la Conferencia Mundial de Telecomunicaciones  Internacionales (Dubái 2012), firmadas en Dubái el 14 de diciembre de 2012.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Ofic_SeGob_Actas_Finales_Conferencia_Mundial_Telecomunicaciones_Inter_Dubai.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Se turnan a las Comisiones Unidas de Relaciones Exteriores; y de Radio,  Televisión y Cinematografía. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117010'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117011'></a><p>Así también la Comisión Permanente remitió un oficio con el nombramiento  expedido a favor del ciudadano Jacob Prado González como Embajador  Extraordinario y Plenipotenciario de México en el Reino Hachemita de Jordania.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Nombremiento_SEGOB_Embajador_Jordania.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Se turna a las Comisiones Unidas de Relaciones Exteriores; y de  Relaciones Exteriores, Asia-Pacífico. </p>
+<p>Es cuanto, señor Presidente.</p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Intégrense a los expedientes respectivos. Hago de su conocimiento que  dicha documentación se encuentra publicada en la Gaceta Parlamentaria. Esta Presidencia ratifica  los turnos que ha mencionado la Secretaría. </p>
+<p>Pasamos al siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117011'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117012'></a><p><strong>RESPUESTAS  A ACUERDOS PROMOVIDOS POR SENADORES</strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat: </strong>Se recibieron 33 oficios de  diversas dependencias con respuestas a Acuerdos promovidos por Senadoras y  Senadores de la anterior Legislatura. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/gaceta_del_senado/documento/144031"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> Intégrense a los expedientes respectivos.  Hago de su conocimiento que dicha documentación se encuentra publicada en la  Gaceta Parlamentaria. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117012'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117013'></a><p>Solicito ahora a la Secretaría dé cuenta con  las minutas con proyectos de Decreto que nos remitió la Colegisladora y los turnos que se le asignan. </p>
+<p><strong>CÁMARA  DE DIPUTADOS</strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat: </strong>Con gusto, señor Presidente. Doy cuenta. </p>
+<p>POR EL QUE SE ADICIONA UNA  FRACCIÓN XV AL TERCER PÁRRAFO DEL ARTÍCULO 49 DE LA LEY GENERAL DE MOVILIDAD Y  SEGURIDAD VIAL, en materia de prohibición de pasajeros menores de 12 años en  moto. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Minuta_Art_49_Ley_Gral_De_Movilidad_y_Seguridad_Vial.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117013'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117014'></a><p>Y otro, POR EL QUE SE REFORMAN Y ADICIONAN  LOS ARTÍCULOS 7, 72, 73 Y 74 DE LA LEY GENERAL DE MOVILIDAD Y SEGURIDAD VIAL,  en materia de integración del Sistema Nacional de Movilidad y Seguridad Vial. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Minuta_Ley_Gral_De_Movilidad_y_Seguridad_Vial.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Ambos se turnan a las Comisiones Unidas de  Zonas Metropolitanas y Movilidad; y de Estudios Legislativos. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117014'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117015'></a><p>POR EL QUE SE REFORMAN Y ADICIONAN DIVERSAS  DISPOSICIONES DE LA LEY ORGÁNICA DE LA ARMADA DE MÉXICO, DE LA LEY ORGÁNICA DE  LA ADMINISTRACIÓN PÚBLICA FEDERAL, DE LA LEY NACIONAL SOBRE EL USO DE LA  FUERZA, DE LA LEY FEDERAL PARA PREVENIR Y SANCIONAR LOS DELITOS COMETIDOS EN  MATERIA DE HIDROCARBUROS, DEL CÓDIGO NACIONAL DE PROCEDIMIENTOS PENALES Y DEL  CÓDIGO PENAL FEDERAL, en materia de penas por el uso de la fuerza. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Minuta_Ley_Organica_de_la_Armada_de_Mexico.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Se turna a las Comisiones Unidas de Marina; y  de Estudios Legislativos, Primera. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117015'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117016'></a><p>Otro, POR EL QUE SE REFORMA EL PÁRRAFO  SEGUNDO DEL ARTÍCULO 15 OCTAVUS DE LA LEY FEDERAL PARA PREVENIR Y ELIMINAR LA  DISCRIMINACIÓN, en materia de inclusión en espacios educativos, laborales y  cargos de elección popular a las comunidades indígenas y afromexicanas. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Minuta_Art_15_Ley_Fed_para_Prevenir_y_Eliminar_la_Discriminacion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117016'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117017'></a><p>Uno más, POR EL QUE SE ADICIONA UNA FRACCIÓN  VII BIS AL ARTÍCULO 9 DE LA LEY FEDERAL PARA PREVENIR Y ELIMINAR LA  DISCRIMINACIÓN, en materia de derecho a duelo por muerte perinatal y neonatal. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Minuta_Ley_Fed_para_Prevenir_y_Eliminar_la_Discriminacion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Se turnan a las Comisiones Unidas de Derechos  Humanos; y de Estudios Legislativos, Segunda. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117017'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117018'></a><p>Otro, POR EL QUE SE DECLARA EL 15 DE MARZO,  DE CADA AÑO, COMO EL DÍA NACIONAL DE LA PORCICULTURA.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Minuta_Dia_Nacional_de_Porcicultura.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Se turna a las Comisiones Unidas de  Gobernación; y de Estudios Legislativos, Segunda. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117018'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117019'></a><p>Uno más, POR EL QUE SE REFORMAN DIVERSAS  DISPOSICIONES DE LA LEY GENERAL DE ASENTAMIENTOS HUMANOS, ORDENAMIENTO  TERRITORIAL Y DESARROLLO URBANO, en materia de seguridad estructural y atlas de  riesgo. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Minuta_Ley_Gral_de_Asentamientos_Humanos_Ordenamieno_Territorial_y_Desarrollo_Urbano.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Se turna a las Comisiones Unidas de  Desarrollo Urbano y Ordenamiento Territorial; y de Estudios Legislativos. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117019'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117020'></a><p>Otro, POR EL QUE SE ADICIONAN DIVERSAS  DISPOSICIONES A LA LEY GENERAL DE SALUD, en materia de penas por aplicación de  tratamientos estéticos por medio de inyección o infiltración hipodérmica, de  sustancias modelantes prohibidas. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Minuta_Ley_Gral_de_Salud.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Se turna a las Comisiones Unidas de Salud; y  de Estudios Legislativos. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117020'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117021'></a><p>Y POR EL QUE SE REFORMAN Y ADICIONAN DIVERSAS  DISPOSICIONES DE LA LEY DE LOS IMPUESTOS GENERALES DE IMPORTACIÓN Y  EXPORTACIÓN, en materia de pescados y crustáceos, moluscos y demás  invertebrados acuáticos. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Minuta_Ley_de_los_Impuestos_Gral_de_Importacion_y_Exportacion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Se turna a las Comisiones Unidas de Hacienda  y Crédito Público; y de Estudios Legislativos, Primera. </p>
+<p>Es cuanto, señor Presidente. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña:</strong> Esta Presidencia ratifica los turnos que ha  leído la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117021'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117022'></a><p>Nuestro siguiente asunto a desahogar es un  Acuerdo de la Junta de Coordinación Política por el que se crea la Comisión  Especial de Seguimiento e Impulso al Corredor Interoceánico del Istmo de  Tehuantepec. </p>
+<p>En virtud de estar publicado en la Gaceta Parlamentaria este día, solicito a la Secretaría dé lectura. </p>
+<p><strong>JUNTA  DE COORDINACIÓN POLÍTICA</strong></p>
+<p><strong>El Secretario Senador Luis Donaldo Colosio  Riojas: </strong>Doy lectura, señor Presidente. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/JCP_Acuerdo_Crea_Comision_Especial_Seguimiento_Tehuantepec.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es todo, señor Presidente.</p>
+<p><strong>El Presidente Senador Gerardo Fernández  Noroña: </strong>Está a discusión el Acuerdo. En virtud de no haber oradoras ni oradores  registrados, consulte la Secretaría a la Asamblea, en votación económica, si es  de aprobarse el Acuerdo presentado. </p>
+<p><strong>El Secretario Senador Luis Donaldo Colosio  Riojas: </strong>Consulto a la Asamblea, en votación económica, si es de aprobarse el  Acuerdo. Quienes estén porque se apruebe, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea asiente)</p>
+<p>Quienes estén porque se rechace, favor de  levantar la mano. </p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p>Quienes  se abstengan, favor de levantar la mano.</p>
+<p>Se  aprueba por mayoría, señor Presidente.</p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Aprobado  el Acuerdo por el que se crea la Comisión Especial de Seguimiento e Impulso al  Corredor Interoceánico del Istmo de Tehuantepec.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117022'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117023'></a><p>Tenemos  ahora el desahogo de una comunicación suscrita por el Presidente de la Junta de  Coordinación Política, en relación con las Presidencias de las Comisiones  Especiales de Seguimiento e Impulso al Corredor Interoceánico del Istmo de  Tehuantepec y de Seguimiento a la Implementación de la Agenda 2030.</p>
+<p>En  virtud de estar publicada en la Gaceta Parlamentaria de  este día, solicito a la Secretaría le dé lectura.</p>
+<p><strong>El  Secretario Senador Luis Donaldo Colosio Riojas: </strong>Con  gusto, señor Presidente.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/JCP_Presidencia_de_las_Comisiones_Especiales.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es cuanto, señor Presidente.</p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>Por tratarse de designación de presidencias de comisiones se pondrá a  consideración de la Asamblea.</p>
+<p>En consecuencia, está a discusión, en virtud de no haber oradoras, ni  oradores inscritos, consulte la Secretaría a la Asamblea, en votación  económica, si es de aprobarse.</p>
+<p><strong>El Secretario Senador Luis Donaldo Colosio Riojas: </strong>Con gusto, señor Presidente. Consulto a la Asamblea, en votación  económica, si es de aprobarse. Quienes estén porque se apruebe, favor de  levantar la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén porque se rechace, favor de levantar la mano.</p>
+<p align="center">(La Asamblea no asiente)</p>
+<p>Quienes se abstengan, favor de levantar la mano.</p>
+<p>Se aprueba por mayoría, señor Presidente.</p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>Aprobada la designación de Presidencias de las Comisiones Especiales de  Seguimiento e Impulso al Corredor Interoceánico del Istmo de Tehuantepec y de  Seguimiento a la Implementación de la Agenda 2030. Comuníquese.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117023'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/jAkY4vrE8k8?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='117024'></a><p>En otro apartado del Orden del Día tenemos la discusión de un dictamen  de las Comisiones Unidas de Trabajo y Previsión Social; y de Estudios  Legislativos, Segunda, con proyecto de Decreto por el que se reforma la  fracción VII del artículo 74 de la Ley Federal del Trabajo, para establecer el  1 de octubre de cada seis años como descanso obligatorio.</p>
+<p>Este dictamen tiene su origen en las siguientes iniciativas: Una, del  Senador Napoleón Gómez, del 20 de febrero del año en curso. Una, del Senador  Rafael Espino de la Peña, del 23 de noviembre del 2023.</p>
+<p>El dictamen quedó de primera lectura en la sesión del pasado jueves 5 de  septiembre.</p>
+<p><strong>PROYECTO  DE DECRETO POR EL QUE SE REFORMA LA FRACCIÓN VII DEL ARTÍCULO 74 DE LA LEY  FEDERAL DEL TRABAJO</strong></p>
+<p><strong>(Dictamen  de segunda lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-18-1/assets/documentos/Dic_Com_TyPS_y_ELS_1_Octubre_Dia_Descanso_Obligatorio.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Debido a que el dictamen se encuentra publicado en la Gaceta Parlamentaria del día de hoy, consulte la Secretaría a la Asamblea, en votación  económica, si se autoriza que se omita la lectura.</p>
+<p><strong>El Secretario Senador Luis Donaldo Colosio Riojas: </strong>Con gusto, señor Presidente. Consulto a la Asamblea, en votación  económica, si se autoriza que se omita la lectura del dictamen referido.  Quienes estén por la afirmativa, favor de levantar la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén por la negativa, favor de levantar la mano.</p>
+<p align="center">(La Asamblea no asiente)</p>
+<p>Quienes se abstengan, favor de levantar la mano.</p>
+<p>Se aprueba omitir la lectura, señor Presidente.</p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>Se concede el uso de la palabra a la Senadora Geovanna Bañuelos,  Presidenta de la Comisión de Trabajo y Previsión Social, quien presentará el  dictamen a nombre de las comisiones en términos de lo dispuesto por el artículo  196 del Reglamento del Senado, y hasta por cinco minutos.</p>
+<p><strong>La Senadora Geovanna Bañuelos: </strong>Muchas  gracias, señor Presidente. Con el permiso de mis compañeras y mis compañeros.</p>
+<p>El dictamen que presenta la Comisión de Trabajo y Previsión Social  versa, como ya se señaló, sobre la iniciativa de nuestros compañeros Napoleón  Gómez Urrutia y Rafael Espino, cuyo objetivo es reformar la fracción VII del  artículo 74 de la Ley Federal del Trabajo para que podamos armonizar nuestra  legislación.</p>
+<p>Lo anterior derivado de que el pasado 10 de febrero de 2014 se publicó  en el Diario Oficial de la Federación el Decreto por el que se reforman,  adicionan y derogan diversas disposiciones de la Constitución Política de los  Estados Unidos Mexicanos, en materia político-electoral. </p>
+<p>Con la reforma, se establece  una reducción del período de transición entre las elecciones presidenciales y  la toma de protesta del titular del Ejecutivo Federal, en específico, se  establece, en el artículo 83 de la Constitución, que el Presidente o Presidenta  entrará a ejercer su encargo el 1 de octubre y durará en este seis años. </p>
+<p>Con el cambio anterior,  quedó desarmonizada la ley, en lo previsto, en la fracción VII del artículo 74,  de la Ley Federal del Trabajo, que prevé los días de descanso obligatorio y que  refiere el 1 de diciembre de cada seis años cuando correspondía la transmisión  del Poder Ejecutivo Federal, fecha en la que ya no se llevará a cabo esta  celebración. </p>
+<p>En ese sentido, las  comisiones dictaminadoras coincidimos con el contenido de las propuestas  presentadas. </p>
+<p>Es prioritario señalar que  el derecho al descanso se encuentra reconocido dentro de la Declaración  Universal de los Derechos Humanos en su artículo 24. </p>
+<p>Asimismo, en la Declaración  Americana de los Derechos y Deberes del Hombre en su artículo 15, y en el Pacto  Internacional de los Derechos Económicos, Sociales y Culturales, en el artículo  7, inciso d). El derecho al descanso de las y los trabajadores es fundamental  para garantizar su bienestar físico y mental, así como su productividad a largo  plazo. </p>
+<p> Al reconocer el descanso  como un derecho humano y laboral, se asegura que las personas puedan equilibrar  sus responsabilidades profesionales con su vida personal, lo que promueve una  mayor satisfacción y bienestar general. </p>
+<p>El descanso adecuado es  clave para prevenir el desgaste de accidentes laborales, lo que se traduce en  un ambiente de trabajo más seguro y sostenible. </p>
+<p>Así, pues, compañeras y  compañeros, el próximo 1 de octubre, nuestro país escribirá una página nueva en  su historia. </p>
+<p>Por primera vez, como Nación  independiente, México tendrá una mujer como titular del Poder Ejecutivo,  también por primera vez, en la historia reciente de nuestro país, protestará  con fecha del 1 de octubre. </p>
+<p>Y así, la doctora Claudia  Sheinbaum Pardo, se convertirá en la primera mujer Presidenta de México a 200  años de la Fundación de la República. </p>
+<p>Durante siglos, el papel de  la mujer estuvo relegado a un rol secundario, donde se ejerció sistemáticamente  violencia en su contra e invisibilización a la labor de cada una de nosotras. </p>
+<p>A partir del 1 de octubre de  2024, las niñas, jóvenes y mujeres tendrán un nuevo referente, una mujer de  izquierda, una científica comprometida con la justicia social y una Presidenta  que edificará el segundo piso de la &ldquo;Cuarta Transformación&rdquo;. </p>
+<p>Con la doctora Claudia  Sheinbaum, llegamos todas y todos. La doctora enarbola los principios de  nuestro movimiento, no robar, no mentir y no traicionar, pero también, de  millones de mujeres que luchan en las calles por el reconocimiento y la  reivindicación de sus derechos. </p>
+<p>Por ello, México seguirá  fortaleciéndose en el camino de la honestidad, el camino de un estado de  bienestar de los derechos del pueblo de México, el camino de fortalecimiento de  la educación, la salud pública, el acceso a la vivienda, el salario y el trabajo  digno. </p>
+<p>Sin duda, esta transición de  sexenio quedará en la memoria de todas y de todos los mexicanos. </p>
+<p>Con esta reforma al artículo  74 de la Ley Federal del Trabajo en su fracción VII, será día de descanso  obligatorio el 1 de octubre de cada seis años, cuando corresponderá la  transmisión del Poder Ejecutivo Federal. </p>
+<p>Con ello, dicho día, no solo  implicará un día de cambio de liderazgo en el gobierno federal, sino también un  momento de descanso y reflexión para que las y los mexicanos se unan en torno a  la celebración de la democracia y la estabilidad política, económica y social  de nuestro país. </p>
+<p>Es cuanto, señor Presidente,  compañeras y compañeros.</p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Con fundamento en lo  dispuesto por el artículo 197 del Reglamento del Senado, procederemos a los  posicionamientos de los grupos parlamentarios, los cuales, tal como lo  establece el artículo 199, numeral 1, fracción II, del Reglamento del Senado,  serán en orden creciente y por un tiempo de hasta cinco minutos. </p>
+<p>Tiene la palabra la Senadora  Amalia Dolores García Medina, de Movimiento Ciudadano.</p>
+<p> <strong>La Senadora Amalia Dolores  García Medina: </strong>Muchas gracias. Compañeras y compañeros:</p>
+<p>El 1 de octubre en esta  ocasión será para que asuma la Presidencia de la República la primera mujer de  nuestra historia. </p>
+<p>¿Qué significa especialmente  para las mujeres este hecho? Lo hemos dicho, lo dice una de nuestras ideólogas,  Marta Lamas, &ldquo;cuerpo de mujer no garantiza conciencia de género&rdquo;. </p>
+<p>Requerimos entonces que  lleguen las mujeres, y hemos luchado por eso, porque es nuestro derecho estar  en condiciones de igualdad en donde están los espacios de poder público y  político, pero se requiere una agenda de género que sea impulsada con toda precisión  y con toda claridad. </p>
+<p>Hoy tiene que ponerse por  delante en la agenda de gobierno una política de cuidados, que es, como lo  hemos dicho, la política social, con mayúscula, es la política social del siglo  XXI, porque es la que permitirá trastocar la vida que nos ha enclaustrado a las  mujeres en un terreno chicloso, que es el de las tareas del hogar, acabando con  la posibilidad de nuestro tiempo propio y nuestro tiempo libre. </p>
+<p>Por eso, también Movimiento  Ciudadano ha promovido las licencias de paternidad, igual que muchas mujeres en  este país y muchas Senadoras, y proponemos y defendemos jornadas de 40 horas.  Tenemos derecho al tiempo propio.</p>
+<p>Pero como decía Amartya Sen,  Premio Nobel de Economía, en un concepto que acuñó y que ha retomado Naciones  Unidas, &ldquo;lo que se requiere no es medir el desarrollo de un país solamente con  el Producto Interno Bruto, lo que requerimos es medirlo a partir de desarrollo  humano&rdquo;. Ese es el concepto central que debe estar presente en el próximo  gobierno. </p>
+<p>Y desarrollo humano  significa poner en el centro una política que garantice educación científica y  de calidad universal para todas y para todos; garantizar el acceso a salud  universal también de calidad. </p>
+<p>Pero Amartya Sen incluye  otro concepto, el de la libertad progresiva, y no puede haber libertad  progresiva si no se garantiza educación y salud.</p>
+<p>Requerimos, además, ir mucho  más allá y darle contenido a la agenda de este sexenio que iniciará, que además  lo subrayo con toda claridad, la doctora Claudia Sheinbaum está obligada a  marcar y hacer la diferencia, su gobierno tiene que ser un salto cuántico y  totalmente diferente a lo que han sido los gobiernos del pasado, incluyendo el  actual, porque vivimos además una crisis civilizatoria de enormes proporciones  en nuestro país junto a educación, salud. </p>
+<p>Requerimos que se atienda la  crisis de inseguridad, 11 mujeres en promedio al día son asesinadas. </p>
+<p>La existencia de los  feminicidios y la violencia rampante es insoportable y es inaceptable. Esto  tiene que terminar. </p>
+<p>Y un signo del próximo  gobierno tendrá que ser que podamos vivir sin miedo, que podamos transitar por  nuestro país y desarrollarnos con libertad. </p>
+<p>Requerimos también que en la  agenda del próximo gobierno se ponga en el centro que vivimos una crisis de  enormes proporciones, que ya ha señalado el Secretario General de las Naciones  Unidas. Él decía hace unos cuantos meses que la época del calentamiento global  está llegando a su fin y estamos iniciando la etapa de la ebullición. </p>
+<p> Está en riesgo la  sobrevivencia de la vida, tal como la conocemos actualmente y el fin de las  energías fósiles tiene que darle paso a energías limpias que permitan la  sobrevivencia y el desarrollo de la humanidad, empezando por nuestro país. </p>
+<p>De la misma manera, en la  agenda de un gobierno que se ponga como objetivo dar resultados y gobernar para  todas y para todos, es que se debe fortalecer a la República, poner en el  centro el respeto entre los tres Poderes, porque como decía Montesquieu, el  modelo sobre el cual se ha construido nuestra nación: &ldquo;que el poder limite al  poder y que ningún poder subordine a otro poder&rdquo; </p>
+<p>Hoy lo que requerimos es una  agenda que ponga en el centro un cambio sustancial y de raíz, no más de lo  mismo que haya lesionado o lastimado a nuestra sociedad. </p>
+<p>Y gobernar, una vez que han  terminado los procesos de campaña, significa gobernar para todas y para todos,  sin distingos y con responsabilidad. </p>
+<p>Y es por eso que hoy, que  coincide además este sexenio que iniciará con la Agenda 2030, que culmina en el  año 2030, requerimos que México vea hacia el futuro enfrentando desigualdades,  garantizando libertad, democracia, respeto e inclusión, garantizando que todas  y todos formemos parte del presente y del futuro de nuestro país. </p>
+<p>Muchas gracias. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Muchas gracias, Senadora  García Medina. </p>
+<p>Tiene el uso de la palabra  el Senador Gilberto Hernández Villafuerte, del PVEM. </p>
+<p><strong>El Senador  Gilberto Hernández Villafuerte: </strong>Con su venia, señor  Presidente. Compañeras y compañeros Legisladores.</p>
+<p>Con el inicio del nuevo  período presidencial del 1 de octubre resulta importante conmemorar dicha fecha  como una muestra de cultura cívica que refrenda nuestro compromiso con el nuevo  gobierno en turno. </p>
+<p>Por ello, el dictamen que  hoy presentan las Comisiones Unidas de Trabajo y Previsión Social; y de Estudios  Legislativos, Segunda, representa un claro compromiso con los derechos de las  personas trabajadoras al armonizar la Ley Federal del Trabajo con una reforma  constitucional de 2014, referente a la toma de protesta del Ejecutivo Federal,  por lo que en el período presidencial del 2024 al 2030 tomará protesta el 1 de  octubre del titular del Poder Ejecutivo Federal, es decir, la Presidenta electa  Claudia Sheinbaum Pardo, en vez del 1 de diciembre, como anteriormente se  establecía en la Carta Magna. </p>
+<p>Sin embargo, esta reforma  constitucional no previó la actualización del derecho al descanso de las  personas trabajadoras siendo que el texto vigente de la Ley Federal del Trabajo  señala que será día de descanso obligatorio el 1 de diciembre de cada seis años  cuando corresponde a la transmisión del Poder Ejecutivo Federal, período que  cambió con la reforma, por lo que el dictamen busca justamente armonizar la  fracción VII del artículo 74 de la Ley Federal del Trabajo y generar  certidumbre jurídica sobre el día de descanso obligatorio cuando corresponda a  la transmisión del Poder Ejecutivo, que de ahora en adelante se llevará a cabo  el 1 de octubre de cada seis años. </p>
+<p>Si bien, este derecho  laboral busca garantizar el descanso físico, mental y social de las personas  trabajadoras que merecidamente deben tener por ser el motor del Estado y el  pilar esencial de la construcción de nuestra sociedad. </p>
+<p> Este día también es motivo  de conmemoración nacional convirtiéndose en un acto cívico por la transmisión  del poder del Ejecutivo Federal, una fecha histórica pues por primera vez en  los antecedentes presidenciales de nuestro país tendremos una mujer Presidenta  que ganó en las urnas con amplia mayoría y mediante un proceso electoral  democrático. </p>
+<p>Asimismo, un día en el que  se hará valer la confianza y convicción del pueblo mexicano al decidir  continuar con la transformación de México y seguir trabajando en favor de la  clase trabajadora y para el beneficio de todas y todos, para no generar que nadie  se quede atrás ni nadie fuera de la ley. </p>
+<p>Es por ello que la  aprobación del dictamen, además de armonizar el día de descanso obligatorio de  las personas trabajadoras con el Transitorio Décimo Quinto constitucional,  representa un dato de seguridad y garantía para las personas trabajadoras y, en  general, para el pueblo de México poniendo, ante todo, los intereses y  bienestar de la Nación por encima de cualquier interés particular, porque todas  y todos buscamos lo mismo, que es mejorar las condiciones y calidad de vida de  las y los mexicanos. </p>
+<p>En la bancada del Partido  Verde seguiremos apoyando los cambios que favorezcan a la clase trabajadora y  manteniendo la vanguardia nuestra legislación federal, conforme a los cambios  sociales, que así lo exijan. </p>
+<p>Es cuanto, señor Presidente. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña:</strong> Muchas gracias, Senador  Hernández Villafuerte.</p>
+<p>Tiene el uso de la palabra  la Senadora Lizeth Sánchez García, del PT, hasta por cinco minutos. </p>
+<p><strong>La  Senadora Lizeth Sánchez García:</strong> Gracias, señor Presidente. </p>
+<p>El trabajo es un elemento  indispensable para el desarrollo y progreso de toda sociedad humana, es más que  una fuente de ingresos, es una parte esencial del bienestar de todas y todos.  El tiempo, nos ha enseñado que a través de la lucha de los trabajadores se han  reivindicado sus derechos. </p>
+<p>La legislación, en materia  laboral, se debe a la expresión de la voz y la lucha por conquistar derechos  por parte de la clase trabajadora, quienes sufrieron en carne propia la  explotación, abusos y hostigamientos de los patrones. </p>
+<p>México, fue precursor en el  reconocimiento de los derechos laborales, de tal forma que nuestra Constitución  fue la primera en reconocer los derechos sociales, ya que son un emblema de la  Revolución Mexicana y la defensa de los derechos de la clase trabajadora es un  compromiso perenne de los movimientos de izquierda. </p>
+<p>Para el Partido del Trabajo  es fundamental apoyar a los y las trabajadoras, ya que a ellos nos debemos, por  ellas y ellos es que decidimos luchar y representarlos y, hoy, estamos  cumpliéndoles una vez más. </p>
+<p>Hoy venimos a reconocer su  derecho al descanso; el descanso es un derecho reconocido en diversos  instrumentos internacionales, como la Declaración Universal de los Derechos  Humanos en su artículo 24 y el Pacto Internacional de los Derechos Económicos,  Sociales y Culturales en su artículo 7. </p>
+<p>Así, como en la legislación  nacional en el artículo 123, fracción IV del Apartado A y de igual manera en la  fracción II del Apartado B del artículo en cuestión. </p>
+<p> Sin embargo, debemos poner  sobre la mesa lo delimitada que se encuentra nuestra legislación sobre el tema,  por lo que resulta relevante que actualicemos el marco jurídico, empezando con  los descansos relacionados con el artículo 74 de la Ley Federal del Trabajo, el  cual hace mención sobre los días de descanso obligatorios, mismos que  conmemoran hechos o acontecimientos relevantes para la identidad nacional. </p>
+<p>Tal es el caso de la toma de  protesta del Ejecutivo Federal, el presente dictamen tiene como objetivo  cambiar el 1 de diciembre de cada seis años cuando corresponda a la transmisión  del Poder Ejecutivo Federal al 1 de octubre de cada seis años. </p>
+<p>Cabe señalar que estamos a  dos semanas de vivir un suceso histórico: La toma de protesta de la primera  mujer como Presidenta de la República en México, la doctora Claudia Sheinbaum  Pardo. </p>
+<p>Con ella, se profundizará la  transformación llevada a cabo por Andrés Manuel López Obrador. </p>
+<p>Por ello votaremos a favor  de este dictamen, porque el próximo 1 de octubre México estará de fiesta.  Ahora, las decisiones de la Nación serán tomadas por una mujer con principios y  valores de izquierda. </p>
+<p>Como grupo parlamentario del  Partido del Trabajo celebramos el presente dictamen, con el cual todos y todas  las personas trabajadoras vivirán un momento tan importante para la Nación,  como es la toma de protesta del Ejecutivo Federal. </p>
+<p>No lo olvidemos, las y los  trabajadores son la base del país y es su derecho estar envueltos en la vida  democrática del país. </p>
+<p>Y por eso, como lo dijo  nuestro Presidente Andrés Manuel López Obrador: Las y los trabajadores de  México son los mejores del mundo. </p>
+<p>Así que. ¡Vivan los  trabajadores de México y las trabajadoras!</p>
+<p>Es cuanto, señor Presidente. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> Muchas gracias, Senadora  Sánchez García. </p>
+<p>Tiene el uso de la palabra,  hasta por cinco minutos, la Senadora Cynthia Iliana López Castro, del PRI.</p>
+<p><strong>La Senadora Cynthia Iliana  López Castro:</strong> Gracias, señor Presidente. </p>
+<p>Sin duda, el día de hoy  estaremos votando que no sea el 1 de diciembre, sino el 1 de octubre el día que  tome protesta la próxima Presidenta de México, que por supuesto que lo celebro,  solo hay 26 mujeres en el mundo que son o jefas de Estado o primer ministras;  solo hay 18 primer ministras en el mundo que son mujeres y 16 presidentas o  bien jefas de Estado lo cual, por supuesto, celebro que México, como mexicana,  mucho más allá de cualquier partido tengamos una mujer Presidenta desde luego  que lo celebro. </p>
+<p>¿Qué quiero exponer el día  de hoy? Los períodos de transición no están siendo eficientes, tenemos un  período de transición de cuatro meses, en ningún país del mundo los períodos de  transición son de cuatro meses. </p>
+<p>En Reino Unido, la elección  prácticamente a los cinco días se toma protesta. Casos como en Estados Unidos  es un mes, Francia, 11 días; España, 20 días; de los más largos Paraguay, dos  meses. Sí creo que tener un equipo de transición durante cuatro meses se vuelve  ineficiente. </p>
+<p> Vemos también, y no nada más  me refiero a lo presidencial, vemos alcaldes y alcaldes electos; estuvieron un  período Diputados y Diputados electos; Senadores y Senadores electos. Entonces,  ni dejamos trabajar ni se puede trabajar con anticipación. Yo quiero aprovechar  esta tribuna para hacer un llamado a que empecemos a trabajar en reformar el  artículo 83 constitucional y pensemos en acortar estos períodos de transición  que no le sirven al pueblo de México y que tenemos parados temas de seguridad,  temas económicos por un período transicional. </p>
+<p>Hoy vemos muchos alcaldes en  el país que estos tres meses se paralizan, que ya no hacen obra, que ya no  pavimentan las calles, que ya no resuelven porque estamos en un período de  transición. Entonces, haciendo un análisis, con distintos países, veo que México  sí se recorrió del 1 de diciembre al 1 de octubre, hagamos un esfuerzo para que  en los próximos sexenios se recorra y se homologue al 1 de septiembre, por lo  menos, y, entonces, si es la elección en junio, y los Diputados y los Senadores  tomamos protesta en septiembre, también sea la toma de protesta presidencial. </p>
+<p>Hago este llamado a períodos  de transición eficientes porque paralizan el país, porque ya no saben los  ciudadanos si hablarle al nuevo o hablarle al que está, pero el que está dice  que ya no hay presupuesto, que ya no pueden resolver. Y esto lo vemos desde  nivel federal y también los vemos en las pequeñas localidades. Sí me parece  importante que hagamos esta modificación para que no nada más sea este 1 de  octubre, sino que se vaya recorriendo y homologando que podamos hacer una  reforma para que quede bien homologado; no podemos tener un Presidente y una  Presidenta electo al mismo tiempo ni alcaldes ni Diputados ni Senadores ni  gobiernos municipales, se vuelve poco útil para los ciudadanos.</p>
+<p>Entonces, invito, a través  de esta participación, a que sea en esta Legislatura quienes tomemos sin duda  estas decisiones. Por supuesto que este 1 de octubre, al tener una mujer Presidenta,  esperamos que los resultados se vean pronto y que sean primero las mujeres.</p>
+<p>Primeras en derechos. Que  sean las mujeres las primeras beneficiadas. Que se vea un gobierno con  verdadera perspectiva de género. Y también espero ver un presupuesto con ojos  de mujer. </p>
+<p>Aquí en el Senado tenemos  una gran deuda con las mexicanas que es la Ley de Cuidados. </p>
+<p>Así que invito a todas las  mujeres legisladoras, y a los hombres, porque se tiene que construir en  conjunto, que seamos la Legislatura que sí pudimos hacer esta Ley de Cuidados  que tan atorada está en este Senado de la República. </p>
+<p>Muchas gracias. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Muchas gracias, Senadora  López Castro. </p>
+<p>Y tiene, finalmente, para  cerrar esta lista de oradores y oradoras, el Senador Alfonso Cepeda Salas, del  grupo parlamentario del Partido Morena, hasta por cinco minutos. </p>
+<p><strong>El Senador Alfonso Cepeda  Salas: </strong>Con el permiso del señor Presidente. Con el permiso de la Mesa  Directiva. </p>
+<p>Quiero decir a ustedes que  tiene mucho de fondo este tema que estamos tratando, tiene que ver con el  civismo, tiene que ver con la educación, tiene que ver con inculcar en los  niños, en los jóvenes, en los padres de familia, en las trabajadoras y en los  trabajadores de México, el sentido patriótico que no debe perderse, las fechas  importantes que nos unen y que nos obligan, más allá de pensar en un descanso  obligatorio, a involucrarnos en lo que sucede cada uno de esos días en que  conmemoramos fechas trascendentes, fechas importantes, que han realizado  mexicanos en la historia de nuestro país. </p>
+<p>Hasta 2018, el 1 de  diciembre, marcaba el inicio de los períodos de gobierno, fecha en que el Poder  Ejecutivo Federal rendía la protesta constitucional ante el Congreso de la  Unión, motivo por el cual era considerado como de descanso obligatorio. </p>
+<p> Sin embargo, el 10 de  febrero de 2014, se publicaron, en el Diario Oficial de la Federación, diversas  reformas al texto fundamental, entre ellas, como ya se dijo, la reforma al  artículo 83 en la que el 1 de diciembre se sustituyó por el 1 de octubre. Las  disposiciones transitorias del Decreto vigente determinan que la reforma al  artículo 83 entró el vigor el 1 de diciembre del 2018, por lo que el período  presidencial actual inició en dicha fecha, pero concluirá el 30 de septiembre  de 2024. </p>
+<p>En consecuencia, resulta  necesario actualizar el artículo 74 de la Ley Federal del Trabajo para que, de  manera sexenal, el 1 de octubre quede establecido como el día de descanso  obligatorio. </p>
+<p>En consecuencia, el dictamen  a discusión propone armonizar la Ley Reglamentaria a efecto de evitar  contradicciones normativas que den paso a lagunas jurídicas e interpretaciones  sesgadas en detrimento de los derechos y prerrogativas laborales de los trabajadores  al servicio de México, dotándoles así de certeza jurídica para que puedan en  libertad y con pleno apego a la ley atender sus obligaciones ciudadanas y  cívicas derivadas del cambio de gobierno, lo cual no implicará menoscabo alguno  en su salario ni resultará en detrimento de sus relaciones laborales, toda vez  que es un derecho legal y legítimo de la clase trabajadora derecho a mantenerse  oportunamente informada y a participar de la vida pública del país. </p>
+<p>Las trabajadoras y  trabajadores de México decidieron dar continuidad a un nuevo proyecto de nación  y a construir junto a la próxima Presidenta de la República, Claudia Sheinbaum  Pardo, el segundo piso de la &ldquo;Cuarta Transformación&rdquo;. Por lo tanto, este 1 de  octubre tienen todo el derecho a ser partícipes de la gran fiesta democrática  de México, porque solo el pueblo manda y solo el pueblo transforma. </p>
+<p>La toma de protesta es un  acto relevante, formal y protocolario que reviste un valor cívico  transcendental toda vez que al marcar el inicio de una nueva gestión pública se  convierte en un acontecimiento histórico que la ciudadanía debe testimoniar, a  partir de lo cual podrá opinar, decidir y participar activamente durante el  período de gobierno ya que tendrá la posibilidad, desde su inicio, de conocer  los aspectos más relevantes de éste. </p>
+<p>No debemos perder de vista  que el derecho a la información posibilita el ejercicio de otros derechos y en  nuestros días se objetiva de diversas maneras gracias al acceso a las nuevas  tecnologías. De ahí que nuestro voto será a favor del dictamen, a favor de que  las trabajadoras y los trabajadores de México puedan ser actores fundamentales  en el inicio de cada período constitucional del Poder Ejecutivo Federal. </p>
+<p>Es un honor…</p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Si quiere terminar. </p>
+<p><strong>El Senador Alfonso Cepeda  Salas: </strong>…es un honor estar con Claudia hoy. </p>
+<p>Gracias.</p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Muy bien, Senador Cepeda Salas. </p>
+<p>Muchas gracias. </p>
+<p>Como lo permite el artículo  198 del Reglamento del Senado, y debido a que el dictamen que nos ocupa consta  de un solo artículo, se discutirá en lo general y en lo particular en un solo  acto. </p>
+<p>Está a discusión. Al no  haber oradoras ni oradores registrados, háganse los avisos a que se refiere el  artículo 58 del Reglamento del Senado para informar de la votación. Ábrase el  sistema electrónico por tres minutos para recoger la votación nominal del  proyecto de Decreto en lo general y en lo particular.</p>
+<p> <strong>El Secretario Senador Luis  Donaldo Colosio Riojas: </strong>Informo  a la Asamblea que resta un minuto para que se cierre el sistema de votación.  Una vez que ha transcurrido el tiempo indicado por la Presidencia, ciérrese el  sistema electrónico de votación. </p>
+<p>Pregunto,  si falta alguna ciudadana Senadora o algún ciudadano Senador de emitir su voto. </p>
+<p>Senador  Clemente Castañeda, Senador Adán Augusto. </p>
+<p>¿El  sentido de su voto, Senador? A favor, ambos. </p>
+<p>Nuevamente,  ¿pregunto si algún ciudadano Senador o alguna ciudadana Senadora falta de  emitir su voto?</p>
+<p align="right"><strong>VOTACIÓN</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/votacion/4718"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Señor  Presidente, conforme al registro en el sistema electrónico se emitieron 108  votos en el sistema a favor, y 2 fuera de sistema, igualmente a favor. </p>
+<p>Senador  Cantón, ¿el sentido de su voto? A favor. </p>
+<p>Son  111 votos a favor, cero en contra y cero abstenciones, señor Presidente. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Queda  aprobado por unanimidad en lo general y en lo particular…</p>
+<p><strong>El Secretario Senador Luis  Donaldo Colosio Riojas: </strong>Señor<strong> </strong>Presidente, le informo  también el voto a favor del Senador Marko Cortés. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> 112 votos a favor, cero en contra y cero abstenciones. </p>
+<p>Queda  aprobado por unanimidad de esta Cámara de Senadores en lo general y en lo  particular el proyecto de Decreto por el que se reforma la fracción VII del  artículo 74 de la Ley Federal del Trabajo, para establecer el 1 de octubre, de  cada seis años, como descanso obligatorio. Se remite a la Cámara de Diputados  para los efectos del artículo 72 constitucional. </p>
+<p>Se  registran los votos de Margarita Valdez y la Senadora Citlalli Hernández. </p>
+<p>La  Senadora Susana Harp ya había votado. Se incorporan los votos a favor,  Senadores, 115. </p>
+<p>Acá  también a favor, Secretaría. Si me pudieran decir el resultado final. Ya lo  habíamos declarado, pero son 116 a favor.  </p>
+<p><strong>El Secretario Senador Luis  Donaldo Colosio Riojas: </strong>Anuncio  que hay 120 a favor, señor Presidente. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> Muy bien. </p>
+<p>Estamos  esperando una comunicación de Acción Nacional, de no darse esa comunicación  haré una intervención, antes de que termine esta Asamblea. </p>
+<p>¿Con  qué objeto? </p>
+<p>El  voto de la Senadora Malú Micher. </p>
+<p>Senadora  Malú Micher, ¿con qué objeto? </p>
+<p><strong>La Senadora Martha Lucía  Micher Camarena:</strong> (Desde su escaño) Gracias, señor Presidente. </p>
+<p>Simplemente  para recordar que el día de hoy es el Día Mundial de la Igualdad Salarial, y  que eso nos remite a tener una gran profunda reflexión sobre la igualdad  salarial entre mujeres y hombres. </p>
+<p>México  no se queda atrás de ganar las mujeres un 20 por ciento menos que los hombres. </p>
+<p>Y  quería mencionarlo para que lo reflexionemos más adelante, y tengamos en cuenta  que en este Senado hemos hecho grandes esfuerzos para igualar el salario de las  mujeres. </p>
+<p>Pero  la OIT todavía nos llama la atención de este profundo tema de desigualdad, y de  la desigualdad salarial. </p>
+<p>Muchas  gracias, señor Presidente.</p>
+<p> <strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> Muchas gracias, Senadora Micher Camarena. </p>
+<p>Solo  preguntaba con qué objeto, dejé continuar la intervención por el tema  relevante. </p>
+<p>Senadora  Ramírez, ¿con qué objeto?</p>
+<p><strong>El Secretario Senador Luis  Donaldo Colosio Riojas: </strong>Es  para registrar su voto, señor Presidente, de la Senadora Julieta Ramírez  Padilla. Se registra su voto a favor. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117024'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/645s4LweTr8?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='117025'></a><p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Nuestro  siguiente apartado a desahogar es el de efemérides, el tema Aniversario del  Inicio de la Independencia de México.</p>
+<p>Tendremos  una ronda de participación de los grupos parlamentarios, las cuales serán en  orden progresivo, y por un tiempo máximo de hasta cinco minutos cada uno. </p>
+<p>Tiene  el uso de la palabra el Senador Luis Donaldo Colosio Riojas, de Movimiento  Ciudadano, hasta por cinco minutos. </p>
+<p><strong>EFEMÉRIDES</strong></p>
+<p><strong>El Senador Luis Donaldo  Colosio Riojas: </strong>Gracias, señor Presidente. Compañeras y  compañeros: </p>
+<p>La  independencia nacional tan festejada, tan vitoreada, es uno de los momentos de  mayor fervor ciudadano en nuestro país, todas y todos somos hijas y somos hijos  de la lucha independentista que comenzó en septiembre de 1810. Y esa es una  lucha que ha marcado cada paso de nuestra historia, y lo sigue marcando hasta  la fecha. </p>
+<p>Vimos  hace unos días todas nuestras plazas a lo largo y ancho de nuestra Nación  llenas, en prácticamente en todas las ciudades de nuestro país. </p>
+<p>Pero  hay que rectificar, no en todas, algunas ciudades no pudieron celebrar el Grito  de Independencia debido a la violencia extrema que les azota, como un ejemplo  doloroso en Culiacán que desde hace semanas enfrenta una guerra entre  fracciones del crimen organizado, dejando a la población civil atrapada en  medio de lo que parece un conflicto armado interno. </p>
+<p>Esta  situación se repite en otros puntos de nuestro país, ocupados por redes  criminales que vulneran el Estado de derecho. </p>
+<p>Pero  la violencia no es el único desafío que enfrenta nuestra independencia, también  es necesario señalar que nuestra soberanía está siendo amenazada; las reformas  constitucionales impulsadas sin diálogo, impulsadas sin consensos, como la  reciente reforma judicial, son un claro ejemplo de cómo se legisla desde la  cerrazón. </p>
+<p>Cuando  se abandona la  deliberación, cuando se imponen las decisiones sin argumentos sólidos, se pone,  entonces, en peligro la estabilidad democrática de una nación. </p>
+<p>Como Senadoras y Senadores de la República  tenemos frente a nosotros un enorme reto, que es el de garantizar que nuestras  instituciones sean fuertes, que nuestras instituciones sean independientes, que  nuestras instituciones sean justas. </p>
+<p>Y es aquí donde debemos de reconocer que  recientemente hemos tomado un camino equivocado, que no era el camino que  nuestros antepasados imaginaron cuando soñaban con un México libre, soberano y  justo.</p>
+<p> Pero estamos a tiempo de corregir, aún podemos  enderezar el rumbo de este barco, porque este mes de septiembre, mientras  recordamos los valores de libertad, de igualdad, de justicia que nos inspiraron  a ser una nación independiente, tenemos también la oportunidad de hacer una  pausa para reflexionar sobre el país que estamos construyendo hoy, para  nuestros hijos mañana.</p>
+<p>Nuestra nación será siempre un proyecto en  constante evolución, uno que se va forjando todos los días con decisiones  determinantes que tomamos. Y las decisiones que estamos tomando en este momento  no son la excepción, porque marcarán el rumbo de las próximas generaciones  mexicanas.</p>
+<p>Así que hago un llamado, compañeras y  compañeros, a la discusión abierta, franca y respetuosa, a que no lastimemos  nuestras bases constitucionales, aquellas que hemos jurado defender. </p>
+<p>México necesita que desde esta tribuna sigamos  construyendo acuerdos en beneficio de todas y de todos los que habitamos en  este país.</p>
+<p>Que todas y todos defendamos la democracia, la  libertad y nuestra soberanía porque México solamente así podrá garantizar un  destino de grandeza.</p>
+<p>Compañeras y compañeros, gritemos: ¡Viva  México! </p>
+<p>Pero más importante, hagamos que México viva,  hagamos que México viva mediante el respeto a nuestras leyes y nuestras ideas,  hagamos que México viva dejando a un lado la mezquindad de los que creen que  tienen toda la razón y son amos de la verdad.</p>
+<p>Y, sobre todo, hagamos que México viva  escuchando al prójimo y debatiendo e incluyendo las ideas y las voces de todas  y de todos los mexicanos.</p>
+<p>¡Que viva la independencia de México! ¡Que  viva la democracia mexicana!</p>
+<p>¡Y que viva México! </p>
+<p>Compañeras y compañeros.</p>
+<p>Muchas gracias, señor Presidente.</p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>Gracias, Senador Colosio Riojas.</p>
+<p>Tiene la palabra Jesús Lucía Trasviña  Waldenrath, del Partido Morena, que utilizará el espacio cedido por el grupo  parlamentario del PT.</p>
+<p><strong>La Senadora Jesús Lucía Trasviña Waldenrath: </strong>Gracias. Con su permiso, señor Presidente. Con  el permiso de la Asamblea.</p>
+<p>Hoy nos reunimos para conmemorar uno de los  momentos más trascendentales en la historia de nuestra nación, el Grito de  Independencia, pronunciado en la madrugada del 16 de septiembre de 1810, aquel  día en el pequeño poblado de Dolores, Guanajuato, el cura Miguel Hidalgo y  Costilla con profunda convicción y valentía dio inicio al movimiento que nos  conduciría a la libertad y a la construcción de un México soberano.</p>
+<p>El contexto en el que surgió este llamado a  las armas fue de tensión y de incertidumbre. Los ideales independientes que se  extendían desde 1808 en el territorio novohispano impregnaron el ambiente y se  consolidaron en las mentes de notables personajes, entre ellos el propio  Hidalgo, quien inspirado con la idea de una América libre de opresión, las  reuniones del grupo de insurgentes disfrazadas de tertulias literarias se  celebraban en la casa del corregidor de Querétaro, Miguel Domínguez, y su  esposa Josefa Ortiz de Domínguez, figuras claves en el proceso revolucionario  independiente.</p>
+<p> Gracias a la valentía y determinación de la  Corregidora Josefa Ortiz de Domínguez, a tiempo avisó a Allende sobre el  inminente peligro y se tomó la audaz decisión de adelantar el levantamiento. El  peligro era eminente, era evidente y era un peligro latente de traición a la  patria por los grupos de la derecha, por los grupos de la oligarquía.</p>
+<p>En la madrugada del 16 de septiembre Hidalgo  decidió que no había más tiempo que perder y con una energía inquebrantable y  una firme convicción de justicia tocó las campanas de la parroquia de Dolores  llamando al pueblo a congregarse.</p>
+<p>La multitud ansiosa y expectante se reunió en  el atrio de la iglesia para escuchar las palabras del hombre que se convertiría  en el padre de la patria. En ese momento pronunció una arenga que resonaría  para siempre en el corazón de todas y de todos los mexicanos: ¡Viva la América!  ¡Muera el mal gobierno!</p>
+<p>¡Viva la América! La América de los  americanos, no para los americanos. La América de Latinoamérica, la América de  Martí, la América de Bolívar. No la América que la derecha está ahora apoyando  para traicionar los movimientos revolucionarios de nuestros pueblos latinos.</p>
+<p>Ese grito no fue solo un llamado a las armas,  sino fue un llamado a la libertad y a la dignidad y a la lucha contra la  opresión. Fue el primer paso hacia un proceso largo y arduo que culminaría en  la Independencia de nuestra nación.</p>
+<p>Así cada año recordamos este suceso, renovamos  nuestro compromiso con ideales de justicia, libertad y soberanía que inspiraron  a Hidalgo y a los próceres de la Independencia, a los seres y heroínas que lo  acompañaron.</p>
+<p>Hoy más de dos siglos después seguimos  honrando su memoria y su legado. Y a nosotros nos toca, a nosotros nos  corresponde como herederos de esa lucha construir un México justo, un México  libre, un México democrático, un México solidario, donde el poder esté al  servicio del pueblo, donde se garantice el bienestar de todas y de todos.</p>
+<p>Quien me antecedió habla de la violencia  extrema que impidió que en algunas plazas se celebrara ese Grito de  Independencia.</p>
+<p>Cuán falso, cuán engañosas palabras, cuán  falta de memoria, si la violencia se generó en los años setenta, ¿no lo  recuerdan quiénes gobernaron?, ¿cuántas decenas de años gobernó el PRI?, ¿y  cuántos sexenios gobernó el PAN?</p>
+<p>Fueron los que permitieron que creciera el  monstruo de la violencia y se coludieron gobernantes y funcionarios públicos  para gozar de los privilegios, de las canonjías y los dineros sucios del  narcotráfico. Y no se hagan tontos, es una realidad que la tienen que aceptar.</p>
+<p>La estabilidad democrática de México no está,  ni va a estar en riesgo, estamos avanzando con decisión…</p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>Puede terminar, por favor, Senadora Trasviña.</p>
+<p><strong>La Senadora Jesús Lucía Trasviña Waldenrath: </strong>…estamos avanzando con valor y estamos  avanzando con la representatividad legítima de millones de mexicanos porque  vamos a gobernar para el pueblo y por el pueblo.</p>
+<p>¡Y viva México! ¡Y viva la Independencia! ¡Y  viva la transformación de la vida política de nuestro país!</p>
+<p>Gracias. ¡Cállense!</p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>Muchas gracias, Senadora Trasviña Waldenrath.</p>
+<p> Sigue en el uso de la palabra el Senador Luis  Alfonso Silva Romo, del PVEM.</p>
+<p><strong>El Senador Luis Alfonso Silva Romo: </strong>Con la venia de la Presidencia de la Mesa Directiva.  Compañeras y compañeros Senadores. Medios de comunicación. Y pueblo mexicano  que sintoniza esta sesión. </p>
+<p>Hoy vengo a hablar de la  independencia nacional, pero quiero hacerlo desde una óptica muy particular,  desde una óptica muy propia, desde la óptica, desde la visión del sur, desde la  visión de Oaxaca, mi estado, desde Huaxyacac, o como se dice en zapoteco  Lula&rsquo;a.</p>
+<p>Es curioso que el primer  gobernante civil que le dio el Virreinato al estado de Oaxaca, el infame Juan  Peláez de Berrio, haya terminado sus días encarcelado aquí, en la Ciudad de  México; este primer gobernante civil que le dio el Virreinato a Oaxaca fue un  ladrón, fue un sátrapa, marcaba a las y a los indígenas, los vendía y  únicamente llegaba a extraer la riqueza de lo que hoy conocemos como Oaxaca. </p>
+<p>No es un azar, compañeras y  compañeros, que el estado de Oaxaca, que desde el inicio de lo que se conoce  como el Virreinato, haya presentado de inmediato mucha, mucha resistencia. </p>
+<p>Se tiene noticia de que  desde tan temprano como 1524 ya hubo rebeliones indígenas, estamos hablando de  1524 de la rebelión de Coatlán, tan temprano como 1530, la rebelión de Mihuatlán,  en 1547 también la rebelión en los valles centrales por aquel mítico líder  indígena, Petela, en 1570, la rebelión de los Mixes y en 1660 la ya tan  estudiada rebelión de Tehuantepec, de los pueblos originarios de lo que se  conocía como Guadalcázar, en contra del alcalde Juan de Avellaneda y con la  terrible, con la terrible represión que sufrieron las hermanas y hermanos de  los pueblos originarios a manos de Juan Francisco de Montemayor y Cuenca. </p>
+<p>Durante los 300 años que  duró el Virreinato en México, durante los 300 años que duró este Virreinato en  Oaxaca, únicamente se hacía para extraer riqueza, únicamente la única función  de estos virreyes, de estos alcaldes mayores era extraer riqueza y clavar sus  uñas, clavar sus garras en los pueblos originarios. </p>
+<p>No es un azar que durante el  principio del Virreinato había dos alcaldías que eran las que se peleaban, los  amigos y los familiares de los virreyes, dos alcaldías que precisamente estaban  en Oaxaca, la alcaldía de Villa Alta y la alcaldía de Jicayán, porque tener a  estas y a estos alcaldes significaba que podían extraer cuantiosa riqueza. </p>
+<p>Y también, compañeras y  compañeros, es momento de que hablemos de aquellas personas que fueron los  actores principales de lo que se conoce como la Independencia de México. </p>
+<p>El cambio de paradigma, la  ruptura que significó la Independencia de México respecto de los reyes de  España, hoy parece fácil, hoy se dice de manera sencilla, pero sin embargo esto  significó una ruptura, un cambio muy importante, basadas, compañeras y compañeros  en lo que José María Morelos y Pavón llamó la soberanía del pueblo. </p>
+<p>Esa soberanía que hoy  todavía estamos luchando por conquistarla, esa soberanía que hoy todavía hace  una semana estábamos en este Pleno, votando para que en verdad ejerciéramos  nuestra soberanía; esta soberanía que, hasta que fue una realidad, permite  tener juezas y jueces, que permite que ejerzamos nuestra soberanía a través de  los representantes populares. </p>
+<p>Hoy quiero utilizar esta  tribuna para agradecer la memoria de grandes oaxaqueñas y oaxaqueños que  lucharon en la Independencia de México. </p>
+<p> Me quiero referir a Miguel  López y José María Armenta, los primeros mártires de la Independencia en mi  estado. </p>
+<p>A Felipe Tinoco y Catarino  Palacios, a José María Murguía Galardi, a Manuel Sabino Crespo, a Carlos María  de Bustamante, y desde luego a Antonio de León. </p>
+<p>Compañeras y compañeros, hoy  más que nunca contamos con una independencia y autonomía en las instituciones,  el pueblo mexicano sale a las calles a expresar con libertad las  inconformidades y es la mayoría popular quienes exigieron la transformación de  México…</p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Si pudiera terminar su  intervención, Senador Silva Romo. </p>
+<p><strong>El Senador Luis Alfonso  Silva Romo:</strong>…compañeras y compañeros, ¡que viva la independencia nacional! </p>
+<p>¡Que viva México!</p>
+<p>Es cuanto, señor Presidente. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Muchas gracias, Senador  Silva Romo. </p>
+<p>Tiene el uso de la palabra  el Senador Ángel García Yáñez, del PRI, hasta por cinco minutos. </p>
+<p><strong>El Senador  Ángel García Yáñez: </strong>Con el permiso de la  Presidencia. </p>
+<p>El 15 de septiembre de 1810,  es una fecha que marca el inicio de uno de los capítulos más importantes de la  historia de México, el comienzo de la lucha por la Independencia, durante esa  noche, el cura Miguel Hidalgo y Costilla, junto con otros líderes Insurgentes  como Ignacio Ayende y Juan Aldama, nació un llamado a la rebelión en el pueblo  de Dolores. </p>
+<p>Un acto, que pasó a la  historia como El Grito de Dolores, este llamado fue el punto de partida de una  guerra que duró once años y que culminó en libertad de México en 1821. </p>
+<p>Esta fecha, profundamente  significativa para todos los mexicanos, simboliza los ideales de libertad,  justicia y soberanía. </p>
+<p>A lo largo de las  generaciones, el 15 de septiembre ha sido una jornada de gran relevancia  nacional, conmemorando el coraje de aquellos que lucharon contra el dominio  colonial. </p>
+<p>Cada año, la noche del 15 de  septiembre se celebra con fervor patrio en todas las regiones del país, desde  el balcón de Palacio Nacional, el Presidente de la República emula el histórico  Grito de Dolores, acompañado por los ecos de la multitud en las plazas públicas  de todo el país. </p>
+<p>Quienes con orgullo entonan  vivas a México, los festejos, adornados con música, juegos artificiales y la  presencia de los símbolos nacionales, como la Bandera y el Escudo Nacional. </p>
+<p>Evocan el sentido de unidad  &ldquo;perteneciencia&rdquo; al pueblo mexicano. </p>
+<p> Más allá de los actos  conmemorativos, el 15 de septiembre es una oportunidad para reflexionar sobre  el significado de la Independencia en el contexto actual. </p>
+<p>Nos recuerda que la lucha  por libertad y la justicia es un proceso continuo que exige el compromiso de  cada generación para preservar los valores fundamentales de cada Nación. </p>
+<p>Esta fecha invita a todos  los mexicanos a mantener vivo el legado de aquellos Héroes, actuando con  responsabilidad, solidaridad y visión de futuro para construir un México más  justo y más próspero. </p>
+<p>Esta efeméride no solo  conmemora el inicio de la lucha por la independencia, sino también fortalece el  orgullo y la libertad de México, recordándonos el valor y el sacrificio que  forjan nuestras libertades. </p>
+<p>¡Que viva México! </p>
+<p>¡Y que viva la independencia  judicial!</p>
+<p>Es cuanto, señor Presidente. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Muchas gracias, Senador  García Yáñez. </p>
+<p>Tiene la palabra el Senador  Gustavo Sánchez Vásquez, del PAN. </p>
+<p><strong>El Senador Gustavo Sánchez  Vásquez: </strong>Con su venia, señor Presidente. </p>
+<p>Si algún documento histórico  de la vida independiente de México tiene una gran trascendencia, sin lugar a  dudas son &ldquo;Los Sentimientos de la Nación&rdquo;. </p>
+<p>Ese documento que el  generalísimo Morelos daba a conocer al pueblo entonces de la Nueva España.</p>
+<p>En su primer apartado &ldquo;Los  Sentimientos de la Nación&rdquo; establecían el anhelo y el sueño de una América  libre, de una Nueva España que se negaba a seguir siendo dominada por la Corona  Española. </p>
+<p>Han pasado 214 años desde  aquel 1810 en que se iniciaba esta lucha de insurgencia, esa lucha que hombres  y mujeres decididos por darnos una patria estaban dispuestos a dar el gesto más  sublime que puede dar el ser humano: ofrendar la vida si era necesario por  lograr una patria, por lograr la Independencia de México, esa independencia que  daba lugar al nacimiento de una nación, al nacimiento de un país: México. Ese  anhelo que se tuvo desde entonces de que existiera un país libre, un país  democrático, un país independiente. </p>
+<p>Y en estos 214 años que han  transcurrido desde aquel 1810 hoy podemos decir que México es un país grande  gracias a su gente, no a sus gobiernos; gracias a todas las mujeres y hombres  que día con día con su trabajo sacan adelante a este país. Y en ocasiones,  diríamos, a pesar de sus gobiernos. </p>
+<p>Hoy el mayor tributo que le  podemos rendir a la Independencia de México es sabernos que, como mexicanas y  mexicanos, hemos sabido juntos construir este México independiente, este México  que, repito, en dos siglos ha dado muestras de lo que se puede hacer cuando se  tiene ese sentimiento y ese fervor por sabernos todos mexicanos, por sabernos  todos unidos, que más allá de las diferencias ideológicas, políticas o de  cualquier tipo, México está por encima de todos nosotros. </p>
+<p> Hoy, sin lugar a duda, desde  este Senado de la República tenemos la eminente tarea de cumplir y de honrar a  todas aquellas personas mujeres y hombres que en 200 años han hecho posible la  construcción de este México independiente; han hecho posible que en México  existan grandes instituciones que se han creado a lo largo de los años. </p>
+<p>En el área educativa el  mejor ejemplo: la Universidad Autónoma de México, la UNAM. En materia de salud:  el Seguro Social. Y así podríamos hablar de muchas instituciones que se han  creado a lo largo de 200 años de este país. </p>
+<p>Que sea este momento una  oportunidad importante para reflexionar que se ha hecho mucho, pero para  reflexionar más que tenemos la obligación de construir, no de destruir, de  construir para que este México siga siendo esa patria ordenada y generosa que  todos los mexicanos deseamos. </p>
+<p>Hoy, sin lugar a duda, las  palabras que en ese 1810 el Cura Hidalgo daba a conocer en la noche del Grito  de Dolores, hoy, sin lugar a duda, resuena más fuerte que nunca cuando dijo:  ¡Viva la América y que muera el mal gobierno! </p>
+<p>Gracias. </p>
+<p>Es cuanto. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Muchas gracias, Senador  Sánchez Vásquez. </p>
+<p>Tiene el uso de la palabra  la Senadora Beatriz Silvia Robles Gutiérrez, del grupo parlamentario del  Partido Morena, hasta por cinco minutos. </p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat: </strong>Señor<strong> </strong>Presidente, el Senador Eugenio, de Quintana Roo, solicitó se registre su  voto a favor en la votación inmediata anterior. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Muy bien. </p>
+<p><strong>La Senadora Beatriz Silvia  Robles Gutiérrez: </strong>Con su permiso, señor Presidente. Con el permiso del pueblo de México. </p>
+<p>Se llega a ser ciudadano,  como muchos historiadores lo afirman, porque ser ciudadano abre la conciencia. </p>
+<p>Ser ciudadano es un proceso  revolucionario que nos conecta de forma individual, con ideales que exceden  nuestra propia lucha.</p>
+<p>Ser ciudadano nos conecta  con la comunidad, con aquellos ideales que nos dan identidad y nos posicionan  frente a valores más nobles como la justicia, la paz y la libertad. </p>
+<p>Soy Beatriz Robles y hoy  hago uso por primera vez de esta tribuna y con honor, responsabilidad y un  profundo respeto al pueblo de Querétaro, que confió en mí, y de México, que ha  confiado en un proyecto de nación incluyente, equitativo y vanguardista, les  digo que representaré gustosa y convencida a más de 35 millones de mexicanos  que creemos que es posible un nuevo México libre. </p>
+<p>La conmemoración del proceso  de independencia de México cada 15 de septiembre revela un episodio histórico  que va más allá de la creación de un Estado-nación; comenzó con movimiento  social armado, violento y con discursos que promulgaban ideas de libertad,  democracia e igualdad. </p>
+<p> Este movimiento buscaba  romper las cadenas de opresión que la Corona Española había colocado a nuestros  hermanos y hermanas. Y hoy, después de más de 200 años de la consumación de  nuestra Independencia, la transformación por la inclusión social, la democracia  y el gobierno por y para el pueblo nos llevan a revitalizar nuestros ideales  independentistas gracias a otro libertador de nombre Andrés Manuel López  Obrador. </p>
+<p>Insisto en que se llega a  ser ciudadano porque hoy, después de muchas décadas de ideas conservadoras, de  corrupción, de injusticia, de ladrones de cuello blanco y de desigualdad  social, somos más ciudadanos porque nos cansamos de esos gobiernos y nos reposicionamos  como ciudadanos participativos, que hemos sacado de casi los 32 estados del  país al lastre político de antaño.</p>
+<p>Hoy somos más ciudadanos  porque somos más los que queremos igualdad, justicia y democracia, por eso esas  reformas que tanto incomodan a la oposición nos hacen y nos representan como  ciudadanos. Hoy, en este último escalón de la primera etapa de la &ldquo;Cuarta  Transformación&rdquo; y en el primero del segundo piso de esta transformación, somos  más independientes, somos más libres y somos más ciudadanos, porque hoy alzamos  la voz sin temor, porque incluso la oposición hoy se arriesga a alzar la voz,  porque hoy sí hay libertad. </p>
+<p>En Morena y aliados sabemos  que el pueblo es el que manda y como un mandato del pueblo es que lleváramos a  cabo la reforma al Poder Judicial, pues la hemos llevado a cabo. Nos brindaron  su confianza y no los vamos a defraudar. Y como en 1810, el pueblo salió feliz  a las calles el pasado 15 de septiembre, pero esta vez a festejar la  Independencia y a despedir al mejor Presidente de México, que nos deja las  bases de la transformación y la dignidad del pueblo soberano a flor de piel. </p>
+<p>En México los aires de  transformación continúan, estamos seguros de que serán refrendados por nuestra  próxima Presidenta Claudia Sheinbaum Pardo, a la que brindaremos nuestro apoyo  incondicional. </p>
+<p>¡Viva México! ¡Viva el  pueblo de México! ¡Viva la &ldquo;Cuarta Transformación&rdquo;! </p>
+<p>Gracias. Con permiso, señor  Presidente. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Quiero ofrecer una disculpa  al Senador Luis Donaldo Colosio Riojas, le dije &ldquo;Diputado&rdquo;. Somos pares y como  estuve seis años siendo Diputado todavía se me queda la grabación. </p>
+<p>Esta Mesa Directiva extiende  una cordial y afectuosa felicitación, con motivo de su cumpleaños, al Senador  Miguel Riquelme Solís. </p>
+<p>¡Muchas felicidades,  compañero Senador!</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117025'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117026'></a><p>Solicito a la Secretaría dé  lectura a una comunicación que nos ha hecho llegar la Senadora María de Jesús  Díaz Marmolejo </p>
+<p><strong>COMUNICACIONES</strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat:</strong> Con gusto, señor  Presidente. Doy lectura. </p>
+<p>Senador Gerardo Fernández  Noroña, Presidente de la Mesa Directiva del Senado de la República.</p>
+<p>Estimado señor Presidente:</p>
+<p>El pasado fin de semana los  medios de comunicación dieron cuenta de mis declaraciones emitidas en una rueda  de prensa en Aguascalientes, las cuales causaron malestar e inconformidad a  compañeras Senadoras y Senadores, así como a otras personas que se sintieron  agraviadas por estas expresiones.</p>
+<p> Lamento que así haya sido y por ello quiero ofrecer una disculpa pública  a todos los que se sintieron ofendidos, pues en ningún momento pretendió ser  una amenaza o llamado a la agresión hacia nadie.</p>
+<p>Quienes me conocen en mi estado, mis paisanos, saben que a veces utilizo  un lenguaje coloquial sencillo y directo del habla cotidiana para comunicarme,  y en esta ocasión como en ninguna otra mis palabras han tenido el propósito de  motivar violencia alguna.</p>
+<p>Sin otro particular, reitero a usted la seguridad de mi más alta y  distinguida consideración.</p>
+<p>Atentamente, Senadora María de Jesús Díaz Marmolejo.</p>
+<p>Es cuanto, señor Presidente.  </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> La Asamblea queda enterada. </p>
+<p>Continúa la Secretaría con los asuntos de la agenda. </p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat:</strong> Se han agotado los asuntos de la agenda, señor Presidente. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117026'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='117027'></a><p><strong>CITA</strong></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> Se cita a la siguiente sesión este mismo día a las 14:00 horas. </p>
+<p>El sistema para el registro de asistencia se encuentra abierto a partir  de este momento. </p>
+<p>Se levanta la sesión. </p>
+<p align="center">(Se  levantó la sesión a las 13:17 horas)<strong> </strong></p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a117027'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

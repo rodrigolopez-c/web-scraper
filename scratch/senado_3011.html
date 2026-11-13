@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 1</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa de Decanos<br> Sen. Ifigenia Martínez Hernández</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesión Constitutiva Celebrada<br>en la Ciudad de M&eacute;xico, el 29 de Agosto de 2018</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/1/PPO/PDF-WEB/PPO_No._1_29_AGOSTO_2018.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='79275'></a><p align="justify"><strong>ELECCIÓN DE LA MESA DE DECANOS</strong></p>
+<p align="justify"><strong>El </strong><strong>Doctor </strong><strong>Arturo Garita Alonso</strong><strong>,</strong><strong> Secretario General de Servicios  Parlamentarios: </strong>(11:17 horas) Señoras y señores, les ruego ocupar el lugar que  previamente tienen asignado, para poder dar inicio a nuestra sesión  constitutiva.</p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify">Señoras y señores Senadores Electos: </p>
+<p align="justify">Informo a ustedes que, con fundamento en los  artículos 321 y 328 de la Ley General de Instituciones y Procedimientos  Electorales, la Secretaría General de Servicios Parlamentarios recibió del  Instituto Nacional Electoral copias certificadas de las 64 constancias de  mayoría y de las 32 constancias de asignación a las fórmulas de primera minoría  que fueron expedidas. </p>
+<p align="justify">Asimismo, se recibió el acuerdo de la  asignación de Senadores Electos por el principio de representación proporcional  y las notificaciones de las sentencias del Tribunal Electoral del Poder  Judicial de la Federación, que recayeron en los recursos que fueron  interpuestos. </p>
+<p align="justify">Con respaldo en dichas constancias y  notificaciones, se hizo el inventario a que se refiere el artículo 58 de la Ley  Orgánica del Congreso General de los Estados Unidos Mexicanos, y se emitió el  aviso para que las Senadoras y los Senadores Electos acudieran a obtener su  acreditación para la sesión constitutiva de esta fecha. </p>
+<p align="justify">Con fundamento en el artículo 58 de la Ley  Orgánica del Congreso General, la Secretaría General de Servicios  Parlamentarios expidió y entregó credenciales de acceso e identificación a esta  sesión constitutiva, desde el 20 y hasta el 28 del mes en curso, e informo que  se entregaron 127 credenciales. </p>
+<p align="justify">En cumplimiento de la citada disposición  legal, se notificó a los integrantes de la nueva legislatura de la fecha  señalada para la celebración de la sesión constitutiva al momento de entregar  las credenciales de acceso e identificación. </p>
+<p align="justify">A su vez, se instruyó la difusión de avisos  en los diarios de circulación nacional en torno a la realización de esta sesión  constitutiva. </p>
+<p align="justify">Por otra parte, con fundamento en los  artículos 58 y 60 de la Ley Orgánica, informo a ustedes que en el Archivo  Histórico del Senado de la República se cuenta con las constancias y la  evidencia documental de quienes con anterioridad han formado parte de esta  Cámara, las cuales nos han permitido constatar la cobertura de los requisitos  legales de los Senadores Electos que podrán integrar la Mesa de Decanos. </p>
+<p align="justify">Con base en estos documentos, hago del  conocimiento de esta Asamblea que la Secretaría General de Servicios  Parlamentarios cuenta con los expedientes y registros que comprueban la  antigüedad de quienes se han desempeñado como Senadores de la República. </p>
+<p align="justify">En consecuencia, con fundamento en los  párrafos 2, 3 y 4 del artículo 60 de la Ley Orgánica del Congreso, corresponde  integrar la Mesa de Decanos y del cargo que se les menciona, a las siguientes  Senadoras y Senadores Electos:</p>
+<p align="justify">Presidenta Decana: Senadora Ifigenia Martínez Hernández.</p>
+<p align="justify">Vicepresidente Decano: Senador José Antonio Cruz Álvarez Lima. </p>
+<p align="justify">Vicepresidenta Decana: Senadora Beatriz Paredes Rangel. </p>
+<p align="justify">Secretario Decano: Senador Cristóbal Arias Solís.</p>
+<p align="justify">Secretaria Decana: Senadora Minerva Hernández Ramos. <br>
+  <br>
+  Solicito a las Senadoras y a los Senadores  mencionados para integrar la Mesa de Decanos, pasen a ocupar sus respectivos  lugares en el presídium. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="center">(Los Senadores Electos cumplen)</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a79275'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='79276'></a><p align="center"><strong>PRESIDENCIA DE LA  MESA DE DECANOS</strong><br>
+  <strong>SENADORA IFIGENIA  MARTÍNEZ HERNÁNDEZ</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La Presidenta de la Mesa de  Decanos, Senadora Ifigenia Martínez Hernández: </strong>En cumplimiento de lo que establece el párrafo 6 del artículo 60 de la  Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, solicito a  los Senadores Electos que fungen como Secretario y Secretarias Decanos,  procedan a pasar lista de asistencia de las ciudadanas Senadoras y los  ciudadanos Senadores Electos. </p>
+<p align="justify"><strong>El Secretario de la Mesa de Decanos, Senador Cristóbal Arias Solís: </strong>Se va a proceder a pasar lista de asistencia  de las ciudadanas y los ciudadanos Senadores Electos.</p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/content/sp/dd/content/cale/diarios/62/1/PPO/PDF-WEB/ASISTENCIA%2029082018.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Secretaria de la Mesa de Decanos, </strong><strong>Senadora </strong><strong>Minerva Hernández Ramos:</strong> Ciudadana Presidenta Decana, hay una asistencia de 127 ciudadanas Senadoras y ciudadanos Senadores Electos. </p>
+<p align="justify">Hay quórum. </p>
+<p align="justify"><strong>La Presidenta de la Mesa de Decanos, </strong><strong>Senadora </strong><strong>Ifigenia Martínez Hernández:</strong> Se abre la sesión constitutiva del Senado de la República. </p>
+<p align="justify">Solicito a la Secretaría Decana dé lectura al Orden del Día previsto en  el artículo 60 de la Ley Orgánica del Congreso General. <br>
+  <strong>El Secretario de la Mesa de Decanos, </strong><strong>Senador </strong><strong>Cristóbal Arias Solís:</strong> Sesión constitutiva, miércoles 29 de agosto  de 2018. </p>
+<p align="justify">1.- Designación de la Mesa de Decanos. </p>
+<p align="justify">2.- Pase de lista. </p>
+<p align="justify">3.- Declaración de quórum.</p>
+<p align="justify">4.- Protesta de la Presidenta de la Mesa de  Decanos. </p>
+<p align="justify">5.- Protesta constitucional de los Senadores Electos. </p>
+<p align="justify">6.- Elección de la Mesa Directiva que  conducirá los trabajos durante el primer año de ejercicio. </p>
+<p align="justify">7.- Protesta del Presidente de la Mesa  Directiva. </p>
+<p align="justify">8.- Protesta de los demás integrantes de la  Mesa Directiva. </p>
+<p align="justify">9.- Declaratoria de constitución de la Cámara  de Senadores para el primer año de ejercicio constitucional. </p>
+<p align="justify">10.- Designación de comisiones de cortesía y  ceremonial. </p>
+<p align="justify">11.- Cita a sesión de Congreso General y cita  a primera sesión ordinaria. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a79276'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='79277'></a><p align="justify"><strong>PROTESTA DE LEY</strong></p>
+<p align="justify">Se solicita a los presentes  ponerse de pie para el acto de toma de protesta de la Presidenta de la Mesa de  Decanos. </p>
+<p align="center">(Todos de pie)</p>
+<p align="justify"><strong>La Presidenta de la Mesa de Decanos, </strong><strong>Senadora </strong><strong>Ifigenia Martínez  Hernández:</strong> Protesto guardar y  hacer guardar la Constitución Política de los Estados Unidos Mexicanos y las  leyes que de ella emanen, y desempeñar leal y patrióticamente el cargo de  Senadora a las LXIV y LXV Legislaturas del Congreso de la Unión que el pueblo me ha  conferido, así como la responsabilidad de Presidenta de la Mesa de Decanos de  la Cámara, mirando en todo por el bien y prosperidad de la Unión. </p>
+<p align="justify">Y  si así no lo hiciere, que la  Nación me lo demande. </p>
+<p align="justify">Les solicito permanezcan de pie a fin de tomar la protesta a las  ciudadanas Senadoras y los ciudadanos Senadores Electos. </p>
+<p align="justify">Ciudadanas Senadoras y ciudadanos Senadores  Electos: ¿Protestan guardar y hacer guardar la Constitución Política de los  Estados Unidos Mexicanos y las leyes que de ella emanen, y desempeñar leal y  patrióticamente el cargo de Senadora y Senador de la República a las LXIV y LXV  Legislaturas del Congreso de la Unión que el pueblo les ha conferido, mirando  en todo por el bien y prosperidad de la Unión?</p>
+<p align="justify"><strong>Los Senadores Electos:</strong> ¡Sí, protesto!</p>
+<p align="justify"><strong>La Presidenta de la Mesa de Decanos, </strong><strong>Senadora </strong><strong>Ifigenia Martínez  Hernández:</strong> Si no lo hicieren  así, que la Nación se los demande. </p>
+<p align="justify">Sírvanse tomar asiento. </p>
+<p align="justify">Todos estamos muy contentos, las  felicitaciones múltiples vienen después, favor de tomar asiento. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a79277'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='79278'></a><p align="justify"><strong>ELECCIÓN DE MESA DIRECTIVA</strong></p>
+<p align="justify">A fin de dar cumplimiento a  lo dispuesto por el párrafo 9 del artículo 60 de la Ley Orgánica del Congreso  General, se va a proceder a la elección de la Mesa Directiva que conducirá los  trabajos de la Cámara de Senadores durante el primer año de ejercicio  constitucional de la LXIV Legislatura. </p>
+<p align="justify">Informo a la Asamblea que la elección de los integrantes  de la Mesa Directiva se realizará en votación por cédula, tal y como lo  establece el artículo 62 de la Ley Orgánica del Congreso General. </p>
+<p align="justify">Se les entregará una cédula con la propuesta  de integración de la Mesa Directiva, conforme al acuerdo alcanzado. </p>
+<p align="justify">Está disponible también una cédula en blanco  para que anoten la propuesta de integrantes que cada uno considere, si ese es  su deseo y voluntad. </p>
+<p align="justify">Sólo se les entregará la cédula que ustedes  soliciten. </p>
+<p align="justify">Solicito a la Secretaria Decana y al Secretario  Decano se sirvan llamar a las ciudadanas y ciudadanos Senadores por orden de  lista a efecto de que pasen a depositar su voto.</p>
+<p align="justify"><strong>La Secretaria de la Mesa de Decanos, Senadora Minerva Hernández Ramos: </strong>Se solicita a las y los ciudadanos Senadores,  al ser llamados por orden de lista, pasen a depositar su voto al ánfora. </p>
+<p align="justify"><strong>La Presidenta de la Mesa de Decanos, Senadora Ifigenia Martínez  Hernández: </strong>¿Qué desea,  Senador? </p>
+<p align="justify">Tiene la palabra el Senador Aceves del Olmo. </p>
+<p align="justify"><strong>El Senador Carlos Humberto Aceves del Olmo: </strong>(Desde su escaño) Presidenta Decana, con todo  respeto, solicito a usted que mi voto sea colocado en la urna, en virtud de que  tengo dificultades para llegar allá, por alguno de mis compañeros Senadores, de  cualquier fracción. </p>
+<p align="justify"><strong>La Presidenta de la Mesa de Decanos</strong><strong>, </strong><strong>Senadora Ifigenia Martínez Hernández: </strong>Se autoriza la petición. </p>
+<p align="justify"><strong>El Senador Carlos Humberto Aceves del Olmo: </strong>(Desde su escaño) Muchas gracias. </p>
+<p align="justify"><strong>La Presidenta de la Mesa de Decanos, Senadora Ifigenia Martínez  Hernández: </strong>¿Alguien más? ¿Algún  otro Senador o Senadora? </p>
+<p align="justify">Procedamos con el proceso de votación.</p>
+<p align="center">(Votación y escrutinio)</p>
+<p align="justify"><strong>El Secretario de la Mesa de Decanos, Senador Cristóbal Arias Solís: </strong>¿Falta alguna ciudadana Senadora o algún  ciudadano Senador de pasar a depositar su voto?</p>
+<p align="justify">Pregunto nuevamente, ¿falta alguna ciudadana  Senadora o algún ciudadano Senador de pasar a depositar su voto? </p>
+<p align="justify">Procedemos entonces a realizar el cómputo de  los votos emitidos. </p>
+<p align="justify"><strong>La Presidenta de la Mesa de Decanos, Senadora Ifigenia Martínez  Hernández: </strong>Sonido para el  compañero Félix Salgado Macedonio. <br>
+  <br>
+  <strong>El Senador Félix Salgado Macedonio: </strong>(Desde su escaño) Muchas gracias, señora  Presidenta. </p>
+<p align="justify">Yo creo que es conveniente destacar, que lo  que estamos votando ahora, es la elección de la Mesa Directiva. Es cierto, pero  por primera vez en la historia, nos hemos puesto de acuerdo todas las fuerzas  políticas. </p>
+<p align="justify">Las papeletas que están contando los  compañeros Senadores y Senadoras, contienen los nombres de quienes van a ser el  Presidente, los Vicepresidentes, los Secretarios y las Secretarias. </p>
+<p align="justify">Yo creo que no podemos dejar pasar por alto  el esfuerzo de nuestros coordinadores de todas las fracciones parlamentarias  que han hecho para sacar una Mesa Directiva de consenso, y creo que se merecen  un aplauso, porque es un acto unitario. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>La Presidenta de la Mesa de Decanos, Senadora Ifigenia Martínez  Hernández: </strong>Hasta que termine  el procedimiento podremos continuar y hacer comentarios. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>El Secretario de la Mesa de Decanos, Senador Cristóbal Arias Solís: </strong>Presidenta Decana, se va a dar cuenta con el  resultado de la votación. </p>
+<p align="justify">Se emitieron 120 votos a favor de la planilla  integrada por los siguientes Senadores y Senadoras: </p>
+<p align="justify">Presidente: Senador Martí Batres Guadarrama. </p>
+<p align="justify">Hay siete votos por otras planillas, pero en  todas ellas va como Presidente el Senador Martí Batres. </p>
+<p align="justify">Vicepresidenta: Senadora Mónica Fernández  Balboa. </p>
+<p align="justify">Vicepresidente: Senador Rafael Moreno Valle  Rosas. </p>
+<p align="justify">Vicepresidente: Senador Jorge Carlos Ramírez  Marín. </p>
+<p align="justify">Secretaria: Senadora Antares Guadalupe  Vázquez Alatorre. </p>
+<p align="justify">Secretaria: Senadora Verónica Delgadillo  García. </p>
+<p align="justify">Secretaria: Senadora Nancy de la Sierra  Arámburo. </p>
+<p align="justify">Secretario: Senador Juan Manuel Zepeda  Hernández. </p>
+<p align="justify">Como ya se mencionó, se emitieron siete votos  por otras planillas. </p>
+<p align="justify">Es todo, señora Presidenta Decana. </p>
+<p align="justify"><strong>La Presidenta de la Mesa de Decanos, Ifigenia Martínez Hernández:</strong> En consecuencia, esta Presidencia declara  que la Mesa Directiva de la Cámara de Senadores que conducirá los trabajos  durante el primer año de ejercicio de la LXIV Legislatura, queda integrada como  sigue: <br>
+  <br>
+  Presidente: Senador Martí Batres Guadarrama. </p>
+<p align="justify">Vicepresidenta: Senadora Mónica Fernández  Balboa. </p>
+<p align="justify">Vicepresidente: Senador Rafael Moreno Valle  Rosas. </p>
+<p align="justify">Vicepresidente: Senador Jorge Carlos Ramírez  Marín. </p>
+<p align="justify">Secretaria: Senadora Antares Guadalupe  Vázquez Alatorre. </p>
+<p align="justify">Secretaria: Senadora Verónica Delgadillo  García. </p>
+<p align="justify">Secretaria: Senadora Nancy de la Sierra  Arámburo. </p>
+<p align="justify">Secretario: Senador Juan Manuel Zepeda  Hernández. </p>
+<p align="justify">Distinguidas señoras y señores Senadores de  la República:</p>
+<p align="justify">Aprovecho esta distinción para darles la  bienvenida al honroso cargo, cuyo desempeño hoy se inicia, y compartir con  ustedes este momento histórico-político de nuestro país, México vive hoy una  transformación política, económica y social que imparte, cristaliza los  esfuerzos de años de lucha de muchos de nosotros. </p>
+<p align="justify">Las instituciones de nuestro país  garantizaron y respetaron la voluntad de los ciudadanos y tenemos, por primera  vez, un Congreso de la Unión manifiesta y mayoritariamente de una izquierda  democrática. </p>
+<p align="justify">La responsabilidad que se nos ha conferido  representa la esperanza de la ciudadanía, teniendo la valiosa oportunidad de  demostrar que somos una nación donde se respetan y se hacen valer los derechos  humanos que a todos corresponden.</p>
+<p align="justify">Estamos en la mira no sólo de nuestro país,  México, el ambiente internacional está pendiente de nuestro desempeño, por lo  que confiamos que esta Honorable Cámara de Senadores sea ejemplo de unidad,  esfuerzo, congruencia, trabajo y rectitud.</p>
+<p align="justify">Las demandas históricas más sentidas de la  población consisten en combatir y erradicar la desigualdad, la inseguridad y la  corrupción.</p>
+<p align="justify">Con la Cámara Colegisladora atenderemos los  cambios necesarios de la administración pública para cumplir los objetivos del  proyecto nacional, entre los cuales destaca el de garantizar la paz social como  condición necesaria para impulsar nuestro desarrollo económico y social en un  camino de igualdad y fraternidad.</p>
+<p align="justify">Habrá que orientar los programas sociales,  sin clientelismos ni intermediarios, en apoyo a la juventud que hoy aspira a  una preparación adecuada y a una vida digna.</p>
+<p align="justify">No debemos olvidar el justo reconocimiento a  aquellos mexicanos que en su momento entregaron su esfuerzo al desarrollo  político, económico y social de nuestra nación, así como un apoyo oportuno y  suficiente a familias en situación vulnerable.</p>
+<p align="justify">Debemos precisar los mecanismos que  fortalezcan la unidad nacional de acuerdo con las modalidades en materia de  distribución de los recursos públicos, federales y locales, dentro del marco de  un sistema de planeación democrático que abarque e integre el esfuerzo conjunto  de toda la sociedad.<br>
+  <br>
+  Dentro de las facultades exclusivas de esta  Cámara, del Senado, habremos de analizar con detenimiento, convalidando en su  caso, el Tratado de Libre Comercio de América del Norte, cuidando que lo  acordado no lesione nuestra cultura, las actividades básicas del país, nuestra  soberanía económica ni los derechos sociales de los trabajadores.</p>
+<p align="justify">La inserción en la globalización deberá ubicarse  en la perspectiva de nuestro sistema nacional respecto a nuestro propio Plan  Nacional de Desarrollo, para fortalecerlo con mecanismos y estrategias con un  sentido de cooperación y respeto entre los Poderes Ejecutivo y Legislativo.</p>
+<p align="justify">Habremos de diseñar una política de  desarrollo regional integral, económico y social, con el propósito de lograr un  crecimiento incluyente y homogéneo.</p>
+<p align="justify">En la etapa constructiva de la próxima  transformación consolidaremos la democracia política, lograremos un desarrollo  económico y social compartido de todo nuestro país y garantizaremos un sistema  de bienestar social que reclama la sociedad mexicana.</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify">¡Enhorabuena y bienvenidos, compañeras y  compañeros todos!</p>
+<p align="justify">Invito a los integrantes de la Mesa Directiva  a que pasen a ocupar su lugar en el presídium.</p>
+<p align="center"><strong>PRESIDENCIA DEL SENADOR</strong><br>
+  <strong>MARTÍ BATRES GUADARRAMA</strong></p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Solicito a la Asamblea  ponerse de pie para el acto de protesta del Presidente de la Mesa Directiva,  establecido en el artículo 62 de la Ley Orgánica del Congreso General de los  Estados Unidos Mexicanos. </p>
+<p align="center">(Todos de pie)</p>
+<p align="justify">Protesto guardar y hacer guardar la  Constitución Política de los Estados Unidos Mexicanos y las leyes que de ella  emanen, y desempeñar leal y patrióticamente el cargo de Presidente de la Mesa  Directiva que se me ha conferido, mirando en todo por el bien y la prosperidad  de la Unión.</p>
+<p align="justify">Y si así no lo hiciere, que la Nación me lo  demande.</p>
+<p align="justify">Solicito a la Asamblea permanecer de pie para proceder a la respectiva  toma de protesta de las Senadoras y los Senadores que han sido electos para  integrar la Mesa Directiva. </p>
+<p align="justify">Ciudadanas Senadoras y ciudadanos Senadores: Mónica  Fernández Balboa, Rafael Moreno Valle Rosas, Jorge Carlos Ramírez Marín,  Antares Guadalupe Vázquez Alatorre, Verónica Delgadillo García, Nancy de la  Sierra Arámburo y Juan Manuel Zepeda Hernández: </p>
+<p align="justify">¿Protestan guardar y hacer guardar la  Constitución Política de los Estados Unidos Mexicanos y las leyes que de ella  emanen, y desempeñar leal y patrióticamente el cargo de Vicepresidenta,  Vicepresidentes, Secretarias y Secretario de la Mesa Directiva que se les ha  conferido, mirando en todo por el bien y prosperidad de la Unión?</p>
+<p align="justify"><strong>Los </strong><strong>Ciudadanos</strong><strong> Senadores: </strong>¡Sí, protesto!</p>
+<p align="justify"><strong>El Presidente Senador Martí Batres Guadarrama: </strong>Si no lo hicieren así, que la Nación se los  demande.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a79278'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='79279'></a><p align="justify"><strong>DECLARATORIA</strong></p>
+<p align="justify">Les solicito a todas y a  todos permanecer de pie para la declaratoria de constitución de esta Cámara.</p>
+<p align="justify">&ldquo;La Cámara de Senadores del Congreso de los  Estados Unidos Mexicanos, correspondiente a la LXIV Legislatura, se declara  legalmente constituida para el desempeño de sus funciones&rdquo;.</p>
+<p align="justify">Senadoras y Senadores: Esta Presidencia  agradece el esfuerzo de concertación de Senadoras y Senadores, sus bancadas,  coordinadores y coordinadora.</p>
+<p align="justify">Desde aquí trabajaremos a favor de los  acuerdos y representaremos al conjunto de esta plural institución para cumplir  con las transformaciones que el pueblo de México ha demandado el pasado 1º de  julio, lo haremos en un marco de división de poderes y libertades políticas  buscando siempre que el Poder Legislativo sea un gran protagonista del cambio  político de México.</p>
+<p align="justify">Les solicito permanecer de pie para entonar  el Himno Nacional.</p>
+<p align="center">(Todos de pie  entonan el Himno Nacional)</p>
+<p align="justify">Sírvanse tomar asiento, por favor.</p>
+<p align="justify">La Secretaría informará por escrito de la  constitución de esta Cámara a la Colegisladora, a los demás Poderes de la Unión  y a los congresos de las entidades federativas.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a79279'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='79280'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify">Se cita para la sesión de  Congreso General en el recinto de la Honorable Cámara de Diputados, el sábado  1° de septiembre a las 17:00 horas.</p>
+<p align="justify">Asimismo, se cita a la primera sesión de  Cámara, en este recinto, el próximo martes 4 de septiembre a las 11:00 horas.</p>
+<p align="justify">Muchas gracias a todas y a todos.</p>
+<p align="justify">¡Felicidades!</p>
+<p align="justify">Se levanta la sesión.</p>
+<p align="center">(Se levantó la  sesión a las 12:37 horas)</p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Delegación Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfonos: 53-45-30-00<br>
+        Exts. 5405/5408</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+        Correo electrónico: diario_debates@senado.gob.mx</p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a79280'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

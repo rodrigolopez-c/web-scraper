@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 6</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Alejandro Armenta Mier</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 14 de Febrero de 2023</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/2/SPO/PDF-WEB/SPO_No6-14 FEBRERO_2023_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108217'></a><p align="center"><strong>PRESIDE EL SENADOR</strong><br>
+  <strong>ALEJANDRO ARMENTA MIER</strong></p>
+<p align="justify"><strong>APERTURA</strong><strong> </strong></p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier: </strong>Continuamos con el quórum de nuestra sesión  ordinaria.</p>
+<p align="justify">Iniciamos la sesión solemne  convocada para la entrega del Premio al Mérito Literario &ldquo;Rosario Castellanos&rdquo;,  correspondiente al año 2022, a la familia de la escritora Luisa Josefina  Hernández Lavalle. </p>
+<p align="justify">Como es de su conocimiento,  el 30 de marzo de 2021 se publicó en el Diario Oficial de la Federación el  Decreto por el que se crea el Premio al Mérito Literario &ldquo;Rosario Castellanos&rdquo;  y se reforma el Reglamento del Senado de la República, por el que se reconoce a  escritoras y escritores con obra consolidada escrita en idioma español o en cualquiera de las  lenguas originarias de Latinoamérica y que pertenezca a los géneros literarios  de la narrativa, dramaturgia, poesía y/o ensayo. </p>
+<p align="justify">Como consecuencia de ello, el pasado 6 de junio de  2022, la Comisión de Cultura emitió la convocatoria correspondiente, en la que  establecieron las bases para la recepción de candidatas y candidatos al Premio  al Mérito Literario &ldquo;Rosario Castellanos&rdquo; 2022.</p>
+<p align="justify">Como resultado de lo anterior, el 13 de diciembre  de 2022, la Mesa Directiva y la Junta de Coordinación Política definieron, a  través de un acuerdo, que la galardonada a dicho premio sería la escritora  Luisa Josefina Hernández Lavalle; sin embargo, debido a que lamentablemente el  pasado 16 de enero de 2023 la galardonada falleció, la Mesa Directiva suscribió  un Acuerdo por el cual se determinó que el reconocimiento correspondiente se  entregaría a su familia.</p>
+<p align="justify"> Con base en lo anterior, por Acuerdo del 8 de  febrero de 2023, la Mesa Directiva normó la sesión solemne que nos ocupa, para dar  entrega del reconocimiento señalado en los términos antes descritos.</p>
+<p align="justify">Solicito a las y Senadores siguientes acudir a  recibir y a acompañar a nuestros distinguidos invitados a esta sesión solemne:</p>
+<p align="justify">A los Senadores Susana Harp, Estrella Rojas,  Graciela Gaitán, Martha Cecilia, Miguel Ángel Mancera, Verónica Camino Farjat,  Eduardo Ramírez y Daniel Gutiérrez.</p>
+<p align="center">(La comisión cumple)</p>
+<p align="justify">En tanto, se declara un receso.</p>
+<p align="center">(Receso)</p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier:</strong> Se reanuda la sesión.</p>
+<p align="justify">Damos la bienvenida y  agradezco su asistencia a la doctora Mary Frances Rodríguez Van Gort, Directora  de la Facultad de Filosofía y Letras de la Universidad Nacional Autónoma de  México.</p>
+<p align="justify">Al escritor y periodista  Ezra Alcázar, representante del Fondo de Cultura Económica.</p>
+<p align="justify">Al actor Juan Carlos Bonet,  representante de la Secretaría de Cultura.</p>
+<p align="justify">Al escritor Luis Jorge  Arnau, representante de la Cámara Nacional de la Industria Editorial Mexicana.</p>
+<p align="justify">Y a la maestra Ana Elsa  Pérez Martínez, representante de la Universidad Nacional Autónoma de México.</p>
+<p align="justify">A los familiares y amigos  de la galardonada, la señora Luisa Josefina Hernández, al ingeniero Sergio de  Miguel Agüero y a la maestra Dolores González Casanova, así como a la  licenciada Elsa Díaz, a la licenciada Fabiola Pérez y al señor Héctor Martínez  de Castro.</p>
+<p align="justify">Para iniciar esta sesión  solemne se reproducirá un video relativo a la semblanza de nuestra galardonada.</p>
+<p align="justify">Solicito a la Senadora  Katya Elizabeth Ávila Vázquez, Secretaria de la Mesa Directiva, dé lectura a la  semblanza de la escritora; pero primero vamos a ver el video y posteriormente  se dará lectura a la semblanza.</p>
+<p align="justify">Por favor.</p>
+<p align="center">(Proyección de video)</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108217'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108218'></a><p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier:</strong> Solicito a la Senadora Katya Elizabeth Ávila  Vázquez, Secretaria de la Mesa Directiva, dé lectura a la semblanza de la  escritora Rosario Castellanos.</p>
+<p align="justify"> <strong>LECTURA DE LA SEMBLANZA DE  ROSARIO CASTELLANOS, A CARGO DE LA SENADORA KATYA ELIZABETH ÁVILA VÁZQUEZ,  SECRETARIA DE LA MESA DIRECTIVA</strong></p>
+<p align="justify"><strong>La Senadora Katya Elizabeth Ávila Vázquez:</strong> Doy lectura.</p>
+<p align="right"><em>&ldquo;Ahora,  estoy de regreso, llevé lo que la ola para romper se lleva: sal, espuma y  estruendo, y toqué con mis manos una criatura viva: el silencio. Heme aquí  suspirando como el que ama y se acuerda y está lejos&rdquo;. </em><br>
+  <em>Rosario Castellanos. </em></p>
+<p align="justify">Rosario Castellanos Figueroa nació el 25 de mayo de  1925 en el entonces Distrito Federal, pues su padre y madre se encontraban de  paso en la capital, pero de inmediato fue llevada a Comitán de Domínguez,  Chiapas, allí vivió su infancia.</p>
+<p align="justify">Realizó sus estudios de primaria, dos años de  secundaria para regresar a los 16 años a la capital y después ingresar a la  Escuela Nacional de Jurisprudencia de la Universidad Nacional Autónoma de  México, aunque poco tiempo después su vocación la llevó a la carrera de  filosofía, concluyó la licenciatura y obtuvo el grado de maestría en filosofía  en la UNAM, con una tesis sobre cultura femenina. </p>
+<p align="justify">Fue becaria en el Instituto de Cultura Hispánica y  por el Centro Mexicano de Escritores. Realizó cursos de postgrado en la  Universidad de Madrid, regresó a México en 1952 y asumió la Dirección del  Instituto Chiapaneco de la Cultura, donde imprimó el conocimiento académico adquirido, enmarcado con una amplia visión  humana. </p>
+<p align="justify">Los textos escolares que  escribió para el Instituto Nacional Indigenista dan cuenta de su sensibilidad,  fue docente de 1962 a 1971 e impartió las cátedras de literatura contemporánea,  novela contemporánea y el seminario de crónica en la Facultad de Filosofía y  Letras de la UNAM. </p>
+<p align="justify">Fue considerada como  parte de la generación del medio siglo, que estuvo integrada por escritores  como Jaime Sabines, Juan José Arreola, Jorge Ibargüengoitia, Juan Rulfo y  Carlos Fuentes, entre otros, grupo en el que se destacó por su profunda  reflexión sobre la desigualdad de las mujeres y las personas indígenas. </p>
+<p align="justify">De la agudeza de su pluma  crítica, surgieron obras de la literatura mexicana, que hoy son  imprescindibles, en las que mostró aspectos culturales que, hasta entonces, no  habían sido tratados con la perspectiva femenina, ni desde la visión de los  pueblos indígenas, de lo cual, fue su portavoz a través de los libros. </p>
+<p align="justify">Ella, es una de las  escritoras más importantes del Siglo XX. </p>
+<p align="justify">Dentro de sus obras más  destacadas en la prosa, se encuentran las novelas &ldquo;Balún Canán&rdquo;, merecedora del  premio &ldquo;Chipas y Oficio de Tinieblas&rdquo;, galardonada con el premio &ldquo;Sor Juana  Inés de la Cruz&rdquo;, con las dos antes mencionadas y &ldquo;Ciudad Real&rdquo;, ganó el premio  &ldquo;Javier Villa Urrutia&rdquo;, tres obras que integran el ciclo de Chiapas y la trilogía  indigenista más importante de la narrativa mexicana. </p>
+<p align="justify">&ldquo;Los convidados de  agosto&rdquo; y &ldquo;Álbum de familia&rdquo; son dos textos que comparten un mismo eje  narrativo, las relaciones de dominación y su misión de la mujer mexicana. </p>
+<p align="justify">La antología titulada  &ldquo;Mujer que sabe latín&rdquo;, constituye un trabajo muy valioso, en palabras de Marta  Lamas, ella es pionera intelectual del feminismo mexicano. </p>
+<p align="justify">Su obra, &ldquo;Apuntes para  una Declaración de Fe y Trayectoria del Polvo&rdquo;, marca la pauta del resto de su  poesía. </p>
+<p align="justify"> La compilación publicada  en 1972, que lleva por título &ldquo;Poesía no eres tú&rdquo;, ha generado diversos  estudios por su profundidad y significado. </p>
+<p align="justify">&ldquo;El eterno feminismo&rdquo; es  una obra de la literatura mexicana publicada dos años después de su muerte, que  se convirtió en el ícono del movimiento feminista de México. </p>
+<p align="justify">Fue una auténtica pionera  que abrió espacios a la participación femenina en el arte, en la cultura, en la  política y en el servicio. </p>
+<p align="justify">En estos tiempos aciagos  que nos toca vivir, cuando aún estamos en duelo por la pandemia mundial  que  ha dejado a su paso dolorosas  pérdidas y que presenciamos con profunda amargura un estallido bélico que  sabemos, representa muerte y devastación, es momento oportuno para recordar que  tras su designación en 1971, como Embajadora Extraordinaria y Plenipotenciaria  de México, ante el gobierno de Israel y luego de presentar sus cartas  credenciales, en el momento que este país atravesaba por grandes tensiones, fue  recibida por la admiración de ser una de las más destacadas intelectuales de  México. </p>
+<p align="justify">Al estallar la Guerra de  Yom Kippur, en 1973, cuando la mayoría del cuerpo diplomático abandonó el país,  ella decidió continuar con su labor, por lo que fue catalogada como &ldquo;La  Embajadora de la Paz en la Adversidad&rdquo;. </p>
+<p align="justify">Mostró, además de capacidad  diplomática, inteligencia y profundo respeto por otra cultura. </p>
+<p align="justify">Dedicó su vida a la  creación literaria con pulcritud, no alcanzaría esta sesión solemne para  presentar la semblanza de una mujer como Rosario Castellanos, su desempeño en  el ámbito de la enseñanza y la literatura, dejó una huella imborrable a pesar  de su prematura muerte ocurrida el 7 de agosto de 1974. </p>
+<p align="justify">Dejó un legado  imprescindible que enorgullece a la patria que la vio nacer. </p>
+<p align="justify">Es una autora atemporal,  porque sus textos no pierden vigencia. </p>
+<p align="justify">Por esa relevante  trayectoria, sus restos descansan hoy en la Rotonda de las Personas Ilustres,  en cuya lápida está inscrito: </p>
+<p align="right">&ldquo;Sabed  que, entre mis labios de granito, quedaron detenidas las palabras&rdquo;. </p>
+<p align="justify">Nunca mejor las palabras  en su adiós le dedicó Elena Poniatowska. Al irse, se llevó su memoria, su risa,  todo lo que era su modo de ser río, de ser aire, de ser adiós. </p>
+<p align="justify">En México, la enterramos  bajo la lluvia, la convertimos en parque público, en escuela, en lectura para  todas y todos, la devolvimos a la tierra. </p>
+<p align="justify">Cierro evocando el último  verso de la meditación, el umbral de Rosario, a modo de profunda reflexión  sobre la necesidad de que las mujeres seamos de una vez por todas respetadas. </p>
+<p align="justify">Debe haber otro modo que  no se llame &ldquo;Safo, ni Mesalina, ni María Egipciaca, ni Magdalena, ni Clemencia  Isaura&rdquo;, otro modo de ser humano y libre,  otro modo de ser. </p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Muchas  gracias, Senadora Katya Ávila.</p>
+<p align="justify"> Se concede el uso de la palabra a la Senadora Susana  Harp, Presidenta de la Comisión de Cultura, a nombre del Senado de la  República. Adelante, Senadora.</p>
+<p align="justify"><strong>La  Senadora Susana Harp Iturribarría: </strong>Muchas  gracias. Y con su permiso, señor Presidente. Señores y señoras legisladoras.  Doctora Luisa Rossi Hernández y familia que hoy le acompaña. Amigas y amigos:</p>
+<p align="justify">Las letras mexicanas están de luto desde enero de  este año en que la destacada maestra Luisa Josefina Hernández falleció a la  edad de 94 años.</p>
+<p align="justify">El Senado de la República expresa a su familia  nuestro más sentido pésame.</p>
+<p align="justify">En diciembre del año pasado, el Pleno de la Cámara  de Senadores aprobó el Acuerdo por el que la Mesa Directiva y la Junta de  Coordinación Política designan a la maestra Luisa Josefina Hernández y Lavalle  como la ganadora al Premio al Mérito Literario &quot;Rosario Castellanos&quot;  conforme a la convocatoria 2022.</p>
+<p align="justify">Para el Senado de la República y para quienes  integramos la Comisión de Cultura es un gusto reconocer a una de las  personalidades de mayor trayectoria en las artes y en las letras mexicanas.</p>
+<p align="justify">Nuestro enorme agradecimiento a quienes integraron  el jurado del premio en esta ocasión:</p>
+<p align="justify">Anel Pérez, en representación de la UNAM.</p>
+<p align="justify">Ezra Alcázar, del Fondo de Cultura Económica.</p>
+<p align="justify">A Juan Carlos Bonet, representante de la Secretaría  de Cultura.</p>
+<p align="justify">Y a José Luis Arnau, de la Cámara Nacional de la  Industria Editorial Mexicana.</p>
+<p align="justify">Quienes incluyeron, de manera unánime, a la maestra  Luisa Josefina Hernández y Lavalle en la terna de candidatos para recibir el  Premio al Mérito Literario &ldquo;Rosario Castellanos&rdquo;.</p>
+<p align="justify">La maestra Luisa Josefina se destacó en la  narrativa, la dramaturgia y, de manera muy especial, en la enseñanza del teatro  en México, y sin dejar de ser madre de familia se entregó a la creación en un  mundo dominado por los hombres, lo cual ella en lo personal no le impidió ni su  desarrollo, ni su éxito.</p>
+<p align="justify">No obstante, sí pensaba y comentaba: <em>&ldquo;En este  ambiente hay prejuicios contra las mujeres y machismo muy curioso. Un hombre  puede escribir muy mal, pero siempre se piensa que una mujer escribe peor.&rdquo;</em></p>
+<p align="justify">Luisa Josefina no se entregó a la polémica, se  dedicó a la creación y a la enseñanza del teatro como pocas personas, sustituyó  en la cátedra al muy destacado dramaturgo Rodolfo Usigli en la Universidad  Nacional, y ya ahí introdujo a los estudiantes al análisis del teatro a partir  de sus géneros, con bibliografía actualizada de su tiempo y con una visión más  universal, en una época en la que los estudiantes no tenían ni libros, ni  sabían hablar inglés, lo cual ella lamentaba.</p>
+<p align="justify">Su propuesta fue enseñar teoría dramática,  indispensable para los creadores del teatro, directores, actores e incluso para  los críticos. Además, estaba convencida de que ser maestra requería de un  talento especial que consistía en adaptarse a las peculiaridades del alumno, lo  cual era casi un acto de fe.</p>
+<p align="justify"> Sorprende que este año la merecedora del Premio al  Mérito Literario, que otorga el Senado de la República, sea para una creadora  contemporánea de la propia maestra &ldquo;Rosario Castellanos&rdquo;.</p>
+<p align="justify">Luisa Josefina, tan sólo tres años menor que Rosario,  veía en Castellanos a una de las personas más cultas de su generación. La  consideraba su amiga y sentía una gran admiración como mujer de letras; de  hecho, incluía a la pieza teatral un lugar sólido, de Rosario Castellanos, como una de las obras  valiosas, únicas e irremplazables de las letras mexicanas, hubo un  reconocimiento y respeto mutuo, ambas formaron parte de lo que los críticos  llamaron la Generación de los 50´s, la cual también comparten, entre otros, con  José Ibargüengoitia, Juan José Arreola, Emilio Carballido, con quien tenía una  relación muy cercana, y con Juan Rulfo, Sergio Magaña y Héctor Mendoza, con  quienes también mantenía relaciones y mantuvo relaciones durante lapsos  importantes de tiempo. </p>
+<p align="justify">Sin embargo, Luisa Josefina tuvo una cualidad muy especial  a diferencia de ellos, ella enlaza a las generaciones de los grandes autores  mexicanos del Siglo XX, pues se forma con personalidades como Usigli,  Ibargüengoitia, Celestino Gorostiza y Salvador Novo, e incluso realiza trabajos  para algunos de ellos. </p>
+<p align="justify">Posteriormente, también ella forma a grandes  personalidades del teatro de México, entre ellos Hugo Argüelles, Juan Tovar,  Armando Partida, Luis Moreno, Juan García Ponce, Oscar Villegas y Tomás  Espinosa. </p>
+<p align="justify">Luisa Josefina tuvo grandes reconocimientos: la  beca del Centro Mexicano de Escritores, la beca Rockefeller, el Premio Xavier  Villaurrutia, el Premio Nacional de Ciencias y Artes, y fue distinguida como  creadora emérita del Sistema Nacional de Creadores, entre otros. </p>
+<p align="justify">Algunos de ellos le permitieron viajar, otros  dedicarse de lleno a su obra que se compone alrededor de 50 textos dramáticos y  27 novelas, además de poesía, cuento, ensayo, traducciones del inglés, francés,  alemán e italiano. </p>
+<p align="justify">Gracias a su trabajo accedimos, por ejemplo, a la  obra de Bertolt Brecht, Jane Austen, Dylan Thomas, entre otros. </p>
+<p align="justify">Sus textos fueron llevados a escena en distintos  momentos por directores teatrales tan importantes como Seki Sano, el propio  Gorostiza, Fernando Wagner, Javier Rojas y Héctor Mendoza. </p>
+<p align="justify">Y también por directores contemporáneos, como  Rosenda Monteros y José Caballero, ellos han hecho y han llevado a escena a  esta maravillosa mujer en fechas recientes.</p>
+<p align="justify">No obstante que los últimos veinte años los pasó  alejada de los escenarios teatrales y las aulas, su nombre no fue olvidado; sin  embargo, nos ha advertido que la única forma en que la obra de un dramaturgo no  pase al olvido es que sea publicada y reeditada, lo cual tristemente no siempre  ocurre. </p>
+<p align="justify"><em>&ldquo;Sin duda, vivir del teatro es difícil, en generar  vivir de las artes, el arte no es para cobardes&rdquo;. Decía Luisa Josefina.</em></p>
+<p align="justify"><em>&ldquo;Las personas con miedo no pueden ser artistas, se  requiere arrojo, valentía y fuerza, sin ellas no hay obra&rdquo;. </em></p>
+<p align="justify">Si pensamos en los personajes de las obras de esta  destacada maestra de las letras mexicanas, vemos una mezcla de la sencillez y  la complejidad en las relaciones cotidianas. Desde las personas más cercanas de  su entorno familiar y amistoso llevados a la novela, como a personajes cargados  de símbolos, situaciones comunes, complejas y a veces irresueltas. </p>
+<p align="justify"> Definida por sí misma: &ldquo;¿Quién es Luisa Josefina  Hernández? Una escritora medianamente conocida, una maestra aceptable, una  madre de cuatro hijos y cinco nietos, nada más&rdquo;. </p>
+<p align="justify">Así se lo comentó a David Gaitán en sus memorias. </p>
+<p align="justify">Sin embargo, para nosotros su legado es el de una  gran maestra de teatro, formadora de muchas generaciones, una de las más  grandes creadoras del teatro de todos los tiempos en México, además de  novelista, ensayista y traductora, todo eso sin dejar de ser madre y orgullosamente  abuela. </p>
+<p align="justify">Luisa Josefina es una persona que nos mostró que  con trabajo y disciplina se puede desafiar la tradición, la costumbre, el  machismo y muchísimas cosas más. </p>
+<p align="justify">Inscrita en una familia de sastres confeccionó,  bordó y tejió su destino con hilos y letras para compartir con el público los  distintos mundos de su vida que la habitaron en su tiempo. </p>
+<p align="justify">Muchas gracias por tanto, maestra Luisa Josefina. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro  Armenta Mier: </strong>Muchas  gracias, Senadora Susana Harp.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108218'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108219'></a><p align="justify"><strong>ENTREGA DEL PREMIO AL MÉRITO LITERARIO &ldquo;ROSARIO CASTELLANOS&rdquo; 2022</strong><strong>, POST MORTEM, A LA CIUDADANA LUISA  JOSEFINA HERNÁNDEZ Y LAVALLE</strong></p>
+<p align="justify">Les solicito ponerse de pie para la entrega del  reconocimiento &ldquo;Rosario Castellanos&rdquo; correspondiente al año 2022.</p>
+<p align="center">(Entrega de reconocimiento)</p>
+<p align="justify">Sírvanse tomar asiento. </p>
+<p align="justify">Se concede el uso de la palabra a la señora Luisa  Rossi Hernández, hija de nuestra galardonada.</p>
+<p align="justify"><strong>La Ciudadana Luisa Rossi  Hernández: </strong>Buenas  tardes. </p>
+<p align="justify">En nombre de Luisa Josefina Hernández y Lavalle, mi  madre, quien falleciera el pasado 16 de enero, recibo la medalla y el busto que  hoy se otorga y que además lleva el nombre de una de sus más entrañables  amigas: Rosario Castellanos. </p>
+<p align="justify">Si bien para mí siempre ha sido motivo de honra ser  la hija de mi madre, el estar hoy aquí en su nombre no está exento de  nostalgia. </p>
+<p align="justify">Agradezco la distinción que el Senado de la  República tiene para con su obra, figura y legado. </p>
+<p align="justify">De ella aprendí los valores que a la fecha me han  configurado: respetar a todas las personas, rechazar cualquier gesto de  discriminación y abrazar la vocación al trabajo como eje de la propia  identidad. </p>
+<p align="justify">Durante décadas de amorosa convivencia, mi madre  aportó para mí, a través de su ejemplo y su palabra, el perfil de lo que hoy  significa la palabra &ldquo;libertad&rdquo;.</p>
+<p align="justify"> Ella fue una apasionada de las historias, gozaba  escribiéndolas, con su vasta obra da cuenta; pero también contándolas,  escuchándolas y accionando dentro de sus posibilidades para mejorar la vida del  resto.</p>
+<p align="justify">De ahí mi vocación profesional en el consultorio psicoanalítico. </p>
+<p align="justify">Mucho se ha escrito sobre ella, más aún a raíz de  su reciente fallecimiento. </p>
+<p align="justify">Su figura como artista y docente es tan grande que  su obra y legado perdurarán por siempre. </p>
+<p align="justify">De mi parte, desde la intimidad de mi infancia,  adolescencia y vida adulta, puedo decir que recordaré siempre su voluntad y  tiempo para escuchar, ayudarme a entender mejor el mundo y ser un soporte vital  para resolver adversidades. </p>
+<p align="justify">Con frecuencia se menciona que Luisa Josefina  Hernández y Lavalle no ha sido leída lo suficiente, comentario que me parece un  poco subjetivo.</p>
+<p align="justify">En parte se debe a que ella siempre huyó del elogio  en primera persona, su prioridad estuvo en el aula, la pluma y la familia. El  resto, para ella, venía después.</p>
+<p align="justify">De ahí que reconocimientos como el que hoy se le  hace al mérito literario, sean tan importantes dentro del compromiso que todo  país tiene para con las mentes que han decodificado el horizonte de metáforas y  referentes de sus ciudadanos.</p>
+<p align="justify">Luisa Josefina Hernández y Lavalle vivió 94 años  como una mujer de una sola pieza, incorruptible, trabajadora, guía luminosa  para las incontables generaciones que desfilaron frente a su pizarrón en la  Facultad de Filosofía y Letras de la Universidad Nacional Autónoma de México, y  amorosa con su familia hasta el último día.</p>
+<p align="justify">Recordémosla siempre a través de su obra, legado  invaluable de este país.</p>
+<p align="justify">Muchas gracias.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108219'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108220'></a><p align="justify"><strong>El Presidente Senador Alejandro  Armenta Mier: </strong>Honorable  Asamblea, estimados invitados, les pido se pongan de pie para otorgar un minuto  de silencio en memoria de la escritora Luisa Josefina Hernández y Lavalle.</p>
+<p align="justify"><strong>MINUTO DE SILENCIO</strong></p>
+<p align="center">(Todos de pie guardan un minuto  de silencio)</p>
+<p align="justify">&ldquo;¡Descanse en paz!&rdquo;</p>
+<p align="justify">Se les solicita mantenerse de pie a fin de entonar  el Himno Nacional Mexicano.</p>
+<p align="center">(Todos de pie entonan el Himno  Nacional)</p>
+<p align="justify">A nombre del Senado de la República expreso nuestro  agradecimiento por su presencia, señora Luisa Rossi Hernández, a su familia y a  nuestros destacados invitados e invitadas a esta sesión solemne.</p>
+<p align="justify">Solicito a las Senadoras y a los Senadores  integrantes de la comisión de cortesía se sirvan acompañar a nuestras invitadas  e invitados hasta las puertas de este recinto.</p>
+<p align="center">(La comisión cumple)</p>
+<p align="justify"> Damos  por finalizada la sesión solemne, solicitando permanezcan en sus lugares para  continuar con la sesión ordinaria, las y los Senadores.</p>
+<p align="justify">Muchas  gracias, señora Luisa Rossi.</p>
+<p align="justify">Se  levanta la sesión solemne.</p>
+<p align="center">(Se levantó la sesión a las 12:55 horas)<strong> </strong></p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108220'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

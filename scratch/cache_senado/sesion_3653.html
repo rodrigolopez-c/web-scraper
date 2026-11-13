@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 9</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 17 de Septiembre de 2025</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/2/PPO/PDF-WEB/PPO_No9_17-SEPTIEMBRE-2025_SOLEMNE.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='123019'></a><p align="center"><strong>PRESIDE  LA SENADORA</strong><br>
+  <strong>LAURA  ITZEL CASTILLO JUÁREZ</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>(11:37  horas) Con el quórum de la sesión ordinaria del día de hoy, y con fundamento en  lo dispuesto por el artículo 56, fracción III del Reglamento del Senado y el  Acuerdo de la Mesa Directiva, aprobado el 9 de septiembre pasado, iniciamos la  sesión solemne para recibir la visita de la Presidenta del Consejo Federal  Alemán, Bundesrat, Anke Rehlinger.</p>
+<p>Solicito  a las Senadoras y Senadores Alejandro Murat Hinojosa, Susana Zatarain García,  Karen Castrejón Trujillo, Anabell Ávalos Zempoalteca, Geovanna Bañuelos, Amalia  Dolores García Medina, Beatriz Robles Gutiérrez, Mario Humberto Vázquez Robles,  Sandra Luz Falcón Venegas y Cecilia Guadiana Mandujano, para que acudan a  recibir como comisión de cortesía a nuestras invitadas, porque se encuentra,  como ya hemos dicho, la señora Anke Rehlinger, y también la Diputada Kenia  López Rabadán, así como representantes del Poder Ejecutivo, como la  Subsecretaria de Relaciones Exteriores, que se encuentran en un salón contiguo. </p>
+<p>En  tanto, declararemos un receso. </p>
+<p align="center">(La  comisión cumple)</p>
+<p align="center">(RECESO)</p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Se  reanuda la sesión solemne.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a123019'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/xvyeLcv-_HY?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='123020'></a><p>La  Cámara de Senadores del Honorable Congreso de la Unión de los Estados Unidos  Mexicanos expresa la más cordial bienvenida a la señora Anke Rehlinger,  Presidenta del Consejo Federal Alemán Bundesrat. </p>
+<p>Es  un honor recibir su visita. </p>
+<p>También  agradecemos la presencia de la Diputada Kenia López Rabadán, Presidenta de la  Cámara de Diputados. </p>
+<p>Saludamos  también la asistencia de la licenciada María Teresa Mercado Pérez,  Subsecretaria de Relaciones Exteriores, de nuestro país. </p>
+<p> Asimismo,  damos la bienvenida al señor David Lindenman, Consejero Federal del Bundesrat y  Secretario de Estado, Jefe de la Cancillería del Sarre.</p>
+<p>A  la Doctora Ute Rettler, Secretaria General del Consejo Federal Bundesrat y  Secretaria de Estado. </p>
+<p>A  la señora Katrin Freisberg, Jefa de la Oficina de la Presidencia y de Protocolo  del Consejo Federal Bundesrat. </p>
+<p>Al  Doctor Deniz Alkan, Director para Europa, Asuntos Internacionales y Cooperación  Franco Alemana de la Cancillería del Sarre. </p>
+<p>Al  señor Clemens Von Goetze, Embajador Extraordinario y Plenipotenciario de la  República Federal de Alemania en México. </p>
+<p>Al  señor Francisco Quiroga Fernández, Embajador de México en la República Federal  de Alemania. </p>
+<p> Al licenciado Pedro Matar Orraca, Director  General de Coordinación Política de la Secretaría de Relaciones Exteriores. </p>
+<p>De  igual manera, saludamos a nuestro compañero el Senador Alejandro Murat  Hinojosa, Presidente de la Comisión de Relaciones Exteriores de este Senado de  la República. </p>
+<p>A  nuestros compañeros de la Mesa Directiva, la Senadora Verónica Noemí Camino  Farjat, Vicepresidenta. </p>
+<p>La  Senadora Imelda Sanmiguel Sánchez, Vicepresidenta también. </p>
+<p>El  Senador Jorge Carlos Ramírez Marín, Vicepresidente. </p>
+<p>La  Senadora Mariela Gutiérrez Escalante, Secretaria. </p>
+<p>Al  Senador Néstor Camarillo Medina, Secretario. </p>
+<p>La  Cámara de Senadores del Honorable Congreso de la Unión de los Estados Unidos  Mexicanos expresa la más cordial bienvenida a la señora Anke Rehlinger,  Presidenta del Bundesrat del Consejo Federal de la República Federal de  Alemania, al igual que a todos los invitados que hemos presentado el día de  hoy. </p>
+<p>A  cada uno de ellos les decimos que este Senado de la República, la casa del  federalismo, es su casa también. </p>
+<p>Como  ya hemos dado cuenta, nos acompañan diferentes personalidades. </p>
+<p>Está,  desde luego, la representación de la Cámara de Diputados. La representación,  desde luego, del Ejecutivo Federal, por parte de María Teresa Mercado Pérez. </p>
+<p>Y  consideramos que, desde luego, esta visita de este Cuerpo Ejecutivo Federado,  que es así la representación del Bundesrat como Cuerpo Federado de los 16  estados de la República Federal de Alemania, pues en el caso del Senado de la  República representa a las 32 entidades federativas de México. </p>
+<p>Desde  este compromiso con el federalismo, nuestro diálogo interparlamentario  permitirá intercambiar experiencias legislativas y fortalecer los vínculos  entre nuestros países. </p>
+<p>Agradecemos  ampliamente su visita, la cual atestigua el valor de esta cooperación. </p>
+<p> Con  fundamento en el Acuerdo aprobado por este Pleno, vamos a concederle la palabra  a la Presidenta del Bundesrat, el Consejo Federal de la República Federal de  Alemania, la señora Anke Rehlinger. </p>
+<p><strong>VISITA </strong><strong>DE  LA PRESIDENTA DEL CONSEJO FEDERAL ALEMÁN, ANKE REHLINGER</strong><strong> </strong></p>
+<p><strong>La  Presidenta del Consejo Federal de Alemania, Anke Rehlinger:</strong> (Interpretación) Estimada Presidenta del Senado. Damas y caballeros, Senadoras  y Senadores:</p>
+<p>En  particular, estimado Senador Murat, estimada Subsecretaria y estimado Director  General.</p>
+<p>Para  mí es un gran honor, para el Bundesrat, el Senado alemán que yo puedo  representar aquí como Presidenta, y quiero agradecerles explícitamente por  haberme dado esta oportunidad.</p>
+<p>Yo  creo que es un reconocimiento, es un símbolo de la unión entre nuestros dos  países y entre las dos cámaras. </p>
+<p>Nosotros  nos sentimos profundamente bienvenido en México y en el Senado. </p>
+<p>Llevo  tres días aquí en este extraordinario país, llegué volando sobre el Golfo de  México, que en algún momento lo aprendí en mis libros escolares y les puedo  asegurar.</p>
+<p>Y  les puedo seguir y les puedo asegurar que estoy impresionada. Estoy  impresionada de la solemnidad de sus fiestas patrias, que tuve la oportunidad  de experimentar. </p>
+<p>Estoy  impresionada del orgullo que ustedes y su gente, no solamente este día, pero  especialmente en este día nos han mostrado. </p>
+<p>Estoy  impresionada de la amabilidad de la gente que tuve la oportunidad de conocer  aquí, pero también en muchos otros lugares desde nuestra llegada a México. </p>
+<p>También  estoy impresionada de la riqueza de sus tradiciones y, por supuesto, de la  calidez con la que conviven y que también estoy viendo aquí en esta casa. </p>
+<p>Muchísimas  gracias por todo ello. Esto es algo que no se puede plasmar en contratos, es  algo que se tiene que vivir, yo lo pude vivir en representación de Alemania con  su presencia. </p>
+<p>Muchísimas  gracias por ello. </p>
+<p>Aunque  los Estados Unidos Mexicanos y Alemania están separados, están bastante lejos,  nos une más de lo que parece a primera vista. México y Alemania tienen  relaciones muy profundas desde hace dos siglos, tenemos tratados comerciales  desde la década de 1830 y desde 1878 también tenemos relaciones diplomáticas. </p>
+<p>Pero,  damas y caballeros, sobre todo son las relaciones humanas de nuestros países  que forman este lazo tan fuerte. </p>
+<p>El  viaje de investigación de Alexander von Humboldt en el año 1803 y 1804 es muy  conocido, son muchos alemanes que le siguieron y algunos de ellos se quedaron  por el amor por México o por el amor y el interés en México y también por el  amor a este país y a su gente. </p>
+<p> Y  muchos mexicanos encontraron su camino hacia Alemania para poder estudiar en mi  país, para trabajar allí o para vivir allí; casi 90 mil personas aprenden  alemán en México. </p>
+<p>Alemania  cuenta con cinco colegios alemanes y numerosos colegios asociados en este país,  más de tres mil estudiantes mexicanos estudian actualmente en Alemania,  beneficiándose de unas 500 cooperaciones académicas, y alrededor de 200 mil  mexicanas y mexicanos tienen raíces alemanas. </p>
+<p>Oficialmente  tenemos vínculos, también son tan importantes y variadas, porque nosotros  compartimos valores. </p>
+<p>Nosotros  creemos y estamos convencidos de la democracia y del estado de derecho, México  y Alemania son países federales que viven la unidad en la diversidad.</p>
+<p>México  fue el pionero, en 1943 dio un rango constitucional a la seguridad social;  Alemania lo siguió tanto en lo federalismo y en lo social. </p>
+<p>Y  desde 1949 también tenemos en nuestra Constitución, somos un Estado social y  federal. </p>
+<p>También  en la política exterior defendemos el multilateralismo en un mundo que cada vez  se siente más tensión, más tensiones geopolíticas. No queremos cambiar este  camino. </p>
+<p>Y  esto es el compromiso que tenemos como miembros del G20 de la OCDE. </p>
+<p>Y,  por supuesto, también nuestros países también se caracterizan a través del  compromiso con la igualdad de mujeres y hombres, ambos países mujeres y hombres  juegan un papel importante. </p>
+<p>Hoy  México tiene con su primera Presidenta, Claudia Sheinbaum, la primer Presidenta  mujer en su historia. </p>
+<p>Más  adelante vamos a conocer la Secretaría de Energía. </p>
+<p>Por  supuesto, me honra mucha de conocerla a usted, la Senadora Castillo, la  Presidenta nos recibió aquí. </p>
+<p>Por  supuesto, muchas gracias a todos ustedes, a los Senadores y Senadoras. </p>
+<p>Tengo  la impresión de que en cuanto a lo que es la igualdad de las mujeres, yo creo  que Alemania podemos aprender de ustedes, y voy a llevar este mensaje a  Alemania. </p>
+<p>Muchas  gracias por ello. </p>
+<p>Damas  y caballeros, lo que también nos une, y por ello ese es el enfoque de nuestra  visita son los grandes desafíos de nuestros tiempos, la transformación  tecnológica, económica, los desafíos políticos globales, la desigualdad social  y, por supuesto, el cambio climático. </p>
+<p>Como  sigue habiendo dudas acerca del impacto del ser humano sobre el cambio  climático, ya vemos las amenazas sobre la naturaleza y la vida económica. Eso  aplica para Europa y para todas las partes del mundo, pero también para México,  que también sufre de olas de calor, de sequías, de falta de agua y de los  fenómenos extremos. </p>
+<p>México,  sin embargo, cuenta con un gran potencial para resistir, para ser resiliente al  cambio climático. </p>
+<p> México  debido a sus ubicaciones y sus condiciones naturales puede convertirse en el  líder en el área de las energías renovables y de hidrógeno verde. </p>
+<p>Por  lo tanto, estoy sumamente contenta de que el gobierno mexicano a finales del  2024 haya emprendido una gran reforma energética. </p>
+<p>Y  yo pude participar en este viaje, pude platicar con el secretario de Energía,  estuve en Nuevo León, hablé con el gobernador, con el Senador García en su  momento. </p>
+<p>También  Alemania también ha emprendido este camino para reorientar su sistema  energético por razones climáticas, pero también por la invasión rusa a Ucrania;  también necesitábamos cambiar nuestra política energética.</p>
+<p>Nuestro  enfoque está sobre las energías renovables, el sol, el viento, el agua: estos  no nos mandan ninguna factura, y tampoco hay aranceles, y no hay bloqueos o  sanciones de provisión. </p>
+<p>En  mi propio estado, el Sarre, es una región industrial, el cambio de hacer este  cambio, llevar a cambio es mi tarea diaria como presidenta ministral. </p>
+<p>Nos  enfocamos en la exploradora, tenemos la industria automotriz, de acero. </p>
+<p>Nosotros  estamos más afectados que otros estados alemanes. </p>
+<p>Nuestra  respuesta es estar, de crear un futuro con valor y con confianza y no solamente  ser testigos. </p>
+<p>Y  actualmente estamos creando el nuestro, estamos apostamos con una decisión de  cuatro millones de euros en el acero, en el futuro queremos producir acero  verde con hidrógeno verde, de esta manera protegemos al clima y al mismo tiempo  protegemos nuestra ubicación como lugar de producción y los empleos. </p>
+<p>Hay  riesgos en el camino, pero sería aún peor de no hacer nada. </p>
+<p>Nosotros  apostamos por la innovación tecnológica y en el hidrógeno verde, confiamos en  que otros nos van a seguir, muchos nos van a seguir, quizás también con  hidrógeno verde proveniente de México. </p>
+<p>Mi  Presidencia en el Senado en Alemania está bajo el lema &ldquo;el futuro a través del  cambio&rdquo;, el ejemplo, el acero solamente es uno de muchos de lo que nos ocupa en  Alemania.</p>
+<p>Nosotros  tenemos que crear este cambio, apoyar el cambio activamente y tenemos que dar  una perspectiva a la ciudadanía, no debemos ocultar los riesgos del cambio,  pero si queremos ser exitosos, entonces esto solamente lo podemos hacer con  confianza y con energía. </p>
+<p>Entonces  también les quiero decir que justamente esa confianza, ese dinamismo es algo  que yo noté aquí en las pláticas que tuve aquí en México. </p>
+<p>Ustedes  quieren estar en las posiciones responsables y no quieren respetar con el statu  quo, sino quieren hacer lo que todo nos ha llevado a ser políticos y políticas,  es decir, de no aceptar las condiciones tal como están, sino día por día,  trabajar para que sea un poquito mejor en nuestros parlamentos, en la Cámara de  Diputados, en el Senado. </p>
+<p>Yo  creo que esto es algo que nos une a nivel mundial, y también comparado con  aquellos que no quieren mejorar las condiciones, sino que siempre se quejan y  que esto se ha convertido, sus quejas se han convertido en su plan político. </p>
+<p> Y  esto es algo donde nos tenemos que unir, ser fuertes y eso también es lo que  quiero demostrar con esta visita aquí en México. </p>
+<p>Este  futuro a través del cambio, eso también es algo que mueve a México, y México es  un país muy fuerte, económicamente hablando, es nuestro socio comercial más  importante en Latinoamérica. </p>
+<p>Lo  mismo aplica al revés, la mayoría de las relaciones comerciales en Europa es  México-Alemania, más de 2 mil empresas alemanas operan en México y generan más  de 300 mil empleos aquí en este país.</p>
+<p>Y,  por lo tanto, me acompaña una delegación económica y científica que me está  acompañando aquí a México y ambos enfrentamos los mismos desafíos, la política  arancelaria de los socios tradicionales, las negociaciones de los acuerdos de  libre comercio, especialmente entre México y la Unión Europea, la escasez de  personal calificado, tanto en México como en Alemania. </p>
+<p>Las  empresas alemanas en México están sumamente contentas, pero pues también  tuvimos algunas pláticas en estos últimos días y confían en el modelo alemán  comprobado de la formación dual y con éxito. </p>
+<p>México  en el año 2013 ha empezado con su propio modelo de la formación dual, basado en  el modelo alemán en todas las 32 entidades. </p>
+<p>Por  su parte, México apoya a Alemania enviando personal capacitado, y esto es algo  que sabemos apreciar. </p>
+<p>Y  es importante para mí de mencionar en todas las pláticas que esto es un tema  que vemos, que queremos tratar al mismo nivel, porque solamente si al final tenemos esta situación de ganar-ganar, donde  ambas partes pueden beneficiarse. </p>
+<p>Esto es lo que yo estoy describiendo ahorita como  modelo de éxito, desde el punto de vista alemán.</p>
+<p>Sólo en este momento puede ser sostenible a largo  plazo y estoy sumamente agradecida que en las pláticas con el secretario de  Salud y de Trabajo, que se mostró que nosotros extendemos la mano, que ustedes  extienden la mano y yo quiero tomar esta mano que ustedes nos han extendido  para trabajar en conjunto de cómo podemos expandir este modelo que para que,  tanto nosotros como ustedes al final pueden beneficiarse de este modelo, esto  es también un mensaje importante para mí.</p>
+<p>No se trata solamente de que un lado se pueda  aprovecharse, sino ambas partes, sino así de esta manera se pueden crear  alianzas sostenibles a largo plazo.</p>
+<p>México en este sentido es una solución para  nosotros cuando hablamos del personal capacitados, sobre todo, en el área de  enfermería, pero también en otras áreas, el turismo, también en la  construcción.</p>
+<p>Alemania firmó con México una negociación de  entendimiento y estamos muy agradecidos por ello.</p>
+<p>Personas muy capacitadas en el área de enfermería y  también en mi delegación hay una enfermera mexicana, que empezó hace dos años  en el Sarre y que puede platicar de que fue un paso muy valiente, pero también  muy enriquecedor y eso demuestra que realmente una situación o puede ser una  situación de ganar-ganar, para ambas partes.</p>
+<p> Estimada Presienta, estimados Senadores y  Senadoras:</p>
+<p>Yo como Presidenta del Bundesrat, vengo al Senado  Mexicano en una visita oficial, por supuesto quiero dar una muestra de nuestro  federalismo fuerte compartido. </p>
+<p>Estoy convencida de que, con nuestras estructuras  federales tanto en México como en Alemania, vamos a enfrentar los desafíos que  ya mencioné, pero también estoy convencida que, justamente, estas estructuras  federales que son las voces de las regiones, de las entidades en la legislación  que se necesita.</p>
+<p>Nosotros somos un puente importante entre la  política nacional y los seres humanos, los representantes locales, pero también  entre las personas y la diversidad en todo lo que se necesita en las diferentes  regiones para llevarlos a las capitales de nuestros países.</p>
+<p>En Alemania, después del fin de la horrible segunda  guerra mundial, hace exactamente 80 años, adoptamos el federalismo, lo anclamos  en nuestra Constitución de manera consciente. </p>
+<p>No queríamos evitar un sistema horizontal entre la  legislativa, judicativa y ejecutiva sino queríamos estar más vertical y después  de la reunificación, hace 35 años, queríamos compartir estos poderes entre los  estados alemanes. </p>
+<p>Todos tienen el carácter de Estado, tienen sus  parlamentos y sus gobiernos propios y yo, para cielo de cierta manera, yo soy  las dos cosas a la misma cosa, yo soy la ejecutiva en mi entidad y soy parte de  la legislación nacional cuando estoy en Berlín.</p>
+<p>Esto es un papel bastante especial que hemos  encontrado en nuestra Constitución. </p>
+<p>Los estados alemanes tienen esta función de  vinculación en nuestros Estados, en nuestras entidades, tenemos la  responsabilidad exclusiva, tenemos la competencia exclusiva en algunas áreas y  también en cuanto a la administración y la ejecución. </p>
+<p>Los miembros de estos gobiernos estatales están en  el Bundesrat, en el Senado y contribuyen de esta manera a la legislación  nacional.</p>
+<p>Estoy convencida, y esto lo hemos mostrado en los  últimos años, que la política a nivel nacional se mejora  con la contribución de las regiones y de las entidades.</p>
+<p>Y  yo creo que esa es una posición que podemos defender en nuestros parlamentos y  sospecho que ustedes también lo pueden suscribir aquí en el Senado. </p>
+<p>La  cooperación entre el gobierno federal y las entidades da este equilibrio si  queremos lograr nuestra meta constitucional, es decir, asegurar que en todas  partes de Alemania existen condiciones de vida parecidas, del mismo valor, y yo  creo que esto es una tarea a largo plazo. </p>
+<p>Probablemente  nunca llegará el día donde hemos llegado a nuestra finalidad que hemos logrado  estar en ese propósito, pero va a ser nuestro compromiso de siempre trabajar en  ello. Y ese también es nuestro compromiso con el federalismo y estoy convencida  que en México es muy parecido. </p>
+<p>De  crear, de trabajar en el cambio y de convencer a las personas de ello, eso  solamente funciona si incluimos a todo el mundo en este sistema federal y esto  funciona a través de aliados fuertes a nivel mundial. </p>
+<p>México  es un socio, un aliado para Alemania, nos une más de lo que nos separa. </p>
+<p> Confiamos  en nuestros valores comunes y en la cultura del encuentro. </p>
+<p>Hemos  tejido una red sólida de relaciones políticas y, sobre todo, de amistad. </p>
+<p>Y  justamente para fortalecerla, por ello, he venido el día de hoy. </p>
+<p>Estimadas  damas y caballeros: </p>
+<p>Nuestro  tiempo está lleno de desafíos y no podemos comprometer a nuestra ciudadanía que  esto no va a seguir así, pero quizá podemos mostrar el valor de prometer que,  si hacemos lo nuestro, que vamos a tener éxito, que podemos tener éxito y que  por lo menos nosotros desde los parlamentos que vamos a hacer todo lo posible  que nuestros compromisos y que nuestros esfuerzos lleven al éxito.</p>
+<p>Esto  se va a mostrar en números económicos. </p>
+<p>Se  va a mostrar, se va a reflejar en el sistema de salud, pero también quiero  decir explícitamente que también se va a reflejar en la participación. </p>
+<p>Acabo  de las citas anteriores mencioné que queremos asegurar que podemos tener  crecimiento económico, bienestar en nuestros países, pero yo creo que para que  un Estado pueda funcionar bien es la tarea más importante es que todo el mundo  puede beneficiarse del crecimiento y del bienestar, es una cuestión de la  justicia social y eso debe ser la motivación para nuestra labor. </p>
+<p>Son  tiempos desafiantes, pero es nuestro tiempo donde tenemos esta responsabilidad  a nivel regional y global, y si cargamos con esa responsabilidad en conjunto va  a ser más fácil para todos nosotros. </p>
+<p>Le  deseo a México, le deseo a nosotros, y a Alemania, un futuro próspero a través  del cambio.</p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Señora  Presidenta, Anke Rehlinger.</p>
+<p>Señora  diputada Kenia López Rabadán, Presidenta de la Cámara de Diputados.</p>
+<p>Subsecretaria  de Relaciones Exteriores, María Teresa Mercado Pérez.</p>
+<p>Señoras  y señores integrantes de la delegación de la República Federal de Alemania. </p>
+<p>Senadoras  y Senadores, México atraviesa por un profundo proceso de transformación; prueba  de ello es que, gracias a las políticas implementadas en los últimos años, más  de 13 millones de mexicanas y mexicanos han salido de la pobreza. Este logro  colectivo ha significado una mejora sustancial en sus condiciones de vida. </p>
+<p>Como  parte de estos esfuerzos, durante la LXVI Legislatura el Congreso ha aprobado  más de 20 reformas constitucionales y concretado más de 80 modificaciones  legales, con el fin de consolidar los derechos fundamentales para el desarrollo  de nuestro país. </p>
+<p>Vivimos,  además, un hecho trascendente para nuestra democracia. </p>
+<p>Por  primera vez en la historia de México nuestro Poder Ejecutivo es encabezado por  una mujer: la Presidenta Claudia Sheinbaum Pardo. </p>
+<p>Es  tiempo de mujeres, lo atestiguamos en este presídium y lo constatamos estos  días con actos icónicos muy importantes que refrendan nuestra soberanía y  nuestra independencia para seguir decidiendo nuestro futuro. </p>
+<p> El  pasado 15 de septiembre atestiguamos un acto que representó una transformación  simbólica del poder: La voz Presidencial, por primera vez femenina, resonó en  uno de los rituales cívicos más arraigados de nuestra nación. </p>
+<p>Estos  cambios resuenan con una realidad que admiramos de democracia consolidada como  la Alemana, para la cual el liderazgo de las mujeres ha sido parte esencial de  su historia democrática. </p>
+<p>La  conducción de la señora Presidenta Anke Rehlinger, al frente del Bundesrat, lo  acredita plenamente. </p>
+<p>Sin  duda, la trayectoria de nuestra distinguida invitada nos inspira a seguir  avanzando en la igualdad sustantiva en materia de derechos para las mujeres, la  cual recientemente con orgullo podemos decir que alcanzó rango constitucional  en nuestra patria. </p>
+<p>A  pesar de que muchas cosas han cambiado en nuestro país, se mantienen firmes los  lazos con naciones amigas como la República Alemana, con la que México sostiene  un vínculo sólido y fructífero desde los primeros años de nuestra vida  independiente. </p>
+<p>Bajo  los principios constitucionales que orientan nuestra política exterior,  reconocemos a la diplomacia parlamentaria como una vía para fortalecer aún más  dichas relaciones, las cuales tienen raíces profundas. </p>
+<p>Desde  que Alexander Von Humboldt despertó interés por la geografía y las riquezas  naturales y culturales de México, hasta la apertura del primer Consulado Alemán  en Veracruz en el año de 1825, nuestros intercambios se han fortalecido de  manera constante.</p>
+<p>Aunque  hubo momentos difíciles durante el siglo XX, desde el restablecimiento de  relaciones entre nuestros países hemos cultivado una asociación estratégica que  hoy se expresa a través de lazos comerciales, intercambio cultural y  cooperación académica. </p>
+<p>En  el terreno económico nuestra relación es especialmente dinámica, México es el  principal socio comercial de Alemania en América Latina y el Caribe, mientras  que el principal socio de México en Europa es Alemania. </p>
+<p>El  intercambio entre nuestras economías ha generado sólidas cadenas de valor,  particularmente en la industria automotriz, pilar de nuestras economías  exportadoras. </p>
+<p>Asimismo,  existe un gran potencial para profundizar nuestros lazos en la industria  farmacéutica, las energías renovables y la digitalización. </p>
+<p>En  este contexto, el Plan México representa una oportunidad clave para las  empresas e instituciones alemanas. Esta estrategia busca fortalecer nuestras  infraestructuras y promover la armonización regulatoria para favorecer la  integración regional en América del Norte. </p>
+<p>La  reunión anual México-Alemania que se llevará a cabo en noviembre de este año,  será una ocasión idónea para alinear acuerdos bilaterales dentro de este marco,  el cual ofrece un entorno inmejorable para la inversión, la innovación y el  desarrollo sostenible. </p>
+<p>Hacemos  votos para que logremos concretar oportunidades en sectores como la  electromovilidad, el desarrollo científico y tecnológico en materia de salud y  las energías renovables. </p>
+<p>Por  otro lado, el vínculo cultural y educativo entre nuestros países ha sido  fundamental. El Instituto Cultural de México en Berlín, inaugurado en el 2018,  es un espacio vivo de diálogo y difusión de nuestras artes y tradiciones. </p>
+<p> Por  su parte, los Institutos Goethe en México fomentan el intercambio cultural y la  enseñanza del idioma alemán. A ello se suman las alianzas universitarias y  programas de intercambio académico que fortalecen nuestro entendimiento mutuo. </p>
+<p>Desde  el Senado de la República, el mensaje para nuestros distinguidos invitados es  claro: Siempre contarán con México como un socio confiable, dispuesto a  estrechar lazos de amistad, respeto y colaboración. </p>
+<p>En  esta visión, el Bundesrat encontrará siempre, en la Cámara de Senadores, un  aliado para ampliar oportunidades de cooperación, en beneficio de nuestros  países. </p>
+<p>Agradecemos,  de nueva cuenta, su visita, Presidenta Rehlinger, así como la de la distinguida  delegación que la acompaña. Confiamos en que esta jornada se traducirá en  acuerdos concretos y en un itinerario compartido que fortalezca la amistad  entre México y Alemania, para generar beneficios recíprocos para nuestros  pueblos. </p>
+<p>Muchas  gracias. </p>
+<p>A  nombre del Senado de la República le agradezco su visita y la de su comitiva a  esta sesión solemne, su asistencia es muestra de la importancia en mantener los  contactos entre las instituciones parlamentarias. </p>
+<p>Muchas  gracias. </p>
+<p>¡Muchas  felicidades!</p>
+<p>Agradecemos  a la comisión de cortesía que sirva trasladar a los mismos acompañantes de esta  delegación alemana, directamente cuando ellos gusten salir del recinto. </p>
+<p>Muchas  gracias. </p>
+<p align="center">(La  comisión cumple)</p>
+<p align="center">(Fotografía  en el presídium)</p>
+<p>Se  levanta la sesión solemne.</p>
+<p align="center">(Se  levantó la sesión solemne a las 12:24 horas)</p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a123020'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

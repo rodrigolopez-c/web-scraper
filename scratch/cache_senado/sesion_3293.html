@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 17</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Olga María del Carmen Sánchez Cordero Dávila</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 21 de Octubre de 2021</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/1/PPO/PDF-WEB/PPO_No17_21-OCTUBRE_2021_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100772'></a><p align="center"><strong>PRESIDE LA SENADORA </strong><br>
+  <strong>OLGA MARÍA DEL CARMEN SÁNCHEZ CORDERO DÁVILA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>(12:04 horas) Con el quórum de nuestra sesión ordinaria del día de hoy,  y en cumplimiento al decreto por el que se crea el Reconocimiento &ldquo;Elvia  Carrillo Puerto&rdquo;, y al Acuerdo aprobado por este Pleno el pasado 19 de octubre.<br>
+  <br>
+  Se abre la sesión solemne del Senado de la República convocada para la  entrega correspondiente a los años 2020 y 2021.</p>
+<p align="justify">Solicito a la Secretaría dé lectura a las comisiones de cortesía que han  sido designadas para recibir y acompañar a nuestras distinguidas y distinguidos  invitados a esta sesión solemne. </p>
+<p align="justify">Por favor, señora Secretaria.</p>
+<p align="justify"><strong>La Secretaria Senadora Audelia Esthela Villareal Zavala: </strong>Doy lectura a las comisiones protocolarias de esta sesión solemne para  recibir a la Diputada Karla Yuritzi Almazán Burgos, Vicepresidenta de la Mesa  Directiva de la Cámara de Diputados, llamamos a la Senadora Freyda Marybel  Villegas Canché, a la Senadora Patricia Mercado, a la Senadora Elvia Marcela  Mora Arellano, al Senador Antonio García Conejo y al Senador José Antonio Cruz  Álvarez Lima. </p>
+<p align="justify">Para recibir a la ciudadana Laura Martínez Rodríguez, galardonada con el  premio &ldquo;Elvia Carrillo Puerto 2020&rdquo;, llamamos a la Senadora Martha Lucía Micher  Camarena, a la Senadora Patricia Mercado, a la Senadora María Graciela Gaitán  Díaz, a la Senadora Eunice Renata Romo Molina, al Senador Miguel Ángel Mancera  Espinosa y al Senador Héctor Vasconcelos. </p>
+<p align="justify">Para recibir a la ciudadana Daptnhe Cuevas Ortiz, galardonada con el con  el premio &ldquo;Elvia Carrillo Puerto 2021&rdquo;, llamamos a la Senadora Martha Lucía  Micher Camarena, a la Senadora Patricia Mercado, a la Senadora María Gricelda  Gaitán Díaz, a la Senadora Eunice Renata Romo Molina, al Senador Antonio García  Conejo y al Senador Héctor Vasconcelos. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Esta Presidenta solicita a las comisiones designadas acudan a las  puertas de este recinto a fin de cumplir con su cometido.</p>
+<p align="center">(Las comisiones cumplen)</p>
+<p align="justify">En tanto se declara un receso.</p>
+<p align="center">(RECESO)</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Se reanuda la sesión solemne. </p>
+<p align="justify">Con fundamento en el artículo 100 Bis de la Ley Orgánica del Congreso  General en los artículos 56 y 56 Bis del Reglamento del Senado, y en el Decreto  por el que se crea el Reconocimiento &ldquo;Elvia Carrillo Puerto&rdquo;, damos inicio a la  sesión solemne, a fin de realizar la entrega correspondiente a los años 2020 y  2021. </p>
+<p align="justify">Damos la bienvenida a nuestra galardonada, Laura Martínez Rodríguez,  galardonada con el premio &ldquo;Elvia Carrillo Puerto&rdquo; 2020.</p>
+<p align="justify">A nuestra galardonada con el premio &ldquo;Elvia Carrillo Puerto&rdquo; 2021, la  ciudadana Daptnhe Cuevas Ortiz. </p>
+<p align="justify">Agradezco la presencia de las invitadas que nos acompañan en esta sesión  solemne. </p>
+<p align="justify">A la doctora Nadine Gassman Zylbermann, Presidenta del Instituto  Nacional de las Mujeres. <br>
+  A Mirza Carrillo López, sobrina nieta de Elvia Carrillo Puerto. </p>
+<p align="justify">A la Diputada Ana Francis López Vaghen Patiño, Presidenta de la Comisión  de Igualdad de Género del Congreso de la Ciudad de México.</p>
+<p align="justify">A la licenciada Ingrid Gómez Saracíbar, Secretaria de las Mujeres de la  Ciudad de México. </p>
+<p align="justify">A Nashieli Ramírez Hernández, Presidenta de las Mujeres de la Ciudad de  México. </p>
+<p align="justify">María Eugenia Romero, Directora de Equidad de Género Ciudadanía y  Familia.</p>
+<p align="justify">Eréndira Cruz Villegas, Jefa de la Unidad de Asuntos Jurídicos de la  Secretaría de Cultura. </p>
+<p align="justify">Karla Micheel Salas Ramírez, Presidenta del Grupo de Acción por los  Derechos Humanos y la Justicia Social.</p>
+<p align="justify">Y a la feminista Raffaela Schiavon Ermani, hola, Raffaela Schiavon. </p>
+<p align="justify">A Belén Sanz Luque, representante de ONU Mujeres en México. </p>
+<p align="justify">Ya están aquí, la Vicepresidencia también, Verónica Martínez, aquí está  con nosotros y también está el Senador José Narro. </p>
+<p align="justify">Los Secretarios que nos acompañan son los Senadores Sergio Pérez,  Celeste Sánchez, Audelia Villarreal y Cora Cecilia Pinedo.</p>
+<p align="justify">Las Senadoras que nos acompañan en el presídium, también, Martha Lucía  Micher, Presidenta de la Comisión de Igualdad de Equidad y Género. </p>
+<p align="justify">Y también nuestra querida Senadora Patricia Mercado. </p>
+<p align="justify">Gracias. </p>
+<p align="justify">También ya llegó la Presidenta de Movilidad de la Ciudad de México. </p>
+<p align="justify">Gracias. </p>
+<p align="justify">En cumplimiento al numeral 1 del Resolutivo Tercero del Acuerdo  aprobado, solicito a la Secretaria Senadora, Verónica Noemí Camino Farjat, dé  lectura a la semblanza de Elvia Carrillo Puerto. </p>
+<p align="justify">Por favor, Secretaria. </p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con su venia, señora Presidenta. Y con la de todas ustedes. </p>
+<p align="justify">Elvia Carrillo Puerto nació en la ciudad de Motul, Yucatán, el 6 de  diciembre de 1878, cuando el cambio en la producción agrícola se tradujo en un  drástico y dramático incremento en la cantidad de peones acasillados en las  haciendas henequeneras, pasando de 20 mil peones, en 1880, hasta alcanzar 80  mil en 1910. </p>
+<p align="justify">Asimismo, había una gran desigualdad entre los hacendados y los peones  e, incluso, se perpetuaba un sistema de esclavitud.<br>
+  Elvia creció en una familia de clase media baja y asistió a una escuela  secular, rodeada de alumnos cuya lengua materna era la maya, fue ahí donde  logró el alto nivel de bilingüismo, de quién lo iba a decir, más tarde le  resultó de gran valía. </p>
+<p align="justify">A los 13 años, sí, 13 años, contrajo matrimonio con Vicente Pérez  Mendiburo, bastante mayor que ella, enviudando 10 años después, lo que le  otorgó una relativa libertad en una época en la que la edad de emancipación de  las mujeres era hasta los 31 años, al contrario de los hombres, a quienes se  les declaraba adultos a los 21. Durante esos años aprendió taquimecanografía,  fue maestra y activista. </p>
+<p align="justify">En 1912 crea la liga feminista campesina &ldquo;Rita Cetina Gutiérrez&rdquo; en  honor a su gran maestra y directora de la revista &ldquo;La Siempreviva&rdquo;, que pugnaba  por cuestiones de mejora en las condiciones de vida no sólo de las mujeres,  sino también de los grupos vulnerables que en aquel momento lo eran también los  peones, los campesinos. </p>
+<p align="justify">En 1915 conoce al general Salvador Alvarado, con el que coincide sobre  temas de socialismo y feminismo. Esto le facilita la posibilidad de sugerirle  la idea de organizar el primer congreso feminista de México, mismo que se llevó  a cabo en enero de 1916, en la ciudad de Mérida, Yucatán, en el teatro José  Peón Contreras, aún existe un debate sobre si ese congreso se hizo por la  convicción del general o fue por la necesidad de que se mantenga la política y  la gobernabilidad en el estado. </p>
+<p align="justify">Elvia Carrillo Puerto colaboró en la fundación de ligas de resistencia  campesina de mujeres, campañas de alfabetización y de higiene femenina, así  como control rudimentario de la natalidad. Desde hace cuánto esto es parte de  la agenda feminista, escribiendo sus propios discursos en maya y en español.</p>
+<p align="justify">Por sus ideas socialistas que venían de todos los libros que tuvo a la  mano, fue calificada por la prensa conservadora de &ldquo;sufragette bolchevique&rdquo; y  también llamada &ldquo;La Monja Roja del Mayab&rdquo;. </p>
+<p align="justify">Ocho años más tarde, en 1923, asiste al primer congreso feminista panamericano,  en ese entonces, en el Distrito Federal, en el que la delegación yucateca se  destacó como la más radical del Congreso, y aunque salieron derrotadas de sus  demandas sobre el control de la natalidad, lograron obtener el consenso a favor  de algo tan valioso para cada una de nosotras, el voto femenino. Desde ese  momento este fue el punto central de la demanda de todos los grupos de mujeres  feministas de México y, por qué no, también del resto de América Latina. </p>
+<p align="justify">Elvia Carrillo Puerto fue diputada estatal en una época en donde las  mujeres aún no podían votar y de eso únicamente existe registro en el Diario  Oficial, en ningún lugar más. </p>
+<p align="justify">Con la muerte de su hermano Felipe, los antiguos amigos de éste,  temiendo por la vida de ella, la obligan a salir exiliada de Yucatán hacia el  Distrito Federal, donde por supuesto no iba a parar su lucha, la continúo para  que fuera una realidad el voto femenino. </p>
+<p align="justify">De 1925, hasta los años 50&rsquo;s fundó un sinnúmero de ligas feministas,  recopiló cientos de miles de firmas a favor de la legalización del voto  femenino, tuvo entrevistas al respecto con todos los presidentes de la  República, hasta que en 1953 se otorgó este derecho para que las mujeres puedan  votar en las elecciones presidenciales. </p>
+<p align="justify">Fue una gran revolucionaria, una gran socialista, una feminista que  luchó durante toda su larga vida por los derechos de las mujeres, sobre todo el  de nuestra mujer indígena, de la campesina, de las obreras, de todas, hasta  incluso de las esposas maltratadas de los hacendados. <br>
+  Es por toda una vida de lucha que este Reconocimiento lleva su nombre, para darle el lugar que se merece en la historia de México y,  por supuesto, del feminismo universal. </p>
+<p align="justify">Y hoy su legado se ve reflejado en nuestras galardonadas Laura Martínez y  Daptnhe Cuevas. </p>
+<p align="justify">¡Enhorabuena.!</p>
+<p align="justify">Muchas gracias por su atención. </p>
+<p align="justify">Es cuanto, señora Presidenta. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100772'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100773'></a><p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Con fundamento en el  numeral 2, del Resolutivo Tercero, del Acuerdo aprobado, se concede el uso de  la palabra a la Senadora Malú Micher Camarena, a nombre de la Cámara de  Senadores, para referirse a la ciudadana Laura Martínez Rodríguez, galardonada  con el Premio &ldquo;Elvia Carrillo Puerto&rdquo; 2020.</p>
+<p align="justify">Por favor, Senadora. </p>
+<p align="justify"><strong>LECTURA DE SEMBLANZA DE  ELVIA CARRILLO PUERTO, A CARGO DE LA SENADORA VERÓNICA CAMINO FARJAT,  SECRETARIA DE LA MESA DIRECTIVA</strong></p>
+<p align="justify"><strong>La Senadora Martha Lucía Micher Camarena: </strong>Muy buenas tardes a todas y a todos. Gracias, señora Presidenta. Gracias  a todas las personas que nos acompañan en esta sesión solemne. </p>
+<p align="justify">Saludo con mucho afecto a quienes hoy integran este presídium de honor y,  de manera especial, a nuestras galardonadas Laura Martínez Rodríguez y a  Daptnhe Cuevas Ortiz, así como a nuestras insistencialistas invitadas, a  nuestras feministas, tanto a las aquí presentes como a quienes nos acompañan a  través de la Comisión del Canal del Congreso, de la transmisión, y gracias por  la presencia de todas y todos ustedes. </p>
+<p align="justify">Entregar el Reconocimiento &ldquo;Elvia Carrillo Puerto&rdquo; es siempre causa de  una gran emoción, tanto para las galardonadas como por la propia Elvia, que le  da su nombre. </p>
+<p align="justify">Es importante mencionarla y reconocerla, porque estamos además en el  marco conmemorativo de los 68 años del logro del derecho de las mujeres  mexicanas al voto, que fue una de las luchas incansables de nuestra querida  Elvia. </p>
+<p align="justify">Gracias a la señora Mirza Carrillo por su presencia, sobrina nieta de  nuestra querida Elvia Carrillo Puerto, y de su hija Laila Romero Carrillo, aquí  presentes. </p>
+<p align="justify">Gracias, de verdad. </p>
+<p align="justify">Si hay algo que distingue a Elvia Carrillo Puerto, es su voluntad de  alianza y su Reconocimiento constante a las mujeres. </p>
+<p align="justify">A lo largo de su trayectoria luchó en lo individual, como bien lo dijo la  Senadora Verónica, luchó, pero sobre todo fue fundadora de múltiples ligas de  las mujeres en las que éstas se agrupaban para exigir sus derechos. </p>
+<p align="justify">En 1912 organizó la Primera Liga Feminista Campesina y entre el 21 y el  23, en plena Revolución, instaló la Primera Liga Feminista Campesina y, por  supuesto, también 66 ligas en todo el estado, incluyendo la Liga Rita Cetina  Gutiérrez, con el objetivo de lograr la inclusión del debate sobre el voto  femenino en las Cámaras legislativas. <br>
+  <br>
+  Con este acto reconocía a la que fue su maestra, la gran educadora y  poetisa yucateca Rita Cetina Gutiérrez, fundadora de la Sociedad Feminista La  Siempreviva, que hizo llegar a cientos de maestras la revista del mismo nombre  y los escritos también de Mary Wollstonecraft, de Flora Tristán, de John  Stuart, de Susan Anthony, entre otras, a través de las cuales se exponen temas  como el amor libre, como el divorcio, imagínense en aquel momento hablar de  divorcio; de sexualidad femenina, del control de la natalidad, del aborto y de  la doble moral hacia las mujeres.</p>
+<p align="justify">La vida de Elvia estuvo marcada por su socialismo, pero también por su  feminismo asumido a lo largo de los años y a partir de las expectativas  vividas. </p>
+<p align="justify">Ella misma narraba, y lo menciono entre comillas &ldquo;en 1902 un brote del  dolor de mi vida, las miserias de mi hogar, hizo germinar en mi alma ideas vagas  y confusas; entendí la mirada y vi cuadros donde la mujer sufría no sólo  amarguras y miserias de explotaciones por parte del hombre, sino también  humillaciones y desvergüenzas. A medida que me fui instruyendo, llegué a saber  que aquellas ideas inspiradas por el dolor constituyen un cuerpo de doctrinas  llamado feminismo&rdquo;. </p>
+<p align="justify">Estos dos aspectos de su vida, nodales para que el Reconocimiento que el  Senado entrega a mujeres mexicanas destacadas por su trabajo a favor de los  derechos humanos de las mujeres, lleve su nombre.</p>
+<p align="justify">Y nuestras dos galardonadas del día de hoy hacen honor a esta tradición. </p>
+<p align="justify">Me voy a referir a Laura Martínez Rodríguez, ella es una luchadora  reconocida en todo el país por su trabajo a favor de las mujeres, niñas y  niños, víctimas de violencia sexual, una violencia de las más lacerantes, de  las más dolorosas, porque es un ataque a la integridad física, a la seguridad  ejercida, en la mayoría de los casos, por personas de la confianza de las niñas  y niños, por las personas que debieron cuidarlas, amarlas y protegerles. </p>
+<p align="justify">Laura, junto con su equipo Adivac, ha dedicado su vida con compromiso,  con convicción, con mucho dolor, pero con mucha empatía, valentía y capacidad  de acompañamiento a reparar los daños ocasionados por esta violencia, y sobre  todo, a exigir justicia, reparación de los daños y pugnar para que los  culpables sean juzgados y condenados para que los hechos de violencia no queden  en la impunidad. </p>
+<p align="justify">Cuántas burlas tuvo que recibir, cuántos rechazos tuvo que recibir Laura  precisamente de ministerios públicos y de juezas y jueces rechazando la  violencia sexual contra las niñas y los niños. Qué ignorancia de estas personas  durante muchos años. Lamentablemente, sigue sucediendo. </p>
+<p align="justify">Acompañar a niños y niñas de violencia sexual, víctimas de violencia  sexual, como lo hace Laura Martínez y todo su equipo, es un trabajo difícil que  sólo es posible realizar guiadas por una ética feminista de la justicia.</p>
+<p align="justify">Acompañar a víctimas de violencia sexual es ver el dolor, la  incomprensión, el miedo, la soledad en sus ojos y en los ojos de sus madres, de  sus familiares, que son quienes por lo general las y los acompañan en el arduo  camino de exigir justicia y sanar las heridas. </p>
+<p align="justify">Acompañar a niñas y niños víctimas de violencia sexual no es discurso, es  acción feminista dura y pura, porque es convivir cotidianamente con el hecho de  que vivimos en una sociedad, en una cultura que les violenta en todos los  espacios de vida: en las escuelas, en los espacios, en los jardines infantiles,  en las iglesias, en los espacios deportivos, en las universidades. Y enfrentar  ese dolor, acompañar el dolor y defender a las víctimas de este dolor es uno de  los trabajos más duros que se pudo realizar. <br>
+  <br>
+  Por ello, querida Laura, todo nuestro Reconocimiento a ti y a tu trabajo,  le pese a quien le pese, a tu vocación de acompañamiento, a tu equipo de  trabajo, a tu lucha diaria, porque los niños, niñas y mujeres víctimas de  violencia sexual alcancen la justicia que se merecen. </p>
+<p align="justify">A Laura Martínez Rodríguez le debemos las feministas el Reconocimiento  como una gran luchadora y, al mismo tiempo, nos reconocemos en ella, porque eso  es reconocer a las mujeres, vernos en ellas, reconocerlas. </p>
+<p align="justify">Y en este Senado lo que hacemos es reconocer su trabajo y no poner por  enfrente los lazos que tenemos con los partidos. </p>
+<p align="justify">Este es un acto feminista, amoroso y, por lo tanto, político. </p>
+<p align="justify">Reconocemos en Laura y reconocemos en Daptnhe, porque nos reconocemos en  Elvia.</p>
+<p align="justify">Por eso, reconocernos es para las feministas un acto ético de valorar a  una mujer, algo que en las sociedades patriarcales está prohibido porque lo  impera la división de las mujeres, porque quieren una enemistad constante,  porque quiere la descalificación cotidiana ese patriarcado que permea en la  vida de muchas mujeres en la política. </p>
+<p align="justify">Nosotras decimos no a esta división entre las mujeres impuesta por un  sistema misógino y machista. Y decimos &ldquo;sí&rdquo; a los miles, a  millones de mujeres que en México y el mundo luchan por la construcción de un  mundo igualitario, de un mundo donde las mujeres gocemos de libertad, de  seguridad, de un mundo en el que podamos decidir sobre nuestros cuerpos, sobre  nuestras vidas, sobre el derecho a decidir la libertad y la maternidad libre y  responsable. </p>
+<p align="justify">Un mundo que soñó Elvia y que nuestras galardonadas ayudan a construir  cada día con su trabajo sin tregua a favor de las niñas y las mujeres, y por  ello las reconocemos y nos reconocemos en ellas, en ellas vemos nuestros  anhelos y nuestros sueños, nuestro trabajo, nuestro dolor, nuestras esperanzas  y nuestros afanes por construir un mundo feminista.</p>
+<p align="justify">Sabemos que la garantía plena de nuestros derechos humanos es una tarea  que hoy no está acabada y eso es justamente lo que nos da la fuerza necesaria  para seguir siendo feministas insistencialistas.</p>
+<p align="justify">Seguiremos insistiendo, no lo duden, porque nosotras defendemos,  Senadoras y Senadores, mujeres y hombres que hoy nos acompañan, lo que nosotros  defendemos no son temas banales, lo que nosotras defendemos son los derechos de  las mujeres reales, las que están frente a nosotras, las niñas, niños, de  nuestros familiares, de las adolescentes reales y nos negamos a convivir y a no  convertir estas realidades en muchos lazos lacerantes en simples temas de  discusión o en dilemas morales o de partidos.</p>
+<p align="justify">Por ello necesitamos reconocer a Elvia Carrillo Puerto año tras año y  cada año a una mujer mexicana, a dos mujeres mexicanas que dedican su vida a la  defensa y garantía de los derechos humanos de todas nosotras. Así debe ser,  entre todos los partidos políticos debemos reconocer a las mujeres, a las  feministas, así debemos hacerlo.</p>
+<p align="justify">Esta es la diferencia fundamental del feminismo que representa Laura  Martínez Rodríguez, es un feminismo que nos pone en el centro a todas, que  exige a todas y que lucha por todas.</p>
+<p align="justify">Por ello, sostengo una vez más que necesitamos defender nuestra agenda  feminista construida a través de los años por miles de mujeres en México y en  el mundo, y que tiene en el centro el Reconocimiento mutuo de nuestras  experiencias y nuestros saberes. De otra manera no podríamos llamarnos  feministas.<br>
+  <br>
+  Nuestra agenda es eso, es reconocer a las mujeres, por eso tenemos una  agenda feminista, que es una agenda producto de procesos de análisis y  reflexión, que recoge los intereses y necesidades de las mujeres, y es una  agenda que plantea acciones concretas para las mujeres, pero que tiene una  visión amplia para la sociedad.</p>
+<p align="justify">Por último, quiero decir que nuestra agenda posiciona los derechos  humanos de las mujeres y las niñas en el corazón de la política de nuestro  país, porque no podremos decirnos feministas si no construimos una democracia  desde las mujeres. No podremos decir que somos feministas si no construimos un  país justo, un país libre, un país soberano, mientras millones de mujeres y  niñas vivan en la injusticia, en los cautiverios, en la inseguridad, en las  violencias, en la subordinación, en la opresión, en la pobreza y en la miseria.</p>
+<p align="justify">Y, por ello: </p>
+<p align="justify">&ldquo;¡Larga vida a Elvia Carrillo Puerto!&rdquo;</p>
+<p align="justify">&ldquo;¡Larga vida a Laura Martínez Rodríguez!&rdquo; </p>
+<p align="justify">&ldquo;¡Larga vida a Daptnhe Cuevas Ortiz!&rdquo;</p>
+<p align="justify">&ldquo;¡Larga vida a las feministas!&rdquo; </p>
+<p align="justify">&ldquo;¡Y larga vida a las mariposas!&rdquo;</p>
+<p align="justify">Muchas gracias.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100773'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100774'></a><p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Les solicito ponerse de pie para el acto de entrega a la ciudadana Laura  Martínez Rodríguez del Reconocimiento &ldquo;Elvia Carrillo Puerto&rdquo; y del diploma  correspondiente al año 2020.</p>
+<p align="justify"><strong>ENTREGA DEL RECONOCIMIENTO  &ldquo;ELVIA CARRILLO PUERTO&rdquo; 2020 A LA CIUDADANA LAURA MARTÍNEZ RODRÍGUEZ</strong></p>
+<p align="center">(Se entrega Reconocimiento y diploma)</p>
+<p align="justify">Quiero leer el diploma que se le está entregando a nuestra homenajeada,  Laura Martínez Rodríguez, y que dice así:</p>
+<p align="justify">Cámara de Senadores. Ciudad de México. Estados Unidos Mexicanos. </p>
+<p align="justify">&ldquo;En el marco del Día Internacional de la Mujer, el Senado de la  República le otorga el Reconocimiento &ldquo;Elvia Carrillo Puerto&rdquo; 2020 a Laura  Martínez Rodríguez, en honor a su destacada labor en el Reconocimiento, defensa  y ejercicio de los derechos de las mujeres, y de la igualdad de género en  nuestro país&rdquo;</p>
+<p align="justify">Ciudad de México, octubre de 2021.</p>
+<p align="justify">Presidenta de la Mesa Directiva de la Cámara de Senadores.</p>
+<p align="justify">Coordinador de la Junta de Coordinación Política, Ricardo Monreal.</p>
+<p align="justify">Y Senadora Martha Lucía Micher Camarena, Presidenta de la Comisión de  Igualdad de Género.&rdquo;</p>
+<p align="justify">Muchas felicidades.</p>
+<p align="justify">Sírvanse tomar asiento, por favor.<br>
+  <br>
+  Como lo dispone el Numeral Tercero del Resolutivo Tercero del Acuerdo aprobado  para normar esta sesión solemne, hará uso de la tribuna la ciudadana Laura  Martínez Rodríguez y, en consecuencia, se le concede la palabra.</p>
+<p align="justify"><strong>La Ciudadana Laura Martínez Rodríguez:</strong> Queridas todas, las  que estamos aquí físicamente reunidas, las que nos precedieron, las que nos  acompañan a la distancia, las que se fueron y las que vendrán.</p>
+<p align="justify">Entrañable compañera Daptnhe, quien hoy también recibe el Reconocimiento  &ldquo;Elvia Carrillo Puerto&rdquo; 2021.</p>
+<p align="justify">Integrantes de grupos parlamentarios.</p>
+<p align="justify">Entrañables compañeras de sociedad civil.</p>
+<p align="justify">Hermana adorada. </p>
+<p align="justify">Sobre Elvia Carrillo Puerto su legado va más allá de todo lo que yo  podría decir aquí, feminista, revolucionaria, luchadora social, oradora,  política, todo ello en una época en la que era más difícil aún remar contra  corriente.</p>
+<p align="justify">Sobre el Reconocimiento que lleva su nombre también sería mucho lo que  yo quisiera decir, sin embargo, hoy sólo me dedico a apropiármelo y a  apropiárnoslo todas, todas nosotras, todas las Adivacas, todas las activistas,  todas las militantes, todas que refundamos nuestra vida, nuestra lucha,  fundando nuestra lucha desde la sociedad civil organizada y, al mismo tiempo,  que me apropio de la Medalla &ldquo;Elvia Carrillo Puerto&rdquo;.</p>
+<p align="justify">Lo entrego a las otras, a las otras, nosotras, que, con sus propias  luchas, con sus vidas y sus cuerpos, con sus historias y sus voces hacen de  este nosotras una causa con efecto, una revolución en este momento.</p>
+<p align="justify">A partir de este Reconocimiento puedo en esta tribuna hacer presente una  lucha colectiva de tanta injusticia de tantas mujeres, de sus hijas, de sus  hijos.</p>
+<p align="justify">Sólo por citar algunos casos dentro de los 30 mil y más casos que hemos  acompañado, por ejemplo, la señora Mariel, que se defiende de la impunidad  penal y del encubrimiento de la Fiscalía de la Ciudad de México para favorecer  a un exmagistrado que violó a sus hijas y que, afortunadamente, lo logramos,  compañeras, logramos que ya no lo ratificaran.</p>
+<p align="justify">La señora Mireya, caso emblemático, todas la recodamos, mujer que dedicó  y que decidió culminar su vida, la de su hijo y la de sus dos hijas gemelas,  antes de rendirse a una sentencia por alienación parental que le ordenaba  entregar a su hijo y a sus hijas a un violador, se derogó; se derogó el  artículo de la alienación penal en la Ciudad de México, pero lo siguen usando  en el Tribunal, y lo tenemos que lograr.</p>
+<p align="justify">Senadora, lo tenemos que lograr, tenemos que hacer que sea en toda la  República que se derogue porque es un, es una palabra que ni siquiera la quiero  nombrar, ese término ni siquiera existe en el diccionario de enfermedades  mentales, es un término acuñado por un psiquiatra misógino que violó a su hijo  y que se agarró de todos los indicadores de violencia sexual para quedarse con  su hijo, y sí se quedó, y el joven se suicidó a los 14 años por estar con su  papá.</p>
+<p align="justify">No queremos más suicidio de jóvenes y de hombres y mujeres, niñas,  adolescentes. Con sus historias y sus voces, la señora Liliana, &ldquo;Grea&rdquo;, que le  quitaron a su hijo y está con el violador, el niño ya tiene rasgos de psicosis  y nadie lo ve.<br>
+  <br>
+  Sandy, Victoria, que Victoria ganó un juicio contra su esposo. Muchas  más que están luchando contra un sistema judicial patriarcal, corrupto,  violador de derechos.</p>
+<p align="justify">Tantas cosas que quisiera decir, pero vacías de sentido quedan las  palabras para nombrarlas, insignificantes resultan las cifras para recuperar  las 30 mil y muchas más, miles de historias de vidas que han transitado  infructuosamente por la violencia del &ldquo;otro&rdquo;, así en masculino, del &ldquo;otro&rdquo;.</p>
+<p align="justify">A la osadía de recuperar la voz y liberar el cuerpo, como lo hizo Elvia  Carrillo Puerto.</p>
+<p align="justify">Senadoras y Senadores, cómo reflejar el dolor, la fuerza, el valor, el  compromiso, la rebeldía y la resiliencia de todas aquellas personas de entre 30  y 90 años que al confiar en ellas mismas y en la justicia nos dan lecciones de  vida con su testimonio de lucha contra la impunidad, la desigualdad y la  injusticia.</p>
+<p align="justify">Cómo traerlas a ellas, ahora aquí a todas ellas.</p>
+<p align="justify">Senadoras y Senadores, ustedes se encuentran en este recinto para hacer  valer nuestros derechos y trabajar para la ciudadanía porque ustedes fueron  votadas y votados y seleccionados para representarnos como ciudadanas y  ciudadanos en igualdad de derechos.</p>
+<p align="justify">Ayúdennos, ayúdennos a evidenciar la falta de voluntad del Poder  Judicial para dejar de usar el término de alienación parental y para hacer  valer el principio del interés superior de la infancia y la Ley General por una  Vida Libre de Violencia para las Mujeres en el acceso a la justicia.</p>
+<p align="justify">El más justo y real, legítimo de los Reconocimientos que surge desde mis  vísceras y desde mi pensamiento para todas aquellas mujeres, cuyas vidas, ni la  igualdad, ni los derechos alcanzaron a hacer justicia, despenalización del  aborto.</p>
+<p align="justify">Todas aquellas nosotras, en cuyas vidas nos reconocemos por levantar la  voz para romper el silencio, este año, 20 aniversario del asesinato de Digna  Ochoa, y 20 aniversario de la sentencia del campo algodonero.</p>
+<p align="justify">Todas aquellas nosotras, en cuyas muertes perdemos como sociedad vida y  sentido del feminicidio.</p>
+<p align="justify">Finalmente, la impunidad promovida por las instituciones nos ha obligado  a acumular indignación, rabia y rebeldía por las luchas de todas las mujeres,  por sus vidas y las de sus hijos e hijas, detrás de ellas venimos todas  aquellas nosotras que creemos que otro mundo es posible, un mundo donde quepan  todos los derechos humanos de las mujeres enarbolados siempre por un ejercicio  de ciudadanía y cobijado bajo la sociedad civil organizada.</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Por favor, tomen asiento. </p>
+<p align="justify">Damos la más  cordial bienvenida a la Diputada Karla Yuritzi Almazán Burgos, Vicepresidenta de  la Mesa Directiva de la Cámara de Diputados, quien asiste con la representación  de nuestra Colegisladora. </p>
+<p align="justify">Gracias por  acompañarnos en esta sesión solemne. <br>
+  <br>
+  Ahora realizaremos  la entrega del Reconocimiento &ldquo;Elvia Carrillo Puerto&rdquo;, correspondiente al año  2021, a la ciudadana Daptnhe Cuevas Ortiz. </p>
+<p align="justify">Con fundamento en  el Artículo Segundo del Resolutivo Tercero del Acuerdo aprobado, se concede el  uso de la palabra a la Senadora Patricia Mercado, a nombre de la Cámara de  Senadores, para referirse a la ciudadana Daptnhe Cuevas Ortiz, galardonada con  el premio &ldquo;Elvia Carillo Puerto&rdquo; 2021. </p>
+<p align="justify">Por favor, Senadora  Patricia Mercado.</p>
+<p align="justify"><strong>La Senadora Patricia  Mercado:</strong> Bueno, primero, gracias, Laura Martínez, creo que este Senado con tu  discurso se ha dado cuenta de tu historia, de tu compromiso y de la altura para  merecer este Reconocimiento &ldquo;Elvia Carrillo Puerto&rdquo;. De verdad, muchas gracias,  nos comprometes con tus palabras. </p>
+<p align="justify">Saludo a la Presidenta  de la Mesa Directiva, la Senadora Olga Sánchez Cordero. </p>
+<p align="justify">Gracias, señora Presidenta. </p>
+<p align="justify">A la Presidenta de  la Comisión Para la Igualdad de Género, Martha Lucía Micher Camarena. </p>
+<p align="justify">Malú, te reconozco,  te reconozco en todo lo que vales, de verdad. </p>
+<p align="justify">Saludo también a  quienes acompañan a Daptnhe Cuevas y a Laura Martínez, todas compañeras de  causas y de luchas. </p>
+<p align="justify">Bienvenidas al  Senado de la República. </p>
+<p align="justify">Allá arriba y aquí  abajo.</p>
+<p align="justify">Y un especial  saludo a la sobrina nieta de Elvia Carrillo Puerto, la señora Mirza Carrillo  López. Muy bienvenida.</p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify">En 2013, el  Reconocimiento &ldquo;Elvia Carrillo Puerto&rdquo; fue creado, cito, <em>&ldquo;para reconocer y premiar a las mujeres que hayan incidido y destacado  en la lucha social, cultural, política y económica en favor de los derechos  humanos de las mujeres y de la igualdad de género&rdquo;.</em></p>
+<p align="justify">Hoy reconocemos a  dos mujeres, que precisamente esto representan, a Laura Martínez Rodríguez, a  quien ya le otorgamos la presea, y a Daptnhe Cuevas Ortiz, directora ejecutiva  de la Organización Civil Consorcio para el Diálogo Parlamentario y le Equidad,  Asociación Civil a quien corresponde la presea 2021. </p>
+<p align="justify">Bienvenida, querida  Daptnhe. </p>
+<p align="justify">Me siento honrada  de que la Mesa Directiva me ha asignado para dar el mensaje de Reconocimiento a  Daptnhe Cuevas, quien recupera la herencia de la profesora yucateca, una de las  precursoras de la lucha por los derechos políticos de las mujeres. </p>
+<p align="justify">Este Reconocimiento  pone de relieve el valor de las libertades y derechos de las mujeres en una  democracia, lleva el nombre de Elvia Carillo Puerto, la sufragista, la  defensora del derecho de las mujeres a la educación y a la tierra, al control  natal, a la libertad sexual, quien creció en Motul escuchando las voces de las mujeres  campesinas, obreras mayas y supo, muy pronto, donde se jugaban sus causas y sus  lealtades, en una sociedad lacerada por la desigualdad. <br>
+  <br>
+  A Elvia Carrillo  Puerto la lealtad a las causas elegidas le exigía escuchar las realidades de la  vida cotidiana de las mujeres y actuar en consecuencias. </p>
+<p align="justify">La trayectoria de  Daptnhe Cuevas se distingue también por su perseverancia, talento, valentía  para luchar por los derechos humanos de las mujeres en el ámbito local,  nacional y muy destacadamente en debates internacionales. </p>
+<p align="justify">Daptnhe es una  psicóloga y activista con una sólida formación académica y vital, que ha  llegado más allá de nuestras fronteras y el reflujo de estos esfuerzos trajo en  los años recientes una marea verde y violeta que sacudió la conciencia nacional.</p>
+<p align="justify">Por eso es que  especialmente hoy una presea como esta no es un instrumento para impulsar  victorias simbólicas o reconocer a quienes imaginan utopías. Esta medalla es  hoy y especialmente hoy, un Reconocimiento por logros concretos, logros que  culminan al reconocer el derecho a decidir de las mujeres con la  despenalización del aborto y reconocer así la autonomía sobre nuestro cuerpo.</p>
+<p align="justify">La agenda feminista  revoluciona y crece gracias a millones de mujeres que han puesto, como nunca  antes, las causas de la igualdad de género en la mesa de debate, en las calles,  en los medios de comunicación, en los parlamentos, en los tribunales, en los  hogares, en las universidades. Sus reivindicaciones y propuestas están  provocando un gran cambio cultural, que transforma las cartografías mentales ya  emocionales. </p>
+<p align="justify">Los feminismos nos  convocan a un cuestionamiento que se trabaja hacia adentro de cada persona y de  cada hogar y que tiene repercusiones en la colectividad. </p>
+<p align="justify">Cuando vemos a  miles de jóvenes y adultas tomar las calles, las redes sociales, las distintas  tribunas nos animan a actuar, desde su pluralidad, desde la riqueza de la  interseccionalidad que se ha ido reconociendo en las últimas décadas nos  convocan a asumir responsabilidades y por eso hemos seleccionado a una  feminista, para la cual las convicciones éticas y políticas implican reconocer  el derecho de otras, de otros, de otres para asociarse y expresarse. </p>
+<p align="justify">Daptnhe, representa  no solo una causa, representa aquellas mujeres que ya hacían incidencia en los  congresos y los gobiernos a favor de los derechos de las mujeres mucho antes  que tuviéramos estas composiciones paritarias; su participación en  organizaciones feministas y como consejera en instituciones públicas y  organismos internacionales, prueba que el diálogo es un elemento indispensable  para el avance democrático y ella ha sido capaz, en su historia de vida, de  construir, sin renunciar a su contundencia, sin disipar su núcleo de valores. </p>
+<p align="justify">Daptnhe, es un  ejemplo de que se puede pasar de la calle a las oficinas, del activismo hasta  la toma de decisiones públicas con toda congruencia. </p>
+<p align="justify">Visualizar un  posible acuerdo no es fácil en contextos de polarización, de adjetivos, de  descalificaciones, pero Daptnhe, con su pasión, su inteligencia y gran  conocimiento encuentra siempre los caminos y las propuestas viables. </p>
+<p align="justify">Para mí es  importante decirte, Daptnhe, que en el Senado te escuchamos a ti y a quienes te  acompañan. </p>
+<p align="justify">A ti, Laura  Martínez, feministas amigas de toda la vida y no nos limitaremos a escucharlas,  el compromiso se prueba en los actos, nos reconocemos en sus urgencias, leemos  los nombres de nuestras mujeres amadas. </p>
+<p align="justify">Leemos los nombres  de nuestras mujeres amadas víctimas de feminicidio y violencia misógina  escritos en sus pancartas, las de ustedes y las tuyas, Daptnhe. Constatamos sus  pañuelos verdes y estamos cambiando todo aquello que nos margina.<br>
+  <br>
+  Hace tiempo, cuando asumirse feminista era  considerado indecoroso, un adversario político se refirió a algunas de nosotras  con la frase: &ldquo;Esas locas son feministas confesas&rdquo;. </p>
+<p align="justify">El intento de descalificación se sumó a nuestra  ludoteca privada, Daptnhe es, efectivamente, una feminista confesa, para  quienes los derechos de las mujeres incluyen innecesariamente, &ldquo;el confesas&rdquo;,  como lo fue nuestra querida compañera María Elena Chapa, a quien extrañamos  tanto y quien recibió la presea en el 2018. </p>
+<p align="justify">Confesas como las  jóvenes que toman las redes contextos como &ldquo;Mi primer acoso y el Me too&rdquo;, ellas  que ya no están dispuestas a dejarse callar. </p>
+<p align="justify">En estos tiempos en  que el Movimiento Feminista con todas sus diversidades y diferencias es tan  potente, tan presente, reconocer a una feminista como Daptnhe es un mensaje  para todas aquellas jóvenes con la vocación de transitar de un feminismo  activista a uno que no renuncia a la movilización, pero que logra incidir en  los lugares y momentos decisorios. </p>
+<p align="justify">¡Felicidades  Daptnhe!</p>
+<p align="justify">Gracias por tu  talento, por contribuir a este movimiento histórico que es el feminismo. </p>
+<p align="justify">Permíteme  aprovechar tu Reconocimiento para hablarle a mis compañeros Senadores, citando  las tan prudentes y certeras palabras de la pionera &ldquo;Elvia Carrillo Puerto&rdquo;. </p>
+<p align="justify">Cito: &ldquo;No  reprochamos a los hombres el alejamiento en que nos han tenido, consecuencia de  los prejuicios rancios y de los viejos moldes en que nuestras costumbres se  forjaron, pero tiempo es ya que exijamos a los hombres que experimenten métodos  nuevos, es tiempo de exigírselos a ellos y nosotras a través de ti,  reconocernos&rdquo;.</p>
+<p align="justify">Muchas gracias. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100774'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100775'></a><p align="justify"><strong>ENTREGA DEL  RECONOCIMIENTO &ldquo;ELVIA CARRILLO PUERTO&rdquo; 2021 A LA </strong><strong>CIUDADANA</strong><strong> DAPTNHE CUEVAS ORTIZ</strong></p>
+<p align="justify"><strong>La Presidenta  Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Solicito permanecer  de pie para el acto de entrega a la ciudadana Daptnhe Cuevas Ortiz, el Reconocimiento  &ldquo;Elvia Carrillo Puerto&rdquo; y del diploma correspondiente al año 2021. </p>
+<p align="center">(Se hace entrega Reconocimiento  y diploma)</p>
+<p align="justify">Ahora hacemos la  entrega del diploma que, me voy a permitir dar lectura: </p>
+<p align="justify">Cámara de  Senadores, Estados Unidos Mexicanos, Ciudad de México. </p>
+<p align="justify">&ldquo;En el marco del  Día Internacional de la Mujer, el Senado de la República le otorga el Reconocimiento  &ldquo;Elvia Carrillo Puerto&rdquo; 2021 a la ciudadana Daptnhe Cuevas Ortiz, en honor a su  destacada labor en el Reconocimiento, defensa y ejercicio de los derechos de  las mujeres y la igualdad de género en nuestro país&rdquo;. </p>
+<p align="justify">Ciudad de México,  octubre 2021. </p>
+<p align="justify">Senadora Olga  Sánchez Cordero, Presidenta de la Mesa Directiva del Senado de la República. </p>
+<p align="justify">Senador Ricardo  Monreal Ávila, Presidente de la Junta de Coordinación Política.<br>
+  <br>
+  Senadora Martha Lucía Micher Camarena, Presidenta de la Comisión Para la  Igualdad de Género en el Senado de la República. </p>
+<p align="justify">Sírvanse tomar asiento. </p>
+<p align="justify">Como lo dispone el Numeral 3 del Resolutivo Tercero del Acuerdo aprobado  para normar esta sesión solemne, hará uso de la tribuna la ciudadana Daptnhe  Cuevas Ortiz, en consecuencia, se le concede el uso de la palabra, por favor. </p>
+<p align="justify"><strong>La Ciudadana Daptnhe Cuevas  Ortiz:</strong> Muy buenas tardes  a todas y a todos. </p>
+<p align="justify">Estoy muy emocionada, estoy muy feliz y estoy  muy agradecida. </p>
+<p align="justify">Saludo a todas las personas en el presídium, a  todas las presentes en esta sesión solemne, a las invitadas especiales, a mis  compañeras feministas, a las que están aquí y a las que nos ven en el canal del  Congreso. </p>
+<p align="justify">Saludo también a la Presidenta de la Comisión  de Igualdad y saludo las palabras siempre emotivas y cariñosas de Paty Mercado. </p>
+<p align="justify">Me honro estar en este recinto y tener la  oportunidad de ser escuchada como una mujer originaria de la periferia, de la  periferia olvidada de la ciudad, como una joven que se construyó como feminista  y defensora de los derechos y de la mano de cientos, quizás miles, quizás  millones de mujeres y hombres comprometidos con construir un mundo de derechos  en el que cabemos todas y todos. </p>
+<p align="justify">Hoy, una feminista recibe el premio &ldquo;Elvia  Carrillo Puerto&rdquo; 2020-21. </p>
+<p align="justify">¡Qué estremecedor!</p>
+<p align="justify">Porque no lo recibo por el trabajo altruista y  las causas nobles que también acompañan, lo recibo porque hago incidencia  política, porque trabajo en los espacios legislativos en México y en los  espacios internacionales multilaterales. </p>
+<p align="justify">Recibo mi Reconocimiento que hoy me otorgan,  con una trayectoria que implica fuerza, presión, dureza, mucha argumentación y  terquedad. </p>
+<p align="justify">Soy conocida por ruda, pero también por ser  buena negociadora, por tener la habilidad de sentar a la mesa a personas con  posiciones en conflicto y saber escuchar, generar diálogos y construir  acuerdos, me dan el premio a mí, cuyo nombre, si lo googleas en Google, te  sale: <em>&ldquo;Feminista a favor del aborto, de  la diversidad sexual, defensora de los derechos políticos de las mujeres y de  la paridad, del Estado laico, de la diversidad, de la no discriminación&rdquo;.</em></p>
+<p align="justify">Este nombre mío que aparece siempre vinculado  a procesos que involucran la lucha por los derechos de las mujeres, de las  jóvenes, de las trabajadoras del hogar, de las indígenas, de las mujeres con  discapacidad, de las migrantes, de las afrodescendientes, de las trabajadoras y  sindicalistas, de las que viven con VIH, de las que buscan a sus familiares  desaparecidos, cuyas hijas  fueron  víctimas de femicidio, de las trabajadoras sexuales, de las mujeres trans, de  las estudiantes,  de las cabareteras, de  las militantes de partidos políticos,  de  las servidoras públicas, de las legisladoras públicas, de las lesbianas. </p>
+<p align="justify">¿Escucharon qué larga lista? Larga, ¿verdad?,  porque también soy una terca que siempre cree que en las redacciones de  nuestros acuerdos políticos y declaraciones no hay que ahorrar palabras en  nombrarnos, porque todas merecemos escucharnos cuando estamos construyendo las  agendas por nuestros derechos, saber que estamos ahí, que nuestra identidad,  que nuestro activismo, que nuestra instancia de actuación está siendo nombrada  y reconocida, el políticamente correcto, todas las mujeres en toda su  diversidad y en todo su ciclo de vida está bien, pero no se visibiliza y seré  siempre la terca que nos va a nombrar. <br>
+  <br>
+  Pudieron elegir a alguien menos incómoda, a alguien que generara  consensos; pero no, tercas como son, feministas como son, decidieron que estos  son tiempos del feminismo, que debemos llevar nuestra voz al Senado, a la  Cámara alta del Congreso, las felicito a eso, las reconozco por eso y se los  agradezco, porque vivimos tiempos de batallas culturales que dividen a las  sociedades entre miradas conservadoras y anti derechos frente a una propuesta  política que sostiene que las mujeres somos sujetas de derechos, que debemos  ejercer ciudadanías plenas y que debemos estar en pie de igualdad. </p>
+<p align="justify">El feminismo es un proyecto de proporciones inacabables, inabarcables,  es un proyecto de humanidad que cuestiona todas las formas de jerarquía,  fundamentalismo, antidemocracia y violencia.</p>
+<p align="justify">Lamentamos el uso faccioso de políticos y políticas que están usando una  teoría y una práctica que ha costado siglos, que están queriendo beneficiarse o  a su grupo, o a su partido, cuando nosotras conocemos su historia, cuando  ustedes han frenado, rechazado o cuestionado la lucha de las mujeres o negado  nuestra autonomía. </p>
+<p align="justify">No, señoras y señores, el feminismo se trata fundamentalmente de un  proceso de transformación personal, colectivo, simbólico e íntimo que parte del  Reconocimiento de que todas las personas hemos sido socializadas en mayor o  menor medida en la discriminación de género, en sus diversas intersecciones y  que el proceso de deconstrucción de estructuras de opresión implica un camino  en el que nos acompañamos desde el Reconocimiento, en el que reconocemos la  complejidad de los diferentes ritmos y procesos personales y colectivos que no  está exento de contradicciones, pero que tiene claridades, las mujeres son las  dueñas de su cuerpo, de su vida y de su decisión. </p>
+<p align="justify">Si usted, alguien, quien sea, no cree eso, no es feminista, con permiso. </p>
+<p align="justify">Gracias por reconocer feministas, por reconocer trayectorias de  activistas, por validar con este premio, con esta sesión solemne, esta manera  de ver y desear el mundo, un mundo en que la igualdad se concrete y sea  igualdad sustantiva, en que las mujeres somos protagonistas, somos agentes  activas y tomamos decisiones. </p>
+<p align="justify">El trabajo de décadas que nuestro movimiento ha impulsado está rindiendo  frutos, hoy miles de mujeres jóvenes se saben propietarias de sí, se expresan  en las calles, en las escuelas, en los espacios públicos y privados, hoy miles  de mujeres gobiernan, legislan, juzgan y dirigen empresas, organizaciones,  escuelas, estamos en la esfera pública, en la economía, en la producción, en el  comercio, en las artes, en la academia, estamos en toda la vida pública y  seguimos estando casi de forma exclusiva al frente de las tareas del cuidado no  remuneradas y del hogar, eso genera dobles y triples jornadas, es malo, es  injusto. </p>
+<p align="justify">Ya México ha asignado acuerdos en que se reconoce que las tareas del  cuidado son responsabilidad compartida del Estado, la sociedad civil, la  sociedad en su conjunto, la empresa privada. </p>
+<p align="justify">¿Cuánto más vamos a esperar?</p>
+<p align="justify">Ya las cuentas satélites dicen que no hay dinero en el mundo que alcance  si monetizamos lo que ese trabajo cuesta, no lo podemos seguir subsidiando. </p>
+<p align="justify">Senadoras, la iniciativa está aquí, se los recuerdo, y las llamo a que  recuperen la discusión, a que aprueben y que tengamos ya el sistema nacional de  cuidados que nos quita a nosotras la responsabilidad exclusiva de sostener el  mundo.<br>
+  <br>
+  A lo largo de las últimas dos décadas me ha tocado ver, incluso  participar, de múltiples procesos en que se han demandado los derechos, he sido  testiga de cómo el proyecto emancipador del feminismo, con sus investigaciones,  con sus argumentos, con su  organización,  ha convencido colocando como válida la experiencia de las mujeres, pues el  contenido principal del machismo, escúchenlo bien, es la invalidación de la  experiencia femenina, una experiencia que hemos logrado insertar en el marco  institucional y en una conciencia social que a pesar de siglos de reticencia ha  dado algunos frutos. </p>
+<p align="justify">No puedo dejar de celebrar, desde esta tribuna, las recientes sentencias  de la Suprema Corte de Justicia de la Nación. </p>
+<p align="justify">El pasado 28 de septiembre, por primera vez, celebramos nunca más  ninguna mujer presa por decidir qué no va a continuar un embarazo que no  quería. </p>
+<p align="justify">Con una sentencia, producto de muchos años de nuestro activismo, le  hemos arrebatado al patriarcado esa tutela sobre nuestros cuerpos que hoy nos  es devuelta. </p>
+<p align="justify">Luego de la sentencia de la Corte las vimos, las vimos presentar una  iniciativa en la pluralidad para poder concretar en las leyes las libertades y  la autonomía reproductiva de las mujeres. </p>
+<p align="justify">No pierdan ese impulso, compañeras, logremos, porque no nos alcanza con  no criminalizar, hay que legalizar, hay que hacer el sentido del derecho,  ustedes ya agarraron el contexto, no se distraigan, no se dejen presionar, las  mexicanas se los vamos a agradecer. </p>
+<p align="justify">Nuestro país, lo sabemos, está herido por la violencia atroz, las  desapariciones, el feminicidio y toda la lógica necro política que ha sumido a  nuestra sociedad destruyendo el tejido social y haciendo evidente el deterioro  y la cooptación de prácticamente todas las instituciones y territorios por  parte de poderosos grupos de poder fáctico y criminal, son las mujeres quienes  han alzado la voz ante esta realidad terrible, quienes buscan a sus familiares,  quienes exigen justicia. </p>
+<p align="justify">Aunque tenemos avances que valoramos, sabemos que son completamente  insuficientes, por eso, las mujeres y muchas jóvenes feministas y familiares de  víctimas siguen, seguirán, seguiremos, saliendo a las calles exigiendo  justicia, porque esta realidad no ha cambiado significativamente.</p>
+<p align="justify">Mucho me han preguntado que qué pienso de las manifestaciones de las  jóvenes y la violencia en las calles, quiero parafrasear a Julio Cortázar  cuando dijo: &ldquo;es muy importante comprender quién pone en práctica la violencia,  si quienes provocan la miseria o las que luchan contra ella&rdquo;. La rabia  expresada en las calles, es legítima, la violencia del neoliberalismo, el  racismo y la misoginia es atroz, es estructural, es histórica y debe tener una  respuesta proporcional. </p>
+<p align="justify">Por ello, esperamos que se siga profundizando el Reconocimiento de la  gravedad de esta situación, que se reciba, se escuche y se aprenda de las  víctimas todas las veces que sea necesario y que se fortalezca un compromiso de  gobierno y de Estado para no criminalizar, reprimir y estigmatizar ninguna  manifestación. </p>
+<p align="justify">Hago un llamado desde esta tribuna para que todas juntas reforcemos el  carácter laico del Estado mexicano. Esa ha sido una conquista a la que no  podemos renunciar porque es garantía de libertades para las mujeres y,  principalmente, para nosotras una condición necesaria para el ejercicio de  derechos, merecemos una clase política laica, que respete la libertad de  conciencia y que de ninguna manera gobierne a partir de sus ideas personales  religiosas. <br>
+  <br>
+  La puesta por transformar a México, esta puesta que muchas compartimos,  debe incluir sin regateos una visión clara de que todas las desigualdades  existentes deben erradicarse, pero que la desigualdad no es sólo social y  económica, sino que de forma transversal la desigualdad de género atraviesa y  es núcleo de las injusticias sociales. </p>
+<p align="justify">Ya no me voy a extender, ya hablé mucho, pero quiero cerrar agradeciendo  de nueva cuenta a cada Senadora y a cada Senador que con sus votos sumaron la  mayoría calificada que me otorga este premio. </p>
+<p align="justify">Celebro por compartir esta alegría con mi familia de sangre y de elección. </p>
+<p align="justify">Aquí está mi mamá, mi papá, mi hermana Vanesa, mi hermano Baruch, mi  sobrina Vale, mi sobrino Pepe y mi sobrina Fernanda. </p>
+<p align="justify">No vino mi cuñado José, no vino Blanca, no vino mi sobrina Sofi, mi  hijito está en Alemania, pero todos ellos celebran allá. </p>
+<p align="justify">Mi sobrino Rodrigo dijo que estaba muy contento y mi sobrino Braulio fue  más allá y dijo que estaba orgulloso de mí. </p>
+<p align="justify">Todos los Columbos, porque así se llama mi familia en grande, porque así  se llamaba mi abuelita, están viéndolo en video y me dijeron: Tienes que decir  &ldquo;un saludo para los Columbos&rdquo;. Ahí está. </p>
+<p align="justify">Y también está Kimbel, mi novia, a la que tanto quiero y con la que todos  los días tratamos de construir una relación en donde estar y ser felices. </p>
+<p align="justify">A Laura, a mis compañeras de Consorcio, a mis compañeras de Equidad, a la  Articulación Feminista Marcosur, a las Diputadas y Senadoras feministas, a las  funcionarias feministas, a las colectivas y a las activistas de nuestro  movimiento en México y Latinoamérica, y también a las del Grupo Mayor. A todas,  compañeras, este es nuestro premio. </p>
+<p align="justify">Menos fundamentalismo y más feminismo. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Favor de tomar asiento. </p>
+<p align="justify">Honorable Asamblea, me llena de orgullo dirigir este mensaje con motivo  de la entrega del Reconocimiento &ldquo;Elvia Carrillo Puerto&rdquo;, distinción que es  digna del más alto honor, para reconocer a dos mexicanas que han dedicado su  vida a poner en lo más alto los derechos de las mujeres.</p>
+<p align="justify">El Reconocimiento de los derechos que hoy gozamos como mujeres es parte  de una herencia, de una herencia que nos han dado nuestras madres, nuestras  abuelas, las activistas de antaño, amigas, y de cada mujer que incluso sin  saberlo ha luchado por lograr la igualdad. </p>
+<p align="justify">Hoy mismo, hoy aprendo de mis hijas y también de mis nietas. </p>
+<p align="justify">A pesar de las limitaciones históricas impuestas por los sistemas  patriarcales, las mujeres hemos buscado siempre hacer comunidades de lucha;  guiadas por fuertes y poderosas líderes comenzamos a ganar batallas importantes  para conquistar nuestros derechos. </p>
+<p align="justify">Y hoy hay una enorme diferencia porque en estos tiempos, cuando nace una  niña y sueña, sabe que es capaz de alcanzar sus sueños, sabe que tiene la  posibilidad de hacer y de ser lo que se proponga.<br>
+  <br>
+  Y sólo existe una diferencia sutil, pero muy importante, entre las niñas  de hoy y las niñas de mi generación, hoy ellas tienen la absoluta capacidad de  decidir, porque conocen sus derechos, y esa es la clave.</p>
+<p align="justify">Esta lucha por los derechos de las mujeres ha sido una lucha de  diferentes protagonistas de nuestra historia. </p>
+<p align="justify">Hoy, a propósito de la condecoración, quiero referirme a la herencia de  mujeres como Elvia Carrillo Puerto, política, socialista, sufragista y  activista femenina que dedicó su vida a una lucha incansable por la revolución  y el movimiento feminista. </p>
+<p align="justify">Elvia, una gran mujer, y fue la voz de muchas mujeres que no tuvieron la  misma oportunidad de alzar la suya; fue defensora de las libertades básicas  como el derecho al voto de las mujeres, pero con esa lucha abrió la posibilidad  de un derecho, llave de muchos otros, porque la lucha por el sufragio femenino  abrió la posibilidad de colocar en la agenda pública, como lo hizo, materias  como el control de la natalidad, la libertad sexual y el divorcio. </p>
+<p align="justify">Mujeres como ella han sido ejemplo para otras mujeres, como las que hoy  son galardonadas; son mujeres forjadoras de la democracia, son mujeres forjadoras  de nuestra democracia en México, porque con su lucha contribuyeron y  contribuyen a cristalizar las reales oportunidades políticas que tenemos las  mexicanas de hoy. </p>
+<p align="justify">Elvia Carrillo Puerto fue una mujer íntegra, independiente y rebelde a  los ojos de la época que le tocó vivir. Ella nos legó el deber de seguir  conquistando espacios y derechos. Y hoy no hay una Elvia Carrillo Puerto en  solitario y que libre esta batalla, sino miles de mujeres que dedican su vida a  cumplir esta tarea como imprescindible. </p>
+<p align="justify">En el Senado de la República reconocemos a estas mujeres y cada año  honramos a las dignas herederas del legado de Elvia Carrillo Puerto. </p>
+<p align="justify">En esta ocasión reconocemos el trabajo de dos mexicanas que han  revolucionado a nuestra nación. Ustedes las conocen, son nuestras invitadas de  honor. </p>
+<p align="justify">Queridas Laura Martínez Rodríguez y Daptnhe Cuevas Ortiz, me honra el día  de hoy poder estar aquí con ustedes reconociendo su trabajo y agradeciéndoles  de parte del pueblo de México su importante contribución como profesionales  comprometidas en pro de una vida sin violencia hacia las mujeres desde sus  respectivas trincheras. </p>
+<p align="justify">Ustedes son dignas herederas de doña Elvia Carrillo Puerto y, sobre todo,  son invaluables constructoras del futuro de nuestras niñas y de las mujeres de  nuestro país. </p>
+<p align="justify">Hoy celebramos, hoy aplaudimos, hoy agradecemos su lucha; que contagien a  muchas mujeres de este espíritu de doña Elvia Carrillo Puerto, porque aún hay  mucho por hacer, aún quedan muchas realidades por seguir transformando. </p>
+<p align="justify">El camino no ha sido fácil, pero juntas las mujeres de este país, desde  todos los espacios, los estamos recorriendo, juntas lo estamos conquistando,  siempre juntas,</p>
+<p align="justify">Como dijo hace poco mi querida Alejandra Frausto: &ldquo;nunca más una patria  sin nosotros, nunca más un desarrollo y una transformación sin la fuerza de las  mujeres y sin la memoria de quienes forjaron esta historia&rdquo;. </p>
+<p align="justify">Reconocerlas a ustedes es reconocer a todas las mujeres de México;  ustedes son aquí nuestra voz, nuestras expectativas; pero especialmente ustedes  son nuestros triunfos y nuestra esperanza. <br>
+  <br>
+  Muchas felicidades por  este merecido Reconocimiento. </p>
+<p align="justify">A nombre del Senado  de la República deseo expresar nuestro agradecimiento a la vicepresidenta de la  Mesa Directiva de la Cámara de Diputados, Diputada Karla Yuritzi Almazán  Burgos.</p>
+<p align="justify">A nuestras galardonadas, la ciudadana Laura  Martínez Rodríguez y a la ciudadana Daptnhe Cuevas Ortiz.</p>
+<p align="justify">Así también, agradecerles a nuestras  distinguidas invitadas e invitados por su asistencia a esta sesión solemne.</p>
+<p align="justify">Por favor, señora Secretaria.</p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat: </strong>Les solicitamos ponerse de pie para entonar el Himno Nacional Mexicano.</p>
+<p align="center">(Todos de pie entonan  el Himno Nacional)</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Sentados, por favor.</p>
+<p align="justify">Solicito a la Diputada Karla Yuritzi Almazán  Burgos y a mis compañeras Senadoras y Senadores integrantes de la Mesa  Directiva, a las Senadoras integrantes de la Comisión Para la Igualdad de  Género, acompañar a las galardonadas, las ciudadanas Laura Martínez Rodríguez y  Daptnhe Cuevas Ortiz, en el acto de la develación del Muro de Honor de quienes  han recibido el galardón &ldquo;Elvia Carrillo Puerto&rdquo;.</p>
+<p align="justify">Y solicito a mis compañeras y compañeros  Senadores permanezcamos en el salón de sesiones para continuar con la sesión  ordinaria del día de hoy.</p>
+<p align="justify">Se levanta la sesión solemne.</p>
+<p align="center">(Se levantó la sesión a las 13:24 horas)</p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100775'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

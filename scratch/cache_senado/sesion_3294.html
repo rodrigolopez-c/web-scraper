@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 18</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Olga María del Carmen Sánchez Cordero Dávila</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Ordinaria Celebrada<br>en la Ciudad de M&eacute;xico, el 26 de Octubre de 2021</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/1/PPO/PDF-WEB/PPO_No18_26-OCTUBRE_2021.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100776'></a><p align="center"><strong>PRESIDE LA SENADORA</strong><br>
+  <strong>OLGA  MARÍA DEL CARMEN SÁNCHEZ CORDERO DÁVILA </strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>(11:01 horas) Honorable Asamblea, les pido su  comprensión y participación para observar con rigor las disposiciones  sanitarias y medidas de previsión para evitar los riesgos de contagio. </p>
+<p align="justify">Solicito a la Secretaría informe a la Asamblea el  resultado del cómputo de asistencia de las Senadoras y de los Senadores. </p>
+<p align="justify"><strong>La Secretaria Senadora Audelia Esthela Villarreal  Zavala: </strong>Honorable  Asamblea, conforme al registro de asistencia, se han acreditado 77 ciudadanas  Senadoras y ciudadanos Senadores. En consecuencia, hay quórum, señora  Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Se abre la sesión del martes 26 de octubre de 2021,  correspondiente al primer periodo ordinario de sesiones del primer año de  ejercicio de la LXV Legislatura.</p>
+<p align="justify">El Orden del Día está publicado en la Gaceta  Parlamentaria del día de hoy y disponible en el monitor de sus escaños, con lo  cual se informa de los asuntos que corresponden a la agenda. </p>
+<p align="right"><strong>ORDEN DEL DÍA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/121649"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">El  acta de la sesión del 21 de octubre de 2021 se encuentra publicada en la Gaceta  Parlamentaria de este día.</p>
+<p align="right"><strong>ACTA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/121656"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/asistencias/2021_10_21/16"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">En consecuencia, consulte la Secretaría a la  Asamblea, en votación económica, si se aprueba el acta referida.</p>
+<p align="justify"><strong>La Secretaria Senadora Audelia Esthela Villarreal  Zavala: </strong>Consulto  a la Asamblea, en votación económica, si se aprueba el acta referida. Quienes  estén porque se apruebe, favor de levantar la mano.</p>
+<p align="center">(La Asamblea asiente) </p>
+<p align="justify">Quienes estén porque se rechace, favor de levantar  la mano. </p>
+<p align="center">(La Asamblea no asiente) </p>
+<p align="justify">Aprobada el acta de la sesión anterior, señora  Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez  Cordero Dávila: </strong>Aprobada  el acta del jueves 21 de octubre de 2021.</p>
+<p>Y,  asimismo, el acta de la sesión solemne del 21 de octubre de 2021, en donde se  entregó el Reconocimiento &ldquo;Elvia Carillo Puerto&rdquo;, correspondiente a los años  2020 y 2021. Se encuentra publicada en la Gaceta Parlamentaria de este día.</p>
+<p align="justify">&nbsp;</p>
+<p align="right"><strong>ACTA DE LA SESIÓN SOLEMNE</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/121659"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">En consecuencia, consulte la Secretaría a la  Asamblea, en votación económica, si se aprueba el acta referida. </p>
+<p align="justify"><strong>La Secretaria Senadora Audelia Esthela Villarreal  Zavala: </strong>Consulto  a la Asamblea, en votación económica, si se aprueba el acta referida. Quienes  estén porque se apruebe, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente) </p>
+<p align="justify">Quienes estén porque se rechace, favor de levantar  la mano.</p>
+<p align="center">(La Asamblea no asiente) </p>
+<p align="justify">Aprobada el acta de la sesión solemne, señora  Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Aprobada el acta de la sesión solemne del jueves 21  de octubre de 2021, en donde se entregó el Reconocimiento &ldquo;Elvia Carrillo  Puerto&rdquo; correspondiente a los años 2020 y 2021. <br>
+  <br>
+  Han pedido  la palabra un Senador y una Senadora. </p>
+<p align="justify">Tiene la palabra Manuel Añorve y, posteriormente,  Margarita Valdez. </p>
+<p align="justify"><strong>El Senador Manuel Añorve Baños: </strong>(Desde su escaño) Muchas gracias,  señora Presidenta. Como siempre, gracias por su amabilidad. </p>
+<p align="justify">Solamente quiero hacer un extrañamiento, y  seguramente presentaré un punto de acuerdo para citar a comparecer al Secretario  Javier May, el Secretario de Bienestar. </p>
+<p align="justify">Desde el 7 de septiembre que en Guerrero se  presentó el terremoto, desgraciadamente con muchísimas afectaciones, no ha  terminado de levantarse el padrón de damnificados, o si se ha levantado no ha  sido suficiente y no se han incorporado las y los damnificados que todavía  tienen muchos daños hasta esta fecha.</p>
+<p align="justify">El Presidente de la República, le dio instrucciones  al Secretario de Bienestar, y quiero decirles que en su gira que tuvo el fin de  semana en Guerrero tuvo que atender a damnificados de unidades habitacionales  que ni siquiera el Infonavit o Fovissste le han hecho frente, y creo que es  importante que vengan a comparecer y nos digan por qué a estas fechas no han  bajado los apoyos a los damnificados y a las damnificadas del terremoto del 7  de septiembre. </p>
+<p align="justify">Decirles que el Presidente, junto con la  gobernadora Evelyn Salgado, las atendió y los atendió, pero no creo que sea  justa una manifestación en una gira presidencial donde el secretario no ha dado  las respuestas que la gente está esperando, inclusive los 10 mil pesos que  anunció no son suficientes para hacerle frente a tantos daños de mucha gente  que todavía duerme a la intemperie en Guerrero, en Acapulco, y que con estas  lluvias tuvieron que buscar refugio con familiares y amigos.</p>
+<p align="justify">Por supuesto también, y con esto concluyo, señora Presidenta,  solidarizarme con los damnificados y las damnificadas del huracán Rick, que  pegó muy fuerte en La Unión, Zihuatanejo y en Petatlán, desbordamiento de ríos,  muchas y muchos damnificados. </p>
+<p align="justify">Felicitar a la gobernadora, por supuesto, Evelyn  Salgado, tengo que felicitarla, encabezó con Protección Civil y el Plan DN-III,  y obviamente con el Ejército Mexicano, el recorrido que se hizo con los  presidentes, Jorge Sánchez Allec, de Zihuatanejo; con Javier Aguilar, de Petatlán y por supuesto  en los tres niveles de gobierno siempre atenta a resolver este tipo de  situaciones. </p>
+<p align="justify">Concluyo.</p>
+<p align="justify">Decirle que no voy a entrar  al debate de la desaparición del Fonden, ya no es tiempo, yo ya he dado mis  posturas en esta alta tribunal del Senado de la República, pero si  desaparecieron el Fonden y los recursos ahí están, debería el Secretario May,  volviendo al tema de los damnificados del 7 de septiembre, aclarar qué es lo  que está pasando, dónde le podemos ayudar, para que esos recursos bajen de  manera puntual y no vaya a ser lo mismo con el levantamiento de los padrones  porque hay afectaciones en la agricultura y afectaciones también a la  infraestructura carretera con otros secretarios y que nos vayan a dar respuesta  hasta las fiestas navideñas o hasta el 6 de enero, cuando termine el maratón  Guadalupe-Reyes, con todo respeto lo digo así y con mucha puntualidad.</p>
+<p align="justify">Es cuanto y muchas gracias.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Muchas gracias, Senador Añorve Baños.<br>
+  <br>
+  Tiene la palabra la  Senadora Lilia Margarita Valdez Martínez, hasta por dos minutos, y también la  Senadora Blanca Piña Gudiño, por dos minutos, como la Senadora Estrella Rojas  Loreto, del PAN, por dos minutos.</p>
+<p align="justify"><strong>La Senadora Lilia Margarita Valdez Martínez: </strong>(Desde su escaño)<strong> </strong>Muchas gracias, señora Presidenta.</p>
+<p align="justify">Ese es el motivo por el  cual solicito la palabra, para que desde el inicio de la sesión los y las  compañeras respetemos los tiempos que se nos otorgan. Le solicito, de la manera  más atenta, a toda la Mesa Directiva que todos los días, pero en especial hoy  que va a ser una sesión importante, interesante y prolongada, respetemos  absolutamente todos y todas, los tiempos que se nos otorgan.</p>
+<p align="justify">El &ldquo;espéreme, señora Presidenta,  un momentito más&rdquo;, el &ldquo;espéreme, ya voy a terminar&rdquo;, el &ldquo;espéreme&rdquo; creo que no  es válido y solicito, de la manera más atenta, que desde el principio  respetemos los tiempos establecidos.</p>
+<p align="justify">Muchas gracias, muy amable.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Gracias, Senadora Valdez Martínez.</p>
+<p align="justify">Por favor, Blanca, si eres  tan amable.</p>
+<p align="justify"><strong>La Senadora Blanca Estela Piña Gudiño: </strong>(Desde su escaño) Gracias,  señora Presidenta.</p>
+<p align="justify">Pues quiero hacer un  llamado a todos los Senadores y Senadoras, a la Presidenta de la Mesa Directiva,  porque hace tiempo las comunidades purépechas de Michoacán han pedido que se  vacune contra la covid-19 a sus habitantes, antes de las celebraciones del Día  de Muertos. Esto, debido al alto ingreso de turistas que se da en esos días en  Michoacán, lo cual puede desencadenar en una serie de contagios que afecten  severamente la salud de sus pobladores.</p>
+<p align="justify">Los pueblos indígenas piden  que el proceso de vacunación concluya antes del 31, como ya dije, es necesario  que las autoridades competentes garanticen el derecho a la salud de las y los  pobladores de las comunidades y se generen los esquemas necesarios para que  todas las personas tengan acceso al biológico.</p>
+<p align="justify">Me sumo a su exigencia y  exhorto a las autoridades competentes a que se inicie lo más pronto posible con  el proceso de vacunación, en beneficio de la población residente en comunidades  indígenas y áreas rurales de Michoacán.</p>
+<p align="justify">Gracias, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Gracias, Senadora Piña Gudiño.</p>
+<p align="justify">Tiene la palabra la  Senadora Estrella Rojas Loreto, del PAN, y después el Senador Juan Zepeda.</p>
+<p align="justify"><strong>La Senadora Estrella Rojas Loreto:</strong> (Desde su escaño) Buenos  días, señora Presidenta. Compañeras Senadoras y compañeros Senadores:</p>
+<p align="justify">Solamente para informar que  el día de hoy inscribí un punto de Acuerdo para solicitar a la Cámara de  Diputados que, en uso de sus facultades exclusivas y en el marco de la  discusión y aprobación del Presupuesto de Egresos de la Federación para el Ejercicio  Fiscal 2022, se incrementen los recursos del programa presupuestal Subsidios  Federales para Organismos Descentralizados Estatales 2022.<br>
+  <br>
+  Y quisiera comentar que  desde que se declaró la emergencia sanitaria ocasionada por Covid-19, no solo  en México sino en el mundo entero, la ciencia fue la principal esperanza de la  humanidad para hacer frente al enorme número de muertos y contagios. Muchos  científicos se dedicaron a investigar para generar una vacuna que erradicara  esta pandemia.</p>
+<p align="justify">Al respecto quisiera  referirme a mi universidad, la Universidad Autónoma de Querétaro, que desde el  inicio de la pandemia comenzó diversos estudios que han dado resultados muy  efectivos, la vacuna que ha sido nombrada como Quivax 17.4 presenta altos  anticuerpos que pueden responder a siete variantes diferentes, entre  ellas la Delta, </p>
+<p align="justify">Sin  embargo, aún y cuando los resultados han sido verdaderamente satisfactorios, la  UAQ, tiene un problema para avanzar y concluir el desarrollo de su vacuna, la  falta de recursos.</p>
+<p align="justify">La  rectora ha manifestado que la investigación que realiza la UAQ, es costosa,  pero que ya cuenta con uno de los ingredientes más importantes, el talento y la  experiencia de científicas y científicos mexicanos.</p>
+<p align="justify">A finales  de 2020, la UAQ, inició una campaña para recaudar fondos y continuar el  desarrollo de la vacuna, sin embargo, aún requiere de 30 millones de pesos  adicionales para concluir su investigación, por ello es que el día de hoy  realizo este exhorto y le solicito, por favor, señora Presidenta, que al  tratarse de una facultad exclusiva de la Cámara de Diputados pueda darse turno  directo a la misma.</p>
+<p align="justify">Muchas  gracias.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga  María del Carmen Sánchez Cordero Dávila: </strong>Gracias, Senadora Rojas Loreto.</p>
+<p align="justify">Tiene  ahora la palabra el Senador Juan Zepeda.</p>
+<p align="justify">Por  favor, Senador.</p>
+<p align="justify"><strong>El Senador Juan Zepeda: </strong>(Desde su  escaño) Gracias, señora Presidenta. Con su permiso. Compañeras y compañeros  Senadores.</p>
+<p align="justify">El tema  que quiero hoy exponer aquí en este Pleno es el tema de Rosario Robles.</p>
+<p align="justify">Hace 26  años Rosario Robles está presa. Evidentemente quiero decir, desde hace 26  meses, dos años, más de dos años, quiero decir que, por supuesto que estamos a  favor del combate a la corrupción y de todo lo que implica el mal ejercicio del  servicio público, pero este caso se ha demostrado, a todas luces es político y  se está utilizando la cárcel para intimidar.</p>
+<p align="justify">No puedo  estar tranquilo sin elevar la voz de indignación, cuando se ha demostrado que  se le han falsificado documentos para mantenerla en la cárcel, pero, demás hay  un antecedente, que ella se presentó de manera voluntaria, y para mí es  injustificable el uso político que se le da a la justicia hoy en el país.</p>
+<p align="justify">Mientras  un delincuente confeso, como Emilio Lozoya, que él sí escapó de la justicia,  hoy lo vemos que con total impunidad y libertad puede estar cenando en un  restaurante conocido.</p>
+<p align="justify">Por otro  lado, alguien que se presentó ante los jueces se le mantiene en prisión.<br>
+  <br>
+  Por  supuesto que apoyamos el combate a la corrupción, pero en mi caso condeno el  uso selectivo de la prisión, y más aún porque aquí se ha defendido mucho a la  mujer y las luchas feministas, que se personifique en una mujer estos abusos y  estos excesos.</p>
+<p align="justify">Exhorto a  las autoridades judiciales, a la Fiscalía a que tomen cartas en el asunto  porque esa es una aberración jurídica-judicial, sobre todo en un gobierno que  presume ser de izquierda.</p>
+<p align="justify">No al uso  faccioso, no al uso político de la justicia, y mucho menos de lo que ayer la  Suprema Corte de Justicia de la Nación, ya dijo que es inconstitucional la  prisión preventiva oficiosa.</p>
+<p align="justify">Gracias.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga  María del Carmen Sánchez Cordero Dávila: </strong>Gracias, Senador Juan  Zepeda.</p>
+<p align="justify">Sonido,  por favor, en el escaño del Senador Ángel García Yáñez.</p>
+<p align="justify"><strong>El Senador Ángel García  Yáñez: </strong>(Desde su escaño) Gracias, señora Presidenta. Con  su permiso.</p>
+<p align="justify">Ya viene  la temporada de día de muertos, fecha en las que los campos de cempasúchil  están floridos brindando un colorido paisaje, ahora mismo embellecen el Paseo  de la Reforma de esta ciudad. </p>
+<p align="justify">Ver estos campos llenos de flores es todo un  espectáculo, sus colores anaranjado y amarillo brindan una luz inigualable,  para los aztecas esta flor también era conocida como flor de muerto, pues  aseguraban que su característico color poseía la facultad de atraer a las almas  de vuelta a casa; sin embargo, actualmente, el principal productor es China, no  México. </p>
+<p align="justify">Hace no mucho tiempo nuestro país tuvo un liderazgo  en ese rubro y hoy ni siquiera figura en el mercado. Aproximadamente 700  productores cultivan esta flor en la capital del país y, en su mayoría, en la Alcaldía  Xochimilco y, también hay una parte de productores en el estado de Morelos. Su  venta, en esta región, asciende aproximadamente a 10 millones de pesos y genera  más de mil 500 empleos directos y dos mil indirectos y con ello se cubre la  demanda de la industria. </p>
+<p align="justify">Por lo que estamos importando cempasúchil,  perdiendo la oportunidad de generar empleos y riqueza para los campesinos del  país. </p>
+<p align="justify">Por ello, el día de hoy presento un punto de Acuerdo  para exhortar, respetuosamente, al titular de la Secretaría de Agricultura y  Desarrollo Rural, a que implemente un plan emergente para el impulso a la  siembre de cempasúchil en el campo mexicano, solicitando tenga a bien turnarla  a la comisión que corresponde. </p>
+<p align="justify">Es cuanto, señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila:</strong> ¿Ya terminó, Senador? </p>
+<p align="justify"><strong>El Senador Ángel García Yáñez: </strong>(Desde su escaño) Es cuanto,  señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila:</strong> Entonces tiene la palabra el Senador Damián  Zepeda, por favor. <br>
+  <br>
+  <strong>El Senador Damián Zepeda Vidales:</strong> (Desde su escaño) Excelente.  Muchas gracias, señora Presidenta. </p>
+<p align="justify">Quiero destacar la decisión  que ayer tomó la Suprema Corte de Justicia de la Nación, y aclarar de qué se  trata. </p>
+<p align="justify">Cuando en 2019 en este  Senado se debatían esas reformas, lo dijimos con mucha claridad, muchos de  nosotros somos, me declaro enemigo de la prisión preventiva oficiosa, porque lo  que significa la prisión preventiva oficiosa es cárcel sin haberte probado  culpable; no es la prisión preventiva justificada que el juez puede si hay  riesgo de fuga, peligrosidad, si los casos lo ameritan valorar que la persona  que está siendo llevando ante un proceso penal puede tener una medida cautelar,  firmar, GPS y la más extrema es quitarte tu libertad. No es eso. </p>
+<p align="justify">Es que, si al Ministerio  Público, se le ocurre acusarte, solamente acusarte no significa que eres  culpable, para eso hay un proceso penal, para eso hay un juez, con el solo  hecho de que te acuse ya vas a la cárcel. Y se ha abusado de esa figura. </p>
+<p align="justify">Esa prisión preventiva  oficiosa, empezó no en este gobierno, es una autocrítica, empezó en un gobierno  emanado de mi partido, y es un error, es una violación flagrante a los derechos  humanos y a tratados internacionales. </p>
+<p align="justify">Y se confunde la gravedad  del delito como si eso importara, para permitir que metas a la cárcel a alguien  que no ha sido demostrado culpable, no tiene nada que ver, puede ser homicidio,  puede ser crimen organizado. </p>
+<p align="justify">El hecho de que el  Ministerio Público, diga que alguien es culpable no quiere decir que lo sea,  falta que haya un proceso penal en donde le tienen que demostrar, y lo que la  prisión preventiva hace es prejuzgar culpable a alguien, y después de un año,  dos años: &ldquo;usted disculpe&rdquo;, resultó que no era culpable. </p>
+<p align="justify">¡Qué pena, pásele! ¿Y el  tiempo que estuvo sin su libertad?</p>
+<p align="justify">Entonces, desgraciadamente  este Congreso, ha venido en una moda, en un populismo penal haciendo cambios a  la Constitución muy negativos, artículo 19 le aumentaron delitos con un rollo  de combate a la corrupción, de que el robo a casa habitación y que no sé qué  tanto, concluyo, empezaron a aumentar y a aumentar los delitos del artículo 19  que permite prisión preventiva oficiosa.</p>
+<p align="justify">Voté en contra, no me  gusta, pero al menos eso es constitucional, porque está en la Constitución. </p>
+<p align="justify">Ni modo,  se tiene uno que aguantar porque así lo decidieron dos terceras partes del  Senado, de la Cámara de Diputados y la mayoría de los congresos. </p>
+<p align="justify">Pero lo  que se vino a hacer aquí en materia fiscal, fue un abuso, porque se evitó, se  evitó hacer una reforma constitucional, porque no lograban los votos y lo que  se vino a hacer es una reforma a la ley secundaria para decir: ah, pues mira,  ya se me ocurrió, como la Constitución dice que los delitos de seguridad  nacional sí ameritan prisión preventiva oficiosa, pues le voy a sumar delitos a  la Ley de Seguridad Nacional y así ya prisión preventiva oficiosa. </p>
+<p align="justify">Dijimos  aquí: es ilegal, y ayer afortunadamente la Corte lo validó, que sirva de  lección, para evitar que en este país se continúe aumentando esta práctica que  viola flagrantemente los derechos humanos, y si alguien cree que un delito  amerita prisión preventiva oficiosa, propongan una reforma constitucional y que  entonces la Constitución lo diga. <br>
+  <br>
+  Si no se  hace así, esto es ilegal, creo que fue un gran paso, bien por la Comisión  Nacional de los Derechos Humanos, que lo impugnó, bien por la minoría en el  Senado que lo impugnaos y, sobre todo, bien por la Corte que defendió la  libertad y los derechos humanos. </p>
+<p align="justify">Y que  nadie venga a decir que eso se traduce a defensa de delincuentes, metan a la  cárcel a los delincuentes, todos queremos atacar a los delincuentes, pero no  usemos una herramienta como persecución penal, en este caso fiscal. </p>
+<p align="justify">Muchas  gracias. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga  María del Carmen Sánchez Cordero Dávila:</strong>  Tiene la palabra la Senadora Xóchitl Gálvez y  posteriormente Kenia López Rabadán, por favor, hasta por dos minutos, por  favor. </p>
+<p align="justify"><strong>La Senadora Xóchitl Gálvez  Ruiz: </strong>(Desde su escaño) Muchas gracias, señora  Presidenta. </p>
+<p align="justify">Me  preocupan muchísimo las declaraciones del señor Presidente hoy por la mañana,  que además es una declaración reiterada, asegurando que en las comunidades  indígenas no existe violencia contra las mujeres. </p>
+<p align="justify">Pensar de  manera romántica que lo que se vive adentro de una comunidad es perfecto, la  verdad, lamento decirle al Presidente que, como cualquier otra sociedad, las  mujeres sufren de violencia. </p>
+<p align="justify">El papá  de Angélica ha confirmado que la dio en matrimonio a los 12 años a cambio de un  recurso económico, él dice que fue porque no hubo fiesta, está arrepentido el  papá. </p>
+<p align="justify">El  Presidente de la República perdió una gran oportunidad de condenar en la  montaña de Guerrero la violencia hacia las mujeres indígenas. </p>
+<p align="justify">Por  supuesto que no debe de hacer ningún uso y costumbre que violente los derechos  humanos de las mujeres, pero me parece que esta violencia que sufren las  mujeres indígenas, como el caso de Angélica y muchas otras en las comunidades  huicholes es muy común que los padres abusen sexualmente de sus hijas y se ve  con normalidad. </p>
+<p align="justify">Creo que  tenemos que condenarla y las autoridades, celebro que hayan detenido al suegro  de Angélica y que hoy esté en la cárcel, pero tenemos que hacer hasta lo  imposible para que esta violencia termine, y lo primero es reconocer que sí  existe. </p>
+<p align="justify">Muchas  gracias. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga  María del Carmen Sánchez Cordero Dávila: </strong>Gracias, Senadora Gálvez  Ruiz. </p>
+<p align="justify">Kenia,  por favor. </p>
+<p align="justify"><strong>La Senadora Kenia López  Rabadán: </strong>(Desde su escaño) Muchas gracias, señora  Presidenta. </p>
+<p align="justify">Es  obligador hacer una reflexión sobre lo que ha comentado aquí el Senador Zepeda. </p>
+<p align="justify">Es  evidente que lo que está pasando con Rosario Robles demuestra que en nuestro  país hay una justicia selectiva, se trata distinto a Emilio Lozoya y se trata  muy distinto a Rosario Robles. <br>
+  <br>
+  Hay que  exigir que se haga una investigación y que en caso de que haya culpabilidad se  sancione, lo que no se puede permitir aquí es que haya venganzas personales y  claramente a la señora Robles este gobierno no le va a perdonar los videos de  Bejarano, es evidente que hay una venganza política en su contra y eso debe de  parar en este gobierno y en el que siga y en cualquier otro. </p>
+<p align="justify">Se  necesita una falta de sensatez jurídica para poder aprobar lo que está pasando.  Nosotros mismos aquí tenemos claro que no se puede exceder de dos años, y con  esto concluyo, presidenta, la prisión preventiva oficiosa, así es que qué  lástima que hayan interpuesto esta figura en muchos temas para cumplir con las  venganzas del gobierno y no para cumplir con la ley. </p>
+<p align="justify">Ayer  claramente la Suprema Corte de Justicia ha resuelto lo que nosotros dijimos  aquí, y es que la prisión preventiva oficiosa viola los derechos humanos. </p>
+<p align="justify">Concluyo  solamente diciéndole a la secretaria general de Morena, a la Senadora con  licencia, Citlalli Hernández, que no se equivoque, que el problema de la  prisión preventiva oficiosa no tiene que ver con lo que pone en sus redes  sociales, la prisión preventiva oficiosa tiene que ver con la violación a los  derechos humanos que claramente lo ha dicho la ONU y demás organismos  internacionales protectores de derechos humanos, lo dijimos aquí y no quisieron  hacer caso, viola los derechos humanos la PPO.</p>
+<p align="justify">Muchísimas  gracias, señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga  María del Carmen Sánchez Cordero Dávila: </strong>Tiene la palabra el Senador  Miguel Ángel Mancera y con él concluimos, porque tenemos una sesión muy larga. </p>
+<p align="justify"><strong>El Senador Miguel Ángel  Mancera Espinosa: </strong>(Desde su escaño) Gracias,  señora Presidenta. </p>
+<p align="justify">También  para reconocer la resolución de la Suprema Corte de Justicia del día de ayer en  donde aquí se había debatido y aquí se había expuesto esta consideración  jurídica de que la seguridad nacional no podía ser vinculada precisamente a los  temas fiscales, a los delitos fiscales, dada la naturaleza de unos y de otros. </p>
+<p align="justify">Y  respecto de la prisión preventiva también vale mucho la pena que analicemos y  seguramente que podamos establecer con mayor precisión, aunque ya lo dice hoy  en la propia Constitución, dice: &ldquo;la prisión preventiva no podrá exceder del  tiempo que como máximo de pena fije la ley al delito que motivara el proceso y  en ningún caso será superior a dos años, salvo que se prolongue por ejercicio  del derecho de la defensa&rdquo;. </p>
+<p align="justify">Vale la  pena que podamos, en los casos de prisión preventiva solicitada, acotar la  discrecionalidad, porque se está volviendo una práctica reiterada, recurrente  la prisión preventiva solicitada, ya no hablo de la oficiosa. </p>
+<p align="justify">Por eso  vale la pena que legislemos en eso, nosotros vamos a presentar alguna  propuesta. </p>
+<p align="justify">Muchas  gracias, señora Presidenta. </p>
+<p align="justify">Es  cuanto. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga  María del Carmen Sánchez Cordero Dávila: </strong>A ver, Claudia. </p>
+<p align="justify">Nada más  para hechos, por favor, el Senador Ángel García.<br>
+  <br>
+  ¡Ah! La  Senadora Claudia Ruiz Massieu, por favor. </p>
+<p align="justify"><strong>La Senadora Claudia Ruiz  Massieu Salinas: </strong>(Desde su escaño) Muchas  gracias. Señora Presidenta, brevemente para el mismo tema. </p>
+<p align="justify">Reconocer,  desde el grupo parlamentario del PRI, a la Suprema Corte de Justicia de la  Nación por esta decisión que por mayoría toma ayer que demuestra pulcritud en  el análisis de los planteado, pero sobre todo una congruencia de aquellos  quienes tienen un compromiso con los derechos humanos. </p>
+<p align="justify">Creo que para todos es importante que la Corte haya  reivindicado el derecho a la presunción de inocencia como un derecho humano. </p>
+<p align="justify">Y también, hay que decirlo en este recinto,  reivindicarlo como un derecho humano que siempre se debe observar, incluso  frente a la discrecionalidad de las y los legisladores. </p>
+<p align="justify">Recordar finalmente que los grupos parlamentarios  de oposición lo planteamos en el mismo debate de la ley que fue impugnada con  la acción de inconstitucionalidad, desde entonces reiteramos con argumentos,  pero sobre todo con la convicción de que la reforma constitucional en materia  de derechos humanos establecía con toda claridad este derecho a la presunción  de inocencia como un derecho humano. </p>
+<p align="justify">Planteamos que se hiciera una pausa y se planteara  otra solución para enfrentar la evasión fiscal. Lamentablemente no se escuchó,  pero en un Estado democrático siempre tendremos al órgano jurisdiccional para  reivindicar este régimen de libertades y de derechos.</p>
+<p align="justify">Reconocimiento a la Corte, hacer memoria como  legisladores y de aquí a futuro, compañeras y compañeros, seguir ateniéndonos a  ese principio de los derechos humanos frente a cualquier pretensión nuestra,  inclusive de ser discrecionales. </p>
+<p align="justify">Muchas gracias, señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Continúe la Secretaría, por favor. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100776'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100777'></a><p align="justify"><strong>COMUNICACIONES</strong></p>
+<p align="justify"><strong>La Secretaria Senadora Audelia Esthela Villarreal  Zavala: </strong>Se  recibió del Senador Elí César Cervantes Rojas, del grupo parlamentario del  Partido Morena, comunicación con la que remite informe de actividades  realizadas en el monitoreo de la presencia de sargazo en diversas playas del  estado de Quintana Roo, del 15 al 19 de septiembre de 2021. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>La Asamblea queda enterada. </p>
+<p align="justify">Pasamos al siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100777'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100778'></a><p align="justify"><strong>La Secretaria Senadora Audelia Esthela Villarreal  Zavala: </strong>Se  recibió del Senador Manuel Añorve Baños, del grupo parlamentario del PRI,  comunicación con la que remite el informe de su participación en la cuarta  parte de la sesión ordinaria de la Asamblea Parlamentaria del Consejo de  Europa, celebrada del 27 al 30 de septiembre de 2021 en su modalidad a  distancia. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>La Asamblea queda enterada. </p>
+<p align="justify">Y pasamos al siguiente asunto.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100778'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100779'></a><p align="justify"> <strong>La Secretaria Senadora Audelia  Esthela Villarreal Zavala: </strong>Se  recibió del Senador Gustavo Madero Muñoz, comunicación con la que remite su  informe de actividades correspondiente al tercer año de ejercicio de la LXIV  Legislatura. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María  del Carmen Sánchez Cordero Dávila: </strong>La  Asamblea queda enterada. </p>
+<p align="justify">Pasamos  al siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100779'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100780'></a><p align="justify"><strong>La Secretaria Senadora Audelia  Esthela Villarreal Zavala: </strong>Se  recibió del Senador Julio Menchaca Salazar, Presidente de la Comisión de  Justicia, comunicación con la que remite el dictamen de la Comisión de Justicia  por el que se pronuncia sobre la elegibilidad de las personas candidatas para  ocupar el cargo de Magistradas o Magistrados de los Órganos Jurisdiccionales  Locales en materia electoral de 17 entidades federativas de la República  Mexicana. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Ofi_Sen_Menchaca_Dict_Cargo_Magistrados_Materia_Electoral.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Olga María  del Carmen Sánchez Cordero Dávila: </strong>La  Asamblea queda enterada. Comuníquese a la Junta de Coordinación Política.  Informo a la Asamblea que el dictamen se publicó en la Gaceta Parlamentaria  desde el jueves 21 de octubre del 2021.</p>
+<p>Pasamos  al siguiente asunto. Por favor, señora Secretaria. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100780'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100781'></a><p align="justify"><strong>INSTITUTO NACIONAL ELECTORAL</strong></p>
+<p align="justify"><strong>La Secretaria Senadora Audelia  Esthela Villarreal Zavala: </strong>Se  recibió del Instituto Nacional Electoral, oficio con el que remite Acuerdo del  Consejo General del Instituto Nacional Electoral por el que se realiza la  declaración de validez de los resultados finales del cómputo nacional de la Consulta  Popular 2021.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/INE_Resultados_Consulta_Popular.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Olga María  del Carmen Sánchez Cordero Dávila: </strong>La  Asamblea queda enterada y publíquese en la Gaceta Parlamentaria. </p>
+<p align="justify">Pasamos  al siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100781'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100782'></a><p align="justify"><strong>CONGRESOS DE LOS ESTADOS</strong></p>
+<p align="justify"><strong>La Secretaria Senadora Audelia Esthela Villarreal  Zavala: </strong>Se  recibió del Congreso del Estado de Chihuahua, exhorto al Congreso de la Unión,  a fin de incorporar al Presupuesto de Egresos de la Federación 2022 la  suficiencia presupuestal para contribuir a garantizar el precio de garantía al  productor de frijol en 17 pesos con 50 centavos por kilogramo y de leche a  nueve pesos con 20 centavos por litro; asimismo, establecer la continuidad al  proyecto frijol para México con uso de semilla certificada, así como dar apoyo  al paquete tecnológico de este grano básico. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Congreso_Chihuahua_Presupuesto_Egresos_Federacion_2022.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Olga María  del Carmen Sánchez Cordero Dávila: </strong>Se  remite a la Cámara de Diputados. </p>
+<p align="justify">Y  pasamos al siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100782'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100783'></a><p align="justify"><strong>La Secretaria Senadora Audelia  Esthela Villarreal Zavala: </strong>Se  recibió del Congreso del Estado de Hidalgo, oficio con el que informa de la  integración de la Mesa Directiva que funge durante el mes de octubre,  correspondiente al primer periodo de sesiones ordinarias del primer año de  ejercicio en la LXV Legislatura. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Congreso_Hidalgo_Mesa_Directiva_Octubre.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Olga María  del Carmen Sánchez Cordero Dávila: </strong>La  Asamblea queda enterada. </p>
+<p align="justify">Y  pasamos al siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100783'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100784'></a><p align="justify"><strong>La Secretaria Senadora Audelia  Esthela Villarreal Zavala: </strong>Se  recibió del Congreso de Estado de Morelos, exhorto a la Cámara de Senadores a  que, sin mayor dilación, provea lo necesario para expedir la legislación única  en materia procesal civil y familiar. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Congreso_Morelos_Expedir_Leg_Procesal_Civil_Familiar.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Olga María  del Carmen Sánchez Cordero Dávila: </strong>Se  turna a la Comisión de Justicia. </p>
+<p align="justify">Y  pasamos al siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100784'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100785'></a><p align="justify"><strong>La Secretaria Senadora Audelia  Esthela Villarreal Zavala: </strong>Se  recibió del Congreso del Estado de Guanajuato, oficio con el que informa que ha  quedado instalado el ayuntamiento del municipio de León, Guanajuato, para el  periodo 2021-2024. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Congreso_Guanajuato_Instalacion_Ayuntamiento.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Olga María  del Carmen Sánchez Cordero Dávila: </strong>La  Asamblea queda enterada. </p>
+<p align="justify">Pasamos  al siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100785'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100786'></a><p align="justify"><strong>La Secretaria Senadora Audelia  Esthela Villarreal Zavala: </strong>Se  recibió del Congreso del Estado de Oaxaca, INICIATIVA PROYECTO DE DECRETO POR  EL QUE SE REFORMA LA FRACCIÓN XXVII BIS, DEL ARTÍCULO 132, DE LA LEY FEDERAL  DEL TRABAJO. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Congreso_Oaxaca_Art_132_LFT.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Olga María  del Carmen Sánchez Cordero Dávila: </strong>Se  turna a las Comisiones Unidas de Trabajo y Previsión Social; y de Estudios  Legislativos, Primera. </p>
+<p align="justify">Pasamos  al siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100786'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100787'></a><p align="justify"><strong>La Secretaria Senadora Audelia  Esthela Villarreal Zavala: </strong>También  se recibió del Congreso del Estado de Oaxaca, INICIATIVA CON PROYECTO DE  DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 44, DE LA FRACCIÓN IV, DEL DÉCIMO  TRANSITORIO, DE LA LEY DEL INSTITUTO DE SEGURIDAD Y SERVICIOS SOCIALES DE LOS  TRABAJADORES DEL ESTADO. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Congreso_Oaxaca_Art_44_Trabajadores_Estado.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Olga María  del Carmen Sánchez Cordero Dávila: </strong>Se  turna a las Comisiones Unidas de Seguridad Social; y de Estudios Legislativos,  Primera. </p>
+<p align="justify">Pasamos  al siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100787'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100788'></a><p align="justify"><strong>La Secretaria Senadora Audelia  Esthela Villarreal Zavala: </strong>Se  recibió del Congreso del Estado de Tamaulipas, oficio con el que informa que ha  quedado instalada la LXV Legislatura, la apertura del primer periodo ordinario  de sesiones, correspondiente al primer año de ejercicio constitucional y la  integración de la Mesa Directiva que fungirá durante el primer periodo  ordinario de sesiones. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Congreso_Tamaulipas_Mesa_Directiva.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Olga María  del Carmen Sánchez Cordero Dávila: </strong>La  Asamblea queda enterada y pasamos al siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100788'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100789'></a><p align="justify"><strong>CÁMARA DE DIPUTADOS</strong></p>
+<p align="justify"><strong>La Secretaria Senadora Audelia  Esthela Villarreal Zavala: </strong>Se  recibió de la Cámara de Diputados, oficio por el que se comunica la designación  del Diputado César Agustín Hernández Pérez, Consejero Propietario del Poder  Legislativo ante el Consejo General del Instituto Nacional Electoral, por parte  del grupo parlamentario del Partido Morena. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Diputados_Designacion_Consejero_Poder_Legislativo_Ante_INE.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Olga María  del Carmen Sánchez Cordero Dávila: </strong>La  Asamblea queda enterada. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100789'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100790'></a><p align="justify"><strong>MESA DIRECTIVA</strong></p>
+<p align="justify">El  siguiente asunto en el Orden del Día es un Acuerdo que la Mesa Directiva  suscribió en relación con las Senadoras y Senadores del denominado Grupo  Plural. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Acuerdo_MD_Grupo_Plural.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Para  su conocimiento, el Acuerdo se encuentra disponible en el monitor de sus escaños.  Publíquese en la Gaceta Parlamentaria. <br>
+  Tiene la palabra al Senador Germán Martínez, para  este asunto, por dos minutos. </p>
+<p align="justify">Por favor, Senador. </p>
+<p align="justify"><strong>El Senador Germán Martínez Cázares: </strong>Gracias, señora Presidenta. </p>
+<p align="justify">Solamente subimos a la tribuna, a nombre de la  Senadora Alejandra León, de Nancy De la Sierra, de Gustavo Madero, de Emilio  Álvarez Icaza y de un servidor, para agradecerle a usted el acuerdo que está  poniendo a consideración. </p>
+<p align="justify">Asimismo, agradecemos el acuerdo de la Junta de  Coordinación y a todos y cada uno de las coordinadoras y los coordinadores de  todos los partidos políticos. En especial, quiero darle las gracias al Senador  Ricardo Monreal. </p>
+<p align="justify">No somos un grupo de choque ni somos un grupo  contra nadie y no tenemos dueños ni jefes; no nos agrupamos para insultar a  nadie ni tampoco nos alquilamos para rencillas personales o para apoyar  legítimas aspiraciones electorales de nadie; queremos que nuestras palabras  sean útiles a la justicia y la libertad; nos apoyamos en los derechos humanos  que tenemos a expresarnos y a asociarnos en la Constitución Política, que  establece que los grupos parlamentarios se hacen ideológicamente en la Cámara  de Diputados, pero hay un silencio constitucional en el 70 en la Cámara de  Senadores.</p>
+<p align="justify">Está restringida la asociación para los ministros  de culto, está restringida la asociación política en los templos, pero no está  restringida la asociación política para los Senadores expresamente en nuestro  texto Constitucional. </p>
+<p align="justify">Cumplimos por eso con la Constitución, cumplimos y  ejercemos nuestro derecho a la libre asociación y a la libre expresión. </p>
+<p align="justify">Aquí afuera está Francisco Zarco, en Paseo de la  Reforma, defensor de la libertad de expresión y defensor del Senado de la  República. </p>
+<p align="justify">Y con una frase de él, que  hacemos nuestra en el grupo plural, quiero dar las gracias, presidenta, a  usted, darles las gracias a todos y decirles que nos pueden quitar toda clase  de libertad, pero que nos dejen la de hablar y escribir conforme a nuestra  conciencia. </p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Gracias, Senador Martínez Cázares.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100790'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100791'></a><p align="justify">El siguiente asunto en el  Orden del Día es el Acuerdo que la Mesa Directiva suscribió para normar la  discusión de los dictámenes que comprenden los tres proyectos de Decreto del  paquete fiscal para el Ejercicio 2022. </p>
+<p align="justify">El Acuerdo se encuentra  publicado en la Gaceta Parlamentaria y disponible en el monitor de sus escaños.</p>
+<p align="justify">Solicito a la Secretaría  por favor, dé lectura.</p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con  gusto, señora Presidenta.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Acuerdo_MD_Paquete_Fiscal.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es cuanto, señora Presidenta.<br>
+  <br>
+  <strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Está a discusión y tiene la palabra el Senador  Ángel García.</p>
+<p align="justify">Gracias.</p>
+<p align="justify"><strong>El Senador Ángel García Yáñez: </strong>(Desde su escaño) Gracias,  señora Presidenta.</p>
+<p align="justify">Perdón por mi insistencia,  pero la situación que estamos viviendo en Morelos es preocupante, por eso es  que he presentado una proposición con punto de Acuerdo por el que se exhorta  respetuosamente al titular del Ejecutivo Federal, Secretario de Seguridad y Protección  Ciudadana, Fiscal General de la República, Comandante de la Guardia Nacional, Gobernador,  Secretario de Seguridad Pública y Fiscal General de Justicia del Estado de  Morelos, para que, en el ámbito de sus atribuciones y en colaboración, establezcan acciones y  políticas públicas efectivas para prevenir y erradicar los feminicidios y  violencia en contra de las mujeres, y se respeten sus derechos humanos en la  entidad. Y también la inseguridad que estamos viviendo en el estado.</p>
+<p align="justify">Por lo anterior, solicito  se turne el día de hoy a la comisión competente, toda vez que es urgente  atender a la población, la problemática que se está viviendo en Morelos.</p>
+<p align="justify">Es cuanto, señora Presidenta.</p>
+<p align="justify">Gracias.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Está a discusión el Acuerdo de la Mesa Directiva  que está normando las participaciones y los tiempos.</p>
+<p align="justify">¿Alguien quiere hacer uso  de la palabra?</p>
+<p align="justify">Consulte la Secretaría a la  Asamblea, en votación económica, si es de aprobarse el Acuerdo presentado.</p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat: </strong>Sí, señora Presidenta. Consulto a la Asamblea, en votación económica, si  es de aprobarse el Acuerdo. Quienes estén porque se apruebe, favor de levantar  la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque se  rechace, favor de levantar la mano.</p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Aprobado el Acuerdo, señora  Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Aprobado el Acuerdo para normar la discusión de los  dictámenes que comprenden los tres proyectos de decreto del paquete fiscal para  el Ejercicio 2022.</p>
+<p align="justify">Comuníquese.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100791'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100792'></a><p align="justify">Dé cuenta la Secretaría con  los dictámenes inscritos en su primera lectura, por favor.</p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat: </strong>Con gusto, señora Presidenta.<br>
+  <br>
+  Tenemos la primera lectura de un dictamen de las  Comisiones Unidas de Hacienda y Crédito Público; y de Estudios Legislativos,  Segunda, con proyecto de Decreto por el que se reforman, adicionan y derogan  diversas disposiciones de la Ley del Impuesto sobre la Renta, de la Ley del  Impuesto al Valor Agregado, de la Ley del Impuesto Especial sobre Producción y  Servicios, de la Ley Federal del Impuesto sobre Automóviles Nuevos, del Código  Fiscal de la Federación y otros ordenamientos.</p>
+<p align="justify"><strong>PROYECTO DE DECRETO  POR EL QUE SE REFORMAN, ADICIONAN Y DEROGAN DIVERSAS DISPOSICIONES DE LA LEY  DEL IMPUESTO SOBRE LA RENTA, DE LA LEY DEL IMPUESTO AL VALOR AGREGADO, DE LA  LEY DEL IMPUESTO ESPECIAL SOBRE PRODUCCIÓN Y SERVICIOS, DE LA LEY FEDERAL DEL  IMPUESTO SOBRE AUTOMÓVILES NUEVOS, DEL CÓDIGO FISCAL DE LA FEDERACIÓN Y OTROS  ORDENAMIENTOS</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Dict_Hacienda_Miscelanea_Fiscal.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100792'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100793'></a><p align="justify">Asimismo, tenemos la primera lectura de un dictamen  de las Comisiones Unidas de Hacienda y Crédito Público; y de Estudios  Legislativos, Segunda, con proyecto de Decreto por el que se reforman,  adicionan y derogan diversas disposiciones de la Ley Federal de Derechos.</p>
+<p align="justify"><strong>PROYECTO DE DECRETO  POR EL QUE SE REFORMAN, ADICIONAN Y DEROGAN DIVERSAS DISPOSICIONES DE LA LEY  FEDERAL DE DERECHOS</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Dict_Hacienda_Ley_Federal_derechos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100793'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100794'></a><p align="justify">De igual forma, tenemos la primera lectura de un  dictamen de las Comisiones Unidas de Hacienda y Crédito Público; y de Estudios  Legislativos, Segunda, con proyecto de Decreto por el que se expide la Ley de  Ingresos de la Federación para el Ejercicio Fiscal de 2022.</p>
+<p align="justify"><strong>PROYECTO DE DECRETO  POR EL QUE SE EXPIDE LA LEY DE INGRESOS DE LA FEDERACIÓN PARA EL EJERCICIO  FISCAL DE 2022</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Dict_Hacienda_Exp_Ley_Ingresos_Federacion_Ejercicio_Fiscal_2022.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100794'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100795'></a><p align="justify">Del mismo modo, tenemos la primera lectura de un  dictamen de las Comisiones Unidas de Relaciones Exteriores; y de Medio  Ambiente, Recursos Naturales y Cambio Climático, el que contiene proyecto de  Decreto por el que se aprueba el Anexo III: Reglas para Prevenir la  Contaminación por Sustancias Perjudiciales Transportadas por Mar en Bultos, del  Convenio Internacional para Prevenir la Contaminación por los Buques, adoptado  en el marco de la Organización Marítima Internacional.</p>
+<p align="justify"><strong>ANEXO III: &ldquo;REGLAS  PARA PREVENIR LA CONTAMINACIÓN POR SUSTANCIAS PERJUDICIALES TRANSPORTADAS POR  MAR EN BULTOS&rdquo; DEL CONVENIO INTERNACIONAL PARA PREVENIR LA CONTAMINACIÓN POR  LOS BUQUES (MARPOL 73/78), ADOPTADO EN EL MARCO DE LA ORGANIZACIÓN MARÍTIMA  INTERNACIONAL</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Dict_Rela_Ext_Buques_Marpol.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100795'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100796'></a><p align="justify">Asimismo, tenemos la primera lectura de un dictamen  de las Comisiones Unidas de Relaciones Exteriores; y de Medio Ambiente,  Recursos Naturales y Cambio Climático, el que contiene proyecto de Decreto por  el que se aprueba el Anexo IV, Reglas para Prevenir la Contaminación por las  Aguas Sucias de los Buques, del Convenio Internacional para Prevenir la  Contaminación por los Buques 1973, modificado por el Protocolo de 1978.</p>
+<p align="justify"><strong>ANEXO IV: &ldquo;REGLAS  PARA PREVENIR LA CONTAMINACIÓN POR LAS AGUAS SUCIAS DE LOS BUQUES&rdquo; DEL CONVENIO  INTERNACIONAL PARA PREVENIR LA CONTAMINACIÓN POR LOS BUQUES 1973, MODIFICADO  POR EL PROTOCOLO DE 1978</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Dict_Rela_Ext_Contaminacion_Buques_1973.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100796'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100797'></a><p align="justify">También tenemos la primera lectura de un dictamen  de las Comisiones Unidas de Relaciones Exteriores; y de Medio Ambiente,  Recursos Naturales y Cambio Climático, el que contiene proyecto de Decreto por  el que se aprueba la Enmienda al Convenio de Basilea sobre el Control de los  Movimientos Transfronterizos de los Desechos Peligrosos y su Eliminación.</p>
+<p align="justify"><strong>ENMIENDA AL  CONVENIO DE BASILEA SOBRE EL CONTROL DE LOS MOVIMIENTOS TRANSFRONTERIZOS DE LOS  DESECHOS PELIGROSOS Y SU ELIMINACIÓN</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Dict_Rela_Ext_Desechos_Peligrosos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100797'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100798'></a><p align="justify">Asimismo, tenemos la primera lectura de un dictamen  de las Comisiones Unidas de Relaciones Exteriores; Para la Igualdad de Género;  y de Estudios Legislativos, Segunda, que contiene proyecto de Decreto por el  que se reforman diversas disposiciones de la Ley del Servicio Exterior  Mexicano, en materia de igualdad de género y no discriminación.</p>
+<p align="justify"><strong>PROYECTO DE DECRETO  POR EL QUE SE REFORMAN DIVERSAS DISPOSICIONES DE LA LEY DEL SERVICIO EXTERIOR  MEXICANO</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Dict_Rela_Ext_Ley_Servicio_Exterior_Mexicano.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100798'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100799'></a><p align="justify">De igual forma, tenemos la primera lectura del  dictamen de las Comisiones Unidas de Medio Ambiente, Recursos Naturales y  Cambio Climático; y de Estudios Legislativos, el que contiene proyecto de Decreto por  el que se reforman y adicionan diversas disposiciones de la Ley General para la  Prevención y Gestión Integral de los Residuos, en materia de plásticos y  residuos sólidos urbanos. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL  QUE SE REFORMAN Y ADICIONAN DIVERSAS DISPOSICIONES DE LA LEY GENERAL PARA LA  PREVENCIÓN Y GESTIÓN INTEGRAL DE LOS RESIDUOS</strong><strong> </strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/DICTAMEN_LGPGIR_FINAL_inscripcion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100799'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100800'></a><p align="justify">Finalmente, tenemos la  primera lectura de un dictamen de las Comisiones Unidas de Medio Ambiente,  Recursos Naturales y Cambio Climático; y de Estudios Legislativos, Segunda, que  contiene proyecto de Decreto por el que se expide la Ley General de Economía  Circular.</p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE SE EXPIDE LA LEY GENERAL DE ECONOMÍA  CIRCULAR</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Dictamen_LGEC_FINAL_INSCRIPCION.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es cuanto, señora  Presidenta.</p>
+<p align="justify"><strong>La  Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Los nueve dictámenes se  encuentran publicados en la Gaceta del día de hoy y disponibles en el monitor  de sus escaños.</p>
+<p align="justify">Con fundamento en lo  dispuesto por los artículos 193 y 195 del Reglamento del Senado, quedan de  primera lectura los nueve dictámenes.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100800'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100801'></a><p align="justify">Compañeras y compañeros  Senadores, las Comisiones Unidas de Gobernación; y de Estudios Legislativos,  Segunda, remitieron un dictamen con proyecto de Decreto por el que se establece  la interpretación auténtica que debería darse del contenido de los artículos 11  y 12 de la Ley Federal de Revocación de Mandato, publicada en el Diario Oficial  de la Federación el 14 de septiembre de 2021.</p>
+<p align="justify">Solicito a la Secretaría  consulte a la Asamblea, en votación económica, si se autoriza incorporar el  anterior dictamen al Orden del Día de la sesión del día de hoy.</p>
+<p align="justify"><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Sí, señora Presidenta.</p>
+<p align="justify">Consulto a la Asamblea, en  votación económica, si autoriza que se incorpore el dictamen anunciado por la  Presidencia, en la sesión de hoy. Quienes estén porque se autorice, favor de  levantar la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque no se  autorice, favor de levantar la mano.</p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Sí se autoriza, señora  Presidenta.</p>
+<p align="justify"><strong>La  Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Gracias.</p>
+<p align="justify"> <strong>PROYECTO DE DECRETO POR EL QUE SE ESTABLECE LA INTERPRETACIÓN AUTÉNTICA  QUE DEBERÁ DARSE AL CONTENIDO DE LOS ARTÍCULOS 11 Y 12 DE LA LEY FEDERAL DE  REVOCACIÓN DE MANDATO, PUBLICADA EN EL DIARIO OFICIAL DE LA FEDERACIÓN EL 14 DE  SEPTIEMBRE DE 2021</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Dictamen_Interpretacion_FINAL.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">El  dictamen está publicado y disponible en el monitor de sus escaños, y así se  hace de su conocimiento. Consulte la Secretaría a la Asamblea, en votación  económica, si se autoriza se omita la lectura del dictamen.</p>
+<p align="justify"><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat: </strong>Con gusto, señora  Presidenta. Consulto a la Asamblea, en votación económica, si autoriza que se  omita la lectura del dictamen.</p>
+<p align="justify">Quienes  estén porque se autorice, favor de levantar la mano.</p>
+<p align="center">(La  Asamblea asiente)</p>
+<p align="justify">Quienes  estén porque no se autorice, favor de levantar la mano.</p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p align="justify">Sí se  omite la lectura, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga  María del Carmen Sánchez Cordero Dávila: </strong>En consecuencia, queda de  primera lectura.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100801'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100802'></a><p align="justify">Informo que los textos de las  iniciativas y proposiciones con punto de Acuerdo se integran en el Diario de  los Debates.</p>
+<p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSAS DISPOSICIONES  DE LA LEY DE TRANSICIÓN ENERGÉTICA Y DE LA LEY DEL IMPUESTO SOBRE LA RENTA</strong></p>
+<p align="justify"><strong>(Presentada por </strong><strong>el Senador Manuel Velasco Coello, del grupo  parlamentario del PVEM)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Inic_PVEM_Sen_Velasco_ISR.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100802'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100803'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMAN LOS ARTÍCULOS 52 Y 53 DE LA LEY  GENERAL DE EDUCACIÓN</strong></p>
+<p align="justify"><strong>(Presentada por </strong><strong>los Senadores Joel Padilla Peña y Geovanna  del Carmen Bañuelos de la Torre, del grupo parlamentario del PT)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Inic_PT_Sen_Padilla_y_Banuelos_art_52_53_LGE.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100803'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100804'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE DEROGAN Y REFORMAN DIVERSOS ARTÍCULOS DE LA  LEY NACIONAL DE EXTINCIÓN DE DOMINIO</strong></p>
+<p align="justify"><strong>(Presentada por </strong><strong>el Senador Miguel Ángel Mancera Espinosa, del  grupo parlamentario del PRD)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Inic_PRD_Sen_Mancera_Ley_Nac_Ext_Dominio.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100804'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100805'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMAN LOS ARTÍCULOS 14 Y 142 DE LA LEY  GENERAL DEL SISTEMA NACIONAL DE SEGURIDAD PÚBLICA</strong></p>
+<p align="justify"><strong>(Presentada por </strong><strong>el Senador Clemente Castañeda Hoeflich, del  grupo parlamentario de Movimiento Ciudadano)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Inic_MC_Sen_Hoeflich_art_14_142_LGSNSP.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100805'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100806'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 1, SE ADICIONA EL  ARTÍCULO 4 BIS, SE CREA UN CAPÍTULO QUINTO BIS &ldquo;SOBRE EL USO Y DIFUSIÓN DE LA  ARENGA NACIONAL&rdquo; Y SE ADICIONAN LOS ARTÍCULOS 49 BIS, 49 TER Y 49 QUÁTER, ASÍ  COMO LAS FRACCIONES XII AL ARTÍCULO 56 Y VI AL ARTÍCULO 56 TER Y SE MODIFICA EL  NOMBRE DE LA LEY SOBRE EL ESCUDO, LA BANDERA Y EL HIMNO NACIONALES</strong></p>
+<p align="justify"><strong>(Presentada por </strong><strong>el Senador Mario Zamora Gastélum, del grupo  parlamentario del PRI)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Inic_PRI_Sen_Mario_Zamora_ley_escudo_HN.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100806'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100807'></a><p align="justify"><strong>INICIATIVA </strong><strong>CON PROYECTO DE  DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 181 DE LA LEY GENERAL DE SALUD</strong><strong> </strong></p>
+<p align="justify"><strong>(Presentada por </strong><strong>la Senadora  Geovanna del Carmen Bañuelos de la Torre, del </strong><strong>g</strong><strong>rupo </strong><strong>p</strong><strong>arlamentario del </strong><strong>PT</strong><strong>)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Inic_PT_Sen_Banuelos_art_181_LGS.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100807'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100808'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE PROPONE INSCRIBIR EN LETRAS DORADAS EN EL  MURO DE HONOR DEL SENADO DE LA REPÚBLICA LA LEYENDA &ldquo;INGENIEROS MILITARES&rdquo;</strong></p>
+<p align="justify"><strong>(Presentada por </strong><strong>el Senador Gonzalo Yáñez, del grupo  parlamentario del PT)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/121644"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100808'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100809'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMAN LOS ARTÍCULOS 81, 84, 99, 116 Y 122  DE LA CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS</strong></p>
+<p align="justify"><strong>(Presentada por </strong><strong>el Senador Damián Zepeda Vidales, del grupo  parlamentario del PAN)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Inic_PAN_Sen_Damian_Zepeda_art_81_84_99_116_122_CPEUM.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100809'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100810'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSOS ORDENAMIENTOS  LEGALES</strong></p>
+<p align="justify"><strong>(Presentada por </strong><strong>el Senador Ricardo Monreal Ávila, del grupo  parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Ini_Morena_Sen_Monreal_DH_Personas_VIH.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100810'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100811'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO QUE  REFORMA LA LEY GENERAL DE SALUD</strong></p>
+<p align="justify"><strong>(Presentada por la Senadora Sylvana Beltrones  Sánchez, del grupo parlamentario del PRI)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Inic_Sen.SBS_atencion_medica_a_distancia_26102021.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100811'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100812'></a><p align="justify"><strong>PROPOSICIONES CON  PUNTO DE ACUERDO</strong></p>
+<p align="justify">Del Senador Ángel García  Yáñez, del grupo parlamentario del PRI, con punto de Acuerdo por el que se  exhorta al titular de la Secretaría de Agricultura y Desarrollo Rural a  implementar un plan emergente para el impulso a la siembra del cempasúchil en  el campo mexicano. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/PA_PRI_Sen_Angel_Garcia_siembra_cempasuchil.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100812'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100813'></a><p align="justify">De los Senadores  Gabriela Benavides Cobos y Rogelio Israel Zamora Guzmán, del grupo  parlamentario del PVEM, con punto de Acuerdo por el que se exhorta a la  Secretaría de Relaciones Exteriores para que, en el marco de la semana del  desarme, promueva en la Región Latinoamericana y Caribeña acciones y medidas  multilaterales contra el tráfico de armas convencionales. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/PA_PVEM_Sen_Benavides_contra_el_trafico_de_armas.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100813'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100814'></a><p align="justify">Del Senador Miguel  Ángel Mancera Espinosa, del grupo parlamentario del PRD, con punto de Acuerdo  por el que se exhorta a diversas autoridades a implementar medidas de  mitigación del cambio climático, a través de la electromovilidad. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/PA_PRD_Sen_Mancera_Electromovilidad.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100814'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100815'></a><p align="justify">De la Senadora  Geovanna del Carmen Bañuelos de la Torre, del grupo parlamentario del PT, con  punto de Acuerdo por el que se exhorta a la Fiscalía General del estado de  Zacatecas a cumplir con los protocolos para el acordonamiento y resguardo de  escenas de crímenes; asegurando la recolección y cadena de custodia de la  evidencia; se restrinja el acercamiento de familias y menores de edad, así como  para que se realice la liberación del espacio físico, siguiendo para ello los  protocolos necesarios para la descontaminación biológica del lugar. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/10-PA_PT_Sen.Geovanna_Descontaminacion_Biologica.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100815'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100816'></a><p align="justify">Del Senador Miguel  Ángel Mancera Espinosa, del grupo parlamentario del PRD, con punto de Acuerdo por el que se  exhorta a la Secretaría de Medio Ambiente y Recursos Naturales a atender el  abandono de animales de compañía en el territorio nacional. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/11-PA_Sen.MAM_abandono_de_animales.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100816'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100817'></a><p align="justify">Del Senador Marco  Antonio Gama Basarte, del grupo parlamentario del PAN, con punto de Acuerdo por  el que se exhorta a la Comisión Federal para la Protección contra Riesgos  Sanitarios a turnar a la Fiscalía General de la República la información con  que cuenta en sus alertas sanitarias y que advierten hechos con apariencia  delictiva. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/PA_PAN_Sen_Gama_apariencia_delictiva.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100817'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100818'></a><p align="justify">Del Senador Ismael  García Cabeza de Vaca, del grupo parlamentario del PAN, con punto de Acuerdo  por el que se exhorta a la Comisión de Presupuesto y Cuenta Pública de la H.  Cámara de Diputados a que, en la discusión y dictaminación del Presupuesto de  Egresos de la Federación 2022, se incluyan los recursos necesarios para las  entidades federativas que requieran atención inmediata derivada de cualquier  contingencia ocasionada por un fenómeno o desastre natural. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/120262"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100818'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100819'></a><p align="justify">Del Senador Juan  Antonio Martín del Campo Martín del Campo, del grupo parlamentario del PAN, con  punto de Acuerdo por el que se exhorta a la Cámara de Diputados a aumentar la  cantidad de recursos destinados a la capacitación docente, con la finalidad  potencializar el mejoramiento de la enseñanza pública en nuestro país, con  especial atención en el proceso de autoaprendizaje de las y los estudiantes y  el fortalecimiento de las prácticas de aprendizaje a distancia. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/PA_PAN_Sen_Martin_del_Campo_capacitacion_docente.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100819'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100820'></a><p align="justify">Del Senador Ángel  García Yáñez, del grupo parlamentario del PRI, con punto de Acuerdo por el que se exhorta al titular  del Ejecutivo Federal, a la Secretaria de Seguridad y Protección Ciudadana, al  Fiscal General de la República, al Comandante de la Guardia Nacional, al  gobernador, al Secretario de Seguridad Pública y Fiscal General de Justicia del  estado de Morelos a establecer acciones y políticas públicas efectivas para  prevenir y erradicar la ola de feminicidios y violencia en contra de las  mujeres y se respeten sus derechos humanos en la entidad. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/29-Sen.Angel_Garcia_femicidios_y_violencia_contra_mujeres.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100820'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100821'></a><p align="justify">De las Senadoras Xóchitl  Gálvez Ruiz y Nestora Salgado García, de los grupos parlamentarios del PAN y  del Partido Morena, respectivamente, con punto de Acuerdo por el que se exhorta  a la Cámara de Diputados del H. Congreso de la Unión a que, en el Presupuesto  de Egresos de la Federación para el Ejercicio Fiscal del año 2022, se autorice  un aumento de recursos presupuestales para la operación y los programas de  apoyo directo, operados por el Instituto Nacional de los Pueblos Indígenas, al  menos a la misma cantidad que contemplaba el Presupuesto de Egresos de la  Federación para el ejercicio fiscal del año 2018. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/PA_PAN_Morena_Sen_Xochitl_y_Nestora_Salgado_ejercicio_fiscal_2018.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100821'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100822'></a><p align="justify">De la Senadora  Alejandra Noemí Reynoso Sánchez, del grupo parlamentario del PAN, con punto de  Acuerdo por el que se exhorta a la Comisión de Presupuesto y Cuenta Pública de  la Cámara de Diputados a revisar, con perspectiva interdisciplinaria y  transversal, el presupuesto asignado a la materia de conectividad digital;  revisar los montos asignados a las Telecomunicaciones, así como a la empresa  CFE, Telecomunicaciones e Internet para todos, a la Secretaría de Educación  Pública, para los distintos programas en caso de tener que suspender clases  presenciales y a la Secretaría de Salud, en materia de telemedicina, con la  finalidad de ponderar la conectividad como herramienta importante para el  fortalecimiento del índice de desarrollo humano: ingreso, salud y educación. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/49-PA_presupuesto_internet_para_todos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100822'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100823'></a><p align="justify">De la Senadora  Indira de Jesús Rosales San Román, del grupo parlamentario del PAN, con punto  de Acuerdo por el que se exhorta a la Secretaría del Trabajo y Previsión Social  a implementar un programa de estímulos económicos a pequeñas y medianas  empresas en el estado de Veracruz; asimismo; exhorta a la Comisión de  Presupuesto y Cuenta Pública de la Cámara de Diputados a que, en el Presupuesto  de Egresos de la Federación para el Ejercicio Fiscal 2022 se destinen recursos  para la implementación de estímulos económicos a pequeñas y medianas empresas;  exhorta también a la persona titular del Poder Ejecutivo del estado de Veracruz  a crear una Mesa Estatal Especializada en reactivación económica en  coordinación con alcaldes, alcaldesas y pequeñas y medianas empresas de los  municipios más afectados por la pandemia de COVID-19. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/49-PA_Sen.Indira_programa_coatzacoalcos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100823'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100824'></a><p align="justify">Del Senador José  Erandi Bermúdez Méndez, del grupo parlamentario del PAN, con punto de Acuerdo  por el que se exhorta a la Secretaría de Hacienda y Crédito Público y a la  Comisión de Presupuesto y Cuenta Pública de la Cámara de Diputados del H.  Congreso de la Unión a que, en el Presupuesto de Egresos de la Federación para  el Ejercicio Fiscal 2022, se incrementen los recursos asignados a la Secretaría  de Agricultura y Desarrollo Rural para así poder asegurar sus funciones y la  continuidad de programas de apoyo vitales para el campo mexicano. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/63_PA_Sen.Erandi_presupuesto_Sader_pef_2022.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100824'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100825'></a><p align="justify">Del Senador José  Erandi Bermúdez Méndez, del grupo parlamentario del PAN, con punto de Acuerdo  por el que se exhorta a la Secretaría de Hacienda y Crédito Público y a la  Comisión de Presupuesto y Cuenta Pública de la Cámara de Diputados del H.  Congreso de la Unión a que, en el Presupuesto de Egresos de la Federación del Ejercicio  Fiscal 2022, se incrementen los recursos asignados a la Secretaría de Salud,  asegurando de esa forma el buen desarrollo de sus funciones para proteger la  salud de todos los mexicanos. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/64-PA_Sen.Erandi_presupuesto_secretaria_de_Salud_pef_2022.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100825'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100826'></a><p align="justify">Del Senador José  Erandi Bermúdez Méndez, del grupo parlamentario del PAN, con punto de Acuerdo  por el que se exhorta a la Secretaría de Hacienda y Crédito Público y a la  Comisión de Presupuesto y Cuenta Pública de la Cámara de Diputados del H.  Congreso de la Unión a que, en el Presupuesto de Egresos de la Federación para  el Ejercicio Fiscal 2022, se incrementen los recursos asignados a la Secretaría  de Educación Pública y así, asegurar sus funciones y la continuidad de  programas de apoyo vitales para el desarrollo de la educación en México. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/65-PA_Sen.Erandi_presupuesto_Secretaria_Educacion_pef_2022.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100826'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100827'></a><p align="justify">De la Senadora  Kenia López Rabadán, del grupo parlamentario del PAN, con punto de Acuerdo por  el que se solicita la comparecencia de la Directora General del Consejo  Nacional de Ciencia y Tecnología. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/66-PA_Sen.Kenia_Comparecencia_Directora_CONACYT.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100827'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100828'></a><p align="justify">Del SenadorJuan  Antonio Martín del Campo Martín del Campo, del grupo parlamentario del PAN, con  punto de Acuerdo por el que se exhorta a la Cámara Diputados a etiquetar  mayores recursos en materia de saneamiento y tratamiento de agua en el  Presupuesto de Egresos de la Federación para el Ejercicio Fiscal 2022. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/62-PA_Sen.Martin_del-Campo_tratamiento_de_agua.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100828'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100829'></a><p align="justify">Del Senador Ismael  García Cabeza de Vaca, del grupo parlamentario del PAN, con punto de Acuerdo  por el que se exhorta a la Comisión de Presupuesto y Cuenta Pública de la H.  Cámara de Diputados a que, en la discusión y dictaminación del Presupuesto de  Egresos de la Federación 2022, se incluyan los recursos necesarios para las  entidades federativas para el adecuado y oportuno desempeño en materia de  seguridad pública. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/68-PA_Sen.Ismael_seguridad_publica_2022.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100829'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100830'></a><p align="justify">Del Senador Damián  Zepeda Vidales, del grupo parlamentario del PAN, con punto de Acuerdo por el que se  exhorta a la Cámara de Diputados para que en el Presupuesto de Egresos de la  Federación para el Ejercicio Fiscal 2022, presupueste recursos suficientes con  el propósito de implementar un programa de carácter nacional de entrega de  dispositivos electrónicos (tableta u otros) y acceso a internet gratuito a los  estudiantes de educación básica, media superior y superior. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/67-PA_Sen.Damian_dispositivos_electronicos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100830'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100831'></a><p align="justify">De la Senadora  Estrella Rojas Loreto, del grupo parlamentario del PAN, con punto de Acuerdo  por el que se exhorta a la Cámara de Diputados del Honorable Congreso de la  Unión para que, en uso de sus facultades exclusivas y en el marco de la  discusión y aprobación del Presupuesto de Egresos de la Federación para el Ejercicio Fiscal 2022, se  incrementen los recursos del Programa presupuestal Subsidios Federales para  Organismos Descentralizados Estatales, 2022. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/66-PA_Sen.Rojas_programa_presupuestal.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100831'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100832'></a><p align="justify">De las Senadoras y los Senadores  integrantes de la Comisión de Derechos Humanos, con punto de Acuerdo por el que  se exhorta a la Cámara de Diputados del H. Congreso de la Unión a que amplíe el  presupuesto destinado a la Comisión Nacional de Búsqueda de Personas, en el  rubro de servicios de personal y gasto de operación o bien, se redistribuya el  monto propuesto en el proyecto de Presupuesto de Egresos de la Federación para  el Ejercicio Fiscal 2022, a la Comisión Nacional de Búsqueda de Personas, a  efecto de que pueda fortalecer sus trabajos. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/67-PA_Com_DH_Com_Busqueda_Personas.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100832'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100833'></a><p align="justify">Asímismo informo que los textos de las intervenciones  de efemérides y agenda política se registran con su texto íntegro en el Diario  de los Debates.</p>
+<p align="justify"><strong>EFEMÉRIDES</strong></p>
+<p align="justify">De la Senadora Elvia Marcela Mora Arellano, del grupo parlamentario del  PES, relativa al Día Mundial de Información sobre el Desarrollo 2021.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2021-10-26-1/assets/documentos/Efe_Sen_Mora_Dia_Info_Desarrollo_2021.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100833'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100834'></a><p align="justify"><strong>AGENDA POLÍTICA</strong><strong> </strong></p>
+<p align="justify">De las Senadoras y  de los Senadores del grupo parlamentario del Partido Morena, para referirse a  la situación política del país.</p>
+<p align="center">(No se registran  intervenciones)</p>
+<p align="justify">De las Senadoras y  de los Senadores del grupo parlamentario del PAN, para referirse a la situación  política del país.</p>
+<p align="center">(No se registran  intervenciones)</p>
+<p align="justify">De las Senadoras y  de los Senadores del grupo parlamentario del PRI, para referirse a la situación  política del país.</p>
+<p align="center">(No se registran  intervenciones)</p>
+<p align="justify">De las Senadoras y  de los Senadores del grupo parlamentario de Movimiento Ciudadano, para  referirse a la situación política del país.</p>
+<p align="center">(No se registran  intervenciones)</p>
+<p align="justify">Continúe la Secretaría con  los asuntos de la agenda.</p>
+<p align="justify"><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Se han agotado los asuntos  de la agenda, señora Presidenta.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100834'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100835'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify"><strong>La  Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Se cita a sesión ordinaria  este mismo día, la cual se realizará de forma presencial a las 12:00 horas, en  este mismo recinto.</p>
+<p align="justify">Informo que a partir de  este momento estará abierto el sistema electrónico para registrar su asistencia  y se levanta la sesión.</p>
+<p align="center">(Se levantó la sesión a las  11:54 horas)</p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100835'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 8</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Alejandro Armenta Mier</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 20 de Septiembre de 2022</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/2/PPO/PDF-WEB/PPO_No8_20-SEPTIEMBRE-2022_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106244'></a><p align="center"><strong>PRESIDE LA SENADORA</strong><br>
+  <strong>ANA LILIA RIVERA RIVERA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera: </strong>(16:07 horas)<strong> </strong>En  consecuencia, para que reciban al Presidente Frank-Walter, se designa a las  Senadoras y a los Senadores: Héctor Vasconcelos, Erandi Bermúdez Méndez, Clemente  Castañeda, Gabriela Benavides Cobos, Geovanna Bañuelos, Sasil de León Villard,  Antonio García Conejo, Nancy de la Sierra, Napoleón Gómez Urrutia, Nadia  Navarro Acevedo y Gabriela López Gómez. </p>
+<p align="justify">Para recibir al Secretario  de Relaciones Exteriores, licenciado Marcelo Ebrard Casaubón, se designa a las  Senadoras y a los Senadores: María Antonio Cárdenas Mariscal, Gina Andrea Cruz,  Claudia Ruíz Massieu Salinas, Noé Castañón y Gricelda Valencia de la Mora. </p>
+<p align="justify">Para recibir al Presidente  de la Mesa Directiva de la Cámara de Diputados, Diputado Santiago Creel  Miranda, se designa a las Senadoras y a los Senadores: José Erandi Bermúdez  Méndez, Verónica Noemí Camino Farjat, Sylvana Beltrones Sánchez y Patricia  Mercado.</p>
+<p align="justify">Solicito a las  Senadoras y a los Senadores cumplir con su encargo.</p>
+<p align="center">(Las comisiones  cumplen)</p>
+<p align="justify">En tanto se declara  un receso. </p>
+<p align="center">(RECESO)</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106244'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106247'></a><p align="center"><strong>PRESIDE EL SENADOR</strong><br>
+  <strong>ALEJANDRO ARMENTA  MIER</strong></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> Se reanuda la  sesión solemne. </p>
+<p align="justify"><strong>VISITA  DEL PRESIDENTE DE LA REPÚBLICA FEDERAL DE ALEMANIA, FRANK-WALTER STEINMEIER</strong></p>
+<p align="justify">La Cámara de  Senadores del Honorable Congreso de la Unión de los Estados Unidos Mexicanos,  expresa la más cordial bienvenida al Presidente de la República Federal de  Alemania, el señor Presidente Frank-Walter Steinmeier.</p>
+<p align="justify">Sea usted  bienvenido a esta sesión solemne, es un honor recibir su visita. </p>
+<p align="justify"> Asimismo, damos la  bienvenida al Secretario de Relaciones Exteriores, Marcelo Ebrard y al  Presidente de la Mesa Directiva de la Cámara de Diputados, Diputado Santiago  Creel Miranda quienes nos acompañan en este presídium. </p>
+<p align="justify">Celebramos esta  sesión solemne, con el ánimo de continuar la consolidación desde el ámbito  parlamentario de una relación que es estratégica para nuestros países. </p>
+<p align="justify">Doy la bienvenida a  quienes integran la comitiva que nos visita:</p>
+<p align="justify">La señora Elke  Büdenbender.</p>
+<p align="justify">El Excelentísimo  señor Wolfgang Hermann Dold, Embajador de la República Federal de Alemania.</p>
+<p align="justify">La Diputada Dunja  Kreiser, Presidenta del grupo parlamentario Alemania-México. </p>
+<p align="justify">El Diputado Thomas  Rachel, miembro de la Subcomisión de Política Cultural y Educativa Exterior.</p>
+<p align="justify">El Embajador  Wolfgang Silbermann, Director General de Asuntos Políticos. </p>
+<p align="justify">La señora Cerstin  Gammelin, portavoz del Presidente de la Repúlblica Federal de Alemania. </p>
+<p align="justify">señora Hanna  Meuss–Dold. </p>
+<p align="justify">Y la señora Daniela  Lerner, asesora del Presidente. </p>
+<p align="justify">¡Bienvenidas,  bienvenidos todos ustedes!</p>
+<p align="justify">Me permito  presentar a mis compañeras Senadoras y Senadores de la Mesa Directiva, la  Senadora Ana Lilia Rivera Rivera, Vicepresidenta.</p>
+<p align="justify">Al Senador Eruviel Ávila  Villegas, Vicepresidente.</p>
+<p align="justify">Así como las Secretarias,  la Senadora Verónica Noemí Camino Farjat, la Senadora Guadalupe Saldaña  Cisneros, así como la Senadora Verónica Delgadillo García. </p>
+<p align="justify">Conforme al Acuerdo  aprobado para normar la celebración de esta sesión solemne, el Presidente  Frank-Walter Steinmeier dirigirá un mensaje a la Asamblea. </p>
+<p align="justify">En consecuencia, se  le concede el uso de la palabra. </p>
+<p align="justify">Antes de hacerlo voy a proceder a dirigir un mensaje al señor  Presidente.</p>
+<p align="justify">Muy buenas tardes su Excelencia, señor Frank-Walter Steinmeier,  Presidente de la República Federal de Alemania.</p>
+<p align="justify">En cumplimiento al Acuerdo de la Mesa Directiva aprobada por el Pleno  para normar la sesión solemne del día de hoy, martes 20 de septiembre, y en mi  calidad de Presidente de la Mesa Directiva del Senado Mexicano, le extendemos  la más cordial bienvenida a este recinto legislativo.</p>
+<p align="justify">Es un honor contar con la presencia del Jefe del Estado Alemán, político  reconocido por su amplia trayectoria, por el trabajo a favor de su país y por  su capacidad de negociación.</p>
+<p align="justify"> Este encuentro se tenía previsto desde marzo de 2020, pospuesto por las  condiciones sanitarias de la pandemia, pero hoy es una realidad.</p>
+<p align="justify"> Igualmente saludo a  la comitiva que lo acompaña y al Excelentísimo Embajador Extraordinario y  Plenipotenciario de la República Federal de Alemania en México.</p>
+<p align="justify">Las Senadoras y  Senadores, representantes de todas las entidades federativas de la República  mexicana, queremos transmitirle nuestros más sinceros deseos, de que su visita  a México alcance todos sus objetivos, impulse la relación entre nuestros países  y ayude al desarrollo y a la prosperidad de la población de ambas naciones.</p>
+<p align="justify">Alemania y México tienen una relación fuerte, cuyos primeros contactos  se documentan en la época colonial, en la que sobresalen personajes como  Alexander Von Humboldt, quien contribuyó con importantes estudios que  permitieron extender el conocimiento de la región de América Latina al mundo.</p>
+<p align="justify">Esta historia compartida abarca la formalización de vínculos bilaterales  desde hace más de 140 años con una pausa temporal durante la Segunda Guerra  Mundial, que una vez superada permitió a las sociedades de ambas naciones  robustecer las relaciones económicas, políticas y sociales basadas en el  entendimiento, el respeto y la identificación de valores comunes.</p>
+<p align="justify">Desde hace décadas tenemos una asociación fundamentada en el  reconocimiento y la madurez, ni la distancia geográfica, ni el idioma han sido  obstáculos.</p>
+<p align="justify">Lo anterior se ha visto reflejado también en el dinámico intercambio  cultural y en el interés creciente de los estudiantes mexicanos que eligen  Alemania como uno de los principales destinos para continuar sus estudios.</p>
+<p align="justify">En el mismo sentido, reconocemos la solidez de nuestras relaciones  económicas como lo ha sido el establecimiento de las más de dos mil empresas  alemanas en México que han permitido que cientos de familias originarias de su  país se hayan establecido e integrado a la sociedad mexicana.</p>
+<p align="justify">Señor Presidente, su presencia en el Senado de la República es de  particular importancia para las atribuciones constitucionales de esta soberanía  respecto al análisis de la política exterior que desarrolla México con el  mundo.</p>
+<p align="justify">Para las Senadoras y Senadores la celebración de este tipo de encuentros  de alto nivel ratifica las excelentes relaciones que sostenemos con Alemania al  ser uno de nuestros principales socios comerciales y con el que compartimos  valores democráticos. </p>
+<p align="justify">Actualmente nos  encontramos frente a desafíos multidimensionales que afectan a todas las  naciones del orbe y que exigen mayores niveles de diálogo y de cooperación  entre los estados. </p>
+<p align="justify">Entre los más  apremiantes se encuentran las dificultades económicas derivadas de la  emergencia sanitaria. </p>
+<p align="justify">Los graves  acontecimientos en Ucrania. </p>
+<p align="justify">La crisis mundial  ambiental.</p>
+<p align="justify">Y los crecientes  desplazamientos de sus territorios de miles de personas. </p>
+<p align="justify">Reconocemos en  Alemania que se ha consolidado dentro de las cinco primeras economías a nivel  mundial y la primera en la Unión Europea, además de constituirse como uno de  los principales actores en la innovación y el desarrollo tecnológico e  industrial, sus acciones para lograr la transición hacia energías limpias y su  papel como uno de los principales donantes de cooperación internacional para el  desarrollo de diversos países son muestra del liderazgo y del compromiso para  concretar soluciones a los retos globales. </p>
+<p align="justify"> Por ello,  celebramos que Alemania y México caminen juntos sosteniendo ideales que  promueven el bienestar, la paz y la seguridad mundial, bajo los principios del  desarrollo internacional, los preceptos de un auténtico Estado de derecho y el  respeto a las libertades fundamentales. </p>
+<p align="justify">Es de subrayar el  estado que guarda la relación económica entre Alemania y México con un  intercambio comercial que superó a los 24 mil 700 millones de dólares en el  2021 en sectores como el automotriz, la industria farmacéutica, química,  textil, maquinaria y energías renovables. </p>
+<p align="justify">Con estas  actividades Alemania se ha consolidado como el primer socio comercial de México  en Europa y, por su parte, México representa su mayor socio en América Latina y  El Caribe. </p>
+<p align="justify">Como representante  del estado de Puebla quiero destacar que de 1999 al 2022 Alemania se ha  convertido y ha invertido 29 mil millones de dólares en México recibiendo  Puebla, el estado que represento, el 33.5 % de la inversión total. </p>
+<p align="justify">Nos congratulamos  por el proceso de modernización que esperamos lograr en relación con el Acuerdo  de Asociación Económica, Concertación Política y Cooperación México-Unión  Europea, conocido como Acuerdo Global y Cooperación México-Unión Europea,  porque estamos convencidos que apuntalará los beneficios de todas las esferas  que abarca este instrumento entre el bloque europeo con Alemania y México. </p>
+<p align="justify">El Senado mexicano  sigue con mucho interés el proceso de aprobación y de ratificación del Acuerdo  Global para analizarlo, aprobarlo y contribuir así al fortalecimiento de los vínculos  entre nuestras naciones.</p>
+<p align="justify">Valoramos la  confianza que han depositado las empresas alemanas en México para invertir en  diversos campos de la economía nacional, ubicando a Alemania en el quinto lugar  a nivel mundial de países que invierten en México. </p>
+<p align="justify">Lo que demuestra el  alto grado de entendimiento y diálogo para construir proyectos que favorecen a  ambas naciones. </p>
+<p align="justify">Su presencia ante  los Senadores y Senadoras mexicanas confirman esta confianza. </p>
+<p align="justify">Gracias por su  presencia. </p>
+<p align="justify">Puedo señalar que  Alemania y México ofrecemos mutuamente ventajas para el impulso económico,  debido a la privilegiada ubicación geográfica y a la relación con múltiples  socios de nuestras respectivas regiones. </p>
+<p align="justify">México, pondrá en  marcha el próximo año el Tren Interoceánico en el Istmo de Tehuantepec,  conectando a Europa con Asia, con una opción de intercambio comercial, la más  dinámica en todo el continente americano. </p>
+<p align="justify">La pandemia, a  pesar de convertirse en un reto a superar de salud pública, permitió un mayor  acercamiento. </p>
+<p align="justify">Recientemente en el  Congreso Mexicano aprobamos una serie de reformas para declarar de utilidad  pública a uno de los minerales que están revolucionando el desarrollo de  diversas industrias y que apoyarán la transición ecológica, me refiero al  litio.</p>
+<p align="justify">Con este hecho,  fomentaremos el desarrollo nacional con el apoyo regulado de la inversión  extranjera. </p>
+<p align="justify"> Señor Presidente  Steinmeier, desde esta soberanía podemos dejar constancia del excelente estado  de los lazos de amistad y aprecio entre México y Alemania, le reitero nuestro  beneplácito por su presencia a esta Cámara y su visita a México, la cual, con  seguridad tendrá resultados muy positivos para la relación bilateral y servirá,  además, para que usted conozca directamente algunas de las expresiones  culturales mexicanas. </p>
+<p align="justify">A nombre de las  Senadoras y Senadores que representamos a las 32 entidades federativas que  constituyen la República Mexicana, le agradecemos su presencia y estaremos  atentos al mensaje que dirija a este poder legislativo federal. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify">¡Bienvenido! </p>
+<p align="justify">Solicito  respetuosamente el uso de la palabra a su Excelencia, el señor Frank-Walter  Steinmeier, Presidente de la República Federal de Alemania, para compartir su  mensaje a esta Asamblea y a esta Soberanía. </p>
+<p align="justify"><strong>El Presidente de la  República Federal de Alemania, Frank-Walter Steinmeier:</strong></p>
+<p align="justify">(Traducción) </p>
+<p align="justify">Distinguido  Presidente del Senado. </p>
+<p align="justify">Distinguidos Presidentes  de los grupos parlamentarios. </p>
+<p align="justify">Distinguidos Senadores  y Senadoras:</p>
+<p align="justify">Y bien, poder estar  por fin aquí con todos ustedes, estimado Presidente del Senado, han pasado más  de dos años desde que la pandemia mundial de COVID-19 me obligó a posponer esta  visita a México que tiempo ha tenía planificada. </p>
+<p align="justify">Entonces tenemos la  intención de reunirnos como amigos, no sospechábamos lo mucho que cambiaría el  mundo en los dos años siguientes. </p>
+<p align="justify">Nuestra amistad, no  obstante, y esto es algo que me complace sobremanera, no ha cambiado.</p>
+<p align="justify">La pandemia nos ha  hecho conscientes de la gran interdependencia que existe entre las naciones del  mundo, sobre todo lo mucho que dependemos los unos de los otros. </p>
+<p align="justify">Nos ha mostrado, la  pandemia, lo importante que es el intercambio habida cuenta de esta  interdependencia, pero a lo mejor también nos ha hecho entender otra cosa, que  el mundo que nos ha sido dado es frágil, para conservarlo necesitamos amistades  asentadas en una base firme y compartida y las amistades hay que cultivarlas,  porque el intercambio, señoras y señores, es precisamente lo que forja una  amistad, conocer la situación y el punto de vista del otro es precisamente lo  que permite desarrollar posiciones comunes, así como también entender y  reconocer posiciones diferentes. </p>
+<p align="justify">Es bueno saber que  nuestra amistad con México está asentada en una base firme de estas  características. </p>
+<p align="justify">Desde hace décadas  nuestros países están uno junto al otro, tanto en el plano político como en el  económico.</p>
+<p align="justify"> Nuestras relaciones  comerciales son estrechas y fuertes, más de dos mil 100 empresas alemanas están  en México, que dan trabajo a unas 300 mil personas. Y celebro que entre ellas  haya muchos jóvenes aprendices que están estudiando y trabajando, siguiendo el  modelo dual de formación profesional.</p>
+<p align="justify">Señoras y señores,  cerca de 470 asociaciones de cooperación establecen lazos entre universidades  mexicanas y alemanas, y las empresas alemanas también aprecian el alto  potencial que caracteriza a este país y a sus jóvenes en investigación y  desarrollo.</p>
+<p align="justify">Nuestros dos países  están fuertemente interconectados, los 70 años de relaciones diplomáticas  hablan por sí solos. Y México es un socio importante al que tenemos en alta  estima. </p>
+<p align="justify">Es preciso que esta  asociación siga estando preparada para el futuro y por eso acogeríamos con gran  satisfacción, distinguido Presidente del Senado, que se pudiera llegar a una  conclusión rápida del acuerdo global modernizado entre México y la Unión  Europea, por fin.</p>
+<p align="justify">Estoy agradecido no  sólo porque podamos volver a encontrarnos los unos con los otros, también lo estoy  por el honor, el gran honor de poder hablarles hoy aquí en este lugar en el  Senado de México, en el corazón de su democracia, cuya Constitución es más  longeva que la alemana.</p>
+<p align="justify"><em>&ldquo;La Patria es primero&rdquo;.</em></p>
+<p align="justify">Bajo este lema se  reúnen ustedes aquí, en esta casa. </p>
+<p align="justify">En Berlín, en  nuestro Parlamento se encuentra la inscripción al pueblo alemán y estoy seguro  de que aquí ustedes, en Ciudad de México, les sucede lo mismo que a nosotros en  el edificio en Berlín, que cuando uno tiene ocasión de subirse al atril del orador  bajo esas palabras le invade un sentimiento de orgullo, orgullo por la propia  Patria, pero ante todo orgullo por la casa de la democracia. </p>
+<p align="justify">Se siente el  mandato que a uno le ha confiado el electorado, el mandato de asegurar una vida  en paz y seguridad. En particular, en estas últimas semanas y meses se siente  una gran responsabilidad el defender los logros de la democracia. </p>
+<p align="justify">En este sentido,  sabemos que día tras día tenemos que defender nuestros valores democráticos  fundamentales, como la libertad y los derechos humanos también, eternamente,  dentro de nuestros países, frente a aquellos que desafían nuestro orden  liberal.</p>
+<p align="justify">La libertad, la  democracia, nuestros esfuerzos por conseguir una seguridad social y la  responsabilidad, todo esto nos une, pero esta responsabilidad también nos  impone como tarea que entre las democracias no nos dejemos dividir. </p>
+<p align="justify">¿Y por qué digo  esto? La guerra… (Falla de audio) …el derecho internacional, que libra Rusia  contra Ucrania, nos causa conmoción a todos, a todos los que creemos en la  libertad y el derecho de autodeterminación territorial de cada país.</p>
+<p align="justify">Estamos ante un  cambio de época y si este derecho, si estas fronteras, se cuestionan, saben que  desde que comenzó esta invasión, cada día, desde el 24 de febrero, cada día que  pasa matan a personas en Ucrania, mujeres pierden a sus maridos, hijos a sus  padres, padres a sus hijos. </p>
+<p align="justify"> Esta brutal  violación de las normas por parte de Putin no afecta solo a Europa, nos afecta  a todos. </p>
+<p align="justify">Quien pretenda  normalizar las violaciones de fronteras y la usurpación de tierras, estará  abriendo una caja de pandora y, en última instancia, amenazando al mundo  entero. </p>
+<p align="justify">De este modo  estarán abandonando definitivamente el camino definido por Benito Juárez,  cuando dijo: &ldquo;El respeto al derecho ajeno es la paz&rdquo;. (Falla de audio)…la  confrontación. Es necesario ceñirse ahora en el bien común, debemos estar  unidos en la respuesta a un agresor e intentar reemplazar la fuerza del derecho  por el derecho del más fuerte. </p>
+<p align="justify">Juntos, en el  convoy de los demócratas, podremos resistir y de esto estoy seguro, podemos  resistir los mecanismos de escalada.</p>
+<p align="justify">Señoras y señores  (Falla de audio) …una asociación de amplia base, de intercambio de  conocimientos y las estrechas relaciones económicas, la reciprocidad… (Falla de  audio) … todo eso nos hará más resistentes a los autócratas y a los actores  impredecible (Falla de audio) nuestras democracias, así como nuestras economías  nacionales de las crisis que se dan en la actualidad y que parecen acumularse.</p>
+<p align="justify">Ya vemos los  efectos del cambio climático, por así decirlo, en tiempo real. En Europa  estamos sufriendo inundaciones catastróficas, en este verano hemos registrado  unas sequías sin precedente. </p>
+<p align="justify">Ustedes también  conocen el problema de la enorme falta de agua que afecta el país (Falla de audio)  consecuencias destructivas el calentamiento global, cuanto antes es una  cuestión de supervivencia. </p>
+<p align="justify">Distinguidos  Senadores y Senadoras, antes de comparecer hoy ante ustedes, tuve ocasión de  admirar los vestigios del Templo Mayor en el Zócalo, contemplarlos no solo me  ha impresionado mucho, si no que me ha conmovido profundamente, me llena de  humildad ver este inconmensurable testimonio de su alta cultura indígena, verlo  y conocerlo. </p>
+<p align="justify">Gracias a las  muchas ofrendas se pueden rastrear (Falla de audio)… Tenochtitlan por todo el  mundo a través de este comercio, los cimientos históricos sobre los que se  asienta su país, estos cimientos históricos fueron grandes y son grandes y  diversos, igual enormemente (Falla de audio)…de todas partes del mundo incluida  en particular Alemania, llegan personas para admirar la belleza incomparable de  su país, conocer su país, sus bosques de manglares, la cascada de Basaseachi en  Chihuahua, las cuevas de Yucatán. </p>
+<p align="justify">Poseen ustedes un  inmenso tesoro, la vasta diversidad biológica de su país, los conocimientos de  los habitantes acerca de la flora, la fauna y el aprovechamiento de su entorno  transmitido a lo largo de muchas generaciones. Todo ello forma parte de ese  gran tesoro. </p>
+<p align="justify">Señoras y señores,  con el explorador alemán Alexander von Humboldt viajó por su país, aún no  conocíamos la palabra biodiversidad, por supuesto, todavía desconocíamos el  significado de la biodiversidad mundial para la estabilidad de nuestra tierra.</p>
+<p align="justify">Humboldt fue quien  primero nos enseñó a los europeos que el mundo de los demás nos atañen de algún  modo, a todos los que convivimos en este planeta. De sus viajes exploratorios  por América del Sur, América Central, y en particular México se trajo un  hallazgo fundamental que el mundo en el que vivimos es un sistema global, lo  que ocurren en un continente no se queda sin consecuencias en otros  continentes, que las acciones de un individuo influyen en el bienestar de  todos. </p>
+<p align="justify"> Gracias a su  conocimiento de un cosmos, en el que una cosa depende otra, los pueblos  originarios de México nos llevaban muchos siglos de ventaja a los europeos en  esta cuestión. </p>
+<p align="justify">Senadoras y  Senadores, ahora más de 200 años después de que Alexander Von Humboldt  regresara de su gran viaje, es crucial para nuestro futuro común que entendamos  la política ambiental también como política de seguridad, sobre todo como  política social. </p>
+<p align="justify">Por eso me  congratulo tanto de que el gobierno mexicano esté trabajando para proteger la  diversidad biológica y el medio ambiente aún más que antes.</p>
+<p align="justify">Todos estamos  agradecidos de que México sea pionera en la agenda internacional de  biodiversidad de la ONU, estamos agradecidos de que custodien el gran tesoro de su país para el beneficio de toda la  humanidad. </p>
+<p align="justify">De este modo protegen en definitiva los medios de subsistencia de todas  las personas que habitan en Ciudad de México, en Berlín o en Islamabad, Kiev o  Moscú. </p>
+<p align="justify">Estoy convencido de que juntos podemos lograr que se ralentice el cambio  climático con sus consecuencias si juntos tendemos puentes de la innovación,  del intercambio y, sobre todo, de la solidaridad.</p>
+<p align="justify">Dejar a las generaciones jóvenes un mundo habitable en el que valga la  pena vivir debe ser nuestro objetivo. De todos nosotros depende que aspecto  tendrá el mundo de nuestros hijos.</p>
+<p align="justify">En el mundo no sólo necesitamos coraje para el cambio, no sólo  necesitamos el coraje, sino que tenemos la obligación de llevarlo a cabo el  cambio con miras a asegurar un futuro viable para nuestros descendientes.</p>
+<p align="justify">Para ello dos socios democráticos como son Alemania y México, para ello  asumen su parte de responsabilidad en este sentido. Estoy seguro de que sólo  juntos saldremos de las crisis, sólo juntos es posible preservar la paz o donde  se haya perdido restablecerla, y sólo juntos daremos con las respuestas a otros  grandes desafíos de nuestro tiempo.</p>
+<p align="justify">Justamente en estos tiempos difíciles los alemanes no queremos menos,  sino más asociación con México, queremos desarrollar nuestros vínculos no  solamente conservarlos, queremos desarrollar los sociales, políticos, y no  menos importante económicos, esta es la razón por la que estoy aquí y les doy  las gracias por el gran honor de poder comparecer aquí en el Senado.</p>
+<p align="justify">Señoras y señores, quienes comparten las mismas combinaciones básicas y  se profesan una confianza mutua y se respaldan pueden emprender juntos el  camino, pero carece de importancia que todos elijan la misma ruta, cada país  tiene sus propias tradiciones y su propia cultura, la clave es que juntos  mantengamos la mirada puesta en el objetivo y es precisamente esto lo que queremos  hacer.</p>
+<p align="justify">Muchísimas gracias.</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Presidente Frank-Walter, gracias por su mensaje.</p>
+<p align="justify">A nombre del Senado de la República, le agradezco su visita y la de su  comitiva a esta sesión solemne.</p>
+<p align="justify"> Su asistencia a esta sesión es muestra de la importancia en mantener los  contactos entre nuestras instituciones. Es por ello que le pido a la comisión  que proceda a llevar a nuestros invitados e invitadas hasta las puertas de este  recinto.</p>
+<p align="justify">Solicito a las Senadoras y Senadores, integrantes de la comisión de  cortesía, se sirvan acompañarlos hasta las puertas de este recinto.</p>
+<p align="justify">De la misma forma le pido acompañen al señor Canciller y al señor Presidente  de la Cámara de Diputados, el Diputado Santiago Creel Miranda, si son tan gentiles.</p>
+<p align="justify">Invito al Presidente de la República Federal de Alemania nos acompañe a  la toma de la fotografía oficial.</p>
+<p align="center">(Toma de foto en el presídium)</p>
+<p align="justify">Senadoras y  Senadores, damos por finalizada la sesión solemne. </p>
+<p align="justify">Continúe la  Secretaría con los asuntos de agenda. </p>
+<p align="justify"><strong>La Secretaria  Senadora Verónica Noemí Camino Farjat: </strong>Se han agotado los  asuntos de la agenda, señor Presidente.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106247'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106249'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Se cita a la siguiente sesión ordinaria el día  miércoles 21 de septiembre a las 10:00 horas. </p>
+<p align="justify">Se levanta la  sesión.</p>
+<p align="center"> (Se levantó la  sesión a las 17:43 horas)</p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106249'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

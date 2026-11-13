@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 22</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Olga María del Carmen Sánchez Cordero Dávila</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Ordinaria Celebrada<br>en la Ciudad de M&eacute;xico, el 19 de Abril de 2022</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/1/SPO/PDF-WEB/SPO_No22_19-ABRIL-2022_MT.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102938'></a><p align="center"><strong>PRESIDE LA SENADORA </strong><br>
+  <strong>OLGA MARÍA DEL  CARMEN SÁNCHEZ CORDERO DÁVILA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La Presidenta  Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>(11:57 horas)  Honorable Asamblea, les pido su comprensión y participación para observar con  rigor las disposiciones sanitarias y medidas de previsión. </p>
+<p align="justify">Solicito a la  Secretaría informe a la Asamblea el resultado del cómputo de asistencia de las  Senadoras y Senadores. Por favor, Secretaria. </p>
+<p align="justify"><strong>La Secretaria  Senadora María Guadalupe Murguía Gutiérrez:</strong> Conforme al  registro de asistencia, se informa que se han acreditado 68 ciudadanas  Senadoras y ciudadanos Senadores. En consecuencia, hay quórum, señora  Presidenta.</p>
+<p align="justify"><strong>La Presidenta  Senadora Olga María del Carmen Sánchez Cordero Dávila:</strong> Muchas gracias. Se  abre la sesión del martes 19 de abril de 2022, correspondiente al segundo  periodo ordinario de sesiones del primer año de ejercicio de la LXV  Legislatura. </p>
+<p align="justify">El Orden del Día  está publicado en la Gaceta Parlamentaria del día de hoy y disponible en el  monitor de sus escaños, con lo cual se informa de los asuntos que corresponden  a la agenda. </p>
+<p align="right"><strong>ORDEN DEL DÍA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/125340"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Asimismo, el acta de la sesión del 6 de abril de  2022 se encuentra publicada en la Gaceta Parlamentaria de este día. </p>
+<p align="right"><strong>ACTA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/125341"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/asistencias/2022_04_06/20"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">En consecuencia, consulte la Secretaría a la  Asamblea, en votación económica, si se aprueba el acta referida. </p>
+<p align="justify"><strong>La Secretaria Senadora María Guadalupe  Saldaña Cisneros:</strong> Consulto a la Asamblea, en votación económica, si se aprueba el acta referida.  Quienes estén porque se apruebe, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify"> Quienes estén porque se rechace, favor de levantar  la mano.</p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Aprobada el acta de la sesión anterior, señora  Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del  Carmen Sánchez Cordero Dávila:</strong> Muchas gracias. Aprobada el acta de la sesión del miércoles 6 de abril  de 2022. </p>
+<p align="justify">Continúe la Secretaría, por favor. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102938'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102939'></a><p align="justify"><strong>COMUNICACIONES</strong></p>
+<p align="justify"><strong>La Secretaria  Senadora María Guadalupe Saldaña Cisneros:</strong> Se recibió del  Senador Elí César Cervantes Rojas, comunicación con la que remite su informe de  actividades, correspondiente al tercer año de ejercicio de la LXIV Legislatura. </p>
+<p align="justify"><strong>La Presidenta  Senadora Olga María del Carmen Sánchez Cordero Dávila:</strong> La Asamblea queda  enterada. </p>
+<p align="justify">Y pasamos al  siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102939'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102940'></a><p align="justify"><strong>La Secretaria  Senadora María Guadalupe Saldaña Cisneros:</strong> Se recibió de las  Senadoras y de los Senadores de la Comisión de Turismo, comunicación con la que  presentan el informe de su visita a instalaciones de la obra del Tren Maya en  Quintana Roo, los días 17 y 18 de marzo de 2022. </p>
+<p align="justify"><strong>La Presidenta  Senadora Olga María del Carmen Sánchez Cordero Dávila:</strong> La Asamblea queda  enterada.</p>
+<p align="justify">Y pasamos al  siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102940'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102941'></a><p align="justify"><strong>La Secretaria  Senadora María Guadalupe Saldaña Cisneros:</strong> Se recibió de la  Senadora Minerva Citlalli Hernández Mora, comunicación con la que informa su  reincorporación a sus actividades legislativas a partir del 18 de abril del año  en curso.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Reincorporacion_Sen_MInerva.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta  Senadora Olga María del Carmen Sánchez Cordero Dávila:</strong> La Asamblea queda  enterada. </p>
+<p align="justify">Y damos la  bienvenida, nuevamente, a nuestra compañera Minera Citlalli Hernández. </p>
+<p align="justify">Comuníquese a las  Secretarías Generales y a su suplente, Senadora María Celeste Sánchez Sugía. </p>
+<p align="justify">Pasamos al  siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102941'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102942'></a><p align="justify"><strong>SECRETARÍA DE GOBERNACIÓN </strong></p>
+<p align="justify"><strong>La Secretaria Senadora María Guadalupe  Saldaña Cisneros:</strong> Se recibió de la Secretaría de Gobernación, oficio con el que remite del Ejecutivo  Federal, solicitud para ampliar el periodo de autorización de salida de los  límites del país a elementos de la Armada de México en el Buque Escuela ARM &ldquo;CUAUHTÉMOC&ldquo;  (BE 01), hasta el 30 de agosto de 2022, con el fin de concluir el Crucero de  Instrucción &ldquo;VELAS LATINOAMÉRICA 2022&ldquo;, y atender las invitaciones de San Juan  Puerto Rico con motivo de la conmemoración del Quinto Centenario de su  fundación, así como de la Embajadora de México en Belice, para conmemorar los  40 años de relaciones diplomáticas entre ambos países. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/GOB_Ampliacion_Periodo_Salida_Tropas_Velas_Latinoamerica_2022.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del  Carmen Sánchez Cordero Dávila:</strong> Se turna a la Comisión de Marina. </p>
+<p align="justify">Y pasamos al siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102942'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102943'></a><p align="justify"><strong>La Secretaria Senadora María Guadalupe  Saldaña Cisneros:</strong> También se recibió de la Secretaría de Gobernación, oficio con el que  remite oficio del Ejecutivo Federal, solicitud de autorización para permitir la  salida fuera de los límites del país de 128 elementos de la Armada de México, a  fin de que participen en el Ejercicio Multinacional &ldquo;TRADEWINDS 2022&ldquo;, con sede  en Belice, así como para permitir el ingreso de las tropas y buques militares  extranjeros (341 elementos) para el mismo ejercicio, con sede en Quintana Roo,  México, que se llevará a cabo del 7 al 21 de mayo de 2022, de manera simultánea  en ambos países. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/GOB_Salida_Tropas_Tradewinds_2022.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del  Carmen Sánchez Cordero Dávila:</strong> Se turna a la Comisión de Marina.</p>
+<p align="justify">Y pasamos al siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102943'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102944'></a><p align="justify"><strong>TRIBUNAL ELECTORAL DEL ESTADO DE CAMPECHE</strong><strong> </strong></p>
+<p align="justify"><strong>La Secretaria Senadora María Guadalupe  Saldaña Cisneros:</strong> Se recibió del Tribunal Electoral del Estado de Campeche, oficio con el  que informa de la vacante de Magistrado Electoral, con efectos a partir del 8  de abril de 2022. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Conclusion_Cargo_Lic_Carlos_Francisco.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del  Carmen Sánchez Cordero Dávila:</strong> Se remite a la Junta de Coordinación  Política. </p>
+<p align="justify">Y pasamos al siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102944'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102945'></a><p align="justify"><strong>TRIBUNAL SUPERIOR AGRARIO</strong><strong> </strong></p>
+<p align="justify"><strong>La Secretaria Senadora María Guadalupe  Saldaña Cisneros:</strong> Se recibió del Tribunal Superior Agrario oficio, con el que remite el  informe de labores de 2021. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Oficio_Informe_Labores_Tribunal_Agrario_2021.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del  Carmen Sánchez Cordero Dávila:</strong> Se remite a la Comisión de Reforma Agraria. </p>
+<p align="justify">Y pasamos al siguiente asunto.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102945'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102946'></a><p align="justify"><strong>CONGRESOS DE LOS  ESTADOS</strong></p>
+<p align="justify"><strong>La Secretaria Senadora María Guadalupe  Saldaña Cisneros:</strong> Se recibieron de los Congresos del Estado de Baja California Sur y del  Estado de Jalisco, respectivos exhortos en relación con el proyecto de Decreto  en materia de crédito de nómina con cobranza delegada. </p>
+<p align="right"><strong>DOCUMENTOS</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Congreso_%20Baja_California_Sur_Covranza_Delegada.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Congreo_Jalisco_Cobranza_Delegada.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del  Carmen Sánchez Cordero Dávila:</strong> Se turna a la Comisión de Hacienda y Crédito  Público. </p>
+<p align="justify">Y pasamos al siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102946'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102947'></a><p align="justify"><strong>La Secretaria  Senadora María Guadalupe Saldaña Cisneros: </strong>Se recibió del  Congreso del Estado de Querétaro, oficio con el que informa de la elección de  la Mesa Directiva que fungirá del 26 de marzo al 25 de septiembre de 2022, en  la LX Legislatura.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Congreso_Queretaro_Desigancion_MD.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta  Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>La Asamblea queda  enterada.</p>
+<p align="justify">Pasamos al  siguiente asunto.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102947'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102948'></a><p align="justify"><strong>CÁMARA DE DIPUTADOS</strong></p>
+<p align="justify"><strong>La Secretaria  Senadora María Guadalupe Saldaña Cisneros: </strong>Se recibió de la  Cámara de Diputados, MINUTA PROYECTO DE DECRETO POR EL QUE SE ADICIONA UN  SEGUNDO PÁRRAFO AL ARTÍCULO 30 BIS 4 DE LA LEY GENERAL DE LOS DERECHOS DE  NIÑAS, NIÑOS Y ADOLESCENTES, en relación a los requisitos y trámites de  adopción.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Minuta_Art_30_Derechos_Ninas.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta  Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Se turna a las  Comisiones Unidas de Derechos de la Niñez y de la Adolescencia; y de Estudios  Legislativos.</p>
+<p align="justify">Pasamos al  siguiente asunto.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102948'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102949'></a><p align="justify"><strong>La Secretaria  Senadora María Guadalupe Saldaña Cisneros: </strong>De igual forma, se  recibió MINUTA PROYECTO DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 138 DE LA  LEY GENERAL DE PESCA Y ACUACULTURA SUSTENTABLES, en relación a la unidad de  medida y actualización.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Minuta_Art_138_Pesca.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta  Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Se turna a las  Comisiones Unidas de Agricultura, Ganadería, Pesca y Desarrollo Rural; y de  Estudios Legislativos, Primera.</p>
+<p align="justify">Pasamos al  siguiente asunto.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102949'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102950'></a><p align="justify"><strong>La Secretaria  Senadora María Guadalupe Saldaña Cisneros: </strong>También se recibió  MINUTA PROYECTO DE DECRETO POR EL QUE SE REFORMA LA FRACCIÓN X DEL ARTÍCULO 20  DE LA LEY GENERAL DE PESCA Y ACUACULTURA SUSTENTABLES, en materia de  comunidades acuícolas.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Minuta_Art_20_Pesca.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta  Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Se turna a las  Comisiones Unidas de Agricultura, Ganadería, Pesca y Desarrollo Rural; y de  Estudios Legislativos, Primera.</p>
+<p align="justify">Pasamos al  siguiente asunto.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102950'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102951'></a><p align="justify"><strong>La Secretaria  Senadora María Guadalupe Saldaña Cisneros: </strong>De igual forma, se  recibió MINUTA PROYECTO DE DECRETO POR EL QUE SE REFORMA EL SEGUNDO PÁRRAFO DEL  ARTÍCULO 71; Y SE ADICIONA UNA FRACCIÓN II BIS AL ARTÍCULO 4 DE LA LEY DE  VIVIENDA, en materia de construcción de edificios sustentables.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Minuta_Art_71_4_Vivienda.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta  Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Se turna a las  Comisiones Unidas de Desarrollo Urbano, Ordenamiento Territorial y Vivienda; y  de Estudios Legislativos, Segunda.</p>
+<p align="justify">Pasamos al  siguiente asunto.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102951'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102952'></a><p align="justify"><strong>La Secretaria  Senadora María Guadalupe Saldaña Cisneros: </strong>Asimismo, se  recibió MINUTA PROYECTO DE DECRETO POR EL QUE SE REFORMAN LOS ARTÍCULOS 171 Y  175 DE LA LEY FEDERAL DE SANIDAD ANIMAL, en materia de sanciones, en materia de  tráfico de ganado.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Minuta_Art_171_175_Sanidad_Animal.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta  Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Se turna a las  Comisiones Unidas de Medio Ambiente, Recursos Naturales y Cambio Climático; y de  Estudios Legislativos, Segunda.</p>
+<p align="justify">Pasamos al  siguiente asunto.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102952'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102953'></a><p align="justify"><strong>La Secretaria  Senadora María Guadalupe Saldaña Cisneros: </strong>Finalmente, se  recibió MINUTA PROYECTO DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSAS  DISPOSICIONES DE LA LEY MINERA, para la regulación del litio.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/MINUTA_LEY_MINERA_2022.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta  Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Informo a la  Asamblea que, con fundamento en el numeral 2 del artículo 176 del Reglamento  del Senado, se turnó directamente a las Comisiones Unidas de Minería y  Desarrollo Regional; y de Estudios Legislativos, Segunda, el 18 de abril de  2022.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102953'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102954'></a><p align="justify">Honorable Asamblea, como es de su conocimiento, el pasado 16 de abril  ocurrió el fallecimiento de la señora Rosario Ibarra de Piedra, quien fuera una  incansable activista defensora de los derechos humanos, Senadora de la  República en la LX y LXI Legislatura del Congreso de la Unión y forma parte de  la Orden Mexicana de la Medalla Belisario Domínguez desde el año 2019, en que  recibió dicho galardón.</p>
+<p align="justify">A propósito de ese lamentable suceso, la Mesa Directiva acordó realizar  un homenaje.</p>
+<p align="justify">Solicito a la Secretaría informe a la Asamblea las actividades que  realizaremos en este Pleno.</p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con gusto, señora Presidenta.</p>
+<p align="justify">Las actividades acordadas por la Mesa Directiva son:</p>
+<p align="justify">Al inicio de la sesión guardaremos un minuto de silencio en memoria de  doña Rosario Ibarra de Piedra.</p>
+<p align="justify">Los grupos parlamentarios harán uso de la tribuna para referirse a la  figura y trayectoria de esta excompañera.</p>
+<p align="justify">Las intervenciones ocurrirán en orden progresivo y por un máximo de tres  minutos cada una.</p>
+<p align="justify">Al concluir las intervenciones de los grupos parlamentarios la  Presidencia de la Mesa Directiva dará un mensaje final.</p>
+<p align="justify">Es todo, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Muchas gracias, Secretaria.</p>
+<p align="justify">Para iniciar este homenaje a doña Rosario Ibarra de Piedra, les solicito  a todos ustedes ponernos de pie para guardar un minuto de silencio en su  memoria.</p>
+<p align="justify"><strong>MINUTO DE SILENCIO</strong></p>
+<p align="center">(Todos de pie guardan un minuto de silencio)</p>
+<p align="justify">Muchas gracias. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102954'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102955'></a><p align="justify">Daremos paso a las participaciones de los grupos parlamentarios sobre la  figura y la trayectoria de doña Rosario Ibarra. </p>
+<p align="justify">Tiene el uso de la palabra el Senador Germán Martínez Cázares, del Grupo  Plural, hasta por tres minutos. Muchas gracias, Senador. </p>
+<p align="justify"><strong>HOMENAJE A ROSARIO IBARRA DE PIEDRA</strong></p>
+<p align="justify"><strong>El Senador Germán Martínez Cázares:</strong> Con su permiso, señora Presidenta. Señorías, buenos días. </p>
+<p align="justify">Conocí a Rosario Ibarra de la Garza en 1988, afuera de las rejas de la  Secretaría de Gobernación, en aquella foto legendaria con Manuel Clouthier y  con Cuauhtémoc Cárdenas. <br>
+  <br>
+  Había pasado el temblor de 1985 y en el asesinato del mexicano Manuel  Buendía. </p>
+<p align="justify">Manuel Bartlett había maniobrado electoralmente en un fraude y se estaba  reclamando democracia con Rosario Ibarra al frente. </p>
+<p align="justify">Mientras Manuel Bartlett desaparecía votos, ella luchaba para encontrar  a personas desaparecidas. </p>
+<p align="justify">Para mí Rosario Ibarra es un símbolo de dolor, de conduelo. </p>
+<p align="justify">Para mí Rosario Ibarra hoy es repudiar y reclamar la muerte de los  asesinatos de los periodistas, de los defensores de derechos humanos, levantar  la voz por los secuestrados, por los desaparecidos, por los levantones, ella se  condolería hoy de estos fenómenos criminales impunes. </p>
+<p align="justify">Cuántas familias, pregunto yo, hay sin tumbas donde rezar o sin tumbas  donde dolerse para los que no tienen Dios.  </p>
+<p align="justify">Alejandro Encinas y Karla Quintana han hecho un trabajo correcto, han  trabajado con las uñas para buscar a los desaparecidos. </p>
+<p align="justify">Hoy desde aquí, desde esta tribuna digo y decimos en el Grupo Plural,  que el mejor homenaje que se puede hacer a Rosario Ibarra después de las  poquísimas sentencias que se han obtenido por el delito de desaparición  forzada, casi ninguna.</p>
+<p align="justify">El mejor homenaje a Rosario Ibarra es la renuncia del Fiscal General  Gertz Manero, que renuncie el Fiscal Gertz Manero y no vayan a poner a Zaldívar  de Fiscal; ese es el mejor homenaje que reclamaría hoy con coraje cívico  Rosario Ibarra. </p>
+<p align="justify">Hoy estamos en el mismo lado de la foto, de aquella foto, en el mismo  lado de Clouthier, reclamando un INE autónomo; en el mismo lado de Cuauhtémoc  Cárdenas y no de Cuauhtémoc Blanco, en el mismo lado de Rosario Ibarra. </p>
+<p align="justify">Ojalá algún día descansen en paz los desaparecidos y sepamos la verdad y  su paradero. </p>
+<p align="justify">¡Descanse en paz, Rosario Ibarra!</p>
+<p align="justify">Nosotros seguiremos reclamando por el dolor de las personas  desaparecidas. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Gracias, Senador Martínez  Cázares. </p>
+<p align="justify">Tiene ahora el uso de la palabra el Senador Juan Manuel Fócil Pérez, del  PRD. Por favor, Senador. </p>
+<p align="justify"><strong>El Senador Juan Manuel Fócil Pérez: </strong>Gracias, señora Presidenta. Compañeras y compañeros Senadores: </p>
+<p align="justify">La verdad que es un honor pasar a rendirle honores a doña Rosario Ibarra  de Piedra, para el grupo parlamentario del PRD es motivo de profunda tristeza  hacer mención del fallecimiento de una mexicana ejemplar, como lo fue doña  Rosario Ibarra. </p>
+<p align="justify">Sin embargo, su partida no deja un vacío, al contrario, reaviva el  movimiento en pro de las personas desaparecidas que por cierto suman a más  personas desaparecidas cada día y la deuda histórica que tiene el Estado para  esclarecer los hechos y reparar el daño a las víctimas y a sus familias. <br>
+  <br>
+  El magisterio de doña Rosario Ibarra queda de manifiesto en las luchas  que encabezó y en los ideales en los que creyó. De manera especial para el PRD  los ideales de doña Rosario están vivos en los documentos básicos del partido y  en nuestro lema: &ldquo;Democracia ya, patria para todos&rdquo;. </p>
+<p align="justify">Esta mujer excepcional nació en Saltillo, Coahuila, en 1927, y enfrentó  un hecho que marcó su vida, un hecho que la motivó a buscar a su hijo y a  luchar por desaparecidos de muchas familias en todo el país. </p>
+<p align="justify">La desaparición forzada de su hijo Jesús Piedra Ibarra, acusado de ser  presunto integrante de la Liga Comunista 23 de Septiembre, que en 1974, con  solo 19 años, fue detenido de manera ilegal en Monterrey por agentes policiales  que, posteriormente, lo entregaron a estancias castrenses y de ahí nunca más se  supo de él, así que la incursión de doña Rosario Ibarra de Piedra en la  política se dio para levantar la voz ante el poder al ser fundadora de una de  las primeras organizaciones de madres, padres, familiares de desaparecidos, así  como pionera en la defensa por los derechos humanos, la paz y la democracia en  México. </p>
+<p align="justify">En esos tiempos, en el 74, cuando era tan difícil enfrentarse al  gobierno, ella como mujer, como madre, tuvo ese gran valor no solo de luchar  por su hijo, sino de encabezar un movimiento muy importante que hasta hoy subsiste,  así ella fue la pionera en la organización de madres de familia en busca de sus  hijos al fundar en 1977 el Comité Pro-Defensa de Presos, Perseguidos,  Desaparecidos y Exiliados Políticos que sería conocido como el Comité ¡Eureka!</p>
+<p align="justify">Desde ahí plantó cara al poder exigiendo justicia y demandar el alto a  la impunidad en el marco de la denominada guerra sucia, así una de las frases  que se le atribuye a dicho Comité ¡Eureka! es: &ldquo;Vivos se los llevaron, vivos  los queremos&rdquo;. </p>
+<p align="justify">Doña Rosario también fue pionera al ser la primera mujer candidata a la  Presidencia de la República en 1982 y 1988 por el extinto partido  Revolucionario de los Trabajadores. </p>
+<p align="justify">De igual forma fue promotora de las reformas constitucionales y además  legales a favor de los derechos humanos y en contra de la tortura y  desaparición forzada en México. </p>
+<p align="justify">Su paso por el legislativo le permitió ocupar los cargos de Diputada  Federal y Senadora de la República por el PRD en donde se distinguió por su  liderazgo y trabajo a favor de las víctimas de la violencia. </p>
+<p align="justify">Entre los diversos reconocimientos que recibió se encuentra la  candidatura en cuatro ocasiones al Premio Nobel de La Paz en 86, 87, 89 y 2006,  con la realización de un documental sobre su experiencia de lucha en el ámbito  de los derechos humanos en México. </p>
+<p align="justify">Asimismo, el Poder Legislativo le reconoció, por una parte, la Cámara de  Diputados le concedió en 2019 la Medalla al Mérito Cívico &ldquo;Eduardo Neri,  Legisladores de 1913&rdquo;.</p>
+<p align="justify">Y el Senado le otorgó la Medalla de Honor &ldquo;Belisario Domínguez&rdquo; la máxima  presea que entrega esta Cámara y con la cual su nombre queda ligado al de otro  mexicano extraordinario que no guardó silencio ante el abuso del poder como lo  fue Belisario Domínguez. </p>
+<p align="justify">Después de una vida de activismo y de entrega a la defensa de los  derechos humanos y búsqueda de la verdad, Rosario Ibarra de Piedra</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Muchas gracias, Senador.<br>
+  <br>
+  <strong>El Senador Juan Manuel Fócil Pérez: </strong>Murió el pasado 16 de abril a los 95 años. </p>
+<p align="justify">Estamos convencidos que su muerte es el tránsito a su posteridad y será  aliciente para las madres de familia que continúan este doloroso y arduo  trabajo de búsqueda de la verdad y de búsqueda de sus seres queridos. </p>
+<p align="justify">Su vida puede sintetizarse en su frase: &ldquo;Vamos a luchar, nunca a  olvidar&rdquo;. </p>
+<p align="justify">¡Que viva Rosario Ibarra de Piedra!</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Gracias, Senador Fócil  Pérez. </p>
+<p align="justify">Tiene ahora el uso de la palabra la Senadora Sasil de León Villard, del  PES, por favor. </p>
+<p align="justify"><strong>La Senadora Sasil de León Villard: </strong>Con su permiso, señora Presidenta. Compañeras y compañeros Senadores: </p>
+<p align="justify">Hoy el Pleno de este Senado honra merecidamente la memoria de doña  Rosario Ibarra de Piedra, incansable luchadora social en contra de la  desaparición forzada en este país, una práctica cruel y autoritaria que durante  décadas imperó en México. </p>
+<p align="justify">La historia de la defensa y protección de las víctimas de este país no  podrían ser entendidas o explicadas sin el trabajo y la lucha de doña Rosario  Ibarra, que encabezó a partir de la desaparición de su hijo Jesús Ibarra; lucha  que convirtió en su historia de vida y que la llevó a su incansable búsqueda. </p>
+<p align="justify">Recordemos que en 1977 fundó el colectivo del Comité Pro-Defensa de  Presos Perseguimos, Desaparecidos y Exiliados Políticos, conocido como el  Comité ¡Eureka!, organización de madres y familiares de desaparecidos durante  los sexenios de Gustavo Díaz Ordaz y Luis Echeverría. </p>
+<p align="justify">El Comité ¡Eureka! se posicionó rápidamente en contra de la desaparición  forzada, la tortura y las constantes violaciones a los derechos humanos que  sostenía el viejo sistema político a través de la Dirección Federal de  Seguridad y otros organismos que se habían creado para reprimir, encarcelar y  desaparecer a los disidentes del sistema. </p>
+<p align="justify">En 1978 doña Rosario Ibarra realiza también una huelga de hambre para que  cesaran los actos de desaparición forzada por parte de las autoridades y  denuncia la existencia de cárceles clandestinas. Con ello logró obtener la  promulgación de una Ley de Amnistía que puso en libertad a cerca de mil 500  presos políticos, permitiendo el regreso de 57 exiliados al país y el  desistimiento de más de dos mil órdenes de aprehensión. </p>
+<p align="justify">Doña Rosario Ibarra fue la primera candidata mujer a la Presidencia de la  República, siendo también la única mujer hasta la fecha en ser postulada dos  veces a este cargo, en 1982 y en 1988 por el Partido Revolucionario de los  Trabajadores, por lo que también nuestro reconocimiento a su figura como una  pionera en materia de derechos políticos de las mujeres en este país. </p>
+<p align="justify">En Chiapas, en 1994, el Ejército Zapatista de Liberación Nacional, fue  nombrada presidenta de la Convención Nacional Demócrata, celebrada en la selva  chiapaneca, en donde ella expresó su solidaridad, compromiso y apoyo al  Movimiento Zapatista en las mesas de diálogo, que finalmente llevarían a la  firma de los acuerdos de San Andrés. <br>
+  <br>
+  Su activismo político y defensa de los derechos humanos fue amplia en  favor de las comunidades indígenas y en contra de la violencia para las  mujeres. </p>
+<p align="justify">Es importante recordar que este Senado de la República, por su férrea  defensa a los derechos humanos y a las víctimas, y a su gran trayectoria, la  hizo merecedora de la Medalla Belisario Domínguez 2019. </p>
+<p align="justify">A ella todo el reconocimiento, a su gran fortaleza de vida y al amor a su  hijo, que le permitió construir un México más democrático y una sociedad más  igualitaria. </p>
+<p align="justify">Doña Rosario Ibarra pasó más de 40 años en la búsqueda de su hijo, pero  no se limitó a ello, sino que la mayor parte de su vida la dedicó a luchar por  las causas de las miles y miles de víctimas en nuestro país, dando voz a los  que no la tenían y exigiendo justicia por las que ya no podían hacerlo.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Gracias, Sasil. </p>
+<p align="justify"><strong>La Senadora Sasil de León Villard: </strong>Concluyo, señora Presidenta. </p>
+<p align="justify">Descanse en paz doña Rosario Ibarra, referente histórico de la  construcción democrática de nuestro país. </p>
+<p align="justify">Honremos desde este espacio su lucha y su legado histórico para todas las  generaciones. </p>
+<p align="justify">Le rendimos un admirable homenaje en su memoria. </p>
+<p align="justify">Es cuanto, señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta  Senadora Olga María del Carmen Sánchez Cordero Dávila:</strong> Muchas gracias, Sasil.</p>
+<p align="justify">Ahora, tiene el uso de la palabra el Senador Joel Padilla Peña, por el  PT. Por favor, Senador. </p>
+<p align="justify"><strong>El Senador Joel  Padilla Peña:</strong> Con la venia de la  Presidencia. Senadoras y Senadores. Mexicanas y mexicanos. Y querido pueblo de  Colima. </p>
+<p align="justify">El pasado 16 de abril falleció una mujer  excepcional, María del Rosario Ibarra De la Garza, mejor conocida como Rosario  Ibarra de Piedra. </p>
+<p align="justify">A decir verdad, ella defendía que no era  propiedad de nadie, ella quería que siempre se le dijera Rosario, María del  Rosario Ibarra De la Garza, porque no era de Piedra ni de nadie, ella era de ella  misma, varias veces lo dijo.</p>
+<p align="justify">La tierra de Saltillo vio nacer a un  incansable activista, fundadora de una de las primeras organizaciones de  madres, padres, familiares desaparecidos. Además de ser pionera de la defensa  de los derechos humanos, la paz y la democracia en México.</p>
+<p align="justify">Desafortunadamente el hecho que marcó su vida  fue la desaparición forzada de su hijo Jesús Piedra Ibarra, quien, en 1974, con  solo 19 años fue detenido de manera ilegal, en Monterrey, por agentes  policiales que posteriormente lo entregaron a las instancias castrenses. </p>
+<p align="justify">Es a raíz del dolor, desesperación e  impotencia por la desaparición de su hijo que doña Rosario Ibarra comienza su  lucha como activista, así inició la búsqueda por la verdad y la justicia,  convirtiendo un hecho individual en una lucha colectiva. <br>
+  <br>
+  En México la lucha por reconocer las  vulneraciones de los derechos humanos de las personas por parte del Estado no  se podía entender sin el papel de la ilustre Rosario Ibarra. </p>
+<p align="justify">Es en 1977 que funda el Comité Pro-Defensa de Presos,  Desaparecidos y Exiliados Políticos, que sería conocido como el Comité  ¡Eureka!, organización de madres de personas desaparecidas que tenía el  objetivo de exigir justicia y demandar un alto a la impunidad ante estos  crímenes. </p>
+<p align="justify">Como doña Rosario Ibarra, señaló, pensaron los  gobiernos que con la desaparición forzada iba a intimidar al pueblo, y le  resultó al revés, la voz de doña Rosario Ibarra se hizo escuchar también a  nivel político, fue la primera mujer candidata a la Presidencia de la República  en 1982 y 1988 por el ahora ya extinto Partido Revolucionario de los  Trabajadores. </p>
+<p align="justify">Además, fue Diputada por el Partido  Revolucionario de los Trabajadores y orgullosamente Senadora por el Partido del  Trabajo. Desde su posición de parlamentaria siempre defendió y promovió la  defensa y el respeto por los derechos humanos; la lucha de doña Rosario solo  fue la semilla que hoy germina hacia la consolidación de un país donde se  respeten los derechos humanos, sin excepción. </p>
+<p align="justify">Es prioritario que desde los tres órdenes de  gobierno se continúen impulsando las acciones encaminadas a promover y  garantizar, respetar y proteger los derechos humanos de todas las personas. </p>
+<p align="justify">Desde el grupo parlamentario del Partido del  Trabajo nos solidarizamos con los familiares y amigos de doña Rosario Ibarra  ante su sensible y lamentable fallecimiento. </p>
+<p align="justify">¡Gracias, doña Rosario, por habernos tomado la  mano y acompañar con su entereza y principios la lucha por la justicia desde  nuestro partido político!</p>
+<p align="justify">¡Gracias por las enseñanzas y por siempre  defender los ideales y principios de lucha social y activismo político para  proteger a los más débiles, siempre la recordaremos con amor y con un profundo  respeto y reconocimiento, su cuerpo pereció, pero sus principios, su trabajo y  su ideal de lucha trasciende el imaginario colectivo!</p>
+<p align="justify"><strong>La Presidenta  Senadora Olga María del Carmen Sánchez Cordero Dávila:</strong> Gracias, Senador. </p>
+<p align="justify"><strong>El Senador Joel  Padilla Peña:</strong> &ldquo;Ayer, hoy y siempre vamos a luchar, nunca  olvidar&rdquo; </p>
+<p align="justify">Gracias. </p>
+<p align="justify"><strong>La Presidenta  Senadora Olga María del Carmen Sánchez Cordero Dávila:</strong> Muchas gracias, Senador Padilla Peña. </p>
+<p align="justify">Tiene ahora el uso de la palabra la Senadora Alejandra Lagunes Soto Ruíz,  del PVEM. Por favor, Senadora. </p>
+<p align="justify"><strong>La Senadora  Alejandra Lagunes Soto Ruíz:</strong> Gracias, señora  Presidenta. Compañeras y compañeros Senadores: </p>
+<p align="justify">La escritora y activista feminista Audre Lorde, dijo alguna vez: &ldquo;Cuando  me atrevo a ser poderosa, a utilizar mi fuerza al servicio de mi visión,  entonces se vuelve menos y menos importante si tengo miedo&rdquo;. <br>
+  <br>
+  Es claro que hoy muchas mujeres hemos perdido el miedo, no solo porque  nos hemos dado cuenta de nuestro poder y asumido que para tener un lugar en el  mundo tenemos que alzar la voz y no callarnos, sino además porque nos dimos  cuenta de que no estamos solas; nos hemos dado cuenta de que, formando redes,  tejiendo sororidad y manteniendo la frente en alto podemos construir espacios  seguros y articular esfuerzos para salvarnos la vida y vivir en plenitud. </p>
+<p align="justify">Rosario Ibarra nos ha inspirado, fue una mujer valiente que no tuvo miedo,  pionera, activista por los derechos humanos en México; empoderó a las mujeres  para salir a las calles y demandar justicia, esencialmente defensora de las  garantías más elementales para el ser humano: la vida y la libertad. </p>
+<p align="justify">Mujer legisladora, Diputada y Senadora, además de ser la primera mujer  candidata a la Presidencia de la República, mexicana, sus acciones le valieron  ser nominada al Premio Nobel de la Paz en varias ocasiones y condecorada con la  Medalla &ldquo;Belisario Domínguez&rdquo;, en 2019, en esta Asamblea. </p>
+<p align="justify">Rosario Piedra nos recuerda que la lucha por buscar a las personas  desaparecidas nunca debe detenerse y menos cuando en nuestro país se tiene el  registro de al menos 99 mil personas desaparecidas y no localizadas. </p>
+<p align="justify">En el Partido Verde recordaremos, siempre con inspiración, el legado de  una mujer activista como Rosario Ibarra, debemos seguir luchando junto con  otras mujeres en contra de acciones, normas, culturas y estructuras que  perpetúan esquemas de desigualdad e injusticia, para consolidar espacios de  sororidad que se traduzcan en sociedades más justas, favorecer que todas las  personas podamos vivir la experiencia humana con plenitud y con dignidad. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>La Presidenta  Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Muchísimas gracias, Alejandra. </p>
+<p align="justify">Ahora tiene el uso de la palabra el Senador Dante Delgado, de Movimiento  Ciudadano. Por favor, Senador. </p>
+<p align="justify"><strong>El Senador Dante  Delgado: </strong>Nada más merecido que iniciar esta sesión  rindiendo un merecido homenaje a una mujer excepcional, como lo es Doña Rosario  Ibarra de Piedra.</p>
+<p align="justify">Doña Rosario, fue merecedora de la máxima distinción al mérito cívico que  entrega el Senado de la República, la Medalla &ldquo;Belisario Domínguez&rdquo;. </p>
+<p align="justify">Su hija, al recibir la presea, dijo, a nombre de su madre: &ldquo;No quiero que  mi lucha quede inconclusa por eso dejo en tus manos la  custodia de tan preciado reconocimiento y te pido la devuelvas junto con la  verdad sobre el paradero de nuestros queridos y añorados hijos&rdquo;. </p>
+<p align="justify">Rosario Ibarra de Piedra inició en abril de 1975, con motivo de la  desaparición de su hijo Jesús Piedra Ibarra, una acción de peregrinaje  permanente, recorrió cárceles, instituciones, Secretaría de la Defensa  Nacional, Gobernación, Presidencia de la República.</p>
+<p align="justify">Rosario Ibarra de Piedra fue marcada y marcó la historia de México  porque gracias a ella se crea el Comité Pro-Defensa de Presos Perseguidos,  Desaparecidos y Exiliados Políticos de México, el Comité ¡Eureka!, una de las  primeras organizaciones que dieron sentido y sustento a lo que se convirtió de  una lucha social en una lucha política.<br>
+  <br>
+  Rosario Ibarra de Piedra fue candidata presidencial por el Partido  Revolucionario de los Trabajadores en 1982 y nuevamente en 1988.</p>
+<p align="justify">Tuve el privilegio de conocerla desde 1975. El recibí, la conocí al  igual que a sus hijas, y tengo el grato recuerdo de tener como regalo de bodas  una licorera elaborada en un libro que representa La Divina Comedia.</p>
+<p align="justify">Con doña Rosario me unió una relación de verdadero respeto y  reconocimiento a sus valores y su trayectoria y fuimos, además, diputados en la  LIII Legislatura, y como integrante del Órgano de Decisión Política de la  Coalición participamos para que participara como primera en la lista de la  lista nacional a Senadores de la República, y por ello encabezó la lista del  Senado en 2006, y fue Senadora de la República en las Legislaturas LX y LXI.</p>
+<p align="justify">La trayectoria y congruencia de esta mujer representa la lucha por los  derechos humanos, representa los valores de la dignidad de las mujeres, la  vanguardia en lo que hoy es igualdad sustantiva en derechos de participación  política y representa, además, la congruencia, la congruencia de una lucha al  servicio de las mejores causas del país.</p>
+<p align="justify">Por ello, el destino siempre…</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Gracias, Senador.</p>
+<p align="justify"><strong>El Senador Dante Delgado: </strong>Une trayectorias, y  casualmente en abril de 1975 desapareció y no volvió a ver a su hijo, en abril  del 2022 se retira de la lucha que libró por tantos años.</p>
+<p align="justify">Rosario Ibarra de Piedra está en el Muro de Honor del Senado de la  República, pero también está en el Muro de Honor de las mujeres de México como  una verdadera mujer de vanguardia en la lucha política, como una mujer en la  tenacidad, en la defensa de los derechos humanos, de los desaparecidos.</p>
+<p align="justify">Y hoy su presencia en este recinto, gracias a la visión afortunada de la  Mesa Directiva del Senado de la República, nos permite recordar a una mexicana  excepcional, a una mujer que fue varios pasos adelante en la grandeza que  distinguió la igualdad sustantiva en los derechos igualitarios que a este  cuerpo colegiado le ha tocado impulsar.</p>
+<p align="justify">Rosario Ibarra de Piedra vive y vivirá porque forma parte de la historia  de México.</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Muchas gracias.</p>
+<p align="justify">Tiene el uso de la palabra la Senadora Nuvia Mayorga Delgado, del PRI.</p>
+<p align="justify"><strong>La Senadora Nuvia Mayorga Delgado: </strong>Con su permiso, señora Presidenta. Compañeras y compañeros; Senadoras y  Senadores:</p>
+<p align="justify">Hablar de Rosario Ibarra de Piedra es hablar sobre la historia democrática  de este país. Doña Rosario abrió una brecha en la lucha por los derechos  humanos de nuestro país y supo conjugar la movilización social con la política,  una mujer que abanderó, hasta su muerte, la causa de los desaparecidos y  defendió siempre las libertades de todas y de todos, así debe de ser recodada  Rosario en su lucha valiente.<br>
+  <br>
+  Doña Rosario hizo de una estrategia personal una causa nacional. Tras la  desaparición de su hijo Jesús fundó el Comité ¡Eureka!, una de las primeras  organizaciones de madres, padres y familiares desaparecidos y buscó a cientos  de jóvenes como si fueran sus propios hijos.</p>
+<p align="justify">Para ella los desaparecidos no eran simples estadísticas, sino eran  historias de dolor y de sufrimiento de seres humanos.</p>
+<p align="justify">Desafió el poder político y a cualquier argumento que pretendiera  socavar su lucha y su resistencia.</p>
+<p align="justify">Mientras algunos la calificaban como obstinada, Rosario hacía gala de su  tenacidad y de su aplomo. </p>
+<p align="justify">Fue candidata a la Presidencia de la República en 1882 y en 1988. Su  incansable defensa por los derechos humanos la llevó a ser candidata al Premio  Nobel de La Paz en los años 86, 87, 89 y en el 2006.</p>
+<p align="justify">&ldquo;No quiero que mi lucha quede inconclusa&rdquo;, aseguró en su último  comunicado con motivo de la entrega de la Medalla &ldquo;Belisario Domínguez&rdquo; en el  que este Senado le otorgó, y que en un acto de congruencia le hizo un símbolo  de lucha que sigue pendiente y de una deuda que no ha sido saldada.</p>
+<p align="justify">Rosario nunca claudicó y fue ejemplo de entereza y de entrega, deja una  huella imborrable en la historia de nuestro país, sobre todo, deja ejemplo que  para seguir estando del lado de las víctimas y de sus familiares seguiremos  defendiendo sus causas y defender de frente a todos los derechos humanos.</p>
+<p align="justify">Nuestras condolencias a toda su familia y seres queridos, así como a sus  compañeras y compañeros de causa.</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Gracias, Senadora Mayorga Delgado.</p>
+<p align="justify">Honorable Asamblea, les informo que se encuentra de visita en nuestra  sesión un grupo integrado por 20 mujeres de la Asociación Proyecta Mujer del  estado de Jalisco, que acuden a invitación del Senador Ricardo Monreal Ávila.</p>
+<p align="justify">¡Sean bienvenidas a nuestra sesión ordinaria del Senado de la República!  y deseamos que su visita sea provechosa.</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify">Tiene el uso de la palabra el Senador José Alfredo Botello Montes, del  grupo parlamentario del PAN. Por favor. </p>
+<p align="justify"><strong>El Senador José Alfredo Botello Montes:</strong> Con el permiso de la Presidencia. </p>
+<p align="justify">Recuerdo que el 5 de abril de 1997, en el arranque de campaña del primer  gobernador panista en mi estado, que es Querétaro, Ignacio Loyola Vera,  recibíamos la noticia del fallecimiento de un hombre de izquierda, Heberto  Castillo Martínez y por su aporte al proceso de apertura democrática en el país  hicimos un público reconocimiento y guardamos un minuto de silencio en su  memoria. <br>
+  <br>
+  Ahora, como demócratas que somos, participamos en este acto  en memoria de doña Rosario Ibarra de  Piedra,  por el aporte que realizó en la  búsqueda de su hijo desaparecido, lucha que llevó hasta su muerte y que,  incluso,  el reconocimiento que le  hiciera este Senado al entregarle la Medalla Belisario Domínguez, hizo un acto  de congruencia y regresó a manos del Presidente de la República, Andrés Manuel  López Obrador, para que le hiciera justicia   en la búsqueda de su hijo, desde luego, esto no sucedió. </p>
+<p align="justify">Doña  Rosario Ibarra que, por  cierto, fue presidenta de la Comisión de Derechos Humanos en este Senado de la  República, se ha convertido en un referente de las personas que buscan a un  familiar hija o hijo, hermana o hermano, esposa o esposo desaparecidos y que a  la vez, como ella no encuentran respuesta del gobierno de la República que hoy  encabeza Andrés Manuel López Obrador, por cierto, lamentamos que una vez que se  ha recibido el informe del Comité de la ONU al respecto de la desaparición de  personas en México, en el que se establecen líneas generales que es preocupante  la impunidad y que es casi absoluta esta y que el gobierno también debe  abandonar la estrategia de militarización de la seguridad pública. </p>
+<p align="justify">El propio Presidente ha manifestado desgraciadamente que ellos tienen  con todo respeto toda la información, no tienen con todo respeto toda la  información, no están actuando con apego a la verdad. </p>
+<p align="justify">Lo de la señora Rosario Ibarra de Piedra no fue un informe, sino un acto  de una correligionaria del señor Presidente que fue voz de los miles de  familiares que siguen en espera que el gobierno de la República les dé noticia  sobre sus familiares desaparecidos. </p>
+<p align="justify">Los demócratas recordamos a doña Rosario Ibarra de Piedra en aquellas  escenas de 1988, como ya lo decía mi compañero Germán, acompañando al Maquío,  Manuel de Jesús Clouthier del Rincón y a Cuauhtémoc Cárdenas Solórzano allá en  Gobernación para reclamarle al antidemócrata Manuel Bartlett para que hubiera  elecciones limpias y se respetara el voto popular, el resultado es de sobra  conocido. </p>
+<p align="justify">Por su aporte al a defensa de los derechos humanos y a la lucha de  mujeres y hombres que están en busca de sus familias desaparecidos, como por  haber sido la primer candidata mujer a la Presidencia de la República y por esa  lucha por la democracia que dio significativamente en 1988, nos sumamos a este  reconocimiento. </p>
+<p align="justify">¡Que descanse en paz doña Rosario Ibarra de Piedra! </p>
+<p align="justify">Exsenadora de la República.</p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Por último, tiene el uso de la palabra el Senador Ricardo Monreal Ávila,  del grupo parlamentario del Partido Morena. Por favor, señor Senador. </p>
+<p align="justify"><strong>El Senador Ricardo Monreal Ávila: </strong>Ciudadana Presidenta. Ciudadanas legisladoras y legisladores: </p>
+<p align="justify">Es justo que este Senado de la República se pronuncie por una mujer  excepcional, doña Rosario Ibarra de Piedra.</p>
+<p align="justify">Doña Rosario fue la primera mujer candidata a la Presidencia de la  República, su congruencia es irrefutable, su actitud siempre admirable, su  forma era de sencillez y de humildad impresionante. <br>
+  <br>
+  Doña Rosario Ibarra de Piedra trascendió fronteras, debo de señalar que  al inicio de su lucha fue incomprendida, hasta vilipendiada y también  perseguida, por la lucha que dio sin tregua contra las desapariciones forzadas  de hombres jóvenes que fueron víctimas del Estado. </p>
+<p align="justify">La recuerdo muy bien porque fuimos Senadores, compartimos espacios  legislativos. </p>
+<p align="justify">En el 2006 fue electa Senadora, igual que un servidor, seis años  convivimos en este Senado de la República, 2006-2012, éramos apenas cinco  Senadores los que constituíamos la oposición, era coordinador de ese grupo  parlamentario del PT y debatíamos, deliberábamos, proponíamos, frente a una  mayoría irreflexiva, nunca pasó un punto de acuerdo nuestro, nunca una  iniciativa, nunca una actitud de generosidad ni de respeto, siempre  perseguidos, ignorados, pisoteados. </p>
+<p align="justify">Pero resistimos y ahora aquí estamos, honrando a una extraordinaria  mujer, doña Rosario Ibarra de Piedra. </p>
+<p align="justify">Decía una frase que a mí me quedó sellada, ella decía: &ldquo;Vamos a luchar,  nunca vamos a olvidar&rdquo;. </p>
+<p align="justify">Y esa frase que ahora repiten los colectivos se le atribuye a doña  Rosario Ibarra de Piedra: ¡Vivos se los llevaron, vivos los queremos! </p>
+<p align="justify">Y decía continuamente, mientras la vida me lo permita, seguiré en mi  empeño hasta encontrarlo. </p>
+<p align="justify">La felicidad de la desaparición para algunos, para ella era ferocidad. </p>
+<p align="justify">El gobierno eliminaba adversarios de manera impune y ella en esta lucha  sin tregua demostró a la humanidad que los espíritus, como el de ella, no se  quiebran, hasta su muerte la acompañó la congruencia. </p>
+<p align="justify">El Senador Dante Delgado y yo, en la campaña del 2012, caminamos a su  lado y la conversación que sosteníamos con ella era de una inteligencia y de  una lucidez sorprendente, lamentamos mucho la pérdida física de esa gran mujer  doña Rosario Ibarra de Piedra. </p>
+<p align="justify">¡Que descanse en paz!</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Muchas gracias, Senador Monreal Ávila. </p>
+<p align="justify">Para concluir este gran homenaje y merecido homenaje a doña Rosario  Ibarra de Piedra me permito dirigir estas palabras: </p>
+<p align="justify">En la vida existen eventos trágicos de tal magnitud que destrozan por  completo a las familias y dañan en lo más profundo al tejido social, pero  también existen personas excepcionales que generan a partir de su lucha  resonancias sociales que llegan a derivar en movimientos o procesos de cambio  orientados a evitar que la tragedia vivida no se repita en otras familias, ese  fue el caso de doña Rosario Ibarra de Piedra quien vivió lo que ninguna madre  debería vivir jamás, la desaparición de su hijo Jesús a manos del Estado. </p>
+<p align="justify">A raíz de este hecho innombrable, doña Rosario comenzó una lucha sin  descanso basada en el amor a su hijo, pero también en el amor hacia quienes  como ella han conocido la angustia, el dolor y la desesperación de tener una  hija o hijo desaparecidos, su lucha personal se convirtió en una lucha  colectiva, su dolor se transformó en acción. <br>
+  <br>
+  En 1977 fundó el Comité ¡Eureka! </p>
+<p align="justify">Esta práctica deleznable de perseguir, asesinar y desaparecer a la  juventud, ordenada al más alto nivel del gobierno, les ha negado a estos  jóvenes tanto la vida como su derecho al futuro, además, al desaparecerlos  pretendió el Estado borrar su historia y su propia existencia, pero este  intento de erradicar a la lucha social fue infructuoso, por el contrario, se gestó un activismo  valiente que sembraría semillas que persisten hasta nuestros días. </p>
+<p align="justify">Doña Rosario Ibarra fue una defensora incansable por los derechos  humanos. </p>
+<p align="justify">Entre muchos de sus logros se cuenta con la Ley de Amnistía. </p>
+<p align="justify">Diversas reformas constitucionales y legales en materia de derecho  humanos. </p>
+<p align="justify">También reformas en la materia de la trata de personas de desaparición y  de desaparición forzada. </p>
+<p align="justify">La creación de diversas organizaciones sociales que trabajan en pro de  los desaparecidos, la creación de una verdadera revolución de los derechos  humanos en nuestro país. </p>
+<p align="justify">Coincido con las palabras que dijo nuestro querido Senador Germán  Martínez, tanto el señor subsecretario de Gobernación, como también Karla  Quintana, han hecho de su trabajo un compromiso por los desaparecidos.</p>
+<p align="justify">El legado de Rosario Ibarra de Piedra, en la historia de México, no solo  como pionera en la defensa de los derechos humanos, sino como activista y  luchadora social contra las desapariciones, fue reconocido por el Congreso de  la Unión en 2019, al ser galardonada en el Senado de la República, en este  Senado, con la Medalla &ldquo;Belisario Domínguez&rdquo; y en la Cámara de Diputados con la  Medalla al Mérito Cívico &ldquo;Eduardo Neri y Legisladores de 1913&rdquo;, los más altos  honores para una de las más grandes mexicanas que ha dado este país. </p>
+<p align="justify">La partida de Rosario Ibarra de Piedra nos da la oportunidad de honrar a  una mujer excepcional trabajando por las cusas y por su causa de vida por la  lucha por todas las personas desaparecidas. </p>
+<p align="justify">Muchas gracias.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102955'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102956'></a><p align="justify">Dé cuenta ahora la Secretaría con los dictámenes inscritos en su primera  lectura, por favor, Secretaria. </p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con gusto, señora Presidenta. </p>
+<p align="justify">Tenemos la primera lectura de un dictamen de la Comisión de Marina, que  contiene proyecto de Decreto por el que se autoriza al Ejecutivo Federal  permitir la salida de elementos de la Armada de México fuera de los límites del  país, para participar en el Ejercicio Multinacional &ldquo;RIMPAC 2022&rdquo;, en la Fase  Hawái, que se llevará a cabo del 29 de junio al 4 de agosto de 2022, en Estados  Unidos de América.</p>
+<p align="justify"> <strong>PROYECTO DE DECRETO POR EL QUE  SE AUTORIZA AL EJECUTIVO FEDERAL PERMITIR LA SALIDA DE ELEMENTOS DE LA ARMADA  DE MÉXICO FUERA DE LOS LÍMITES DEL PAÍS, PARA PARTICIPAR EN EL EJERCICIO  MULTINACIONAL &ldquo;RIMPAC 2022&rdquo;, EN LA FASE HAWÁI, QUE SE LLEVARÁ A CABO DEL 29 DE  JUNIO AL 4 DE AGOSTO DE 2022, EN ESTADOS UNIDOS DE AMÉRICA</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Dict_Marina_Salida_Tropas_Rimpac_22.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102956'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102957'></a><p align="justify">Asimismo, tenemos  la primera lectura de un dictamen de las Comisiones Unidas de Trabajo y  Previsión Social; y de Estudios Legislativos, Segunda, que contiene  proyecto de Decreto por el que se reforma el  artículo Quinto Transitorio del Decreto por el que se reforman, adicionan y  derogan diversas disposiciones de la Ley Federal del Trabajo, de la Ley  Orgánica del Poder Judicial de la Federación, de la Ley Federal de la  Defensoría Pública, de la Ley del Instituto del Fondo Nacional de la Vivienda  para los Trabajadores y de la Ley del Seguro Social, en materia de justicia  laboral, libertad sindical y negociación colectiva, publicado en el Diario  Oficial de la Federación el 1 de mayo de 2019. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE  SE REFORMA EL ARTÍCULO QUINTO TRANSITORIO DEL DECRETO POR EL QUE REFORMAN,  ADICIONAN Y DEROGAN DIVERSAS DISPOSICIONES DE LA LEY FEDERAL DEL TRABAJO; DE LA  LEY ORGÁNICA DEL PODER JUDICIAL DE LA FEDERACIÓN; DE LA LEY FEDERAL DE LA  DEFENSORÍA PÚBLICA; DE LA LEY DEL INSTITUTO DEL FONDO NACIONAL DE LA VIVIENDA  PARA LOS TRABAJADORES Y DE LA LEY DEL SEGURO SOCIAL, EN MATERIA DE JUSTICIA  LABORAL, LIBERTAD SINDICAL Y NEGOCIACIÓN COLECTIVA, PUBLICADO EN EL DIARIO  OFICIAL DE LA FEDERACIÓN EL 1 DE MAYO DE 2019</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Dict_Trabajo_Art_5_Transitorio_Trabajo_Actualizado_12_04_22.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102957'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102958'></a><p align="justify">También tenemos la  primera lectura de un dictamen de las Comisiones Unidas de Defensa Nacional; y  de Estudios Legislativos, que contiene proyecto de Decreto por el que se  reforman y derogan diversas disposiciones de la Ley del Servicio Militar, en  materia de término de obligaciones militares. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE  SE REFORMAN Y DEROGAN DIVERSAS DISPOSICIONES DE LA LEY DEL SERVICIO MILITAR</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Dict_Defensa_Termino_Obligaciones_Militares.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102958'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102959'></a><p align="justify">De igual forma  tenemos la primera lectura de un dictamen de las Comisiones Unidas de Defensa  Nacional; y de Estudios Legislativos, que contiene proyecto de Decreto por el  que se reforman diversas disposiciones de la Ley Federal de Armas de Fuego y  Explosivos, en materia de fuero federal. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE  SE REFORMAN DIVERSAS DISPOSICIONES DE LA LEY FEDERAL DE ARMAS DE FUEGO Y  EXPLOSIVOS</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Dict_Defensa_Reforma_Ley_Federal_Armas_Fuego.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102959'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102960'></a><p align="justify">Del mismo modo,  tenemos la primera lectura de un dictamen de las Comisiones Unidas de Defensa  Nacional; y de Estudios Legislativos, que contiene proyecto de Decreto por el  que se derogan el cuarto y quinto párrafo del artículo 275 del Código de  Justicia Militar y se reforma el artículo 63 de la Ley del Servicio Militar  Nacional, en materia de justicia, fuero militar y derechos humanos. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE DEROGAN EL CUARTO Y QUINTO PÁRRAFO DEL  ARTÍCULO 275 DEL CÓDIGO DE JUSTICIA MILITAR Y SE REFORMA EL ARTÍCULO 63 DE LA LEY DEL  SERVICIO MILITAR NACIONAL </strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Dict_Defensa_Art_275_Codigo_Justicia_Militar.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102960'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102961'></a><p align="justify">Asimismo, la  primera lectura de un dictamen de las Comisiones Unidas de Juventud y Deporte;  y de Estudios Legislativos, que contiene proyecto de Decreto por el que se  reforma el artículo 8 de la Ley del Instituto Mexicano de la Juventud, para  promover y fomentar a la juventud un desarrollo pleno e integral en condiciones  de igualdad y no discriminación. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 8 DE LA LEY DEL  INSTITUTO MEXICANO DE LA JUVENTUD </strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Dict_Juventud_Art_8_Instituto_Juventud.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102961'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102962'></a><p align="justify">De igual forma  tenemos la primera lectura de un dictamen de las Comisiones Unidas de Asuntos  Indígenas; y de Estudios Legislativos, Primera, que contiene proyecto de  Decreto por el que se adiciona un inciso a la fracción II del artículo 12 de la  Ley del Instituto Nacional de los Pueblos Indígenas, para la incorporación de  la Secretaría de Cultura a la Junta de Gobierno del Instituto Nacional de los  Pueblos Indígenas. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE SE ADICIONA UN INCISO 1) A LA FRACCIÓN  II, DEL ARTÍCULO 12 DE LA LEY DEL INSTITUTO NACIONAL DE LOS PUEBLOS INDÍGENAS</strong><strong> </strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Dict_Asuntos_Art_12_Ley_INPI.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102962'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102963'></a><p align="justify">Asimismo, tenemos  la primera lectura de un dictamen de las Comisiones Unidas de Asuntos  Indígenas; y de Estudios Legislativos, Primera, por el que se reforman diversos  ordenamientos en materia de pueblos afromexicanos. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR  EL QUE SE REFORMAN DIVERSAS LEYES CON LA FINALIDAD DE ARMONIZARLAS, EN MATERIA  DE PUEBLOS AFROMEXICANOS </strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Dict_Asuntos_Indigenas_50_ordenamientos_Pueblos_Afromexicanos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102963'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102964'></a><p align="justify">También tenemos la  primera lectura de un dictamen de las Comisiones Unidas de Reglamentos y  Prácticas Parlamentarias; y de Estudios Legislativos, que contiene proyecto de Decreto por el que se adiciona  una nueva fracción XXII al artículo 90 de la Ley Orgánica del Congreso General  de los Estados Unidos Mexicanos, recorriéndose en su orden el resto de las  actuales fracciones, para establecer la Comisión de Pueblos Indígenas y  Afromexicanos. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE  SE REFORMA LA FRACCIÓN XXII DEL ARTÍCULO 90 DE LA LEY ORGÁNICA DEL CONGRESO GENERAL  DE LOS ESTADOS UNIDOS MEXICANOS, RECORRIÉNDOSE EN SU ORDEN EL RESTO DE LAS  ACTUALES FRACCIONES</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Dict_Reglamentos_Art_90_Congreso_General.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102964'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102965'></a><p align="justify">De igual forma, tenemos  la primera lectura de un dictamen de las Comisiones Unidas  de Reglamentos y Prácticas Parlamentarias; y de Estudios Legislativos, que  contiene proyecto de Decreto por el que se reforman los artículos 19, numerales  1 y 2; 21, 22 y 23 del Reglamento del Senado de la República, para la  armonización con la Ley General de Responsabilidades Administrativas. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE  SE REFORMAN El ARTÍCULO 19, NUMERALES 1, 2, 21 y 22; Y EL ARTÍCULO 23 DEL  REGLAMENTO DEL SENADO DE LA REPÚBLICA CON RELACIÓN A LA ARMONIZACIÓN DE LA LEY  GENERAL DE RESPONSABILIDADES ADMINISTRATIVAS</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Dict_Reglamentos_Art_19_Reglamento_Senado.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102965'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102966'></a><p align="justify">También tenemos la  primera lectura de un dictamen de las Comisiones Unidas de Reglamentos y  Prácticas Parlamentarias; y de Estudios Legislativos, que contiene proyecto de  Decreto por el que se adiciona un numeral 5 al artículo 277 del Reglamento del  Senado de la República, en relación con la vigencia de las proposiciones con  punto de Acuerdo. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE  SE ADICIONA UN NUMERAL 5 AL  ARTÍCULO 277 DEL REGLAMENTO DEL SENADO DE LA REPÚBLICA</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Dict_Reglamentos_Art_277_Reglamento_Senado.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102966'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102967'></a><p align="justify">Del mismo modo,  tenemos la primera lectura de un dictamen de las Comisiones Unidas de Cultura;  y de Estudios Legislativos, que contiene proyecto de Decreto por el que se  reforman y adicionan diversas disposiciones de la Ley de Fomento para la  Lectura y el Libro, en materia de libros en formato impreso, electrónico o  digital. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE  SE REFORMAN Y ADICIONAN DIVERSAS DISPOSICIONES DE LA LEY DE FOMENTO PARA LA  LECTURA Y EL LIBRO</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Dict_Cultura_Fomento_Lectura_Libro.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102967'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102968'></a><p align="justify">Asimismo, tenemos  la primera lectura de un dictamen de las Comisiones Unidas de Cultura; y de  Estudios Legislativos, que contiene proyecto de Decreto por el que se declara  el 7 de octubre de cada año, como el Día del dibujante, la caricatura y la  historieta.</p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE  SE DECLARA EL 7 DE OCTUBRE DE CADA AÑO, COMO EL DÍA DEL DIBUJANTE, LA  CARICATURA Y LA HISTORIETA</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Dict_Cultura_Dia_Dibujante.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102968'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102969'></a><p align="justify">De igual forma,  tenemos la primera lectura de un dictamen de las Comisiones Unidas de Cultura;  y de Estudios Legislativos, que contiene proyecto de Decreto por el que se  declara conmemorativo el 4 de junio de cada año, como Día de la Rebelión de  Valladolid.</p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE  SE DECLARA CONMEMORATIVO EL 4 DE JUNIO DE CADA AÑO, COMO DÍA DE LA REBELIÓN DE  VALLADOLID</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Dict_Cultura_Dia_Rebelion_Valladolid.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102969'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102970'></a><p align="justify">Finalmente, tenemos  la primera lectura de un dictamen de las Comisiones Unidas de Derechos Humanos;  y de Estudios Legislativos, que contiene proyecto de Decreto por el que se  declara el 13 de octubre de cada año, como el Día Nacional de la Paz.</p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE  SE DECLARA EL 13 DE OCTUBRE DE CADA AÑO, COMO EL DÍA NACIONAL DE LA PAZ</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Dict_DH_13_Oct_Dia_Nacional_Paz.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Son todos los dictámenes de primera lectura,  señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Te agradezco mucho,  Secretaria. </p>
+<p align="justify">Los 15 dictámenes se encuentran publicados en  la Gaceta Parlamentaria de hoy y disponibles en el monitor de sus escaños. </p>
+<p align="justify">Con fundamento en lo dispuesto por los  artículos 193 y 195 del Reglamento del Senado, quedan de primera lectura. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102970'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102971'></a><p align="justify">Informo a esta Honorable Asamblea que las  Comisiones Unidas de Minería y Desarrollo Regional; y de Estudios Legislativos,  Segunda, remitieron a esta Mesa Directiva dictamen con proyecto de Decreto por  el que se reforman y adicionan diversas disposiciones de la Ley Minera. </p>
+<p align="justify">Solicito a la Secretaría consulte a la  Asamblea, en votación económica, si autoriza incorporar el dictamen al Orden  del Día de la sesión del día de hoy.</p>
+<p align="justify"> <strong>La Secretaria Senadora Verónica Noemí Camino  Farjat: </strong>Con gusto, señora  Presidenta. Consulto a la Asamblea, en votación económica, si autoriza se  incorpore el dictamen anunciado por la presidenta a la sesión de hoy. Quienes  estén porque se autorice, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque no se autorice, favor de  levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Sí se autoriza, señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Gracias. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE  SE REFORMAN Y ADICIONAN DIVERSAS DISPOSICIONES DE LA LEY MINERA</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/1/2022-04-19-1/assets/documentos/Dictamen_Ley_Minera_19042022.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">El dictamen está publicado en la Gaceta  Parlamentaria y disponible en el monitor de sus escaños y así se hace de su  conocimiento. </p>
+<p align="justify">Solicito a la Secretaría consulte a la  Asamblea, en votación económica, si autoriza que se le dispense la lectura al  dictamen. </p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat: </strong>Con gusto, señora  Presidenta. Consulto a la Asamblea, en votación económica, si autoriza que se  dispense la lectura de un dictamen anunciado por la Presidencia. Quienes estén  porque se autorice, favor de levantar la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque no se autorice, favor de  levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Sí, se autoriza, señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Gracias.  En consecuencia, el dictamen con proyecto de  Decreto por el que se reforman y adicionan diversas disposiciones de la Ley  Minera, queda de primera lectura. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102971'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102972'></a><p align="justify"><strong>AGENDA  POLÍTICA</strong></p>
+<p align="justify">De las  Senadoras y de los Senadores del grupo parlamentario del Partido Morena, para  referirse a la situación política del país.</p>
+<p align="justify">De las  Senadoras y de los Senadores del grupo parlamentario del PAN, para referirse a  la situación política del país.</p>
+<p align="justify">De las  Senadoras y de los Senadores del grupo parlamentario del PRI, para referirse a  la situación política del país.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102972'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102973'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify">Se cita a la sesión  ordinaria este mismo día, la cual se realizará a las 13 horas con 15 minutos en  este recinto.</p>
+<p align="justify">E informo que a  partir de este momento estará abierto el sistema electrónico para registrar su  asistencia. </p>
+<p align="justify">Se levanta la  sesión. </p>
+<p align="justify">Repito, por favor:  Se levanta la sesión.</p>
+<p align="justify">Gracias. Mil  disculpas. </p>
+<p align="center">(Se levantó la  reunión a las 13:05 horas) </p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102973'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

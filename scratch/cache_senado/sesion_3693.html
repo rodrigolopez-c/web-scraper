@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 4</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Laura Itzel Castillo Juárez</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 10 de Febrero de 2026</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/2/SPO/PDF-WEB/SPO_No4_10_FEBRERO_2026_SOLEMNE.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='125125'></a><p align="center"><strong>PRESIDE LA SENADORA</strong> <br>
+  <strong>VERÓNICA NOEMÍ CAMINO FARJAT</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>La Presidenta  Senadora Verónica Noemí Camino Farjat:</strong> (11:43 horas) Conforme al Acuerdo aprobado el  pasado 3 de febrero, damos inicio al homenaje luctuoso en memoria de Senador  Gustavo Sánchez Vásquez.</p>
+<p>Nos acompañarán en esta  sesión solemne familiares y amigos de nuestro compañero Senador.</p>
+<p>En consecuencia, solicito a las Senadoras y  Senadores de la comisión de cortesía: Juan Carlos Loera De la Rosa, Waldo  Fernández González, Karina Isabel Ruiz Ruiz, Marko Cortés Mendoza, Guadalupe  Murguía Gutiérrez, Miguel Márquez Márquez y Clemente Castañeda Hoeflich,  acompañar a los familiares del Senador Gustavo Sánchez para entrar a este salón  de sesiones. </p>
+<p align="center">(La comisión cumple) </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a125125'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/xeHXVYKaJLc?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='125126'></a><p><strong>HOMENAJE LUCTUOSO AL SENADOR</strong><br>
+  <strong>GUSTAVO SÁNCHEZ VÁSQUEZ</strong></p>
+<p>Agradecemos la presencia en esta sesión solemne de  la señora Margarita Flores Guizar, esposa del Senador Gustavo Sánchez Vásquez. </p>
+<p>¡Sea  usted muy bienvenida!</p>
+<p>También  de los señores Gustavos Sánchez Flores y Alejandro Sánchez Flores, hijos del  Senador Sánchez Vásquez. </p>
+<p>¡Sean  bienvenidos!</p>
+<p>Del  nieto del Senador, también, Gustavo Alonso Sánchez, a quien cariñosamente le  decían Gustavito tercero.</p>
+<p>¡Bienvenido!</p>
+<p>Y,  por supuesto, de la señora Mónica Daniela Quijada, nuera del Senador Gustavo  Sánchez. </p>
+<p>¡Sea  bienvenida!</p>
+<p>También  nos acompaña el reverendo José Adrián, que viene acompañando a la familia de  nuestro compañero Senador. </p>
+<p>¡Sea  bienvenido al Senado de la República!</p>
+<p>Asimismo,  nos acompañan familiares cercanos y amigos que honran esta sesión. </p>
+<p>¡Sean  muy bienvenidas y bienvenidos a este Pleno del Senado de la República!</p>
+<p>Me  permito presentar a mis compañeras y compañeros Senadores de la Mesa Directiva  presentes en esta sesión solemne. </p>
+<p>La  Senadora Imelda Sanmiguel Sánchez, Vicepresidenta de la Mesa Directiva.</p>
+<p>El  Senador Jorge Carlos Ramírez Marín, Vicepresidente de esta Mesa Directiva. </p>
+<p>Asimismo,  se encuentra la Senadora Mariela Gutiérrez Escalante. </p>
+<p>La  Senadora Sandra Simey Olvera Bautista.</p>
+<p>La  Senadora Lizeth Sánchez García. </p>
+<p>La  Senadora Claudia Edith Anaya Mota.</p>
+<p>Y  el Senador Néstor Camarillo Medina, Secretarias y Secretario de esta Mesa  Directiva.</p>
+<p>Pueden  tomar asiento, muchas gracias. </p>
+<p>Debo  resaltar que esta sesión solemne la realizamos con la aprobación y apoyo  unánime de todas las personas Senadoras que participamos en este Pleno, en  reconocimiento a la vida ejemplar de nuestro compañero Senador Gustavo Sánchez  Vásquez. </p>
+<p>Fue  un duro golpe para la Asamblea saber de su lamentable deceso, el pasado 31 de  enero y, por supuesto, de esta Mesa Directiva de la que él formaba parte. </p>
+<p> En  su momento guardamos un minuto de silencio en su memoria y expresamos nuestra  solidaridad con sus familiares y los integrantes del grupo parlamentario del  Partido Acción Nacional. </p>
+<p>El  Senador Sánchez Vásquez dedicó más de 30 años de su vida al servicio público.</p>
+<p>Construyó  una sólida trayectoria política que inició en su estado natal, Baja California. </p>
+<p>En  el año 2024 fue electo Senador de la República por el principio de primera  minoría, representando a su estado. </p>
+<p>También  se distinguió por su compromiso con los temas de desarrollo regional y  fronterizo defendiendo los intereses del norte del país y promoviendo  iniciativas que buscaron fortalecer la economía y la competitividad de las  entidades fronterizas. </p>
+<p>Además  de su labor legislativa, su participación en la vida política estatal y  municipal, así como sus cualidades humanas de integridad, lealtad a sus  principios y solidaridad con sus colegas, hicieron del Senador Gustavo Sánchez  Vásquez una figura valorada, más allá de las diferencias partidistas. </p>
+<p>La  trayectoria de nuestro compañero Senador, caracterizada por su vocación de  servicio, su firme convicción democrática y su compromiso con la representación  ciudadana, constituye un referente para las y los integrantes de esta  soberanía, razón por la cual la Cámara de Senadoras y Senadores rinde este  homenaje que refleja el profundo respeto a quien sirvió con dignidad a la  Patria. </p>
+<p>A  nombre del Senado de la República les expreso nuestro más sentido pésame a  familiares y amigos, y les manifestamos nuestra solidaridad ante su irreparable  pérdida. </p>
+<p>Conforme  al Acuerdo aprobado por este Pleno, tiene el uso de la palabra la Senadora  Vicepresidenta, Imelda Sanmiguel Sánchez, quien dará lectura a la semblanza del  Senador Gustavo Sánchez Vásquez.</p>
+<p><strong>La  Senadora Imelda Sanmiguel Sánchez: </strong>Muy buenas tardes a  todas y a todos. </p>
+<p>Creo  que nunca había sido tan complicado dar un discurso en esta tribuna. </p>
+<p>Bienvenidos  sean ustedes, familia de nuestro gran compañero Gustavo. </p>
+<p>Nos  sentimos muy contentos de haber estado un momento en su vida, pero  lamentablemente y afortunadamente ya está él en la Gloria de Dios y nos  sentimos satisfechos de haber estado compartiendo estos momentos con él, un  hombre tan entregado, íntegro y, finalmente, tenemos una gran gratitud por él </p>
+<p>Muchas  gracias por estar aquí. </p>
+<p>La  ausencia no tiene el poder de borrar el legado de un hombre íntegro, honesto,  trabajador y talentoso, como fue Gustavo Sánchez Vasquez, fue un amigo y un  compañero entrañable, una persona querida por quien convivía con él, y un  político de los que México necesita más. </p>
+<p>Sé  que en esta sesión solemne se hablará de su vida pública y de su paso por el  servicio al país, pero en esta primera intervención yo quiero referirme a algo  más esencial, a la persona, al ser humano detrás del cargo; porque antes que  cualquier título fue un hombre cercano, generoso y profundamente humano, cuya  huella permanece en la vida de quienes lo conocimos y lo quisimos. </p>
+<p> Hoy,  esta soberanía rinde homenaje a un hombre cuya partida deja un vacío profundo,  pero también una herencia de humanidad, congruencia y amor. </p>
+<p>Hoy  despedimos a Gustavo, no solo el Senador de la República, sino el ser humano  que honró cada día de su vida con sus actos. Hablar de Gustavo es hablar de  valores vividos no proclamados, es hablar de un hombre que entendió que el  verdadero significado del servicio público nace del corazón y se sostiene en la  calidad humana. </p>
+<p>Quienes  lo conocimos, sabemos que su grandeza no estaba en el cargo, sino en su forma  de ser, cercano, respetuoso, firme en sus convicciones y profundamente sensible  ante los demás. </p>
+<p>Gustavo,  amó su tierra, siempre preocupado por el bien común de Baja California y de  México. </p>
+<p>Tuvimos  el honor de compartir con él momentos que atesoramos profundamente; vivimos  grandes experiencias juntos, como aquel viaje a Chihuahua que hoy recordamos  con especial emoción. </p>
+<p>A  pesar de las dificultades que enfrentaba, Gustavo, decidió estar con nosotros,  acompañarnos y cumplir, nunca permitió que la adversidad definiera su ánimo,  siempre sonriente, siempre fuerte, siempre con una palabra amable y un espíritu  generoso; su presencia incluso en los momentos más complejos fue una lección  silenciosa de valentía y dignidad. </p>
+<p>Gustavo  no se quejaba, nunca se quejó, no se rendía, elegía estar, aportar, compartir.  Así era Gustavo, un hombre que incluso en la prueba enseñaba, sin discursos, el  valor de la fortaleza interior. </p>
+<p>Aquí,  entre compañeras y compañeros supo construir respeto y amistad, fue un hombre  que creía en el diálogo, que sabía escuchar, que disentía con argumentos y que  jamás perdió de vista que la política, sin humanidad, pierde la razón de ser. </p>
+<p>Hoy,  su ausencia duele, pero su ejemplo permanece. Permanece en la memoria de  quienes lo conocimos, en el cariño de su familia, en el respeto de esta  Asamblea y en cada persona que fue tocada por su calidad humana, pero, sobre  todo, Gustavo, fue un hombre de familia, en él el amor no era discurso, era  presencia constante, amó a los suyos con entrega absoluta, con orgullo y con  una ternura que no buscaba ocultar. </p>
+<p>Y  si hay algo que muchos recordaremos con especial emoción, era la manera en que  hablaba de su esposa. Bastaba mencionarla para que su voz se llenara de  sentimiento, para que sus palabras se tornaran más suaves y su mirada reflejara  gratitud, admiración y un amor profundo, incondicional y sincero. </p>
+<p>Todos  lo vimos y lo llevamos en el corazón. </p>
+<p>En  cada referencia, a usted, señora Margarita, quedaba claro que su fortaleza  también nacía de ese amor compartido. </p>
+<p>Gustavo entendía que la familia es un refugio,  motor y sentido. Y desde ahí, desde ese amor sólido enfrentó la vida, los retos  y también las dificultades con una entereza admirable. </p>
+<p>A su esposa Margarita, a sus hijos Gustavo y su  esposa Mónica, Alejandro, y a esa enorme alegría que nos presumía en cada  oportunidad enseñando fotos de su nieto Gustavito tercero. </p>
+<p> A sus hermanos Luis, Hugo, Francisco y Carlos, a su  familia, y a todos los seres queridos:</p>
+<p>Les expresamos nuestro más sincero acompañamiento,  que encuentren consuelo en el amor que compartieron, en la vida que  construyeron juntos, y en la certeza de que Gustavo vivió dejando huella. </p>
+<p>Descanse en paz, querido amigo Gustavo Sánchez  Vásquez, tu vida fue testimonio de amor, entereza y congruencia. </p>
+<p>Tu recuerdo vivirá siempre entre nosotros. </p>
+<p>¡Descanse en paz! </p>
+<p>Muchas gracias. </p>
+<p><strong>La Presidenta Senadora  Verónica Noemí Camino Farjat:</strong> Muchas gracias, Senadora Vicepresidenta Imelda Sanmiguel Sánchez. </p>
+<p>Es importante mencionar que también nos acompaña la  señora Silvia Alzua Torres, consuegra del Senador Gustavo Sánchez Vásquez. </p>
+<p>¡Sea bienvenida a este Senado!</p>
+<p>Ahora se concede el uso de la tribuna al Senador  Ricardo Anaya Cortés, Coordinador del grupo parlamentario del Partido Acción  Nacional. </p>
+<p><strong>El Senador Ricardo Anaya Cortés: </strong>Con su permiso, señora Presidenta. </p>
+<p align="right"><strong><em>&ldquo;</em></strong><em>Nunca  visites panteones ni llenes tumbas de flores, </em><br>
+  <em>llena de amor, corazones en vida; hermano, en vida&rdquo; </em></p>
+<p>En el marco de esta sesión solemne, para honrar la  memoria de nuestro querido compañero Gustavo Sánchez, este verso pasa de ser  simple poesía a convertirse en una verdad profundamente humana. </p>
+<p>Por eso pueden sentirse en paz sus hijos, Gustavo y  Alejandro. </p>
+<p>Por eso pueden sentirse en paz sus compañeras,  compañeros, sus amigas y sus amigos. </p>
+<p>Y, sobre todo, querida Margarita, por eso tú puedes  hoy sentirte en paz, porque en vida llenaste de amor el corazón de Gustavo. </p>
+<p>Y yo agradezco profundamente a la vida, que también  pude en vida decir de Gustavo lo que hoy voy a referir en esta sesión. </p>
+<p>Apenas el 17 de octubre, en el marco del último  informe que alcanzó a rendir, recordábamos cinco aspectos fundamentales en la  vida pública de Gustavo. </p>
+<p>Primero, recordar que la vida de Gustavo y la  historia del PAN en Baja California están estrechamente vinculadas; el PAN un  partido fundado en 1939 que tuvo que esperar 50 años, medio siglo de lucha  tenaz opositora para que se reconociera el triunfo en una gubernatura. </p>
+<p>Y eso ocurrió en el estado de Gustavo Sánchez en  Baja California, cuando en 1989 Ernesto Rufo se convierte en el primer  gobernador panista en la historia, invita a Eugenio Elorduy como su secretario  de finanzas, y el propio Eugenio con el acuerdo del entonces gobernador busca a  un entonces joven de 27 años, abogado, fiscalista, talentoso, para pedirle que  se incorpore a ese gobierno como procurador fiscal.</p>
+<p> Ese joven de 27 años, Gustavo Sánchez Vásquez, tuvo  la tremenda encomienda de cuidar, desde la perspectiva jurídica la hacienda del  estado de Baja California el dinero de la gente. </p>
+<p>Y una anécdota que a Gustavo le encantaba platicar  es que en ese entonces el gobierno de Salinas pretendía hacer un cambio al  Convenio de Coordinación Fiscal, lo cual iba a implicar una merma tremenda a  los recursos de las y los bajacalifornianos.</p>
+<p>Y acabaron en una reunión en la oficina del  entonces secretario de Hacienda, Pedro Aspe, estaba ahí el subsecretario Gil  Díaz y por parte del gobierno de Baja California Ruffo, Elorduy y el cerebro  técnico detrás de la reunión era este joven de 27 años, Gustavo Sánchez  Vásquez. </p>
+<p>Después de horas de reunión, donde se negaban a  firmar un acuerdo que perjudicaba las finanzas locales apareció en la oficina  el propio Presidente de la República, Carlos Salinas de Gortari y ni así los  doblaron y no firmaron. </p>
+<p>De ese tamaño era el panismo de la época y de ese  tamaño era nuestro compañero, entonces, un joven de 27 años, Gustavo Sánchez  Vásquez. </p>
+<p>Cuando termina ese gobierno, aunque el PAN  gobernaba el estado nunca había gobernado la capital. </p>
+<p>Elorduy es candidato a presidente municipal de  Mexicali y le pide a Gustavo que lo acompañe como síndico, hacen campaña  juntos, ganan la elección, se convierten en el primer alcalde, y Gustavo en el  primer síndico panista en la historia de su natal Mexicali. </p>
+<p>Cuando concluye esa administración, Gustavo se  regresa muchos años a su despacho, algo que sus amigos le oímos decir  muchísimas veces, decía Gustavo una y otra vez: </p>
+<p>&ldquo;No vivan de la política, hay que vivir para la  política&rdquo;. </p>
+<p>Años más tarde, el presidente del partido y el  propio gobernador Osuna le piden que sea diputado local, y Gustavo en primera  instancia se niega y él contaba que decidió irle a pedir consejo a la persona  que en ese entonces él más respetaba, que era su padre. </p>
+<p>Y su padre ese día le dijo una frase con la que,  por cierto, cerró su informe el 17 de octubre pasado. </p>
+<p>Su padre le dijo: &ldquo;Quien hace lo que puede, hace lo  que debe. Ve y cumple con tu deber&rdquo;. </p>
+<p>Y Gustavo regresa con el partido y con el  gobernador y acepta ser candidato a diputado, le dicen que, por supuesto irá en  el primer lugar de la lista y Gustavo lo rechaza, Gustavo pone una sola  condición, quiere ir de mayoría, quiere ir a la calle y sólo si la gente con su  voto decide que él sea diputado, entonces ocupará un escaño en el Congreso  local. </p>
+<p>Hace una extraordinaria campaña, guerrero como  siempre lo conocimos, gana la elección y fue un extraordinario coordinador del  grupo parlamentario del PAN en el Congreso de Baja California. </p>
+<p>Para esas épocas yo era el Presidente Nacional del  Partido y recuerdo cómo fue absolutamente natural su candidatura a alcalde. </p>
+<p>Amplísimos sectores de la sociedad civil, no  solamente del panismo veían en Gustavo a la figura adecuada para ser el  candidato alcalde de la capital. </p>
+<p>Fue candidato, ganó la elección e hizo un gobierno  ejemplar, honesto, valiente, siempre, un hombre de principios.</p>
+<p> Y otra vez la anécdota que a él más le gustaba  contar fue que a su toma de protesta acudió su madre, a quien amaba  entrañablemente. </p>
+<p>Y se acercó un reportero a preguntarle a su mamá,  esto todavía me lo volvió a contar el 17 de octubre y se le llenaban de  lágrimas los ojos cuando lo platicaba, que le preguntó el reporto a su mamá  que, ¿qué opinaba de su hijo, el alcalde? </p>
+<p>Y que su mamá contestó: &ldquo;Del alcalde, voy a opinar  dentro de tres años cuando termine su administración&rdquo;.</p>
+<p>Disciplina amorosa. Le llamaba a eso, nuestro  querido Gustavo. </p>
+<p>Y me platicaba Gustavo que fue su mamá a su último  informe de gobierno, que lo abrazó y le qué le dijo: &ldquo;Tu papá que ya se nos  adelantó en el camino, y yo estamos muy orgullosos de ti. Misión cumplida,  cumpliste con tu deber&rdquo;.</p>
+<p>Gustavo siempre remó contracorriente.</p>
+<p>Para llegar a este Senado de la República pasó  primero por una elección interna tremendamente competida, contra un  exgobernador del estado, en donde por cierto la mancuerna con Max fue  fundamental para que pudieran ganar esa elección; elección competida,  democrática.</p>
+<p>Y la elección constitucional fue muy compleja, no  sólo Morena tenía mucha fuerza en ese momento en el estado de Baja California.</p>
+<p>El PT llevaba como candidato a un exgobernador, a  Bonilla; el Verde llevaba a Hank; y en una elección competida, Max ha dado  testimonio de ello, recorriendo todo el territorio, guerrero como siempre fue  Gustavo, ganaron la elección.</p>
+<p>Y en este Senado de la República, Gustavo dio  ejemplo, dio cátedra de lo que es legislar con principios.</p>
+<p>Como aquí se ha dicho, se podría estar o no de  acuerdo con él, pero siempre defendió con pasión sus convicciones.</p>
+<p>Termino con una historia que me gusta mucho.</p>
+<p>Un joven de unos 14, 15 años, de excursión por la  Sierra Gorda de Querétaro, pasa a visitar a un colega del padre Adrián, un  colega muy querido en el pueblo, y cuando entra a la casa del padre se da  cuenta de que sólo tiene una cama y unos muebles, una cama y unos libros. No  había un solo mueble adentro de la casa.</p>
+<p>Y el joven sorprendido le pregunta al padre que  dónde están sus muebles. Y el padre se le queda viendo a este joven y le dice:  ¿Pues dónde están los tuyos?</p>
+<p>Y el joven no entiende en principio y confundido le  dice: Porque yo no soy de aquí, yo sólo traigo esta mochila porque yo estoy de  paso.</p>
+<p>Y se le queda viendo el padre y le dice: Pues esa  es exactamente la razón por la que yo tampoco tengo muebles, porque yo también  estoy de paso.</p>
+<p>Y es que todas y todos estamos de paso.</p>
+<p>Este traje que traemos puesto es prestado. No  sabemos el día ni la hora, pero todas y todos lo vamos a entregar.</p>
+<p> El reto es entregarlo como lo entregó Gustavo, con  la frente en alto, con la cara limpia, con la satisfacción del deber cumplido.</p>
+<p>¡Descanse en paz el amigo, el padre, el esposo  amoroso, el abuelo entrañable!</p>
+<p>¡Descanse en paz! </p>
+<p>El Senador de la República, Gustavo Sánchez  Vásquez.</p>
+<p><strong>La  Presidenta Senadora Verónica Noemí Camino Farjat:</strong> Muchas gracias, Senador Anaya Cortés.</p>
+<p>También se encuentra con nosotros Jorge Álvarez  Máynez, Coordinador Nacional del Partido Movimiento Ciudadano.</p>
+<p>¡Sea bienvenido a este Pleno del Senado de la  República, a esta sesión solemne!</p>
+<p>Ahora pasamos a las participaciones de personas  Senadoras de los diversos grupos parlamentarios, quienes expresarán sus  testimonios en torno a la figura del Senador Gustavo Sánchez Vásquez, por un  tiempo máximo de dos minutos cada una.</p>
+<p>Tiene el uso de la palabra, para iniciar, el  Senador Juan Carlos Loera De la Rosa, del grupo parlamentario del Partido  Morena.</p>
+<p><strong>El Senador Juan Carlos Loera De la Rosa: </strong>Muchas gracias. Con su permiso, señora Presidenta.</p>
+<p>Mis condolencias a toda la familia, a los amigos,  compañeros de partido de Gustavo Sánchez Vásquez.</p>
+<p>Muy emotivos los testimonios que acabamos de  escuchar.</p>
+<p>Yo tuve la oportunidad de conocer y de trabajar  junto con Gustavo por mucho menos tiempo, pero me consta toda la entrega, el profesionalismo, el amor  a nuestro país y a sus ideas que él tuvo. </p>
+<p>Tuve el honor de coincidir con el Senador Sánchez en  la Comisión de Asuntos de la Frontera Norte, de la que él era integrante. </p>
+<p>En ese espacio conocí a un legislador firme en sus  convicciones y a un hombre amable, siempre dispuesto al diálogo, al trabajo  colaborativo y al respeto mutuo. </p>
+<p>Compartimos la idea de que el Senado debe  trasladarse a las calles, al espacio público y con su ciudadanía. </p>
+<p>Y allí fue, precisamente en Mexicali, con Gustavo  Sánchez Vásquez, donde la Comisión de Asuntos de la Frontera Norte salió a la  calle y trabajamos con el Congreso, con la gobernadora, en las calles, en los  albergues para migrantes. </p>
+<p>Allí en la frontera, donde las dinámicas complejas  no admiten discursos vacíos ni posturas cómodas, el Senador Gustavo Sánchez  supo escuchar. </p>
+<p>Y también supo escuchar en Los Ángeles, California,  en la Universidad de Loyola, ahí estuvimos juntos escuchando y siempre  coincidimos con el Senador Gustavo Sánchez Vásquez. </p>
+<p>Escuchar a quienes viven entre dos países, a quienes  trabajan, migran, comercian y sueñan en esa franja, que es desafío y  oportunidad de manera simultánea. </p>
+<p> Nuestro compañero supo que las diferencias  partidistas se vuelven pequeñas cuando enfrente hay realidades que exigen  soluciones compartidas. </p>
+<p>Desde el grupo parlamentario al que pertenezco,  Morena, sostengo que la pluralidad no debe dividirnos cuando hay un compromiso  real con México. </p>
+<p>Gustavo Sánchez fue prueba de ello, defendió sus  ideas con convicción y congruencia, pero nunca cerró la puerta al entendimiento  y al diálogo. Eso, en los tiempos que vivimos, es un valor que merece ser  reconocido y honrado. </p>
+<p>Su fallecimiento nos recuerda algo importante: Más  allá de las leyes, dictámenes y votaciones, este recinto está conformado por  personas y trayectorias que, aún desde visiones distintas, se cruzan con el  noble propósito de servir a México y su población.</p>
+<p>A su familia, a sus seres queridos, a sus compañeras  y compañeros, les expreso mi respeto y solidaridad…</p>
+<p><strong>La Presidenta Senadora  Verónica Noemí Camino Farjat: </strong>Concluya,  Senador. </p>
+<p><strong>El Senador Juan Carlos Loera  De la Rosa:</strong>…y que encuentren  consuelo en saber que Gustavo Sánchez deja una huella de trabajo, de  responsabilidad y de amabilidad entre quienes tuvimos la oportunidad de  coincidir con él.</p>
+<p>Que su memoria nos convoque a realizar mejor nuestro  trabajo, hacer una nueva política sustentada en el diálogo y que su legado nos  obligue a trabajar con doble ahínco por el México que merecen nuestras niñas y  niños.</p>
+<p>¡Descanse en paz! </p>
+<p>Un tipazo: Gustavo Sánchez Vásquez. </p>
+<p><strong>La Presidenta Senadora  Verónica Noemí Camino Farjat: </strong>Gracias,  Senador Loera De la Rosa. </p>
+<p>Tiene ahora el uso de la palabra el Senador Marko  Cortés Mendoza, del grupo parlamentario del Partido Acción Nacional, hasta por  dos minutos.</p>
+<p><strong>El Senador Marko Cortés  Mendoza: </strong>Muy buenas tardes a  todas y todos. </p>
+<p>Reconozco a este Pleno, la Mesa Directiva, el que se  haya permitido este homenaje luctuoso a nuestro gran amigo. </p>
+<p>Quiero contarles que, en agosto del 2024, cuando  íbamos a tener nuestra primera reunión plenaria como grupo parlamentario en  Querétaro, Gustavo me preguntó: &ldquo;Oye, ¿y vamos a llevar a nuestras esposas y  esposos?&rdquo; </p>
+<p>Y algo tan sencillo, Margarita, mostraba el estilo y  la forma de Gustavo para contigo y con su familia, un hombre que te amaba  profundamente, que te extrañaba, que le pesaba venir, pero venía con  convicción, porque además son tres horas y media para venir y regresar.</p>
+<p>Que se sentía muy orgulloso de sus dos hijos, de Gustavo  y Alejandro. </p>
+<p>Al  grupo parlamentario nos mandaba muy seguido fotografías de sus éxitos, de sus  logros académicos. </p>
+<p>Y,  bueno, cuando nació Gustavito tercero era un abuelo realmente feliz. </p>
+<p> Gustavo  se ganó el corazón de las y los Senadores.</p>
+<p>Y  fue una decisión difícil, sí, como lo dijo aquí Ricardo Anaya, porque teníamos  que elegir entre un exgobernador bastante bien posicionado y un gran gran  candidato que ya había sido alcalde y que había resultado un gran alcalde de  Mexicali. </p>
+<p>¡Qué  fue lo que vimos en Gustavo! Un hombre con gran pasión, con gran entrega. Me  tocó vivirlo varias veces. </p>
+<p>En  el calor de Mexicali, como buen cachanilla, no se rajaba y andaba para un lado  y para otro saludando a pesar de ese calor que te seca la cara. </p>
+<p>Siempre  alegre, siempre intenso, siempre positivo y siembre luchador. </p>
+<p>Fue  un hombre que fue exitoso no sólo en política, también tuvo gran éxito como  fiscalista que fue. </p>
+<p>Fue  un hombre respetado por propios y extraños. </p>
+<p>Es  un hombre al que vamos a recordar con mucho cariño.</p>
+<p>Hicimos  un plan y el plan era que Gustavo se fuera en el 27 a la contienda electoral y  viniera aquí nuestro querido Max a seguir trabajando. </p>
+<p>Max,  el tiempo se adelantó.</p>
+<p>Sólo  Dios sabe por qué se lleva a la gente buena.</p>
+<p>Pero  algo sí les digo, con total convicción, en nuestro grupo parlamentario y, por  lo que veo, en este Senado su huella quedará marcada. </p>
+<p>Y  recordemos al poeta: &ldquo;caminante no hay camino, se deja camino al andar&rdquo;. </p>
+<p>Y  aquí Gustavo Sánchez Vásquez dejó camino. </p>
+<p>¡Que  descanse en paz! nuestro amigo.</p>
+<p>Porque  siempre lo recordaremos. </p>
+<p>Muchísimas  gracias.</p>
+<p>Y,  de verdad, mi felicitación por el marido y por el padre que tuvieron.</p>
+<p><strong>La  Presidenta Senadora Verónica Noemí Camino Farjat: </strong>Muchas  gracias, Senador Cortés Mendoza.</p>
+<p>Tiene  ahora el uso de la palabra la Senadora Ruth González Silva, del grupo  parlamentario del Partido Verde Ecologista de México, hasta por dos minutos. </p>
+<p><strong>La  Senadora Ruth González Silva: </strong>Gracias. Muy buenas tardes a  todas y a todos. </p>
+<p>El  día de hoy tomo la palabra desde el respeto, la memoria y la gratitud para  honrar la vida y el legado del Senador Gustavo Sánchez Vásquez. </p>
+<p>Su  partida deja un vacío profundo en el Senado, y de manera muy especial, a toda  la familia.</p>
+<p> Quiero  decirles que, en la Comisión de Relaciones Exteriores, América del Norte, donde  tuve el privilegio de coincidir con él, el Senador Gustavo se distinguió  siempre con una conducta institucional ejemplar, guiada por el diálogo, la  apertura y una convicción firme de que el interés superior de México debía  estar por encima de cualquier cálculo político. </p>
+<p>Tuve  la fortuna de coincidir con su hijo Alejandro, en alguna reunión de la Embajada  de Estados Unidos, y en tiempos en donde la polarización puede parecer  inevitable, él eligió construir puentes. </p>
+<p>En  la comisión que presido, fue la primera persona que se acercó conmigo para  presentarse y para trabajar de la mano por México. </p>
+<p>Supo  demostrar que el trabajo legislativo cobra verdadero sentido cuando se ejerce  con responsabilidad, con respeto a la pluralidad y con voluntad genuina de  encontrar coincidencias en favor de nuestro país. </p>
+<p>En  la comisión hicimos un gran equipo. Su voz fue siempre una voz informada,  crítica, cuando debía serlo, y generosa para construir acuerdos cuando el  momento lo requería. </p>
+<p>Su  disposición al diálogo fortaleció nuestra labor parlamentaria y dejó una huella  que trasciende coyunturas y colores partidistas. </p>
+<p>Quienes  tuvimos la oportunidad de conocerlo, aunque poco tiempo, también reconocimos en  él a una persona cercana, respetuosa y profundamente humana; la amistad que  nació del trabajo compartido es testimonio de que la política puede y debe ser  un espacio para el encuentro y la colaboración. </p>
+<p>Hoy  rendimos homenaje no solamente a un legislador comprometido, sino a un mexicano  que creyó en las instituciones y que trabajó con convicción por el bienestar de  su país. </p>
+<p>A  su familia, a sus amistades y a su equipo de trabajo les expresamos nuestra  solidaridad y nuestro más sentido pésame. </p>
+<p>Su  ejemplo, permanecerá en la memoria de este Senado, ténganlo por seguro y en el  compromiso de quienes seguiremos trabajando por México. </p>
+<p>¡Descanse  en paz!</p>
+<p>El  gran amigo y Senador Gustavo Sánchez. </p>
+<p><strong>La  Presidenta Senadora Verónica Noemí Camino Farjat:</strong> Muchas gracias, Senadora González Silva. </p>
+<p>Tiene  ahora el uso de la palabra la Senadora Anabell Ávalos Zempoalteca, del grupo  parlamentario del Partido Revolucionario Institucional, hasta por dos minutos. </p>
+<p><strong>La  Senadora Anabell Ávalos Zempoalteca:</strong> Muchas gracias. </p>
+<p>A  nombre del Partido Revolucionario Institucional, hoy extendemos nuestras  sinceras condolencias a la familia del gran Senador Gustavo Sánchez Vásquez,  por esta pérdida irreparable, pero, sobre todo, por esta pérdida tan repentina,  tan inesperada. </p>
+<p>Hoy,  con este acto recordamos no solo al Senador y funcionario, sino que recordamos  y lo recordamos, su paso por nuestras vidas, con esa personalidad cálida y  amable, porque todos los días de las sesiones teníamos el gusto de saludarlo  con mucho respeto, y de eso deben sentirse muy orgullosos su esposa, sus hijos,  su nueva, su hermano, su nieto. </p>
+<p> El  Senador Sánchez Vásquez tuvo diversas intervenciones en esta tribuna y su  estilo sincero, frontal y con argumentos hacían de él, sin duda, un  parlamentario al que era necesario escuchar. </p>
+<p>Por  ello, con su tránsito a la posteridad, esta Cámara pierde a un gran  parlamentario, pero además México pierde a un gran hombre de convicciones. </p>
+<p>Ejemplo  de ello, en su última intervención, antes de que concluyera el último período  de sesiones en diciembre, en la que se refirió al tema del agua a las  generaciones futuras, pero además mostró su gran preocupación por el proceso  legislativo que se dio respecto a este tema. </p>
+<p>También,  otra de sus preocupaciones era Baja California, sus problemas de desarrollo,  del medio ambiente, así como el contexto político. De todos estos temas y más,  el Senador Sánchez Vásquez tenía un conocimiento muy amplio, el cual se  expresaba en su elocuencia al comentario en los escaños y, sobre todo, al  exponerlo en la tribuna. </p>
+<p>Quiero  compartirles, que después de reponernos de la noticia de su repentina muerte,  recordé, recordé la frase de esa pequeña mina de conocimiento, de vida que es  El Principito, en ese texto nos dice: &ldquo;Y cuando te hayas consolado, un ejemplo,  siempre; una persona, siempre termina de consolarse, te alegrarás de haberme  conocido&rdquo;. </p>
+<p>Y  hoy, en este recordatorio con este acto en el que le honramos, pienso de nuevo  en este pasaje. </p>
+<p>Lo recuerdo, ya que El Principito cada vez que  admira al cielo y a la naturaleza piensa en su amigo, pero también piensa en su  propia vida. </p>
+<p>Por ello, este acto es una celebración a la vida…</p>
+<p><strong>La Presidenta Senadora  Verónica Noemí Camino Farjat:</strong> Concluya, Senadora. </p>
+<p><strong>La Senadora Anabell Ávalos Zempoalteca:</strong>…como a la vida del Senador Gustavo Sánchez  Vásquez. </p>
+<p>Reitero, desde el grupo parlamentario del PRI, nos  sumamos a este homenaje de esta pérdida tan lamentable, pero también nos  sumamos a la celebración por su vida. </p>
+<p>Y hoy me sumo, a lo que aquí se ha dicho, en vida,  hermano, en vida; porque estoy totalmente de acuerdo en que nadie,  absolutamente nadie tenemos la vida segura; hoy estamos aquí, y mañana no  sabemos. </p>
+<p>Por eso, independientemente de nuestras  diferencias, aprendamos a vivir y a disfrutar el momento. </p>
+<p>Es cuanto. </p>
+<p>Muchas gracias. </p>
+<p><strong>La Presidenta Senadora  Verónica Noemí Camino Farjat:</strong> Muchas gracias, Senadora Ávalos Zempoalteca. </p>
+<p>Tiene ahora el uso de la palabra la Senadora Lilly  Téllez, del grupo parlamentario del Partido Acción Nacional.</p>
+<p> <strong>La Senadora Lilly  Téllez:</strong> Queridas familias  mexicanas: </p>
+<p>Estamos en un homenaje luctuoso al Senador Gustavo  Sánchez, Senador por Baja California. </p>
+<p>Aquí está su familia, su amadísima familia. </p>
+<p>Y quiero compartirles que fue un hombre ejemplar,  porque él puso sobre la mesa la dignidad, el decoro y los valores más  importantes del alma, la decencia, la educación, la búsqueda de la verdad. </p>
+<p>Él hablaba con la verdad, esos valores que se han  estado perdiendo en estos años en la vida de México, en la vida política de  México. </p>
+<p>El Senador Gustavo Sánchez los recordaba, los ponía  en la mesa, los hacía valer; él era de un alma digna, él hacía gala de las  mejores formas, de los mejores sentimientos, de la mejor calidad humana. </p>
+<p>Y era un hombre valiente, valiente siempre con la  verdad de frente, con un profundo amor por Baja California, con un profundo  amor por México, con una dignidad con la que cumplía su trabajo a pesar de  cualquier dificultad; enfrentando en los últimos tiempos las adversidades  propias de la enfermedad. </p>
+<p>Vino a esta tribuna, y les pido que busquen su  último discurso, que fue una forma en la que él representó claramente lo que  debemos ser los mexicanos, los mexicanos de bien.</p>
+<p>Nacemos para Dios, nuestro corazón está siempre  buscando a Dios. Y cuando regresamos a Dios completamos el fin verdadero y  último con el que él vivió, una profunda fe en Dios, nuestro señor. </p>
+<p>¡Que en paz descanse! </p>
+<p><strong>La Presidenta Senadora Verónica Noemí Camino  Farjat: </strong>Gracias, Senadora Téllez. </p>
+<p>Tiene ahora el uso de la palabra la Senadora  Geovanna Bañuelos, del grupo parlamentario del Partido del Trabajo, hasta por  dos minutos. </p>
+<p><strong>La Senadora Geovanna Bañuelos: </strong>A nombre propio y del grupo parlamentario del  Partido del Trabajo, queremos extender nuestras sentidas condolencias a la  señora Margarita, a los hijos de nuestro compañero Gustavo, a todos sus amigos,  sus seres queridos, su familia y al pueblo de Baja California. </p>
+<p>Respetamos y honramos su legado. </p>
+<p>Tuve el privilegio de compartir con el Senador  Gustavo en distintas comisiones y no tengo más que expresar el reconocimiento a  un hombre de familia, pero también a un hombre de Estado, que defendió siempre,  enérgicamente su posición política, su pensamiento, su convicción, sus causas y  sus ideas, pero siempre con respeto, siempre con educación, sin estridencias,  con caballerosidad, un hombre serio, un político profesional y un gran  compañero de todas y de todos nosotros. </p>
+<p>Lamentamos profundamente su partida. </p>
+<p>Compartimos el dolor de quienes hoy nos hacen favor  de acompañarnos, pero también, señora Margarita, agradecemos que nos permita  rendirle este sentido homenaje. </p>
+<p> Él es uno de los nuestros, de las nuestras, que  pusimos siempre, independientemente de la contraposición de nuestras ideas al  frente el beneficio de México, el debate serio y respetuoso y nuestro interés y  nuestra vocación por salir adelante y por representar con dignidad al pueblo de  México. </p>
+<p>Un hombre serio, sin duda, un hombre de familia,  insisto, al que era muy sencillo arrebatarle una sonrisa, apenas presumía en su  celular las fotos de su amada familia, pero particularmente de su nietecito,  Gustavo.</p>
+<p>¡En paz descanse!</p>
+<p>El Senador Gustavo Sánchez.</p>
+<p><strong>La Presidenta Senadora Verónica Noemí Camino  Farjat: </strong>Muchas gracias, Senadora  Bañuelos. </p>
+<p>Tiene ahora el uso de la palabra el Senador  Clemente Castañeda Hoeflich, del grupo parlamentario, de Movimiento Ciudadano. </p>
+<p><strong>El Senador Clemente Castañeda Hoeflich: </strong>Muy buenas tardes, compañeras, compañeros. </p>
+<p>El fallecimiento de Gustavo Sánchez Vásquez nos  recuerda que la buena política se construye con personas con visión de futuro y  se construye de manera muy positiva cuando hay un profundo amor a su tierra y a  su país.</p>
+<p>Gustavo, ya se dijo aquí, siempre se caracterizó  por mantenerse muy firme en sus convicciones, las defendía a capa y espada y en  cualquier trinchera. </p>
+<p>Ya nos recordó el Senador Ricardo Anaya toda su  trayectoria o gran parte de su trayectoria política. </p>
+<p>Siempre en la adversidad, siempre poniendo el  corazón por delante. </p>
+<p>Y eso le dio la oportunidad de servir a su tierra,  de servir a Baja California desde varios frentes, como diputado local, como  presidente municipal, desde luego como Senador de la República. </p>
+<p>Una carrera digna de reconocerse. </p>
+<p>Desde el Senado de la República, que fue aquí donde  tuve la oportunidad de conocerlo, debo decir que cada una de sus posturas  siempre fueron orientadas al fortalecimiento de las instituciones, pero también  al diálogo plural que debe caracterizar el trabajo en esta Cámara. </p>
+<p>Fue un político muy activo en el debate  parlamentario, pero siempre, siempre lo hizo con absoluto respeto a la  diferencia.</p>
+<p>Sus intervenciones, debo decirlo así, fueron una  muestra clara de que la democracia debe construirse con fundamentos, con  argumentos y no con descalificaciones.</p>
+<p>Sabemos que su partida es una pérdida muy dolorosa  para su familia, para sus compañeras, compañeros de partido y, por supuesto,  para quienes, como un servidor, compartimos con él la responsabilidad de  trabajar y legislar por México.</p>
+<p>Desde la bancada naranja, desde nuestra dirigencia  nacional, está aquí presente nuestro coordinador nacional, le expresamos  nuestra solidaridad y nuestro respeto.</p>
+<p> Nos parece que en momentos como este es fundamental  recordar que el país requiere, como lo hacía Gustavo, altura de miras, que las  diferencias no deben dividirnos, sino obligarnos a hallar puntos de encuentro,  como los que él siempre buscó con todas y con todos nosotros.</p>
+<p>Nos demostró que, en la política, incluso cuando se  discrepa, siempre debe haber respeto y respeto a la integridad de las personas.</p>
+<p>Honrar la memoria, con este término, del Senador  Gustavo Sánchez Vásquez, de nuestro querido Gustavo, implica seguir apostando  por el diálogo, por la construcción democrática y por un Senado que esté a la  altura de las necesidades que exige nuestro país.</p>
+<p>Que su legado, compañeras y compañeros, nos  convoque a la unidad y a seguir manteniendo un firme compromiso por México.</p>
+<p>¡Que descanse en paz!</p>
+<p>Muchas gracias.</p>
+<p><strong>La  Presidenta Senadora Verónica Noemí Camino Farjat:</strong> Muchas gracias, Senador Castañeda Hoeflich.</p>
+<p>Tiene ahora el uso de la palabra el Senador Waldo  Fernández González, del grupo parlamentario del Partido Verde Ecologista de  México, hasta por dos minutos.</p>
+<p><strong>El Senador Waldo Fernández González: </strong>Gracias, señora Presidenta.</p>
+<p>Compañeras y compañeros Senadores, a nombre de la  bancada del Partido Verde Ecologista de México, a la familia del Senador  Gustavo Sánchez Vásquez, su esposa Margarita Flores Guízar; sus hijos Gustavo y  Alejandro; a sus amistades y familia que lo acompañan; al pueblo de Baja  California expresamos nuestro respeto y nuestra solidaridad en este momento tan  triste para todos nosotros en el Senado.</p>
+<p>De entre las muchas cosas que cuando llegamos aquí,  como Senadores, al Senado de la República imaginamos que íbamos a vivir, jamás  pensamos que íbamos a despedir a un gran amigo y a un gran Senador como  Gustavo.</p>
+<p>Hoy, esta Cámara despide a un compañero, pero  también a un hombre que entendió el servicio público como una convicción de  vida.</p>
+<p>Gustavo nunca vio la política como un privilegio,  sino como una responsabilidad frente a la sociedad, y así la ejerció siempre.</p>
+<p>Tuve la oportunidad de convivir con él, debatir con  él y era un hombre que amaba profundamente a su país; y un hombre que  representaba la política, la pasión de la política.</p>
+<p>Su trayectoria se construyó con disciplina,  preparación, carácter, un abogado de formación; supo que el derecho no es  solamente la norma escrita, es una herramienta para generar orden, estabilidad  y confianza; paz, que tanta falta le hace a este país.</p>
+<p>Desde sus responsabilidades en el ámbito fiscal,  municipal, legislativo, y como presidente municipal de Mexicali, siempre actuó  con rigor, seriedad y compromiso con el interés público. </p>
+<p>Gustavo no improvisaba; estudiaba, se preparaba y  defendía con sus convicciones, con esa pasión que le caracterizaba.<br>
+  En este Senado fue una oposición firme,  responsable; creía en el debate como esencia de la democracia y entendía que  disentir no es dividir, no es ofender, sino simplemente es parte de la deliberación política que  requiere la República. </p>
+<p>Más allá de los cargos, quienes lo conocimos sabemos  que fue un hombre de trato directo, de lealtades claras y profundamente  comprometido con su familia, con su país, pero sobre todo un hombre de bien, un  hombre que siempre actuaba de buena fe, defendiendo lo que creía, pero jamás  agrediendo y siempre defendiendo a su país. </p>
+<p>La partida de un compañero también nos obliga a  detenernos un momento, a recordar que la vida es prestada y que al final lo  verdaderamente importante no son los cargos que ocupamos, sino la manera en  cómo los ejercemos. </p>
+<p> Y hoy Gustavo nos da una enseñanza con una gran  familia que él formó. </p>
+<p>Hoy despedimos a un compañero y su partida nos  invita a reflexionar que al final la mejor manera de ser recordado es por haber  vivido con dignidad, con responsabilidad, con humanidad. </p>
+<p>Descanse en paz, querido amigo, su legado de ética y  pasión por la República seguirá siendo un ejemplo para todos. </p>
+<p>¡En paz descanse! Gustavo.</p>
+<p>Gracias. </p>
+<p><strong>La Presidenta Senadora  Verónica Noemí Camino Farjat: </strong>Gracias,  Senador Fernández González. </p>
+<p>Tiene ahora el uso de la palabra el Senador Miguel  Márquez Márquez, del grupo parlamentario del Partido Acción Nacional, hasta por  dos minutos. </p>
+<p><strong>El Senador Miguel Márquez  Márquez: </strong>Margarita, familia,  ustedes saben el cariño y el aprecio que siempre le tuve a Gustavo y a ustedes,  un gran amigo, ya lo comentaron todos; un gran profesional en su materia, en su  profesión; un gran político; un gran servidor público, que amó y quiso hasta el  final siempre a su gente, cercano.</p>
+<p>Un hombre respetado por todos diría, un hombre con  valores éticos, un hombre con una moral intachable; como decía mi padre, un  hombre de una sola pieza, no había doblez en él; un hombre en el cual siempre  fue fiel a sus principios, a sus convicciones, jamás los traicionó, jamás, en  ningún momento dudó de ellos. </p>
+<p>Pero algo importante que quiero resaltar aquí, y por  eso me subo a esta tribuna a hablar, un hombre de fe, un hombre de fe con el  cual platicamos muchas veces sobre este tema. </p>
+<p>Cuando me enteré de su enfermedad me pidió un favor:  &ldquo;Miguel, que no se entere nadie&rdquo;. </p>
+<p>Y si algo le ayudó a sobrellevar esa enfermedad fue  la fe, sabiendo que aquí solamente estamos de paso y que la morada final es  precisamente llegar a estar en la presencia del creador. </p>
+<p>Y eso fue lo que le dio la fortaleza, el carácter  para enfrentar esa enfermedad tan compleja, tan difícil. </p>
+<p>Y siempre lo vimos, sí, sufriendo, eh, solamente él  sabía lo que llevaba adentro, pero siempre con esa mirada alegre, siempre con  esa entereza, siempre con ese compromiso del deber cumplido, de estar aquí  hasta el último día, en la última sesión, sabiendo que tenía claridad de que su  meta no era precisamente esta vida, era otra. </p>
+<p> Por eso a mí me recuerda mucho mi estimado Gustavo a  San Pablo, ese guerrero, ese luchador por la fe, que él en esa carta a Timoteo  establece de manera muy clara: &ldquo;He peleado la batalla, he acabado la carrera,  he guardado la fe. Por lo demás, me está guardada la corona de justicia&rdquo;. </p>
+<p>Ahí queda muy claro y muy explícito, eso es lo que  buscó siempre Gustavo, llegar ante la presencia del creador, obviamente con la  satisfacción del deber cumplido en esta tierra. </p>
+<p>Por eso, amigas y amigos, familia, sobre todo  entrañable Margarita, no se me va a olvidar ese abrazo que se dieron en el  aeropuerto, me quedó grabado para siempre el amor entrañable, el respeto que te  dio a ti y a tu familia. </p>
+<p>Decirles que Gustavo no ha muerto, Gustavo vive para  siempre y vivirá para siempre, porque dejó un legado, dejó huella, trascendió  en la vida y será siempre recordado. </p>
+<p>Yo terminaría con una frase de un filósofo francés  que me quedó muy grabada desde que estudiaba filosofía, él decía de manera muy  clara: &ldquo;Que basta un minuto, un segundo, para hacer un  héroe; pero que se requiere de toda una vida para hacer un hombre o una mujer  de bien&rdquo;. Y Gustavo eso fue. </p>
+<p>Un  hombre de bien para Baja California. </p>
+<p>Un  hombre de bien para México. </p>
+<p>Un  hombre de bien para la humanidad. </p>
+<p>¡Descanse  en paz! Mi estimado Gustavo.</p>
+<p>Y  allá nos encontraremos algún día. </p>
+<p>Muchísimas  gracias. </p>
+<p><strong>La  Presidenta Senadora Verónica Noemí Camino Farjat: </strong>Muchas  gracias, Senador Márquez Márquez. </p>
+<p>Tiene  ahora el uso de la palabra el Senador Alejandro Murat Hinojosa, del grupo  parlamentario de Morena. </p>
+<p><strong>El  Senador Alejandro Murat Hinojosa: </strong>Quise subir a esta  tribuna no para despedir a una persona; sino para honrar la historia de un  hombre que deja un legado eterno porque ahí está el legado personal de Gustavo  que logró sus objetivos profesionales en lo particular.</p>
+<p>Pero  aquí está el legado más grande que puede tener un hombre cuando ve con la  frente en alto a su esposa Margarita, a su hijo Gustavo y a su otro hijo  Alejandro. Por supuesto, a su nieto Gustavito. </p>
+<p>Pero  subí a esta tribuna porque yo conocí a Gustavo en su espacio profesional como  político.</p>
+<p>Subí  para decirles que no pensábamos igual, pero ese es el valor de la democracia. </p>
+<p>Pero  si coincidíamos en algo, Margarita, era en el amor por México. </p>
+<p>Y  Gustavo ganó mi respeto porque los hombres que aspiramos a servir a México  debemos de ser consistentes con nuestros principios, con nuestros valores y  siempre en cada espacio defender a México, teniendo esa congruencia. </p>
+<p> Y  así es como vi a Gustavo en cada debate, en cada reflexión, había un hombre  que, con el corazón y con la mente, era congruente con su visión de país.</p>
+<p>Por  eso, hoy aquí, mi respeto a su familia. </p>
+<p>A  su estado Baja California que lo recuerden como un gran soldado. </p>
+<p>Y  a México que se le recuerde a Gustavo como un hombre que construyó un país. </p>
+<p>Mi  respeto. </p>
+<p><strong>La  Presidenta Senadora Verónica Noemí Camino Farjat: </strong>Muchas  gracias, Senador Murat Hinojosa. </p>
+<p>Tiene  ahora el uso de la palabra la Senadora Julieta Ramírez Padilla, del grupo  parlamentario de Morena, hasta por dos minutos. </p>
+<p><strong>La  Senadora Julieta Andrea Ramírez Padilla: </strong>Buenas  tardes. </p>
+<p>Quiero  dirigirme a la familia del Senador Gustavo Sánchez y hacerles saber que, en  muchas ocasiones, aunque no coincidamos en ideas, siempre se admira y siempre  es muy admirable reconocer el valor con el que alguien defiende sus  convicciones. </p>
+<p>Y,  además, de ser Gustavo compañero de este Senado de la República, Gustavo  Sánchez Vásquez fue mi paisano. Fue diputado local por el Distrito en el que  vivo. Y, también alcalde Mexicali, nuestra ciudad natal. </p>
+<p>Y  debo reconocer que cuando hizo entrega del Ayuntamiento, Morena recibió un  Ayuntamiento ordenado. </p>
+<p>Además,  de su notable trayectoria política, Gustavo fue un hombre de familia, esposo  amorosísimo de Margarita Flores, padre generoso de Gustavo y Alejandro; suegro  entrañable de Mónica. </p>
+<p>Y  debo decirles, que la última vez que tuve oportunidad de conversar, de manera  cordial con él, me expresó lo profundamente conmovido que se sentía por el  nacimiento de su nieto, Gustavito Alonso. </p>
+<p>Y  en el 2024, ambos fuimos representantes de nuestros respectivos partidos  políticos en la contienda rumbo al Senado de la República, una contienda que se  caracterizó por la civilidad. Nunca medió, entre nosotros, la calumnia ni la  mentira ni la difamación. </p>
+<p>Y,  por el contrario, nos reconocimos dentro de un juego limpio y sumamente  fructuoso, únicamente el juego limpio y la voluntad popular. </p>
+<p>Mi  reconocimiento hacia él por su entrega, por su dedicación y por su amor a su  tierra, y creo que hoy su compromiso trasciende los colores, las ideas y los  partidos y su memoria, estoy convencida que servirá de ejemplo para las y los  ciudadanos de nuestro querido estado de Baja California. </p>
+<p>Mi  más sentido pésame. Y que, ¡Descanse en paz! Nuestro compañero Gustavo Sánchez. </p>
+<p>Muchas  gracias. </p>
+<p><strong>La  Presidenta Senadora Verónica Noemí Camino Farjat:</strong> Muchas gracias, Senadora Ramírez Padilla. </p>
+<p> Y  para concluir con ésta, con las intervenciones de Senadoras y Senadores, tiene  el uso de la palabra el Senador José Máximo García López, del grupo  parlamentario del Partido Acción Nacional. </p>
+<p><strong>El  Senador José Máximo García López:</strong> Con su venia de la  Presidencia. </p>
+<p>Compañeras  Senadoras y Senadores, Magui, Alejandro, Gustavo, Mónica y Gustavito tercero. </p>
+<p>Agradezco  la presencia también de mi presidenta estatal Lizbeth Mata, de mi esposa  Jazmín, mis hijos, Máximo, Luis y Diego. </p>
+<p>Y  hoy comparezco ante esta soberanía con un profundo sentimiento de respeto y  gratitud para rendir homenaje a un hombre excepcional, a un amigo entrañable,  al Senador Gustavo Sánchez Vásquez. </p>
+<p>No  vengo solo a hablar del hombre, sino vengo a hablar de un legado, de una vida  guiada por la congruencia, la palabra empeñada y una profunda fe de un servidor  público que dejó huella imborrable en Baja California y en nuestra nación. </p>
+<p>Gustavo,  fue un hombre íntegro, un hombre de familia, amaba profundamente a su esposa, a  sus hijos y a Gustativo tercero; un hombre que entendía que la política solo  tenía sentido cuando se ejerce con responsabilidad, con vocación de servicio y  con amor por la gente. </p>
+<p>Tuve  el honor de conocerlo a mediados de los años noventa cuando él fue coordinador  de una precampaña del exgobernador Eugenio Elorduy Walther. Desde entonces  participando en múltiples luchas, luchando, enfrentando grandes retos, buscando  siempre soluciones para Baja California. </p>
+<p>El  proyecto más reciente que construimos juntos fue esa invitación que me hizo un  9 de diciembre del 2023, acompañarlo en esta fórmula para el Senado. </p>
+<p>Recuerdo  perfectamente que le pedía yo tiempo para decidir si aceptaba la suplencia,  porque tenía yo que consultarlo con mi familia. </p>
+<p>Y  me decía: Antes de que lo hagas llévate a tu esposa a un centro comercial,  compras y posteriormente le planteas la posibilidad de la suplencia. </p>
+<p>Ese  era Gustavo, siempre ocurrente, siempre con un comentario que nos hacía reír, y  eso fue la campaña en la que Gustavo volvió a demostrar, una vez más, su  liderazgo, su incansable capacidad de trabajo y su entrega absoluta al servicio  público. </p>
+<p>Gustavo  entendía algo fundamental, que el poder no es privilegio es una  responsabilidad, que el servicio público no es protagonismo es entrega y que  hacer política de la buena implica poner siempre a la gente por encima de  cualquier interés personal. </p>
+<p>Trabajó por su comunidad, no porque fuera fácil,  sino porque era necesario. </p>
+<p>Defendió causas justas, escuchó cuando otros  callaban, y actuó cuando muchos dudaban. </p>
+<p>Pero si algo distinguió a Gustavo Sánchez, no  fueron sus logros, sino su calidad humana. </p>
+<p>Fue un amigo leal, fue un servidor cercano, un  hombre sencillo y empático. </p>
+<p> Hoy lo recordamos porque su ejemplo sigue vivo,  porque las obras bien hechas trascienden al tiempo, porque las decisiones  tomadas con honestidad no se olvidan. Y porque México necesita más personas  como él, firmes en sus actos, en sus principios, generosas en sus actuar, y  valientes para hacer lo correcto. </p>
+<p>La mejor forma de honrar su prestigio y su legado  es tomar su trabajo con inspiración, con ideas, con debate, con propuestas, con  firme, con valor y con grandeza. </p>
+<p>Gustavo Sánchez ha sido, es y seguirá una brújula  moral para dar continuidad al trabajo legislativo, consolidando una agenda  social y legislativa en defensa de la patria. </p>
+<p>Ese es el compromiso que hoy asumo para honrar su  memoria, y continuar su ejemplo de entrega, de trabajo y resultados. </p>
+<p>Un compromiso que hago extensivo con profundo  respeto a su querida familia, a sus hijos, a su esposa, a Gustavito tercero,  que recuerdo perfectamente cuando me pidió que lo supliera allá en el mes de  noviembre porque él quería estar presente en este nacimiento. Y fue por ello  que yo tuve esa oportunidad de estar presente en este organismo. </p>
+<p>Así que muchísimos reconocimientos, que seguramente  seguirá recibiendo, lo llevaremos siempre en el corazón. </p>
+<p>Deseo pronta recuperación. </p>
+<p>Y termino con esa frase que, efectivamente, le  enseñó su padre, el hombre que hace lo que puede, hace lo que debe. </p>
+<p>Gustavo, amigo: </p>
+<p>Cumpliste tu misión. </p>
+<p>Descansa en paz, querido amigo, Gustavo Sánchez  Vásquez. </p>
+<p>Es cuanto, señora Presidenta. </p>
+<p><strong>La Presidenta Senadora  Verónica Noemí Camino Farjat:</strong> Muchas gracias, Senador García López. </p>
+<p>Informo a la Asamblea que han solicitado hacer uso  de la palabra la señora Margarita Flores Guizar, esposa del Senador Gustavo  Sánchez Vásquez, y sus hijos, los señores Gustavo Sánchez Flores, y Alejandro  Sánchez Flores. </p>
+<p>Esta Presidencia, por supuesto, obsequia la  petición de la familia. </p>
+<p>Por lo que, en primer lugar, solicitamos haga uso  de la tribuna la señora Margarita Flores Guizar para dar su mensaje. </p>
+<p><strong>El Ciudadano Alejandro Sánchez Flores: </strong>Buenas tardes, respetables integrantes de esta  Cámara Alta del Congreso de la Unión. </p>
+<p>Senadoras y Senadores: Mi nombre es Alejandro  Sánchez Flores. </p>
+<p>A nombre de mi señora madre, Margarita; de mi  hermano, Gustavo, y de un servidor agradecemos profundamente la oportunidad de  dirigirnos a ustedes, y por su conducto, a nuestra República para honrar la  memoria de mi padre, el Senador por Baja California, Gustavo Sánchez Vásquez. </p>
+<p> Para nuestra familia es un honor despedirlo desde  este recinto legislativo, aquí ejerció la responsabilidad que más le  enorgullecía, representar a Baja California y contribuir al fortalecimiento  institucional de México. </p>
+<p>Mi padre entendía la política como una tarea seria  y disciplinada, preparaba cada intervención, estudiaba cada asunto y  participaba en el debate parlamentario con respeto por esta soberanía y por  quienes la integran. </p>
+<p>Defendía la deliberación informada, la construcción  de acuerdos y la búsqueda constante de soluciones que trasciendan coyunturas. </p>
+<p>Tenía claridad sobre el papel del Senado en la vida  nacional, creía en el federalismo como herramienta de equilibrio, en la  estabilidad económica como base del desarrollo regional y en la cooperación  binacional como prioridad estratégica para el norte del país. </p>
+<p>Representar a Baja California implicaba para él  defender su competitividad, su vocación productiva y el bienestar de su gente. </p>
+<p>Esta tribuna lo motivaba profundamente. </p>
+<p>Aun en sus últimos meses, enfrentando una  enfermedad venía aquí con convicción y energía para cumplir con su deber. </p>
+<p>Por ello, nuestra familia desea agradecer el  respeto, la solidaridad y las atenciones que le brindaron durante este proceso. </p>
+<p>Nuestro reconocimiento y afecto permanecerán  siempre. </p>
+<p>Muchas gracias. </p>
+<p><strong>El Ciudadano Gustavo Ernesto Sánchez Flores: </strong>Buenas tardes todos. </p>
+<p>Mi nombre es Gustavo Ernesto Sánchez Flores. </p>
+<p>Y, agradezco a nombre de mi familia el darnos este  espacio en esta sesión solemne para mi padre, Gustavo Sánchez Vásquez. </p>
+<p>Mi padre dedicó su vida al derecho como abogado en  el servicio público y al ejercicio privado. </p>
+<p>Defendió la idea de que las instituciones sólidas y  el respeto en la ley son el camino para construir un mejor país. </p>
+<p>Así lo demostró como procurador fiscal, como  diputado local y como Senador de la República y también en su trayectoria  profesional incansablemente. </p>
+<p>Participó activamente en la vida empresarial y  profesional de Baja California. </p>
+<p>Formó parte del Colegio de Contadores, colaboró por  muchos años con Coparmex y mantuvo una relación cercana con el entorno  productivo de nuestro estado Baja California.</p>
+<p>Entendía la actividad empresarial como motor de  desarrollo y generación de oportunidades. </p>
+<p>Su compromiso con la formación académica fue  igualmente constante. </p>
+<p> Colaboró como maestro por muchos años en Cetys  Universidad y en la Universidad Autónoma de Baja California. </p>
+<p>Compartiendo experiencia y conocimientos con  estudiantes y profesionistas. </p>
+<p>A ello se suma su liderazgo en la ANAE, Baja  California y su vocación como maestro universitario, guiando a generaciones de  juristas en el estudio del derecho y el respeto a la Constitución. </p>
+<p>Su identidad política fue firme y transparente,  militó toda su vida en Acción Nacional, convencido de la participación  ciudadana y del ejercicio responsable del poder público. </p>
+<p>Agradecemos a la banca panista y a todos los  Senadores y Senadoras por el respeto y el acompañamiento que le brindaron. </p>
+<p>Por último, diría que sé que mi papá estaría muy  orgulloso de ver a su nieto Gustavo Alonso en esta Cámara y a toda su familia  reunida despidiendo. </p>
+<p>Muchas gracias. </p>
+<p><strong>La Ciudadana Margarita Flores Guízar: </strong>Senadoras y Senadores: </p>
+<p>Mi nombre es Margarita de Sánchez, soy la persona  que tuvo el privilegio de vivir plenamente un matrimonio de 40 años. </p>
+<p>Hoy aquí, con mis hijos, me siento muy honrada de  poder estar aquí con ustedes. </p>
+<p>Agradezco a nuestra Presidenta, Verónica Camino  Farjat, gracias, gracias. </p>
+<p>Por supuesto, agradezco muchísimo a los compañeros  de bancada, del PAN, el partido que nos vio nacer como jóvenes adolescentes, a  los 18 años. </p>
+<p>Yo le quiero agradecer especialmente, por supuesto,  Ricardo Anaya, a Marko Cortés, Michel, todos, todos, porque gustavo los llevaba  siempre en su corazón, en sus decisiones, y creo que Gustavo estuvo a la altura  de las decisiones que tomaron con ustedes.  </p>
+<p>Hoy regreso a este lugar, este lugar que, confieso,  no es fácil estar aquí, porque este recinto guarda la voz de mi esposo, sus  ideales y muchas de las batallas más importantes que se han vivido por nuestro  país. </p>
+<p>Volver sin él, hoy duele. </p>
+<p>Volver aquí con él en cenizas, nos duele. </p>
+<p>Pero Gustavo creía mucho en el poder y en el  servicio público. </p>
+<p>Creía que la política debería de hacerse con  principios, con valor, sin miedo y aquí dejó claro que servir a México es una  visión de vida. </p>
+<p>Pero hoy quiero hablarles de Gustavo el que no  siempre se veía. </p>
+<p>Del esposo que regresaba tarde a casa, cansado,  pero convencido de haber hecho lo correcto, del hombre que nunca negoció sus  valores, ni siquiera cuando el camino se volvió difícil.</p>
+<p> Del ser  humano sensible, generoso y profundamente comprometido con los demás.</p>
+<p> Yo fui testigo de su entrega diaria, de sus dudas,  de sus silencios, pero también de su esperanza inquebrantable. Caminé a su lado  y puedo decir, sin duda alguna, que vivió fiel a lo que creía.</p>
+<p>Gustavo amó a México con hechos y no con discursos.</p>
+<p>Hoy su ausencia pesa, pero su legado es más grande  que su ausencia.</p>
+<p>Vive en este Senado, vive en su trabajo, vive en  quienes aprendieron de él que la dignidad no se abandona, que la congruencia es  una forma de vida.</p>
+<p>Gracias por escuchar su voz, por escucharlo tanto y  durante tanto tiempo.</p>
+<p>Gracias por recordarlo hoy con tanto respeto.</p>
+<p>Gustavo no se ha ido. Mientras su ejemplo siga  vivo, su presencia seguirá aquí.</p>
+<p>Quiero agradecerles a todas las personas que  estuvieron aquí al frente para dirigirle un mensaje a Gustavo.</p>
+<p>Creo que deja una gran responsabilidad.</p>
+<p>Este es el máximo recinto, esta es la máxima  aspiración que todo mexicano tiene para representar a su país.</p>
+<p>Yo les quiero pedir, quizás, algo que Gustavo  siempre llevó en su corazón y que de alguna manera hoy aquí lo han expresado.</p>
+<p>México es el país de todos, lo que ustedes decidan  aquí es el país que están dejando a su familia. Lo que ustedes decidan aquí, es  lo que nos va a beneficiar o afectar a todos.</p>
+<p>Yo creo que mi marido dio una férrea pelea en  cuanto a sus convicciones, pero también un profundo respeto a cada uno de  ustedes en los acuerdos que aquí se dieron y se dan.</p>
+<p>Siempre tengan en cuenta que estas posiciones  políticas tienen un término: tres años, seis años. En el caso nuestro fue de un  año siete meses.</p>
+<p>Y les quiero pedir con todo cariño, como mexicana,  como ciudadana, como esposa, como madre, como abuela, esa consideración.</p>
+<p>Tengan en cuenta que cada decisión que ustedes  tomen impacta en las familias de México.</p>
+<p>Y eso se los dejo en su corazón y en su mente,  porque creo que todos podemos construir un lugar mejor: El México que todos  queremos.</p>
+<p>Afuera, la gente nos escucha. </p>
+<p>Afuera, la gente siente y percibe lo que ustedes  aquí deciden.</p>
+<p>Ustedes están inmersos en su trabajo diario, pero  afuera está la gente que ve en ustedes una esperanza.</p>
+<p>Muchas gracias a todos; a mi fracción, bueno, a la  fracción de mi marido, pero me representan a mí; les agradezco de corazón, y a  todos los que hablaron.</p>
+<p>Luis Donaldo, gracias por tu llamada.</p>
+<p> Señor Máynez, gracias por su llamada.</p>
+<p>Dios me los bendiga a todos y muchas gracias por  todas sus muestras de cariño en nuestro querido Baja California.</p>
+<p>Cuentan con nosotros siempre.</p>
+<p>Bendiciones a todos.</p>
+<p><strong>La  Presidenta Senadora Verónica Noemí Camino Farjat:</strong> A nombre de la Senadora Laura Itzel Castillo, le  dirijo el siguiente mensaje a la familia del Senador Gustavo Sánchez y, por  supuesto, también de esta Mesa Directiva.</p>
+<p>Hoy rendimos un sentido homenaje al Senador Gustavo  Sánchez Vásquez, integrante de esta Cámara de Senadoras y Senadores. </p>
+<p>Bajacaliforniano serio, firme y congruente con su  visión política. </p>
+<p>Compañero respetuoso, sensible y empático.</p>
+<p>En su labor legislativa destacó al presentar iniciativas cuyo objeto siempre  fue promover la actividad económica en favor de nuestro país, proponiendo  mecanismos para aprovechar la relocalización de empresas extranjeras o  incentivos fiscales con enfoque regional. </p>
+<p>La Cámara de Senadores y Senadoras está integrada  por la pluralidad de expresiones políticas, de las que sin duda formamos parte  mujeres y hombres de gran valía para esta nación. </p>
+<p>Y uno de ellos fue el Senador Gustavo Sánchez  Vásquez, quien, con sus intervenciones en esta alta tribuna enriqueció el  debate en todo momento con un ánimo respetuoso, pero fiel a su ideología y  convicciones. </p>
+<p>La política es la herramienta para lograr el bien  común y mantener la sociedad ordenada mediante normas, por lo que, más allá de  las diferencias ideológicas, a todas las Senadoras y Senadores de la República  nos une siempre un mismo fin: Mirar en todo por el bien de las mexicanas y los  mexicanos. </p>
+<p>Y eso lo entendió perfectamente bien nuestro  compañero el Senador Sánchez Vásquez. </p>
+<p>Todos en este cuerpo legislativo sentimos  profundamente su partida. </p>
+<p>A su familia, especialmente a su esposa y a sus  hijos, quienes se encuentran hoy aquí presentes, tengan todo nuestro respeto,  siéntanse orgullosos por el hombre que fue el Senador Sánchez Vásquez y el  legado que les deja y que nos deja. </p>
+<p>Les expreso mis más sinceros deseos porque pronto  encuentren consuelo ante esta irreparable pérdida. </p>
+<p>A nombre de la presidenta Laura Itzel Castillo y de  esta Mesa Directiva, muchísimas gracias por haber estado con nosotros en este  Senado de la República y de permitirnos estar una vez más con nuestro compañero  en este Pleno, al que, por cierto, lo recordaremos siempre. </p>
+<p>Muchas gracias.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a125126'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='125127'></a><p>Aprovecho que se  encuentran de pie y, a quienes no, solicitarles, por favor, sirvan ponerse de  pie para rendir un minuto de aplausos en memoria de nuestro compañero Senador  Gustavo Sánchez Vásquez. </p>
+<p><strong>MINUTO  DE APLAUSOS</strong></p>
+<p align="center">(Todos de pie brindan un minuto de aplausos)</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a125127'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='125128'></a><p>Solicito que nos  mantengamos de pie para entonar nuestro Himno Nacional. </p>
+<p><strong>HIMNO NACIONAL MEXICANO</strong></a></p>
+<p align="center">(Se entona el Himno  Nacional)</p>
+<p>¡Descanse en paz! </p>
+<p>Nuestro compañero  Senador Gustavo Sánchez Vásquez. </p>
+<p>Agradezco a la  familia del Senador Sánchez Vásquez, particularmente a la señora Margarita, a  Gustavo, a Alejandro, a Gustavito Alonso y Mónica, y también a todos a quienes  nos acompañaron en este homenaje póstumo, amigos cercanos y compañeros de  trabajo. </p>
+<p>Solicito a la  comisión de Senadoras y Senadores que se integró en un inicio, se sirva por  favor acompañar a la familia del Senador Gustavo Sánchez en su salida a este  recinto.</p>
+<p align="center">(La comisión cumple)</p>
+<p>Concluimos el  homenaje luctuoso y les solicito a mis compañeras y compañeros Senadores  permanezcamos en el salón de sesiones para continuar con la sesión ordinaria de  este día. </p>
+<p>Se levanta la  sesión solemne. </p>
+<p align="center">(Se levantó la sesión a las 13:10 horas)</p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a125128'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

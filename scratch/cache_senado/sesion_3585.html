@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 45</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Gerardo Fernández Noroña</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 12 de Diciembre de 2024</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/1/PPO/PDF-WEB/PPO_No45_12-DICIEMBRE-2024_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118463'></a><p align="center"><strong>PRESIDE EL SENADOR</strong><br>
+  <strong>GERARDO  FERNÁNDEZ NOROÑA</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>(11:35 horas) Solicito a la Secretaría  informe a la Asamblea el resultado del cómputo de asistencia de las personas  Senadores. </p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat: </strong>Con gusto, señor  Presidente.Honorable  Asamblea, conforme al registro de asistencia, se han acreditado 74 ciudadanas  Senadoras y ciudadanos Senadores. En consecuencia, hay quórum, señor  Presidente.</p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Se abre la sesión solemne para la entrega de la &ldquo;Medalla de Honor  Belisario Domínguez&rdquo;.</p>
+<p>Compañeros  Senadores, compañeras Senadoras, les pido tomar su lugar y guardar silencio.</p>
+<p>Se abre la sesión  convocada para la entrega de la &ldquo;Medalla de Honor Belisario Domínguez&rdquo;,  correspondiente al año 2023.</p>
+<p>Antes de solicitar  a la Secretaría lo conducente, quiero reiterar, obvio, que es una sesión  solemne y que, en este día, con pleno respeto a las creencias de nuestro  pueblo, esta Presidencia reivindica nuestra condición de estado laico. </p>
+<p>Solicito a la  Secretaría dé lectura a la comisión de cortesía que ha sido designada para  recibir y acompañar a nuestra distinguida galardonada a esta sesión solemne.</p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con gusto, señor Presidente. </p>
+<p>Doy lectura a la  comisión protocolaria de esta sesión solemne para recibir a la ciudadana Ninfa  María Deándar Martínez.</p>
+<p>Senadoras Virginia  Magaña Fonseca, Sasil de León Villard, Mely Romero Celis, María Guadalupe  Chavira De La Rosa, Luisa Cortés García, Verónica del Carmen Díaz Robles y Olga  Patricia Sosa Ruiz. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Se solicita a la comisión designada acuda a las puertas de este recinto a  fin de cumplir con su cometido. </p>
+<p align="center">(La comisión cumple)</p>
+<p>En tanto, se  declara un breve receso. </p>
+<p align="center">(RECESO)</p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Se reanuda la sesión solemne.</p>
+<p>Informo a esta  Soberanía que nuestra homenajeada, Ninfa María Deándar Martínez, se ha sentido  indispuesta, la altura, la emoción. </p>
+<p>Está en este  momento recuperándose con oxígeno, así es que, para dar continuidad a la  ceremonia, su hija Ninfa Cantú Deándar ocupará el lugar de honor y en el  momento de dar el reconocimiento nos acompañará doña Ninfa.</p>
+<p> Ahí viene. ¡Qué  tal! </p>
+<p>Eso es carácter. </p>
+<p>Solicito ponerse de  pie para recibir a nuestra galardonada.</p>
+<p align="center">(Todos de pie)</p>
+<p>Favor de tomar  asiento y pido a Ninfa Cantú Deándar, que nos acompañe en este presídium, por  favor. </p>
+<p>Con fundamento en  lo dispuesto por el artículo 100 de la Ley Orgánica de Congreso General y el  artículo 9 del Reglamento de la &ldquo;Medalla de Honor Belisario Domínguez&rdquo;, damos  inicio a la sesión solemne convocada para hacer la entrega de este galardón y  del diploma correspondiente al año 2023. </p>
+<p>Damos la más  cordial bienvenida a la ciudadana Ninfa María Deándar Martínez, sea bienvenida. </p>
+<p>Asimismo, nos  acompañan en el presídium la Senadora Imelda Castro Castro, Vicepresidenta de  la Mesa Directiva del Senado. </p>
+<p>El Senador Mauricio  Vila Dosal, Vicepresidente de la Mesa Directiva. </p>
+<p>La Senadora  Virginia Marie Magaña Fonseca, Presidenta de la Comisión de la Medalla  Belisario Domínguez. </p>
+<p>Y Ninfa Cantú  Deándar, que es ella, además, es hija de doña Ninfa Deándar, y está en este  momento acompañándose en su representación, aquí en el presídium. </p>
+<p>Agradecemos también  la presencia y le damos la más cordial bienvenida al licenciado Mario Antonio  Guillén Domínguez, presidente municipal de Comitán, Chiapas. </p>
+<p>Ofrezco  públicamente una disculpa al Gobernador Eduardo Ramírez Aguilar quien, por una  omisión mía, hace rato hablé con él y le ofrecí una disculpa, él nos habría  acompañado encantado y fue una omisión nuestra.</p>
+<p>También a los  integrantes del cabildo de Comitán.</p>
+<p>Agradecemos también  la presencia de familiares y amigos de nuestra galardonada, así como de las  distinguidas personalidades que nos acompañan, todas y todos nos honran con su  presencia en esta sesión solemne y al Senado de la República.</p>
+<p>Solicito a la  Secretaría proceda a pasar lista de honor. </p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Solicito a las y a los Senadores, y a todo el público asistente, sírvanse  ponerse de pie. </p>
+<p align="center">(Todos de pie)</p>
+<p>&ldquo;¡Senador Belisario  Domínguez!&rdquo;</p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong><em>&ldquo;¡Murió por la Patria, en defensa de la libertad!&rdquo;</em></p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Pueden tomar asiento. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118463'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/XggrcYSC4f4?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='118464'></a><p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Solicito a la Senadora Verónica Noemí Camino Farjat, Secretaria de la  Mesa Directiva, dé lectura a la histórica proclama del doctor y Senador  Belisario Domínguez, correspondiente a la LXVI Legislatura del Senado de la  República. </p>
+<p><strong>LECTURA DE LA PROCLAMA DEL SENADOR BELISARIO  DOMÍNGUEZ, A CARGO DE LA SENADORA NOEMÍ CAMINO FARJAT, SECRETARIA DE LA MESA  DIRECTIVA.</strong></p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con gusto. Voy a dar lectura al discurso que contiene la proclama del  Senador Belisario Domínguez. </p>
+<p>&ldquo;Señor Presidente  del Senado: </p>
+<p>Por tratarse de un  asunto urgentísimo para la salud de la Patria, me veo  obligado a prescindir de las fórmulas acostumbradas y suplicar a usted se sirva  dar principio a esta sesión tomando conocimiento de este pliego y dándolo a  conocer en seguida a los señores Senadores. Insisto, señor Presidente, en que  este asunto debe ser conocido por el Senado en este mismo momento, porque  dentro de pocas horas lo conocerá el público y urge que el Senado lo conozca  antes que nadie. </p>
+<p>Señores Senadores:  Todos vosotros habéis leído con profundo interés el informe presentado por D.  Victoriano Huerta ante el Congreso de la Unión el 16 del presente.</p>
+<p>Indudablemente,  señores Senadores, lo mismo que a mí, os ha llenado de indignación el cúmulo de  falsedades que encierra ese documento. ¿A quién se pretende engañar, señores?  ¿Al Congreso de la Unión? No, señores, todos sus miembros son hombres  ilustrados que se ocupan de política, que están al corriente de los sucesos del  país y que no pueden ser engañados sobre el particular. Se pretende engañar a  la Nación Mexicana, a esta noble Patria que confiando en V. Honradez y en  vuestro valor, ha puesto en vuestras manos sus más caros intereses.</p>
+<p>¿Qué debe hacer en  este caso la Representación Nacional?</p>
+<p>Corresponder a la  confianza con que la Patria la ha honrado, decirle la verdad y no dejarla caer  en el abismo que se abre a sus pies.</p>
+<p>La verdad es ésta:  Durante el gobierno de don Victoriano Huerta, no solamente no se ha hecho nada  en bien de la pacificación del país, sino que la situación actual de la  república es infinitamente peor que antes: La Revolución se ha extendido en  casi todos los Estados: Muchas Naciones, antes buenas amigas de México,  rehúsanse a reconocer su gobierno, por ilegal; nuestra moneda encuéntrase  despreciada en el extranjero; nuestro crédito en agonía; la prensa entera de la  República amordazada o cobardemente vendida al gobierno y ocultando  sistemáticamente la verdad; nuestros campos abandonados; muchos pueblos  arrasados y por último, el hambre y la miseria en todas sus formas amenazan  extenderse rápidamente en toda la superficie de nuestra infortunada Patria.</p>
+<p>¿A qué se debe tan  triste situación?</p>
+<p>Primero y antes que  todo, a que el pueblo mexicano no pueda resignarse a tener por Presidente de la  República a D. Victoriano Huerta, al soldado que se amparó del poder por medio  de la traición y cuyo primer acto al subir a la Presidencia fue asesinar cobardemente  al Presidente y Vicepresidente legalmente elegidos por el voto popular,  habiendo sido el primero de éstos quien colmó de ascensos, honores y  distinciones a D. Victoriano Huerta, y habiendo sido él igualmente a quien D.  Victoriano Huerta juró públicamente lealtad y fidelidad inquebrantable.</p>
+<p> Y segundo, se debe esta triste situación a los  medios que D. Victoriano Huerta se ha propuesto emplear para conseguir la  pacificación. Esos medios ya sabéis cuáles han sido: Únicamente muerte y  exterminio para todos los hombres, familias y pueblos que no simpaticen con su  gobierno.</p>
+<p>La paz se hará, cueste lo que cueste, ha dicho D.  Victoriano Huerta. ¿Habéis profundizado, señores Senadores, lo que significan  esas palabras en el criterio egoísta y feroz de D. Victoriano Huerta? Esas  palabras significan que D. Victoriano Huerta está dispuesto a derramar toda la  sangre mexicana, a cubrir de cadáveres todo el Territorio Nacional, a convertir  en una inmensa ruina toda la extensión de nuestra patria, con tal que él no  abandone la Presidencia ni derrame una sola de su propia sangre.</p>
+<p>En su loco afán por conservar la Presidencia, D.  Victoriano Huerta está cometiendo otra infamia: Está provocando con el pueblo  de los Estados Unidos de América un conflicto internacional en el que, si  llegara a resolverse por las armas irían estoicamente a dar y a encontrar la  muerte todos los mexicanos sobrevivientes a las amenazas de D. Victoriano  Huerta; todos, menos D. Victoriano Huerta ni D. Aureliano Blanquet, porque esos  desgraciados están manchados con el estigma de la traición, y el pueblo y el  ejército los repudiarían llegado el caso.</p>
+<p>Esa es en resumen la triste realidad. Para los  espíritus débiles parece que nuestra ruina es inevitable, porque D. Victoriano  Huerta se ha adueñado tanto del poder, que para asegurar el triunfo de su  candidatura a la Presidencia de la República en la parodia de elecciones  anunciadas para el 26 de octubre próximo, no ha vacilado en violar la soberanía  de la mayor parte de los Estados quitando a los Gobernadores constitucionales o  imponiendo Gobernadores militares que se encargarán de burlar a los pueblos por  medio de farsas ridículas y criminales.</p>
+<p>Sin embargo, señores, un supremo esfuerzo puede  salvarlo todo. Cumpla con su deber la Representación Nacional y la Patria está  salvada y volverá a florecer más grande y más unida y más hermosa que nunca.</p>
+<p>La representación Nacional debe deponer de la  Presidencia de la República a D. Victoriano Huerta, por ser él contra quien  protestan con mucha razón, todos nuestros hermanos alzados en armas y de  consiguiente por ser él quien menos puede llevar a efecto la pacificación,  supremo anhelo de todos los mexicanos.</p>
+<p>Me diréis, señores, que la tentativa es peligrosa,  porque D. Victoriano Huerta es un soldado sanguinario y feroz que asesina sin  vacilación ni escrúpulo a todo aquél que le sirve de obstáculo: ¡No importa,  señores! La Patria os exige que cumpláis con vuestro deber aún con el peligro y  aún con la seguridad de perder la existencia. Si en vuestra ansiedad de volver  a ver reinar la paz en la República os habéis equivocado, habéis creído las  palabras falaces de un hombre que os ofreció pacificar a la Nación en dos  meses, y le habéis nombrado Presidente de la República, hoy que veis claramente  que este hombre es un impostor inepto y malvado, que lleva a la Patria con toda  velocidad hacia la ruina. </p>
+<p>¿Dejaréis por temor a la muerte que continúe en el  poder?</p>
+<p>Penetrad en vosotros mismos, señores, y resolved  esta pregunta: ¿qué se diría de la tripulación de un gran navío que en la más  violenta tempestad y en un mar proceloso nombrara piloto a un carnicero que sin  ningún conocimiento náutico navegara por primera vez y no tuviera más  recomendación que la de haber traicionado y asesinado al Capitán del barco?</p>
+<p>Vuestro deber es imprescindible, señores, y la  Patria espera de vosotros que sabréis cumplirla.</p>
+<p> Cumpliendo ese primer deber, será fácil a la  Representación Nacional cumplir los otros que de él se derivan, solicitándose  en seguida de todos los jefes revolucionarios que cese toda hostilidad y  nombren sus delegados para que de común acuerdo elijan al Presidente que deba  convocar a elecciones presidenciales y cuidar que éstas se efectúen con toda  legalidad.</p>
+<p>El mundo está pendiente de vosotros, señores  miembros del Congreso Nacional mexicano, y la Patria espera que la honréis ante  el mundo evitándole la vergüenza de tener por Primer Mandatario a un traidor y  asesino.</p>
+<p>&ldquo;Nota: Urge que el pueblo mexicano conozca este  discurso para que apoye a la Representación Nacional; y no pudiendo disponer de  ninguna imprenta, recomiendo a todo el que lo lea que saque cinco o más copias,  insertando también esta nota y las distribuya a sus amigos y conocidos de la  capital y de los Estados. ¡Ojalá hubiera un impresor honrado y sin miedo!&rdquo;</p>
+<p>Es  todo, señor Presidente. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Continuamos  con lo dispuesto por el acuerdo aprobado para la entrega de la &ldquo;Medalla de  Honor Belisario Domínguez 2023&rdquo;. </p>
+<p>Se  concede el uso de la palabra a la Senadora Virginia Marie Magaña Fonseca,  Presidenta de la Comisión Medalla Belisario Domínguez. </p>
+<p><strong>La  Senadora Virginia Marie Magaña Fonseca: </strong>Muy  buenos días a todas y todos. Con su venia, señor Presidente. </p>
+<p>Saludo  con mucho gusto al senador Gerardo Noroña, Presidente de este nuestro Senado de  la República. </p>
+<p>Y  con un alto orgullo y un gran honor, saludo a la Señora Ninfa María Deándar  Martínez, nuestra galardonada. Y a toda su familia. </p>
+<p>¡Sea  usted bienvenida y todos bienvenidos a este su Senado de la República!</p>
+<p>De  igual manera, saludo con mucho gusto al presidente municipal de Comitán,  Chiapas, donde vio nacer a nuestro Belisario Domínguez, al ciudadano Mario  Antonio Guillén. </p>
+<p>¡Sea  usted bienvenido alcalde!</p>
+<p>Y  a su señora esposa, Estrella Molina, bienvenida.</p>
+<p>Saludo  con gusto a todos los medios de comunicación que nos acompañan el día de hoy. </p>
+<p>Y,  por supuesto, a todas y todos mis compañeros Senadores y senadoras. </p>
+<p>Antes  de comenzar a leer las palabras que escribí para el día de hoy, quiero  compartirles que para mí es un alto honor, primero, ser senadora de la  República, es un alto honor y un gran compromiso el que me tiene aquí; pero  todavía es un alto honor el poder presidir la Comisión Belisario Domínguez,  porque esta Comisión representa algo muy simbólico para nuestra patria. </p>
+<p>Hemos  dejado a lado los simbolismos, dejando las cuestiones materiales por delante y  tenemos que retomar con algo orgullo y un alto honor los símbolos para esta  patria, que tanta falta le hacen. </p>
+<p> Los  símbolos que rescato es la valentía y la democracia; la valentía para poder  enfrentar adversidades y poder construir esta patria que tanto nos ha dado y  nos sigue dando y nos seguirá dando y tenemos que seguirla defendiendo con  mucho orgullo y con mucho honor. </p>
+<p>Y  compañeras y compañeros, tenemos una gran responsabilidad para seguir  defendiendo esta patria con un alto orgullo todas y todos nosotros. </p>
+<p>Pero  también somos una nación joven, una nación joven que tenemos décadas en la  construcción de esta democracia, y sin esa valentía no podemos seguir  construyendo la democracia.</p>
+<p>Venía  pensando sobre la historia de la hoy galardonada, la señora Ninfa y decía:  Representa justo esos dos valores y esos símbolos que vamos a seguir  necesitando para la construcción de nuestra democracia. </p>
+<p>Gracias,  señora Ninfa, por estar aquí, por el esfuerzo de usted y toda su familia. </p>
+<p>Y  aparte rescato que ustedes ven a una señora fuerte, grande, emocionada, y eso  también representa lo que es la Medalla Belisario Domínguez. </p>
+<p>No  puede una persona como la señora Ninfa, que ha sido tan valiente y ha  enfrentado tantas batallas, hoy, ante este símbolo de la Medalla Belisario  Domínguez, tenga esta emoción tan grande. </p>
+<p>Y  yo la comparto con ella al presidir esta Comisión, a la que hoy estoy aquí. </p>
+<p>Muchas  gracias, Ninfa, por estar aquí. </p>
+<p>Compañeras  Senadoras y Senadores, invitadas e invitados especiales, a nuestra galardonada  y al pueblo de México:</p>
+<p>La  Medalla Belisario Domínguez es el más alto honor que este Senado otorga a  quienes han contribuido de manera destacada a construir nuestra patria. </p>
+<p>El  día de hoy, este Senado reconoce a una mujer cuya trayectoria es un testimonio  vivo de los principios de Belisario Domínguez. </p>
+<p>Ninfa  María Deándar Martínez, periodista, defensora implacable de la libertad de  expresión y de los derechos humanos. </p>
+<p>Ninfa,  nació el día 16 de noviembre de 1940, en Nuevo Laredo, Tamaulipas, en el seno  de una familia comprometida con los valores democráticos del periodismo y el  servicio a los demás. </p>
+<p>En  1968, Ninfa asumió la dirección del periódico El Mañana en un momento crítico  del país, enfrentando el autoritarismo y la proliferación de las políticas  neoliberales. En esa representación supo poner este medio informativo al  servicio del pueblo mexicano. </p>
+<p>A  lo largo de su carrera, Ninfa enfrentó innumerables adversidades: Amenazas,  encarcelamientos y atentados contra su dignidad; sin embargo, hizo frente a  estos desafíos, con la misma fortaleza con la que defendió sus principios y sus  derechos. </p>
+<p>Como  ella misma nos ha dicho: <em>&ldquo;La vida pierde  sentido si no valoramos y defendemos los principios esenciales, pilares del  humanismo por dolorosa y peligrosa que sea esta lucha&rdquo;. </em></p>
+<p>  Su  labor ha dejado huella en la historia y nos muestra que en México hay grandes  historias por reconocer y por celebrar. </p>
+<p>En  este año, el periódico El Mañana cumple 100 años de historia, una herencia que  Ninfa ha sabido no solo preservar, sino engrandecer. </p>
+<p>Este  periódico ha narrado las luchas del pueblo, convirtiéndose en un símbolo de  resistencia y una fuente confiable de información social, política y económica. </p>
+<p>Es  imposible, al hablar del periódico El Mañana y de Ninfa Deándar, no pensar en  las palabras con las que Belisario Domínguez encomendaba a sus connacionales  vigilar los actos públicos de los gobernantes, y decía: <em>&ldquo;Ser imparciales con vuestras apreciaciones, decir siempre la verdad y  sostenerla con vuestra firmeza entera y muy clara. Nada de anónimos ni  seudónimos&rdquo;. </em></p>
+<p>Esta  encomienda la encontramos presente en el ejercicio profesional y de vida de la  persona de Ninfa Deándar. </p>
+<p>Sin  duda, mirar la trayectoria de la periodista tamaulipeca obliga, al mismo  tiempo, a reflexionar sobre los riesgos actuales de las personas que ejercen el  periodismo en nuestro país. </p>
+<p>Reconocer  a Ninfa Deándar significa también alzar la voz para reiterar la necesidad de  proteger a quienes con su labor registran y comparten las realidades que se  viven en toda nuestra República, por lo que es importante recordar la  responsabilidad que tenemos, desde esta Cámara Alta, de garantizar la  protección de las personas periodistas y asegurar el ejercicio pleno de sus  derechos, ya que la defensa de la libertad de expresión es uno de los pilares  de nuestra democracia. </p>
+<p>De  igual manera, homenajear a Ninfa Deándar, es resaltar el papel de las mujeres  en la transformación de nuestra sociedad; su trayectoria, es una muestra de  cómo el liderazgo de las mujeres es esencial para la construcción de un México  más justo e igualitario. </p>
+<p>Son  precisamente trayectorias como la de Ninfa, marcadas por un profundo compromiso  social, las que empatan con el ejemplo de la vida y el legado de Belisario  Domínguez. </p>
+<p>Ninfa  es, además, un ejemplo paradigmático en tiempo de las mujeres, paradigma que,  sin lugar a dudas.</p>
+<p>Paradigmas  que, sin lugar a dudas, la cuarta transformación está consolidando, porque  hemos entendido que no existe transformación posible sin nosotras las mujeres;  porque cuando una mujer defiende sus derechos, como Ninfa Deándar lo ha hecho,  avanzamos todas y avanza la sociedad en su conjunto. </p>
+<p>La  encomienda del Senado de asegurar que esta presea se entregue a quien  verdaderamente encarne los valores que representa Belisario Domínguez, se  cumple cabalmente con esta elección.</p>
+<p>Por  ello, doy gracias a todos y a todas las personas aquí presentes, legisladores,  que dieron su voto de confianza a este merecido homenaje. </p>
+<p>Al  igual que el médico y senador chiapaneco, cuya valentía y compromiso con la  libertad de expresión lo llevaron a enfrentarse al autoritarismo de Victoriano  Huerta, incluso, a costa de su vida.</p>
+<p> Ninfa  ha mostrado que el silencio ante las injusticias es inadmisible, y ambos a  través de sus palabras y acciones defendieron los derechos fundamentales del  pueblo en contextos de zozobra y gran adversidad; tal como Belisario Domínguez  hizo del Senado una tribuna para denunciar los abusos del poder, Ninfa Deándar  convirtió el periódico &ldquo;El Mañana&rdquo; en un baluarte de resistencia y motor de  cambio. </p>
+<p>Su  legado, como el de Belisario Domínguez, nos inspira a no claudicar en la  defensa de los valores democráticos, que son fundamentales para nuestra nación. </p>
+<p>La  vida y obra de Ninfa Deándar nos recuerda que el periodismo no solo informa,  también transforma, y que la verdad, aunque a veces muy incómoda, siempre nos  llevará en el camino de libertad y la justicia. </p>
+<p>Enhorabuena,  señora Ninfa Deándar. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> ¡Larga vida a Ninfa María  Deándar Martínez! </p>
+<p><strong>La  Senadora Virginia Marie Magaña Fonseca: </strong>Nada  más aprovecho la oportunidad, si me permite, señor Presidente. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> Perdón, pensé que había  terminado, presidenta. </p>
+<p><strong>La  Senadora Virginia Marie Magaña Fonseca: </strong>Saludo  a la presencia de la licenciada Rosa Icela Rodríguez, Secretaria de  Gobernación. </p>
+<p>Es  cuanto, señor Presidente. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> Muchas gracias, Presidenta. </p>
+<p>Agradecemos  a la Senadora Marie.</p>
+<p>Agradecemos  que nos acompañe en esta sesión solemne a la licenciada Rosa Icela Rodríguez  Velázquez, Secretaria de Gobernación. </p>
+<p>Es  un altísimo honor que asista a esta ceremonia solemne en representación de  nuestra compañera Presidenta, Claudia Sheinbaum Pardo. </p>
+<p>Es  un honor que nos acompañe, señora compañera Secretaria. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118464'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118465'></a><p><strong>ENTREGA DE LA MEDALLA DE HONOR BELISARIO DOMÍNGUEZ,  A LA GALARDONADA NINFA MARÍA DEÁNDAR MARTÍNEZ, CORRESPONDIENTE AL AÑO 2023</strong></p>
+<p>Les  solicito ponerse de pie para la entrega de la &ldquo;Medalla de Honor Belisario  Domínguez&rdquo; y del diploma correspondiente para el año 2023 a la periodista y  activista Ninfa María Deándar Martínez. </p>
+<p align="center">(Todos  de pie se entrega el reconocimiento)</p>
+<p><strong>La Ciudadana</strong> <strong>Ninfa María Deándar Martinez:</strong> ¡Bravo, por todos ustedes!</p>
+<p>Estamos  como soldados, mis hijos y yo somos guerreros porque traemos en la sangre,  sangre indígena de mi padre, de mi bisabuela.</p>
+<p>Amamos  a México. Por mi madre también traemos la sangre irlandesa que nos llevaba a la  Iglesia cada rato y ahorita tengo que ir a ponerle una, a nombre de mi mamá,  una veladora a la Virgen de Guadalupe, nuestra reina.<br>
+  ¡Sí,  señor! La morena de México.</p>
+<p>Señores,  muchas gracias.</p>
+<p>Este  es un ángel, es un hombre que ha protegido la libertad de expresión como si  fuera un ángel grandote ahí en la frontera.</p>
+<p>Mis  hijos que son soldados están listos y también.</p>
+<p>Ahí  estamos a sus órdenes, compañeros y si quieren nos vamos con Andrés Manuel  ¿verdad? A la chingada.</p>
+<p>Pero  no dejaremos que vulneren nuestra Patria, la vamos a defender.</p>
+<p>En  el norte somos guerreros y en Nuevo Laredo es un pueblo heroico como lo es…</p>
+<p>Ahí  también nos dio la vida de la lucha, estamos listos para lo que sea así.</p>
+<p>Si  vulneran la tierra mexicana.</p>
+<p>¡Sí  señor!</p>
+<p>¡Sí  señor!</p>
+<p>Vengan  mis hijos, por favor.</p>
+<p>También  quisiera, quisiera recodar a mi compadre Julio Scherer que me daba la  información también fresca y ahí, hablar el gran héroe, el amigo de la libertad  de expresión y que estaba dispuesto y listo para luchar.</p>
+<p>A  él lo recuerdo y hay que recordarlo siempre, fue un gran mexicano a pesar de no  traer sangre pero traía a México en el corazón.</p>
+<p>¿Dónde  está el hijo de Colosio?</p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Lo  hicimos de una manera singular, pero la Cámara de Senadores del H. Congreso de  la Unión acordó otorgar la &ldquo;Medalla de Honor Belisario Domínguez&rdquo; del Senado de  la República 2023, a doña Ninfa María Deándar Martinez, como justo  reconocimiento a los servicios que en grado eminente ha prestado a la Patria y  a la humanidad, se le extiende el presente diploma como testimonio a sus  relevantes méritos.</p>
+<p>Ciudad  de México, 12 de diciembre de 2024.</p>
+<p>Le  damos un caluroso saludo, el Presidente de la Mesa Directiva del Senado y la  Senadora Virginia Magaña Fonseca, como presidenta de la Comisión Belisario  Domínguez.</p>
+<p><strong>La  Ciudadana Ninfa María Deándar Martínez: </strong>Gracias,  gracias a todos. </p>
+<p>Los  amo a todos. </p>
+<p>¡Viva  México!</p>
+<p>¡Viva  la libertad!</p>
+<p>¡Viva  la Cámara de Senadores!</p>
+<p>¡Vivan  nuestros héroes que nos dieron patria!</p>
+<p> <strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>A  continuación, tiene el uso de la palabra Ninfa Cantú Deándar, hija de nuestra  galardonada, la cual pronunciará el discurso que había preparado doña Ninfa  Deándar. </p>
+<p><strong>La  Ciudadana Ninfa Cantú Deándar: </strong>Gracias, gracias. </p>
+<p>Desde  luego, lo que voy a leer no hubiera sido igual a como si lo hubiera dicho mi  madre. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Un  momento, perdón, Ninfa. </p>
+<p>Doña  Ninfa pide a Heriberta Ramón, que acompañen a Ninfa, que la acompañen, por  favor en &ldquo;cups&rdquo;. </p>
+<p>Adelante. </p>
+<p><strong>La  Ciudadana Ninfa Cantú Deándar: </strong>Muy bien. </p>
+<p>Senador,  licenciado Gerardo Fernández Noroña, Presidente de la Mesa Directiva del Senado  de la República. </p>
+<p>Senadoras  y Senadores, uno hace lo que hace, no para buscar reconocimiento o una  distinción, sino porque nos lo dicta nuestra conciencia, la defensa de los  derechos, las denuncias y las causas colectivas, así como las luchas políticas  desde el periodismo deben hacer del fuero íntimo de la convicción. </p>
+<p>No  es fácil esbozar cien años de batallas dadas en una mesa de redacción, en la  frontera norte desde Nuevo Laredo, Tamaulipas, la ciudad que nació con la  patria a cuestas. </p>
+<p>Cuando  el imperio norteamericano injustamente terminó quedándose con Texas, es una  herida que no cerrará jamás y que los pobladores de aquel entonces la  expresaban con banderas mexicanas, ondeando afuera de sus viviendas en la  entonces Villa de San Agustín de Laredo, hasta que cruzaron el Río Bravo hacia  el sur con sus muertos, para seguir siendo mexicanos, mexicanas. </p>
+<p>Por  ello, en un acto de absoluta congruencia histórica, Nuevo Laredo lleva el lema: <em>&ldquo;Siempre con la Patria&rdquo;. </em></p>
+<p>En  esa ciudad de patriotas emergió El Mañana de Nuevo Laredo y, desde su  nacimiento, en 1924, bajo el nombre de &ldquo;Verbo Libre&rdquo; y la figura de mi padre  don Heriberto Deándar Amador, un liberal de cepa e inspirado magonista, comenzó  una historia de luchas de hombres y mujeres valientes, combatientes de la  pluma, de los derechos contra los abusos, los despojos, así se ganaron su  dignidad y su propia libertad. </p>
+<p>El  pueblo de Nuevo Laredo es un gigante cívico que muchos aún no dimensionan, pero  que un día la historia lo documentará y reconocerá debidamente porque se ha  ganado su futuro, es mucha pieza, como diría, el Presidente Andrés Manuel López  Obrador. </p>
+<p>Y  no tenemos que ir muy lejos ya que recientemente este pueblo de gente libre  planteó cara ante una ofensiva criminal que buscaba, desde las tinieblas del  delito, oprimirlo y subyugarlo. </p>
+<p>Fue  el pueblo el que se levantó y dijo &ldquo;no&rdquo;. </p>
+<p>Fue  la gente que rechazó tajantemente un destino de ignominia y vergüenza para  abrirlo a la luz de la dignidad humana que sólo puede nacer de la valentía para  la gloria y fortuna de sus propios hijos. </p>
+<p> Por  ello, esta medalla es también para Tamaulipas y, especialmente, para el pueblo  de Nuevo Laredo que ha sido un maestro para mí y que nos ha mostrado cómo ser  valientes ante la adversidad y las sombras del miedo.</p>
+<p>La  Medalla Belisario Domínguez va para cada mujer y cada hombre que nunca  renunciaron a su libertad y siempre estuvieron resueltos al luchar por ella. </p>
+<p>Y  aquí me dirijo al expresidente Andrés Manuel López Obrador: Sepa usted, señor  Presidente, que esta Medalla, la cual México sabe bien, debería de ser suya. </p>
+<p>La  entrego al pueblo de Nuevo Laredo, al que usted justamente reconoció frente a  la nación entera por su simpatía natural entre patriotas.</p>
+<p>Nos  enorgullece saber, además, que su legado político ha trascendido ahora con una  primera mujer Presidenta con &ldquo;a&rdquo;, la doctora Claudia Sheinbaum Pardo.</p>
+<p>Desde  esta casona de Xicoténcatl, nuestra gratitud constante a todo el pueblo de  México. </p>
+<p>El  verbo es vida y el poder de la palabra debe de estar al servicio de los  pueblos, sin ella corremos el riesgo de padecer su dignidad y eso jamás lo  aceptaremos. </p>
+<p>Aunque  el fascismo vuelva en drones y busque engañar con las sutilezas de las nuevas  tecnologías, ahora el campo de la lucha se ha trasladado al insondable espacio  digital. </p>
+<p>Y  allí también estaremos con las fuerzas progresistas, soberanistas y desde esa  trinchera sólida, para continuar la lucha de las causas populares. </p>
+<p>La  libertad de los pueblos prevalecerá, la ignorancia del racismo y sus fuerzas  opresoras, así como el injerencismo inaceptable, no avanzarán, con un pueblo  así no hay manera. </p>
+<p>Esta  Medalla va también para la memoria de José Colomina y Roberto Javier Mora  García, asesinados cobardemente en el ejercicio de un periodismo libre y  comprometido. </p>
+<p>Desde  luego, a todos los formidables compañeros, compañeras reporteras, editores del  periódico El Mañana; a mis hijos, a mis hijas, que hoy me acompañan; a la  memoria de mi padre, a quien desde luego le digo: Misión cumplida. </p>
+<p>Cito  a Amado Nervo, no sé si lo pueda decir como tú, madre: Si nadie sabe ni por qué  reímos ni por qué lloramos; si nadie sabe por qué venimos ni por qué nos vamos;  si en un mar de tinieblas nos movemos; si todo es noche alrededor y arcano, a  lo menos amémonos, quizá no sea en vano. </p>
+<p>Muchas  gracias. </p>
+<p>¡Qué  viva el amor! Dice mi madre. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Agradecemos  a Ninfa Cantú Deándar su intervención, a nombre de doña Ninfa Deándar. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118465'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118466'></a><p>La  Mesa Directiva, en nombre del Senado de la República, les solicita que, puestos  de pie, guardemos un minuto de silencio, a fin de honrar la memoria de los  miembros de la orden mexicana de la Medalla Belisario Domínguez que han  fallecido. </p>
+<p><strong>MINUTO DE SILENCIO </strong></p>
+<p align="center">(Todos  de pie guardan un minuto de silencio)</p>
+<p>Sírvanse  tomar asiento. </p>
+<p> A nombre del Senado de la República expreso  nuestro agradecimiento a la licenciada Rosa Icela Rodríguez, secretaria de  Gobernación, y a todos nuestros distinguidos asistentes por su presencia en  esta sesión solemne. </p>
+<p>Al concluir la sesión, se solicita a las  personas integrantes de la Mesa Directiva, de la Junta de Coordinación  Política, a la presidenta de la Comisión Medalla Belisario Domínguez, así como  a la secretaria de Gobernación licenciada Rosa Icela Rodríguez Velázquez; al  presidente municipal de Comitán, Chiapas; y a los familiares de nuestra  galardonada se trasladen al Muro de Honor de la Medalla Belisario Domínguez,  para develar su nombre. </p>
+<p>Asimismo, para que las mismas personas  nombradas nos traslademos al patio central para la Guardia de Honor ante la  estatua del senador Belisario Domínguez. </p>
+<p>Se les solicita ponerse de pie, a fin de  entonar el Himno Nacional. </p>
+<p align="center">(Todos de pie entonan  el Himno Nacional)</p>
+<p>Pueden sentarse. </p>
+<p>Agradecemos la participación de la banda  música del Heroico Colegio Militar. </p>
+<p>Se da por finalizada la sesión solemne. </p>
+<p>Se les recuerda a las personas Senadoras la  cita a la sesión ordinaria este mismo día a las 13:30 horas en el salón de  sesiones de la sede de Paseo de la Reforma. </p>
+<p>Se levanta la sesión. </p>
+<p align="center">(Se levantó la sesión a las 12:38 horas)<strong> </strong></p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118466'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

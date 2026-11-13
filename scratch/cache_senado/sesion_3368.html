@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 12</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Alejandro Armenta Mier</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Ordinaria Celebrada<br>en la Ciudad de M&eacute;xico, el 04 de Octubre de 2022</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/2/PPO/PDF-WEB/PPO_No12_04_OCTUBRE_2022_MT.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106425'></a><p align="center"><strong>PRESIDE EL SENADOR</strong><br>
+  <strong>ALEJANDRO ARMENTA MIER</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> (12:00 horas) Solicito a la Secretaría informe a la  Asamblea el resultado del cómputo de asistencia de las Senadoras y Senadores.  Excelente día, compañeras y compañeros.</p>
+<p align="justify"><strong>La Secretaria Senadora Alejandra Lagunes Soto Ruiz: </strong>Claro que sí, señor Presidente.</p>
+<p align="justify">Honorable Asamblea, conforme el registro de asistencia,  se han acreditado 95 Senadoras y Senadores. En consecuencia, hay quórum, señor  Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> Se abre la sesión del martes 4 de octubre de 2022,  correspondiente al primer periodo ordinario de sesiones del segundo año de  ejercicio de la LXV Legislatura.</p>
+<p align="justify">El Orden del Día está disponible en la Gaceta  Parlamentaria del día de hoy y en el monitor de sus escaños, con lo cual se  informa de los asuntos que corresponden a la agenda.</p>
+<p align="right"><strong>ORDEN DEL DÍA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/129572"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">El  acta de la sesión del miércoles 28 de septiembre de 2022 se encuentra publicada  en la Gaceta Parlamentaria de este día.</p>
+<p align="right"><strong>ACTA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/129583"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/asistencias/2022_09_28/10"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">En consecuencia, consulte la Secretaría a la Asamblea,  en votación económica, si se aprueba el acta referida.</p>
+<p align="justify"><strong>La Secretaria Senadora Alejandra Lagunes Soto Ruiz: </strong>Consulto a la Asamblea, en votación económica, si se  aprueba el acta referida. Quienes estén porque se apruebe, favor de levantar la  mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque se rechace, favor de levantar la  mano.</p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Quienes se abstengan, favor de levantar la mano.</p>
+<p align="justify">Aprobada el acta, señor Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> Aprobada el acta de la sesión del miércoles 28 de  septiembre de 2022.</p>
+<p align="justify">Pasamos al siguiente asunto.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106425'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106426'></a><p align="justify"><strong>COMUNICACIONES</strong></p>
+<p align="justify"><strong>La  Secretaria Senadora Alejandra Lagunes Soto Ruiz: </strong>Se  recibieron de los Senadores Nancy de la Sierra Arámburo, del Grupo Plural; Raúl  Bolaños-Cacho Cué, del grupo parlamentario del PVEM; así como de las Comisiones  de Defensa Nacional; de Zonas Metropolitanas y Movilidad; y de Relaciones  Exteriores, Europa, sus respectivos Informes de Actividades Legislativas,  correspondiente al primer año de ejercicio de la LXV Legislatura.</p>
+<p align="right"><strong>DOCUMENTOS</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Oficio_Sen_Nancy_Sierra_Infome.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Oficio_Informe_Actividades_Pvem_Sen_Bolanos_Cacho_1o_Anio_LXV%20Legislatura.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Oficio_Informe_Actividades_Com_Defensa_Primer_Anio_LXV_Legislatura.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Oficio_Informe_Actividades_Com_ZM_Primer_Anio_LXV_Legislatura.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>La  Asamblea queda enterada.</p>
+<p align="justify">Continúe  la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106426'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106427'></a><p align="justify"><strong>La  Secretaria Senadora Alejandra Lagunes Soto Ruiz: </strong>Se  recibió de la Comisión de Zonas Metropolitanas y Movilidad, su Plan de Trabajo  correspondiente al segundo año de ejercicio de la LXV Legislatura.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Oficio_Programa_Trabajo_Com_ZM_Segundo_Anio.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>La  Asamblea queda enterada.</p>
+<p align="justify">Continúe  la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106427'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106428'></a><p align="justify"><strong>La  Secretaria Senadora Alejandra Lagunes Soto Ruiz: </strong>Se  recibió de la Comisión Medalla Belisario Domínguez, oficio con el que se  informa que se amplía la fecha para recibir postulaciones de candidatas y  candidatos a la Medalla de Honor &ldquo;Belisario Domínguez&rdquo; del Senado de la  República, correspondiente al año 2022.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Oficio_Com_MBD_Convocatoria_Ampliacion_Registro.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>La  Asamblea queda enterada y se informa que se encuentra publicada desde el 30 de  septiembre en la Gaceta del Senado de la República y en el micrositio de la comisión.</p>
+<p align="justify">Continúe  la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106428'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106429'></a><p align="justify"><strong>SECRETARÍA DE HACIENDA  Y CRÉDITO PÚBLICO</strong></p>
+<p align="justify"><strong>La  Secretaria Senadora Alejandra Lagunes Soto Ruíz: </strong>Se  recibió de la Secretaría de Hacienda y Crédito Público, información relativa a  la evolución de las finanzas públicas, incluyendo los requerimientos  financieros del sector público y su saldo histórico, los montos de  endeudamiento interno neto, el canje o refinanciamiento de obligaciones del  Erario Federal, en los términos de la Ley Federal de Deuda Pública, y el costo  total de las emisiones de deuda interna y externa, correspondientes al mes de  agosto de 2022. Asimismo, la recaudación federal participable que sirvió de  base para el cálculo del pago de las participaciones a las entidades  federativas, así como el pago de las mismas, desagregada por tipo de fondo,  correspondientes al mes de agosto de 2021.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Informe_SHCP_Finanzas_Deuda_Publicas.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro  Armenta Mier: </strong>Se turna a la Comisión de Hacienda y Crédito Público.</p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106429'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106430'></a><p align="justify"><strong>TRIBUNAL  ELECTORAL DEL PODER</strong><br>
+  <strong>JUDICIAL  DE LA FEDERACIÓN</strong></p>
+<p align="justify"><strong>La  Secretaria Senadora Alejandra Lagunes Soto Ruiz: </strong>Se  recibió de la Sala Superior del Tribunal Electoral del Poder Judicial de la  Federación, notificación con la que remite sentencia en relación con la omisión  del Congreso de la Unión en materia de derechos político-electorales de las  personas pertenecientes a la comunidad LGBTTTIQ+.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Oficio_TEPJF_Derechos_Politoco_Elecotorales_Comunidad_LGBTTTIQ.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Informo  a la Asamblea que la notificación se remitirá a las Senadoras y Senadores para  su conocimiento.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106430'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106431'></a><p align="justify"><strong>CONGRESOS DE LOS  ESTADOS</strong></p>
+<p align="justify"><strong>La  Secretaria Senadora Alejandra Lagunes Soto Ruiz: </strong>Se  recibió del Congreso del Estado de Chihuahua, INICIATIVA CON PROYECTO DE  DECRETO POR EL QUE SE ADICIONA UNA FRACCIÓN III BIS AL ARTÍCULO 170 DE LA LEY  FEDERAL DEL TRABAJO.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Ini_Congreso_Chihuhua_Art_170_LFT.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Se turna a las Comisiones Unidas de Trabajo y  Previsión Social; y de Estudios Legislativos, Segunda.</p>
+<p align="justify">Permítame, Secretaria.</p>
+<p align="justify">¿Con qué objeto?</p>
+<p align="justify">Nada más permítame desahogar esta parte y ahorita le  cedo el uso de la palabra, Senadora Lilly Téllez, si es tan gentil.</p>
+<p align="justify">Adelante, Secretaria.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106431'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106432'></a><p align="justify"><strong>La  Secretaria Senadora Alejandra Lagunes Soto Ruiz: </strong>También  se recibió del Congreso del Estado de Chihuahua, exhorto en relación con la  iniciativa del Ejecutivo Federal, en materia de Guardia Nacional y Seguridad  Pública.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Acuerdo_Congreso_Chihuahua.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>La  Asamblea queda enterada y se integrará al expediente.</p>
+<p align="justify">Continúe  la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106432'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106433'></a><p align="justify"><strong>La  Secretaria Senadora Alejandra Lagunes Soto Ruiz: </strong>Asimismo,  se recibió del Congreso del Estado de Chihuahua, INICIATIVA CON PROYECTO DE  DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 29, SEGUNDO PÁRRAFO DE LA LEY GENERAL  DE EDUCACIÓN.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Ini_Congreso_Chihuahua_Art_29_Ley_Gral_Educacion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Se  turna a las Comisiones  Unidas de Educación; y de Estudios Legislativos, Segunda. </p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106433'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106434'></a><p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruiz: </strong>Se recibió del Congreso del Estado de  Guanajuato, oficio por el que se informa la clausura de la Comisión Permanente  y la apertura y elección de la Mesa Directiva que fungirá durante el segundo  año de ejercicio de la LXV Legislatura. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Comunicado_Cogreso_Gto_Eleccion_MD.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier: </strong>La Asamblea queda enterada. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106434'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106435'></a><p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruiz: </strong>Se recibió del Congreso del Estado de Hidalgo,  oficio con el que informa de las aperturas y clausuras de los periodos  extraordinarios realizados en el primer año de ejercicio; y la apertura de los  trabajos del segundo año de ejercicio de la LXV Legislatura, así como la  elección de las respectivas mesas directivas. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Circular_Poder_Legislativo_Hidalgo_Integracion_MD.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier: </strong>La Asamblea queda enterada. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106435'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106436'></a><p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruiz: </strong>Se recibió del Congreso del Estado de Oaxaca,  exhorto en relación con la designación de una Magistrada del Tribunal Electoral  del Estado de Oaxaca. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Acuerdo_Poder_Legislativo_Oaxaca_Exhorto_TEPJF.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier: </strong>Se remite a la Junta de Coordinación Política. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106436'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106437'></a><p align="justify"><strong>RESPUESTAS A ACUERDOS PROMOVIDOS POR SENADORES</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruiz: </strong>Se recibieron 22 oficios de diversas  dependencias, con los que remiten respuestas a Acuerdos aprobados por la Cámara  de Senadores. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/129575"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier: </strong>Informo a la Asamblea que las respuestas se  remiten a las Senadoras y Senadores promoventes, y se encuentran publicadas en  la Gaceta Parlamentaria. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106437'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106438'></a><p align="justify"><strong>CÁMARA DE DIPUTADOS</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruiz: </strong>Se recibió de la Cámara de Diputados, MINUTA PROYECTO  DE DECRETO POR EL QUE SE EXPIDE LA LEY DE LOS HUSOS HORARIOS EN LOS ESTADOS  UNIDOS MEXICANOS. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Minuta_Expide_Ley_Husos_Horarios.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier: </strong>Se turna a las Comisiones Unidas de Energía; y  de Estudios Legislativos, Segunda. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106438'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106439'></a><p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruiz: </strong>También se recibió de la Cámara de Diputados,  MINUTA PROYECTO DE DECRETO POR EL QUE SE REFORMAN LAS FRACCIONES III DEL  APARTADO A Y VII DEL APARTADO B DEL ARTÍCULO 123 DE LA CONSTITUCIÓN POLÍTICA DE  LOS ESTADOS UNIDOS MEXICANOS, en materia de igualdad y no discriminación de  personas mayores. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Minuta_Apartado_B_Art_123_CPEUM.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier: </strong>Se turna a las Comisiones Unidas de Puntos  Constitucionales; y de Estudios Legislativos, Primera. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106439'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106440'></a><p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruiz: </strong>Asimismo, se recibió de la Cámara de Diputados,  MINUTA PROYECTO DE DECRETO POR EL QUE SE REFORMA EL PÁRRAFO SÉPTIMO DEL  ARTÍCULO 4o. DE LA CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS, en  materia de vivienda adecuada. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Minuta_Art_4_CPEUM.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier: </strong>Se turna a las Comisiones Unidas de Puntos  Constitucionales; y de Estudios Legislativos. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106440'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106441'></a><p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruiz: </strong>De igual forma se recibió de la Cámara de  Diputados, MINUTA PROYECTO DE DECRETO POR EL QUE SE ADICIONA UN PÁRRAFO AL  ARTÍCULO 4o. DE LA CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS, en  materia de inembargabilidad de recursos provenientes de programas sociales. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Minuta_Art_4_CPEUM_Inembargabilidad.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier: </strong>Se turna a las Comisiones Unidas de Puntos  Constitucionales; y de Estudios Legislativos. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106441'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106442'></a><p align="justify"><strong>JUNTA DE COORDINACIÓN POLÍTICA</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruiz: </strong>Se recibió de la Junta de Coordinación  Política, oficio por el que se informa que conforme lo señala el Resolutivo  Sexto del Acuerdo por el que se establece el calendario y las normas para  llevar a cabo las comparecencias con motivo del Análisis del Cuarto Informe de  Gobierno del Presidente de los Estados Unidos Mexicanos, en la sesión del 8 de  noviembre, a las 12:00 horas, se llevará a cabo la comparecencia de la  Secretaria de Economía, maestra Tatiana Clouthier Carrillo. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Comparecencia_SE_Mtra_Clouthier.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>La  Asamblea queda enterada. </p>
+<p align="justify">Senadora  Lilly, ¿con qué objeto? Audio en el escaño de la Senadora. </p>
+<p align="justify"><strong>La  Senadora Lilly Téllez: </strong>(Desde su escaño) Para pedir un  minuto de silencio. </p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Adelante. </p>
+<p align="justify"><strong>La  Senadora Lilly Téllez: </strong>(Desde su escaño) Pido un  minuto de silencio por los catorce marinos que mató el estado de incompetencia  de Morena, cuando los dejó sin gasolina y los mandó a la guerra. </p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Muy  bien, Senadora. Vamos a proceder en el momento que corresponde, con mucho  gusto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106442'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106443'></a><p align="justify">Honorable Asamblea, los integrantes de  la Mesa Directiva suscribimos un Acuerdo para normar la Sesión Solemne en la  que se recibirá la Visita del Presidente de la Cámara de Representantes de  Nueva Zelandia. El Acuerdo está publicado y disponible en el monitor de sus  escaños, por lo que solicito a la Secretaría dé lectura. </p>
+<p align="justify"><strong>MESA DIRECTIVA</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruiz: </strong>Sí, señor Presidente. Doy lectura al Acuerdo.  </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Acuerdo_MD_Solemne.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es todo, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Está a discusión el Acuerdo. </p>
+<p align="justify">Al no haber oradoras ni oradores registrados, consulte  la Secretaría a la Asamblea, en votación económica, si es de aprobarse el  Acuerdo referido. </p>
+<p align="justify"><strong>La Secretaria Senadora Alejandra Lagunes Soto Ruiz:</strong> Consulto a la Asamblea, en votación económica, si es  de aprobarse el Acuerdo. Quienes estén porque se apruebe, favor de levantar la  mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque se rechace, favor de levantar la  mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Quienes se abstengan, favor de levantar la mano. </p>
+<p align="justify">Aprobado el Acuerdo, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> Aprobado el Acuerdo para normar la sesión solemne en  la que se recibirá la Visita del Presidente de la Cámara de Representantes de  Nueva Zelandia. Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106443'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106444'></a><p align="justify">En atención a lo solicitado por la Senadora Lilly  Téllez, pido a todos los presentes ponerse de pie para guardar un minuto de  silencio, en memoria de los elementos de la Marina Armada, fallecidos en el  incidente de un helicóptero, favor de ponerse de pie. </p>
+<p align="justify"><strong>MINUTO  DE SILENCIO</strong></p>
+<p align="center">(Todos de pie guardan un minuto de silencio)</p>
+<p align="justify">Favor de tomar asiento.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106444'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106445'></a><p align="justify">El siguiente asunto en  el Orden del Día, es el Acuerdo suscrito por esta Mesa Directiva, por el que se  determinan los criterios para integrar el Padrón de Cabilderos de la Cámara de  Senadores. </p>
+<p align="justify">El Acuerdo se encuentra  publicado en la Gaceta Parlamentaria y disponible en el monitor de sus escaños.  Solicito a la Secretaría dé lectura. </p>
+<p align="justify"><strong>MESA DIRECTIVA</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruiz: </strong>Doy lectura. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Acuerdo_Cabilderos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es todo, señor Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> Está a discusión este Acuerdo. Consulte la Secretaría a la Asamblea, en  votación económica, si es de aprobarse el Acuerdo presentado. </p>
+<p align="justify"><strong>La  Secretaria Senadora Alejandra Lagunes Soto Ruiz:</strong> Consulto a la Asamblea, en votación económica, si es de aprobarse el Acuerdo.  Quienes estén porque se apruebe, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify"> Quienes  estén porque se rechace, favor de levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Quienes  se abstengan, favor de levantar la mano.</p>
+<p align="justify">Aprobado  el Acuerdo, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> Aprobado el Acuerdo por el que se determinan los criterios para integrar el  Padrón de Cabilderos de la Cámara de Senadores. La convocatoria respectiva se  publicará en el portal del Senado de la República, a partir del 17 de octubre  de 2022. Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106445'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106446'></a><p align="justify"><strong>COMUNICACIONES</strong></p>
+<p align="justify">Informo  a la Asamblea que la Senadora Guadalupe Saldaña Cisneros, entregó a esta Mesa  Directiva una comunicación en relación con las afirmaciones emitidas por un  funcionario del Poder Ejecutivo del estado de Baja California Sur. </p>
+<p align="justify">Daré  lectura a la comunicación de la Senadora Saldaña. </p>
+<p align="right"><strong>DOCUMENTOS</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Oficio_Sen.MGSC.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Oficio_Sen.AAM.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">¿Con qué objeto, Senador Julen?</p>
+<p align="justify"><strong>El Senador Julen Rementería del Puerto: </strong>(Desde su escaño) Para poder agradecer a la Mesa la  intervención que me parece puntual y que, desde luego, se reconoce de las y los  Senadores del PAN.</p>
+<p align="justify">Porque esto no lo debemos de permitir, ni en la  persona de este señor Jesús Omar Castro, que no es cualquier funcionario, lo  sabemos todos, es el jefe de la oficina del gobernador de Baja California Sur,  que, además, por cierto, es compañero con licencia nuestra y esto no se debe  permitir.</p>
+<p align="justify">Hoy le toca el agravio a la Senadora Lupita Saldaña,  pero cuando le toque a cualquier otra mujer va a ser la misma respuesta, la va  a encontrar del PAN también. </p>
+<p align="justify">Agradezco que se haya hecho, e insisto en que podamos  ir, ya se presentó una denuncia, se presentará otra ante la Fiscalía, porque no  es un asunto menor ante una expresión de la Senadora, pues el señor se prolija  en adjetivos descalificativos, algunos simplemente hasta inentendibles y otros  inaudibles.</p>
+<p align="justify">Entonces me parece que lo que hay que hacer, como se  hizo ya, este extrañamiento y que tenga consecuencias. </p>
+<p align="justify">Ojalá la justicia allá en Baja California Sur y la  propia de la Fiscalía General de la República pueda hacer algo, y desde luego  el Instituto Nacional Electoral y los Tribunales en Materia Electoral.</p>
+<p align="justify">Para que distingan muy bien que estamos ante una clara  agresión por violencia política en razón de género a una Senadora de la  República. </p>
+<p align="justify">No importa qué partido, una Senadora de la República  merece respeto. Así que nuestro reconocimiento y nuestra solidaridad a la  Senadora Lupita.</p>
+<p align="justify">Muchas gracias, señor Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Senadora Patricia Mercado, ¿con qué objeto?</p>
+<p align="justify"><strong>La Senadora Patricia Mercado: </strong>(Desde su escaño) También, señor Presidente, para  reconocerle esta gran respuesta que usted está dando ante ésta, de verdad,  inaceptable posición de este funcionario público. </p>
+<p align="justify">También a toda la Mesa Directiva, toda la solidaridad  con la Senadora Lupita Saldaña.</p>
+<p align="justify">Me parece que, ojalá, nuestro compañero Senador Víctor  Castro, hoy gobernador del estado de Baja California Sur.</p>
+<p align="justify">Pues tome las medidas pertinentes para que este  funcionario tan cercano a él, pues es el jefe de su oficina, no pueda, digamos,  reciba incluso una llamada de atención pública y, quizás el propio gobernador,  una disculpa a la Senadora por realmente, digamos, las palabras que usa este  funcionario, que son verdaderamente inaceptables en todos sentidos para un  legislador mujer u hombre.</p>
+<p align="justify">Pero, sobre todo, tratándose de un tema que, por  supuesto, es un tema de violencia política hacia las mujeres en razón de  género.</p>
+<p align="justify"> De verdad todo el reconocimiento a la Mesa Directiva,  una gran respuesta.</p>
+<p align="justify">Gracias.</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Me han pedido el uso de la palabra el Senador Emilio  Álvarez Icaza y la Senadora Jesús Lucía Trasviña. </p>
+<p align="justify">Adelante,  Senador Emilio Álvarez Icaza. </p>
+<p align="justify"><strong>El  Senador Emilio Álvarez Icaza Longoria: </strong>(Desde  su escaño) Gracias, señor Presidente. </p>
+<p align="justify">A  nombre del Grupo Plural, queremos dejar patente tres cosas: </p>
+<p align="justify">La  primera, es extender nuestra solidaridad a la Senadora Guadalupe Saldaña, nos  sumamos con toda decisión a reprobar cualquier acto en contra de ella o  cualquier otra u otro Senador que denigre su persona. </p>
+<p align="justify">Segundo,  reconocer, señor Presidente, toda vez que no tenemos voz y voto en la Mesa  Directiva, sumarnos a este comunicado.</p>
+<p align="justify">Nos  parece que es muy importante que la Presidencia del Senado asuma una visión de  Estado, con independencia de la entidad partidaria de cualquier gobierno, estas  son causas que van más arriba de entidades partidarias.</p>
+<p align="justify">Celebramos  que la Mesa Directiva asuma un papel de una institución de Estado y que sea  garante para los derechos de todos quienes integramos y todas las que integramos  esta Soberanía, me parece un signo muy destacable y lo quiero subrayar. </p>
+<p align="justify">Y el  tercero, me parece muy importante que el gobernador Víctor Castro que, por  cierto es Senador con licencia, asuma a plenitud este llamado por ser el  superior jerárquico, él entró a este Senado en el 18, él sabe lo que implica. </p>
+<p align="justify">Podemos  tener diferencias, podemos tener incluso diferentes proyectos, y se vale, en  realidad la diferencia enriquece, la diversidad enriquece, y por eso es tan  importante que él como titular asuma la responsabilidad de que este tipo de  circunstancias no se repitan. </p>
+<p align="justify">Por su  atención, muy reconocida, muchas gracias. </p>
+<p align="justify">Y a la  Senadora Lupita le mandamos un muy fuerte abrazo porque estas cosas no se  pueden permitir ni dejar pasar. </p>
+<p align="justify">Un  fuerte abrazo, Senadora Lupita. </p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>La  Senadora Lucía Trasviña, en uso de la palabra, por favor. </p>
+<p align="justify"><strong>La  Senadora Jesús Lucía Trasviña Waldenrath: </strong>(Desde  su escaño) Gracias, señor Presidente, con permiso. </p>
+<p align="justify">Felicito  a la Mesa Directiva por este Acuerdo que hoy se asume, definitivamente la lucha  es precisamente la no violencia política en contra de las mujeres.</p>
+<p align="justify"> También en contra de los hombres porque  se genera también la violencia en contra de hombres, que en un momento dado  violencia es violencia. </p>
+<p align="justify">Sabemos de las libertades que son  valores universales, de la Declaración de los Derechos Humanos, son valores  inherentes al ser humano, pero una cosa son las libertades y otra los  libertinajes. </p>
+<p align="justify">Lo viví, viví del gobernador panista, de  Carlos Mendoza Davis, cuando públicamente en la prensa dijo que yo era una  vergüenza para Baja California Sur.</p>
+<p align="justify">Pero he tenido el valor civil de decir  con mi nombre y apellido y hacerle frente, y le dije: señor, vergüenza es usted  con los acuerdos que tomó cuando hablaba de los kilos que intercambiaba usted  con el gobernador, también panista, Domínguez, de Querétaro, tuve ese valor. </p>
+<p align="justify">Aquí se agrede, aquí se insulta y se usa  a través de interpósita persona, hay que tenerle el valor civil. En esta  tribuna se ha insultado al Presidente y a la esposa del Presidente, también son  género, masculino y femenino, y el género diverso también tiene sus libertades,  tiene sus derechos y tenemos la obligación de respetar a todas y a todos, sin  partidos y sin colores. </p>
+<p align="justify">Gracias. </p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier: </strong>El Senador Jorge Carlos Ramírez Marín y,  posteriormente, la Senadora Beatriz Paredes han pedido el uso de la palabra. </p>
+<p align="justify">¿Con qué objeto, Senador Jorge Ramírez  Marín?</p>
+<p align="justify"><strong>El Senador Jorge Carlos  Ramírez Marín: </strong>(Desde su escaño) Señor Presidente, extender mi  felicitación y mi solidaridad a la Mesa Directiva por su intervención  resguardando los derechos de la Senadora Lupita. </p>
+<p align="justify">De verdad que espero siente un  precedente frente a todos los titulares de entidades federativas de que el  Congreso, este Senado de la República, no está pintado, y me da mucho gusto que  tenga una Mesa Directiva que responda por los Senadores. </p>
+<p align="justify">Gracias. </p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier: </strong>Senadora Beatriz Paredes, ¿con qué objeto?  Sonido. </p>
+<p align="justify"><strong>La Senadora Beatriz  Paredes Rangel: </strong>(Desde su escaño) Gracias, señor Presidente. </p>
+<p align="justify">En el mismo sentido que el Senador  Ramírez Marín.</p>
+<p align="justify">Y subrayando la trascendencia de que una  institución, con la honorabilidad del Senado de la República, que está  representada al mismo tiempo en cada uno de sus integrantes, pueda salvaguardar  la libertad de expresión, la pulcritud en el lenguaje y la civilidad en el  debate político. </p>
+<p align="justify">Es inadmisible que cualquier  funcionario, cualquiera, utilice sus redes y sus mecanismos alternativos para  ofender o para minimizar el papel y la protección jurídica que establece la  Constitución para que los legisladores no puedan ser reconvenidos por sus  opiniones públicas.</p>
+<p align="justify">Me solidarizo también con la Senadora  Lucía Trasviña si en otro momento fue ofendida. </p>
+<p align="justify"> Ahora  sí que el respeto al derecho ajeno, en la actividad política y a cada uno de  los sujetos, es fundamental. </p>
+<p align="justify">Los  felicitamos a la Mesa Directiva y, sobre todo, como aquí se dijo, que se siente  un precedente de que el Senado actuará como un cuerpo legislativo para defender  la integridad de sus miembros. </p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Muchas  gracias. </p>
+<p align="justify">La  Asamblea ha quedado enterada del comunicado anterior y la misma se remite al  titular del Poder Ejecutivo del estado de Baja California Sur. </p>
+<p align="justify">La  Senadora Martha. ¿Con qué objeto, Senadora?</p>
+<p align="justify"><strong>La  Senadora Martha Cecilia Márquez Alvarado: </strong>(Desde  su escaño) Gracias, señor Presidente. </p>
+<p align="justify">Igualmente,  para expresar mi solidaridad con la Senadora Lupita Saldaña, no quiero utilizar  este espacio para hacer referencia a la violencia que yo he vivido, simplemente  así debe de ser. En este momento, en el momento en que una mujer, una Senadora,  viva ataques o violencia política todas y todos debemos de levantar la voz. </p>
+<p align="justify">Mi  solidaridad contigo, Lupita, siempre.</p>
+<p align="justify">Y  ningún funcionario público, de ningún nivel, ni los magistrados electorales,  porque luego vendrán algunos temas de los que ya hablaremos, tienen derecho a  minimizar a las mujeres. </p>
+<p align="justify">Y lo  felicito, Presidente, por el llamado que hace y por la aclaración y la  expresión de que las manifestaciones de los Senadores y las Senadoras son  inviolables. Entonces, que esto nos sirva para darnos a respetar y para venir  aquí a representar los intereses de los ciudadanos y de las familias de México. </p>
+<p align="justify">Gracias,  señor Presidente. </p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Gracias,  Senadora Márquez Alvarado. </p>
+<p align="justify">La  Senadora Lilia Margarita, ¿con qué objeto?</p>
+<p align="justify"><strong>La  Senadora Lilia Margarita Valdez Martínez: </strong>(Desde  su escaño) El mismo, señor Presidente, en el sentido de solidarizarnos con la  Senadora Lupita Saldaña que viene a representar las ofensas que se reciben por  parte de muchos grupos, de muchas personas, hacia las mujeres en cualquier  ámbito, pero también aprovecho el momento para referirme a las agresiones que  reciben nuestros compañeros varones, específicamente aquí en el Senado, por  otras compañeras Senadoras que creo que tampoco podemos dejar de ver. Tan  respetuosos y respetuosas debemos ser los hombres y las mujeres con nuestros  compañeros, y las mujeres nos escudarnos en que soy mujer y nadie me puede  decir nada porque sería violencia de género. Hay que poner el ejemplo. </p>
+<p align="justify">Hay  generaciones de jóvenes en México muy numerosas que nos ven, nos escuchan y no  podemos dar el mal ejemplo de ser majaderas, irrespetuosas, simplemente por ser  Senadoras. </p>
+<p align="justify">Muchas  gracias, señor Presidente. </p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>La  Asamblea queda enterada. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106446'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106447'></a><p align="justify">Dé cuenta la Secretaría con los  dictámenes inscritos para su primera lectura. </p>
+<p align="justify"><strong>La Secretaria Senadora  Verónica Delgadillo García: </strong>Como lo indica, señor Presidente. </p>
+<p align="justify">Tenemos la primera lectura de un  dictamen de las Comisiones Unidas de Derechos de la Niñez y de la Adolescencia;  y de Estudios Legislativos, Segunda, que contiene proyecto de Decreto por el  que se reforman y adicionan diversas disposiciones de la Ley Nacional del  Sistema Integral de Justicia Penal para Adolescentes, en materia de medidas  cautelares. </p>
+<p align="justify"><strong>PROYECTO  DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSAS DISPOSICIONES DE LA LEY  NACIONAL DEL SISTEMA INTEGRAL DE JUSTICIA PENAL PARA ADOLESCENTES</strong></p>
+<p align="justify"><strong>(Dictamen  de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Dict_Com_Derechos_Ninez_Ley_Nacional_Sist_Integral_Justicia_Penal_Adolescentes.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106447'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106448'></a><p align="justify">De igual forma, tenemos la primera  lectura de un dictamen de las Comisiones Unidas de Derechos de la Niñez y de la  Adolescencia; y de Estudios Legislativos, Segunda, que contiene proyecto de  Decreto por el que se reforma el artículo 63 y se adiciona un artículo 63 Bis a  la Ley General de los Derechos de Niñas, Niños y Adolescentes, en materia de  promoción de la cultura. </p>
+<p align="justify"><strong>PROYECTO  DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 63 Y SE ADICIONA UN ARTÍCULO 63  BIS DE LA LEY GENERAL DE LOS DERECHOS DE NIÑAS, NIÑOS Y ADOLESCENTES</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Dict_Com_Derechos_Ninez_Art_63_63Bis_Ley_General_Ninez.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106448'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106449'></a><p align="justify">Del mismo modo, tenemos la primera  lectura de un dictamen de las Comisiones Unidas de Derechos de la Niñez y de la  Adolescencia; y de Estudios Legislativos, Segunda, que contiene proyecto de  Decreto por el que se reforma la fracción XX del artículo 13 de la Ley General  de los Derechos de Niñas, Niños y Adolescentes, en materia de acceso a la  tecnología. </p>
+<p align="justify"><strong>PROYECTO  DE DECRETO POR EL QUE SE REFORMA LA FRACCIÓN XX DEL ARTÍCULO 13 DE LA LEY  GENERAL DE LOS DERECHOS DE NIÑAS, NIÑOS Y ADOLESCENTES</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Dict_Com_Derechos_Ninez_Art_13_Ley_General_Derechos_Ninez.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106449'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106450'></a><p align="justify">También tenemos la primera lectura de un  dictamen de las Comisiones Unidas de Turismo; y de Estudios Legislativos,  Segunda, que contiene proyecto de Decreto por el que se  adiciona una fracción X Bis al artículo 7 de la Ley General de Turismo, en  materia de turismo médico. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE SE ADICIONA UNA  FRACCIÓN X BIS AL ARTÍCULO 7 DE LA LEY GENERAL DE TURISMO</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Dict_Com_Turismo_Materia_de_Turismo_Medico.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106450'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106451'></a><p align="justify">Asimismo, tenemos la  primera lectura de un dictamen de las Comisiones Unidas de Turismo; y de Estudios  Legislativos, Segunda, que contiene proyecto de Decreto por el que se adiciona  una fracción VII Bis, al artículo 3, y un Capítulo VI Bis, Del Equilibrio  Turístico Regional, al Título Tercero de la Política y Planeación de la  Actividad Turística, que contiene los artículos 22 Bis, 22 Ter, 22 Quáter, 22  Quinquies y 22 Sexties de la Ley General de Turismo, en materia de destinos  turísticos nacionales. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE SE ADICIONA UNA  FRACCIÓN VII BIS, AL ARTÍCULO 3, Y UN CAPÍTULO VI BIS, DEL EQUILIBRIO TURÍSTICO  REGIONAL, AL TÍTULO TERCERO DE LA POLÍTICA Y PLANEACIÓN DE LA ACTIVIDAD  TURÍSTICA, QUE CONTIENE LOS ARTÍCULOS 22 BIS, 22 TER, 22 QUÁRTER, 22 QUINQUIES  Y 22 SEXIES DE LA LEY GENERAL DE TURISMO</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Dict_Com_Turismo_Ley_General_Turismo.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106451'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106452'></a><p align="justify">De igual forma, tenemos  la primera lectura de un dictamen de las Comisiones Unidas de Derechos Humanos;  y de Estudios Legislativos, Primera, que contiene proyecto de Decreto por el  que se reforman diversas disposiciones de la Ley para la Protección de Personas  Defensoras de Derechos Humanos, en materia de lenguaje incluyente y perspectiva  de género. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE SE REFORMAN DIVERSAS  DISPOSICIONES DE LA LEY PARA LA PROTECCIÓN DE PERSONAS DEFENSORAS DE DERECHOS  HUMANOS Y PERIODISTAS</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Dict_Com_DH_Ley_Proteccion_Personas_Defensoras_DH.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106452'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106453'></a><p align="justify">También tenemos la primera  lectura de un dictamen de las Comisiones Unidas de Asuntos Indígenas; y de  Estudios Legislativos, Primera, que contiene proyecto de Decreto por el que se  declara el 6 de marzo de cada año como el Día Nacional de la Mujer  Afromexicana. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE SE DECLARA EL 6  DE MARZO DE CADA AÑO COMO EL DÍA  NACIONAL DE LA MUJER AFROMEXICANA</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Dict_Com_Asuntos_Indigenas_D%C3%ADa_Nacional_Mujer_Afromexicana.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106453'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106454'></a><p align="justify">Asimismo, tenemos la  primera lectura al dictamen de las Comisiones Unidas de Asuntos Indígenas; y de  Estudios Legislativos, Primera, que contiene proyecto de Decreto por el que se  declara el 21 de noviembre de cada año como el Día Nacional de la Niña Indígena  y Afromexicana. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE SE DECLARA EL 21 DE NOVIEMBRE  DE CADA AÑO COMO EL DÍA NACIONAL DE LA NIÑA INDÍGENA Y AFROMEXICANA</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Dict_Com_Asuntos_Indigenas_Dia_Nacional_Nina_Indigena_Afromexicana.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106454'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106455'></a><p align="justify">De igual manera,  tenemos la primera lectura de un dictamen de las Comisiones Unidas de Asuntos  Indígenas; y de Estudios Legislativos, Primera, que contiene proyecto de  Decreto por el que se declara el 9 de agosto de cada año como el Día Nacional  de los Pueblos, Comunidades y Personas Indígenas. </p>
+<p align="justify"><strong>PROYECTO  DE DECRETO POR EL QUE SE DECLARA EL 9 DE AGOSTO DE CADA AÑO COMO EL DÍA  NACIONAL DE LOS PUEBLOS, COMUNIDADES Y PERSONAS INDÍGENAS</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Dict_Com_Asuntos_Indigenas_Comunidades_Indigenas_y_Afromexicanidad.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es todo, señor  Presidente.</p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier:</strong> Los nueve dictámenes se encuentran  publicados en la Gaceta Parlamentaria de hoy y disponibles en el monitor de sus  escaños. Con fundamento en lo dispuesto por los artículos 193 y 195 del  Reglamento del Senado, quedan de primera lectura. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106455'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106456'></a><p align="justify">Informo a la Asamblea,  que la Mesa Directiva recibió un dictamen de las Comisiones Unidas de Puntos  Constitucionales; y de Estudios Legislativos, Segunda, que contiene proyecto de  Decreto por el que se reforma el Artículo Quinto Transitorio del Decreto por el  que se reforman, adicionan y derogan diversas disposiciones de la Constitución  Política de los Estados Unidos Mexicanos, en materia de Guardia Nacional,  publicado en el Diario Oficial de la Federación el 26 de marzo de 2019. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE SE REFORMA EL  ARTÍCULO QUINTO TRANSITORIO DEL &ldquo;DECRETO POR EL QUE SE REFORMAN, ADICIONAN Y  DEROGAN DIVERSAS DISPOSICIONES DE LA CONSTITUCIÓN POLÍTICA DE LOS ESTADOS  UNIDOS MEXICANOS EN MATERIA DE GUARDIA NACIONAL&rdquo;, PUBLICADO EN EL DIARIO  OFICIAL DE LA FEDERACIÓN EL 26 DE MARZO DE 2019</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Dictamen_Guardia_Nacional.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Dicho dictamen se encuentra publicado en la Gaceta del  Senado, por lo que conforme en lo previsto en el artículo 193, numeral 1 del  Reglamento del Senado y a fin de cubrir los requisitos establecidos en dicho  artículo, consulte la Secretaría a la Asamblea, en votación económica, si  autoriza que dicho dictamen se tenga como de primera lectura. </p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Delgadillo García: </strong>Como lo indica, señor Presidente. Consulto a esta  Asamblea, en votación económica, si se autoriza la primera lectura del dictamen  referido por la Presidencia. Quienes estén por la afirmativa, favor de levantar  su mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén por la negativa, favor de levantar su  mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Señor Presidente, sí se autoriza.</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> En consecuencia, con fundamento en lo dispuesto por los  artículos 193 y195 del Reglamento del Senado, queda de primera lectura. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106456'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106457'></a><p align="justify">Ahora tenemos la  discusión de un dictamen de las Comisiones Unidas de Cultura; y de Estudios  Legislativos, que contiene proyecto de Decreto por el que se declara el 2 de  mayo de cada año como Día del Aniversario del Rompimiento del Sitio de Cuautla. </p>
+<p align="justify">Este dictamen considera  una iniciativa de la Senadora Lucy Meza, presentada el 15 de marzo de 2022, se  le dio primera lectura en la sesión del 27 de abril de 2022. </p>
+<p align="justify"><strong>PROYECTO  DE DECRETO POR EL QUE SE DECLARA EL 2 DE MAYO DE CADA AÑO COMO DÍA DEL  ANIVERSARIO DEL ROMPIMIENTO DEL SITIO DE CUAUTLA </strong></p>
+<p align="justify"><strong>(Dictamen  de segunda lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Dict_Cultura_Rompimiento_Sitio_Cuautla.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Debido a que el  dictamen se encuentra publicado en la Gaceta Parlamentaria del día de hoy y  disponible en el monitor de sus escaños, consulte la Secretaría a la Asamblea,  en votación económica, si se autoriza que se omita la lectura del dictamen. </p>
+<p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruiz:</strong> Consulto a la  Asamblea, en votación económica, si autoriza que se omita la lectura del  anterior dictamen. Quienes estén por la afirmativa, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea asiente)</p>
+<p align="justify">Quienes estén por la negativa,  favor de levantar la mano.</p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p align="justify">Sí se omite la lectura,  señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier: </strong>Como lo permite el artículo 198 del  Reglamento del Senado, y debido a que el dictamen que nos ocupa consta de un  solo artículo, se discutirá en lo general y en lo particular en un solo acto.  Está a discusión. <br>
+  En virtud de que no hay  oradoras ni oradores registrados, ni reservas, ábrase el sistema electrónico  por tres minutos para recoger la votación nominal en lo general y en lo  particular del proyecto de Decreto. Háganse los avisos a que se refiere el  artículo 58 del Reglamento del Senado para informar de la votación. </p>
+<p align="right"><strong>VOTACIÓN</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/votacion/4154"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Secretaria Senadora Alejandra Lagunes Soto Ruiz:</strong> Informo a la Asamblea que resta menos de un minuto  para que se cierre el sistema de votación. Sigue abierto el sistema. </p>
+<p align="justify">¿Algún Senador o Senadora que falte de emitir su voto?  Sigue abierto el sistema.  </p>
+<p align="justify">Pregunto de nuevo si falta algún Senador o Senadora de  emitir su voto. </p>
+<p align="justify">Senadora Benavides. Sigue abierto el sistema.</p>
+<p align="justify">Señor  Presidente, conforme al registro en el sistema electrónico, se emitieron 102  votos a favor, cero en contra y cero abstenciones. </p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Queda  aprobado en lo general y en lo particular el proyecto de Decreto por el que se  declara el 2 de mayo de cada año como Día del Aniversario del Rompimiento del  Sitio de Cuautla. Se remite a la Cámara de Diputados para los efectos del  artículo 72 constitucional. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106457'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106458'></a><p align="justify">Tenemos  la discusión de un dictamen de las Comisiones Unidas de Cultura; y de  Reglamentos y Prácticas Parlamentarias, que contiene proyecto de Decreto para  inscribir con letras doradas en el Muro de Honor del Senado de la República, la  leyenda: &ldquo;Sitio de Cuautla, 72 días de lucha&rdquo;. </p>
+<p align="justify">A dicho  dictamen se le dio su primera lectura en la sesión matutina del pasado 8 de  septiembre. El dictamen considera una iniciativa del Senador Ángel García  Yáñez, presentada el 15 de marzo de 2022. </p>
+<p align="justify"><strong>PROYECTO  DE DECRETO PARA INSCRIBIR CON LETRAS DORADAS EN EL MURO DE HONOR DEL SENADO DE  LA REPÚBLICA, LA LEYENDA: &ldquo;SITIO DE CUAUTLA, 72 DÍAS DE LUCHA&rdquo; </strong></p>
+<p align="justify"><strong>(Dictamen  de segunda lectura)</strong><strong></strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Dic_Com_Cultura_Muro_Leyenda_Cuautla.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Debido a que el dictamen se encuentra  publicado en la Gaceta Parlamentaria del día de hoy y disponible en el monitor  de sus escaños, consulte la Secretaría a la Asamblea, en votación económica, si  autoriza que se omita la lectura.</p>
+<p align="justify"> <strong>La  Secretaria Senadora Alejandra Lagunes Soto Ruiz: </strong>Como  indica, señor Presidente. Consulto a esta Asamblea, en votación económica, si  se autoriza que se omita la lectura del dictamen en cuestión. Quienes estén por  la afirmativa, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea asiente)</p>
+<p align="justify">Quienes  estén por la negativa, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p align="justify">Señor  Presidente, le informo que sí se omite la lectura. </p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Muchas  gracias. </p>
+<p align="justify">Se  concede el uso de la palabra a la Senadora Minerva Hernández Ramos, a nombre de  la Comisión de Reglamentos y Prácticas Parlamentarias, hasta por cinco minutos.   </p>
+<p align="justify"><strong>La  Senadora Minerva Hernández Ramos: </strong>Con su venia, señor  Presidente. </p>
+<p align="justify">A  nombre de las y los Senadores que integramos la Comisión de Reglamentos y  Prácticas Parlamentarias, se presenta ante el Pleno de esta Soberanía el  dictamen relativo al proyecto de Decreto por el que se solicita inscribir con  letras doradas en el Muro de Honor del salón de sesiones de esta soberanía, la  leyenda &ldquo;Sitio de Cuautla, 72 días de lucha&rdquo;. </p>
+<p align="justify">El 15  de septiembre de 2021 se publicó en el Diario Oficial el Decreto de creación  del Muro de Honor del Senado de la República en el que se inscribirán en letras  de bronce dorado, lo que comúnmente llamamos &ldquo;letras de oro&rdquo;, el nombre de  personas, instituciones, apotegmas o acontecimientos de trascendencia nacional. </p>
+<p align="justify">Una vez  que en esta Soberanía aprobemos los dictámenes, la inscripción de letras de oro  podrá celebrarse en sesión solemne, a la que concurrirán como invitados  representantes de diversos sectores de la sociedad. </p>
+<p align="justify">En este  sentido, el dictamen de las Comisiones Unidas de Cultura; y Reglamentos y  Prácticas Parlamentarias recae a la propuesta del Senador Ángel García Yáñez,  del grupo parlamentario del PRI, relativo a inscribir en letras de oro la  leyenda &ldquo;Sitio de Cuautla, 72 días de lucha&rdquo;. </p>
+<p align="justify">Este  2022 se conmemoran 210 años de la acción militar emprendida por José María  Morelos y Pavón, entre el 19 de febrero y el 2 de mayo de 1812, en la población  de Cuautla, en el estado de Morelos. </p>
+<p align="justify">El  contexto de esta gesta heroica es que, con el fin de acabar con Morelos y sus  tropas, el virrey Venegas ordenó atacar Cuautla, enviando al general Félix  María Calleja. </p>
+<p align="justify">Conociendo  de ello, Morelos se acuarteló en Cuautla de las Amilpas con menos de cuatro mil  efectivos. </p>
+<p align="justify">A  medida que el sitio se alargó, la situación se hizo más difícil, los alimentos  empezaron a escasear y el hambre dejo huella.</p>
+<p align="justify">Morelos  rompió el sitio en la madrugada del 2 de mayo, después de 72 días resistiendo  ataques, hambre y sed.</p>
+<p align="justify">Han  pasado 210 años desde este suceso y la conmemoración del sitio de Cuautla, que  se hace a través de este dictamen, no podía suceder en mejor fecha: posterior a  la celebración de la Independencia de México. </p>
+<p align="justify"> El voto  favorable para este dictamen se enmarca en la celebración que tuvimos. </p>
+<p align="justify">Desde  la Comisión de Reglamentos, se conmina a los integrantes de esta Soberanía a  recuperar los ideales de igualdad, de libertad y de justicia por el que  pelearon y perdieron la vida los héroes que nos dieron patria. </p>
+<p align="justify">Es  cuanto, señor Presidente.</p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Está a  discusión. </p>
+<p align="justify">Y se  han inscrito, para tal efecto, el Senador Ángel García Yáñez, del PRI, y la  Senadora Lucy Meza, del grupo parlamentario del Partido Morena, hasta por cinco  minutos. </p>
+<p align="justify">Senador  Ángel García Yáñez, adelante. </p>
+<p align="justify"><strong>El  Senador Ángel García Yáñez: </strong>Con el permiso de la  Presidencia. </p>
+<p align="justify">Agradezco  la generosidad de mis compañeras Senadoras Minerva Hernández y Susana Harp; de  verdad, gracias, que ellas representan a las comisiones dictaminadoras y, obviamente,  sin su profesionalismo y alto nivel de compromiso con el país, obviamente no se  hubiera llevado a cabo este documento. </p>
+<p align="justify">Obviamente  al Senador Eruviel Ávila, también gracias por todo su apoyo, compañero Senador,  y a todo el equipo de trabajo. El proyecto de Decreto que hoy se somete a  consideración de esta Honorable Asamblea para inscribir con letras doras en el  Muro del Senado de la República la leyenda &ldquo;Sitio de Cuautla, 72 días de  lucha&rdquo;, reconoce la valentía de aquellos héroes anónimos que dieron su vida por  la Independencia de nuestro país, aquellos que lucharon junto a José María  Morelos, Nicolás Bravo, Mariano Matamoros y Hermenegildo Galeana, en defensa de  la libertad, la igualdad y la justicia. </p>
+<p align="justify">El  pasado 2 de mayo de 2022 conmemoramos 210 años del rompimiento del sitio de  Cuautla, hecho trascendental para el movimiento por la Independencia de México.  El 19 de febrero de 1812 el Ejército Realista del General Félix María Calleja  intentó tomar por asalto la ciudad de Cuautla, con la intención de atacar el  Ejército Insurgente que se encontraba en la región. </p>
+<p align="justify">La  batalla comenzó, José María Morelos y Pavón se enfrentaba a un mayor número de  militares mejor armados, que a pesar de reportar más bajas y pertenecieron y  situaron Cuautla, durante los 72 días, los integrantes del Ejército Insurgente  de la población resistieron los ataques realistas, el hambre y la sed.  Inscribir la leyenda &ldquo;Sitio de Cuautla, 72 días de lucha&rdquo; es un homenaje a esos  personajes cuyo amor a la patria los mantuvo en pie frente a la adversidad del  sitio, esos hombres y mujeres que creyeron firmemente en la causa sagrada de la  Independencia. </p>
+<p align="justify">El  sitio de Cuautla marca la vida y el proyecto por el que luchó Morelos, al  sobreponerse de la situación de hambre, sed y disminución de elementos de  combate, haciendo la reflexión sobre cuánto tiempo más debería durar la lucha,  pero sobre todo de la necesidad de independencia. El hecho conocido como el  &ldquo;Sitio de Cuautla y sus 72 días de lucha&rdquo; es parte de la memoria histórica de  la nación, por eso debe ser rescatado y promovido en su justa dimensión.</p>
+<p align="justify">Su  valor es incalculable, ya que refleja muchos de los intangibles que nos dan  sentido hoy como mexicanos. El sitio de Cuautla es el antecedente histórico más  sensible de la inmensa capacidad de resistencia humana cuando existe un ideal,  pues fue el propio pueblo de Cuautla y sus pobladores los verdaderos  vencedores. </p>
+<p align="justify">Así, a  210 años de la conmemoración del sitio de Cuautla, debemos honrar a cada uno de  esos héroes que dieron la vida por México, recuperando los ideales de libertad,  justicia, igualdad, dignidad, que enarbolaba José María Morelos y Pavón. </p>
+<p align="justify"> Inscribir  en letras doradas la leyenda de &ldquo;Sitio de Cuautla, 72 días de lucha&rdquo;, para  hacernos sentir orgullosos de nuestra historia, de nuestras costumbres y  tradiciones, sirva también para recordar que los ideales por los que libramos  las batallas para la Independencia siguen vigentes. </p>
+<p align="justify">Es por  eso que hoy, compañeras y compañeros Senadores, acudo a esta tribuna a  solicitar su apoyo para que, por unanimidad, aprobemos este Decreto.</p>
+<p align="justify">¡Viva  Morelos! ¡Viva el pueblo de Cuautla! ¡Y viva México!</p>
+<p align="justify">Muchas  gracias por su atención.</p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Gracias,  señor Senador.</p>
+<p align="justify">En uso  de la palabra la Senadora Lucy Meza, del grupo parlamentario del Partido  Morena, hasta por cinco minutos.</p>
+<p align="justify"><strong>La  Senadora </strong><strong>Lucy  Meza:</strong> Muchas  gracias, señor Presidente. Con el permiso de la Mesa Directiva. Buenas tardes,  compañeras y compañeros Senadores.</p>
+<p align="justify">Hago  uso de esta tribuna para agradecer, primero que nada, a las Comisiones Unidas  de Cultura; y de Estudios Legislativos, respecto de mi iniciativa con proyecto  de Decreto por el que se declara el día 2 de mayo de cada año como Rompimiento  del Sitio de Cuautla que, por cierto, ya se aprobó. Por lo cual, agradezco a  todas y todos los Senadores.</p>
+<p align="justify">Como  bien lo dije, agradezco a la Presidenta de la Comisión de Cultura, a mi  compañera Susana Harp. Muchas gracias. A mi compañero, Senador Manuel Añorve, Presidente  de la Comisión de Estudios Legislativos. Muchas gracias. </p>
+<p align="justify">Y a las  y los integrantes de dichas comisiones unidas, por coordinar esfuerzos y  dictaminar esta iniciativa presentada por la de la voz, para conmemorar una  lucha histórica ocurrida en mi querido estado de Morelos y que tan  significativo para todas y todos los mexicanos, me refiero al rompimiento del  Sitio de Cuautla, de 1812. El Rompimiento del Sitio de Cuautla, fue un suceso  que aconteció en la Guerra de Independencia y fue protagonizado por el Ejército  Insurgente, comandado por don José María Morelos y Pavón y las Fuerzas  Realistas dirigidas por el brigadier Félix María Calleja.</p>
+<p align="justify">Este  episodio tuvo lugar dentro de la campaña militar de José María Morelos, cuando  el ejército bajo su mando fue sitiado en la población de Cuautla de Amilpas por  las tropas Realistas comandadas por Félix María Calleja. A pesar de los  constantes ataques de Calleja y la llegada de refuerzos Realistas, la defensa  de Cuautla y la moral de los hombres de Morelos siguieron en pie durante 72  días, no obstante, cada día era más difícil conseguir insumos y alimentos para  los Insurgentes.</p>
+<p align="justify">Por tal  motivo, Morelos decidió romper el sitio y fue así como el 2 de mayo de 1812  logró salir con un fuerte núcleo de fuerzas, con las que reinició sus  operaciones en busca de la Independencia Nacional. La defensa de la heroica Cuautla  cubriría de gloria a Morelos, Galeana, Matamoros y los Bravo, incluso se relata  que al saber este hecho el conquistador francés Napoleón Bonaparte proclamó la  famosa frase: <em>&ldquo;Con hombres como Morelos  conquistaría al mundo&rdquo;.</em></p>
+<p align="justify">Sepan  ustedes y todo el pueblo de México que en mi amado municipio de Cuautla aún se  conservan los edificios donde se forjó parte de la historia de México, en el  marco de la Guerra de Independencia Nacional, como son: la iglesia de San  Diego, primer cuartel comandado por Hermenegildo Galeana; la iglesia de Santo  Domingo, segundo cuartel bajo el mando de Leonardo Bravo, y la Rosera  Buenavista, tercer cuartel de Mariano Matamoros.</p>
+<p align="justify"> Con  esta conmemoración, donde se instituye en los Estados Unidos Mexicanos el día 2  de mayo de cada año como el Día del Aniversario del Rompimiento del Sitio de  Cuautla, es la ocasión oportuna para realizar un homenaje a todas las personas  que nos dieron Patria. Nos brinda, además, una oportunidad para que las nuevas  generaciones conozcan la importancia histórica de este suceso.</p>
+<p align="justify">Sin  duda agradezco su voto a favor de este dictamen y con esto haremos eco en todo  el territorio nacional para que retumbe la importancia del sitio de Cuautla, en  el que nuestro general Morelos demostró su extraordinario valor como general y  caudillo, además de ser la hazaña más histórica, el sitio de Cuautla es  seguramente la jornada más brillante en la lucha de Independencia iniciada por  el Padre Hidalgo en 1810.</p>
+<p align="justify">En lo  personal y orgullosa hija de esta hermosa tierra llamada Cuautla, Morelos, me  inunda de devoción y cariño ser promovente de esta iniciativa. Conservar en  nuestra memoria una fecha tan significativa es el devenir nacional y debe ser  motivo de orgullo y patriotismo para todas y todos los mexicanos. </p>
+<p align="justify">Y hoy,  con la aprobación de este dictamen, daremos un maravilloso homenaje a todos los  hombres y mujeres que lucharon por la Independencia de nuestro país y  mantendremos más viva que nunca la llama de la memoria de un pueblo que luchó  por la justicia y por la Patria.</p>
+<p align="justify">¡Que  viva don José María Morelos y Pavón! ¡Que vivan los héroes que nos dieron  Patria y libertad! ¡Que viva México!</p>
+<p align="justify">Muchas  gracias.</p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>¿Con  qué objeto, Senadora Kenia? Adelante.</p>
+<p align="justify"><strong>La  Senadora Kenia López Rabadán:</strong> Muchas gracias, señor  Presidente.</p>
+<p align="justify">Hoy las  comisiones de dictamen nos conminan a votar a favor de este dictamen por los  ideales de igualdad, de libertad y de justicia, esos ideales por los que  pelearon e incluso varios de ellos dieron su vida, siendo hoy los héroes que  nos dieron Patria.</p>
+<p align="justify">Y justo  quiero ocupar estos minutos para llamar la atención del pueblo de México,  porque estamos deliberando algo que para los mexicanos tendría que ser  importante y es la libertad, la libertad de hablar, la libertad de pensar, la  libertad de prensa.</p>
+<p align="justify">Una  organización muy conocida a nivel nacional e internacional llamada Artículo 19  hizo públicas las pruebas con las que se demuestra que en este gobierno se  espía a los periodistas y a los defensores de derechos humanos. Dijeron que ya  no iba a haber espionaje en este gobierno y claramente hoy hay pruebas que  demuestran que están usando el software Pegasus para espiar, entre otros, a  periodistas que han defendido la verdad.</p>
+<p align="justify">Han  dado pruebas que espían al periodista Ricardo Raphael y en lugar de que el  Presidente haya hoy hecho una declaración pública para decirle a Ricardo  Raphael y a los demás periodistas: &ldquo;Perdonen, disculpen, no se les va a volver  a espiar&rdquo;, en lugar de decir el Presidente de la República que es  inconstitucional e ilegal, pero sobre todo inmoral, espiar a los periodistas,  ¿qué creen que hizo hoy López Obrador desde La Mañanera? Arremetió contra  Ricardo Raphael.</p>
+<p align="justify">Y si hoy  vamos a votar este dictamen quiero decirles desde aquí, compañeras y  compañeros, desde aquí, desde el Senado de la República, que no podemos  permitir que el Presidente ocupe todo el aparato del Estado en contra de los  periodistas, no podemos permitir que en lugar de pedirle una disculpa a Ricardo  Raphael y a todos los periodistas que han sido lastimosamente espiados, el  Presidente arremeta y los siga violentando.</p>
+<p align="justify"> Desde  aquí y en esta reflexión del dictamen en turno, le digo a Ricardo Raphael y a  todos los periodistas espiados, nuestra más alta solidaridad, nuestro más alto  reconocimiento y nuestro más alto respeto, porque así como queremos honrar a  quienes dieron su vida y a quienes defendieron a México, hoy estamos obligados  a defender a quienes dicen la verdad.</p>
+<p align="justify">Nosotros,  en el Partido Acción Nacional, señores periodistas, los respaldamos; nosotros,  en el Partido Acción Nacional, acompañaremos este dictamen y por supuesto  seguiremos reclamando que se ocupe el apartado del Estado para lastimar a los  periodistas y para espiarlos.</p>
+<p align="justify">Es  cuanto, señor Presidente.</p>
+<p align="justify">Muchas  gracias.</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> Al no haber más oradoras ni oradores registrados en la discusión en lo general,  consulto a la Asamblea si existe interés en reservar algún artículo del  proyecto de Decreto. </p>
+<p align="justify">Consulte  la Secretaría a la Asamblea, en votación económica, si se encuentra  suficientemente discutido</p>
+<p align="justify"><strong>La  Secretaria Senadora Alejandra Lagunes Soto Ruiz:</strong> Consulto a la Asamblea, en votación económica, si el dictamen se encuentra  suficientemente discutido en lo general. Quienes estén por la afirmativa, favor  de levantar la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify"> Quienes  estén por la negativa, favor de levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify"> Suficientemente  discutido en lo general, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> Al no haber artículos en reserva, realice la votación nominal en lo general y  en lo particular en un solo acto. </p>
+<p align="justify">Háganse  los avisos a que se refiere el artículo 58 del Reglamento del Senado para  informar de la votación en lo general y en lo particular. Ábrase el sistema  electrónico por tres minutos para recoger la votación nominal. </p>
+<p align="justify">Tenemos  la vista de un grupo de estudiantes del Tecnológico de Monterrey, Campus  Cuernavaca. Nuestros visitantes acuden por invitación de la Senadora Lucy Meza. </p>
+<p align="justify">Jóvenes  estudiantes, les doy la bienvenida a la sesión del Senado de la República,  lleven con ustedes el deseo de las Senadoras y Senadores de que su visita les  proporcione información de utilidad en su formación profesional.</p>
+<p align="justify">¡Bienvenidos  a la casa de la República!</p>
+<p align="justify"><strong>La  Secretaria Senadora Alejandra Lagunes Soto Ruíz:</strong> Pregunto si hay algún Senador o Senadora que falte de emitir su voto. Sigue  abierto el sistema. </p>
+<p align="justify">¿Algún  otro Senador o Senadora que falte de emitir su voto? Sigue abierto el sistema. </p>
+<p align="justify">Senadora  Malú Micher, ¿lo canta o va a votar? Sigue abierto el sistema. </p>
+<p align="right"><strong>VOTACIÓN</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/votacion/4155"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier:</strong> Informe la Secretaría del resultado de la  votación. </p>
+<p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruiz:</strong> Señor Presidente, conforme al registro en el  sistema electrónico se emitieron 107 votos a favor, cero en contra y cero  abstenciones. </p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier:</strong> Queda aprobado en lo general y en lo  particular el Decreto para inscribir con letras doradas en el Muro de Honor del  Senado de la República, la leyenda: &ldquo;Sitio de Cuautla, 72 días de lucha&rdquo;. Se  remite al Diario Oficial de la Federación para su publicación. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106458'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106459'></a><p align="center"><strong>TURNO  DIRECTO</strong></p>
+<p align="justify"><strong>EXCITATIVAS</strong></p>
+<p align="justify">Del Senador Víctor Oswaldo Fuentes Solís, del grupo  parlamentario del PAN, relativa al proyecto de Decreto por el que se reforma el  artículo 27 de la Constitución Política de los Estados Unidos Mexicanos. Se  emite excitativa a las Comisiones Unidas de Puntos Constitucionales; y de  Estudios Legislativos, Segunda.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/SolExt_Sen.Victor_art.27_CPEUM_pedreras.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106459'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106460'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR EL QUE SE REFORMAN LOS  ARTÍCULOS 6 Y 7 DE LA LEY GENERAL PARA LA INCLUSIÓN DE LAS PERSONAS CON  DISCAPACIDAD </strong></p>
+<p align="justify"><strong>(Presentada por el  Senador Alejandro Armenta Mier, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Ini_Morena_Sen_Alejandro_Armenta_Art_6_7_Ley_Personas_Discapacidad.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106460'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106461'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 474 DE LA LEY FEDERAL DEL  TRABAJO, ASÍ COMO EL ARTÍCULO 42 DE LA LEY DEL SEGURO SOCIAL  </strong></p>
+<p align="justify"><strong>(Presentada por los Senadores  Geovanna Bañuelos, Cora Cecilia Pinedo Alonso, Martha Cecilia Márquez Alvarado  y Joel Padilla Peña, del grupo parlamentario del PT)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Inic_PT_dikversos_senadores_art_474_42_LSS.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106461'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106462'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMA LA FRACCIÓN II DEL ARTÍCULO 316 BIS Y  SE ADICIONA UN SEGUNDO PÁRRAFO AL ARTÍCULO 319 BIS DE LA LEY GENERAL DE SALUD,  Y EL INCISO Ñ) DE LA FRACCIÓN I DEL ARTÍCULO 44 DE LA LEY GENERAL DE  INSTITUCIONES Y PROCEDIMIENTOS ELECTORALES   </strong></p>
+<p align="justify"><strong>(Presentada por la Senadora  Martha Cecilia Márquez Alvarado, del grupo parlamentario del PT)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Inic_PT_Sen_Marquez_art_316bis_319bis_44_LGIyPE.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106462'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106463'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMAN LOS ARTÍCULOS 6o. Y 73 DE LA  CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS  </strong></p>
+<p align="justify"><strong>(Presentada por el Senador  Cristóbal Arias Solís, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Ini_Morena_Sen_Arias_Reforma_Art_6_73_CPEUM_Ciber_Seguridad.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106463'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106464'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMA LA LEY GENERAL DEL SISTEMA NACIONAL DE SEGURIDAD PÚBLICA  </strong></p>
+<p align="justify"><strong>(Presentada por el Senador  Cristóbal Arias Solís, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Ini_Morena_Sen_Arias_Seguridad_Cibernetica.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106464'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106465'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMAN LOS ARTÍCULOS 26 Y 27 DE LA LEY  AGRARIA   </strong></p>
+<p align="justify"><strong>(Presentada por el Senador  Santana Armando Guadiana Tijerina, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Ini_Morena_Sen_Guadiana_Art_26_27_Ley_Agraria.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106465'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106466'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 141 DE LA LEY GENERAL DE  SALUD </strong></p>
+<p align="justify"><strong>(Presentada por el Senador  César Arnulfo Cravioto Romero, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Ini_Morena_Sen_Cravioto_Art_141_Ley_Salud.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106466'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106467'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 115 DE LA CONSTITUCIÓN  POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS  </strong></p>
+<p align="justify"><strong>(Presentada por el Senador  César Arnulfo Cravioto Romero, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Ini_Morena_Sen_Cravioto_Art_115_CPEUM.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106467'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106468'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE EXPIDE LA LEY GENERAL PARA EL CUMPLIMIENTO DE COMPROMISOS PÚBLICOS  </strong></p>
+<p align="justify"><strong>(Presentada por el Senador  César Arnulfo Cravioto Romero, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Ini_Morena_Sen_Cravioto_Exp_Ley_Cumplimiento_Compromisos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106468'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106469'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE ADICIONA EL NUMERAL 2 DEL ARTÍCULO 6 DEL  REGLAMENTO DEL CANAL DE TELEVISIÓN DEL CONGRESO GENERAL DE LOS ESTADOS UNIDOS  MEXICANOS </strong></p>
+<p align="justify"><strong>(Presentada por el Senador  César Arnulfo Cravioto Romero, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Ini_Morena_Sen_Cravioto_Reforma_Reglamento_TV_Congreso.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106469'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106470'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 90 DE LA LEY ORGÁNICA DEL  CONGRESO GENERAL DE LOS ESTADOS UNIDOS MEXICANOS  </strong></p>
+<p align="justify"><strong>(Presentada por las Senadoras y  Senadores integrantes de la Comisión de Ciencia y Tecnología)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Ini_Com_Ciencia_Tecnologia_Art_90_LOCG.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106470'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106471'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE ADICIONA Y REFORMA EL ARTÍCULO 35 DE LA  CONSTITUCIÓN POLÍTICA DE LOS ESTADO UNIDOS MEXICANOS  </strong></p>
+<p align="justify"><strong>(Presentada por el Senador  César Arnulfo Cravioto Romero, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Ini_Morena_Sen_Cravioto_Art_35_CPEUM.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106471'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106472'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 9 DE LA LEY GENERAL DE  EDUCACIÓN  </strong></p>
+<p align="justify"><strong>(Presentada por el Senador  Ricardo Monreal Ávila, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Ini_Morena_Sen_Monreal_Art_9_Ley_Gral_Educacion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106472'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106473'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE MODIFICAN LOS ARTÍCULOS 30 Y 40 DE LA LEY  FEDERAL DE LOS TRABAJADORES AL SERVICIO DEL ESTADO, REGLAMENTARIA DEL APARTADO  B) DEL ARTÍCULO 123 CONSTITUCIONAL </strong></p>
+<p align="justify"><strong>(Presentada por el Senador Ricardo  Velázquez Meza, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Ini_Morena_Sen_Meza_Art_30_40_Ley_Federal_Trabajadores_Estado.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106473'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106474'></a><p align="justify"><strong>PROPOSICIONES  CON PUNTO DE ACUERDO</strong></p>
+<p align="justify">De la  Senadora Gabriela Benavides Cobos, del grupo parlamentario del PVEM, con punto  de Acuerdo por el que se exhorta a la Secretaria de Medio Ambiente y Recursos  Naturales a considerar la decisión tomada por el titular de las oficinas de  Representación en el estado de Colima, de modificar la periodicidad en el cobro  de los premios otorgados en las playas marítimas para ejercer el comercio ambulante. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/PA_Pvem_Sen_Benavides_Premios_Palyas_Colima.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106474'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106475'></a><p align="justify">De los  Senadores Geovanna Bañuelos, Cora Cecilia Pinedo Alonso, Martha Cecilia Márquez  Alvarado y Joel Padilla Peña, del grupo parlamentario del PT, con punto de  Acuerdo por el que se exhorta a la Fiscalía General de la República, así como a  sus homólogas en las 32 entidades federativas, a redoblar los esfuerzos en la  investigación de las denuncias relativas a las agresiones en las que han visto  afectada su integridad física o han perdido la vida, personas defensoras de la  naturaleza en nuestro país y evitar la impunidad. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/PA_PT_personas_defensoras_de_la_naturaleza.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106475'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106476'></a><p align="justify">Del Senador  Rogelio Israel Zamora Guzmán, del grupo parlamentario del PVEM, con punto de  Acuerdo por el que se exhorta a la Secretaría de Relaciones Exteriores a  realizar jornadas informativas para los connacionales que asistirán al evento  de fútbol Mundial Qatar 2022, sobre las acciones que pueden ser consideradas  como delitos en el estado sede. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/PA_Sen.Rogelio_Mundial_Qatar_2022.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106476'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106477'></a><p align="justify">De la  Senadora Blanca Estela Piña Gudiño, del grupo parlamentario del Partido Morena,  con punto de Acuerdo por el que se exhorta al titular del Poder Ejecutivo  federal, para que decrete a la cuenca hidrográfica del río Chiquito de Morelia,  Michoacán, como área natural protegida federal en la categoría de área para la  protección de recursos naturales, para garantizar la seguridad hídrica de la  ciudad de Morelia y proteja los ecosistemas forestales y riparios de la cuenca  del río Chiquito, que es parte de la gran cuenca del lago de Cuitzeo. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/PA_Sen.Blanca_Cuenca_Hidrografica_Rio_Chiquito_Morelia.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106477'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106478'></a><p align="justify">De la  Senadora Lucy Meza, integrante del grupo parlamentario del Partido Morena, con  punto de Acuerdo por el que se exhorta al H. Ayuntamiento del municipio de  Tepoztlán del estado de Morelos, para que, a la brevedad posible, elabore el  plan de desarrollo urbano para evitar que se continué la venta irregular de  terrenos, en dicho municipio. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/PA_Sen.Meza_venta_irregular_terrenos_Tepoztlan.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106478'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106479'></a><p align="justify">De la  Senadora Claudia Esther Balderas Espinosa, integrante del grupo parlamentario  del Partido Morena, con punto de Acuerdo por  el que se exhorta a diversas autoridades para garantizar los derechos humanos y  laborales de los jornaleros agrícolas y sancionar su explotación. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/PA_Sen.Balderas_jornaleros_Agricolas.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106479'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106480'></a><p align="justify">Del Senador  Ricardo Velázquez Meza, del grupo parlamentario del Partido Morena, con punto  de Acuerdo por el que se exhorta a la Secretaría de Medio Ambiente y Recursos  Naturales; y al gobierno municipal de la Paz, para que, analicen mejorar la red  de alcantarillado de Baja California Sur y disminuir el impacto de las aguas  negras en las áreas naturales protegidas. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/PA_Sen.RVM_Medio_Ambiente.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106480'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106481'></a><p align="justify">Del Senador  José Ramón Enríquez Herrera, del grupo parlamentario del Partido Morena, con  punto de Acuerdo por el que se exhorta a la Secretaría de Educación Pública  para la homologación de personal que labora en CECyTE, COBACH Y  CONALEP. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/PA_Sen.Jose_Herrera_Educacion_Publica.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106481'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106482'></a><p align="justify">Del Senador  Rafael Espino de la Peña, del grupo parlamentario del Partido Morena, con punto  de Acuerdo por el que se exhorta al Servicio Nacional de Sanidad, Inocuidad y  Calidad Agroalimentaria, para que remita un informe sobre el estado actual del  marco normativo, administrativo y programático de las instancias de seguridad  nacional adscritas a su estructura. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/PA_Sen.Rafael_SENASICA.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106482'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106483'></a><p align="justify">Del Senador  Adolfo Gómez Hernández, del grupo parlamentario del Partido Morena, con punto  de Acuerdo por el que se solicita al titular de la Secretaría de Comunicaciones  y Transportes, para que, rinda un informe pormenorizado sobre la necesidad de  permanencia de la caseta de cobro Puente Caracol Número 29 km 113+200, ubicada  en la población de San Juan Bautista Tuxtepec, Oaxaca, con los límites con el  estado de Veracruz, debiendo informar en su caso, que carreteras, caminos o  puentes se benefician para su mantenimiento con dicha caseta de peaje. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/PA_Sen.Adolfo_mantenimiento_caseta.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106483'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106484'></a><p align="justify">De la  Senadora Lilly Téllez, del grupo parlamentario del PAN, con punto de Acuerdo  por el que se solicita al gobierno de México, a través de la Secretaría de  Marina, un informe sobre las investigaciones relacionadas con el desplome del  helicóptero Black Hawk por falta de combustible en el estado de Sinaloa, el 15  de julio de 2022, en dónde se indiquen los servidores públicos responsables y  las sanciones que se impondrán, así como las acciones que se implementarán para  evitar que se presente de nuevo una situación similar y en el que se respondan  las preguntas contenidas en el considerando cinco del presente documento. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/PA_Sen.Lilly_investigacion_helicoptero.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106484'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106485'></a><p align="justify"><strong>EFEMÉRIDES</strong></p>
+<p align="justify">Del Senador Adolfo Gómez Hernández, del grupo parlamentario  del Partido Morena, relativa al Día Internacional del Café.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Efeme_Sen.Adolfo_Dia_Int_del_Cafe.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106485'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106486'></a><p align="justify">De la Senadora Marcela Mora, del grupo parlamentario  del PES, relativa al Día Internacional de la No Violencia.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Efeme_Sen.Mora_Dia_Int_no_Violencia.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106486'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106487'></a><p align="justify">De la Senadora Marcela Mora, del grupo parlamentario  del PES, relativa al Día Mundial del Hábitat 2022.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-10-04-1/assets/documentos/Efem_Sen.Mora_Dia_Mundial_Habitat.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106487'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106488'></a><p align="justify"><strong>AGENDA  POLÍTICA</strong></p>
+<p align="justify">De las Senadoras y Senadores del grupo  parlamentario del Partido Morena, para referirse a la situación política del  país. </p>
+<p align="justify">De las Senadoras y Senadores del grupo  parlamentario del PAN, para referirse a la situación política del país.</p>
+<p align="justify">De las Senadoras y Senadores del grupo  parlamentario del PRI, para referirse a la situación política nacional.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106488'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106489'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify">Se cita a la sesión ordinaria este mismo  día, a las 13:30 horas en este recinto.</p>
+<p align="justify">Informo que a partir de este momento  estará abierto el sistema electrónico para registrar su asistencia. </p>
+<p align="justify">Se levanta la sesión.</p>
+<p align="center">(Se levantó la sesión a las 13:25 horas)<strong> </strong></p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106489'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

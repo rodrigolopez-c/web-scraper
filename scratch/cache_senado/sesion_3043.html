@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 33</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesión Protocolaria Celebrada<br>en la Ciudad de M&eacute;xico, el 11 de Diciembre de 2018</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/1/PPO/PDF-WEB/PPO_No._33_11_DICIEMBRE_2018.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='80794'></a><p align="center"><strong>PRESIDENCIA DEL SENADOR</strong><br>
+  <strong>MARTÍ BATRES GUADARRAMA</strong><strong> </strong></p>
+<p align="justify"><strong>APERTURA</strong><strong> </strong></p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>(11:54 horas) Abrimos la  sesión protocolaria, en ésta, nos harán la presentación de las Conclusiones de  la Consulta &ldquo;Voces&rdquo;, realizada en nuestro país por la organización de ciudadanas  y ciudadanos Save the Children. </p>
+<p align="justify">Se trata  de una organización que acude ante niñas, niños y adolescentes de regiones  urbanas y rurales, para conocer de manera directa los problemas que les afectan  y hacer llegar la información a quienes toman las decisiones de política  pública. </p>
+<p align="justify">En el  salón contiguo a este recinto se encuentran los integrantes de la Organización  No Gubernamental Save the Children. </p>
+<p align="justify">Solicito  a las Senadoras y a los Senadores Josefina Vázquez Mota, Lilia Margarita Valdez  Martínez, Patricia Mercado Castro, María Antonia Cárdenas Mariscal, María  Guadalupe Covarrubias Cervantes, Martha Cecilia Márquez Alvarado, Eunice Renata  Romo Molina y Rubén Rocha Moya, inviten a pasar a nuestros visitantes al  interior de este recinto. </p>
+<p align="center">(La  comisión cumple)</p>
+<p align="justify"> Compañeras  y compañeros integrantes del Senado:</p>
+<p align="justify">Tenemos  la visita de representantes de la Organización Save the Children, que acuden  ante la Asamblea para hacer la presentación de las conclusiones de la consulta que dicha organización  realizó en nuestro país durante el pasado mes de abril. </p>
+<p align="justify">Saludo la  presencia de Ivonne Piedras, Coordinadora de Incidencia y Campañas. </p>
+<p align="justify">Un  aplauso, por favor. </p>
+<p align="center">(Aplausos)</p>
+<p align="justify">De Patricia  López, Oficial de Incidencia Política. </p>
+<p align="justify">De  Azucena García, Directora de Comunicación. </p>
+<p align="justify">Y de  Diana Fajardo, Líder de Atención Directa. </p>
+<p align="justify">Todas  representantes de la Organización Save the Children, Organización dedicada a  impulsar los derechos de la infancia. </p>
+<p align="justify">Están  también presentes las jóvenes y el joven María de los Ángeles Madueño   Cárdenas, Cindy Janeth Quiñones Santiago y José  Israel Lozoya Martínez, quienes  participaron en la consulta realizada y harán la presentación de las  conclusiones. </p>
+<p align="justify">Todos  acuden ante nuestra Asamblea, invitadas e invitados por la Senadora Josefina  Vázquez Mota, Presidenta de la Comisión de los Derechos de la Niñez y de la  Adolescencia, quien es importante promotora de diversas acciones en favor de  este sector poblacional y también de esta iniciativa de la reunión protocolaria  que tenemos el día de hoy. </p>
+<p align="justify">Menciono  que se encuentran al frente también las Senadoras y Senadores: Josefina Vázquez Mota, Lilia  Margarita Valdez Martínez, Patricia Mercado, Antonia Cárdenas, Guadalupe  Covarrubias, Cecilia Márquez, Eunice Renata Romo y Rubén Rocha Moya. </p>
+<p align="justify">Para el  Senado de la República, es de especial importancia el contacto directo con las  organizaciones ciudadanas y recibir de primera mano la información que  recopilan como producto de su actividad en favor de las niñas y los niños. </p>
+<p align="justify">Es  igualmente relevante escuchar a los jóvenes que tienen interés por acercarse a  los representantes populares. </p>
+<p align="justify">Como parte  de esta sesión protocolaria, solicito a la Senadora Josefina Vázquez Mota, se  dirija a la Asamblea para explicar la importancia de la Consulta &ldquo;Voces&rdquo; y de  la presencia de nuestros visitantes. </p>
+<p align="justify">Tiene la  palabra la Senadora Josefina Vázquez Mota.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a80794'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='80795'></a><p align="justify"><strong>CONCLUSIONES DE LA CONSULTA  &ldquo;VOCES&rdquo;, REALIZADA POR LA ORGANIZACIÓN SAVE THE CHILDREN Y LA SECRETARÍA DE  RELACIONES EXTERIORES</strong></p>
+<p align="justify"><strong>La Senadora Josefina  Vázquez Mota: </strong>Muchas gracias, señor Presidente, con su venia. Muy  buenos días. Estimadas Senadoras y Senadores de la República: </p>
+<p align="justify">Hoy  recibimos, y lo hago en plural, porque sé que lo hacemos todas y todos juntos,  con gran afecto y con respeto, a Cindy Janeth Quiñones Santiago, a Israel  Lozoya Martínez y a María de los Ángeles Madueño Cárdenas. </p>
+<p align="justify">A sus  acompañantes: </p>
+<p align="justify">Ivonne  Piedras, Patricia López, Azucena García y Diana Fajardo. </p>
+<p align="justify">Todos  participantes de la Consulta &ldquo;Voces&rdquo;, promovida por Save the Children. </p>
+<p align="justify">&ldquo;La voz  tiene poder, la gente escucha cuando hablamos no se trata de combatir el  terrorismo con violencia, sino con palabras&rdquo;. Así lo dijo Malala, Premio Nobel  de la Paz, en el año 2014. </p>
+<p align="justify">&ldquo;Voces&rdquo;,  queridas Senadoras y Senadores, es una consulta realizada por Save the  Children, hecha a más de 3 mil niñas, niños y adolescentes en 13 entidades  federativas de nuestro país. </p>
+<p align="justify">Ellos  compartieron su sentir, sus preocupaciones, sus propuestas de cambio para  resolver la problemática que ellos enfrentan, para decirnos el México que  quieren y para decirnos también el México que no quieren que siga adelante. </p>
+<p align="justify">El  derecho a la participación de niñas, niños y adolescentes, es uno de los  derechos con mayores retos en el país. </p>
+<p align="justify">En este  sentido, a través de la Consulta &ldquo;Voces&rdquo;, se ratificó algo que a muchos ya nos  preocupaba, se ratificó que existen pocos o nulos espacios de participación y  escucha efectiva para la niñez y la adolescencia en nuestro país. </p>
+<p align="justify">Por estas  razones, para fortalecer este derecho y este interés superior de las niñas, los  niños y los adolescentes, quiero agradecer a todas las Senadoras y Senadores  miembros de nuestra comisión por su apoyo y su respaldo. </p>
+<p align="justify">Y quiero  agradecer de manera muy especial a la Mesa Directiva. </p>
+<p align="justify">Quiero  agradecer al Presidente Martí Batres y a todos los participantes de la Mesa,  que han abierto este espacio de manera tan particular para escuchar las voces  más importantes en nuestro país. </p>
+<p align="justify">En este  día, en que se celebra el aniversario 72 de UNICEF, desde esta tribuna  escuchamos sus voces. </p>
+<p align="justify">Ustedes  hablarán por esas 3 mil niñas, niños y adolescentes que hablaron en &ldquo;Voces&rdquo;,  los vamos a escuchar con atención y respeto. </p>
+<p align="justify">Tienen  muy claro qué tenemos que hacer para garantizarles un Estado que salvaguarde  sus derechos.<br>
+  <br>
+  Por el  interés superior de las niñas, los niños y los adolescentes de nuestro país,  les damos la bienvenida. </p>
+<p align="justify">Es un  honor tenerles con nosotros y los escuchamos con atención. </p>
+<p align="justify">Enhorabuena  por este Senado que abre sus puertas de par en par, para escuchar las voces de  nuestros niños y adolescentes de todo el país. <br>
+  <br>
+  Gracias, señor  Presidente. </p>
+<p align="justify">Gracias a  quienes lo han hecho posible.</p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Muchas gracias, Senadora  Josefina Vázquez Mota.</p>
+<p align="justify">Gracias  por sus comentarios. </p>
+<p align="justify">Nuestros  visitantes harán la presentación de las Conclusiones de la Consulta &ldquo;Voces&rdquo;, en  exposiciones separadas conoceremos el contenido de las conclusiones,  escucharemos primero la intervención de María de los Ángeles Madueño Cárdenas  para exponer las conclusiones. </p>
+<p align="justify">Adelante,  por favor. </p>
+<p align="justify"><strong>La joven María de los  Ángeles Madueño Cárdenas: </strong>Muy buenos días tengan  todos ustedes. </p>
+<p align="justify">Apreciable  Cámara de Senadores:</p>
+<p align="justify">Mi nombre  es María de los Ángeles Madueño Cárdenas, tengo 15 años, vengo de la ciudad de  Culiacán, Sinaloa, y vengo en representación de la Red Paz MX.</p>
+<p align="justify">La Red Paz  MX es una red juvenil defensora de los derechos de la niñez y juventud, que por  medio de una cultura de paz buscamos reducir los índices de violencia que  vivimos día a día en las localidades de Huixtla, Chiapas; Acapulco, Guerrero;  Monterrey, Nuevo León; Tijuana, Baja California; y Culiacán y Navolato, en Sinaloa.</p>
+<p align="justify">Esto se  hace a través de actividades como: campañas de sensibilización, talleres en  escuelas, foros y conversatorios con autoridades y jóvenes, jornadas y ferias  temáticas y, sobre todo, incidencia con actores políticos.</p>
+<p align="justify">El día de  hoy mis compañeros y yo les presentaremos algunas reflexiones de &ldquo;Voces&rdquo;, que  es el primer ejercicio amplio en donde se consulta a niños, niñas, adolescentes  y jóvenes de México que participan en los distintos programas que Save the  Children impulsa.</p>
+<p align="justify">En esta  consulta se pregunta a poco más de 3 mil niños, niñas, adolescentes y jóvenes  provenientes de 60 escuelas de tres entidades federativas sus opiniones y  percepciones respecto a los contextos y realidades que viven día a día.</p>
+<p align="justify">Los datos  que más nos llamaron la atención son aquellos relacionados con la educación, la  migración, el trabajo infantil y la igualdad entre hombres y mujeres.</p>
+<p align="justify">La  educación es muy importante.<br>
+  <br>
+  Algo  alarmante es que la Consulta &ldquo;Voces&rdquo; nos señala que el 56 por ciento de los  niños, niñas, adolescentes y jóvenes encuestados no les gusta la escuela, y es  cierto, en mi escuela he visto que por no interesarles la escuela se les hace  fácil entrar a bandas del crimen organizado; esto podría ser, en gran medida,  que al 20 por ciento de los entrevistados no les gustan sus maestros, pues  existe el problema de que son demasiados alumnos para un solo maestro y por lo  que el docente no tiene el suficiente tiempo para conocer al alumno y mejorar  sus capacidades.</p>
+<p align="justify">Otras  razones por las que los niños, niñas, adolescentes y jóvenes piensan en  abandonar la escuela, es porque cerca del 12 por ciento no cuentan con el  suficiente recurso para asistir al plantel, mientras que el 16 por ciento tiene  que trabajar.</p>
+<p align="justify">Este  último dato es alarmante, pues son más los niños de nivel de primaria que  trabajan con un 51 por ciento que los jóvenes de nivel bachillerato con un 40 por  ciento.</p>
+<p align="justify">También  algo que nos llamó mucho la atención y nos preocupó, es que las mujeres se  sienten más inseguras que los hombres. </p>
+<p align="justify">¿Por qué  pasa esto? Porque una mujer es más vulnerable a un hombre.</p>
+<p align="justify">Aquí se  ven reflejados los estereotipos de género, cuando un 51 por ciento considera  que son las mujeres quienes tienen mayores posibilidades de ser agredidas o  lastimadas, pues un 43 por ciento piensa que son débiles, mientras que un 40 por  ciento piensa que el machismo puede ser una razón.</p>
+<p align="justify">A  continuación, le cederé el uso del micrófono a mi compañera Cindy para que nos  hable más acerca de &ldquo;Voces&rdquo;.</p>
+<p align="justify">Gracias.</p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Muchas gracias.</p>
+<p align="justify">Tiene  ahora la palabra Cindy Janeth Quiñones Santiago, para exponer las conclusiones.</p>
+<p align="justify"><strong>La joven Cindy Janeth  Quiñones Santiago: </strong>Muy buenos días.</p>
+<p align="justify">Mi nombre  es Cindy Quiñones, soy de la comunidad de Villa Juárez, Navolato, en Sinaloa,  tengo 18 años de edad y al igual que mi compañera soy parte de la Red Paz MX.</p>
+<p align="justify">Y en el  marco de escuchar la perspectiva de nosotros como jóvenes, &ldquo;Voces&rdquo; nos pareció  un ejercicio interesante porque los datos que se perciben en él son reales y  susceptibles para que todas y todos podamos profundizar en ellos.</p>
+<p align="justify">Por  ejemplo, en el apartado de trabajo decente &ldquo;Voces&rdquo; nos indica, como ya nos  había comentado Ángeles, que el 51 por ciento de los niños que trabajan están  en el nivel primaria sobrepasando secundaria y bachillerato.</p>
+<p align="justify">Lo que  aún es más alarmante, es que estos niños y niñas trabajan en campos agrícolas,  aunque éste esté considerado como una de las peores formas de trabajo infantil  y está claramente prohibido en las leyes mexicanas.</p>
+<p align="justify">Un hecho  que le sintoniza a este dato es que el 8 por ciento de la niñez y adolescencia  piensa trabajar con la intención de apoyar económicamente a sus padres en los  hogares.</p>
+<p align="justify">Podemos  interpretar entonces que la población infantil está preocupada actualmente por  la pobreza que vive día a día, y ellos miran la necesidad y observan la falta  de ingresos que repercute claramente y se refleja en su derecho a la  recreación, a la educación y, sobre todo, al juego.<br>
+  <br>
+  Y esto  nos lleva a la reflexión, y me pregunto: ¿Por qué un niño o niña debe estar  preocupado por la estabilidad económica que hay en sus hogares?, y ¿por qué  esté niños o niña siente responsabilidad de apoyar económicamente a ésta?</p>
+<p align="justify">Partiendo  de esto, yo vivo en una comunidad que es receptora de niñez y adolescencia  migrante, situaciones de pobreza y vulnerabilidad de derechos son vistas con  frecuencia.</p>
+<p align="justify">&ldquo;Voces&rdquo;  nos indica que el 20 por ciento de la niñez y adolescencia deciden migrar  porque en sus lugares de origen no se sienten seguros, forzándolos,  obligándolos prácticamente a abandonar su lugar de origen para sentirse  protegidos y desarrollar su integridad.</p>
+<p align="justify">&ldquo;Voces&rdquo;  nos muestra una percepción diferente, ya que nos muestra una percepción real,  nos muestra la percepción de la niñez y la adolescencia que tenemos en el país.</p>
+<p align="justify">Nosotros  acá estamos presentes y les tenemos unas propuestas claras que podrían  solucionar estas problemáticas, y en primer lugar está en tener maestros  capacitados y que ellos tengan más horas con el alumnado, que sean grupos  pequeños para que el aprendizaje sea ameno a las condiciones que cada  personalidad requiere, esto motivará a que la adolescencia y juventud estudie y  no involucrarse en el tema de crimen organizado, así como mejorar el sistema  educativo para crear ciudadanos conscientes y participativos con críticas  reflexivas en lo que ocurre actualmente en nuestro país, sobre todo evaluar la  implementación del presupuesto designado a reducir la inseguridad y delitos de  alto impacto y tomarlo como referencia para la reducción de la violencia.</p>
+<p align="justify">Y les  pregunto, ¿cuánto gasta el gobierno en la niñez y cuánto gasta en las familias?</p>
+<p align="justify">Este  hecho se debe garantizar para que todas las familias tengan acceso al empleo y  que este empleo sea bien remunerado, y distribuir esos trabajos en las  localidades conforme se necesita, así como hacer que los padres y madres de  familia reconozcan y hagan valer la prohibición del trabajo infantil y, sobre  todo, crear mecanismos para que la adolescencia y juventud pueda seguir  estudiando y trabajar, siendo éste bien remunerado, claramente, y permitiendo  su desarrollo y garantía de derechos.</p>
+<p align="justify">Sobre  todo, y por último, es implementar programas de respeto hacia las niñas,  adolescentes y mujeres en la protección de su integridad.</p>
+<p align="justify">Y me  gustaría, para cederle el uso de la voz a mi compañero Israel, es que no se  pueden crear políticas públicas para las niñas, niños y adolescentes sin la  niñez y la adolescencia, es importante que nos incluyan.</p>
+<p align="justify">Muchas  gracias.</p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Muchas gracias.</p>
+<p align="justify">Tiene  ahora el uso de la palabra José Israel Lozoya Martínez, para exponer las  conclusiones.</p>
+<p align="justify"><strong>El joven José Israel Lozoya  Martínez: </strong>Buenos días tengan todas y todos ustedes Senadoras  y Senadores de la República.</p>
+<p align="justify">Soy José  Israel Lozoya Martínez, tengo 16 años y soy originario de la ciudad de  Culiacán, Sinaloa.</p>
+<p align="justify">Al igual  que mis compañeras, soy representante de la Red Paz MX.</p>
+<p align="justify">Como  narra la Convención de los Derechos del Niño en su artículo número 12, dice:  &ldquo;que la niñez tiene derecho a participar en todas las decisiones que los afecten&rdquo;,  este derecho actualmente es incumplido debido a que la opinión de los niños,  niñas y adolescentes es irrelevante para una de la mayoría de los tomadores de  decisiones.<br>
+  <br>
+  Es  necesario resaltar que la participación de niños, niñas, adolescentes y jóvenes  es importante, puesto que, de acuerdo con datos de la Universidad Nacional  Autónoma de México, un cuarto de los adultos considera que nuestras opiniones  en las decisiones políticas deben ser consideradas poco o nada; y dos de cada  diez piensa que nosotros participamos a través de nuestros padres y otros  adultos.</p>
+<p align="justify">Esto es  indignante, puesto que nosotros, los niños, niñas, adolescentes y jóvenes al  igual que los adultos somos parte de esta sociedad, y lo que en los diversos  órganos de gobierno se decida, y todo lo que ocurre en el país a causa de estas  decisiones, es sentido por nosotros.</p>
+<p align="justify">Queremos  ser escuchados y que nos sean abiertos espacios de participación, pero no  queremos que sean espacios simulados y que nuestros comentarios y propuestas  sean dejados en lugares de participación vacíos y sin trascendencia.</p>
+<p align="justify">Una  legislación que proteja a la niñez y a la juventud no sólo protege a la  actualidad, sino que también defiende el futuro, dado que las decisiones que se  tomen ahora, nos afectarán tanto como en el presente, como en el futuro.</p>
+<p align="justify">¿Cómo se  piensa crear leyes y programas orientados a resolver nuestras necesidades y  problemáticas sin tener nuestra percepción?</p>
+<p align="justify">Con este  ejercicio de &ldquo;Voces&rdquo;, se crea un amplio ejercicio de participación que no sólo  tiene opiniones de una sola comunidad, sino de 13 entidades federativas con  diferentes perfiles y problemáticas.</p>
+<p align="justify">El mundo  adulto nos ve como algo intrascendente, argumenta que somos el futuro, pero no  aboga por que nos interés serlo. Aun así, tenemos capacidad, la experiencia,  tenemos la energía, la condición de vida, y aún mucho más importante, tenemos  las ganas de mejorarlo para bien.</p>
+<p align="justify">Quizá, en  el futuro, seamos nosotros quienes tomemos las decisiones que ustedes están  tomando sobre cualquier tema; y seamos nosotros quienes tengamos que responder  por las circunstancias del pasado.</p>
+<p align="justify">Por ende,  es necesario que se abran estos espacios en todos los estados y municipios para  escuchar nuestras voces, y que se sigan abriendo espacios aquí, en la Cámara de  Senadores, y en otros poderes federales. </p>
+<p align="justify">Pedimos,  en nombre de todos nuestros compañeros de Red Paz MX y todos los niños, niñas,  adolescentes y jóvenes de este país, la representación de la juventud y de la  niñez en el Poder Legislativo a nivel nacional y estatal.</p>
+<p align="justify">Se nos  debe consultar, puesto que nosotros podemos darles datos que a ustedes les  pueden servir para generar leyes que beneficien a todos y a todas sobre  cualquier tema.</p>
+<p align="justify">También  tenemos la exigencia de que cambien la forma de ver a la niñez y a la juventud,  pues no somos egoístas y pensamos en el desarrollo colectivo.</p>
+<p align="justify">Finalmente,  la participación juvenil en espacios políticos es una esperanza para rescatar  lo perdido, y salvaguardar lo que está en riesgo.</p>
+<p align="justify">Muchas  gracias.</p>
+<p align="justify">Para  concluir, me gustaría hacer entrega de estos libros de Consulta &ldquo;Voces&rdquo; a la  Mesa Directiva, para que sea de su conocimiento los datos que en esta  investigación se recogen, y pues tengan un mejor conocimiento de la situación  de la niñez y la juventud en el país.<br>
+  <br>
+  <strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Muchas gracias a las niñas  y niños que han tomado la palabra en sus exposiciones. Hicieron entrega del  informe resultante de la consulta que realizaron.</p>
+<p align="justify">Se tiene  por recibido y se publicará en la Gaceta del Senado. </p>
+<p align="justify">También  se remitirá a la Comisión de los Derechos de la Niñez y de la Adolescencia.</p>
+<p align="justify">Hoy  escuchamos a la sociedad civil, y más aún, todavía más importante, escuchamos a  niñas, niños y adolescentes en la principal tribuna del Senado de la República,  esto constituye un ejercicio de Parlamentario Abierto, abierto a la sociedad y  abierto a uno de los temas más sensible que debe abordare el Congreso mexicano.</p>
+<p align="justify">Save the  Children es una organización que tiene un siglo de existencia, y recientemente  ha denunciado que 30 millones de niñas y niños mexicanos viven en la pobreza,  15 millones de los cuales en pobreza extrema, y que 70 por ciento de las niñas  y los niños sufren algún tipo de maltrato.</p>
+<p align="justify">Es una  organización reconocida internacionalmente, y hoy ha tenido la oportunidad de  hablar con el Senado de la República.</p>
+<p align="justify">A nombre  del Senado, agradezco a nuestros visitantes su asistencia a la Asamblea y la  calidad de sus exposiciones, y les expreso el reconocimiento de este órgano  legislativo por las acciones que realizan, y por la labor que ello implica  involucrando a la niñez y a la adolescencia y buscando su beneficio.</p>
+<p align="justify">Muchas  gracias por haber acudido al Senado a Save the Children, y a las niñas y los  niños que hoy hablaron en la máxima tribuna del Senado de la República.</p>
+<p align="justify">Solicito  a la comisión designada acompañe a nuestros visitantes cuando deseen retirarse  del salón.</p>
+<p align="center">(La  comisión cumple)</p>
+<p align="justify">Se da por  concluida la sesión protocolaria.</p>
+<p align="justify">Pido a las  Senadoras y Senadores permanezcan en sus lugares para continuar con los asuntos  de nuestra sesión ordinaria.</p>
+<p align="justify">Se  levanta la sesión protocolaria.</p>
+<p align="center">(Se levantó la sesión  protocolaria a las 12:17 horas) </p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Delegación Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfonos: 53-45-30-00<br>
+        Exts. 5405/5408</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+        Correo electrónico: diario_debates@senado.gob.mx</p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a80795'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

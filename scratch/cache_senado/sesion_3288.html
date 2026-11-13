@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 12</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Olga María del Carmen Sánchez Cordero Dávila</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 07 de Octubre de 2021</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/1/PPO/PDF-WEB/PPO_No.12_7-OCTUBRE-2021-SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100491'></a><p align="center"><strong>PRESIDENCIA DE LA SENADORA </strong><br>
+  <strong>OLGA MARÍA DEL CARMEN SÁNCHEZ  CORDERO DÁVILA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Olga  María del Carmen Sánchez Cordero Dávila: </strong>(11:08 horas) Solicito a la  Secretaría informe a la Asamblea el resultado del cómputo de asistencia de las  señoras Senadoras y los señores Senadores, por favor.</p>
+<p align="justify"><strong>El Secretario Senador  Sergio Pérez Flores: </strong>Con gusto, señora Presidenta. Honorable Asamblea,  conforme al registro de asistencia, se han acreditado 78 ciudadanas Senadoras y  ciudadanos Senadores.</p>
+<p align="justify">En consecuencia, hay  quórum, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga  María del Carmen Sánchez Cordero Dávila: </strong>Se abre la sesión solemne  convocada para la entrega de la Medalla de Honor &ldquo;Belisario Domínguez&rdquo;,  correspondiente a los años 2020 y 2021.</p>
+<p align="justify">Solicito a la Secretaría dé  lectura a las comisiones de cortesía que han sido designadas para recibir y  acompañar a nuestros distinguidos invitados a esta sesión solemne.</p>
+<p align="justify"><strong>El Secretario Senador  Sergio Pérez Flores:</strong> Doy lectura a las comisiones protocolarias de esta  sesión solemne.</p>
+<p align="justify">Para recibir al licenciado  Adán Augusto López Hernández, en representación del titular del Ejecutivo  Federal:</p>
+<p align="justify">Los Senadores Mónica  Fernández Balboa, José Alfredo Botello Montes, Eruviel Ávila Villegas, Patricia  Mercado, Manuel Velasco Coello, Gonzalo Yáñez, Sasil de León Villard, Juan  Manuel Fócil Pérez y Eduardo Ramírez Aguilar.</p>
+<p align="justify">Para recibir al Ministro  Arturo Zaldívar Lelo de Larrea, Presidente de la Suprema Corte de Justicia de  la Nación:</p>
+<p align="justify">Los Senadores Julio Ramón  Menchaca Salazar, Nadia Navarro Acevedo, Verónica Martínez García, Noé Castañón  Ramírez, Rogelio Israel Zamora Guzmán, Joel Padilla Peña, Katya Elizabeth Ávila  Vázquez, Miguel Ángel Mancera Espinosa y Jesús Lucía Trasviña Waldenrath.</p>
+<p align="justify">Para recibir al Diputado  Sergio Gutiérrez Luna, Presidente de la Cámara de Diputados:</p>
+<p align="justify">Los Senadores Lucy Meza,  Ángel García Yáñez, Verónica Delgadillo García, María Graciela Gaitán Díaz,  Cora Cecilia Pinedo Alonso, Eunice Renata Romo Molina y Antonio García Conejo.</p>
+<p align="justify">Para recibir al doctor  Rutilio Escandón Cadenas, Gobernador del Estado de Chiapas:</p>
+<p align="justify">Los Senadores Alejandro  Armenta Mier, Nuvia Mayorga Delgado, Juan Zepeda, María Graciela Gaitán Díaz,  Elvia Marcela Mora Arellano y Freyda Marybel Villegas Canché.</p>
+<p align="justify">Para recibir al doctor  Jesús Agustín Velasco Suárez Siles, representante del doctor Manuel Velasco  Suárez:</p>
+<p align="justify">Los Senadores Lilia  Margarita Valdez Martínez, Luis David Ortiz Salinas, Gabriela Benavides Cobos y  Américo Villareal Anaya.<br>
+  <br>
+  Para recibir a la Senadora  Ifigenia Martínez Hernández.</p>
+<p align="justify">Los Senadores Rocío Adriana  Abreu Artiñano, Xóchitl Gálvez Ruiz, Claudia Ruiz Massieu Salinas, Dante  Delgado, Alejandra Lagunes Soto Ruiz, Miguel Ángel Mancera Espinosa y Elí César  Cervantes Rojas.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga  María del Carmen Sánchez Cordero Dávila: </strong>Se solicita a las  comisiones designadas acudan a las puertas de este recinto a fin de cumplir con  su cometido.</p>
+<p align="center">(Las comisiones cumplen)</p>
+<p align="justify">En tanto, se declara un  receso.</p>
+<p align="center">(RECESO)</p>
+<p align="justify"><strong>El  Secretario Senador Sergio Pérez Flores: </strong>Favor de tomar asiento. </p>
+<p align="justify"><strong>La  Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Muchas  gracias. Se reanuda la sesión solemne.</p>
+<p align="justify">Con  fundamento en lo dispuesto por el artículo 100 de la Ley Orgánica del Congreso  General; y el artículo 9 del Reglamento de la Medalla de Honor &ldquo;Belisario  Domínguez&rdquo;, damos inicio a la sesión solemne convocada para hacer la entrega de  este galardón y de los diplomas correspondientes a los años 2020 y 2021.</p>
+<p align="justify">Para el  año 2020 la entrega sería a las personas integrantes del Sistema Nacional de  Salud por su lucha contra el COVID-19.</p>
+<p align="justify">Para el  año 2021 realizaremos dos entregas de la Medalla de Honor &ldquo;Belisario  Domínguez&rdquo;, una de ellas de manera póstuma al doctor Manuel Velasco Suárez, y  otra a nuestra distinguida compañera y Senadora decana Ifigenia Martínez  Hernández.</p>
+<p align="justify">Damos la  bienvenida al representante del titular del Ejecutivo Federal, licenciado Adán  Augusto López Hernández, Secretario de Gobernación.</p>
+<p align="justify">Al  Ministro Presidente de la Suprema Corte de Justicia de la Nación, Arturo  Zaldívar Lelo de Larrea.</p>
+<p align="justify">A la  ciudadana Senadora Ifigenia Martínez Hernández y al doctor Jesús Agustín  Velasco Suárez Siles, en representación de nuestro galardonado, el doctor  Manuel Velasco Suárez.</p>
+<p align="justify">Asimismo,  damos la más cordial bienvenida al Gobernador del Estado de Chiapas, Rutilio  Cruz Escandón Cadenas.</p>
+<p align="justify">A los  representantes de los poderes del estado de Chiapas.</p>
+<p align="justify">Al  Presidente Municipal de Comitán, Chiapas, Emmanuel Cordero Sánchez.</p>
+<p align="justify">Y,  asimismo, saludo la presencia de la licenciada Rosa Icela Rodríguez Velázquez,  Secretaria de Seguridad y Protección Ciudadana.</p>
+<p align="justify">Del  doctor Santiago Nieto Castillo, titular de la Unidad de Inteligencia Financiera  de la Secretaría de Hacienda y Crédito Público.</p>
+<p align="justify">Y, nuevamente, a don Porfirio Muñoz Ledo.<br>
+  <br>
+  Asimismo, también doy la bienvenida a María de la  Luz Mijangos, Fiscal Anticorrupción de la Fiscalía General de la República. </p>
+<p align="justify">Agradecemos la asistencia de las distinguidas  personalidades que con anterioridad recibieron la Medalla de Honor &ldquo;Belisario  Domínguez&rdquo;, todas y todos honran con su presencia esta sesión solmene y al Senado  de la República. </p>
+<p align="justify">Solicito a la Secretaría proceda a pasar lista de  honor. </p>
+<p align="justify"><strong>El Secretario Senador Sergio  Pérez Flores:</strong> Se  les solicita ponerse de pie.</p>
+<p align="center">(Todos de pie)</p>
+<p align="justify">&ldquo;¡Senador Belisario Domínguez!&rdquo; </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María  del Carmen Sánchez Cordero Dávila:</strong> &ldquo;¡Murió por la patria, en defensa de la libertad!&rdquo;</p>
+<p align="justify"><strong>El Secretario Senador Sergio  Pérez Flores:</strong> Sírvanse tomar asiento. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100491'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100492'></a><p align="justify"><strong>La Presidenta Senadora Olga María  del Carmen Sánchez Cordero Dávila:</strong> Solicito al Senador Sergio Pérez Flores, Secretario  de la Mesa Directiva, dé lectura a la histórica proclama del doctor y Senador  Belisario Domínguez, correspondiente a la XXVII Legislatura del Senado de la  República.</p>
+<p align="justify"><strong>LECTURA DE LA </strong><strong>HISTÓRICA PROCLAMA DEL SENADOR  BELISARIO DOMÍNGUEZ</strong></p>
+<p align="justify"><strong>El Secretario Senador Sergio  Pérez Flores:</strong> Daré lectura al texto del discurso del Senador Belisario Domínguez.</p>
+<p align="justify">Señor Presidente del Senado, por tratarse de un  asunto urgentísimo para la salud de la Patria, me veo obligado a  prescindir de las fórmulas acostumbradas y suplicar a usted se sirva dar  principio a esta sesión tomando conocimiento de este pliego y dándolo a conocer  enseguida a los señores Senadores.  Insisto, señor presidente, en que este asunto debe ser conocido por el Senado  en este mismo momento, porque dentro de pocas horas lo conocerá el público y  urge que el Senado lo conozca antes que nadie. </p>
+<p align="justify">Señores Senadores: Todos  vosotros habéis leído con profundo interés el informe presentado por D.  Victoriano Huerta ante el Congreso de la Unión el 16 del presente.</p>
+<p align="justify">Indudablemente, señores  Senadores, lo mismo que a mí, os ha llenado de indignación el cúmulo de  falsedades que encierra ese documento. ¿A quién se pretende engañar, señores?  ¿Al Congreso de la Unión? No, señores, todos sus miembros son hombres ilustrados  que se ocupan de política, que están al corriente de los sucesos del país y que  no pueden ser engañados sobre el particular. Se pretende engañar a la Nación  Mexicana, a esta noble Patria que, confiando en V. Honradez y en vuestro valor,  ha puesto en vuestras manos sus más caros intereses.</p>
+<p align="justify">¿Qué debe hacer en este caso  la Representación Nacional?</p>
+<p align="justify">Corresponder a la confianza  con que la Patria la ha honrado, decirle la verdad y no dejarla caer en el  abismo que se abre a sus pies.<br>
+  La verdad es ésta: Durante  el gobierno de don Victoriano Huerta, no solamente no se ha hecho nada en bien  de la pacificación del país, sino que la situación actual de la república es  infinitamente peor que antes: La Revolución se ha extendido en casi todos los  Estados: Muchas Naciones, antes buenas amigas de México, rehúsanse a reconocer  su gobierno, por ilegal; nuestra moneda encuéntrase despreciada en el  extranjero; nuestro crédito en agonía; la prensa entera de la República  amordazada o cobardemente vendida al gobierno y ocultando sistemáticamente la  verdad; nuestros campos abandonados; muchos pueblos arrasados y por último, el  hambre y la miseria en todas sus formas amenazan extenderse rápidamente en toda  la superficie de nuestra infortunada Patria.</p>
+<p align="justify">¿A qué se debe tan triste situación?</p>
+<p align="justify">Primero y antes que todo, a  que el pueblo mexicano no pueda resignarse a tener por Presidente de la  República a D. Victoriano Huerta, al soldado  que se amparó del poder por medio de la traición y cuyo primer acto al subir a  la Presidencia fue asesinar cobardemente al Presidente y Vicepresidente  legalmente elegidos por el voto popular, habiendo sido el primero de éstos  quien colmó de ascensos, honores y distinciones a D. Victoriano Huerta, y  habiendo sido él igualmente a quien D. Victoriano Huerta juró públicamente  lealtad y fidelidad inquebrantable.</p>
+<p align="justify">Y segundo, se debe esta  triste situación a los medios que D. Victoriano Huerta se ha propuesto emplear  para conseguir la pacificación. Esos medios ya sabéis cuáles han sido:  Únicamente muerte y exterminio para todos los hombres, familias y pueblos que  no simpaticen con su gobierno.</p>
+<p align="justify">La paz se hará, cueste lo  que cueste, ha dicho D. Victoriano Huerta. ¿Habéis profundizado, señores  Senadores, lo que significan esas palabras en el criterio egoísta y feroz de D.  Victoriano Huerta? Esas palabras significan que D. Victoriano Huerta está  dispuesto a derramar toda la sangre mexicana, a cubrir de cadáveres todo el  Territorio Nacional, a convertir en una inmensa ruina toda la extensión de  nuestra patria, con tal que él no abandone la Presidencia ni derrame una sola  de su propia sangre.</p>
+<p align="justify">En su loco afán por  conservar la Presidencia, D. Victoriano Huerta está cometiendo otra infamia:  Está  provocando con el pueblo de los  Estados Unidos de América un conflicto internacional en el que, si llegara a  resolverse por las armas irían estoicamente a dar y a encontrar la muerte todos  los mexicanos sobrevivientes a las amenazas de D. Victoriano Huerta; todos,  menos D. Victoriano Huerta ni D. Aureliano Blanquet, porque esos desgraciados  están manchados con el estigma de la traición, y el pueblo y el ejército los  repudiarían llegado el caso.</p>
+<p align="justify">Esa es en resumen la triste  realidad. Para los espíritus débiles parece que nuestra ruina es inevitable,  porque D. Victoriano Huerta se ha adueñado tanto del poder, que para asegurar  el triunfo de su candidatura a la Presidencia de la República en la parodia de  elecciones anunciadas para el 26 de octubre próximo, no ha vacilado en violar  la soberanía de la mayor parte de los Estados quitando a los Gobernadores  constitucionales o imponiendo Gobernadores militares que se encargarán de  burlar a los pueblos por medio de farsas ridículas y criminales.</p>
+<p align="justify">Sin embargo, señores, un  supremo esfuerzo puede salvarlo todo. Cumpla con su deber la Representación  Nacional y la Patria está salvada y volverá a florecer más grande y más unida y  más hermosa que nunca.</p>
+<p align="justify">La representación Nacional  debe deponer de la Presidencia de la República a D. Victoriano Huerta, por ser  él contra quien protestan con mucha razón, todos nuestros hermanos alzados en  armas y de consiguiente por ser él quien menos puede llevar a efecto la  pacificación, supremo anhelo de todos los mexicanos.<br>
+  <br>
+  Me diréis, señores, que la  tentativa es peligrosa, porque D. Victoriano Huerta es un soldado sanguinario y  feroz que asesina sin vacilación ni escrúpulo a todo aquél que le sirve de  obstáculo: ¡No importa, señores! La Patria os exige que cumpláis con vuestro  deber aún con el peligro y aún con la seguridad de perder la existencia. Si en  vuestra ansiedad de volver a ver reinar la paz en la República os habéis  equivocado, habéis creído las palabras falaces de un hombre que os ofreció  pacificar a la Nación en dos meses, y le habéis nombrado Presidente de la  República, hoy que veis claramente que este hombre es un impostor inepto y  malvado, que lleva a la Patria con toda velocidad hacia la ruina. ¿Dejaréis por  temor a la muerte que continúe en el poder?</p>
+<p align="justify">Penetrad en vosotros  mismos, señores, y resolved esta pregunta: ¿qué se diría de la tripulación de  un gran navío que en la más violenta tempestad y en un mar proceloso nombrara  piloto a un carnicero que sin ningún conocimiento náutico navegara por primera  vez y no tuviera más recomendación que la de haber traicionado y asesinado al  Capitán del barco?</p>
+<p align="justify">Vuestro deber es  imprescindible, señores, y la Patria espera de vosotros que sabréis cumplirlo.</p>
+<p align="justify">Cumpliendo ese primer  deber, será fácil a la Representación Nacional cumplir los otros que de él se  derivan, solicitándose en seguida de todos los jefes revolucionarios que cese  toda hostilidad y nombren sus delegados para que de común acuerdo elijan al  Presidente que deba convocar a elecciones presidenciales y cuidar que éstas se  efectúen con toda legalidad.</p>
+<p align="justify">El mundo está pendiente de  vosotros, señores miembros del Congreso Nacional mexicano, y la Patria espera  que la honréis ante el mundo evitándole la vergüenza de tener por Primer  Mandatario a un traidor y asesino.</p>
+<p align="justify">Firma: Dr. Belisario  Domínguez, Senador por el Estado de Chiapas.</p>
+<p align="justify">&quot;Nota: Urge que el  pueblo mexicano conozca este discurso para que apoye a la Representación  Nacional; y no pudiendo disponer de ninguna imprenta, recomiendo a todo el que  lo lea que saque cinco o más copias, insertando también esta nota y las  distribuya a sus amigos y conocidos de la capital y de los Estados. </p>
+<p align="justify">¡Ojalá hubiera un impresor  honrado y sin miedo!&quot; </p>
+<p align="justify">Es cuanto, señora  Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María  del Carmen Sánchez Cordero Dávila:</strong> Me permito informarles que la Medalla de Honor  &ldquo;Belisario Domínguez&rdquo; correspondiente al año 2020 conferida a las personas  integrantes del Sistema Nacional de Salud por su lucha contra el COVID, no ha  sido posible entregarla, no fue posible el año pasado, por las restricciones  sanitarias existentes desde el año anterior. </p>
+<p align="justify">Es por ello que la Mesa Directiva acordó que la  Medalla &ldquo;Belisario Domínguez 2020&rdquo; quede en resguardo de la Secretaría de la  Mesa Directiva, para que en una ceremonia posterior se entregue el galardón  correspondiente. </p>
+<p align="justify">La ceremonia que se convoque para esta entrega,  contará o deberá contar con las servidoras y servidores públicos integrantes  del personal de salud para que reciban el merecido diploma que les reconozca su  esfuerzo y la aportación en beneficio de las y los mexicanos; sin embargo, el  día de hoy se cumplirá con la inscripción respectiva en el Muro de Honor. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100492'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100493'></a><p align="justify">Para referirse a los méritos y la destacada labor  realizada por el doctor Manuel Velasco Suárez, se concede el uso de la palabra  a la Senadora Josefina Vázquez Mota, a nombre de la Cámara de Senadores. Por  favor, Senadora. </p>
+<p align="justify"><strong>CONDECORACIÓN, POST MORTEM, AL DR. MANUEL VELASCO SUÁREZ</strong></p>
+<p align="justify"><strong>La Senadora Josefina Vázquez Mota:</strong> Buenas tardes. </p>
+<p align="justify">Quiero dar la más cordial bienvenida a este recinto  y en esta ceremonia tan especial que nos honra el día de hoy, al Secretario de  Gobernación, licenciado Adán Augusto López.  Secretario, muy bienvenido. </p>
+<p align="justify">Al Ministro  Presidente de la Suprema Corte de Justicia, Arturo Zaldívar, por su puesto a  nuestra tan querida galardonada, reconocida, que en unos minutos más escucharemos  sólo algunos de sus méritos de su tan enriquecedora trayectoria, la maestra  Ifigenia Martínez, y tendré el honor y tengo la gratitud que, en unos momentos  daré a diversas personas para estar hoy aquí en la tribuna hablando de la  trayectoria, de la vida y las aportaciones del doctor Manuel Velasco Suárez. </p>
+<p align="justify">Señor  gobernador, bienvenido, secretaria, doctora Mijangos, doctor Santiago Nieto,  querido Porfirio Muñoz Ledo.<br>
+  <br>
+  Me siento  honrada de dar lectura a este texto que con orgullo, grandeza, enorme afecto y  admiración escribió de puño y letra la Senadora Beatriz Paredes. </p>
+<p align="justify">Querida  Senadora Beatriz Paredes, gracias por este gesto de confianza que tanto me  distingue. </p>
+<p align="justify">Asimismo  agradezco, en esta mañana, a la Presidenta de la Comisión de la Medalla  Belisario Domínguez, la Senadora Sasil de León, así como a la familia del  doctor Velasco, por la confianza y el privilegio que me otorgan esta mañana. </p>
+<p align="justify">Paso a  dar lectura al texto de la Senadora Beatriz Paredes: </p>
+<p align="right"><em>&ldquo;La memoria es uno de los  atributos esenciales de nuestra especie, </em><br>
+  <em>la civilización humana es y  existe porque la memoria existe&rdquo;. </em></p>
+<p align="justify">Por ello  honrar a quienes han dejado huella en la memoria, a quienes se han significado  en su existencia, trascendiendo en el tiempo, nos da la certeza de que la  condición humana tiene capacidad de registro de los hechos, pero también tiene  gratitud. </p>
+<p align="justify">La  memoria colectiva de la patria registró los actos que volvieron inmortal a  Belisario Domínguez. </p>
+<p align="justify">Hoy, en  esta ceremonia, honramos una vez más su valerosa defensa de la libertad de  expresión y de la dignidad de un Senado de la República que era tan digno como  sólo el ejercicio de su libertad lo permitía. </p>
+<p align="justify">La  memoria del pueblo de Chiapas, del mundo académico del sur sureste, de  centenares de médicos, demandaron a este Senado de la República honrar los  actos en la vida del doctor Manuel Velasco Suárez y traducir su admiración en  la entrega de la presea más alta que otorga este cuerpo colegiado. </p>
+<p align="justify">Recoge  así el doctor Manuel Velasco Suárez, la mejor tradición de los criollos y mestizos  chiapanecos, que por razones éticas o ideológicas o porque se enamoraron de su  entorno, ya que el verde infinito que es Chiapas lo sedujo, o porque la  solidaridad y enseñanza de sus nanas y cuidadoras tejieron vínculos  indisolubles con la población autóctona y pusieron al servicio del desarrollo de  Chiapas su talento e ilustración. <br>
+  <br>
+  Tal es el  caso de Belisario Domínguez, de Emilio Rabasa, de Rosario Castellanos, entre  otros tantos destacados chiapanecos. </p>
+<p align="justify">La biografía  del doctor Velasco Suárez es, sin duda, singular, los hombres, las mujeres  trascienden en el tiempo por sus ideas, por el compromiso social o patriótico  que termina así, convirtiéndolos en héroes, por su creatividad artística, por  su capacidad de hacer, y yo diría, pidiendo la autorización de nuestra  Senadora, por su capacidad de amar. </p>
+<p align="justify">El médico  neurólogo Velasco Suárez, tuvo ideas, una visión del mundo nutrida por su  empatía humanista y por su extraordinaria vocación médica, un hombre dedicado a  sanar, sí, dedicado a sanar, su capacidad analítica  y su creatividad intelectual lo convirtieron  en pionero de la bioética y en precursor de la visón bioética en la medicina de  México, su capacidad de hacer, fructificó   en la fundación del Instituto Nacional de Neurología, al referirme al  Instituto Nacional de Neurología, debo necesariamente mencionar el  extraordinario esfuerzo de salud pública que realizó el Estado mexicano en el  curso del siglo XX.</p>
+<p align="justify">La  política de salud del Estado mexicano está por encima del Seguro Popular y muy  por encima del Insabi.</p>
+<p align="justify">Hay que  tener memoria y reconocer los hechos que constituyeron la oferta del sistema de  salud integrado con la Secretaría de Salubridad y Asistencia, el área médica  del Instituto Mexicano del Seguro Social, en el área médica del ISSSTE, el Hospital  Militar, el Hospital Naval y por otras instituciones médicas de distintas  entidades federativas. </p>
+<p align="justify">Hay que  recordar también la creación de los grandes institutos y cómo éstos fueron  timbre de orgullo para el gremio médico de nuestro país al que hoy saludamos  con admiración, respeto y le rendimos homenaje en la entrega de la presea a un  médico como el doctor Velasco Suárez. </p>
+<p align="justify">Hoy,  desde este Senado de la República, le rendimos homenaje por su entrega al país  y por el desarrollo de la ciencia médica mexicana. </p>
+<p align="justify">Sin  embargo, me pregunto: ¿Qué diría, con ese don de gentes, con ese valor civil  que lo caracterizaba, qué diría el doctor Velasco Suárez ante la crisis de  adquisición de medicamentos por las que atraviesa el sistema de salud pública  mexicana? Seguramente hubiera convocado a las autoridades a analizar con  objetividad las circunstancias, los problemas y a tomar las medidas inmediatas  pertinentes para no dejar al pueblo mexicano sin medicamentos en las diversas  instituciones de salud del país. </p>
+<p align="justify">El político,  el administrador, gobernador de Chiapas, supo convocar la solidaridad del país  al referir que: &ldquo;todo en Chiapas es México&rdquo;. </p>
+<p align="justify">Ciertamente,  la geografía chiapaneca refleja la extraordinaria riqueza del país, su enorme  potencial, pero también sus contrastes y esa demografía del Estado que encierra  una enorme complejidad, las profundas contradicciones, la infinita y no siempre  compatible diversidad, con la convicción de que &ldquo;todo en Chiapas es México&rdquo;  Velasco Suárez impulsó la transformación de la entidad, muchas obras  relevantes, pero hoy destaco la edificación educativa como la de mayor  trascendencia del doctor Velasco Suárez. </p>
+<p align="justify">Desde la  fundación de la Universidad Autónoma de Chiapas hasta la vasta red de  instituciones tecnológicas y técnicas agropecuarias, la población chiapaneca  encontró un nuevo escenario de oportunidades para formar habilidades y librar  también su conciencia, objetivos que posibilita sin duda la educación. <br>
+  <br>
+  En esa  memoria de miles de niños y jóvenes que encontraron nuevos horizontes en la  oferta educativa renovada, opciones de movilidad social, la existencia del  doctor Velasco se grabó para siempre con su alegre talante y su imaginación  ilimitada. </p>
+<p align="justify">Señoras y  Señores, trabajar por alcanzar el Chiapas que soñó alguna vez nuestro homenajeado,  comprometernos en lograr que la frontera sur sea ejemplar, un espacio que sea  catapulta para el desarrollo, que nos enorgullezca, proteger y restaurar los  magníficos ecosistemas chiapanecas y desplegar su potencial productivo,  impulsar el bienestar de sus habitantes y el desarrollo de sus comunidades,  sigue siendo aspiración vigente, inspiración y propósito irrenunciable. </p>
+<p align="justify">Si todo  en Chiapas es México, México todo, tiene una deuda con quienes dejaron caudas  de dignidad en nuestra memoria histórica como Velasco Suárez, y en el Senado de  la República tenemos la decisión de que su búsqueda de la plenitud de Chiapas  en justicia, se convertirá en nuestra búsqueda.</p>
+<p align="justify">Es un  honor que sea el doctor Manuel Velasco Suárez el galardonado. </p>
+<p align="justify">Es un  honor que hoy su familia reciba la Medalla de Honor, post mortem, &ldquo;Belisario  Domínguez&rdquo;. </p>
+<p align="justify">&ldquo;Porque  todo Chiapas es México&rdquo;. </p>
+<p align="justify">¡Muchas  felicidades!</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Damos la bienvenida al  Presidente de la Mesa Directiva de la Cámara de Diputados, al Diputado Sergio  Gutiérrez. Bienvenido. </p>
+<p align="justify">Les solicito ponerse de  pie para la entrega de la Medalla de Honor &ldquo;Belisario Domínguez&rdquo;,  correspondiente al año 2021, post mortem, y del respectivo diploma, al doctor  Manuel Velasco Suárez. </p>
+<p align="justify">Y la recibirá en su  nombre el doctor Jesús Agustín Velasco Suárez Siles. </p>
+<p align="center">(Se  hace entrega de la presea)</p>
+<p align="justify"><strong>El Ciudadano Jesús Agustín Velasco Suárez Siles: </strong>Me voy  a permitir leer el diploma. </p>
+<p align="justify">&ldquo;La Cámara de Senadores  del H. Congreso de la Unión acordó otorgar la Medalla de Honor &ldquo;Belisario  Domínguez&rdquo; del Senado de la República, al doctor Manuel Velasco Suárez como  justo reconocimiento a los servicios que en grado eminente prestó a la patria y  la humanidad. Y le extiende el presente diploma como testimonio a sus  relevantes méritos.</p>
+<p align="justify">Olga Sánchez Cordero,  Presidenta de la Mesa Directiva de la Cámara de Senadores.</p>
+<p align="justify">Senadora Sasil de León,  Presidenta de la Comisión Medalla Belisario Domínguez. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>Se concede el uso de la  palabra al doctor Jesús Agustín Velasco Suárez Siles, a nombre del doctor  Manuel Velasco Suárez. Por favor. <br>
+  <br>
+  <strong>El Ciudadano Jesús Agustín Velasco Suárez Siles: </strong>Hoy, 7  de octubre de 2021, es nuevamente un día histórico, sobre todo para los  chiapanecos, para la gente que sufre, y que es un llamado a seguir atendiendo  esa vocación que claramente marcó el doctor Velasco Suárez. </p>
+<p align="justify">Presidenta de la Mesa  Directiva del Senado, Senadora Olga Sánchez Cordero. </p>
+<p align="justify">Señor  Secretario de Gobernación, Adán Augusto López Hernández, representante personal  del Presidente de la República Andrés Manuel López Obrador. </p>
+<p align="justify">Ruego  transmita al Presidente un saludo por el añejo afecto, muy especial, del doctor  Manuel Velasco Suárez y de su familia.</p>
+<p align="justify">Presidente  de la Suprema Corte de Justicia de la Nación, Ministro Arturo Zaldívar.</p>
+<p align="justify">Presidente  de la Junta de Coordinación Política del Senado, Ricardo Monreal.</p>
+<p align="justify">Presidente  de la Cámara de Diputados, Sergio Gutiérrez.</p>
+<p align="justify">Senadoras  y Senadores de la República.</p>
+<p align="justify">Diputadas  y Diputados del Congreso de la Unión.</p>
+<p align="justify">Gobernador  del Estado de Chiapas, Rutilio Escandón Cadenas, amigo entrañable.</p>
+<p align="justify">Distinguidos  invitados especiales.</p>
+<p align="justify">A  todos los presentes:</p>
+<p align="justify">Alto  honor, con humildad, el estar aquí con ustedes, Senadoras y Senadores, que  llevan con dignidad el espíritu de Belisario Domínguez. Nuestro reconocimiento  y gratitud a todos.</p>
+<p align="justify">Recibir  la Medalla Belisario Domínguez, post mortem, al doctor Manuel Velasco Suárez es  un homenaje luctuoso y al mismo tiempo un reconocimiento a su legado, que sigue  vivo, está ahí, es tangible, son cimientos, son instituciones, es idealismo, no  solo obras físicas, sino la formación de recursos humanos de alta especialidad.</p>
+<p align="justify">Como  ustedes escucharon en la semblanza del doctor Velasco Suárez, preparada por la  Senadora Beatriz Paredes, en voz de la Senadora Josefina Vázquez Mota, a  quienes les expreso mi gratitud, el doctor dejó varios legados: en el ámbito de  la salud, de la educación, pacifista comprometido, maestro de la bioética y del  humanismo. Sus legados son ya propiedad de México, lo que lo hace merecedor de  la presea Belisario Domínguez.</p>
+<p align="justify">Se  podría decir en esta ocasión que el otorgamiento de la presea correspondería a  un diálogo póstumo de dos ilustres chiapanecos que amaron profundamente a  México, al que sirvieron con ahínco.</p>
+<p align="justify">El  eje de acción del doctor Velasco Suárez fue servir. Señalaba: &ldquo;la mujer como el  hombre, valen no por lo que tengan ni por lo que sepan, sino por lo que sirvan  con honradez, capacidad y eficacia.&rdquo;</p>
+<p align="justify">Su  vida y obra fue ardua e intensa, nada le fue fácil, tuvo que librar múltiples  batallas. Esta vorágine empieza cuando comunica a sus padres, María y José  Manuel, su decisión de estudiar medicina, ellos lo apoyaron con tristeza,  cuando su único varón decidió no tomar el camino de la abogacía, como su padre  y su tío, el constituyente Enrique Suárez.<br>
+  <br>
+  Como  ustedes saben, creó, organizó y fundó el Instituto Nacional de Neurología y  Neurocirugía. Lo que quizá algunos no saben, es que esa obra le llevó 12 años  desde su concepción hasta su inauguración, de 1952 a 1964.</p>
+<p align="justify">Comparto  un dato histórico. El entonces Presidente de la República durante la  inauguración se congratuló que México contara con este instituto, al comentar  que hasta él lo pudiera necesitar. Quien lo diría, después de dejar la  Presidencia de la República fue hospitalizado en el instituto bajo el cuidado  del doctor Velasco Suárez.</p>
+<p align="justify">Destacaba  la necesidad de una relación médico-paciente profundamente humana y de  excelencia. Entre los innumerables pacientes que atendió el doctor, uno de  ellos fue alguien muy conocido por todos ustedes, Pedro Infante, a quien operó  por una lesión causada en un accidente aéreo, colocándole una placa de platino  en el cráneo.</p>
+<p align="justify">Como  ya lo escucharon hoy, tuvo destacada trayectoria académica y científica. Lo que  pocos saben, es que siendo un científico reconocido, fue un hombre de fe. </p>
+<p align="justify">Más  tarde, en 1970 acepta ser candidato para gobernar Chiapas y como él lo dijo:  &ldquo;hago un paréntesis en mi vida académica, científica y de investigación&rdquo;, pero  se llevó consigo la bata blanca, porque nunca dejó de ser médico. </p>
+<p align="justify">Él  concebía a la política como el arte de hacer medicina en grande y le decía al  Presidente de la República que iba con ese espíritu para atender a un Chiapas  en dolor, en desventaja en todos los campos, y como su paciente debía ponerlo  de pie y en marcha.</p>
+<p align="justify">El  doctor Velasco Suárez señalaba: &ldquo;la política es como la atmósfera, no podemos  vivir fuera de ella. Al igual que el médico cuida la salud, previene la  enfermedad y protege la vida, el político protege el tejido social, previene  conflictos, enfrentamientos, violencia y muerte; encauza voluntades y acciones  para vivir con respeto y dignidad.&rdquo; Agregaba: &ldquo;la columna vertebral de la  política debe ser el humanismo.&rdquo;</p>
+<p align="justify">Fue  un gobernador humanista, les dio prioridad a nuestros hermanos indígenas. Fue  reconocido como su protector respetando su dignidad y permitiendo que ellos  fueran los promotores de su propio desarrollo. Él promovió el primer congreso  nacional indígena en 1974, inspirado en la vida de Fray Bartolomé de las Casas.</p>
+<p align="justify">Al  término de su mandato, el entonces Presidente de la República le preguntó si  desearía incorporarse a su gabinete y respondió: &ldquo;señor Presidente, no tengo  ambiciones de poder.&rdquo; Regresó a su vida profesional.</p>
+<p align="justify">El  doctor Jesús Kumate, Medalla Belisario Domínguez, dijo: &ldquo;fue muy acertada la  decisión de mi maestro Velasco Suárez, porque de esa manera se convirtió en un  líder pacifista y reconocido como el padre de la bioética en México.&rdquo;</p>
+<p align="justify">En  relación a su liderazgo pacifista, el doctor Bernard Lown, Premio Nobel de la  Paz, se refirió al doctor de esta manera: &ldquo;Manuel recorrió el mundo  incansablemente, hablando con pasión persuasiva y organizando a los médicos por  todo el planeta para prevenir una catástrofe nuclear. Fue el padre de los  movimientos de la Organización Internacional de Médicos contra la Guerra  Nuclear en México y Latinoamérica. </p>
+<p align="justify">Nuestro  homenajeado, subrayaba: &ldquo;que la bioética es como una brújula que nos orienta  para no perder el rumbo de los valores éticos universales ante la avalancha del  desarrollo científico y tecnológico&rdquo;.</p>
+<p align="justify">Es  notable el extraordinario paralelismo que existe entre la vida del doctor  Belisario Domínguez y el doctor Manuel Velasco Suárez, son sorprendentes.</p>
+<p align="justify">Chiapanecos  ambos: uno de Comitán, el otro de San Cristóbal de las Casas.</p>
+<p align="justify">Médicos  ambos: uno cirujano y partero, el otro neurocirujano.<br>
+  <br>
+  Educados  en universidades extranjeras de gran prestigio: uno, en la Sorbona, el otro en  la Universidad de Harvard.</p>
+<p align="justify">Dos  luchadores en defensa de la vida, de la salud, de la dignidad y de la libertad:  uno desde la tribuna del Senado, como en su histórico mensaje por la dignidad y  la libertad de México, y el otro desde el quirófano, las aulas y la atención al  desprotegido.</p>
+<p align="justify">Ellos  entregaron su vida por la salud de los mexicanos, lucharon por el progreso del  país, guiados siempre por los valores perdurables del humanismo y del servicio  público, dos mexicanos que actuaron con convicción y congruencia.</p>
+<p align="justify">En este  templo de la democracia y de la República, aquí en este recinto, está el  espíritu del don Belisario y del doctor Velasco Suárez, también con la  presencia de nuestra maestra Ifigenia Martínez que mucho nos honra, mi maestra  y mentora, así como la presencia de mexicanas y mexicanos ilustres que han  recibido esta medalla, quienes supieron llevar sus preocupaciones a la acción  teñida con pasión por su vocación y convicción por México, nos dieron el  ejemplo para las actuales y las futuras generaciones.</p>
+<p align="justify">Deseo  compartir con ustedes que el doctor Velasco Suárez no dejó de luchar por sus  ideales, aun cuando enfrentaba también el inmenso dolor en lo más íntimo por la  muerte temprana de su esposa, 57 años, de sus tres hijos mayores: José Manuel,  40 años, Lupita, 39 años, Cristina, 57 años, los tres de cáncer. Ahora  sobreviven ocho hijos y 33 nietos.</p>
+<p align="justify">Pero  decía: &ldquo;No hay tiempo para lamentarse, los retos son muchos y hay que estar  alerta y estar dando la batalla por México siempre&rdquo;.</p>
+<p align="justify">Respetuosamente  reciban un abrazo con nuestra eterna gratitud, emocionados, en especial para  los integrantes de la Junta de Coordinación Política del Senado de la  República.</p>
+<p align="justify">Muchas  gracias.</p>
+<p align="justify"><strong>La  Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Continuamos  con lo dispuesto por el Acuerdo aprobado para la entrega de la Medalla  &ldquo;Belisario Domínguez&rdquo; 2021.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100493'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100494'></a><p align="justify">Para  referirse a la trayectoria de la Senadora Ifigenia Martínez Hernández y  destacar sus incuestionables méritos, se concede el uso de la palabra a la  Senadora Sasil de León Villard, a nombre de la Cámara de Senadores. Por favor,  Senadora.</p>
+<p align="justify"><strong>CONDECORACIÓN A LA SENADORA IFIGENIA MARTÍNEZ HERNÁNDEZ</strong></p>
+<p align="justify"><strong>La  Senadora Sasil de León Villard: </strong>Con su permiso, Presidenta Ministra  Olga Sánchez Cordero.</p>
+<p align="justify">Maestro  Adán Augusto López Hernández, Secretario de Gobernación, sea usted bienvenido.</p>
+<p align="justify">Ministro  Arturo Zaldívar Lelo de Larrea, Presidente de la Suprema Corte de Justicia de  la Nación, bienvenido.</p>
+<p align="justify">Diputado  Sergio Gutiérrez Luna, Presidente de la Cámara de Diputados del Honorable  Congreso de la Unión.</p>
+<p align="justify">Doctor  Rutilio Escandón Cadenas, Gobernador de nuestro hermoso y querido estado de  Chiapas, bienvenido al Senado de la República.<br>
+  <br>
+  Licenciada  Rosa Icela Rodríguez, Secretaria de Seguridad Pública, bienvenida.</p>
+<p align="justify">Doctor  Santiago Nieto Castillo, titular de la Unidad de Inteligencia Financiera,  bienvenido doctor.</p>
+<p align="justify">Doctora  Luz Mijangos, titular de la Fiscalía Anticorrupción, bienvenida.</p>
+<p align="justify">Y querido  don Porfirio Muñoz Ledo, bienvenido a su casa.</p>
+<p align="justify">Quiero  saludar también al Presidente del Tribunal del Estado de Chiapas, Juan Oscar  Trinidad Palacios, bienvenido.</p>
+<p align="justify">Al  Presidente Municipal de Comitán, Chiapas, Mario Antonio Guillén, bienvenido.</p>
+<p align="justify">Compañeras  Senadoras y Senadores:</p>
+<p align="justify">Distinguidos  invitados e invitadas especiales:</p>
+<p align="justify">Saludo a  la distancia desde esta tribuna al Presidente Constitucional de los Estados  Unidos Mexicanos, al licenciado Andrés Manuel López Obrador.</p>
+<p align="justify">Desde el  Senado de la República le envío un cariñoso saludo hasta cualquier lugar de la  patria en donde se encuentre trabajando por el bienestar de México.</p>
+<p align="justify">Lamento  profundamente el vacío que su ausencia nos causa, pero reconocemos que es un  pacifista, un pacificador, un conciliador que todos los días llama a los  pueblos a practicar la fraternidad, la solidaridad, la concordia, la paz, el  respeto y el amor al prójimo.</p>
+<p align="justify">Hoy nos  encontramos aquí reunidos en esta sede histórica del Senado de la República  para rendir homenaje a una mexicana excepcional y a un mexicano excepcional,  prominentes en sus trayectos de vida y que pueden ser considerados dentro de  los imprescindibles de nuestra nación.</p>
+<p align="justify">Por ello,  pretendemos otorgar reconocimiento pleno a la destacada trayectoria de quien  con sus acciones y sus aportaciones enaltecieron a la patria y a la humanidad  para orgullo de todas y de todos los mexicanos.</p>
+<p align="justify">La figura  de la maestra Ifigenia Martínez y del doctor Manuel Velasco Suárez son  referentes de honestidad, servicio a la patria, humanismo, compromiso social  que los hace merecedores a recibir esta alta distinción.</p>
+<p align="justify">En lo  particular, en este acto me tocará la enorme responsabilidad, y es para mí un  enorme placer hablar en nombre de este Senado de la República sobre una  mexicana que por la fuerza y contundencia de sus acciones está plenamente  identificada con las virtudes que distinguen al Senador chiapaneco don  Belisario Domínguez, y me refiero a nuestra entrañable maestra Ifigenia  Martínez Hernández.</p>
+<p align="justify">Mujer de convicciones claras, referente en muchos  aspectos para las mujeres mexicanas y para distintas generaciones de  economistas, servidores públicos, legisladores, políticos y diplomáticos de  nuestro país. </p>
+<p align="justify">Ifigenia Martha Martínez y Hernández, nació en 1930  en el entonces Distrito Federal y, como ella misma cuenta, sus padres eligieron  el nombre de Ifigenia, que significa <em>&ldquo;nacida  en el poder&rdquo;.</em></p>
+<p align="justify">Y que ella, posteriormente, asumiría como nacida en  el poder, pero el poder del pueblo. <br>
+  <br>
+  La joven Ifigenia fue movida y aconsejada por su  padre, don Jesús Martínez Elizondo a estudiar economía política en la entonces  Escuela de Economía de la Universidad Nacional, bajo el argumento de que lo que  el país necesitaba era un buen conjunto de economistas para sacar adelante y  elevar el nivel de la vida del pueblo. Esa importante encomienda, de su padre,  marcaría lo que sería el inicio de una brillante trayectoria académica. </p>
+<p align="justify">A los 23 años decide casarse con el también  economista Alfredo Navarrete Romero, quien se destacó por ser el primer  mexicano con doctorado en economía, por la Universidad de Harvard. </p>
+<p align="justify">La joven Ifigenia Martínez, junto a su esposo  emigran a Estados Unidos, atravesando diversas dificultades, ya que mientras él  estudiaba ella trabajaba, pero siempre con la firme convicción de seguir  preparando y regresar para ayudar a su país a mejorar sus condiciones sociales. </p>
+<p align="justify">Un año después lograría ingresar y convertirse en  la primera mexicana que obtuvo una maestría en economía en la Universidad de  Harvard.</p>
+<p align="justify">Posteriormente, la pareja regresa a México  invitados por el entonces Secretario de Hacienda, a trabajar con la  representación de México en el Fondo Monetario Internacional y en esa época  nacieron sus primeras dos hijas, de un total de cuatro que conformarían su  familia, a quienes saludamos y están aquí, nos acompañan algunos de ellos. </p>
+<p align="justify">Ya en México, junto al Secretario Jaime Torres  Bodet, creó la Comisión para el Mejoramiento y Extensión de la Educación  Primaria, en la que participó y logró garantizar, a través del llamado &ldquo;plan de  11 años&rdquo;, que ningún niño del país se quedara sin escuela; ahí la maestra dejó  clara su convicción de que la educación es la clave del desarrollo del país y  que el Estado se encuentra obligado a impartirla y a financiarla. </p>
+<p align="justify">Para 1950 fue cofundadora de la Comisión Económica  para América Latina y El Caribe; en 1960 fue nombrada investigadora del  Instituto de Investigaciones Económicas de la UNAM; en 1966 se convierte en la  primera mujer en encabezar la jefatura de la oficina de la Presidencia de la  República. </p>
+<p align="justify">Para 1967 se convertiría también en la primera  mujer directora de la Escuela Nacional de Economía de la Universidad Nacional,  bajo la rectoría del ingeniero Javier Barros Sierra, como directora fue una  participante activa del Movimiento Estudiantil de 1968, y figuró entre las  principales defensoras de la autonomía universitaria.</p>
+<p align="justify">Dentro de su paso por la Administración Pública,  podemos destacar que fue asesora del Secretario de Educación Pública, Jaime  Torres Bodet; coordinadora de asesores del Secretario de Hacienda y Crédito  Público, Antonio Ortiz Mena; jefa de materia económica de la Secretaría de la  Presidencia, de 1965 a 1970, y subsecretaria de centralización administrativa  de la Secretaría de Hacienda; fungió también como Embajadora de México ante la  Organización de las Naciones Unidas.</p>
+<p align="justify">En 1976, a invitación expresa de su entrañable  amigo Porfirio Muñoz Ledo, asumiría el cargo de Diputada Federal en la L  Legislatura del Congreso de la Unión. </p>
+<p align="justify">Cargo que repitió dos veces en la LVI y LXI  Legislaturas. </p>
+<p align="justify">Una gran aportación al fortalecimiento de la vida  institucional de nuestro país fue la fundación de la corriente democrática que  encabezó junto al ingeniero Cuauhtémoc Cárdenas y Porfirio Muñoz Ledo,  renunciando al Partido Revolucionario Institucional, para después fundar el  Frente Democrático Nacional, organización que sacudió la conciencia del pueblo  mexicano en 1988. Este movimiento es un parteaguas en la vida electoral de  nuestra República, pues sentó las bases de lo que hoy es nuestro sistema  político electoral, de la primera alternancia en el gobierno de la República y,  sobre todo, de la actual cuarta transformación de la vida política nacional. <br>
+  <br>
+  La maestra Ifigenia, fue miembro fundador del  Partido de la Revolución Democrática, logrando con ello ser la primera Senadora  de la República electa por el Distrito Federal, representando a un partido de  oposición. Esta breve semblanza de su trayectoria no tiene otro objetivo más  que afirmar que la maestra Ifigenia es una mujer que rompe paradigmas, una de  esas primeras mujeres en muchos ámbitos que abrieron brecha en un tiempo donde  nada era fácil para nosotras, para que las generaciones posteriores camináramos  en un país más justo e igualitario, bajo las mismas condiciones y oportunidades  que los hombres. </p>
+<p align="justify">La vida académica, diplomática, política y social  de la maestra Ifigenia Martínez Hernández, ha representado una labor destacable  de quien ha dedicado su vida al servicio de México y que los propios caminos de  la vida la llevaron a convertirse en una luchadora de la transformación  política, por una visión de Estado en la construcción de nuestra democracia,  siempre con la firme creencia que el desarrollo económico, si no va acompañado  de bienestar social no sierve de nada. </p>
+<p align="justify">La maestra Ifigenia, con sus acciones de vida ha  abierto las puertas a las mujeres, siendo precursora en ámbitos que hasta hace  algunos años se consideraban solo para el ejercicio de los hombres. A lo largo  de estos años ha estado en cada momento importante de la transformación de  nuestro país. </p>
+<p align="justify">Actualmente, la maestra Ifigenia sigue siendo pieza  clave en esta historia de transformación, como nuestra compañera Senadora en  esta LXV y LXIV Legislatura siempre la vemos, en la primera línea de batalla  puntual y debidamente preparada y participativa en las distintas actividades  legislativas, desde el trabajo en comisiones, hasta las discusiones en Pleno. </p>
+<p align="justify">Hoy, nuestra compañera Senadora de la República  sigue siendo aliada de las grandes causas y continúa rompiendo paradigmas. </p>
+<p align="justify">Las luchas que enfrentamos las mujeres, sin duda  son muy distintas a las que en su momento la Senadora Ifigenia dio para abrir  la brecha que hoy reclama la sociedad, que exige terminar con los feminicidios,  con las situaciones de extrema violencia hacia las mujeres, por el simple hecho  de ser mujeres o con la discriminación, con el racismo y, sin duda, compañera  Senadora, es usted una gran aliada de las mujeres de nuestro país. </p>
+<p align="justify">Por ello, a título personal, quiero reconocer que  su lucha es la que nos representa aquí a las mujeres en este Pleno y representa  también a millones de mujeres allá afuera; es lucha pacífica que enaltece  nuestra pluralidad, nuestro entendimiento y convergencia, esa lucha  política que usted inició desde hace más de cuatro décadas y que hoy nos tiene  en los congresos locales, en los ayuntamientos, con representación efectiva y  consolidando la legislatura federal más paritaria de la historia. </p>
+<p align="justify">Su lucha  siempre será reconocida en la justa dimensión de la historia, hoy, maestra, su  figura sigue siendo la voz de millones de mujeres que seguimos exigiendo  igualdad en todos los espacios, su feminismo es el que rinde frutos para  alcanzar los cambios profundos para las siguientes generaciones. </p>
+<p align="justify">La  maestra Ifigenia Martínez es un ejemplo vivo del amor al servicio público, y no  sólo eso, su generosidad, sabiduría y experiencia siguen inspirándonos día con  día y con su lucha de vida, se convierte en la octava mujer en la historia en  recibir la Medalla de Honor &ldquo;Belisario Domínguez&rdquo;. Por todo lo aquí expresado,  podemos afirmar que la figura de la maestra Ifigenia, enarbola los principios  de libertad, solidaridad, justicia, democracia y respeto a las libertades  humanas a lo largo de su trayectoria de vida, han trascendido en el tiempo para  contribuir al mejoramiento de nuestra patria y de nuestra sociedad. </p>
+<p align="justify">Su nombre  trascenderá en el tiempo, en este recinto junto a los nombres de hombres y  mujeres que han engrandecido con sus acciones el orgullo de ser mexicanos  patriotas. <br>
+  <br>
+  Concluyo  citando a nuestra galardonada: </p>
+<p align="justify">&ldquo;Veo  posible el sueño de un México justo, que a pesar de su gran diversidad,  propicia los valores y principios de libertad, justicia, igualdad para todos,  en esta lucha estamos y sé que con nuestras autoridades actuales lo  lograremos&rdquo;. </p>
+<p align="justify">Hoy, con  este acto en el Senado de la República, sigue honrando el legado y la memoria  del Senador chiapaneco Belisario Domínguez, hombre de congruencias, de libertades  y humanista que con su vida pagó el precio de construir un país de libertades  más democrático e igualitario. </p>
+<p align="justify">Hoy  tomando como estandarte los valores de don Belisario Domínguez, nos permitimos  seguir construyendo una sociedad más equitativa, justa e igualitaria, para el  mejoramiento de las libertades y los derechos constitucionales y humanos de  todos los mexicanos&rdquo;. </p>
+<p align="justify">¡Que viva  nuestra compañera Ifigenia Martínez!</p>
+<p align="justify">¡Viva el  Senador Belisario Domínguez!</p>
+<p align="justify">¡Viva  México!</p>
+<p align="justify"><strong>La  Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Les  solicito mantenerse de pie para hacer entrega de la Medalla de Honos &ldquo;Belisario  Domínguez&rdquo;.</p>
+<p align="center">(Se hace  entrega de la presea)</p>
+<p align="justify"><strong>La  Senadora Ifigenia Martínez Hernández: </strong>La Cámara de Senadores del  Honorable Congreso de la Unión acordó otorgar la Medalla de Honor &ldquo;Belisario  Domínguez&rdquo; del Senado de la República a la maestra Ifigenia Martínez Hernández,  como justo reconocimiento a los servicios que en grado inminente ha prestado a  la patria y a la humanidad y le extiende el presente diploma como testimonio a  sus relevantes méritos&rdquo; <strong></strong></p>
+<p align="justify">Senadora  Olga Sánchez Cordero, Presidenta de la Mesa Directiva de la Cámara de  Senadores&rdquo;. </p>
+<p align="justify">Aplauso  para la Presidenta. </p>
+<p align="justify">Senadora  Sasil de León Villard, Presidenta de la Comisión Medalla Belisario Domínguez&rdquo;.</p>
+<p align="justify"><strong>La  Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Sírvanse  tomar asiento, por favor. </p>
+<p align="justify">Se le  concede el uso de la palabra a nuestra galardonada, a la Senadora Ifigenia  Martínez Hernández. Por favor, Senadora. </p>
+<p align="justify"><strong>La Senadora  Ifigenia Martínez Hernández:</strong> Con su venia,  respetuosamente, doctora Olga Sánchez Cordero, Presidenta de la Mesa Directiva  del Senado de la República. </p>
+<p align="justify">Con el  honor de expresarme ante usted, Maestro Adán Augusto López Hernández,  Secretario de Gobernación y representante del señor Presidente de la República. </p>
+<p align="justify">Con la  responsabilidad de argumentar ante el poder equilibrador jurisdiccional, doctor  Arturo Zaldívar Lelo de Larrea, Presidente de la Suprema Corte de Justicia de  la Nación. </p>
+<p align="justify">Con el  gusto de contar con la asistencia del Honorable Gobernador del Estado de  Chiapas, doctor Rutilio Escandón Cadenas. <br>
+  Con el  entusiasmo de compartir nuevamente ideas con ustedes, compañeras y compañeros  Senadores y del público que nos honran esta mañana con su visita. </p>
+<p align="justify">Cada uno  de esos mensajes que ustedes me han hecho llegar de felicitación, es una  epístola de afecto y compromiso por la grandeza de la patria, de recuerdos, de  sueños y utopías, que fueron origen de históricos logros, de reclamos por modelos  de desarrollo o sistemas sociales, incapaces algunos de ellos de alentar una  convivencia armónica y de bienestar para toda la población. </p>
+<p align="justify">De repaso  sobre cómo la ciudadanía forjó la patria y de propuestas para engrandecerla,  todo ello como expresión de un consenso de cómo los mexicanos somos capaces de  entendernos y no matarnos por nuestras diferencias, como proclamaba el apóstol  de la reforma don Melchor Ocampo. </p>
+<p align="justify">Hoy me  toca sumar mi voz a las de las 66 voces de quienes me precedieron. </p>
+<p align="justify">Con ese  mismo afán de supremo patriotismo, quiero contribuir a la recuperación, rescate  y renovación de nuestro sistema económico nacional, con el interés fundamental  de contribuir al desarrollo económico y social del país, y al bienestar de  todos los que estamos en este país, eliminando las enormes desigualdades que  ocasiona la concentración de la riqueza y la dispersión de la pobreza,  causantes también de la inmigración forzada de miles de mexicanos productivos. </p>
+<p align="justify">Manifiesto  mis felicitaciones a los familiares del doctor Manuel Velasco Suárez, a quien  se le otorga la Medalla de Honor &ldquo;Belisario Domínguez&rdquo; en reconocimiento  póstumo a su brillante labor científica con la cual logró trascendencia  internacional por su labor humanista e hipocrática en beneficio de las  instituciones de salud pública a las cuales además benefició con su gran obra  constructiva como gobernador de Chiapas, su estado natal, y a quien profesional  y personalmente tuve el honor de conocer. </p>
+<p align="justify">Por lo  que se refiere a mis actividades profesionales y políticas que motivan esta  inmerecida distinción, debo repetir que tuve una afortunada orientación desde  el hogar, ideológica y cultural por parte de mi padre, oficinista,  ferrocarrilero, de convicciones izquierdistas, y de mi madre, gran apoyo para  mis actividades académicas y sociales. </p>
+<p align="justify">A lo  largo de mi vida y carrera profesional mi principal motivación ha sido realizar  un servicio para nuestro país con entrega y convicción. </p>
+<p align="justify">Desde  pequeña tuve acceso a una educación que me permitió encauzar mis inquietudes y  desarrollarme plenamente. </p>
+<p align="justify">No tengo  más que palabras de agradecimiento para mis padres y mi país por la educación  que me brindaron.</p>
+<p align="justify">En la  Escuela Nacional Preparatoria y posteriormente en la Escuela Nacional de  Economía de nuestra querida UNAM, se fortalecieron valores de solidaridad e  igualdad que me fueron inculcadas en el seno familiar. </p>
+<p align="justify">Posteriormente  y gracias a una beca que obtuvo del gobierno de México mi esposo, el doctor  Alfredo Navarrete, para realizar un doctorado en economía en la Universidad de  Harvard, tuve la oportunidad de realizar mi maestría en economía en la misma  universidad, previo al ingreso al postgrado trabajé temporalmente en el  Instituto Tecnológico de Massachusetts para fincar parte de mis estudios, al  mismo tiempo que profundicé mis conocimientos y expandí mis perspectivas en lo  que fue una experiencia inolvidable que atesoro profundamente. <br>
+  <br>
+  A mi  regreso al país tuve la fortuna de trabajar con un equipo de distinguidos  mexicanos dentro de la administración pública que reforzaron mis valores y  principios de izquierda y me permitieron crecer a través de su confianza y  ejemplo.</p>
+<p align="justify">Estaré  siempre agradecida por haber colaborado con el doctor Jaime Torres Bodet, Secretario  de Educación Pública, y realizador de la extensión de la educación primaria a  todos los niños del país. </p>
+<p align="justify">A mí me  resultaba increíble, que no iban a la escuela, porque no había escuela, dije  eso no puede ser, las escuelas tienen que cubrir a los niños de toda la  República, y esa fue la intención del plan de once años. </p>
+<p align="justify">Posteriormente  tuve la suerte también de tratar a los rectores de nuestra UNAM, Javier Barros  Sierra y Nabor Carrillo Flores, pilares fundamentales en lo que considero fue  una época de crecimiento personal y profesional que me definió como economista  política. </p>
+<p align="justify">En este  momento quisiera agradecer a mi generosa familia, empezando por mis padres, mis  hijas, Juana Inés, Andrea y Paloma, y mi hijo Alfredo, así como a mis nietos y  bisnietos, me emociona atestiguar que también llevan grabado ese compromiso y  amor por la patria y de quienes siempre he recibido amor incondicional. </p>
+<p align="justify">Gracias  por tanto y por todo a todos los que están presentes.</p>
+<p align="justify">Mi  convencimiento de la necesidad de un cambio de rumbo ante el autoritarismo, el  avance de la tecnocracia y el inicio del neoliberalismo, me llevaron a la lucha  política, ese anhelo significó el motor de cambio que nos impulsó en 1987,  junto al ingeniero Cuauhtémoc Cárdenas y al licenciado Porfirio Muñoz Ledo,  entre otros distinguidos mexicanos de izquierda, a la creación de la corriente  democrática que considero fue un parteaguas en la historia política de nuestro  país. </p>
+<p align="justify">Durante  el largo periodo de la globalización y el neoliberalismo en diversas  legislaturas seguimos luchando por un mundo más justo y equitativo en defensa  de la soberanía económica en contra de la enajenación de riquezas y recursos  nacionales, la privatización desmedida, la desregulación y liberalización  económica en favor de una más justa distribución del ingreso y la riqueza entre  todas las fuerzas productivas, especialmente de trabajadores de la ciudad y el  campo. </p>
+<p align="justify">A más de  30 años de la creación de la corriente democrática y bajo el actual liderazgo  del estimado compañero, el Presidente de la República, Andrés Manuel López  Obrador, hoy contamos con un gobierno democrático de izquierda, transformadora,  este es un logro mayúsculo para la nación y para todas y todos los que hemos  apoyado esta lucha desde sus inicios. </p>
+<p align="justify">Después  de varias alternancias en la Cámara de Diputados regresé a este Senado para  contribuir a consolidar la transformación de la vida pública, la cual,  partiendo del combate a la corrupción y a la amplia protección a grupos  sociales más desprotegidos, abarcará sustancialmente la solución de problemas  estructurales para recuperar el crecimiento económico y lograr el bienestar  social en un país más justo y democrático. </p>
+<p align="justify">Considero  que aún queda un buen trecho del camino por recorrer, es vital la restitución  al estado democrático, de facultades para recuperar la rectoría económica,  instrumentar las medidas para seguir el nuevo rumbo del país, volver a ampliar  las acciones del Estado otorgando las disposiciones que actualmente limitan o  perjudican a empresas productivas del país. <br>
+  <br>
+  Los  argumentos de la libre concurrencia y la competitividad, heredadas de los  gobiernos neoliberales que debilitaron al Estado, integraron un marco constitucional  ilegal que es imperativo actualizar y rectificar en cuestiones estratégicas,  proceso que ya se ha iniciado con las iniciativas para fortalecer el carácter  nacional y público del sector energético, sin perjuicio de la participación  privada complementaria, adecuadamente regulada y justamente retribuida. </p>
+<p align="justify">Dicha  tarea que abarca a toda la sociedad tendrá un marco de expresión y un espacio  de diálogo en el Poder Legislativo y, desde luego, en el Senado en donde  trataremos de adoptar y elaborar proyectos e iniciativas con ese sentido  correctivo y transformador, elementos que nos han impulsado a proponer la  integración de un consejo económico y social, plural y democrático, en donde  puedan escucharse todas las fuerzas económicas del país y su dirección y  distribución de nuestro ingreso. </p>
+<p align="justify">Consideramos  que debe existir un órgano plural con representación de todos los sectores  sociales del país: trabajadores, empresarios, académicos, servidores públicos,  que cuantifique y analice las principales variables y económicas de  nuestra realidad presente y las proyecte en un avance ordenado hacia un futuro  que permita lograr, en forma democrática, el desarrollo económico y social de  un país, de la población que ahora tiene y que seguramente va a aumentar. </p>
+<p align="justify">Este órgano colegiado se  constituía con las siguientes bases y objetivas:</p>
+<p align="justify">Uno. La tarea fundamental  será el diseño y puesta en marcha de un nuevo pacto nacional político,  económico y social sobre cada uno de los pilares de la cuarta transformación. </p>
+<p align="justify">Dos. Elaborar leyes para  propiciar una mayor igualdad social, aumentando los ingresos de las clases  marginadas y disminuyendo la concentración de la riqueza. </p>
+<p align="justify">Tres. La separación del  poder económico del poder político debe significar la separación del gobierno  de las oligarquías económicas y financieras, y un mayor acercamiento a las  necesidades populares, utilizando toda la potencialidad económica del Estado. </p>
+<p align="justify">Cuatro. Fortalecer la  estructura económica para abastecer el mercado interno y promover la  integración del sector informal de forma progresiva a la economía formal en  plenitud de derechos y desarrollo de capacidades. </p>
+<p align="justify">Cinco. En el sector  externo es necesario lograr una inserción más favorable de nuestra economía en  la globalidad mediante un encadenamiento productivo que incremente el valor  agregado interno.</p>
+<p align="justify">Seis. Un sector  financiero reorganizado, con mayor participación nacional y pública, menos ávida  de ganancias y más orientada a la extensión financiera y al financiamiento  productivo. </p>
+<p align="justify">Siete. Es vital el  fortalecimiento fiscal del Estado a nivel federal mediante impuestos de base  amplia y a niveles locales en las contribuciones correspondientes dentro de  nuestro sistema de coordinación fiscal. </p>
+<p align="justify">Ocho. Además del rigor  administrativo para la recaudación tributaria, consideramos conveniente  promover un sistema progresivo de impuestos comprometidos con el federalismo,  la implantación de un impuesto a la riqueza y otras formas de gravamen a los  ingresos personales excesivos, sin aumentos al Impuesto Sobre la Renta a las  empresas, sobre todo a las de nivel medio e intermedio, para procurar su  expansión. <br>
+  <br>
+  Nueve. En la política  social la prioridad de la atención a los grupos de bajos ingresos debe  significar, además del apoyo directo, el reforzamiento de las condiciones  materiales de vida de las oportunidades de desarrollo y movilidad social con medidas  estructurales duraderas. Debemos promover el mejoramiento a la distribución del  ingreso, entendiendo al salario como el elemento fundamental para el desarrollo  económico, es decir, la retribución al trabajo. </p>
+<p align="justify">Diez. La democratización  de la vida pública del país debe significar el respeto pleno a la democrática  representativa y a sus instituciones, al igual que al fortalecimiento de la  democracia participativa. </p>
+<p align="justify">Robustecer al Estado  económica, política y democráticamente debe significar un fortalecimiento del  Federalismo para extender a las entidades federativas las nuevas reglas y  prácticas de acuerdo con los principios, objetivos y las metas nacionales. </p>
+<p align="justify">Compañeros todos, su  presencia en esta sesión solemne del Senado reviste un gran valor para la  nación; es la confirmación de una sana relación republicana; una demostración  del trabajo en armonía que debe reflejarse en todas las relaciones en los  órganos de gobierno. </p>
+<p align="justify">En su ausencia,  permítanme enviar al señor Presidente Andrés Manuel López Obrador, un saludo  cordial y solidario en reciprocidad a su gentil mensaje. Quiero también  resaltar la necesidad de retomar las expresiones de madurez institucional que  deben privar en el país, el refrendo del respeto a la división de poderes debe  mantenerse incólume, sin amenazas ni presiones. </p>
+<p align="justify">Es el tiempo para la  unidad de la República en torno a los grandes objetivos nacionales que debemos  compartir con respecto a la pluralidad democrática. Hay una omisión mía que  deseo corregir, saludar también la presencia del Diputado Sergio Carlos  Gutiérrez Luna, Presidente de la Cámara de Diputados, que nos acompaña en el  presídium, con representación del señor Presidente. </p>
+<p align="justify">Honorable presídium. Compañeras  y compañeros: Desde esta tribuna quiero hacer un llamado a la unidad para la  fortaleza y el desarrollo nacional. Quiero recordar que México es una nuestra  casa y nuestra causa común, y como Belisario Domínguez, hago un llamado al  compromiso y al deber. Estoy convencida de la importante labor que nos espera,  el país será el testigo de nuestra actuación. </p>
+<p align="justify">La invaluable presea que  se me ha otorgado es un gran estímulo para continuar mis actividades  profesionales en el ámbito de la economía política, con base en un análisis  objetivo de las condiciones económicas y sociales de nuestro país en la  actualidad. </p>
+<p align="justify">En este camino hemos  transitado juntos con todos los que están aquí, juntos en el pasado y en el  presente, procurando un país más próspero. Proponemos hoy concretar los  objetivos y proyectos de una izquierda democrática fuerte, abierta al diálogo y  sujeto a las reglas del Parlamento Abierto. </p>
+<p align="justify">Hoy es el recuerdo del  heroísmo de Belisario Domínguez, constituye un compromiso para salir adelante  dentro de un sistema de división de poderes que promueva la paz y justicia, y  el bienestar generalizado para todos los mexicanos. Este premio representa un  paso muy valioso en mi trayectoria y, sobre todo, la posibilidad de continuar  un proceso democrático y trascendente. </p>
+<p align="justify">Por esta distinción, y  por su atención a estas reflexiones y propuestas, reitero a todos ustedes mi  más profundo y sincero afecto y agradecimiento. </p>
+<p align="justify">Muchas gracias.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100494'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100495'></a><p align="justify"><strong>La Presidenta Senadora Olga María del Carmen  Sánchez Cordero Dávila: </strong>La Mesa Directiva, en  nombre del Senado de la República, les solicita que, puestos de pie, guardemos  un minuto de silencio a fin de honrar la memoria de los miembros de la Orden Mexicana  de la Medalla Belisario Domínguez que han fallecido. </p>
+<p align="justify"><strong>MINUTO DE  SILENCIO</strong></p>
+<p align="center">(Todos  de pie guardan un minuto de silencio)</p>
+<p align="justify">A nombre del Senado de la  República, expreso nuestro agradecimiento por su presencia en esta sesión  solemne al señor licenciado Adán Augusto López Hernández, Secretario de  Gobernación, en representación del titular del Ejecutivo Federal.</p>
+<p align="justify">Al señor Ministro Arturo  Zaldívar Lelo de Larrea, Presidente de la Suprema Corte de Justicia de la  Nación. </p>
+<p align="justify">Al señor Diputado Sergio  Gutiérrez Luna, Presidente de la Honorable Cámara de Diputados. </p>
+<p align="justify">Al doctor Rutilio  Escandón Cadenas, Gobernador del Estado de Chiapas. </p>
+<p align="justify">Así como a los  representantes de los poderes de Chiapas y al presidente municipal, y a todos  los distinguidos invitados.</p>
+<p align="justify">Al concluir esta sesión se  solicita a los integrantes del presídium, a las Vicepresidentas y al  Vicepresidente de la Mesa Directiva, así como a las Coordinadoras y  Coordinadores de los grupos parlamentarios, se trasladen al Muro de Honor de la  Medalla &ldquo;Belisario Domínguez&rdquo; para develar el nombre de nuestros galardonados. </p>
+<p align="justify">Asimismo, para que  posteriormente nos traslademos al Patio Central para la guardia de honor ante  la estatua del Senador Belisario Domínguez.</p>
+<p align="justify">Se les solicita ponerse de  pie a fin de entonar el Himno Nacional.</p>
+<p align="center">(Todos de pie entonan el  Himno Nacional)</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100495'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='100496'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify">Se da por finalizada esta  sesión solemne. Y se cita a sesión ordinaria de la Cámara de Senadores el  martes 12 de octubre a las 11:00 horas, en su modalidad presencial en el salón  de sesiones de la sede de Paseo de la Reforma.</p>
+<p align="justify">Se levanta la sesión.</p>
+<p align="center">(Se  levantó la sesión a las 12:57 horas)</p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a100496'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>TERCER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO III</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 30</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 23 de Noviembre de 2023</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/3/PPO/PDF-WEB/PPO_No30_23-NOVIEMBRE-2023_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113722'></a><p align="center"><strong>PRESIDE LA SENADORA</strong><br>
+  <strong>ANA LILIA RIVERA RIVERA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera:</strong><strong> </strong>(13:08 horas) Con el quórum de nuestra sesión  ordinaria de hoy y en cumplimiento al Acuerdo aprobado en la sesión del 22 de  noviembre, iniciamos la sesión solemne para develar en el Muro de Honor del  Senado de la República la inscripción: &ldquo;General Felipe Ángeles, patriota leal y  revolucionario&rdquo;. </p>
+<p align="justify">Acuden como invitados a esta sesión solemne, el Licenciado Julio  Menchaca Salazar, gobernador del estado de Hidalgo. </p>
+<p align="justify">El Doctor Edgar Moreno Gayosso, Presidente municipal de Zacualtipán de  Ángeles del estado de Hidalgo. </p>
+<p align="justify">La Maestra Itzel Escudero Escudero, Presidenta del Sistema DIF de  Zacualtipán de Ángeles. </p>
+<p align="justify">La Diputada Alejandra Moreno Gayosso, del Congreso del estado de  Hidalgo. </p>
+<p align="justify">La señora María Eugenia Ángeles y el señor Héctor Alfredo Calderón  Ángeles, familiares del General Felipe Ángeles. </p>
+<p align="justify">Por lo que se designa en comisión a las y los Senadores: Navor Rojas  Mancera, Roberto Juan Moya Clemente, Juan Zepeda, Nuvia Mayorga Delgado,  Geovanna Bañuelos, Marcela Mora, Juan Manuel Fócil Pérez, María Merced González  González, José Alfredo Botello Montes y Daniel Gutiérrez Castorena, para  recibir al licenciado Julio Ramón Menchaca Salazar, Gobernador del Estado de  Hidalgo.</p>
+<p align="center">(La Comisión cumple)<strong></strong></p>
+<p align="justify">En tanto, se declara un receso. </p>
+<p align="center">(RECESO)</p>
+<p align="justify"> <strong>La Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Damos la bienvenida a un grupo de ciudadanas y ciudadanos invitados a  esta sesión, del estado de Hidalgo, invitados por nuestra querida compañera, la  Senadora María Merced González. <strong></strong></p>
+<p align="justify">¡Bienvenidas y bienvenidos!</p>
+<p align="justify">Se reanuda la sesión solemne. </p>
+<p align="justify">Damos la bienvenida y agradezco la asistencia del licenciado Julio  Menchaca Salazar, Gobernador del Estado de Hidalgo.</p>
+<p align="justify">Del Doctor Edgar Moreno Gayosso, Presidente Municipal de Zacualtipán de  Ángeles, del estado de Hidalgo. </p>
+<p align="justify">De la Maestra Itzel Escudero Escudero, Presidenta del Sistema DIF de  Zacualtipán de Ángeles.</p>
+<p align="justify">Y de la Diputada Alejandra Moreno Gayosso, del Congreso del Estado de  Hidalgo. </p>
+<p align="justify">Asimismo, agradezco la asistencia de los familiares del General Felipe  Ángeles, la señora María Eugenia Ángeles y el señor Héctor Alfredo Calderón  Ángeles, nieta y bisnieto, respectivamente, de nuestro homenajeado.</p>
+<p align="justify">Finalmente, agradezco a todas y todos los invitados y familiares del  general Felipe Ángeles que nos acompañan. Todos ustedes honran con su presencia  al Senado y destacan la importancia de esta sesión solemne y de la inscripción  que realizaremos. </p>
+<p align="justify">Presento a ustedes a los integrantes de la Mesa Directiva que nos  acompañan en el presídium: </p>
+<p align="justify">Senadora Verónica Camino Farjat. </p>
+<p align="justify">Senadora Claudia Anaya Mota. </p>
+<p align="justify">Senador Daniel Gutiérrez Castorena.</p>
+<p align="justify">Secretarias y Secretario de la Mesa Directiva.</p>
+<p align="justify">También nos acompaña el Senador Navor Alberto Rojas Mancera, Secretario  de la Mesa Directiva y promovente de la leyenda que origina esta sesión  solemne. </p>
+<p align="justify">En cumplimiento al Decreto referido, en esta sesión solemne develaremos  la leyenda: &ldquo;General Felipe Ángeles, patriota leal y revolucionario&rdquo;. </p>
+<p align="justify">Solicito a la Secretaría dé cuenta con los antecedentes que originan  esta sesión solemne.</p>
+<p align="justify"><strong>La Secretaria Senadora Claudia Edith Anaya Mota: </strong>Doy cuenta:</p>
+<p align="justify">El Senador Navor Alberto Rojas Mancera, presentó en la sesión del 3 de  noviembre de 2022, un proyecto de Decreto por el que se propone la inscripción  en el Muro de Honor del Senado de la República la leyenda: &ldquo;General Felipe  Ángeles, patriota leal y revolucionario&rdquo;. </p>
+<p align="justify">Se turnó a la Comisión de Cultura para su estudio y dictamen  correspondiente. </p>
+<p align="justify">En el análisis de la propuesta, la comisión consideró que el General  Felipe Ángeles es ejemplo de generaciones militares y que se destacó por sus  méritos de artillería.</p>
+<p align="justify"> Fue notable técnico militar, apasionado demócrata, hombre justo, leal y  honrado. </p>
+<p align="justify">Un general que representa la gloria del Colegio Militar y del Ejército  Mexicano. </p>
+<p align="justify">Asimismo, destaca su decidida participación en distintos episodios de la  lucha revolucionaria de nuestro país. </p>
+<p align="justify">El dictamen con la propuesta de la comisión se aprobó en el Pleno el 25  de abril, el Decreto fue publicado en el Diario Oficial de la Federación el 3  de mayo pasado. </p>
+<p align="justify">Es todo, señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Muchas gracias, Senadora Secretaria. </p>
+<p align="justify">Concedemos el uso de la palabra al Senador Navor Alberto Rojas Mancera,  promovente de la leyenda. </p>
+<p align="justify"><strong>El Senador Navor Alberto Rojas Mancera: </strong>Con la venia, señora Presidenta.</p>
+<p align="justify">Saludo con respeto a mis compañeras y compañeros Senadores. </p>
+<p align="justify">En tan especial ocasión para el Senado de la República, nos honra con su  presencia alguien muy querido por todas y todos nosotros. </p>
+<p align="justify">Mi amigo, el Gobernador, el Licenciado Julio Menchaca Salazar. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify">Saludamos también a María Eugenia Ángeles Sánchez y a Héctor Alfredo  Calderón Ángeles, familiares de nuestro Honorable General Felipe Ángeles. </p>
+<p align="justify">Muchas gracias, gracias por estar con nosotros. </p>
+<p align="justify">Saludamos también al Doctor Héctor Moreno Galloso, presidente municipal  de Zacualtipán, tierra que vio nacer a nuestro general. </p>
+<p align="justify">Como hidalguense, me siento muy emocionado, muy honrado, en poder  participar en esta develación que quedará inscrita en los anales de la vida  parlamentaria de nuestro país. </p>
+<p align="justify">Ese fue el propósito de la iniciativa que presentamos, honrar la vida,  la obra, la trayectoria de uno de los más ilustres de los hidalguenses. </p>
+<p align="justify">Hace unos días, platicando con los familiares del general, me decían que  no todo mundo, no todos los mexicanos conocemos al General Felipe Ángeles, y es  cierto, fue un general discreto, cortés, un caballero, no fue muy notorio,  justamente en la lucha revolucionaria, pero fue un gran general que no solo destacó  como estratega militar, sino también por su convicción inquebrantable en el  respeto de las instituciones y lealtad a nuestra patria. </p>
+<p align="justify">El General Felipe Ángeles nació el 13 de junio de 1868, prácticamente  cuando nace nuestro estado, su padre, Felipe Ángeles Melo, sentó el grado de  coronel y participó en guerras importantes como la guerra contra Estados Unidos  o como la intervención francesa. </p>
+<p align="justify">Nuestro General Felipe Ángeles, con tan solo 14 años ingresó becado al  Colegio Militar del Castillo de Chapultepec, en donde se destacó como un  estudiante muy perseverante, culto y estuvo en Francia. Cuando estuvo en  Francia, prácticamente fue condecorado como Caballero de la Legión de Honor,  esto fue en 1912. </p>
+<p align="justify"> Fue profesor de matemáticas, se interesó en la pedagogía y en la  necesidad de una reforma a la educación que se recibía en el Colegio Militar,  apostando, según por sus palabras, por una educación humanista. </p>
+<p align="justify">Se formó en el ejército porfiriano al estallar la revolución, también  estuvo con Francisco I. Madero, quien lo nombra director del Colegio Militar y  general brigadier; tras el golpe militar orquestado por Victoriano Huerta fue  detenido junto con Francisco I. Madero y José María Pino Suárez, pero debido al  prestigio y arraigo militar no fue fusilado, fue exiliado a Francia, pero  prácticamente regresa de inmediato, justamente para aliarse a la lucha  constitucionalista al lado de Venustiano Carranza, quien lo nombra Secretario  de Guerra. </p>
+<p align="justify">Y en 1914, estuvo muy poco tiempo prácticamente con Venustiano Carranza,  se une a las filas de Francisco Villa con quien siguió, hasta que fue fusilado  el 26 de noviembre de 1919 en Chihuahua. </p>
+<p align="justify">Estamos a tres días de conmemorar 104 años del aniversario luctuoso de  su muerte. Y quiero citar uno de sus pensamientos. </p>
+<p align="justify">Dice: &ldquo;Vine del pueblo y era yo exclusivamente un soldado, la ignominia  de febrero de 1913 me hizo un ciudadano y me arrojó a los brazos de la  revolución, en calidad de un devoto de nuestras instituciones democráticas&rdquo;. </p>
+<p align="justify">Fue considerado un caballero por su vocación al diálogo, un intelectual  y estratega, que más allá del interés personal siempre veló por el bien y por  la paz del país, pese a lo convulsionado que estaba en ese tiempo nuestro país. </p>
+<p align="justify">Desde esta máxima tribuna de México expreso mi profundo reconocimiento y  admiración a quien en vida antepuso siempre su deber patriótico por encima de  cualquier interés personal, a quien luchó por garantizar la libertad, la  democracia y el liberalismo puro como un modo de vida justo para los más  necesitados. </p>
+<p align="justify">En el momento de su ejecución fue él mismo quien deliberó, quien  defendió la causa, quien defendió su causa, pero también fue él mismo quien  eligió el lugar, y se negó justamente, que le vendaran los ojos. </p>
+<p align="justify">Sin duda, hoy las y los mexicanos a quienes representamos desde este  Senado saldamos una deuda histórica con un gran prócer. </p>
+<p align="justify">¡Que viva por siempre Felipe Ángeles!</p>
+<p align="justify">¡Patriota leal y revolucionario! </p>
+<p align="justify">¡Que viva Felipe Ángeles! </p>
+<p align="justify">Es cuanto. </p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Muchas gracias, querido Senador, primer  orador de este acto solemne, por ser el promovente de las letras de oro que en  unos momentos vamos a develar. </p>
+<p align="justify">Compañeras y compañeros, hermanos y hermanas  de esta tierra, esta tierra maravillosa que vio nacer la llama de la libertad,  nos encontramos aquí hoy para recordar y honrar la gesta heroica que cambió el  rumbo de nuestra historia, la Revolución Mexicana. </p>
+<p align="justify">Este día no solo celebramos un hecho del pasado, sino que renovamos  nuestro compromiso con los ideales de justicia, igualdad y libertad que  inspiraron a aquellas mujeres y hombres valientes que se levantaron hace 113  años; en los albores del siglo XX nuestras tierras resonaron con el clamor de  los oprimidos, con el grito de aquellos que se negaban a doblegarse ante la  injusticia, ante la tiranía, los corazones de mujeres y hombres de todas las  clases sociales latían al unísono impulsados por la urgencia de un cambio, que  se convertiría en el alma misma de nuestra Nación. </p>
+<p align="justify"> Fue entonces en el remolino de la lucha donde la Revolución Mexicana se  forjó con el arrojo de idealistas y la determinación de quienes anhelaban un  México más justo, entre esos idealistas, uno más de esos soñadores y valientes  fue el General Felipe Ángeles Ramírez, una figura fundamental en nuestra tercera Revolución Mexicana. </p>
+<p align="justify">Con coraje y gallardía Ángeles desempeñó un papel  crucial en la lucha por la justicia y la libertad de nuestro pueblo, su visión  estratégica, su habilidad militar fueron pilares que hicieron posible el anhelo  de un México mejor.</p>
+<p align="justify">En los campos de batalla el general Ángeles no solo  lideró con destreza, sino también encarnó los valores de la lealtad y  sacrificio, no solo por ser un estratega militar excepcional, sino por servir  con entereza y convicción profundas, profundas hacia su patria.</p>
+<p align="justify">Ángeles inició su carrera en el Colegio Militar de  Chapultepec, donde destacó por su aguda inteligencia y su dedicación al estudio  de diversas disciplinas, su habilitad táctica y su profunda vocación humanista  fueron signos de su personalidad a lo largo de las diferentes etapas de su  vida, desde que se formó en el ejército porfiriano, pasando por su nombramiento  como oficial federal de alto rango durante el maderismo hasta su participación  en la lucha armada como revolucionario.</p>
+<p align="justify">Además de sus heroicas contribuciones militares,  Ángeles también se destacó como promotor de un modelo pedagógico humanista  centrado en el libre albedrío en oposición a la educación militar caracterizada  por la disciplina exacerbada.</p>
+<p align="justify">Fue también un narrador prodigioso que plasmó como  pocos el entorno físico y humano de las tropas, de los poblados y de la gente  que veía. Por sus férreas convicciones y lealtades se distanció de algunos  líderes revolucionarios y eventualmente enfrentó la tragedia de ser juzgado y  ejecutado en 1919.</p>
+<p align="justify">A pesar de su trágico final su legado perdura como  un símbolo de valentía, ética militar y amor por la patria.</p>
+<p align="justify">Como bien lo describe la investigadora Odile  Guilpain en su ensayo: &ldquo;El General Felipe Ángeles, humanismo y educación  militar&rdquo;. El afán de superación intelectual es una de las características de  Ángeles un elemento clave en su trayectoria poco común.</p>
+<p align="justify">Por un lado, fue y se asumió profundamente militar,  pero jamás decayó en él la imperiosa necesidad vital, espiritual, ética del  pensamiento libre. La Revolución Mexicana fue un parto doloroso de esta nación  que buscaba liberarse de las cadenas que lo ataban al yugo de la miseria.</p>
+<p align="justify">Fue un llamado a la igualdad, a la justicia, a la  oportunidad para cada hijo e hija de esta tierra, por eso la Revolución y el  patriotismo de las y los revolucionarios fueron un acto de amor por México, una  expresión colectiva de esperanza que arde aún hoy en los corazones de quienes  seguimos soñando con un mejor mañana.</p>
+<p align="justify">Dice la reconocida profesora Virginia Aspe Armella:  &ldquo;que toda transformación implica producir en otro un cambio esencial, un cambio  en el que la realidad sobre la cual se actúa deja de ser lo que era para  devenir en él algo nuevo, en este caso, en nuestro país&rdquo;. </p>
+<p align="justify">Ahora éste ha dejado de ser lo que era, en tres ocasiones,  para ser esas mismas veces un nuevo México. México independiente. México  liberal y el que emerge después del proceso histórico conocido como Revolución  Mexicana.</p>
+<p align="justify"> Precisamente ahora somos testigos de un proyecto  político que encarna una revolución en México, una cuarta revolución que ha  venido a completar un proceso de empoderamiento del pueblo mexicano que supone  llevar a cabo una revolución de conciencias, en virtud de que el pueblo pueda  convertirse en la fuerza dirigente del país.</p>
+<p align="justify">Tiene el carácter disruptivo de las otras, porque  esta cuarta revolución persigue, como el propio general Ángeles, un cambio  relevante hacia la consumación del proyecto de justicia social originalmente  integrado en la Constitución de 1917, pero posteriormente frustrado por los  gobiernos neoliberales.</p>
+<p align="justify">Si bien esta revolución pacífica no ha sido  materializada a través de una nueva Carta Magna, sí cuenta con todos los  elementos para ser considerada una etapa de ruptura histórica, pues por primera  vez promueve un ideario de izquierda expresado como categoría moral y fáctica  al interior de las y los ciudadanos.</p>
+<p align="justify">No es exagerado aseverar que lo que experimentamos  hoy es una revolución pacífica que ha traído un cambio hondo para México, un punto de inflexión frente a los sexenios neoliberales y un  cauce de consciencia política en el que el pueblo ha dejado de ser visto como  una simple masa votante y se ha convertido en el centro, en el foco de la vida  nacional. </p>
+<p align="justify">Y como el sueño de nuestro homenajeado, esta revolución también se ha  empeñado en asegurar la libertad, la justicia, la igualdad y la prosperidad de  cada hija e hijo de esta tierra. </p>
+<p align="justify">Este Senado de la República ha sido, sin duda, fuente y pluma de esta  revolución pacífica, logrando que las demandas sociales de una generación no solo  se integren al texto constitucional, sino que sean una realidad palpable en  cada uno de nuestros días. </p>
+<p align="justify">Prácticamente todo el universo de derechos económicos, sociales,  culturales y ambientales, pero también los civiles y políticos, se han  ensanchado de modo exponencial. </p>
+<p align="justify">En el marco de nuestra función legislativa, hemos materializado diversas  reformas a la Carta Magna con el propósito de honrar la herencia de la  Revolución de 1910 y la vida empeñada por hombres como el General Ángeles. </p>
+<p align="justify">Con su espíritu a cuestas, a lo largo de estos años logramos elevar a  rango constitucional los programas sociales dirigidos a las personas más  desfavorecidas; diseñamos una nueva reforma educativa; incluimos el principio  de paridad en todo los poderes y órdenes del gobierno; incorporamos la figura  de la revocación de mandato de los gobiernos que no satisfagan las expectativas  del pueblo y fortalecimos su participación a través de la consulta popular. </p>
+<p align="justify">En materia laboral, ampliamos, como nunca, los derechos de las y los  trabajadores a través del aumento de sus salarios, de la regulación de los  sindicatos y de la prohibición de la subcontratación ilegal. Por ejemplo, nada  más. </p>
+<p align="justify">En general, esta etapa de la vida nacional ha recuperado el espíritu  social de la Constitución de 1917, teniendo como base la conciencia histórica,  la herencia revolucionaria y el respeto por quienes lucharon y dieron su vida  por la patria en la gesta revolucionaria. </p>
+<p align="justify">El Senado se llena de gloria este día, al inscribir en sus muros el  nombre del General Felipe Ángeles Ramírez, patriota leal y revolucionario. </p>
+<p align="justify"> El legado del general trasciende las páginas de los libros de la  historia, su visión para modernizar y fortalecer las Fuerzas Armadas dejó una  huella indeleble en la evolución de las instituciones militares mexicanas; su  vida y sacrificio continúan inspirándonos a luchar un México más justo,  igualitario y próspero. </p>
+<p align="justify">Queridas y queridos invitados. </p>
+<p align="justify">Queridas y queridos familiares. </p>
+<p align="justify">Amigos miembros de las Fuerzas Armadas. </p>
+<p align="justify">Senadoras y Senadores: </p>
+<p align="justify">La Revolución Mexicana no es un capítulo acabado solamente como  referencia en nuestros libros, es la llama que arde en el corazón de cada  mexicano el día de hoy. </p>
+<p align="justify">Valga en esta &ldquo;Cuarta Transformación&rdquo; darle un reconocimiento a uno de  los grandes forjadores de la tercera transformación, más vivo que nunca.</p>
+<p align="justify">¡Viva Felipe Ángeles!</p>
+<p align="justify">¡Viva la Revolución Mexicana!</p>
+<p align="justify">¡Viva México!</p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify">Se concede ahora el uso de la palabra a la señora María Eugenia Ángeles,  nieta del General Felipe Ángeles. </p>
+<p align="justify"><strong>La C. María Eugenia Ángeles Sánchez: </strong>Muchísimas gracias. </p>
+<p align="justify">Como ya le dijeron, mi nombre es María Eugenia Ángeles Sánchez, soy  nieta directa del General Felipe Ángeles, hija de su primogénito Alberto. </p>
+<p align="justify">Primero que nada, me gustaría mucho darles las gracias por esta  iniciativa para un gran hombre que fue hidalguense también. </p>
+<p align="justify">Y quisiera compartir con ustedes unos fragmentos de un poema de Isaac  Rojas, que dedicó a su esposa e hijos en 1976 para que estuvieran orgullosos de  su estirpe: </p>
+<p align="justify">¡&ldquo;Porque está en pie, con los brazos abiertos, parado en la alta cima de  Molango, tranquilo, en orden las ideas, pulcro, sano, generoso, el gran hijo  del estado de Hidalgo, Felipe Ángeles&rdquo;! </p>
+<p align="justify">Ángeles fue un cruzado del amor y la vida. &ldquo;Armarse caballero por saber  los secretos del arte de la guerra&rdquo; </p>
+<p align="justify">Hizo de acero el músculo y la mente discurso por ciencias y humanidades  que le dieron perfil renacentista, la causa de su paso por el fuego de las  batallas que le hicieron célebre.</p>
+<p align="justify">Sea Torreón o Saltillo o Zacatecas, fue su fidelidad a los principios de  una verdadera democracia.</p>
+<p align="justify">Esa fidelidad fue su pureza, peleaba para ganar los encuentros y salvar  la vida a los prisioneros, era que amaba a sus enemigos como quería a sus  propios soldados.</p>
+<p align="justify"> Fraternizando creaba al fin la igualdad y alcanzaba la síntesis del  pueblo. </p>
+<p align="justify">Rindió su espada a Francisco I. Madero en aras de la Revolución del &lsquo;10. </p>
+<p align="justify">Ángeles fue enviado a pacificar a Emiliano Zapata y a los suyos,  entendió la razón del agrario y en vez de perseguirlos como a fieras les  entregó su comprensión y amor.</p>
+<p align="justify">Y he aquí al maderismo zapatista, Ángeles y Madero juntaron sus ideales  hasta que la traición los separó derramando la sangre del apóstol y usurpando  el poder como un botín. </p>
+<p align="justify">Ángeles se ofreció al movimiento restaurador del orden y la paz, los  celos y los recelos no quitaron ánimos a sus bríos como es fuerza que los  semejantes identifiquen.</p>
+<p align="justify">Tuvo la fortuna de incorporarse a las fuerzas que mandaba Pancho Villa,  el amigo de los pobres. </p>
+<p align="justify">El académico y el guerrillero, cada uno ocupó su puesto.</p>
+<p align="justify">El primero convenció con su ciencia y experiencia y, el segundo, con su  empuje más su intuición y coraje, transformaron en ariete a la División del  Norte, una furia incontenible que destruyó a los huertistas. </p>
+<p align="justify">Entonces, surgieron las ambiciones y los usufructuarios de las luchas,  ninguna convención ni el compromiso de firmar la Bandera Nacional acarrearon la  unidad y la paz. </p>
+<p align="justify">Se produjo la decisión con su causa de combates por una hegemonía  absoluta. </p>
+<p align="justify">Ángeles volvió la cara al cielo y las estrellas y se fue al extranjero  sin sandalias siquiera, brotaban los caudillos como hierbas insufladas por  todas las codicias enfrentando a hermanos contra hermanos. </p>
+<p align="justify">La sangre en la tierra derramada brotó por las mazorcas y espigas,  clamando contra los mitos y engaños con que se disfrazaba la torpeza. </p>
+<p align="justify">Un haz de buenas voluntades quiso conjurar tormentas y tempestades. </p>
+<p align="justify">En una palabra, la intervención y desde el norte promovió la paz, una  paz hija de la fraternidad y del fin de los personalismos. </p>
+<p align="justify">Semejante utopía fue la cruza brazada por el hombre puro que en la  pobreza halló su fuerza para el sacrificio y para redimir con el ejemplo del  que lo deja todo y se entrega a predicar su evangelio insólito entre las  bestias y los fariseos. </p>
+<p align="justify">Sabía del riesgo de perder la vida y del penoso ascenso del calvario,  pero no se arredró, por lo contrario, partió lleno de fe y esperanza el 11 de  diciembre del 18. </p>
+<p align="justify">Como un apóstol laico del amor, Ángeles pasó unos meses con Villa, gastó  tiempo y palabras en la brega y no pudo convertir al centauro.</p>
+<p align="justify">El fracaso no hizo flagelar su fe, se retiró de un monte a una cueva  conducido por judas cualquiera. </p>
+<p align="justify">La humanidad entera se agitó porque habrían de juzgarlo unos sicarios  del caudillo mayor que era un Pilatos, capaz de la consigna y la falacia que  armó un consejo sumado de guerra, mero instrumento de exterminio y dolo,  tablero de ajedrez sin una pieza, escenario de carpa con tragedia.</p>
+<p align="justify"> Ángeles confundió a los mercenarios con los destellos de su pensamiento  y con palabras plenas de sindéresis les habló del bien y del mal, la verdad y  lo justo en forma tan sencilla como el maestro da su última clase y hecha la  luz en los entendimientos. </p>
+<p align="justify">Tuvo la calma también para explicarles las raíces de su comportamiento,  una dialéctica del socialismo porque tenía que ser un socialista quien miraba  por el género humano libre de explotación y egoísmo y se inclinaba por la  evolución, derivada de la obra educativa.</p>
+<p align="justify">Cayeron como rocas, que a su paso destruyen los disimulos que ocultan la  grandeza mineral del abismo, tamañas revelaciones en el ánimo servil del  tribunal maniatado. El temple a toda prueba de Felipe lo mantuvo sereno, de una  pieza, al punto que al oír la sentencia dijo no abrigar odio ni rencor hacia  cuantos le cortarían la vida y, en cambio, amarlos como sus hermanos, así  otorgó el perdón a sus verdugos y fue más leal y puro ante la muerte. </p>
+<p align="justify">Toca a tu patria, Felipe, enaltecer la justicia de tu reivindicación y  porque se lea tu nombre escrito con letras de oro como héroe de la historia y  como hombre inmaculado junto al de Pancho Madero, el primero en pureza de  nuestra revolución. </p>
+<p align="justify">Gracias. </p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Muchas gracias, querida señora Ángeles. </p>
+<p align="justify">Solicito a las y los coordinadores de los grupos parlamentarios, a los  integrantes de la Junta Directiva de la Comisión de Cultura, a los integrantes  de la Mesa Directiva, al licenciado Julio Menchaca, a la señora María Eugenia  Ángeles y al señor Héctor Alfredo Calderón Ángeles nos acompañen a la base del  Muro de Honor para la develación de la leyenda: &ldquo;General Felipe Ángeles,  patriota, leal y revolucionario&rdquo;. </p>
+<p align="justify">Previo a la develación, escucharemos el toque de silencio.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113722'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113723'></a><p align="justify">Posteriormente, se realizará la develación y después entonaremos nuestro  Himno Nacional como acto final de esta sesión solemne. </p>
+<p align="justify"><strong>DEVELACIÓN EN EL MURO DE HONOR  DEL SENADO DE LA REPÚBLICA </strong><strong>LA LEYENDA: &ldquo;GENERAL FELIPE ÁNGELES, PATRIOTA, LEAL Y REVOLUCIONARIO&rdquo;</strong><strong></strong></p>
+<p align="justify">Agradecemos la asistencia de nuestro compañero Senador y actual gobernador  del estado de Hidalgo, el licenciado Julio Ramón Menchaca Salazar. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="center">(Todos de pie)</p>
+<p align="center">(Toque de silencio)</p>
+<p align="justify"><strong>La Secretaria Senadora Claudia Edith Anaya Mota:</strong> Favor de mantenerse de pie para entonar el Himno Nacional. </p>
+<p align="center">(Se entona el Himno Nacional)</p>
+<p align="justify">Favor de tomar asiento. </p>
+<p align="justify"> El Senado de la República  expresa su agradecimiento a nuestras invitadas e invitados por la asistencia a  esta sesión solemne. </p>
+<p align="justify">Solicito a las Senadoras y a  los Senadores integrantes de la comisión de cortesía se sirvan acompañar, hasta  la puerta de este recinto, cuando lo deseen hacer, a nuestros invitados  especiales.</p>
+<p align="center">(La comisión cumple)</p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Se levanta la sesión  solemne.</p>
+<p align="center">(Se levantó la sesión solemne a las 12:48 horas)</p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113723'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

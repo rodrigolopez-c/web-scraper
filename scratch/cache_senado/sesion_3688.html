@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 43</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Laura Itzel Castillo Juárez</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Ordinaria Celebrada<br>en la Ciudad de M&eacute;xico, el 09 de Diciembre de 2025</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/2/PPO/PDF-WEB/PPO_No43_9-DICIEMBRE_2025_VESPERTINA.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124680'></a><p align="center"><strong>PRESIDE  LA SENADORA</strong><br>
+  <strong>VERÓNICA  NOEMÍ CAMINO FARJAT</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>La  Presidenta Senadora Verónica Noemí Camino Farjat: </strong>(21:01  horas) Solicito a la Secretaría informe a la Asamblea el resultado del cómputo  de asistencia de las personas senadoras.</p>
+<p><strong>La  Secretaria Senadora María Martina Kantún Can: </strong>Honorable  Asamblea, conforme al registro de asistencia, se han acreditado 69 ciudadanas  Senadoras y Senadores. En consecuencia, hay quórum, señora Presidenta. </p>
+<p><strong>La  Presidenta Senadora Verónica Noemí Camino Farjat: </strong>Gracias.  Se abre la sesión ordinaria vespertina del martes 9 de diciembre de 2025,  correspondiente al primer período ordinario de sesiones del segundo año de  ejercicio de la LXVI Legislatura. El Orden del Día se encuentra publicado en la  Gaceta Parlamentaria de hoy y está disponible en el monitor de sus escaños; con  lo cual se informa de los asuntos que corresponden a la agenda. </p>
+<p align="right"><strong>ORDEN DEL DÍA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/gaceta_del_senado/documento/155798"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>El acta de la sesión ordinaria matutina del 9  de diciembre se encuentra publicado en la Gaceta Parlamentaria de este día. </p>
+<p align="right"><strong>ACTA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/gaceta_del_senado/documento/155801"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/asistencias/2025_12_09/35"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>En  consecuencia, consulte la Secretaría a la Asamblea, en votación económica, si  se aprueba el acta referida. </p>
+<p><strong>La  Secretaria Senadora María Martina Kantún Can: </strong>Consulto  a la Asamblea, en votación económica, si se aprueba el acta referida. Quienes  estén porque se apruebe, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea asiente)</p>
+<p>Quienes  estén porque se rechace, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p>Quienes  se abstengan, favor de levantar la mano. </p>
+<p>Aprobada  el acta, señora Presidenta. </p>
+<p><strong>La  Presidenta Senadora Verónica Noemí Camino Farjat: </strong>Aprobada  el acta de la sesión ordinaria matutina del 9 de diciembre de 2025.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124680'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124682'></a><p><strong>PROYECTO DE DECRETO POR EL QUE SE REFORMAN,  ADICIONAN Y DEROGAN DIVERSAS DISPOSICIONES DE LA LEY FEDERAL DE PROCEDIMIENTO  CONTENCIOSO ADMINISTRATIVO</strong></p>
+<p><strong>(Dictamen a votación)</strong></p>
+<p>Honorable  Asamblea, una vez que agotamos la discusión en lo general y en lo particular  del dictamen de reformas a la Ley Federal de Procedimiento Contencioso  Administrativo, derivado del resultado de la votación en lo particular, en la  sesión matutina, esta Asamblea no tomó una determinación sobre los artículos  reservados. En consecuencia, corresponde retomar la votación de los artículos  34 en los términos del dictamen y del 63 del proyecto de Decreto con las  modificaciones aceptadas.</p>
+<p>Por  lo que háganse los avisos a que se refiere el artículo 58 del Reglamento del  Senado para informar de la votación. Ábrase el sistema electrónico hasta por  diez minutos para recoger la votación nominal del artículo 34 del proyecto de Decreto  en los términos del dictamen. Asimismo, del artículo 63 del proyecto de Decreto  con las modificaciones aceptadas.</p>
+<p>Informe la Secretaría del resultado de la votación.</p>
+<p> <strong>La  Secretaria Senadora María Martina Kantún Can: </strong>Pregunto si hace falta algún senador o ciudadana senadora en emitir su  voto. Sigue abierto el sistema. </p>
+<p>Pregunto si hay  algún ciudadano Senador o alguna ciudadana Senadora en emitir su voto. Sigue  abierto el sistema, la Presidenta declaró que eran diez minutos en la votación. </p>
+<p>Sigue abierto el  sistema. </p>
+<p>Pregunto si falta alguna ciudadana senadora o  algún ciudadano senador en emitir su voto. </p>
+<p>Una vez transcurrido el tiempo indicado por  la Presidencia, ciérrese el sistema electrónico. </p>
+<p align="right"><strong>VOTACIÓN</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/votacion/5019"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Señora Presidenta, conforme al registro en el  sistema electrónico, se han emitido 93 votos, de los cuales 66 son a favor, 12  en contra y 15 abstenciones. </p>
+<p><strong>La Presidenta Senadora  Verónica Noemí Camino Farjat:</strong> En consecuencia, quedan aprobados los  artículos 34 en los términos del dictamen, y 63 con las modificaciones  aceptadas. Está aprobado en lo general y en lo particular el proyecto de  Decreto por el que se reforman, adicionan y derogan diversas disposiciones de  la Ley Federal de Procedimiento Contencioso Administrativo. Se remite a la  Cámara de Diputados para los efectos del artículo 72 constitucional. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124682'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124684'></a><p>Tenemos  ahora la discusión de 17 dictámenes, con punto de Acuerdo de diversas  comisiones, sobre ellos no hay reservas para su discusión. Dé cuenta la  Secretaría. </p>
+<p><strong>La  Secretaria Senadora María Martina Kantún Can:</strong> Doy cuenta. Los dictámenes son:</p>
+<p>De  la Comisión de Marina, con punto de Acuerdo por el que se inscribe con letras  doradas en el patio del federalismo la leyenda, 23 de noviembre de 1825, a 200  años de la Consolidación de la Independencia en la Mar y en las Costas de la  Nación. </p>
+<p><strong>COMISIÓN DE MARINA</strong></p>
+<p><strong>(Dictamen a  discusión)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Dict_Com_Marina_Letras_Doradas_Patio_Federalismo.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124684'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124685'></a><p>Cinco, de la Comisión de Salud, por el que se  exhorta a la Secretaría de Salud y a sus homólogos en las 32 entidades  federativas, para que continúen fortaleciendo la campaña de difusión de los  servicios de salud visual en las instituciones públicas de salud del ámbito  federal y estatal. </p>
+<p><strong>COMISIÓN DE SALUD</strong></p>
+<p><strong>(Dictamen a discusión)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Dict_Com_Salud_Salud_Visual.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124685'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124686'></a><p>Por el que se exhorta a la Secretaría de  Salud, para que en coordinación con el IMSS y el ISSSTE continúen fortaleciendo  las campañas de información, diagnóstico y oportuno y atención de los  diferentes tipos de linfoma. </p>
+<p><strong>COMISIÓN DE SALUD</strong></p>
+<p><strong>(Dictamen a discusión)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Dict_Com_Salud_Linfoma.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124686'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124688'></a><p>Uno más, en Materia de Salud Mental en la Adolescencia. </p>
+<p><strong>COMISIÓN DE SALUD</strong></p>
+<p><strong>(Dictamen a discusión)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Dict_Com_Salud_Salud_Mental.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124688'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124690'></a><p>Por el que se exhorta  a los y las titulares de las 32 entidades federativas a evaluar, rediseñar y  continuar fortaleciendo de manera urgente las políticas públicas, programas,  acciones y estrategias dirigidas a la prevención del embarazo en niñas y adolescentes. </p>
+<p><strong>COMISIÓN DE SALUD</strong></p>
+<p><strong>(Dictamen a discusión)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Dict_Com_Salud_Prevenci%C3%B3n_Embarazo.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124690'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124693'></a><p>Uno más, por el que  se exhorta a la Secretaría de Salud y a sus homólogas en las 32 entidades  federativas para que continúen fortaleciendo las campañas de concientización  sobre la artritis. </p>
+<p><strong>COMISIÓN DE SALUD</strong></p>
+<p><strong>(Dictamen a discusión)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Dict_Com_Salud_Artritis.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124693'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124695'></a><p>Uno, de la Comisión  de Desarrollo Rural, por el que se exhorta a la Secretaría de Agricultura y  Desarrollo Rural y a la empresa social Alimentación para el Bienestar a  fortalecer las capacidades operativas y logísticas del Programa de Precios de  Garantía. </p>
+<p><strong>COMISIÓN DE DESARROLLO RURAL</strong></p>
+<p><strong>(Dictamen a discusión)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Dic_Com_Desarrollo_Rural_Precios_Garant%C3%ADa.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124695'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124697'></a><p>De la Comisión de la  Guardia Nacional, con punto de Acuerdo por el que se exhorta a la Guardia  Nacional a continuar participando en la vigilancia de el gran Bosque de Agua de  la Ciudad de México y los estados de México y Morelos. </p>
+<p><strong>COMISIÓN DE GUARDIA NACIONAL</strong></p>
+<p><strong>(Dictamen a discusión)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Dict_Com_Guardia_Nacional_Gran_Bosque_de_Agua.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124697'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124699'></a><p>Dos de la Comisión de  Deporte, por el que exhorta al gobierno del estado de Tlaxcala para que se  otorgue un premio al estudiante Ángel Palestina Díaz por su destacada  trayectoria en la disciplina del ajedrez, promueva al ajedrez y fortalezca las  políticas públicas de apoyo a la juventud. </p>
+<p><strong>COMISIÓN DE DEPORTE</strong></p>
+<p><strong>(Dictamen a discusión)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Dict_Com_Deporte_Joven_Ajedrecista.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124699'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124700'></a><p>Y por el que se  reconoce y felicita a los deportistas que integraron la delegación del estado  de Querétaro por su destacada participación en la Paralimpiada Nacional Conade  2025. </p>
+<p><strong>COMISIÓN DE DEPORTE</strong></p>
+<p><strong>(Dictamen a discusión)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Dict_Com_Deporte_Paralimpiada_Nacional_2025.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124700'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124703'></a><p>Dos de la Comisión de  Gobernación, por el que se exhorta al Instituto Nacional de Estadística y  Geografía a valorar la pertinencia de incluir en la próxima edición de la  Encuesta Nacional sobre la Dinámica de las Relaciones en los Hogares, el ámbito  deportivo como un espacio específico para la recopilación de datos sobre  violencia de género contra las mujeres. </p>
+<p><strong>COMISIÓN DE GOBERNACIÓN</strong></p>
+<p><strong>(Dictamen a discusión)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Dict_Gobernaci%C3%B3n_Recopilaci%C3%B3n_Datos_Violencia_G%C3%A9nero.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124703'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124705'></a><p>Y por el que se  exhorta a las legislaturas de las 32 entidades federativas a legislar en  materia de reconocimiento como persona originaria de la entidad federativa que  corresponda, a las nacidas y nacidos en el extranjero que son hijas e hijos de  madres o padres mexicanos. </p>
+<p><strong>COMISIÓN DE GOBERNACIÓN</strong></p>
+<p><strong>(Dictamen a discusión)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Dict_Gobernaci%C3%B3n_Exhorta_al_Congreso_del_Edo_Sonora.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124705'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124707'></a><p>Cinco, de la Comisión  de Medio Ambiente, Recursos Naturales y Cambio Climático, por el que exhorta a  los gobiernos de las entidades federativas a fortalecer o impulsar la  transición hacia sistemas de movilidad sostenible y de electromovilidad. </p>
+<p><strong>COMISIÓN DE MEDIO AMBIENTE, RECURSOS  NATURALES</strong><br>
+  <strong>Y CAMBIO CLIMÁTICO</strong></p>
+<p><strong>(Dictamen a discusión)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Dict_Medio_Ambiente_Electromovilidad.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124707'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124709'></a><p>Por el que se exhorta  a la Secretaría de Medio Ambiente, Recursos Naturales y Cambio Climático a  analizar, en su caso, reconocer el alga &ldquo;Caulerpa okamurae&ldquo; como especie  exótica invasora y considerar la viabilidad de diseñar e implementar medidas de  control, mitigación y eventual erradicación.</p>
+<p><strong>COMISIÓN DE MEDIO AMBIENTE, RECURSOS  NATURALES</strong><br>
+  <strong>Y CAMBIO CLIMÁTICO</strong></p>
+<p><strong>(Dictamen a discusión)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Dict_Medio_Ambiente_Caulerpa_Okamurae_Especie_Ex%C3%B3tica.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124709'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124712'></a><p>Por el que se exhorta  a diversas autoridades ambientales para que informen sobre las inspecciones,  monitoreos y dictámenes técnicos realizados al respecto en la contaminación de  las costas de Tamaulipas.</p>
+<p><strong>COMISIÓN DE MEDIO AMBIENTE, RECURSOS  NATURALES</strong><br>
+  <strong>Y CAMBIO CLIMÁTICO</strong></p>
+<p><strong>(Dictamen a discusión)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Dict_Medio_Ambiente_Contaminaci%C3%B3n_Playa_Bagdad.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124712'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124715'></a><p>Por el que se exhorta  a la Secretaría de Medio Ambiente y Recursos Naturales y a la Procuraduría  Federal de Protección al Ambiente a fortalezcan y promover las acciones  encaminadas a la protección, conservación y preservación de las cactáceas  endémicas. </p>
+<p><strong>COMISIÓN DE MEDIO AMBIENTE, RECURSOS  NATURALES</strong><br>
+  <strong>Y CAMBIO CLIMÁTICO</strong></p>
+<p><strong>(Dictamen a discusión)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Dict_Medio_Ambiente_Exhorta_a_la_SEMARNAT.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124715'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124716'></a><p>Y por el que exhorta  a la Secretaría de Medio Ambiente y Recursos Naturales, a la Procuraduría  Federal de Protección al Ambiente y a los gobiernos de Quintana Roo y Nayarit a  fortalecer las acciones de inspección y vigilancia, a fin de seguir garantizando  el bienestar de los mamíferos marinos que están resguardados por diversas  empresas. </p>
+<p><strong>COMISIÓN DE MEDIO AMBIENTE, RECURSOS  NATURALES</strong><br>
+  <strong>Y CAMBIO CLIMÁTICO</strong></p>
+<p><strong>(Dictamen a discusión)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Dict_Medio_Ambiente_The_Dolphin_Company.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es todo, señora  Presidenta.</p>
+<p> <strong>La Presidenta Senadora Verónica Noemí Camino  Farjat: </strong>Gracias. Todos los  dictámenes están publicados en la Gaceta Parlamentaria de hoy para su  conocimiento. </p>
+<p>En consecuencia, solicito a la Secretaría que  consulte a la Asamblea, en votación económica si autoriza que se omita su  lectura. </p>
+<p><strong>La Secretaria Senadora María Martina Kantún Can:</strong> Consulto a la Asamblea, en votación económica, si  autoriza que se omita la lectura de los dictámenes. Quienes estén porque se  autorice, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén porque no se autorice, favor de  levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p>Quienes se abstengan, favor de levantar la mano. </p>
+<p>Si se autoriza, señora Presidenta. </p>
+<p><strong>La Presidenta Senadora Verónica Noemí Camino  Farjat: </strong>En esa virtud, solicito  ahora a la Secretaría que consulte a la Asamblea, en votación económica, si  autoriza que la discusión y votación de los dictámenes se realice de manera  conjunta. </p>
+<p><strong>La Secretaria Senadora María Martina Kantún Can: </strong>Consulto a la Asamblea, en votación económica, si  se autoriza la discusión y votación conjunta de los dictámenes. Quienes estén  porque se autorice, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén porque no se autorice, favor de  levantar la mano.  </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p>Quienes se abstengan, favor de levantar la mano. </p>
+<p>Si se autoriza, señora Presidenta. </p>
+<p><strong>La Presidenta Senadora Verónica Noemí Camino  Farjat: </strong>Como les fue informado, no  existe registro de las personas senadoras para la discusión de los dictámenes.  En esta virtud, consulte la Secretaría a la Asamblea, en votación económica, si  son de aprobarse.  </p>
+<p><strong>La Secretaria Senadora María Martina Kantún Can: </strong>Consulto a la Asamblea, en votación económica, si  son de aprobarse los dictámenes descritos anteriormente. Quienes estén porque  se apruebe, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén porque se rechacen, favor de levantar  la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p>Quienes se abstengan, favor de levantar la mano. </p>
+<p>Aprobados, señora Presidenta. </p>
+<p><strong>La Presidenta Senadora Verónica Noemí Camino  Farjat: </strong>Aprobados los dictámenes.  Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124716'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124718'></a><p>Pasamos a la  discusión de un dictamen de las Comisiones Unidas de Medio Ambiente, Recursos  Naturales y Cambio Climático; y de Estudios Legislativos, Segunda, por el que  se desecha la iniciativa con proyecto de Decreto por el que se reformaban los  párrafos primero y cuarto del artículo 60 Bis de la Ley General de Vida  Silvestre. </p>
+<p><strong>COMISIONES UNIDAS DE MEDIO AMBIENTE, RECURSOS  NATURALES </strong><br>
+  <strong>Y CAMBIO CLIMÁTICO; Y DE ESTUDIOS  LEGISLATIVOS</strong></p>
+<p><strong>(Dictamen a discusión)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Dict_Com_Medio_Ambiente_y_Estudios_Segunda_Ley_Vida_Silvestre.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>El dictamen se encuentra publicado en la Gaceta  Parlamentaria de este día para su conocimiento y no tiene registro de personas  oradoras. </p>
+<p>Está a discusión el dictamen. En virtud de no haber  personas oradoras registradas, consulte la Secretaría a la Asamblea, en  votación económica, si es de aprobarse el dictamen por el que se desecha la  iniciativa. </p>
+<p><strong>La Secretaria Senadora María Martina Kantún Can: </strong>Consulto a la Asamblea, en votación económica, si  es de aprobarse el dictamen que desecha la iniciativa. Quienes estén porque se  apruebe, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén por que se rechace, favor de levantar  la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p>Quienes se abstengan, favor de levantar la mano. </p>
+<p>Aprobado, señora Presidenta. </p>
+<p><strong>La Presidenta Senadora Verónica Noemí Camino  Farjat: </strong>Aprobado el dictamen. Se  instruye a la Secretaría Parlamentaria descargar el asunto de sus registros,  darlo por concluido e informar a las personas Senadoras promoventes. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124718'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124720'></a><p>Pasamos al trámite de los siguientes Acuerdos que  suscribimos los integrantes de la Mesa Directiva. </p>
+<p>Uno para realizar la ceremonia solemne en la que se  nombrará a la Sala de Comparecencias de la Cámara de Senadores como Elena  Poniatowska Amor. </p>
+<p>Y otro, por el que se determina celebrar una  ceremonia solmene para conmemorar el Cuadragésimo Aniversario del Instituto  Belisario Domínguez. </p>
+<p> Están disponibles en  sus escaños para su conocimiento. En consecuencia, procedemos a su trámite uno  a uno. </p>
+<p><strong>MESA DIRECTIVA</strong></p>
+<p>Iniciamos con el  relativo a la realización de la ceremonia solemne en la que se nombrará a la  Sala de Comparecencias de la Cámara de Senadores como &ldquo;Elena Poniatowska Amor&rdquo;. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Acuerdo_MD_Elena_Poniatowska.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Está a discusión el Acuerdo. Al no haber personas  oradoras registradas, consulte la Secretaría a la Asamblea, en votación  económica, si es de aprobarse el Acuerdo presentado. </p>
+<p><strong>La Secretaria Senadora María Martina Kantún Can: </strong>Consulto a la Asamblea, en votación económica, si  es de aprobarse el Acuerdo. Quienes estén porque se apruebe, favor de levantar  la mano. </p>
+<p align="center">(La  Asamblea asiente)</p>
+<p>Quienes  estén porque se rechace, favor de levantar la mano.</p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p>Quienes  se abstengan, favor de levantar la mano.</p>
+<p>Aprobado  el Acuerdo, señora Presidenta.</p>
+<p><strong>La  Presidenta Senadora Verónica Noemí Camino Farjat: </strong>Aprobado  el Acuerdo para realizar la ceremonia solemne, en la que se nombrará a la sala  de comparecencias de la Cámara de Senadores como Elena Poniatowska Amor.  Comuníquese.</p>
+<p>Se instruye a las Secretarías Generales realizar  las gestiones necesarias y cumplir con las tareas de logística que se  requieran. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124720'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124722'></a><p>Continuamos con el  trámite del Acuerdo por el que se determina celebrar una ceremonia solemne para  conmemorar el Cuadragésimo Aniversario del Instituto Belisario Domínguez.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Acuerdo_MD_Instituto_Belisario_Dom%C3%ADnguez.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Está discusión del Acuerdo. En virtud de no haber  personas oradoras registradas, consulte a la Secretaría de la Asamblea, en  votación económica, si es de aprobarse el Acuerdo presentado. </p>
+<p><strong>La  Secretaria Senadora María Martina Kantún Can:</strong> Consulto a la Asamblea, en votación económica, si es de aprobarse el Acuerdo.  Quienes estén porque se apruebe, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén porque se rechace, favor de levantar  la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p>Quienes abstengan, favor de levantar la mano.</p>
+<p>Aprobado el Acuerdo, señora Presidenta. </p>
+<p><strong>La  Presidenta Senadora Verónica Noemí Camino Farjat:</strong> Aprobado el Acuerdo para celebrar una ceremonia  solemne para conmemorar el Cuadragésimo Aniversario del Instituto Belisario  Domínguez. Comuníquese.</p>
+<p>Y se instruye a las Secretarías Generales a  realizar las gestiones necesarias y cumplir con las tareas de logística que se  requieran.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124722'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124724'></a><p>Daremos trámite a dos  Acuerdos que suscribe la Junta de Coordinación Política. Uno por el que se  integran las preguntas parlamentarias que el Senado de la República formula a  la ciudadana Presidenta de la República, doctora Claudia Sheinbaum Pardo, con motivo  del Análisis del Primer Informe de Gobierno.</p>
+<p>Y otro, por el que se  modifica la integración de comisiones. Están disponibles en sus escaños para su  conocimiento. En consecuencia, procedemos a su trámite uno a uno.</p>
+<p><strong>JUNTA DE COORDINACIÓN  POLÍTICA</strong></p>
+<p>Iniciamos con el  relativo a las preguntas parlamentarias que el Senado de la República formula a  la ciudadana Presidenta de la República, Doctora Claudia Sheinbaum Pardo, con  motivo del Análisis del Primer Informe de Gobierno. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Acuerdo_JCP_Preguntas_Parlamentarias.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Está a discusión del Acuerdo. Al no haber personas  oradoras registradas, consulte a la Secretaría a la Asamblea, en votación  económica, si se aprueba el Acuerdo presentado.</p>
+<p><strong>La  Secretaria Senadora María Martina Kantún Can: </strong>Consulto a la Asamblea, en votación económica, si  es de aprobarse el Acuerdo. Quienes estén porque se apruebe, favor de levantar  la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén porque se rechace, favor de levantar  la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p>Quienes abstengan, favor de levantar la mano.</p>
+<p>Aprobado el Acuerdo, señora Presidenta. </p>
+<p><strong>La  Presidenta Senadora Verónica Noemí Camino Farjat: </strong>Aprobado el Acuerdo por el que se integran las  preguntas parlamentarias que el Senado de la República formula a la ciudadana  Presidenta de la República, Doctora Claudia Sheinbaum Pardo, con motivo del  Análisis del Primer Informe de Gobierno. Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124724'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124726'></a><p>Daremos trámite ahora  al Acuerdo por el que se modifica la integración de comisiones. Solicito a la  Secretaría dé lectura.</p>
+<p><strong>La Secretaria Senadora  María Martina Kantún Can: </strong>Doy lectura. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Acuerdo_JCP_Modificaci%C3%B3n_de_Comisiones.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es cuanto, señora Presidenta.</p>
+<p><strong>La  Presidenta Senadora Verónica Noemí Camino Farjat: </strong>Está a discusión el Acuerdo. En virtud de no haber  personas oradoras registradas, consulte a la Secretaría de la Asamblea, en  votación económica, si es de aprobarse el Acuerdo presentado.</p>
+<p><strong>La  Secretaria Senadora María Martina Kantún Can: </strong>Consulto a la Asamblea, en votación económica, si  es de aprobarse el Acuerdo. Quienes estén porque se apruebe, favor de levantar  la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén porque se rechace, favor de levantar  la mano.</p>
+<p align="center">(La Asamblea no asiente)</p>
+<p>Quienes se abstengan, favor de levantar la mano. </p>
+<p>Aprobado el Acuerdo, señora Presidenta. </p>
+<p><strong>La  Presidenta Senadora Verónica Noemí Camino Farjat: </strong>Aprobado el Acuerdo, por el que se modifica la  integración de comisiones. Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124726'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124729'></a><p>Enseguida daremos  trámite al Acuerdo que suscribimos los integrantes de la Junta de Coordinación  Política y de la Mesa Directiva para que el salón de Comisiones Permanentes se  denomine salón Ingeniero Heberto Castillo Martínez de la Comisión Permanente y  se incorpore en dicho lugar una escultura en su honor. </p>
+<p>El Acuerdo está  publicado en la Gaceta Parlamentaria y se encuentra disponible en el monitor de  sus escaños, por lo que solicito a la Secretaría dé lectura.</p>
+<p><strong>JUNTA DE COORDINACIÓN  POLÍTICA Y MESA DIRECTIVA</strong></p>
+<p><strong>La Secretaria Senadora  María Martina Kantún Can: </strong>Primero. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-12-09-2/assets/documentos/Acuerdo_JCP_Sal%C3%B3n_Heberto_Castillo.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>La  Presidenta Senadora Verónica Noemí Camino Farjat: </strong>Gracias.  Está a discusión el Acuerdo. Al no haber personas oradoras registradas,  consulte la Secretaría a la Asamblea, en votación económica, si es de aprobarse  el Acuerdo presentado. </p>
+<p><strong>La  Secretaria Senadora María Martina Kantún Can: </strong>Consulto  a la Asamblea, en votación económica, si es de aprobarse el Acuerdo. Quienes  estén porque se apruebe, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea asiente)</p>
+<p>Quienes  estén porque se rechace, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p>Quienes  se abstengan, favor de levantar la mano. </p>
+<p>Aprobado  el Acuerdo, señora Presidenta. </p>
+<p><strong>La  Presidenta Senadora Verónica Noemí Camino Farjat: </strong>Aprobado  el Acuerdo por el que se denomina el salón de la Comisión Permanente como Salón  Ingeniero Heberto Castillo Martínez de la Comisión Permanente. Comuníquese. Se  instruye a las Secretarías Generales realizar las acciones necesarias. </p>
+<p> Informo a la Asamblea que tenemos la visita  de un grupo de ciudadanos del municipio de Zacapoaxtla, del estado de Puebla,  quienes acuden por invitación de la Senadora Lizeth Sánchez García. </p>
+<p>Gracias por habernos acompañado en esta parte  de la sesión. </p>
+<p>¡Bienvenidos al Senado de la República!</p>
+<p>Con fundamento en el artículo 67 de la Ley  Orgánica del Congreso General todas las iniciativas y proposiciones recibidas y  registradas en los órdenes del día de las últimas sesiones se turnan  directamente a comisiones. El trámite correspondiente aparecerá publicado en la  Gaceta Parlamentaria. </p>
+<p>Continúe la Secretaría con los asuntos de la  agenda. </p>
+<p><strong>La Secretaria Senadora  María Martina Kantún Can: </strong>Se han agotado los asuntos de la agenda,  señora presidenta. </p>
+<p><strong>La Presidenta Senadora  Verónica Noemí Camino Farjat: </strong>Gracias. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124729'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124731'></a><p><strong>CITA</strong></p>
+<p>Se cita a la siguiente sesión ordinaria el  día de mañana 10 de diciembre a las 12:00 horas, doce del día. </p>
+<p>Asimismo, reitero una cordial invitación para  que nos acompañen a las 9:30 horas a la ceremonia solemne en la que se nombrará  a la sala de comparecencias de la Cámara de Senadores como &ldquo;Elena Poniatowska  Amor&rdquo;. </p>
+<p>Se levanta la sesión. </p>
+<p align="center">(Se levantó la sesión  a las 21:33 horas) </p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124731'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

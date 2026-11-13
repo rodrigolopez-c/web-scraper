@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 30</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Mónica Fernández Balboa</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 20 de Noviembre de 2019</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/2/PPO/PDF-WEB/PPO_No._30_ 20_NOVIEMBRE_2019_SOLEMNE.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='87052'></a><p align="center"><strong>PRESIDENCIA DE LA  SENADORA</strong><br>
+  <strong>MÓNICA FERNÁNDEZ  BALBOA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>(12:33 horas) Con  el quórum de nuestra sesión ordinaria del día de hoy y, con fundamento en lo  dispuesto por el artículo 56, fracción III del Reglamento del Senado y en el Acuerdo  de la Mesa Directiva aprobado el pasado 14 de noviembre para normar esta sesión  solemne, iniciamos la misma para recibir la visita del Primer Ministro de  Singapur, Lee Hsien Loong.</p>
+<p align="justify">Se abre la sesión  solemne. </p>
+<p align="justify">En consecuencia, se  designa a las Senadoras y a los Senadores: Héctor Vasconcelos, Indira de Jesús  Rosales San Román, Vanessa Rubio Márquez, Patricia Mercado Castro, Cora Cecilia  Pinedo Alonso, Rogelio Israel Zamora Guzmán, Katia Elizabeth Ávila Vázquez,  Antonio García Conejo, Daniel Gutiérrez Castorena y Cecilia Margarita Sánchez  García, para que reciban al Primer Ministro de Singapur.</p>
+<p align="justify">Solicito a las  Senadoras y a los Senadores cumplir con su encargo, en tanto se declara un  receso.</p>
+<p align="center">(La comisión  cumple)</p>
+<p align="justify">Se reanuda la  sesión solemne. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a87052'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='87053'></a><p align="justify"><strong>VISITA DEL  EXCELENTÍSIMO SEÑOR LEE HSIEN LOONG, PRIMER MINISTRO DE SINGAPUR</strong></p>
+<p align="justify">Realizamos esta  sesión solemne para recibir la visita del Primer Ministro de Singapur, el  Excelentísimo Señor Lee Hsien Loong.</p>
+<p align="justify">¡Bienvenido!</p>
+<p align="justify">Para el Senado de  la República es un honor recibir la visita del Primer Ministro de la República  de Singapur.</p>
+<p align="justify">Celebramos esta  sesión solmene, con el ánimo de continuar la consolidación desde el ámbito  parlamentario, de una relación que es estratégica para nuestros países. </p>
+<p align="justify">En 1975, diez años  después del establecimiento de la República independiente y soberana de  Singapur, nuestros países establecieron relaciones diplomáticas, basadas en el  fortalecimiento de vínculos económicos, la cooperación internacional y la  construcción de un fructífero diálogo político. </p>
+<p align="justify">A lo largo de 44  años, la simpatía que existe entre nuestros pueblos, sin importar la distancia  o diferencias culturales, nos ha permitido construir una sólida amistad,  acompañada por crecientes intercambios, acercamientos mutuos y visitas  recíprocas al más alto nivel, tal y como la que celebramos el día de hoy.</p>
+<p align="justify">En este contexto, la  Cámara de Senadores del Honorable Congreso de la Unión de los Estados Unidos  Mexicanos, expresa la más cordial bienvenida al señor Lee Hsien Loong, Primer  Ministro de la República de Singapur. </p>
+<p align="justify">¡Sea bienvenido!</p>
+<p align="justify">Damos también la  bienvenida a la Comitiva que acompaña al señor Lee Hsien Loong, en especial a:</p>
+<p align="justify">La señora Ho Ching,  Primera Dama de Singapur y Directora Ejecutiva de Temasek Holdings. </p>
+<p align="justify">Al señor Chee Hong  Tat, Ministro Mayor de Estado Superior para el Ministerio de Comercio e  Industria de la República de Singapur.</p>
+<p align="justify">A la Embajadora de  Singapur ante México, la señora Jennie Chua. </p>
+<p align="justify">Al Embajador de México en Singapur, el señor Agustín García López Loaeza. </p>
+<p align="justify">Al Embajador Julián Ventura Valero, Subsecretario de Relaciones  Exteriores del gobierno de México.</p>
+<p align="justify">Distinguido Primer Ministro, Lee Hsien Loong, están presentes también en  el presídium de esta sesión solemne: la Senadora María Guadalupe Murguía  Gutiérrez, el Senador Salomón Jara Cruz y el Senador Jorge Carlos Ramírez  Marín, Vicepresidenta y Vicepresidentes de la Mesa Directiva del Senado  Mexicano.</p>
+<p align="justify">Asimismo, se encuentran en este presídium la Senadora Citlalli Hernández  Mora, la Senadora María Guadalupe Saldaña Cisneros y la Senadora Verónica Noemí  Camino Farjat, Secretarias de la Mesa Directiva del Senado Mexicano.</p>
+<p align="justify">Conforme al Acuerdo aprobado el día 14 de noviembre, para normar la  celebración de esta sesión solemne, el señor Lee Hsien Loong, dirigirá un  mensaje a la Asamblea.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a87053'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='87054'></a><p align="justify">En consecuencia, se le concede el uso de la palabra al Primer Ministro de  la República de Singapur.</p>
+<p align="justify"><strong>DISCURSO DEL  EXCELENTÍSIMO SEÑOR LEE HSIEN LOONG, PRIMER MINISTRO DE SINGAPUR</strong></p>
+<p align="justify"><strong>El Excelentísimo Señor Lee Hsien Loong, Primer Ministro de Singapur: </strong>(Interpretación) </p>
+<p align="justify">Su excelencia Mónica Fernández Balboa, Presidenta de la Junta Directiva  del Senado.</p>
+<p align="justify">Honorables Senadores.</p>
+<p align="justify">Damas y caballeros.</p>
+<p align="justify">Buenas tardes.</p>
+<p align="justify">Gracias por la cálida bienvenida.</p>
+<p align="justify">Primero, quisiera felicitar al pueblo mexicano por las celebraciones del  día de la Revolución, hoy fui testigo del desfile, de camino aquí, y me  impresionó su energía y espíritu.</p>
+<p align="justify">Es un gran honor para mí dirigirme al Senado de la República de México,  sin embargo, no soy el primer singapurense aquí. En 2017, nuestra ex presidenta  del Parlamento, la señora Halimah Yacob, tuvo el honor de dirigirse al  Senado.</p>
+<p align="justify">La señora Halimah,  es ahora la Presidenta de Singapur.</p>
+<p align="justify">En 2016, su  predecesora, como Presidente, el Doctor Tony Tan también realizó una visita de  Estado a México, y varios miembros de su Delegación Parlamentaria se reunieron  con algunos de los Senadores también.</p>
+<p align="justify">Por lo tanto, hemos tenido varios intercambios entre nuestros líderes en  años recientes, esto quizás es un poco sorprendente considerando cual lejos  están nuestros países.</p>
+<p align="justify">Geográficamente Singapur y México están separados por la vasta extensión  del Océano Pacífico. En términos de tamaño y población, Singapur es mucho más  pequeño que México, nuestra población es menos de 5 por ciento que la suya.</p>
+<p align="justify">Nuestra superficie total es sólo la mitad del tamaño de la Ciudad de  México, hablamos diferentes idiomas y tenemos culturas diferentes también,  quizás una de las razones por nuestras crecientes relaciones son nuestras  historias similares y provisiones. Ambos éramos colonias antes, Singapur fue un  establecimiento británico, mientras que México fue colonizado por los españoles  durante 300 años.</p>
+<p align="justify">Ambos también fueron los centros de comercio para nuestras regiones  respectivas, Asia y las Américas. Así que nuestro instinto natural es mirar  hacia afuera y conectarnos con otros en el mundo, de hecho, históricamente el  comercio entre Asia y las Américas primero floreció desde México.</p>
+<p align="justify">En 1565, Andrés de Urdaneta, un explorador español, con éxito navegó  desde Manila, en las Filipinas, al gran puerto de Acapulco.<br>
+  <br>
+  Este cruce hacia el Este, sin precedentes del Océano Pacífico, abrió la  ruta de Urdaneta, que fue la primera ruta transoceánica del mundo.</p>
+<p align="justify">Los galeones de Manila llevaban porcelana, seda, algodón, pigmentos,  especias y otros artículos de Asia a las Américas, y regresaban a Asia con  plata mexicana pulida, esta fue una empresa altamente rentable, se hicieron  fortunas en ambos lados del Pacífico, y uno podría argumentar que esa fue la  primera era de la globalización.</p>
+<p align="justify">De manera interesante, la plata cuña de México, desempeñó un pequeño  pero significativo papel en la propia historia de Singapur.</p>
+<p align="justify">Hace 200 años, el señor Stamford Raffles, un inglés, estableció un centro de comercio en Singapur, en ese  entonces Singapur era parte del sultanato de Johor. Raffles firmó un acuerdo  con un gobernante malayo local a quien él reconoció como Sultán de Johor para  establecer este centro de comercio, y como parte del acuerdo él le pagó al  Sultán una cuota.</p>
+<p align="justify">Ahora, el crédito no estaba en libras británicas, sino en dólares  españoles, y eran nada más, ni nada menos que plata mexicana.</p>
+<p align="justify">Los dólares españoles circularon ampliamente en nuestra parte del mundo  como medio de pago común, y fue una de las primeras monedas globalizadas del  mundo.</p>
+<p align="justify">En la actualidad el comercio ya no es una empresa estacional, sino que sucede  durante todo el año y todo el día. Los barcos ya no dependen de los vientos  comerciales, grandes embarcaciones que llevan miles de contenedores han  reemplazado a los galeones de Manila.</p>
+<p align="justify">Nuestras acciones financieras ahora atraviesan tierra y mar a través de  fibras ópticas con el clic de un mouse, con fotones y electrones reemplazando  los metales preciosos.</p>
+<p align="justify">En este mundo integrable y globalizado, los países cooperan ampliamente  entre sí, las economías están especialmente vinculadas con sus vecinos en la  misma región.</p>
+<p align="justify">En las Américas ustedes tienen el TLCAN, en Tratado de Libre Comercio de  Norteamérica y también el Mercosur en Sudamérica.</p>
+<p align="justify">El TLCAN fue, que pronto será el T-MEC, fue uno de los primeros acuerdos  de libre comercio multilaterales, creó uno de los mayores bloques comerciales  por TTIP igualmente significativo. Nos llevó a una nueva era de acuerdos  comerciales bilaterales regionales.</p>
+<p align="justify">En Asia, Singapur es uno de los diez miembros de la Asociación de  Naciones del Sudeste Asiático, ASEAN.</p>
+<p align="justify">Los miembros de ASEAN han formado una comunidad económica entre ellos  mismos y con una población combinada, que es un poco más grande que el TLCAN.</p>
+<p align="justify">Recientemente ASEAN logró un gran progreso hacia formar una asociación  económica integral regional, y esto va a ser un acuerdo comercial más amplio,  que va a reunir a ASEAN con otras economías asiáticas, incluyendo China, Japón,  Corea del Sur, Australia y Nueva Zelanda.<br>
+  <br>
+  El comercio transpacífico también ha crecido significativamente. Las  Américas forman una parte muy importante del universo económico de Asia. El  mayor mercado de Singapur en las Américas es Estados Unidos, pero tenemos  comercio sustancial con México y otros países del norte y Sudamérica también.</p>
+<p align="justify">En la otra dirección, el mayor socio comercial de México en Asia es  China, eso no es ninguna sorpresa, pero hay muchas otras oportunidades de  comercio e inversión en otros países asiáticos que están esperando ser  desarrolladas por los negocios mexicanos.</p>
+<p align="justify">México y Singapur están estratégicamente ubicados cerca de los centros  de nuestras respectivas regiones. Como puertas de entrada a los países que nos  rodean podemos ser exploradores para comercio. </p>
+<p align="justify">Un Asia-Pacífico más integrado con fuertes vínculos entre ambos lados  del Océano Pacífico les da a los países un interés en el éxito económico del  otro, esto promueve la paz y la prosperidad y beneficia a todos los países. </p>
+<p align="justify">Estamos tan contentos de la relación México-Singapur. Además de las  sociedades que tenemos. </p>
+<p align="justify">El APPRI, en español, es efectivamente el Acuerdo de Libre Comercio  entre Singapur y México, salió de las negociaciones del TTIP, los países que  existían más Estados Unidos. Qué bueno que México se quedó con el resto de los  socios cuando se creó el TIPA, y luego se convirtió en el CPTPP, en inglés. Es ese  el primer acuerdo de libre comercio en México y Singapur, las señales son  nuestras compañías y nuestro apoyo alentando a los gobiernos a apoyar  negociaciones y actividades con otros países. </p>
+<p align="justify">Allí, por ejemplo, el Presidente López Obrador las llama micronegocios  artesanales. Esta delegación, que viene conmigo, incluyeron varios sectores:  infraestructura, logística y tecnología. </p>
+<p align="justify">Podemos decir que en los últimos cinco años hay esta acción con el CPT  en, digamos, efecto ya aplicado podemos avanzar mucho más. </p>
+<p align="justify">Singapur está negociando el PTA con la Alianza del Pacífico, esto  incluye las economías más grandes, más dinámica en Sudamérica y México. </p>
+<p align="justify">Singapur fue honrado con pertenecer al estado observador, aquí esta  Alianza del Pacífico, el PA y el FTA. Esto nos permitirá tener una mayor  relación entre ustedes y nosotros y también relaciones más profundas con Asia,  incluyendo Singapur. </p>
+<p align="justify">La última ronda de las relaciones de la FTA en Bogotá, funcionaron bien,  más de dos tercios de la FTA han sido resueltos y el mes que entra va a haber  una ronda de negociaciones, se va a efectuar en la Ciudad de México, yo estoy  muy optimista viendo el liderazgo de México, el apoyo y que el acuerdo concluya  positivamente. </p>
+<p align="justify">Senadores y Diputados, Singapur está comprometido con una relación con  Latinoamérica y México muy sólida debido a diferentes enfoques. Frente al mundo  las relaciones dicen: &ldquo;los países no pueden escoger sus vecinos&rdquo;, pero desde  luego pueden escoger a sus socios y a sus amigos a pesar de la separación y diferencia  geográfica ambos países han decidido unirse, crecer con prosperidad. </p>
+<p align="justify">Muchísimas gracias. </p>
+<p align="justify">Gracias por todo.</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Gracias por su mensaje, señor Lee Loong. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a87054'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='87055'></a><p align="justify"><strong>MENSAJE DE BIENVENIDA DE LA PRESIDENTA DE LA MESA DIRECTIVA DE LA CÁMARA  DE SENADORES, MÓNICA FERNÁNDEZ BALBOA</strong><strong> </strong></p>
+<p align="justify">Estimado señor Primer Ministro. </p>
+<p align="justify">Quisiera iniciar mi mensaje recordando el significado que el 2019 tiene  para nuestras naciones. </p>
+<p align="justify">Hace 500 años esta ciudad fue testigo del primer encuentro entre Hernán  Cortés y Moctezuma, 300 años después Stamford Raffles y William Farquhar, como  parte de la Compañía de Las Indias Orientales, llegaron por primera vez a  Singapur. </p>
+<p align="justify">Los encuentros entre Europa y América, Occidente y Oriente,  representaron puntos de inflexión que marcaron el rumbo y la evolución de  nuestros respectivos países, mas, como usted mencionó en el discurso inaugural  de las celebraciones del Bicentenario Fundacional de Singapur, el inicio de un  nuevo capítulo no significa borrar la historia. </p>
+<p align="justify">El inicio de un nuevo capítulo representa una oportunidad para recordar  todo aquello que orgullosamente hemos sido, para honrar nuestro legado, y  construir el camino por seguir. </p>
+<p align="justify">Desde este Órgano Legislativo, queremos extender nuestras felicitaciones  al pueblo de Singapur por los 200 años de su fundación. </p>
+<p align="justify">Señor Primer Ministro, usted es parte de este legado, usted ha trabajado  para conducir a Singapur a un nuevo futuro y lograr que ésta sea una sociedad  más abierta. </p>
+<p align="justify">Como nosotros, usted es un parlamentario. Un legislador que ha sido  elegido en seis ocasiones para representar a su pueblo. </p>
+<p align="justify">Sabemos cuánto aprecia el trabajo de los parlamentos, y agradecemos su  interés en nuestra labor al aceptar nuestra invitación y acompañarnos este día. </p>
+<p align="justify">Quisiera también destacar toda la admiración que usted merece, no sólo  por la manera como ha conducido la evolución económica de su país, sino como  persona. </p>
+<p align="justify">La manera como ha superado todos los obstáculos que le ha presentado la  vida, es un ejemplo de fortaleza y la capacidad para enfrentar la adversidad  que existe en cada uno de nosotros. </p>
+<p align="justify">Singapur es un ejemplo para el mundo en muchos sentidos. Es un referente  mundial de inclusión, multiculturalidad, respeto a la diversidad religiosa y  cero tolerancia a la corrupción. </p>
+<p align="justify">Nuestros países tienen como un desafío común el proveer un marco  adecuado para que dichas relaciones continúen prosperando por medio del diálogo  y la comunicación mutua. </p>
+<p align="justify">Nuestra relación de amistad es estrecha y tiene diversas oportunidades  para ampliarse como el interés recíproco entre México y Singapur que se ha  extendido a espacios de impulso a la integración tales como la Alianza del  Pacífico, el Tratado Integral y Progresista de Asociación Transpacífico y el  Foro de Cooperación Económica Asia-Pacífico.</p>
+<p align="justify">Estos espacios de diálogo son fundamentales para promover el comercio y  la inversión, el desarrollo inclusivo y sostenible, así como para facilitar la  cooperación económica en la región. <br>
+  <br>
+  Estamos a favor de  una agenda integral, que permita promover los vínculos comerciales y de  inversión, y que permita fomentar una mayor integración con los países de Asia  y el Pacífico que beneficia nuestras sociedades. </p>
+<p align="justify">Por eso celebramos  también la ronda de negociaciones que se llevarán a cabo el próximo mes. </p>
+<p align="justify">Señor Primer  Ministro, agradecemos su visita al Senado de la República y le manifestamos  nuestra profunda voluntad de continuar colaborando con su país, de construir un  mundo más humano y atento a las causas sociales con solidaridad, inclusión y justicia.  México y Singapur cuentan con bases sólidas y potencial para ello.<br>
+  <br>
+  México, como  Singapur, es producto de una mezcla de historias, culturas y etnicidades,  dispuesto a seguir tejiendo nuestra identidad en un mundo que acepta y celebra  su diversidad. </p>
+<p align="justify">Señor Primer  Ministro, puede estar seguro de que usted y su comitiva tienen en el Senado de la República, la casa del  federalismo mexicano, a un amigo. </p>
+<p align="justify">Muchas gracias por acompañarnos. </p>
+<p align="justify">Agradezco a las distintas invitadas e invitados que  nos han acompañado en esta sesión solemne. </p>
+<p align="justify">Y solicitamos a las Senadoras y a los Senadores  integrantes de la comisión de cortesía que se sirvan acompañar a nuestras  invitadas y a nuestros invitados e invitado hasta las puertas de este recinto,  en cuanto así lo deseen. </p>
+<p align="center">(La comisión cumple)</p>
+<p align="justify">Y damos por finalizada la sesión solemne y se  solicita a las señoras Senadoras y Senadores, permanecer en sus lugares para  continuar con la sesión ordinaria del día.</p>
+<p align="center">(Se levantó la  sesión solemne a las 13:26 horas) </p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a87055'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

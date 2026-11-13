@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 23</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Martí Batres Guadarrama</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 04 de Abril de 2019</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/1/SPO/PDF-WEB/SPO_No._23_4_ABRIL_2019_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='82344'></a><p align="center"><strong>PRESIDENCIA DEL SENADOR</strong><br>
+  <strong>MARTÍ BATRES GUADARRAMA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama:</strong> (16:51 horas) Con el  quórum de nuestra sesión ordinaria del día de hoy, y con fundamento en lo  dispuesto por el artículo 56, fracción III del Reglamento del Senado, y en el Acuerdo  de la Mesa Directiva aprobado el día de ayer para normar esta sesión solemne,  damos inicio a la misma para recibir la visita del señor Roberto Azevêdo,  Director General de la Organización Mundial del Comercio.</p>
+<p align="justify">Se abre  la sesión solemne. </p>
+<p align="justify">El señor  Roberto Azevêdo se encuentra en el salón contiguo. </p>
+<p align="justify">En  consecuencia, se designa a las Senadoras y a los Senadores Ifigenia Martínez,  Beatriz Paredes, Gustavo Madero, Héctor Vasconcelos y Ricardo Ahued Bardahuil,  para que reciban al señor Roberto Azevêdo, Director General de la Organización  Mundial del Comercio. </p>
+<p align="justify">También  se designa a las Senadoras y a los Senadores Napoleón Gómez Urrutia, Verónica  Martínez García, Juan Manuel Fócil Pérez, Freyda Marybel Villegas y Mario  Zamora, para que reciban a la señora Graciela Márquez Colín, Secretaria de  Economía. </p>
+<p align="justify">Se  designa también a las Senadoras y a los Senadores Citlalli Hernández Mora,  Julio Ramón Menchaca Salazar, Indira Kempis Martínez, para que reciban a la  Diputada Dolores Padierna Luna, Vicepresidenta de la Cámara de Diputados. <br>
+  Solicito  a las Senadoras y a los Senadores cumplir con su encargo. </p>
+<p align="justify">Se  solicita al Senador Oswaldo Fuentes se sume a la comisión de cortesía para  recibir a la Diputada Dolores Padierna Luna. </p>
+<p align="center">(Las  comisiones cumplen)</p>
+<p align="justify">Mientras  tanto, se declara un receso para esperar la llegada de los invitados.</p>
+<p align="center">(Receso)</p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Se reanuda la sesión  solemne.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a82344'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='82345'></a><p align="justify"><strong>VISITA DEL SEÑOR ROBERTO </strong><strong>AZEVÊDO</strong><strong>,  DIRECTOR GENERAL DE LA ORGANIZACIÓN MUNDIAL DEL COMERCIO</strong></p>
+<p align="justify">Realizamos  esta sesión con motivo de la importante visita del Director General de la  Organización Mundial del Comercio. </p>
+<p align="justify">Como es  de su conocimiento, la Organización Mundial del Comercio es la única organización  internacional que se ocupa y aplica un sistema de normas comerciales de alcance  mundial al que los gobiernos acuden para tratar de resolver los problemas  comerciales que tienen unos con otros. </p>
+<p align="justify">El  sistema multilateral de comercio contiene los acuerdos de la Organización  Mundial del Comercio que han sido negociados y firmados por la gran mayoría de  las economías que participan en el comercio mundial y ratificados por sus  respectivos parlamentos. </p>
+<p align="justify">Estos  acuerdos establecen los fundamentos jurídicos del comercio internacional y  proporcionan un marco estable y transparente para ayudar tanto a productores de  bienes y servicios como a los exportadores e importadores a llevar adelante sus  actividades. </p>
+<p align="justify">En este  contexto, la Cámara de Senadores del Honorable Congreso de la Unión de los  Estados Unidos Mexicanos, expresa la más cordial bienvenida al señor Roberto  Azevêdo, quien es titular de la Dirección General de tan importante  organización. </p>
+<p align="justify">¡Bienvenido!</p>
+<p align="justify">También  damos la bienvenida a la señora Graciela Márquez Colín, Secretaria de Economía  del gobierno de la República. </p>
+<p align="justify">Y  agradecemos la presencia en este Senado y en este presídium de la Diputada  Dolores Padierna Luna, Vicepresidenta de la Cámara de Diputados, quien viene en  representación de la Colegisladora. </p>
+<p align="justify">Se  encuentran presentes también la doctora Luz María de la Mora Sánchez,  Subsecretaria de Comercio Exterior. </p>
+<p align="justify">El  Embajador Roberto Zapata Barradas, representante de México ante la Organización  Mundial del Comercio.</p>
+<p align="justify">La señora  Thais Valério de Mesquita, Consejera del Director General de la Organización  Mundial del Comercio. </p>
+<p align="justify">El  licenciado Pablo Hernández, Jefe de la Oficina de la Secretaría de Economía. </p>
+<p align="justify">El  licenciado Ángel Villalobos Rodríguez, Director General de Comercio de  Servicios e Inversión. <br>
+  <br>
+  La  licenciada Lidia Antonio, Directora General de Seguimiento de Tratados. </p>
+<p align="justify">La  licenciada Dora Rodríguez Romero, Coordinadora de Asesores de la Subsecretaría  de Comercio Exterior. </p>
+<p align="justify">Y el  maestro Raúl Zepeda, Director General de Vinculación Política de la Secretaría  de Economía. </p>
+<p align="justify">Está  presente también César Remis, Jefe de la Unidad de Negociaciones. </p>
+<p align="justify">Se  encuentran en este presídium, informo a nuestros invitados, especialmente a  nuestro invitado especial. </p>
+<p align="justify">La  Senadora Mónica Fernández Balboa, Vicepresidenta de la Mesa Directiva del  Senado. </p>
+<p align="justify">La  Senadora María Guadalupe Murguía Gutiérrez, Vicepresidenta. </p>
+<p align="justify">La  Senadora Antares Guadalupe Vázquez Alatorre, Secretaria. </p>
+<p align="justify">La  Senadora Verónica Delgadillo García, Secretaria. </p>
+<p align="justify">Y el  Senador José Luis Pech Várguez, Secretario. </p>
+<p align="justify">Muchas  gracias a todas y a todos. </p>
+<p align="justify">Conforme  al Acuerdo aprobado el día de ayer para esta sesión solemne, el señor Roberto  Azevêdo dirigirá un mensaje a la Asamblea. </p>
+<p align="justify">En  consecuencia, se concede el uso de la palabra al señor Roberto Azevêdo,  Director General de la Organización Mundial del Comercio. </p>
+<p align="justify">Tiene  usted la palabra, señor Roberto Azevêdo. Puede pasar a la tribuna. </p>
+<p align="justify"><strong>El Director General de la  Organización Mundial del Comercio, Roberto Azevêdo:</strong> Senador  Martí Batres, Presidente del Senado. </p>
+<p align="justify">Doctora  Graciela Márquez Colín, Secretaria de Economía.</p>
+<p align="justify">Diputada  Padierna Luna, Vicepresidenta de la Cámara de Diputados.</p>
+<p align="justify">Excelencias.</p>
+<p align="justify">Señoras y  señores:</p>
+<p align="justify">Buenas  tardes, y muchas gracias por su amable invitación, es un honor verdaderamente  para mí estar aquí hoy con ustedes.</p>
+<p align="justify">México es  uno de los estados fundadores de la Organización Mundial del Comercio y sigue  desempeñando un papel muy importante en nuestra labor.</p>
+<p align="justify">Yo quiero  agradecerles su apoyo a la OMC y su compromiso con la mejora de la cooperación  económica entre las naciones.</p>
+<p align="justify">Me  complace tener hoy la oportunidad de reforzar aún más nuestras relaciones.</p>
+<p align="justify">En el  curso de mi visita me he reunido con el Presidente, con la Secretaria de  Economía y con representantes del mundo académico y de la comunidad  empresarial.<br>
+  <br>
+  Me ha  impresionado el afán de México por seguir integrándose en la economía mundial y  su apoyo decidido a la OMC, y eso es muy importante.</p>
+<p align="justify">El  comercio, complementado por políticas adecuadas, contribuye a generar puestos  de trabajo.</p>
+<p align="justify">El  comercio ayuda a reducir los precios a los consumidores y permite ofrecer una  mayor selección de productos impulsando el crecimiento y el desarrollo.</p>
+<p align="justify">El  Congreso, claro está, desempeña un papel fundamental a ese respecto.</p>
+<p align="justify">El Poder  Legislativo es esencial para orientar el futuro del país.</p>
+<p align="justify">Así que  hoy estoy aquí para decirles que pueden contar con la OMC para apoyar sus  objetivos económicos y de desarrollo.</p>
+<p align="justify">La OMC es  la única organización que se ocupa de las normas comerciales en el plano  global, actualmente abarca cerca del 98 por ciento del comercio mundial.</p>
+<p align="justify">La OMC  establece los principios comunes en que se sustentan las prácticas comerciales  en el mundo entero, y con eso sienta las bases del comercio mundial, es el  único foro multilateral en que se puede deliberar y debatir sobre cuestiones  comerciales; ofrece los mecanismos que permite a los países vigilar y examinar  sus respectivas políticas comerciales y proporciona los medios para solucionar  las diferencias que puedan surgir.</p>
+<p align="justify">Este  sistema de normas comunes ha demostrado ser esencial para el crecimiento y el  desarrollo mundiales.</p>
+<p align="justify">La Organización  ha supervisado un proceso histórico de apertura de los mercados e integración  de las economías.</p>
+<p align="justify">Las  negociaciones que llevaron al establecimiento de la OMC dieron lugar a una  reducción de los aranceles del 40 por ciento.</p>
+<p align="justify">El  sistema ha aportado estabilidad y previsibilidad en el comercio mundial y ha  resistido incluso a la crisis financiera de 2008 y sus consecuencias  posteriores.</p>
+<p align="justify">Todo ello  ha facilitado la consolidación de relaciones económicas pacíficas entre las  naciones, eso ha ayudado a las empresas mexicanas y a los gobiernos a  planificar la actividad económica y con confianza.</p>
+<p align="justify">Si la OMC  no existiera, había que inventarla; sin embargo, estos tiempos están  demostrando ser tiempos difíciles para el comercio y para el sistema de  comercio.</p>
+<p align="justify">Las  tensiones actuales entre importantes actores comerciales están poniendo  seriamente a prueba a toda la comunidad internacional.</p>
+<p align="justify">Los  riesgos son reales y sus repercusiones económicas también lo son. Estamos  siendo testigos de una desaceleración del crecimiento en el comercio.</p>
+<p align="justify">Esta  semana hemos publicado nuevas cifras sobre el comercio, y nuestros economistas  prevén que la tasa de crecimiento del volumen del comercio de mercancías caerá  en 2019 hasta 2.6 por ciento.</p>
+<p align="justify">En 2018  ese crecimiento fue de 3 por ciento. En 2017 alcanzó el 4.6 por ciento.</p>
+<p align="justify">O sea, en  dos años, en dos años nada más salimos de un crecimiento de 4.6 para una  perspectiva de crecimiento de 2.6 por ciento, y esta es una mala noticia para  todo el mundo, debemos responder a esa situación.<br>
+  <br>
+  De hecho,  entre los últimos acontecimientos positivos del panorama internacional, figura  una firma del nuevo Acuerdo Comercial T-MEC entre México, Estados Unidos y Canadá,  en la entrada en vigor del Tratado Integral y Progresista de Asociación  Transpacífica.</p>
+<p align="justify">Sin  embargo, en otras esferas, sigue habiendo retos importantes que también afectan  a México.</p>
+<p align="justify">En  interés de todas las partes, debemos trabajar para mejorar las perspectivas del  comercio mundial y para revitalizar el crecimiento del comercio, y estamos  adoptando medidas para ello.</p>
+<p align="justify">Estamos  trabajando de manera urgente para rebajar las tensiones, facilitamos el diálogo  entre los miembros acerca de las cuestiones fundamentales complementando, por  supuesto, los esfuerzos bilaterales, y ayudamos a los miembros a solucionar sus  diferencias.</p>
+<p align="justify">También  estamos trabajando para reformar la arquitectura del comercio y asegurarnos de  que pueda responder a una economía en proceso de cambio.</p>
+<p align="justify">Los  miembros están debatiendo cómo mejorar el funcionamiento del sistema de  comercio. Por supuesto, evolucionar no significa tirar por la borda lo que ya  tenemos, el sistema representa los mejores esfuerzos de los gobiernos de todo  el mundo que han trabajado juntos por más de 70 años, y debemos valorizarlo.</p>
+<p align="justify">Sin la  OMC el mundo sería la ley de la selva, ¿y a qué me refiero exactamente cuando  digo esto?</p>
+<p align="justify">Imaginen  un escenario en que el comportamiento no cooperativo sea la norma, en que fuera  posible aumentar los aranceles sin restricciones y sin aviso previo, y en que  no existieran disciplinas comunes sobre las subvenciones, sobre los servicios,  o sobre la propiedad intelectual, ni foro alguno en el que solucionara las  diferencias comerciales.</p>
+<p align="justify">Las  empresas no tendrían certitud, la inversión disminuiría, el comercio  disminuiría, el crecimiento disminuiría y se destruirían puestos de trabajo.</p>
+<p align="justify">Algunos  conflictos técnicos menores se convertirían rápidamente en guerras comerciales,  y las guerras comerciales suelen tener consecuencias políticas, afortunadamente  no es esa  la realidad de hoy.</p>
+<p align="justify">Cuando  llegó la crisis en 2008, el proteccionismo pudo contenerse, lo que limitó el  daño económico.</p>
+<p align="justify">Gracias a  este sistema que tenemos, de normas comunes, los miembros eran conscientes de  sus compromisos y sabían dónde estaban las líneas rojas en gran medida.</p>
+<p align="justify">No es  necesario tratar de imaginar qué habría sucedido si este sistema no hubiera  existido, basta con observar lo que ocurrió en la guerra, en la Gran Depresión  de los años 30&rsquo;s, en aquel momento no contábamos con el sistema, no contábamos  con la OMC o con un sistema multilateral como mecanismo de seguridad, y la  crisis se agravó rápidamente.</p>
+<p align="justify">Se  establecieron obstáculos comerciales que hicieron desaparecer dos tercios del  comercio mundial, necesitamos el sistema, pero por supuesto hay  margen de mejora y estamos trabajando en  ello, existe un verdadero impulso tras este debate.<br>
+  Los  líderes del G-20 pidieron que se tomasen medidas para mejorar y reformar la  OMC, y México ha prestado un gran apoyo en este frente.</p>
+<p align="justify">Se están  presentando nuevas ideas para reforzar el sistema, mejorar la transparencia,  agilizar las negociaciones y resolver los desafíos del sistema de solución de  diferencias, y el debate sigue en curso.</p>
+<p align="justify">Cualesquiera  que sean las medidas concretas que los miembros deseen adoptar, es evidente que  la OMC debe mejorar, actuar con más rapidez y ofrecer respuestas más eficaces a  los desafíos de la actualidad.</p>
+<p align="justify">Debemos  seguir alcanzando nuevos acuerdos, en los últimos años hemos alcanzado una  serie de  dispositivos importantes, como  el Acuerdo de Facilitación del Comercio, el Acuerdo sobre Tecnología de la  Información Ampliado y el Acuerdo para Eliminar las Subvenciones de la  Exportación en el Sector Agrícola, y México ha desempeñado  un papel importante a este respecto a través  del Embajador Mateo, que presidió el Consejo General de la OMC, en 2015, y  ayudó a dirigir nuestra labor preparatoria de la Conferencia Ministerial  celebrada en Nairobi, donde se alcanzó este Acuerdo Agrícola.</p>
+<p align="justify">Actualmente  estamos trabajando para aplicar estos importantes acuerdos y los miembros están  debatiendo la forma de avanzar en otras esferas. </p>
+<p align="justify">Por  ejemplo, los miembros están trabajando intensamente a fin de cumplir el plazo  de 2019, para cerrar un acuerdo sobre las subvenciones de la pesca, este es de un  importantísimo valor, México, en verdad está presidiendo estas negociaciones  bajo la dirección del Embajador Zapata, el representante de México en la OMC,  que está aquí con nosotros hoy. </p>
+<p align="justify">Otras  cuestiones objeto de debate son: la agricultura, la seguridad alimentaria, la  reglamentación nacional en materia de servicios, el desarrollo. </p>
+<p align="justify">Además,  algunos grupos de miembros están desplegando una intensa actividad en torno a  diversas esferas que tienen cada día vez más importancia económica. </p>
+<p align="justify">En  particular, existen iniciativas relacionadas con la facilitación de las  inversiones, las micro, pequeñas y medianas empresas, el empoderamiento  económico y de las mujeres y el comercio electrónico, un ámbito en el que  tenemos algunas noticias  muy  importantes. </p>
+<p align="justify">En enero  de este año, 76 miembros de la OMC anunciaron su propósito de iniciar  negociaciones sobre esa cuestión, que evidentemente tiene una importancia  trascendental para todas las economías, es decir, que no se trata solamente de  debatir, pero también de iniciar negociaciones. </p>
+<p align="justify">Y México  participa en todas estas iniciativas, son temas que tienen una importancia de  primer orden para la economía mexicana, y lo que es más importante, esas iniciativas,  todas están abiertas a cualquiera que quiera sumarse a ellas o participar en  sus debates. </p>
+<p align="justify">Hay una  verdadera ambición detrás de algunas de las cuestiones que he mencionado hoy,  pero la cooperación internacional no es fácil, exige un compromiso continuo,  exige diplomacia, negociación, diálogo, la tentación de tomar las riendas y  tratar de resolver las cosas por uno mismo   sin tener que pasar por los dolores del multilateralismo, estar siempre  presentes, pero como he señalado hoy, con un enfoque no cooperativo todos  perdemos, así que debemos de redoblar nuestros esfuerzos para resolver todas  esas cuestiones  y debemos trabajar por  el sistema, y cuento con el liderazgo de México a este respecto. <br>
+  <br>
+  Aprovechemos  esta oportunidad para reforzar la OMC y el comercio basado en normas  permisibles y actualizadas en beneficio de  las generaciones venideras. </p>
+<p align="justify">Yo no  tengo dudas de que la intervención  y el  apoyo de México serán muy importantes para hacer avanzar este diálogo. </p>
+<p align="justify">Muchas  gracias una vez más. </p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Doctor Roberto Azevêdo,  Director General de la Organización   Mundial del Comercio. </p>
+<p align="justify">Doctora  Graciela Márquez, Secretaria de Economía del gobierno de la República. </p>
+<p align="justify">Diputada  Dolores Padierna, Vicepresidenta de la Cámara de Diputados. </p>
+<p align="justify">México es  parte de la Organización Mundial del Comercio desde 1995. Este dato nos dice  mucho, un año antes, en 1994, había entrado en vigor el Tratado de Libre  Comercio de América del Norte, por medio del cual México, Estados Unidos y  Canadá, establecieron una muy importante área de intercambio económico y  comercial.</p>
+<p align="justify">Sin  embargo para nuestro país, 1994 es también un año de recordación en otro  sentido, la rebelión del año nuevo en Chiapas, nos hizo conscientes de los  altísimos niveles de desigualdad y exclusión en nuestra sociedad. </p>
+<p align="justify">En medio  de contradicciones, México se ha transformado en el ya casi cuarto de siglo que  ha transcurrido desde nuestra entrada en la Organización Mundial del Comercio,  de ser una economía organizada en la sustitución de importaciones y financiada  principalmente a través de la venta de hidrocarburos, nuestra economía es hoy más  diversa y más compleja, con un importante componente manufacturero exportador  que depende del comercio internacional. </p>
+<p align="justify">Hace muchos  los liberales mexicanos defendieron la apertura de las fronteras, pero no eran  sólo libre cambistas, creían en la libre circulación de ideas y personas,  habían leído con atención los textos de Adam Smith, el fundador del pensamiento  económico clásico, quien señala en la riqueza de las naciones lo siguiente: </p>
+<p align="justify">La  propiedad que todo hombre tiene en su propio trabajo, en cuanto que éste es el  fundamento original de toda otra propiedad, es la más  sagrada e inviolable, el patrimonio de un  hombre pobre es la fuerza y la destreza de sus manos, restringirle el uso de su  fuerza y destreza en el modo que él mismo considere propio  y que no sea perjudicial a sus vecinos, es  una violación de su más sagrada propiedad, se trata de un abuso manifiesto de  la justa libertad, tanto del trabajador como de quien desee emplearlo. </p>
+<p align="justify">Las  libertades de tránsito y trabajo en la verdadera visión liberal, permite la  vida de las personas y la reproducción material de la sociedad. Por ello son  consideradas históricamente  pilares de  las sociedades democráticas.</p>
+<p align="justify">Originalmente,  la Organización Mundial del Comercio se interesaba primordialmente en la  defensa y fortalecimiento del Sistema Multilateral de Comercio basado en  grandes reglas, pero el tiempo no pasa en vano, y la participación de las  sociedades tampoco. </p>
+<p align="justify">La lucha  de los pueblos por sus derechos al trabajo, al medio ambiente, los derechos  humanos y la distribución de la riqueza están presentes en las transformaciones  recientes. </p>
+<p align="justify">La  Organización Mundial del Comercio incluye en su agenda, hoy en día, temas como  la diversificación y el empoderamiento económico de las micro, pequeñas y  medianas empresas, de las comunidades indígenas y de las mujeres. <br>
+  <br>
+  El  desarrollo económico debe ser visto, nos dice ahora la OMC, como inclusivo y  sostenible, nos congratulamos por ello.</p>
+<p align="justify">Gracias a  ello, se vuelven aplicables a esta macro-región los señalamientos de Adam  Smith, la debida integración de los procesos de producción, circulación de  mercancías y acumulación de capitales sólo puede ser justa y adecuada si se  eliminan también las barreras a la circulación de los trabajadores, y con los  trabajadores se habrá de liberar la circulación de las ideas.</p>
+<p align="justify">Finalizamos  estas líneas con un sueño que viene desde el renacimiento: &ldquo;Unir el  florecimiento del libre comercio con la paz&rdquo;.</p>
+<p align="justify">Muchas  gracias por su atención. </p>
+<p align="justify">Bienvenido,  señor Roberto Azevêdo.</p>
+<p align="justify">Señor  Roberto Azevêdo, le solicito nos haga favor de firmar el libro de visitantes  distinguidos.</p>
+<p align="justify">(Firma el  libro de visitantes distinguidos, dice: &ldquo;Un honor estar en esta casa de la  democracia mexicana&rdquo;. Roberto Azevêdo.</p>
+<p align="justify">Señor  Roberto Azevêdo, agradecemos su visita al Senado de la República.</p>
+<p align="justify">Igualmente,  agradezco a los distinguidos invitados que nos han acompañado.</p>
+<p align="justify">Solicito  a las Senadoras y a los Senadores Ifigenia Martínez Hernández, Gustavo Enrique  Madero Muñoz, Beatriz Paredes Rangel, Indira Kempis Martínez, Juan Manuel Fócil  Pérez, Julio Ramón Menchaca, Verónica Martínez, Citlalli Hernández, Ricardo  Ahued y Héctor Vasconcelos, se sirvan acompañar a nuestros invitados de honor  hasta las puertas de este recinto.</p>
+<p align="center">(La  comisión cumple)</p>
+<p align="justify">Damos por  finalizada la sesión solemne. Y se solicita a los señores Senadores permanecer  en sus lugares para continuar con la sesión ordinaria del día.</p>
+<p align="center">(Se  levantó la sesión solemne a las 17:19 horas)<strong> </strong></p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a82345'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

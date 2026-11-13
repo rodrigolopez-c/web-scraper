@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 24</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Laura Itzel Castillo Juárez</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 21 de Octubre de 2025</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/2/PPO/PDF-WEB/PPO_No24_21-OCTUBRE-2025_SOLEMNE.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='123759'></a><p align="center"><strong>PRESIDE  LA SENADORA</strong><br>
+  <strong>LAURA  ITZEL CASTILLO JUÁREZ</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez:</strong> <strong>(12:24 horas) </strong>Con el quórum de nuestra sesión ordinaria y con fundamento  en lo dispuesto por la fracción I del numeral 1 del artículo 56 del Reglamento  del Senado, y en el Acuerdo aprobado el pasado 14 de octubre para la  celebración de esta conmemoración, se abre la sesión solemne.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a123759'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/SmA-CCZZ_0E?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='123760'></a><p><strong>CONMEMORACIÓN  EL SEPTUAGÉSIMO SEGUNDO ANIVERSARIO DEL RECONOCIMIENTO DEL DERECHO AL VOTO DE  LAS MUJERES EN MÉXICO</strong></p>
+<p>Como  todas y todos sabemos, el objetivo de esta sesión es conmemorar el Septuagésimo  Segundo Aniversario de la publicación, en el año de 1953, del Decreto de  reformas al artículo 34 de la Constitución Política de los Estados Unidos  Mexicanos, por el cual se reconoció como ciudadanas de la República a las  mujeres mexicanas, lo que les valió el derecho a participar activamente en los  procesos comiciales, logrando con ello un avance en la democracia e igualdad de  nuestra patria. </p>
+<p>Es  así como hoy, en la Cámara de Senadores, conmemoramos estos 72 años del  reconocimiento del derecho al voto de todas las mujeres mexicanas, esta fue una  conquista que transformó para siempre nuestra vida democrática, un triunfo del  pensamiento de la organización y de la acción de mujeres valientes, que  cambiaron para siempre el destino de nuestra nación. </p>
+<p>La  gran maestra yucateca Rita Cetina Gutiérrez, quien en uno de sus poemas nos  llamó a levantar la voz y a creer en nuestra fuerza, proclamó: </p>
+<p align="center"><em>&ldquo;Sacudid  la inacción, alzad la frente,</em><br>
+  <em>levantad  con orgullo la cabeza y podremos decir, con entereza,</em><br>
+  <em>que  alcanza cuanto quiere la mujer&rdquo;.</em></p>
+<p>Estos  versos nos recuerdan que no hace mucho las mujeres no teníamos voz ni voto en  la vida pública de nuestro país. </p>
+<p>¿Cuánto  hemos avanzado desde entonces y hasta dónde podemos llegar si seguimos  caminando juntas? </p>
+<p>Sobre  todo, hoy, cuando la igualdad sustantiva es un principio consagrado en nuestra  Constitución, en un tiempo en que la paridad de género, en los cargos de  representación política es ya una realidad y en un presente en el que, por  primera vez, en más de 200 años de la vida independiente el Poder Ejecutivo es  encabezado por una mujer, la Doctora Claudia Sheinbaum Pardo. </p>
+<p>Cuesta  trabajo imaginarlo, pero hace menos de un siglo, las mexicanas no podíamos  votar ni ser electas ni ocupar cargos públicos. </p>
+<p>Afortunadamente  hubo mujeres que se negaron a aceptar ese destino, mujeres que soñaron con otro  país y que persiguiendo lo que entonces parecía una utopía, fueron abriendo  brechas para todas nosotras. </p>
+<p>Hace  72 años, las mujeres mexicanas rompieron el cerco del silencio, dejaron en ser  sombras para convertirse en ciudadanas plenas, y fue, gracias a ellas como  Hermila Galindo, Elvia Carillo Puerto, María del Refugio García, entre muchas  otras, que seguimos construyendo sobre los cimientos de su sacrificio y de su  esperanza. </p>
+<p> A  todas ellas las honramos hoy, porque el 17 de octubre de 1953 se reformó la  Constitución para reconocer la ciudadanía plena de las mexicanas y, el 3 de  julio de 1955 votaron, por vez primera, en una elección federal, ese día se  consagró una historia de justicia e igualdad que seguimos escribiendo. </p>
+<p>Como  saben, el 15 de noviembre de 2024 se promulgó la reforma constitucional sobre  Igualdad Sustantiva, que establece que la igualdad entre mujeres y hombres debe  ser real, tangible y cotidiana. </p>
+<p>Pero  falta mucho por hacer, por eso debemos seguir trabajando codo a codo desde la  Cámara de Senadores, para consolidar la transformación. </p>
+<p>Compañeras  y compañeros Senadores, hace 72 años, las mujeres comenzamos a definir el rumbo  de nuestra patria. El derecho al voto femenino no fue una concesión, sino una  conquista de las mujeres mexicanas. </p>
+<p>Por  eso hoy no podemos detenernos, porque cada paso que damos honra a las mujeres  que nos abrieron camino y cada avance que logramos es también, sin duda, un  compromiso con las que vendrán mañana. </p>
+<p>¡Que  vivan las mujeres mexicanas! </p>
+<p>¡Que  viva la igualdad sustantiva!</p>
+<p>Es  tiempo de mujeres. </p>
+<p>¡Viva  México!</p>
+<p>De  conformidad con lo dispuesto en el numeral 2 del Resolutivo Segundo del Acuerdo  que norma esta sesión solemne, tendremos enseguida una ronda de participaciones  de las personas representantes de grupos parlamentarios en orden creciente,  esta será hasta por cinco minutos. </p>
+<p>En  consecuencia, iniciamos con la intervención de la Senadora Yeidckol Polevnsky  Gurwitz, del Partido del Trabajo. </p>
+<p>&nbsp;</p>
+<p><strong>La Senadora Yeidckol Polevnsky Gurwitz:</strong> Gracias, señora Presidenta. </p>
+<p>Compañeras,  compañeros Senadores, hace 72 años las voces de millones de mujeres mexicanas  rompieron el silencio de siglos. </p>
+<p>La  valentía de grandes mujeres abrieron paso a una historia que hasta entonces se  había mantenido sin ellas.</p>
+<p>Aquel  17 de octubre de 1953, fue la conquista de un derecho político, el inicio de  una revolución tejida con esperanza, lucha, dignidad y entrega. </p>
+<p>Honramos  a esas mujeres y reafirmamos el compromiso de seguir construyendo un país en el  que la igualdad sea una realidad no un discurso.</p>
+<p>El  voto femenino fue el fruto de la lucha de mujeres que se atrevieron a imaginar  un México distinto, más justo y más humano. </p>
+<p>Trabajemos  de la mano de la primera mujer Presidenta de México, la Doctora Claudia  Sheinbaum. </p>
+<p> Defendamos  el derecho de las mujeres a participar, a decidir, a vivir libres de violencia,  a ocupar con plenitud los espacios de poder. </p>
+<p>Sigamos  caminando sobre las huellas de aquellas que soñaron y se atrevieron a luchar  por nosotras, a ellas les debemos el presente y, a las niñas de hoy les debemos  el futuro; porque mientras una sola mujer sea silenciada, nuestra democracia  seguirá siendo una tarea inconclusa; que la historia se sigue escribiendo con  nombres de mujeres que luchan, se comprometen y dan resultados. </p>
+<p>Es  cuanto, señora Presidenta. </p>
+<p>De  verdad, me da mucha emoción hablar aquí, sobre todo con mujeres que han luchado  siempre, como es el caso de Malú Micher.</p>
+<p>Gracias,  señora Presidenta.  </p>
+<p><strong>La  Presidenta Senadora</strong> <strong>Laura Itzel Castillo Juárez:</strong> A  continuación, tiene el uso de la palabra la Senadora Virginia Magaña Fonseca,  del Partido Verde Ecologista de México.  </p>
+<p>Honorable  Asamblea, les informo que tenemos la visita de un grupo de estudiantes del  Instituto Universitario de Jilotepec, quienes acuden por invitación del Senador  Enrique Vargas del Villar. </p>
+<p>¡Sean  bienvenidas y bienvenidos a la casa del federalismo!</p>
+<p><strong>La  Senadora Virginia Magaña Fonseca: </strong>Compañeras Senadoras y  compañeros: </p>
+<p>Si  conmemorar es reflexionar, la pregunta de este día es, </p>
+<p>¿Qué  conmemoramos cuando hablamos del derecho al voto de nosotras las mujeres? </p>
+<p>Propongo  una mirada histórica que nos permita nombrarlas a ellas, las transgresoras  sufragistas, cuando Laureana Wright fundó el periódico Violetas de la Anáhuac  en 1887, la revolución todavía no nacía; cuando explicaba a sus lectoras qué  significaba el sufragio universal, los revolucionarios que años después  prometían justicia social todavía eran niños. </p>
+<p>Ella  y otras exigieron el voto 66 años antes de que se nos reconociera. </p>
+<p>Podemos  afirmarlo con verdad, el derecho al voto se escribió con perseverancia y  articulación entre mujeres, el voto y muchas otras experiencias revindican las  posibilidades de que las mujeres nos unamos por grandes propósitos. </p>
+<p>Ellas  lo hicieron antes, nosotras continuamos construyéndolo, porque Elvia Carrillo  Puerto murió sin pensión y en el olvido, la misma que organizó 66 grupos  feministas en todo el país, fue dos veces legisladora y recibió una  condecoración al mérito revolucionario. </p>
+<p>¿Saben  cuánto tiempo ejerció su mandato? </p>
+<p>Solo  seis meses, tuvo que exiliarse. </p>
+<p>Beatriz  Peniche, la primera mujer en afiliarse formalmente a un partido político, y  Raquel Dzib, defensora de mujeres explotadas. También fueron silenciadas. </p>
+<p>Mientras  ellas mostraban cómo las mujeres podían legislar, el Congreso Federal seguía  negando el voto, argumentando que no estábamos preparadas; México hizo una  revolución, y de ella surgió la primera Constitución en el mundo que reconocía  derechos sociales, pero innovador de esa Constitución no alcanzó para  incluirlos por diseño, no por olvido, la mitad de país quedó afuera. </p>
+<p> Aquellos  revolucionarios que transformaron la estructura de clases no quisieron revertir  la exclusión de las mujeres, podían quitarle tierras al hacendado, pero no  disputarle autoridad ni en su casa ni en su partido. El argumento era  revelador, &ldquo;si votan abandonarán el hogar&rdquo;. </p>
+<p>En  otras palabras, si nos reconocían como personas, como agencia perderían el  trabajo no remunerado que les permitiría decidir en la esfera pública. </p>
+<p>Hemos  ejercido el voto 72 años, pero cuántas mujeres siguen pidiendo permiso para  hacerlo. </p>
+<p>Mi  cuestionamiento no es hacia ellas, sino hacia un sistema que mantiene  condiciones de subordinación y violencia. </p>
+<p>Y  algo más, cada vez que una mujer asume un cargo de decisión, las preguntas son  las mismas, no sobre nuestra trayectoria, sino sobre quién supuestamente nos  permite estar allí o aquí. </p>
+<p>Como  si tras décadas construyendo carreras políticas fuéramos incapaces de llegar  por derecho propio. Estos señalamientos no son solo misóginos, vulneran  nuestros derechos adquiridos y nuestras libertades. </p>
+<p>Logramos  el derecho al voto, pero la forma en que las mujeres somos valoradas en  espacios públicos no ha cambiado del todo, persisten sesgos que buscan  demeritar nuestras trayectorias y nuestras capacidades. </p>
+<p>Aquí  estamos y asumimos esta conmemoración desde la responsabilidad de lo  construido, y lo que sigue pendiente, incluyendo lo que nos corresponde como  representantes de este Senado. </p>
+<p>México  tiene hoy a su primera Presidenta, la Doctora Claudia Sheinbaum Pardo, electa  con la votación más amplia de los últimos tiempos; un hecho impensable para  Laureana, para Elvia, para todas las que tuvieron que exiliarse, incluso, con  este logro histórico persiste una herencia compleja, en 1953 nos permitieron  entrar, sí, pero bajo la condición de recordar que somos invitadas en una casa  que no terminamos de habitar. </p>
+<p>El  proceso continúa para que estemos todas. </p>
+<p>Compañeras  y compañeros, no basta con que las mujeres tengamos derecho al voto, debemos de  garantizar las condiciones para ejercerlo sin miedo ni discriminación. </p>
+<p>Desde  el Partido Verde seguiremos impulsando las reformas que consoliden un país con  igualdad de género y justicia para todas las mujeres, porque el voto es un acto  de autonomía, empoderamiento y consciencia. </p>
+<p>Sea  ésta una conmemoración, un llamado a la acción para garantizar que el tiempo de  las mujeres nos pertenecen a todas. </p>
+<p>Es  cuanto. </p>
+<p><strong>La  Presidenta Senadora</strong> <strong>Laura Itzel Castillo Juárez:</strong> Muchas  gracias, Senadora Virginia Magaña. </p>
+<p>A  continuación, tiene el uso de la palabra la Senadora Paloma Sánchez Ramos, del  grupo parlamentario del PRI.</p>
+<p> <strong>La  Senadora Paloma Sánchez Ramos: </strong>Gracias. Con su venia,  señora Presidenta. </p>
+<p>Siempre  he reconocido, admirado y valorado a todas esas mujeres que trabajaron tanto  por una generación como la mía, y que ahora puedo estar ante ustedes. </p>
+<p>Y  hoy recordamos a todas ellas que nos dieron el derecho al voto. </p>
+<p>El  reconocimiento del derecho al voto en México fue una conquista liderada por  mujeres valientes y entregadas a la causa de la igualdad que durante siglos se  nos ha negado. </p>
+<p>Recordarlas  es honrar su lucha, y así como la de nuestras madres, de nuestras abuelas,  ellas que no tenían el mismo privilegio que nosotras de poder estar en una  tribuna hablándole a México. No podían ser candidatas, no podían ni salir a las  calles para alzar la voz, no se les permitiría participar para decidir ni  siquiera sobre su vida y tomar sus propias decisiones. </p>
+<p>México  es un país donde por fin, después de siglos, una niña nace con la posibilidad  de ser Senadora, jefa de una empresa y presidenta de México. </p>
+<p>Pero  todavía estamos muy lejos de poder  vivir en un país con las mismas oportunidades. </p>
+<p>Tampoco podemos caer en el discurso triunfalista de  que en México las mujeres somos completamente libres.</p>
+<p>Si cada vez más mujeres se involucran en la  política, sí, pero también somos más señaladas, más juzgadas, hay burlas, acoso  y se minimiza nuestro esfuerzo. </p>
+<p>Se dice que no entendemos muchos temas, aunque  somos nosotros las que vivimos y es nuestra voz la que puede dar fe de todo lo  que sufrir este país. </p>
+<p>Aunque tenemos escaños, curules y espacios ganados  con nuestros méritos, las decisiones más importantes y los espacios más  importantes, pues siguen siendo para los hombres. </p>
+<p>Y hoy, lamentablemente, aunque el derecho al voto  sigue siendo nuestro, la captura de las instituciones, la eliminación de  contrapesos y los avances autoritarios en México impiden que podamos ejercerlo  con libertad, con lo que soñaron estas mujeres que lo conquistaron para  nosotras. </p>
+<p>En México hay mujeres que votan, pero que no  deciden, hay mujeres que participan, pero que nadie las escucha, las que  proponen y que son ignoradas. </p>
+<p>Y estas están, las que gritan porque se cansaron,  pero tampoco las escucharon. </p>
+<p>Senadoras y Senadores, honrar la lucha de estas  mujeres es recordarlas y seguir caminando por esta misma lucha, ahora a  nosotras nos toca que a las mismas próximas generaciones tengan más espacios y  que sea un camino más fácil, y para ello tenemos que terminar por ser honestos  con los retos que siguen por delante. </p>
+<p>No podemos celebrar mientras sigan asesinando,  violando, mutilando, descuartizando y desapareciendo a las niñas y mujeres  mexicanas. </p>
+<p>Y mientras las mujeres sigamos siendo señaladas,  juzgadas y sin el reconocimiento de nuestro esfuerzo, porque creen que todo lo  que hemos logrado se lo debemos a un hombre. </p>
+<p> No podemos rendirnos ante la violencia feminicida  que sigue inundando nuestras calles, como en Sinaloa, donde en este año  llevamos 53 feminicidios y el mes pasado fue uno de los más violentos para las  mujeres en la historia de mi estado. </p>
+<p>Tenemos que escuchar a las madres buscadoras, que  siguen buscando a sus hijos. </p>
+<p>A las mujeres del campo, que siguen produciendo,  aunque no tengan los apoyos suficientes. </p>
+<p>A nuestras pescadoras, que salen con valentía al  mar para traerle qué comerá sus hijos. </p>
+<p>Y a las niñas que quieren estudiar, pero que lo  hacen por debajo de un escritorio por el paso de las balas. </p>
+<p>Cada día, al menos nueve mujeres son asesinadas, 58  son víctimas de violación y 550 son víctimas de violencia familiar.</p>
+<p>Esa es la enorme deuda que aún tenemos en México,  porque no es suficiente sólo ponerles colores a nuestros recintos oficiales,  mientras las víctimas se sigan acumulando. </p>
+<p>No basta ni con monumentos, ni días especiales si  seguimos condenadas a vivir en un país que no respeta sus derechos. </p>
+<p>Este día nos recuerda lo que podemos lograr las  mujeres organizadas, porque, aunque las mujeres mexicanas hemos demostrado una  y otra vez que somos capaces de transformar nuestro sufrimiento en lucha, no es  justo que la resistencia sea una forma de vida y la violencia algo normal para  nosotras. </p>
+<p>Y porque hace 72 años, con ese coraje y con esa  valentía que siguen y seguirá viva, una voz colectiva que irrumpió en la  política nacional para gritar, nunca más sin nosotras. </p>
+<p>Es cuanto. </p>
+<p><strong>La Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Gracias, Senadora Sánchez Ramos. </p>
+<p>A continuación, tiene el uso de la palabra la  Senadora Laura Esquivel Torres, del grupo parlamentario del Partido Acción  Nacional. </p>
+<p><strong>La Senadora Laura  Esquivel Torres: </strong>Con su venia, señora Presidenta. </p>
+<p>Hace un año subí a esta  misma tribuna, para acusar que estaban usando su poder para arrodillar al Poder  Judicial y para tirar a la basura la carrera de miles de mujeres que, como  Griselda, habían dedicado su vida a la justicia, en este país donde la impunidad  es el mal de cada día. </p>
+<p>365 días y una fracasada  elección judicial después el tiempo me dio la razón. </p>
+<p>Es verdad, desde hace 72  años las mujeres no sólo votamos, ahora algunas hacemos leyes, una mujer  preside el Senado y otra que presume ser Presidenta con &ldquo;a&rdquo;, está haciendo  historia, porque también se hace historia cuando se destruye a toda una  República. </p>
+<p>Lo dije hace un año, nada  qué celebrar. </p>
+<p>Porque lo que dijo Carlos  Castillo Peraza hace muchos años, hoy sigue estando vigente. </p>
+<p> En México millones de  ciudadanos antes que pensar en votar, tienen que pensar en comer. </p>
+<p>Han pasado siete décadas  desde que se nos reconoció el derecho a votar, pero el hambre sigue siendo la  misma y casi 25 millones de mujeres viven en total pobreza, así que antes de  pensar en votar tienen que pensar en comer. </p>
+<p>Millones de mujeres  tienen que pensar en sobrevivir, porque trabajan en la informalidad, trabajan  mucho y duermen poco, y todos los días salen de su casa pidiéndole a Dios  regresar con algo de dinero para poder darle de comer a sus hijos. </p>
+<p>Así que antes de votar,  tienen que pensar en qué va a comer su familia. </p>
+<p>Antes que pensar en  votar, las mujeres tienen que pensar si ese día van a regresar vivas a su casa. </p>
+<p>Y once mujeres, todos los  días, no regresan, porque alguien las mató. </p>
+<p>Muchas mujeres, antes que  pensar en votar tienen que pensar en si van a regresar a casa, y las siete que  desaparecen todos los días en este país no regresan, y sus madres tampoco  pueden pensar en votar, porque están ocupadas buscándola con pico y pala en los  cerros de este país. </p>
+<p>Muchas mujeres antes que  pensar en votar, tienen que pensar a dónde huir, porque el 60 % de las mujeres  que son violentadas lo viven dentro de sus propios hogares. </p>
+<p>Y la mujer que votó y fue  votada por millones de mexicanas, también hizo historia a los albergues para  mujeres violentadas. </p>
+<p>En México hay mujeres que  antes de pensar en votar tienen que pensar en no enfermarse, porque en los  hospitales no hay quién las atienda y no hay medicamentos. </p>
+<p>Y me puedo seguir, pero  seguro que otra vez ya están diciendo: &ldquo;La Senadora otra vez se salió del  guion, la Senadora, por qué habla de eso si esos no son los temas&rdquo;. </p>
+<p>Pero es que ustedes  llevan siete años gobernando, aunque hablan como si hubieran entrado ayer. </p>
+<p>Y en siete años sigue sin  ser el momento adecuado para hablar de los verdaderos problemas que sufren las  mujeres en México. </p>
+<p>Ustedes dejaron de ver a  las mujeres como una historia, como un rostro, para tratarlas como un simple  voto. </p>
+<p>Así es que. ¿Qué  conmemoran? ¿El voto libre de las mujeres? ¿Cuál libre?</p>
+<p>Ustedes les volvieron a  quitar la libertada a las mujeres y ahora condicionan su voto a las despensas,  a los programas sociales, al miedo, a la violencia. </p>
+<p>Porque en muchas regiones  de este país, el crimen organizado es quien decide quién gana o quién pierde  una elección. </p>
+<p>Y eso ha pasado porque  ustedes siguen eligiendo la conveniencia sobre la conciencia y desde la  comodidad de sus escaños han traicionado la confianza que muchas mujeres tenían  en ustedes. </p>
+<p>Nos dijeron que tener una  mujer en el poder cambiaría las cosas, pero no sirve de nada tener una mujer en  el poder si gobierna como los hombres más autoritarios. </p>
+<p> No sirve de nada presumir  la paridad en las decisiones si la siguen tomando desde el temor y la sumisión. </p>
+<p>Las mujeres que conquistaron el voto no lo hicieron para salir  en una foto. </p>
+<p>El poder de las mujeres no se mide por cuántas  salen en la foto, sino por cuántas verdaderamente son escuchadas y respetadas. </p>
+<p>Dicen que es tiempo de mujeres, pero siguen siendo  las mujeres las más pobres, las más violentadas y las más ignoradas. </p>
+<p>Hablan de inclusión, pero persiguen, desacreditan y  censuran a quienes no pensamos como ustedes.</p>
+<p>El verdadero homenaje a todas esas mujeres no debe  ser un evento a puerta cerrada ni un discurso. </p>
+<p>Háganles justicia con sus acciones. </p>
+<p>Así que a todas aquellas mujeres que hoy están en  el poder, yo y millones de mujeres en México les exigimos dos cosas: valentía  para defender lo correcto y lealtad, sí, pero no lealtad a una sola mujer,  lealtad a todas esas mujeres que votaron libremente o no por cada una de  ustedes.</p>
+<p>Gracias, señora Presidenta. </p>
+<p><strong>La Presidenta Senadora Laura Itzel Castillo Juárez: </strong>A continuación, tiene el uso de la palabra la  Senadora Reyna Celeste Ascencio Ortega.</p>
+<p>Les recordamos que es hasta cinco minutos y también  los convocamos a que guardemos silencio y que recordemos que estamos en una  sesión solemne, para conmemorar el 72 Aniversario del Derecho al Voto de las  Mujeres Mexicanas.</p>
+<p>Adelante Senadora. </p>
+<p><strong>La  Senadora Reyna Celeste Ascencio Ortega: </strong>Gracias  señora Presidenta.</p>
+<p>Hoy celebramos 72 años de un hito que transformó  para siempre nuestra democracia, el reconocimiento del derecho de ciudadanía y  participación política y electoral de las mujeres en México. </p>
+<p>El 3 de julio de 1955, por primera vez en la  historia, las mujeres mexicanas acudieron a las urnas para elegir diputaciones  federales.</p>
+<p>Fue un acto profundamente simbólico y  transformador, marcó el inicio de una nueva etapa en la vida política del país,  donde la voz y el voto de las mujeres comenzaron a ocupar el lugar que, por  justicia, por historia y por derecho nos corresponde. </p>
+<p>Este derecho no nació de la voluntad espontánea del  poder sino de una larga lucha, valiente y persistente. </p>
+<p>Desde finales del siglo XIX, mujeres incansables  como Laureana Wright, Hermila Galindo, Elvia Carrillo Puerto, Amalia González  Caballero, María Lavalle Urbina, Rosa Torre González, las valientes sufragistas  y muchas más, alzaron la voz en revistas, congresos, aulas y calles para exigir  lo que les era propio, ser reconocidas como ciudadanas plenas.</p>
+<p> En 1953, tras décadas de resistencia, se reformaron  los artículos 34 y 115 constitucionales. </p>
+<p>El presidente Adolfo Ruiz Cortines promulgó la  reforma que otorgó a las mujeres el derecho a votar y ser votadas. </p>
+<p>Dos años después, este derecho se ejerció por  primera vez en las urnas, abriendo la puerta que jamás se volverá a cerrar.</p>
+<p>Cada uno de estos logros es testimonio del poder de  la lucha colectiva y del avance innegable hacia una democracia más paritaria,  justa e incluyente, sin embargo, la lucha no ha terminado. </p>
+<p>Los datos nos muestran que los retos aún persisten.</p>
+<p>De acuerdo con información del Instituto Nacional  Electoral, con datos al 2022, de un total de 2 mil 471 municipios o alcaldías,  en 545 hay mujeres presidentas municipales o su equivalente en funciones, es  decir, solamente un 28.9 % están encabezadas por mujeres. </p>
+<p>La violencia política en razón de género, los  estereotipos y las resistencias estructurales siguen siendo barreras reales que  amenazan nuestra participación y aunque en tres estados de la República ya son  gobernados por mujeres, la paridad real se alcanzará cuando en todo el país,  sin excepción, por ejemplo, en Michoacán, donde aún no tenemos una mujer  gobernadora, la igualdad política será realidad.</p>
+<p>Vivimos una época histórica en México, tenemos por  primera vez paridad en el Poder Judicial y en el Poder Legislativo Federal, con  dos presidentas, además en la mesa directiva. Por ejemplo, aquí en el Senado  con Laura Itzel Castillo. </p>
+<p>Y gracias a la lucha de aquellas mujeres, por  primera vez en la historia una mujer fue electa presidenta de la República, la  Doctora Claudia Sheinbaum Pardo, quien además cuenta con más del 80 % de  aprobación histórica y dando continuidad al legado de Andrés Manuel López  Obrador, se ha logrado sacar de la pobreza a más de 13 millones y medio de  personas en nuestro país, porque si bien lo ha dicho ella: &ldquo;si llega una  llegamos todas&rdquo;.</p>
+<p>A 365 días del gobierno le reconocemos, le apoyamos  y le decimos, gracias presidenta, no estás sola, tienes todo un pueblo que te  respalda. Actualmente discutimos la reforma electoral, lo que nos invita  también a reflexionar a 72 años de nuestra participación política y electoral,  hubiésemos logrado tener a la primera mujer presidenta de la República sin  antes haber tenido las cuotas de paridad de género y las acciones afirmativas  de mayoría habrían existido sin antes haber sido plurinominales. </p>
+<p>En el México contemporáneo y el de la cuarta  transformación, una nueva realidad es posible, erradicar las desigualdades y  consolidar el humanismo mexicano están cada vez más cerca, porque por el bien  de todas y todos, primero las pobres.</p>
+<p>Cabe destacar claramente que esto no sería posible  en gobiernos neoliberales o de derecha y solamente por eso.</p>
+<p>¡Vivan las mujeres indígenas!</p>
+<p>¡Vivan las mujeres diversas y vivan las mujeres  mexicanas! </p>
+<p>Gracias.</p>
+<p> <strong>La Presidenta Senadora Laura Itzel Castillo Juárez:</strong> A continuación, procederemos con la segunda parte  de esta sesión solemne dedicada a rendir homenaje a la historia de la  participación de las mujeres en este proceso. </p>
+<p>Quiero también reconocer lo que ha sido el apoyo  para la organización de esta sesión solemne del área de la igualdad de género,  esta Unidad Técnica, así como de la Comisión de Equidad y Género y de la  Secretaría de Asuntos Parlamentarios.</p>
+<p>En este momento los grupos parlamentarios, desde  sus respectivos escaños y en orden ascendente, llevarán a cabo la lectura de  los pasajes más significativos que dan cuenta del largo y valiente camino  recorrido por las mujeres mexicanas en la conquista de sus derechos políticos y  en la construcción de la vida democrática. </p>
+<p>Este ejercicio de memoria colectiva constituye un  acto de reconocimiento alegado de las mujeres que abrieron las puertas de la  representación política, así como una reafirmación del compromiso de esta  Cámara de Senadoras y Senadores con la igualdad sustantiva y la participación  plena de las mujeres en todos los espacios de decisión pública. </p>
+<p>Enseguida, diversas compañeras intervendrán de  forma continua desde sus escaños para referirse a esta conmemoración.</p>
+<p>Estaría en el uso de la palabra la Senadora Nora  Rubalcaba Gámez.</p>
+<p><strong>La  Senadora Nora Ruvalcaba Gámez:</strong> (Desde su escaño) Hoy conmemoramos 72 años del reconocimiento del derecho de  las mexicanas a votar y ser votadas. </p>
+<p>Las madres y abuelas de quienes hoy legislamos  conocieron un México muy distinto en el que las mujeres no teníamos la  categoría de ciudadanas.</p>
+<p>El camino hacia la igualdad entre mujeres y hombres  ha sido largo y sinuoso y aún no lo hemos recorrido en su totalidad. </p>
+<p>Hagamos un poco de historia. </p>
+<p>Las demandas de participación política de las  mujeres mexicanas surgen desde mediados del siglo XIX.</p>
+<p>Desde entonces las mujeres comenzamos a leer la ley  con ojos críticos.</p>
+<p>La Constitución de 1857 decía en su artículo 35,  son prerrogativas del ciudadano votar en las elecciones populares, poder ser  votado para todos los cargos de elección popular.</p>
+<p>El texto hablaba de ciudadanos,  no de hombres y en esa palabra las mujeres encontramos una grieta desde donde  hacer valer nuestra voz.</p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Muchas  gracias, Senadora Ruvalcaba Gámez. </p>
+<p>A  continuación, tiene el uso de la palabra la Senadora Mely Romero Celis, del  grupo parlamentario del PRI. </p>
+<p><strong>La  Senadora Mely Romero Celis: </strong>(Desde su escaño) Muchas  gracias, señora Presidenta. </p>
+<p>A  inicio del siglo XX las mujeres de 1911 reclamaron su derecho al voto  argumentando que la Constitución no las excluía de dicho derecho, puesto que no  hacía mención del sexo de los votantes. </p>
+<p> Una  de estas mujeres, Hermila Galindo, se atrevió a postularse como diputada en  1918. Aunque ganó la mayoría de votos, el Colegio Electoral no reconoció su  triunfo. </p>
+<p>Años  antes, en 1916, Hermila había escrito al Congreso Constituyente lo siguiente: </p>
+<p>&ldquo;Si  la mujer tiene iguales necesidades que el hombre debe tener los mismos  derechos, tanto políticos como sociales, lo contrario sería relegarla a la  categoría de un mueble o una cosa inútil&rdquo;. </p>
+<p>Estas  palabras poderosas resonaron en los muros de un Congreso que no quiso  escucharlas. </p>
+<p>Los  Constituyentes de 1917 negaron los derechos políticos a las mujeres  argumentando que ellas no sentían la necesidad de participar en asuntos  públicos. </p>
+<p>Estos  Constituyentes ignoraban o fingían ignorar que miles de mujeres habían luchado  en la Revolución, que habían sostenido familias, hospitales y ejércitos  enteros.<br>
+  <br>
+  En  1918, con la reforma al artículo 37 de la ley electoral para poderes federales,  se restringieron de manera expresa los derechos políticos de las mujeres al  establecer que sólo los varones mexicanos tenían derecho al voto. Con esto se  cerraron las puertas que la Constitución había dejado entreabierta. </p>
+<p>Gracias. </p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Muchas  gracias. </p>
+<p>A  continuación, tiene la palabra la Senadora Imelda Sanmiguel Sánchez, del grupo  parlamentario del Partido Acción Nacional. </p>
+<p><strong>La  Senadora Imelda Sanmiguel Sánchez: </strong>Gracias, señora  Presidenta. </p>
+<p>Pero  la lucha no se detuvo, en 1916 en Mérida, Yucatán, se celebró el primer  congreso feminista, uno de los primeros espacios donde se debatió públicamente  el papel de la mujer en la vida pública del país, y aquí fue donde surgió la  siguiente pregunta: </p>
+<p>¿Cuáles  son las funciones públicas que puede y debe desempeñar la mujer para ser  también dirigente en la sociedad?</p>
+<p>Algunas  delegadas temían el voto.</p>
+<p>Otras  defendieron que la mujer del porvenir podría desempeñar cualquier cargo  público. </p>
+<p>Apenas  siete años después, en 1923, Yucatán reconoció el voto femenino y tres mujeres  fueron electas diputadas locales: Elvia Carrillo Puerto, Raquel Dzib y Beatriz  Peniche de Ponce, así también Rosa Torre fue electa regidora en Mérida. </p>
+<p>Sin  embargo, tras el asesinato de Felipe Carrillo Puerto, las circunstancias  políticas cambiaron y las obligaron a dejar sus cargos. </p>
+<p>Gracias. </p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Muchas  gracias, Senadora Sanmiguel Sánchez. </p>
+<p>A  continuación, tiene el uso de la palabra la Senadora Lizeth Sánchez García, del  grupo parlamentario del Partido del Trabajo.</p>
+<p> <strong>La  Senadora Lizeth Sánchez García: </strong>(Desde su escaño) Gracias,  señora Presidenta. </p>
+<p>Durante  décadas los avances hacia el voto femenino fueron fragmentados. </p>
+<p>Estados  como San Luis Potosí, Tabasco, Chiapas y Yucatán, abrieron las puertas al  sufragio, pero sus decretos fueron derogados rápidamente. </p>
+<p>En  1937, el Presidente Lázaro Cárdenas impulsó una reforma para reconocer la  ciudadanía plena de las mujeres, aprobada, pero nunca publicada. </p>
+<p>Años  después, en 1947, Miguel Alemán reconoció su derecho a votar en el ámbito  municipal. </p>
+<p>Finalmente,  el 17 de octubre de 1953, se publicó la reforma al artículo 34 que reconoció a  las mujeres como ciudadanas con plenos derechos políticos. </p>
+<p>Ese  triunfo no fue una dádiva ni una concesión, sino el resultado de mujeres y  hombres solidarios que exigieron justicia, el derecho a decidir, a representar  y a transformar la nación. </p>
+<p>Las  sufragistas sembraron una semilla de dignidad regándola con perseverancia y su  incansable labor. Esa semilla floreció el 17 de octubre de 1953 cuando México  se hizo más justo, más completo y más fuerte. </p>
+<p>Desde  entonces hemos pasado de votar a ser votadas. </p>
+<p>De  la candidata simbólica a la paridad en todos los espacios de poder. </p>
+<p> De  la invisibilidad a ocupar el sueño que hoy cobra vida con la llegada de la  primera Presidenta de México, quienes nos recordó, con firmeza, &ldquo;No llego sola,  llegamos todas&rdquo;.</p>
+<p>El  voto nos dio la voz, ahora nos toca usarla para garantizar vida digna, justicia  y bienestar para todas.</p>
+<p>Hoy,  a más de siete décadas, ese derecho conquistado nos impone la responsabilidad  de seguir abriendo caminos, construyendo un México más igualitario. </p>
+<p>¡Que  viva la memoria de quienes abrieron el camino! </p>
+<p>Es  cuanto. </p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>¡Que  viva!</p>
+<p>Tiene  la palabra la Senadora Jasmine María Bugarín, del Partido Verde Ecologista de  México.</p>
+<p><strong>La  Senadora Jasmine María Bugarín: </strong>La primera mujer en la  Cámara de Diputados fue la maestra Aurora Jiménez, en la XLII Legislatura, por  Baja California.</p>
+<p>Mientras  que las primeras Senadoras de la República fueron Alicia Arellano Tapia y María  Lavalle, por Sonora y Campeche, en las legislaturas XLVI y XLVIII.</p>
+<p>Rosario  Ibarra de Piedra fue la primera mujer candidata a la Presidencia de la  República en 1988.</p>
+<p>En  tanto, Gricelda Álvarez Ponce de León fue la primera gobernadora electa en  México al frente del estado de Colima, durante el período de 1979 a 1985. </p>
+<p> Por  su parte, Dulce María Sauri Riancho ocupó de manera interina la gubernatura de  Yucatán, cargo que ejerció en el período de 1991 a 1993. </p>
+<p>Sin  embargo, los cambios legales no fueron suficientes, las mujeres seguimos  subrepresentadas en los espacios de poder en todos los países democráticos del  mundo. </p>
+<p>Por  eso, en 1992, en Europa, se acuñó un nuevo concepto &ldquo;la democracia paritaria&rdquo;  como un llamado a que las mujeres no sólo ejerzamos nuestros derechos; sino  tengamos presencia y voz efectiva en la toma de decisiones. </p>
+<p>México  respondió gradualmente con sucesivas reformas político-electorales a nivel  constitucional. </p>
+<p>En  1993 los partidos fueron llamados a promover más mujeres. </p>
+<p>En  1996 se estableció que ningún género ocuparía más del 70 % de las candidaturas. </p>
+<p>En  2002 se obligó a que las listas fueran alternadas y que las suplencias fueran  del mismo sexo. </p>
+<p>Cada  reforma fue un paso más hacia la igualdad sustantiva. </p>
+<p>Es  cuanto. </p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Muchas  gracias a la Senadora Bugarín. </p>
+<p>A  continuación, tiene el uso de la palabra la Senadora Alejandra Berenice Arias  Trevilla. </p>
+<p><strong>La  Senadora Alejandra Berenice Arias Trevilla: </strong>Gracias,  señora Presidenta. </p>
+<p>El  punto culminante llegó en 2012 con la sentencia del Tribunal Electoral del  Poder Judicial de la Federación que ordenó que en las elecciones federales de  ese año los partidos políticos debían garantizar al menos el 40 por ciento de  mujeres en las listas de representación proporcional y registrar fórmulas de  candidaturas integradas por personas del mismo género. </p>
+<p>Esta  resolución obligó a los partidos a respetar la paridad en las postulaciones y  contribuyó a eliminar el fenómeno de &ldquo;Las Juanitas&rdquo;. </p>
+<p>Con  la reforma constitucional del 2014, los partidos políticos quedaron obligados a  garantizar la paridad de género en el registro de candidaturas legislativas,  así como a definir y hacer públicos los criterios para cumplir con dicha  paridad. </p>
+<p>Estos  criterios no pueden permitir que se asigne a un mismo género los distritos  electorales donde los partidos hayan obtenido niveles más bajos de votación. </p>
+<p>Finalmente,  en 2019, con la reforma constitucional de paridad en todo, la obligación de  registrar candidaturas paritarias se extendió a los ámbitos municipal, estatal  y federal, y también se incorporó a los Poderes Ejecutivo y Judicial. </p>
+<p>Los  resultados son visibles, México es actualmente el quinto país del mundo con más  mujeres en el Congreso y el segundo en contar con una reforma de paridad  constitucional, un logro histórico fruto de décadas de lucha. </p>
+<p>Gracias  a las que nos han antecedido. </p>
+<p>Gracias. </p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Muchas  gracias. </p>
+<p> A  continuación, tiene el uso de la palabra, por la Mesa Directiva, la Senadora  Verónica Noemí Camino Farjat. </p>
+<p><strong>La  Senadora Verónica Noemí Camino Farjat: </strong>Con  su venia. Y a nombre de la Mesa Directiva. </p>
+<p>A  casi 110 años del Primer Congreso Feminista de México y a 72 años de que se nos  reconoció el derecho a votar y ser votadas, hoy honramos a las mujeres que se  atrevieron a alzar la voz cuando todo estaba en contra, a las que desafiaron el  miedo y arriesgaron su vida y la de sus familias, guiadas por la convicción de  que la igualdad sería posible; a las que son su ejemplo siguen abriendo camino  para las que vendrán. </p>
+<p>Las  reformas hechas por el reconocimiento a nuestros derechos constituyen una de  las transformaciones más profundas de nuestro sistema político. </p>
+<p>De  hecho, todos los movimientos democratizadores de las décadas subsecuentes en la  segunda mitad del siglo XX fueron fruto de esa gran transformación. </p>
+<p>La  presencia de las mujeres en los espacios públicos cimbró para siempre el viejo  edificio autoritario. </p>
+<p>La  presencia de las mujeres en 2018 dio una culminación en la Ciudad de México con  la llegada de la Doctora Claudia Sheinbaum Pardo como la primera mujer electa  jefa de gobierno en la Ciudad de México. </p>
+<p>Y  seis años después encarna el sueño de nuestras abuelas, de nuestras madres, de  nosotras y de todas aquellas mujeres que nunca se rindieron al convertirse el 1  de octubre de 2024 en la primera mujer Presidenta de México, después de 200  años. </p>
+<p>La  paridad hoy está presente en nuestras vidas y llegó por supuesto para quedarse,  13 mujeres son actualmente gobernadoras, 539 mujeres ejercen como presidentas  municipales, ocho mujeres integran el gabinete presidencial paritario, 869  mujeres son legisladoras federales y locales, y por primera vez contamos con un  Poder Judicial paritario con mujeres juzgadoras, magistradas y ministras de la  Suprema Corte. </p>
+<p>Y  ahora quiero que todas ustedes me acompañen. </p>
+<p>¡Viva  Elvia Carrillo Puerto!</p>
+<p><strong>Las  Senadoras y Senadores: </strong>¡Viva!</p>
+<p><strong>La  Senadora Verónica Noemí Camino Farjat: </strong>¡Viva  Rita Cetina!</p>
+<p><strong>Las  Senadoras y Senadores: </strong>¡Viva!</p>
+<p><strong>La  Senadora Verónica Noemí Camino Farjat: </strong>¡Viva  Hermila Galindo!</p>
+<p><strong>Las  Senadoras y Senadores: </strong>¡Viva!</p>
+<p><strong>La  Senadora Verónica Noemí Camino Farjat: </strong>¡Viva  Raquel Dzib Cicero!</p>
+<p><strong>Las  Senadoras y Senadores: </strong>¡Viva!</p>
+<p><strong>La  Senadora Verónica Noemí Camino Farjat: </strong>¡Viva  Refugio García!</p>
+<p><strong>Las  Senadoras y Senadores: </strong>¡Viva!</p>
+<p> <strong>La  Senadora Verónica Noemí Camino Farjat: </strong>¡Viva  Aurora Jiménez!</p>
+<p><strong>Las  Senadoras y Senadores: </strong>¡Viva!</p>
+<p><strong>La  Senadora Verónica Noemí Camino Farjat: </strong>¡Viva  María Lavalle Urbina!</p>
+<p><strong>Las  Senadoras y Senadores: </strong>¡Viva!</p>
+<p><strong>La  Senadora Verónica Noemí Camino Farjat: </strong>¡Viva  Margarita Robles!</p>
+<p><strong>Las  Senadoras y Senadores: </strong>¡Viva!</p>
+<p><strong>La  Senadora Verónica Noemí Camino Farjat: </strong>¡Viva  Rosario Ibarra de Piedra!</p>
+<p><strong>Las  Senadoras y Senadores: </strong>¡Viva!</p>
+<p><strong>La  Senadora Verónica Noemí Camino Farjat: </strong>¡Viva  María Ríos Cárdenas!</p>
+<p><strong>Las  Senadoras y Senadores: </strong>¡Viva!</p>
+<p><strong>La  Senadora Verónica Noemí Camino Farjat: </strong>¡Viva  Rosa Torres González!</p>
+<p><strong>Las  Senadoras y Senadores: </strong>¡Viva!</p>
+<p><strong>La  Senadora Verónica Noemí Camino Farjat: </strong>¡Viva  Esther Chapa Tijerina!</p>
+<p><strong>Las  Senadoras y Senadores: </strong>¡Viva!</p>
+<p><strong>La  Senadora Verónica Noemí Camino Farjat: </strong>¡Vivan  las mujeres sufragistas que nunca se rindieron!</p>
+<p><strong>Las  Senadoras y Senadores: </strong>¡Vivan!</p>
+<p><strong>La  Senadora Verónica Noemí Camino Farjat: </strong>¡Vivan  las mujeres indígenas y afrodescendientes de México!</p>
+<p><strong>Las  Senadoras y Senadores: </strong>¡Vivan!</p>
+<p><strong>La  Senadora Verónica Noemí Camino Farjat: </strong>¡Vivan  las mujeres que hoy ejercen sus derechos plenos y las que mañana continuarán  con esta historia!</p>
+<p><strong>Las  Senadoras y Senadores: </strong>¡Vivan!</p>
+<p><strong>La  Senadora Verónica Noemí Camino Farjat: </strong>¡Viva  la igualdad sustantiva!</p>
+<p><strong>Las  Senadoras y Senadores: </strong>¡Viva!</p>
+<p><strong>La  Senadora Verónica Noemí Camino Farjat: </strong>¡Viva  la democracia paritaria!</p>
+<p><strong>Las  Senadoras y Senadores: </strong>¡Viva!</p>
+<p><strong>La  Senadora Verónica Noemí Camino Farjat: </strong>¡Vivan  las mujeres de este gran país que se llama México!</p>
+<p><strong>Las  Senadoras y Senadores: </strong>¡Vivan!</p>
+<p><strong>La  Senadora Verónica Noemí Camino Farjat: </strong>Muchas  gracias. </p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Muchas  gracias, compañeras Senadoras, a todas las que participaron en esta sesión  solemne y a todas las compañeras y compañeros que están presentes, Senadores.</p>
+<p> Así como quienes nos están visitando el día  de hoy, como es la maestra Adriana Patlán, activista hidalguense, y también  Gregoria Navarro, que son invitadas de Simey Olvera. </p>
+<p>¡Bienvenidas!</p>
+<p>También a la Casa del Estudiante Guerrerense  en la Ciudad de México, aquí están estudiantes que nos están acompañando el día  de hoy. </p>
+<p>Y también de la Facultad de Gobierno y  Gestión Pública de la Universidad Autónoma de Guerrero, que acuden por  invitación del Senador Félix Salgado Macedonio. </p>
+<p>Así como a Gilda Garza, artista plástica y  escultora; a Marion Lanz-Duret, filántropa, y a Mario Sierra Moncada, quienes  acuden por invitación del Senador Saúl Monreal Ávila. </p>
+<p>Todos y todas sean bienvenidos y bienvenidas  a esta sesión solemne en reconocimiento al derecho al voto a la mujer mexicana. </p>
+<p>Queremos decirles que, para concluir, desde  luego, que en 1953 las mujeres adquirimos este derecho al sufragio y desde  entonces no hemos cejado en avanzar para seguir aportando a la causa de la  igualdad y el desarrollo de la democracia en nuestro país. </p>
+<p>Concluimos la sesión solemne en conmemoración  del reconocimiento del derecho al voto a las mujeres. </p>
+<p>También, tomando en consideración estas  cuestiones, es que el día de hoy se pueden ustedes dar cuenta que la Mesa  Directiva está compuesta exclusivamente por mujeres Senadoras. </p>
+<p>Y que concluimos esta sesión solemne, pero  que no concluiremos la lucha en defensa de los derechos de las mujeres en este  país, que ese es un compromiso que tenemos como Senadoras y Senadores de  nuestro país. </p>
+<p>Quiero decir, finalmente, que la sesión  ordinaria se reanuda. </p>
+<p align="center">(Se levantó la sesión  a las 13:21 horas) </p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a123760'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

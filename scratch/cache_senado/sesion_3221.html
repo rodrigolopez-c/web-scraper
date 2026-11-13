@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>TERCER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO III</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 24</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Oscar Eduardo Ramírez Aguilar</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Ordinaria Celebrada<br>en la Ciudad de M&eacute;xico, el 26 de Noviembre de 2020</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/3/PPO/PDF-WEB/PPO_No.24_26_NOVIEMBRE_2020_VESPERTINA.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='95288'></a><p align="center"><strong>PRESIDENCIA DEL SENADOR</strong><br>
+  <strong>OSCAR EDUARDO RAMÍREZ AGUILAR</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>(14:51 horas) Solicito a la Secretaría informe a la Asamblea el  resultado del cómputo de asistencia de las Senadoras y Senadores. </p>
+<p align="justify"><strong>El Secretario Senador Ricardo Velázquez Meza: </strong>Con gusto, señor Presidente. Honorable Asamblea, conforme al registro de  asistencia, se han acreditado 78 ciudadanas Senadoras y ciudadanos Senadores. </p>
+<p align="justify">En consecuencia, hay quórum, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>Se les reitera el exhorto a que procuremos evitar la saturación en el  salón de sesiones, para trabajar en condiciones que contribuyan a disminuir los  riesgos de contagio, en caso de requerir su presencia para participar en  votaciones nominales se les informará oportunamente, a fin de que puedan  trasladarse al salón. </p>
+<p align="justify">Se abre la sesión vespertina del jueves 26 de noviembre del año 2020,  correspondiente al primer periodo ordinario de sesiones del tercer año de ejercicio  de la LXIV Legislatura. El Orden del Día está disponible en el monitor de sus  escaños, con el cual se informa de los asuntos que corresponden a la agenda de  hoy.</p>
+<p align="justify">El acta de la  sesión matutina de este día se encuentra publicada en la Gaceta Parlamentaria. En  consecuencia, consulte la Secretaría a la Asamblea, en votación económica, si  se aprueba.</p>
+<p align="right"><strong>ACTA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/114233"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/asistencias/2020_11_26/23"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+
+<p align="justify"><strong>El Secretario  Senador Ricardo Velázquez Meza: </strong>Consulto a la Asamblea, en  votación económica, si se aprueba el acta referida. Quienes estén porque se  apruebe, favor de levantar la mano. </p>
+<p align="center">(La Asamblea  asiente)</p>
+<p align="justify">Quienes estén  porque se rechace, favor de levantar la mano. </p>
+<p align="center">(La Asamblea  asiente)</p>
+<p align="justify">Aprobada el acta de  la sesión matutina de este día, señor Presidente. </p>
+<p align="justify"><strong>El Presidente  Senador Oscar Eduardo Ramírez Aguilar: </strong>Aprobada el acta. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a95288'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='95289'></a><p align="justify">Tenemos la segunda  lectura de un dictamen de las Comisiones Unidas de Puntos Constitucionales; y  de Estudios Legislativos, Segunda, con proyecto de Decreto por el que se  adiciona un tercer párrafo al artículo 108 de la Constitución Política de los  Estados Unidos Mexicanos, en materia de fuero de las y los legisladores. A este  dictamen se le dio primera lectura en la sesión matutina del día de hoy. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO  POR EL QUE SE REFORMA EL ARTÍCULO 108 DE LA CONSTITUCIÓN POLÍTICA  DE LOS ESTADOS UNIDOS MEXICANOS</strong></p>
+<p align="justify"><strong>(Dictamen de segunda lectura)</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/114231"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Debido a que el dictamen se encuentra publicado en la Gaceta  Parlamentaria del día de hoy, y está disponible en el monitor de sus escaños,  solicito a la Secretaría consulte a la Asamblea, en votación económica, si se  omite la lectura del dictamen y se pone a discusión de inmediato. </p>
+<p align="justify"><strong>El Secretario Senador Ricardo Velázquez Meza: </strong>Sí, señor Presidente. Consulto a la Asamblea, en votación económica, si  se autoriza que se omita la lectura del dictamen. Quienes estén por la  afirmativa, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén por la negativa, favor de levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Sí se omite la lectura, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>Sonido en el escaño del Senador Martí Batres. </p>
+<p align="justify"><strong>El Senador Martí Batres Guadarrama: </strong>(Desde su escaño) Gracias. Y disculpen por la interrupción, pero solicitaba  la palabra al principio, solo para pedir que, en mi iniciativa de reforma a la  Constitución para el reconocimiento de todas las lenguas indígenas como lenguas  oficiales, sea turnada directamente a comisiones, porque es un tema que, por la  minuta de la Cámara de Diputados, que viene con un asunto parecido, tendrá que  abordarse próximamente. </p>
+<p align="justify">Esa es mi solicitud y aprovecho para darle un saludo al compañero  Antonio Cruz Álvarez Lima. </p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>Con gusto, Senador Martí. Tomamos nota para darle trámite  correspondiente a comisiones. </p>
+<p align="justify">Se le concede el uso de la palabra al Senador Cristóbal Arias, para hablar  en nombre de la Comisión de Puntos Constitucionales, para exponer el dictamen. </p>
+<p align="justify"><strong>El Senador Cristóbal Arias Solís: </strong>Con su permiso, señor Presidente. Honorable Asamblea: </p>
+<p align="justify">Las Comisiones Unidas de Puntos Constitucionales; y de Estudios  Legislativos, Segunda, ponemos a su consideración el dictamen que adiciona un  tercer párrafo al artículo 108 constitucional, con el objeto de establecer que  los integrantes de las Cámaras del Congreso, durante el tiempo de su encargo,  podrán ser imputados y juzgados por los mismos supuestos que se prevén para el Presidente  de la República, mismos que ya aprobamos en el dictamen que reforma a los  artículos 108 y 111 constitucionales. </p>
+<p align="justify">De esta manera, se reconoce la necesidad de sustentar las acciones de  todos los servidores públicos que, en ejercicio de sus funciones, incurran en  hechos delictivos para ser sujetos de procesos penales ante las autoridades  competentes que constituye una medida que viene a fortalecer nuestro Estado  democrático de derecho. </p>
+<p align="justify">Nadie puede negar que la corrupción y la impunidad en la esfera pública  y de gobierno es y ha sido la principal causa del mayor deterioro de la vida  pública de nuestro país. </p>
+<p align="justify">De ahí que el presente dictamen tiene como propósito singular que las y  los legisladores federales puedan ser imputados y juzgados por traición a la  patria, hechos de corrupción, delitos electorales y por todos aquellos por los  que podría ser enjuiciado cualquier ciudadana o ciudadano.<br>
+  <br>
+  En este proceso de dictaminación, los integrantes de estas comisiones unidas  coincidimos en que se tiene que dar un tratamiento equilibrado al régimen de  responsabilidades del Presidente de la República y de las y los legisladores  federales, por lo que tal propósito se cumplirá con la modificación del párrafo  segundo del artículo 108 constitucional, que ya aprobó este Pleno el día de  hoy, en congruencia con la minuta turnada a este Senado por la Cámara de  Diputados de fecha 2 de septiembre de 2020, a efecto de establecer que el Presidente  de la República podrá ser imputado y juzgado durante el tiempo de su encargo en  los supuestos ya enunciados, así como con la adición de un  nuevo párrafo al artículo 108 constitucional,  misma que se propone en este dictamen. </p>
+<p align="justify">Con la adición que se propone a dicho precepto constitucional, se  respeta en términos de técnica legislativa y de ubicación de normas el régimen  de responsabilidades del Presidente de la República en su párrafo segundo y se  precisa y se refiere en este nuevo tercer párrafo el régimen de  responsabilidades penales de las y los legisladores federales. </p>
+<p align="justify">En conclusión, se considera efectivamente que el fuero o protección constitucional  no debe de ser un impedimento para sustanciar procesos penales en contra de  todos aquellos servidores públicos cuya función esté protegida, ya que el  principio de igualdad ante la ley, aunado a la imparcialidad de la justicia, no  permite hacer distinción alguna de sujetar a determinados servidores públicos a  un criterio meramente discrecional en el supuesto de que incurran o cometan  alguna conducta contraria a derecho. </p>
+<p align="justify">En este tenor, avalamos y consideramos viable la adición de un tercer  párrafo al artículo 108 constitucional, con el objeto de establecer y precisar  que las y los legisladores federales también podrán ser imputados y juzgados  por traición a la patria, hechos de corrupción, delitos electorales y todos  aquellos por los que podría ser enjuiciado cualquier ciudadana o ciudadano,  además de establecer que en estos casos se procederá conforme a lo dispuesto en  el artículo 111 constitucional. </p>
+<p align="justify">Compañeras y compañeros Senadores: </p>
+<p align="justify">Con el impulso y aprobación del presente dictamen, esperemos que se  confirme el consenso que ya existe de todos los grupos parlamentarios  representados en el Senado, de que el fuero o protección constitucional ya no  puede ni debe ser considerado por más tiempo como un privilegio que se ha  convertido con el tiempo en una patente de impunidad. </p>
+<p align="justify">Es cuanto, señor Presidente. </p>
+<p align="justify">Muchas gracias, compañeras y compañeros Senadores. </p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>Está a discusión en lo general. </p>
+<p align="justify">Se le concede el uso de la palabra a la Senadora Martha Cecilia Márquez  Alvarado, del grupo parlamentario de Acción Nacional, para hablar en contra,  hasta por cinco minutos. </p>
+<p align="justify"><strong>La Senadora Martha Cecilia Márquez Alvarado: </strong>Con su permiso, señor Presidente.</p>
+<p align="justify">Pues hablo en contra de este dictamen, porque considero que el Senado le  está sirviendo de tapete al circo del Presidente, porque no nos estamos  respetando en nuestra dignidad, porque su servidora ha sido una de las  Senadoras que habla, y que habla por ser oposición, y el fuero nació, señores  Senadores, para los legisladores, para que no fuéramos cobardes, para que  representáramos al ciudadano. <br>
+  El fuero es para el libre ejercicio de la palabra aquí en las tribunas.</p>
+<p align="justify">Y hoy, porque el Presidente quiere, se quieren quitar el fuero. El fuero  no es que roben y que no los metan a la cárcel.</p>
+<p align="justify">Cuando, quien sea, en México comete un delito, debe ser juzgado, eso no  es el fuero, el fuero para un legislador es expresarte aquí libremente y que  nadie te persiga por la expresión de tus ideas, por exigir que se atienda el tema  de la delincuencia en México, por exigir medicamentos para los niños con  cáncer.</p>
+<p align="justify">Estoy en contra, Senadores, de este circo mediático al que ustedes se  prestan con el Presidente.</p>
+<p align="justify">Desde luego, el fuero no se lo van a quitar al Presidente, el fuero  sigue para el Presidente, y ahorita hacen, hacemos como Senado la faramalla de  que nos vamos a quitar el fuero los Senadores, cuando tampoco es cierto.</p>
+<p align="justify">Pero mi discurso sí es en contra porque no se me hace correcto que los  Senadores nos estemos prestando a este cirquito, en donde hay un Bartlett que  es un ejemplo de corrupción y nadie le hace nada, tenga o no tenga fuero, sea o  no sea funcionario o director en el gobierno federal.</p>
+<p align="justify">Entonces, yo sí defiendo el fuero, y se lo digo a los mexicanos, el  fuero para defenderte a ti, mexicano.</p>
+<p align="justify">El fuero para, como Senadora, expresarme libremente. Y lo voy a decir,  no me voy a envolver en el juego comunicacional del Presidente, yo sí quiero  fuero para defenderte a ti, mexicano, en los peores momentos.</p>
+<p align="justify">Yo sí quiero fuero para la libre expresión de las ideas, para seguir  pidiendo, aunque se cansen de escucharme, medicamentos para los niños con  cáncer.</p>
+<p align="justify">Estoy en contra de que nos prestemos a un circo meramente mediático que  el Presidente quiere.</p>
+<p align="justify">Yo sí quiero el fuero para que no me ataquen y no me quieran meter a la  cárcel por ser oposición.</p>
+<p align="justify">Es cuanto, señor Presidente.</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>Se le concede el uso de la palabra al Senador José Ramón Enríquez, del  grupo parlamentario de Morena.</p>
+<p align="justify"><strong>El Senador José Ramón Enríquez Herrera: </strong>Muchas gracias. Gracias por la oportunidad. Buenas tardes a todos, los  saludo con mucho afecto y cariño. Distinguidas Senadoras; estimados Senadores. Con  su venia, señor Presidente. Y, sobre todo, a los ciudadanos que nos ven a  través del Canal del Congreso.</p>
+<p align="justify">Hoy puedo decir que hemos avanzado en dos comisiones donde tuvimos la  oportunidad de escuchar y de poder presentar observaciones; pero concluimos en  estas Comisiones de Estudios Legislativos, Segunda, y de Puntos  Constitucionales, donde hubo una votación por unanimidad de todos los colores y  porque siempre es importante decirlo con precisión.<br>
+  <br>
+  Más allá de los colores, lo que importa es México y los ciudadanos. La  falta de transparencia y continuas experiencias de corrupción e impunidad han  debilitado a nuestras instituciones generando desconfianza entre las y los  mexicanos.</p>
+<p align="justify">En la actualidad, tanto la inmunidad parlamentaria, como la inmunidad  judicial, se entienden como fuero constitucional, el cual comprende tres tipos  de protección o de prerrogativas: Inmunidad judicial, fuero parlamentario y  fuero presidencial.</p>
+<p align="justify">Es importante mencionar que el presente dictamen tiene como propósito  que las y los legisladores federales puedan ser imputados y enjuiciados por  traición a la patria, pero también por hecho, de corrupción, delitos  electorales y todos aquellos por los que pudiera ser juzgado cualquier  ciudadano, eso es lo importante en este momento, que haya ese piso parejo que  nos dice la propia ciudadanía.</p>
+<p align="justify">No hay ningún otro modelo de participación social para construir la  armonía y la unidad de este país.</p>
+<p align="justify">Recordemos que el estado de derecho es un pilar de la democracia, donde  todas las personas, instituciones y entidades, incluido el propio Estado, están  sujetos a leyes aplicables a todos y en donde nadie debería de estar sobre  ellas.</p>
+<p align="justify">En un estado de derecho la ley debe ser aplicada de manera justa e  igualitaria; sin embargo, en México es una realidad que existen privilegios en  su aplicación, situación que debemos cambiar si queremos avanzar a la  consolidación de un país justo y próspero.</p>
+<p align="justify">En la práctica actual, la figura del fuero es sinónimo de una protección  especial a la que el resto de las y los mexicanos no tiene acceso, generando  una brecha que marca distinciones entre gobernantes y nuestro pueblo.</p>
+<p align="justify">A la voz de millones de mexicanas y mexicanos, el fuero es considerado  un instrumento de impunidad, aquella figura que debió incentivar la entrega por  un país dejando a un lado los intereses personales para trabajar exclusivamente  por el bienestar común, se convirtió en un mecanismo de excesos y cinismo.</p>
+<p align="justify">Ante esta disyuntiva es válido y necesario cuestionar la vigencia de  este instrumento en una realidad en donde existe una sociedad cada vez más plural,  democrática y abierta, y en la que queremos gobiernos e instituciones  transparentes y con representantes comprometidos con nuestro pueblo.</p>
+<p align="justify">Es el aquí y el ahora, estamos en un momento histórico de la  transformación del país, y al aprobar precisamente esta adición del tercer  párrafo del artículo 108 constitucional habremos de avanzar y, por supuesto,  responder a la pluralidad de las voces de los mexicanos, y también frenar los  abusos y las arbitrariedades de los servidores públicos.</p>
+<p align="justify">Terminamos con la figura de la impunidad, de normalizar la corrupción  como una práctica cotidiana y tolerable. Basta de creencias que no podemos  contra la impunidad, pongamos fin a este estigma y consolidemos una verdadera  transformación desde la raíz.</p>
+<p align="justify">Necesitamos consolidar una cultura de la legalidad y apego a la ley que  nos recuerde que el servicio público implica una gran responsabilidad que debe  cumplirse con decoro y, desde luego, con honestidad.</p>
+<p align="justify">En este tenor, avalamos y consideramos viable la adición de un tercer párrafo  al artículo 108 de nuestra Carta Magna, por un México que podamos seguir  escuchando a nuestro pueblo.<br>
+  <br>
+  Por los argumentos expuestos es que el dictamen responde a esta demanda  histórica de atender a la exigencia social, de abatir la impunidad que ha generado  la protección constitucional, por un México justo y próspero.</p>
+<p align="justify">¡México, te quiero con piso parejo!</p>
+<p align="justify">¡México, te quiero honesto!</p>
+<p align="justify">¡México, te quiero feliz!</p>
+<p align="justify">Es cuanto.</p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>Se le concede el uso de la palabra al Senador Bolaños Cacho Cué, del  grupo parlamentario del Verde Ecologista, hasta por cinco minutos.</p>
+<p align="justify"><strong>El Senador Raúl Bolaños Cacho Cué: </strong>Con la venia de la Presidencia. Compañeras y compañeros legisladores:</p>
+<p align="justify">En marzo de 2019, este Senado de la República aprobó con 111 votos a  favor, 1 en contra y cero abstenciones; es decir, con pleno consenso, que tanto  el Presidente de la República, como todos los integrantes del Congreso de la  Unión pudiésemos ser procesados penalmente en el caso de la comisión de  cualquier delito.</p>
+<p align="justify">Las Comisiones Unidas de Puntos Constitucionales; de Gobernación; y de  Estudios Legislativos, Segunda, construimos acuerdos para aprobar un dictamen  que fuera más allá de lo recibido por parte del Ejecutivo.</p>
+<p align="justify">En el Pleno de este Senado, las fuerzas políticas actuamos en consecuencia  y unidos defendimos una causa que consideramos transformadora. </p>
+<p align="justify">La Cámara de Diputados no coincidió con lo realizado por este Senado,  por lo que esta casa de las leyes reafirmó a la Colegisladora nuestro interés  por eliminar los privilegios en el Congreso de la Unión y, por ello, desechamos  la minuta enviada por la Cámara de Diputados.</p>
+<p align="justify">Hoy, las y los integrantes de las Comisiones Unidas de Puntos  Constitucionales; y de Estudios Legislativos, Segunda, aprobamos un dictamen  para que al igual que lo aprobado en cuanto al régimen de responsabilidades del  Presidente de la República, todos los integrantes del Congreso de la Unión  podamos ser procesados penalmente en el caso de comisión de cualquier delito,  como todas y todos los mexicanos. </p>
+<p align="justify">Este dictamen representa un fortalecimiento a la estabilidad del país.</p>
+<p align="justify">Un avance en los contrapesos hacia el Poder Legislativo.</p>
+<p align="justify">Simboliza el combate a la impunidad ante la posible comisión de ilícitos  en el sector público, tal y como puede el excederse en sus atribuciones en  beneficio propio o de algún partido. </p>
+<p align="justify">Con la aprobación de este dictamen, las legisladoras y legisladores  podemos ser imputados y juzgados por traición a la patria, hechos de  corrupción, delitos electorales y todos aquellos delitos por lo que podría ser  enjuiciado cualquier ciudadana o ciudadano. </p>
+<p align="justify">El Senado de la República no debe desechar este avance constitucional,  debemos de dar ejemplo porque México necesita que nuestras palabras se  conviertan en hechos. <br>
+  <br>
+  Las ciudadanas y ciudadanos que nos dieron su voto de confianza, a  quienes tenemos el honor de representar, ya están cansados de ver privilegios a  costas del erario o el cargo público. </p>
+<p align="justify">El servicio público no es para servirse de manera particular, sino para  servir a los demás y servir a la patria. Por ello, no debemos de prorrogar la  discusión y análisis de una nueva reforma constitucional para empatar, ajustar  y eliminar cualquier interpretación errónea con relación al fuero. </p>
+<p align="justify">Porque seamos transparentes, este dictamen no elimina el fuero, no  convirtamos una exigencia ciudadana en una bandera mediática, los mexicanos  merecen claridad. </p>
+<p align="justify">Esta Legislatura debe de trabajar para desaparecer el fuero  constitucional de los altos funcionarios públicos. Y hay que decirlo con rigor,  esto tampoco debe de significar una cacería de políticos por la libre expresión  de sus ideas o por sus impulsos partidarios, sino un combate en contra de las  arbitrariedades y del abuso de poder. </p>
+<p align="justify">Nuestra función y labor como representantes es velar por el bien común,  con buenas prácticas al servicio de la nación. Por ello, este dictamen es un  hecho histórico en el régimen político de nuestro país. </p>
+<p align="justify">Por todo lo anterior, y por representar un avance en los pesos y  contrapesos, esencia de un sistema republicano y democrático, el Partido Verde  se sumará a la mayoría y votará a favor de este gran paso. </p>
+<p align="justify">En palabras de mi paisano, el Gigante de Guelatao, Benito Juárez: &ldquo;la  autoridad no es mi patrimonio; sino un depósito que la nación me ha confiado  muy especialmente para sostener su independencia y su honor&rdquo;. </p>
+<p align="justify">Es cuanto, señor Presidente. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>Se le concede el uso de la palabra al Senador Juan Manuel Fócil Pérez,  del grupo parlamentario del PRD, para hablar a favor. </p>
+<p align="justify"><strong>El Senador Juan Manuel Fócil Pérez: </strong>Gracias, señor Presidente. Con su venia. Buenas tardes, compañeras  Senadoras y Senadores. </p>
+<p align="justify">Para el grupo parlamentario del PRD, la materia del dictamen que estamos  discutiendo es, sin duda, una de sus luchas históricas y de la cual muchas y  muchos de ustedes pueden dar cuenta, porque la impulsaron, inclusive, desde  este partido. </p>
+<p align="justify">Con la votación que llevaremos a cabo estamos cristalizando la  eliminación de un régimen de excepcionalidad procesal en torno a la figura  presidencial, pero también debemos aprovechar esta oportunidad para eliminarlo  para las y los legisladores federales. </p>
+<p align="justify">Este régimen, conocido popularmente como fuero, es una protección  otorgada al Presidente de la República, la cual debe ser conocida como una  inmunidad parlamentaria o inmunidad legislativa.</p>
+<p align="justify">Si bien en sus orígenes el objetivo principal de la inmunidad  parlamentaria o fuero era el de proteger al recinto legislativo y su  funcionamiento de las decisiones del Ejecutivo o de los órganos judiciales, en  la práctica ha implicado que los servidores como individuos adquieran una  protección a la que el resto de las y los ciudadanos no tienen acceso. <br>
+  <br>
+  En este sentido, después de una revisión superficial en la región  latinoamericana, encontramos que también el fuero presidencial y parlamentario  fue ideado como un contrapeso para evitar riesgos potenciales producto de  persecuciones generadas por adversarios políticos incómodos para el régimen el  poder; o para la justicia que representan los intereses del pueblo. Y el  bienestar social debe estar antes que cualquier interés personal, por eso el  fuero se justificaba. </p>
+<p align="justify">Es decir, el espíritu de los poderes constituyentes de la región no ha  sido otro que otorgar una protección y asegurar el equilibrio de poderes, la  cual brinda a las y los parlamentarios y presidentes un mecanismo para el libre  ejercicio de sus opiniones y acciones sustantivas de gobierno. </p>
+<p align="justify">Por ello, la existencia del fuero presidencial en México ha sido una  figura controversial debido a que existe la percepción de que los titulares del  Ejecutivo no pueden ser enjuiciados; sin embargo, esto no es absolutamente  cierto, ya que el artículo 108 constitucional, en su segundo párrafo, señala  que el Presidente de la República, durante el tiempo de su encargo, solo podrá  ser acusado por traición a la patria y delitos graves del orden común. </p>
+<p align="justify">La discusión de hoy da cuenta de modificaciones muy importantes a la  minuta recibida de la Cámara de Diputados, pues ésta solamente contemplaba al Presidente  de la República como único sujeto de esta reforma, es decir, la redacción que  recibimos señalaba que durante el tiempo de su encargo el Presidente de la  República podrá ser imputado y juzgado por traición a la patria, hechos de  corrupción, delitos electorales y todos aquellos delitos por los que podría ser  enjuiciado cualquier ciudadano o ciudadana. </p>
+<p align="justify">Aunado a nuestra responsabilidad como Cámara Revisora de esta reforma,  en las comisiones unidas se modificó la minuta y se agregó a las y los  integrantes de las Cámaras del Congreso de la Unión, para que también puedan  ser imputados y juzgados por los mismos delitos que el Presidente de la  República. </p>
+<p align="justify">Así lo habíamos votado ya prácticamente por unanimidad en este Senado  hace casi un año, no tenemos por qué cambiar el sentido de nuestro voto, que  será a favor del dictamen; es decir, despejamos la ambigüedad de los  denominados delitos graves, una situación que ha sido señalada por eminentes  tratadistas como Felipe Tena Ramírez, quien sostiene: &ldquo;debe ser facultad del  poder constituyente la tipificación de los delitos graves, pues de lo contrario  el Presidente de la República estaría a merced de la voluntad del Congreso para  fijar en una ley secundaria los supuestos de su responsabilidad penal&rdquo;. </p>
+<p align="justify">Estoy convencido que esta reforma establece un mecanismo jurídico para  que el Presidente de la República pueda ser imputado y, en su momento, llevado  a juicio en términos de lo señalado por la propia norma fundamental, sin dejar  de lado la participación del Poder Legislativo federal. </p>
+<p align="justify">Con esta modificación sustancial al régimen de responsabilidad de los  servidores públicos hacemos eco de un reclamo de las y los mexicanos. De ello  da cuenta la encuesta del Centro de Estudios Sociales y de Opinión Pública, en  donde el 90 por ciento de las y los participantes aprueba mucho o algo la  eliminación del fuero constitucional para sancionar a funcionarios por alguna  falta. </p>
+<p align="justify">En suma, estamos ante una tendencia de control del poder en donde las y  los ciudadanos exigen la rendición de cuentas sin regímenes de excepción para  los servidores públicos. </p>
+<p align="justify">Estamos convencidos que este ejercicio se irá replicando en las  entidades federativas; por ejemplo, la Ciudad de México, en el artículo 66, ya  señala de manera expresa <em>&ldquo;en la Ciudad de México nadie goza de fuero&rdquo;.</em> Ya está perfectamente claro que nadie tiene fuero, esto es en la Ciudad de México. <br>
+  <br>
+  De esta forma, el grupo parlamentario del PRD votará a favor de este  dictamen histórico en el constitucionalismo mexicano y el cual seguiremos de  cerca en las reformas secundarias al régimen de responsabilidades. </p>
+<p align="justify">Felicito el trabajo de las comisiones dictaminadoras y reitero la  apertura del PRD para acompañar la discusión de esta reforma con argumentos y  elementos técnicos que nos permitan elaborar leyes que le sirvan a México. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>Se le concede el uso de la palabra a la Senadora Indira de Jesús Rosales  San Román, del grupo parlamentario de Acción Nacional, para hablar a favor,  hasta por cinco minutos. </p>
+<p align="justify"><strong>La Senadora Indira de Jesús Rosales San Román: </strong>Con el permiso del señor Presidente, gracias. </p>
+<p align="justify">Muchísimas, muchísimas felicidades a todas y a todos. </p>
+<p align="justify">Lo que el día de hoy vamos a aprobar, por fin, solamente nos tomó  aproximadamente dos años, dos iniciativas del Presidente, tres minutas e  infinitas horas de sesión en comisiones. </p>
+<p align="justify">Estamos absolutamente a favor que se nos amplíen los delitos, al igual  que al Presidente de la República, y estuvimos a favor en dos ocasiones el año  pasado en esta misma tribuna.</p>
+<p align="justify">¿Por qué tenemos que ser tan ineficientes, compañeras? ¿Por qué no  podemos actuar con rapidez? ¿Por qué tenemos que esperar a que pasen casi dos  años para aprobar lo evidente?</p>
+<p align="justify">Todos estamos a favor de este paso adelante, de este avance, porque hay  que también repetirlo infinitas ocasiones el día de hoy, hoy nadie se está  quitando el fuero, hoy nadie se está quitando el fuero, nadie, porque  desafortunadamente sigo escuchando en los discursos que hoy se quita el fuero  en el Senado de la República y eso no es cierto. Dejemos de mentir, no engañen  a la gente, es uno de sus principios fundamentales.</p>
+<p align="justify">A mí lo que me da duda es por qué no aceptaron que a los legisladores se  nos ampliara esta gama de delitos desde hace año y medio, si ustedes son seres  incorruptos, están tocados, están cubiertos por un velo salvador. De ninguno de  ustedes saldría una mala conducta como para que se iniciase un juicio de  procedencia.</p>
+<p align="justify">En verdad, por supuesto que vamos a favor de este dictamen, porque  estuvimos a favor hace año y medio, porque estuvimos a favor hace seis meses,  porque hoy estamos otra vez a favor. </p>
+<p align="justify">Insisto, es un paso adelante, sin embargo, ¿por qué tuvimos que esperar  dos años para llegar a este punto?</p>
+<p align="justify">Es cuanto.</p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>Se le concede el uso de la palabra al Senador Antonio García Conejo, del  grupo parlamentario del PRD, para hablar a favor, hasta por cinco minutos.<br>
+  <br>
+  <strong>El Senador Antonio García Conejo:</strong> Muy buenas tardes,  Senadoras y Senadores. Con su permiso, señor Presidente. Ciudadanas, ciudadanos  que nos ven a través del Canal del Congreso.</p>
+<p align="justify">Manifestarles a ustedes que, sin duda alguna, el Partido de la  Revolución Democrática, la fracción a la cual yo pertenezco, estamos a favor,  por supuesto que estamos a favor del dictamen porque no es de ahora la postura  nuestra, desde hace mucho tiempo hemos estado a favor que todas y todos seamos  tratados por igual.</p>
+<p align="justify">Y frente a este escenario de corrupción y debilidad institucional, como  el que enfrentamos en México, la transparencia, la libertad de expresión y el  acceso a la información pública se identifican como herramientas esenciales  para legitimar el ejercicio público del poder.</p>
+<p align="justify">Por ello, ante la aprobación del dictamen que hoy se pone a  consideración, debe ante todo, privilegiarse, tratándose del Congreso de la  Unión, lo dispuesto en el artículo 61 de nuestra Constitución, de nuestra Carta  Magna, que dice que los Diputados y Senadores, Senadoras y Diputadas, son inviolables  por las opiniones que manifiesten en el desempeño de sus cargos y que jamás  podrán ser reconvenidos por ellas.</p>
+<p align="justify">Esa parte sin duda está clara y la entendemos así.</p>
+<p align="justify">Es decir, lo que hoy aprobaremos no debe confundirse con la  independencia y la libertad necesarias a las y los legisladores en el ejercicio  de sus encargos por sus opiniones y votos emitidos dentro y fuera de los  recintos legislativos, pues este privilegio constitucional tiene como su origen  histórico la separación de poderes y la búsqueda de la independencia del Poder  Legislativo con respecto al Ejecutivo. Bueno, así está en la ley,  desgraciadamente deja mucho que desear en la práctica. </p>
+<p align="justify">Es una realidad. Hay quienes se someten, no de ahora, desde hace ya  muchas décadas, a la voluntad del Ejecutivo Federal, eso lo vemos, lo hemos  visto y lo seguimos viendo, muy lamentable.</p>
+<p align="justify">Y les decía que permite garantizar la independencia del Congreso frente  a persecuciones judiciales, arrestos o detenciones de sus miembros en razón de  los discursos, exposiciones, mociones, informes y votos emitidos por estos.</p>
+<p align="justify">Si bien ahora durante el encargo se podrá ser sujeto a un proceso penal  por la posible comisión de algún delito, ello no debe afectar la libertad de  expresión de la función legislativa.</p>
+<p align="justify">Con la propuesta, que deseo se apruebe, damos un paso más allá del  discurso político o promesa partidista para que durante el tiempo del encargo,  tanto el Presidente de la República como los integrantes de la Cámara del  Congreso de la Unión, puedan ser imputados y juzgados no solo por traición a la  patria o delitos de corrupción, sino por todos aquellos delitos por los que  podrá ser juzgado cualquier ciudadana o ciudadano en este país.</p>
+<p align="justify">El grupo parlamentario del Partido de la Revolución Democrática  avanzamos en los principios democráticos con visión de un verdadero cambio en  el régimen político y, por cierto, presidencialista, necesario para disminuir y  combatir la corrupción y la impunidad. </p>
+<p align="justify">Sin embargo, también debemos ser claros e informar a la ciudadanía que  esta reforma constitucional no es quitarle el fuero el Presidente, para que  quede muy claro porque hay confusión y para que no lo &ldquo;cacaraqueen&rdquo;, como dicen  por ahí, diciendo eso, porque no es verdad, eso que quede muy claro; sino solo  ampliar el catálogo por el cual puede ser acusado penalmente y para ello el  Senado de la República juega un papel preponderante como parte de un requisito  de procedibilidad sin el cual se puede ejercitar acción penal correspondiente  ante las autoridades judiciales y, por tanto, es un procedimiento autónomo del  proceso que no versa sobre la culpabilidad del servidor público.<br>
+  <br>
+  Para lograr la eficacia de esta nueva reforma debemos generar una mayor  pluralidad en la integración de este Senado y del Congreso de la Unión, de lo  contrario, solo quedará en letra muerta frente a la voluntad política de la  mayoría.</p>
+<p align="justify">Por su atención, muchas gracias.</p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>Se le concede el uso de la palabra al Senador Juan Zepeda, de Movimiento  Ciudadano, para hablar a favor.</p>
+<p align="justify"><strong>El Senador Juan Zepeda:</strong> Gracias, señor Presidente.  Con el permiso de la Mesa Directiva. Compañeros Senadores, compañeras  Senadoras.</p>
+<p align="justify">Primero, manifestar que Movimiento Ciudadano viene a votar a favor de  este dictamen, viene a votarlo a favor en congruencia con lo que ha sido la  historia de Movimiento Ciudadano en materia de eliminación del fuero. </p>
+<p align="justify">No es casual que desde legislaturas pasadas Movimiento Ciudadano haya  impulsado que se termine la impunidad procesal escudados en esta figura del fuero. </p>
+<p align="justify">Por supuesto que celebramos esta iniciativa en materia de eliminar esta  figura que ha provocado la impunidad sobre el ciudadano común, pero el que lo  apoyemos no significa que no señalemos algo que estamos viendo en este  proceso tan enredado y tan confuso, que es la figura que hoy estamos aprobando. </p>
+<p align="justify">¿Qué es lo que ha  pasado en este proceso legislativo? Desde el año pasado nos llegó una minuta de  la Cámara de Diputaos, que aquí nosotros queríamos perfeccionarla, porque  estaba dejando fuera a los Diputados y Senadores y solo contemplaba esta figura  hacia el Presidente de la República. </p>
+<p align="justify">Y aquí nos tienen,  el día de hoy en una primera etapa se aprobó esa reforma constitucional, y a  propuesta del bloque de contención se está presentando una para que aplique  también a Diputados y a Senadores, pero no podemos también omitir que esto que  el Presidente nos propuso es engañoso.</p>
+<p align="justify">Evidentemente hoy  el presidente, aunque no hubiésemos hecho esta reforma, tanto el presidente,  como los Senadores, como los Diputados ya pueden ser sometidos a un juicio de  procedencia o a un juicio político. </p>
+<p align="justify">Hoy lo que se  plantea es ampliar el catálogo de delitos mediante el cual se puede someter a  este procedimiento jurisdiccional dentro del Poder Legislativo, pero algo  preocupa, dicen que a confesión de parte relevo de pruebas. </p>
+<p align="justify">En la primera etapa  de la discusión del dictamen anterior, aquí vino un Senador a decir que era  histórico y que el Presidente ya podía ser despojado de esta figura. </p>
+<p align="justify">En una segunda  etapa otro Senador le puntualizó lo que había dicho, y él en una contrarréplica  dice que el Presidente de la República necesitaría tener las dos terceras  partes del Senado para que lo pudieran procesar. </p>
+<p align="justify">Eso es lo que está  ocurriendo hoy, dos inconsistencias. </p>
+<p align="justify">1.- Esta iniciativa  o esta reforma no le va a aplicar al Presidente actual, por algo muy sencillo,  es elemental que en materia penal no hay retroactividad en perjuicio de una  persona. Primera inconsistencia o primera mentira. </p>
+<p align="justify">2.- Que hoy como  está la composición del Senado, pues evidentemente la mayoría de este Senado no  va a proceder contra el Presidente, en caso de que tuviera uno de estos supuestos. <br>
+  <br>
+  Por algo muy  sencillo: Una y otra vez aquí, a propuesta del Presidente se han aprobado leyes  y reformas sin cambiarle una sola coma, pues por algo entendible, son del mismo  proyecto político. </p>
+<p align="justify">Por eso sí es un  avance, pero no podemos engañar al pueblo mexicano que esa iniciativa que el Presidente  envía y que se cerraron a que en la misma fuésemos Diputados y Senadores, es  con un fin propagandístico, porque ya viene el Segundo Informe de Gobierno y  quiere llegar y decirles a los ciudadanos: Me quité el fuero. </p>
+<p align="justify">El bloque de  contención: el PAN, el PRI, el PRD y Movimiento Ciudadano le decimos a México  que hoy también aquí los Diputados y Senadores nos estamos despojando de esa  figura, que no haya duda, estamos a favor que no haya impunidad, que no haya  fuero. Y ahora esta iniciativa se va a la Cámara de Diputados, donde Morena y  sus aliados tienen mayoría, ahí quiero ver que lo aprueben y que no sea nada  más una cortina de humo para decir que ellos sí se quitan el fuero; tienen  mayoría, seguramente lo van a aprobar. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>El Presidente  Senador Oscar Eduardo Ramírez Aguilar:</strong> Se le concede el  uso de la palabra a la Senadora María Guadalupe Murguía Gutiérrez, del grupo  parlamentario de Acción Nacional, para hablar a favor.</p>
+<p align="justify"><strong>La Senadora María  Guadalupe Murguía Gutiérrez:</strong> Con su permiso, señor Presidente. Compañeras  Senadoras y Senadores. </p>
+<p align="justify">El día de hoy  presento posicionamiento a favor del dictamen que modifica el artículo 108 de  la Constitución, relativo a esa llamada &ldquo;eliminación del fuero para  legisladores federales&rdquo;. </p>
+<p align="justify">Tanto este dictamen  como el que aprobamos hace un rato, relativo al Presidente de la República,  tenemos que reconocer y ser muy claros, no se elimina el fuero para nadie, solo  se aumenta el catálogo de delitos por el que el Presidente y los legisladores  federales pueden ser juzgados, persiste la inmunidad procesal penal en todos  los casos. </p>
+<p align="justify">En este dictamen lo  que se está proponiendo es dar a los Diputados federales y a los Senadores el  mismo tratamiento de responsabilidad penal que al Presidente de la República,  pero reitero, ni en uno ni en otro caso se elimina el fuero. </p>
+<p align="justify">Es necesario, en  todos los supuestos, agotar el trámite procesal parlamentario, comúnmente  conocido como desafuero, para poder proceder penalmente contra el Presidente y  contra los legisladores federales. </p>
+<p align="justify">Sabíamos, desde  hace años, que una de las mayores exigencias de la sociedad es que todos seamos  juzgados por igual, sin encubrir, sin tapar, sin solapar a nadie; la exigencia  social es que todos tengamos igualdad ante la ley. </p>
+<p align="justify">Así lo vivimos en  el proceso electoral pasado en el 2018, en reiteradas ocasiones tanto al  Senador Mauricio Kuri, como a una servidora, en reuniones en colonias,  comunidades, nos pedían legislar en esta materia, por considerar que con  frecuencia es a través de esta figura como los servidores públicos buscan  quedar impunes de las responsabilidades penales en las que incurren. </p>
+<p align="justify">Por eso en febrero  de este año presentamos, el Senador Mauricio Kuri y yo, una iniciativa  realmente para la eliminación del fuero, así nos comprometimos y así lo  hicimos. <br>
+  <br>
+  Desafortunadamente  esta iniciativa no ha tenido el trámite correspondiente, pero en este dictamen,  en el que estamos a favor, porque consideramos un avance, repito, solo se  incrementan los delitos por el que pueden ser juzgados los legisladores  federales, con la misma responsabilidad penal que el Presidente de la República,  entratándose de hechos de corrupción, delitos electorales y todos aquellos por  los que pueda ser enjuiciado cualquier ciudadano o ciudadana, esto representa  piso parejo, tanto para el Presidente como para los legisladores, es un mensaje  claro de igualdad y de congruencia. </p>
+<p align="justify">En algunas  entidades federativas ya se ha avanzado en la eliminación del fuero,  auténticamente, como es el caso de Querétaro, que en el 2016 se quitó este  privilegio a los servidores públicos, desde el gobernador, hasta los magistrados  y jueces hoy pueden ser juzgados. Querétaro fue el segundo estado del país en  aprobar la eliminación del fuero.</p>
+<p align="justify">Este dictamen y el  anterior que aprobamos hace un rato son un avance, un paso hacia adelante, en  el compromiso de igualdad de todos ante la ley, aún y cuando, perdón por ser  reiterativa, pero hay que decirlo, tenemos que reconocer que hay que seguir  avanzando en el régimen de responsabilidades para los servidores públicos y  representantes de elección popular. </p>
+<p align="justify">Celebro que podamos  aprobar este dictamen que contiene reformas constitucionales, un paso, un  avance, solo eso. </p>
+<p align="justify"><strong>El Presidente  Senador Oscar Eduardo Ramírez Aguilar:</strong> Se le concede el uso de la palabra a la Senadora  Sylvana Beltrones, del grupo parlamentario del PRI, para hablar a favor, hasta  por cinco minutos. </p>
+<p align="justify"><strong>La Senadora Sylvana Beltrones Sánchez: </strong>Con su venia, señor Presidente. </p>
+<p align="justify">Nos encontramos nuevamente discutiendo la reforma constitucional que  adiciona un tercer párrafo al artículo 108. Este artículo, como ya se dijo,  señala quiénes son los servidores públicos para los efectos de las  responsabilidades, entre los que se encuentran los representantes de elección  popular y las personas que desempeñan un empleo, cargo o comisión de cualquier  naturaleza en el Congreso de la Unión. </p>
+<p align="justify">Hace unos momentos ya votamos ampliar el catálogo de delitos por los que  puede ser juzgado el Presidente de la República. </p>
+<p align="justify">Por un acto de elemental congruencia, consideramos imprescindible ampliar  el régimen de responsabilidad penal para que, durante el tiempo de su encargo,  los legisladores federales podamos ser imputados y juzgados de igual forma por  traición a la patria, hechos de corrupción, delitos electorales y todos  aquellos delitos por los que podría ser enjuiciado cualquier ciudadana o  ciudadano. </p>
+<p align="justify">En el caso de que se cometa cualquiera de esos ilícitos penales, se  seguirán los procedimientos previstos en el artículo 111 de la Constitución. </p>
+<p align="justify">Los legisladores debemos de ser responsables de todo acto hecho durante  nuestro encargo. Como todo servidor público y como todo ciudadano, no debemos  ser dispensados de la responsabilidad de ser imputados y llevados a juicio por  la comisión de delitos contemplados en la legislación penal vigente. </p>
+<p align="justify">Lo anterior debe ser así, porque nosotros no debemos ni queremos tener un  régimen aparte, una excepción, todos debemos ser juzgados en caso de cometer  cualquier hecho de corrupción, delito electoral o cualquier delito, no se nos  puede dar un tratamiento distinto. <br>
+  <br>
+  Con esta modificación aprobada en el dictamen que se discute logramos  consolidar una reforma que da certeza y atiende al reclamo de los ciudadanos.  La sociedad demanda justicia por los abusos y arbitrariedades de servidores  públicos que gozan de esa inmunidad procesal penal.</p>
+<p align="justify">El fuero es una inmunidad procesal en materia penal, como ya lo dije,  comúnmente llamado fuero constitucional. Tanto en el ámbito jurídico como  social, se entiende como el conjunto de privilegios de aquellas personas que  tienen un cargo público, sea de elección o de designación. </p>
+<p align="justify">La Suprema Corte ha establecido que el fuero es un privilegio que se le  otorga a determinados servidores públicos para protegerlos de eventuales  acusaciones sin fundamento, así como para mantener el equilibrio entre los  Poderes del Estado en regímenes democráticos. No debemos confundirlo con lo que  en teoría del delito se denomina excluyente de responsabilidad, que impediría,  en todo caso, que la figura delictiva llegara a constituirse, sino un  impedimento legal para que, quien goce de este beneficio, no quede sometido a  la potestad jurisdiccional. </p>
+<p align="justify">Desgraciadamente, a lo largo de los años la figura del fuero ha sido  entendida como una inmunidad total, que conlleva a la impunidad de quienes  deben ser juzgados. La sociedad ya está cansada, por lo que debemos de ser,  tanto el Presidente como los legisladores, los que podamos ser sujetos de un  proceso penal en caso de incurrir en un delito. </p>
+<p align="justify">Es el mensaje correcto que debemos de dar como representantes populares,  nosotros no podemos ser la excepción. El fuero es un instrumento legal que confiere  inmunidad procesal a determinados actores políticos, debe ser un impedimento  para poder sustanciar procesos penales en contra de todos aquellos servidores  públicos que tuvieran ese beneficio, por lo que debe de existir igualdad ante  la ley e imparcialidad de la justicia, lo que significa que no debe de haber  ninguna distinción cuando se cometa un delito. </p>
+<p align="justify">Ya en el pasado se ha intentado realizar modificaciones a la Constitución  para eliminar este privilegio, pero no se han logrado. Tal y como lo establece  la iniciativa, el que Diputados y Senadores, en ejercicio de sus funciones,  cometan hechos delictivos y puedan ser sujetos de procesos penales ante las  autoridades competentes, fortalece el estado de derecho. </p>
+<p align="justify">La mejor protección que tiene todo servidor público y la mejor manera de  dignificar la investidura es ejercer sus funciones con honestidad, realizar  actos en beneficio de los intereses públicos y de su buen despacho. </p>
+<p align="justify">Hoy la nueva realidad política y social del país exige nuevas reglas, las  cuales deben observar, a la vez, las garantías de un debido proceso legal.</p>
+<p align="justify">Nosotros, como representantes de elección popular, no debemos gozar de la  distinción de no ser juzgados como un ciudadano común.</p>
+<p align="justify">Por eso, en el grupo parlamentario del PRI, en congruencia con los  principios que nos rigen, luchamos para que no exista ningún otro privilegio en  nuestro país. </p>
+<p align="justify">¡Todos por igual!</p>
+<p align="justify">¡Debemos cumplirle a México!</p>
+<p align="justify">¡Ya basta de impunidad!</p>
+<p align="justify">Es cuanto, señor Presidente. <br>
+  <br>
+  <strong>El Presidente Senador Oscar Eduardo Ramírez  Aguilar: </strong>Se ha agotado la lista de oradores. </p>
+<p align="justify">Solicito a la Secretaría consulte a la Asamblea, en votación económica, si  el asunto se encuentra suficientemente discutido en lo general y en lo  particular. </p>
+<p align="justify"><strong>La Secretaria Senadora Lilia Margarita Valdez  Martínez: </strong>Consulto a la Asamblea, en votación económica,  si el dictamen se encuentra suficientemente discutido en lo general y en lo  particular. Quienes estén por la afirmativa, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén por la negativa, favor de levantar la mano. </p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez  Aguilar: </strong>Sonido en el escaño del Senador Martí Batres. </p>
+<p align="justify"><strong>El Senador Martí Batres Guadarrama: </strong>(Desde su escaño) Sí, señor Presidente, le pedí la palabra en el momento  procesal adecuado; por lo tanto, debería estar en la lista. </p>
+<p align="justify">Así es que suponía que sería leído mi nombre y le solicito el uso de la  palabra, en virtud de que lo pedí en el tiempo adecuado. </p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>En efecto, el Senador Martí Batres solicitó el uso  de la palabra. </p>
+<p align="justify">Se concede el uso de la palabra al Senador Martí Batres, por esta ocasión  aquí ante el Pleno. </p>
+<p align="justify"><strong>El Senador Martí Batres Guadarrama: </strong>Muchas gracias, señor Presidente, por su gentileza y disposición. </p>
+<p align="justify">Quiero hacer tres comentarios, que son precisiones. </p>
+<p align="justify">Primero. Con la reforma que aprobamos hace un rato, el Presidente de la  República podrá ser juzgado por cualquier delito. </p>
+<p align="justify">Era particularmente notorio que no podía ser juzgado por delitos  electorales y no podía ser juzgado por delitos de corrupción. Eso no se podía. </p>
+<p align="justify">Con la reforma que se aprobó hace un rato, el Presidente podrá ser  juzgado por muchos delitos; ya se hizo mención de un listado en la mañana, pero  señaladamente por aquellos que en algún momento se mencionaron y luego fueron eliminados  a lo largo de la historia: delitos electorales, delitos de corrupción. </p>
+<p align="justify">No obstante, cabe la precisión de que no es correcto decir que se amplió  el catálogo de delitos; no se amplió el catálogo de delitos por los cuales  puede ser juzgado el Presidente, se eliminó el catálogo de delitos; ya no hay  un catálogo de delitos por los cuales pueda ser juzgado el Presidente, ahora  podrá ser juzgado por todos los delitos, por cualquier delito, todos están  incluidos ahora; es decir, no hay ningún delito por el cual no pueda ser  juzgado el presidente, se acabó el catálogo de delitos exclusivos del Presidente. </p>
+<p align="justify">Esa es la reforma fundamental que aprobamos el día de hoy, que aprobamos  hace un rato por la mañana. <br>
+  <br>
+  Segunda precisión. Al mencionarse a Diputados y Senadores ahora en la  reforma que  estamos discutiendo en este momento, en  efecto, como lo han dicho de manera atinada varios de los oradores de varios  partidos, no se quita lo que se conoce coloquialmente como fuero, es decir, el  juicio de procedencia, la declaratoria de procedencia que hace la Cámara de  Diputados, no se quita eso; es más, ya en la Constitución se menciona que  Diputados federales y Senadores son responsables por sus actos y omisiones y no  se establece una excepción, como en el caso del Presidente. </p>
+<p align="justify">Sin embargo, al hacerse esta reforma que estamos discutiendo ahora,  aunque Diputados y Senadores ya podían ser juzgados por cualquier delito, en  esta nueva redacción se enfatiza el tema de la corrupción y el tema del fraude  electoral y la traición a la patria en las posibles responsabilidades de  Senadores y Diputados, que son todas, ya eran todas, pero se enfatiza ahora  corrupción, fraude electoral, y por eso voy a votar de esta reforma también. </p>
+<p align="justify">Además, voy a votar a favor de esta reforma también porque forma parte  de los acuerdos de nuestro grupo parlamentario con otros grupos parlamentarios  para sacar en su conjunto toda esta reforma del día de hoy. </p>
+<p align="justify">Ahora bien, termino con lo siguiente. </p>
+<p align="justify">Una aclaración. </p>
+<p align="justify">Alguien dijo por aquí que esto que aprobamos hoy se pudo haber aprobado  el año pasado, no; no se está discutiendo lo mismo, el año pasado se planteaba  que se aumentara el catálogo de delitos del Presidente, sin llegar al 100 por  ciento y al mismo tiempo se mencionaba a Senadores y Diputados federales para  que fueran juzgados por los mismos delitos que el Presidente. </p>
+<p align="justify">Es decir, el año pasado se avanzaba en cuanto al Presidente, pero se  retrocedía en cuanto a Diputados y Senadores, ahora no, ahora con lo que  votamos en la mañana, queda claro que el Presidente puede ser  juzgado por cualquier delito, y con lo que  votemos en este momento, ya no se da inmunidad a Diputados federales y  Senadores, sino que queda claro que serán juzgados también por cualquier  delito, haciendo énfasis en los que ya dije, corrupción  y fraude electoral. </p>
+<p align="justify">Por lo tanto, no es lo mismo lo que hoy vamos a votar que lo que se  discutió el año pasado. </p>
+<p align="justify">Por eso, enfatizo y ratifico mi voto a favor, ahora es puro avance y no  hay retroceso alguno. </p>
+<p align="justify">Vamos a favor. </p>
+<p align="justify">Gracias. </p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>Se le concede el uso de la palabra al Senador Ricardo Monreal Ávila.</p>
+<p align="justify"><strong>El Senador Ricardo Monreal Ávila: </strong>Gracias, señor Presidente. </p>
+<p align="justify">Ha sido una discusión muy rica, pero quisiera usar esta tribuna para  expresar un reconocimiento a los coordinadores de los grupos parlamentarios,  porque creo que el diálogo siempre supera cualquier contradicción. <br>
+  <br>
+  Esta minuta tenía varios meses sin discusión y no encontrábamos la forma  en cómo aprobarla, la de eliminación del fuero constitucional del Presidente,  que fue en la sesión  pasada, pero en  honor a la verdad,  con diálogo se pueden  construir acuerdos, no debemos cansarnos, y en el colectivo de coordinadores de  grupos parlamentarios surgió esta idea, debo de decirlo,  que en voz del Senador Osorio Chong, propuso  que esta iniciativa se presentara, se firmara por todos y en el mismo acto, en  sesión separada, fuera aprobada, y se ha honrado la palabra, porque la palabra  en la política es fundamental.</p>
+<p align="justify">Escuché al Senador Martí Batres, con mucho cuidado, y me parece que su  intervención nos ha dejado claro el propósito y el fin de esta iniciativa y de  este dictamen que ahora se discute. </p>
+<p align="justify">Me viene a la memoria, en 1397, 1397, en la Cámara de los Comunes, en  Inglaterra, se aprobó un proyecto de ley en el que se denunciaban los excesos  cometidos por el Rey Ricardo II. El parlamentario que propuso esta iniciativa  fue sentenciado a muerte por haber osado tocar los privilegios del rey. </p>
+<p align="justify">Este es el primer momento en el que una Cámara legislativa tuvo que  iniciar una discusión, sobre la necesidad de poder tocar temas delicados y  votar con autonomía y libertad, sin temor a las represalias de la corona. </p>
+<p align="justify">Y debo de ser muy sensato, y debo de ser concreto y también congruente. </p>
+<p align="justify">Este mecanismo, a pesar de que vamos a votar en favor de este dictamen,  este mecanismo desde 1397 en el parlamento inglés, ciudadanos legisladores y  legisladoras, no fue diseñado como un privilegio, no, no fue diseñado tampoco  como una patente de impunidad para los individuos que ostentaban un cargo  público, fue diseñado como una protección a las labores que desarrollaban, para  permitir que cada uno pudiera verdaderamente defender sus ideas y los intereses  de la población que representaban. </p>
+<p align="justify">Fíjense ustedes, el fuero era una protección para la labor que se  desempeñaba frente a tiranos y frente a monarcas, que al legislar o proponer  iniciativas, los persiguieran y los asesinaran a los parlamentarios. </p>
+<p align="justify">Es un tema que no tiene desperdicio en su discusión doctrinaria, pero  hoy las ideas que en una democracia moderna imperan piensan algunos que han  cambiado, yo creo que no tanto en materia de protección de la función  legislativa. </p>
+<p align="justify">En algunos estados, del país en efecto, se han adelantado a esta  iniciativa, a este dictamen. Y en algunos estados del país le han quitado el  fuero, o se han quitado el fuero los legisladores.</p>
+<p align="justify">Y algunos legisladores ahora son perseguidos por el gobierno local o por  el fiscal local, es de fondo la discusión. Y yo tengo que decir lo que cada  rato me reclama amigablemente el Senador Dante Delgado. </p>
+<p align="justify">Hace unos 12 años, quizás más, escribí un libro, está publicado, se  llama &ldquo;Fuero constitucional&rdquo;. Y ahí establezco la diferencia entre la inmunidad,  la procedencia, el fuero, y también la protección y la naturaleza de la  legislación al proteger la función del legislador o del hombre público que está  sometido a persecuciones, a desavenencias y a odios que los tiranos ejercen sobre  ellos.</p>
+<p align="justify">Qué paradoja, ese libro lo escribí hace 12 años, y hoy frente a las  circunstancias políticas, y al ideario y compromiso político estamos intentando  suprimirnos el fuero o la protección o inmunidad legislativa.<br>
+  <br>
+  Me llegó este libro, éste es el que escribí en aquella época, hace 12  años. </p>
+<p align="justify">Y hace rato el Senador Guadiana me pedía una explicación, y si le podía  regalar el libro, y le dije: &ldquo;No te lo puedo regalar porque en el trayecto de  la discusión puedes cambiar de opinión&rdquo;. </p>
+<p align="justify">Es un asunto de principios, no de privilegios; es un asunto de  protección a la función, no de privilegios a lo que haces, ni una patente para  que delincas. Yo he sido legislador más de 20 años. No, más, tres veces  Senador, tres veces Diputado, y ninguna he tenido necesidad de acudir a  presentar una charola o una credencial.</p>
+<p align="justify">Me jacto de decir que no tengo ni siquiera una infracción de tránsito;  es decir, nunca, no necesitas, no necesitas, sin embargo, es simplemente una  reflexión y el cumplimiento de un compromiso en donde se debe de honrar la palabra.</p>
+<p align="justify">Les pido a mis compañeros legisladores votemos en congruencia, y  obviamente la congruencia frente a la palabra es en favor.</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>Ha llegado a esta Mesa Directiva, por parte de la Senadora Martha  Cecilia Márquez Alvarado, propuesta de modificación, por lo que voy a solicitar  a la Secretaría consulte a la Asamblea, en votación económica, si se admite a  discusión la propuesta presentada.</p>
+<p align="justify"><strong>La Secretaria Senadora Lilia Margarita Valdez Martínez: </strong>Consulto a la Asamblea, en votación económica, si se admite a discusión  la propuesta de modificación. Quienes estén por la afirmativa, favor de  levantar la mano.</p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Quienes estén por la negativa, favor de levantar la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Abstenciones.</p>
+<p align="justify">No se admite a discusión, señor Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>En consecuencia, el dictamen queda en sus términos.</p>
+<p align="justify">Como lo disponen los artículos 135 de la Constitución Política de los  Estados Unidos Mexicanos y 224 del Reglamento del Senado, para la aprobación  del dictamen se requiere de la mayoría calificada de dos terceras partes de  Senadoras y Senadores presentes en el Pleno.</p>
+<p align="justify">En consecuencia, háganse los avisos a que se refiere el artículo 58 del  Reglamento para informar de la votación.</p>
+<p align="justify"><strong>La Senadora Martha Cecilia Márquez Alvarado: </strong>(Desde su escaño) Señor Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>Ya se rechazó, Senadora.<strong></strong></p>
+<p align="justify">Sí, ya se rechazó y estaba a discusión.</p>
+<p align="justify">Ábrase el sistema electrónico por tres minutos para recoger la votación  nominal del proyecto de decreto en lo general y en lo particular.<br>
+  <br>
+  <strong>La Secretaria  Senadora Lilia Margarita Valdez Martínez: </strong>Alguna Senadora o  Senador que falte por emitir su voto. Sigue abierto el sistema.</p>
+<p align="right"><a href="https://www.senado.gob.mx/64/votacion/3717"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Señor Presidente,  se emitieron 102 votos a favor, 1 en contra y cero abstenciones, de un total de  103 presentes.</p>
+<p align="justify">Se cumple la  mayoría constitucional para que sea aprobado. </p>
+<p align="justify"><strong>El Presidente  Senador Oscar Eduardo Ramírez Aguilar: </strong>En consecuencia,  queda aprobado en lo general y en lo particular el proyecto de Decreto por el  que se adiciona un tercer párrafo al artículo 108 de la Constitución Política  de los Estados Unidos Mexicanos, en materia de fuero de las y los legisladores.  Se remite a la Cámara de Diputados para los efectos constitucionales. <br>
+  Sonido en el escaño de la Senadora Martha Márquez. </p>
+<p align="justify"><strong>La Senadora Martha Cecilia Márquez Alvarado: </strong>(Desde su escaño) Gracias, señor Presidente. </p>
+<p align="justify">Por favor que me permita hacer la presentación de la reserva que tengo  para este dictamen. </p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>Desde su escaño, Senadora. Ya no estamos en el momento procesal  legislativo.</p>
+<p align="justify">Permítanme, orden en la Asamblea. </p>
+<p align="justify">La Senadora puede hacer uso de la palabra en su escaño, tiene su  derecho; no es el momento procesal, pero.</p>
+<p align="justify"><strong>La Senadora Martha Cecilia Márquez Alvarado: </strong>(Desde su escaño) Aquí todos somos iguales; si no me da el espacio, lo  voy a tomar, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>Por favor, orden en la Asamblea. </p>
+<p align="justify"><strong>La Senadora Martha Cecilia Márquez Alvarado: </strong>(Desde su escaño) Le pido que sea igual el trato, así como usted viola  el Reglamento.</p>
+<p align="justify">El Senador Martí Batres batalló para hablar y de repente usted nada más  dice va a hablar el Senador Monreal, él sí tiene derecho. </p>
+<p align="justify">Yo también lo tengo, lo tenemos todos.</p>
+<p align="justify">Le pido, por favor, me lo permita. </p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>¿Senadora, no va a hacer usted uso de la palabra?</p>
+<p align="justify"><strong>La Senadora Martha Cecilia Márquez Alvarado: </strong>(Desde su escaño) Sí.</p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>Por favor. </p>
+<p align="justify">Sonido en el escaño de la Senadora Renata Eunice Romo. </p>
+<p align="justify"><strong>La Senadora Eunice Renata Romo Molina: </strong>(Desde su escaño) Señor Presidente, entiendo la nobleza con la que la  Presidencia está tomando esta decisión. Nada más quiero pedir, por favor, que  esto no siente precedente en la actividad parlamentaria a la que venimos a  hacer todas y todos. </p>
+<p align="justify">Estamos fuera del momento procesal.</p>
+<p align="justify">Entiendo la nobleza con la que se le da la palabra a la Senadora, pero  me parece una falta de respeto para todos los demás legisladores y legisladoras  que estamos en esta sesión. Está otorgando la palabra; no estoy de acuerdo,  pero lo entiendo, pero que no siente precedente. </p>
+<p align="justify">Y que quede en acta que la palabra que está diciendo o que va a emitir  la Senadora no es parte de lo que se votó el día de hoy. </p>
+<p align="justify">Muchas gracias. <br>
+  <br>
+  <strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>Solamente quiero expresarle a esta Asamblea. </p>
+<p align="justify">La Senadora no puede presentar una reserva, pero puede hacer uso de su  derecho de expresarse; no vamos a votar absolutamente nada, no es una reserva  como tal. </p>
+<p align="justify">Continúe y denle uso de la palabra a la Senadora Martha Márquez. </p>
+<p align="justify"><strong>La Senadora Martha Cecilia Márquez Alvarado: </strong>(Desde su escaño) Muchas gracias, señor Presidente. </p>
+<p align="justify">Sí, justamente a eso venimos, justamente a eso venimos a este Senado, a  hablar. </p>
+<p align="justify">Y aquí nos vamos a quedar, me gusta. </p>
+<p align="justify">Justamente a eso venimos a este Senado, a disentir, a expresar las ideas  que representan a final de cuentas a los mexicanos y todos tenemos el derecho,  todos. </p>
+<p align="justify">La reserva que yo presenté. </p>
+<p align="justify">¿Se va a votar más adelante, verdad, señor Presidente?</p>
+<p align="justify">Se presentó por escrito. </p>
+<p align="justify">¡Ah! Bueno, ok, ok. </p>
+<p align="justify">Miren, les voy a explicar. </p>
+<p align="justify">Yo presenté una reserva a esta modificación al artículo 108  constitucional, y ustedes votaron que no entrara a discusión. </p>
+<p align="justify">La reserva, lo que dice, es que además de juzgársele al Presidente, así  como se está queriendo fingir, se le juzgue por actos que atenten contra la  salud física y mental de las personas. </p>
+<p align="justify">Así como se jactan de decir que el Presidente se va a juzgar, justo  este, Senadores, justo este es el ejemplo de cómo están arrodillados ante el Presidente,  de cómo jamás lo juzgarían, jamás, porque vean cómo se ponen. </p>
+<p align="justify">La modificación al artículo 108 constitucional, que yo propongo, dice:  &ldquo;durante el tiempo de su encargo el Presidente de la República, así como los  integrantes de las Cámaras del Congreso de la Unión, podrán ser imputados y  juzgados por traición a la patria, traición a la patria, así como lo están  haciendo al no permitirme hacer el uso de la voz, hechos de corrupción, delitos  electorales, ¿les suena?, y por actos que atenten contra la salud física y  mental de las personas, como lo que pasa en México. </p>
+<p align="justify">La salud en todas sus manifestaciones es el pilar fundamental de las  personas. </p>
+<p align="justify">El artículo 25 de la Declaración Universal de los Derechos Humanos  establece, en su numeral 1, que toda persona tiene derecho a un nivel de vida  adecuado, que se le asegure a su familia la salud. </p>
+<p align="justify">En ese mismo sentido, el párrafo cuarto del artículo 4o. constitucional,  establece que: <em>&ldquo;toda persona tiene el derecho de acceso a la protección de  la salud y de los servicios que se brinden deberán ser integrales y de  extensión progresiva para que se implementen de manera gratuita a personas que  no </em><em>cuenten con seguridad social&rdquo;.</em> Eso dice nuestra Constitución. <br>
+  <br>
+  Sin embargo, desde hace más de un año México ha enfrentado una crisis  grave en materia de medicamentos y esto se debe a las medidas de austeridad y  de corrupción que implementó el gobierno federal para la compra de  medicamentos. Su austeridad va de la mano con corrupción.</p>
+<p align="justify">Desde inicios de 2019 se comenzó a registrar un desabasto de  medicamentos, y existe, y la gente se está muriendo y les molesta que hable de  ello, pero existe. Lamentablemente Tamaulipas, Hidalgo, Estado de México,  Guanajuato, Jalisco, Coahuila, Nuevo León, Puebla, Ciudad de México, Baja  California Sur, Tabasco, Querétaro, Chihuahua, Nayarit, Guerrero, Oaxaca, Baja  California, Colima y Sonora, es donde se han presentado las situaciones más  críticas a consecuencia del desabasto.</p>
+<p align="justify">La falta de medicamento afecta a toda la población por igual, nos están  matando y ahora hasta quieren dar apoyos para las familias que perdieron un ser  querido, quieren callar las voces. No, señores. </p>
+<p align="justify">A ti, mexicano, te digo que no te acostumbres a la dádiva.</p>
+<p align="justify">Por eso presento esta reserva, para que también se juzgue al Presidente  por atentar contra la salud de los mexicanos. </p>
+<p align="justify">Y les digo qué es lo que pasa en los estados, Senadores, para que salgan  de esa burbuja de poder en la que viven. En los estados no hay aceleradores  lineales, por ejemplo, en Aguascalientes y en muchos estados, y la gente se  muere de cáncer mientras que hay una empresa de alguien muy querido por la 4T,  de Manuel Bartlett, la empresa Cyber Robotic Solutions, que es quien vende  estos aceleradores lineales. </p>
+<p align="justify">No los veo combatiendo la corrupción, señores; no los veo combatiendo a  la mafia del poder. Hay dos empresas en México que fabrican, que producen, que  comercializan aceleradores lineales, que es con lo que se hacen las radiaciones  para el cáncer.</p>
+<p align="justify">Aguascalientes, señores, no puede tener un acelerador lineal porque la  empresa corrupta de Bartlett no se pone de acuerdo para ver a quién le toca el  moche, señores…</p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>La invitamos a que concluya, Senadora.</p>
+<p align="justify"><strong>La Senadora Martha Cecilia Márquez Alvarado:</strong> Y la otra empresa de la mafia del poder que también vende aceleradores  lineales no se ponen de acuerdo. Esa es la corrupción, esa es la corrupción que  está matando a los enfermos de cáncer y no los veo haciendo nada.</p>
+<p align="justify">En todos los estados hay desabasto de medicamentos. ¿No lo saben o se  hacen? Sí, hay desabasto, no hay citas a especialistas, los médicos están  cansados y ustedes quieren que vengamos aquí a simular aplaudirle al Presidente.</p>
+<p align="justify">No, señores. Y no vamos a dejar de decirlo mientras esto no se  solucione.</p>
+<p align="justify">¿Quieren que me calle? Hablemos del tema. ¿Quieren que me calle?  Encontremos soluciones. Acabemos con este maldito desabasto que nos está  matando y ojalá mate a más gente del poder, para ver si así reflexionamos.</p>
+<p align="justify">Es cuanto, señor Presidente.</p>
+<p align="justify">Gracias.<br>
+  <br>
+  <strong>El Presidente Senador Oscar Eduardo Ramírez Aguilar: </strong>Solamente les informo a quienes me han solicitado el uso de la palabra  que no estamos en momento de reservas, el procedimiento se ha respetado, el uso  de la palabra lo tuvo la Senadora, por lo que voy a seguir desahogando el Orden  del Día.</p>
+<p align="justify">Continúe la Secretaría con los asuntos de la  agenda.</p>
+<p align="justify"><strong>La Secretaria Senadora Lilia Margarita Valdez  Martínez: </strong>Se han agotado los asuntos de la agenda, señor Presidente.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a95289'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='95290'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify"><strong>El Presidente Senador Oscar Eduardo Ramírez  Aguilar: </strong>Se cita a la siguiente sesión ordinaria del Senado, misma que se  realizará de forma presencial, el viernes 27 de noviembre a las 10:00 horas en  este recinto.</p>
+<p align="justify">Se levanta la sesión.</p>
+<p align="center">(Se levantó la sesión a las 16:25 horas) </p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a95290'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

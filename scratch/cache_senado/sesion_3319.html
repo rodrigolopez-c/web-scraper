@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 10</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Olga María del Carmen Sánchez Cordero Dávila</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 01 de Marzo de 2022</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/1/SPO/PDF-WEB/SPO_No10_1_MARZO_2022_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102216'></a><p align="center"><strong>PRESIDE LA SENADORA </strong><br>
+  <strong>OLGA MARÍA DEL CARMEN SÁNCHEZ CORDERO DÁVILA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>(11:19 horas) Con el quórum de nuestra sesión ordinaria, se abre la  sesión solemne del Senado de la República.</p>
+<p align="justify">Esta sesión solemne se convoca en cumplimiento al Decreto por el que se  crea el Premio al Mérito Literario &ldquo;Rosario Castellanos&rdquo;, y al Acuerdo aprobado  por este Pleno el pasado 10 de febrero. </p>
+<p align="justify">Se designan como comisión de cortesía para recibir a la señora Elsa  María Cross y Anzaldúa a los siguientes Senadoras y Senadores: Susana Harp,  Verónica Delgadillo, Eunice Romo Molina, Miguel Ángel Mancera, Casimiro Méndez  y Guadalupe Covarrubias Cervantes, por favor, para que reciban ustedes a  nuestra galardonada.</p>
+<p align="center">(La comisión cumple)</p>
+<p align="justify">Se reanuda la sesión solemne. </p>
+<p align="justify">Con fundamento en los artículos 56 y 56 Quáter, del Reglamento del  Senado, y en el Decreto por el que se crea el Premio al Mérito Literario  &ldquo;Rosario Castellanos&rdquo;, damos inicio a la sesión solemne a fin de realizar la  entrega correspondiente al año 2021.</p>
+<p align="justify">Damos la bienvenida a nuestra galardonada con el Premio Literario  &ldquo;Rosario Castellanos&rdquo; 2021, a la escritora Elsa María Cross y Anzaldúa.<br>
+  <br>
+  Asimismo, saludo la presencia de las y los integrantes de quienes  integramos la Mesa Directiva del Senado de la República: Senador José Narro  Céspedes, Vicepresidente; Senadora Alejandra Noemí Reynoso Sánchez,  Vicepresidenta; Senadora Verónica Martínez García, Vicepresidenta; Senadora  Verónica Noemí Camino Farjat, Secretaria; Senadora Verónica Delgadillo García,  Secretaria; Senadora Martha Cecilia Márquez Alvarado, Secretaria; Senadora  María Celeste Sánchez Sugía, Secretaria; Senador Sergio Pérez Flores,  Secretario; Senadora María Guadalupe Saldaña Cisneros, Secretaria; Senadora  Alejandra Lagunes Soto, Secretaria, y Senadora Katya Elizabeth Ávila Vázquez,  Secretaria. </p>
+<p align="justify">También agradezco la presencia de las y los invitados que nos acompañan  en esta sesión solemne, doy la bienvenida al señor Benito Rivera Izaguirre, a  la señora Martha Patricia Espinosa, al señor León Guillermo Gutiérrez, maestro  de la UAEM; al señor licenciado Ursus Juárez Roque; al señor Juan Elías Tovar  Cross, hijo de la galardonada; a Jimena Tristán; a Maricarmen Férez, directora  de la Casa del Poeta; Ana María Gomís, escritora; a Josué Landa, escritor,  filósofo y profesor de la UNAM; a Lucina Jiménez; a Gabriel Guerra Castellanos,  hijo de Rosario Castellanos. Gabriel, muchas gracias. </p>
+<p align="justify">A Mary Frances Teresa Rodríguez Van Gort, directora de la Facultad de  Filosofía y Letras de la UNAM; Anel Pérez; Ezra Alcázar; a la Diputada Petrona  de la Cruz Cruz, presidenta de la Comisión de Postulación de la Medalla Rosario  Castellanos del Congreso de Chiapas; a la Diputada Leticia Méndez Intzin,  Diputada local de Chiapas; a Juan Carlos Gómez Aranda.</p>
+<p align="justify">Y para dar inicio a la sesión solemne, por Acuerdo de la Mesa Directiva,  tiene el uso de la palabra el señor Senador Eduardo Ramírez Aguilar. </p>
+<p align="justify">Por favor, Senador, si es tan amable. </p>
+<p align="justify"><strong>El Senador Eduardo Ramírez Aguilar: </strong>Con la venia de la Presidenta y de la Mesa Directiva, saludo con mucho  aprecio y cariño al hijo de nuestra gran escritora Rosario Castellanos, al  analista político Gabriel Guerra Castellanos. </p>
+<p align="justify">Saludo también con mucho aprecio a Mary Frances Rodríguez, directora de  Filosofía y Letras de la Universidad Nacional Autónoma de México. </p>
+<p align="justify">Saludo a Lucina Jiménez, directora del Instituto Nacional de Bellas  Artes. </p>
+<p align="justify">A la Diputada Petrona de la Cruz, presidenta de  la Medalla Rosario Castellanos del Honorable Congreso del Estado. </p>
+<p align="justify">A todos los dignos acompañantes, familiares y amigos de la hoy  homenajeada en este evento trascendental en la historia del Senado mexicano.</p>
+<p align="justify">Rosario Castellanos es, sin duda, la escritora más importante del siglo  XX, su obra narrativa, poética, ensayística y teatral ha trascendido fronteras  y épocas. La fuerza de su voz, salpicada por los usos y los términos de las  lenguas indígenas de Chiapas, enriqueció la lengua castellana y resuena en  numerosos idiomas del mundo.</p>
+<p align="justify">Rosario fue pionera en la apertura de espacios públicos para las mujeres  en la vida pública, en la vida académica y en la diplomacia.</p>
+<p align="justify">Entregar, a partir de hoy, cada año la presea que con su nombre reconoce  el mérito de los escritores y escritoras, cuyas obras en español o en  cualquiera de las lenguas habladas en Latinoamérica es significativo, es una  forma permanente de homenajear a la autora de Oficio de tinieblas, de Balún  Canán y otras obras magníficas que dejaron una profunda huella universal.<br>
+  <br>
+  Este premio permite al Senado acercarse al mundo de las letras, la  creatividad, la imaginación, la crítica y belleza a la comprensión de nuestro  tiempo encontrando sentido en las palabras de Rosario Castellanos.</p>
+<p align="justify">En ese contexto, es un privilegio participar en la investidura de Elsa  Cross, poeta, ensayista y traductora, como portadora definitiva de la presea  correspondiente al Premio al Mérito Literario &ldquo;Rosario Castellanos&rdquo;.</p>
+<p align="justify">Por cuanto a su obra, es una de las más significativas de la literatura  contemporánea, pues en ella se reúnen el rigor propio del pensamiento  filosófico, profundo en que la autora nacida en la Ciudad de México ha sido  formada con la capacidad creativa, las grandes lecturas y el conocimiento en  francés y en inglés, idiomas desde los cuales ha vertido al español gran  cantidad de libros.</p>
+<p align="justify">Ha publicado 29 libros y tuve la suerte de conocer su poesía con Moira,  libro con el que ganó en Chiapas, mi tierra, la tierra de Rosario Castellanos,  el Premio Interamericano de Poesía &ldquo;Jaime Sabines&rdquo; en 1992.</p>
+<p align="justify">Ha recibido, además, los Galardones Nacional de Poesía de Aguascalientes  en 1989; la Medalla Bellas Artes en el año 2012; el Premio Iberoamericano  Poesía de Ramón López Velarde en el año 2019; y el Nacional de Artes y  Literatura en la rama de lingüística, el cual es la máxima distinción literaria  que se otorga en México.</p>
+<p align="justify">Así, se cumple este merecido reconocimiento con dar a este premio, cuya  entrega anual fue aprobada por el Senado, la estatura que merece la mujer que  le da nombre al ser entregado a otra mujer que enaltece, desde luego, la  literatura.</p>
+<p align="justify">Enaltece su idioma y aporta nuestra cultura obras escritas en otras  lenguas, además de una muy amplia y sólida obra propia y un prestigio más allá  de cualquier duda.</p>
+<p align="justify">Gracias, Elsa Cross, por tu legado. </p>
+<p align="justify">Gracias por tu  poesía, por tu compromiso literario. </p>
+<p align="justify">Gracias, muchas  gracias, a nombre de este Senado. </p>
+<p align="justify"><strong>La Presidenta  Senadora Olga María del Carmen Sánchez Cordero Dávila:</strong> El día 10 de  diciembre del año 2019, el Senador Eduardo Ramírez Aguilar presentó una  iniciativa, con el propósito de crear, en el marco del aniversario luctuosa de  la escritora de origen chiapaneco, Rosario Castellanos Figueroa, el Premio al  Mérito Literario &ldquo;Rosario Castellanos&rdquo;, que el Senado de la República  entregaría a escritoras y escritores con obra consolidada, escrita en idioma  español o en cualquiera de las lenguas originarias de Latinoamérica, que  pertenezca a los siguientes géneros literarios: Narrativa, dramaturgia, poesía  y ensayo.</p>
+<p align="justify">El proyecto de Decreto  de mérito fue analizado y discutido en el seno de las comisiones dictaminadoras  y aprobado posteriormente, por unanimidad, por el Pleno del Senado de la  República, el día 23 de marzo de 2021.</p>
+<p align="justify">Así, el 30 de marzo  de 2021 fue publicado en el Diario Oficial de la Federación el Decreto por el  que se crea el Premio al Mérito Literario &ldquo;Rosario Castellanos&rdquo; y se adiciona  una fracción VII al numeral 1 del artículo 56, y un artículo 56 Quáter del  Reglamento del Senado de la República. </p>
+<p align="justify">Quiero hacer  hincapié en que esta será la primera vez que el Senado de la República imponga  este premio, por lo que, para estar en condiciones de entregarlo, la Comisión  de Cultura llevó a cabo una amplia convocatoria para recibir las candidaturas  por parte de las instituciones públicas, organizaciones sociales y académicas,  públicas o privadas de reconocido prestigio en el ámbito de las letras  mexicanas y universales. <br>
+  <br>
+  Una vez recibidas  las candidaturas, la comisión evaluó, cuidadosamente, los perfiles para que, en  términos de la convocatoria y el marco reglamentario correspondiente, la Cámara  de Senadores estuviera en condiciones de elegir a la persona de letras,  merecedora al Premio al Mérito Literario &ldquo;Rosario Castellanos&rdquo;. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102216'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102217'></a><p align="justify">En cumplimiento al  numeral 3 del Acuerdo aprobado, solicito a la Secretaria Senadora María  Guadalupe Saldaña Cisneros, dé lectura a la semblanza de Rosario Castellanos. </p>
+<p align="justify">Por favor, Secretaria. </p>
+<p align="justify"><strong>LECTURA DE SEMBLANZA DE  ROSARIO CASTELLANOS, A CARGO DE LA SENADORA MARÍA GUADALUPE SALDAÑA CISNEROS,  SECRETARIA DE LA MESA DIRECTIVA</strong><strong> </strong></p>
+<p><strong>La Secretaria  Senadora María Guadalupe Saldaña Cisneros:</strong> Doy Lectura,  señora Presidenta. </p>
+<p align="right"><em>&ldquo;Ahora estoy de regreso, llevé lo que la ola para  romper se lleva, sal, espuma y estruendo. Y toqué con mis manos una criatura  viva: el silencio. Heme aquí suspirando, como el que ama y se acuerda y está  lejos&rdquo;. </em><br>
+  <em>Rosario Castellanos.</em></p>
+<p align="justify">Rosario Castellanos  Figueroa nació en mayo de 1925, en el entonces Distrito Federal, pues su padre  y madre se encontraban de paso en la capital, pero de inmediato fue llevada a  Comitán de Domínguez, Chiapas. </p>
+<p align="justify">Ahí vivió su  infancia, realizó sus estudios de primaria, dos años de secundaria, para  regresar a los 16 años a la capital y después ingresar a la Escuela Nacional de  Jurisprudencia de la Universidad Nacional Autónoma de México, aunque poco  tiempo después su vocación la llevó a la carrera de filosofía; concluyó la  licenciatura y obtuvo el grado de maestra en filosofía en la UNAM con la tesis  sobre cultura femenina.</p>
+<p align="justify">Fue becaria en el  Instituto de Cultura Hispánica y por el Centro Mexicano de Escritores. </p>
+<p align="justify">Asimismo, realizó  cursos de postgrado en la Universidad de Madrid; regresó a México en 1952 y  asumió la dirección del Instituto Chiapaneco de Ciencias y Artes de Chiapas,  donde imprimió el conocimiento académico adquirido, enmarcado con una amplia  visión humana. </p>
+<p align="justify">Los textos  escolares que escribió para el Instituto Nacional Indigenista dan cuenta de su  sensibilidad; fue docente, de 1962 a 1971; e impartió las cátedras de literatura comparada, novela contemporánea y  el seminario de crónica en la Facultad de Filosofía y Letras de la UNAM. </p>
+<p align="justify">Asimismo, fue maestra invitada por dos universidades de los Estados  Unidos. </p>
+<p align="justify">Fue considerada como parte de la generación del medio siglo que estuvo  integrada por escritores como Jaime Sabines, Juan José Arreola, Jorge  Ibargüengoitia, Juan Rulfo y Carlos Fuentes, entre otros, grupo del cual  destacó por su profunda reflexión sobre la condición de desigualdad de las  mujeres y los indígenas. </p>
+<p align="justify">De la agudeza de su pluma crítica surgieron obras de la literatura  mexicana que hoy son imprescindibles, en las que mostró aspectos culturales que  hasta entonces no habían sido tratados con una perspectiva de mujer y desde la  visión de los pueblos originarios, lo indígena, de lo cual, fue su portavoz  desde los libros. <br>
+  <br>
+  Ella es una de las escritoras más importantes del siglo XX.</p>
+<p align="justify">Dentro de sus obras más destacadas en la prosa, se encuentran las  novelas &ldquo;Balún Canán&rdquo;, merecedora del Premio Chiapas; y &ldquo;Oficio de tinieblas&rdquo;;  galardonada con el Premio Sor Juana Inés de la Cruz. Con las dos antes  mencionadas y &ldquo;Ciudad real&rdquo;, ganó el Premio Xavier Villaurrutia, tres obras que  integran el ciclo de Chiapas y la trilogía indigenista más importante de la  narrativa mexicana. </p>
+<p align="justify">&ldquo;Los convidados de agosto&rdquo; y &ldquo;Álbum de familia&rdquo; son dos textos que  comparten un mismo eje narrativo, las relaciones de dominación y sumisión de la  mujer mexicana. </p>
+<p align="justify">La antología titulada &ldquo;Mujer que sabe latín&rdquo;, constituye un trabajo muy  valioso, en palabras de Marta Lamas &ldquo;ella es pionera intelectual del feminismo  mexicano&rdquo;. </p>
+<p align="justify">Sus obras &ldquo;Apuntes para una declaración de fe&rdquo; y &ldquo;Trayectoria del  polvo&rdquo;, marcan la pauta del resto de su poesía. </p>
+<p align="justify">La compilación publicada en 1972, que lleva por título &ldquo;Poesía no eres  tú&rdquo;, ha generado diversos estudios por su profundidad y significado. </p>
+<p align="justify">&ldquo;El eterno femenino&rdquo; es una obra de la literatura mexicana, publicada  dos años después de su muerte, que se convirtió en el ícono del movimiento  feminista en México. En palabras del Senador Eduardo Ramírez: &ldquo;fue una  auténtica pionera que abrió espacios a la participación femenina en el arte, en  la cultura, en la política y en el servicio&rdquo;. </p>
+<p align="justify">En estos tiempos aciagos que nos toca vivir, cuando aún estamos en duelo  por la pandemia mundial que ha dejado a su paso dolorosas pérdidas y que  presenciamos con profunda amargura un estallido bélico, que sabemos representa  muerte y devastación, es momento oportuno para recordar que tras su designación  en 1971, como Embajadora Extraordinaria y Plenipotenciaria de México ante el  gobierno de Israel, y luego de presentar sus cartas credenciales en el momento  que ese país atravesaba por graves tensiones, fue recibida con la admiración de  ser una de las más destacadas intelectuales de México. </p>
+<p align="justify">Al estallar la guerra de Yom Kippur, en 1973, cuando la mayoría del  cuerpo diplomático abandonó el país, ella decidió continuar su labor, por lo  que fue catalogada como la &ldquo;Embajadora de la Paz&rdquo;.</p>
+<p align="justify">En la adversidad mostró, además de capacidad diplomática, inteligencia,  preparación y profundo respeto a la empatía por otra cultura. </p>
+<p align="justify">Rosario Castellanos dedicó su vida a la creación literaria con  pulcritud, no alcanzaría esta sesión solemne para presentar la semblanza de una  mujer como Rosario Castellanos. </p>
+<p align="justify">Su desempeño en el ámbito de la enseñanza, la literatura y la diplomacia  dejaron una huella imborrable, a pesar de su prematura muerte ocurrida el 7 de  agosto de 1974, dejó un legado imprescindible que enorgullece a la patria que  la vio nacer. </p>
+<p align="justify">Es una autora atemporal, porque sus textos no pierden vigencia. </p>
+<p align="justify">Por esa relevante trayectoria, sus restos descansan hoy en la rotonda de  las personas ilustres, en cuya lápida está inscrito: </p>
+<p align="right"><em>&ldquo;Sabed que entre mis labios  de granito quedaron detenidas las palabras&rdquo;. </em></p>
+<p align="justify">Nunca mejor las palabras en su adiós le <u>dedicó</u> Elena Poniatowska. Al irse se llevó su memoria,  su risa, todo lo que era su modo de ser río, de ser aire, de ser adiós. <br>
+  <br>
+  En México la enterramos bajo la lluvia, la convertimos en parque  público, en escuela, en lectura para todos y todas, la devolvimos a la tierra. </p>
+<p align="justify">¡Honra y prez para Rosario Castellanos Figueroa!</p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Ahora se le concede el uso de la palabra a la Senadora Susana Harp, Presidenta  de la Comisión de Cultura, a nombre de la Cámara de Senadores. </p>
+<p align="justify">Por favor, Senadora. </p>
+<p align="justify"><strong>La Senadora Susana Harp Iturribarría: </strong>Muchas gracias. Muy buenos días. Con su permiso, señora Presidenta. </p>
+<p align="justify">Con su permiso, querida maestra Elsa Cross. </p>
+<p align="justify">Bienvenidas y bienvenidos sean todos.</p>
+<p align="justify"><em>&ldquo;La palabra es el arca de  la memoria&rdquo;</em> dijo Rosario Castellanos en el primer  párrafo de Balún Canán, refiriéndose a cómo los indígenas fueron desposeídos de  la palabra. </p>
+<p align="justify">Rosario Castellanos nació en el año de 1925 y murió en 1974, antes de  cumplir 50 años. </p>
+<p align="justify">Sus primeros años los vivió en Comitán, Chiapas, para más tarde salir a  la Ciudad de México a realizar estudios de filosofía. </p>
+<p align="justify">Obtuvo la beca del Instituto de Cultura Hispánica en el año de 1950, por  lo que vivió dos años en Madrid, España. </p>
+<p align="justify">Fue también directora del Instituto Chiapaneco de Cultura y titular del  Instituto Nacional Indigenista. </p>
+<p align="justify">También se desempeñó en el Servicio Exterior Mexicano. </p>
+<p align="justify">A pesar de que en su obra literaria abordó la vida cotidiana y las  guerras de los indios de Chiapas, como ella los llamaba, no era una escritora  indigenista, era mucho más que eso. </p>
+<p align="justify">A pesar de escribir con precisión la condición de ser mujer en México en  los años 40&rsquo;s y 50&rsquo;s, no era una escritora precursora del feminismo, era mucho  más que eso. </p>
+<p align="justify">En sus obras hay una profunda reflexión de la condición humana,  ciertamente expresada en el trato injusto hacia los indígenas o en la  cosificación de la mujer por parte de los hombres, pero su obra fue mucho más  que eso. </p>
+<p align="justify">En &ldquo;Mujer que sabe latín&rdquo; escribió Antítesis de Pigmalión, el hombre no  aspira a través de la belleza a convertir una estatua en un ser vivo, sino un  ser vivo en una estatua. </p>
+<p align="justify">Y decimos que la obra de Rosario Castellanos fue mucho más que todo eso  porque en su tiempo hacer literatura, estudiar filosofía, devolver tierras a  los indígenas tzotziles o criticar los modos masculinos, no eran actos comunes  en un mundo ordenado y organizado por y para los hombres, incluso, en la  literatura, había que subvertir el orden y si no era posible había qué  describirlo tal como era. </p>
+<p align="justify">Y esa fue la forma en la que esta notable escritora mexicana realizó su  obra literaria, una autora que como pocos abarcó los géneros de la poesía, el  cuento, la novela y el ensayo. <br>
+  <br>
+  Exploradora de la vida a través de las letras a Manuel Cavallo le dijo: <em>&ldquo;Escribir ha sido más que nada explicarme a  mí misma las cosas que no entiendo, cosas que a primera vista son confusas o  difícilmente comprensibles&rdquo;. </em></p>
+<p align="justify">Para el Senado de la República la mejor forma de celebrar la obra de  Rosario Castellanos es convocar en su nombre a otras personalidades de las  letras y reconocer en tiempo y forma su trabajo.</p>
+<p align="justify">Y qué mejor manera de celebrar la literatura con la muy destacada  maestra Elsa Cross, quien fue elegida de manera unánime por el jurado de este  Premio, su nombre y su obra prestigia desde ahora, en esta primera  adjudicación, a este Premio Literario. </p>
+<p align="justify">Agradecemos profundamente a quienes acompañaron este proceso como jurados. </p>
+<p align="justify">A la doctora Lucina Jiménez, Directora General del INBAL. </p>
+<p align="justify">A la maestra Anel Pérez, titular de Literatura y Fomento de la Lectura  de la UNAM. </p>
+<p align="justify">Al maestro Ezra Alcázar, representante del Fondo de Cultura Económica. </p>
+<p align="justify">Y al arqueólogo Eduardo Matos Moctezuma, miembro del Colegio Nacional. </p>
+<p align="justify">Muchas gracias por su tiempo, por su dedicación. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify">Y cabe decir que la obra de la maestra Castellanos y la obra de la  maestra Cross son muy distintas, pero no distantes, porque en ambas se habla de  manera sensible y sincera porque su voz viene desde la profundidad de ser  mujer. </p>
+<p align="justify">En ocasión del &ldquo;Premio Diana Moreno Toscano&rdquo; a la promesa literaria,  entregada a la maestra Elsa Cross en 1967, por el jurado integrado por: Octavio  Paz, Juan José Arreola, Rubén Bonifaz Nuño, José Luis Martínez y Héctor Azar,  la maestra Rosario Castellanos comentósobre la joven autora:</p>
+<p align="justify"><em>&ldquo;De manera unánime,  también, su elección recayó sobre Elsa Cross con beneplácito de quienes conocen  y aprecian la versatilidad de su talento, el empeño con que trabaja y el rigor  con que se está formando, no dudamos que esta distinción tan merecida le será  útil y que pronto leeremos el libro en el que recoja lo que ahora anda disperso  en cuadernos y hojas efímeras y que se dé a la luz ese material inédito. Desde  ahora nos preparamos a disfrutarlo y aplaudirlo&rdquo;. </em></p>
+<p align="justify">Esto dijo Rosario Castellanos de Elsa Cross en 1967. </p>
+<p align="justify">Elsa Cross pertenece a una generación muy rica y diversa, las personas  que la rodearon desde sus primeros años como poeta, más que influenciar su obra  le abrieron el mundo porque se dedicaban a las letras, dramaturgia, filosofía,  humanidades y demás actividades del quehacer artístico. </p>
+<p align="justify">Personalidades como Juan José Arreola, Ludwik Margules, Héctor Azar o  Emilio Carballido, pensadores como Rilke y Mallarmé o Pávez, o tradiciones como  el movimiento hippie, el pensamiento oriental, también están presentes en su  reflexión, en su obra y en su vida, porque para Elsa Cross la poesía es una  expresión del conocimiento, es una forma de acercarse a la verdad más profunda  del ser, la poesía es el ser que se expresa a través del poeta, la voz del  poeta que quiere interpretar al ser, es una búsqueda de la unidad de la vía del  entendimiento y del lenguaje. <br>
+  <br>
+  Por ello, la poesía está en todo y todo está en la poesía, porque la  poesía es esencia sutil del universo. </p>
+<p align="justify">Cito a nuestra galardonada: </p>
+<p align="center"><em>&ldquo;No hay sucesión ni límite.</em></p>
+<p align="center"><em>No hay causación.</em></p>
+<p align="center"><em>No hay otro.</em></p>
+<p align="center"><em>Antes y después  desaparecen, </em><br>
+  <em>dentro y fuera, cerca y  lejos, ¿de qué?</em></p>
+<p align="center"><em>Si todo es uno solo y eso solo  soy yo.</em></p>
+<p align="center"><em>Toman mi forma las cosas  que contemplo. </em></p>
+<p align="center"><em>En ellas me recreo, </em></p>
+<p align="center"><em>A un tiempo estoy en ellas, </em><br>
+  <em>las traspaso,</em><br>
+  <em>y duermo eternamente en el  vacío&rdquo;.</em></p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Muchas gracias a la Senadora Susana Harp.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102217'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='102218'></a><p align="justify"><strong>ENTREGA DEL PREMIO AL MÉRITO LITERARIO &ldquo;ROSARIO  CASTELLANOS&rdquo; 2021 A LA </strong><strong>ESCRITORA ELSA MARÍA CROSS Y ANZALDÚA</strong></p>
+<p align="justify">Quiero solicitarles a las y los Senadores, y a todos nuestros invitados,  ponernos de pie para el acto de entrega a la ciudadana Elsa María Cross y  Anzaldúa del reconocimiento al Mérito Literario &ldquo;Rosario Castellanos&rdquo; y del  diplomado correspondiente al año 2021, por favor. </p>
+<p align="center">(Todos de pie)</p>
+<p align="justify">Sírvanse tomar asiento, por favor. </p>
+<p align="justify">Se concede el uso de la palabra a la escritora Elsa María Cross y  Anzaldúa, galardonada al Premio al Mérito Literario &ldquo;Rosario Castellanos&rdquo; 2021.  Por favor. </p>
+<p align="justify"><strong>La Galardonada Elsa María Cross y Anzaldúa: </strong>Honorable Senado de la República. Señoras y señores: </p>
+<p align="justify">Agradezco profundamente la distinción que se otorga a mi trabajo con el  Premio al Mérito Literario &ldquo;Rosario Castellanos&rdquo;, entre muchas razones, porque  lleva el nombre de esta mujer admirable, a quien recuerdo con profundo afecto,  pues fue mi maestra de literatura comparada en la Facultad de Filosofía y  Letras, y a ella pude mostrar mi primera brevísima colección de poemas, a la  que dio su aprobación. </p>
+<p align="justify">Agradezco también que hayan postulado mi trabajo para este Premio a la  propia Facultad de Filosofía y Letras de la UNAM, mi <em>alma máter</em>, y a su directora, la doctora Mary Frances Rodríguez Van  Gort, y a la Casa del Poeta Ramón López Velarde y a su también directora la  licenciada Maricarmen Férez, aquí presentes. <br>
+  <br>
+  Y quisiera decir que la Casa del Poeta desde hace 30 años ha desarrollado  una tarea ejemplar e infatigable en lo que toca al cultivo y la difusión de la  poesía. </p>
+<p align="justify">Rosario Castellanos es una figura de enorme importancia porque, a pesar  de haber vivido en una época en que era sumamente difícil para una mujer  abrirse paso y alcanzar un desarrollo intelectual pleno, abrió muchos caminos  como poeta y escritura, al igual que como intelectual y maestra, como  precursora de una lucha feminista inteligente y también como defensora de  nuestras comunidades indígenas y sus haberes tradicionales con la apreciación  lúcida y dignificadora que tuvo sobre ellos. </p>
+<p align="justify">Celebro también que se esté abriendo en la Ciudad de México una  universidad con el nombre de Rosario Castellanos y ojalá que bajo el auspicio  de su nombre esta universidad impulse con decisión el desarrollo artístico y  cultural que tanto se necesita en todos los niveles educativos del país. </p>
+<p align="justify">Un país sin cultura es un país sin destino, la cultura en general, así  como las ciencias y las artes, está más allá de cualquier ideología política,  de cualquier persuasión religiosa o fines que sean ajenos a su propia esencia. </p>
+<p align="justify">Cuando se ha tratado de ponerlos al servicio de otros intereses, se les  ha desvirtuado. </p>
+<p align="justify">El arte en particular no es elitista, no es privilegio de ninguna clase  social y debemos impedir que eso suceda poniéndolo al alcance de todos.</p>
+<p align="justify">Es indispensable preservar la excepcional riqueza de todas nuestras  culturas originarias, tan defendidas, como ya dije, por la propia Rosario  Castellanos. </p>
+<p align="justify">Muy pocos países tienen tal diversidad de lenguas, de herencias míticas,  tal variedad de músicas, de danzas, de expresiones artesanales. </p>
+<p align="justify">Desde hace décadas ha habido un amplio movimiento para reivindicar las  tradiciones indígenas, así como diversas asociaciones para impulsar el  creciente desarrollo literario de sus lenguas.</p>
+<p align="justify">Hay muchos notables poetas contemporáneos, hombres y mujeres, en lengua  náhuatl, zapoteca, mazateca, tzotzil y diversas variantes del maya, entre  otras. </p>
+<p align="justify">Las lenguas son un instrumento muy eficaz para salvaguardar la memoria de  los pueblos y debemos defender su sostenimiento y su desarrollo, sobre todo al  saber que las 68 lenguas vivas que hay en el país, el 60 por ciento está en  vías de desaparición. </p>
+<p align="justify">Igualmente, valioso es el gran arte universal, cuya tradición de milenios  nos permite percibir la evolución del espíritu humano. </p>
+<p align="justify">El arte se ha expresado a través de la música, de la pintura y la  escultura, del teatro, de la danza, de una literatura escrita en poesía y prosa  que desde la antigua Sumeria puede remontarse a más de cuatro milenios. </p>
+<p align="justify">No podemos ignorar ni desdeñar esa gran cultura que es patrimonio de la  humanidad mucho antes de que existiera la UNESCO. </p>
+<p align="justify">México, ha hecho grandes aportaciones a ella y también se ha enriquecido de  su vasto caudal, que tampoco podemos limitar a las identidades regionales y  nacionales, aunque se nutra de ellas. <br>
+  <br>
+  El arte es una expresión muy alta del espíritu, que este país reconozca a  sus artistas es loable. Y agradezco profundamente lo que me toca, pero siento  que es urgente que exista una política pública de Estado que proporcione a sus  niños y a sus jóvenes una educación artística, formal y de calidad, que ojalá  pueda llegar a ser, además de los talleres y muchas otras cosas que por suerte  existen, tan importante como las matemáticas, la gramática o la historia a lo  largo de los tres niveles educativos. Es importante en la misma medida. </p>
+<p align="justify">Se ha comprobado científicamente, por ejemplo, cómo el estudio de la  música propicia un desarrollo cerebral mucho mayor. </p>
+<p align="justify">Toda inversión en el arte y la cultura va a redituar en la formación de  mejores ciudadanos y personas. </p>
+<p align="justify">Los efectos del arte no se pueden medir ni cuantificar, pues son  invisibles y tal vez por eso son más poderosos. </p>
+<p align="justify">Como miembro de la comunidad cultural, no puedo evitar sentir cada vez  que se recorta un presupuesto al arte y la cultura, para destinarlo a otros  proyectos o macroproyectos, cualesquiera que éstos sean, que es una victoria  para las fuerzas más oscuras del país. </p>
+<p align="justify">Es muy grave que dejemos que el talento y la creatividad de nuestras más  jóvenes generaciones quede o siga a la deriva, a merced de la banalidad, la  vulgaridad y la violencia siempre  crecientes que inundan los contenidos de la mayoría de los medios de difusión y  el uso insalubre de muchas redes sociales sin ofrecer a nuestros jóvenes un  contrapeso, una defensa interna en un tiempo en que hay una total crisis de  valores, ya no digamos morales, sino simplemente humanos. </p>
+<p align="justify">Los modelos de vida que actualmente tienen un  o una joven partiendo del escenario anterior son deplorables y sus efectos son  devastadores cómo podemos corroborar casi todos los días en las noticias.</p>
+<p align="justify">Sería deseable, y es una petición humilde, que  de este recinto emanaran leyes que los protejan salvaguardando el patrimonio  cultural y espiritual y a los artistas que lo producen, que es lo que puede  ofrecer un auténtico contrapeso a la irresponsable exaltación que hacen los  medios de la violencia y el crimen.</p>
+<p align="justify">Mi optimismo sobre el efecto profundo del arte  proviene en gran medida de recordar un taller de poesía que daba yo en los años  sesenta en el Centro Cultural La Pirámide en Mixcoac, al que llegó un muchacho  que decía haber sido un chavo banda hasta que descubrió la poesía que le cambió  la vida.</p>
+<p align="justify">Y hay que tener en cuenta la transformación  profunda que en zonas marginales de la Ciudad de México han tenido las fábricas  de artes y oficios, llamadas Los Faros desde hace décadas y que son los pilares  de una formación artística que podría llegar a constituir la base de una  universidad de los oficios y las artes.</p>
+<p align="justify">Ojalá el arte fuera una panacea universal, no  lo es, pero al menos da herramientas, como decía Nitche, &ldquo;<em>para soportar la realidad o podría agregarse para ver su lado más  luminoso&rdquo;.</em></p>
+<p align="justify">Durante la pandemia que todos hemos padecido,  ha habido muchísimas personas que se han refugiado en el arte y la cultura como  medios de sobrevivencia espiritual.</p>
+<p align="justify">Cuando no entendemos alguna de las  manifestaciones del arte, éste nos invita a descubrir, a adquirir o a crear  dentro de nosotros mismos los instrumentos de sensibilidad, de inteligencia, de  cultura que necesitamos para captarlo y entrar en el mundo inagotable que nos  ofrece.<br>
+  <br>
+  El arte indudablemente lleva el propio  entendimiento y experiencia de la vida a niveles más altos, refina la  percepción y la sensibilidad, enriquece los intereses de los jóvenes,  diversifica su creatividad, satisface de muchas maneras su necesidad de  expresión y permite que esta juventud cifre y sustente su identidad, no es  seguir tendencias de moda o influencers, sino en adquirir, como era el ideal de  educación en los pueblos náhuatl, un rostro y un corazón, un rostro y un  corazón propios, no influidos, ni que sirvan a otros intereses.</p>
+<p align="justify">Miguel León Portilla, dice en su Toltecáyotl <em>(in ixtli, in yollotl)</em>: la cara, el  corazón simbolizan siempre lo que hoy llamaríamos fisonomía moral y principio  dinámico del ser humano.</p>
+<p align="justify">A quienes fuimos adolescentes o jóvenes en la  década de los sesenta, nos tocó iniciar grandes cambios en todos los órdenes,  es indescriptible la efervescencia de ideas y de ideales que hubo en aquella  época en todo el mundo.</p>
+<p align="justify">Recuerdo haber visto entonces un lema muy  simple pintado en una barda la palabra &ldquo;revolución&rdquo; a la que se había tachado  la &ldquo;r&rdquo;, dejando &ldquo;evolución&rdquo;. </p>
+<p align="justify">Me impresionó por su verdad, pues siento que  mientras no haya en nosotros una genuina y poderosa evolución interior,  podremos hacer las revoluciones que sean, poner a un país de cabeza, pero  seguiremos cayendo en los mismos errores.</p>
+<p align="justify">Otra de las virtudes del arte, por cuanto éste  está más allá de cualquier ideología o partidismo, es que no separa, ni crea  divisiones, ni dualidades, sino que une.</p>
+<p align="justify">Un ejemplo es la creación, hace más de dos  décadas, por parte del gran músico argentino israelí, Daniel Barenboim, y del  intelectual palestino, ya fallecido, Edward Said, de la Orquesta West-Eastern  Divan, que desde entonces reúne, a pesar de constantes y severas crisis  políticas, a músicos jóvenes israelíes y palestinos, así como de otros países  árabes en una demostración permanente de cómo la música permite superar dificultades  inconciliables si no en el plano político, sí en el plano humano.</p>
+<p align="justify">Esos jóvenes músicos no solo son un grupo  solidario, sino que han llegado a formar una orquesta sinfónica de primer orden  internacionalmente, y esto podría verse como un paradigma de lo que se ha  llamado educación para la paz.</p>
+<p align="justify">No se trata, desde luego, de que todos los  jóvenes sean artistas, pero cualquiera que sea su vocación o su camino en la  vida, por la sensibilidad y el conocimiento que obtengan de su contacto con  cualquier forma del arte, su visión de la realidad y sus capacidades de  respuesta se verán inmensamente enriquecidas.</p>
+<p align="justify">Que sigan oyendo la música que quieran, por  poner un ejemplo, pero que aprendan a escuchar a Beethoven y a Silvestre  Revueltas; que pinten bardas, pero que sepan que existen Francisco Toledo y  Leonora Carrington.</p>
+<p align="justify">En lo personal, creo que mi experiencia de la  vida habría sido muy gris sin Mozart, sin Botticelli; y sin la poesía de Carlos  Pellicer, de José Gorostiza y de Octavio Paz.</p>
+<p align="justify">Nuevamente agradezco de corazón, a todos, este  premio, muy en especial a la Comisión de Cultura del Senado y a los miembros  del jurado. </p>
+<p align="justify">Y muchas gracias a esta Cámara por su grata  hospitalidad.<br>
+  <br>
+  Quiero terminar leyendo el fragmento de un  poema extraordinario de Rosario Castellanos:</p>
+<p align="center"><em>&ldquo;El  Resplandor del Ser&rdquo;</em></p>
+<p align="center"><em>Amanece  en el valle. Con qué lento</em><br>
+  <em>resplandor  se sonrosa la nieve de las cimas</em><br>
+  <em>y  cómo se difunde la luz en el silencio.</em></p>
+<p align="center"><em>Hechizada,  contemplo el milagro de estar</em><br>
+  <em>como  en el centro puro de un diamante.</em></p>
+<p align="center"><em>¡Ah,  despertar, vivir,</em><br>
+  <em>amar,  amar el viento</em><br>
+  <em>como  un amor de pájaro!</em></p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>La Presidenta  Senadora Olga María del Carmen Sánchez Cordero Dávila:</strong> Honorable Asamblea: </p>
+<p align="justify">Dos mujeres son el centro de este evento: </p>
+<p align="justify">Una, la galardonada.</p>
+<p align="justify">Otra, la mujer en cuyo honor se ha instituido.</p>
+<p align="justify">Hoy, el ser mujer se viste de gala, me congratula tener la oportunidad de  otorgar, a nombre de cada una, de cada uno de las y los Senadores la presea  &ldquo;Rosario Castellanos&rdquo;, galardón dirigido a escritoras y escritores con una obra  consolidada, escrita en idioma español o en cualquiera de las lenguas  originarias de Latinoamérica y que pertenezca a los géneros literarios de la  narrativa, dramaturgia, poesía o ensayo, en su edición 2021, a la poeta,  ensayista y traductora mexicana, Elsa María Cross y Anzaldúa.</p>
+<p align="justify">Dos mujeres son honradas, dos mujeres que en México han dejado huella en  las letras mexicanas. Dos mujeres que desafiaron el tiempo con sus textos. Dos  mujeres que merecen el reconocimiento de todos y de todas nosotras, porque ser  mujer en México, ser escritora en México, ser poeta en México no es una tarea  fácil. </p>
+<p align="justify">Viene, parafraseando a la homenajeada, de una brisa cubriendo el clima  entero, el país entero, una brisa. Dos mujeres brillan hoy en este sitio y  ambas lo hacen por mérito propio, por sus méritos y con ellas dos todas las de  México.</p>
+<p align="justify">Sopla una brisa que va haciendo que las mujeres de nuestra patria se  convierten cada vez más en símbolos de libertad, de igualdad, de cambio y de  poder. La vida y obra de las homenajeadas, lo demuestran. </p>
+<p align="justify">Rosario Castellanos, paradigma de la literatura mexicana, que a través de  la literatura ligó lo cotidiano con el interés por el papel de la mujer en la  sociedad y por la crítica del enfoque del patriarcado de su época. </p>
+<p align="justify">Rosario, fue una visionaria y parteaguas de las causas feministas,  permitió, a través de sus personajes femeninos, la descripción de los ambientes  de su época y, paradójicamente, a través, muchas veces, de los mismos silencios  femeninos y permitió la participación de las mujeres en el diálogo.</p>
+<p align="justify">Por ello, me llena de orgullo que en este 2022 se otorgue la presea  &ldquo;Rosario Castellanos&rdquo; a Elsa Cross, una mujer que refrenda lo que Voltaire  decía sobre la poesía: &ldquo;que es la música del alma, sobre todo, de las almas  grandes y sensibles&rdquo;<br>
+  <br>
+  Elsa Cross es de ese tipo  de almas, es filósofa, profesora, creadora, pero, sobre todo, es creadora de la  música del alma, es autora desde hace décadas de una poesía fina y sutil,  romántica pero fuerte, a media voz, pero a toda voz como ha sido y debe seguir  siendo la conquista por los espacios por parte de nosotras las mujeres. </p>
+<p align="right"><em>&ldquo;El mar se extiende más allá del tiempo inamovible. </em><br>
+  <em>El mar se extiende en olas que no rompen, debemos romperlas&rdquo;.</em></p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify">A nombre del Senado de la  República deseo expresar nuestro más profundo agradecimiento a quienes nos han  acompañado en esta sesión solemne. </p>
+<p align="justify">Y se les solicita ponerse  de pie para entonar nuestro Himno Nacional Mexicano. </p>
+<p align="center">(Todos de pie entonan  el Himno Nacional)</p>
+<p align="justify">Solicito atentamente a  mis compañeras y compañeros Senadores, permanezcamos en el salón de sesiones  para continuar con nuestra sesión ordinaria. </p>
+<p align="justify">Se levanta la sesión  solmene. </p>
+<p align="justify">Y le pediría a la  Comisión de Atención a la Maestra Cross, que también la acompañe. </p>
+<p align="center">(La comisión  cumple)</p>
+<p align="center">(Se levantó la sesión solemne a las 12:27  horas)</p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a102218'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

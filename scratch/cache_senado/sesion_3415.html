@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 20</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Alejandro Armenta Mier</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Ordinaria Celebrada<br>en la Ciudad de M&eacute;xico, el 30 de Marzo de 2023</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/2/SPO/PDF-WEB/SPO_No20_30_MARZO-2023_VESPER.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109031'></a><p align="center"><strong>PRESIDE LA SENADORA</strong><br>
+  <strong>ANA LILIA RIVERA RIVERA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Ana  Lilia Rivera Rivera: </strong>(17:05 horas) Solicito a la Secretaría informe a la  Asamblea el resultado del cómputo de asistencia de las ciudadanas Senadoras y  de los ciudadanos Senadores asistentes. </p>
+<p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruíz: </strong>Conforme al registro de  asistencia, se han acreditado 69 ciudadanas Senadoras y Senadores.</p>
+<p align="justify">En consecuencia, hay  quórum, señora Pesidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Ana  Lilia Rivera Rivera: </strong>Se abre la sesión vespertina del jueves 30 de marzo  de 2023, correspondiente al segundo periodo ordinario de sesiones del segundo  año de ejercicio de la LXV Legislatura. El Orden del Día está disponible en la  Gaceta del día de hoy y en el monitor de sus escaños; con lo cual se informa de  los asuntos que corresponden a la agenda.</p>
+<p align="right"><strong>ORDEN DEL DÍA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/65/gaceta_del_senado/documento/133619"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">El acta de la sesión matutina de este día se  encuentra publicada en la Gaceta.</p>
+<p align="right"><strong>ACTA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/65/gaceta_del_senado/documento/133620"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/65/asistencias/2023_03_30/18"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">En consecuencia, consulte la Secretaría a la  Asamblea, en votación económica, si se aprueba.</p>
+<p align="justify"><strong>La Secretaria Senadora Alejandra Lagunes Soto Ruíz:</strong> Consulto a la Asamblea, en  votación económica, si se aprueba el acta referida. Quienes estén porque se  apruebe, favor de levantar la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque se rechace, favor de levantar  la mano.</p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Quienes se abstengan, favor de levantar la  mano.&nbsp;</p>
+<p align="justify">Aprobada el acta de la sesión del jueves 30 de marzo  de 2023. </p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Aprobada el acta de sesión  matutina del jueves 30 de marzo de 2023.</p>
+<p align="justify">Pasamos al siguiente asunto.</p>
+<p align="justify">Senador Álvarez Icaza, ¿con  qué objeto?</p>
+<p align="justify"><strong>El Senador Emilio Álvarez  Icaza Longoria: </strong>(Desde su escaño) Gracias, señora Presidenta. </p>
+<p align="justify">Sólo para hacer notar que  en el Grupo Plural hemos decidido acompañar en la sesión anterior todos los  intercambios y viajes, salvo uno que a mí en lo particular me parecía un buen  momento.</p>
+<p align="justify">Si estamos discutiendo que vengan  tropas de Estados Unidos a México, me parecía un momento inadecuado, pero,  fuera de eso, aprobamos todos. </p>
+<p align="justify">Queda muy claro y en  evidencia que para eso sí hay dinero; queda muy claro y en evidencia que para  sí hay recursos. </p>
+<p align="justify">Nótese la buena voluntad  con la que lo hacemos, pero ojalá también haya recursos para las víctimas,  también haya recursos para los migrantes, también haya recursos para los  albergues a la gente en necesidad. </p>
+<p align="justify">Con la misma intención que  se da beneficio presupuestal a las Fuerzas Armadas, debería atenderse a la  gente en necesidad. </p>
+<p align="justify">Sólo quiero dejar  constancia de eso, señora Presidenta.</p>
+<p align="justify">Por su atención, muchas  gracias.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109031'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109032'></a><p align="justify"><strong>La Presidenta Senadora Ana  Lilia Rivera Rivera: </strong>Nuestro siguiente apartado del Orden del Día es la  presentación de iniciativas, por lo que se concede el uso de la palabra a la  Senadora María Guadalupe Covarrubias, del grupo parlamentario de Morena, para  presentar una iniciativa con proyecto de Decreto por el que se reforman y  adicionan y derogan diversas disposiciones de la Ley General de Salud, en  materia de control de medicamentos y control de recetas médicas. </p>
+<p align="justify"><strong>INICIATIVA </strong><strong>CON PROYECTO DE  DECRETO POR EL QUE SE REFORMAN, ADICIONAN Y DEROGAN DIVERSAS DISPOSICIONES DE  LA LEY GENERAL DE SALUD </strong><strong> </strong></p>
+<p align="justify"><strong>(Presentada por la Senadora María Guadalupe  Covarrubias Cervantes, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="justify"><strong>La Senadora María Guadalupe  Covarrubias Cervantes: </strong>Con su venia, señora Presidenta. Buenas tardes,  compañeras y compañeros Senadores: </p>
+<p align="justify">Hace unas pocas semanas la  Senadora Josefina Vázquez Mota urgió desde esta tribuna sobre la necesidad de  aprobar una iniciativa interesada a garantizar la integridad física y mental de  la niñez y adolescencia, estableciendo sanciones en contra de aquellos que  pongan en riesgo su salud; promoviendo, a través de redes sociales, retos o  competencias con el objetivo de consumir medicamentos cuyo principio activo  sean los opiáceos, que en teoría es controlada su venta al público. </p>
+<p align="justify">Como es sabido, el año  pasado las autoridades sanitarias reportaron alrededor de 500 incidentes de  menores de edad asociados con el consumo de medicamentos controlados, lo que  implica un potencial riesgo para su vida e integridad física.</p>
+<p align="justify"> A su vez, el subsecretario  de Salud, Hugo López-Gatell, ha informado que en lo que va de este año 45  personas de entre 12 y 19 años de edad han sido hospitalizadas por el uso no recetado de clonazepam, derivado  del reto viral &ldquo;El que duerme al último, pierde&rdquo;. </p>
+<p align="justify">Como ustedes saben, el  clonazepam es, entre otros, un medicamento controlado que se usa, principalmente, para tratar convulsiones o  ataques de pánico y que su mal utilización conlleva riesgos fatales.</p>
+<p align="justify">La disponibilidad que tienen los menores de edad  sobre este tipo de medicamentos controlados para llevar a cabo toda suerte de  retos es indicativo de que no existe un riguroso control sobre su uso y  destino.</p>
+<p align="justify">En muchos hogares existe, de forma permanente, sin  justificación clínica, existencias de medicamentos controlados por si se ofrece  y ello habla de que un lapso control por parte de las autoridades sanitarias,  debido a la ausencia de un control eficaz y eficiente en la expedición y  surtido de estos medicamentos.</p>
+<p align="justify">Si bien la Ley General de Salud menciona algunos  lineamientos y condiciones para la prescripción y suministro de los  medicamentos controlados, es más que evidente que no están siendo lo  suficientemente rigurosos para impedir fenómenos como los arriba mencionados. </p>
+<p align="justify">Es por ello que les pido sumarse a esta iniciativa  que propone el diseño y la implementación de acciones de fondo, no solo  reactivas, sino preventivas que permitirán la distribución y consumo de  medicamentos controlados bajo estricta supervisión médica. </p>
+<p align="justify">Además, existe la fuerte presunción de muchos  accidentes cerebro y cardiovasculares que son debido al consumo de medicamentos  que se adquieren sin receta médica ni expediente clínico. </p>
+<p align="justify">Por todo lo anterior, mi iniciativa propone  reformar la Ley General de Salud para implementar un Registro Nacional de Venta  de Medicamentos, donde se lleve a cabo el registro de  las compras de medicamento controlado que realice una institución de salud, ya sea  privada, pública o bien una farmacia, la venta realizada de estos fármacos a  quien se le vendió, respetando la privacidad de sus datos personales.</p>
+<p align="justify">Y por último, el inventario con que las farmacias  cuenta, a fin de tener pleno control de estos fármacos. </p>
+<p align="justify">En ese sentido y como complemento a este registro  propongo el establecer una Plataforma Nacional para la expedición y control de  recetas médicas, esta plataforma servirá para dar seguimiento a cada una de las  recetas médicas que se emiten y en las cuales se prescriben medicamentos  controlados. </p>
+<p align="justify">Ahora más que nunca debemos refrendar nuestro  compromiso y preocupación en pro de la niñez y adolescencia, porque sus  derechos no tienen ni partido ni color, su integridad salvaguarda y desarrollo  integral es responsabilidad de todas y de todos.</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"> <strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Inic_Morena_Sen_Covarrubias_Venta_Medicamentos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Se turna a las Comisiones Unidas de Salud; y de  Estudios Legislativos, Segunda. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109032'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109033'></a><p align="justify">Se concede la palabra a la Senadora Gina Andrea  Cruz Blackledge, del grupo parlamentario del PAN, para presentar una iniciativa  con proyecto de Decreto por el que se adiciona un tercer párrafo a la fracción  I del artículo 76 de la Constitución Política de los Estados Unidos Mexicanos,  en materia de migración.</p>
+<p align="justify">¿Con qué objeto? Senadora Mónica. </p>
+<p align="justify">Permítame, oradora, por favor. <br>
+  <strong></strong><br>
+  <strong>La Senadora Mónica Fernández Balboa:</strong> (Desde su escaño) Gracias,  señora Presidenta. </p>
+<p align="justify">Era para preguntarle si por su conducto puede  solicitarle a la proponente, la Senadora Covarrubias, si me permite adherirme a  su iniciativa.</p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>La Presidenta Senadora Ana  Lilia Rivera Rivera:</strong> Se le pide a Servicios Parlamentarios que recabe  las firmas de quien deseen sumarse a la iniciativa de la Senadora Covarrubias.</p>
+<p align="justify">Senadora Covarrubias, le pregunta la Senadora  Mónica si se puede sumar a su iniciativa. </p>
+<p align="justify">También la Senadora  Graciela. </p>
+<p align="justify">La Senadora Bertha  Caraveo. </p>
+<p align="justify">Y todos los que hayan  levantado la mano.</p>
+<p align="justify">Senador Narro. </p>
+<p align="justify">Senador Reyes. </p>
+<p align="justify">Senador Arturo Bours. </p>
+<p align="justify">Senador Narro. </p>
+<p align="justify">Se concede la palabra a  la Senadora Cruz. </p>
+<p align="justify"><strong>INICIATIVA</strong> <strong>CON PROYECTO DE DECRETO POR EL QUE  SE ADICIONA UN TERCER PÁRRAFO  A LA FRACCIÓN I DEL ARTÍCULO 76  DE LA CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS </strong><strong> </strong></p>
+<p align="justify"><strong>(Presentada por la Senadora Gina Andrea Cruz  Blackledge, del grupo parlamentario del PAN)</strong></p>
+<p align="justify"><strong>La Senadora Gina Andrea Cruz Blackledge: </strong>Gracias.  Con la venia de la Presidencia. Honorable Asamblea: </p>
+<p align="justify">Nuestro país tiene una  gran tradición y una ilustre historia de asilo y refugio a personas, víctimas  de persecución política, así como de protección por razones humanitarias en el  marco al respeto a la soberanía de otros países. </p>
+<p align="justify">Esta rica tradición se  remonta a la época colonial y nos ha acompañado a lo largo de diversas fases de  nuestra historia nacional. </p>
+<p align="justify"> En los primeros años la  figura del asilo se enfocaba a asistir, a través de la inmunidad diplomática, a  los perseguidos políticos latinoamericanas, quienes eran simpatizantes del  gobernó mexicano y participan en grupos políticos de oposición o rebelión en  contra de los regímenes autoritarios de sus países. </p>
+<p align="justify">A lo largo de la  historia, y de las diversas administraciones del gobierno federal, nuestro país  ha transitado por diversas ideologías y creencias con la migración, el asilo y  la protección de personas extranjeras. Una vez pacificado el país, México se  perfiló como destino para los perseguidos políticos de Latinoamérica a través  de estrechar lazos culturales y, asimismo, los perseguidos políticos de  Honduras, Cuba, Nicaragua, Bolivia y Perú encontraron protección e inmunidad en  las embajadas mexicanas. </p>
+<p align="justify">La lista de personas  latinoamericanos que encontraron asilo en el país, durante la segunda mitad del  siglo XX, incluye a Pablo Neruda, la familia de Salvador Allende, Rigoberta  Menchú y Gabriel García Márquez. Actualmente la Constitución política señala,  en su artículo 11, que toda persona tiene derecho a buscar recibir asilo. </p>
+<p align="justify">Se establece también que  el reconocimiento de la condición de refugiado y el otorgamiento de asilo  político se realizará conforme con tratados internacionales. </p>
+<p align="justify">El asilo honra una  tradición humanitaria y funge como una figura histórica que garantiza  protección a quienes viven persecuciones y reciben amenazadas. </p>
+<p align="justify">Pero la figura de asilo  también puede usarse con fines y motivaciones políticas para favorecer a gobiernos  específicos, caso reciente como el otorgamiento de asilo a seis personas  relacionadas con la Asamblea Nacional de Ecuador, en la embajada de México, en  la ciudad de Quito, así como a la asambleísta ecuatoriana, Gabriela Rivadeneira  y al expresidente Evo Morales, tienen claras motivaciones políticas y obedecen  alianzas pragmáticas, ideológicas coyunturales y lealtades a veces compradas. </p>
+<p align="justify">El caso más reciente fue  el del expresidente de Perú, José Pedro Castillo Terrones, y su familia, quien  después de anunciar la intención de disolver el Congreso de su país, y anunciar  la instauración de un gobierno de excepción, fue destituido por rebelión y  sometido a proceso, generando un caos político, y a raíz de lo que se calificó  como un golpe de Estado. </p>
+<p align="justify">Enseguida, el Presidente  de México confirmó que se había instruido al canciller Marcelo Ebrard a  comenzar las gestiones para recibir al presidente destituido en la embajada  mexicana de Perú, ocasionando una ruptura de relaciones diplomáticas y  declarando persona no grata al embajador de México en Perú. Esta decisión  discrecional ha causado un conflicto de política exterior, uno de los más que  han deteriorado al Presidente con sus ideas caducas y lealtades inexplicables. </p>
+<p align="justify">El ideal del asilo es que  quien lo otorgue represente auténticamente los altos ideales del Estado  mexicano, y que sea congruente con una tradición humanitaria, pero el asilo  puede también utilizarse con fines personales para satisfacer apetitos  individuales y consolidar lealtades poco claras.</p>
+<p align="justify">La discrecionalidad en el  otorgamiento del asilo puede tener consecuencias adversas a nuestra política  exterior. </p>
+<p align="justify">Ya le ofrecieron asilo a  la familia de un golpista, ¿qué sigue? Darles asilo a dictadores, genocidas,  como Putin, como Maduro, o darles asilo a regímenes que pretenden destruir las  reglas democráticas y las libertades, como el de Nicaragua.</p>
+<p align="justify">Los mensajes que están  dando a la comunidad de naciones democráticas y libres al  asociarse. Proteger y hacer negocios y dar asilo a genocidas, ladrones y golpistas  son preocupantes. </p>
+<p align="justify"> Por ello,  el Poder Constituyente Permanente estableció mecanismos de control para que el  Jefe de Estado en turno no use y abuse de los instrumentos de política  exterior.</p>
+<p align="justify">Estos  medios de control se han ideado para evitar la concentración del poder y los  abusos posibles en su ejercicio como sucede en el gobierno actual y que en cada  momento le da la espalda al Senado mexicano para tomar lamentables decisiones  de política exterior.</p>
+<p align="justify">Compañeras  y compañeros:</p>
+<p align="justify">Nuestro  país ha sido reconocido históricamente como receptor y protector de perseguidos  políticos, así como de dar asilo a diferentes personas extranjeras que en su  país están siendo hostigadas por regímenes diferentes a sus ideales.</p>
+<p align="justify">Sin  embargo, esta figura ha sido usada políticamente basándose en doctrinas e ideas  contrarias a los intereses nacionales.</p>
+<p align="justify">Es por  ello que es indispensable que el Senado tenga un papel más relevante en el  ejercicio auténtico de contrapesos ante decisiones que afectan la estabilidad  política y nuestra imagen como nación libre y democrática.</p>
+<p align="justify">Con esta  reforma el Senado tendría un medio de control ante decisiones presidenciales  que afecten las relaciones diplomáticas con otros países, como sucede hoy en  Perú, cuyo gobierno sigue sin ser reconocido.</p>
+<p align="justify">Las dos  iniciativas que presento el día de hoy, tanto la reforma al artículo 76  constitucional, como las reformas a la Ley de Migración y la Ley sobre  Refugiados, Protección Complementaria y Asilo Político tienen como objetivo que  ante las solicitudes de asilo político de alto nivel el Senado tenga un rol de  primera importancia.</p>
+<p align="justify">Este  control parlamentario se aplicaría a personas extranjeras denominada como Alto  Funcionario Público que son quienes forman o hayan formado parte de diferentes  órdenes de gobierno en las jerarquías más altas, ya sea presidente o primer  ministro, gobernador, secretarios de Estado o ministros, miembros del Congreso,  así como miembros del Poder Judicial.</p>
+<p align="justify">Asilo,  refugio y vocación migratoria están todos bajo los ideales humanitarios de nuestras  leyes e instituciones, las cuales funcionan hoy bajo un gobierno inhumano que  legitima crímenes de Estado y persigue a chivos expiatorios, como se dio el  caso de la tragedia de Ciudad Juárez.</p>
+<p align="justify">Es por  ello que este Senado no le puede dejar las manos libres ni a este Presidente,  ni a los que vengan. No podemos permitir que decisiones tomadas por una sola  persona destruyan la imagen de México en el exterior.</p>
+<p align="justify">Ante el  evidente fracaso de la política migratoria de este país y ante las decisiones  tomadas con base en ideologías, intereses ajenos a la nación, es indispensable  que el Senado mexicano sea contrapeso, que todavía no ha podido ser ante un  gobierno que ha perdido el rumbo y que nos lleva directamente a ser parte de  las naciones caracterizadas por su pérdida de libertades y por su gobierno de  corte dictatorial.</p>
+<p align="justify">El Senado  debe actuar aquí y ahora, o pagar las consecuencias de su omisión a decisiones  arbitrarias y autoritarias.</p>
+<p align="justify">Es  cuanto, señora Presidenta.</p>
+<p align="justify"> <strong>Iniciativas</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Inic_PAN_Sen_Blackledge_art_76_CPEUM.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109033'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109034'></a><p align="justify"><strong>INICIATIVA</strong> <strong>CON PROYECTO DE DECRETO POR EL QUE SE  REFORMAN DIVERSAS DISPOSICIONES DE LA LEY DE MIGRACIÓN Y DE LA LEY SOBRE  REFUGIADOS, PROTECCIÓN COMPLEMENTARIA Y ASILO POLÍTICO </strong><strong> </strong></p>
+<p align="justify"><strong>(Presentada por la  Senadora Gina Andrea Cruz Blackledge, del grupo parlamentario del PAN)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Inic_PAN_Sen_Blackledge_asilo_politico.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Ana  Lilia Rivera Rivera: </strong>La iniciativa constitucional se turna a las  Comisiones Unidas de Puntos Constitucionales; y de Estudios Legislativos,  Segunda.</p>
+<p align="justify">La iniciativa relativa a la  Ley de Migración y de la Ley sobre Refugiados se turna a las Comisiones Unidas  de Asuntos Fronterizos y Migratorios; y de Estudios Legislativos, Segunda.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109034'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109035'></a><p align="justify">Se  concede el uso de la palabra al Senador Ángel García Yáñez, del grupo  parlamentario del PRIl, para presentar una iniciativa con proyecto de Decreto  por el que se inscribe con letras doradas en el Muro de Honor del Senado de la  República la siguiente leyenda: &ldquo;General Emiliano Zapata Salazar&rdquo;.</p>
+<p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR  EL QUE SE INSCRIBE CON LETRAS DORADAS EN EL MURO DE HONOR DEL SENADO DE LA  REPÚBLICA LA SIGUIENTE LEYENDA: GENERAL EMILIANO ZAPATA SALAZAR </strong></p>
+<p align="justify"><strong>(Presentada por el Senador Ángel García Yáñez, del  grupo parlamentario del PRI)</strong></p>
+<p align="justify"><strong>El  Senador Ángel García Yáñez: </strong>Buenas tardes, compañeras y  compañeros. Con la venia de la Presidencia.</p>
+<p align="justify">Emiliano  Zapata, mejor conocido como &ldquo;El Caudillo del Sur&rdquo;, se trata de uno de los  líderes militares y campesinos más importantes de la Revolución Mexicana,  además de ser un referente indiscutible de la resistencia campesina en México. El  General Zapata nació en San Miguel Anenecuilco, Morelos, el 8 de agosto de 1879  en el seno de una familia campesino.</p>
+<p align="justify">Podemos  entender el interés de Zapata por defender las causas campesinas, pues según se  tiene registro, a la edad de 9 años Emiliano Zapata quedó impactado al  presenciar un despojo de campesinos por parte de grandes hacendados de la zona.  A la edad de 30 años Zapata se convirtió en un dirigente agrario del estado de Morelos, donde empezó a analizar  documentos que acreditaban los derechos de propiedad de los pueblos sobre sus  tierras, los cuales habían sido negados por las Leyes de Reforma, y participó  en reuniones celebradas en Villa de Ayala, mejor conocido anteriormente, que  después se convirtiera en el Plan de Ayala, bajo el lema de que: &ldquo;La tierra es  de quien la trabaja&rdquo;. </p>
+<p align="justify">Por lo anterior, el 28 de noviembre de 1922, Zapata  presentó el Plan de Ayala, un documento que se convirtiera en estandarte y fiel  ejemplo de la ideología de los campesinos morelenses. Por sus acciones y  trabajo en favor de los más desfavorecidos, el Caudillo el Sur se hizo cargo  del mando del Ejército Libertador del Sur y que sus principales ideales eran:  libertad, igualdad, la justicia social, el respeto a las comunidades indígenas  campesinas y obreras. </p>
+<p align="justify">La lucha del Caudillo del Sur, Emiliano Zapata, se  convirtió en un motor para que se promulgaran leyes como la Ley Agraria de  1915. Se posibilitó a institucionalizar las demandas agrarias de la  insurrección campesina iniciada por Zapata. </p>
+<p align="justify">Y que se uniera a la lucha revolucionaria gestada  por Madero después de perder las elecciones ante Porfirio Díaz. A él y a su  lucha se le atribuyen varios ideales y lemas, entre unos que les voy a  mencionar. &ldquo;Es mejor morir de pie que vivir toda una vida arrodillado&rdquo;. &ldquo;Reforma,  libertad, justicia y ley&rdquo;. &ldquo;La tierra volverá a quienes la trabajan con sus  propias manos&rdquo;. &ldquo;Quiero morir siendo esclavo de los principios, no de los  hombres&rdquo;. Entre otras. </p>
+<p align="justify">Fue el 10 de abril de 1919 que Zapata fue engañado  por Jesús Guajardo, otro militar del Movimiento Revolucionario, quien a través  de mentiras le hizo creer que estaba en descontento con Carranza y que quería  unirse a él para su lucha, ofrecerle armamento, municiones, para continuar con  su lucha, así en la Hacienda de Chinameca, Morelos, al momento de entrar,  tiradores escondidos en las azoteas, abrieron fuego contra Zapata  traicionándolo cobardemente.</p>
+<p align="justify">Cabe mencionar que, como parte de su reconocimiento  a una lucha tan importante para el campesinado, este héroe nacional, el 10 de  diciembre de 2020, este Senado aprobó el Decreto por el que se establecía las  características de una moneda conmemorativa del centenario de su muerte del  General Emiliano Zapata Salazar. </p>
+<p align="justify"> En  ese sentido, este próximo 10 de abril de 2023, a 104 años de la muerte del  Caudillo del Sur, consideramos que debemos continuar con su legado, por lo que  en memoria de su lucha proponemos que se inscriba la leyenda &ldquo;General Emiliano  Zapata Salazar&rdquo; en letras dorados en el muro de honor de este Senado de la  República. </p>
+<p align="justify">Invito  a mis compañeras y compañeros Senadores a sumarse a esta iniciativa tan  importante para el campesinado del país. </p>
+<p align="justify">¡Zapata  vive y su lucha sigue!</p>
+<p>Por  su atención, muchas gracias. Es cuanto, señora Presidenta. </p>
+<p><strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Inic_PRI_Sen_Angel_Garcia_Gral_Emiliano_Zapata_Salazar.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Se turna a las Comisiones Unidas de Reglamentos y  Prácticas Parlamentarias; y de Cultura. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109035'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109036'></a><p align="justify">Se concede el uso de la palabra a la Senadora  Patricia Mercado, del grupo parlamentario de Movimiento Ciudadano, para  presentar a nombre propio y de diversas Senadoras y Senadores, una iniciativa  con proyecto de Decreto por el que se reforman las fracciones XXIX y XXX y se  adiciona la fracción XXXI al artículo 90 de la Ley Orgánica del Congreso  General de los Estados Unidos Mexicanos, para incorporar a la norma la Comisión  de Zonas Metropolitanas y Movilidad. </p>
+<p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR  EL QUE SE REFORMAN LAS FRACCIONES XXIX Y XXX Y SE ADICIONA LA FRACCIÓN XXXI AL  ARTÍCULO 90 DE LA LEY ORGÁNICA DEL CONGRESO GENERAL DE LOS ESTADOS UNIDOS  MEXICANOS </strong></p>
+<p align="justify"><strong>(Presentada por la Senadora Patricia Mercado, del  grupo parlamentario de Movimiento Ciudadano, a nombre propio y de los Senadores  Emilio Álvarez Icaza Longoria, Elí César Cervantes Rojas, César Arnulfo  Cravioto Romero, Víctor Oswaldo Fuentes Solís, Xóchitl Gálvez Ruiz, Claudia  Edith Anaya Mota y María Guadalupe Covarrubias Cervantes, de diversos grupos  parlamentarios)</strong></p>
+<p align="justify"><strong>La Senadora Patricia Mercado: </strong>Gracias, señora Presidenta. </p>
+<p align="justify">Acudo a esta tribuna a nombre de los Senadores Elí  Cervantes y Emilio Álvarez Icaza, así como de los Senadores y Senadoras  Guadalupe Covarrubias, Claudia Anaya, César Cravioto, Xóchitl Gálvez y Víctor  Fuentes, para presentar la iniciativa con proyecto de Decreto por el que se reforman  las fracciones XXIX y XXX y se adiciona la fracción XXXI al artículo 90 de la  Ley Orgánica del Congreso General de los Estados Unidos Mexicanos. </p>
+<p align="justify">Hace dos décadas una Comisión de Zonas  Metropolitanas y Movilidad hubiera convencido a muy pocos en el Legislativo,  pero en los últimos años la estructura social, económica y política de este  país ha cambiado radicalmente, gobiernos plurales que deben negociar reglas  comunes entre sí, ciudades que enfrentan retos en seguridad vial, transporte y  espacios públicos que merman o aumentar el bienestar de la población. </p>
+<p align="justify">La mayoría de la población hoy vive en ciudades, un  63 por ciento, y los temas que más preocupan son seguridad, movilidad y empleo;  éstos ocurren siempre en dinámicas locales, donde las autoridades tienen  enormes oportunidades para desatar la creatividad social, desarrollar una  administración pública eficiente y avanzar hacia el ejercicio de derechos. </p>
+<p align="justify">Hoy hay 17 zonas metropolitanas con más de un  millón de habitantes y concentran al 43 por ciento de la población nacional. </p>
+<p align="justify">Las cifras proyectan un crecimiento sostenido de  las metrópolis en los próximos años, con lo que sin duda también tendremos más  y mayores desafíos en materia de gobernanza metropolitana y de movilidad. </p>
+<p align="justify">A falta de medidas correctivas de cooperación y  acciones afirmativas, las zonas metropolitanas serán espacios en que se  reproduce la desigualdad, en donde se hará más profunda la segregación  geográfica y las brechas de calidad de vida. </p>
+<p align="justify">Como la Cámara representativa de la población de  las entidades federativas, el Senado tiene una Comisión de Federalismo y  Desarrollo Municipal, pero las relevantes tareas de esta Comisión se distinguen  de la dimensión metropolitana. </p>
+<p align="justify"> El federalismo es un asunto de cómo organizar y  distribuir las atribuciones de las entidades ante la Federación y, por otro  lado, la visión metropolitana parte desde la base territorial de los municipios  y alcaldías de las ciudades, hasta las reglas que acuerdan las entidades. Es  una perspectiva horizontal y colaborativa para la solución común de los problemas. </p>
+<p align="justify">Cuando se creó la Comisión que conjunta a Zonas  Metropolitanas y Movilidad, la Junta de Coordinación Política consideró que la  movilidad es un aspecto sustancial del desarrollo y planeación de las  metrópolis. </p>
+<p align="justify">Para garantizar una movilidad segura, eficiente,  moderna, entendimos que la tarea iba más allá de la Ley de Caminos Puentes y  Autotransporte Federal; antes, varias entidades marcaron el paso al convertir  sus leyes de transporte en leyes de movilidad, pues se necesitaba un marco  integral que diera un largo paso conceptual adelante. </p>
+<p align="justify">Los resultados más eminentes del trabajo conjunto  de la Comisión fueron la reforma constitucional en materia de movilidad, así  como la Ley General de Movilidad y Seguridad Vial. </p>
+<p align="justify">En ambos temas presenciamos una amplia  participación de autoridades, una enorme vitalidad social y la formación de  vínculos entre las diversas partes para construir nuevas reglas. </p>
+<p align="justify">Esta Comisión es un espacio para hacer realidad  ideas emergentes, aquí hemos visto surgir una agenda con temas como vehículos  eléctricos, transporte escolar, carriles para bicicletas, movilidad insular,  etcétera; temas que ustedes, Senadoras y Senadores, han puesto en la mesa con  iniciativas y propuestas en el proceso de dictamen. </p>
+<p align="justify">En esta Comisión hemos comprobado el alto valor de  la retroalimentación y la evaluación de los resultados. Hoy las autoridades  locales que están armonizando sus normas, aplicando la Ley General de Movilidad  y Seguridad Vial, nos están dando una perspectiva de cómo resuelven los problemas  desde lo local. Lo mismo ocurrirá cuando tengamos un marco común para las zonas  metropolitanas. </p>
+<p align="justify">La Agenda 2030 planteó dentro de su tercer objetivo  el de garantizar una vida sana y promover el bienestar para todos en todas las  edades. </p>
+<p align="justify">Una meta de primer nivel, la meta de reducir a la  mitad el número de muertes y lesiones causadas por accidentes de tráfico, en el  mundo, para el 2020.</p>
+<p align="justify">En el segundo decenio se amplió hasta 2030 este  objetivo, necesitamos tener una instancia que sea parte del cumplimiento de  esta meta para salvar vidas y evitar dolores. </p>
+<p align="justify">Se puede ver, en el historial de esta comisión, en  sus informes anuales, la multitud de actividades realizadas, entre las que  destacan ocho foros regionales en materia de seguridad vial, audiencias públicas  sobre la Ley General en materia de derechos de personas con discapacidad, ocho  foros metropolitanos, eventos con organizaciones de la sociedad civil y  víctimas de siniestros viales.</p>
+<p align="justify">En todo momento las y los asistentes recalcan lo  importante que es contar con esta instancia del Senado para darle voz a sus  inquietudes, sus experiencias, sus propuestas.</p>
+<p align="justify">Es así que estos temas que hace algunos años eran  emergentes, hoy son plenamente vigentes, se requiere una comisión activa,  establece que continúe el trabajo hacia una movilidad sostenible y que asegure  una gobernanza metropolitana plenamente democrática. </p>
+<p align="justify">Esperando contar con su respaldo, muchísimas  gracias.</p>
+<p align="justify"> <strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Ini_Conjunta_Senadores_Ref_y_Adic_Art90_Ley_Organica_del_Congreso_Gnrl_Estados_Unidos_Mexicano.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Se turna a las Comisiones Unidas de Reglamentos y  Prácticas Parlamentarias; y de Estudios Legislativos. </p>
+<p align="justify"> Le pedimos a Servicios Parlamentarios tome la firma  de los Senadores que se adhieren a la propuesta de la Senadora Patricia  Mercado. </p>
+<p align="justify">Honorable Asamblea, les informo que tenemos la  presencia de un grupo de practicantes del danzón, de la alcaldía de Cuauhtémoc.  Nuestros visitantes acuden por invitación del Senador Gabriel García Hernández. </p>
+<p align="justify">Sean bienvenidas y bienvenidos, con su alegría, al  Senado de la República. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify">Y además, desde aquí le decimos a Gabriel García,  felicidades porque su cumpleaños, fue el lunes 27 de marzo.</p>
+<p align="justify">Gracias. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109036'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109037'></a><p align="justify">El espacio que corresponder al grupo parlamentario  del Partido Verde Ecologista de México ha sido cedido al grupo parlamentario  Morena.</p>
+<p align="justify">En consecuencia, se concede el uso de la palabra a  la Senadora Imelda Castro Castro, para presentar una iniciativa con proyecto de  Decreto por el que se adiciona la Ley Orgánica del Congreso General de los  Estados Unidos Mexicanos, en relación al funcionamiento de la Comisión Bicamaral  de Seguridad Nacional. </p>
+<p align="justify"><strong>INICIATIVA</strong> <strong>CON PROYECTO DE DECRETO POR EL QUE SE  ADICIONA LA LEY ORGÁNICA DEL CONGRESO GENERAL DE LOS ESTADOS UNIDOS  MEXICANOS  </strong><strong> </strong></p>
+<p align="justify"><strong>(Presentada por la Senadora Imelda Castro Castro, del  grupo parlamentario del Partido Morena)</strong></p>
+<p align="justify"><strong>La Senadora Imelda Castro Castro:</strong> Muchas gracias, señora Presidenta. </p>
+<p align="justify">La Comisión Bicamaral de Seguridad Nacional, es el  órgano legislativo, a través del cual el Congreso de la Unión ejerce facultades  de control y evaluación sobre las políticas y acciones del gobierno federal en  la materia. </p>
+<p align="justify">Es a través de ella, por ejemplo, que el Congreso  conoce y emite una opinión sobre el proyecto anual de agenda nacional de  riesgos, instrumento en el que se identifican riesgos y amenazas a la seguridad  nacional, su probabilidad de ocurrencia y que tiene además la función de  orientar las labores de inteligencia y los mecanismos de coordinación,  encaminados a dar continuidad al proyecto de Nación, en el corto, mediano y  largo plazo. </p>
+<p align="justify">Tiene esta Comisión Bicamaral la facultad además de  conocer informes de actividades del Consejo de Seguridad Nacional, entre otros. </p>
+<p align="justify">El Congreso de la Unión ha venido fortaleciendo, en  los últimos años, sus facultades de control en la materia. Por ejemplo, en  acciones como la aprobación de la Estrategia Nacional de Seguridad Pública y  recientemente en la creación de una Comisión  Bicamaral para Evaluación y Seguimientos de las Fuerzas Armadas Permanente en  Tareas de Seguridad Pública. </p>
+<p align="justify">Es en  este contexto, de estas importantes facultades de control del Congreso de la  Unión, que tiene lugar esta Comisión Bicamaral de Seguridad Nacional, que, si  bien sus características y facultades no se empatan con las de la comisión  ordinaria, me refiero la de seguridad pública. </p>
+<p align="justify"> Se  considera que sí debe regirse por una lógica institucional y por la relevancia  de su materia y carácter permanente de la misma, debe garantizársele las  capacidades institucionales administrativas, presupuestales y políticas  adecuadas, que creemos que hoy no existen en la regulación que hasta ahora  tenemos. </p>
+<p align="justify">Por eso  estamos proponiendo que, a consideración de ustedes, que esta iniciativa tiene  el objetivo de proponer disposiciones que regulen el funcionamiento de la  Comisión Bicamaral, pues si bien su fundamento de creación, integración y  atribuciones se encuentran establecidas en la Ley de Seguridad Nacional, ésta  no contempla disposiciones mínimas para su operación.</p>
+<p align="justify">Lo cual  no es un asunto menor, ya que su inclusión, en el marco legal del Congreso,  permitiría garantizar una mayor institucionalidad de sus trabajos y una mejora  en sus capacidades. </p>
+<p align="justify">Les  comento, por ejemplo, para que se den una idea, el último día de agosto, del  año pasado, la Presidencia la dejó el Senado de la República, en este caso  recaía en mi persona. Es hora de que todavía no hay un presidente de parte de  la Cámara de Diputados, que es a la que le corresponde. </p>
+<p align="justify">Solo por  señalarles un ejemplo, no tiene presidente en este momento esa Comisión Bicamaral,  a pesar de la relevancia de su materia. </p>
+<p align="justify">Entre las  adiciones relevantes que se proponen se encuentran disposiciones en materia de  rotación de la Presidencia, se establece que tendrá una Junta Directiva, que  hoy no tiene, integrada por una Presidencia y una Secretaría, y se establece  expresamente una duración de un año legislativo para ambos cargos. </p>
+<p align="justify">Se  establecen además disposiciones respecto al desarrollo de sus reuniones, del  manejo de la información que conozca y la disposición de recursos mínimos para  su eficiente funcionamiento.</p>
+<p align="justify">Finalmente,  se propone otorgar, a la Comisión Bicamaral, la facultad de opinión sobre los  asuntos que le sean turnados para ese efecto, o bien, aquellos que por su  vinculación con la seguridad nacional considere relevante opinar; lo cual abona  a la importancia transversal que en los últimos se ha dado a la seguridad  nacional y el papel que debe jugar el Congreso de la Unión en esta materia. </p>
+<p align="justify">El  fortalecimiento operativo y funcional de esta comisión es de suma importancia,  pues sus trabajos conllevan al ejercicio de importantes facultades y de  intercambio de información entre el Congreso y órganos, como el Consejo  Nacional de Seguridad Nacional y el Centro Nacional de Inteligencia, así como  de atribuciones en materia de rendición de cuentas. </p>
+<p align="justify">Asimismo,  la mejora de las capacidades de la Comisión Bicamaral podrá contribuir a  consolidar la visión que la presente administración ha privilegiado, donde las  políticas de seguridad nacional se implementen con absoluto respeto a los  derechos humanos. </p>
+<p align="justify">Ese es,  compañeras y compañeros, el contenido de esta iniciativa para regular los  trabajos, institucionalizar más los trabajos de esta Comisión Bicamaral de  Seguridad Nacional.</p>
+<p align="justify">Muchas  gracias.</p>
+<p align="justify"> <strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Ini_Morena_Sen_Castro_Adicion_a_la_LOCGEUM_Funcionamiento_Com_Bicamaral_Seg_Nal.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Se turna a las Comisiones  Unidas de Reglamentos y Prácticas Parlamentarias; y de Estudios Legislativos,  Segunda. </p>
+<p align="justify"> ¿Con qué  objeto, Senadora Mónica?<strong> </strong></p>
+<p align="justify"><strong>La  Senadora Mónica Fernández Balboa: </strong>(Desde su escaño) Gracias. Para  pedirle que, si por su conducto, si la Senadora Imelda me permite adherirme a  su iniciativa, por favor.</p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Muy bien. Que Servicios  Parlamentarios tome firma de Senadores que deseen adherirse a la iniciativa que  ha presentado la Senadora Imelda Castro. Gracias, Senadora.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109037'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109038'></a><p align="justify">Se  concede el uso de la palabra al Senador Gonzalo Yáñez, del grupo parlamentario  del Partido del Trabajo, para presentar una iniciativa con proyecto de Decreto  por el que se reforman y adicionan los artículos 41, 76 y 89 de la Constitución  Política de los Estados Unidos Mexicanos, en materia de gobierno de coalición.</p>
+<p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR  EL QUE SE REFORMAN Y ADICIONAN LOS ARTÍCULOS 41, 76 Y 89 DE LA CONSTITUCIÓN  POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS </strong></p>
+<p align="justify"><strong>(Presentada por el Senador Gonzalo Yáñez, del grupo  parlamentario del PT)</strong></p>
+<p align="justify"><strong>El  Senador Gonzalo Yáñez: </strong>Muchas gracias, señora Presidenta  en funciones. Legisladoras y legisladores de la República:</p>
+<p align="justify">Esta  iniciativa que presenta el Partido del Trabajo para reformar la legislación  federal tiene como propósito la creación de las coaliciones de gobierno. He  sabido que el Poder Ejecutivo Federal se deposita en una persona, y se ejerce a  través del Gabinete legal y ampliado.</p>
+<p align="justify">También  el Poder Ejecutivo estatal en México se deposita en una persona, y de igual  manera ejerce sus funciones en un Gabinete a través del Gabinete  correspondiente. En el caso del Poder Ejecutivo municipal, que también existe  un Gabinete, el poder se ejerce a través de un cuerpo colegiado, el  ayuntamiento, es el único orden de gobierno en México en donde el Poder  Ejecutivo se ejerce a través de una colectividad.</p>
+<p align="justify">Consideramos  que ha llegado el momento en que en México surja la coalición de gobierno. Pasa  que cuando se construye una coalición comicial y ésta triunfa no desemboca en  un gobierno de coalición, en una coalición de gobierno. Esta propuesta tiene la  intención de que donde se genere una coalición electoral y ésta salga adelante  obtenga la victoria en el proceso de competencia política, por ley también se  dé una coalición de gobierno.</p>
+<p align="justify">Hemos  conversado con la mayoría de las y los coordinadores de los grupos  parlamentarios y les hemos propuesto que se integre un grupo de trabajo en  donde participen un representante de cada grupo parlamentario y recoja en su  seno varias iniciativas que existen en este sendero, la creación de las  coaliciones de gobierno.</p>
+<p align="justify">En la  próxima sesión de esta Cámara de Senadores, el grupo parlamentario del Partido  del Trabajo,  presentaremos un punto de acuerdo de urgente resolución, ya conversado, repito,  con la mayoría de los grupos parlamentarios, para que la Junta de Coordinación  Política pase a integrar este grupo de trabajo. </p>
+<p align="justify">¡Que así sea! Y enhorabuena. </p>
+<p align="justify">Es cuanto. Muchas gracias.</p>
+<p align="justify"> <strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Ini_PT_Sen_Gonzalez_Ref_y_Adiciona_Arts_41_76_89_CPEUM_.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Se turna a las Comisiones Unidas  de Puntos Constitucionales; y de Estudios Legislativos, Segunda.</p>
+<p align="justify">El espacio que corresponde al grupo parlamentario  del Partido Encuentro Social ha sido cedido al grupo parlamentario del Trabajo. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109038'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109039'></a><p align="justify">En consecuencia, se concede el uso de la palabra a  la Senadora Cora Cecilia Pinedo Alonso, para presentar una iniciativa con  proyecto de Decreto por el que se reforman y adicionan los artículos 16, 24 y  30 de la Ley General de Educación, en materia de alfabetización. </p>
+<p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR  EL QUE SE REFORMA Y ADICIONA LA  FRACCIÓN XI, RECORRIÉNDOSE LA SUBSECUENTE DEL ARTÍCULO 16; EL ARTÍCULO 24; LA FRACCIÓN XXV, RECORRIÉNDOSE LA  SUBSECUENTE DEL ARTÍCULO 30 DE LA LEY GENERAL DE EDUCACIÓN </strong></p>
+<p align="justify"><strong>(Presentada por la Senadora Cora Cecilia Pinedo  Alonso, del grupo parlamentario del PT) </strong></p>
+<p align="justify"><strong>La Senadora Cora Cecilia Pinedo Alonso: </strong>Con su permiso, señora Presidenta.  Honorable Asamblea: </p>
+<p align="justify">Hoy pongo a su consideración una iniciativa que  propone una reforma a la Ley General de Educación con el objeto de incorporar  la alfabetización mediática en nuestro sistema educativo como un componente de  la currícula y así atender una problemática que afecta a nuestra sociedad. En  este mundo de la información, donde los datos, imágenes, videos, noticias, y  una diversidad de contenidos se transmite a través de diversas plataformas,  portales, aplicaciones y redes sociales en tiempo real, se hace necesario que  desarrollemos la capacidad de discernir críticamente la calidad y la veracidad  de la información. </p>
+<p align="justify"> La UNESCO define a la alfabetización mediática  digital como la capacidad de acceder, gestionar, comprender, integrar,  comunicar, evaluar y crear informaciones mediante la utilización segura y pertinente  de tecnologías digitales.</p>
+<p align="justify">La educación mediática es esencial para empoderar a  los usuarios de la tecnología y hacer frente al contenido nocivo que puede  causar graves daños a la sociedad en situaciones donde la propaganda que incita  al racismo, las teorías de la conspiración, la violencia y la radicalización se  está propagando, la alfabetización mediática puede hacer una diferencia para  detener todo esto. </p>
+<p align="justify">Los ciudadanos necesitamos tener habilidades para  identificar la desinformación, las noticias falsas y los discursos de odio, así  como para proteger nuestra privacidad en línea.</p>
+<p align="justify">Por lo tanto, es necesario que el tema que nos  ocupa se incorpore a la Ley General de Educación y se convierta en una parte  integral del sistema educativo.</p>
+<p align="justify">Para fortalecer la educación mediática entre los  estudiantes se requiere que los docentes se alfabeticen en medios de  información, los docentes necesitan conocer los medios de comunicación y la  información para poder enseñarles a los estudiantes las habilidades necesarias  para evaluar críticamente la información e identificar de manera efectiva la  propaganda dañina.</p>
+<p align="justify">La alfabetización mediática es esencial en los  sistemas educativos porque prepara a los estudiantes para participar  activamente en la sociedad, promueve la inclusión social, desarrolla  habilidades de comunicación y los prepara para el mundo laboral, los  estudiantes que son alfabetizados en este rubro tienen habilidades para buscar  datos, evaluar la calidad y la relevancia de la información, así como para  comunicarse y colaborar con otros en línea.</p>
+<p align="justify">Por otro lado, la alfabetización mediática también  tiene un impacto en el desarrollo cognitivo de los estudiantes. A medida que  los estudiantes aprenden a evaluar críticamente la información, también  aprenden a analizar, sintetizar y organizar la información de manera efectiva.</p>
+<p align="justify">Estas habilidades son fundamentales para el  aprendizaje y la resolución de problemas, y son habilidades esenciales para el  éxito en la educación superior y en la fuerza laboral. </p>
+<p align="justify">La incorporación de la educación mediática en la  Ley General de Educación también puede ayudar a promover la inclusión social,  pues contribuye a que los estudiantes comprendan y aprecien las diferentes  perspectivas culturales, y a reconocer a diversidad en los medios de  comunicación. </p>
+<p align="justify">Derivado de lo anterior, los estudiantes son más  propensos a ser ciudadanos activos y comprometidos en una sociedad democrática  y plural. </p>
+<p align="justify">La alfabetización mediática es fundamental en el  mundo digital en que vivimos, de esta manera podemos asegurarnos de que los  estudiantes estén preparados para esta nueva era digital. </p>
+<p align="justify">Los invito, compañeras y compañeros, a que se sumen  y a que apoyen esta iniciativa. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify">Es cuanto, señora Presidenta.</p>
+<p align="justify"> <strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Inic_PT_Sen.Cora_art-30_Ley_Gral_Educacion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="center"><strong>PRESIDE LA SENADORA</strong><br>
+  <strong>ALEJANDRA NOEMÍ REYNOSO SÁNCHEZ</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Alejandra Noemí Reynoso  Sánchez: </strong>Gracias,  Senadora Cora Cecilia. Se turna a las Comisiones Unidas de Educación; y de  Estudios Legislativos, Segunda. </p>
+<p align="justify">Se concede enseguida el uso de la palabra…</p>
+<p align="justify">Senadora, si permite que se puedan adherir la  Senadora Imelda Castro, la Senadora Caraveo, la Senadora Mónica Fernández, la  Senadora Verónica Camino, la Senadora Geovanna Bañuelos, es decir, por favor a  Servicios Parlamentarios, la Senadora Gloria Sánchez, que tome nota para que  pueda pasar la iniciativa para su firma. </p>
+<p align="justify">Gracias, Senadora Cora Cecilia. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109039'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109040'></a><p align="justify">Enseguida, se concede el uso de la palabra a la  Senadora Ana Lilia Rivera Rivera, del grupo parlamentario del Partido Morena, para  presentar una iniciativa con proyecto de Decreto por el que se reforman  diversas disposiciones de la Ley General de Salud, en materia de etiquetado de  alimentos derivados de transgénicos. Adelante, Senadora. </p>
+<p align="justify"><strong>INICIATIVA</strong> <strong>CON PROYECTO DE DECRETO POR EL QUE SE  REFORMAN DIVERSAS DISPOSICIONES DE LA LEY GENERAL DE SALUD</strong><strong> </strong></p>
+<p align="justify"><strong>(Presentada por la Senadora Ana Lilia Rivera  Rivera, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="justify"><strong>La Senadora Ana Lilia Rivera Rivera: </strong>Muchas gracias. Con el permiso de  la Mesa. Honorable Asamblea. A nuestro pueblo de México. </p>
+<p align="justify">Las formas tradicionales de producción,  comercialización y consumo de maíz nativo, que constituyen parte del patrimonio  alimentario y cultural de México, han sido paulatinamente desplazadas para  abrir paso a sistemas industriales de producción agrícola a gran escala,  basados en el uso de semillas modificadas genéticamente para que las plantas  resistan plagas y toleren herbicidas como el glifosato, produciendo alimentos  que inclusive aún procesados contienen este tipo de agroquímicos altamente  peligrosos. </p>
+<p align="justify">Es importante aclarar una cuestión, si bien no  existen estudios concluyentes sobre los riesgos para la salud humana, derivado  del uso per se de semillas transgénicas, sí existe la certeza en cuanto a que  éstas, al tolerar agrotóxicos, con portadoras de dichas sustancias químicas,  muchas de las cuales significan un peligro demostrado para la salud humana y el  ambiente, situación que ha sido sostenida por diversos organismos  internacionales. Evidencia judicialmente en múltiples juicios ganados contra la  agroindustria y respaldada por más de mil artículos científicos libres de  conflicto de interés en todo el mundo. </p>
+<p align="justify">Desde 2009 Estados Unidos ya contaba con un  porcentaje de 85 por ciento de superficie maicera sembrada con transgénicos  tolerantes al glifosato; gran parte de este maíz es importado a nuestro país  año con año. </p>
+<p align="justify">La diferencia central entre el impacto de los  transgénicos en aquel país y en el nuestro es que nosotros tenemos como base de  nuestra alimentación el maíz, mientras que para los Estados Unidos no tiene  valor alimentario, sino meramente económico, como insumo utilizado para la  elaboración de productos ultraprocesados. </p>
+<p align="justify">Estudios de la UNAM han llegado a concluir que,  derivado de las importaciones de Estados Unidos, el maíz mexicano tiene una  presencia alarmante de transgenes de 90.4 por ciento de las tortillas que se  consumen y que éstas contienen secuencias de maíz transgénico, así como el 82 por  ciento de tostadas, harinas, cereales y botanas, producidas a base de este  grano.</p>
+<p align="justify"> La gravedad de este problema es enorme y para  dimensionarlo es necesario reiterar que en México el maíz es el principal, es  la principal fuente de nuestro alimento, sobre todo en la forma de tortillas,  para cuya elaboración se emplean cada año 13.5 millones de toneladas de maíz y  cuyo consumo se estima en 300 millones al año.</p>
+<p align="justify">En este sentido, el consumo directo de productos  derivados de maíz transgénico, acompañado de substancias tóxicas, puede llegar  a tener un severo impacto en la salud de la población. Por ello, se requiere  garantizar que las tortillas y en general todos los productos elaborados de  maíz no deriven en su elaboración de granos transgénicos. </p>
+<p align="justify">En este contexto, el 13 de febrero de este año fue  publicado el Decreto por el que se establecen diversas acciones para realizar,  de acuerdo a dependencias y entidades que integran la Administración Pública  Federal en relación el uso, enajenación, distribución, promoción e importación  de glifosato y de maíz genéticamente modificado para salvaguardar un medio  ambiente sano y la seguridad y autosuficiencia alimentaria del pueblo de  México.</p>
+<p align="justify">Pese a la relevancia de esta acción, el Decreto  permite que el maíz transgénico sea destinado a la producción de alimentos  procesados para consumo humano, tales como tostadas, harinas, cereales y  botanas, productos que pese a su escaso valor nutricional se encuentran  presentes en el consumo habitual de gran parte de la población mexicana. </p>
+<p align="justify">A este resquicio legal surge la necesidad de  implementar estrategias eficaces de trazabilidad sobre los productos derivados  del maíz, a fin de que la autoridad competente garantice que las personas  consumidoras tengan un acceso libre e informado a productos derivados de maíz,  con conocimiento pleno de aquellos que contienen transgenes. </p>
+<p align="justify">Una medida idónea para tal efecto es el etiquetado  de los productos que contengan transgénicos, esto ya cuenta con referentes de  eficacia en algunos países de la Unión Europea, así como de Australia, Estados  Unidos, Países Bajos, Turquía, Colombia, Brasil y Perú. </p>
+<p align="justify">Al respecto, es necesario considerar que en  noviembre de 2019 fue publicado el Decreto de reforma a la Ley General de Salud  en materia de sobrepeso, obesidad y de etiquetado de alimentos y bebidas no  alcohólicas.</p>
+<p align="justify">Con la aprobación de esta reforma se logró imponer  el etiquetado frontal de advertencia como una herramienta de prevención y  promoción de la salud pública, compartida ampliamente a nivel internacional. </p>
+<p align="justify">Esta reforma ha tenido un impacto positivo y  palpable en el entorno alimentario de nuestro país, permitiendo que las y los  consumidores conozcan de forma rápida, sencilla y veraz el contenido de los  alimentos que llevan a sus mesas y que cada persona tenga la posibilidad de  tomar decisiones de consumo más informada. </p>
+<p align="justify">Por ello, se estima que reformar la Ley General de  Salud para actualizar el marco jurídico en materia de etiquetado, incorporando  el etiquetado de productos que contengan transgenes, será una medida idónea de  garantizar que las personas ejerzan su derecho a una alimentación adecuada de  forma libre e informada. </p>
+<p align="justify">En tal orden de ideas, la presente iniciativa  propone modificar los artículos 212 y 215 de la Ley General de Salud, a efecto  de incorporar en el contenido de etiquetado frontal la advertencia de alimentos  y bebidas no alcohólicas, el señalamiento de aquellos productos que contengan  componentes o ingredientes derivados de organismos genéticamente modificados. </p>
+<p align="justify">Es cuanto. Muchas gracias.</p>
+<p align="justify"> <strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Ini_Morena_Sen_Rivera_Div_Disp_Ley_Gral_Salud.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Alejandra Noemí Reynoso  Sánchez:</strong> Gracias, Senadora Ana Lilia. Se turna a las Comisiones Unidas de Salud; y de  Estudios Legislativos, Segunda. </p>
+<p align="justify">Senadora Ana Lilia, la Senadora Mónica Fernández,  ¿con qué objeto? </p>
+<p align="justify"><strong>La Senadora Mónica Fernández Balboa:</strong> (Desde su escaño) Para  preguntarle si nos permite sumarnos a su iniciativa.</p>
+<p align="justify">Señora Presidenta, para pedirle, por su conducto,  la verificación del quórum, porque creo que ya somos muy pocos en este Pleno,  por favor. Gracias. </p>
+<p align="justify"><strong>La Presidenta Senadora Alejandra Noemí Reynoso  Sánchez:</strong> Permítame concluir la ronda de iniciativa y enseguida se hace la verificación.</p>
+<p align="justify">Por lo tanto, la Secretaría de Servicios  Parlamentarios que tome nota de las Senadoras y Senadores que se adhieren a la  iniciativa de la Senadora Ana Lilia.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109040'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109041'></a><p align="justify">Se concede enseguida el uso de la palabra a la  Senadora Estrella Rojas Loreto, del grupo parlamentario del PAN, para presentar  una iniciativa con proyecto de Decreto por el que se deroga el inciso 2 de la  fracción XII del artículo 6 de la Ley del Instituto de Seguridad y Servicios  Sociales de los Trabajadores del Estado, en materia de cobertura de la seguridad social. Adelante, Senadora. </p>
+<p align="justify"><strong>INICIATIVA</strong> <strong>CON PROYECTO DE DECRETO POR EL QUE SE  DEROGA EL INCISO 2) DE LA FRACCIÓN XII DEL ARTÍCULO 6 DE LA LEY DEL INSTITUTO  DE SEGURIDAD Y SERVICIOS SOCIALES DE LOS TRABAJADORES DEL ESTADO </strong><strong> </strong></p>
+<p align="justify"><strong>(Presentada por la Senadora Estrella Rojas Loreto,  del grupo parlamentario del PAN)</strong></p>
+<p align="justify"><strong>La Senadora Estrella Rojas Loreto: </strong>Con su venia,  señora Presidenta. <strong> </strong></p>
+<p align="justify">El día de hoy presento la  iniciativa por la que se reforma el artículo 6 de la ley del ISSSTE,  actualmente la fracción XII del artículo 6, establece que se entiende por  familiares derechohabientes al cónyuge, concubinos o concubinas, los hijos del  trabajador menores de 18 años, los hijos del trabajador o pensionado, mayores  de 18 años, cuando no puedan mantenerse por su propio trabajo debido a una  enfermedad crónica o discapacidad, los ascendientes que dependan económicamente  del trabajador o pensionado. </p>
+<p align="justify">Sin embargo, como a  excepción a lo anterior, la propia ley dispone que los familiares solo tendrán  los derechos establecidos si no se tiene por sí mismo seguro y prestaciones en  materia de servicios de salud, otorgados por cualquier otro instituto de  seguridad social. </p>
+<p align="justify">Sobre el particular la  Suprema Corte de Justicia de la Nación consideró que dicho precepto restringe  el derecho a la seguridad social y compatibilidad de prestaciones en  contravención con el texto constitucional. Y que toda vez que el régimen de  seguridad social atiende a un sistema de cuentas individuales, la pensión por  viudez que reciben cónyuges, así como las que corresponden por su trabajo  atienden a derechos de orígenes distintos. Por lo que hay independencia entre  ellos. </p>
+<p align="justify">Las prestaciones de  seguridad social, dentro de las cuales se incluye la pensión por viudez y las  prestaciones derivadas del propio empleo, son plenamente compatibles entre sí y  son fundamentales para garantizar la dignidad humana de las personas. </p>
+<p align="justify">Al respecto es importante  subrayar que la declaración universal de los derechos humanos, establecen en su  artículo 25 que toda persona tiene derecho a un nivel de vida adecuado que le  asegure, así como a su familia la salud y el bienestar y, en especial, la  alimentación, el vestido, la vivienda, la asistencia médica y los servicios  sociales necesarios, tiene asimismo derechos de seguro en caso de desempeño,  enfermedad, invalidez, viudez, vejez u otros. </p>
+<p align="justify">Con sus aportaciones el  trabajador busca el bienestar de su familia, aunque después de su fallecimiento,  por lo que es evidente que la pensión por viudez coadyuve a esa función, pues  está pensada para amparar a los cónyuges o concubinos sobrevivientes. </p>
+<p align="justify">Compañeras y compañeros,  estos son algunos de los elementos más importantes de esta propuesta, espero  pueda tener la valoración positiva de todos ustedes. </p>
+<p align="justify">Es cuanto.</p>
+<p align="justify"> <strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Inic_PAN_Sen_Rojas_art_6_trabajadores_estado.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Alejandra  Noemí Reynoso Sánchez: </strong>Gracias, Senadora Estrella. Se turna a las  Comisiones Unidas de Seguridad Social; y de Estudios Legislativos, Segunda. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109041'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109042'></a><p align="justify">Se concede el uso de la  palabra, del grupo parlamentario del PRI, para presentar una iniciativa con  proyecto de Decreto por el que se reforma el primer párrafo del artículo 96 de  la Ley del Impuesto Sobre la Renta, en materia de retenciones. </p>
+<p align="justify">Me permito informarle a  la Asamblea, antes de cederle la palabra al Senador Añorve, que enseguida, y la  última iniciativa, es del grupo parlamentario de Morena, antes de que  concluyamos la sesión. Adelante, Senador Añorve. </p>
+<p align="justify"><strong>INICIATIVA</strong> <strong>CON PROYECTO DE DECRETO POR EL QUE SE  REFORMA EL PRIMER PÁRRAFO DEL ARTÍCULO 96 LA LEY DEL IMPUESTO SOBRE LA RENTA</strong><strong> </strong></p>
+<p align="justify"><strong>(Presentada por el Senador Manuel Añorve Baños, del  grupo parlamentario del PRI)</strong></p>
+<p align="justify"><strong>El Senador Manuel Añorve Baños: </strong>Con el  permiso de la Presidencia. </p>
+<p align="justify">En 2022 la canasta básica  tuvo un incremento de más del 100 por ciento, la inflación general, en ese  mismo periodo, fue de 94.8 por ciento, productos como el maíz, el chile, el  jitomate, la cebolla, el aguacate, el frijol, se venden en este momento en  máximos históricos.</p>
+<p align="justify">La luz, las gasolinas y  todos los energéticos no deja de encarecerse de manera permanente. </p>
+<p align="justify">Las casetas y las tarifas  de transporte también siguen aumentando. Cuando la inflación sube nos damos  cuenta de que nuestro dinero ya no nos alcanza para comprar lo mismo que antes,  y esto afecta a todos, pero especialmente golpea a los que menos tienen. </p>
+<p align="justify">Según un análisis del  Instituto Mexicano para la Competitividad, las personas más pobres destinan una  fracción mayor de sus ingresos a la compra de alimentos, así la inflación para  los hogares del primer decil experimentó una inflación del 9.7 por ciento,  mayor a la generalizada. Y en cambio los hogares con ingresos mayores a los 54 mil  pesos experimentan una inflación menor. </p>
+<p align="justify">Es decir,  en este sexenio la brecha entre pobres y ricos es cada vez más profunda y  lacerante, por eso no podemos quedarnos impasibles y tenemos la obligación  moral y política de hacer todo lo que esté en nuestro poder para apoyar a las  familias mexicanas. Irónicamente, aunque en este sexenio se ha incrementado el  salario mínimo como nunca antes, lo que podría verse como una forma de apoyar a  los trabajadores que menos tienen, por supuesto la realidad es que entre más  sueldo perciben más impuesto deben de pagar y esto aunado a la inflación hace  que un trabajador que gana cuatro salarios mínimos en realidad tenga una  capacidad adquisitiva mucho menor, incluso que la de un trabajador con un  sueldo inferior.</p>
+<p align="justify">Es decir,  una persona que recibe un sueldo de 25 mil pesos al mes o cuatro salarios  mínimos tiene que pagar 15 mil pesos de ISR anuales sin contar lo que le  descuentan de aguinaldo; o sea, al final del año un trabajador que gana cuatro  salarios mínimos debe pagar casi lo de un mes de sueldo en ISR, más todo lo  demás que paga vía otros impuestos como el IVA, el IEPS, el predial, el agua,  etcétera.</p>
+<p align="justify">Esto  significa que, aunque el recibir un aumento salarial puede ser un incentivo  laboral, la amenaza constante del pago de más ISR lo convierte en un pesar más  que un alivio para el trabajador.</p>
+<p align="justify">En este  sentido, como un mecanismo de apoyo directo a las y los trabajadores mexicanos  se propone reformar la Ley del Impuesto sobre la Renta para incrementar el  monto de ingresos exentos de ISR por concepto de sueldos y salarios para que  las personas que reciban hasta cuatro salarios mínimos no tengan que pagar ISR  y puedan destinar su salario a la satisfacción de sus necesidades y las de su  familia.</p>
+<p align="justify"> Apoyar a la economía  familiar debería de ser la prioridad de este Senado, por eso las y los invito a  apoyar esta propuesta que busca garantizar que la gente pueda seguir llevando  pan a la mesa. </p>
+<p align="justify">No renunciemos a nuestro  compromiso social, no le demos la espalda a las y los trabajadores de México.</p>
+<p align="justify">Por su atención, muchas  gracias.</p>
+<p align="justify">Es cuanto, señora Presidenta. Gracias.</p>
+<p align="justify"><strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Inic_PRI_Sen_Manuel_Anorve_art_96_ISR.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora  Alejandra Noemí Reynoso Sánchez: </strong>Gracias, Senador Añorve. Con fundamento en la  fracción h) del artículo 72 constitucional, se remite a la Cámara de Diputados.</p>
+<p align="justify">En una tercera ronda de  presentación de iniciativas se concede.</p>
+<p align="justify">Adelante, Senadora Gina  Andrea Cruz.</p>
+<p align="justify"><strong>La Senadora Gina Andrea  Cruz Blackledge: </strong>(Desde su escaño) Señora Presidenta, si me permite  el Senador adherirme a su iniciativa.</p>
+<p align="justify"><strong>La Presidenta Senadora  Alejandra Noemí Reynoso Sánchez: </strong>¿Si le permite adherirse a su iniciativa?<strong></strong><br>
+  <strong>El  Senador Manuel Añorve Baños: </strong>Con muchísimo gusto. Muchas  gracias.</p>
+<p align="justify"><strong>La  Presidenta Senadora Alejandra Noemí Reynoso Sánchez: </strong>Lo mismo  la Senadora Estrella Rojas para que se pueda considerar. Muchas gracias.</p>
+<p align="justify">Lo mismo  el Senador Adolfo Gómez, por favor.</p>
+<p align="justify"><strong>El  Senador Manuel Añorve Baños: </strong>Adelante, Senador. Muchas  gracias. Con permiso.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109042'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109043'></a><p align="justify">Finalmente,  se concede el uso de la palabra al Senador Elí César Eduardo Cervantes Rojas,  del grupo parlamentario de Morena, para presentar una iniciativa con proyecto  de Decreto por el que se adiciona una nueva fracción al artículo 78 de la  Constitución Política de los Estados Unidos Mexicanos, en relación con la  autorización de la salida de elementos de las Fuerzas Armadas fuera de los límites  del país. Adelante, Senador.</p>
+<p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR  EL QUE SE ADICIONA UNA NUEVA FRACCIÓN AL ARTÍCULO 78 DE LA CONSTITUCIÓN  POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS </strong></p>
+<p align="justify"><strong>(Presentada por el Senador Elí César Eduardo  Cervantes Rojas, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="justify"><strong>El  Senador Elí César Eduardo Cervantes Rojas: </strong>Muchas gracias. Compañeras  y compañeros Senadores:</p>
+<p align="justify">Hago uso  de esta tribuna para presentar una iniciativa con proyecto de Decreto por el  que se adiciona una fracción al artículo 78 de la Constitución Política de los  Estados Unidos Mexicanos.</p>
+<p align="justify">Como  sabemos, la Secretaría de Defensa Nacional es una dependencia que organiza,  administra y prepara al Ejército y la Fuerza Aérea Mexicana con la finalidad de  defender la integridad, la independencia y la soberanía de nuestra nación;  asimismo, colabora auxiliando a la población en situaciones de emergencia  social, así como promover acciones cívicas o de beneficio comunitario.</p>
+<p align="justify">Al  respecto, quisiera señalar que México se ha caracterizado por participar en  diversos eventos internacionales no bélicos, como los son visitas oficiales  para celebrar actos cívicos, deportivos, socioculturales, adiestramientos y musicales, así como en  operaciones de ayuda humanitaria derivados por algún desastre natural. </p>
+<p align="justify">Sin duda alguna estos eventos han permitido  fortalecer las relaciones de amistad y fraternidad con las distintas naciones;  sin embargo, la autorización de la salida de tropas fuera de los límites del  país es facultad exclusiva del Senado de la República, motivo por el cual las  tropas no podrán salir del país si el Senado de la República se encuentra en un  periodo de receso. </p>
+<p align="justify">Recordemos que las facultades de la Comisión  Permanente se encuentran contempladas en el artículo 78 de nuestra Carta Magna  y, desafortunadamente, este órgano del Congreso carece de atribuciones para  autorizar al Ejecutivo Federal la salida de tropas fuera del territorio  nacional, por ende, debemos garantizar la salida de tropas nacionales fuera de  los límites del país en periodo de recesos.</p>
+<p align="justify">Lo anterior con el propósito de que el Estado  mexicano, a través de nuestras Fuerzas Armadas, continúen asistiendo a eventos  cívicos, deportivos, socioculturales, adiestramiento y musicales, así como en  operación de ayuda humanitaria para seguir fortaleciendo los lazos de amistad  con las distintas naciones, lo importante es darle la facultad a la Comisión  Permanente en los momentos en que nosotros nos encontremos de receso para que  obtengan esa atribución y no se tenga que convocar a una extraordinaria. </p>
+<p align="justify">Por su atención, muchas gracias.</p>
+<p align="justify"> <strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Ini_Morena_Sen_Cervantes_Art_78_CPEUM.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>La Presidenta Senadora Alejandra Noemí Reynoso  Sánchez: </strong>Gracias,  Senador. Se turna a las Comisiones Unidas de Puntos Constitucionales; y de  Estudios Legislativos, Segunda. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109043'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109044'></a><p align="justify"><strong>MESA DIRECTIVA</strong></p>
+<p align="justify">Les  informo que la Comisión de Desarrollo Urbano, Ordenamiento Territorial y  Vivienda, coordinadora del dictamen con proyecto de Decreto por el que se  reforman y adicionan diversas disposiciones de la Ley General de Asentamientos  Humanos, Ordenamiento Territorial y Desarrollo Urbano, en materia de movilidad  y seguridad vial, solicitó que dicho proyecto se devolviera a las comisiones,  este asunto tuvo su primera lectura el pasado 22 de marzo, la Mesa Directiva  acordó favorablemente la petición de la comisión coordinadora y autorizó su  devolución a comisiones. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109044'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109045'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR  EL QUE SE MODIFICA EL ARTÍCULO 96 DE LA LEY DEL IMPUESTO SOBRE LA RENTA </strong></p>
+<p align="justify"><strong>(Presentada por los  Senadores Carlos Humberto Aceves del Olmo y Manuel Añorve Baños, del grupo  parlamentario del PRI)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Inic_PRI_Sen_Aceves_y_Anorve_art_96_prestaciones_laborales.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109045'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109046'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR  EL QUE SE REFORMAN LOS ARTÍCULOS 2O., 3O., Y 604; Y SE ADICIONA UNA FRACCIÓN VI  AL ARTÍCULO 3o. TER DE LA LEY FEDERAL DEL TRABAJO </strong></p>
+<p align="justify"><strong>(Presentada por los  Senadores Geovanna Bañuelos, Cora Cecilia Pinedo Alonso y Joel Padilla Peña,  del grupo parlamentario del PT)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Inic_PT_diversos_senadores_art_2_3_604_3ter_LFT.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109046'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109047'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR  EL QUE SE CREA EL RECONOCIMIENTO &ldquo;AMELIO ROBLES ÁVILA&rdquo; Y SE ADICIONA UNA  FRACCIÓN VIII AL NUMERAL 1 DEL ARTÍCULO 56 Y UN ARTÍCULO 56 QUINTUS AL  REGLAMENTO DEL SENADO DE LA REPÚBLICA </strong></p>
+<p align="justify"><strong>(Presentada por los  Senadores Geovanna Bañuelos, Cora Cecilia Pinedo Alonso y Joel Padilla de la  Peña, del grupo parlamentario del PT)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Inic_PT_diversos_senadores_art_56quintus_RSR.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109047'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109048'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR  EL QUE SE DECLARA EL 31 DE MARZO DE CADA AÑO, COMO EL DÍA NACIONAL DE LA  VISIBILIZACIÓN Y LUCHA DE LOS DERECHOS DE LAS PERSONAS TRANS </strong></p>
+<p align="justify"><strong>(Presentada por los Senadores  Geovanna Bañuelos, Cora Cecilia Pinedo Alonso y Joel Padilla de la Peña, del  grupo parlamentario del PT) </strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Inic_PT_diversos_senadores_personas_trans.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109048'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109049'></a><p align="justify"><strong>INICIATIVA </strong><strong>CON PROYECTO DE  DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 59 DE LA LEY DE MIGRACIÓN </strong></p>
+<p align="justify"><strong>(Presentada por el  Senador Juan Antonio Martín del Campo Martín del Campo, del grupo parlamentario  del PAN)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Inic_PAN_Sen_Martin_del_Campo_art_59_migracion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109049'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109050'></a><p align="justify"><strong>INICIATIVA</strong> <strong>CON PROYECTO DE DECRETO POR EL QUE SE  REFORMAN Y ADICIONAN DIVERSAS DISPOSICIONES DE LA LEY DE AVIACIÓN CIVIL Y DE LA  LEY DE PROTECCIÓN DEL ESPACIO AÉREO MEXICANO </strong><strong> </strong></p>
+<p align="justify"><strong>(Presentada por el  Senador Sergio Pérez Flores, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Ini_Morena_Sen_Perez_Ref_Adiciona_Div_Disp_Ley_Proteccion_Espacio_Aereo_Drones.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109050'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109051'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR EL QUE  SE REFORMA EL PÁRRAFO CUARTO DEL ARTÍCULO 26 DE LA LEY DE ADQUISICIONES,  ARRENDAMIENTOS Y SERVICIOS DEL SECTOR PÚBLICO</strong></p>
+<p align="justify"><strong>(Presentada por el Senador Manuel Velasco  Coello, del grupo parlamentario del PVEM)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/65/gaceta_del_senado/documento/133556"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109051'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109052'></a><p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR EL QUE  SE REFORMAN LOS ARTÍCULOS 110 Y 112 DE LA LEY FEDERAL DEL TRABAJO</strong><strong> </strong></p>
+<p align="justify"><strong>(Presentada  por la Senadora María Guadalupe Covarrubias Cervantes, del grupo parlamentario  del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Ini_Morena_Sen_Covarrubias_Ref_Art110_112_Ley_Fdral_del_Trabajo.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109052'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109053'></a><p align="justify"><strong>INICIATIVA  CON PROYECTO DE DECRETO POR EL QUE SE ABROGA LA LEY GENERAL DE POBLACIÓN,  PUBLICADA EN EL DIARIO OFICIAL DE LA FEDERACIÓN EL 7 DE ENERO DE 1974 Y SE  EXPIDE LA LEY GENERAL DE POBLACIÓN</strong></p>
+<p align="justify"><strong>(Presentada  por la Senadora Olga María del Carmen Sánchez Cordero Dávila, del grupo  parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Ini_Morena_Sen_Olga_Expide_Ley_Gral_de_Poblacion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109053'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109054'></a><p align="justify"><strong>INICIATIVA  CON PROYECTO DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 111 DE LA LEY DE  MIGRACIÓN</strong></p>
+<p align="justify"><strong>(Presentada  por el Senador Miguel Ángel Mancera Espinosa, del grupo parlamentario del PRD)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/Inic_PRD_MAM_art-111_Ley_Migracion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109054'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109055'></a><p align="justify"><strong>PROPOSICIONES CON PUNTO  DE ACUERDO</strong></p>
+<p align="justify">Del Senador Ángel García Yáñez, del  grupo parlamentario del PRI, con punto de Acuerdo por lo que se exhorta al  gobierno federal a través de la Secretaría de Infraestructura, Comunicaciones y  Transportes, Caminos y Puentes Federales, Fondo Nacional de Infraestructura y  al gobierno del estado de Morelos, para que, en coadyuvancia, garanticen las  condiciones óptimas de infraestructura y seguridad en los tramos carreteros  concesionados del estado de Morelos. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_PRI_Sen_AGY_alza_tarifa_peaje.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109055'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109056'></a><p align="justify">De la Senadora Sasil de León Villard,  del grupo parlamentario del PES, con punto de Acuerdo por el que se exhorta a  la Secretaría de Infraestructura, Comunicaciones y Transportes y a la CAPUFE a  solicitar a la Concesionaria de Autopistas del Sureste, S.A. de C.V., filial de  la empresa española Aldesa, a que revise y reconsidere los aumentos de tarifas  de peaje en las autopistas de Chiapas, derivado de los recientes incrementos  desmedidos que repercuten en la economía de las familias chiapanecas,  particularmente en el tramo Tuxtla-San Cristóbal de las Casas. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_PES_Sen_Sasil_exhorto_sct_caseta_tuxtla.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109056'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109057'></a><p align="justify">De la Senadora Verónica Martínez García,  del grupo parlamentario del PRI, con punto de Acuerdo por el que el que exhorta  al gobierno federal y a los gobiernos de los estados, a incluir dentro de sus  planes de trabajo, la promoción de la electromovilidad y la construcción de  electrolineras, con el fin de contar con la infraestructura necesaria para  agilizar la transición de vehículos de combustión interna a vehículos  eléctricos en beneficio del medio ambiente. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_PRI_Sen_VMG_infraestructura_autos_electricos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109057'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109058'></a><p align="justify">Del Senador Ángel García Yáñez, del  grupo parlamentario del PRI, con punto de Acuerdo por el que se exhorta a la  Secretaría de Medio Ambiente y Recursos Naturales para que, a través de la  Procuraduría Federal de Protección al Ambiente prevenga, inspeccione, vigile e  investigue actos tendientes a la tala forestal en Tetela del Monte, Cuernavaca,  Morelos, además de clausurar actos de explotación de recursos forestales y, en  su caso, dar impulso procesal para que se sancionen actos, hechos u omisiones  que constituyan violaciones a la legislación administrativa o penal aplicable,  además de dar impulso para que los responsables reparen daños, de conformidad  con la legislación civil aplicable. Así mismo, se exhorta a la Guardia Nacional  para que coadyuve con otras autoridades y vigile constantemente la zona Tetela  del Monte, Cuernavaca, Morelos, realizando rondines, con la finalidad de evitar  la tala forestal y garantizar la protección del medio ambiente. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_PRI_Sen_AGY_tala_forestal_tetela_del_monte.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109058'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109059'></a><p align="justify">De la Senadora Verónica Martínez García,  del grupo parlamentario del PRI, con punto de Acuerdo por el que se exhorta a  la Secretaría de Agricultura y Desarrollo Rural a implementar un programa  urgente de apoyo al sector ganadero de la República Mexicana, dadas las  condiciones de sequía que han venido padeciendo en el país en los últimos años  y que han ocasionado graves pérdidas a todos los ganaderos. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_PRI_Sen_VMG_presupuesto_apoyo_al_sector_ganadero.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109059'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109060'></a><p align="justify">Del Senador Manuel Añorve Baños, del  grupo parlamentario del PRI, con punto de Acuerdo por el que se solicita la  comparecencia de la titular de Caminos y Puentes Federales de Ingresos y  Servicios Conexos, para que escuche los llamados de las y los guerrerenses y  que, de una vez por todas, se elimine el aumento al peaje de la autopista del  Sol, México-Acapulco, programado para este 2023. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_PRI_Sen.Aniorve_aumento_de_casetas.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109060'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109061'></a><p align="justify">De los Senadores Geovanna Bañuelos, Cora  Cecilia Pinedo Alonso y Joel Padilla Peña, del grupo parlamentario del PT, con  punto de Acuerdo por el que se exhorta a la Fiscalía General de la República,  así como a las Fiscalías de las 32 entidades federativas, a redoblar esfuerzos  encaminados a la pronta procuración de justicia en los casos de asesinatos,  crímenes de odio y lesiones de las que son víctimas las personas de la  comunidad trans, ello con perspectiva de identidad y expresión de género. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_GPPT_derechos_de_las_personas_de_la_comunidad_trans.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109061'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109062'></a><p align="justify">Del Senador Ángel García Yáñez, del  grupo parlamentario del PRI, con punto de Acuerdo por el que se exhorta al  presidente municipal de Tepoztlán, Morelos a revisar y tomar las acciones  pertinentes que garanticen la seguridad e integridad de las personas en las  fiestas y/o carnavales, así como las acciones necesarias que permitan continuar  con la designación de Pueblo Mágico que tiene ese municipio. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_PRI_Sen_AGY_tepoztlan.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109062'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109063'></a><p align="justify">Del Senador Juan Antonio Martín del  Campo Martín del Campo, del grupo parlamentario del PAN, con punto de Acuerdo  por el que se exhorta a la Secretaría de Educación Pública y a la Secretaría de  Hacienda y Crédito Público a que informen las razones de la eliminación de los  recursos asignados en 2022 al Programa de Becas Elisa Acuña para estudiantes de  bajos recursos a nivel superior y la no asignación de dichos recursos para el  periodo fiscal 2023. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_PAN_Sen_Martin_del_Campo_becas.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109063'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109064'></a><p align="justify">De la Senadora Lucy Meza, del grupo  parlamentario del Partido Morena, con punto de Acuerdo por el que se exhorta a  la Fiscalía Especializada en combate a la corrupción del estado de Morelos a  remitir un ineforme pormenorizado de los avances respecto a las denuncias  presentadas en contra del ex gobernador de Morelos, Graco Luis Ramírez Garrido  Abreu, por los probables hechos de corrupción cometidos. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_Morena_Sen_Meza_Informe_ex_gobernador_Morelos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109064'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109065'></a><p align="justify">Del Senador Rogelio Israel Zamora  Guzmán, del grupo parlamentario del PVEM, con punto de Acuerdo por el que se  exhorta al gobierno de la Ciudad de México, para que, en coadyuvancia con el  Sistema de Aguas de la Ciudad de México, fortalezcan acciones para prevenir e  inhibir el desabasto de agua en las 16 demarcaciones territoriales. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_PVEM_Sen_Zamora_Prevenir_Desabasto_de_Agua_Act.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109065'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109066'></a><p align="justify">De la Senadora Nancy de la Sierra  Arámburo, del Grupo Plural, con punto de Acuerdo por el que se exhorta a la  Secretaría de Agricultura y Desarrollo Rural, a la Secretaría de Medio Ambiente  y Recursos Naturales, a la Secretaría de Marina y a la Secretaría de Relaciones  Exteriores para que, fortalezcan, implementen y den a conocer públicamente y a  la brevedad un plan de acción para el combate ilícito de totoaba que incluye  metas y objetivos calendarizados a corto, mediano y largo plazo, autoridades  responsables, indicadores de progreso y métodos para la evaluación y  seguimiento de dicho plan. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_SG_Sen_Aramburo_Plan_de_Accion_para_Combate_Ilicito_de_Totoaba.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109066'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109067'></a><p align="justify">De la Senadora Bertha Alicia Caraveo  Camarena, del grupo parlamentario del Partido Morena, con punto de Acuerdo por  el que se exhorta a la Comisión Nacional de Cultura Física y Deporte a que  nomine al jugador profesional Randy Arozarena González al Premio Nacional del  Deporte, por su destacado desempeño en el beisbol mexicano e internacional. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_Morena_Sen_Caraveo_Nomine_a_Randy_Arozarena_Premio_Nacional_del_Deporte.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109067'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109068'></a><p align="justify">Del  Senador Rogelio Israel Zamora Guzmán, del grupo parlamentario del PVEM, con  punto de Acuerdo por el que se exhorta a diversas Secretarías de gobierno  federal y autoridades de protección civil, para que, refuercen e implementen  programas, a fin de hacer frente a las altas temperaturas. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_PVEM_Sen_Zamora_altas_temperaturas.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109068'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109069'></a><p align="justify">De la Senadora Ana Lilia Rivera Rivera,  del grupo parlamentario del Partido Morena, con punto de Acuerdo por el que el  Senado de la República se pronuncia en favor de la reivindicación y el  reconocimiento nacional de la &ldquo;diáspora tlaxcalteca&ldquo; episodio de la historia de  México iniciado el 6 de junio de 1591, y cuyo papel fue fundamental para el  desarrollo económico y cultural de la región norte del país, así como para la  conformación de la nación mexicana. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_Morena_Sen_Rivera_Pronunciamiento_Diaspora_Tlaxcalteca.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109069'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109070'></a><p align="justify">Del Senador Rogelio Israel Zamora  Guzmán, del grupo parlamentario del PVEM, con punto de Acuerdo por que se  exhorta al gobierno de la Ciudad de México y al gobierno del Estado de México a  fortalecer los mecanismos de atención y seguimiento a solicitudes, quejas o  denuncias ciudadanas, relacionadas a la falta de agua de la Ciudad de México en  la próxima temporada vacacional de semana santa, con la finalidad de garantizar  este vital líquido en las actividades básicas de las Colonias con mayor  afectación, debido al déficit de agua por el sistema Cutzamala. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_PVEM_Sen.Zamora_agua_cdmx_edomex.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109070'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109071'></a><p align="justify">De la Senadora Verónica Noemi Camino  Farjat, del grupo parlamentario del Partido Morena, con punto de Acuerdo por el  que se exhorta a los titulares del Poder Ejecutivo del estado de Yucatán, del  Instituto de Infraestructura Carretera de Yucatán y del Ayuntamiento de  Progreso, Yucatán, a informar públicamente sobre el proyecto &ldquo;viaducto  elevado&ldquo;, en lo que respecta a la concesión otorgada, todas las licencias y  permisos municipales, estatales y federales actualizados y los Acuerdos de  reparación a las familias afectadas; y a realizar la consulta ciudadana  correspondiente. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_Morena_Sen_Camino_Proyecto_Viaducto_Elevado_Yucatan.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109071'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109072'></a><p align="justify">De las Senadoras y Senadores integrantes  del grupo parlamentario del PVEM, con punto de Acuerdo por el que se exhorta a  la SEMARNAT y a la Secretaría de Economía a informar sobre las implicaciones  ambientales y económicas por la suspensión de todo el intercambio comercial de  ejemplares de especies incluidas en los apéndices de la cites. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_PVEM_especies_incluidas_cites.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109072'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109073'></a><p align="justify">Del Senador Rafael Espino de la Peña,  del grupo parlamentario del Partido Morena, con punto de Acuerdo por el que se  exhorta a la Secretaría de Relaciones Exteriores para que, en conjunto con  otras dependencias de la Administración Pública Federal, Cámaras empresariales,  de trabajadores, Congreso de la Unión, a que fortalezcan las acciones  necesarias para garantizar un mejor futuro para México, aprovechando el  fenómeno de relocalización de empresas. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_Morena_Sen_Espino_Fenomeno_Relocalizacion_Empresas.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109073'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109074'></a><p align="justify">De la Senadora María Antonia Cárdenas  Mariscal, del grupo parlamentario del Partido Morena, con punto de Acuerdo por  el que se exhorta al Congreso del estado de Jalisco, para que, analice, discuta  y, en su caso, apruebe el dictamen de la Comisión de Igualdad Sustantiva y de  Género que reforma y adiciona diversos artículos de la Ley de Acceso de las  Mujeres a una Vida Libre de Violencia, Código Penal, Código Civil, Ley de los  Derechos de las Niñas, Niños y Adolescentes y la Ley para Prevenir y Atender la  Violencia Intrafamiliar, en materia de violencia viaria. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_Morena_Sen_Cardenas_Exhorto_Congreso_Jalisco_Dictamen_Violencia_Vicaria.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109074'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109075'></a><p align="justify">De  la Senadora Cora Cecilia Pinedo Alonso, del grupo parlamentario del PT, con  punto de Acuerdo por el que se exhorta a la Secretaría de Seguridad Ciudadana  en coordinación con la Secretaría de Educación Pública y la Secretaría de Salud  a impulsar campañas de sensibilización para prevenir los retos virales y la  prevención de la venta ilegal de medicamentos controlados. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_PT_Sen_Cora_Prevenir_Retos_Virales_y_Venta_Ilegal_Medicamentos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109075'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109076'></a><p align="justify">De la Senadora Gloria Sánchez Hernández,  del grupo parlamentario del Partido Morena, con punto de Acuerdo por el que se  exhorta a la Secretaría de Infraestructura, Comunicaciones y Transportes a  llevar a cabo una revisión exhaustiva sobre los criterios para autorizar las  tarifas de la autopista Perote-Banderilla y Libramiento de Xalapa, en el estado  de Veracruz, construidas, operadas y cobradas por las empresas COPEXA  (Concesionaria Autopista Perote Xalapa, S.A. de C.V.), y establezca las medidas  que resulten necesarias para ajustar y reducir las tarifas al monto realmente  justo. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-03-30-2/assets/documentos/PA_Morena_Sen_Gloria_tarifas_autopista_Perote.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Continúe  la Secretaría con los asuntos de la agenda. </p>
+<p align="justify"><strong>La Secretaria Senadora Alejandra Lagunes Soto Ruiz: </strong>Se han agotado los asuntos de la  agenda. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109076'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109077'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Alejandra Noemí Reynoso  Sánchez: </strong>Se cita a la  siguiente sesión ordinaria el miércoles 12 de abril, a las 11:00 horas. </p>
+<p align="justify">Les  recuerdo que ese día celebraremos sesiones matutina y vespertina. </p>
+<p align="justify">Se  levanta la sesión. </p>
+<p align="center">(Se levantó la sesión a  las 18:17 horas) </p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109077'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

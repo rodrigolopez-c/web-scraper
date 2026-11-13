@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 16</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Mónica Fernández Balboa</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 10 de Octubre de 2019</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/2/PPO/PDF-WEB/PPO_No._16_10_OCTUBRE_2019_SOLEMNE.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='86402'></a><p align="center"><strong>PRESIDENCIA DE LA SENADORA</strong><br>
+  <strong>MÓNICA FERNÁNDEZ BALBOA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>(11:48 horas) Con el quórum de nuestra sesión ordinaria, y con  fundamento en lo dispuesto por el artículo 56, fracción III del Reglamento del  Senado, y en el Acuerdo de la Mesa Directiva aprobado en la sesión pasada para  normar esta sesión solemne, recibiremos la visita de las y los atletas  mexicanos que participaron en los pasados XVIII Juegos Panamericanos y en los VI  Juegos Parapanamericanos, celebrados en la ciudad de Lima, Perú. <br>
+  Se abre la sesión solemne. </p>
+<p align="justify">En consecuencia, se designa a las Senadoras y a los Senadores Martha  Cecilia Márquez Alvarado, Verónica Martínez García, Samuel Alejandro García Sepúlveda,  Geovanna Bañuelos De la Torre, Katya Elizabeth Ávila Vázquez, Miguel Ángel  Mancera Espinosa, Citlalli Hernández Mora, Gricelda Valencia de la Mora,  Guadalupe Covarrubias Cervantes y Oscar   Eduardo Ramírez Aguilar, para que reciban a la ciudadana Ana Gabriela  Guevara Espinoza, Directora de la Comisión Nacional de Cultura Física y  Deporte, y a nuestras invitadas y nuestros invitados. </p>
+<p align="justify">Solicito a las Senadoras y a los Senadores cumplir con su encargo.</p>
+<p align="center">(La comisión cumple)</p>
+<p align="justify">En tanto, declaramos un receso mínimo. </p>
+<p align="center">(Receso)</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Se reanuda sesión solemne. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a86402'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='86403'></a><p align="justify"><strong>RECONOCIMIENTO A LA REPRESENTACIÓN DE LAS Y LOS  ATLETAS MEXICANOS QUE PARTICIPARON EN LOS XVIII JUEGOS PANAMERICANOS Y EN LOS  VI JUEGOS PARAPANAMERICANOS, AMBOS CELEBRADOS EN LA CIUDAD DE LIMA, PERÚ EN EL  AÑO 2019</strong></p>
+<p align="justify">La Cámara de Senadores del Honorable Congreso de la Unión de los Estados  Unidos Mexicanos expresa la más cordial bienvenida a la representación de las y  los atletas mexicanos que participaron en los XVIII Juegos Panamericanos y en  los VI Juegos Parapanamericanos, celebrados en la ciudad de Lima, Perú. </p>
+<p align="justify">¡Sean todos bienvenidos!</p>
+<p align="justify">Damos también la bienvenida a la ciudadana Ana Gabriela Guevara  Espinoza, Directora de la Comisión Nacional de Cultura Física y Deporte, que  también ha sido parte integrante del Senado de la República en las LXII y LXIII  Legislaturas, y a nuestras invitadas y a nuestros invitados. </p>
+<p align="justify">¡Sean ustedes bienvenidos al Senado de la República!</p>
+<p align="justify">Distinguidas invitadas e invitados:</p>
+<p align="justify">Están presentes en el presídium de esta sesión solemne el Senador  Salomón Jara Cruz, Vicepresidente de la Mesa Directiva. </p>
+<p align="justify">La Senadora María Guadalupe Murguía Gutiérrez, Vicepresidenta de la Mesa  Directiva. </p>
+<p align="justify">El Senador Jorge Carlos Ramírez Marín, Vicepresidente de esta Mesa  Directiva. </p>
+<p align="justify">Así como las Senadoras Nancy De la Sierra Arámburo, Katya Elizabeth  Ávila Vázquez y el Senador Primo Dothé Mata, quienes son Secretarios de este  órgano de gobierno. </p>
+<p align="justify">Asimismo nos acompaña la Senadora Lucy Meza, Presidenta de la Comisión  de Juventud y Deporte de esta Cámara de Senadores. </p>
+<p align="justify">Esta sesión tiene como objeto hacer un merecido reconocimiento a la  Delegación Mexicana que participó en los XVIII Juegos Panamericanos y en los que  obtuvieron 136 medallas. <br>
+  <br>
+  Y en los VI Juegos Parapanamericanos en los que se obtuvieron 158 medallas. </p>
+<p align="justify">Nos ponemos de pie en un reconocimiento que nos llena de mucho orgullo a  este Senado de la República. </p>
+<p align="center">(Todos de pie brindan un minuto de aplausos)</p>
+<p align="justify">En ambos casos, estos resultados nos ubicaron en el tercer puesto del  medallero general, lo que presenta un referente emblemático de éxito y de  ejemplo para la juventud mexicana.</p>
+<p align="justify">La sesión solemne se acordó a propuesta de la Junta de Coordinación  Política y con el aval de este Pleno, y es que expresamos un merecido y justo  reconocimiento a las y los atletas participantes. </p>
+<p align="justify">Por razones de espacio están aquí al frente sólo una parte de ellas y de  ellos, otras y otros atletas nos acompañan en el palco de honor, por lo que  desde este presídium les enviamos un abrazo también y nuestras felicitaciones. </p>
+<p align="justify">En acto seguido, solicito respetuosamente a la Vicepresidenta y a los Vicepresidentes,  a las Secretarias y al Secretario de la Mesa Directiva, entregar los reconocimientos  a las y los representantes de los atletas que obtuvieron medalla en los juegos  Panamericanos y Parapanamericanos celebrados en Lima, Perú. </p>
+<p align="justify">Les voy a rogar que bajen. </p>
+<p align="justify">La Senadora María Guadalupe Murguía Gutiérrez, entregará los reconocimientos  a Ana Victoria Galindo Larios y a David Álvarez Murillo. </p>
+<p align="justify">El Senador Salomón Jara Cruz, entregará los reconocimientos a Alán  Manuel Zavala Alvarado y a Cynthia de Anda Bautista. </p>
+<p align="justify">El Senador Jorge Carlos Ramírez Marín, entregará los reconocimientos a  Lisbeth Yareli Salazar Vázquez y a Duilio Jared Carrillo González.</p>
+<p align="justify">La Senadora Nancy De la Sierra Arámburo, entregará los reconocimientos a  Jesús Hernández Hernández, a Rosa María Guerrero Cazares, a Amalia Pérez  Vázquez y a Diego López Díaz. </p>
+<p align="justify">La Senadora Katya Elizabeth Ávila Vázquez, entregará los reconocimientos  a Daniela Velasco Maldonado y a Claudia Romero Rodríguez.</p>
+<p align="justify">Y el Senador Primo Dothé Mata, entregará los reconocimientos a los  atletas Aida Nabila Román Arroyo, Joana Betzabé Jiménez García y Ángel David  Alvarado Santín. </p>
+<p align="justify">Quiero decir que hay antecedentes, ya tenemos una gran atleta mexicana  que pasó por el Senado de la República, así que como Ana Gabriela.</p>
+<p align="justify">Y en este acto, hago entrega de manera simbólica a la Senadora Lucy  Meza, Presidenta de la Comisión de Juventud y Deporte del Senado de la  República, de los reconocimientos de las y los atletas medallistas, que por  cuestión de espacio no nos pudieron acompañar en el presídium, para rogarle que  por su conducto y de la propia comisión y en coordinación con la Comisionada  Ana Gabriela Guevara, nos haga el favor de entregarlo a todas y a todos los  atletas.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a86403'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='86404'></a><p align="justify">Conforme el Acuerdo aprobado, se concede el uso de la palabra,  precisamente, a la Senadora Lucy Meza, Presidenta de la Comisión de Juventud y  Deporte. </p>
+<p align="justify"><strong>INTERVENCIONES</strong></p>
+<p align="justify"><strong>La Senadora Lucy Meza: </strong>Con el permiso de  la Mesa Directiva. Buenos días, compañeras y compañeros Senadores:</p>
+<p align="justify">Doy la bienvenida en este honorable recinto del Senado de la República a  las y los deportistas y atletas mexicanos, quienes representan a las  delegaciones que compitieron en los Juegos Panamericanos y Parapanamericanos de  Lima, Perú.</p>
+<p align="justify">Sean todos y todas ustedes bienvenidos, al igual que todas sus familias  que los acompañan este día. </p>
+<p align="justify">Hoy es un día importante para todos nosotros por dos hechos históricos  que se conjuntan este día. </p>
+<p align="justify">Primero, por la gran actuación deportiva que tuvieron nuestros atletas  en Lima, Perú, y segundo, porque es la primera vez que el Senado de la  República reconoce los logros alcanzados por todos ustedes en las competencias  Panamericanas y Parapanamericanos. </p>
+<p align="justify">A nuestros 728 deportistas, quiero decirles que nos orgullecen como  mexicanos, y por ello, la decisión de este Senado de la República de  reconocerles todo su esfuerzo físico, su empeño deportivo y sus logros alcanzados  como atletas.</p>
+<p align="justify">Ustedes son el ejemplo para los nuevos talentos, ustedes son un orgullo  mexicano. </p>
+<p align="justify">A nombre de mis compañeras Senadoras y Senadores de la Comisión de  Juventud y Deporte, agradezco a los integrantes de la Junta de Coordinación  Política y a la Mesa Directiva, que permitieron la realización de esta sesión  solemne con el objetivo de que este Senado reconozca y felicite a todos los  medallistas Panamericanos y Parapanamericanos, pero también para que los  culmine a seguir con su preparación deportiva, a continuar con la cosecha de más  triunfos y seguir poniendo en alto el nombre de México. </p>
+<p align="justify">A pesar de los  problemas económicos y deportivos que enfrentaron, ustedes lograron vencer los  obstáculos y alcanzar la gloria en lo individual y en lo colectivo. Contra todo  pronóstico, hicieron historia al alcanzar un total de 294 medallas en ambas  competencias. </p>
+<p align="justify">Gracias a su empeño  y esfuerzo lograron colocar a México en los tres primeros lugares.</p>
+<p align="justify">Este reconocimiento  que hoy hace el Senado de la República por primera vez en la historia debe ser  un aliciente para todos los atletas mexicanos que compiten a nivel nacional y a  nivel internacional, y no soslayo a nuestros deportistas que pertenecen a las  Fuerzas Armadas de nuestro país, y me refiero al Ejército Mexicano y a la  Marina, quienes son grandes instituciones y llevaron lo mejor de sí.</p>
+<p align="justify">La Delegación  Mexicana que compitió en los Juegos Panamericanos de Lima, Perú, tuvo una  actuación histórica al obtener el mayor número de medallas fuera de nuestro país.  Fueron 37 medallas de oro, 36 de plata y 63 de bronce las que lograron  alcanzar, y permitieron a México ubicarse en el tercer lugar de los  Panamericanos 2019.</p>
+<p align="justify">Por ello, pido a  mis compañeros y compañeras Senadoras ponernos de pie y darles un fuerte aplauso  a nuestros deportistas.</p>
+<p align="center">(Todos de pie  brindan aplausos)</p>
+<p align="justify">Como Presidenta de  la Comisión de Juventud y Deporte, me siento muy contenta por los resultados  alcanzados en esta competencia, porque quiero decirles que varios atletas que  hoy nos acompañan en este recinto lograron romper marcas internacionales en  distintas disciplinas deportivas.<br>
+  <br>
+  Mención especial  merecen los deportistas de gimnasia rítmica, que por primera vez en la historia  de México lograron medallas de oro y plata, algo totalmente insospechable pero  no imposible para nuestros atletas mexicanos.</p>
+<p align="justify">Y otro logro más  fue el conseguir once plazas en la justa deportiva de Tokio 2020,  que es la competencia internacional que sigue  y en donde los deportistas mexicanos tendrán que volver a hacer historia.</p>
+<p align="justify">La Delegación  Mexicana que acudió a los juegos Parapanamericanos no fue la excepción, también  lograron la actuación histórica con la tabla del medallero al obtener 55  medallas de oro, 58 de plata y 45 de bronce, con lo que también ubicaron a México  en el tercer lugar.</p>
+<p align="justify">Además se  registraron datos históricos en las disciplinas de natación, en la cual la  delegación nacional terminó en segundo sitio del medallero, con 27 preseas de  oro, 8 más que en Toronto 2015 y la mitad de la cosecha dorada del país.</p>
+<p align="justify">En el atletismo se  lograron 50 preseas, de las cuales 16 fueron de oro, 16 de plata, 18 de bronce,  para terminar en el tercer puesto general de la disciplina.</p>
+<p align="justify">Estos triunfos son  de ustedes, de sus entrenadores y de sus familias, que los apoyaron incansablemente.  Y nosotros estamos orgullosos de sus logros y sus triunfos, que enaltecen y  ponen en alto el nombre de México.</p>
+<p align="justify">Ahora a prepararse  para la competencia de Tokio 2020 y después para los Juegos Panamericanos y  Parapanamericanos de Santiago de Chile 2023.</p>
+<p align="justify">Aquí quiero  reconocer la conducción y el trabajo desarrollado de otra notable deportista,  Ana Gabriela Guevara, Directora General de la Comisión Nacional del Deporte,  quien ha mostrado un buen desempeño en la tarea que le fue encomendada por el Presidente  Andrés Manuel López Obrador.</p>
+<p align="justify">Jóvenes deportistas,  como Presidenta de la Comisión de Juventud y Deporte les digo que vamos a  pugnar porque no haya recortes presupuestales para el deporte mexicano, por el  contrario, vamos a acompañar a la directora de la Conade a gestionar más recursos  con los Diputados federales para que México coseche más triunfos.</p>
+<p align="justify">Es necesario y  urgente recuperar los espacios deportivos que existen en nuestro país y que  muchos de ellos están en mal estado o se encuentran bajo el control de la  delincuencia.</p>
+<p align="justify">Sabemos que no hay  recursos que alcancen, pero es imperativo garantizar espacios de desarrollo  para nuestros jóvenes y para nuestros atletas. México necesita más jóvenes  deportistas, que jóvenes que se vayan del lado equivocado.</p>
+<p align="justify">Estoy convencida  que el deporte es un generador de paz que requiere nuestro país. Por ello,  vamos a exigirle a las federaciones y confederaciones deportivas un mayor  compromiso hacia nuestros jóvenes, hacia los atletas y hacia los nuevos  talentos.</p>
+<p align="justify">Muchas felicidades  a todos nuestros medallistas y a sus familias por ese gran triunfo que tuvieron  en Lima, Perú.</p>
+<p align="justify">Muchísimas gracias  a todos, y mucho éxito.</p>
+<p align="justify"><strong>La Presidenta  Senadora Mónica Fernández Balboa: </strong>De conformidad con lo dispuesto en el Acuerdo,  se concederá el uso de la palabra a un representante de las y los atletas que  participaron en los XVIII Juegos Panamericanos.<br>
+  <br>
+  Ella es Ana  Victoria Galindo Larios, atleta en la disciplina de gimnasia rítmica, oriunda  de Tepic, Nayarit, y ganadora de una medalla de oro y una de plata en la Olimpiada  Nacional de Querétaro, en 2016; tres medallas de bronce en el Torneo  Panamericano Juvenil en Mérida, Yucatán, en 2016; tres medallas de plata en el  Torneo Panamericano Juvenil en Daytona, Florida, Estados Unidos, en 2017;  quinto lugar en la Copa del Mundo en España, en 2019, y dos medallas de oro y  una de plata en los Juegos Panamericanos de este año.</p>
+<p align="justify">Adelante, Ana Victoria</p>
+<p align="justify"><strong>La Ciudadana Ana  Victoria Galindo Larios:</strong> Con el permiso de la Presidencia.</p>
+<p align="justify">Senadoras y Senadores,  invitados especiales, compañeros atletas, agradezco la cortesía que me hicieran  para poder dirigir un mensaje ante esta tribuna.</p>
+<p align="justify">Igualmente  agradezco a la Mesa Directiva el tomar el tiempo de sus agendas y acordar la  realización de esta sesión solemne en reconocimiento a la histórica actuación  de la Delegación Mexicana en los Juegos Panamericanos de Lima 2019.</p>
+<p align="justify">Hay muchas  preguntas en torno a cómo se logra que un atleta llegue a lo más alto de un  pódium. Es recurrente que se minimice el tiempo, la dedicación, el esfuerzo individual  y el de todo un equipo multidisciplinario, horas de arduo trabajo y recursos públicos  que se invierten para lograr un ansiado metal. 12 horas diarias, 72 horas  semanales, 365 días de entrenamiento, lucha, sacrificios, ausencias en momentos  importantes de la vida de familia y amigos; 365 días de entrega, de dolor  físico y a veces de muchas frustraciones. </p>
+<p align="justify">Todo eso a cambio  de un minuto, de un segundo, de una rutina perfecta o de un salto exacto, un  parpadear que hace la diferencia en la vida de un deportista de alto  rendimiento, un instante en el que te conviertes en gloria nacional, un futuro  prometedor o en el que tienes que juntar las agallas para volver a intentarlo. </p>
+<p align="justify">Se dice fácil, se  menciona rápido, pero pasan muchos años para poder realizar nuestros sueños,  para poder escuchar el Himno Nacional Mexicano en voces de miles. Para poder  sentir el orgullo de ver ondeando nuestra bandera en lo más alto, pero cuando  se logra es una emoción indescriptible.</p>
+<p align="justify">Para esas emociones  nos preparamos física y mentalmente los deportistas de alto rendimiento; todos  esos sacrificios y entrega nuestra y de nuestro círculo de apoyo es lo que nos  alimenta día a día. La recompensa llega cuando logramos el ansiado metal,  cuando mejoramos una marca personal o cuando batimos un récord. </p>
+<p align="justify">Este año se celebraron  en la ciudad peruana de Lima los XVIII Juegos Panamericanos, en donde la Delegación  Mexicana conformada por 543 atletas de 38 diferentes disciplinas logramos el  tercer lugar en el medallero, por detrás de Estados Unidos y de Brasil. </p>
+<p align="justify">Este lugar lo ganamos  obteniendo 37 melladas de oro, 36 medallas de plata y 63 medallas de bronce,  resultado de esfuerzo en conjunto, mío y de mis compañeros, pero también el  sacrificio y dedicación de nuestros padres y familia, del profesionalismo y  visión de nuestros entrenadores y preparadores físicos, de la acción y atención  oportuna de nuestros doctores, nutriólogos y fisiatras; del constante apoyo  anímico brindado por nuestros psicólogos y, por supuesto, de la acción puntual  y estratégica de las autoridades e instituciones deportivas.</p>
+<p align="justify">Aquí hago el  puntual agradecimiento por la sensibilidad y acercamiento directo que hemos  tenido con nuestra Comisionada Ana Gabriela Guevara Espinoza. </p>
+<p align="justify">Gracias Ana, por  estar al pendiente siempre de nosotros. <br>
+  <br>
+  El deporte en  México es todo un engranaje que funciona y funciona bien y que hoy se convierte  en historia, ya que por primera vez México ocupa el tercer en el medallero sin  ser sede de esta justa deportiva Panamericana.</p>
+<p align="justify">De igual manera no  quiero dejar pasar la oportunidad que me brindan para mencionar otros ámbitos  en los que hicimos historia, ya que en la disciplina de gimnasia rítmica donde  yo me desarrollo desde hace más de 12 años, México se vuelve referente al obtener  oro en All-Around en conjunto, oro en la modalidad de pelota en conjunto y  plata en la modalidad de dos pares de clavas y tres aros en conjunto. </p>
+<p align="justify">Aunque reitero,  este no es un logro individual, es un trabajo en equipo de años y años de  entrenamiento y de apoyo multidisciplinario constante.  </p>
+<p align="justify">¿Hicimos historia?  Sí, dejamos un referente muy alto y todos los atletas que representamos a  México en esta edición Panamericana tenemos la responsabilidad de dar nuestro  máximo en las competencias y campeonatos venideros para lograr nuestros respectivos  boletos a Juegos Olímpicos.</p>
+<p align="justify">Por último, tomo un  minuto de este tiempo en la tribuna para agradecer a todo México, porque  gracias a ustedes estamos aquí, gracias a los que nos vieron en las  competencias, gracias a los que pagaron sus impuestos para que nosotros  pudiéramos tener nuestros apoyos y así dedicar todo nuestro tiempo y esfuerzo a  la consecución de estos logros. </p>
+<p align="justify">Gracias México,  este resultado es suyo, porque para todo deportista que acudimos esperando lograr  un sueño fue una experiencia única en la cual demostramos nuestra fuerza y  grandeza como mexicanos. </p>
+<p align="justify">Compañeros  deportistas, Senadoras y Senadores, los invito gratamente a que cada uno siga  haciendo su tarea en su respectivo ámbito de acción, para que este gran trabajo  en equipo, esta perfecta máquina siga funcionando y logremos darle a México más  y más resultados históricos. </p>
+<p align="justify">Recordemos que  siempre lo mejor de esta vida se logra haciendo equipo, porque nada que valga  la pena se logra con un solo esfuerzo individual.</p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa:</strong> Gracias, Ana  Victoria Galindo.</p>
+<p align="justify">Se concede el uso  de la palabra a un representante de las y los atletas que participaron en los  VI Juegos Parapanamericanos, él es Diego López Díaz, atleta en la disciplina de  natación y originario de la ciudad de Xalapa, Veracruz, ganador de 4 medallas  de oro en el Campeonato Mundial de Paranatación en Londres, Inglaterra, en este  año. </p>
+<p align="justify">Poseedor de dos  récords mundiales en las pruebas de 100 metros libres y 100 metros dorso y,  siete récords de América en las pruebas de 50, 100 y 200 metros libres; 50 y  100 metros dorso, 50 metros mariposa y 50 metros combinado individual y,  ganador de cinco medallas de oro en los juegos Parapanamericanos 2019.</p>
+<p align="justify"><strong>El Ciudadano Diego  López Díaz:</strong> Muy buenos días. Señoras y señores integrantes del Senado. </p>
+<p align="justify">Hoy quiero  expresar, en nombre de mis compañeros atletas, la emoción que me embarga al  estar en este recinto y ser portavoz del sentir de todos nosotros. <br>
+  <br>
+  Antes que nada,  queremos agradecer al señor Presidente de la República por el apoyo brindado en  nuestra asistencia a Lima, Perú, así como la disposición para el otorgamiento  de los diferentes estímulos que nos fueron entregados por nuestros logros,  inmediatamente después de nuestra llegada, algo totalmente inusual.</p>
+<p align="justify">Estamos seguros que  con el apoyo por parte del gobierno federal, en nuestros siguientes objetivos,  que son Tokio 2020, lograremos tener la preparación necesaria y suficiente, con  la finalidad de que nuestro Himno Nacional se escuche repetidamente en los  escenarios de Tokio.</p>
+<p align="justify">También estamos  convencidos que este reconocimiento que nos hace el Senado de la República es  un indicador de la importancia que representamos los deportistas paralímpicos  para el país. </p>
+<p align="justify">Queremos seguir  así, queremos cumplir con las expectativas del éxito que la sociedad ve en  nosotros, su ayuda, reconocimiento y confianza son  parte fundamental de nuestro plan trazado de vida. </p>
+<p align="justify">No nos olviden, permanezcan de nuestro lado, los necesitamos.</p>
+<p align="justify">También es importante hacer patente el trabajo de nuestros entrenadores,  sin ellos este éxito nunca se hubiera obtenido, por eso amablemente pedimos  analizar sus pretensiones y el otorgamiento de sus estímulos, somos leales a  ellos como a la patria, y ellos merecen ser reconocidos y estimulados de la  misma manera que nosotros.</p>
+<p align="justify">Ayudemos a lograr esa estabilidad que permite la justicia que ustedes y  México están definiendo, dándole a cada quien lo que se merece.</p>
+<p align="justify">Soy representante no sólo de los deportistas paralímpicos, represento a  los miles de personas de este país que viven con alguna discapacidad, a nombre  de todos ellos agradezco este reconocimiento por los logros alcanzados en esta  justa internacional que ha permitido sensibilizar a muchos mexicanos, como a  todos ustedes, de los alcances que tenemos, de las capacidades que podemos  desarrollar para salir adelante, pero también de las necesidades que tenemos  para sentirnos realmente incluidos en esta gran sociedad.</p>
+<p align="justify">Con el apoyo de ustedes, este gran país será más accesible en todos los  sentidos, en el transporte, en la educación, el empleo y el deporte.</p>
+<p align="justify">Quiero terminar con una frase que estoy seguro que será profunda y  contundente:</p>
+<p align="justify"><em>&ldquo;Nuestro país merece ser  mejor, y ustedes y el gobierno lo pueden hacer posible&rdquo;.</em></p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Gracias, Diego.</p>
+<p align="justify">Senadoras y Senadores. Estimadas y estimados atletas mexicanos. Amigas y  amigos:</p>
+<p align="justify">Llegamos al término de esta sesión solemne realizada en cumplimiento al Acuerdo  de la Mesa Directiva, en que hemos recibido a una representación de las y los  atletas mexicanos participantes en los XVIII Juegos Panamericanos y de los VI  Juegos Parapanamericanos.<br>
+  <br>
+  Los Juegos Panamericanos son el mayor evento deportivo internacional  multidisciplinario en el que compiten atletas de América, y nuestro país es una  de las naciones que ha participado de manera ininterrumpida desde su primera  edición.</p>
+<p align="justify">Celebramos su presencia y la de entrenadores y familiares que los  acompañan.</p>
+<p align="justify">También la asistencia de Ana Gabriela Guevara Espinoza, titular de la  Comisión Nacional de Cultura Física y Deporte.</p>
+<p align="justify">Reitero nuestro reconocimiento a la Comisión de Juventud y Deporte, a  través de la Senadora Lucy Meza, por su acertada coordinación para el buen desarrollo  de esta sesión.</p>
+<p align="justify">Ha sido muy grato recibirlos en esta sede, que es casa de todas las  mexicanas y los mexicanos.</p>
+<p align="justify">Fue igualmente emocionante verlos en acción y conquistar un medallero  muy merecido de volúmenes históricos.</p>
+<p align="justify">Por su actuación y sus resultados son un ejemplo y un orgullo para el  país.</p>
+<p align="justify">Ustedes se han convertido ya en una referencia para nuestras niñas y  para nuestros niños, para las y los jóvenes, para el futuro de México.</p>
+<p align="justify">En ustedes encontramos las cualidades a inculcar en nuevas generaciones  para hacer de nuestra nación en los próximos lustros un proyecto de éxito y  dinamismo.</p>
+<p align="justify">Sigan practicando el deporte y dándole buenos resultados a nuestro país.</p>
+<p align="justify">Esperamos todavía más de ustedes.</p>
+<p align="justify">Hoy sus triunfos quedarán inscritos en los libros de la historia  deportiva de nuestro México, han hecho sentir orgullosa a toda una nación por  haberse desempeñado de forma destacada en esta fiesta deportiva.</p>
+<p align="justify">En la búsqueda de la excelencia deportiva, competir juega un papel  primordial, ya que les obliga a esforzarse al máximo para sacar lo mejor de  ustedes mismos.</p>
+<p align="justify">La sana competitividad es la que nos conduce y orienta a esforzarnos, a  progresar, a buscar nuevas estrategias para superarnos, en ella se premia el  esfuerzo, el buen desempeño, y no tanto el resultado que a menudo es aleatorio.</p>
+<p align="justify">Sigan ustedes preparándose con tesón y conocimiento, y sigan por ese  camino de realizaciones personales y colectivas para que obtengan en todos sus  propósitos grandes triunfos, y siéntanse muy orgullosos, como nos sentimos nosotros  de lo que han logrado.</p>
+<p align="justify">Diego, no los olvidamos y queremos estar siempre cerca, no hay mejor  sentimiento que nos embargue que ver a los mexicanos triunfar en otras partes  del mundo.</p>
+<p align="justify">Ha sido un honor que tan destacadas deportistas y tan destacados deportistas  concedan la oportunidad a este Senado de la República de reconocerles su  desempeño y sus triunfos.</p>
+<p align="justify">¡Muchas felicidades!</p>
+<p align="justify">Y que Viva México.<br>
+  <br>
+  Nos atrevemos a  pedirles si nos conceden podernos tomar una foto con todas y todos.</p>
+<p align="justify">Mientras nos  acomodamos para la foto, antes de concluir, queremos saludar a Luis Molina, que  trabaja aquí y también es medallista olímpico, también en el Senado.</p>
+<p align="center">(Toma de fotos con  los atletas)</p>
+<p align="justify">A las atletas y los atletas que se encuentran  ubicados en el palco, esta Mesa Directiva les está haciendo entrega de un  arreglo floral, como muestra de aprecio y reconocimiento a su destacada  participación en las justas deportivas. </p>
+<p align="justify">Y también en unos momentos se va a proceder a la  fotografía, ya con todos juntos. </p>
+<p align="justify">¡Sean bienvenidos!</p>
+<p align="justify">Y nuestro reconocimiento y alegría porque están con  nosotros este día. </p>
+<p align="justify">Agradecemos la presencia de los invitados que nos  han acompañado en esta sesión solemne y, del mismo modo, agradecemos la  presencia de la Directora de la Comisión Nacional de Cultura Física y Deporte,  la ciudadana Ana Gabriela Guevara Espinoza.</p>
+<p align="justify">Damos por finalizada la sesión solemne. </p>
+<p align="justify">Y se solicita a las Senadoras y a los Senadores  permanecer en sus lugares para continuar con la sesión ordinaria de este día. </p>
+<p align="center">(Se levantó la  sesión a las 12:33 horas) </p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a86404'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 16</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Alejandro Armenta Mier</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 11 de Octubre de 2022</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/2/PPO/PDF-WEB/PPO_No16_11-OCTUBRE-2022_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106531'></a><p align="center"><strong>PRESIDE EL SENADOR</strong><br>
+  <strong>ALEJANDRO ARMENTA MIER</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>(12:52 horas) Con el quórum de nuestra sesión ordinaria  del día de hoy, y con fundamento en lo dispuesto por el artículo 56, fracción  III del Reglamento del Senado, y en el Acuerdo de la Mesa Directiva, aprobado  el pasado 4 de octubre, iniciamos la sesión solemne para recibir la visita del  Presidente de la Cámara de Representantes de Nueva Zelandia, Adrian Rurawhe.</p>
+<p align="justify">En consecuencia, para recibir al Presidente se designa  a las Senadoras y Senadores siguientes: Bertha Alicia Caraveo, Indira de Jesús  Rosales, José Luis Pech, Rogelio Israel Zamora Guzmán, Cora Cecilia Pinedo  Alonso, Sasil de León Villard, Daniel Gutiérrez Castorena, Gina Andrea Cruz,  Arturo Moo, Mayuli Latifa Martínez Simón y Nestora Salgado García.</p>
+<p align="justify">Solicito a las Senadoras y a los Senadores cumplir con  su encargo, en tanto se declara un receso.</p>
+<p align="center">(La comisión cumple)</p>
+<p align="center">(RECESO)</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Se reanuda la sesión solemne.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106531'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106532'></a><p align="justify">La Cámara de Senadores del Honorable Congreso de la  Unión de los Estados Unidos Mexicanos expresa la más cordial bienvenida al  Presidente de la Cámara de Representantes de Nueva Zelandia, Adrian Rurawhe.</p>
+<p align="justify"><strong>VISITA DEL PRESIDENTE DE LA CÁMARA DE  REPRESENTANTES DE NUEVA ZELANDIA, SEÑOR ADRIAN RURAWHE.</strong></p>
+<p align="justify">Señor Presidente, sea bienvenido a esta sesión  solemne, es un honor recibir su visita.</p>
+<p align="justify">Asimismo, damos la bienvenida a la Subsecretaria de  Relaciones Exteriores del Gobierno de la República, la licenciada Carmen Moreno  Toscano.</p>
+<p align="justify">Doy la bienvenida a quienes integran la comitiva que  nos visita, al Honorable Secretario de la Cámara de Representantes de Nueva  Zelandia.</p>
+<p align="justify"> A la Honorable Vicepresidenta de la Comisión de  Desarrollo Económico, Ciencia e Innovación de la Cámara de Representantes de  Nueva Zelandia.</p>
+<p align="justify">A los honorables integrantes de la Comisión de Salud y  de la legislación en materia de salud de la Cámara de Representantes de Nueva  Zelandia.</p>
+<p align="justify">Y al honorable representante de la Comisión de Amistad  de la Cámara de Representantes.</p>
+<p align="justify">Asimismo, a la Embajadora Excelentísima Sara Meymand,  Embajadora Extraordinaria y Plenipotenciaria de Nueva Zelandia en México.</p>
+<p align="justify">Así como a la Jefa de Misión Adjunta a la Embajada de  Nueva Zelandia.</p>
+<p align="justify">Celebramos esta sesión solemne con el ánimo de  continuar la consolidación desde el ámbito parlamentario, de una relación  estratégica con nuestros países.</p>
+<p align="justify">Honorable Asamblea, en cumplimiento al Acuerdo de la  Mesa Directiva, para celebrar la sesión solemne que hoy nos convoca, extiendo  la más cordial bienvenida al señor Presidente de la Cámara de Representantes de  Nueva Zelandia.</p>
+<p align="justify">Es un honor contar con su presencia, con su comitiva.</p>
+<p align="justify">Es fundamental, compañeras y compañeros Senadores,  reconocer las relaciones bilaterales que tenemos con Nueva Zelandia. Nuestros  territorios tienen muchos factores en común, somos naciones y comunidades que  tenemos orígenes pluriétnicos, por ello expresamos nuestro  profundo respeto y reconocimiento a su labor que, en colaboración con  autoridades de Nueva Zelanda, han construido acuerdos con miras a lograr  verdaderos progresos y una mayor integración a los pueblos originarios en su  país. </p>
+<p align="justify">Estos  consensos han redundado en el establecimiento de un marco legislativo que ha  atendido sus demandas, así como la formación de una representación política de  la Cámara de Representantes en su país, sin duda, a pesar de los importantes  avances a favor de la reivindicación de los derechos de la minorías étnicas  alrededor del mundo, sigue siendo para todas las naciones una asignación  pendiente que nos exige a nuestros países poner mayor atención para alcanzar el  propósito de la justicia para todas y todos ellos. </p>
+<p align="justify">Conscientes  de ello, en el Congreso mexicano, hemos generado diversas leyes para favorecer  el reconocimiento constitucional de los pueblos indígenas y afrodescendientes  para proteger sus derechos humanos, garantizar su acceso a la justicia social y  que sean partícipes en la toma de decisiones por medio de los procesos de  consulta. </p>
+<p align="justify">En  este punto me gustaría resaltar las acciones que se están llevando a cabo para  incentivar la economía en las regiones de la cultura maya en nuestro país. </p>
+<p align="justify">Otra  preocupación común que comparten nuestras naciones y en la cual se han  alcanzado acuerdos, resulta, sin duda, la atención a las juventudes en la vía  pública. Como sabemos, el gobierno de Nueva Zelanda es un ejemplo de ello al  estar encabezado por la primer ministra Jacinda Ardern, quien es una de las  políticas más jóvenes en alcanzar esta encomienda. </p>
+<p align="justify">Por su  parte, México ha desarrollado legislaciones para avanzar en esta materia para  lograr la equidad de género y la incorporación de los grupos juveniles en  nuestras naciones. </p>
+<p align="justify"> Reitero  que nuestros parlamentos se encuentran entre las seis primeras naciones en el  mundo por su composición igualitaria, estos irreversibles avances representan  un logro de las causas justas de las mujeres y con profundo orgullo afirmo que  no hay vuelta hacia atrás en estos triunfos sociales a favor de la igualdad. </p>
+<p align="justify">Señor  presidente, para nadie es ajeno el contexto global que en los próximos años  recientes han presentado complejos y dolorosos sucesos que han lastimado a  todas las sociedades. Estos fenómenos han generado nuevos retos y han agravado  los ya persistentes, tales como la crisis económica, alimentaria, energética y  medioambiental, el aislamiento sólo conduce a profundizar estas problemáticas.</p>
+<p align="justify">Sin  duda, su visita, con el ánimo de colaboración, es un importante ejemplo de  voluntad para estrechar aún más relaciones bilaterales entre nuestras naciones.  Reconocemos su responsabilidad parlamentaria, por lo que expresamos nuestra  disposición y confianza en fortalecer nuestras posiciones comunes en organismos  como la Unión Interparlamentaria y el Foro Parlamentario Asia-Pacífico. </p>
+<p align="justify">De  igual forma quiero mencionar que México, junto con Chile, Colombia y Perú,  formamos la Alianza del Pacífico, un mecanismo  de integración, principalmente en materia comercial, para incorporar alrededor  del 40 por ciento del Producto Interno Bruto de América Latina y el Caribe, con  una población en conjunto arriba de 230 millones de habitantes. </p>
+<p align="justify">Con estos datos, hay interés, sin duda, de diversos  países para formar parte de este mecanismo, entre los que se encuentra Nueva  Zelandia, al respecto, los congresos nacionales de los países miembros, hemos  formado una Comisión Interparlamentaria de Seguimiento a la Alianza del  Pacífico, a fin de acompañar los trabajos gubernamentales y los acuerdos que de  ella emanen. </p>
+<p align="justify">Desde el Senado mexicano, en consonancia con las  facultades exclusivas que le confiere a la Constitución, respecto a la política  exterior, seguimos con mucho interés el proceso de adhesión como Estado  asociado de Nueva Zelandia a la Alianza del Pacífico, intención que expresa la  voluntad de consolidar acuerdos que favorezcan la integración y acorten las  distancias hacia una ruta de progreso mutuo. </p>
+<p align="justify">La culminación de este proceso complementario  indudablemente permitirá una relación más estrecha, comercial y económica entre  México y Nueva Zelandia en la región de América Latina. </p>
+<p align="justify">Del mismo modo, reconocemos las ventajas comparativas  que aportan a nuestros países el Tratado Integral y Progresista de Asociación  Transpacífico, para alcanzar una mayor diversificación de nuestros mercados, ya  que este bloque, representa en conjunto, alrededor del 15 por ciento del  comercio mundial.</p>
+<p align="justify">Señor Adrian Rurawhe, deseo que su jornada de trabajo  en el Senado de la República alcance todos los objetivos que se tienen  contemplados. </p>
+<p align="justify">Estoy seguro de que las reuniones con mis compañeros y  compañeras Senadoras y Senadores contempladas en su visita a esta soberanía,  serán un invaluable aporte para los asuntos referentes a la región Asia-Pacífico,  concretamente a favor de nuestras relaciones bilaterales. </p>
+<p align="justify">Celebramos su presencia. </p>
+<p align="justify">¡Bienvenido a México, bienvenido al Senado de la  República!</p>
+<p align="justify"> Conforme al Acuerdo aprobado para nombrar la  celebración de esta sesión solemne, el Presidente Adrian Rurawhe, dirigirá un  mensaje a la Asamblea. </p>
+<p align="justify">En consecuencia, se le concede el uso de la palabra.</p>
+<p align="justify"><strong>El Presidente de la Cámara de Representantes de Nueva  Zelandia, Señor Adrian Rurawhe: </strong>(Interpretación) </p>
+<p align="justify">(Hablando en maorí, su lengua materna) </p>
+<p align="justify">Un mensaje hacia ustedes, desde mi lenguaje nativo  maorí al español. </p>
+<p align="justify">Y conforme a mis tradiciones, voy a empezar este  mensaje de la siguiente manera: </p>
+<p align="justify">A todas sus montañas, saludos. </p>
+<p align="justify">A todos  sus ríos, a sus lagos y a sus océanos, saludos. </p>
+<p align="justify">Y a  todas sus tierras, saludos. </p>
+<p align="justify">Es un  gran honor para mí poder saludar a todos los líderes presentes y poder tener  este diálogo. </p>
+<p align="justify">Y, para  terminar, a todos los miembros del Senado, saludos a ustedes, saludos a  ustedes, saludos a ustedes. </p>
+<p align="justify">Mis  saludos, Senadores. </p>
+<p align="justify">Primero  que nada, quisiera reconocer a mi colega por haber traducido de mi lengua maorí  al español. </p>
+<p align="justify">Él es  un hijo de México y nosotros tenemos una gran suerte de tenerlo como miembro de  nuestro Parlamento. </p>
+<p align="justify">Entonces,  damos y caballeros, les saludo a todos. </p>
+<p align="justify">Quisiera  también reconocer y agradecerle a Alejandro Armenta por esta oportunidad de  hablar ante ustedes y por la hospitalidad que me han brindado, a mí y a la  delegación parlamentaria durante nuestra visita en México. </p>
+<p align="justify">México  es el destino final y un programa que también nos ha llevado o nos llevará  Chile, Argentina y Uruguay. </p>
+<p align="justify">Es un  privilegio ver a los distintos legisladores en Latinoamérica y las  comparaciones con nuestra Cámara en Nueza Zelandia. </p>
+<p align="justify">También  es mi primera delegación como representante, que esta fue una posición que me  dieron en agosto. </p>
+<p align="justify">Estoy  dirigiendo delegaciones en el espectro legislativo neozelandés y es un honor  para cualquier que esté en esta función tan importante. </p>
+<p align="justify">En el  2022 nosotros hemos podido continuar con nuestras visitas como parte del  Programa Interparlamentario; seguimos teniendo juntas virtuales para poder así  mantener las conexiones importantes. </p>
+<p align="justify">Me voy  a enfocar básicamente en la relación de estos dos países, Nueva Zelandia y  México, que tienen una relación muy cercana. </p>
+<p align="justify"> En el  2023 vamos a conmemorar el Aniversario número 50 de las Relaciones Diplomáticas  y el 40 Aniversario de la Apertura de Nueva Zelandia en México, así que  queremos nosotros celebrar juntos estos dos sitios importantes. </p>
+<p align="justify">Con el  tiempo nuestra relación bilateral ha ido creciendo, hemos fortalecido nuestras  relaciones comerciales. </p>
+<p align="justify">Ustedes  son los asociados de Nueva Zelandia más importantes de Latinoamérica y hemos  desarrollado buenas relaciones en asuntos de interés mutuo en los foros  internacionales. </p>
+<p align="justify">México  también fue el primer país en ratificar el TIPAT, que es el Tratado Integral de  la Alianza Transpacífico, en junio.</p>
+<p align="justify">Tenemos  también una relación muy cercana con la Unión Interparlamentaria, con el  presidente Theo-Ben, en México. Una colaboración y un foro de este tipo son  sumamente importantes.</p>
+<p align="justify">Debo  reconocer el impacto del Covid-19 en ambas naciones, no debemos de olvidar el  impacto en la salud, tanto física como mentalmente. Esta pandemia sigue  afectando a la gente.  </p>
+<p align="justify">Estoy  muy contento de ser líder de una delegación diversa de los miembros de Nueva  Zelandia. La diversidad y la inclusión siempre ha sido un enfoque importante en  nuestro país. </p>
+<p align="justify">Es  importante, por lo tanto, que los parlamentos y los representantes de sus  personas y los miembros del Parlamento puedan ser realmente candidatos  representantes. </p>
+<p align="justify">México  tiene 49.9 por ciento de representatividad femenina, 50 por ciento en el Senado  y en la Cámara de Diputados el 49. </p>
+<p align="justify">Y  estoy muy contento de anunciar que en el Parlamento de Nueva Zelanda también  tendremos la misma representatividad entre hombres y mujeres.</p>
+<p align="justify">Vamos  a sacar un documental sobre las voces del Parlamento. Esto cuenta la historia  de muchos miembros del Parlamento y los individuos de la comunidad LGBTQ y el  involucramiento del Parlamento al emitir leyes para poder habilitar los  derechos de esa comunidad, para celebrar así el Parlamento inclusivo que  tenemos el día de hoy.</p>
+<p align="justify">Como  delegación hemos notado la diversidad de las lenguas indígenas en México y en  Latinoamérica. El maorí es la lengua nativa de Nueva Zelanda, es una lengua,  digamos que oficial, y a los miembros se les pide que debatan también en esta  lengua.</p>
+<p align="justify">Se  están haciendo esfuerzos para revitalizar la historia oral maorí en Nueva  Zelanda y ha sido realmente muy conmovedor escuchar los esfuerzos de México  para poder revitalizar las lenguas indígenas y darles importancia a las  comunidades.</p>
+<p align="justify">Estamos  muy emocionados por saber que México tiene una estrategia nacional de suelo  para poder así llevar una agricultura sustentable. Tenemos que restaurar,  promover y desarrollar una gestión sustentable. Uno de los desafíos mayores en  Nueva Zelanda son las prácticas agrícolas sustentables, sobre todo por el  cambio climático.</p>
+<p align="justify">Nosotros  deseamos que otros parlamentos globalmente aprendan y colaboren en esta área.</p>
+<p align="justify"> En  conclusión, el Parlamento Neozelandés y el Senado de México disfrutan de una  amistad perdurable en esta esfera de políticas extranjeras. La promoción de la  cooperación extranjera y valores democráticos, y la diplomacia parlamentaria  están evolucionando como un canal efectivo para poder fomentar la buena  voluntad y la comprensión entre naciones al enfocarnos en el contexto humano es  invaluable para compartir las experiencias, especialmente con respecto al  fortalecimiento de la democracia parlamentaria.</p>
+<p align="justify">Queremos  mantener este momentum y desarrollar relaciones entre nuestros parlamentos y  nuestros países.</p>
+<p align="justify">Me  gustaría agradecerles por su hospitalidad tan calidad durante nuestra visita a  México.</p>
+<p align="justify">Me  gustaría terminar con un proverbio pukaki: &ldquo;Buena voluntad a todos, que es un  tesoro muy preciado&rdquo;.</p>
+<p align="justify">En la  tradición de mi Nación, me gustaría invitar a mis colegas que vengan conmigo  para cantarles una canción.</p>
+<p align="center">(Interpretación  de canción)</p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Queremos  agradecerle al presidente de la Cámara de Representantes de Nueva Zelandia, su  generosidad, su gesto amistoso y agradecerle, que entre su comitiva se  encuentra el primer parlamentario mexicano integrando a esta comisión. </p>
+<p align="justify">Es un  gusto, es honor que el capital humano, el talento mexicano se vea representado  en su nación. </p>
+<p align="justify">A  nombre del Senado de la República, le agradezco su visita y la de su comitiva,  de la Excelentísima Embajadora y de todo el equipo técnico su asistencia a esta  sesión es una muestra de la importancia en mantener los contactos entre  nuestras instituciones de nuestros estados nacionales.</p>
+<p align="justify">Muchas  gracias por acompañarnos a esta sesión solemne y agradezco a todas y a todos  los invitados especiales. </p>
+<p align="justify">Invito  al señor presidente de la Cámara de Representantes de Nueva Zelandia nos  acompañe a la toma de fotografía oficial. </p>
+<p align="justify">Si son  tan gentiles, Embajadora.</p>
+<p align="center">(Se  toma fotografía oficial)</p>
+<p align="justify">Solicito  a las Senadoras y Senadores de la comisión de cortesía, se sirvan acompañar a  nuestros invitados e invitadas hasta las puertas de este recinto, cuando deseen  retirarse.</p>
+<p align="center">(La  comisión cumple)</p>
+<p align="justify">Solicito  a mis compañeras y compañeros Senadores permanezcan en el salón de sesiones  para continuar con la sesión ordinaria.</p>
+<p align="justify">Se  levanta la sesión solemne. </p>
+<p align="center">(Se levantó la sesión a las 13:25 horas)</p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106532'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 15</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Martí Batres Guadarrama</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 16 de Octubre de 2018</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/1/PPO/PDF-WEB/PPO_No._15_16_OCTUBRE_2018_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='80166'></a><p align="center"><strong>PRESIDENCIA DE LA SENADORA </strong><br>
+  <strong>MÓNICA FERNÁNDEZ BALBOA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora  Mónica Fernández Balboa: </strong>(11:30 horas) Damos inicio  a la sesión solemne, en conmemoración del Sexagésimo Quinto Aniversario del  Derecho al Voto de las Mujeres en México. </p>
+<p align="justify">Agradezco  a la Asamblea la distinción que me hace al asignarme la responsabilidad de  conducir esta sesión solemne, es para mí un honor. </p>
+<p align="justify">La sesión  solemne se desarrollará conforme al Acuerdo aprobado el pasado martes 9 de  octubre. </p>
+<p align="justify">Solicito  a la Secretaría dé lectura a la comisión de cortesía que se ha designado para  recibir y acompañar a nuestras y nuestros distinguidos invitados a esta sesión  solemne. </p>
+<p align="justify"><strong>La Secretaria Senadora  Antares Guadalupe Vázquez Alatorre: </strong>Doy lectura a la comisión  de cortesía designada para recibir a los invitados a esta sesión solemne. </p>
+<p align="justify">  Se  designan a las siguientes Senadoras: Guadalupe Covarrubias Cervantes, Xóchitl  Gálvez Ruiz, Nadia Navarro Acevedo, Nuvia Mayorga Delgado, Patricia Mercado  Castro, Cora Cecilia Pinedo Alonso, Verónica Noemí Camino Farjat y Eunice  Renata Romo Molina. </p>
+<p align="justify"><strong>La Presidenta Senadora  Mónica Fernández Balboa:</strong> Solicito a la comisión  designada cumplir con su cometido. </p>
+<p align="center">(La  comisión cumple)</p>
+<p>Se  reanuda la sesión solemne.</p>
+</div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a80166'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='80170'></a><p align="justify"><strong>CONMEMORACIÓN DEL SEXAGÉSIMO QUINTO  ANIVERSARIO DEL DERECHO AL VOTO DE LAS MUJERES EN MÉXICO</strong></p>
+<p align="justify">Compañeras  y compañeros Senadores. Señoras y señores invitados: Damos inicio a la sesión  solemne, con la que el Senado de la República conmemora el Sexagésimo Quinto  Aniversario del Reconocimiento del Derecho al Voto de las Mujeres en México. </p>
+<p align="justify">Con esta  ceremonia deseamos resaltar la importancia de la participación de todas las  mexicanas y mexicanos que se han esforzado por avanzar en la paridad entre  derechos de los hombres y de las mujeres. </p>
+<p align="justify">A nombre  del Senado de la República, les expreso la más cordial bienvenida. </p>
+<p align="justify">Nos  acompañan en el presídium la Senadora Martha Lucía Micher Camarena, Presidenta  de la Comisión Para la Igualdad de Género del Senado de la República, así como  los integrantes de la Mesa Directiva, que preside el Senador Martí Batres  Guadarrama. </p>
+<p align="justify">Mis  compañeras Senadoras Secretarias: Antares Guadalupe Vázquez Alatorre, Verónica  Delgadillo García, María Antonia Cárdenas Mariscal y Nancy De la Sierra  Arámburo. </p>
+<p align="justify">Saludamos  también la presencia de la Licenciada Mayela García Ramírez, Presidenta del  Colectivo de Investigación, Desarrollo y Educación entre Mujeres A.C.</p>
+<p align="justify">De la Maestra  Mónica Maccise Duayhe, Directora de la Unidad Técnica de Igualdad de Género y  No Discriminación, del Instituto Nacional Electoral. </p>
+<p align="justify">De la Licenciada  María Sandra Corina, de Balance, Promoción para el Desarrollo y Juventud, A.C. </p>
+<p align="justify">De la  Doctora Leticia Bonifaz Alfonzo, Directora General de Estudios, Promoción y  Desarrollo de los Derechos Humanos de la Suprema Corte de Justicia de la  Nación. </p>
+<p align="justify">La Doctora  Nadine Gasman, representante de ONU Mujeres en Brasil. </p>
+<p align="justify">De la  Maestra Eréndira Cruzvillegas Fuentes, Cuarta Visitadora de la Comisión  Nacional de los Derechos Humanos. </p>
+<p align="justify">De la  Maestra Marta Ferryra Beltrán, del Consejo Nacional para Prevenir la  Discriminación. </p>
+<p align="justify">La Doctora  Marcela Lagarde y de los Ríos, Presidenta de la Red de Investigadoras por la  Vida y la Libertad de las Mujeres.</p>
+<p align="justify">La Maestra  Karla Michelle Salas, Directora General del Grupo de Acción por los Derechos  Humanos y la Justicia Social.</p>
+<p align="justify">La Licenciada  Daniela Tejas, Coordinadora del Fondo de Aborto para la Justicia Social MARIA.</p>
+<p align="justify">La Licenciada  Pilar Sánchez Rivera, Directora del Refugio Espacio Mujeres para una Vida Digna  Libre de Violencia.</p>
+<p align="justify">  La Licenciada  Orfe Castillo, de JASS-Mesoamérica.</p>
+<p align="justify">La Maestra  Gabriela Benítez, especialista en materia electoral.</p>
+<p align="justify">La señora  Norma Andrade, defensora de los derechos de las mujeres.</p>
+<p align="justify">Recibimos  también la presencia de la señora Lol Kin Castañeda Badillo, Diputada  Constituyente de la Ciudad de México.</p>
+<p align="justify">La señora  Carol Arriaga, Secretaria de Mujeres del CEN de Morena.</p>
+<p align="justify">La señora  Guadalupe Juárez, Secretaria de Mujeres de Morena en la Ciudad de México.</p>
+<p align="justify">La señora  Natalia Calero, de ONU Mujeres.</p>
+<p align="justify">Y de las  Diputadas Federales Beatriz Rojas y Vanessa del Castillo.</p>
+<p align="justify">¡Bienvenidas!</p>
+<p align="justify">De la  señora Eliana Olaizola, Directora de IPAS México.</p>
+<p align="justify">Y de  amigas de esta lucha que han emprendido las mujeres, la señora Julia Pérez y  Adriana Núñez.</p>
+<p align="justify">Está  también otra luchadora, la señora Margarita Zavala.</p>
+<p align="justify">Asimismo,  saludamos la presencia de las mujeres destacadas en su trayectoria profesional  y política que nos acompañan.</p>
+<p align="justify">Sean  bienvenidas y bienvenidos a esta sesión solemne en el Senado de la República,  que el Senado realiza en conmemoración del Sexagésimo Quinto Aniversario del  Derecho al Voto de las Mujeres en México.</p>
+<p align="justify">Hoy les  damos la más cordial bienvenida a las mujeres y hombres que nos acompañan para  celebrar una de las mayores conquistas logradas por las mexicanas hace 65 años.</p>
+<p align="justify">Hace más  de seis décadas en México, como lamentablemente aún sucede en diversas  naciones, no teníamos derecho a participar en la vida política, esa realidad,  afortunadamente, ha cambiado al menos en este Senado en el que hoy nos reunimos  para conmemorar esta decisión trascendente.</p>
+<p align="justify">Desde  entonces, la voz, las ideas y las propuestas de la mujer mexicana han estado  presentes a través del voto en la vida política y nuestra acción en la  construcción de este gran país.</p>
+<p align="justify">Hoy  saludamos y damos la bienvenida a esta sesión solemne a las legisladoras  mexicanas, a las representantes del Poder Judicial de la Federación, a las  representantes del Poder Ejecutivo Federal, de los gobiernos de las entidades  federativas, de las organizaciones de la sociedad civil y a todas las grandes  mujeres que hacen esta realidad posible.</p>
+<p align="justify">Su  presencia enaltece esta sesión y es muestra fehaciente de que las mujeres somos  capaces de asumir las más altas responsabilidades y que lo hacemos con emoción,  pero, sobre todo, con el firme compromiso de servirle a México.</p>
+<p align="justify">Sin más  preámbulos, escucharemos en esta sesión solemne, conmemorativa del Sexagésimo  Quinto Aniversario del Voto de las Mujeres en nuestro país, las intervenciones  de las y los representantes de los diversos grupos parlamentarios.</p>
+<p align="justify">  Conforme al Acuerdo aprobado, se concede el uso de la tribuna a la  Senadora Martha Lucía Micher Camarena, Presidenta de la Comisión Para la  Igualdad de Género.</p>
+<p align="justify"><strong>La Senadora Martha Lucía  Micher Camarena: </strong>Buenos días. Bienvenidas  todas ustedes.</p>
+<p align="justify">Margarita, bienvenida.</p>
+<p align="justify">Quiero agradecer el privilegio del que he sido objeto al ser invitada a  formar parte el día de hoy de la Mesa Directiva y presidir esta sesión solemne,  para mí ha sido una sorpresa y un honor.</p>
+<p align="justify">Gracias a todas a todos por estar el día de hoy aquí.</p>
+<p align="justify">¿Qué sería de México si a la mujer se le concedieran facultades y nos  gobernaran?</p>
+<p align="justify">Indudablemente sería un desastre, porque la mujer puede ser más criminal  que un hombre; la mujer cuando toma una rutina o un capricho no le entran las  palabras aunque se le hinquen de rodillas. La mayor parte de grandes dramas han  sido ocasionados por la mujer, ya sea la de clase media o la de clase alta. Todas  son de instintos casi iguales, siempre criminosas, falsas. En fin, un desastre.</p>
+<p align="justify">La mujer está en este mundo para el hogar del hombre, mas no para  políticas ni inmiscuirla en asuntos de los hombres.</p>
+<p align="justify">Es lógico que los Diputados les decimos: &ldquo;esto que han discutido tanto sobre  el voto de la mujer es una locura y muy borrica, la mujer es para su hogar y no  para meterse en asuntos de hombres&rdquo;.</p>
+<p align="justify">Lo que acabo de leer, que traigo a la memoria en cada conmemoración  desde hace quince años en estos recintos, es un párrafo de las tantas cartas  que se recibieron en la Presidencia de la República, pues ya desde 1937, en  respuesta a la movilización de las mujeres en la lucha por el derecho al voto,  se habría presentado ante el Senado la iniciativa de reforma de la  Constitución.</p>
+<p align="justify">¿Cuántos acontecimientos han sucedido?</p>
+<p align="justify">El Congreso Constituyente, al proclamarse la Constitución de 1857, ya  advertían los liberales &ldquo;que los derechos del hombre se olvidaban de los  derechos más importantes, de los derechos sociales de las mujeres&rdquo;.</p>
+<p align="justify">Y recomendaban los constitucionalistas que se le concedieran iguales  prerrogativas, iguales derechos al hombre, porque antes de pensar en la  organización de los poderes, era menester atender el buen orden de la familia,  base auténtica y verdadera de toda organización social.</p>
+<p align="justify">Qué gran atrevimiento aquel considerarnos iguales, pares, equivalentes,  pero lamentablemente eso se quedó en una simple consideración.</p>
+<p align="justify">Y más todavía, en la Constitución del 17 se avanzó y se quiso trabajar  sobre los derechos de las mujeres, pero el pacto político patriarcal entre los  hombres excluyó a las mujeres.</p>
+<p align="justify">También la exigencia del voto en 1821 con las mujeres zacatecas, o en  1887 con la periodista Laureana Wright, quien plantearía, desde la primera  revista feminista mexicana las &ldquo;Violetas del Anáhuac&rdquo;, el derecho al voto.</p>
+<p align="justify">O &ldquo;Las Hijas de Cuauhtémoc&rdquo;, del Club Femenil Antirreeleccionista de  1910.</p>
+<p align="justify">Y en ese año, Dolores Jiménez y Muro funda Regeneración y Concordia,  organización Pro Derechos de la Mujer.</p>
+<p align="justify">Y seguimos con la historia. En 1916, el Primer Congreso Feminista en Yucatán,  organizado por Consuelo Zavala, Dominga Canto, Adolfina Valencia de Ávila,  María Luisa Flota, Beatriz Peniche, Amalia Gómez, Piedad Carrillo Gil, Isolina  Pérez Castillo, Elena Osorio, Fidelia González, Candelaria Villanueva, Lucrecia  y Adriana Vadillo, Rosina Magaña y Consuelo Andrade, qué atrevidas a organizar  un congreso feminista en 1917.</p>
+<p align="justify">Y también en 1917, Hermila Galindo lanza su candidatura para Diputada  por el V Distrito Electoral de la Ciudad de México. Aun cuando la Constitución  del 17 no negó la ciudadanía a las mujeres y, en consecuencia, el derecho a  votar y ser votadas, tampoco se otorgó el voto expresamente.</p>
+<p align="justify">En 1922, las yucatecas consiguieron el derecho al voto, y en los  siguientes cinco años lo hicieron las potosinas y las chiapanecas.</p>
+<p align="justify">El 18 de noviembre de 1923, cómo vamos a olvidar a Elvia Carrillo  Puerto, resulta ser la primera mexicana electa a Diputada al Congreso Local por  el Distrito V.</p>
+<p align="justify">Sin embargo, después de desempeñar su cargo por dos años, renunció  debido a las amenazas de muerte que recibió.</p>
+<p align="justify">En 1929 surgieron nuevas asociaciones: el Frente Único Pro Derechos de  la Mujer, como Tinísima; Frida Kahlo, Benita Galeana, que desde 1935, junto con  Adelina Zendejas, ayudaron a la defensa de las trabajadoras más pobres y  pelearon por el derecho al descanso materno.</p>
+<p align="justify">En 1937, el General Presidente Lázaro Cárdenas envió la iniciativa para  modificar el artículo 34 constitucional, pero el 10 de diciembre se emite un  dictamen y se decide posponer el debate hasta pasada la Asamblea Constituyente  del PNR.</p>
+<p align="justify">En 1946, en la Cámara de Diputados se aprobó la iniciativa enviada por  el Presidente Alemán, en la que se adicionó al artículo 115 constitucional, que  entró en vigor en febrero del siguiente año, donde se establecía que &ldquo;en las  elecciones municipales participarían las mujeres en igualdad de condiciones que  los hombres, con el derecho a votar y a ser electas&rdquo;.</p>
+<p align="justify">Pero en 1947 fue cuando finalmente, a partir de la reforma, las mujeres  comenzaron a ocupar cargos en la elección de ayuntamientos.</p>
+<p align="justify">Fue hasta el 17 de octubre de 1953, hace exactamente 65 años, que se  publica en el Diario Oficial el nuevo texto del artículo 34 constitucional:  &ldquo;Son ciudadanos de la República los varones y las mujeres que teniendo la  calidad de mexicanos reúnen además los siguientes requisitos: Haber cumplido 18  años, siendo casados, o 21, si no lo son y tener un modo honesto de vivir&rdquo;.</p>
+<p align="justify">En las elecciones del 3 de julio de 1955, las mujeres acuden a emitir su  voto a las urnas para elegir diputaciones federales, finalmente.</p>
+<p align="justify">65 años, amigas, amigos, compañeras queridas, son una vida, pero son  pocos comparados con el largo camino que las mujeres mexicanas hemos recorrido  hasta hacer efectivo nuestro derecho al voto.</p>
+<p align="justify">Las mujeres mexicanas, todas sin excepción, hemos escrito también la  historia de este país, y hoy es claro que sin nosotras no hay pasado, no hay  presente y no hay futuro.</p>
+<p align="justify">Tenemos que seguir alzando la voz para insistir que en México ser mujer,  ser niña, ser adulta, ser vieja, ser joven, ser trabajadora, madre, jefa de  hogar, divorciada, soltera, adulta, indígena, lesbiana, afrodescendiente,  pobre, en reclusión, migrante, discapacitada, analfabeta o sin estudios  concluidos, ha sido suficiente para recibir un trato desigual y  discriminatorio, incluso ha sido pretexto para dañarnos, violarnos,  desaparecernos y asesinarnos.</p>
+<p align="justify">  A 65 años de la ampliación de los derechos de las mujeres, todavía se  normaliza, se legitima y se utiliza la única diferencia entre mujeres y  hombres, que es la diferencia sexual, como herramienta y argumento para  discriminar, para invisibilizar a las mujeres de los espacios públicos, de los  puestos de elección popular, ignorando que la verdadera democracia debe  favorecer el trato igualitario y las mismas oportunidades entre mujeres y  hombres.</p>
+<p align="justify">Pero no nos hemos quedado aquí lamentándonos. Hemos denunciado siempre  la desigualdad, siempre la discriminación y siempre la falta del mismo trato.</p>
+<p align="justify">Por eso, la plena ciudadanía que hemos querido alcanzar se define como  el desarrollo de la capacidad de autodeterminación, de expresión y de  representación de intereses y demandas. Es decir, el pleno ejercicio de los  derechos políticos, individuales y colectivos.</p>
+<p align="justify">Que quede claro, no hay patria sin nosotras, no hay democracia ni  desarrollo sin nosotras.</p>
+<p align="justify">Todas las personas tenemos derecho a la libertad, a la dignidad y sólo  se puede nacer y vivir así con la paz, con la educación, con un medio ambiente  sano, con la justicia social, con equidad y con el goce y disfrute de las  mismas oportunidades.</p>
+<p align="justify">A 65 años, hemos dejado atrás las cuotas avanzando en el paritarismo.  Sí, ahora somos las paritaristas en un país democrático, que después de años y  años de lucha, de fraudes, de trampas, renace la esperanza de millones de  mexicanas y mexicanos para construir la patria feminista en la Cuarta  Transformación con y desde las mujeres.</p>
+<p align="justify">Sí, todas las mujeres tenemos que construir una patria feminista para  todas nosotras.</p>
+<p align="justify">No ha sido fácil, hemos llegado aquí a base de sentenciazos, que gracias  a la Suprema Corte de Justicia, obligó a los partidos a las reformas, o a las  reformas constitucionales, como la del artículo 41.</p>
+<p align="justify">También gracias al Tribunal Electoral, que ha equilibrado la presencia  de mujeres y hombres.</p>
+<p align="justify">Por eso el ejercicio de las mujeres al voto ha sido contundente en las  pasadas elecciones, porque hemos demostrado que no se trata de ser esposa de,  hermana de, sino mujer con capacidades para abrir brecha. Y estamos listas para  demostrar que presencia de mujer sí garantiza conciencia de género.</p>
+<p align="justify">Compañeras y compañeros: Vamos inspiradas en las tres autonomías,  encarrilemos nuestros esfuerzos a la autonomía física, a la autonomía económica  y a la autonomía en la toma de decisiones de nosotras.</p>
+<p align="justify">Vamos y exigimos paridad en todos los espacios de poder, y por eso se  presentará una más de las iniciativas para integrar la paridad en todos los  organismos en los tres niveles de poder, incluso en los organismos autónomos.</p>
+<p align="justify">Compañeras y compañeros: Hemos logrado todo esto, pero gracias al único  movimiento más pacífico en este mundo, el movimiento feminista. Uno de los  movimientos que se han transformado en una fuerza progresista, transformadora,  pacífica, con la que hemos logrado avanzar ahora.</p>
+<p align="justify">Yo me sumo a las palabras de las sufragistas europeas y latinoamericanas  para animar a sus movimientos, a Alice Paul, Maud Watts, Maggie Miller, les  decían a sus mujeres: &ldquo;No dejes de luchar, no dejes de soñar&rdquo;.</p>
+<p align="justify">No dejaremos de luchar, no dejaremos de soñar ni tampoco de seguir  luchando codo a codo para que nadie, ninguna mujer, ninguna niña quede atrás.</p>
+<p align="justify">Compañeras y compañeros: Les invitamos a los hombres a modificar su  discurso.</p>
+<p align="justify">  No sean nuestros aliados por tener hijas, hermanas, esposas; sean  nuestros aliados porque son nuestros derechos, los que queremos que ustedes  defiendan.</p>
+<p align="justify">Así estaremos codo a codo con todas y todos ustedes.</p>
+<p align="justify">Aquí estaremos seguramente conmemorando otros 65 años más, porque nos  merecemos esta patria que tanto hemos defendido, esta patria feminista y esta  patria que no dejará de luchar por todos los derechos para todas las personas.</p>
+<p align="justify">¡Por nuestro derecho a tener derecho, vida, vida libre a las mariposas!</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>La Presidenta Senadora  Mónica Fernández Balboa: </strong>Gracias, Senadora Micher  Camarena.</p>
+<p align="justify">Con base en los Acuerdos aprobados, tenemos una ronda de intervenciones  de los grupos parlamentarios en orden progresivo hasta por cinco minutos, y una  participación del Senador Emilio Álvarez Icaza Longoria, previa a la de los  grupos parlamentarios, hasta por tres minutos.</p>
+<p align="justify">Tiene el uso de la tribuna el Senador Emilio Álvarez Icaza, hasta por  tres minutos.</p>
+<p align="justify"><strong>El Senador Emilio Álvarez  Icaza Longoria: </strong>Muy buenos días, sean todas  muy bienvenidas.</p>
+<p align="justify">Ustedes representan esa reserva de dignidad y libertad, y en su nombre a  todas las mujeres de la República que nos educan, nos reeducan, nos  transforman, nos provocan, y esencialmente conducen este país a un mejor  horizonte, muchísimas gracias, su presencia nos honra y nos distingue.</p>
+<p align="justify">Los aniversarios sirven para ver lo que hemos avanzado, pero también lo  que nos falta por avanzar, y también para honrar a quienes han dado la batalla,  ya la Senadora Micher hablaba de varias de ellas.</p>
+<p align="justify">Quiero subrayar, por supuesto, las batallas dadas por Beatriz Peniche,  Elvia Carrillo, Hermila Galindo, Amalia González, Raquel Dzib y otras; recuerdo  muchísimo a Benita Galeana, y muchas de las que aquí están, de las que han dado  la batalla en estas sillas y en estos curules, en estos escaños, que todos los  días van transformando el horizonte de la patria en un horizonte de dignidad, y  la verdad es una batalla que se ha ganado milímetro a milímetro, ha tenido que  darse una batalla en todos los espacios, en la calle, en la universidad, en la  academia, desde las cosas eran de la boleta o espacios hasta para poder ir al  baño, espacios hasta como para que las hijas puedan estudiar en libertad. Ha  sido batalla espacio por espacio, y hay, sí, sin duda, cosas que celebrar y  subrayar, pero también tenemos que reconocer lo que nos falta, y todavía hay  mucho por avanzar. </p>
+<p align="justify">Y sí, estas elecciones hicieron un cambio, hicieron un cambio porque es  la mayor representación de las mujeres en las Cámaras. En este Senado, por  primera vez hay más mujeres que hombres; pero todavía esa representación, como  decía, no ha llegado a los órganos de gobierno; de 25 comisiones, las mujeres  presiden 21; en la Cámara de Diputados todavía la cosa es peor, en la Junta de  Coordinación Política no hay una sola mujer, y por primera vez hay 241 mujeres,  esas son las prácticas cotidianas que tenemos que demoler; por ejemplo, las elecciones  que pasaron, sólo 27 por ciento de las personas que ganan una presidencia  municipal son mujeres; sólo hay tres gobernadoras, la Suprema Corte de Justicia  no es muy distinta, sólo hay dos ministras.</p>
+<p align="justify">Y así podemos seguir con órganos autónomos y con distintas instancias  federales, estatales, municipales, sistemáticamente se niega el derecho de las  mujeres.</p>
+<p align="justify">  Y termino diciendo, en la medida en la que avance el ejercicio de los  derechos de las mujeres, en esa medida avanza la dignidad de la República, en  esa medida se transforma en un horizonte de dignidad, de igualdad y de libertad.</p>
+<p align="justify">Hay mucho que celebrar, pero sobre todo, hay mucho más que transformar.</p>
+<p align="justify">Muchísimas gracias por su ejemplo por sus sueños, por sus luchas, ahí  queremos estar.</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify">Intervención</p>
+<p align="right"><br><br><img src="/informacion/img/ver_documento.png" border></p>
+<p align="justify"><strong>La Presidenta Senadora  Mónica Fernández Balboa: </strong>Gracias, Senador Álvarez  Icaza.</p>
+<p align="justify">Tiene el  uso de la tribuna la Senadora Sasil De León Villard, del grupo parlamentario  del Partido Encuentro Social, hasta por cinco minutos.</p>
+<p align="justify"><strong>La Senadora Sasil De León  Villard: </strong>Con su permiso, señora Presidenta. </p>
+<p align="justify">A todas  las invitadas especiales, sean bienvenidas a esta su casa, el Senado de la  República.</p>
+<p align="justify">Senadoras  y Senadores: Hoy para mí es un honor poder estar aquí dirigiendo un mensaje con  motivo del Sexagésimo Quinto Aniversario del Derecho al Voto de las Mujeres en  México ante el Pleno de esta LXIV Legislatura, la cual históricamente es la más  igualitaria de toda la historia en este Senado.</p>
+<p align="justify">El 17 de  octubre de 1953 se publicaba, como ya lo comentó la Senadora Malú Micher, en el  Diario Oficial de la Federación el decreto presidencial con el cual se  reconocería en la mujer la plenitud de sus derechos políticos, una histórica  reivindicación de justicia para que la mujer mexicana pudiera votar y ser  votada.</p>
+<p align="justify">Ya en ese  entonces iniciaba la lucha de Latinoamérica por la consagración de los derechos  políticos de la mujer, y México no podía ser la excepción.</p>
+<p align="justify">Una mujer  mexicana destacaría en aquellos años como una férrea impulsora de los derechos  políticos de las mujeres, Amalia González Caballero, quien creó la Alianza de Mujeres  de México y convocó a la mujer mexicana a firmar por la plenitud de sus  derechos recolectando más de un millón de firmas, las cuales fueron presentadas  al Presidente Adolfo Ruiz Cortines, quien en reconocimiento a esta labor, envió  al Congreso la iniciativa para reconocer los derechos políticos de las mujeres.</p>
+<p align="justify">Desde  aquí nuestro mayor reconocimiento a Doña Amalia, gran luchadora que con sus  acciones logró la reivindicación de la mujer mexicana y de nuestros derechos.</p>
+<p align="justify">  ¿Por qué  razón, en aquél entonces, se nos restringía a ejercer con libertad nuestros  derechos políticos? Por injusticia.</p>
+<p align="justify">Recordar  a las mujeres que encabezaron esta lucha histórica por alcanzar la igualdad de  derechos en materia económica, social y política no es un ejercicio de buena  memoria, es un acto de justicia, porque aún a más de 100 años de las primeras  luchas por la igualdad esto no se ha logrado en plenitud.</p>
+<p align="justify">Es cierto  que hace ya 65 años se dio un gran paso en esta lucha por la igualdad entre  mujeres y hombres, pero las injusticias siguen vivas, queremos tener el derecho  a tener los mismos salarios, a que se nos reconozca nuestro derecho  constitucional del pago igualitario, empleos dignos y de calidad; queremos, en  plena libertad, ejercer nuestros derechos humanos y sociales, como son el  derecho de ocupar espacios de decisión en la educación, en la salud, en los  medios de comunicación, en las organizaciones sociales, en los partidos  políticos, en las organizaciones empresariales y laborales.</p>
+<p align="justify">Queremos  que el país tenga más gobernadoras, más Secretarias de Estado, más mujeres  dirigiendo a los partidos políticos, más mujeres dirigiendo el país en todos  los sectores.</p>
+<p align="justify">Queremos  que en la Cámara de Senadores, en la Cámara de Diputados y los congresos  estatales sean dirigidos en igualdad absoluta por mujeres y hombres.</p>
+<p align="justify">No  estamos pidiendo demasiado, no estamos pidiendo una concesión, solamente  estamos exigiendo lo justo, lo que es correcto, lo que antes se consideraba  inaudito, mujeres al frente de la toma de decisiones en este país.</p>
+<p align="justify">Concluyo,  citando un fragmento del llamado de la Alianza de Mujeres de México de 1952, el  cual sigue vigente:</p>
+<p align="justify">&ldquo;Es  tiempo ya que la mujer mexicana se dé cuenta de su papel histórico, de sus obligaciones  sociales, del ineludible deber de luchar con inteligencia y energía para  resolver los grandes problemas que le afectan directamente&rdquo;.</p>
+<p align="justify">Quiero  reconocer, antes de terminar, que en el próximo gabinete presentado por el  Presidente Electo Andrés Manuel López Obrador, dentro de todo su gabinete legal  exista paridad de género.</p>
+<p align="justify">Nuestro  mayor reconocimiento en nombre de la bancada del Partido Encuentro Social.</p>
+<p align="justify">Es  cuanto, señora Presidenta.</p>
+<p align="justify">Muchas  gracias.</p>
+<p align="justify"><strong>La Presidenta Senadora  Mónica Fernández Balboa: </strong>Gracias, Senadora Sasil De  León. </p>
+<p align="justify">Tiene la  palabra la Senadora María Leonor Noyola Cervantes, del grupo parlamentario del  Partido de la Revolución Democrática, hasta por cinco minutos.</p>
+<p align="justify"><strong>La Senadora María Leonor  Noyola Cervantes:</strong> Con su permiso, señora Presidenta.  Compañeras Senadoras y compañeros Senadores:</p>
+<p align="justify">Es un  honor compartir el día de hoy este espacio con un grupo de mujeres tan  importantes, exitosas, que han hecho una gran labor por defender nuestros  derechos. </p>
+<p align="justify">¡Bienvenidas!</p>
+<p align="justify">Me da  gusto, en esta ocasión, llevar a cabo el posicionamiento del grupo  parlamentario del Partido de la Revolución Democrática, en un tema por demás  trascedente, el relativo a uno de los derechos más importantes de nosotras las  mujeres: votar, es decir, tomar participación directa en los asuntos políticos. </p>
+<p align="justify">  Uno de  los primeros ejercicios de la lucha por el voto femenino en nuestro país, lo  encontramos en la persona de Hermila Galindo, considerada pionera del  movimiento feminista, quien afirmaba que las mujeres y los hombres debían  participar en el nuevo México que se estaba gestando después de la Revolución  Mexicana, y la única forma para conseguirlo era otorgarles el sufragio a las  mujeres, en aquel entonces se pensaba que &ldquo;las mujeres deberían estar en el  hogar y que la política era cosa de hombres&rdquo;.</p>
+<p align="justify">Existieron  muchísimos esfuerzos por conseguir que se incorporara en la Constitución  Federal el derecho de votar por parte de las mujeres. </p>
+<p align="justify">El  Presidente Lázaro Cárdenas, cuando tomó posición, incluye el tema de Sufragio  Femenino dentro de su programa, partiendo de la base de que los hombres y las  mujeres habían construido este país dada su lucha de manera pareja, sin embargo,  fracasó el intento. </p>
+<p align="justify">Con  Adolfo Ruiz Cortines, y ante un México en proceso de modernización, no se podía  considerar el progreso si no se les daba el voto a las mujeres. </p>
+<p align="justify">Por fin,  el 17 de octubre de 1953 fue aprobada la reforma constitucional que modificó  los artículos correspondientes de la Carta Magna, en donde se estableció que  son derechos del ciudadano votar en las elecciones populares y poder ser  votado, considerándose, entonces, que las mujeres al ser iguales que los  varones eran ciudadanas titulares de estos dos tan importantes derechos. </p>
+<p align="justify">Aquí  quiero hacer un paréntesis. Creo que se ha trabajado muchísimo en este tema, y  en mi estado, San Luis Potosí, en el cual con mucho orgullo yo represento, veo  que todavía predominan los varones como gobernantes. </p>
+<p align="justify">En la  capital de San Luis Potosí únicamente hemos tenido una presidenta municipal, en  el periodo 2009-2012. En Soledad de Graciano Sánchez, que es mi municipio  natal, únicamente una presidenta municipal, la maestra Amalia Noyola, en el  periodo de 1970 a 1973. </p>
+<p align="justify">He  observado cómo el trabajo territorial, la mayoría de las mujeres lo hacemos, lo  llevamos a cabo; sin embargo, los espacios de elección popular son para los  varones. </p>
+<p align="justify">Creo que  tenemos mucho qué hacer todavía en este tema. </p>
+<p align="justify">No puede  haber una sociedad democrática mientras persista la desigualdad y la  discriminación de la mujer. </p>
+<p align="justify">¡Las  mujeres unidas jamás seremos vencidas!</p>
+<p align="justify">Es  cuanto, señora Presidenta. </p>
+<p align="justify">Muchas  gracias. </p>
+<p align="justify"><strong>La Presidenta Senadora  Mónica Fernández Balboa: </strong>Gracias, Senadora Noyola. </p>
+<p align="justify">Se  concede el uso de la palabra a la Senadora Alejandra Lagunes Soto Ruiz, del  grupo parlamentario del Partido Verde Ecologista de México, hasta por cinco  minutos. </p>
+<p align="justify"><strong>La Senadora Alejandra  Lagunes Soto Ruiz: </strong>Con su venia, señora Presidenta.  Compañeros y compañeras legisladoras. </p>
+<p align="justify">Distinguidas  invitadas, ¡sean muy bienvenidas!</p>
+<p align="justify">Los  movimientos feministas en México han sido siempre un ejemplo de valentía, de  determinación y de perseverancia. </p>
+<p align="justify">  Una de  sus más grandes victorias fue la reforma del 17 de octubre de 1953, a los  artículos 34 y 115 de la Constitución, que reconoció a las mujeres como  ciudadanas con el derecho de votar y de ser votadas, es decir, de participar  plena y oficialmente en la vida política del país. </p>
+<p align="justify">El camino  no fue fácil y mucho menos corto. Los primeros esfuerzos en nuestro país se  remontan a la fundación &ldquo;Las Violetas del Anáhuac&rdquo;, dirigida por Laureana  Wright González, en 1887. </p>
+<p align="justify">En este  semanario, en el que sólo escribían mujeres, se afirmaba que la inteligencia  del hombre y la mujer eran iguales, y que si existía diferencia era resultado  de la falta de acceso de las mujeres a derechos básicos, uno de los más  importantes: la educación. </p>
+<p align="justify">Como  todos los movimientos feministas del mundo, en México estos han sido diversos y  provenientes de distintos sectores de la sociedad. Ejemplo de ello fue el Club  Femenil Antirreleccionista &ldquo;Hijas de Cuauhtémoc&rdquo;, fundado por Dolores Jiménez y  Muro, mujer zapatista, soldadera, General Brigadier de enorme entrega, de  convicciones y valor inigualables, y que frecuentemente, ausente en los libros  de historia, participó en el Plan de Tacubaya y también redactó el Prólogo del  Plan de Ayala. </p>
+<p align="justify">El camino  no ha sido fácil y mucho menos corto. La primera mujer mexicana electa Diputada  al Congreso Local de Yucatán, Elvia Carrillo Puerto, se vio obligada a  renunciar por amenazas de muerte. </p>
+<p align="justify">Académicos  señalan que aunque en papel las mujeres obtuvieron el derecho a votar y ser  votadas, este no fue realmente efectivo, sino hasta los años 70´s. </p>
+<p align="justify">Al día de  hoy, sólo ha habido seis candidatas a la Presidencia de la República y siete  gobernadoras o Jefas de Gobierno del Distrito Federal, ahora Ciudad de México. </p>
+<p align="justify">Aquí  presentes están algunas de ellas: Beatriz, Josefina, Patricia, Margarita.  Gracias por el camino recorrido y por su lucha. </p>
+<p align="justify">Gracias  también a todas las mujeres que no aceptaron un &ldquo;no&rdquo; como respuesta, y por  cuyos esfuerzos hoy en el Senado existe una representación paritaria.<br>
+  <br>
+  Nadie les  ha regalado nada a las mujeres ni a los movimientos feministas, y tampoco sería  el caso ahora.</p>
+<p align="justify">El camino  no será fácil, ni mucho menos corto. Recientemente hemos sabido de candidatas  electas presionadas para renunciar a sus cargos con el objetivo de que esos  espacios los ocupen hombres. </p>
+<p align="justify">De los  ocho coordinadores de grupos parlamentarios en este Pleno, sólo una es mujer,  Sasil. </p>
+<p align="justify">Nos  necesitamos y nos necesitan.</p>
+<p align="justify">Nuestra  presencia tiene impactos mucho más profundos que una paridad que, aunque  necesaria, no es suficiente. </p>
+<p align="justify">La  participación de las mujeres importa sustantiva y simbólicamente, nuestras  voces son importantes en todos los asuntos y son fundamentales en temas como:  el derecho a decidir sobre nuestros cuerpos, el derecho a vivir una vida libre  de violencia, el acceso pleno a la salud, a la educación y a un medio ambiente  sano. </p>
+<p align="justify">Nos  necesitamos para poder estar en espacios públicos sin miedo, y para terminar con  las expectativas sociales sexistas. Nos necesitamos para construir una economía  más humana y más sostenible. Todas estas son batallas políticas que pasan por  nuestros cuerpos, por nuestras vidas y por nuestros sueños.</p>
+<p align="justify">  No  podemos conformarnos, ni cansarnos. Las mujeres, pese a todos los intentos de  invisibilizarnos y de cerrarnos las puertas de la vida política, hemos sido  parte vital en la construcción de este país, así lo demuestran las historias de  Rosario Castellanos, Griselda Álvarez, Leona Vicario, Josefa Ortiz de  Domínguez, Eufrosina Cruz Mendoza, Tita Radilla y de millones de mujeres, que  desde su diversidad y desde distintos espacios siguen escribiendo la historia  de México todos los días. </p>
+<p align="justify">Termino  con un extracto del proemio Plan de Ayala escrito por Dolores Jiménez y Muro:  &ldquo;La humanidad, incansable mariposa que en su incesante labor rompe capullo tras  capullo, buscando siempre la luz, alcanza épocas de tiempo en tiempo en las que  los cerebros se esplenden y los corazones arden al poderoso impulso de una idea  redentora, haciendo que el mundo admire acciones heroicas que conquistan las  grandes reformas&rdquo;. </p>
+<p align="justify">Compañeros  y compañeras legisladoras: </p>
+<p align="justify">Hagamos  de este tiempo uno de esos tiempos a los que se refería Dolores Jiménez y Muro,  que nuestros cerebros resplandezcan y nuestros corazones ardan para construir  un país digno, libre, justo y con igualdad para todos y todas. </p>
+<p align="justify">En el  Partido Verde lucharemos porque así sea. </p>
+<p align="justify">Muchas  gracias. </p>
+<p align="justify"><strong>La Presidenta Senadora  Mónica Fernández Balboa: </strong>Gracias, Senadora Lagunes. </p>
+<p align="justify">Tiene el  uso de la palabra el Senador Joel Padilla Peña, del grupo parlamentario del  Partido del Trabajo, hasta por cinco minutos. </p>
+<p align="justify"><strong>El Senador Joel Padilla  Peña: </strong>Con la venia de la Presidencia. Compañeras Senadoras  y compañeros Senadores:</p>
+<p align="justify">Mexicanas  y mexicanos; colimenses. Distinguidas invitadas especiales. </p>
+<p align="justify">65 años  se dice de manera sencilla y rápida; 65 años es la esperanza de vida en México;  65 años es la edad que se necesita para que una persona pueda jubilarse en  nuestro país. </p>
+<p align="justify">Para  dimensionarlo correctamente, al término de la Segunda Guerra Mundial las  mujeres aún no podían votar en México. Como pueden observar, es muy reciente el  reconocimiento del derecho al sufragio de las mujeres en nuestro país. </p>
+<p align="justify">¿Cómo  debemos conmemorar este hito en la Cámara de Diputados?</p>
+<p align="justify">En primer  lugar, hago un reconocimiento público a todas aquellas compañeras que desde sus  respectivas trincheras han librado sus propias batallas. </p>
+<p align="justify">A las  primeras legisladoras electas de México: Elvia Carrillo Puerto, Raquel Dzib y  Beatriz Peniche de Ponce. </p>
+<p align="justify">A la  primera Gobernadora, Griselda Álvarez Ponce de León, cuya memoria venero y  reconozco por la sabiduría con que gobernó Colima, mi estado. </p>
+<p align="justify">A mis  compañeras Senadoras del grupo parlamentario del Partido del Trabajo: Geovanna  Bañuelos, Nancy De la Sierra, Alejandra León y Cora Cecilia Pinedo, quienes hoy  son mayoría en el grupo parlamentario del Partido del Trabajo. </p>
+<p align="justify">A las  Senadoras Patricia Mercado y Josefina Vázquez Mota, quienes han sido una  inspiración para niñas a lo largo de todo espectro ideológico al ser candidatas  a la Presidencia de la República. </p>
+<p align="justify">  A todas  las Senadoras, quienes como Rocío Nahle, Nestora Salgado, Lilly Téllez, Susana  Harp, Xóchitl Gálvez, Alejandra Lagunes, Vanessa Rubio, Beatriz Paredes y  Claudia Ruiz Massieu, entre otras, han demostrado a incontables mujeres que el  techo de cristal puede romperse. </p>
+<p align="justify">A las  compañeras Senadoras que integran grupos parlamentarios de la otrora coalición  &ldquo;Juntos Haremos Historia&rdquo;, con quienes el triunfo y materialización de la  cuarta transformación hoy es una realidad. </p>
+<p align="justify">A la  Senadora Malú Micher Camarena, luchadora social incansable por la igualdad  entre hombres y mujeres.</p>
+<p align="justify">A la  Senadora Olga Sánchez Cordero, quien desde la Suprema Corte de Justicia de la  Nación luchó por un México igualitario y justo, y quien se convertirá en la  primera Secretaria de Gobernación en nuestro país. </p>
+<p align="justify">A la  Senadora Ifigenia Martínez, una mujer indispensable en la lucha de la izquierda  mexicana y en donde muchos encontramos un faro de inspiración. </p>
+<p align="justify">Finalmente,  a todas las compañeras Senadoras, quienes desde el Senado de la República,  todos los días luchan por un México igualitario, justo e incluyente. </p>
+<p align="justify">Para  todas pido un fuerte aplauso. </p>
+<p align="justify">En  segundo lugar, invito a mis compañeros Senadores a que hagamos una profunda  reflexión. Como hombres no nos hemos enfrentado a la discriminación y opresión  sistémica a la que se enfrentan nuestras compañeras; en cambio, gozamos de  algunos privilegios que debemos combatir. Reflexiones, incluso, sobre las  conductas inconscientes que refuerzan la desigualdad. </p>
+<p align="justify">Recordemos,  como aliados de la lucha feminista, que ninguna batalla por la igualdad  sustantiva es trivial; que debemos dejar atrás los roles tradicionales de  género; que los hombres somos corresponsables de las tareas del hogar; que no  debemos revictimizar a las mujeres; que la palabra de la mujer cuenta, sobre  todo en un país con miles de feminicidios, y en donde la violencia de género se  ha normalizado. </p>
+<p align="justify">Los  invito a reflexionar sobre nuestro trato a las mujeres. </p>
+<p align="justify">Tenemos  el compromiso de mi grupo parlamentario, el Partido del Trabajo, que  legislaremos para erradicar la violencia en contra de la mujer. Asimismo,  trabajaremos para erradicar la simulación y el fraude a la ley con lo que se  evita la participación efectiva de las mujeres en la vida pública. </p>
+<p align="justify">Aprobaremos  toda legislación que garantice los derechos fundamentales de la mujer y fomente  la inclusión en nuestra sociedad. </p>
+<p align="justify">En tercer  lugar, utilicemos esta fecha para recordar que la lucha por la igualdad  sustantiva entre hombres y mujeres es permanente. </p>
+<p align="justify">Y  finalmente, los derechos de las mujeres son derechos fundamentales, son  derechos humanos que deben ser garantizados y respetados sin importar si se  trata de la hermana, de la hija, de la esposa de un hombre. </p>
+<p align="justify">Los  invito a que dejemos atrás ese discurso, pues la dignidad y los derechos de las  mujeres no están ni deben estar en función de un hombre. </p>
+<p align="justify">A 65 años  del voto de la mujer en México, hemos dado otro paso enorme en garantizar la  participación de las mujeres en la vida pública de nuestro país, la paridad en  el Poder Legislativo y también en el gabinete federal de transición; sin  embargo, aún tenemos muchas tareas pendientes:</p>
+<p align="justify">La primera  Presidenta de México; la paridad en las gubernaturas, pues en 65 años sólo  siete mujeres han sido gobernadoras; la paridad en la Suprema Corte; la  igualdad salarial; garantizar su seguridad y tranquilidad en los espacios  públicos y combatir el acoso laboral y sexual. </p>
+<p align="justify">Compañeras  y compañeros: Desmantelemos todas aquellas instituciones opresoras de todo tipo  para que caminemos hacia un México igualitario, libre y justo. </p>
+<p align="justify">Sólo  garantizando la participación de las mujeres en las decisiones públicas,  podremos llamarnos una democracia sustantiva. </p>
+<p align="justify">Construyamos  un México en el que toda mujer pueda ser Presidenta de la República, Diputada  Federal, Senadora o Ministra. </p>
+<p align="justify">Seamos un  ejemplo para ellas. </p>
+<p align="justify">Construyamos  el México que merecen. </p>
+<p align="justify">Es  cuanto, señora Presidenta. </p>
+<p align="justify">Muchas  gracias. </p>
+<p align="justify"><strong>La Presidenta Senadora Mónica  Fernández Balboa:</strong> Gracias, Senador Padilla  Peña. </p>
+<p align="justify">Tiene el  uso de la tribuna la Senadora Patricia Mercado Castro, del grupo parlamentario  de Movimiento Ciudadano, hasta por cinco minutos. </p>
+<p align="justify"><strong>La Senadora Patricia  Mercado Castro:</strong> Muchas gracias. </p>
+<p align="justify">Primero,  bienvenidas todas ustedes, compañeras de muchos años de lucha, y que  seguramente lo que hoy festejamos es producto del trabajo de todas ustedes y  también de nosotras. </p>
+<p align="justify">Con su  permiso, señora Presidenta, Senadora Mónica Fernández, y con su permiso también  Senadora Martha Lucía Micher, Presidenta de la Comisión Para la Igualdad de  Género, que hoy nos acompaña presidiendo esta sesión. </p>
+<p align="justify">Hace 15  años, cuando cumplimos 50 años de haber logrado el derecho al voto, hicimos un  gran pacto las mujeres, hicimos un gran pacto, una primera reunión de mujeres  rurales diversas, y ese pacto se reflejó, nombramos a una mujer que hablara por  todas nosotras en ese evento, ese pacto era para, ok, ya logramos el voto, 50  años, pero no tenemos suficientes espacios de poder, pensando el poder como el  espacio de toma de decisiones sobre reformas legislativas, sobre acuerdos  legislativos y de política pública, y nombramos a la Ministra Olga Sánchez  Cordero para que fuera nuestra voz, y lo que dijo ella en ese evento, que me parece  que estos 15 años hemos honrado ese grito de acuerdo de todas, fue: &ldquo;que se  oiga fuerte y lejos, las mujeres queremos el poder&rdquo;. </p>
+<p align="justify">En estos  15 años creo que se ha oído fuerte y lejos que queremos el poder, ese poder de  influencia de toma de decisión que no pueden ser ya solamente los hombres desde  su formación de género los que tomen las decisiones, la sociedad es mixta, 50 y  50 por ciento y de esa manera tenemos que representarnos. </p>
+<p align="justify">Este año  tenemos una buena nueva, tenemos que festejar, tenemos que felicitarnos, puesto  que es la primera vez, llegamos este año con la primera vez que usamos el  derecho constitucional a la paridad, y este Senado y la Cámara de Diputados son  paritarios.</p>
+<p align="justify">Cuando  hicimos este pacto, que llamó mucho la atención, cómo mujeres tan distintas,  con diferencias, porque las mujeres tenemos diferencias; no por tener el cuerpo  de mujer pensamos igual, somos biológicamente iguales, pero política e ideológicamente  con visiones distintas. </p>
+<p align="justify">  Salió una  revista muy importante, que no les voy a decir cuál, y en uno de sus números  tenía una portada de tres hombres con mucho poder y el título era: &ldquo;Juegos de  Poder&rdquo;, y había toda una investigación; dos semanas después, la misma portada,  el mismo tipo de foto con tres mujeres, con mucho poder en ese momento, y el  título era: &ldquo;El aquelarre&rdquo;, es decir, no eran juegos de poder, sino eran pues  las brujas que siempre hemos sido, haciendo ahí nuestro menjurje para, sabe  qué, realmente muy desagradable. </p>
+<p align="justify">Pero es  un poco esa concepción de que las mujeres vienen en las luchas sociales, vienen  a luchas civiles, o bien en el territorio de las mejores causas para la  sociedad mexicana, pero no en el poder. </p>
+<p align="justify">También  decirles que en ese momento recordamos que una de las primeras Senadoras en  1964, doña María Lavalle Urbina, cuando le preguntaron, ella llegó en este año,  después de haber ganado el voto y dijo ella: &ldquo;Los hombres me dan la silla.  Pásele, siéntese, pero no me dan el lugar&rdquo;. Y creo que ahora nosotras podemos  decir: &ldquo;Nos ganamos la silla y el lugar, pero todavía no el poder&rdquo;. </p>
+<p align="justify">Las  mujeres no tenemos el suficiente poder político, ya muchos datos se han dicho  acá, no tenemos poder militar, no tenemos poder eclesiástico, no tenemos poder  económico. Entonces, la paridad, ¿para qué? ¿Para qué estamos aquí también  tantas mujeres, aquí en la Cámara de Senadores? </p>
+<p align="justify">Hay un  para qué, tenemos que seguir trabajando por ello. Necesitamos paridad en otros  ámbitos, la paridad política es para ganar paridad educativa, no podemos seguir  siendo servidoras, nosotras trabajadoras sociales, ellos abogados, no podemos,  ellas enfermeras, ellos médicos, es decir, necesitamos en el terreno educativo  lograr que se abran las puertas para las niñas y las adolescentes en todos los  espacios de la educación, es la manera en que vamos a lograr mayor igualdad en  el terreno económico del trabajo, de los ingresos y también, por supuesto,  paridad en las responsabilidades familiares. </p>
+<p align="justify">No  podemos comernos el mundo con nuestra paridad en lo público y seguir teniendo  casi exclusividad en las responsabilidades del cuidado de los vulnerables niños  enfermos, personas con discapacidad y personas adultas mayores que necesitan  cuidados. Eso no se puede, eso habla de que las mujeres tenemos hambre de  tiempo, precisamente por esta carga. </p>
+<p align="justify">Entonces,  la paridad política para lograr esas dos paridades, además de todo lo que se ha  dicho también acá, y termino, desde que empezamos este Senado, que nos ha  tocado a nosotras acá, de verdad, todas las mujeres de todas las fracciones  hemos pasado aquí a proponer una iniciativa legislativa que implica un nuevo  derecho, desde el derecho a, por supuesto, decidir sobre nuestro cuerpo, y la  legalización y despenalización del aborto, hasta la paridad en los consejos de  administración, por ejemplo, en la banca de desarrollo, pasando por muchas  otras iniciativas. </p>
+<p align="justify">Creo que  sabemos las personas que estamos acá, por la lucha de muchas otras que nos han  precedido y dispuestas, por supuesto, a seguir haciendo los pactos con nuestros  compañeros para avanzar en los derechos. </p>
+<p align="justify">Así es  que, ya decía y termino, falta mucho por hacer, hay mucha simulación, hay  violencia política, son nuevos temas que tenemos que enfrentar, pero tenemos  que felicitarnos como sociedad mexicana por esta reforma política que construyó  la paridad y bueno, aquí estamos las Senadoras haciendo buenos pactos con  nuestros compañeros Sanadores para impulsar los derechos que todas ustedes en  la calle están trabajando, están luchando con gran inteligencia, grandes  capacidades y nosotros aquí ser la voz para hacer las reformas legislativas  pertinentes. </p>
+<p align="justify">Muchísimas  gracias. </p>
+<p align="justify"><strong>La Presidenta Senadora  Mónica Fernández Balboa: </strong>Gracias, Senadora Patricia  Mercado. </p>
+<p align="justify">  Le  corresponde el uso de la palabra a la Senadora Sylvana Beltrones Sánchez, del  grupo parlamentario del Partido Revolucionario Institucional, hasta por cinco  minutos. </p>
+<p align="justify"><strong>La Senadora Sylvana  Beltrones Sánchez: </strong>Con su venia, señora Presidenta. </p>
+<p align="justify">Bienvenidas  a todas las distinguidas invitadas a este recinto. </p>
+<p align="justify">El 17 de  octubre de 1953, hace 65 años se publicó en el Diario Oficial de la Federación  la reforma constitucional que otorgaba el voto a las mujeres de todo el país. </p>
+<p align="justify">Así se cumplía  con un pendiente que debía haberse plasmado desde hace muchos años y que  significó el esfuerzo de muchas décadas de mujeres y hombres, porque se reconociera  el derecho que tienen las mujeres a ser partícipes de la vida pública de  nuestro país. </p>
+<p align="justify">Ese paso  permitió otros, como de las dos primeras mujeres que llegaron al Senado de la  República en 1964, uno ya lo mencionó la Senadora Mercado, María Lavalle Urbina,  y otra, sonorense como yo, doña Alicia Arellano Tapia, quien cabe mencionar que  además es madre de la única gobernadora actualmente en nuestro país, Claudia  Pavlovich Arellano. </p>
+<p align="justify">Conmemorar  significa agradecer a esas mujeres valientes, porque fue tanta su voz que hoy  sigue escuchándose en estos recintos, no sólo para recordar, sino para  comprometer, porque las mujeres no pedimos concesiones, sino reconocimiento de  nuestros derechos. </p>
+<p align="justify">Es por  ello que la inclusión, la igualdad de oportunidades y el combate a la violencia  contra las mujeres en todas sus formas, deben ser prioridades en toda agenda  legislativa. </p>
+<p align="justify">Celebro  que en este sexenio se hayan dado las acciones de trascendencia, como fue la  reforma constitucional de 2014 para garantizar la paridad de candidaturas entre  hombres y mujeres. </p>
+<p align="justify">Esto ha  permitido que en la presente Legislatura hayamos alcanzado, casi de forma  completa, la paridad en ambas Cámaras, colocando a México en el cuarto lugar  del ranking mundial de mujeres en el Parlamento, según la Unión  Interparlamentaria. </p>
+<p align="justify">No hay  duda que la participación de la mujer ha aumentado exponencialmente. Este año,  casi 3 mil mujeres compitieron por puestos públicos. </p>
+<p align="justify">Sin  embargo, es hora de pasar de lo cuantitativo a lo cualitativo, garantizar el  acceso implica también igualdad de oportunidades, tenemos que fortalecer la  presencia de las mujeres en la toma de decisiones y para esto no basta con el  discurso, sino con la presencia institucional en posiciones que les permita incidir  efectivamente, porque si bien es cierto que se están dando las oportunidades,  no menos cierto es que también necesitamos mejores y dignas condiciones para la  mujer en la vida laboral, mayores oportunidades para las madres que somos  trabajadoras, darle cumplimiento efectivo al artículo 4o. constitucional, y que  por trabajo igual, salario igual. </p>
+<p align="justify">Debemos  acabar con la misoginia que asfixia a cualquier sociedad moderna, es urgente  ponerle un alto a la violencia política de género. </p>
+<p align="justify">Resulta  lamentable que, según datos difundidos por el Observatorio Nacional Ciudadano,  en esta elección se perpetraron 774 agresiones contra candidatos a cargos  populares, de los cuales 23 se ejerció en contra de mujeres; es decir, 185  actos violentos como intimidaciones, amenazas, agresiones físicas, secuestros y  un saldo mortal de 19 mujeres asesinadas.</p>
+<p align="justify">  Compañeras  y compañeros: Es deber de este Congreso terminar el proceso legislativo  pendiente de la anterior Legislatura para tipificar el delito de violencia  política de género y fortalecer a las instituciones encargadas de combatirlo.</p>
+<p align="justify">Es deber  de éste Congreso no permitir situaciones que simulen la participación política  de la mujer, especialmente en las regiones más desprotegidas de nuestro país;  el silencio nos hace cómplices.</p>
+<p align="justify">En el  grupo parlamentario del PRI tenemos claridad de camino y apoyaremos todas  aquellas iniciativas que impulsen una participación segura y equitativa de las  mujeres en la política y la vida pública de nuestro país.</p>
+<p align="justify">Hoy  celebramos el voto de la mujer como un reconocimiento de justicia elemental en  nuestra vida democrática, la democracia es una labor compartida entre los  géneros, se enriquece en la diversidad y se fortalece en la pluralidad.</p>
+<p align="justify">Los  invito a que trabajemos en unidad para que esta conmemoración se traduzca en  acciones legislativas efectivas para nuestro país y que den seguridad y certeza  a las mujeres mexicanas.</p>
+<p align="justify">Muchas  gracias.</p>
+<p align="justify"><strong>La Presidenta Senadora  Mónica Fernández Balboa: </strong>Gracias, Senador Sylvana Beltrones.</p>
+<p align="justify">Tiene el  uso de la tribuna la Senadora Nadia Navarro Acevedo, del grupo parlamentario  del Partido Acción Nacional, hasta por cinco minutos.</p>
+<p align="justify"><strong>La Senadora Nadia Navarro  Acevedo: </strong>Muy buenas tardes a todas y a todos.</p>
+<p align="justify">Quiero  saludar con mucho cariño, con mucho respeto, a nuestras distinguidas invitadas  el día de hoy.</p>
+<p align="justify">Conmemorar  el Sexagésimo Quinto Aniversario del Derecho al Voto de las Mujeres en México  significa reconocer a todas aquellas mujeres que aceptaron el reto de  participar en la vida democrática, política de nuestro país.</p>
+<p align="justify">Recordar  y agradecer a todas aquellas mujeres que tuvieron que enfrentar a una sociedad,  pero sobre todo que tuvieron que pelear desde el seno de la Cámara de Diputados  y de Senadores para que se nos otorgara el derecho a votar y ser votadas.</p>
+<p align="justify">Esta  generación de la paridad legislativa les dice gracias, les dice gracias a todas  las pioneras que lucharon por el derecho al voto de la mujer en México.</p>
+<p align="justify">Gracias  no sólo por alcanzar este derecho que gradualmente ha incorporado a más mujeres  en los cargos de toma de decisión, sino porque nos dejaron el legado y el  entender que juntas, sin distinción de ideologías políticas y partidarias, pero  juntas en una causa cada día va a ser posible que la participación y la lucha  de ustedes las feministas haya valido la pena.</p>
+<p align="justify">Un  aplauso para ustedes.</p>
+<p align="justify">Muchas  gracias.</p>
+<p align="justify">Después  de la obtención del derecho al voto y con la llegada de las Senadoras en 1964,  y hasta la pasada Legislatura en el 2018, se contabilizan 190 mujeres que han  integrado las legislaturas en esta Soberanía.</p>
+<p align="justify">Fueron  ellas quienes, en otra etapa de nuestros derechos, impulsaron las reformas  constitucionales y los cambios a las leyes electorales que hicieron posible que  nosotras integremos hoy, en paridad, este Senado de la República.</p>
+<p align="justify">Ellas  iniciaron con las cuotas en 30 por ciento, luego la incrementaron al 40 por  ciento, continuaron con las reformas para evitar el fraude a la ley de las  llamadas &ldquo;Juanitas&rdquo;, determinaron un mínimo del 3 por ciento del financiamiento  de los partidos políticos para que se empleara en la capacitación y en la  preparación política de las mujeres que querían participar activamente.</p>
+<p align="justify">Votaron  las reformas constitucionales para lograr la anhelada paridad en un país que  está integrado, en su mayoría, por mujeres.</p>
+<p align="justify">Desde  aquí es importante reconocer a quienes han sido nuestros grandes aliados en  esta lucha y en esta causa, por eso nuestro agradecimiento y reconocimiento  eterno a los organismos internacionales, a los organismos que se han erigido en  la defensa de los derechos de las mujeres, pero en especial a ustedes, a  quienes tienen nombre, rostro, causa, a quienes hemos dejado casa, familia y  vida por impulsarnos a nosotras en sororidad, y mi reconocimiento a Marcela por  la creación de este término.</p>
+<p align="justify">¡Muchas  gracias, Marcela!</p>
+<p align="justify">Resulta  indispensable también mencionar en este momento a nuestros aliados incansables,  que han sido: el Poder Judicial, la Suprema Corte y el Tribunal Electoral del  Poder Judicial de la Federación, es importante mencionar, la sentencia 12 mil  624, transformadora y visionaria de los derechos políticos de las mujeres.</p>
+<p align="justify">Los  partidos políticos no hubieran estado obligados a cumplir con la entonces cuota  de género ni integrar fórmulas con suplencias del mismo sexo.</p>
+<p align="justify">Las  autoridades del Instituto Nacional Electoral también han sido pieza fundamental  en nuestros avances, porque con los lineamientos para garantizar la paridad en  candidaturas a las legislaturas federales y locales, y su trabajo transversal  de perspectiva de género, son los que han hecho que la paridad vertical y  horizontal hoy sea una realidad.</p>
+<p align="justify">Es  momento de hablar del grupo parlamentario de Acción Nacional.</p>
+<p align="justify">El  Partido Acción Nacional, de manera histórica, ha tenido un compromiso y una  vocación de servir y de impulsar la participación política de las mujeres.</p>
+<p align="justify">Es por  ello, y fiel a la causa, que nosotras, y en lo personal su servidora, ha  presentado una iniciativa para poder tipificar el delito de violencia en razón  de género.</p>
+<p align="justify">Con esto  buscamos garantizar un marco jurídico que dé certeza en este delito para contribuir  a eliminar la impunidad con la que se han conducido, los lamentables hechos de  violencia hacia las mujeres, y desde aquí mi reconocimiento a la iniciativa  presentada por la Senadora Kenia López Rabadán, que ha buscado que la paridad  sea en todos los niveles y en todos los organismos que integran el sector  público.</p>
+<p align="justify">¡Gracias,  Kenia, por tu participación!</p>
+<p align="justify">Hoy este  Senado, como ya lo han mencionado y no quiero dejar de mencionarlo, está  integrado por mujeres valientes que ya forman parte de la historia política de  nuestro país.</p>
+<p align="justify">Acción  Nacional tiene el orgullo de contar con una candidata a la Presidencia de la  República, mi reconocimiento a la Senadora Josefina Vázquez Mota.<br>
+  Por  supuesto a nuestra amiga, Margarita Zavala, que el día de hoy nos acompaña.</p>
+<p align="justify">Nuestro  reconocimiento a otra pionera de este movimiento y de esta causa, Paty Mercado.  Senadora, muchas gracias por ser ejemplo para las nuevas generaciones.</p>
+<p align="justify">Y en  especial y con mucho cariño a nuestra ex gobernadora de Tlaxcala, la Senadora  Beatriz Paredes.</p>
+<p align="justify">Y aquí  podemos mencionar un sinnúmero de nombres, pero la mejor manera de honrarlas es  adquiriendo el compromiso de seguir caminando juntas, de seguir luchando en la  defensa de los derechos de las mujeres, impulsando la participación y caminando  de la mano con ustedes, nuestros aliados principales, los hombres, los  Senadores, los Diputados y los que participan en esta nueva etapa de la vida  política de nuestro país.</p>
+<p align="justify">Muchas  gracias a todos ustedes.</p>
+<p align="justify">Que este  día sirva para recordar que el voto femenino en México no fue un obsequio, no  fue una concesión, sino el resultado de movimientos y luchas a favor de la  igualdad de género.</p>
+<p align="justify">Como  mujer, como madre, como Senadora, les doy las gracias desde lo profundo de mi  corazón.</p>
+<p align="justify">Muchas  gracias a ustedes.</p>
+<p align="justify"><strong>La Presidenta Senadora  Mónica Fernández Balboa: </strong>Gracias, Senadora Navarro.</p>
+<p align="justify">Se  concede el uso de la palabra a la Senadora Blanca Estela Piña Gudiño, del grupo  parlamentario del Partido Morena, hasta por cinco minutos.</p>
+<p align="justify"><strong>La Senadora Blanca Estela  Piña Gudiño:</strong> Buenas tardes a todos los compañeros y compañeras  del Senado.</p>
+<p align="justify">Y, por  supuesto, un gran abrazo a nuestras compañeras de lucha de muchos años.</p>
+<p align="justify">Las  saludo y les doy la más cordial bienvenida. Gracias por estar aquí.</p>
+<p align="justify">Con su  permiso, señora Presidenta.</p>
+<p align="justify">Ignoramos  nuestra verdadera estatura hasta que nos ponemos de pie.</p>
+<p align="justify">Este 17  de octubre se cumplen 65 años de la conquista del derecho al sufragio y el  reconocimiento de la igualdad cívica entre hombres y mujeres.</p>
+<p align="justify">Después  de seis décadas y media, para nadie es un secreto que este logro no fue una  concesión bondadosa del Estado, sino el resultado de la resistencia e  influencia del Movimiento Sufragista Internacional, así como de medio siglo de  lucha de nuestras abuelas, de nuestras madres, por nuestros derechos democráticos.</p>
+<p align="justify">Hoy,  después de 65 años, es imposible no recordar el papel heroico que desempeñaron  las siguientes mujeres: Consuelo Zavala, Dominga Canto, Adolfina Valencia de  Ávila, María Luisa Flota, Beatriz Peniche, Amalia Gómez, Piedad Carrillo Gil,  Isolina Pérez Castillo, Elena Osorio, Fidelia González, Candelaria Villanueva,  Lucrecia y Adriana Vadillo, Rosina Magaña y Consuelo Andrade.</p>
+<p align="justify">Todas  ellas impulsoras del Primer Congreso Feminista de 1917, en cuyo seno se escuchó  al unísono la justa exigencia de igualdad civil para que la mujer pudiera ser  elegible en los cargos administrativos y el decreto de la igualdad política y  de la representación parlamentaria.</p>
+<p align="justify">  También  tenemos que homenajear el significado histórico del ejemplo de Elvia Carrillo  Puerto y Beatriz Peniche de Ponce que, pese al descrédito lacerante del  machismo, figuraron como candidatas a Diputadas al Congreso del estado de  Yucarán, en noviembre de 1923.</p>
+<p align="justify">La  historia de todas ellas es la muestra fehaciente de que para nosotras no hay  regalos al nacer, mucho menos si eres mujer trabajadora. </p>
+<p align="justify">Y esto  hay que recordarlo siempre, fue la persistencia y necedad del Movimiento  Feminista en México de finales del siglo XIX y principios del siglo XX, el  precursor de nuestro derecho pleno a la ciudadanía en este país.</p>
+<p align="justify">Hay que  recordarlo bien, porque es verdad que en 1953 se conquistó el derecho al voto.</p>
+<p align="justify">Esta  épica lucha no se materializó sino hasta décadas después, debido a que en la  mayoría de los casos seguían siendo los hombres, los padres y esposos quienes  decidían lo que sus esposas, hijas y hermanas deberían de opinar, decir, crecer  o hacer en política.</p>
+<p align="justify">Más aún,  nuestro derecho al sufragio, nuestro derecho a votar no incluyó el derecho  efectivo a ser votadas.</p>
+<p align="justify">¿Cuántas  décadas pasaron para que en el país existiera la primera candidata a la  Presidencia de la República? </p>
+<p align="justify">¿Cuánto  tiempo ha pasado para lograr la paridad en los puestos de representación  popular? </p>
+<p align="justify">¿Cuánto  tiempo pasará para que esta paridad tenga efecto?</p>
+<p align="justify">Las  respuestas a estas preguntas no pueden ser formalistas y tampoco podemos  engañarnos.</p>
+<p align="justify">Hoy  sabemos que en el estado de Chiapas, 10 Diputadas Locales, propietarias y  suplentes, así como 30 Regidoras, renunciaron para dejar su lugar a hombres.</p>
+<p align="justify">Se estima  que en este estado hasta ahora 40 mujeres han sido presionadas para que  abandonen sus cargos.</p>
+<p align="justify">Para  algunas compañeras resultará sorprendente este hecho, para otras, me incluyo,  estos penosos actos nos resultan, por desgracia, comunes. Esto lo decimos y lo  denunciamos.</p>
+<p align="justify">En el  país de los feminicidios donde a nuestras hijas, hermanas, madres, sobrinas o  amigas les cuesta la vida el hecho de ser mujeres, no es extraño que esta misma  razón se use para justificar la violencia política.</p>
+<p align="justify">En el  país aún nos falta mucho para conquistar la paridad política, porque a las  mujeres se nos excluye por el simple hecho de ser mujeres, porque aún hay  bárbaros que piensan que el papel de nosotras es ser la señora de la casa,  porque aún se piensa que nuestro lugar es en la cocina, que nuestra obligación  es únicamente ser madres.</p>
+<p align="justify">La visión  patriarcal motiva a que las mujeres sigamos siendo las principales responsables  de las actividades de cuidados y labores domésticas.</p>
+<p align="justify">Según la  ONU, las mujeres destinamos 28 horas en promedio a la semana en actividades  domésticas y de cuidados, mientras que los hombres destinan sólo 14 horas en  promedio, lo que limita de facto nuestra posibilidad de participar  políticamente y ocupar cargos de representación popular.</p>
+<p align="justify">  Ante la  fuerza retrógrada de estos hechos, debemos reconocer que nuestra democracia es  perfectible, que nuestra sociedad aún tiene una deuda en cuanto a los derechos  políticos de las mujeres.</p>
+<p align="justify">Pero  también debemos reconocer que hay experiencias, aprendizajes, certezas,  resistencia y mucha dignidad que iluminan el camino. </p>
+<p align="justify">El nuevo  auge y empuje que se vive por la lucha de los derechos de la mujer en todo el  mundo nos motiva a renovar esfuerzos para reconquistar nuestro pleno derecho a  votar y ser votadas.</p>
+<p align="justify">65 años  han pasado, y aunque hay tareas que siguen pendientes, hoy podemos hablar desde  esta tribuna reconociendo los aportes del Congreso Feminista de 1916 o de Elvia  Carrillo Puerto y de muchas otras mujeres que trazaron el camino que permite  logros históricos, como el pasado 1° de julio.</p>
+<p align="justify">Por  primera vez en la historia tenemos un Congreso de la Unión y un gabinete  paritarios, lo cual muestra una clara transformación del país, el cual exige  que las voces que se pronuncien en las tribunas reflejen la realidad en que  vivimos. Esta realidad está marcada por el hecho de que más del 50 por ciento  de los mexicanos somos mujeres.</p>
+<p align="justify">Ante toda  la carga histórica que representa ocupar un espacio en el Senado de la  República, refrendamos el compromiso de legislar, siguiendo el ejemplo de  quienes nos antecedieron y hacer avanzar los derechos de las mujeres.</p>
+<p align="justify">Que quede  claro, no puede haber revolución sin la participación de las mujeres.</p>
+<p align="justify">Y aquí  quiero hacer una mención, de que con nuestro Presidente Electo, precisamente  habrá paridad en su gabinete.</p>
+<p align="justify">Ya lo  sabíamos todos y eso pues nos congratula y nos da mucho gusto.</p>
+<p align="justify">Muchas  gracias.</p>
+<p align="justify"><strong>La Presidenta Senadora  Mónica Fernández Balboa:</strong> Gracias, Senadora Blanca Piña.</p>
+<p align="justify">Hoy  debemos celebrar y congratularnos, debemos de hacerlo con gran orgullo, pues  gracias a la lucha que han dado miles de mujeres acompañadas por hombres que  han abrazado nuestra causa, este Senado es una muestra de que hemos logrado la  tan anhelada paridad de género.</p>
+<p align="justify">La  participación de las mujeres en la vida política de México es resultado de una  lucha constante para que fueran reconocidos plenamente la igualdad jurídica  entre hombres y mujeres en nuestra Constitución, nuestros derechos como  ciudadanas mexicanas, así como el acceso a un trabajo digno, la igualdad de  salarios y generar condiciones equitativas para que tanto hombres, como mujeres  puedan participar de forma activa en el desarrollo de este país.</p>
+<p align="justify">Este  proceso no ha sido sencillo, ni está terminado. Más allá de diferencias ideológicas,  siempre en la pluralidad, pero con el mismo objetivo de lograr la igualdad  entre géneros, las mujeres hemos dado y seguiremos dando la batalla para  garantizar que en México se acabe la discriminación por cualquier causa.</p>
+<p align="justify">México es  hoy un país más democrático, más equitativo e incluyente gracias al impulso, a  la determinación y al trabajo de millones de mexicanas.</p>
+<p align="justify">Estamos  en la antesala de profundas transformaciones institucionales.</p>
+<p align="justify">  Nuestro  país se está encaminando hacia una democracia más consensual y más  participativa, que requiere de la acción decidida de todas las mujeres desde la  trinchera que cada una elija en libertad.</p>
+<p align="justify">Debemos  aprovechar la fuerza de la representación política de las mujeres en este  Senado de la República para imaginar un México nuevo, en el que la igualdad de  género sea una realidad.</p>
+<p align="justify">Vamos,  pues, juntas por la vigencia de todos nuestros derechos, vamos juntas por una  vida sin violencia, vamos juntas por una República de iguales, vamos por una  República justa, vamos por una República feminista.</p>
+<p align="justify">Se  solicita a todos los asistentes y a nuestras invitadas ponerse de pie para  entonar el Himno Nacional.</p>
+<p align="center">(Todos de  pie entonan el Himno Nacional)</p>
+<p align="justify">Favor de  tomar asiento.</p>
+<p align="justify">Agradecemos  la presencia de las invitadas y los invitados que nos distinguieron  acompañándonos en esta sesión solemne.</p>
+<p align="justify">Solicito  a la comisión designada acompañen  a las  y los invitados cuando deseen retirarse del salón.</p>
+<p align="justify">Solicito  a las Senadoras y Senadores permanecer en sus lugares para continuar con nuestra sesión ordinaria, y  recibir la comparecencia del titular de la Secretaría de Gobernación, para el  Análisis del VI Informe de Gobierno, en materia de política interior.</p>
+<p align="justify">Se levanta la sesión  solemne.</p>
+<p align="center">(Se levantó la sesión  solemne a las 13:10 horas)</p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Delegación Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfonos: 53-45-30-00<br>
+        Exts. 5405/5408</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+        Correo electrónico: diario_debates@senado.gob.mx</p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a80170'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

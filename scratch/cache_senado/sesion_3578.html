@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 38</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Gerardo Fernández Noroña</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Ordinaria Celebrada<br>en la Ciudad de M&eacute;xico, el 28 de Noviembre de 2024</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/1/PPO/PDF-WEB/PPO_No38_28-NOVIEMBRE-2024_MATUTINA.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118159'></a><p align="center"><strong>PRESIDE  EL SENADOR</strong><br>
+  <strong>GERARDO  FERNÁNDEZ NOROÑA</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>(12:04 horas) Solicito a la Secretaría  informe el resultado del cómputo de asistencia de las personas Senadoras. </p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat: </strong>Con gusto, señor Presidente. Honorable  Asamblea, conforme al registro de asistencia, se han acreditado 65 ciudadanas Senadoras  y ciudadanos Senadores. En consecuencia, hay quórum, señor Presidente. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Se abre la sesión del jueves 28 de noviembre  de 2024 correspondiente al primer periodo ordinario de sesiones del primer año  de ejercicio de la LXVI Legislatura. El Orden del Día está publicado en la  Gaceta Parlamentaria del día de hoy y disponible en el monitor de sus escaños;  con lo cual se informa de los asuntos que corresponden a la agenda. </p>
+<p align="right"><strong>ORDEN DEL DÍA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/gaceta_del_senado/documento/146114"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>El acta de la sesión del 27 de noviembre se  encuentra publicada en la Gaceta Parlamentaria de este día.</p>
+<p align="right"><strong>ACTA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/gaceta_del_senado/documento/146113"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/asistencias/2024_11_27/36"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>En consecuencia, consulte la Secretaría a la  Asamblea, en votación económica, si se aprueba el acta referida. </p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat: </strong>Con gusto. Consulto a la Asamblea, en  votación económica, si se aprueba el acta referida. Quienes estén porque se  apruebe, favor de levantar la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén porque se rechace, favor de  levantar la mano. </p>
+<p align="center">(La Asamblea no  asiente)</p>
+<p>Quienes se abstengan, favor de levantar la  mano. </p>
+<p>Aprobada el acta, señor Presidente. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Aprobada el acta de la sesión del 27 de  noviembre de 2024. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118159'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118160'></a><p><strong>COMUNICACIONES</strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat: </strong>Se recibió una comunicación de la Comisión de  Relaciones Exteriores, Europa, con la que remite su programa de trabajo para el  primer año de ejercicio de la Legislatura en curso. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/Ofic_Programa_Trabajo_Com_Relaciones_Exteriores_Europa.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>La Asamblea ha quedado enterada. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118160'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118161'></a><p><strong>BANCO DE MÉXICO</strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat: </strong>Se recibió un oficio del Banco de México, con  el que nos envía el informe en el que se analiza la inflación, la evolución  económica y el comportamiento de los indicadores económicos del país en el  trimestre julio-septiembre de 2024, así como la ejecución de la política  monetaria y, en general, las actividades del Banco de México durante dicho  período en el contexto de la situación económica nacional e internacional  aprobado por la Junta de Gobierno del Banco. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/Ofic_Informe_Trimestral_Banco_de_Mexico.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Remítase a la Comisión de Hacienda y Crédito  Público. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118161'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118162'></a><p><strong>CONGRESOS DE LOS ESTADOS</strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat: </strong>Se recibieron los siguientes oficios de  congresos locales:</p>
+<p>Del Estado de Baja California Sur, con el que  remite su voto aprobatorio al Decreto por el que se reforman y adicionan los  artículos 3º, 4º y 73 constitucionales, en Materia de Protección y Cuidado  Animal. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/Congreso_BCS_Aprueba_Minuta_en_Materia_Proteccion_y_Cuidado_Animal.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118162'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118163'></a>Del Estado de Yucatán con el que remite su voto aprobatorio al Decreto por el que se reforman y adicionan los artículos 3º, 4º y 73 constitucionales, en Materia de Protección y Cuidado Animal. <p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/Congreso_Yucatan_Aprueba_Minuta_en_Materia_Proteccion_y_Cuidado_Animal.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118163'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118164'></a><p>Del Estado de Chihuahua, con el que remite su  voto aprobatorio al Decreto por el que se reforman y adicionan diversos  artículos constitucionales, en Materia de igualdad Sustantiva, Perspectiva de  Género, Derecho de las Mujeres a una Vida Libre de Violencia y Erradicación de  la Brecha Salarial por Razones de Género. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/Congreso_CHIH_Aprueba_Minuta_en_Materia_Igualdad_Sustantiva.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118164'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118165'></a><p>Del Estado de Querétaro con el que remite su  voto aprobatorio al Decreto por el que se reforman y adicionan diversos  artículos constitucionales, en Materia de Igualdad Sustantiva, Perspectiva de  Género, Derecho de las Mujeres a una Vida Libre de Violencia y Erradicación de  la Brecha Salarial por Razones de Género. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/Congreso_QRO_Aprueba_Minuta_en_Materia_Igualdad_Sustantiva.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118165'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118166'></a><p>Uno, del Estado de Coahuila de Zaragoza con  el que remite su voto aprobatorio al Decreto por el que se reforman y adicionan  los artículos 4º y 27 constitucionales, en Materia de Bienestar.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/Congreso_Coahuila_Aprueba_Minuta_en_Materia_Bienestar.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118166'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118167'></a><p>Otro, del Estado de Coahuila de Zaragoza con  el que remite su voto aprobatorio al Decreto por el que se reforman y adicionan  la fracción XII del Apartado A del artículo 123 constitucional, en Materia de  Vivienda para las Personas Trabajadoras. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/Congreso_Coahuila_Aprueba_Minuta_en_Materia_Vivienda_Personas_Trabajadoras.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>La Asamblea ha quedado enterada de todas las  comunicaciones. Intégrese a los expedientes correspondientes derivado de las  declaraciones emitidas el 26, 13 y 6 de noviembre del año en curso,  respectivamente. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118167'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118168'></a><p>Honorable Asamblea, a partir de las licencias  autorizadas a la Senadora Alejandra Barrales Magdaleno, a los Senadores  Francisco Ricardo Sheffield Padilla e Ignacio Mier Velazco, se ha convocado a  la ciudadana Carmen Julieta Macías Rábago y a los ciudadanos Diego Sandoval  Ventura y Carlos Alberto Evangelista Aniceto, para que rindan la protesta  correspondiente. </p>
+<p>Las y los ciudadanos mencionados se  encuentran en el salón contiguo. Por esta razón, solicito a las Senadoras y Senadores:  Alma Anahí González Hernández, Yeidckol Polevnsky Gurwitz, Alejandra Berenice  Arias Trevilla, Heriberto Marcelo Aguilar Castillo, Emmanuel Reyes Carmona y  Simey Olvera Bautista. </p>
+<p>Y a las Senadoras y Senadores del grupo  parlamentario de Movimiento Ciudadano para que inviten a pasar al salón de  sesiones y los acompañen durante el acto de su protesta.</p>
+<p align="center">(La comisión cumple)</p>
+<p> L<strong>a  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Solicito a las y los  asistentes, así como a las Senadoras y Senadores, sirvan ponerse de pie. </p>
+<p>Solicito  nuevamente a las y los asistentes, así como a las Senadoras y Senadores, por  favor, sirvan ponerse de pie. </p>
+<p align="center">(Todos  de pie)</p>
+<p><strong>PROTESTA DE LEY</strong></p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Ciudadana  Carmen Julieta Macías Rábago, ciudadanos Diego Sandoval Ventura y Carlos  Alberto Evangelista Aniceto, esta Soberanía les ha convocado para que rindan su  protesta constitucional y legal como Senadora y Senadores de la Republica. </p>
+<p>En  consecuencia, les pregunto: ¿Protestan guardar y hacer guardar la Constitución  Política de los Estados Unidos Mexicanos, las leyes que de ella emanen y  desempeñar leal y patrióticamente el cargo que el pueblo les ha conferido,  mirando en todo por el bien y la prosperidad de la Unión?</p>
+<p><strong>Los  Ciudadanos Carmen Julieta Macías Rábago, Diego Sandoval Ventura y Carlos  Alberto Evangelista Aniceto: </strong>¡Sí, protesto!</p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Si  así no lo hicieran, que la Nación se los demande. </p>
+<p>¡Felicidades,  compañera y compañeros Senadores!</p>
+<p>Les  solicito pasen a ocupar el escaño que les ha sido asignado, a fin de que se  incorporen inmediatamente a nuestros trabajos. </p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Pueden  tomar asiento, muchísimas gracias. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Honorable  Asamblea, aprovecho para volverlos a invitar a la feria artesanal que artesanos  y artesanas del Estado de México tienen en la cuña. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118168'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118169'></a><p>Honorable  Asamblea, hemos recibido en la Mesa Directiva dos Acuerdos de la Junta de  Coordinación Política por los que se modifica la integración de comisiones. </p>
+<p>Consulte  la Secretaría a la Asamblea, en votación económica, si autoriza que se  incorporen a la agenda de este día para su trámite. </p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con  gusto, señor Presidente. Consulto a la Asamblea, en votación económica, si  autoriza que se integren al Orden del Día de hoy los Acuerdos referidos por la  Presidencia. Quienes estén por la afirmativa, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea asiente)</p>
+<p>Quienes  estén por la negativa, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p>Quienes  se abstengan, favor de levantar la mano. </p>
+<p>Sí  se autoriza la incorporación, señor Presidente. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Los  Acuerdos están a su disposición en el monitor de sus escaños para su  conocimiento. </p>
+<p> Solicito a la Secretaría dé lectura a cada  uno.</p>
+<p><strong>JUNTA  DE COORDINACIÓN POLÍTICA</strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat: </strong>Con gusto. Primero. De la conformación de la  Comisión de Defensa de los Consumidores. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/Acuerdo_JCP_Comisiones_1.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118169'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118170'></a><p>Segundo. De las modificaciones en la  conformación de la Comisión de Administración.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/Acuerdo_JCP_Comisiones_2.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es  todo, señor Presidente.</p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Están  a discusión los Acuerdos. En virtud de no haber personas oradoras registradas,  consulte la Secretaría a la Asamblea, en votación económica, si son de  aprobarse los Acuerdos presentados. </p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con  gusto. Consulto a la Asamblea, en votación económica, si son de aprobarse los  Acuerdos. Quienes estén porque se aprueben, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea asiente)</p>
+<p>Quienes  estén porque se rechacen, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p>Quienes  se abstengan, favor de levantar la mano. </p>
+<p>Aprobados  los Acuerdos, señor Presidente. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Aprobados  los Acuerdos por los que se modifica la integración de las comisiones.  Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118170'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/kZ8QZEroQoU?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='118171'></a><p>Pasamos  a la discusión de un dictamen de las Comisiones Unidas de Gobernación; y de  Anticorrupción y Transparencia, con punto de Acuerdo por el que se ratifica el  nombramiento, que la titular del Poder Ejecutivo Federal expidió a favor de la  ciudadana Raquel Buenrostro Sánchez, como titular de la Secretaría de la  Función Pública. </p>
+<p>El  dictamen fue aprobado el día de ayer por las comisiones y está publicado en la  Gaceta Parlamentaria y disponible en el monitor de sus escaños; sin embargo,  como es de su conocimiento, el numeral 1 del artículo 193 del Reglamento del  Senado, señala que los dictámenes se publican cuando menos 24 horas antes de la  sesión del Pleno a la que son puesto a debate y votación. </p>
+<p>Voy  a solicitar a la Secretaría que consulte a la Asamblea, en votación económica,  si autoriza dispensar el requisito de publicación de 24 horas, a efecto de que  el dictamen pueda ser discutido y votado en esta sesión. </p>
+<p>Proceda  la Secretaría. </p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat:</strong> Consulto a la Asamblea, en votación económica, si autoriza que se dispense el  requisito de 24 horas de publicación del dictamen. Quienes estén por la  afirmativa, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea asiente)</p>
+<p>Quienes  estén por la negativa, favor de levantar la mano.</p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Va  a estar a debate el dictamen, Senadora, va a estar a debate. </p>
+<p>¿Es  otro tema? Sigue sin funcionar el sistema de registro.</p>
+<p>Que  corrija la Secretaría. Tome asistencia de la Senadora Téllez García. </p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat:</strong> Termino la votación. </p>
+<p>Quienes  se abstengan, favor de levantar la mano. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña:</strong> ¿Quién más me está solicitando? </p>
+<p>Sí,  ¿con qué objeto? Senadora. También tiene problemas para el pase de asistencia. </p>
+<p>Ayuda  técnica o, en su defecto, voy a solicitar a la Secretaría. </p>
+<p>¡Ah!  No has terminado la votación. Perdón, la interrumpí. </p>
+<p>Adelante,  continúe la Secretaría. </p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat:</strong> Quienes se abstengan, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p>Gracias. </p>
+<p>Sí  se autoriza, señor Presidente. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña:</strong> En consecuencia, procederemos al desahogo del dictamen. </p>
+<p>Solicito  a la Secretaría dé lectura. <strong></strong></p>
+<p><strong>RATIFICACIÓN DE NOMBRAMIENTO DE LA CIUDADANA RAQUEL  BUENROSTRO SÁNCHEZ, COMO TITULAR DE LA SECRETARÍA DE LA FUNCIÓN PÚBLICA</strong></p>
+<p><strong>(Dictamen a discusión)</strong></p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat:</strong> Con gusto. </p>
+<p align="right"><strong>DOCUMENTOS</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/Dictamen_Nombramiento_SFP.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/Asistencia_Dictamen_SFP.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/Votaciones_Dictamen_SFP.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es cuanto, señor Presidente.</p>
+<p> <strong>El  Presidente Senador Gerardo Fernández Noroña:</strong> En consecuencia, se concede el uso de la palabra a la Senadora Lilia Margarita  Valdez Martínez, Presidenta de la Comisión de Gobernación, hasta por cinco  minutos. </p>
+<p><strong>La  Senadora Lilia Margarita Valdez Martínez:</strong> Muchísimas gracias, señor Presidente. Honorable Asamblea. Compañeras y  compañeros:</p>
+<p>Hace  unos días las Comisiones Unidas de Gobernación; y de Anticorrupción y  Transparencia recibimos turno de la Mesa Directiva para analizar y dictaminar  la comunicación de la Presidenta de la República, por la que somete a  ratificación de la Cámara de Senadores el nombramiento de la ciudadana Raquel  Buenrostro Sánchez, como Secretaria de la Función Pública. </p>
+<p>Déjenme  informarles a ustedes, Senadoras y Senadores, pueblo de México, que nos  reunimos las juntas directivas de la Comisión  de Gobernación, de la cual presido, y la Comisión de Anticorrupción y  Transparencia, que preside el Senador Daniel… </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña:</strong> Daniel Barreda Pavón. </p>
+<p><strong>La Senadora Lilia Margarita Valdez Martínez:</strong>… Barreda. </p>
+<p>Gracias, Senador, muy amable. </p>
+<p>Y llegamos al Acuerdo de que al día siguiente  íbamos a convocar a las comisiones para hacer el dictamen. Eso fue el día de  ayer. </p>
+<p>Es que estoy distraída, Senador, porque el ruidito  éste me distrae mucho. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña:</strong> A ver, permítame un segundo, Senadora Valdez. </p>
+<p>Sí es difícil concentrarse, compañeros. Ya no  sabemos qué es mejor si cuando están ausentes o cuando están presentes. </p>
+<p>Les pedimos guardar silencio, por favor, para  escuchar. Pedimos tanto del lado de Morena, como del lado de Acción Nacional si  pudieran, por favor, ayudarnos. </p>
+<p>Adelante. </p>
+<p><strong>La Senadora Lilia Margarita Valdez Martínez: </strong>Gracias. </p>
+<p>En las comisiones nos pusimos de acuerdo, y ayer en  un ejercicio democrático, transparente, muy público donde los medios de  comunicación estuvieron, llegamos a un Acuerdo. </p>
+<p>Déjenme decirles rápidamente que la maestra Raquel  Buenrostro se ha desempeñado como Oficial Mayor de la Secretaría de Hacienda y  Crédito Público, de diciembre de 2018 a diciembre de 2019; ocupó el cargo de  directora general de Pemex de febrero del 2017 a octubre del 2017; ha sido  gerente de planeación y desarrollo de junio de 2015 a enero de 2017; ha sido  asesora del director de administración en finanzas del comercio internacional  de enero del 14 a noviembre del 14. </p>
+<p>Sería largo de poner, ante ustedes, el currículum  de la maestra Buenrostro, y lo que nos dice es la idoneidad de la maestra para  ocupar el puesto al cual es propuesta. </p>
+<p>Yo nada más quiero recalcar ante ustedes que la  maestra Buenrostro es de los pocos funcionarios públicos que ha acumulado 28  años de carrera al servicio del pueblo de México; 28 años donde se ha  caracterizado por ser una mujer intachable, por ser una mujer incorruptible,  por estar a la altura de lo que el país y el pueblo de México necesita. </p>
+<p> La maestra Raquel Buenrostro cuenta con el aval de  los y las Senadoras de las comisiones, que ayer aprobamos por mayoría su  ratificación. </p>
+<p>Estoy segura y convencida que la Presidenta de la  República, la doctora Claudia Sheinbaum, cuenta en Raquel en un colaborador  leal, con una colaboradora comprometida que va a cuidar los encargos, las  tareas que la Presidenta le dé. </p>
+<p>Raquel Buenrostro, podemos confiar, pueblo de  México, que es una mujer que no nos va a fallar. </p>
+<p>Las tareas que se le encargarán a ella estarán en  buenas manos, Raquel Buenrostro es una mujer de nuestros tiempos, es una mujer  comprometida leal, que va a tener la capacidad de levantar al pueblo de México  sus finanzas y, lo que es muy importante que ella en una forma clara nos  explicó, ir en contra de la corrupción. </p>
+<p>Es una mujer comprometida con que se sanen las  finanzas, la Función Pública y se transparenten los ejercicios de todos y de  todas, incluyendo lo nuestro. </p>
+<p>Yo les pido a ustedes, los convoco a que le demos  nuestro voto de confianza a Raquel. </p>
+<p>Estamos en buenas manos, una mujer que nunca le va  a fallar ni a la Presidenta de la República, ni al Senado de la República, y  mucho menos al pueblo de México. </p>
+<p>Muchas  gracias.</p>
+<p>Muy  amables por su atención.</p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña:</strong> Muchas gracias, Senadora Valdez Martínez.</p>
+<p>Tiene  el uso de la palabra el Senador Francisco Daniel Barreda Pavón, Presidente de  la Comisión Anticorrupción y Transparencia, hasta por cinco minutos, para  presentar también el dictamen.</p>
+<p><strong>El  Senador Francisco Daniel Barreda Pavón:</strong> Gracias, señor Presidente. Estimadas compañeras y compañeros Senadores:</p>
+<p>El  día de ayer en sesión de comisiones unidas con la Comisión de Gobernación  dictaminamos en conjunto y votamos a favor de la ratificación de la maestra  Raquel Buenrostro Sánchez, como titular de la Secretaría de la Función Pública.</p>
+<p>Este  respaldo no solo refleja nuestra confianza en su capacidad sino también una  gran expectativa de resultados concretos y acciones firmes que respondan a la  demanda de la ciudadanía.</p>
+<p>Hoy  estamos ante un momento significativo para esta Secretaría, ya que no solo  mantendrá sus funciones tradicionales, sino que con su próxima transformación  en la Secretaría de Anticorrupción y Buen Gobierno, asumirá nuevas y mayores  responsabilidades.</p>
+<p>Este  cambio no es meramente simbólico, representa una ampliación de su alcance,  atribuciones y, sobre todo, de las expectativas que este Senado y la sociedad  tienen sobre su desempeño.</p>
+<p>La  nueva Secretaría Anticorrupción y Buen Gobierno tendrá a su cargo tareas  críticas como:</p>
+<p> 1.  La modernización administrativa.</p>
+<p>2.  La implementación de políticas de transparencia proactiva.</p>
+<p>3.  La conducción de compras públicas con mayor eficiencia y ética, y</p>
+<p>4.  La supervisión del cumplimiento de los principios de buen gobierno.</p>
+<p>Este  rediseño institucional no solo amplía sus funciones, sino que establece un  estándar más ato de desempeño.</p>
+<p>La  ciudadanía espera resultados concretos en la lucha contra la corrupción y en la  construcción de un gobierno más transparente, eficiente y ético.</p>
+<p>Este  nombramiento se hace bajo la premisa de que estas metas son alcanzables,  siempre que haya un liderazgo comprometido con la transparencia, la rendición  de cuentas y el combate a la corrupción.</p>
+<p>Hemos  decidido otorgarle nuestro voto de confianza, pero éste no es un cheque en  blanco, es un voto que lleva consigo condiciones claras y una exigencia  contundente de resultados.</p>
+<p>Respaldamos  ese nombramiento con expectativas firmes y un compromiso claro: quienes cometan  actos de corrupción deben ser sancionados con todo el peso de la ley; el  combate a la corrupción no solo es un compromiso ético sino una obligación  legal y moral que exige actuar con firmeza y sin concesiones.</p>
+<p>Además,  es imprescindible que esta Secretaría opere bajo un esquema de total  transparencia y de puertas abiertas. </p>
+<p>La  ciudadanía tiene el derecho de:</p>
+<p>1.  Acceder plenamente a la información.</p>
+<p>2.  Conocer los procesos y resultados de cada acción emprendida.</p>
+<p>3.  Participar activamente en la vigilancia y evaluación de las políticas  públicas.   </p>
+<p>Esta  nueva etapa debe ser un ejemplo de cómo la transparencia y la rendición de  cuentas fortalece la democracia y garantizan un gobierno más cercano a las  necesidades de las y los mexicanos.</p>
+<p>Nos  aseguraremos de que los funcionarios que sean descubiertos cometiendo actos de  corrupción sean sancionados y que estas sanciones se apliquen de manera  efectiva.</p>
+<p>Si  esto no ocurre, este Senado alzará la voz para exigir que se respeten los  principios de justicia y legalidad. </p>
+<p>Maestra  Raquel Buenrostro: Con esta ratificación asumimos que su liderazgo estará a la  altura de los desafíos que enfrenta el país en materia de corrupción y buen  gobierno.</p>
+<p>La  responsabilidad que hoy asumimos como Senadores y que usted asume como titular  de la Secretaría de la Función Pública es enorme.</p>
+<p>Pero  también, es una oportunidad única para transformar la manera en que se combate  la corrupción en nuestro país y se garantiza un gobierno más eficiente y  transparente. </p>
+<p> La  ciudadanía espera acciones contundentes y transformadoras en materia de  transparencia, justicia y buen gobierno. </p>
+<p>Este  Senado será vigilante y colaborativo para asegurar que las expectativas se  traduzcan en avances concretos y beneficien a todas y todos los mexicanos. </p>
+<p>Hoy  le deseamos éxito, confiando en que su gestión marcará una diferencia  significativa en el combate a la corrupción y la promoción de gobierno más  transparente y eficiente. </p>
+<p>La  ciudadanía exige justicia y cambios que impacten positivamente en nuestro país  y estamos seguros que este nombramiento puede ser un paso importante hacia ese  objetivo. </p>
+<p>Muchas  gracias. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Muchas  gracias, Senador Barreda Pavón. </p>
+<p>Está  a discusión el dictamen y tengo registradas tres personas para intervenir todas  en favor. </p>
+<p>Tiene  la palabra la Senadora Amalia Dolores García Medina del grupo parlamentario de  Movimiento Ciudadano, para intervenir a favor, hasta por cinco minutos. </p>
+<p><strong>La  Senadora Amalia Dolores García Medina: </strong>Muy  buenos días, señor Presidente. Compañeras, compañeros: </p>
+<p>La  decisión que se ha tomado de nombrar a la maestra Raquel Buenrostro como  titular de lo que ha sido la Secretaría de la Función Pública, y ahora será la  Secretaría Anticorrupción, resulta desde el ámbito específico, personal de  ella, como servidora pública muy relevante. </p>
+<p>Es  una mujer con una preparación académica y también en el servicio público muy  consistente, licenciada en matemáticas por nuestra máxima casa de estudios,  maestra en economía por el Colegio de México y en el servicio público ha sido  titular de la Secretaría de Economía, y también del Sistema de Administración  Tributaria. </p>
+<p>En  ambos casos se ha desempeñado con rigor y eso habla de una personalidad que  está al servicio de la ciudadanía. </p>
+<p>Su  preparación y su conformación profesional, lo que muestran es que hay una  vocación de servicio. </p>
+<p>Eso,  desde Movimiento Ciudadano, decimos, no tenemos la menor duda, no nos preocupa  la formación, el compromiso, la experiencia de la maestra Buenrostro. </p>
+<p>En  dónde es en donde tenemos la decisión y el interés de poner el acento en el  desempeño que ella tendrá, sobre todo porque asumirá una nueva responsabilidad</p>
+<p>Primero,  sabemos que un nuevo gobierno requiere el respaldo para poder echar a andar su  proyecto de país, y la administración pública reflejará esa visión de nación,  esperamos que sea en beneficio de un México transparente que enfrente la  corrupción. </p>
+<p>Pero  hay que decir que los retos de la maestra Buenrostro son titánicos, porque,  para empezar, el Sistema Nacional Anticorrupción no existe, es decir, está  solamente escrito en el papel, no está operando y su reto tendría que echar a  andar el Sistema Nacional Anticorrupción.</p>
+<p> Los  retos que tiene además, son formidables, porque la corrupción persiste como una  práctica constante, ella ya ha planteado que tiene la intención de poner en el  centro medidas de acción preventivas, blindar los problemas prioritarios,  modernizar la Administración Pública Federal, consolidar compras,  transparentarlas y, yo diría que algunos de sus retos y las preguntas que nos  hacemos son, ¿qué medidas tomará para transparentar, sobre todo a aquellos  recursos que han sido utilizados y que cuyos montos son gigantescos? </p>
+<p>Ponemos  un ejemplo, en el caso del Tren Maya, Fonatur tomó la determinación de reservar  la información por razones, se argumentó, de seguridad nacional y solamente, y  tendrá la posibilidad la ciudadanía, solamente hasta dentro de cinco años,  2027. </p>
+<p>¿Qué  instancia tiene hoy la capacidad de revocar una decisión de esta naturaleza? El  Instituto Nacional de Acceso a la Información. </p>
+<p>La  pregunta es: ¿Si esa capacidad de revocar decisiones que se consideren  inadecuadas se trasladarán a la Secretaría Anticorrupción?</p>
+<p>Es  decir, damos un voto de confianza, creemos que es importante respaldar al nuevo  gobierno en el diseño de su administración pública. </p>
+<p>La  maestra Buenrostro tiene un currículum de gran calidad, pero los retos que  enfrentará serán formidables para hacer de la Secretaría Anticorrupción un  espacio verdaderamente sólido al enfrentar la corrupción permanente, constante  y que tendrá que encontrar un dique muy consistente y muy profesional, muy  activo. </p>
+<p>Por  lo demás consideramos que hay un riesgo que tendrá que ser abordado también y  que está presente en los futuros debate que haremos el resto de este día y es  cómo garantizar la protección de los datos personales. </p>
+<p>Sabemos  que esta es una tarea titánica, gigantesca, pero estaremos dispuestos a  discutir, a debatir, a analizar, a considerar cómo garantizar transparencia,  combate a la corrupción y, al mismo tiempo, la protección de los datos  personales de cada persona. </p>
+<p>Ese  será un debate que daremos en las próximas horas, pero no queremos dejar de  señalar que estaremos presentando, con un ánimo positivo, para que México se  fortalezca como una democracia con calidad, con rendición de cuentas, con  transparencia y con mejores medidas y candados para enfrentar…</p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Si  pudiera terminar, Senadora García Medina. </p>
+<p><strong>La  Senadora Amalia Dolores García Medina: </strong>La  corrupción y estaremos participando activamente en ello y planteando con  respeto nuestra propia visión en espera de que haya apertura a nuestros puntos  de vista en beneficio del país. </p>
+<p>Muchas  gracias. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Gracias,  Senadora García Medina. </p>
+<p>Tiene  la palabra la Senadora Virginia Marie Magaña Fonseca, del grupo parlamentario  del PVEM, a favor, hasta por cinco minutos. </p>
+<p><strong>La  Senadora Virginia Marie Magaña Fonseca: </strong>Con  el permiso de la Mesa Directiva. Compañeras y compañeros Senadores: </p>
+<p>En  un Estado constitucional y democrático, que garantice una división de poderes,  debe de contemplar la existencia de un sistema de pesos y contrapesos que  permita la coexistencia armónica entre los Poderes Ejecutivo, Legislativo y  Judicial. </p>
+<p> Esto  conlleva un esquema de independencia y respeto, pero también la colaboración  mutua y, en este sentido, al día de hoy, ejercemos la facultad exclusiva del  Senado para ratificar la propuesta del Ejecutivo Federal para encabezar los  trabajos de la Secretaría de la Función Pública. </p>
+<p>Por  lo anterior, nos corresponde analizar y celebrar esta propuesta de designación,  pues la ciudadana Raquel Buenrostro Sánchez registra una trayectoria de más de  25 años de experiencia en la administración pública, distinguiéndose por su  integridad, honradez y compromiso en el servicio público. </p>
+<p>Asimismo,  es destacable que durante su gestión como jefa de servicios de Administración  Tributaria obtuvo buenos resultados al lograr un incremento en la recaudación  fiscal que le valieron reconocimientos internacionales por su política fiscal  implementada durante la pandemia Covid-19, lo cual fue considerada como una de  las políticas fiscales y tributarias más efectivas y responsables del mundo. </p>
+<p>Es  notable su experiencia en lo relativo al correcto ejercicio de los gastos  públicos en una de las principales tareas de la Secretaría que encabeza, además  del control interno del Poder Ejecutivo Federal.</p>
+<p>La  evaluación de la gestión gubernamental y del actuar de las personas servidoras  públicas de la Administración Pública Federal. </p>
+<p>Estamos  en la antesala del surgimiento de la Secretaría Anticorrupción y Buen Gobierno  que será dotada de más facultades en materia de transparencia,  profesionalización de rendición de cuentas, fiscalización y combate a la  corrupción. </p>
+<p>Esta  nueva Secretaría vendrá a consolidar un nuevo paradigma de gobierno, el cual  hemos venido construyendo desde el sexenio pasado. Un gobierno con gran  vocación de servicio, con austeridad y cercano a las y los mexicanos. </p>
+<p>Por  lo tanto, la persona que estará al frente de esta Secretaría encargada de  combatir la corrupción debe de ser alguien que destaque como funcionaria y como  mexicana. Y esa persona es la maestra Raquel Buenrostro Sánchez. </p>
+<p>Las  y los Senadores del Partido Verde consideramos que el perfil de la maestra  Raquel Buenrostro, para asumir el cargo de Secretaria de la Función Pública,  representa uno de los más grandes ideales de este gobierno: servir al pueblo de  México con el mayor de los esfuerzos y la mayor responsabilidad. </p>
+<p>Todas  las y los Senadores que integramos el grupo parlamentario del Partido Verde le  deseamos el mayor de los éxitos en esta nueva encomienda expresando nuestra  confianza y respeto a su gestión gubernamental. </p>
+<p>Enhorabuena. </p>
+<p>Es  cuanto, señor Presidente. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Muchas  gracias, Senadora Magaña Fonseca. </p>
+<p>Tiene  el uso de la palabra el Senador Higinio Martínez Miranda, del grupo  parlamentario del Partido Morena, hasta por cinco minutos, a favor. </p>
+<p><strong>El  Senador Higinio Martínez Miranda: </strong>Con el permiso de la  Presidencia. Compañeras y compañeros Senadores: </p>
+<p>La  corrupción es un flagelo para cualquier sociedad en el mundo. </p>
+<p>Ésta,  la corrupción, genera impunidad, desconfianza y desigualdad. </p>
+<p> La  corrupción, en el ámbito gubernamental, es un fenómeno que no solo afecta el  funcionamiento y el patrimonio del Estado sino que genera la desconfianza  absoluta de la ciudadanía en ese tipo de gobiernos. </p>
+<p>En  términos lisos y llanos, la corrupción es el abuso del poder público para  obtener beneficio particular, lo que esto fue una característica muy particular  del antiguo régimen porque esos niveles de corrupción, en esos gobiernos de la  hoy oposición, no tuvieron límite, los recursos públicos destinados para la  atención de servicios prioritarios fueron a parar fundamentalmente a manos de  funcionarios públicos encargados en todas las materias. </p>
+<p>Ante  este panorama, que vivimos durante muchas décadas y con la llegada del  movimiento de la &ldquo;Cuarta Transformación&rdquo; al gobierno, se iniciaron desde hace  seis años las acciones para combatir la corrupción y la impunidad. </p>
+<p>Y  este segundo piso que ha iniciado va a consolidar el combate a la corrupción en  todos los ámbitos. </p>
+<p>Yo  estoy convencido de que el trabajo de la maestra Raquel Buenrostro fortalecerá  la Administración Pública Federal. </p>
+<p>Es  sumamente importante, básico, indispensable, absolutamente necesario y urgente,  acabar con los rezagos de corrupción que todavía quedan en este país. </p>
+<p>La  maestra Raquel Buenrostro, estoy convencido, y en Morena lo estamos, y veo que  en otros grupos parlamentarios también. Estoy convencido que, por su  trayectoria, por su trabajo intachable, que el día de ayer en comisiones, por  ejemplo, escuché de Senadores de oposición hablar bien del trabajo, de la  trayectoria, de la experiencia de esta funcionaria que hoy va a encabezar el  combate a la corrupción. </p>
+<p>Por  su trayectoria propia, por su experiencia, por la encomienda que tiene de la  Presidenta Claudia Sheinbaum, por la misma trayectoria y el compromiso de la  doctora Claudia, que es acabar con la corrupción, estoy convencido que lo va a  hacer. </p>
+<p>Nada  ha hecho más daño a este país que la corrupción de sus gobernantes, nada ha  hecho más daño a este país que la corrupción de sus gobernantes. </p>
+<p>Eso  lo escuché en muchas ocasiones en privado, en reuniones de mi partido, en  plazas públicas, del Presidente Andrés Manuel López Obrador. </p>
+<p>Y  siempre he creído que es absolutamente cierto: Nada ha hecho más daño a este  país que la corrupción de los gobernantes. </p>
+<p>Ojalá  y el trabajo de la maestra Raquel Buenrostro a nivel federal, de lo que expuso  ayer en comisiones, de lo que va a seguir mostrando y que va a tener resultados  a nivel federal, le agregaría, y es una sugerencia que no pude hacer ayer,  ojalá y ese trabajo de la doctora Raquel Buenrostro alcance a los niveles  estatales y a los niveles municipales. </p>
+<p>Es  muy bueno y ha sido único que un Presidente de la República no se robe un peso  por primera vez en la historia de este país. </p>
+<p>Va  a seguir siendo muy bueno e histórico que una Presidenta de este país no se  robe un peso. </p>
+<p>Pero  es absolutamente necesario…</p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Si  puede terminar, Senador Martínez Miranda.</p>
+<p> <strong>El  Senador Higinio Martínez Miranda: </strong>…termino con esto. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Gracias. </p>
+<p><strong>El  Senador Higinio Martínez Miranda: </strong>Que no solo los  presidentes de la República se roben un peso, que ningún funcionario estatal y  municipal. </p>
+<p>Ojalá  el trabajo de la doctora llegue a los niveles estatales y municipales, que  mucho se requiere de ello. </p>
+<p>Por  eso en Morena, las y los Senadores de Morena vamos a apoyar, vamos a ratificar  el nombramiento de la doctora Buenrostro, porque creemos y estamos convencidos  de que hará el mejor trabajo para acabar con este cáncer de la corrupción. </p>
+<p>No  más, señor Presidente, gracias. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Muchas  gracias, Senador Martínez Miranda. </p>
+<p>Tiene  el uso de la palabra la Senadora Martha Lucía Micher Camarena, del grupo  parlamentario del Partido Morena, a favor, hasta por cinco minutos. </p>
+<p>Y  con ella cerramos las intervenciones, para pasar a la votación. </p>
+<p><strong>La  Senadora Martha Lucía Micher Camarena: </strong>Gracias,  señor Presidente. Buenos días a todas y a todos. </p>
+<p>Para  mí es un honor tener el uso de la voz para posicionar, para ratificar un  nombramiento que es muy importante para la nación y sobre todo de quien  encabezará este nombramiento, que es nuestra querida compañera, amiga de ruta,  con una trayectoria extraordinaria, con una experiencia, con una lealtad y  transparencia con la que se ha conducido en todos los cargos que ha  desempeñado, como lo es la maestra Raquel Buenrostro. </p>
+<p>Perdón  si no me sé bien la categorización de sus estudios, pero lo que sí puedo decir  es que conozco a Raquel aproximadamente desde hace 25 años. Ya hasta pena da  decir que nos conocemos con tantos años. </p>
+<p>Pero  habla de su trabajo, habla de esta ruta por la transparencia, habla de un gran  compromiso, sobre todo con este que adquirió ayer frente a todas y todos  nosotros, que fue precisamente la transparencia. </p>
+<p>Raquel  Buenrostro ha sido una mujer que se ha formado a base de experiencia, no es una  cuota, no es una cuata, es una mujer que lleva en el servicio público muchos  años y eso la ha honrado y nos da toda la confianza para darle nuestro apoyo. </p>
+<p>Querida  futura Secretaria de la Función Pública: Tiene usted una gran encomienda,  además de las que le han sumado a su función, que es precisamente las que se  retiran del Inai, pero que se incorporan a la Función Pública. </p>
+<p>Sepa  usted que lamentablemente lo que sucedió en el Inai entorpecía la transparencia  con la que usted ayer se comprometió, pero no solamente contra recursos, por  ejemplo, y conflictos de interés, sino inobservancia de perfiles, de puestos. </p>
+<p>Usted  va a tener que echar abajo toda esta exigencia de moches que había en el Inai o  cuotas de plazas para ex comisionados o una estructura de casi 210 personas por  comisionada o comisionado. </p>
+<p> Usted  no es así, usted nunca se ha desempeñado así y de eso podemos dar testimonio. </p>
+<p>Licenciada  Raquel Buenrostro, es para nosotros un honor ratificarla en su nombramiento que  la doctora Claudia Sheinbaum ha hecho y este Senado de la República la  acompañará, estará revisando por supuesto su gestión, pero sobre todo cuente  con todo lo que necesite para que el funcionariado funcione, para que la  transparencia sea el faro iluminador de su trabajo y para que cada vez nos  enorgullezcamos más de tenerla a usted en un puesto público de toda la  confianza, como es la futura Secretaría de la Función Pública. </p>
+<p>¡Felicidades,  Raquel Buenrostro!</p>
+<p>Muchas  gracias. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Muchas  gracias, Senadora Micher Camarena. </p>
+<p>Habíamos  anunciado que ya se había terminado la lista, pero se han anotado dos personas  oradoras más. </p>
+<p>Pregunto  si alguien más se quiere… Ya está anotada, Senadora. </p>
+<p>Pregunto  si alguien más se quiere anotar, porque ya no voy a dar más uso de la palabra. </p>
+<p>Que  conste en actas, eh. </p>
+<p>Tiene  la palabra la Senadora María Lilly del Carmen Téllez García, del grupo  parlamentario del PAN, en contra, hasta por cinco minutos. </p>
+<p><strong>La  Senadora Lilly Téllez: </strong>Gracias. </p>
+<p>Sí,  aquí las instrucciones de la oreja de AMLO, del Senador Esquer, que es una  vergüenza que sea de Sonora, les instruyó a todos los mafiosos de la bancada de  Morena que ratificaran a Raquel Buenrostro, lo cual es una garantía de que va a  continuar la corrupción. </p>
+<p>En  el sexenio de AMLO la corrupción en México se disparó y la señora Buenrostro  fue la tapadera, ella ya demostró que lo que sabe hacer es encubrir a los  corruptos cómplices de López Obrador. </p>
+<p>Por  eso López Obrador le dijo al Senador Esquer que todos tienen que votar a favor  de ella, porque tiene el encargo Raquel Buenrostro de continuar siendo la  tapadera de la corrupción, principalmente de los hijos de Andrés Manuel López  Obrador, de todas las fechorías que han cometido los hijos de Andrés Manuel  López Obrador. </p>
+<p>De  todas las fechorías, de todos los contratos en los que incluso se ha visto  beneficiado el líder de la bancada de los mafiosos Adán Augusto López. </p>
+<p>A  eso llega Raquel Buenrostro, a garantizar que habrá más corrupción y a  garantizar que habrá impunidad total para los cómplices de López Obrador y de  Claudia, que desde ayer que se agachó ante Trump ya no es Claudia &ldquo;la  autoritaria&rdquo;, ahora es Claudia &ldquo;la secretaria de AMLO&rdquo;. </p>
+<p>Así  que esas capacidades que alaban los mafiosos de Morena sobre Raquel Buenrostro,  es precisamente lo que va a utilizar para las dos cosas que hizo en el sexenio  pasado:</p>
+<p>Una.  Extorsionar a los buenos ciudadanos desde su cargo público, abusando de su  poder. </p>
+<p> Extorsionar  a los empresarios de todos los sectores, desde los más pequeños hasta los más  grandes. </p>
+<p>Dos.  Seguir cubriendo, encubriendo la corrupción y ayudando a que la corrupción siga  el mismo patrón de crecimiento que ha tenido con los mafiosos de Morena.</p>
+<p>Eso  es lo que va a hacer Raquel Buenrostro. </p>
+<p>Es  una lástima que una persona que tiene ciertos talentos no tenga nada de ética,  porque esos talentos de la señora Buenrostro los ha utilizado para hacer el  mal, para llevar la corrupción a un grado más alto que nunca en la historia de  México. </p>
+<p>Y  aquí vemos que Claudia &ldquo;la secretaria de AMLO&rdquo; va a continuar en el mismo  camino. Con este nombramiento México va a continuar con el crecimiento de la  corrupción y con la impunidad. </p>
+<p>Absolutamente  y, obviamente, votaré en contra de la corrupta señora Buenrostro, la &ldquo;tapadera&rdquo;  de la corrupción. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña:</strong> Tiene el uso de la palabra la Senadora Geovana Bañuelos, del grupo  parlamentario del PT, a favor. </p>
+<p>Y  con ella se cierra esta ronda de intervenciones. <strong></strong></p>
+<p><strong>La  Senadora Geovanna Bañuelos: </strong>Señor Presidente. <strong></strong></p>
+<p>Queremos  decirle a la maestra Raquel Buenrostro, que las Senadoras y los Senadores del  Partido del Trabajo la respetamos, la respaldamos, la admiramos; conocemos su  amplia trayectoria y sabemos del aporte tan valioso que hace a la &ldquo;Cuarta  Transformación&rdquo;. </p>
+<p>En  el segundo piso de la &ldquo;Cuarta Transformación&rdquo; que encabeza nuestra Presidenta  la doctora Claudia Sheinbaum, es pilar el bienestar de las y de los mexicanos. </p>
+<p>El  cambio de régimen que realizamos en el 2018 marcó la pauta para modificar la  forma en que se relaciona el gobierno con el pueblo de México.</p>
+<p>Por  primera vez fueron escuchados y atendidos los marginados, los olvidados, los  pobres.</p>
+<p>A  través de las instituciones se sirve al pueblo no a los intereses personales ni  a los intereses de las élites. </p>
+<p>Durante  el sexenio del Presidente Andrés Manuel López Obrador se demostró que no fue un  acto de campaña, que se combatió la corrupción, que fuimos más allá del  discurso y las promesas electorales y dimos, como resultado, el ahorro de dos  billones de pesos para las arcas de la nación, dos billones de pesos. </p>
+<p>Ahora  con nuestra Presidenta, esta Secretaría tendrá por nombre Secretaría  Anticorrupción, de Anticorrupción y Buen Gobierno y estará encabezada con  nuestro respaldo por una persona capaz, honesta y de principios. Me refiero,  por supuesto, a la maestra Raquel Buenrostro Sánchez. </p>
+<p> Esta  Secretaría constituye un paso esencial en esta etapa de transformación, todos  lo sabemos, todas y todos lo sabemos la corrupción es un flagelo que socaba las  instituciones, debilita la confianza ciudadana y obstaculiza el progreso  económico y social. </p>
+<p>En  ese sentido, la lucha contra la corrupción se erige como un imperativo ético y  político de nuestro gobierno, pues constituye un pilar fundamental para la  construcción de un Estado de derecho sólido y equitativo. </p>
+<p>Por  ello, esta Secretaría tiene la importante tarea de elaborar y conducir la  política pública en materia de integridad, evaluación de la gestión  gubernamental, mejora continua, modernización, contrataciones públicas,  transparencia en la gestión pública, rendición de cuentas, fiscalización y  anticorrupción de la Administración Pública Federal. </p>
+<p>Además,  establece mecanismos internos para la administración pública que prevengan  actos u omisiones que puedan constituir responsabilidades administrativas e  impulsa la participación ciudadana y la cultura cívica y ética que contribuya a  mejorar. </p>
+<p>Es  necesario seguir dando pasos en el combate a la corrupción. Por ello, el nuevo  modelo de prevención y combate a la corrupción buscará blindar los programas  prioritarios, desde el inicio, como las obras públicas, enseñar de ética e  integridad a los servidores públicos y modernizar la administración pública  para inhibir la corrupción. </p>
+<p>Al  establecer, compañeras y compañeros Senadores, mecanismos efectivos para  investigar y sancionar actos de corrupción, se contribuye a reducir la  impunidad y a garantizar que nada ni nadie esté por encima de la ley. </p>
+<p>La  existencia de esta Secretaría garantiza que las acciones de gobierno sean  transparentes, lo que fomenta la confianza de los ciudadanos en sus  instituciones y promueve una mayor participación ciudadana. </p>
+<p>La  lucha contra la corrupción es una tarea que debe ser asumida como una prioridad  nacional; un Estado libre de corrupción es un Estado fuerte, democrático y  justo. </p>
+<p>En  el grupo parlamentario del Partido del Trabajo sabemos que la construcción de  una sociedad equitativa requiere de un compromiso firme con la transparencia,  la rendición de cuentas y el Estado de derecho, solo así podremos garantizar un  futuro mejor para las próximas generaciones. </p>
+<p>Por  eso aquí decimos: Maestra Raquel Buenrostro, cuenta con nosotras y con  nosotros. </p>
+<p>Muchísimas  gracias, señor Presidente. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña:</strong> Muchas gracias, Senadora Bañuelos. </p>
+<p>Al  no haber más personas oradoras registradas, háganse los avisos a que se refiere  el artículo 58 del Reglamento del Senado para informar de la votación. Ábrase  el sistema electrónico por tres minutos para recoger la votación nominal del  dictamen. </p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Pregunto, si falta algún Senador o Senadora por  emitir su voto. Sigue abierto el sistema. </p>
+<p>Pregunto nuevamente, si falta algún Senador o Senadora  por emitir su voto. Sigue abierto el sistema. </p>
+<p align="right"><strong>VOTACIÓN</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/votacion/4759"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Señor  Presidente, conforme al registro en el sistema electrónico se emitieron 94  votos de un total de 112… </p>
+<p>Permítame  un segundo, señor Presidente, la Senadora Bañuelos no ha emitido su voto. </p>
+<p>Nuevamente  procedo a dar lectura del resultado. </p>
+<p>Señor  Presidente, conforme al registro en el sistema electrónico se emitieron un  total de 113 votos, de los cuales 95 son a favor, 1 en contra y 17  abstenciones. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña:</strong> Aprobado el dictamen con punto de Acuerdo. En consecuencia, se ratifica el  nombramiento expedido por la titular del Poder Ejecutivo Federal, a favor de la  ciudadana Raquel Buenrostro Sánchez, como titular de la Secretaría de la  Función Pública. Comuníquese. </p>
+<p>Les  informo que esta Mesa Directiva convocará a la ciudadana Raquel Buenrostro,  para su toma de protesta ante el Pleno en sesión posterior. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118171'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118172'></a><p><strong>PROPOSICIONES CON PUNTO DE ACUERDO</strong></p>
+<p>Hago  de su conocimiento que todas las proposiciones con punto de Acuerdo relativos  al Presupuesto de Egresos de la Federación 2025 se turnarán directamente a la  Cámara de Diputados para que, en su caso, sean consideradas en la discusión  respectiva. La lista de los asuntos remitidos será publicada en la Gaceta  Parlamentaria.</p>
+<p>De la Senadora Anabell Ávalos Zempoalteca, del grupo parlamentario del  PRI, con punto de Acuerdo por el que se exhorta a la gobernadora del estado de  Tlaxcala a gestionar el otorgamiento de mayores recursos dentro del Presupuesto  de Egresos de la Federación 2025, a fin de beneficiar al pueblo de Tlaxcala y  el desarrollo del estado.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/PA_PRI_Sen_Anabell_recursos_Pef-2025_Tlaxcala.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118172'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118174'></a><p>De la Senadora Imelda Sanmiguel Sánchez, del grupo parlamentario del  PAN, con punto de Acuerdo por el que se exhorta a la Comisión de Presupuesto y  Cuenta Pública de la Cámara de Diputados para que, dentro del análisis,  discusión y aprobación del Presupuesto de Egresos 2025, se incrementen los  recursos en materia de educación básica y superior, con la finalidad de abatir  el regazo y la brecha en materia educativa que permea en nuestro país. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/PA_PAN_Sen_Sanmiguel_Edu_Basica.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118174'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118177'></a><p><strong>INICIATIVA</strong> <strong>CON PROYECTO DE DECRETO POR EL QUE SE ADICIONA UN ÚLTIMO PÁRRAFO AL  INCISO G) DEL ARTÍCULO 2 DE LA LEY DEL IMPUESTO ESPECIAL SOBRE PRODUCCIÓN Y  SERVICIOS</strong></p>
+<p><strong>(Presentada por los Senadores Alberto Anaya  Gutiérrez, Geovanna Bañuelos, Lizeth Sánchez García, Ana Karen Hernández Aceves  y Yeidckol Polevnsky Gurwitz, del grupo parlamentario del PT)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/Ini_PT_Sen_Alberto_Anaya_Impuestos_Saludables_A_bebidas_azucaradas_Actualizado_191124.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118177'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118178'></a><p><strong>INICIATIVA</strong> <strong>CON PROYECTO DE DECRETO POR EL QUE SE REFORMA LA FRACCIÓN II DEL  ARTÍCULO 26 DE LA LEY DE MIGRACIÓN</strong></p>
+<p><strong>(Presentada por</strong> <strong>la Senadora María del Rocío Corona Nakamura, del grupo parlamentario del  PVEM)</strong></p>
+	<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/Inic_PVEM_Sen_Nakamura_art_6_migraci%C3%B3n.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118178'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118179'></a><p><strong>INICIATIVA</strong> <strong>CON PROYECTO DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSAS  DISPOSICIONES DE LA LEY GENERAL DE TURISMO</strong></p>
+<p><strong>(Presentada por</strong> <strong>la Senadora María del Rocío Corona Nakamura, del grupo parlamentario del  PVEM)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/Inic_PVEM_Sen_Nakamura_turismo.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118179'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118180'></a><p><strong>INICIATIVA CON PROYECTO  DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSAS DISPOSICIONES DE LA LEY  GENERAL DE EDUCACIÓN, DE LA LEY DE MIGRACIÓN Y DE LA LEY GENERAL PARA PREVENIR,  SANCIONAR Y ERRADICAR LOS DELITOS </strong></p>
+<p><strong>(Presentada por el  Senador Ignacio Mier Velazco, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/Ini_Morena_Sen_Ignacio_Mier_Trata_de_Personas.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118180'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118181'></a><p><strong>PROPOSICIONES CON PUNTO DE ACUERDO</strong></p>
+<p>De los Senadores  Alberto Anaya Gutiérrez, Geovanna Bañuelos, Lizeth Sánchez García, Ana Karen  Hernández Aceves y Yeidckol Polevnsky Gurwitz, del grupo parlamentario del PT,  con punto de Acuerdo por el que se exhorta a la Secretaría de Economía y a la  Secretaría de Relaciones Exteriores para que se presente un informe  pormenorizado que se haga llegar por los conductos diplomáticos oficiales a las  autoridades de Estados Unidos de América y Canadá, sobre los grandes beneficios  para la economía que ha tenido el Tratado de Libre Comercio entre México,  Estados Unidos y Canadá; detallando el crecimiento del intercambio económico y  aumento del comercio exterior, así como la integración de las cadenas de valor  para la producción de bienes y servicios en la región de América del Norte y  que ha sido en beneficio de nuestros pueblos.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/PA_GPPT_integracion_economica_America_del_Norte.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118181'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118182'></a><p>De los Senadores  Alberto Anaya Gutiérrez, Geovanna Bañuelos, Lizeth Sánchez García, Ana Karen Hernández  Aceves y Yeidckol Polevnsky Gurwitz, del grupo parlamentario del PT, con punto  de Acuerdo por el que se exhorta a la Secretaría de Seguridad Pública y  Protección Ciudadana para que, en coordinación con las autoridades en materia  de seguridad pública de las treinta y dos entidades federativas, fortalezcan  las acciones de información destinadas a padres de familia, así como a niñas,  niños y adolescentes sobre los riesgos en materia de secuestro, trata de  personas y reclutamiento a la delincuencia organizada mediante plataformas  digitales como las redes sociales y las plataformas de juegos en línea. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/PA_GPPT_reclutamiento_por_videojuegos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118182'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118183'></a><p>De la Senadora María del Rocío Corona Nakamura, del grupo parlamentario  del PVEM, con punto de Acuerdo por el que se exhorta a la Secretaría de  Gobernación informar a esta Soberanía sobre las medidas que ha tomado para  influir, controlar o regular los fenómenos de expulsión y recepción de la  población; sobre la esperanza de vida; sobre la incidencia delictiva; y sobre  la forma en que ha obtenido la participación de la población para aportar  soluciones a los problemas que la afectan, todo referido a las cuatro entidades  de la Frontera Sur Mexicana. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/PA_PVEM_Sen_Corona_Nakamura_frontera_Sur_Mexicana.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118183'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118184'></a><p>De la Senadora María del Rocío Corona Nakamura, del grupo parlamentario  del PVEM, con punto de Acuerdo por el que se exhorta a la persona titular del  Consejo Nacional de Población para que, informa a esta Soberanía sobre las  acciones que se han implementado y los fenómenos demográficos que existen en  los estados de la región Frontera Sur. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/PA_PVEM_Sen_Maria_Corona_Exhorta_a_Titular_del_Consejo_Nacional_Poblacion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118184'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118185'></a><p>Del Senador Juan Carlos Loera de La  Rosa, del grupo parlamentario del Partido Morena, con punto de Acuerdo por el  que se exhorta a Servicios Educativos del estado de Chihuahua y a la Secretaría  de Educación y Deporte para que, garantice la devolución inmediata de las  cuotas escolares, de las Sociedades de Madres y Padres de Familia del nivel  básico federalizado del estado de Chihuahua, que mantiene en una cuenta  concentradora de la cual funge como titular, así como para que no intervenga en  la administración de las mencionadas cuotas escolares. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/PA_Morena_Sen_Carlos_Loera_Cuotas_Escolares.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118185'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118186'></a><p><strong>EFEMÉRIDES</strong></p>
+<p>Del Senador Ángel García Yáñez, del grupo parlamentario del PRI, relativa  al Día de la proclamación del Plan de Ayala.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-11-28-1/assets/documentos/Efem_PRI_Sen_AGY_Plan_de_Aayala.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118186'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118187'></a><p><strong>AGENDA POLÍTICA</strong></p>
+<p>De las Senadoras y Senadores del grupo parlamentario del Partido Morena,  para referirse a la situación política del país.</p>
+<p align="center">(No se registran intervenciones)</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118187'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118188'></a><p>De las Senadoras y Senadores del grupo parlamentario del PAN, para  referirse a la situación política del país. </p>
+<p align="center">(No se registran intervenciones)</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118188'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118189'></a><p>De las Senadoras y Senadores del grupo parlamentario del PRI, para  referirse a la situación política del país.</p>
+<p align="center">(No se registran intervenciones)</p>
+<p>Continúe  la Secretaría con los asuntos de la agenda. </p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat: </strong>Se han agotado los asuntos de la agenda, señor  Presidente. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118189'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='118190'></a><p><strong>CITA</strong></p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña:</strong> Se cita a la siguiente sesión este mismo día a las 13:15 horas. </p>
+<p>El  sistema de registro de asistencia se encuentra ya abierto. </p>
+<p>Se  levanta la sesión. </p>
+<p align="center">(Se levantó la sesión a las 13:10 horas)</p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a118190'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

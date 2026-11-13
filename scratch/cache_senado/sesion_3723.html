@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA COMISI&Oacute;N PERMANENTE<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Receso Comisi&oacute;n Permanente</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 4</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Laura Itzel Castillo Juárez</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 21 de Mayo de 2026</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/2/SPO/PDF-WEB/C.P_No4_21-MAYO-2026_SOLEMNE.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='127145'></a><p align="center"><strong>PRESIDE LA SENADORA</strong> <br>
+  <strong>LAURA ITZEL CASTILLO JUÁREZ</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>La Presidenta Senadora Laura Itzel Castillo Juárez: </strong>(10:19 horas) Solicito a la Secretaría que informe  a la Asamblea el resultado del cómputo de asistencia de las personas ciudadanas  Legisladoras.</p>
+<p><strong>La Secretaria Senadora María Martina Kantún Can: </strong>Con gusto, señora Presidenta. Buen día. </p>
+<p>Se encuentran 21 Diputados y Diputadas, Senadores y  Senadoras presentes. Pasaré lista de los que aún no han registrado su  asistencia.</p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/permanente/CP66-2ASPR/Asistencia/1132"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es cuanto, señora Presidenta. Total, 23 presentes.  Hay quórum, señora Presidenta.</p>
+<p> <strong>La Presidenta Senadora Laura Itzel Castillo Juárez: </strong>En virtud de que existe quórum, se abre la sesión  solemne para recibir la visita del señor António Luís Santos da Costa,  Presidente del Consejo Europeo.</p>
+<p>Solicito a las personas Legisladoras, Senador  Alejandro Murat Hinojosa, la Diputada Beatriz Andrea Navarro, la Senadora  Martha Lucía Micher Camarena, al Senador Rafael Huerta Ladrón de Guevara, a la  Senadora Juanita Guerra Mena y a la Senadora Lizeth Sánchez García, acudan a  recibir al Presidente del Consejo Europeo.</p>
+<p align="center">(La comisión cumple)</p>
+<p>Asimismo, se designa a las personas Legisladoras  Diputada Alma Rosa de la Vega Vargas, Senadora Julieta Ramírez Padilla y la  Senadora Ana Lilia Rivera Rivera, así como al Senador Óscar Cantón Zetina, para  que reciban a nuestras personalidades invitadas. </p>
+<p align="center">(La comisión cumple)</p>
+<p>En tanto, se declara un receso.</p>
+<p align="center">(RECESO)</p>
+<p><strong>La Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Se reanuda la sesión.</p>
+<p>Favor  de tomar asiento. </p>
+<p>La  Comisión Permanente del Honorable Congreso de la Unión expresa la más cordial  bienvenida a su Excelencia, el señor António Luís Santos da Costa, Presidente  del Consejo Europeo. </p>
+<p>Sea  usted bienvenido a esta sesión solemne que celebramos en el recinto de la  Cámara de Senadoras y Senadores, sede de los trabajos de la Comisión Permanente  durante el segundo receso del segundo año del ejercicio de la LXVI Legislatura. </p>
+<p>Presidente  da Costa, nos da mucho gusto recibirlo en la casa del federalismo en México  que, como decimos en nuestro país, es también su casa. </p>
+<p>Damos,  también, la bienvenida a las personas que integran la distinguida comitiva que  le acompaña. </p>
+<p>El  Excelentísimo señor Francisco André, Jefe de la Delegación de la Unión Europea  en México. </p>
+<p>El  Eurodiputado Javi López, Vicepresidente del Parlamento Europeo. </p>
+<p>El  Eurodiputado Antonio López Istúriz, Copresidente de la Comisión Parlamentaria  Mixta Unión Europea-México. </p>
+<p>El  Eurodiputado Borja Giménez, miembro del Parlamento Europeo. </p>
+<p>Y  al personal del gabinete del Presidente António Luís Santos da Costa, que se  encuentra presente. </p>
+<p>Todos  ellos acompañados por el Senador Alejandro Murat Hinojosa, la Senadora Beatriz  Robles Gutiérrez y el Senador Francisco Javier Ramírez Acuña. </p>
+<p> Saludamos,  asimismo, la presencia de la licenciada Rosa Icela Rodríguez, Secretaria de  Gobernación. </p>
+<p>Muchas  gracias, Secretaria, que viene en representación de nuestra Presidenta de la  República, la Doctora Claudia Sheinbaum Pardo. </p>
+<p>Quiero  a la vez informar que nuestra Secretaria de Gobernación tendrá que salir a las  11:35 en punto. </p>
+<p>Un  informe importante por cuestiones de agenda. </p>
+<p>También  saludamos a la licenciada María Teresa Mercado Pérez, Subsecretaria de  Relaciones Exteriores. </p>
+<p>Al  doctor José Hernández Hernández, Secretario General de la Presidencia de la  Suprema Corte de Justicia de la Nación. </p>
+<p>Y  a los integrantes del cuerpo diplomático acreditado en nuestro país que nos  acompañan, así como de las Senadoras y Senadores, Diputadas y Diputados e  invitados especiales presentes en esta sesión.</p>
+<p>Así  como nuestras compañeras y compañeros que se encuentran en la Mesa Directiva,  la Diputada Kenia López Rabadán, Presidenta de la Cámara de Diputados. </p>
+<p>La  Senadora Juanita Guerra. </p>
+<p>Así  como el Diputado Zebadúa. </p>
+<p>Y  la Senadora Martina Kantún Can. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a127145'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='127146'></a><p>Con  fundamento en el Acuerdo aprobado por este Pleno, se concede el uso de la  palabra a su Excelencia el señor António Luís Santos da Costa, Presidente del  Consejo Europeo. </p>
+<p>También  aprovechamos para saludar la presencia del Senador Marko Cortés, Presidente de  la Comisión de Organismos Internacionales del Senado de la República. </p>
+<p><strong>VISITA DEL SEÑOR ANTÓNIO LUÍS SANTOS DA COSTA,  PRESIDENTE DEL CONSEJO EUROPEO</strong></p>
+<p><strong>El  Presidente del Consejo Europeo, António Luís Santos da Costa:</strong> Presidenta del Senado.</p>
+<p>Su  Excelencia señora Kenia López Rabadán, Presidenta de la Cámara de Diputados. </p>
+<p>Su  Excelencia señora Rosa Icela Rodríguez, Secretaria de Gobernación. </p>
+<p>Su  Excelencia señora María Teresa Mercado Pérez, Subsecretaria de Relaciones  Exteriores. </p>
+<p>Distinguidas  Senadoras y Senadores. </p>
+<p>Distinguidas  Diputadas y Diputados. </p>
+<p>Señor  Vicepresidente del Parlamento Europeo. </p>
+<p>Señores  Diputados del Parlamento Europeo.</p>
+<p> Embajadoras  y Embajadores. </p>
+<p>Excelencias. </p>
+<p>Señoras  y señores:</p>
+<p>Es  para mí un gran honor estar hoy aquí en el Senado de esta gran nación.</p>
+<p>Muchas  gracias por la invitación para dirigirme a esta institución clave de la  democracia, la casa del federalismo mexicano. </p>
+<p>Precisamente,  en una semana tan importante para las relaciones entre la Unión Europea y  México, más de diez años después de nuestra última cumbre que tuvo lugar en  Bruselas, yo y la presidenta Fonderleyen estaremos mañana con la Presidenta  Claudia Sheinbaum en nuestra Octava Cumbre entre Unión Europea y México, una  reunión de alto nivel en la que se firmará la modernización de nuestro acuerdo  global y también el acuerdo interino de comercio. </p>
+<p>Señoras  y señores, nos encontramos ante un cambio, los cambios en la tecnología, la  emergencia climática, las tensiones geopolíticas están alterando profundamente  el mundo. </p>
+<p>De  forma especialmente preocupante se está poniendo en entredicho el orden  multilateral, basado en reglas que nació tras la Segunda Guerra Mundial. </p>
+<p>Y  no es de extrañar que proliferan aquellos que profetizan una falta a la ley de  la selva. Yo quiero ser más optimista, el futuro no está escrito, la historia  está llena de momentos en los que parecía que se avanzaba inevitablemente en  una dirección, determinó yendo en otra. </p>
+<p>Pocos  anticiparon la brusca caída de la Unión Soviética y después otros ya bien  entrados en los años noventa se apresuraron a proclamar el fin de la historia.  Y ahí vemos que no fue exactamente así, la historia nos determinó que sigue  siguiendo. </p>
+<p>La historia cada vez  sigue el padrón lineal, muchas veces cuando parece que nos movemos  irremediablemente en una dirección surgen nuevas dinámicas que nos empujan en  sentido contrario. </p>
+<p>Y al día de hoy frente a  la incertidumbre imperante, yo tengo la esperanza que las naciones elegirán la  cooperación frente a la ruptura y aislamiento; elegirán el diálogo entre socios  que creen en la estabilidad y el respeto al derecho internacional. </p>
+<p>Desde luego, esto es la  voluntad inequívoca de la Unión Europea, y la estrategia que estamos llevando a  cabo promoviendo acuerdos y estrechando nuestras alianzas con nuestros socios,  creando una red de socios multipolares, por ejemplo, con la India, con Australia,  con el Mercosur, con Indonesia, con Chile, con Sudáfrica, con Tailandia y, por  supuesto, con México. </p>
+<p>La Unión Europea necesita  a México, y el mundo necesita a México. </p>
+<p>Siempre que vengo a esta  ciudad me embarga la esperanza, el color y la vitalidad de este gran país. </p>
+<p>Ésta es una civilización  milenaria que proyecta al mundo una identidad rica, compleja y universal;  porque México posee algo difícil de describir, pero imposible de ignorar, una  extraordinaria intensidad. </p>
+<p> Y con esta energía este  pueblo ha luchado siempre por su libertad y su independencia, porque la  República Mexicana también, desde este Senado, ha defendido siempre ideas  fundamentales, como la soberanía popular, la división de poderes o el imperio  de la ley. </p>
+<p>Y la convicción de que  ningún pueblo tiene derecho a decidir el destino de otro, puede que las ideas  ilustradas surgieran en Europa, pero México nos ha demostrado siempre que esos  ideales no pertenecían a un continente, pertenecen a toda la humanidad, una  sobre la que han desarrollado una política exterior respetada y admirada. </p>
+<p>Como Benito Juárez dejó  escrito en piedra en este Pleno: <em>&ldquo;Entre los individuos, como entre las  naciones, el respeto al derecho ajeno es la paz&rdquo;. </em></p>
+<p>Una frase que no es solo…</p>
+<p>Una frase que no es solo  un pilar central de la tradición diplomática mexicana, sino también una visión  del orden internacional basado en el derecho, la soberanía y el respeto mutuo. </p>
+<p>Por eso México goza de un  enorme prestigio por su defensa de la paz, por su vocación al diálogo y también  por su generosidad.</p>
+<p>En Europa no olvidaremos  cómo en el siglo pasado abrieron vuestras puertas a miles de nuestros  exiliados. Esa hospitalidad será siempre un capítulo imborrable de nuestra  memoria compartida, que nos debe servir para mirar con esperanza hacia un  futuro de cooperación. </p>
+<p>Señoras y señores,  nuestro acuerdo de asociación del año 2000 ha sido una historia de éxito, al  día de hoy el acuerdo genera 5.5 millones de empleos en México, 82 mil millones  de euros en comercio de bienes, más 25 mil millones en comercio de servicios. </p>
+<p>La Unión Europea es el  segundo inversor en México, 209 mil millones de euros acumulados de inversión.  Y es el segundo mercado de exportación para productos mexicanos, en México que  es, además, el segundo socio  comercial de la Unión Europea en América Latina, y el primero en términos de  comercio per cápita, y las cifras hablan por sí mismas. </p>
+<p>Pero debemos ser todavía más ambiciosos, y por eso  mañana vamos a firmar la modernización del Acuerdo Global entre la Unión  Europea y México.</p>
+<p>El acuerdo eliminará más aranceles, impulsando el  comercio y la inversión, creando grandes oportunidades para las empresas  mexicanas de exportar e invertir en la Unión Europea.</p>
+<p>Pero este acuerdo no es simplemente un acuerdo, una  actualización de las reglas de nuestros intercambios comerciales. </p>
+<p>Es un nuevo puente entre Europa y México, más  amplio, más sólido y mejor preparado para los desafíos del ciclo XXI. </p>
+<p>Es un compromiso con un comercio justo, la  prosperidad compartida y la sostenibilidad.</p>
+<p>Un Acuerdo que profundizará nuestro diálogo  político y nuestra cooperación en diámetros clave, desde la seguridad, la  migración, el clima y el medio ambiente, hasta la transición verde y digital,  la innovación y los derechos humanos.</p>
+<p> Estamos muy agradecidos a la Presidenta Claudia  Sheinbaum por haber relanzado las relaciones con la Unión Europea y hacer  posible la firma de esta modernización del Acuerdo.</p>
+<p>La Agenda de Inversiones de la Unión Europea, que  llamamos Global Gateway, apoyará el Plan México de la Presidenta, generando  beneficios concretos para el pueblo mexicano.</p>
+<p>Europa quiere invertir más en México y quiere  hacerlo especialmente en sectores estratégicos, en energías limpias,  digitalización, infraestructuras sostenibles, industrias tecnológicas y cadenas  de suministro resilientes. </p>
+<p>Nuestras energías son evidentes. </p>
+<p>México posee enormes fortalezas, talento, músculo  industrial y una posición geográfica estratégica.</p>
+<p>La transición ecológica y tecnológica global ofrece  una oportunidad extraordinaria para construir juntos una asociación aún más  ambiciosa. </p>
+<p>Y, desde luego, necesitamos del concurso de todas  las instituciones para seguir construyendo esta relación.</p>
+<p>También de nuestros parlamentos.</p>
+<p>Y quiero reconocer, por ello, el trabajo serio y  comprometido de la Comisión Parlamentaria Mixta, Unión Europea-México, cuyo  papel, tras dos décadas de trabajo, es hoy más relevante que nunca.</p>
+<p>Y agradezco especialmente el liderazgo de Antonio  López-Stúriz White y Beatriz Robles Gutiérrez, aquí presentes, por mantener  viva esta relación estratégica entre Europa y México.</p>
+<p>Señoras y señores, en Europa sufrimos una amenaza  existencial que es un riesgo para todo el mundo.</p>
+<p>La guerra de agresión de Ucrania por parte de un  miembro permanente del Consejo de Seguridad es inaceptable y amenaza la  seguridad de todas las naciones del planeta.</p>
+<p>La soberanía y la integridad territorial de  cualquier país es el derecho clave de la Carta de las Naciones Unidas, que debe  ser respetado siempre y en todos los lugares. </p>
+<p>La Unión Europea apoyará hasta el final todos los  esfuerzos encaminados a lograr una paz integral, justa y duradera en Ucrania.</p>
+<p>Una paz que respete la independencia, la soberanía  y la integridad territorial de Ucrania. </p>
+<p>La Unión Europea defiende el respeto al derecho  internacional en todos los lugares del planeta. </p>
+<p>Y de la misma forma, ya sea en Ucrania, en Oriente  Medio o aquí en América Latina.</p>
+<p>Por ello, hacemos un llamamiento a unir esfuerzos  para fortalecer el derecho internacional y las instituciones multilaterales.</p>
+<p>No es una cuestión de mero interés, es una cuestión  de supervivencia para nuestros pueblos.</p>
+<p> Por ello, debemos trabajar juntos para impulsar una  gobernanza internacional más representativa y eficaz, porque el mundo de hoy ya  no es el mismo de 1945.</p>
+<p>Las instituciones multilaterales deben adaptarse a  una realidad internacional más plural y más compleja, para poder hacer frente a  desafíos que ningún país, por muy poderoso que sea, pueda enfrentar por sí  solo.</p>
+<p>Europa y México pueden ser aliados importantes en  la defensa de una reforma de las Naciones Unidas y debemos reformarla para  mejor defenderla, pero nunca pensar en reemplazar las Naciones Unidas por el  vacío del caos internacional.</p>
+<p>Una renovación que preserve los principios  fundamentales del orden internacional y que al mismo tiempo refleje mejor las  realidades del siglo XXI.</p>
+<p>Senadoras y Senadores; Diputadas y Diputados, en su  novela &ldquo;Pedro Páramo&rdquo;, el escritor Juan Rulfo nos hablaba de Comala, un pueblo  lleno de ecos, donde las voces habían dejado de escucharse entre sí; donde cada  murmullo hablaba desde el aislamiento y la desconfianza.</p>
+<p>Pudiera ser que el sistema multilateral cubriera el  riesgo de convertirse en algo parecido, en un espacio de ecos, donde las  naciones repitan sus intereses, sus temores y sus agravios sin escucharse entre  sí.</p>
+<p>La noche del multilateralismo no comienza solamente  cuando fallan las instituciones; comienza cuando dejamos de creer que nuestras  voces pueden formar parte de algo compartido; cuando el diálogo se sustituye  por la desconfianza y cuando las reglas comunes pierden legitimidad.</p>
+<p>Pero, como dije al principio de mi intervención, el  futuro no está escrito, está en nuestras manos.</p>
+<p>Y por eso, hoy más que nunca, la Unión Europea y  México, juntos con otras naciones amigas, deben unir sus voces, no para  alimentar nuevos ecos, sino para reconstruir una conversación común.</p>
+<p>Porque podemos y debemos seguir cooperando; porque  el derecho internacional importa; porque debemos evitar que la comunidad de  naciones se convierta en otra Comala.</p>
+<p>Porque al final, la gran lección de Rulfo es que,  incluso entre murmullos, persiste la necesidad humana de ser escuchados.</p>
+<p>Y mientras existan voces capaces de encontrarse,  todavía existe esperanza.</p>
+<p>Muchas gracias.</p>
+<p>¡Viva la Unión Europea!</p>
+<p>¡Viva México!</p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez:</strong> Muchas gracias por sus palabras, su Excelencia  señor António Luís Santos da Costa, Presidente del Consejo Europeo.</p>
+<p>Su presencia en la Comisión Permanente del Congreso  de la Unión tiene un significado muy especial.</p>
+<p> Ocurre en un momento de alta relevancia para la  relación entre México y la Unión Europea, en vísperas de la  cumbre que se llevará a cabo el día de mañana, en la que se firmará el Acuerdo  Global Modernizado. </p>
+<p>Este  encuentro reafirma la importancia del diálogo político, de la cooperación entre  regiones y de la diplomacia parlamentaria como instrumentos para fortalecer la  amistad y le entendimiento entre nuestros pueblos. </p>
+<p>Presidente  da Costa:</p>
+<p>México  reconoce en la Unión Europea a un socio estratégico y a un aliado histórico con  el que compartimos principios fundamentales: la defensa de la dignidad humana,  la democracia, el respeto al derecho internacional y la solución pacífica de  las controversias. </p>
+<p>Nuestra  relación se ha consolidado durante décadas mediante intercambios culturales,  lazos comerciales y diálogo parlamentario. </p>
+<p>Desde  la entrada en vigor del Acuerdo de Asociación Económica, Concertación Política  y Cooperación en el año 2000, México se convirtió en el primer país de América  Latina en contar con un instrumento de esa importancia con la Unión Europea. </p>
+<p>Hoy,  a más de dos décadas de distancia, nos preparamos para abrir una nueva etapa  histórica con la firma del Acuerdo Global Modernizado.</p>
+<p>Como  su nombre lo indica, este acuerdo tiene un carácter global, es decir, no se  limita al comercio ni al intercambio de mercancías, abarca también aspectos muy  importantes como la cooperación política, el cuidado del medio ambiente, la  protección de los derechos humanos, la igualdad de género, el desarrollo  sostenible y la innovación tecnológica. </p>
+<p>Todos  estos ámbitos resultan especialmente importantes en el contexto mundial que  vivimos. </p>
+<p>Atravesamos  por una etapa compleja que está marcada por reconfiguraciones geopolíticas, el  surgimiento de nuevos equilibrios de poder y de desafíos crecientes para el  multilateralismo. </p>
+<p>Frente  a ese escenario, México reafirma la importancia de ampliar sus horizontes  estratégicos y fortalecer sus alianzas con apego a los principios  constitucionales que orientan nuestra política exterior: la autodeterminación  de los pueblos, la no intervención, la solución pacífica de controversias y el  respeto irrestricto a la soberanía de las naciones. </p>
+<p>Pero,  sobre todo, México llega a esta nueva etapa desde una transformación profunda  de su vida pública en la que el pueblo de México ha optado por un modelo de  desarrollo alternativo que denominamos el humanismo mexicano. </p>
+<p>Este  modelo ha dado resultados concretos, más de 13.5 millones de personas han  salido de la pobreza entre 2018 y 2024 gracias al aumento histórico del salario  mínimo, que se ha casi cuatriplicado, pasando de 88 pesos a 315 pesos diarios;  así como al reconocimiento constitucional de programas sociales que han sentado  las bases de un auténtico Estado constitucional de bienestar. </p>
+<p>Esa  es la &ldquo;Cuarta Transformación&rdquo;. </p>
+<p> Bajo  el liderazgo de nuestra Presidenta, la Doctora Claudia Sheinbaum Pardo, la  primera mujer Presidenta en más de dos siglos de vida independiente, nuestro  país impulsa una visión que pone la economía al servicio de las personas,  defiende la soberanía nacional y promueve el desarrollo con justicia social. </p>
+<p>Por  eso, para México la modernización de este acuerdo debe entenderse como parte de  una nueva generación de tratados internacionales orientados a la prosperidad  compartida y alcanzar el bienestar de nuestros pueblos. </p>
+<p>Los  datos muestran la importancia de esta relación, a la que usted también hizo  referencia en su discurso. </p>
+<p>En  2025, el comercio de bienes entre México y la Unión Europea superó los 86 mil  millones de euros. </p>
+<p>La  Unión Europea fue el tercer socio comercial, su segundo mercado de exportación  y de récord de inversión extranjera directa que recibió nuestro país el año  pasado, representó el segundo mayor inversionista. </p>
+<p>Sin  embargo, el verdadero potencial de esta nueva etapa va más allá de estas  cifras. </p>
+<p>Vivimos  una nueva revolución industrial, marcada por la Inteligencia Artificial, la  digitalización, la transición energética y la reorganización de las cadenas de  valor.</p>
+<p>En  ese contexto, el acuerdo global modernizado puede contribuir a fortalecer  nuestras capacidades productivas y generar empleos de calidad y mejor  remunerados. Asimismo, abre oportunidades en sectores estratégicos como los  semiconductores, la industria farmacéutica, las energías limpias, la  manufactura avanzada y el desarrollo de capacidades tecnológicas. </p>
+<p>Por  todo ello, este acuerdo complementa nuestra política industrial nacional. En el  marco del Plan México puede ser una plataforma para atraer inversión  estratégica, impulsar innovación, articular cadenas de valor y fortalecer la  cooperación científica y tecnológica. </p>
+<p>La  diplomacia parlamentaria tiene también un papel fundamental en la modernización  de este acuerdo. </p>
+<p>La  Comisión Parlamentaria Mixta México-Unión Europea ha demostrado que la relación  entre nuestras regiones no se construye sólo entre gobiernos, sino también  entre nuestros parlamentarios, quienes son los representantes populares que  llevan la voz de los desafíos comunes que enfrentan nuestras sociedades. </p>
+<p>En  ese sentido, desde esta Comisión Permanente del Honorable Congreso de la Unión,  reafirmamos nuestra disposición a acompañar con responsabilidad institucional  la ratificación de este tratado en consonancia con una política exterior basada  en el respeto, el diálogo y la cooperación sin subordinación.</p>
+<p>Y,  desde luego, no podemos dejar de mencionar que la Copa Mundial de Fútbol, en la  que nuestro país será sede, es una oportunidad inmejorable para seguir  estrechando nuestros lazos de amistad. </p>
+<p>Señor  Presidente António Luís Santos da Costa: </p>
+<p>México  y la Unión Europea tienen ante sí una oportunidad histórica. Demostraremos que,  en un mundo marcado por tensiones e incertidumbre, es posible construir  acuerdos desde la igualdad, el respeto mutuo y una visión de futuro compartido. </p>
+<p> Que  el comercio debe servir al desarrollo. </p>
+<p>Que  la inversión debe generar bienestar. </p>
+<p>Que  la tecnología debe ponerse al servicio de las personas. </p>
+<p>Y  que la cooperación debe traducirse en mejores condiciones de vida para nuestros  pueblos. </p>
+<p>Muchas  gracias. </p>
+<p>A  nombre de la Comisión Permanente del Honorable Congreso de la Unión,  agradecemos la visita de su Excelencia el señor António Luís Santos da Costa,  Presidente del Consejo Europeo, así como la presencia de su distinguida  comitiva. </p>
+<p>Sin  duda, este acto ha expresado la importancia que México otorga a su relación con  la Unión Europea y a la diplomacia parlamentaria, como vía para fortalecer el  diálogo, la cooperación y el entendimiento entre nuestros pueblos. </p>
+<p>Solicito,  a continuación, a nuestros compañeros y compañeras Legisladores, Legisladoras  integrantes de las comisiones de cortesía, que se sirvan acompañar a nuestro  distinguido invitado y a su comitiva cuando concluya su permanencia en el  recinto.</p>
+<p align="center">(La  comisión cumple)</p>
+<p>Y, reiteramos la cita a la sesión de la  Comisión Permanente, por lo que invito a mis compañeras y compañeros  Legisladores que, por favor, permanezcan en este salón de sesiones. </p>
+<p>Muchas gracias.</p>
+<p>Y se levanta la sesión, agradeciendo la  presencia de todos y todas ustedes. </p>
+<p align="center">(Se levantó la sesión  solemne a las 11:30 horas)<strong> </strong></p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a127146'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

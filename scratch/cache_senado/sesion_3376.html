@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 19</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Alejandro Armenta Mier</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 18 de Octubre de 2022</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/2/PPO/PDF-WEB/PPO_No19_18-OCTUBRE-2022_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106791'></a><p align="center"><strong>PRESIDENCIA DEL SENADOR</strong><br>
+  <strong>ALEJANDRO ARMENTA MIER</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> (12:38 horas) Honorable Asamblea. Con el quórum de  nuestra sesión ordinaria del día de hoy, y con fundamento en lo dispuesto por  el artículo 56, fracción IV del Reglamento del Senado de la República y en  acuerdo para normar esta sesión aprobada el pasado 12 de octubre, iniciamos la  sesión solemne convocada para la entrega de la Medalla de Honor &ldquo;Belisario  Domínguez 2020&rdquo;.</p>
+<p align="justify">Solicito a la Secretaría dé lectura a las comisiones  de cortesía que han sido designadas para recibir y acompañar a nuestros  distinguidos invitados a esta sesión solemne.</p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con gusto, señor Presidente. Doy lectura.</p>
+<p align="justify">Para la comisión de cortesía, para acompañar al  Presidente de la Suprema Corte de Justicia de la Nación: Senadores Susana Harp  Iturribarría, Nadia Navarro Acevedo, Alejandra del Carmen León Gastélum,  Marcela Mora, Graciela Gaitán Díaz, Martha Cecilia Márquez Alvarado, Imelda Castro  Castro, Elí Cervantes Rojas y Eduardo Ramírez Aguilar.</p>
+<p align="justify">La comisión de cortesía para acompañar al Presidente  de la Cámara de Diputados: Senadores Olga Sánchez Cordero Dávila, Guadalupe  Saldaña Cisneros, Gonzalo Yáñez, Eunice Renata Romo Molina, Nancy Sánchez  Arredondo y Rocío Adriana Abreu Artiñano.</p>
+<p align="justify">La comisión de cortesía para acompañar a los Poderes  del estado de Chiapas y al Ayuntamiento de Comitán: Senadores Eduardo Ramírez  Aguilar, Xóchitl Gálvez Ruiz, Sasil de León Villard, Imelda Castro Castro,  Josefina Vázquez Mota, Adolfo Gómez Hernández y Raúl Elenes Angulo.</p>
+<p align="justify">Es cuanto, señor Presidente.</p>
+<p align="justify"> <strong>El Presidente Senador Alejandro Armenta Mier: </strong>Se solicita a las comisiones designadas acudan a las  puertas de este recinto a fin de cumplir con su cometido, en tanto se declara  un receso.</p>
+<p align="center">(Las comisiones cumplen)</p>
+<p align="center">(RECESO)</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Se reanuda la sesión solemne.</p>
+<p align="justify">Damos la bienvenida al presidente de la Suprema Corte  de Justicia de la Nación, al Ministro Arturo Zaldívar Lelo de Larrea.</p>
+<p align="justify">Damos la bienvenida al Presidente de la Cámara de  Diputados, al Diputado Santiago Creel Miranda.</p>
+<p align="justify">Damos la bienvenida al ciudadano presidente municipal  de Comitán de Domínguez, Chiapas, licenciado Mario Antonio Guillén Domínguez.</p>
+<p align="justify">A los representantes del gobierno del estado de  Chiapas, doctor Francisco Arturo Mariscal Ochoa, Director de Atención Médica  del Gobierno del Estado de Chiapas.</p>
+<p align="justify">A la Directora General estatal para las Culturas y  Artes de Chiapas, la doctora Maritza Concepción Maranto Zepeda.</p>
+<p align="justify">Al Director de la Casa Museo Dr. Belisario Domínguez,  antropólogo Arturo Eugenio Guillén Figueroa.</p>
+<p align="justify">Asimismo, damos la más cordial bienvenida al doctor  Pedro Zenteno Santaella, Director General del ISSSTE, y a los titulares de los  institutos nacionales de salud, así como a los servidores públicos del sector  salud que le acompañan.</p>
+<p align="justify">Igualmente, doy la bienvenida a las y los servidores  públicos del gobierno del estado de Chiapas y al Ayuntamiento de Comitán de  Domínguez que nos acompañan.</p>
+<p align="justify">Con fundamento en lo dispuesto por el artículo 100 de  la Ley Orgánica del Congreso General, y el artículo 9 del Reglamento de la  Medalla de Honor Belisario Domínguez, vamos a dar inicio a esta sesión solemne,  no sin antes darle la bienvenida a la Presidenta de la Comisión Belisario  Domínguez, a la Senadora Sasil de León.</p>
+<p align="justify">Bienvenida, Senadora.</p>
+<p align="justify">Damos inicio a esta sesión solemne convocada para  hacer la entrega de este galardón y el diploma correspondiente del año  2020. </p>
+<p align="justify">Como es  de su conocimiento, el 7 de octubre del 2021, se realizó la sesión solemne para  la entrega de la Medalla de Honor &ldquo;Belisario Domínguez&rdquo;, correspondiente al año  2020. Dicho galardón concierne a las personas integrantes del Sistema Nacional  de Salud.</p>
+<p align="justify">La  sesión solemne se efectúo cumpliendo el protocolo aplicable, incluyendo la  correspondiente inscripción en el Muro de Honor y sólo quedó pendiente la  entrega física de la presea y el diploma respectivo, motivo por el cual se  convocó a la sesión solemne de este día.</p>
+<p align="justify">En  sesión del 4 de octubre pasado este Pleno aprobó que dicho reconocimiento fuera  donado a la Casa Museo Dr. Belisario Domínguez Palencia, tomando en  consideración que en esa residencia nació y vivió gran parte de su vida el  doctor Belisario Domínguez.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106791'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106792'></a><p align="justify">Por lo  que, en un merecido homenaje a todas las personas que integran el sector salud  de nuestro país por su incansable lucha contra el COVID-19 en México, se acordó  la entrega de la insignia de manera simbólica a la Casa Museo Dr. Belisario  Domínguez Palencia con el propósito que pueda ser exhibida de forma permanente  en sus instalaciones, rindiendo así homenaje a nuestro prócer por su incansable  lucha a favor de la democracia y la palabra libre. <br>
+  <br>
+  En  este momento doy lectura al mensaje de esta Presidencia. </p>
+<p align="justify"><strong>MENSAJE DEL SENADOR ALEJANDRO  ARMENTA MIER, PRESIDENTE DE LA MESA DIRECTIVA DEL SENADO DE LA REPÚBLICA</strong></p>
+<p align="justify">Señor  Presidente Santiago Creel Miranda, Presidente de la Mesa Directiva de la Cámara  de Diputados; </p>
+<p align="justify">Señor  Presidente de la Suprema Corte de Justicia, Ministro Arturo Zaldívar;</p>
+<p align="justify">Señores  funcionarios encabezados por el presidente municipal de Comitán, Chiapas; </p>
+<p align="justify">Señores  representantes del sector salud; </p>
+<p align="justify">A los  héroes de México que durante la pandemia del 2019 participaron en esta gesta  heroica de atención a las y los mexicanos: </p>
+<p align="justify">Belisario  Domínguez, médico de profesión y Senador de la República, perdió la vida por  defender la libertad y la democracia, desempeñándose siempre con gran calidad  humana siendo nombrado el médico de los más desprotegidos. </p>
+<p align="justify">Desde  1954, para rendir homenaje a las elevadas virtudes cívicas y enaltecer la  memoria del Senador Belisario Domínguez, el Senado de la República otorga cada  año una medalla en su honor para reconocer y premiar a mexicanas y mexicanos  sobresaliente que se hayan distinguido por sus contribuciones cívicas,  científicas, políticas, sociales, culturales o artísticas, en beneficio de  México o de la humanidad. </p>
+<p align="justify">Esta  medalla constituye la máxima distinción que otorga el Senado de la República a  quienes se han distinguido en grado eminente como servidores de nuestra Patria  o de la humanidad. </p>
+<p align="justify">El 10  de diciembre del 2020, el Pleno de la Cámara de Senadores aprobó otorgar la  Medalla de Honor Belisario Domínguez, correspondiente al 2020, a las personas  integrantes del Sistema Nacional de Salud por su incansable lucha contra el  Covid-19 en México. </p>
+<p align="justify">Dicha presea, fue entregada simbólicamente en 2021, el  día de hoy haremos la entrega material de la medalla correspondiente al 2020  como donación a la Casa Museo Doctor Belisario Domínguez, ubicada en el  municipio de Comitán de Domínguez, en el estado de Chiapas, en esta casa nació  y vivió este gran personaje de nuestra historia, donde se exhiben actualmente  objetos personales, instrumental médico, muebles, correspondencia que reflejan  50 años de su vida. </p>
+<p align="justify">Hoy volvemos a reconocer a los miembros del sector de  salud que han trabajado arduamente en la lucha contra la pandemia, médicos,  enfermeras, enfermeros, asistentes médicos, radiólogos, camilleros, paramédicos  y todo el personal del sector salud que arriesgaron su propia vida por  preservar la de los pacientes ante esta grave pandemia que arrebató la vida de  millones de personas y paralizó la economía mundial. </p>
+<p align="justify"> El doctor Belisario Domínguez llegó a regalar no sólo  la consulta médica, los medicamentos; su amor por la vida y en algún momento  dijo que, si cada uno de los mexicanos hiciera lo que le corresponde, la patria  estaría salvada y gracias al esfuerzo, empeño, trabajo y compromiso de todas y  todos, los colaboradores ante esta adversidad del Covid, hoy reafirmamos que  estos valores humanos y científicos están perfectamente identificados en la  presea. </p>
+<p align="justify">Nuestro reconocimiento a los héroes de blanco guiados  por los valores del servicio que ha dado esta dura pandemia a nuestra patria. </p>
+<p align="justify">Es cuanto, amable Asamblea. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106792'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106793'></a><p align="justify">Conforme al Acuerdo aprobado, se concede el uso de la  palabra a la Senadora Sasil de León Villard, Presidenta de la Comisión de la  Medalla Belisario Domínguez.</p>
+<p align="justify"><strong>DISCURSO DE LA SENADORA SASIL  DE LEÓN VILLARD, PRESIDENTA DE LA COMISIÓN DE LA MEDALLA BELISARIO DOMÍNGUEZ</strong><strong> </strong></p>
+<p align="justify"><strong>La Senadora Sasil de León Villard: </strong>Con su permiso, señor Presidente. Compañeras y  compañeros Senadores. </p>
+<p align="justify">Saludo con gusto al Presidente de la Suprema Corte de  Justicia de la Nación, al Ministro Arturo Zaldívar, gracias por su presencia. </p>
+<p align="justify">De igual manera, al Presidente de la Cámara de  Diputados, al Diputado Santiago Creel, sea usted bienvenido al Senado. </p>
+<p align="justify">Le doy la más cordial de las bienvenidas a todas las  autoridades y funcionarios del estado de Chiapas que nos acompañan y, en especial  al doctor Francisco Arturo Mariscal Ochoa, director de Atención Médica del  gobierno del estado, en representación del doctor Rutilio Escandón, bienvenido  de nueva cuenta al Senado de la República. </p>
+<p align="justify">De igual forma le doy la más cordial bienvenida al  presidente municipal de Comitán de Domínguez, al licenciado Mario Antonio  Guillén, así como su señora esposa, la señora Estrella Molina. </p>
+<p align="justify">Y a todos los integrantes del cabildo que nos visitan  y que los tenemos aquí en los palcos. </p>
+<p align="justify">Muchas gracias por venir a recibir esta gran medalla  para el pueblo de Comitán. </p>
+<p align="justify">Saludo con especial cariño a todas las autoridades de  salud que también se encuentran con nosotros, los voy a mencionar a todos,  espero que ninguno quede sin mencionar.</p>
+<p align="justify">Al doctor Jorge Gaspar Hernández, director general del  Instituto Nacional de Cardiología, gracias, bienvenido. </p>
+<p align="justify">Al doctor Miguel Ángel Licona, subdirector de  Servicios Auxiliares y Diagnósticos del Instituto Nacional de Ciencias Médicas  y Nutrición. </p>
+<p align="justify">A la doctora Mercedes Macías  Parra, directora general del Instituto Nacional de Pediatría. </p>
+<p align="justify">Al  doctor Gustavo Esteban Lugo Zamudio, Director General del Hospital General de  Juárez de México. </p>
+<p align="justify">Al  doctor Juan José Mazón Ramírez, coordinador de Atención de Salud del Instituto  de Salud para el Bienestar. </p>
+<p align="justify"> A la  doctora Guadalupe Mercedes Lucía Guerrero Avendaño, Directora General del  Hospital General de México &ldquo;Eduardo Liceaga&rdquo;. </p>
+<p align="justify">Al  doctor Víctor Manuel Enríquez Estrada, representante del Hospital del  IMSS-Texcoco.</p>
+<p align="justify">Y en  representación del doctor Luis Alonso Herrera Montalvo, Director General del  Instituto Nacional de Medicina Genómica, el doctor Alfredo Hidalgo Miranda. </p>
+<p align="justify">Gracias  por su presencia. </p>
+<p align="justify">La  verdadera dignidad del ser humano se encuentra en sus acciones, así la persona  debe dirigirse por el servicio de una causa que la defina frente a su propia  sociedad y que trascienda en su tiempo.</p>
+<p align="justify">Nos  encontramos hoy reunidos en este Pleno del Senado para rendir homenaje al  personal de salud, para otorgar un reconocimiento a esos incansables esfuerzos,  a su profundo amor por la vida y sobre todo por su invaluable servicio al  pueblo de México. </p>
+<p align="justify">Por  ello, este reconocimiento legítimo a los hombres y mujeres que con vocación de  servicio atendieron y permanecieron en la primera línea de batalla contra este  letal virus. </p>
+<p align="justify">Se les  reconoce su determinación y su espíritu de servicio, su valor, humildad y  humanismo, valores sin los cuales hubiera sido prácticamente imposible brindar  la debida y oportuna atención a la población. </p>
+<p align="justify">Aquí  es donde encontramos las grandes coincidencias entre las acciones del personal  médico de nuestro país con la figura que representa el Senador, pero también  médico, el doctor don Belisario Domínguez Palencia, pues para don Belisario su  propia vida no fue excusa para asumir la responsabilidad y valores que él  consideraba mayores, como lo fueron la dignidad y el amor a la patria. </p>
+<p align="justify">Hablar  del Senador Belisario Domínguez es hablar del emblema de la lucha por la  libertad de expresión y la democracia en la historia de México, de un hombre  que defendió sus ideales con convicción, aun sabiendo que ponía su vida en  riesgo, símbolo contra la opresión, estandarte de los más desfavorecidos.</p>
+<p align="justify">Como  lo refieren sus paisanos, era conocido como el médico del pueblo, ya que en el  ejercicio de su profesión atendía y curaba a todos los necesitados sin  cobrarles nada. </p>
+<p align="justify">La  inconformidad ante la injusticia y ante los abusos del poder fueron el faro que  guio su actuar, esto le llevó a ocupar el digno cargo de alcalde de su natal  Comitán, para luego ser elegido Senador por el estado de Chiapas, donde, como  sabemos, hizo eco de nuestra máxima, que es: &ldquo;la Patria es primero&rdquo;. </p>
+<p align="justify">Mucho  se ha dicho desde entonces sobre el político y sobre el Senador, pero poco se  ha hablado sobre el hombre universal, el médico y el ciudadano. </p>
+<p align="justify">Su  formación humanista, médico de los hombres, el hijo, el padre, el hermano y su  visión social para transformar la realidad de sus conciudadanos chiapanecos,  como pocos en su época, don Belisario entendió que principios como la  democracia, la honestidad, la libertad, la ética en el servicio público y la  justicia social son atemporales y nunca pierden vigencia. </p>
+<p align="justify">Don  Belisario entendía que callar ante las injusticias era justificarlas y que  permitir las mentiras equivalía a consentirlas, por eso llamó al Congreso a ser  vigilancia del poder, a prevenir sus abusos y a procurar la legalidad en  beneficio del desarrollo nacional. </p>
+<p align="justify"> Y es  que don Belisario Domínguez no fue un político, sino un ciudadano comprometido  con su pueblo y que las circunstancias de la vida lo llevaron a ejercer cargos  públicos que desempeñó con firmes convicciones, ética y conciencia social; un  ciudadano vestido de político que se negó a adoptar las formas clásicas de  política y que cuyos valores morales marcarían el rumbo de su vida y de su  muerte. </p>
+<p align="justify">Hoy en  este Senado de la República sigue honrando su memoria, en esta ocasión  reconociendo a las personas integrantes del sistema de salud del Estado  mexicano que han actuado en la primera línea en defensa contra el Covid y que,  al igual que nuestro Senador chiapaneco, con una enorme responsabilidad social  y amor a la Patria, pusieron su vida misma al servicio del pueblo.</p>
+<p align="justify">En los  museos de los pueblos pueden admirar su pasado, pero no solamente eso, sino que  también son capaces de proyectar su futuro.</p>
+<p align="justify">Por  ello es que esta Comisión de la Medalla Belisario Domínguez, que me honro en  presidir, tuvo a bien proponer a este Pleno que la Medalla, en su edición 2020,  que fue entregada simbólicamente al personal de integrantes del sistema de  salud, fuera donada a la Casa Museo Doctor Belisario Domínguez, en Comitán,  Chiapas, con el objetivo que ésta pueda ser visitada, conocida y con su  exposición enaltecer públicamente el reconocimiento que este Senado le hizo a  nuestro sector de salud.</p>
+<p align="justify">En esta  Casa Museo, en donde nació y vivió gran parte de su vida el doctor Belisario  Domínguez, se exhiben numerosos estudios bibliográficos, documentos públicos y  privados, correspondencias, objetos de uso personal, su instrumental médico,  retratos, títulos, diplomas, muebles y otras reliquias familiares, que nos  ayudan a entender mejor la visión y el legado del Senador chiapaneco, don  Belisario Domínguez.</p>
+<p align="justify">La Casa  Museo comprende 50 años de vida del ilustre doctor, reflejados en los objetos y  documentos que se exhiben, donados por su propia hija, la señora Hermila  Domínguez.  </p>
+<p align="justify">Así,  esta Medalla de Honor, máxima distinción que otorga el Senado para honrar a las  mujeres y hombres que con sus acciones han enaltecido a nuestra Patria, será  exhibida de manera permanente en la casa que lo vio nacer, crecer y  consolidarse como la figura de don Belisario Domínguez Palencia.</p>
+<p align="justify">Para  nuestra tierra, querido Senador Belisario, cerca de los tuyos y de nuestro  amado pueblo de Chiapas, que, aunque lejano del centro del país  geográficamente, siempre ha sido fundamental en las grandes transformaciones  nacionales y que sin duda don Belisario Domínguez es un gran referente para las  presentes y futuras generaciones de jóvenes chiapanecas y chiapanecos.</p>
+<p align="justify">El  significado de la dignidad de nuestro prócer de la libertad, el orgullo cuya  vida y obra fue determinante para la construcción de nuestra historia nacional  y un actor fundamental que nos deja como herencia ese espíritu democrático de  transformación y de esperanza en el futuro, para alcanzar el porvenir de  nuestra Patria.</p>
+<p align="justify">Y ahí  se tornan nuevamente coincidentes estos valores en quehacer y servicio de los  cientos de miles de personas que arriesgaron su vida en muchas cosas y en  muchos casos la perdieron para salvar muchas vidas más.</p>
+<p align="justify">Reconocer  y valorar su trabajo, su profesionalismo y compromiso con el pueblo de México  es un acto de respeto y de admiración. México siempre necesita a sus héroes y  hoy sus héroes están dignamente representados en el ejército blanco.</p>
+<p align="justify">De igual  manera, desde aquí rendimos un merecido homenaje que honre la memoria de  quienes, en el cumplimiento de sus responsabilidades, se quedaron en el camino  por esta batalla. A ellos, a sus familias, expresarles nuestro más profundo  agradecimiento, a quienes, al igual que don Belisario Domínguez, perdieron la  vida en el cumplimiento de su deber.</p>
+<p align="justify"> A  pesar del paso del tiempo no tenemos duda que el 2020 será recordado por el  espíritu de amor al prójimo, lealtad al servicio público y de miles de  mexicanas y mexicanos que ofrecieron sus vidas para salvar otras muchas y  convertirse así en un símbolo de fraternidad y de humanismo.</p>
+<p align="justify">De  nueva cuenta nuestro agradecimiento y nuestro total respaldo y respeto a  quienes han dado la vida por su Patria, y con sus acciones nos inspiran y nos  enorgullecen, nos enseñaron cada día que el servicio público adquiere sentido a  la medida que se enaltece la dignidad humana.</p>
+<p align="justify">Estamos  en deuda con todos ustedes.</p>
+<p align="justify">Por su  atención muchas gracias.</p>
+<p align="justify">Y ¡que  viva el sistema nacional de salud!</p>
+<p align="justify">¡Que  viva don Belisario Domínguez!</p>
+<p align="justify">¡Que  viva Chiapas!</p>
+<p align="justify">¡Que  viva México!</p>
+<p align="justify">Gracias.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106793'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106794'></a><p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Muchas  gracias, Senadora Sasil de León Villard, Presidenta de la Comisión de la  Medalla Belisario Domínguez. </p>
+<p align="justify"><strong>ENTREGA DE LA MEDALLA BELISARIO DOMÍNGUEZ, AL  LICENCIADO MARIO MARIO ANTONIO GUILLÉN DOMÍNGUEZ, EN REPRESENTACIÓN DE LA CASA  MUSEO DR. BELISARIO DOMÍNGUEZ PALENCIA, CORRESPONDIENTE AL AÑO 2020</strong><strong> </strong></p>
+<p align="justify">Les  solicito ponerse de pie para la entrega, en donación, de la Medalla de Honor  Belisario Domínguez y del diploma correspondiente, para el año 2020, a la Casa  Museo doctora Belisario Domínguez.</p>
+<p align="justify">La  recibe, en su nombre, el licenciado Mario Antonio Guillén Domínguez, presidente  municipal de Comitán de Domínguez, Chiapas. </p>
+<p align="center">(Se  hace entrega de la medalla)</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106794'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106795'></a><p align="justify">Honorable  Asamblea, ahora se concede el uso de la palabra al licenciado Mario Antonio  Guillén Domínguez, presidente municipal de Comitán de Domínguez, Chiapas, en  representación de la Casa Museo doctor Belisario Domínguez. </p>
+<p align="justify"><strong>DISCURSO DEL LICENCIADO MARIO  ANTONIO GUILLÉN DOMÍNGUEZ, PRESIDENTE MUNICIPAL DE COMITÁN DE DOMÍNGUEZ,  CHIAPAS, EN REPRESENTACIÓN DE LA CASA MUSEO DR. BELISARIO DOMÍNGUEZ PALENCIA.</strong></p>
+<p align="justify"><strong>El  Ciudadano Mario Antonio Guillén Domínguez:</strong> Buenas tardes tengan todas y todos ustedes.</p>
+<p align="justify">Con su permiso Senador Alejandro Armenta, presidente  de la Mesa Directiva del Senado de la República. </p>
+<p align="justify"> Ministro Arturo Zaldívar, presidente de la Suprema  Corte de Justicia. </p>
+<p align="justify">Diputado Santiago Creel, presidente de la Cámara de  Diputados. </p>
+<p align="justify">A las y a los representantes del Senado de la  República, gracias por la invitación para formar parte de este importante  evento. </p>
+<p align="justify">A la Mesa de la comisión, muchas gracias. </p>
+<p align="justify">A mis amigos Senadores del Estado de Chiapas, Noé  Castañón, Manuel Velasco.</p>
+<p align="justify">Mi brother, Eduardo Ramírez mi cariño y respeto. </p>
+<p align="justify">Gracias, Senadora Sasil De León, presidenta de la  Comisión de la Meda Belisario Domínguez por hacernos partícipes de esta sesión.</p>
+<p align="justify">Desde este recinto envió saludos con afecto a mi  gobernador de mi bello estado de Chiapas, el doctor Rutilio Escandón Cadenas,  donde le agradezco todo su apoyo.</p>
+<p align="justify">Pero por supuesto a nuestro Presidente de la República  Andrés Manuel López Obrador, por su total respaldo a Comitán. </p>
+<p align="justify">Hoy, me encuentro sumamente emocionado y agradecido por  ser quien, a nombre de las y los comitecos, pero principalmente a nombre de los  integrantes del Sistema Nacional de Salud, quienes en el año 2020 dieron su  vida en la batalla en contra del Covid-19. Recibo este importante  reconocimiento que lleva el nombre del prócer comiteco doctor Belisario  Domínguez Palencia. A nombre de todos estos guerreros anónimos, nuestros héroes  de blanco, quienes se distinguieron por su vocación, humanismo y fe inquebrantable de amor al prójimo. </p>
+<p align="justify">Arriesgaron su vida para salvar a los que se  enfermaron de este virus, en nombre de ellas y de ellos recibo este  reconocimiento. Estamos atestiguando un hecho sin precedentes porque es la  primera vez que se entrega este galardón a un grupo o a un sector de la  población; pero aún más histórico, es que esta medalla yacerá en la Casa Museo  Dr. Belisario Domínguez, en nuestro hermoso Pueblo Mágico de Comitán, un lugar  donde se conserva la vida, obra del destacado Senador y médico comiteco y donde  están sus restos, mártir de la libre expresión y que ahora tendrá la medalla  que lleva su nombre.</p>
+<p align="justify">Gracias por esta distinción para Comitán. Mi  reconocimiento para quienes hoy reciben esta condecoración.</p>
+<p align="justify">Asimismo, pido al Pleno considera la propuesta que año  con año, después de galardonar a la mexicana o mexicano distinguido con la  Medalla Dr. Belisario Domínguez sea homenajeado en la cuna del prócer en  nuestro Pueblo Mágico de Comitán para entregarle las llaves de la ciudad.</p>
+<p align="justify">Quiero agradecer a mi cabildo por acompañarme y día a  día por demostrarme su compromiso y solidaridad.</p>
+<p align="justify">Hoy la patria reclama en cada pueblo, en cada estado,  en la nación entera que el espíritu y el pensamiento del Senador Belisario  Domínguez anide en el corazón de los niños, alimente las ilusiones de los  jóvenes e ilumine los pensamientos de todo hombre y mujer de nuestro México  entero.</p>
+<p align="justify"> Muchas gracias a todos.</p>
+<p align="justify">Y a nombre de Comitán, de los médicos, que me honro en  presidir como alcalde, gracias, gracias de nueva cuenta.</p>
+<p align="justify">Que Dios bendiga al pueblo de México, a Chiapas y a  Comitán.</p>
+<p align="justify">Dios los bendiga a todos ustedes.</p>
+<p align="justify"> <strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Honorable  Asamblea, se les solicita ponerse de pie a fin de entonar el Himno Nacional  Mexicano.</p>
+<p align="center">(Todos  de pie entonan el Himno Nacional)</p>
+<p align="justify">A  nombre del Senado de la República expreso nuestro agradecimiento por su  presencia a esta sesión solemne.</p>
+<p align="justify">Al  señor Presidente de la Suprema Corte de Justicia de la Nación, Ministro Arturo  Zaldívar, muchas gracias por acompañarnos.</p>
+<p align="justify">Al  Presidente de la Cámara de Diputados, al señor Diputado Santiago Creel Miranda.</p>
+<p align="justify">Muchas  gracias.</p>
+<p align="justify">A  las autoridades del estado de Chiapas y al Ayuntamiento de Comitán de Domínguez  por su presencia, encabezados por el señor presidente, así como a las demás  invitadas e invitados que nos honraron con su presencia personal de los  servicios de salud.</p>
+<p align="justify">Solicito  a las Senadoras y a los Senadores integrantes de las comisiones de cortesía se  sirvan acompañar a nuestros invitados, invitadas hasta las puertas de este  recinto cuando deseen retirarse.</p>
+<p align="center">(Las  comisiones cumplen)</p>
+<p align="justify">Solicito  a mis compañeras y compañeros Senadores permanezcamos en el salón de sesiones  para continuar con la sesión ordinaria.</p>
+<p align="justify">Se  levanta la sesión solemne.</p>
+<p align="center">(Se levantó la sesión solemne a las 13:18 horas) </p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106795'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

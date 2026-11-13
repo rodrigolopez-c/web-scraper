@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 25</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Olga María del Carmen Sánchez Cordero Dávila</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 17 de Noviembre de 2021</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/1/PPO/PDF-WEB/PPO_No.25_17-NOVIEMBRE-2021_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='101093'></a><p align="center"><strong>PRESIDE LA SENADORA</strong><br>
+  <strong>OLGA MARÍA DEL CARMEN SÁNCHEZ CORDERO DÁVILA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>(10:48 horas) Con el quórum de la sesión ordinaria del día de hoy, y en  cumplimiento al Acuerdo de la Mesa Directiva para realizar sesión solemne en la  que se develará en el Muro de Honor del Senado de la República la leyenda: &ldquo;2021,  Año del Centenario de la Creación de la Secretaría de Educación Pública&rdquo;.</p>
+<p align="justify">Se abre la sesión solemne del Senado de la República.</p>
+<p align="justify">Acude como invitada a esta sesión solemne la profesora Delfina Gómez  Álvarez, titular de la Secretaría de Educación Pública, y para recibirla se  designa en comisión a las Senadoras y Senadores: Casimiro Méndez Ortiz, Juan  Zepeda, María Graciela Gaitán Díaz, Joel Padilla Peña, Sasil de León Villard,  Juan Manuel Fócil Pérez, Gilberto Herrera Ruiz y Martha Guerrero Sánchez.</p>
+<p align="justify">Si son tan amables, como comisión de honor, de acudir a acompañar a la  señora Secretaria de Educación. Gracias.</p>
+<p align="center">(La comisión cumple)</p>
+<p align="justify">Se declara un receso mientras acuden por ella. Gracias.</p>
+<p align="center">(RECESO)</p>
+<p align="justify"> <strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>(10:55 horas) Se reanuda la sesión solemne.</p>
+<p align="justify">Solicito a la Secretaría dé cuenta con los antecedentes que originan  esta sesión solemne. </p>
+<p align="justify">Adelante, por favor.</p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con gusto, señora Presidenta.</p>
+<p align="justify">El 14 de septiembre de 2021, la Senadora Antares Guadalupe Vázquez  Alatorre presentó iniciativa con proyecto de Decreto por el que se propone la  inscripción con letras doradas en el Muro de Honor del Senado de la República  la leyenda: &ldquo;Centenario de la Creación de la Secretaría de Educación Pública&rdquo;,  la cual fue turnada a la Comisión de Educación, para su estudio y  dictaminación.</p>
+<p align="justify">El 12 de octubre de 2021 se aprobó por el Pleno el dictamen de la  Comisión de Educación, con proyecto de Decreto por el que se inscribe con  letras doradas en el Muro de Honor del Senado de la República la leyenda:  &ldquo;2021, Año del Centenario de la Creación de la Secretaría de Educación  Pública&rdquo;, el cual fue remitido al Ejecutivo Federal para su publicación en el  Diario Oficial de la Federación.</p>
+<p align="justify">El 20 de octubre de 2021 se publicó el Decreto por el que se inscribe  con letras doradas en el Muro de Honor del Senado de la República la leyenda:  &ldquo;2021, Año del Centenario de la Creación de la Secretaría de Educación  Pública&rdquo;.</p>
+<p align="justify">Es todo, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Muchas gracias.</p>
+<p align="justify">En consecuencia, y en cumplimiento al Decreto antes señalado, en esta  sesión solemne develaremos la leyenda: &ldquo;2021, Año del Centenario de la Creación  de la Secretaría de Educación Pública&rdquo;.</p>
+<p align="justify">Damos la bienvenida, en primerísimo lugar, a la Secretaria de Educación  Pública, a la maestra Delfina Gómez. Muchas gracias.</p>
+<p align="justify">También le damos la bienvenida a Juan Pablo Arroyo Ortiz, Subsecretario de  Educación Media Superior.</p>
+<p align="justify">A Luciano Concheiro Bojórquez, Subsecretario de Educación Superior.</p>
+<p align="justify">A Óscar Flores Jiménez, titular de la Unidad de Administración y  Finanzas de la Secretaría de Educación Pública. </p>
+<p align="justify">Arturo Reyes Sandoval, Director General del Instituto Politécnico  Nacional.</p>
+<p align="justify">Rosa María Torres, Directora de la Universidad Pedagógica Nacional.</p>
+<p align="justify">María Elena Álvarez-Buylla, Directora del Conacyt.</p>
+<p align="justify">Lilian Kravzov Appel, Rectora de la Universidad Abierta y a Distancia de  México.</p>
+<p align="justify">Ángeles Gordillo Castañeda, Directora de las Universidades  Interculturales.</p>
+<p align="justify">Silvia Valle Tépatl, Comisionada Presidente de la Comisión Nacional para  la Mejora Continua de la Educación.<br>
+  <br>
+  María Hermenegilda López Durán, maestra.</p>
+<p align="justify">Y María Eugenia Arellano Mayer, maestra.</p>
+<p align="justify">Así también como al señor Juan Ramón Flores, director de Comunicación  Social de la Secretaría.</p>
+<p align="justify">Al señor Rafael Flores, jefe de la oficina de la Secretaría de Educación  Pública.</p>
+<p align="justify">Al señor Licenciado Enrique Quiroz, titular de la Unidad de Asuntos  Jurídicos.</p>
+<p align="justify">Y a la señora Teresa Guadalupe Reyes, directora general del INEA.</p>
+<p align="justify">Asimismo, agradezco la presencia de las demás invitadas e invitados que  nos acompañan a esta sesión solemne.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a101093'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='101094'></a><p align="justify">En cumplimiento al Acuerdo aprobado, se concede el uso de la palabra a  la Senadora Antares Guadalupe Vázquez Alatorre, Presidenta de la Comisión de  Educación, hasta por diez minutos. Por favor.</p>
+<p align="justify"><strong>DEVELACIÓN DE LA LEYENDA: &ldquo;2021, AÑO DEL CENTENARIO DE LA CREACIÓN DE LA  SECRETARÍA DE EDUCACIÓN PÚBLICA&rdquo;</strong></p>
+<p align="justify"><strong>La Senadora Antares Guadalupe Vázquez Alatorre: </strong>Muy buenos días a todas y a todos. Secretaria, muy bienvenida al Senado.  Compañeras y compañeros:</p>
+<p align="justify">Hace un siglo México vivía el proceso posrevolucionario, la tercera  transformación de nuestro país que inició con un conflicto armado estaba en una  etapa de concreciones que surgían a partir de acaloradas discusiones entre las  distintas posturas existentes de quienes fueron motores de la Revolución.</p>
+<p align="justify">Se buscaba la organización del nuevo Estado mexicano a partir de una  amalgama de formas de pensar, el nuevo régimen debía institucionalizarse para  dar cauce a los logros de la Revolución. Era una época convulsa en la que se  buscaba sentar las ideas para atender los más caros anhelos de quienes  emprendieron la lucha por acabar con la dictadura que había incrementado las  brechas de desigualdad.</p>
+<p align="justify">La educación, al ser una súper estructura social, mantiene una relación  dialéctica con la sociedad, es espejo de sus características y problemas, pero  también es una herramienta para transformarla.</p>
+<p align="justify">Por eso, quiero destacar algunos antecedentes históricos  prerrevolucionarios en lo social y también en materia educativa.</p>
+<p align="justify">La Conquista acabó con los estados indígenas que, sin duda, tenían una  política educativa congruente con las prioridades de cada pueblo. Los invasores  impusieron una nueva educación a cargo de la iglesia católica con el propósito  de convertir a los pobladores originarios a la religión de la península  ibérica.</p>
+<p align="justify">Durante la época colonial prevaleció esta visión, hasta que a mediados  del siglo XVIII algunos intelectuales como Clavijero, Alegre y Díaz de Gamarra  comenzaron a impulsar un hálito de modernidad en la educación que, sin duda,  nutrió a muchos jóvenes que se sumaron al movimiento libertario que logró  nuestra emancipación.<br>
+  <br>
+  La Guerra de la Independencia fue un proceso revolucionario, en el que los más  pobres pretendían imponer un profundo cambio a la sociedad colonial, la guerra  terminó en 1821 con un México independiente. Sí, pero también con una  contrarrevolución que buscaba proteger los intereses de las clases acomodadas. </p>
+<p align="justify">De muchas formas,  la Independencia no resolvió los múltiples conflictos sociales, de hecho, las  décadas siguientes fueron escenario de diversas pugnas entre las fuerzas  reaccionarias y las progresistas. Las primeras, para mantener el estatus quo y,  las segundas, para convertir a México en un Estado moderno. </p>
+<p align="justify">De esta forma, la  educación tuvo constantes cambios, a veces para avanzar y a veces para  retroceder, comenzó a haber esfuerzos para organizarla como en tiempos de  Valentín Gómez Farias, pero después hubo retrocesos, como en la dictadura  santanista hacia una educación escolástica que ya había sido superada.</p>
+<p align="justify">A pesar de los  desencuentros, todos los grupos estaban interesados en lo educativo. Por  ejemplo, Lucas Alamán, el ideológico más destacado de los conservadores sostuvo  ante el Congreso, en 1823, que sin instrucción no puede haber libertad y la  base de la igualdad política y social es la enseñanza elemental.</p>
+<p align="justify">Un año después el  sacerdote liberal José María Luis Mora, dijo también ante el Congreso que nada  es más importante para el Estado que la instrucción de la juventud, ella es la  base sobre la que descansan las instituciones sociales, coincidía con Alamán en  esto, pero iba más lejos porque demandaba que la educación debía ser organizada  y controlada por el Estado para protegerla de las acechanzas de los diversos  grupos que buscaban usarla para sus propósitos particulares. </p>
+<p align="justify">A pesar de que los  liberales lograron, en 1833 que se hiciera una reforma que estableció las  directrices sobre el rumbo de la educación, no pudo implementarse porque los  conservadores emprendieron una lucha, ayudados por Santa Anna, para dar marcha  atrás. </p>
+<p align="justify">Poco a poco las  fuerzas liberales fueron fortaleciéndose, ideológicamente, y vencieron cuando  Juárez promulgó las leyes de Reforma. Después del triunfo sobre la intervención  europea que fue auspiciada por los conservadores, Juárez mostró gran interés  por la educación y comenzó a tomar control de ella para transmitir la filosofía  del nuevo Estado Mexicano, se considera que fue entonces cuando surgió la  educación pública en México.</p>
+<p align="justify">En 1867, Juárez le  encargó al ministro de Justicia e Instrucción Pública, Antonio Martínez de  Castro, que formara una comisión para ese propósito, en ella participaba Gabino  Barreda, principal exponente del positivismo de aquella época; la educación  pública debía cimentarse sobre el conocimiento científico y la técnica y  también desestimar la educación religiosa.</p>
+<p align="justify">El paradigma  positivista impactó, de gran manera, la educación mexicana, aún durante el  porfiriato, en donde se fortaleció esta forma de pensar. Desde que Porfirio  Díaz llegó al poder se comenzaron a construir escuelas, primordialmente en las  ciudades, se fue dando paso a la formación de maestros, lo que poco a poco fue  reduciendo la anarquía que había en el sector; se abrieron escuelas de  párvulos, además de algunas secundarias y también comenzaron las escuelas de  agricultura. </p>
+<p align="justify">Al comenzar el  siglo XX, las discusiones de los intelectuales en torno al positivismo, en la  educación, eran intensas, había adversarios dentro de los conservadores  católicos que le repelían, pero también dentro de los liberales y de la  naciente crítica filosófica del Ateneo de la juventud. Protagonizada por José  Vasconcelos, entre algunos otros jóvenes pensadores. <br>
+  <br>
+  En 1905 se creó la  Secretaría de Instrucción Pública y Bellas Artes, que fue dirigida por Justo Sierra,  esta entidad solo tenía alcance en el Distrito Federal y los territorios, pero  se pretendía que influyera indirectamente en todo el país.</p>
+<p align="justify">Con la caída del  porfiriato y como resultado de la Revolución, se fortaleció la educación  popular; la gran desigualdad establecida durante la dictadura entre el campo y  la ciudad, así como la carencia de contenidos sociales, en la escuela de esa  época, dieron pie a la consolidación de la escuela popular. </p>
+<p align="justify">Ante el  derrocamiento de Carranza, en 1920, terminó también la pugna entre los  principales grupos revolucionarios, se inició así el estado postrevolucionario,  encabezado por las clases medias del movimiento que contaban con una amplia  base social, se incorporaron todos los grupos al ejercicio del poder público y  se empezaron a aplicar las primeras reformas sociales y  a crear las primeras instituciones posrevolucionarias. </p>
+<p align="justify">A instancias de José Vasconcelos, surge el 3 de octubre de 1921 la  Secretaría de Educación Pública, que finalmente cristaliza las ideas de todos  los precursores de distintas tendencias ideológicas para lograr la  institucionalización y regularización de la función educativa del Estado  mexicano. </p>
+<p align="justify">La nueva institución educativa es notablemente diferente de la  Secretaría de la Instrucción Pública de Justo Sierra, que se limitaba a  coordinar aspectos meramente de administración instruccional. </p>
+<p align="justify">La visión de Vasconcelos para la SEP era ambiciosa, abarcaba la  instrucción, pero también elementos artísticos, culturales y morales, implicaba  la complejidad de lo educativo como un proceso vitalicio profundamente humano,  se trata no sólo de enseñar, sino de desarrollar la inteligencia y de formar el  carácter y el juicio de una persona. </p>
+<p align="justify">Otra gran diferencia entre ambas era su origen histórico y sociopolítico,  la Secretaría de la Instrucción era una institución porfiriana, mientras que la  SEP es posrevolucionaria, con un gran compromiso social. Fue plantada como una  institución vigorosa, con urgencia de definir su nueva identidad que, sin duda,  logró cuando lo vemos a cien años de distancia. </p>
+<p align="justify">José Vasconcelos le imprimió a la SEP el dinamismo que él mismo tenía  derivado de su incesante actividad crítica, intelectual, de su propia historia  de lucha y de sus aprendizajes en distintas trincheras revolucionarias. </p>
+<p align="justify">Para la Secretaría, integró un equipo de personas de distintas  tendencias ideológicas, por supuesto, a sus compañeros ateneístas. El diseño de  la misma fue sumamente ambicioso en sus alcances y, sin duda, un compromiso  histórico del Estado mexicano. </p>
+<p align="justify">Diseñó una institución de construcción paulatina, porque comprendía que  debía modificarse conforme a las necesidades y evolución del país, también a la  par de las modificaciones de instrumentos pedagógicos y de principios  artísticos y culturales. </p>
+<p align="justify">A cien años de la fundación de la Secretaría de Educación Pública, es  indispensable recordar sus orígenes e ideales, es imperativo retomar su  espíritu innovador y de construcción permanente para profundizar la sólida  transformación de nuestro país en un México impulsado por los ideales  revolucionarios de justicia social. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Muchas gracias. <br>
+  <br>
+  Se le concede ahora el uso de la palabra a la maestra Delfina Gómez  Álvarez, Secretaria de Educación Pública, hasta por diez minutos. Gracias,  maestra. </p>
+<p align="justify"><strong>La Secretaria de Educación Pública, Delfina Gómez Álvarez: </strong>Con su permiso. Buenos días a todas y a todos ustedes. </p>
+<p align="justify">Me complace dirigir este mensaje en la sesión solemne, con motivo de la  inscripción en letras de oro de la leyenda &ldquo;2021, Año del Centenario de la  Creación de la Secretaría de Educación Pública&rdquo;, en el Muro de Honor del  Senado. </p>
+<p align="justify">Saludo con mucho agrado y mucho gusto a la Presidenta de la Mesa  Directiva, a nuestra compañera y amiga, Senadora Olga Sánchez Cordero. </p>
+<p align="justify">Muchísimas gracias por permitirnos estar aquí. </p>
+<p align="justify">Agradezco también la distinguida invitación del Senador Ricardo Monreal  Ávila, Presidente de la Junta de Coordinación Política de la Cámara de  Senadores. Mis respetos y mi cariño para usted. </p>
+<p align="justify">Asimismo, extiendo mi agradecimiento a los coordinadores de los grupos  parlamentarios por el espacio brindado para la realización de esta ceremonia y  también mi reconocimiento y mi gratitud a las y los integrantes de la Comisión  de Educación, por su compromiso al servicio de la nación, así como a los y las  Senadoras de la LXV Legislatura. </p>
+<p align="justify">Nombramos las cosas para que existan y las escribimos para que  permanezcan, para que perduren en el tiempo y trasciendan. </p>
+<p align="justify">Las letras de oro en el Muro de Honor del Senado Mexicano, es un honor  que se otorga a personas e instituciones que han dejado huella en la historia. </p>
+<p align="justify">Por ello, me llena de satisfacción reconocer ante todas y todos ustedes  que el notable esfuerzo educativo, llevado a cabo por la SEP, durante cien  años, se plasma en el recinto de esta soberanía. </p>
+<p align="justify">Con esta distinción se rinde homenaje no solamente a la SEP, sino a la  historia educativa de nuestro país, a todos los que lucharon día con día por  lograr una mejor educación. </p>
+<p align="justify">Las culturas prehispánicas enseñaban adelantados conocimientos de  arquitectura, astronomía, matemáticas y, sobre todo, las artes, ensambladas en  el amor a su pueblo y a su naturaleza, prueba de ello fue el pueblo mexica. </p>
+<p align="justify">El Congreso Constituyente de 1917 reconoció el derecho a la educación en  el artículo tercero de la Constitución Política, siendo y es uno de los actos  legislativos de mayor relevancia de nuestra historia.</p>
+<p align="justify">José Vasconcelos, gran maestro, que es una de las mentes más lúcidas y  dotadas de su generación, impulsó la iniciativa de la ley para la creación de  la Secretaría de Educación Pública, a fin de que la educación dejara de ser un  lujo y lograra ser un derecho en donde todas y todos los habitantes de México  pudieran tener acceso a ella. </p>
+<p align="justify">Tras la deliberación y los debates del proceso legislativo, el 5 de  septiembre de 1921, el Senado de la República aprobó por unanimidad de votos el  proyecto de ley. </p>
+<p align="justify">Así el 3 de octubre de 1921 se publicó el Decreto de creación de la  Secretaría de Educación Pública en el Diario Oficial, y el maestro José  Vasconcelos rindió protesta como primer secretario unos días más tarde. <br>
+  <br>
+  Llegó a establecer la estructura de la Secretaría en tres departamentos:  el escolar, el de bibliotecas y archivos y el de bellas artes. Así, pues,  gracias a la aprobación de esta Cámara de Senadores, inicia la gran historia de  una de las instituciones fundamentales y más queridas de México. </p>
+<p align="justify">Senadoras y Senadores: </p>
+<p align="justify">La transformación es una condición del progreso. La educación debe de  actualizarse constantemente. Y las maestras y los maestros estamos dispuestos a  afrontar el reto con determinación. La educación evoluciona y el magisterio  también. La crisis sanitaria nos dejó pérdidas dolorosas e irreparables, pero  también nos obligó a innovar para seguir avanzando. </p>
+<p align="justify">Nos impulsó a aprender para enseñar en medio de la adversidad. </p>
+<p align="justify">Una de las lecciones más valiosas fue la construcción del programa &ldquo;Aprende  en Casa&rdquo; donde integramos a la educación las herramientas brindadas por la  tecnología, tal estrategia nos permitió continuar impartiendo clases y  aprendiendo desde el confinamiento, niñas, niños, adolescentes y jóvenes  siguieron estudiando a distancia. </p>
+<p align="justify">También nos ratifica que la relación permanente entre docentes y  estudiantes es vital, jamás podemos evitar que el hecho de que haya el contacto  entre alumnos y maestros pueda ser algo tan importante dentro del proceso  aprendizaje, nada puede sustituirla, aunque es posible diversificar sus  esquemas. </p>
+<p align="justify">Hoy hemos vuelto a clases de manera presencial y que, sin duda, estoy de  acuerdo con la Senadora Antares, que ayer comentaba, es un gran logro que hemos  tenido como sistema educativo y como sociedad, el aprovechamiento académico,  así como la salud emocional de las y los estudiantes lo ameritaban y lo pedían. </p>
+<p align="justify">En el proceso ha sido indispensable la colaboración de las madres, los  padres de familia o los tutores, así como de los tres órdenes de gobierno y de  las autoridades educativas, pero muy en especial de nuestras queridas maestras  y maestros frente a grupo. Gracias al seguimiento riguroso de protocolos  sanitarios que fueron producto precisamente de un análisis y un trabajo de las  diferentes Secretarías que integran el gobierno federal, no han surgido brotes  que impliquen mayor riesgo. Hemos regresado a clases con ímpetu renovado.</p>
+<p align="justify">Pronto estarán abiertas todas las escuelas del país que es todo lo que  pedimos como sociedad y como Secretaría. Me enorgullece formar parte de  maestros y maestras quienes, a lo largo de un siglo, han dejado una parte de  sus ideas, de su vocación, de su amor y de sus ideales en el aula. </p>
+<p align="justify">Por qué no hablar de un Joaquín Baranda.</p>
+<p align="justify">O un Justo Sierra. Un enorme proceso que también llevó a cabo Moisés  Sáenz, junto con Jaime Torres Bodet, con Narciso Bassols. Y por qué no decir de  manera muy precisa, nuestro querido maestro José Vasconcelos.</p>
+<p align="justify">También tenemos a grandes maestros y pedagogos como: Torres Quintero,  Rafael Ramírez, Rébsamen, que han, precisamente, estos  maestros, a través de sus ideas y sus propuestas, mejorar día a día,  precisamente, el proceso educativo y el duro trabajo que tienen cada uno de  nuestros maestros. </p>
+<p align="justify">Y que han permanecido también algunos otros en el anonimato, a ellos  quiero referirme con especial atención, hay maestros que son nuestros seres  desconocidos, que tienen que caminar grandes trechos para llegar a las  escuelas, que tienen que aportar de su salario para poder comprar material para  sus alumnos, que tienen que convertirse en padres de familia o en psicólogos  para tratar asuntos relacionados con lo que le duele y con lo que le pesa a un  alumno. <br>
+  <br>
+  A esos nuestros seres desconocidos también mi aprecio y mi  reconocimiento, porque a pesar de no ser reconocidos y no ser nombrados, sí  siguen siendo reconocidos y valorados por alguien muy especial, que son sus  alumnos; los alumnos son los que reconocen a esos grandes maestros. A ellos mi  reconocimiento. </p>
+<p align="justify">Y de todos aquellos quienes se regocijan cada día ante la labor bien  hecha y que saben que su labor redunda en el bienestar colectivo, y en especial,  en sus alumnos. Somos maestras y maestros, sabemos que la responsabilidad de  nuestra misión va más allá de impartir clases. </p>
+<p align="justify">Con decisión aprendemos y con amor enseñamos, siempre con la meta de  lograr una sociedad más justa, cimentada en el respeto y la ayuda mutua.  Nuestro objetivo conjunto es el diálogo, la inclusión y la pluralidad. </p>
+<p align="justify">A cien años de su creación, la SEP tiene ante sí el impostergable reto de  transformar el entorno social. La educación es factor esencial para alcanzar  las más nobles metas. </p>
+<p align="justify">Hoy la nueva escuela mexicana nos planteamos precisamente formar  mexicanas y mexicanos íntegros, respetuosos de la ley, comprometidos por un  mejor país para todas y todos y no para unos cuantos, y solidarios con quienes  más lo necesitan, en especial los pobres. </p>
+<p align="justify">En la SEP hoy trabajamos a partir de valores humanistas, ajenos al  egoísmo y al interés particular; combatimos el acoso para ser más libres y para  ser más justos; respetamos la diversidad de ideas y de formas para ser  universales; asumimos la responsabilidad, así como también la defensa de los  derechos como la condición para un aprendizaje sólido que no se quede en la  superficie; también asumimos la responsabilidad de poder servir a los demás.  Esa es nuestra vocación: servir a todos y cada uno de los ciudadanos que  tenemos frente a nosotros. </p>
+<p align="justify">Y como lo ha señalado el Presidente Andrés Manuel López Obrador, la  fórmula más segura es atender el fondo. Por eso, debemos fortalecer los valores  culturales, morales y cívicos de nuestros estudiantes.</p>
+<p align="justify">La escuela es más que cuatro paredes o un edificio, es un centro de  reflexión y de intercambio de ideas, ahí formamos a los que hoy imaginan una  realidad distinta, a los que habrán de crearla día con día, que son nuestros  estudiantes. </p>
+<p align="justify">Señoras y señores legisladores, el honor que el Senado de la República  concede a la educación, como este ilustre gesto, nos motiva a continuar con  mayor empeño y dedicación. </p>
+<p align="justify">Educar es aprender. En ese camino, la responsabilidad es tanto de los  educadores, como de la sociedad en su conjunto. </p>
+<p align="justify">Las maestras y los maestros de México sabremos estar a la altura de la  encomienda que nos ha sido otorgada, y creo que lo han demostrado los  compañeros, nuestra tarea es trabajar por una sociedad más incluyente, justa y  libre. </p>
+<p align="justify">Por ello, a nombre de los que integramos la Secretaría de Educación  Pública, que están aquí algunos presentes y que agradezco mucho el que estén  aquí acompañándonos; así como todos los miles de trabajadores, desde lo que es  el personal manual, administrativo, los asesores y todos los que conformamos  precisamente esa gran Secretaría, nos venimos a poner a sus órdenes, venimos a  decirles &ldquo;aquí estamos; estamos para servirles&rdquo;. <br>
+  <br>
+  Y creo que la pandemia algo que nos deja también es ese trabajo en  equipo; nos queda claro que uno solo no va a poder lograr un objetivo tan  grande, que es precisamente transformar a nuestro país y mejorar la calidad  educativa; nos queda claro que depende de todos y cada uno de nosotros, de los  que estamos aquí y de los que integran la sociedad, que lo podamos lograr. </p>
+<p align="justify">Por eso, el equipo de la SEP se pone a sus órdenes; estamos muy  agradecidos de este gesto tan enorme, de verdad, que hacen para la SEP. </p>
+<p align="justify">Y eso, insisto, nos compromete y nos ayuda precisamente a motivar para  seguir día a día con mayor ánimo y con mayor deseo de hacer las cosas bien.</p>
+<p align="justify">Es tiempo de una educación transformadora que engrandezca a la Patria,  que engrandezca a nuestro querido México, por el cual todos estamos aquí y por el cual todos vamos a luchar. </p>
+<p align="justify">Muchísimas gracias a todos ustedes.</p>
+<p align="justify"><strong>La Presidenta Senadora Olga María del Carmen Sánchez Cordero Dávila: </strong>Muchas gracias por su mensaje a la titular de la Secretaría de Educación  Pública, la maestra Delfina Gómez Álvarez. </p>
+<p align="justify">Honorable Asamblea:</p>
+<p align="justify">Es un verdadero honor que este recinto de la democracia participativa,  de la libre manifestación de las ideas y del pluralismo, celebre la creación de  la Secretaría que le da al país los elementos para que esto, efectivamente,  suceda.</p>
+<p align="justify">Hoy celebramos cien años de la concreción de una idea que, en sus  inicios, se caracterizó por su amplitud e intensidad.</p>
+<p align="justify">Organización de cursos, apertura de escuelas, edición de libros,  fundación de bibliotecas estas medidas, en su conjunto, fortalecieron un  proyecto educativo nacionalista que recuperaba también las mejores tradiciones  de la cultura universal.</p>
+<p align="justify">Honrando el texto que la Constitución del 1917 estableció, que la  enseñanza sería gratuita, libre y laica, la Secretaría recién creada aumentó el  número de maestros de educación primaria de 9 mil 560 a 25 mil 312, es decir,  en un 164.7 por ciento.</p>
+<p align="justify">Había entonces 35 escuelas preparatorias, 12 escuelas de abogados, siete  de médicos alópatas, una de médicos homeópatas, 4 de profesores de obstetricia,  solamente una escuela de dentistas, 6 de ingenieros, 5 de farmacéuticos, 36 de  profesores normalistas, 3 de enfermeras, 2 de notarios, 10 de bellas artes y 7  de clérigos.</p>
+<p align="justify">Pero la importancia del Decreto que creó a la Secretaría de Educación  Pública fue que la educación, al menos la impartida por el Estado, sería,  además de libre y laica, pública. Con ese rescate de lo público, la Secretaría  que hoy conmemoramos dio pie a una de las instituciones más importantes del  Estado mexicano, la que sostiene la educación de la gran mayoría de mexicanas y  mexicanos, y que aporta al país la política educativa.</p>
+<p align="justify">Celebrar cien años de una institución como la Secretaría de Educación  Pública es celebrar la educación pública y celebrar esa educación es celebrar  lo público, algo muy importante en nuestros días, el rescate de lo público;  pero, sobre todo, es celebrar la educación de millones de mexicanas y de  mexicanos que tuvieron el privilegio, y me incluyo, de formarse en las escuelas  públicas, dándoles a éstas y a estos mexicanos la gran oportunidad de  prepararse para una auténtica y real movilidad social.<br>
+  <br>
+  ¡Felices cien años  a la Secretaría de Educación Pública en nuestro país!</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify">Solicito a las y  los coordinadores de los grupos parlamentarios, a los integrantes de  la Junta Directiva de la Comisión de Educación y a la Secretaría de Educación  Pública, a la Secretaria, a su titular de Educación Pública, nos acompañen a  los integrantes de la Mesa Directiva para la develación de la leyenda: &ldquo;2021,  Año del Centenario de la Creación de la Secretaría de Educación Pública&rdquo; en el  muro de este salón de sesiones. </p>
+<p align="justify">Las demás personas,  si son tan amables, las que nos acompañan en este recinto, favor de permanecer  en sus lugares y les solicito a todas y a todos ponerse de pie.</p>
+<p align="center">(Se cumple)</p>
+<p align="justify">Solicito a todas y  a todos permanecer de pie para entonar el Himno Nacional, por favor.</p>
+<p align="center">(Todos de pie entonan  el Himno Nacional)</p>
+<p align="justify">Les solicito tomar  asiento, por favor.</p>
+<p align="justify">A nombre del Senado  de la República, deseo expresar nuestro agradecimiento a nuestros distinguidos  invitados por su asistencia a esta sesión solemne.</p>
+<p align="justify">Solicito a mis  compañeras y compañeros Senadores permanezcamos en el salón de sesiones para  continuar con la sesión ordinaria de este día.</p>
+<p align="justify">Se levanta la  sesión solemne.</p>
+<p align="center">(Se levantó la sesión solemne a las 12:28 horas)</p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a101094'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

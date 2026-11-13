@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Extraordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 1</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Martí Batres Guadarrama</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Extraordinaria Celebrada<br>en la Ciudad de M&eacute;xico, el 08 de Mayo de 2019</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/1/PPE/PDF-WEB/PPE_No._1_8_MAYO_2019.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='82782'></a><p align="center"><strong>PRESIDENCIA DEL SENADOR</strong><br>
+  <strong>MARTÍ BATRES GUADARRAMA</strong></p>
+<p><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Martí Batres  Guadarrama:</strong> (20:10 horas) Solicito a la Secretaría informe  a la Asamblea el resultado del cómputo de asistencia de las señoras Senadoras y  los señores Senadores.</p>
+<p align="justify"><strong>La Secretaria Senadora Antares Guadalupe  Vázquez Alatorre:</strong> Honorable Asamblea, conforme al registro  electrónico se han acreditado 90 ciudadanas Senadoras y ciudadanos Senadores.</p>
+<p align="justify">En  consecuencia, hay quórum.</p>
+<p align="justify"><strong>El Presidente Senador Martí Batres  Guadarrama:</strong> Se abre la sesión extraordinaria del Senado de  la República correspondiente al miércoles 8 de mayo de 2019, en el marco del  periodo de sesiones extraordinarias del segundo receso del primer año de ejercicio  constitucional de la LXIV Legislatura a que fue convocado por la Comisión  Permanente del Honorable Congreso de la Unión.</p>
+<p align="justify">El  Orden del Día está disponible en el monitor de sus escaños, con lo cual se  informa de los asuntos que corresponden a la agenda de hoy.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a82782'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='82792'></a><p align="justify"><strong>DECLARATORIA </strong></p>
+<p align="justify">Se les  solicita ponerse de pie para el acto de declaratoria de instalación de las  sesiones de esta Cámara.</p>
+<p align="center">(Todos  de pie)</p>
+<p align="justify">&ldquo;Hoy,  8 de mayo de 2019, la Cámara de Senadores del Honorable Congreso de la Unión,  se declara instalada para el periodo de sesiones extraordinarias del segundo  receso del primer año de ejercicio constitucional de la LXIV Legislatura, a que  fue convocada por la Comisión Permanente del Honorable Congreso de la Unión&rdquo;.</p>
+<p align="justify">Sírvanse  tomar asiento, por favor.</p>
+<p align="justify">Sonido  en el escaño del Senador Bermúdez.</p>
+<p align="justify"><strong>El Senador José Erandi Bermúdez Méndez:</strong> (Desde su escaño) Gracias, señor Presidente.</p>
+<p align="justify">Solamente  para recordar al Senado de la República, en 1753 nace en Corralejo de Hidalgo, municipio  de Pénjamo, Guanajuato, el padre de la Independencia de México, don Miguel  Hidalgo y Costilla, hoy, en su natalicio, recordar a todas las Senadoras y  Senadores de este ilustre mexicano que nos dio patria y libertad a todo el  pueblo de México.</p>
+<p align="justify">Es  cuanto, señor Presidente.</p>
+<p align="justify">Y  agradezco la concesión que me hizo favor de darme.</p>
+<p align="justify"><strong>El Presidente Senador Martí Batres  Guadarrama:</strong> Muchas gracias.</p>
+<p align="justify">  Y  gracias por la remembranza tan importante.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a82792'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='82793'></a><p align="justify">Sonido  en el escaño de la Senadora Lucía Virginia Meza Guzmán.</p>
+<p align="justify"><strong>La Senadora Lucía Virginia Meza Guzmán:</strong> (Desde su escaño) Gracias, señor Presidente.</p>
+<p align="justify">Quisiera  solicitar un minuto de silencio por las víctimas de la balacera ocurrida en  Cuernavaca, Morelos, el día de hoy por la mañana, del empresario Jesús García y  del licenciado Roberto Castrejón.</p>
+<p align="justify">Gracias.</p>
+<p align="justify"><strong>MINUTO DE SILENCIO</strong></p>
+<p align="justify"><strong>El Presidente Senador Martí Batres  Guadarrama:</strong> Se ruega a todos ponerse de pie para guardar  un minuto de silencio.</p>
+<p align="center">(Todos  de pie guardan un minuto de silencio)</p>
+<p align="justify">Gracias,  pueden tomar asiento.</p>
+<p align="justify">Sonido  en el escaño del Senador Ricardo Monreal Ávila.</p>
+<p align="justify"><strong>El Senador Ricardo Monreal Ávila:</strong> (Desde su escaño) Señor Presidente, el día de ayer, lamentablemente el mundo  perdió a un gran pintor, hombre culto, un extraordinario ser humano, Rafael  Coronel.</p>
+<p align="justify">Dejó  un legado impresionante, hombre generoso, incluso él sostuvo, equipó y donó su  obra en el museo que lleva su nombre en Zacatecas, &ldquo;Rafael Coronel&rdquo;.</p>
+<p align="justify">Se fue  uno de los grandes, hoy está siendo velado e incluso estaría en Bellas Artes.</p>
+<p align="justify">El  Senado de la República, como un fiel vigilante del Pacto Federal, representante  de las entidades federativas, pero, además, una profunda raigambre de reconocer  a héroes y a hombres que han dejado huella en México y en el mundo, no puede  estar ausente de un reconocimiento para él.</p>
+<p align="justify">Le  pediría también que guardásemos un minuto de silencio, por la memoria de ese  gran mexicano, extraordinario mexicano que fue Rafael Coronel.</p>
+<p align="justify">El  zacatecano Rafael Coronel.</p>
+<p align="justify"><strong>El Presidente Senador Martí Batres  Guadarrama:</strong> Se ruega a todos ponerse de pie para guardar  un minuto de silencio en memoria del pintor Rafael Coronel.</p>
+<p align="center">(Todos  de pie guardan un minuto de silencio)</p>
+<p align="justify">Muchas  gracias.</p>
+<p align="justify">Pueden  tomar asiento.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a82793'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='82794'></a><p align="justify"><strong>COMUNICACIÓN</strong></p>
+<p align="justify">La  Secretaría comunicará por escrito al titular del Poder Ejecutivo Federal, al  Presidente de la Suprema Corte de Justicia de la Nación, al Presidente de la  Cámara de Diputados y a las legislaturas de las entidades federativas de la  instalación de esta Cámara.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a82794'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='82795'></a><p align="justify"><strong>COMISIÓN  PERMANENTE </strong></p>
+<p align="justify">Como es de su conocimiento, el pasado 6 de mayo  la Comisión Permanente aprobó el Decreto por el que convoca a las Cámaras del  Congreso de la Unión a celebrar sesiones extraordinarias.</p>
+<p align="justify">Solicito a la Secretaría dé lectura al Decreto.</p>
+<p align="justify"><strong>La  Secretaria Senadora Antares Guadalupe Vázquez Alatorre:</strong> Doy lectura.</p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-05-08-1/assets/documentos/Decreto_Extaordinario.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es cuanto, señor Presidente. </p>
+<p align="justify"><strong>El  Presidente Senador Martí Batres Guadarrama:</strong> Muchas  gracias, señora Secretaria.</div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a82795'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='82796'></a><p align="justify">En consecuencia, procederemos a su cumplimiento. </p>
+<p align="justify">Proceda ahora la Secretaria con la siguiente  información. </p>
+<p align="justify"><strong>La  Secretaria Senadora Verónica Delgadillo García:</strong> Como lo indica, Señor Presidente. </p>
+<p align="justify">Doy lectura al informe que presenta el  Presidente de la Comisión Permanente,   por la que informa de los motivos que originaron la convocatoria a  sesiones extraordinarias. </p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-05-08-1/assets/documentos/Informe_Presidente_CP.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es todo, señor Presidente. </p>
+<p align="justify"><strong>El  Presidente Senador Martí Batres Guadarrama:</strong> Muchas gracias. </p>
+<p align="justify">Dicho informe al que se ha dado lectura se  encuentra disponible en el monitor de sus escaños para su conocimiento y, con  ello, la Asamblea se da por enterada y se tiene por cumplida la entrega del informe  a que se refiere el artículo 69 de la Constitución Política de los Estados  Unidos Mexicanos. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a82796'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='82799'></a><p align="justify"><strong>CÁMARA DE  DIPUTADOS</strong></p>
+<p align="justify">Informo a la Asamblea que se recibió un oficio  de la Cámara de Diputados con el que remite minuta proyecto de Decreto por el  que se reforman, adicionan y derogan diversas disposiciones de la Ley Federal  del Trabajo y de la Ley del Seguro Social, en materia de personas trabajadoras  del hogar, para los efectos de la fracción E del artículo 72 de la Constitución  Política de los Estados Unidos Mexicanos. </p>
+<p align="right"><a href="http://infosen.senado.gob.mx/sgsp/gaceta/64/1/2019-05-08-1/assets/documentos/Minuta_LFT_trabajadoras_del_hogar.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">En virtud de que dicha minuta se recibió el  pasado 30 de abril de 2019, la Mesa Directiva, con fundamento en el artículo  176, numeral 2 del Reglamento del Senado, determinó realizar el turno directo a  las Comisiones Unidas de Trabajo y Previsión Social; Para la Igualdad de  Género; y de Estudios Legislativos, Primera.</p>
+<p align="justify">Hago del conocimiento de la Asamblea que en  cuanto se reciba de la Cámara de Diputados el oficio por el que se remite la  minuta proyecto de Decreto por el que se reforman, adicionan y derogan diversas  disposiciones de los artículos 3o., 31 y 73 de la Constitución Política de los  Estados Unidos Mexicanos, en materia educativa, con fundamento en el artículo  176, numeral 2 del Reglamento del Senado, se dará turno directo a las  Comisiones Unidas de Puntos Constitucionales; de Educación; y de Estudios  Legislativos, Segunda. </p>
+<p align="justify">  También quiero informar que estamos a la espera  de la minuta en materia de reforma constitucional a los artículos 3o., 31 y 73  constitucionales, misma que se está analizando en estos momentos en la Cámara  de Diputados. </p>
+<p align="justify">Informo también que este Senado está convocado  para abordar los temas de las leyes secundarias de la Guardia Nacional. </p>
+<p align="justify">En relación con ello, se están generando aún  las iniciativas de reformas a la Ley General del Sistema Nacional de Seguridad  Pública; Ley de la Guardia Nacional; la Ley Nacional Sobre el Uso de la Fuerza  y la Ley Nacional del Registro de Detenciones. </p>
+<p align="justify">Informo que en el caso de la materia de  extinción de dominio, contamos con dos iniciativas, pero aún no contamos con el  dictamen. </p>
+<p align="justify">Informo también que en el caso de la reforma a  diversos artículos de la Constitución Política de los Estados Unidos Mexicanos,  en materia de paridad de género, contamos con el dictamen, aunque éste fue  retirado por el Presidente de la Comisión de Puntos Constitucionales, en la  última sesión del periodo ordinario. </p>
+<p align="justify">Informo también que en materia de las personas  trabajadoras del hogar se ha turnado la minuta enviada por la Cámara de  Diputados, a las Comisiones Unidas de Trabajo y Previsión Social; Para la  Igualdad de Género; y de Estudios Legislativos, Primera. </p>
+<p align="justify">Quiero además informar que el día de hoy es  cumpleaños de la compañera Guadalupe Covarrubias y queremos felicitarla y  desearle lo mejor en este día y siempre. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a82799'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='82800'></a><p><strong>CITA</strong></p>
+<p>En virtud del informe anterior y de que se  encuentran en proceso minutas y dictámenes que serán la materia de discusión de  este periodo extraordinario de sesiones, y a solicitud de los coordinadores  parlamentarios, se cita a siguiente sesión extraordinaria para el día de mañana  jueves 9 de mayo a las 11:00 horas. </p>
+<p>Se levanta la sesión. </p>
+<p align="center">(Se levantó la sesión a las 20:36 horas)</p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfonos: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx</p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a82800'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

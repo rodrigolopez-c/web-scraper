@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 36</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Martí Batres Guadarrama</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 19 de Diciembre de 2018</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/1/PPO/PDF-WEB/PPO_No._36_19_DICIEMBRE_2018_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='80824'></a><p align="center"><strong>PRESIDENCIA DEL  SENADOR</strong><br>
+  <strong>MARTÍ BATRES GUADARRAMA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>(13:16 horas) Solicito a la  Secretaría informe a la Asamblea el resultado del cómputo de asistencia de las  señoras Senadoras y los señores Senadores. </p>
+<p align="justify"><strong>La Secretaria Senadora  Antares Guadalupe Vázquez Alatorre: </strong>Honorable Asamblea, conforme al registro de asistencia, se han  acreditado 83 señoras Senadoras y señores Senadores. </p>
+<p align="justify">En consecuencia, hay quórum, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama:</strong> Se abre la sesión solemne  convocada para la entrega de la Medalla de Honor &ldquo;Belisario Domínguez&rdquo;,  correspondiente al año 2018. <br>
+  <br>
+  Se ruega a todas y todos los presentes ocupar sus lugares y guardar el  debido orden, respeto y silencio. </p>
+<p align="justify">Solicito a la Secretaría dé lectura a las comisiones de cortesía que han  sido designadas para recibir y acompañar a nuestros distinguidos invitados a  esta sesión solemne. </p>
+<p align="justify"><strong>La Secretaria Senadora  Antares Guadalupe Vázquez Alatorre:</strong> Doy lectura a las comisiones protocolarias de esta sesión solemne. </p>
+<p align="justify">Para recibir al licenciado Andrés Manuel López Obrador, Presidente de la  República, el Senador Ricardo Monreal Ávila, Senadora Minerva Hernández Ramos,  Senadora Verónica Martínez García, Senador Clemente Castañeda Hoeflich,  Senadora Nancy De la Sierra Arámburo, Senadora María Leonor Noyola Cervantes,  Senador Raúl Bolaños Cacho Cué y Senadora Sasil De León Villard. </p>
+<p align="justify">Para recibir al Ministro José Fernando Franco González Salas, quien  asiste en representación del Presidente de la Suprema Corte de Justicia de la  Nación, Senador Julio Ramón Menchaca Salazar, Senador José Erandi Bermúdez  Méndez, Senador Manuel Añorve Baños, Senador Samuel García Sepúlveda, Senadora  Geovanna Bañuelos De la Torre, Senadora Gabriela Benavides Cobos y Senadora  María Antonia Cárdenas Mariscal. </p>
+<p align="justify">Para recibir al Diputado Porfirio Muñoz Ledo, Presidente de la Cámara de  Diputados, Senadora Imelda Castro Castro, Senador Juan Antonio Martín del  Campo, Senador Mario Zamora Gastélum, Senadora Patricia Mercado Castro, Senador  Alejandro González Yáñez y Senadora Katya Elizabeth Ávila Vázquez. </p>
+<p align="justify">Para recibir al licenciado Rutilio Escandón Cadenas, Gobernador del  estado de Chiapas, Senador Óscar Eduardo Ramírez Aguilar, Senadora Alejandra  Reynoso Sánchez, Senadora Vanessa Rubio Márquez, Senadora Cora Cecilia Pinedo  Alonso y Senadora Elvia Marcela Mora Arellano. </p>
+<p align="justify">Para recibir al señor Carlos Payán Velver, Senadora Susana Harp  Iturribarría, Senadora Josefina Vázquez Mota, Senadora Beatriz Paredes Rangel,  Senadora Alejandra León Gastélum, Senador Eduardo Murat Hinojosa, Senador  Miguel Ángel Mancera Espinosa y Senadora Jesusa Rodríguez Ramírez. </p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama:</strong> Esta Presidencia solicita  a las comisiones designadas acudan a las puertas de este recinto a fin de  cumplir con su cometido. </p>
+<p align="center">(Las comisiones cumplen)</p>
+<p align="justify">Mientras tanto se  declara un receso.</p>
+<p align="center">(Receso)</p>
+<p align="justify">Favor de tomar asiento. </p>
+<p align="justify">Con fundamento en el artículo 100 de la Ley Orgánica del Congreso  General y el Artículo Noveno del Reglamento de la Medalla de Honor &ldquo;Belisario  Domínguez&rdquo;, damos inicio a la sesión solemne convocada para realizar la  imposición de este galardón y del diploma correspondiente.<br>
+  <br>
+  Se solicita a todos ponerse de pie a efecto de rendir los Honores de Ordenanza  al Presidente de la República.</p>
+<p align="center">(Todos de pie)</p>
+<p align="center">(Se rinden honores de ordenanza)</p>
+<p align="justify">Sírvanse tomar asiento. </p>
+<p align="justify">Damos la bienvenida al señor Presidente de la República, licenciado  Andrés Manuel López Obrador. </p>
+<p align="justify">Al Ministro José Fernando Franco González Salas, quien asiste en  representación del Presidente de la Suprema Corte de Justicia de la Nación. </p>
+<p align="justify">Al Diputado Porfirio Muñoz Ledo, Presidente de la Cámara de Diputados. </p>
+<p align="justify">Al gobernador del estado de Chiapas, licenciado Rutilio Escandón  Cadenas. </p>
+<p align="justify">Y al señor Carlos Payán Velver. </p>
+<p align="justify">¡Bienvenidos todos!</p>
+<p align="justify">Agradecemos la presencia de las señoras y señores Diputados federales.</p>
+<p align="justify">De los distinguidos miembros del gabinete legal y ampliado del Poder  Ejecutivo Federal. </p>
+<p align="justify">De los representantes de los poderes del estado de Chiapas y del  presidente municipal de Comitán, Chiapas. </p>
+<p align="justify">También agradecemos la presencia de todas las invitadas especiales y de  todos los invitados especiales. </p>
+<p align="justify">Agradecemos la asistencia de las distinguidas ciudadanas y ciudadanos  que con anterioridad han recibido la Medalla de Honor &ldquo;Belisario Domínguez&rdquo;,  todas y todos honran con su presencia al Senado de la República. </p>
+<p align="justify">Solicito a la Secretaría proceda a pasar lista de honor. </p>
+<p align="justify"><strong>La Secretaria Senadora  Antares Guadalupe Vázquez Alatorre: </strong>Se les solicita a todos ponerse de pie.</p>
+<p align="center">(Todos de pie)</p>
+<p align="justify">&ldquo;Senador Belisario Domínguez&rdquo;</p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>&ldquo;Murió por la Patria, en  defensa de la libertad&rdquo;.</p>
+<p align="justify"><strong>La Secretaria Senadora  Antares Guadalupe Vázquez Alatorre: </strong>Sírvanse tomar asiento.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a80824'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='80825'></a><p align="justify"><strong>El Presidente Senador Martí Batres Guadarrama: </strong>Solicito a la  Senadora Antares Guadalupe Vázquez Alatorre, Secretaria de la Mesa Directiva,  dé lectura a la histórica proclama del doctor y Senador Belisario Domínguez,  correspondiente a la XXVII Legislatura del Senado de la República.</p>
+<p align="justify"><strong>LECTURA DEL  HISTÓRICO DISCURSO DEL PROCER BELISARIO DOMÍNGUEZ</strong></p>
+<p align="justify"><strong>La Secretaria Senadora Antares Guadalupe Vázquez Alatorre: </strong>Procedo a dar  lectura al texto del discurso del Senador Belisario Domínguez. </p>
+<p align="justify">&ldquo;Señor Presidente del Senado:</p>
+<p align="justify">Por  tratarse de un asunto urgentísimo para la salud de la Patria, me veo obligado a  prescindir de las fórmulas acostumbradas y a suplicar a usted se sirva dar  principio a esta sesión tomando conocimiento de este pliego y dándolo a conocer  en seguida a los señores Senadores. Insisto, señor Presidente, en que este  asunto debe ser conocido por el Senado en este mismo momento, porque dentro de  pocas horas lo conocerá el público y urge que el Senado lo conozca antes que  nadie.</p>
+<p align="justify">Señores  Senadores: Todos vosotros habéis leído con profundo interés el informe  presentado por don Victoriano Huerta ante el Congreso de la Unión el 16 del  presente.</p>
+<p align="justify"> Indudablemente, señores Senadores, que lo  mismo que a mí, os ha llenado de indignación el cúmulo de falsedades que  encierra ese documento. ¿A quién se pretende engañar, señores? ¿Al Congreso de  la Unión? No, señores, todos sus miembros son hombres ilustrados que se ocupan  de política, que están al corriente de los sucesos del país y que no pueden ser  engañados sobre el particular. Se pretende engañar a la Nación Mexicana, a esta  noble Patria que, confiando en vuestra honradez y vuestro valor, ha puesto en  vuestras manos sus más caros intereses.</p>
+<p align="justify">¿Qué  debe hacer en este caso la Representación Nacional?</p>
+<p align="justify">Corresponder  a la confianza con que la Patria la ha honrado, decirle la verdad y no dejarla  caer en el abismo que se abre a sus pies.</p>
+<p align="justify">La  verdad es esta: Durante el gobierno de don Victoriano Huerta, no solamente no  se ha hecho nada en bien de la pacificación del país, sino que la situación  actual de la República, es infinitamente peor que antes; la Revolución se ha  extendido en casi todos los estados; muchas naciones, antes buenas amigas de  México, rehúsanse a reconocer su gobierno, por ilegal; nuestra moneda  encuéntrase depreciada en el extranjero; nuestro crédito en agonía; la prensa  entera de la República amordazada, o cobardemente vendida al gobierno y  ocultando sistemáticamente la verdad; nuestros campos abandonados; muchos  pueblos arrasados y por último, el hambre y la miseria en todas sus formas,  amenazan extenderse rápidamente en toda la superficie de nuestra infortunada  Patria.</p>
+<p align="justify">¿A qué  se debe tan triste situación?</p>
+<p align="justify">Primero  y antes de todo, a que el pueblo mexicano no puede resignarse a tener por  Presidente de la República a don Victoriano Huerta, al soldado que se apoderó  del poder por medio de la traición y cuyo primer acto al subir a la Presidencia  fue asesinar cobardemente al Presidente y Vicepresidente legalmente ungidos por  el voto popular, habiendo sido el primero de éstos quien colmó de ascensos, honores  y distinciones a don Victoriano Huerta y habiendo sido él, igualmente, a quien  don Victoriano Huerta juró públicamente lealtad y fidelidad inquebrantable.<br>
+  <br>
+  Y  segundo, se debe esta triste situación a los medios que don Victoriano Huerta  se ha propuesto emplear para conseguir la pacificación. Estos medios ya sabéis  cuales han sido: Únicamente muerte y exterminio para todos los hombres,  familias y pueblos que no simpaticen con su gobierno. </p>
+<p align="justify">&quot;La  paz se hará, cueste lo que cueste&quot;, ha dicho don Victoriano Huerta.  ¿Habéis profundizado, señores Senadores, lo que significan esas palabras en el  criterio egoísta y feroz de don Victoriano Huerta? Esas palabras significan que  don Victoriano Huerta    está dispuesto a derramar toda la sangre  mexicana, a cubrir de cadáveres todo el Territorio Nacional, a convertir en una  inmensa ruina toda la extensión de nuestra Patria, con tal de que él no  abandone la Presidencia, ni derrame una sola gota de su propia sangre.</p>
+<p align="justify">En su  loco afán por conservar la Presidencia, don Victoriano Huerta, está cometiendo  otra infamia: Está provocando con el pueblo de Estados Unidos de América un  conflicto internacional, en el que, si llegara a resolverse por las armas,  irían estoicamente a dar y a encontrar la muerte todos los mexicanos sobrevivientes  a las amenazas de don Victoriano Huerta, todos, menos don Victoriano Huerta, ni  don Aurelio Blanquet, porque esos desgraciados están manchados con el estigma  de la traición y el pueblo y el ejército los repudiarán, llegado el caso.</p>
+<p align="justify">Esa  es, en resumen, la triste realidad. Para los espíritus débiles parece que  nuestra ruina es inevitable, porque don Victoriano Huerta se ha adueñado tanto  del poder que, para asegurar el triunfo de su candidatura a la Presidencia de  la República, en la parodia de elecciones anunciadas para el 26 de octubre  próximo, no ha vacilado en violar la soberanía de la mayor parte de los  estados, quitando a los Gobernadores constitucionales e imponiendo Gobernadores  militares que se encargarán de burlar a los pueblos por medio de farsas  ridículas y criminales.</p>
+<p align="justify">Sin  embargo, señores, un supremo esfuerzo puede salvarlo todo. Cumpla con su deber  la Representación Nacional y la Patria está salvada y volverá a florecer más  grande, más unida y más hermosa que nunca.</p>
+<p align="justify">La  Representación Nacional debe deponer de la Presidencia de la República a don  Victoriano Huerta, por ser él contra quien protestan, con mucha razón, todos  nuestros hermanos alzados en armas y de consiguiente, por ser él quien menos  puede llevar a efecto la pacificación, supremo anhelo de todos los mexicanos.</p>
+<p align="justify">Me  diréis, señores, que la tentativa es peligrosa porque don Victoriano Huerta es  un soldado sanguinario y feroz que asesina sin vacilación ni escrúpulo a todo  aquel que le sirve de obstáculo. ¡No importa, señores! La Patria os exige que  cumpláis con vuestro deber, aún con el peligro y aún con la seguridad de perder  la existencia. Si en vuestra ansiedad de volver a ver reinar la paz en la  República, os habéis equivocado, habéis creído las palabras falaces de un  hombre que os ofreció pacificar a la Nación en dos meses, y le habéis nombrando  Presidente de la República, hoy que veis claramente que este hombre es un  impostor inepto y malvado, que lleva a la Patria con toda velocidad hacia la  ruina, ¿dejaréis por temor a la muerte que continúe en el poder?</p>
+<p align="justify">Penetrad  en vosotros mismos, señores, y resolved esta pregunta: ¿qué se diría de la  tripulación de un gran navío que en la más violenta tempestad y en un mar  proceloso, nombrara piloto a un carnicero que, sin ningún conocimiento náutico  navegara por primera vez y no tuviera más recomendación que la de haber  traicionado y asesinado al Capitán del barco?</p>
+<p align="justify">Vuestro  deber es imprescindible, señores, y la Patria espera de vosotros que sabréis  cumplirlo.<br>
+  <br>
+  Cumpliendo  ese primer deber, será fácil a la Representación Nacional cumplir los otros que  de él se derivan, solicitándose en seguida, de todos los jefes revolucionarios  que cese toda hostilidad y nombren sus delegados para que, de común acuerdo,  elijan al Presidente que deba convocar a elecciones presidenciales y cuidar que  éstas se efectúen con toda legalidad.</p>
+<p align="justify">El  mundo está pendiente de vosotros, señores miembros del Congreso Nacional  Mexicano, y la Patria espera que la honraréis ante el mundo, evitándole la  vergüenza de tener por Primer Mandatario a un traidor y asesino. </p>
+<p align="center"><strong>Dr. Belisario Domínguez,</strong><br>
+  <strong>Senador por el estado de  Chiapas.</strong></p>
+<p align="justify">NOTA:  Urge que el pueblo mexicano conozca este discurso para que apoye a la  Representación Nacional; y no pudiendo disponer de ninguna imprenta, recomiendo  a todo el que lo lea saque cinco o más copias, insertando también esta nota y  las distribuya a sus amigos y conocidos de la capital y de los estados. ¡Ojalá  hubiera un impresor honrado y sin miedo! </p>
+<p align="justify">Septiembre  29, de 1913&quot;.</p>
+<p align="justify">Es cuanto, señor Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Muchas gracias, señora  Secretaria.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a80825'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='80826'></a><p align="justify"><strong>DISCURSO DE LA SENADORA SASIL DE LEÓN VILLARD</strong></p>
+<p align="justify">Se concede el uso de la palabra a la Senadora Sasil De León Villard,  Presidenta de la Comisión de la Medalla &ldquo;Belisario Domínguez&rdquo;, a nombre de la  Cámara de Senadores.</p>
+<p align="justify"><strong>La Senadora Sasil De León  Villard: </strong>Muy buenas tardes.</p>
+<p align="justify">Saludo cariñosamente al Presidente Constitucional de los Estados Unidos  Mexicanos, al señor Andrés Manuel López Obrador.</p>
+<p align="justify">¡Sea usted bienvenido!</p>
+<p align="justify">Con mucho afecto también a la doctora Beatriz Gutiérrez Müller,  Coordinadora Nacional de Memoria Histórica y Cultural de México.</p>
+<p align="justify">Gracias por acompañarnos.</p>
+<p align="justify">Con mucho gusto les doy la bienvenida a este recinto histórico a José  Ramón, Andrés Manuel y a Gonzalo López Beltrán.</p>
+<p align="justify">Gracias por su presencia.</p>
+<p align="justify">Doctora Olga Sánchez Cordero, sea usted bienvenida, Secretaria de  Gobernación.</p>
+<p align="justify">General Luis Crescencio Sandoval, Secretario de la Defensa Nacional.</p>
+<p align="justify">Almirante José Rafael Ojeda, Secretario de Marina.</p>
+<p align="justify">Al señor Ministro Franco González Salas, en representación de la Suprema  Corte de Justicia.</p>
+<p align="justify">A mi compañero, el Senador Martí Batres Guadarrama, Presidente de este  Senado de la República.<br>
+  <br>
+  Con respeto y admiración saludo al Diputado Porfirio Muñoz Ledo, Presidente  de la Cámara de Diputados.</p>
+<p align="justify">¡Bienvenido!</p>
+<p align="justify">Igualmente a mi paisano y amigo, el Gobernador Constitucional del estado  de Chiapas, al doctor Rutilio Escandón Cadenas.</p>
+<p align="justify">A las y los Diputados Federales que nos acompañan y nos honran con su  presencia esta tarde.</p>
+<p align="justify">A los Diputados locales del Honorable Congreso del estado de Chiapas y a  la Presidenta Elizabeth.</p>
+<p align="justify">¡Bienvenida!</p>
+<p align="justify">Al Presidente municipal de Comitán.</p>
+<p align="justify">¡Bienvenido!</p>
+<p align="justify">A nuestros invitados especiales, porque galardonar a un periodista es  enaltecer el trabajo de todas y todos ustedes que ejercen libre y  democráticamente el derecho de la libertad de expresión.</p>
+<p align="justify">A mis amigos periodistas.</p>
+<p align="justify">A todas y todos nuestros excelentísimos invitados especiales que el día  de hoy nos honran con su presencia.</p>
+<p align="justify">Con su permiso, ciudadano Presidente.</p>
+<p align="justify">Estamos aquí reunidos para recordar un lamentable acontecimiento  histórico que consternó la vida política de nuestro país, el cobarde y artero  asesinato de don Belisario Domínguez Palencia.</p>
+<p align="justify">En este acto republicano recordamos con indignación los atropellos y  abusos del poder.</p>
+<p align="justify">Aquella noche del 7 de septiembre de 1913, fue sacado por la fuerza de  su habitación de un hotel y conducido al cementerio de Xoco, en Coyoacán, donde  fue asesinado brutalmente.</p>
+<p align="justify">Sus verdugos Gilberto Márquez y Alberto Quiroz, entre otros, formaban  parte de la llamada Policía Secreta, vaya que sí, desde aquel entonces ya  existía el Cisen con otro nombre.</p>
+<p align="justify">Gracias, señor Presidente, porque esta cuarta transformación usted ha  decidido darle funciones distintas a estos órganos de espionaje y represión  política.</p>
+<p align="justify">Antes de su asesinato, el doctor Aureliano le cortó la lengua en un  quirófano a don Belisario Domínguez y se la envió de regalo al dictador Huerta.</p>
+<p align="justify">Su asesinato fue un factor decisivo para la caída de la dictadura de  Huerta, que a pocos días de estos sucesos disolvió el Congreso y encarceló a 90  Diputados.</p>
+<p align="justify">Compañeras y compañeros Senadores:</p>
+<p align="justify">El espíritu libertador de nuestro compañero Senador don Belisario  Domínguez Palencia ronda en cada rincón de este Senado y, por supuesto, vive  permanentemente en nuestros corazones.<br>
+  <br>
+  Belisario Domínguez Palencia nació en la ciudad de Comitán, Chiapas, el  25 de abril del año de 1863. Médico de profesión y presidente municipal de su  natal Comitán.</p>
+<p align="justify">Un ciudadano de convicción liberal y opositor al régimen dictatorial de  Victoriano Huerta.</p>
+<p align="justify">Asesinado el 7 de octubre de 1913, a los 50 años de edad.</p>
+<p align="justify">¡Qué joven te arrebataron la vida, querido Senador!</p>
+<p align="justify">Compañeras y compañeros:</p>
+<p align="justify">Hoy debemos reflexionar en qué punto de nuestra historia extraviamos el  camino, en qué parte nos desviamos de los valores y el verdadero espíritu de  legislar, que es equilibrar la división de poderes.</p>
+<p align="justify">Construir un auténtico federalismo que fortalezca los Poderes de la  Unión en beneficio de la República, de sus instituciones y del pueblo mexicano.</p>
+<p align="justify">Sus célebres discursos pronunciados en esta tribuna, al igual que sus  muchas manifestaciones públicas nos deben de recordar constantemente la  necesidad de defender la libertad de expresión, la democracia y nuestra vida republicana.</p>
+<p align="justify">¡Ay, Belisario, cuánto anhelaba el pueblo de México tu regreso, tu  necedad, tu perseverancia, tu terquedad, tu valentía!</p>
+<p align="justify">Tu espíritu hoy está vigente en nuestro señor Presidente de la  República, Andrés Manuel López Obrador.</p>
+<p align="justify">Señor Presidente:</p>
+<p align="justify">El doctor y Senador Belisario Domínguez Palencia, distinguido  chiapaneco, es parte de este histórico mandato popular que el pueblo le otorgó  el pasado 1º de julio con la esperanza de llevar a cabo la cuarta  transformación política y social a la que usted ha convocado al pueblo  mexicano.</p>
+<p align="justify">Porque para restaurar nuestro régimen político necesitamos  reconciliarnos con nuestra democracia.</p>
+<p align="justify">En las últimas décadas tuvimos un Estado corrupto, torturador, represor  y violador de los derechos humanos.</p>
+<p align="justify">Ayer, como hoy, los huertistas de la modernidad pretenden asaltar la  economía del erario público para no perder sus privilegios y con ello  subestimar la envestidura presidencial, porque ven a un Presidente con  humildad, que camina con el pueblo, sin Avión Presidencial, sin Estado Mayor,  sin lujos, sin privilegios.</p>
+<p align="justify">No, señores, no se equivoquen, tenemos un Presidente demócrata,  respetuoso de la división de poderes, un hombre lleno de humildad, lleno de  energía, de sabiduría y de vocación de servicio a la nación, algo que solamente  vivió el pueblo de México en la época del Presidente Juárez.</p>
+<p align="justify">México está herido, nuestro país está lastimado, pero sólo nuestro amor  y nuestro corazón pueden sanarlo.</p>
+<p align="justify">Afortunadamente, hoy estamos en una etapa de transición de años de  obscuridad hacia una luz de esperanza y transformación, hacia un nuevo régimen  político.</p>
+<p align="justify">Y estoy segura que podemos festejar que los anhelos de don Belisario  Domínguez se van a materializar en este gobierno, en cada rincón de nuestra nación.</p>
+<p align="justify">Hoy, para honrar tu memoria, las y los mexicanos estamos convocados a  superar nuestras diferencias, a trabajar unidos por un México de libertades, de  desarrollo y de prosperidad.<br>
+  <br>
+  Un México sin pobreza, sin desigualdad social.</p>
+<p align="justify">Una nación generosa como su gente, su tierra, sus raíces y su tierra.</p>
+<p align="justify">Un México sin rencores, en donde los anhelos de cada familia, de cada  corazón, sea la lucha permanente de todas y de todos los que hoy fuimos  convocados en tu nombre.</p>
+<p align="justify">Gracias, Belisario, por tus enseñanzas, tu valentía y tus sacrificios  para el bien de este país.</p>
+<p align="justify">Hoy más que nunca debemos hacer nuestras y atesorar las estrofas de mí  querido Himno de Chiapas, que a la letra dice:</p>
+<p align="justify">&ldquo;Que se olvide la odiosa venganza; que termine por siempre el rencor;  que una sea nuestra hermosa esperanza y uno sólo también nuestro amor&rdquo;.</p>
+<p align="justify">México debe ser nuestro único objetivo en común, sin importar las  fuerzas políticas que representamos.</p>
+<p align="justify">Estas palabras me llenan de orgullo, porque enaltecen el significado de  Don Belisario Domínguez, que es el amor a su Patria.</p>
+<p align="justify">Con júbilo y alegría, como cada año, el Senado de la República hace  entrega de este reconocimiento a mujeres y hombres destacados por sus  contribuciones y aportaciones a la humanidad y a la vida republicana.</p>
+<p align="justify">Hoy, la Medalla Belisario Domínguez será entregada a la obra y vida de  un hombre, Don Carlos Payán Velver, un hombre que representa una vida de lucha  en favor de la defensa de los derechos; en favor de las defensa de los derechos  humanos y de la libertad de expresión.</p>
+<p align="justify">Como Senador de la República formó parte de la Comisión de la Concordia  y Pacificación para el estado de Chiapas, en los diálogos de San Andrés  Larráinzar, construyendo los acuerdos de paz con el Ejército Zapatista de  Liberación Nacional.</p>
+<p align="justify">Escritor, político y precursor de la libre manifestación de las ideas en  el periodismo mexicano.</p>
+<p align="justify">Fundador y director del periódico nacional La Jornada, desde donde un  día decidió cambiar la forma de escribir y hacer periodismo en México, en un  momento crucial para la vida pública del país.</p>
+<p align="justify">La Jornada, reconocido medio de comunicación escrita, que durante  décadas ha sabido dar voz a las minorías, denunciar las desigualdades sociales  y la discriminación de los pueblos indígenas.</p>
+<p align="justify">Don Carlos:</p>
+<p align="justify">Nuestro tiempo no puede comprender su espíritu crítico sin su valor para  denunciar las injusticias.</p>
+<p align="justify">Por ello, estamos seguros que su trayectoria periodística trascenderá  como una de las memorias más importantes en el legado de nuestra nación.</p>
+<p align="justify">Reciba hoy, para honra de todos los mexicanos, y en honra de Don  Belisario Domínguez Palencia, la Medalla de la Libertad por ser el más alto  reconocimiento que otorga este Senado de la República.</p>
+<p align="justify">¡Enhorabuena!</p>
+<p align="justify">Muchas gracias.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a80826'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='80827'></a><p align="justify"><strong>CONDECORACIÓN AL CIUDADANO CARLOS PAYÁN VELVER</strong></p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Se solicita a todas y a  todos ponerse de pie para el acto de imposición de la Medalla de Honor  Belisario Domínguez, y de entrega del Diploma correspondiente al señor Carlos  Payán Velver, que lo acredita como Miembro de la Orden Mexicana de esta presea.</p>
+<p align="center">(Todos de pie)</p>
+<p align="center">(Entrega de la Medalla)</p>
+<p align="justify">Sírvanse tomar asiento, por favor.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a80827'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='80828'></a><p align="justify"><strong>DISCURSO DEL CIUDADANO CARLOS PAYÁN VELVER</strong></p>
+<p align="justify">Se concede el uso de la palabra al señor Carlos Payán Velver,  galardonado con la Medalla de Honor Belisario Domínguez, 2018.</p>
+<p align="justify"><strong>El Ciudadano Carlos Payán  Velver: </strong>Cuando empezaba a trazar unas líneas sobre el  texto que les voy a leer, no dejó de darme vueltas en la cabeza unas líneas de  un poema de Quevedo.</p>
+<p align="justify"> &ldquo;Estos muros de la Patria mía&rdquo;.</p>
+<p align="justify">Y a partir de ahí pues me lancé a pertreñar lo que van a escuchar.</p>
+<p align="justify">Me otorga la honrosa Medalla Belisario Domínguez cuando llego ya al  último trecho de mi camino, y poco a poco he empezado a decirles adiós a las  personas, a los animales, las cosas, los libros y los lugares que tanto he  amado en esta vida.</p>
+<p align="justify">Me iré sin saber hacia dónde, hacia qué profundidades de la nada y del  olvido, y me iré con la inquietud de no sólo ser yo, ser individual, y por  tanto insignificante el que se encamina hacia el final, sino que el drama tiene  dimensiones cósmicas irreparables.</p>
+<p align="justify">Es la humanidad entera la que parece encaminada a un desenlace fatídico.</p>
+<p align="justify">Me disculpo de entrada por este tono catastrofista, utilizo esa palabra,  catástrofe, para no caer en el adjetivo apocalíptico, un término de carácter  bíblico que suena mal en boca de un ateo irredento como lo soy, y que sin  embargo, podría ser pertinente.</p>
+<p align="justify">Este texto bíblico tan extraño, profético o deliberante que es el  apocalípsis, hablar de cuatro caballos de fuego y de rabia que vendrían a  violentar y destruir lo existente.</p>
+<p align="justify">No sé cuál será la cuarta de esas bestias, pero creo que puedo referirme  aquí a tres de ellas:</p>
+<p align="justify">La primera bestia es el agostamiento y la destrucción por obra humana de  la naturaleza, esa madre nutidicia y fuente absoluta de vida que ya no da más de  sí.</p>
+<p align="justify">El medio ambiente que nos arropa ya no aguanta más maltrato y saqueo por  parte de una cultura absurda, consumista, sin límite, egoísta, narcisista hasta  la ruina, enamorada de sí mismo y del dinero, que en su afán por devorar se  está devorando a sí misma, y, con ello jala al desastre al propio planeta y a  todos los que en él crecemos y en el que somos, lo que somos.<br>
+  <br>
+  La segunda bestia tan inclemente como la anterior, es la indiferencia o  la abierta hostilidad y la agresión con que un mundo privilegiado se comporta  frente a las otras tres cuartas partes de la humanidad, los despojados, los  perseguidos, los abandonados que huyen de la guerra, la sequía, las  inundaciones, la violencia, y el hambre, desbordando los caminos de la tierra  en una infinita caravana que echan manos de sus últimas fuerzas para llegar  hasta unas puertas que se le cierran en las narices.</p>
+<p align="justify">Y hasta que las fronteras de las naciones más favorecidas que responden  con balas, alambradas, desprecio, insultos, deportaciones, campos de concentración  y muerte, hablamos de verdaderos genocidios.</p>
+<p align="justify">Pueblos enteros empujados a la extinción ante los ojos indiferentes o  iracundos de quienes se consideran dueños absolutos y excluyentes de la  seguridad y el bienestar y la riqueza.</p>
+<p align="justify">La tercera bestia de rabia y sangre es el regreso del fascismo. Hay  quienes llaman neofascismo, protofacismo o ultraderecha a este fenómeno que  renace con alevosía en las cuatro esquinas del planeta.</p>
+<p align="justify">Yo por mi parte, prefiero dejar a un lado prefijos y eufemismos, y  llamarlo por su nombre puro y duro, fascismo. </p>
+<p align="justify">Hoy surge con una fuerza inusitada esta marea negra y ponzoñosa, directa  o indirectamente alimentada por la política de Donald Trump. </p>
+<p align="justify">A nosotros los mexicanos nos ha caído el mal fario de tenerlo por  vecino, un vecino prepotente e impositivo, cavernario, xenófobo, machista y  cuyos actos y cuyas declaraciones incendiarias desde la Presidencia de Estados  Unidos han hecho que muchos de sus fanáticos en el mundo se quiten la máscara,  pierdan el pudor, ganen descaro y arrojo, y den rienda suelta a la voluntad de  rabia y violencia que hasta hace poco tenían más o menos contenida o camuflada. </p>
+<p align="justify">Nuestro nuevo gobierno mexicano, al que le auguro buen viento y buen  amarre en estos días de inauguración de su mandato, tendrá que lidiar con el  iracundo vecino del norte y su mala andada fascista, haciendo un auténtico  despliegue de honor, valor, soberanía, imaginación y habilidad diplomática. </p>
+<p align="justify">Turquía se ha convertido en el gendarme de las fronteras de Europa  impidiendo que los inmigrantes pasen al otro lado. </p>
+<p align="justify">¡Ay! No debemos permitir que México cumpla ese ruin papel con respecto a  Estados Unidos. </p>
+<p align="justify">Permítanme formular aquí un resumido recuento de algunas de las patas  que le han ido saliendo al fascismo de nuevo cuño, son manifestaciones en muy  diversos ámbitos y de intensidades, pero con claros elementos en común.</p>
+<p align="justify">Primero, se apoyan en el caudillismo y el carisma. </p>
+<p align="justify">No se atienen a programas fijos, sino que incorporar infinidad de puntos  y levantan consignas de odio, según las circunstancias, son camaleónicos a  conveniencia y sirven a la carta las fantasías autoritarias de los sectores más  regresivos de sus sociedades, aun así hay arreglos comunes en todos,  persecución, por ejemplo, del contrincante político. </p>
+<p align="justify">Aquí hago un paréntesis para recordar que la Alemania de Hitler declaró  como enemigos principales, aunque no únicos, a los judíos y a los comunistas y  los redujo a campos de muerte en lo que llamamos el holocausto, un suceso atroz  que pensábamos que no volvería a ocurrir, pero que hoy se prefija cantando sus  fobias. <br>
+  <br>
+  Por lo pronto, el nuevo fascismo ya señaló a su enemigo y signa: &ldquo;los  inmigrantes, en ellos, pero no sólo en ellos, algunos países han encontrado el  depositario de su odio&rdquo;. </p>
+<p align="justify">Continúo con las características comunes: racismo, homofobia,  islamofobia, antisemitismo, autoritarismo, sexismo y machismo, chovinismos,  fanatismo religioso, ataques a los medios informativos y acoso, si no muerte de  sus profesionales, desprecio por las instituciones democráticas y al mismo  tiempo utilización de éstas como palanca de ascenso al poder. </p>
+<p align="justify">El campo de cultivo que le sirvió al fenómeno de radicalización hacia la  extrema derecha es la circunstancia de que las políticas neoliberales han  ensanchado de manera brutal el abismo entre una minoría de ricos y una inmensa  mayoría de pobres. </p>
+<p align="justify">La gran oleada de inmigración de las últimas décadas, la larva ante la  crisis del medio ambiente de la cual andan culpando a la sobrepoblación de  desposeídos. </p>
+<p align="justify">Y, por último, los efectos de la gran recesión que se avecina. </p>
+<p align="justify">Debo ser enfático en otro rasgo común a los nuevos fascismos y que  debería despertar una voz de alarma, no pocas veces acceden a la visibilidad y  al poder por medio de mecanismos democráticos, como acaba de suceder en Brasil,  en ocasiones se valen de los procesos electorales, de la participación  parlamentaria o del ministerial y del control heredado de las instituciones y  de la politización y manipulación de la justicia. </p>
+<p align="justify">Empecemos el recuento con los propios Estados Unidos en donde se han  multiplicado los ataques y atentados contra demócratas, islámicos, integrantes  de la diversidad sexual, negros, latinos, judíos, mujeres, periodistas e  inmigrantes. </p>
+<p align="justify">Sigamos con Brasil, en donde ha ganado la presidencia por escaso margen  el ex militar Jair Bolsonaro, partido de la tortura, el crimen y demás métodos  de la dictadura que añora y a la que representa. </p>
+<p align="justify">En España, por ejemplo, post un grupo de franquistas, hasta hace poco  minúsculo, se expande, gana escaños y accede en su política de alianzas. </p>
+<p align="justify">En Italia el Primer Ministro, Matteo Salvini, vicepresidente y Ministro  del interior, y hombre fuerte del gobierno en curso, ejerce la violencia de  palabra y obra para impedir que los inmigrantes lleguen a ese país o para  expulsarlos. </p>
+<p align="justify">En Francia, Marine Le Pen, moderniza y depura la tradición fascista de  su padre para conservar sus esencias y sus objetivos. </p>
+<p align="justify">En Finlandia el partido de los auténticos finlandeses se ha dado a  conocer con actos de violencia racista. </p>
+<p align="justify">En Grecia la organización Amanecer Dorado retoma el mito de la pureza  racial e incorpora en su acción elementos paramilitares. </p>
+<p align="justify">Hungría es la cuna del joven, grupo ultranacionalista-antisemita  paramilitar, adepto a la simbología nazi. </p>
+<p align="justify">En Alemania gana terreno el &ldquo;SPD&rdquo;, partido racista y antijudío que niega  el holocausto, protagonista brotes de violencia en contra de extranjeros. </p>
+<p align="justify">En Austria gobierna la coalición formada por los conservadores y el  fascista del Partido de la Libertad. <br>
+  <br>
+  Y hasta aquí esta numeración de casos tan alarmantes, significativos  como indeseables. </p>
+<p align="justify">En México, por fortuna, el panorama que hoy se nos abre va en sentido  opuesto y podría significar el afinanciamiento de la democracia. Ojalá, ojalá. </p>
+<p align="justify">Muchos en el resto del mundo han puesto su mirada en este país con una  enorme esperanza, ha llegado al poder un incansable luchador que, con la  población a su favor, arrasó en casi todo el país, no ha tenido esta gloria  otra nación, como dice, letra luminosa que corona la Basílica de Guadalupe, en  la Ciudad de México, referido a la Virgen de Guadalupe. </p>
+<p align="justify">Esa indiscutible y grandiosa votación marca la fuerza de López Obrador,  pero también marca su debilidad, más de medio país le dio su sufragio, pero el  país somos todos, todos es una multitud variopinta y cada uno de sus  integrantes pedirá la palabra a voz en cuello, cada cual reclamando sus  asuntos, tenga derecho, tenga razón o no. </p>
+<p align="justify">En la actualidad yo vivo en Cataluña, en los Bajos Pirineos, alejado de  la política y el periodismo, y regresé a México para estar al lado de Andrés  Manuel López Obrador.</p>
+<p align="justify">El día en que recibió el mandato de la nación, esta Patria mía tan  deshilachada, tan pobre, tan saqueada, con tanto político corrupto y con tanto  muerto regado por su territorio, y ahora para colmo con un enloquecido Presidente  de Estados Unidos, que en su delirio magno, canalla, fascista, quiere que sus  tropas disparen a los migrantes si uno de ellos hace ademán siquiera de lanzar  una piedra a través de la línea divisoria; que disparen a los inermes desde ese  territorio que alguna vez fue nuestro y que nos fue arrebatado.</p>
+<p align="justify">Este reconocimiento que hoy me honra quiero compartirlo con todos  ustedes y dedicarlo a este México de hoy con alegría y la esperanza de que  logra afianzarse en la libertad, la igualdad y la justicia.</p>
+<p align="justify">Pero también la quiero dedicar a todos los periodistas muertos en  nuestro país, que están sembrados a lo largo y ancho de toda la República, a  ellos más que a nadie.</p>
+<p align="justify">Yo sé que habrás que hacer procuración para que este Gobierno asuma  siquiera un poco de las tesis del Informe MacBride para ayuda a los medios y no  se consuman en el hambre y se riegue la publicidad a todos, menos a uno, a dos,  etcétera; sin un acoso universal para que haya uniformidad ¡caramba!, no tantos  privilegios, tanto dinero regado.</p>
+<p align="justify">Miren ustedes, yo quisiera que los muros, aquí va mi…, que los muros que  levanten en esta patria mía no sean para separar a los pueblos, sino ¡ay,  carajo! Sino murallas de valor y buen juicio que nos proteja del embate y el  yugo de todo fascismo.</p>
+<p align="justify">Que Andrés Manuel López Obrador, un demócrata que llega al poder en una  elección sin paralelo y después de una vida de lucha, cumpla con estos  objetivos, y que la sociedad mayoritaria, vigilante, crítica y solidaria que se  ha manifestado en estos meses mantenga a raya a las bestias que mencioné y que  no permita una recaída en el abismo.</p>
+<p align="justify">Muchas gracias a todos.</p>
+<p align="justify">Aquí está Miguel Concha, cura, amigo de toda la vida, y que juntos  desmontamos cuando se quería asesinar al obispo de Chiapas, él y yo fuimos  autores de eso.</p>
+<p align="justify">Gracias otra vez.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a80828'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='80829'></a><p align="justify"><strong>MINUTO DE SILENCIO</strong></p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>La Mesa Directiva, en  nombre del Senado de la República, les solicita que, puestos de pie, guardemos  un minuto de silencio a fin de honrar la memoria de los miembros de la Orden  Mexicana de la Medalla Belisario Domínguez que han fallecido.</p>
+<p align="center">(Todos de pie guardan un minuto de silencio)</p>
+<p align="justify">Sírvanse tomar asiento, por favor.</p>
+<p align="justify">A nombre del Senado de la República expreso nuestro agradecimiento al  licenciado Andrés Manuel López Obrador, Presidente de los Estados Unidos  Mexicanos.</p>
+<p align="justify">Al Ministro José Fernando Franco González Salas.</p>
+<p align="justify">Al Diputado Porfirio Muñoz Ledo.</p>
+<p align="justify">Al gobernador del estado de Chiapas.</p>
+<p align="justify">Así como a todos nuestros distinguidos y distinguidas invitadas e  invitados por su asistencia a esta sesión solemne.</p>
+<p align="justify">Una vez que entonemos el Himno Nacional, se solicita al licenciado  Andrés Manuel López Obrador, al Ministro José Fernando Franco, al Diputado  Porfirio Muñoz Ledo, al licenciado Rutilio Escandón, al señor Carlos Payán, a  los integrantes de la Mesa Directiva, así como a los coordinadores de los  grupos parlamentarios, se trasladen al Muro de Honor de la Medalla Belisario  Domínguez, para develar el nombre de nuestro galardonado.</p>
+<p align="justify">Asimismo, para que posteriormente nos traslademos al patio central para  la guardia de honor ante la estatua del Senador Belisario Domínguez.</p>
+<p align="justify">Se les solicita a todos ponerse de pie a fin de entonar el Himno  Nacional.</p>
+<p align="center">(Todos de pie entonan el Himno Nacional)</p>
+<p align="justify">Se da por finalizada la sesión solemne.</p>
+<p align="justify">Una vez concluidas las actividades mencionadas se solicita a las  Senadoras y Senadores acudir a sus lugares en este salón de sesiones a fin de  dar inicio a nuestra sesión ordinaria.</p>
+<p align="center">(Se levantó la sesión solemne a las 14:24 horas)</p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Delegación Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfonos: 53-45-30-00<br>
+        Exts. 5405/5408</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+        Correo electrónico: diario_debates@senado.gob.mx</p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a80829'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;"><br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo </td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 2</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Martí Batres Guadarrama</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;"> Celebrada<br>en la Ciudad de M&eacute;xico, el 18 de Junio de 2019</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/1//PDF-WEB/SPE_No._2_18_JUNIO_2019_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83662'></a><p align="center"><strong>PRESIDENCIA DEL SENADOR</strong><br>
+  <strong>MARTÍ BATRES GUADARRAMA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>(14:08 horas) Con  fundamento en lo dispuesto por el artículo 56, fracción III del Reglamento del  Senado, y en el Acuerdo de la Mesa Directiva para normar esta sesión solemne,  damos inicio a la misma para conmemorar el 80 Aniversario del Exilio Español en  México.</p>
+<p align="justify">Se abre  la sesión solemne.</p>
+<p align="justify">Para esta  sesión tenemos invitados especiales. </p>
+<p align="justify">Por lo  tanto, se designa a las Senadoras y Senadores Nestora Salgado García, Ernesto  Pérez Astorga, José Erandi Bermúdez, Mercedes del Carmen Guillén Vicente, Geovanna  Del Carmen Bañuelos, Gabriela Benavides Cobos, Antonio García Conejo y Sasil De  León Villard, así como Margarita Valdez, para que reciban a nuestros invitados.</p>
+<p align="justify">Se pide a  la comisión que cumple con su cometido.</p>
+<p align="justify">En tanto,  se declara un receso en la sesión solemne para esperar a los invitados.</p>
+<p align="center">(RECESO)</p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Se reanuda la sesión  solemne.</p>
+<p align="justify">Realizamos  esta sesión solemne. </p>
+<p align="justify">Se ruega  a todas y a todos ocupar sus lugares.</p>
+<p align="justify">Muchas  gracias.</p>
+<p align="justify">Se  solicita a las asesoras y asesores nos ayuden a guardar el debido orden en el  Salón de Plenos, y a todas y todos los Senadores coadyuvar con el orden y la  atención al desarrollo de esta sesión solemne.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83662'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='83663'></a><p align="justify"><strong>CONMEMORACIÓN DEL 80  ANIVERSARIO DEL EXILIO ESPAÑOL EN MÉXICO</strong></p>
+<p align="justify">Realizamos  esta sesión solemne para conmemorar el 80 Aniversario del Exilio Español en  México. </p>
+<p align="justify">Doy la  bienvenida al licenciado Juan López-Dóriga Pérez, Embajador Extraordinario y  Plenipotenciario del Reino de España en México. </p>
+<p align="justify">¡Bienvenido,  Embajador!</p>
+<p align="justify">Nos  acompañan las señoras y señores Aída Pérez Flores Valdés, Fernando Serrano  Migallón, Rosa María Catalá, Antonio Elguera, Héctor Díaz Polanco, Consuelo  Sánchez, Rafael Barajas, José Yuste del Corral, Emilio Gironella, Josefina Tomé  y Julián Atilano. </p>
+<p align="justify">También  nos acompaña Juana Serra Altimira, María Antonia Yuste, Marco Antonio González  Pérez, Isaac García Venegas, Jahome Segura, María Luisa Capella, María de  Orduña, Almudena de la Iglesia, María Fernanda Estévez Mauris, Nicolás Morris  Gómez, Paloma Porraz y Ana Portello.</p>
+<p align="justify">¡Sean  todas y todos ustedes bienvenidas y bienvenidos!</p>
+<p align="justify">Distinguidos  invitados, están presentes en el presídium de esta sesión solemne la Senadora  Mónica Fernández Balboa, Vicepresidenta. </p>
+<p align="justify">La  Senadora María Guadalupe Murguía Gutiérrez, Vicepresidenta.</p>
+<p align="justify">Asimismo,  la Senadora Verónica Delgadillo García, Secretaria.</p>
+<p align="justify">La  Senadora María Antonia Cárdenas Mariscal, Secretaria. </p>
+<p align="justify">La  Senadora Verónica Camino Farjat, Secretaria de la Mesa Directiva.</p>
+<p align="justify">Señoras y  señores, hoy recordamos la hazaña diplomática e histórica que significó el  exilio español tanto para México como para España, el año de 1939,  particularmente el 13 de junio, con la llegada del barco &ldquo;El Sinaí&rdquo; a Veracruz,  con alrededor de mil 600 refugiados españoles que fueron acogidos por el  gobierno mexicano, es emblema del exilio. </p>
+<p align="justify">Si bien  ese día se ha considerado como una fecha representativa del exilio español,  cabe señalar que los primeros refugiados españoles llegaron a México un poco  antes, en 1937, los niños de Morelia. <br>
+  <br>
+  Y en 1938  diversos intelectuales que coadyuvaron a fundar La Casa de España en México. </p>
+<p align="justify">En  cualquier caso, se trata de un acontecimiento fundamental para la historia de  nuestro país. </p>
+<p align="justify">Con ese  motivo, el Pleno del Senado de la República ha determinado conmemorar el 80  Aniversario de este acontecimiento histórico, pues a partir de dicho suceso se  imprimió una nueva influencia en la historia de México y nuestro país se  caracterizó como un país de asilo, de protección de los derechos humanos y de  la libertad. Esta es también una oportunidad para agradecer al exilio español  por sus enormes aportaciones a nuestro país. </p>
+<p align="justify">Muchas  migraciones constituyen elementos fundamentales para el enriquecimiento de las  naciones y el exilio español es acaso el ejemplo más emblemático de nuestra  historia. </p>
+<p align="justify">Como lo  dispone el Acuerdo aprobado para normar esta sesión, se concederá el uso de la  palabra a los siguientes exiliados y descendientes: Julián Atilano Atilano,  Fernando Serrano Migallón, Consuelo Sánchez y Elvira Concheiro. </p>
+<p align="justify">Tiene la  palabra el señor Julián Atilano Atilano. </p>
+<p align="justify"><strong>El señor Julián Atilano  Atilano: </strong>Señores, muy buenas tardes, les deseo de todo  corazón, especialmente al Senador Batres, y en general, al pueblo de México, y  al ex Presidente Lázaro Cárdenas. </p>
+<p align="justify">Para mí  es un motivo enorme de satisfacción haber llegado de niño, de once años, que  venía yo en el barco después de una guerra espantosa y cruel en España, en  campos de concentración en Francia y de repente, a través de los funcionarios  del General Cárdenas nos dan el pase a la Ciudad de México, fue como abrirnos  el camino para solventar la situación que teníamos. </p>
+<p align="justify">Y fue  maravilloso que en el barco venían profesores, venía la banda Madrid, venían  muchos funcionarios de la época y muy queridos, nos hablaron de México, nos  hablaron de su libertad, de su gente, del sol que tenía México, y lo pudimos  comprobar a través que el barco se iba acercando a Veracruz.</p>
+<p align="justify">Llegar a  Veracruz fue como de la noche al día, de venir de una oscuridad a tener una  libertad tremenda.</p>
+<p align="justify">El  desarrollo que tuvimos cuando la gente nos brindó la amistad que nos ha venido  nos hizo que en el corazón llenara una vez más de lágrimas, lágrimas que  habíamos dejado cuando el barco pasó las costas españolas y decíamos todos:  &ldquo;Adiós España, cuándo te volveré a ver&rdquo;.</p>
+<p align="justify">Cuando  empezó la banda Madrid a tocar música española fueron lágrimas y lágrimas y  lágrimas; al llegar a Veracruz fueron lágrimas de alegría.</p>
+<p align="justify">No fue lo  mismo al llegar al Distrito Federal donde había un plan reacio por la industria  y el comercio en general, no nos tenían confianza y era perder mucho el tiempo,  todos queríamos trabajar, queríamos rehacer nuestras vidas y volver a ser como  humanos, tener qué comer y tener que elegir las cosas.</p>
+<p align="justify">Con el  tiempo pasó, nos fueron adquiriendo la confianza las gentes. Y unos mal y otros  bien, tuvimos mucha suerte, yo fundamentalmente, en lo personal tuve trabajos  muy buenos que me dieron mucha satisfacción tanto monetaria como del sistema de  ventas.</p>
+<p align="justify">Esto  motivó que pudiéramos ayudar a nuestros padres a rehacer también su vida y a  crear un nuevo hogar en México.<br>
+  <br>
+  Con el  tiempo pasaron los años, tuve una novia, me casé, formé una nueva familia y  fueron años de sumamente felicidad, hasta que vino la tristeza, fallecieron mis  padres, fallecieron mis hermanos, falleció mi esposa, y hoy gracias a las  nuevas generaciones de hijos, nietos, bisnietos y sobrinos podemos seguir  luchando y salir adelante.</p>
+<p align="justify">Esto todo  se lo debemos, y vuelvo a repetir, al querido General Lázaro Cárdenas, al  pueblo de México.</p>
+<p align="justify">Al pueblo  de México que nos abrió las puertas, nos trató como verdaderos hermanos y  pudimos salir adelante.</p>
+<p align="justify">Hoy en  día, vuelvo a repetir, gracias a nietos, bisnietos, sobrinos puedo reseguir  resistiendo y tratar de romper el récord de años vividos, años que los deseo y  quiero seguir luchando, como fue toda mi vida, de mucho trabajo, mucha lucha,  pero salir adelante.</p>
+<p align="justify">Gracias,  Senador Batres.</p>
+<p align="justify">Gracias  al General Cárdenas.</p>
+<p align="justify">Gracias  al pueblo de México.</p>
+<p align="justify">Gracias a  ustedes.</p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Muchísimas gracias a don Julián  Atilano Atilano.</p>
+<p align="justify">Tiene la  palabra Fernando Serrano Migallón.</p>
+<p align="justify"><strong>El señor Fernando Serrano  Migallón: </strong>Señoras y señores Senadores. Señoras y Señores:</p>
+<p align="justify">El exilio  es ese desprendimiento en el que se mezcla el dolor y la esperanza, el despojo  y el renacimiento.</p>
+<p align="justify">El exilio  es un fenómeno múltiple, personal e íntimo, pero al mismo tiempo es social y  colectivo, es un hecho político, histórico, que pone en evidencia la irrupción  de la violencia en la vida pública, la irracionalidad en sus relaciones y el  hecho perverso al fin de que un Estado persiga a quienes por su naturaleza  debería proteger.</p>
+<p align="justify">El exilio  es también un fenómeno cultural que demuestra la persistencia de la memoria, la  voluntad de vivir y la riqueza de la civilización, que acepta mestizajes, combinaciones  y diálogos para generar frutos que se prolongan a lo largo del tiempo.</p>
+<p align="justify">Desde  poco antes de que fueran disparadas las últimas balas de la Guerra Civil  Española, a diversos puntos de la geografía europea y americana, fueron  expulsadas de su patria poco más de 500 mil personas.</p>
+<p align="justify">Una  radiografía social e ideológica de la España de antes de la guerra cruzó las  fronteras desde los republicanos de derecha hasta los de extrema izquierda,  desde el profesor universitario y el científico hasta el labrador y el obrero;  desde familias completas hasta individuos en solitario; niños, cuyos padres  querían darles un lugar para crecer con libertad, hasta ancianos que aspiraban  a un lugar para poder morir con dignidad.</p>
+<p align="justify">Lo más  insólito de este exilio es que por primera vez en la historia un Estado  completo, con todos sus órganos legítimos, con capacidad jurídica plena tuvo  que instalarse fuera de su territorio para seguir existiendo.<br>
+  <br>
+  Salieron  los titulares de las tres altas magistraturas del Estado:</p>
+<p align="justify">Los  presidentes de la República, del Gobierno y de las Cortes.</p>
+<p align="justify">El gobierno  en pleno.</p>
+<p align="justify">Los  presidentes y los gabinetes íntegros de las dos regiones autónomas reconocidas  por la República.</p>
+<p align="justify">Los  Poderes Legislativo y Judicial en número tal que sus sesiones eran legítimas y  sus decisiones válidas.</p>
+<p align="justify">En España  quedó una sociedad amordazada y temerosa.</p>
+<p align="justify">Las  cifras más conservadoras nos ofrecen la visión de un panorama desolador, 500  mil muertos durante la guerra, tanto en los campos de batalla como en la guerra  soterrada que se libró en las calles de las ciudades y de los pueblos.</p>
+<p align="justify">500 mil  exiliados; 2 millones de presos, la mayoría de ellos sin juicio, ni acusación,  ni delito; 200 mil de ellos serían fusilados y ejecutados entre 1939 y 1949; y  de 1949 a 1975, año de la muerte del dictador, 80 mil desaparecidos.</p>
+<p align="justify">España  entró en una larga noche donde la luz era un privilegio, la palabra una osadía;  y bajo la triste fachada del orden y la promesa del progreso material, la  represión encerraba a una sociedad que no podía ni querer verse a sí misma de  esa manera.</p>
+<p align="justify">México  era entonces un país que terminaba el período armado de una de sus  revoluciones, la primera revolución social de la historia.</p>
+<p align="justify">Era un  país en pleno crecimiento, dispuesto a volver a los escenarios internacionales,  a construir el futuro por el que habían dado su vida mujeres y hombres de todas  las condiciones sociales.</p>
+<p align="justify">El 1 de  abril de 1939, el General Franco anuncia el final de la Guerra Civil, pero en  realidad lo que anunciaba era el inicio de una represión política y social sin  antecedentes en la península.</p>
+<p align="justify">En  terror, el miedo y el control político e ideológico se enseñorearon en el país.</p>
+<p align="justify">La España  Peregrina en México estuvo constituida entre 18 mil y 20 mil familias que  hicieron de México su nueva patria, un pueblo que nunca dejó del todo la patria  a la que habían sido obligados a abandonar y que fue integrándose poco a poco  al nuevo país que muchos ya no quisieron, ni pudieron salir.</p>
+<p align="justify">Hoy hay  que reconocer que para España el exilio está muerto, murió a fuerza de traiciones  y de olvido, los republicanos fueron derrotados una y otra vez: primero, al ver  perdida la república, luego de una guerra injusta; después al presenciar que  los arreglos internacionales entre los aliados triunfadores de la Segunda  Guerra Mundial, permitieron sobrevivir al fascismo en España, otra vez fueron  traicionados en la transición que estableció la democracia española para  instalar una monarquía sin discusión y, por fin, excluidos cuando el socialismo  triunfante, no permitió la participación en la historia de España.</p>
+<p align="justify">Olvidados,  en fin, en un país en el que ya no podían reconocerse y no les quedaba más  patria que México. <br>
+  <br>
+  Sin  embargo, para México el exilio español vive, extraña paradoja de la historia. </p>
+<p align="justify">En México,  el exilio republicano vive no sólo en la tercera generación de mexicanos de  origen español, sino en su legado, ideal democrático, de honor y de  colaboración con el pueblo que fue, en un primer tiempo su refugio, después su  casa y ahora su patria. </p>
+<p align="justify">Este  drama histórico se desarrolló en cuatro etapas claramente definidas, todas  ellas marcadas por el ritmo de la política internacional y del desarrollo de la  situación en España, todas ellas abrigadas por un país que lentamente dejó de  ser asilo para convertirse en patria. </p>
+<p align="justify">Entre la  primera etapa ocurrida entre 1937 y 1944, el exilio sale al encuentro del país  que los abriga, en aquel tiempo se pensaba que todo era temporal y todos  esperaban que una vez terminada la guerra, los aliados provocarían la caída de  Franco y el paso por México sería una anécdota llena de afecto y de  agradecimiento. </p>
+<p align="justify">En esa  primera etapa de encuentro se convierte en esperanza, unos años después, entre  1944 y 1953, al compás de una guerra fría, en que las democracias estaban  siendo apoyadas por los países triunfantes, y no parecía creíble que una  dictadura fascista sobreviviera en Europa Occidental, fue así, y Franco se  perpetuó en el poder. </p>
+<p align="justify">Esta  segunda derrota se llamó desilusión y entre 1953 y 1975, causas geopolíticas,  intereses económicos y estrategias militares, confirmaron al gobierno espurio  de la península y lo admitieron, aunque nunca con plenitud y siempre con  reservas, dentro de la familia de las naciones. </p>
+<p align="justify">Sabiéndose  derrotados una vez más, conscientes de que mientras Franco viviera, no habría  retorno posible, el exilio fue haciéndose cada vez más mexicano, nacieron los  descendientes ya mexicanos y España se volvió bandera moral de añoranza de  otros tiempos. </p>
+<p align="justify">Ya entre  1975 y 1978, la reconstrucción de España, parecía una fuente más de esperanza  y, sin embargo, fue la derrota postrera y el inicio del olvido, que hoy  contribuimos a sustentar. </p>
+<p align="justify">Durante  décadas se apreció el exilio republicano español, exclusivamente como un exilio  intelectual, como el de los intelectuales por excelencia, en cierta forma lo  fue, pero considerarlo sólo de este modo, significa omitir un profundo  contenido humano y un esfuerzo desinteresado por salvar familias y seres  humanos, sin importar su ocupación, su orientación política o su grado de  estudios. </p>
+<p align="justify">Al  proclamarse la República, la mitad de la población española era analfabeta, los  intelectuales representaban solamente el 1 por ciento de la población, el  rostro del exilio fue, pues, el del sufrimiento humano, el de la búsqueda de la  vida y la libertad, el que no aparece en los libros de historia, pero que hace  la historia y la recuerda. </p>
+<p align="justify">Desde el  punto de vista intelectual, el 10 por ciento del total de los que llegaron, se  dedicaban a labores educativas, artísticas y literarias, ellos encontraron en  México un lugar para continuar sus labores y un terreno fértil para sus  reflexiones. </p>
+<p align="justify">Fue  creada La Casa de España, hoy Colegio de México, epónimo de esa migración  creativa, la mayor parte de sus miembros integraron a la Universidad Nacional  Autónoma de México, en un porcentaje del 20 por ciento del profesorado de  aquella época y en facultades como la de Filosofía y Letras y la de Derecho,  ese porcentaje llevó al 20 por ciento. </p>
+<p align="justify">En el  Instituto Politécnico Nacional a 18 por ciento, y en mejor medida en  instituciones de educación en los estados.<br>
+  <br>
+  Los  republicanos llegaron a México y le legaron una nueva visión desde España que  llevaban consigo, una visión que encarnaba la libertad, la dignidad humana, el  respeto y la vida, y los mejores valores de occidente, en la memoria de los  mexicanos dejaron constancia de un espíritu republicano que mostraron con  orgullo y con dignidad y desalojaron, por lo menos en parte, la leyenda negra  que justificadamente o no, formaba parte de un sentimiento generalizado. </p>
+<p align="justify">Fue la  raíz de un nuevo humanismo, humanismo laico que llegaría hasta la vida diaria  del país para entrar en diálogo con la tradición liberal mexicana. Para los  mexicanos también representan la conciencia de lo que es la democracia y de  todo lo que se pierde cuando se pierde a la propia democracia. </p>
+<p align="justify">El apoyo  y la solidaridad de México con la República Española, no se redujo a la  atención y protección irrestrictos y solidarios con los emigrados. </p>
+<p align="justify">Desde el  punto de vista político y diplomático, a todo lo largo de la guerra y posteriormente  durante los 40 años de dictadura, México mantuvo relaciones diplomáticas plenas  con el gobierno republicano español en el exilio, relaciones que se  suspendieron cuando en España, por primera vez, desde febrero de 1936, se  convocó a unas elecciones libres para integrar unas cortes constituyentes que  dieron origen a la actual Constitución española. </p>
+<p align="justify">Una vez  instalado el Congreso Constituyente, las instituciones republicanas, dieron por  terminada su misión de preservar, guardar y enaltecer la votación democrática  del pueblo español. </p>
+<p align="justify">Y en el  mensaje de disolución del gobierno republicano se terminó con uno de los viejos  paradigmas que los pregoneros y heraldos de la España medieval recorrían todos  los pueblos y todas las ciudades. </p>
+<p align="justify">La  República ha muerto. </p>
+<p align="justify">¡Viva la  República!</p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Muchas gracias a Fernando  Serrano Migallón, quien es académico de número de la Academia Mexicana de la  Lengua y de la Academia de Jurisprudencia y Legislación, fue director de la Facultad  de Derecho de la UNAM y funcionario del Poder Legislativo Federal. </p>
+<p align="justify">Muchas  gracias. </p>
+<p align="justify">También  don Julián Atilano Atilano dice que se le olvidó mostrar la fotografía, pero al  final de las intervenciones, la podremos mostrar aquí arriba, don Julián, con  todo gusto. </p>
+<p align="justify">Vamos a  escuchar la intervención de la antropóloga Consuelo Sánchez, es doctora también  en estudios latinoamericanos, investigadora del SIN, y exdiputada constituyente  de la Ciudad de México.</p>
+<p align="justify"><strong>La señora Consuelo Sánchez  Rodríguez: </strong>Fue improvisada esta participación, nos pidieron en  este momento dar unas palabras sobre lo que significó y han significado los 80  años del exilio español, y habría que decir quiénes fueron aquellos que  llegaron hace 80 años y después a nuestra patria, eran aquellos que, como dijo  el poeta, que iba en el barco, no venimos a conquistar, venimos a que México  nos conquiste. <br>
+  <br>
+  Y en  efecto, esto nos refiere a dos tipos de españoles y presencia del español en  México, aquellos conquistadores, representantes de una España, de una España  colonialista, imperial, que fue la que    llegó a México en el siglo XVI, a conquistar, a colonizar; los que  vinieron en el exilio español de 1936, 1937, 1938 en adelante, fueron estos  revolucionarios, republicanos, libertarios que venían de luchar y de intentar  construir una patria, una sociedad justa, libertaria, de justicia social y que  fue derrotada, derrumbada por los ejércitos de la muerte, del fascismo, del  General Francisco Franco.</p>
+<p align="justify">Fueron  ellos los que después lucharon contra el fascismo en la propia España y fuera  de ella. Fueron ellos, pues, los que vinieron a México, esa España, esa otra  España revolucionaria, republicana, libertaria, de hombres, mujeres,  trabajadores, intelectuales, poetas, escritores, artesanos, campesinos, que llegaron  a esta patria, México, para construir junto con los mexicanos y para ser  conquistados por los mexicanos.</p>
+<p align="justify">Y el  General Cárdenas entendió muy bien lo que estaba en juego en esa España y lo  que estaban haciendo los republicanos en España. Los republicanos se estaban  peleando contra el fascismo, no solo en España, sino su proyección por el resto  de Europa y del mundo.</p>
+<p align="justify">Por eso  el General Lázaro Cárdenas, desde el principio se pronunció a favor de los  republicanos y en contra del fascismo, y en todo tiempo apoyó la lucha de los  republicanos. Además, abrió las puertas de este país generosamente a aquellos  exiliados que venían de pelear contra el fascismo y que habían sido derrotados.</p>
+<p align="justify">Fíjense,  Alemania e Italia, que participaron en la guerra en España apoyando a Francisco  Franco, ellos finalmente después fueron derrotados, pero en España no se logró  derrotar al fascismo, ahí siguió Francisco Franco hasta su muerte en los años  setentas del siglo pasado.</p>
+<p align="justify">Pero lo  interesante también es la política del General Lázaro Cárdenas, su política  internacional es un gigante, la verdad fue un gigante; supo, fue visionario,  supo en todo momento lo que se estaba poniendo en juego en España a nivel  global y también en su política de exilio, de abrir las puertas generosamente a  aquellos que necesitaban una nueva patria.</p>
+<p align="justify">Y no  solamente él, es el pueblo mexicano también, porque aquí encontraron, en este  pueblo, amor, un pueblo amoroso, un pueblo solidario, revolucionario. Acababa  de pasar México por un proceso revolucionario, pero también había su parte  conservadora en México que se oponía al exilio de los españoles, incluso de  atender a los niños que venían de la guerra. De modo que tenemos mucho que  aprender de esa política, de este gobierno de Lázaro Cárdenas, de apertura y de  tener una visión certera respecto de cuál es la posición que se debe tomar en  determinados momentos de crisis mundial y también de apertura al exilio, de  hecho fue lo que pasó en nuestro país a raíz del exilio español.</p>
+<p align="justify">Vinieron  otros exilios de América Latina, todos ellos han contribuido enormemente a la  cultura de este país, todos ellos se integraron y también se enriquecieron con  la cultura que se estaba desarrollando en nuestro país con los grandes  pintores, escritores, poetas, etcétera. Ahí hubo una convivencia cultural  extraordinaria.</p>
+<p align="justify">Yo  agradezco mucho al Presidente Martí Batres y a todos ustedes por la  conmemoración de los ochenta años del exilio español.</p>
+<p align="justify">¡Viva  México!</p>
+<p align="justify">¡Viva el  exilio español!</p>
+<p align="justify">Gracias.</p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama: </strong>Muchas gracias, doctora  Consuelo Sánchez.<br>
+  <br>
+  Vamos a  escuchar a la profesora investigadora del Sistema Nacional de Investigadores,  la doctora en Sociología y académica de la UNAM, Elvira Concheiro.</p>
+<p align="justify"><strong>La señora María Elvira  Concheiro Bórquez:</strong> Muchísimas gracias.</p>
+<p align="justify">Es, desde  luego, un gran honor poder hacer uso de la palabra en esta sesión solemne.  Muchas gracias al Presidente de la Mesa Directiva del Senado y a todos ustedes.</p>
+<p align="justify">Creo que  tuvieron que pasar casi ocho décadas para que pudiéramos hacer no solamente  este homenaje, sino este reconocimiento, esta apropiación plena de lo que fue  un acontecimiento histórico que es de la mayor importancia.</p>
+<p align="justify">La  República española sigue siendo un ejemplo de lo que es la construcción de una  República social, democrática, de derechos, en la que un pueblo que venía  sufriendo la monarquía desde tiempo inmemorial, un pueblo que se veía reflejado  en las acciones de esa República, que echó a andar la imaginación, echó a andar  el conocimiento, echó a andar a un pueblo entero en la construcción de su  destino.</p>
+<p align="justify">Es eso lo  que aplastaron en 1939 los fascistas, por eso no es casual que hoy, a casi 80  años, podamos reconocer que en este momento en nuestro país se abren espacios,  grandes transformaciones en un sentido o en una inspiración, que yo diría es el  de la República española.</p>
+<p align="justify">Y, como  hija de un refugiado comunista español, me siento extraordinariamente honrada y  orgullosa que esté en esta máxima representación, pudiendo quedar ese homenaje  y ese agradecimiento a un exilio que, efectivamente, no solamente eran las  grandes personalidades intelectuales o artísticas que convocó aquella  República, que animó a que participaran y fueran constructores de la Nueva  España, sino también al pueblo, a ese pueblo que estaba siendo expresión o reflejo  de la República española.</p>
+<p align="justify">También  aquí hace 80 años hubo una reacción, una reacción que se opuso a que esos  españoles fueran recibidos, esos españoles revolucionarios que llevaban años de  sufrimiento en una guerra desigual e injusta, esa reacción fue vencida por el  pueblo de México; desde luego que estuvo la política del General Cárdenas, la  política del Servicio Exterior, con Bosques a la cabeza, del cual nos sentimos  muy orgullosos, pero poco se habla de la lucha que dieron trabajadores, campesinos  de las izquierdas mexicanas porque se aceptara ese exilio.</p>
+<p align="justify">Hoy  podemos decirlo con todas sus letras, gracias a esas izquierdas, gracias a ese  pueblo mexicano que desde entonces sabía reconocer, en los exiliados, a lo  mejor de España. </p>
+<p align="justify">Muchas  gracias. </p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama:</strong> Muchas gracias, doctora  Elvira Concheiro. </p>
+<p align="justify">Tiene el  uso de la palabra el licenciado Juan López-Dóriga Pérez, Embajador  Extraordinario y Plenipotenciario del Reino de España en México. </p>
+<p align="justify"><strong>El Embajador Juan López-Dóriga  Pérez:</strong> Señor Presidente de la Cámara de Senadores.  Señoras Senadoras y señores Senadores.</p>
+<p align="justify">Señora  Vicepresidenta del Ateneo Español.</p>
+<p align="justify">Señora  directora del Colegio Madrid.</p>
+<p align="justify">Miembros  todos de la comunidad de exiliados.<br>
+  <br>
+  Señoras y  señores, hace 80 años acabó la guerra civil que expulsó de España a casi medio  millón de personas, hace 80 años lo que José Bergamín llamó &ldquo;la España  peregrina&rdquo;, y León Felipe, &ldquo;la España del éxodo y del llanto&rdquo;. </p>
+<p align="justify">Una parte  de esa España llegó a México y antes de que los republicanos españoles hicieran  a México suyo, México hizo suyos a los republicanos españoles. </p>
+<p align="justify">Como  decía Eulalio Ferrer, que fue Presidente del Ateneo: &ldquo;Cambiamos simplemente de  tierra, en vez de perder una patria la ensanchamos&rdquo;. Y México se convirtió en  la patria del exilio español. </p>
+<p align="justify">Decía un  gran poeta español, Luis Cernuda, sobre sí mismo: &ldquo;El sentimiento de ser un  extraño que durante tiempo atrás te perseguía por los lugares donde viviste,  ahí, aquí en México, callaba, al fin dormido, estabas en tu sitio o en un sitio  que podía ser tuyo, con todo o con casi todo concordabas y las cosas, aire,  luz, paisaje, criaturas te eran amigas. Igual que si una losa te hubieras  quitado de encima, vivías como un resucitado&rdquo;.</p>
+<p align="justify">Como dijo  nuestro Presidente del gobierno: &ldquo;México, permitió a miles de españoles  resucitar&rdquo;. </p>
+<p align="justify">&ldquo;España  que perdimos no nos pierdas, pidió Pedro Garfias en el poema que escribió a  bordo de &ldquo;El Sinaí&rdquo;, no queremos perderla&rdquo;. Por eso el gobierno quiere  recuperar la memoria del exilio republicano para España. </p>
+<p align="justify">Como dijo  Pedro Sánchez, el Presidente del gobierno durante décadas: &ldquo;Un puñado de  investigadores se ha dedicado a mostrar el legado de aquellos hombres y  mujeres, ha llegado el momento de que sea el Estado el que rinda homenaje al  exilio y haga todo lo posible para darlo a conocer entre los españoles de hoy&rdquo;. </p>
+<p align="justify">Por eso  conmemoramos los 80 años con un discurso del Presidente del gobierno en el  Colegio de México, en enero pasado. Por eso el Presidente quiso visitar el  Ateneo Español en el 70 aniversario de su fundación. Por eso visitó el Campo de  Concentración de Ohrdruf donde está enterrado Antonio Machado y Monto Bou,  donde el Presidente Azaña fue enterrado con la bandera de México.</p>
+<p align="justify">Por el  eso el gobierno se ha hecho presente en Moscú y en el Campo de Concentración de  Naudhausen. Por eso se hará presente este verano en París, a cuya liberación  contribuyeron tantos republicanos españoles. Y por eso estuvieron aquí en  Veracruz, la semana pasada, la Secretaria de Estado por la España Global y la  Subsecretaria de Justicia y Presidenta de la Comisión de la Memoria Histórica. </p>
+<p align="justify">Señoras y  señores, nací en 1959, recuerdo con mucha emoción las imágenes del retorno de  los exiliados; la tarea de mi generación ha sido la construcción de la  democracia española, una democracia para la que, decían algunos entonces, no  estábamos preparados y, sin embargo fue posible, una democracia que encarnó  tanto de los valores y de las ansias de libertad de los exiliados españoles. </p>
+<p align="justify">Como  Embajador de España y con un nudo en la garganta, quisiera rendir homenaje al  exilio con unas palabras de Adolfo Sánchez Vázquez, pronunciadas hoy hace  exactamente 30 años en el Puerto de Veracruz; &ldquo;como españoles, decía: &ldquo;Que  hemos llegado a ser mexicanos y, como mexicanos que no pueden olvidar sus  raíces y los vientos que nos trajeron al exilio, hoy proclamamos nuestra más  alta contribución a hacer realidad el encuentro entre España y México que Pedro  Garfias contó o soñó al iniciarse nuestro exilio. El exilio ha supuesto, en  efecto, una tapa renacentista de las relaciones entre España y México&rdquo;.<br>
+  <br>
+  Y como  Embajador de España quiero reconocer, una vez más, nuestra deuda con este país,  una deuda que, como decía el Presidente del gobierno, no se puede pagar o puede  pagarse solo con gratitud. </p>
+<p align="justify">Al  Presidente Lázaro Cárdenas, y quisiera añadir, a su esposa Amalia Solórzano,  que en 2007 recibió la Gran Orden de la Orden de Carlos III, la condecoración  más alta que otorga el gobierno de España; a los diplomáticos mexicanos, y  quisiera citar hoy especialmente a Gilberto Bosques, al pueblo de México y ya  hoy al gobierno de México y al Presidente de la República que nos invitó a  conmemorar este aniversario en el Palacio Nacional la semana pasada, al  canciller Ebrard que nos acompañó a Veracruz, al ingeniero Cárdenas, a todos  ustedes, al Presidente del Senado que nos convoca hoy por segunda vez y que ha  escrito varios artículos, ha querido escribir varios artículos sobre este  aniversario. </p>
+<p align="justify">Señoras y  señores, mi agradecimiento es infinito, llevamos a México en el corazón. Y para  terminar me voy a hacer eco de las palabras finales del Presidente de la  República en su alocución del pasado jueves: </p>
+<p align="justify">&ldquo;Viva  México&rdquo;. </p>
+<p align="justify">&ldquo;Viva el  exilio español y viva España&rdquo;.</p>
+<p align="justify">Muchas  gracias. </p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama:</strong> Muchas gracias al  Embajador del Reino de España en México, Juan López-Dóriga Pérez. </p>
+<p align="justify">Tiene la  palabra el Senador Héctor Vasconcelos, Presidente de la Comisión de Relaciones  Exteriores del Senado de la República. </p>
+<p align="justify"><strong>El Senador Héctor  Vasconcelos:</strong> Señor Presidente del Senado de la República. Excelentísimo  señor Embajador del Reino de España. </p>
+<p align="justify">Señoras y  señores, en torno a la efeméride que nos convoca esta tarde, mucho hemos  celebrado el legado del exilio español en México, cristalizado en la creación  de La Casa de España, hoy Colegio de México, en las artes y en tantas  generaciones de mexicanos formados bajo el influjo de grandes maestros, como  José Gaos, Manuel Pedroso o Ramón Xirau. </p>
+<p align="justify">Pero yo  quiero traer a la memoria, esta tarde, lo que significó y estuvo en juego en  esa trágica confrontación entre hermanos, que fue la Guerra Civil Española, ese  trance, suerte de ensayo general de la guerra más devastadora de la historia,  no fue menos que la lucha entre dos visiones del mundo: La modernidad democrática,  liberal y tolerante, por una parte. </p>
+<p align="justify">Y por la  otra, la regresión hacia lo más oscurantista del medioevo en pleno siglo XX,  cuando la civilización occidental en su conjunto avanzaba hacia el secularismo,  las libertades y, en suma, hacia la sociedad abierta. </p>
+<p align="justify">Fue la  disyuntiva entre la aceptación de la modernidad y el repliegue a la Edad Media,  porque se trató de una defensa intelectual y moral del mundo moderno, se  lanzaron a esa lucha, espontáneamente, muchos de los mejores espíritus de la  época, entre ellos nuestro Octavio Paz. </p>
+<p align="justify">Del otro  lado de la trinchera, un futuro tirano, sostenido en un principio por el nazi  fascismo que representaba la más radical negación de los valores de occidente  que ha ocurrido en la historia, negación tanto de los valores judeocristianos,  como de los grecorromanos.<br>
+  <br>
+  La feroz  dictadura resultante de la Guerra Civil impuso a ultranza una sola religión,  cuando occidente, salvo en los países fascistas y soviéticos avanzaba hacia la  libertad para pensar.</p>
+<p align="justify">Por ello,  lo mejor de la intelectualidad española defendió a la República. Pienso en  García Lorca, en Picasso, en Buñuel, en Dalí, en Cernuda, y tantos otros que  conformaban la vanguardia del pensamiento y las artes.</p>
+<p align="justify">Toda esa  defensa de la libertad se resume en la célebre frase de Unamuno: &ldquo;Venceréis,  pero no convenceréis&rdquo;.</p>
+<p align="justify">Como  resultado de esa guerra, España cayó en una larga penumbra de aislamiento y  represión, y ya sabemos que cuando España ha abrazado la diversidad, se ha  engrandecido, pero cuando se ha cerrado como en el período 1939-1975, se ha  vuelto irrelevante y ajena a la cultura contemporánea de Europa. Fue sólo al  final de ese período sombrío cuando España vivió un florecimiento sin paralelo  en su historia moderna.</p>
+<p align="justify">Gracias  al general Cárdenas México pudo ponerse del lado correcto de la historia, y  apostó por el futuro y no por la reacción a éste.</p>
+<p align="justify">Honorable  Asamblea, larga vida a la España libre y diversa. Larga vida a los múltiples  vínculos actuales entre España y México.</p>
+<p align="justify">Es  cuanto, señor Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Martí  Batres Guadarrama:</strong> Muchas gracias, Senador Héctor  Vasconcelos.</p>
+<p align="justify">El  apasionante tema del exilio español puede abordarse desde diversos enfoques.  Podemos hablar de la hazaña diplomática que significó ese episodio, también de  la visión y del humanismo del General Lázaro Cárdenas. Asimismo, de la  fascinante utopía de la República Española que buscó combinar dos grandes  utopías: la de la igualdad y la de la libertad. </p>
+<p align="justify">Pero  también podemos hablar del aporte del exilio español a México. Es frecuente  escuchar a nuestros amigos exiliados españoles y sus descendientes hablar con  profundo agradecimiento a México por haberles abierto las puertas en aquellos  días terribles.</p>
+<p align="justify">Son  constantes los discursos que enaltecen y rinden homenaje a mexicanos tan  destacados como Narciso Bassols, Gilberto Bosques, Daniel Cosío Villegas, y  evidentemente el General Lázaro Cárdenas del Río.</p>
+<p align="justify">No  obstante, podríamos plantear la situación en términos inversos, México tiene  mucho que agradecer al exilio español. Podríamos decir que a través del mismo  llegó a nuestro país en un momento determinado una parte de lo mejor de la  España de aquel entonces. </p>
+<p align="justify">La gente  que representaba los más altos valores de libertad, de igualdad, de  fraternidad, la primera línea de lucha contra el fascismo, los visionarios que  habían derrocado pacíficamente a una monarquía no eran sólo intelectuales,  había también miles de trabajadores agricultores, comerciantes, profesionistas,  empresarios.</p>
+<p align="justify">En  efecto, personajes como José Moreno Villa, Adolfo Salazar, José Gaos, Enrique  Diez Canedo, Juan de la Encina González, Gonzalo Lafora, Antonio Madinaveitia,  Joaquín Shirao, Eugenio Imaz llegaron a enriquecer la vida de La Casa de España  en México, que se convertiría después en el Colegio de México.<br>
+  <br>
+  En la  UNAM, particularmente la Facultad de Filosofía y Letras encontramos a Adolfo  Sánchez Vázquez, a José Miranda, Juan Antonio Ortega y Medina, Carlos Poch  García, Luis Rius, Arturo Soto, y otros que al decir de José Antonio Matesanz  configuraron un verdadero linaje intelectual.</p>
+<p align="justify">Adolfo  Sánchez Vázquez menciona también a Rafael Altamira, Juan David García Vaca,  Juan Comas, Agustín Millares Carlo, Luis Cernuda, José Ignacio Mantecón, Juan  Ortega y Medina, César Rodríguez Chicharro.</p>
+<p align="justify">También  llegaron a México los poetas León Felipe y Agustín Bartra, el cineasta Luis  Buñuel; los pintores Ramón Galla y Remedios Varo; los juristas Luis Recasens,  Aurora Arnaiz; los arquitectos Francisco Azorín, Félix Candela, Óscar Col,  Jesús Martí; los escritores José Bergamín y Max Au.</p>
+<p align="justify">El  economista Antonio Sacristán, y muchos más.</p>
+<p align="justify">Debemos  recordar también a Wenceslao Roses, Francisco Giral, Eduardo Nicol, Tomás  Espresate, José María Muria, y otros.</p>
+<p align="justify">Muchos  exiliados que llegaron siendo niños, y muchos hijos y nietos de exiliados  construyeron interesantes trayectorias en la vida cultural, académica,  profesional periodística, o política de México.</p>
+<p align="justify">Tenemos a  Trinidad Martínez, una de las fundadoras del CIDE. El publicista Eulalio  Ferrer, el documentalista Demetrio Bilbatúa, el periodista Luis Suárez, el  arquitecto Imanol Ordorika, el abogado laboralista Néstor De Buen, así como los  fotógrafos hermanos Mayo, cuya más reciente generación se apellidaba Souza, en  realidad.</p>
+<p align="justify">El escritor  Paco Taibo, el político Jaime Serra Puche, la actriz Ofelia Guilmáin, la  activista en derechos humanos Teresa Yardí; los pintores Vicente Rojo, Alberto  Gironella, Teresa Martín, el cineasta Carlos Mendoza, el editor del Fondo de  Cultura Económica, Martí Soler.</p>
+<p align="justify">Y entre  otros descendientes destacados encontramos también a muchos de los presentes  que han sido mencionados y son nuestros invitados especiales el día de hoy, así  como a Francisco Barnés de Castro, Sergio Sarmiento, Paloma Sáez, Fabricio  Mejía, Alfonso Suárez del Real, María Espinasa, Eduardo Vázquez, Antonio Pérez  Claudín, y muchos otros.</p>
+<p align="justify">Muchos  trabajadores también, maestras de primaria, agricultores. </p>
+<p align="justify">Los  exiliados y sus descendientes levantaron en México escuelas como el Colegio  Madrid, el IE, el Luis Vives, el Bartolomé Cosío, el Herminio Almendros.</p>
+<p align="justify">Editoriales  como Era, Costa Amic, Patria, Grijalbo, Seneca; librerías como Bonilla, las de  Cristal, empresas como Somex, Vulcano; alimentos Ibarra, la Compañía Lírica. </p>
+<p align="justify">Instituciones  como el Ateneo Español y muchos espacios icónicos más.</p>
+<p align="justify">Dónde está  el secreto de los aportes de una comunidad que aportó tanto a México, tal vez  en lo que dijimos al principio, que trabajó, luchó, transformó España y luego  se trasladó a México.</p>
+<p align="justify">En esta  hora de México recordamos que en aquel momento de la España republicana muchos  intelectuales mexicanos se trasladaron a los encuentros antifascistas de aquel  entonces, como Juan de la Cabada, José Chávez Morado, Silvestre Revueltas,  Carlos Pellicer, Elena Garro, Octavio Paz, entre otros, y que lucharon en el  frente de batalla intelectuales o artistas, como David Alfaro Siqueiros,  encontrándose con muchos otros personajes como George Orwell, Ernest Hemingway,  en aquella batalla de la República española. <br>
+  <br>
+  En esta hora de México y  del mundo vale la pena subrayar que el exilio español nos recuerda que las  migraciones enriquecen a las naciones, las hacen más grandes y más fuertes. </p>
+<p align="justify">¡Que viva México!</p>
+<p align="justify">¡Qué viva el exilio  español! </p>
+<p align="justify">¡Y que viva España!</p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify">Así damos por finalizada la  sesión solemne. </p>
+<p align="justify">Se solicita a las señoras y  señores Senadores permanecer en sus lugares para continuar con la sesión  extraordinaria del día. </p>
+<p align="justify">Así damos por finalizada la  sesión solemne. </p>
+<p align="justify">Solicito a las señoras y  señores Senadores permanecer en sus lugares para continuar con la sesión  extraordinaria del día.</p>
+<p align="center">(Se levantó la sesión  solemne a las 15:18 horas) </p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a83663'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

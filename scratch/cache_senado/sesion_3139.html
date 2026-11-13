@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 21</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Mónica Fernández Balboa</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 23 de Octubre de 2019</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/2/PPO/PDF-WEB/PPO_No._21_23_OCTUBRE_2019_SOLEMNE.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='86555'></a><p align="center"><strong>PRESIDENCIA DE LA SENADORA</strong><br>
+  <strong>MÓNICA FERNÁNDEZ BALBOA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>(10:50 horas) Solicito a la  Secretaría informe a la Asamblea el resultado del cómputo de asistencia de las  señoras Senadoras y señores Senadores.</p>
+<p align="justify"><strong>La Secretaria Senadora Nancy De la Sierra Arámburo: </strong>Honorable  Asamblea, conforme al registro se han acreditado 69 ciudadanas Senadoras y  ciudadanos Senadores.</p>
+<p align="justify">En consecuencia, hay quórum, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Les ruego su atención y orden,  por favor.</p>
+<p align="justify">Se abre la sesión solemne convocada para la entrega  de la Medalla de Honor &ldquo;Belisario Domínguez&rdquo;, correspondiente al año 2019.<br>
+  <br>
+  Solicito a la Secretaría dé lectura a las  comisiones de cortesía que han sido designadas para recibir y acompañar a  nuestros distinguidos invitados a esta sesión solemne.</p>
+<p align="justify"><strong>La Secretaria Senadora Nancy De la Sierra Arámburo: </strong>Con gusto, señora  Presidenta.</p>
+<p align="justify">Doy lectura a las comisiones protocolarias de esta  sesión solemne.</p>
+<p align="justify">Para recibir al licenciado Andrés Manuel López  Obrador, Presidente de la República, se comisiona a los Senadores Ricardo  Monreal Ávila, Nadia Navarro Acevedo, Eruviel Ávila Villegas, Clemente  Castañeda, Manuel Velasco Coello, Geovanna del Carmen Bañuelos De la Torre y  Sasil De León Villard.</p>
+<p align="justify">Para recibir a la ciudadana Rosario Piedra Ibarra,  representante de la señora Rosario Ibarra de Piedra, se solicita a los  Senadores Daniel Gutiérrez Castorena, Gloria Sánchez Hernández, María Guadalupe  Covarrubias Cervantes, Primo Dothé Mata, María Guadalupe Saldaña Cisneros,  Nuvia Magdalena Mayorga Delgado, Patricia Mercado, María Leonor Noyola Cervantes,  Miguel Ángel Lucero Olivas y Elvia Marcela Mora Arellano, para que funjan en la  comisión de cortesía.</p>
+<p align="justify">Servida, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Gracias, señora Secretaria.</p>
+<p align="justify">Les pido por favor un poco de orden en este  recinto. A los fotógrafos y a los asesores que están en los pasillos, les pido  retirarse. </p>
+<p align="justify">Y se solicita a las comisiones designadas acudan al  salón contiguo a recibir al señor Presidente y a la señora representante de la  galardonada, que ya están aquí, por favor.</p>
+<p align="center">(Las comisiones cumplen)</p>
+<p align="center">(Receso)</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Se reanuda la sesión solemne y le  solicito ponerse de pie para recibir al ciudadano Presidente de los Estados  Unidos Mexicanos.</p>
+<p align="center">(Todos de pie)</p>
+<p align="justify">Favor de tomar asiento.</p>
+<p align="justify">En lo dispuesto por el artículo 100 de la Ley  Orgánica del Congreso General y en el Artículo Noveno del Reglamento de la  Medalla de Honor &ldquo;Belisario Domínguez&rdquo;, damos inicio a la sesión solemne  convocada para hacer la entrega de este galardón y del diploma correspondiente  al año 2019. </p>
+<p align="justify">Se les solicita, nuevamente, ponerse de pie a  efecto de rendir los honores de ordenanza al ciudadano Presidente de la  República. </p>
+<p align="center">(Todos de pie rinden honores de  ordenanza)</p>
+<p align="justify">Sírvanse tomar asiento.</p>
+<p align="justify">Damos la bienvenida al ciudadano Presidente de la  República, licenciado Andrés Manuel López Obrador. </p>
+<p align="justify">Al Ministro Presidente de la Suprema Corte de  Justicia de la Nación, Arturo Zaldívar Lelo de Larrea. <br>
+  <br>
+  A la Presidenta de la Cámara de Diputados, la  Diputada Laura Angélica Rojas Hernández. </p>
+<p align="justify">A la Jefa de Gobierno de la Ciudad de México,  doctora Claudia Sheinbaum Pardo.</p>
+<p align="justify">A las ciudadanas Rosario Piedra Ibarra y Claudia  Piedra Ibarra, en representación de nuestra galardonada, la señora Rosario  Ibarra de Piedra. </p>
+<p align="justify">Asimismo, damos la más cordial bienvenida al Gobernador  del Estado de Chiapas, Rutilio Cruz Escandón Cadenas. </p>
+<p align="justify">Al Secretario de la Defensa Nacional,  General Luis Crescencio Sandoval González. </p>
+<p align="justify">Al  Secretario de la Marina, Almirante José Rafael Ojeda Durán. </p>
+<p align="justify">Al  Secretario de Seguridad y Protección Ciudadana, doctor Alfonso Durazo Montaño. </p>
+<p align="justify">Al  Consejero Jurídico, licenciado Julio Scherer Ibarra. </p>
+<p align="justify">A los  señores Subsecretarios de Gobernación, Ricardo Peralta y Alejandro Encinas  Rodríguez. </p>
+<p align="justify">Y al  Diputado Mario Delgado Carrillo, Presidente de la Junta de Coordinación  Política de la Cámara de Diputados.</p>
+<p align="justify">Agradecemos  también la presencia de las señoras Diputadas y los señores Diputados  federales. </p>
+<p align="justify">De las  distinguidas y distinguidos miembros del gabinete legal y ampliado del Poder  Ejecutivo Federal. </p>
+<p align="justify">De los  representantes de los poderes del estado de Chiapas. </p>
+<p align="justify">Y del presidente  municipal de Comitán. </p>
+<p align="justify">Agradecemos  la asistencia de las distinguidas personalidades que con anterioridad  recibieron la Medalla de Honor &ldquo;Belisario Domínguez&rdquo;, todas y todos honran con  su presencia esta sesión solemne y al Senado de la República. </p>
+<p align="justify">Solicito  a la Secretaría proceda a pasar lista de honor. </p>
+<p align="justify"><strong>La  Secretaria Senadora Verónica Delgadillo García: </strong>Se solicita ponerse de pie. </p>
+<p align="center">(Todos de  pie)</p>
+<p align="justify">¡Senador  Belisario Domínguez!</p>
+<p align="justify"><strong>La  Presidenta Senadora Mónica Fernández Balboa: </strong>¡Murió por  la patria en defensa de la libertad!</p>
+<p align="justify"><strong>La  Secretaria Senadora Verónica Delgadillo García: </strong>Sírvanse tomar asiento.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a86555'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='86556'></a><p align="justify"><strong>La  Presidenta Senadora Mónica Fernández Balboa: </strong>Solicito a la Senadora  Verónica Delgadillo García, Secretaria de la Mesa Directiva, dé lectura a la  histórica proclama del doctor y Senador Belisario Domínguez, correspondiente a  la XXVII Legislatura del Senado de la República.<br>
+  <br>
+  <strong>LECTURA DEL  HISTÓRICO DISCURSO DEL PROCER BELISARIO DOMÍNGUEZ</strong></p>
+<p align="justify"><strong>La Secretaria Senadora  Verónica Delgadillo García: </strong>Daré lectura al texto del discurso del Senador  Belisario Domínguez. </p>
+<p align="justify">&ldquo;Señor Presidente del Senado:</p>
+<p align="justify">Por  tratarse de un asunto urgentísimo para la salud de la Patria, me veo obligado a  prescindir de las fórmulas acostumbradas y a suplicar a usted se sirva dar  principio a esta sesión tomando conocimiento de este pliego y dándolo a conocer  en seguida a los señores Senadores. Insisto, señor Presidente, en que este asunto  debe ser conocido por el Senado en este mismo momento, porque dentro de pocas  horas lo conocerá el público y urge que el Senado lo conozca antes que nadie.</p>
+<p align="justify">Señores  Senadores: Todos vosotros habéis leído con profundo interés el informe  presentado por don Victoriano Huerta ante el Congreso de la Unión el 16 del  presente.</p>
+<p align="justify">Indudablemente,  señores Senadores, que lo mismo que a mí, os ha llenado de indignación el  cúmulo de falsedades que encierra ese documento. ¿A quién se pretende engañar,  señores? ¿Al Congreso de la Unión? No, señores, todos sus miembros son hombres  ilustrados que se ocupan de política, que están al corriente de los sucesos del  país y que no pueden ser engañados sobre el particular. Se pretende engañar a  la Nación Mexicana, a esta noble Patria que, confiando en vuestra honradez y  vuestro valor, ha puesto en vuestras manos sus más caros intereses.</p>
+<p align="justify">¿Qué  debe hacer en este caso la Representación Nacional?</p>
+<p align="justify">Corresponder  a la confianza con que la Patria la ha honrado, decirle la verdad y no dejarla  caer en el abismo que se abre a sus pies.</p>
+<p align="justify">La  verdad es esta: Durante el gobierno de don Victoriano Huerta, no solamente no  se ha hecho nada en bien de la pacificación del país, sino que la situación  actual de la República, es infinitamente peor que antes; la Revolución se ha  extendido en casi todos los estados; muchas naciones, antes buenas amigas de  México, rehúsanse a reconocer su gobierno, por ilegal; nuestra moneda  encuéntrase depreciada en el extranjero; nuestro crédito en agonía; la prensa  entera de la República amordazada, o cobardemente vendida al gobierno y  ocultando sistemáticamente la verdad; nuestros campos abandonados; muchos  pueblos arrasados y por último, el hambre y la miseria en todas sus formas,  amenazan extenderse rápidamente en toda la superficie de nuestra infortunada  Patria.</p>
+<p align="justify">¿A qué  se debe tan triste situación?</p>
+<p align="justify">Primero  y antes de todo, a que el pueblo mexicano no puede resignarse a tener por  Presidente de la República a don Victoriano Huerta, al soldado que se apoderó  del poder por medio de la traición y cuyo primer acto al subir a la Presidencia  fue asesinar cobardemente al Presidente y Vicepresidente legalmente ungidos por  el voto popular, habiendo sido el primero de éstos quien colmó de ascensos,  honores y distinciones a don Victoriano Huerta y habiendo sido él, igualmente,  a quien don Victoriano Huerta juró públicamente lealtad y fidelidad  inquebrantable.</p>
+<p align="justify">Y  segundo, se debe esta triste situación a los medios que don Victoriano Huerta  se ha propuesto emplear para conseguir la pacificación. Estos medios ya sabéis  cuales han sido: Únicamente muerte y exterminio para todos los hombres,  familias y pueblos que no simpaticen con su gobierno. <br>
+  <br>
+  &quot;La  paz se hará, cueste lo que cueste&quot;, ha dicho don Victoriano Huerta.  ¿Habéis profundizado, señores Senadores, lo que significan esas palabras en el  criterio egoísta y feroz de don Victoriano Huerta? Esas palabras significan que  don Victoriano Huerta está dispuesto a derramar toda la sangre  mexicana, a cubrir de cadáveres todo el Territorio Nacional, a convertir en una  inmensa ruina toda la extensión de nuestra Patria, con tal de que él no  abandone la Presidencia, ni derrame una sola gota de su propia sangre.</p>
+<p align="justify">En su  loco afán por conservar la Presidencia, don Victoriano Huerta, está cometiendo  otra infamia: Está provocando con el pueblo de Estados Unidos de América un  conflicto internacional, en el que, si llegara a resolverse por las armas,  irían estoicamente a dar y a encontrar la muerte todos los mexicanos  sobrevivientes a las amenazas de don Victoriano Huerta, todos, menos don  Victoriano Huerta, ni don Aurelio Blanquet, porque esos desgraciados están  manchados con el estigma de la traición y el pueblo y el ejército los  repudiarán, llegado el caso.</p>
+<p align="justify">Esa  es, en resumen, la triste realidad. Para los espíritus débiles parece que  nuestra ruina es inevitable, porque don Victoriano Huerta se ha adueñado tanto  del poder que, para asegurar el triunfo de su candidatura a la Presidencia de  la República, en la parodia de elecciones anunciadas para el 26 de octubre  próximo, no ha vacilado en violar la soberanía de la mayor parte de los  estados, quitando a los Gobernadores constitucionales e imponiendo Gobernadores  militares que se encargarán de burlar a los pueblos por medio de farsas  ridículas y criminales.</p>
+<p align="justify">Sin  embargo, señores, un supremo esfuerzo puede salvarlo todo. Cumpla con su deber  la Representación Nacional y la Patria está salvada y volverá a florecer más  grande, más unida y más hermosa que nunca.</p>
+<p align="justify">La  Representación Nacional debe deponer de la Presidencia de la República a don  Victoriano Huerta, por ser él contra quien protestan, con mucha razón, todos  nuestros hermanos alzados en armas y de consiguiente, por ser él quien menos  puede llevar a efecto la pacificación, supremo anhelo de todos los mexicanos.</p>
+<p align="justify">Me  diréis, señores, que la tentativa es peligrosa porque don Victoriano Huerta es  un soldado sanguinario y feroz que asesina sin vacilación ni escrúpulo a todo  aquel que le sirve de obstáculo. ¡No importa, señores! La Patria os exige que  cumpláis con vuestro deber, aún con el peligro y aún con la seguridad de perder  la existencia. Si en vuestra ansiedad de volver a ver reinar la paz en la  República, os habéis equivocado, habéis creído las palabras falaces de un  hombre que os ofreció pacificar a la Nación en dos meses, y le habéis nombrando  Presidente de la República, hoy que veis claramente que este hombre es un  impostor inepto y malvado, que lleva a la Patria con toda velocidad hacia la  ruina, ¿dejaréis por temor a la muerte que continúe en el poder?</p>
+<p align="justify">Penetrad  en vosotros mismos, señores, y resolved esta pregunta: ¿qué se diría de la  tripulación de un gran navío que en la más violenta tempestad y en un mar  proceloso, nombrara piloto a un carnicero que, sin ningún conocimiento náutico  navegara por primera vez y no tuviera más recomendación que la de haber  traicionado y asesinado al Capitán del barco?</p>
+<p align="justify">Vuestro  deber es imprescindible, señores, y la Patria espera de vosotros que sabréis  cumplirlo.<br>
+  <br>
+  Cumpliendo  ese primer deber, será fácil a la Representación Nacional cumplir los otros que  de él se derivan, solicitándose en seguida, de todos los jefes revolucionarios  que cese toda hostilidad y nombren sus delegados para que, de común acuerdo,  elijan al Presidente que deba convocar a elecciones presidenciales y cuidar que  éstas se efectúen con toda legalidad.</p>
+<p align="justify">El  mundo está pendiente de vosotros, señores miembros del Congreso Nacional  Mexicano, y la Patria espera que la honraréis ante el mundo, evitándole la  vergüenza de tener por Primer Mandatario a un traidor y asesino. </p>
+<p align="center"><strong>Dr. Belisario Domínguez,</strong><br>
+  <strong>Senador por el estado de  Chiapas.</strong></p>
+<p align="justify">NOTA:  Urge que el pueblo mexicano conozca este discurso para que apoye a la  Representación Nacional; y no pudiendo disponer de ninguna imprenta, recomiendo  a todo el que lo lea saque cinco o más copias, insertando también esta nota y  las distribuya a sus amigos y conocidos de la capital y de los estados. ¡Ojalá  hubiera un impresor honrado y sin miedo! </p>
+<p align="justify">Septiembre  29 de 1913&quot;.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a86556'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='86557'></a><p align="justify"><strong>La  Presidenta Senadora Mónica Fernández Balboa: </strong>Se concede el uso de la  palabra a la Senadora Ifigenia Martínez Hernández, a nombre de la Cámara de  Senadores. </p>
+<p align="justify"><strong>DISCURSO DE LA SENADORA IFIGENIA MARTÍNEZ HERNÁNDEZ</strong></p>
+<p align="justify"><strong>La  Senadora Ifigenia Martínez Hernández: </strong>Señora Presidenta. Buenos  días honorable presídium. Buenos días a todos. </p>
+<p align="justify">Gracias. </p>
+<p align="justify">Muchas  gracias a todos, buenos días. </p>
+<p align="justify">Señor  licenciado Andrés Manuel López Obrador, Presidente Constitucional de los  Estados Unidos Mexicanos. </p>
+<p align="justify">Señor  Ministro Arturo Zaldívar Lelo de Larrea, Presidente de la Honorable Suprema Corte  de Justicia de la Nación. </p>
+<p align="justify">Senadora  Mónica Fernández Balboa, Presidenta de la Honorable Cámara de Senadores. </p>
+<p align="justify">Diputada  Laura Angélica Rojas Hernández, Presidenta de la Honorable Cámara de Diputados. </p>
+<p align="justify">Compañeras  Senadoras y compañeros Senadores. </p>
+<p align="justify">Familiares  de la compañera Rosario Ibarra de Piedra. </p>
+<p align="justify">Señoras y  señores. </p>
+<p align="justify">Amigas y  amigos todos. </p>
+<p align="justify">Hoy en un  acto de justicia plena rendimos homenaje a una mexicana que por la fuerza de  sus convicciones, por su firmeza ciudadana y su valentía, está plenamente identificada con las  virtudes que distinguieron al Senador Belisario Domínguez, quien ofrendó su  vida en defensa de sus ideales. <br>
+  <br>
+  La medalla, que lleva el nombre de aquel chiapaneco  ejemplar, se le otorga a una ciudadana lastimada por la violencia, una madre a  la cual le fue arrebatado un hijo sin siquiera tener la certeza de su destino,  una digna mexicana que, en su andar de los últimos 40 años, ha fundido el pesar  personal con el dolor de la patria. </p>
+<p align="justify">Rosario Ibarra de Piedra, mujer símbolo, ha hecho  de la ausencia de su hijo Jesús una bandera permanente en favor del derecho, la  justicia y la disidencia democrática, una condena cabal de los abusos del poder  y una defensa ilimitada de la vida. </p>
+<p align="justify">Al honrar a la coahuilense, honramos también al  mexicano que da nombre a esta condecoración, el mismo que con gallarda lucidez  levantó la voz para condenar la ilegalidad, y que armado únicamente con la  palabra y la razón combatió la usurpación y abogó por el renacimiento del orden  constitucional. </p>
+<p align="justify">Desde el 25 de abril de 1913, cuando se pedía al  Senado aprobación para el desembarco de tropas estadounidenses en Veracruz, lo  que sería el prólogo de una invasión en toda forma, se levantó la palabra  valiente y digna del Senador Belisario Domínguez Palencia, quien se dirigió a  sus colegas. </p>
+<p align="justify">&ldquo;Señores Senadores, yo votaré en contra de la  autorización que se nos pide, porque ella es un voto de confianza al gobierno  que asesinó al Presidente Madero y al Vicepresidente Pino Suárez, porque es un  gobierno legítimo y porque es un gobierno que ha restaurado la era nefanda de  la defección y el cuartelazo&rdquo;. </p>
+<p align="justify">Quien así hablaba era el hombre que, al regresar de  sus estudios de la Universidad de la Sorbona, en París, pudo haber llevado la  cómoda vida que entonces se prometía a un profesionista, sobre todo a un médico  querido por la población de su natal Comitán, Chiapas, para que atendiera con  eficiencia y sensibilidad. </p>
+<p align="justify">Pero aquel médico también se preocupaba por los  padecimientos de la patria y entendía que en este caso la cura implicaba su  participación abierta en la política. De ahí su militancia en el Partido  Liberal y la fundación de El Vate, periódico en el que dio cauce a su rebeldía  ante los abusos de Porfirio Díaz y del entonces gobernador chiapaneco Rafael  Pimentel. </p>
+<p align="justify">Aquel impreso se convirtió en estandarte de la  conciencia opositora y desde sus páginas se llamaba a la población a denunciar  los abusos del poder y el rechazo al déspota ejercicio de Victoriano Huerta. </p>
+<p align="justify">Maderista de la primera hora, Domínguez Palencia  fundó el Club Democrático y a fines de 1909 fue elegido presidente municipal de  Comitán. </p>
+<p align="justify">En 1912, en la fórmula que encabeza Leopoldo Gout,  fue elegido Senador Suplente y en marzo de 1913 pasó a ocupar el escaño debido  a la muerte de su amigo y compañero. </p>
+<p align="justify">Para entonces ya se había producido el golpe de  Estado del usurpador Victoriano Huerta, quien habría ordenado el asesinado del  Presidente Francisco I. Madero y del Vicepresidente José María Pino Suárez. </p>
+<p align="justify">En aquellos días, en vez de arrellanarse cómodamente  en su escaño, en espera de que pasara la tormenta, optó la protesta que lo  condujo al sacrificio. </p>
+<p align="justify">El 23 de septiembre de 1913 Belisario Domínguez  volvió a llamar asesino al usurpador, y seis días después intentó leer un  discurso que había preparado, en el que acusaba al tirano de intentar la  pacificación del país empleando, cito: &ldquo;Únicamente la muerte y exterminio para  todos los hombres, familias y pueblos que no simpaticen con su gobierno&rdquo;. <br>
+  <br>
+  Se le negó la lectura de aquel texto, que era un  exhorto para que los legisladores actuaran con patriotismo y decisión. </p>
+<p align="justify">La histórica proclama era contundente y lapidaria,  pero, al verse impedido de darle lectura en el recinto camaral, encargó la  reproducción del  texto a una  mujer valerosa que lo imprimió  en el taller  donde trabajaba, ella era María Hernández Zarco, una de las siete mexicanas que  han recibido la Medalla Belisario Domínguez, distribuido el texto  clandestinamente, un ejemplar llegó a manos del dictador Victoriano Huerta,  días después, mucho antes de la media noche, mucho antes del 7 de octubre de  1913, dos hombres se presentaron en la habitación 16 del Hotel Jardín, donde  don  Belisario se encontraba hospedado,  eran los matones del usurpador que lo martirizaron y asesinaron cruelmente. </p>
+<p align="justify">La  eliminación física del Senador mártir marcó el principio de la derrota del  tirano, el discurso del chiapaneco heroico, se convirtió entonces en símbolo de  valor cívico y ejemplo para todo mexicano, especialmente para quienes entienden  el ejercicio de la política como un mandato de servicio, respeto y dignidad en  los asuntos públicos.</p>
+<p align="justify">La  Medalla Belisario Domínguez es, pues, reconocimiento y bandera, nada más que  indicado que otorgársela a quienes han hecho de la honestidad la verdad, y la  valentía, una práctica cotidiana, un recurso irrenunciable para mejorar la  convivencia civil. </p>
+<p align="justify">Rosario  Ibarra de Piedra es un caso paradigmático y por eso fue elegida para recibir  esta presea que antes recibieron grandes personas de la academia, el periodismo  y la vida pública del país. </p>
+<p align="justify">En esta  ocasión es motivo de orgullo que sea una mujer y madre, quien reciba la presea  Belisario Domínguez. </p>
+<p align="justify">Se otorga  esta distinción republicana a doña Rosario Ibarra de Piedra con el voto unánime  de la Comisión de la Medalla y con la aprobación del Pleno del Senado de la  República, aprovecho la ocasión para exhortar a mis compañeras y compañeros  legisladores, para que, en lo sucesivo, al discernir esta alta decisión, se  trabaje de modo de avanzar hacia la equidad de género y la justicia social. </p>
+<p align="justify">La  compañera Rosario Ibarra de Piedra es hija de un ingeniero agrónomo, egresado  de la escuela Hermanos Escobar de Ciudad Juárez, Chihuahua, quien militó en la  Revolución Mexicana, el esposo de doña Rosario Jesús Piedra Rosales, fue  integrante del Partido Comunista Mexicano y Presidente de la Sociedad de  Alumnos Socialistas de la Universidad Autónoma de Nuevo León. </p>
+<p align="justify">A esta  mujer ejemplar, una tragedia irreparable le lanzó a una búsqueda incansable que  comenzó en 1973, cuando su hijo Jesús Piedra Ibarra, fue detenido bajo la  acusación de pertenecer a un grupo armado y al margen de toda disposición  legal, sus captores lo desaparecieron en 1974. </p>
+<p align="justify">A partir  de entonces Rosario Ibarra inició un largo peregrinar por todas las  instituciones gubernamentales, donde esperaba obtener información sobre el  paradero de su hijo, lo que hasta la fecha es una deuda moral pendiente del  Estado.</p>
+<p align="justify">En esa  búsqueda desesperada, Rosario Ibarra de Piedra convocó a otras madres, que,  como ella, sufrían por la desaparición de sus hijos. </p>
+<p align="justify">En 1977,  integraron el Comité Prodefensa de Presos Perseguidos, Desaparecidos y  Exiliados Políticos, más conocido como Comité ¡Eureka!, que organizó protestas,  realizó huelgas de hambre, se apersonó ante altas y duras políticas y presentó  denuncia en México y en foros internacionales. <br>
+  <br>
+  Su  exigencia de respeto a la ley motivó a nuestra compañera Rosario, a pedir una  amnistía para los presos por razones políticas, lo que se consiguió en 1978,  siendo Presidente el licenciado José López Portillo, año en el que también se  localizó algunos desaparecidos, pero nada se pudo saber de la mayoría de ellos. </p>
+<p align="justify">La  demanda, la denodada lucha por la justicia, llevó en 1982 al Partido  Revolucionario de los Trabajadores a convertir a Rosario en candidata a la  Presidenta de la República, y luego Diputada de ese partido. En 1988 fue  nuevamente candidata presidencial y al declararse vencedor a Carlos Salinas,  Rosario Ibarra se unió a los reclamos de fraude electoral, junto con los  entonces candidatos Cuauhtémoc Cárdenas y Manuel Clouthier. </p>
+<p align="justify">En las  siguientes elecciones, Rosario Ibarra se identificó con el ideario político de  Porfirio Muñoz Ledo, Cuauhtémoc Cárdenas y el Partido de la Revolución  Democrática y fue Senadora del Partido del Trabajo del 2006 al 2012, donde insistió  en su firme crítica a los gobiernos neoliberales y su falta de voluntad para  hacer justicia en torno a los crímenes del pasado. </p>
+<p align="justify">Una y  otra vez Rosario se ha unido a distintas luchas sociales en diversos lugares  del país, como lanzamiento zapatista de 1992, la exigencia de tener y  esclarecer el asesinato de mujeres en Ciudad Juárez, y las matanzas de personas  indígenas en Chiapas y Guerrero, durante el sexenio presidencial de Ernesto  Zedillo. Ha sido candidata al Premio Nobel de la Paz en los años de 1986, &lsquo;87, &lsquo;89  y 2006. </p>
+<p align="justify">Se  realizó un documental sobre su experiencia de lucha en el ámbito de los  derechos humanos en México, intitulado Rosario, asimismo, impulsada por el  Comité ¡Eureka!, y el Colectivo H.I.J.O.S. México, el martes 19 de junio del  2012 abrió las puertas del Museo Casa de la Memoria Indómita, para reivindicar  a las personas víctimas de desaparición forzada. </p>
+<p align="justify">Finalmente,  en 2019, se le concedió la Medalla de Mérito Cívico Eduardo Neri. </p>
+<p align="justify">La  desaparición nunca aclarada de un hijo es un duelo perpetuo que no es la salida  al camino con una esperanza inextinguible de ver también una lucha y exigencia  del respeto al derecho social y a la libertad política, dentro de los  problemas, las insuficiencias y rezagos con Rosario Ibarra de Piedra, vivimos y  actuamos con la esperanza de mejorar las condiciones de bienestar social y  niveles de vida de todos los mexicanos. </p>
+<p align="justify">Al igual  que ella, aún veo posible el sueño de un México justo, que, a pesar de su gran  diversidad, propicia los valores y principios de libertad, justicia e igualdad  para todos.</p>
+<p align="justify">En esa  lucha estamos y sé que con nuestras autoridades actuales lo lograremos. </p>
+<p align="justify">¡Viva  México!</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a86557'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='86558'></a><p align="justify"><strong>CONDECORACIÓN DE LA CIUDADANA ROSARIO IBARRA DE PIEDRA</strong></p>
+<p align="justify"><strong>La  Presidenta Senadora Mónica Fernández Balboa: </strong>Les solicito ponerse de  pie. </p>
+<p align="center">(Todos de  pie)</p>
+<p align="justify">Se  entrega de la Medalla de Honor &ldquo;Belisario Domínguez&rdquo; y del diploma  correspondiente a la ciudadana Rosario Piedra Ibarra, quien la recibe a nombre  de la señora Rosario Ibarra de Piedra y que la acredita como integrante de la  Orden Mexicana de la Medalla de Honor &ldquo;Belisario Domínguez&rdquo;. </p>
+<p align="center">(Se hace  entrega de la Medalla Belisario Domínguez)</p>
+<p align="justify">Sírvanse  tomar asiento. </p>
+<p align="justify">Muchas gracias. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a86558'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='86559'></a><p align="justify"><strong>DISCURSO DE LA SEÑORA CLAUDIA PIEDRA IBARRA, A  NOMBRE DE LA CIUDADANA ROSARIO IBARRA DE PIEDRA</strong></p>
+<p align="justify">Se concede el uso de la palabra a la ciudadana  Claudia Piedra Ibarra, a nombre de la señora Rosario Ibarra de Piedra,  galardonada con la Medalla de Honor &ldquo;Belisario Domínguez&rdquo; 2019.</p>
+<p align="justify"><strong>La Ciudadana Claudia Piedra  Ibarra:</strong> Buenos días.</p>
+<p align="justify">Señor Presidente Andrés Manuel López Obrador.</p>
+<p align="justify">Senadores y Senadoras.</p>
+<p align="justify">Compañeras del Comité Eureka que aquí se encuentran  presentes.</p>
+<p align="justify">Compañeros, amigos y camaradas, señoras y señores.</p>
+<p align="justify">Por más de cuatro décadas el Comité Eureka ha  transitado azorado del terror oficial, sintiendo el dolor de saber cautivos y  torturados a nuestros seres queridos, recibiendo como tremendas bofetadas en la  cara la palabra hueca, la declaración engañosa o el discurso falso.</p>
+<p align="justify">El mal gobierno mexicano, transgrediendo todas las  leyes, privó de su libertad, de su dignidad y de justicia a nuestros  familiares, los desaparecidos políticos. </p>
+<p align="justify">La violencia alcanzó a nuestras familias completas,  arrasó con poblados enteros, donde se detuvo a todos los hombres y mujeres  viejos, a los que la casualidad los llevó a portar el mismo apellido de alguno  de los insurrectos que eran buscados y perseguidos.</p>
+<p align="justify">Atestó los caminos de soldados y retenes, donde  también se hicieron cientos de detenciones injustas de gente inocente. Llenó de  presos políticos las cárceles de todo el país. En las ciudades, las hordas de  la Dirección General de Seguridad y la Brigada Blanca allanaban los domicilios,  saqueando y golpeando, sus moradores y deteniendo a cualquiera.</p>
+<p align="justify">Las cámaras de tortura de los campos militares, las  bases navales y aéreas, y todos los centros clandestinos de detención, se  tiñeron de sangre y retumbaban con los alaridos de dolor de las víctimas.</p>
+<p align="justify">Mi adorado esposo, firme soporte de mi vida, fue  torturado, viviendo en carne propia lo que le esperaba a todo aquel que era  detenido. Los poderosos del sistema, los empresarios cómplices, sostén de estos  malos gobiernos, prestaban sus ranchos para que nuestros desaparecidos también  ahí fueran llevados a martirizar.</p>
+<p align="justify">Esta es la única e incontrovertible verdad.</p>
+<p align="justify">Compañeras nuestras, como Conchita García de  Corral, Elodia García de Gamiz, Alicia Hernández de Vargas, Delia Duarte y  Alicia Gutiérrez, antes de unirse a nuestro Comité para seguir buscando a sus  hijos desaparecidos, tuvieron que pasar por el martirio de recoger los cuerpos  destrozados por la tortura o la metralla de otros de sus hijos.</p>
+<p align="justify">Doña Guillermina Moreno, tan pequeña y tan  valiente, se unió a nosotros después del asesinato de su hijo y permaneció a  nuestro lado buscando a los hijos de otras hasta el día en que, como las demás,  la debilidad y el agotamiento físico o la enfermedad ya no las dejaron  continuar.<br>
+  <br>
+  Estos señores del poder quisieron borrar todo  rastro de sublevación o rebeldía, pero no pudieron, siempre queda algo, siempre  hay alguien que prosigue por la brecha para seguir abriendo los caminos.</p>
+<p align="justify">Nosotros, entonces, supimos que no podíamos buscar  a los nuestros sin pelear también sus batallas, teníamos los mismos motivos y  las mismas justas razones para hacerlo.</p>
+<p align="justify">No tomamos las armas que defienden o hieren los  cuerpos, pero usamos, en su lugar, todo lo que pudimos y tuvimos a nuestro  alcance para arremeter contra las conciencias, para sacudirlas, para  indignarlas, para marcarlas con la impronta de la rebelión contra la injusticia.</p>
+<p align="justify">Ellas y todos los queridos y añorados compañeros  que murieron esperando saber de los suyos, y a la justicia que nunca llegó,  están en mis recuerdos, gritando junto a mí por nuestros hijos y familiares,  increpando y señalando a quienes se los llevaron, tomando la Catedral o San  Hipólito, o la Secretaría de Gobernación o los recintos legislativos; en las  huelgas de hambre o haciendo plantones en las puertas de los campos militares y  en los pasos fronterizos.</p>
+<p align="justify">Marchando con los movimientos estudiantiles, campesinos  o indígenas, volanteando afuera de las fábricas, visitando los salones de  clases en las universidades, crucificándonos en el Zócalo o con el rostro  cubierto encadenándonos en el Ángel de la Independencia.</p>
+<p align="justify">Visitando las cárceles en todo el país, boteando  para poder tener recursos para los volantes, los carteles y los costosos  desplegados. Incitando por todos los medios posibles a las organizaciones  políticas, campesinas o sindicales para que incluyeran, entre sus demandas  principales, la presentación con vida de los desaparecidos políticos y  llamándolos también a la unidad para defendernos todos con un frente nacional  contra la represión.</p>
+<p align="justify">Acudiendo a las instancias internacionales  defensoras de los derechos humanos para hacerles ver que aquí en México no solo  éramos las víctimas de un gobierno represor, sino que también éramos las  víctimas de la simulación que provocaba incredulidad y la desconfianza para  nuestras denuncias; o reclamando en más de una docena de veces a la ONU por su  complicidad con los gobiernos en turno, cosiendo o pegando las fotografías en  las mantas; o poniéndoles cordones para colgarlos de nuestros pechos; o  reunidas y planificando qué más podríamos hacer para convencer a la población  de luchar contra la desaparición forzada.</p>
+<p align="justify">Conviviendo y disfrutando y hasta riendo en esos  momentos tan preciados y tan íntimos o uniendo nuestra lucha a las luchas de  Latinoamérica, hermandas por ser víctimas del mismo crimen.</p>
+<p align="justify">Enfrentando y denunciando lo que en un inicio era  solo sospecha y después supimos, con certeza, que la desaparición forzada de  los nuestros no fueron abusos de excesos de la autoridad, sino que era algo más  profundo y terrible que venía del poder con toda su perversidad siniestra y que  lleva el nombre de &ldquo;terrorismo de Estado&rdquo;. </p>
+<p align="justify">Todas estas imágenes aparecen vivas en mi memoria y  siguen siendo el basamento indestructible, los pilares fundamentales que nos  sostienen a quienes quedamos para seguir adelante manteniendo siempre nuestra  convicción inquebrantable e intransigente de no aceptar nada a cambio por  nuestros hijos y familiares. </p>
+<p align="justify">Ellos, los nuestros, se sublevaron como todo  revolucionario, con su espíritu libertario que intenta cambiar las cosas;  vieron la lucha armada como única respuesta a un régimen represivo, brutal y autoritario,  cerrado al diálogo, emponzoñado de soberbia y con las manos bañadas de sangre. <br>
+  <br>
+  Se enfrentaron en una guerra iniciada por el Estado  mexicano, que con toda su fuerza descomunal acometió contra ellos y contra todo  lo que supuso parecer significar una amenaza para la estabilidad de su nefasto  gobierno. </p>
+<p align="justify">La impunidad absoluta de este aparato represor y de  sus creadores ha permitido que, hasta nuestros días, se siga cometiendo la  desaparición forzada y se continúa arrojando lodo y agravio a nuestros  familiares desaparecidos y a su lucha, que solo fue la continuidad de otras  luchas emancipadoras y origen de la nuestra, la del Comité ¡Eureka!, que  estamos aquí para arrancar de raíz el agravio, para limpiar ese lodo y para  seguir luchando por la vida y su libertad, como siempre, con todo el espíritu  de una voluntad indómita. </p>
+<p align="justify">Hemos querido ser un frente portador de vida porque  amamos a nuestros desaparecidos, nunca hemos estado en disyuntivas en su  búsqueda, nunca hemos pensado en su muerte, son seres de carne y hueso y no  personajes de novelas, buenas o malas, ni figuras de otras manifestaciones  literarias que habrán de escribirse, ni nombres en una lista, ni imágenes  fotográficas, ni sustento para que falsas ONG; se hagan de fama o de recursos  económicos y, sobre todo, no son parte de una historia pasada que es falso que  nos haya marcado a todos por igual. </p>
+<p align="justify">El puñal clavado tan profundamente por los malos  gobiernos tal vez sea retirado, pero la herida abierta solo dejará de sangrar  cuando sepamos dónde están los nuestros, y aun así quedara por siempre una  cicatriz indeleble que nos recordará lo sufrido y que no permitirá que nuestra  conciencia se aquiete mientras haya injusticia. </p>
+<p align="justify">Ellos, nuestros amados, a los que buscamos  afanosamente sin detener nunca el paso, no fueron bandoleros ni se lanzaron a  la aventura, ni fueron terroristas, fueron hombres y mujeres que, nos guste o  no, estemos de acuerdo o no con ellos, o aprobemos o no la opción seguida en su  camino, fueron privados de su libertad, sustraídos de la sociedad y de sus  familias con toda la violencia que un gobierno puede ejercer y recluidos en  cárceles clandestinas, tanto en instalaciones gubernamentales como fuera de  ellas, en donde en una total indefensión quedaron en manos de los más sanguinarios  torturadores, despojándolos no solo de su libertad, sino también del amparo de  la justicia o de las leyes que fueron violadas con toda flagrancia por quienes  estaban obligados a cumplirlas. </p>
+<p align="justify">La ferocidad de la desaparición forzada llega y afecta a  cada miembro de la familia. </p>
+<p align="justify">Ayer  mismo, uno de mis nietos me expresó desde el fondo de su ser sus sentimientos  acumulados desde su infancia, y que hoy que ya es adulto puede decirlo sin  ambages, lo que provoca que mi dolor sea más agudo, pues me di cuenta de que su  juventud y vida han estado siempre marcadas por la tristeza y la desolación, me  dijo: </p>
+<p align="justify">&ldquo;Abuela,  qué bien que muchas personas estén felices por ese galardón tan importante que  te van a entregar, aunque de sobra sé que desde que estoy junto a ti, que esto  está muy lejos de ser lo que tú siempre has buscado. </p>
+<p align="justify">Sé,  abuela, que lo único que quieres es saber de tu hijo al igual que todas las  demás familias quieren saber de los suyos, pero quiero que sepas que he vivido  muy enojado y hoy estoy lleno de rabia e indignación porque sé que llevan más  de 40 años luchando y esperando para que las cosas cambiaran y para que un  gobierno justo llegara y buscara junto con ustedes a sus hijos, padres y  hermanos, y que por fin terminara con esa angustia que tanto las agobia y que  he visto cómo poco a poco ha aniquilado su existencia. </p>
+<p align="justify">¿Y qué ha  pasado? Más de un año de ese gobierno que creyeron firmemente que sería el  añorado y con el cual no habría ningún obstáculo que salvar o acuerdo que  negociar, como en antaño, y no ha sido así&rdquo;.<br>
+  <br>
+  La justa  ira de mi nieto es el resultado de saber que las familias de ¡Eureka! hoy  seguimos igual que hace tantos años recibiendo escarnio y burla de los  funcionarios, la libertad de nuestros hijos y familiares, la justicia, la  dignidad del pueblo y la paz siempre han sido nuestras metas claras, diáfanas,  esplendorosas y que no admiten matices o esfuminos. </p>
+<p align="justify">Esta  presea que lleva el nombre de un gran revolucionario, Don Belisario Domínguez,  y con la cual hoy me honran, trae consigo un gran fardo moral ineludible para  mi conciencia y que me alienta aún más a continuar luchando para liberar a esa  justicia que fue amordazada y llevada a una cárcel clandestina hace ya tantos  años. </p>
+<p align="justify">Señor  Presidente Andrés Manuel López Obrador, querido y respetado amigo: </p>
+<p align="justify">No  permitas que la violencia y la perversidad de los gobiernos anteriores siga  acechando y actuando desde las tinieblas de la impunidad y la ignominia, no  quiero que mi lucha quede inconclusa. </p>
+<p align="justify">Es por  eso que dejo en tus manos la custodia de tan preciado reconocimiento y te pido  que me la devuelvas junto con la verdad sobre el paradero de nuestros queridos  y añorados hijos y familiares y con la certeza de que la justicia anhelada por  fin los ha cubierto con su velo protector. </p>
+<p align="justify">Mientras  la vida me lo permita seguiré mi empeño hasta encontrarlo. </p>
+<p align="justify">¡Vivos  los llevaron!</p>
+<p align="justify">¡Vivos  los queremos!</p>
+<p align="justify">Rosario  Ibarra.</p>
+<p align="justify">¡Vivos  los queremos!</p>
+<p align="justify">¡Vivos  los llevaron!</p>
+<p align="justify">¡Vivos  los queremos!</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a86559'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='86560'></a><p align="justify"><strong>MINUTO DE SILENCIO</strong></p>
+<p align="justify"><strong>La  Presidenta Senadora Mónica Fernández Balboa: </strong>La Mesa Directiva, en  nombre del Senado de la República, les solicita que, puestos de pie, guardemos  un minuto de silencio a fin de honrar la memoria de los miembros de la Orden  Mexicana de la Medalla Belisario Domínguez que han fallecido. </p>
+<p align="center">(Todos de  pie guardan un minuto de silencio)</p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify">Sírvanse tomar asiento, por favor. </p>
+<p align="justify">A nombre del Senado de la República, expreso  nuestro agradecimiento por su presencia en esta sesión solemne al licenciado  Andrés Manuel López Obrador, Presidente de los Estados Unidos Mexicanos. </p>
+<p align="justify">Agradecemos también al Ministro Arturo Zaldívar  Lelo de Larrea, Presidente de la Suprema Corte de Justicia de la Nación. <br>
+  Nuestro  agradecimiento a la Diputada Laura Angélica Rojas Hernández, Presidenta de la  Cámara de Diputados.</p>
+<p align="justify">A la  doctora Claudia Sheinbaum Pardo, Jefa de Gobierno de la Ciudad de México.</p>
+<p align="justify">Al  doctor Rutilio Escandón Cadenas, Gobernador del Estado de Chiapas.</p>
+<p align="justify">Así  como a todas y todos nuestros distinguidos invitados por su asistencia a esta  sesión solemne. </p>
+<p align="justify">Al  concluir la sesión, se solicita a los integrantes del presídium, a la  Vicepresidenta y al Vicepresidente de la Mesa Directiva, así como a las  coordinadoras y coordinadores de los grupos parlamentarios, se trasladen al  Muro de Honor de la Medalla Belisario Domínguez, para develar el nombre de  nuestra galardonada. </p>
+<p align="justify">Asimismo,  para que posteriormente nos traslademos al patio central para la Guardia de  Honor ante la estatua del Senador Belisario Domínguez. </p>
+<p align="justify">Se  les solicita a todos y a todas ponerse de pie, a fin de entonar el Himno  Nacional. </p>
+<p align="center">(Todos de pie entonan el Himno Nacional)</p>
+<p align="justify">Se  da por finalizada la sesión solemne. </p>
+<p align="center">(Se levantó la sesión  solemne a las 11:51 horas)</p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a86560'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

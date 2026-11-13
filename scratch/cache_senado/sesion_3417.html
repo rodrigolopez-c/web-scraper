@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 22</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Alejandro Armenta Mier</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Ordinaria Celebrada<br>en la Ciudad de M&eacute;xico, el 12 de Abril de 2023</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/2/SPO/PDF-WEB/SPO_No22_12-ABRIL-2023_VP.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109117'></a><p align="center"><strong>PRESIDE EL SENADOR</strong><br>
+  <strong>ALEJANDRO ARMENTA  MIER</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong><strong> </strong>(18:08 horas)  Solicito a la Secretaría informe a la Asamblea el resultado del cómputo de  asistencia de las ciudadanas Senadoras y Senadores asistentes. </p>
+<p align="justify"><strong>El Secretario  Senador Ricardo Velázquez Meza:</strong> Sí, señor Presidente. Honorable Asamblea, conforme  al registro de asistencia, se han acreditado 86 Senadoras y Senadores. En  consecuencia, hay quórum, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> Se abre la sesión  vespertina del miércoles 12 de abril de 2023, correspondiente al segundo  periodo ordinario de sesiones del segundo año de ejercicio de la LXV  Legislatura. El Orden del Día está disponible en la Gaceta Parlamentaria de hoy  y en el monitor de sus escaños, con lo cual se informa de los asuntos que  corresponden a la agenda. </p>
+<p align="right"><strong>ORDEN DEL DÍA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/65/gaceta_del_senado/documento/133780"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">El acta de la sesión matutina de este día se  encuentra publicada en la Gaceta Parlamentaria. </p>
+<p align="right"><strong>ACTA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/65/gaceta_del_senado/documento/133781"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/65/asistencias/2023_04_12/20"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">En consecuencia, consulte la Secretaría a la  Asamblea, en votación económica, si se aprueba el acta referida. </p>
+<p align="justify"><strong>El Secretario Senador Ricardo Velázquez  Meza:</strong> Con gusto, señor  Presidente. Consulto a la Asamblea, en votación económica, si se aprueba el  acta referida. Quienes estén porque se apruebe, favor de levantar la mano. </p>
+<p align="center">(La Asamblea  asiente)</p>
+<p align="justify"> Quienes estén porque se rechace, favor de levantar  la mano. </p>
+<p align="center">(La Asamblea no  asiente)</p>
+<p align="justify">Quienes se abstengan.</p>
+<p align="justify">Sí se aprueba el acta, señor Presidente. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109117'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109118'></a><p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> Como les  informamos en esta sesión, procederemos a desahogar las intervenciones,  relativas a la agenda política. </p>
+<p align="justify">Les solicito  respetar el tiempo de sus intervenciones y se limiten a un máximo de dos  minutos por orador u oradora. </p>
+<p align="justify">La lista de  oradores y oradoras inscritos en esta parte de la sesión es abundante, por lo  que es importante que le demos oportunidad a todas y todos de participar. </p>
+<p align="justify">En virtud de ello,  le concedemos el uso de la palabra al Senador Luis David Ortiz Salinas, del  grupo parlamentario de Movimiento Ciudadano.</p>
+<p align="justify">Vamos a esperar a  que él llegue, en tanto en el turno continúa el Senador Mario Zamora Gastélum,  del grupo parlamentario del PRI. </p>
+<p align="justify">Sonido en su escaño  para el Senador Mario Zamora, por favor. </p>
+<p align="justify"><strong>AGENDA POLÍTICA</strong></p>
+<p align="justify"><strong>El Senador Mario  Zamora Gastélum:</strong> (Desde su escaño) Muchas gracias, señor Presidente. </p>
+<p align="justify">Queremos comentar,  actualmente en Sinaloa y en Sonora, Baja California se está dando, inician las  cosechas de dos cultivos muy importantes para zona, pero sobre todo para el  país, el trigo y el maíz y hay una lucha de los productores, a raíz de que,  como todos saben prácticamente desapareció la Financiera Rural, el  financiamiento ha sido muy caro, los insumos se han incrementado de manera  importante, donde están peleando que exista una comercialización que les dé  certeza para poder atender a sus familias y, sobre todo, pagar los adeudos que  tienen para haber podido sacar el cultivo adelante. </p>
+<p align="justify">Están pidiendo, en  el caso del trigo, ocho mil pesos por tonelada y, en el caso del maíz, siete  mil pesos por tonelada. </p>
+<p align="justify">Quiero dejar muy  claro que el Presidente de la República Andrés Manuel López Obrador ha dicho  que para él es importante la soberanía alimentaria y que iba a apoyar a los  productores del campo, incluso cuando anduvo en campaña, en Culiacán dijo que  se iba a pagar a siete mil pesos la tonelada de maíz. </p>
+<p align="justify">Hoy queremos  exhortar al titular de la Secretaría de Hacienda y Crédito Público, para que  junto con el secretario de Desarrollo Agropecuario y Rural diseñen y ejecuten  un plan emergente para poder tener un esquema de comercialización que le dé  certeza a los productores y les garanticen los siete mil pesos por tonelada  para el caso del maíz y, los ocho mil pesos por tonelada para el caso del  trigo. </p>
+<p align="justify">Dejar muy claro que  reconozco el esfuerzo que está haciendo el gobernador Rubén Rocha para tratar  de poder conseguir esto. La cosecha de maíz son seis millones de toneladas que  ya hay el compromiso de Sader de comprar un millón de toneladas, pero sigue  habiendo cinco millones de toneladas que no tienen un esquema que les dé una  certeza, y por eso hablamos a nombre de los productores que están desesperados  y que requieren este apoyo. </p>
+<p align="justify">La verdad, que  cuando uno ve los reportes de la  Auditoría Superior de la Federación, del fraude que se dio en Segalmex, de 20  mil millones, pues no son nada, contra los que requieren los productores del  campo, tanto de Sinaloa, como de Baja California, para darle certeza y poder  llevar benefactores a sus familias. </p>
+<p align="justify"> Ojalá que se haga a un lado el discurso y que  aquí seamos solidarios y cumplamos en lo importante que es la gente que pone  los alimentos en la mesa, la mayoría de nosotros. </p>
+<p align="justify">Había una frase que se decía mucho y que,  sobre todo muchos de los candidatos de Morena, en algún momento repetían y  decían: </p>
+<p align="justify">&ldquo;¡Sin maíz no hay país!&rdquo;. </p>
+<p align="justify">Pues eso no ha cambiado. </p>
+<p align="justify">Ojalá y que este gobierno les cumpla a los  productore que, sin duda, es una causa justa y se merece que su voz sea  escuchada y atendida. </p>
+<p align="justify">Gracias, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Muchas gracias, Senador Mario Zamora. </p>
+<p align="justify">En uso de la palabra, la Senadora María Guadalupe Saldaña Cisneros, del  grupo parlamentario. </p>
+<p align="justify">La Senadora Reynoso, para el mismo tema. </p>
+<p align="justify">Adelante, Senadora Reynoso. </p>
+<p align="justify"><strong>La Senadora Alejandra Noemí Reynoso Sánchez:</strong> (Desde su escaño) Gracias, señor Presidente. </p>
+<p align="justify">Quiero sumarme a la voz del Senador Mario  Zamora y hablar por los productores de trigo de Guanajuato. </p>
+<p align="justify">Si recordamos aquí, la semana antepasada se  aprobó un exhorto, pero que los precios que establece el gobierno a través de  Segalmex, pues por mucho, hay una gran diferencia con la realidad que viven los  productores. </p>
+<p align="justify">Y, por eso me parece que es importante que  cuanto antes se pueda atender y que bien lo decía también mi compañero Mario  Zamora, cuando vemos el desfalco de Segalmex, de miles de millones de pesos y  lo que se ocupa para poder apoyar a los productores es mucho menor que los  desvíos que se han dado. </p>
+<p align="justify">Por eso, uno mi voz y levanto la voz también  por los productores de Guanajuato, esperemos pronto tener respuestas del  gobierno federal, aquí se aprobó por unanimidad el exhorto que se hace tanto a  Segalmex, a la Secretaría de Hacienda y que se escuche a todas las regiones, a  los productores del norte, a los productores del Bajío, porque finalmente el  problema está absolutamente para todos y tienen que recuperar cuando menos la  inversión que hicieron, para poder sacar la producción, y el precio no  garantiza si quiera que recuperen lo que han invertido. </p>
+<p align="justify">Ojalá y le respondan a la gente del campo, a  los productores y pronto se tenga una respuesta del gobierno federal. </p>
+<p align="justify">Es cuanto. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Gracias, Senadora Noemí Reynoso. </p>
+<p align="justify">En uso de la palabra la Senadora María Guadalupe Saldaña.</p>
+<p align="justify"> <strong>La Senadora María Guadalupe Saldaña Cisneros:</strong> (Desde su escaño) Gracias, señor Presidente. </p>
+<p align="justify">La Comisión Federal de Electricidad anunció  hace unos días que va a subir el costo de la energía eléctrica a todos los  hogares mexicanos y, también anunció que va a aplicar descuentos en este tema a  20 estados del país por las altas temperaturas que manejan, quedando fuera mi  estado, Baja California Sur.</p>
+<p align="justify">Desde esta alta tribuna hago un llamado al  Presidente de la República, un llamado al director de la Comisión Federal de  Electricidad, para que Baja California Sur sea considerado en estos  estados,  en donde se va a aplicar este  descuento de mayo a octubre por las altas temperaturas que manejamos, haciendo  un poco de historia y para comentarlo aquí ante los sudcalifornianos y los  mexicanos, en Baja California Sur, en el sexenio pasado se prometió la  construcción de un cable subacuático para conectarnos a la red nacional, porque  somos la tarifa más cara del país en energía eléctrica. </p>
+<p align="justify">Llegó este gobierno de Morena y se canceló el  cable subacuático. </p>
+<p align="justify">Nos prometieron una planta de ciclo combinado  para la ciudad de La Paz y tampoco se ha cumplido, seguimos con las plantas que  contaminan, que generan energía a través de combustóleo. </p>
+<p align="justify">Necesitamos que a Baja California Sur se le  considere y se le contemple en esta reclasificación de tarifa por las altas  temperaturas que manejamos. </p>
+<p align="justify">Por eso hoy pongo este tema en esta Alta tribuna, hoy anuncio a los mexicanos que estamos en contra de  esta alza en las tarifas de energía eléctrica en el país, y que se nos  considere a nuestro estado en estos descuentos que van a aplicar de mayo a octubre  en las ciudades de más calor del país, y que nosotros estamos dentro de esas  ciudades. </p>
+<p align="justify">Sería cuanto, señor Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Gracias, Senadora Saldaña Cisneros.</p>
+<p align="justify">En uso de la palabra el Senador Daniel Gutiérrez Castorena, del grupo  parlamentario del Partido Morena.</p>
+<p align="justify"><strong>El Senador Daniel Gutiérrez Castorena: </strong>Señor Presidente, buenas tardes. Compañeras y compañeros Senadores:</p>
+<p align="justify">Quiero aprovechar la máxima tribuna del país para denunciar ante este  Senado de la República y ante el pueblo de Aguascalientes que está a punto de  cometerse una acción administrativa por más lesiva a los intereses y derechos  de los habitantes del municipio capital.</p>
+<p align="justify">Una de las medidas que tomó el neoliberalismo salinista en  Aguascalientes fue la privatización del servicio de agua potable y  alcantarillado en el municipio de Aguascalientes mediante una concesión por 20  años a la empresa Casa, de capital francés, cuando llegó el Partido Acción  Nacional a la presidencia municipal amplió el término de la concesión a 30  años.</p>
+<p align="justify">Aceptó que los recibos del agua llegaran a los hogares cada mes en lugar  de cada dos meses y le otorgó una serie de facultades a la empresa privada  sumamente gravosa para los usuarios, como lo son los cortes de agua, la escasez,  el tandeo y mala calidad del servicio, así como los altos costos de las  tarifas.</p>
+<p align="justify"> Los abusos sistemáticos de Casa la volvieron odiosa ante la población,  por lo que el gobierno panista en turno la obligó a cambiarse el nombre,  consumándose una burla más, ahora se llama Veolia y mantiene su mismo esquema  de cobros desmedidos, de ineficiencias y de abusos sin fin.</p>
+<p align="justify">En el próximo mes de octubre vence el término de la concesión, por lo  que el cabildo está a punto de autorizar un nuevo esquema de servicio de agua a  través de un llamado plan maestro.</p>
+<p align="justify">Desde hace algunos meses se plantea un esquema que engañosamente se  presenta a la opinión pública como de remunicipalización con el fin de que la  ciudanía no haga manifestaciones de rechazo.</p>
+<p align="justify">En resumen, se contempla crear un organismo público descentralizado en  el que participen representantes de diversos organismos empresariales y de  organizaciones sociales con facultades para celebrar contratos con empresas  privadas que llevan a cabo las distintas tareas y operación de los servicios de  extracción, conducción, distribución, mantenimiento de infraestructura, así  como saneamiento de aguas.</p>
+<p align="justify">Yo les pregunto a ustedes, compañeras y compañeros Senadores, es  correcto tratar de engañar a los usuarios de Aguascalientes haciéndoles creen  que el servicio de agua potable y alcantarillado va a ser remunicipalizado,  cuando lo que se pretende es que la responsabilidad del gobierno municipal  descargada en un organismo integrado por representantes de cámaras  empresariales y organizaciones sociales, quienes tendrán la facultad de  celebrar contratos con empresas privadas para la operación de las distintas  vertientes del servicio.</p>
+<p align="justify">Desde esta tribuna, la ciudadanía de Aguascalientes, que represento,  vuelve a exigir que el municipio retome totalmente y sin engaños el servicio de  agua potable y alcantarillado, puesto que éste es una de sus responsabilidades  consagradas en el artículo 115 constitucional.</p>
+<p align="justify">De llevarse a cabo el plan maestro propuesto por el alcalde Leo  Montañez, no solamente continuará operando Veolia mediante nuevos contratos,  sino que habrá muchas Veolias, cuya única finalidad deberá seguir exprimiendo  contratos en contra de los intereses y derechos de la ciudadanía.</p>
+<p align="justify">Exigimos que no haya más engaños, el cabildo de Aguascalientes debe  asumir plenamente su responsabilidad, no queremos más Veolias en  Aguascalientes, el agua de calidad y a precios justos es un derecho del pueblo.</p>
+<p align="justify">Es cuanto, señor Presidente.</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Muchas gracias, Senador Daniel. </p>
+<p align="justify">Procedemos ahora a darle el uso de la palabra a la Senadora Claudia  Edith Anaya Mota, del grupo parlamentario del PRI. </p>
+<p align="justify">Adelante. </p>
+<p align="justify"><strong>La Senadora Claudia  Edith Anaya Mota:</strong></a><strong> </strong>(Desde su escaño) Muchas gracias, señor Presidente. </p>
+<p align="justify">Quiero hacer referencia de un punto de acuerdo que impulsa nuestro  compañero Senador Jorge Carlos Ramírez Marín, que acompañamos Senadoras y  Senadores de mi grupo parlamentario.</p>
+<p align="justify"> Tiene que ver con la petición de esta Asamblea para que venga el titular  de la Comisión Federal de Electricidad, el licenciado Bartlett, para explicar  la reciente compra a través de Fonadin por un fondo de inversión, llamado  México Infrastructure Partners, que es un Fondo de Infraestructura Privado, que  será fondeado por el Fonadin, por el Fondo Nacional de Inversiones, este fondo  privado crecerá sus inversiones de cuatro mil millones de pesos a 10 mil  millones de dólares aproximadamente con este fondeo que le hará Fonadin,  precisamente para que la CFE pueda administrar 13 plantas de Iberdrola. </p>
+<p align="justify">Es muy importante que sepamos todos los pormenores de esta compra que  será administrada por fondos privados con financiamiento público, en donde se  alega una supuesta mejoría en la producción de megawatts por parte de la CFE. </p>
+<p align="justify">Y me refiero a una supuesta mejoría, porque siendo Iberdrola quien le  proveía el 100 por ciento de su capacidad instalada y producción energética a  la CFE, no se explica de dónde viene el aumento de ocho mil 500 megawatts en  cuanto cambie la administración de Iberdrola a este fondo privado con operación  de la CFE. </p>
+<p align="justify">Por eso, y para clasificar estas triangulaciones de dinero, para  clarificar los supuestos incrementos de megawatts con el cambio de  administración, este evidente puenteo que hay entre los instrumentos financieros  para evitar la adquisición de deuda, pero que finalmente bajo otros conceptos  lo es, que esta inversión que está realizando el Estado mexicano sea aclarada  puntualmente por la Comisión Federal de Electricidad. </p>
+<p align="justify">Por eso me parece pertinente que esta Asamblea conozca de nuestra  intención a través del punto de acuerdo referido, y que podamos llegar a la que  puede ser un acuerdo de la Jucopo para que atraigan este punto de acuerdo, y de  esta manera se puedan establecer los resolutivos y agendar la comparecencia del  titular de la CFE. </p>
+<p align="justify">Lo comento, porque si dejamos el trámite que corra de manera directa en  la Comisión de Energía, a donde seguramente será turnado el día de hoy, puede  pasar el periodo sin que tengamos una claridad en este Senado de la República y  sin que exista una claridad para el pueblo de México respecto de estas  triangulaciones económicas para lograr el objetivo de la compra de  administración, pero también de los supuestos beneficios en el aumento de los  megawatts. </p>
+<p align="justify">Es cuanto, señor Presidente. </p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier:</strong> Muchas gracias, Senadora  Claudia Edith. </p>
+<p align="justify">En uso de la palabra la Senadora Gloria Sánchez Hernández, del grupo  parlamentario del Partido Morena. </p>
+<p align="justify">Adelante, Senadora. </p>
+<p align="justify"><strong>La Senadora Gloria Sánchez Hernández: </strong>Con el permiso de nuestro Presidente. </p>
+<p align="justify">Compañeras y compañeros Senadores, el pasado 5 de abril recordamos el  vigésimo sexto aniversario luctuoso del compañero y maestro, ingeniero Heberto  Castillo Martínez, referente político incuestionable de la construcción  democrática en México, quien partiera hacia la inmortalidad del 5 de abril de  1997. </p>
+<p align="justify">Para quienes tuvimos la fortuna de caminar a su lado, su pensamiento se  mantiene como la brújula de humanismo y empatía que guía nuestros días. </p>
+<p align="justify"> Además, me atrevo a decir, que sus postulados forman parte fundamental de la  gran transformación que estamos viviendo. </p>
+<p align="justify">Con fundamento en  lo antes asentado, me permito solicitar a esta Honorable Asamblea que la  iniciativa con proyecto de Decreto para inscribir con letras doradas en el Muro  de Honor del Salón de Sesiones del Senado de la República el nombre del Senador  Heberto Castillo Martínez, registrada en el Orden del Día de este día, con el  número 84, pueda dársele trámite directo a las comisiones respectivas. </p>
+<p align="justify">Considero que, en  medio de las naturales y sanas diferencias de pensamiento en esta soberanía, el  Senador Heberto Castillo Martínez es bien reconocido como un hombre congruente  e íntegro que merece el homenaje que se indica en este Senado de la República. </p>
+<p align="justify">Es, pues, que  solicito respetuosamente a nuestra Mesa Directiva que la iniciativa de  referencia sea turnada a las comisiones respectivas a fin de que el proceso de  dictaminación de este importante asunto se pueda realizar con la mayor celeridad  posible. </p>
+<p align="justify">Muchas gracias,  señor Presidente. </p>
+<p align="justify">Gracias,  compañeros. </p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Muchas gracias, Senadora Sánchez Hernández. </p>
+<p align="justify">Vamos a proceder en  ese sentido, le pedimos a la Secretaría Técnica tome nota. </p>
+<p align="justify">El Senador Félix,  ¿con el mismo tema?</p>
+<p align="justify">Adelante, Senador  Félix Salgado. </p>
+<p align="justify"><strong>El Senador Félix  Salgado Macedonio: </strong>(Desde su escaño) Muchas gracias, señor Presidente. </p>
+<p align="justify">Si me permite,  apoyar y respaldar la propuesta de nuestra compañera Gloria en el sentido de  inscribir con letras de oro el nombre del gran luchador social Heberto  Castillo.</p>
+<p align="justify">Pero más que un  luchador social, también fue un gran científico, fue el creador de la tridilosa  en 1966, estructuras arquitectónicas que se construyeron en nuestro país. </p>
+<p align="justify">Fue un gran demócrata,  un hombre que luchó por la democracia en 1988, por el Partido Comunista, era el  candidato presidencial para cambiar la historia de México. </p>
+<p align="justify">Y haciendo a un  lado su popularidad, se sumó a apoyar al ingeniero Cuauhtémoc Cárdenas. </p>
+<p align="justify">Es un gran mérito  el de Heberto Castillo, Ifigenia Martínez, que está presente, compañera  nuestra, quienes abrieron los surcos de la democracia en México. </p>
+<p align="justify">Entonces, les  pedimos a todas y a todos los Senadores que podamos respaldar esta iniciativa  de que se inscriba con letras de otro el nombre de Heberto Castillo. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Gracias, Senador Salgado Macedonio. </p>
+<p align="justify"> En uso de la  palabra la Senadora Kenia López Rabadán. Adelante, Senadora. </p>
+<p align="justify">Sonido en el escaño  de la Senadora Kenia López Rabadán. </p>
+<p align="justify"><strong>La Senadora Kenia  López Rabadán: </strong>(Desde su escaño) Gracias, doctor. </p>
+<p align="justify">Uno, dos, tres,  cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, trece, catorce,  quince, dieciséis, diecisiete, dieciocho, diecinueve, veinte, veintiuno,  veintidós, veintitrés, veinticuatro, veinticinco, veintiséis, veintisiete,  veintiocho, veintinueve, treinta, treinta y uno, treinta y dos, treinta y tres,  treinta y cuatro, treinta y cinco, treinta y seis, treinta y siete, treinta y  ocho, treinta y nueve, cuarenta.</p>
+<p align="justify">Cuarenta seres  humanos perdieron la vida en Ciudad Juárez.</p>
+<p align="justify">Cuarenta personas  migrantes, por la incapacidad y la corrupción de este gobierno federal, hoy  están sin vida.</p>
+<p align="justify">Es inaceptable,  señoras y señores Senadores, que no haya una sola renuncia, ni del titular de  Gobernación ni del titular de la Cancillería ni siquiera del titular del  Instituto Nacional de Migración. Es una vergüenza. </p>
+<p align="justify">Hoy se cumplen 16  días de una tragedia, 16 días de un crimen de Estado, ¿cómo pueden irse a su  casa, a sus municipios, a sus estados, dándole la espalda a los migrantes y a  los mexicanos?</p>
+<p align="justify">Es evidente, es  claro que hoy ustedes están obsesionados, obsesionadas, con sus corcholatas;  están obsesionados, obsesionadas, con su siguiente campaña. </p>
+<p align="justify">No han tenido…</p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Honorable Asamblea…</p>
+<p align="justify">Permítame, Senadora  Kenia.</p>
+<p align="justify"><strong>La Senadora Kenia  López Rabadán: </strong>(Desde su escaño) Concluyo, señor Presidente. </p>
+<p align="justify">No han tenido  humanidad y aquí se los seguiremos recordando. </p>
+<p align="justify">Tener una reunión  en lo oscurito con el secretario de Gobernación es una vergüenza para el pueblo  de México. </p>
+<p align="justify">Es cuanto, señor  Presidente. </p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>En uso de la palabra el Senador Luis David Ortíz  Salinas, que ya se encuentra.</p>
+<p align="justify">Desde luego, tomo  nota, Senadora Malú, con gusto. </p>
+<p align="justify">Y, desde luego, al  Senador Reyes Flores Hurtado. </p>
+<p align="justify"><strong>El Senador Luis  David Ortíz Salinas: </strong>Gracias, señor Presidente. </p>
+<p align="justify">El día de hoy la  Corte Interamericana de Derechos Humanos emitió su resolución sobre el caso  Daniel García y Reyes Alpízar contra México, dos personas que fueron detenidas  en 2002 acusados de homicidio y pasaron 17 años bajo prisión preventiva sin  recibir una sentencia, por el cual México fue juzgado encontrándose  responsable. </p>
+<p align="justify"> El Alto Tribunal Internacional  ha condenado a México en un fallo histórico en el que además nos ordena  eliminar la polémica figura de la prisión preventiva oficiosa, al señalar que  el artículo 19 de la Constitución es contrario a la Convención Americana de  Derechos Humanos. </p>
+<p align="justify">La sentencia del  Tribunal Internacional es vinculante, por lo que hoy no está en nuestro gusto  decidir si queremos o no eliminar la prisión preventiva oficiosa. </p>
+<p align="justify">Por obligación  internacional debemos atender los resolutivos que se han determinado en esta  sentencia, incluyendo la eliminación de esta figura procesal penal. </p>
+<p align="justify">En Movimiento  Ciudadano nos hemos pronunciado en diferentes momentos sobre la prisión  preventiva, señalando que es la medida limitativa más grave del ordenamiento  procesal. </p>
+<p align="justify">El principio de  proporcionalidad exige una aplicación excepcional y subsidiaria y debe ser el  último recurso para salvaguardar el resultado y desarrollo del proceso penal. </p>
+<p align="justify">Lamentablemente, en  nuestro país los vicios arraigados del viejo sistema continúan haciendo que la  prisión preventiva siga siendo aplicada de forma desmedida por los operadores  jurídicos y que continúa siendo la regla y no la excepción en los procesos  cautelares penales, sobre todo la prisión preventiva se continúe utilizando  para satisfacer demandas sociales de seguridad, también para mitigar la alarma  social y justificar los discursos de prevención de la reiteración delictiva,  haciendo que la aplicación de esta medida cautelar persiga fines espurios  ajenos al carácter procesal, instrumental y cautelar. </p>
+<p align="justify">Por ello, pongo  ante esta tribuna la urgente necesidad de que legislemos en la materia y  atendamos los resolutivos de la sentencia que ha emitido la Corte  Interamericana de Derechos Humanos contra México. </p>
+<p align="justify">Había hecho  pronunciamientos, pero es la primera vez que hay una resolución que nos  condena; había habido una en tema de desaparición forzosa y en algunos otros  temas, pero esta es la primera en este tema y nos obliga. </p>
+<p align="justify">No se trata de que  no haya prisión preventiva, nada más que no sea oficiosa, &ldquo;solo porque te  acuso, te vas a la cárcel, mientras decidimos&rdquo;. Tiene que determinar un juez la  peligrosidad, el peligro de fuga y otras características que ya están ahí en el  derecho penal para determinar la prisión preventiva y no simplemente oficiosa,  como esta pobre gente que pasó 17 años todavía sin sentencia en prisión  preventiva.</p>
+<p align="justify">Ojalá que  reflexionemos, esto es en beneficio de los derechos humanos no de ningún  partido. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> Gracias, Senador  Ortiz Salinas. </p>
+<p align="justify">Quiero informar a  esta Asamblea que tengo anotado al Senador Sergio Pérez Flores, al Senador  Julen Rementería del Puerto, a la Senadora Rocío Abreu, a la Senadora Malú  Micher Camarena, al Senador Reyes Flores Hurtado y, tomamos nota de quien así  desee participar. </p>
+<p align="justify">Le damos el uso de  la palabra al Senador Sergio Pérez Flores, del grupo parlamentario del Partido  Morena.</p>
+<p align="justify"> <strong>El Senador Sergio Pérez Flores:</strong> Con la venia,  señor Presidente. Honorable Asamblea:</p>
+<p align="justify">Quiero recordar, el  pasado lunes 10 de abril se cumplieron 104 años del asesinato del general  Emiliano Zapata Salazar, ocurrido en la Hacienda de Chinameca, en Morelos. Por  ello es oportuno informar a esta soberanía que he presentado una iniciativa  para acuñar una moneda conmemorativa por los 144 años del natalicio del  general, que ocurrirá el próximo 8 de agosto de 2023. </p>
+<p align="justify">Emiliano Zapata,  conocido como &ldquo;El Caudillo del Sur&rdquo;, nació en San Miguel Anenecuilco, Morelos,  el 8 de agosto de 1879, fue uno de los símbolos más importantes de la  resistencia campesina en México y estuvo al mando del Ejército Libertador del  Sur; sus principales ideales giraron alrededor de la justicia social, libertad,  igualdad, democracia social, respeto a las comunidades indígenas, campesinas y  obreras. </p>
+<p align="justify">Una de las causas  de la Revolución Mexicana fue la lacerante política agraria desarrollada por el  régimen de Porfirio Díaz, cuya dictadura da nombre a todo un periodo de la  historia contemporánea de México, que va de 1876 a 1911, la política agraria y  las abismales desigualdades sociales que trajo consigo ese periodo configuran  una de las causas más profundas de la Revolución Mexicana. </p>
+<p align="justify">&ldquo;Tierra y Libertad&rdquo;  fue el lema de la lucha de Emiliano Zapata, exigencias del &ldquo;Caudillo del Sur&rdquo;  que sustentaron esa gran lucha; fue un hombre de profundas convicciones que  abogó por el derecho a la huelga y por la emancipación de la mujer. </p>
+<p align="justify">Zapata luchó por  una verdadera transformación de las condiciones de abandono y desamparo en los  territorios rurales del país, lucha que lo llevó a su muerte, pero su legado  sigue vigente. </p>
+<p align="justify">En virtud de lo  expuesto y debido a la gran relevancia que tuvo Emiliano Zapata Salazar, para  nuestra Nación, particularmente por los ideales que lo llevaron a tomar las  armas en la revolución de 1910, a favor de los campesinos de Morelos, propongo  a esta soberanía acuñar una moneda conmemorativa por los 144 años del natalicio  del generalísimo. </p>
+<p align="justify">Es cuanto, señor  Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> Gracias, Senador  Sergio Pérez. </p>
+<p align="justify">En uso de la  palabra el Senador Julen Rementería del Puerto, Coordinador del grupo  parlamentario del PAN. Adelante, señor Coordinador. </p>
+<p align="justify"><strong>El Senador Julen  Rementería del Puerto:</strong> Muchas gracias, señor Presidente. </p>
+<p align="justify">Vea por qué, señor  Presidente, quería hace un rato que fuera esto en su oportunidad, cuando  realmente hay la atención sobre los temas o la asistencia no solamente de los  legisladores y las legisladoras, sino  por la atención que le prestan a los que están aquí, cosa que agradezco y  reconozco su atención, porque a veces a los que están, los que se quedan al  último son los que más regañados salen, pero bueno, al final los que no están  no se les puede decir nada, lamentable, porque los temas son de la mayor  trascendencia. </p>
+<p align="justify">Y, todo lo que queremos es insistir en el tema que traemos ya desde hace  tiempo y quiero hacer una breve historia, desde marzo de 2022, hicieron los  nombramientos para las personas que debimos de haber sustituido desde entonces. </p>
+<p align="justify">En aquel momento se abrió un proceso y se llevó a cabo pues con todo el  comedimiento y con todo el protocolo que se tiene que hacer, la convocatoria  aprobada por esta Cámara, el registro, las evaluaciones, las calificaciones que  se hicieron en las comisiones, en las comisiones de transparencia y en las  comisiones, por supuesto de Estudios Legislativos. </p>
+<p align="justify"> Y ahí, con la mayoría de Morena y de los partidos aliados a Morena, se  determinó un orden en el cual, de acuerdo a una puntación podrían ser  calificadas  estas personas, se estuvo  insiste, insiste e insiste, todavía hace unas cuantas semanas, ni siquiera  semanas, apenas el 31 de marzo de este año venció el tercer nombramiento, el  Instituto que como ustedes saben, tiene 7 personas en su Pleno para sesionar,  se queda con las 2 del año pasado más la de ahora con cuatro, la ley dice que  necesita cinco para poder sesionar válidamente. </p>
+<p align="justify">Entonces aquí es donde no cuadra simplemente lo que hacen por un lado o  lo que hicieron en un tiempo y lo que vienen haciendo ahora. </p>
+<p align="justify">Y, perdón que se los diga así, a los que están hoy aquí, pero es clara  que es una instrucción de Palacio de Gobierno para no nombrarlos, porque no se  puede entender de otra manera, no hay otra forma de entenderlo, ahí los  dictámenes, me van a decir,  es que no  los han pasado al a Mesa Directiva, bueno, eso hemos sido testigos de  asuntos que se tratan en la mañana y para  mediodía ya ese día ya están en la Mesa Directiva, ya están los dictámenes ahí,  lo que no hay en este caso es voluntad, no faltan dictámenes, falta voluntad,  para que en todo caso podamos tener los nombramientos. </p>
+<p align="justify">Y esto, ¿a qué me lleva? En este escrito que estamos presentando y que lo  haremos en cada sesión lo reiteraremos, vamos a presentar un escrito nuevo,  estamos solicitando con la firma y acompañamiento de todos los Senadores del  PAN tres cosas fundamentalmente, hacer esta narrativa que les he comentado,  para que esté el antecedente y podamos no solamente cumplir con México que es  lo más importante, con los ciudadanos de este país, sino nada más cumplir con  una disposición judicial. </p>
+<p align="justify">Pero, además, estamos solicitando que se vote el día de hoy, en el  momento en que se presenta, no admite demoras, no hay razones para que esto se  tenga que seguir prolongando. </p>
+<p align="justify">Hace rato vimos una manifestación valiente de una Senadora en donde dice:  &ldquo;No importa que no lo manden, aquí no va a pasar ese asunto&rdquo;. Pues aquí  pareciera que sí hay la instrucción y sí hay la obediencia que en otros casos  no la tiene, será porque no les conviene o porque no coinciden o no están de  acuerdo en que haya transparencia en nuestro país.</p>
+<p align="justify">La verdad de las cosas es que queremos tres cosas, que se vote ahora, que  no se tengan que esperar, la segunda cosa es que, así lo estamos solicitando en  los resolutivos o los petitorios, perdón, este escrito,  presidente, que va dirigido, por cierto, uno  a su persona, señor Presidente de la Mesa Directiva, el Senador Alejandro  Armenta Mier y otro al Senador Ricardo Monreal Ávila, señor Presidente de la  Junta de Coordinación Política  del  Senado de la República, para que primero se vote el día que se presenta el  escrito.</p>
+<p align="justify">Y, segundo, que podamos tener la certeza de que cualquier notificación  sobre este tema sea advertido al grupo parlamentario, estrictamente a la  coordinación del grupo parlamentario del PAN para saber cuál es el estatus que  lleva esto en cualquier tema relacionado, así lo dice en lo que estamos  solicitando. </p>
+<p align="justify">Tercero, y último, que para cualquier contestación que se dé al exterior,  autoridad del tipo que sea, se anexe una copia de este escrito que estamos  presentando para que pueda obrar el expediente que estén entregando de parte  del Senado y que sepan todos en cada lugar donde sea necesario, que el PAN está  dispuesto y que quiere que se nombren los comisionados del Inai, no hay razón. </p>
+<p align="justify">Y aquí entro a tratar de entender las explicaciones, ¿qué es lo que  pasa? ¿por qué no quieren nombrar a los comisionados del Inai? </p>
+<p align="justify"> Claramente no quieren la transparencia, claramente no quieren el acceso  a la cosa pública, que por cierto ofrecieron mucho en el 2018, dijeron a voz en  cuello: &ldquo;Acabemos con la corrupción, que la gente se entere que podamos pedir y  ofrecer cuentas&rdquo;.</p>
+<p align="justify">Bueno, pues nada de eso están haciendo, les cuento, nada de eso están  haciendo, son realmente un fracaso, son una verdadera decepción para quienes  quisieron o creyeron en ustedes que iban a ser esto diferente.</p>
+<p align="justify">Hoy lo que estamos pidiendo es que se haga realmente lo que se tiene que  hacer. Ni siquiera estamos pidiendo algo que sea a contentillo del PAN o de  cualquier otro partido, estamos pidiendo algo que está en la Constitución y  estamos pidiendo algo que un juez ya en dos ocasiones lo está exigiendo, a qué  esperan, a que haya sanciones, o simplemente las sanciones, pues se les  resbalan o de qué estamos hechos.</p>
+<p align="justify">Lo único que queremos es que se cumpla con la ley. Aquí todos, todos, en  aquel día, 2018, juramos cumplir con la Constitución y con las leyes, pues  hagan, realmente honren ese compromiso, aquel juramento que hicieron hónrenlo  porque hoy, les cuento, no lo están honrando y se estarán convirtiendo en una  vergüenza para México si siguen así.</p>
+<p align="justify">Es cuanto, señor Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Muchas gracias, Senador Rementería del Puerto.</p>
+<p align="justify">¿Con el mismo tema, Senadora Xóchitl? Sobre el mismo tema, adelante.</p>
+<p align="justify">Entonces le cedemos el uso de la palabra en virtud de que es el mismo  tema.</p>
+<p align="justify"><strong>La Senadora Xóchitl Gálvez Ruiz: </strong>Muchas gracias, señor Presidente.</p>
+<p align="justify">Yo quisiera pedirle, señor Presidente, si nos pudiera explicar, sé que  el secretario de Gobernación es el secretario de Gobernación de todos los  mexicanos y no solo del grupo parlamentario de Morena; pero como ustedes  tuvieron una reunión a puerta cerrada, no sé qué tengan que hablar tan secreto,  pero trascendió que en corto les dijo que los nombramientos del Inai no eran  prioridad para el Presidente.</p>
+<p align="justify">Y hay varios testimonios que lo comentan, la Prensa lo trae y eso fue  cierto.</p>
+<p align="justify">Y cuando al secretario de Gobernación le pregunta que, si abordaron el  tema del Inai, dice que no, dice que no, miente. Claro que se abordó el tema  del Inai y claro que les trajo la instrucción, y ustedes la van a acatar al pie  de la letra porque todo eso que en el pasado pelearon y criticaron, pues no los  van a nombrar.</p>
+<p align="justify">Pero no los van a nombrar porque tienen miedo de que se conozcan los  niveles de corrupción de este gobierno, porque los 15 mil millones de pesos de  Segalmex solo es el inicio de todos los escándalos de corrupción que van a  salir a la luz cuando el Inai resuelva la opacidad, porque hoy cada vez más  este gobierno les niega la información a los ciudadanos.</p>
+<p align="justify">Y vayan remojando los funcionarios públicos sus barbas, porque, miren,  parte del caso de Ciudad Juárez, la Fiscalía dice: &ldquo;que el titular del  Instituto Nacional de Migración contrató sin licitación de por medio a la  empresa de seguridad a dos veces su valor de lo que el resto del gobierno la  contrata&rdquo;.</p>
+<p align="justify">Esa es una de las causas de la investigación, la corrupción que permea  en este gobierno, y de esa corrupción nos tuvimos que enterar porque murieron  40 personas, por eso nos enteramos cuál era la empresa de seguridad.</p>
+<p align="justify"> Y para el colmo, aquí tanto pelaron el outsourcing ilegal, en el que yo  les apoyé y estaba totalmente de acuerdo en que se eliminara, pues ¿qué creen?  Que el gobierno no lo ha eliminado, que la empresa de seguridad CAME no tenía  dado de alta sus empleados en el Seguro Social. </p>
+<p align="justify">No hay manera que una empresa consiga un contrato en el sector privado  si no le demuestra al Seguro Social que tiene dada de alta a los empleados y lo  declara con el Repse ante la Secretaría del Trabajo. </p>
+<p align="justify">¿Cómo le hacen las empresas que le venden al gobierno para tener  contratos millonarios sin tener dados de alta a los empleados del Seguro  Social? </p>
+<p align="justify">Y tan es cierto lo que estoy diciendo, que el propio Seguro Social  reconoció que la empresa intentó dar de alta más de 400 empleados una vez  pasado el incendio. </p>
+<p align="justify">De eso es lo que no quieren que se entere el pueblo de México, que no se  entere de los cochupos, de los contratos que hacen en lo oscurito. </p>
+<p align="justify">Y no son ustedes, Senadores, no son ustedes los que se están robando el  dinero, pero su nombre va a quedar dentro de los de la 4T, que aprobaron la  opacidad. </p>
+<p align="justify">Yo creo que ya llegó la hora de que nos pongamos de acuerdo, lo hemos  dicho claramente, escojan al que quieran dentro de los cinco mejor calificados,  por qué seguirle negando a los mexicanos el derecho a saber. </p>
+<p align="justify">Por eso yo los invito, de la mejor manera, resolvamos este tema, no  acaten instrucciones que no son las instrucciones éticas que un Senador de la  República deba de acatar. </p>
+<p align="justify">Y yo coincido con la Senadora que esa reforma que se está haciendo en el  Congreso de la Unión, aquí no debe de pasar, porque todas las Senadoras de la  República nos debemos poner de acuerdo. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier: </strong>Muchas gracias, Senadora  Xóchitl Gálvez. </p>
+<p align="justify">En uso de la palabra la Senadora Rocío Adriana Abreu Artiñano, del grupo  parlamentario del Partido Morena. </p>
+<p align="justify"><strong>La Senadora Rocío Adriana Abreu Artiñano: </strong>Muy buenas tardes a todos. </p>
+<p align="justify">Hay que explicarle al pueblo de México que las democracias que son así, entendemos  que cuando hay cuestiones autoritarias es difícil entender que las fracciones  pueden platicar, pueden llegar a acuerdos, y Morena toma acuerdos, no son  imposiciones, por eso estamos trabajando en lo del Inai. </p>
+<p align="justify">Y quisiera yo hacer referencia, señor Presidente, y primero agradecer al  presidente, al Senador Armenta, por su apoyo en un tema muy delicado, vuelvo a  repetir, maltrato es maltrato, hemos coincido que la cadena de maltrato, la  escalera de maltrato siempre empieza por los más débiles, en ese caso son los  animales, sobre todo las mascotas, los animales de casa, son las personas  adultas mayores y son los niños. </p>
+<p align="justify">Y desgraciadamente tenemos el tema de violencia cada día más  generalizado, y en eso estamos preparando una iniciativa sobre la situación tan  lamentablemente que se están dando en las escuelas, en donde los muchachos se  pelean, tuvimos el caso de dos niñas que una asesina a otra, y desgraciadamente  vemos que la gente filma, que las escuelas están enteradas, que hay  conocimiento, y que no se hace nada. </p>
+<p align="justify"> Y otro tema en relación a lo que es violencia, pero sobre todo sadismo,  es lamentable el caso que se vivió de maltrato y de crueldad animal en el  estado de Coahuila, donde precisamente tuvimos imágenes por las redes sociales,  denunciadas por ciudadanos, donde miembros de protección civil y bomberos, que  se escuche claro, miembros de protección civil y bomberos levantan a perros  callejeros y los golpeaban con palos, con palas, con mazos, estrangulados,  tomándose fotos con ellos en una muestra de sadismo, cómo es posible que alguien  que se pueda decir que tiene la capacidad y empatía con alguien pueda hacer  estos actos atroces. </p>
+<p align="justify">Y volvemos a lo  mismo, lo vuelvo a repetir, la violencia inicia por los más débiles. </p>
+<p align="justify">Los estudios  señalan, a nivel internacional, que todos los asesinos seriales empezaron  satanizando a animales y después de ahí empezaban con niños, con ancianos, con  gente con capacidades diferentes, con gente enferma. </p>
+<p align="justify">No puede  generalizarse la violencia que estamos viviendo. </p>
+<p align="justify">Y quisiera yo hacer  un reclamo, y para eso agradezco al presidente Armenta, que es increíble que  nosotros como Cámara, y hablo de todos, con fecha 13 de noviembre de 2018,  presentamos una iniciativa al artículo 73 de la Constitución Política de los  Estados Unidos Mexicanos, con punto constitucional en materia de protección y  bienestar animal doméstica, la votamos todas las fracciones, se aprobó en el  Senado el 5 de septiembre de 2019, y la minuta se recibió en Cámara de  Diputados el 24 de septiembre de 2019, que quede claro, tres años que se  entregó. </p>
+<p align="justify">Durante esa  legislatura estuvimos pendiente de ella y se dictaminó en puntos  constitucionales con la Diputada Aleida y hubo el cambio de legislatura. </p>
+<p align="justify">Hoy en día el  presidente, Diputado Juan Ramiro Robles Ruiz, de Morena, lamentablemente  llevamos dos años trabajando con el secretario técnico, con el Diputado Juan  Ramiro Robles Ruiz, y dictaminan esta iniciativa y dejan fuera al Senado, esta  es una violación y es una falta de respeto a la Cámara de Senadores y es una  agresión a los Senadores cuando hemos hecho una minuta, cuando fue aprobada,  cuando se mandó en tiempo, yo personalmente hablé con él. </p>
+<p align="justify">Hemos hablado con  su secretario técnico dos años y por soberbia, porque no puedo decir de otra  manera, el presidente de la Comisión de Puntos Constitucionales de la Cámara de  Diputados deja fuera al Senado para señalar que solo es una iniciativa de  Cámara de Diputados. Eso no lo podemos permitir. </p>
+<p align="justify">Y no solo eso,  también le damos el mensaje al Diputado Juan Ramiro Robles Ruiz que no vamos a  permitir un paso atrás a las reformas en contra de los derechos de las  minorías, no va a pasar esa iniciativa que atenta contra las mujeres, que  atenta contra los indígenas, que atenta con todas las minorías que nos ha  costado lágrimas, trabajo, persecuciones, muertes, secuestro, ni un paso atrás. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Gracias, Senadora Rocío Adriana Abreu. </p>
+<p align="justify">En el uso de la  palabra a la Senadora Martha Lucía Micher Camarena. </p>
+<p align="justify"><strong>La Senadora Martha  Lucía Micher Camarena: </strong>Señor Presidente, muchas gracias. </p>
+<p align="justify">¡Oí nomás! aquí las  corcholatas que quieren ser corcholatas, ahora critican a las corcholatas. </p>
+<p align="justify"> Ay, qué flojera. </p>
+<p align="justify">Bueno, quiero  darles dos buenas noticias. </p>
+<p align="justify">La primera es el  documento que ha emitido la Secretaría de Relaciones Exteriores y la Secretaría  de Gobernación precisamente donde se notifica de la sentencia sobre el caso  García Rodríguez y otro al Estado mexicano. </p>
+<p align="justify">Esa es una  extraordinaria noticia.</p>
+<p align="justify">No escondemos nada,  aceptamos. </p>
+<p align="justify">Y quiero leer la  última parte del documento, dice. </p>
+<p align="justify">&ldquo;El Estado mexicano  analizará con atención los resolutivos de la sentencia emitida por el Tribunal  Interamericano con el objetivo de estar en condiciones de cumplir con sus  disposiciones y asegurar el mayor respeto a las obligaciones contenidas en la  Convención Americana sobre Derechos Humanos, conforme a los compromisos  internacionales del Estado y sus procesos democráticos internos. </p>
+<p align="justify">Y finaliza  diciendo: México reitera su compromiso con el respeto, protección y promoción  de los derechos humanos y los instrumentos y mecanismos que los protegen tanto  en el ámbito regional, como universal. </p>
+<p align="justify">La determinación de  la Corte Interamericana dice así, textual: Servirá para orientar al Estado en  cuanto a sus acciones para proteger los derechos de las personas privadas de la  libertad y que enfrentan juicios frente a autoridades mexicanas. </p>
+<p align="justify">Aquí está, damos la  cara, luego-luego aceptamos, damos acuse de recibido y nos ponemos a cumplir lo  que la Corte mandata. No tuvieron que pasar años y años y años para cumplir con  la ley y para dar la cara. Tenemos un gobierno que da la cara, no un gobierno  que se esconde. </p>
+<p align="justify">¿Dónde están las  personas responsables del ABC? ¿Dónde están las personas responsables de los  43? No se vengan aquí a rasgar las vestiduras, porque no les queda. </p>
+<p align="justify">Y el otro tema, que  es una extraordinaria también noticia, y lo quiero celebrar con todas y todos  ustedes porque fue en época de descanso, es la extraordinaria noticia…</p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Senadora Malú, ¿me permite un segundo?</p>
+<p align="justify"><strong>La Senadora Martha  Lucía Micher Camarena: </strong>No. Digo, sí le permito, pero no voy a aceptar  ninguna pregunta. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Ah, bueno, solo déjeme preguntarle, no sé si esa  sea la pregunta que tenga la…</p>
+<p align="justify"><strong>La Senadora Martha  Lucía Micher Camarena: </strong>Sí, pero no voy a aceptar. </p>
+<p align="justify">Gracias. </p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Okey, permítame.</p>
+<p align="justify">Es para hechos  entonces. Bueno, adelante, concluya.</p>
+<p align="justify"> <strong>La Senadora Martha  Lucía Micher Camarena: </strong>Ah, es que se dio por aludida por lo de corcholata,  está bien. </p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Concluya, Senadora, adelante. </p>
+<p align="justify"><strong>La Senadora Martha  Lucía Micher Camarena: </strong>Muy bien, gracias. </p>
+<p align="justify">A ver, la otra gran  noticia, Iberdrola, ¿no les da, pero deveras gusto lo que sucedió en este país,  que México adquiere 13 plantas? </p>
+<p align="justify">Es lo que tenemos  que celebrar, hombre, no sus 20 años que pusieron de reserva para información.  ¿Ya se les olvidó todos los años que dio el Inai para conocer información en  este país y la consideraron reservada? Y ahora sí están bien preocupados porque  no pueden reunirse y no tener el quórum. No, hombre, no me vengan con esa. </p>
+<p align="justify">Esta sí es buena  noticia, Iberdrola le vende a México, con un total de seis mil millones de  dólares y no se agrega a la deuda pública, 13 empresas. </p>
+<p align="justify">¿Se acuerdan quién  era Iberdrola? Los que se fueron contratados para brindar servicios de energía  eléctrica, pero con la reforma, no, pues ya no pudieron pagar las cuotas que  les corresponden y entonces qué bueno, ahora las compra el Estado mexicano. </p>
+<p align="justify">Y vean lo que va a  pasar, en el noreste la CFE va a poder brindar servicios que teníamos del 39  por ciento al 55 por ciento de generación eléctrica, y en el noreste del 7 por  ciento, esa zona que está muy afectada para la generación de electricidad, al  45 por ciento. </p>
+<p align="justify">Ese es notición,  ese es el Presidente que tenemos en este país, ese es el gobierno. </p>
+<p align="justify">Y saben qué, se  sentaron, se dieron la mano. </p>
+<p align="justify">Iberdrola, que  pagaba lo que pagaba en el Oxxo, por 10 refrigeradores pagaba lo mismo como si  tuviera una casa particular. </p>
+<p align="justify">Esas sí son  noticias. </p>
+<p align="justify">Este gobierno da la  cara, este gobierno hace justicia, este gobierno no se rasga las vestiduras y  este gobierno ya tiene, la Fiscalía General de la República ya emitió una orden  en contra del director del Instituto Nacional de Migración. </p>
+<p align="justify">Ese es el gobierno  que tenemos y no les de ustedes, que es esconden la cara. </p>
+<p align="justify">Gracias. </p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Por hechos, adelante, Senadora Kenia. </p>
+<p align="justify"><strong>La Senadora Kenia  López Rabadán: </strong>(Desde su escaño) Muchas gracias, doctor. </p>
+<p align="justify">La verdad es que  acompaño a la Senadora que me antecede, porque además integra la Comisión de  Derechos Humanos, y me parece que sí es necesario reaccionar como país, a  propósito de dos figuras que son trascendentales: la PPO, Prisión Preventiva  Oficiosa, y el arraigo. Yo, solamente, me parece que estamos obligados a hacer  una acotación nacional.</p>
+<p align="justify">¿Qué dice la  resolución, qué le dice al Estado mexicano, Malú? Le dice: PPO y arraigo violan  derechos humanos. </p>
+<p align="justify"> PPO Prisión  Preventiva Oficiosa fue ampliada por este gobierno, argumentando que con eso  bajaría la delincuencia y no ha bajado. Y arraigo, bueno, incluso festejó el  gobierno que ya había avanzado la minuta de Cámara de Diputados y la tenemos  aquí en el Senado, el problema es que está parada en el Pleno del Senado y me  parece que es necesario decirles la verdad a los mexicanos. </p>
+<p align="justify">Hay un mandato  internacional que le dice al gobierno mexicano y al pueblo de México están  violando derechos humanos con dos figuras terribles, y este Senado tiene parada  la minuta ya aprobada en Cámara de Diputados. </p>
+<p align="justify">Es más, incluso el  dictamen de las comisiones ya aprobado aquí, y la pregunta, señor Senador  Monreal es: ¿Cuándo? ¿Cuándo vamos a aprobar el dictamen de arraigo? Porque una  vez que este Senado de la República concluya el proceso de la minuta de Cámara  de Diputados y del dictamen, me parece que entonces sí podremos acompañar el  júbilo de la Senadora Malú, ese gozo que expresa en la tribuna, pero si no pues  todo lo demás, la verdad, honestamente, es que es politiquería. </p>
+<p align="justify">Una minuta  dictaminada ya y parada en la Mesa Directiva le dice a la comunidad  internacional que estas dos figuras van a seguir violando derechos humanos.</p>
+<p align="justify">Es cuanto. </p>
+<p align="justify">Gracias, doctor. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> También mencionó  al Senador Ricardo Monreal, no sé si también quiera hablar por alusiones. </p>
+<p align="justify">¿Quiere hacer uso  de la palabra por alusiones, Senador Monreal? </p>
+<p align="justify">Adelante, Senadora  Malú y, ahorita vemos si el Senador Monreal también desea hablar por alusiones.  Adelante, Senadora. </p>
+<p align="justify"><strong>La Senadora Martha  Lucía Micher Camarena:</strong> (Desde su escaño) Nada más decirle algo. Sí creo  que probablemente tenemos que recuperar este espíritu con el que se aprobó, por  unanimidad, la Prisión Preventiva Oficiosa. Aquí no vengamos a decir porque  cada quien puso su delitito, pero el tema es que cada quien puso su florecita  sobre el muertito. </p>
+<p align="justify">Entonces, yo creo  que sí tenemos que recuperar el espíritu de lo que queríamos hacer con la  Prisión Preventiva Oficiosa, y yo mantengo el espíritu de lo que propusimos en  Morena. </p>
+<p align="justify">El feminicida se  escapa, se larga y no lo volvemos a encontrar, pero hay – y están de acuerdo –  dicen aquello que no, que no le demos Prisión Preventiva Oficiosa, pero lo  podemos salvar porque la víctima puede haber Prisión Preventiva Oficiosa  solicitada previamente. </p>
+<p align="justify">Entonces, a mí me  da gusto que en algunos otros delitos que metió el PRI, que metió el PAN, todo  mundo contribuyó a eso, todos los partidos y se votó, finalmente tenemos que  ver por qué lo hicimos, pero ya está aquí la sentencia y la sentencia, como  dice el Estado mexicano a través de Relaciones Exteriores y de Gobernación, va  a reflexionar cada una de las recomendaciones que vienen en la sentencia de la  Corte Interamericana de Derechos Humanos. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> Muy bien. </p>
+<p align="justify"> Quiero informarle a  esta Soberanía que han pedido el uso de la palabra el Senador Reyes Flores Hurtado,  la Senadora Nancy de la Sierra y el Senador Félix Salgado, hasta este momento. </p>
+<p align="justify">Senador Reyes  Flores Hurtado, en uso de la palabra. </p>
+<p align="justify"><strong>El Senador Reyes Flores Hurtado: </strong>Con su venia, señor Presidente y con la venia de la Asamblea.</p>
+<p align="justify">La verdad es que es un deleite escuchar en este Pleno las voces de  quienes en otros tiempos hicieron de la impunidad una bandera y hoy hablar de  justicia. </p>
+<p align="justify">Las voces de quienes en otros tiempos hicieron de la opacidad una forma  de gobernar y hoy hablan de transparencia. </p>
+<p align="justify">Las voces de quienes en otros tiempos hicieron del abuso de autoridad una  práctica constante y hoy hablan de respeto a derechos humanos. </p>
+<p align="justify">La verdad que nada más por eso ya desquito la oportunidad de estar  viviendo esta historia, porque creí que jamás, jamás habrían de reconocer todos  sus excesos. </p>
+<p align="justify">Hablar, claro, y te voy a hablar de mi tierra, precisamente, ahorita  donde están aliados con el PRI, hoy hablan de impunidad y se les olvida  Allende, hablan de impunidad y se les olvida Allende. </p>
+<p align="justify">Hoy, el Presidente de la República da a conocer una anécdota de mi  tierra, da a conocer que al extesorero de Humberto Moreira le han sido  decomisados casi 5 mil millones de pesos. </p>
+<p align="justify">Hace unos años el PAN se desgarraba las vestiduras con ese tema y hoy no  dice nada, porque en Coahuila están aliados en el proceso electoral, cumplieron  la sentencia de que son lo mismo, van aliados y entonces no sucede nada, 5 mil  millones de pesos solo imputados al tesorero de Humberto Moreira, 5 mil  millones de pesos.</p>
+<p align="justify">¿Cuánto se llevó la pandilla que tiene hoy hundido a Coahuila en 40 mil  millones de pesos de deuda? Y no sucede nada, y no sucede absolutamente nada,  no presentaron denuncias, no hay una sola acusación, un solo citatorio contra  Humberto Moreira en el estado de Coahuila, en el caso de Juárez, en el caso de  los 40 de la estación migratoria de Juárez hay órdenes de aprehensión en 48  horas salieron las primeras. </p>
+<p align="justify">Está en el banquillo de los acusados el director del Instituto Nacional  de Migración que querían eso, esa es la clara,   el claro ejemplo de que no venimos a solapar a nadie y si alguien tiene  que caer, por responsabilidad objetiva que caída, pero tampoco venimos a acusar  sin razón a  nadie, a nadie, porque esa  tampoco es nuestra función, y claro que les da la oportunidad cada hoyo, cada  vez que se hace un pozo y se llena de agua les dan la oportunidad de venir a  aprovechar la tribuna, pero esa es la realidad, esa es la realidad. </p>
+<p align="justify">A veces decía ahorita Malú, nunca hubo sanciones, de Ayotzinapa ni  hablamos, Chihuahua, hay justicia y ahí está claro y no se está solapando, ni  se está encubriendo a nadie, está en la acusación, y eso es lo importante, y si  sigue, y si a final de cuentas  tendrá una responsabilidad, se le va a fincar, ahí están los hechos, ahí están  los hechos. </p>
+<p align="justify">Esa es la realidad y no hablan de eso. </p>
+<p align="justify"> A mí me gustaría escucharlos hablar de lo que está pasando en Coahuila,  me gustaría escucharlos hablar de la corrupción de su aliado, el PRI en el  estado de Coahuila, del saqueo histórico a los coahuilenses, que hoy nos tienen  hundidos en una deuda histórica de 40 mil millones de pesos, y me gustaría  escucharlos hablar de los asesinatos en Coahuila, en ese estado donde son  aliados del PRI. </p>
+<p align="justify">De eso me gustaría escuchar en esta tribuna. </p>
+<p align="justify">El tema de migración está en trámite y habrá responsables, sin duda habrá  responsables ni tampoco aceptarán a la hora de la verdad que se hizo lo  correcto y en transparencia le voy a platicar otra anécdota de mi tierra, la  deuda de Coahuila, hasta hoy no hemos podido lograr que los institutos de  transparencia que se han repartido, insisto, en términos partidistas para  proteger sus intereses, den a conocer el destino de la deuda de Coahuila, no  conocemos a dónde fueron a parar esos recursos, y hoy en una Corte Internacional  se nos informa que al tesorero, solo al tesorero se le aseguraron 5 mil  millones de pesos. </p>
+<p align="justify">¡Qué chulada! ¿no? y ahora sí a defender a  los aliados. </p>
+<p align="justify">Total, ya son los mismos y están luchando por llevar y conquistar  Coahuila juntos PRI y PAN. </p>
+<p align="justify">Felicidades por eso, porque eso sí representa 70 años de retroceso. No  hombre, qué digo 70, 90 años de retroceso para los fundadores de su partido.</p>
+<p align="justify">Manuel Gómez Morín y Efraín González Luna los estarían sentenciando por  traidores desde aquí, desde esta tribuna.</p>
+<p align="justify">Muchísimas gracias.</p>
+<p align="justify">Y es cuanto, señor Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>En uso de la palabra la Senadora Nancy de la Sierra Arámburo, del Grupo  Plural.</p>
+<p align="justify"><strong>La Senadora Nancy de la Sierra Arámburo: </strong>(Desde su escaño) Muchas gracias, señor Presidente. Compañeras y  compañeros:</p>
+<p align="justify">Yo solamente quería hacer una rectificación de hechos porque el gobierno  de México, efectivamente, habló de la compra de 13 plantas eléctricas de la  empresa española Iberdrola por un monto pactado aproximado de seis mil millones  de dólares que seguramente podría salir más caro, ya que está sujeto a los  refinamientos que se harán en los próximos cinco meses.</p>
+<p align="justify">Bueno, cabe precisar que el Presidente ha llamado a esto una nueva  nacionalización cuando realmente no lo es.</p>
+<p align="justify">Si bien se lleva a cabo la compra de los activos de Iberdrola, el Estado  mexicano no adquirió propiedad sobre alguna de sus plantas, esto significa que  la Comisión Federal de Electricidad será la operadora, más no la dueña, los  activos pasarán a manos de un fideicomiso administrado por una empresa privada  llamada México Infrastructure Partners, MIP, de acuerdo con este comunicado  emitido por la Secretaría de Hacienda.</p>
+<p align="justify">Es decir, claramente se trata de una transacción entre un privado y otro  teniendo al gobierno como intermediario.</p>
+<p align="justify">Algo que me ha parecido muy extraño de esta noticia es que después de  diversas ocasiones donde el Presidente López Obrador ha atacado directamente a  Iberdrola, argumentando supuestos abusos contra el pueblo mexicano, ahora busca  comprar parte de los activos a esa misma empresa española con la que existe una  relación de clara atención y confrontación.</p>
+<p align="justify"> Por otro lado, lo que es alarmante es que el Presidente insista en ir  contra los esfuerzos internacionales en favor del medio ambiente cuando la  tendencia global es la inversión y transición a las energías limpias.</p>
+<p align="justify">Por ejemplo, la empresa Shell comenzó un proceso de desinversión en  tecnologías contaminantes desde hace más de un par de años con el claro  objetivo de reducir sus emisiones de carbono. Parte de estos activos de los que  se deshizo Shell fue la refinería Deer Park que decidió comprar el gobierno  mexicano para ampliar su mercado de refinación, situación similar a la compra  que se ha anunciado actualmente de Iberdrola, pues la empresa española anunció  a finales de 2022 que comenzaría una mayor apuesta por la inversión de energías  limpias y comenzaría a deshacerse de activos contaminantes para reducir las  emisiones de carbono.</p>
+<p align="justify">Considerando lo anterior, vemos que incluso con decisiones como ésta el  Presidente estaría yendo en contra de los compromisos internacionales que ha  firmado el Estado mexicano como el Acuerdo de París y la Agenda 2030 para el  desarrollo sostenible.</p>
+<p align="justify">Finalmente, en materia económica este afán de insistir, que el  Presidente quiere fortalecer a la Comisión Federal y a Pemex buscando hacer del  Estado prácticamente el único actor relevante en el sector energético a costa  de la productividad de inversión en el sector energético, simplemente son malas  decisiones que nos costarán años de desarrollo económico, así como social.</p>
+<p align="justify">Por lo anterior y, sobre todo, considero, y me da mucho gusto que hoy  precisamente el Presidente en la mañanera diga que muy pronto estará el  Secretario de Hacienda, Rogelio Ramírez de la O, a quien exhortaría a venir al  Senado de la República para que informe a esta soberanía sobre los detalles de  este negocio que llevará a cabo el Ejecutivo con la empresa española Iberdrola  con el objetivo de cumplir con el principio de transparencia y evitar la  especulación.</p>
+<p align="justify">Muchas gracias Presidente.</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Gracias, Senadora Nancy de la Sierra.</p>
+<p align="justify">En uso de la palabra.</p>
+<p align="justify">Adelante, Senador, dos minutos.</p>
+<p align="justify">Sonido en el escaño del Senador Germán Martínez, por favor. </p>
+<p align="justify"><strong>El Senador Germán Martínez Cázares: </strong>(Desde su escaño) Gracias, señor Presidente. </p>
+<p align="justify">Solamente para decir el tema de Coahuila de Allende, y yo respeto  muchísimo a Reyes Flores, lo conozco desde hace mucho, desde que militábamos  juntos en el PAN. </p>
+<p align="justify">Pero lo de Allende es importante tomarlo con dolor, el jefe militar más  cercano en Allende, y a él se le debe preguntar, y por eso estamos en contra de  la militarización, y por eso felicitamos el proyecto que desmilitariza la  Guardia Nacional del ministro González Alcántara, y que ojalá obtenga ocho  votos de los ministros. </p>
+<p align="justify">El jefe militar de más alto rango en Allende lo conocen aquí, lo  conocemos todos, y le pueden preguntar qué pasó ahí, y por ahí empezar esa  búsqueda, si es que no hay impunidad. </p>
+<p align="justify">Se llama Luis Cresencio Sandoval. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Muchas gracias. </p>
+<p align="justify"> En uso de la palabra el Senador Damián Zepeda. </p>
+<p align="justify">También me ha solicitado hacer uso de la palabra la Senadora Antares  Vázquez, la tenemos programada. </p>
+<p align="justify"><strong>El Senador Damián  Zepeda Vidales:</strong></a><strong> </strong>Hoy México vive momentos de definiciones. </p>
+<p align="justify">Yo quiero aquí, en esta máxima tribuna, manifestar mi completo y rotundo  rechazo absoluto a la nueva y dañina reforma electoral que está impulsando  Morena, y lamentablemente la mayoría de los partidos políticos de oposición en  la Cámara de Diputados. </p>
+<p align="justify">Las cosas hay que decirlas por su nombre, jamás van a contar con mi voto  sea de quien sea la iniciativa, para nada que atente contra la democracia, y  esta reforma debilita al Tribunal Electoral y debilita la democracia en nuestro  país. </p>
+<p align="justify">Lamento profundamente la postura pública al día de hoy de mi partido  político, no la comparto, no cuentan con mi voto si esa reforma llega aquí a la  Cámara de Senadores, porque esa reforma lastima nuestra democracia. Y espero  que se rectifique. </p>
+<p align="justify">En lo personal me parece una absoluta incongruencia el haberle pedido a  la ciudadanía que salga a las calles y defienda la democracia ante el Plan B  del Presidente López Obrador, que dijimos, atacaba la democracia y que incluía,  en uno de sus cuatro ejes, el debilitamiento del Tribunal, y un día después  presentaron una iniciativa o apoyar o coimpulsar una iniciativa que debilite a  la democracia. </p>
+<p align="justify">No es correcto, no me parece justo, no es lo que merece la ciudadanía. </p>
+<p align="justify">Hoy la ciudadanía merece certeza, saber que existe una alternativa que la  defiende y que no cambia de opinión a como se le ajuste la conveniencia. </p>
+<p align="justify">Yo por eso hoy digo claramente, no es momento de estar haciendo cambios  en materia electoral, mucho menos ninguno que tenga la más mínima posibilidad  de representar un debilitamiento para la democracia. </p>
+<p align="justify">Hemos dicho, a toda voz, que el gobierno está atacando nuestra  democracia, seamos congruentes y defendámosla. </p>
+<p align="justify">Yo por eso hoy digo, de manera clara, espero que en la Cámara de  Diputados se rectifique y no se apruebe. </p>
+<p align="justify">Pero si esa reforma dañina se llega a aprobar y llega aquí al Senado de  la República, desde ahorita anticipo mi voto en contra, rechazo absoluto. Y  manifiesto que voy a buscar sumar esfuerzos con legisladores de cualquier  bancada, de cualquier grupo parlamentario que quiera defender la democracia y  evitar este retroceso. </p>
+<p align="justify">A la democracia hay que defenderla con hechos, no con discursos y con  dichos. </p>
+<p align="justify">Por qué digo que  esta reforma atenta contra la democracia, porque lo hace, porque es una reforma  que es del interés exclusivo de las cúpulas partidistas, de las dirigencias, no  de los ciudadanos, que busca proteger, que se puedan tomar decisiones  unilaterales y que no tengan en dónde defenderse los ciudadanos o los militantes,  las reformas electorales tienen que ser para empoderar al ciudadano, no para  empoderar a los partidos. </p>
+<p align="justify">Si un partido, el  que sea, comete un abuso, viola derechos, debe de existir un recurso para  combatirlo.</p>
+<p align="justify">Yo por eso hoy hago  un llamado a la reflexión y a que no se le dé puñaladas por la espalda a los  mexicanos. Defendamos a la democracia. </p>
+<p align="justify">Y mi llamado a los  legisladores es que nadie decida por ustedes, ustedes tienen el poder del voto  y serán los únicos responsables de la decisión que tomen, o se está a favor de  la democracia o se está en contra, no hay medias tintas, el momento es ahora y  es momento de los ciudadanos no de los partidos. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>En uso de la palabra la Senadora Antares Vázquez. </p>
+<p align="justify"><strong>La Senadora Antares  Guadalupe Vázquez Alatorre: </strong>Gracias, señor Presidente. </p>
+<p align="justify">Al pueblo de México  quiero que pongan atención a la narrativa que van tejiendo en la oposición  respecto a las cuestiones de coyuntura, fíjense nada más. </p>
+<p align="justify">Primero, hicieron  hasta marchas con bola de ignorancia ahí diciendo mentiras respecto del Plan B  de que el INE no se toca. </p>
+<p align="justify">Y ahora que se  eligieron los consejeros y consejeras del INE, ¿qué creen? Pues que el INE sí  se toca porque el procedimiento se hizo conforme a la ley que ellos aprobaron  cuando tenían la mayoría en 2014, y ahora resulta que no les gusta el  procedimiento, entonces, ya iba a impugnar también. Eso, en primer lugar. </p>
+<p align="justify">Por otro lado, está  el tema de la adquisición de trece centrales eléctricas de Iberdrola y,  entonces, como los agarraron descolocados porque no sabían qué estaba pasando,  no entendían qué estaba sucediendo, empezaron a decir primero, primero dijeron  que López Obrador había cambiado de opinión respecto a Iberdrola, que primero  decía que hacían cuestiones corruptas y que luego les compraba. Eso no tiene  nada de antagónico ¿eh? Se está haciendo con el propósito de recuperar la  soberanía eléctrica que necesitamos en el país. </p>
+<p align="justify">Luego empezaron a  decir que eran puras plantas chatarra. </p>
+<p align="justify">Y llama la atención  porque esos mismos estaban diciendo que Iberdrola tenía puras plantas de  avanzada, puras cuestiones ultramodernas y ahora resulta que son plantas  chatarra. </p>
+<p align="justify">Entonces, esto son  cosas que los van poniendo en evidencia de cómo están desesperados, cómo el  Presidente López Obrador sigue marcándoles el paso, que están cada vez  respondiendo menos bien a sus controles de daños, que cada vez están agraviando  más al pueblo de México, que cada vez sus mentiras se ponen más al descubierto,  entonces, es un tiempo efectivamente de zopilotes. </p>
+<p align="justify">Y yo quiero invitar  al pueblo de México a ejecutar el Plan C que ya todas y todos conocen. </p>
+<p align="justify">Gracias. </p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>En uso de la palabra el Senador Félix Salgado  Macedonio, del grupo parlamentario del Partido Morena. </p>
+<p align="justify"><strong>El Senador Félix  Salgado Macedonio: </strong>Muchas gracias, señor Presidente. </p>
+<p align="justify">Pues ya no están  los del PAN, ya se fueron, ya el único que quedaba era Zepeda, se fue y con lo  dicho aquí por Zepeda yo no sé qué sigue haciendo en el PAN, pues ya debería  salirse de ese partido. </p>
+<p align="justify">Zepeda, ya salte  del PAN; hermano, ya no tienes nada qué hacer; mira, allá te están esperando  los independientes. </p>
+<p align="justify"> Ya salte de PAN,  Zepeda, ya no tienes nada qué hacer ahí. </p>
+<p align="justify">Bueno, dicen que  para cuándo se van a elegir a los que faltan en el Inai, a los comisionados,  ¿cuándo?</p>
+<p align="justify">Ahí están las  mamparas solitas, nada más ahí las dejaron. &ldquo;Nombramientos del Inai, ya&rdquo;. Dicen  &ldquo;ya&rdquo;, o sea, ya quieren los señores, porque, si no, se va a paralizar el órgano  de la transparencia. ¿Y cuándo ha estado trabajando el órgano de la  transparencia? ¿Cuándo?</p>
+<p align="justify">Ah, se va a  paralizar; no, no se va a paralizar, ahí están ganando el doble que el  Presidente de la República; ahí van a estar. </p>
+<p align="justify">¿Cuándo se van a  nombrar? ¿Sí saben cuándo? Cuando nosotros digamos, porque ahora nosotros somos  la mayoría. </p>
+<p align="justify">Antes ustedes eran  la mayoría y decidían, pero ahora ya no, ya son una franca minoría. Por lo  tanto, añoran sus tiempos del pasado. </p>
+<p align="justify">Así que se  aguantan, aunque sigan trayendo ahí lonas, no será cuando ustedes digan. Lean  un poquito &ldquo;El arte de la guerra&rdquo;, de Sun Tzu, que no va a ser la pelea donde  ustedes digan y a la hora que digan, va a ser cuando nosotros digamos. </p>
+<p align="justify">Bueno, pasando a  otro punto, que hablaban sobre la tragedia de los migrantes, que todos nosotros  lamentamos ese accidente y que exigimos castigo para los responsables. Tiene  que haber castigo para los responsables. </p>
+<p align="justify">Pero también  recordarle al PAN que su gobierno, en ese entonces de Felipe Calderón, no  asumió la responsabilidad cuando murieron 49 niños calcinados y más de 100  lesionados. ¿Qué pasó ahí? Que los cubrieron, los protegieron. Felipe Calderón  era el responsable, el gobernador, el alcalde y el del IMSS, el señor Juan  Molinar Horcasitas. ¿Qué pasó con él? Él subrogaba los servicios de guarderías  a mucha gente que le solicitaba, todo mundo tenía una guardería por parte del  IMSS, sin reglas de operación, así nada más, porque eran familiares de  políticos. </p>
+<p align="justify">¿De quién era la  Guardería ABC? Sí se acuerdan de quién era, todos sabemos de quién era la  Guardería ABC. ¿Y qué pasó ahí? Nada, no pasó nada, no se ha hecho justicia,  los padres de los niños siguen reclamando justicia. Y ahí ustedes no se han  sumado, su voz no se ha sumado a reclamar justicia para esos niños que murieron  el 5 de junio de 2009 a las 2:45 horas. Cuarenta y nueve menores. </p>
+<p align="justify">Y yo aquí me  hubiera puesto a contar también del uno para llegar al 49, pero no, me parece  una falta de respeto, una burla. No, no, no, no merecen eso. </p>
+<p align="justify">Entonces no hagamos  la política de buitres rapiñeros con cualquier hecho o cualquier tragedia  quieren culpar, de inmediato, a nuestro gran Presidente Andrés Manuel López  Obrador.</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> Concluya, Senador. </p>
+<p align="justify"><strong>El Senador Félix  Salgado Macedonio:</strong> Tienen perdida la razón, han enloquecido. Tienen perdido el debate.  Tienen perdida la memoria y, por lo tanto, la razón histórica está de parte de  Morena y sus aliados y Andrés Manuel López Obrador. </p>
+<p align="justify">Qué bueno, Zepeda,  que hay uno en el PAN que sabe reflexionar y sabe qué es la democracia. </p>
+<p align="justify">Por supuesto que  vamos a rechazar esa cosa tan horrible que viene de la Cámara de Diputados, las  mujeres y los jóvenes son el motor de la &ldquo;Cuarta Transformación&rdquo;. </p>
+<p align="justify">Muchas gracias. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109118'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109119'></a><p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> En otro apartado del Orden del Día,  tenemos la primera lectura de un dictamen de las Comisiones Unidas de  Reglamentos y Prácticas Parlamentarias; y de Estudios Legislativos, Segunda,  que contiene proyecto de Decreto para inscribir en el Muro de Honor del Senado  de la República el nombre de Gustavo A. Madero y de Adolfo Bassó. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO PARA  INSCRIBIR EN EL MURO DE HONOR DEL SENADO DE LA REPÚBLICA LOS NOMBRES DE GUSTAVO  A. MADERO Y DE ADOLFO BASSÓ</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/Dict_Com_RPP_ELS_Letras_Gustavo_A_Madero.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Con fundamento en  lo dispuesto por los artículos 193 y 195 del Reglamento del Senado queda de  primera lectura. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109119'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109120'></a><p align="justify">Informo a la  Asamblea que se recibieron dos dictámenes de la Comisión de Defensa Nacional.</p>
+<p align="justify">Uno, con proyecto  de Decreto por el que se concede autorización al Presidente de los Estados  Unidos Mexicanos para que permita la salida fuera de los límites del país a  personal integrante del Cuerpo de Fuerzas Especiales, a fin de que participen  en el intercambio de adiestramiento de operaciones en selva, a realizar en la  selva ecuatorial, Guayana Francesa, del 21 de abril al 1º de mayo de 2023.</p>
+<p align="justify">Uno, con proyecto  de Decreto por el que se concede autorización al Presidente de los Estados  Unidos Mexicanos para que permita el paso por el territorio nacional a personal  integrante del Ejército Francés que participan en el adiestramiento en Selva  Xtomoc, a realizarse en Quintana Roo, del 18 al 29 de abril de 2023, y en la  ceremonia del aniversario de la Batalla de Camarón, a realizarse en Tejada,  Veracruz, del 29 de abril al 1º de mayo de 2023.</p>
+<p align="justify">Solicito a la  Secretaría consulte a la Asamblea, en votación económica, si se autoriza  incorporar los dos dictámenes al Orden del Día de la sesión de hoy.</p>
+<p align="justify"><strong>La Secretaria  Senadora Verónica Noemí Camino Farjat:</strong> Con gusto, señor  Presidente. Consulto a la Asamblea, en votación económica si autoriza que se  incorporen los dictámenes referidos por la Presidencia a la sesión de hoy.  Quienes estén porque se autorice, favor de levantar la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén  porque no se autorice, favor de levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify"> Quienes se  abstengan, favor de levantar la mano.</p>
+<p align="justify">Sí se autoriza,  señor Presidente.</p>
+<p align="justify"> <strong>El Presidente Senador Alejandro Armenta Mier:</strong> Los dictámenes se  encuentran disponible en el monitor de sus escaños y así se hace de su  conocimiento. </p>
+<p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE SE CONCEDE AUTORIZACIÓN AL TITULAR DEL  EJECUTIVO FEDERAL PARA PERMITIR LA SALIDA DE LOS LÍMITES DEL PAÍS, DE  VEINTITRÉS INTEGRANTES DEL CUERPO DE LAS FUERZAS ESPECIALES A FIN DE QUE  PARTICIPEN EN EL &ldquo;INTERCAMBIO DE ADIESTRAMIENTO EN LA SELVA ECUATORIAL, GUAYANA  FRANCESA, DEL 19 DE ABRIL AL 2 DE MAYO DE 2023</strong></p>
+<p align="justify"><strong>(Dictamen  de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/Dict_Salida_de_Tropas_Guayana_Francesa.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109120'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109121'></a><p align="justify"><strong>PROYECTO DE DECRETO POR EL QUE SE CONCEDE AUTORIZACIÓN AL TITULAR DEL  EJECUTIVO FEDERAL PARA PERMITIR EL PASO POR EL TERRITORIO NACIONAL A VEITISIETE  INTEGRANTES DEL EJÉRCITO FRANCÉS, DEL 18 DE ABRIL AL 1º. DE MAYO DE 2023, A FIN  DE QUE PARTICIPEN EN EL &ldquo;ADIESTRAMIENTO EN SELVA XTOMOC&rdquo;, A REALIZARSE EN  QUINTANA ROO; Y EN LA &ldquo;CEREMONIA DEL ANIVERSARIO DE LA BATALLA DEL CAMARÓN&rdquo;, A  REALIZARSE EN TEJADA, VERACRUZ</strong></p>
+<p align="justify"><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/Dict_Salida_de_Tropas_Ceremonia_Civica.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Consulte la  Secretaría a la Asamblea, en votación económica, si autoriza que se omita la  lectura de los dictámenes. </p>
+<p align="justify"><strong>La Secretaria  Senadora Verónica Noemí Camino Farjat:</strong> Consulto a la Asamblea, en votación  económica, si se autoriza que se omita la lectura de los dictámenes. Quienes estén  porque se autorice, favor de levantar la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén  porque no se autorice, favor de levantar la mano.</p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Sí se omite la  lectura, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> En consecuencia,  los dictámenes de los que se dio cuenta quedan de primera lectura. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109121'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109122'></a><p align="justify">Honorable Asamblea,  hago de su conocimiento que la Mesa Directiva recibió, de la Junta de  Coordinación Política, tres Acuerdos en relación con la integración de comisiones  y uno más, relativo a la inscripción en el Muro de Honor de la leyenda Benito  Juárez &ldquo;Benemérito de las Américas&rdquo;. </p>
+<p align="justify">Consulte la  Secretaría a la Asamblea, en votación económica, si autoriza incorporar los  Acuerdos en el Orden del Día de la sesión de hoy.</p>
+<p align="justify"><strong>La Secretaria  Senadora Verónica Noemí Camino Farjat:</strong> Consulto a la  Asamblea, en votación económica, si autoriza se incorporen los cuatro Acuerdos  en el Orden del Día de la sesión de hoy. Quienes estén porque se autorice,  favor de levantar la mano.</p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify"> Quienes estén  porque no se autorice, favor de levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify"> Sí se autoriza la  incorporación, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier:</strong> Los  Acuerdos se encuentran disponible en el monitor de sus escaños, por lo que  solicito a la Secretaría dé lectura a la parte resolutiva del primer Acuerdo,  relativo a la integración de la Comisión de Organismos Internacionales.</p>
+<p align="justify"> <strong>JUNTA DE COORDINACIÓN POLÍTICA</strong></p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat:</strong> Con gusto, señor  Presidente. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/Acuerdo_JCP_Comisiones_3.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Está a discusión el Acuerdo relativo a la integración de la Comisión de  Organismos Internacionales. </p>
+<p align="justify">¿Quiere hacer uso de la palabra?, Senador Germán Martínez. </p>
+<p align="justify">En virtud de no haber oradoras ni oradores registrados, consulte la  Secretaría a la Asamblea, en votación económica, si es de aprobarse el Acuerdo. </p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat: </strong>Con gusto, señor  Presidente. Consulto a la Asamblea, en votación económica, si es de a probarse  el Acuerdo. Quienes estén porque e apruebe, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque se rechace, favor de  levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Aprobado el Acuerdo, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Aprobado el Acuerdo relativo a la integración de la Comisión de  Organismos Internacionales. Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109122'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109123'></a><p align="justify">Ahora solicito a la  Secretaría dé lectura al segundo Acuerdo que propone modificaciones a la  Comisión de Relaciones Exteriores América del Norte. </p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con gusto, señor Presidente.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/Acuerdo_JCP_Comisiones_1.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El  Presidente Senador Alejandro Armenta Mier: </strong>Está a discusión el Acuerdo relativo a la integración de comisiones. </p>
+<p align="justify">En virtud de no haber oradoras ni oradores registrados, consulte la  Secretaría a la Asamblea, en votación económica, si es de aprobarse el Acuerdo. </p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat: </strong>Con gusto, señor  Presidente. Consulto a la Asamblea, en votación económica, si es de aprobarse.  Quienes estén por la aprobación el acuerdo, sírvanse levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque se rechace, favor de  levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Aprobado el Acuerdo, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Aprobado el Acuerdo de integración de la Comisión de Relaciones  Exteriores América del Norte. Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109123'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109124'></a><p align="justify">Solicito a la Secretaría  dé lectura al tercer Acuerdo que propone modificaciones en la Comisión  Bicamaral del Canal de Televisión y en la Comisión de Estudios Legislativos,  Segunda. <br>
+  <strong> </strong><br>
+  <strong>La Secretaria Senadora Verónica Noemí Camino Farjat:</strong> Con gusto, señor Presidente.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/Acuerdo_JCP_Comisiones_2.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Está a discusión el Acuerdo relativo a la integración de Comisiones. </p>
+<p align="justify">En virtud de no haber oradoras ni oradores registrados, consulte la  Secretaría, en votación económica, si es de aprobarse el Acuerdo. </p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat:</strong> Con gusto, señor  Presidente. Consulto a la Asamblea, en votación económica, si es de aprobarse  el Acuerdo. Quienes estén porque se apruebe, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén porque no se apruebe, favor de  levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Aprobado, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Aprobado el Acuerdo de integración de la Comisión Bicamaral de la  Comisión Bicamaral del Canal de televisión y de la Comisión y de la Comisión de  Estudios Legislativos, Segunda. Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109124'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109125'></a><p align="justify">Ahora desahogaremos el Acuerdo  relativo a la inscripción en el Muro de Honor del Senado, por lo que solicito a  la Secretaría dé lectura. </p>
+<p align="justify"><strong>La Secretaria  Senadora Verónica Noemí Camino Farjat: </strong>Con gusto, señor  Presidente. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/Acuerdo_JCP_Muro_de_Honor_120422023.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es cuanto, señor  Presidente. </p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Está a discusión el Acuerdo al que se dio lectura. </p>
+<p align="justify">En virtud de no haber oradoras ni oradores registrados,  consulte la Secretaría a la Asamblea, en votación económica, si es de aprobarse  el Acuerdo. </p>
+<p align="justify"><strong>La Secretaria  Senadora Verónica Noemí Camino Farjat: </strong>Con gusto, señor  Presidente. Consulto a la Asamblea, en votación económica, si es de aprobarse  el Acuerdo. Quienes estén porque se apruebe, favor de levantar la mano.</p>
+<p align="center">(La Asamblea  asiente)</p>
+<p align="justify">Quienes estén  porque se rechace, favor de levantar la mano.</p>
+<p align="center">(La Asamblea no  asiente)</p>
+<p align="justify">Quienes se  abstengan, favor de levantar la mano.</p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Aprobado el Acuerdo.  Comuníquese.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109125'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109126'></a><p align="center"><strong>TURNO DIRECTO</strong></p>
+<p align="justify"><strong>INICIATIVA CON PROYECTO  DE DECRETO POR EL QUE SE REFORMAN LAS FRACCIONES I Y XIV DEL ARTÍCULO 93 DE LA  LEY DEL IMPUESTO SOBRE LA RENTA </strong></p>
+<p align="justify"><strong>(Presentada por el Senador Manuel Añorve Baños, del grupo parlamentario  del PRI)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/Ini_PRI_Sen_Anorve_Ref_Fracc_I_y_XIV_Art93_Ley_Impuesto_Sobre_la_Renta_.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109126'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109127'></a><p align="justify"><strong>INICIATIVA  CON PROYECTO DE DECRETO POR EL QUE SE REFORMA LA LEY GENERAL DE SALUD, LA LEY  GENERAL DE EDUCACIÓN Y LA LEY GENERAL DE EDUCACIÓN SUPERIOR</strong></p>
+<p align="justify"><strong>(Presentada  por la Senadora Alejandra Noemí Reynoso Sánchez, del grupo parlamentario del  PAN)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/INIC_SEN_ALEJANDRA_REYNOSO.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109127'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109128'></a><p align="justify"><strong>INICIATIVA CON PROYECTO  DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSOS ARTÍCULOS AL CÓDIGO  NACIONAL DE PROCEDIMIENTOS PENALES </strong></p>
+<p align="justify"><strong>(Presentada por el Senador Clemente Castañeda Hoeflich, del grupo  parlamentario de Movimiento Ciudadano)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/Ini_MC_Sen_Castaneda_Ref_Adiciona_Div_Arts_CNPP.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109128'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109129'></a><p align="justify"><strong>INICIATIVA CON PROYECTO  DE DECRETO POR EL QUE SE REFORMAN LOS ARTÍCULOS 6, 41 Y 131 DE LA LEY DEL  INSTITUTO DE SEGURIDAD Y SERVICIOS SOCIALES DE LOS TRABAJADORES DEL ESTADO </strong></p>
+<p align="justify"><strong>(Presentada por la Senadora Olga María del Carmen Sánchez Cordero  Dávila, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/Ini_Morena_Sen_Sanchez_Cordero_Arts_6_41_131_Ley_ISSSTE.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109129'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109130'></a><p align="justify"><strong>INICIATIVA CON PROYECTO  DE DECRETO POR EL QUE SE ADICIONAN LAS FRACCIONES XIV, XV Y XVI AL ARTÍCULO 129  DE LA LEY DE AMPARO, REGLAMENTARIA DE LOS ARTÍCULOS 103 Y 107 DE LA  CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS </strong></p>
+<p align="justify"><strong>(Presentada por la Senadora Olga María del Carmen Sánchez Cordero  Dávila, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/Ini_Morena_Sen_S%C3%A1nchez_Cordero_Adicion_al_Art_129_LA.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109130'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109131'></a><p align="justify"><strong>INICIATIVA CON PROYECTO  DE DECRETO PARA INSCRIBIR CON LETRAS DORADAS EN EL MURO DE HONOR DEL SALÓN DE  SESIONES DEL SENADO DE LA REPÚBLICA EL NOMBRE DEL SENADOR HEBERTO CASTILLO  MARTÍNEZ </strong></p>
+<p align="justify"><strong>(Presentada por la Senadora Gloria Sánchez Hernández, del grupo  parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/Ini_Morena_Sen_Gloria_Inscipcion_Letras_Doradas_Sen_Heberto_Castillo_Martinez.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109131'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109132'></a><p align="justify"><strong>INICIATIVA CON PROYECTO  DE DECRETO POR EL QUE SE EXPIDE EL CÓDIGO NACIONAL DE PROCEDIMIENTOS CIVILES Y FAMILIARES </strong></p>
+<p align="justify"><strong>(Presentada por las  Senadoras y Senadores integrantes de la Comisión de Justicia y de Diputadas y  Diputados integrantes del Congreso de la Unión)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/Ini_Legisladores_Codigo_Procedimientos_Civiles_Familiares.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109132'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109133'></a><p align="justify"><strong>INICIATIVA CON PROYECTO  DE DECRETO POR EL QUE SE MODIFICAN LAS FRACCIONES I Y IX, Y SE ADICIONAN LAS  FRACCIONES XI, XII Y XIII DEL ARTÍCULO 23 DE LA LEY GENERAL DEL EQUILIBRIO  ECOLÓGICO Y LA PROTECCIÓN AL AMBIENTE </strong></p>
+<p align="justify"><strong>(Presentada por la Senadora Blanca Estela Piña Gudiño, del grupo  parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/Ini_Morena_Sen_Pina_Art_23_Ley_Gral_Equilibrio_Ecologico.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109133'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109134'></a><p align="justify"><strong>INICIATIVA CON PROYECTO  DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 89 DE LA LEY GENERAL EN MATERIA DE  DESAPARICIÓN FORZADA DE PERSONAS COMETIDA POR PARTICULARES Y DEL SISTEMA  NACIONAL DE BÚSQUEDA DE PERSONAS </strong></p>
+<p align="justify"><strong>(Presentada por el Senador Ricardo Monreal Ávila, del grupo  parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/Ini_Morena_Sen_Monreal_Ref_Art89_Ley_Gral_Desaparcion_Forzada_de_Personas.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109134'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109135'></a><p align="justify"><strong>INICIATIVA CON PROYECTO  DE DECRETO POR EL QUE SE REFORMAN LA LEY GENERAL DEL SISTEMA NACIONAL DE  SEGURIDAD PUBLICA Y LA LEY FEDERAL DE ARMAS DE FUEGO Y EXPLOSIVOS </strong></p>
+<p align="justify"><strong>(Presentada por la Senadora Gricelda Valencia de la Mora, del grupo  parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/Ini_Morena_Sen_Gricelda_Ref_Ley_Gral_Sistemas_Nacional_de_Seguridad_Publica_y_Federal.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109135'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109136'></a><p align="justify"><strong>INICIATIVA CON PROYECTO  DE DECRETO POR EL QUE SE REFORMAN DIVERSAS DISPOSICIONES DEL CÓDIGO PENAL  FEDERAL Y DE LA LEY DE LA FISCALÍA GENERAL DE LA REPÚBLICA </strong></p>
+<p align="justify"><strong>(Presentada por el Senador  Rafael Espino de la Peña, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/Ini_Morena_Sen_Espino_Ref_Div_Disp_Codigo_Penal_Federal_y_Ley_Fiscal_Gral_de_la_Republica.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109136'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109137'></a><p align="justify"><strong>PROPOSICIONES CON PUNTO  DE ACUERDO</strong></p>
+<p align="justify">De las Senadoras y  Senadores, del grupo parlamentario del PRI, con punto de Acuerdo por el que se  exhorta a los titulares de la Secretaría de Agricultura y Desarrollo Rural; de  la Secretaría de Medio Ambiente y Recursos Naturales, así como al gobierno de  Campeche y a su Secretaría del Medio Ambiente y a la Procuraduría Federal de  Protección al Ambiente, a fin de aplicar diversas sanciones a responsables,  restituir las colmenas dañadas, entregar diferentes informes, implementar  acciones de protección de las colmenas de abejas de la región, y todo lo  conducente sobre la muerte de 300 mil abejas en Hopelchén, Campeche, en una  situación aún inexplicable, sucedida repentinamente a principio de este mes de  abril de 2023. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/PA_GPRI_Sancionar_a_responsables_de_Colmenas_Campeche_Actua_120423.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109137'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109138'></a><p align="justify">Del Senador Mario Zamora Gastélum, del  grupo parlamentario del PRI, con punto de Acuerdo por el que se exhorta al  titular de la Secretaría de Agricultura y Desarrollo Rural, para que, a través  de Seguridad Alimentaria Mexicana, se establezca un precio de garantía no menor  a siete mil pesos por tonelada de maíz y no menor a ocho mil pesos por tonelada  de trigo panificable, así como se amplíe el límite de compra de maíz a productores  sinaloenses; y que la Secretaría de Hacienda y Crédito Público en conjunto con  el titular de la Secretaría de Agricultura y Desarrollo Rural, diseñen y  ejecuten un plan emergente de rescate a los productores comerciales de maíz y  trigo, y soliciten a la Cámara de Diputados, la asignación de recursos  extraordinarios para dicho plan. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/PA_PRI_Sen_Mario_Zamora_Rescate_Productos_Comerciales_de_Maiz_y_Trigo.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109138'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109139'></a><p align="justify">De las Senadoras y Senadores del grupo  parlamentario del PRI, con punto de Acuerdo por el que se exhorta al gobierno  federal, a que, a través de la Secretaría de Hacienda y Crédito Público y de la  Comisión Federal de Electricidad, informen a esta soberanía o en su caso  comparezcan para explicar, sobre los diversos cuestionamientos planteados,  relativos a la adquisición de las plantas de generación de energía de la  empresa Iberdrola. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/PA_GPPRI_Informe_Adquisision_de_Plantas_de_Energia_Empresa_IBERDROLA_Act_120423.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109139'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109140'></a><p align="justify">Del Senador Miguel Ángel Osorio Chongo,  del grupo parlamentario del PRI, con punto de Acuerdo para solicitar la  comparecencia de Rocío Nahle García, Secretaria de Energía, y de Manuel  Bartlett Díaz, Director de la Comisión Federal de Electricidad, para que  expliquen los alcances del reciente anuncio por parte del gobierno federal para  la adquisición de 13 plantas de generación eléctrica de Iberdrola por 6 mil  millones de dólares a un fondo privado (Mexico Infrastructure Partners),  conformado con recursos del Fondo Nacional de Infraestructura de México y la  banca de desarrollo a nombre del gobierno mexicano, en el marco del &ldquo;Acuerdo  por el que se emite la política de confiabilidad, seguridad, continuidad y  calidad del Sistema Eléctrico Nacional&rdquo;. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/PA_PRI_Sen_Osorio_Comparecencia_Sec_Energia_Director_CFE.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109140'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109141'></a><p align="justify">De la Senadora Kenia López Rabadán, del  grupo parlamentario del PAN, con punto de Acuerdo por el que se solicita la  comparecencia de Adán Augusto López Hernández, Secretario de Gobernación;  Marcelo Luis Ebrard Casaubón, Secretario de Relaciones Exteriores; y se exige  la renuncia de Francisco Garduño Yáñez, titular del Instituto Nacional de  Migración, por la muerte de 40 migrantes en Ciudad Juárez. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/PA_PAN_Sen_Kenia_Comparecencia_Sec_Gob_y_Sec_RE.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109141'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109142'></a><p align="justify">De la Senadora Kenia López Rabadán, del  grupo parlamentario del PAN, con punto de Acuerdo por el que se exhorta a los  Poderes Legislativo y Ejecutivo de las 32 entidades federativas a que, en el  ámbito de sus competencias y en ejercicio de sus facultades, realicen las  acciones oportunas, encaminadas a implementar cabalmente la Ley General en  materia de Desaparición Forzada, Desaparición Cometida por Particulares y del  Sistema Nacional de Búsqueda de Personas. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-04-12-2/assets/documentos/PA_PAN_Sen_Kenia_Desaparicion_Forzada.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109142'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109143'></a><p align="justify">Continúe la  Secretaría con los asuntos de la agenda.</p>
+<p align="justify"><strong>La Secretaria  Senadora Verónica Noemí Camino Farjat: </strong>Se han agotado los  asuntos de la agenda, señor Presidente.</p>
+<p align="justify"><strong>CITA</strong></p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Se cita a la siguiente  sesión ordinaria el jueves 13 de abril a las 11:00 horas.</p>
+<p align="justify">Se levanta la  sesión.</p>
+<p align="center">(Se levantó la sesión a las 19.46 horas)<strong> </strong></p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109143'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

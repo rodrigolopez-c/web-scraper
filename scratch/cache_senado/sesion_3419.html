@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 25</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Alejandro Armenta Mier</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 19 de Abril de 2023</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/2/SPO/PDF-WEB/SPO_No25_19-ABRIL-2023_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109182'></a><p align="center"><strong>PRESIDE EL SENADOR</strong><br>
+  <strong>ALEJANDRO ARMENTA  MIER</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier: </strong>(13:13 horas) Honorable  Asamblea, muy buenas tardes. </p>
+<p align="justify">Solicito a la Secretaría informe a la Asamblea el resultado del cómputo  de asistencia de las Senadoras y Senadores presentes.</p>
+<p align="justify"><strong>La Secretaria Senadora  Alejandra Lagunes Soto Ruiz: </strong>Honorable Asamblea,  conforme al registro de asistencia, se han acreditado 84 ciudadanas Senadoras y  ciudadanos Senadores. En consecuencia, hay quórum, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador  Alejandro Armenta Mier: </strong>Se abre la sesión solemne convocada  para la entrega de la &ldquo;Medalla de Honor Belisario Domínguez&rdquo;, correspondiente  al año 2022. Solicito a la Secretaría dé lectura a las comisiones de cortesía  que han sido designadas para recibir y acompañar a nuestros distinguidos  invitados a esta sesión solemne.</p>
+<p align="justify"><strong>La Secretaria Senadora Alejandra Lagunes Soto Ruiz:</strong> Doy lectura a las comisiones protocolarias de esta sesión solemne.</p>
+<p align="justify">Para recibir al licenciado Adán Augusto López Hernández, Secretario de  Gobernación en representación del titular del Ejecutivo Federal, los Senadores  Mónica Fernández Balboa, José Alfredo Botello Montes, Jorge Carlos Ramírez  Marín, Alejandra del Carmen León Gastelum, Manuel Velasco Coello, Alejandro  González Yáñez y Verónica Noemí Camino Farjat.  </p>
+<p align="justify"> Para recibir al Ministro Alberto Pérez Dayán, en representación de la  Presidenta de la Suprema Corte de Justicia de la Nación, los Senadores Olga  Sánchez Cordero, Nadia Navarro Acevedo, Sylvana Beltrones Sánchez, Noé  Castañón, Rogelio Israel Zamora Guzmán, Martha Cecilia Márquez Alvarado,  Marcela Mora y Rafael Espino de la Peña.  </p>
+<p align="justify">Para recibir al Diputado Santiago Creel Miranda, Presidente de la Cámara  de Diputados, los Senadores Lilia Margarita Valdez Martínez, Gina Andrea Cruz  Blackledge, Gabriela Benavides Cobos, Katya Elizabeth Ávila Vázquez y Raúl Paz  Alonzo.</p>
+<p align="justify">Para recibir al doctor Rutilio Escandón Cadenas, Gobernador  Constitucional del Estado de Chiapas, los Senadores Rosa Elena Jiménez Arteaga,  Juan Antonio Martín del Campo, Raúl Bolaños Cacho Cué y Ernesto Pérez Astorga.</p>
+<p align="justify">Para recibir a la escritora y periodista Elena Poniatowska Amor, los  Senadores Susana Harp Iturribarría, Lilly Téllez, Nuvia Mayorga Delgado,  Patricia Mercado, María Graciela Gaitán Díaz, Geovanna Bañuelos, Miguel Ángel  Mancera Espinosa, Nancy de la Sierra Arámburo, Casimiro Méndez Ortiz y Verónica  Martínez García. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Muchas gracias, Secretaria. </p>
+<p align="justify">Se solicita a las comisiones designadas, acudan a las puertas de este  recinto, a fin de cumplir su cometido. </p>
+<p align="center">(Las comisiones cumplen)</p>
+<p align="justify">En tanto, se declara un receso. </p>
+<p align="center">(RECESO)</p>
+<p>&nbsp;</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Se reanuda la sesión solemne.</p>
+<p align="justify"><strong>La Secretaria Senadora Alejandra Lagunes Soto Ruíz: </strong>Les solicito ponerse de pie para recibir a nuestros invitados.</p>
+<p align="center">(Todos de pie)</p>
+<p align="justify">Favor de tomar asiento.</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Con fundamento en lo dispuesto por el artículo 100 de la Ley Orgánica  del Congreso General y el artículo 9 del Reglamento de la Medalla Belisario  Domínguez, damos inicio a la sesión solemne convocada para hacer la entrega de  este galardón y del diploma correspondiente al año 2022.</p>
+<p align="justify">Damos la bienvenida al representante del titular del Poder Ejecutivo  Federal, al licenciado Adán Augusto López Hernández.</p>
+<p align="justify">Al Ministro Alberto Pérez Dayán, en representación de la Suprema Corte  de Justicia de la Nación.</p>
+<p align="justify">Al Presidente de la Cámara de Diputados, Santiago Creel Miranda,  Diputado.</p>
+<p align="justify">Desde luego, le damos la bienvenida a la escritora y periodista  universal, Elena Poniatowska Amor.</p>
+<p align="justify">Honorable Asamblea, asimismo, damos la más cordial bienvenida al  Gobernador Constitucional del Estado de Chiapas, doctor Rutilio Escandón  Cadenas.</p>
+<p align="justify"> Al Presidente del Tribunal Superior de Justicia del Estado de Chiapas,  Magistrado Guillermo Ramos Pérez. </p>
+<p align="justify">Al Presidente  municipal de Comitán de Domínguez, Chiapas, licenciado Mario Antonio Guillén  Domínguez. </p>
+<p align="justify">A la Presidenta del  Congreso del Estado de Chiapas, Diputada Sonia Catalina Álvarez. </p>
+<p align="justify">Agradecemos la  asistencia de distinguidas personalidades que con anterioridad recibieron la  &ldquo;Medalla de Honor Belisario Domínguez&rdquo;. </p>
+<p align="justify">Todas y todos  honran con su presencia esta sesión solemne y al Senado de la República. </p>
+<p align="justify">Solicito a la  Secretaría proceda a pasar lista de honor. </p>
+<p align="justify"><strong>La Secretaria  Senadora Alejandra Lagunes Soto Ruiz: </strong>Se les solicita  ponerse de pie. </p>
+<p align="center">(Todos de pie)</p>
+<p align="justify">¡Senador Belisario  Domínguez!</p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong><em>¡Murió por la  Patria en defensa de la libertad!</em></p>
+<p align="justify"><strong>La Secretaria  Senadora Alejandra Lagunes Soto Ruiz: </strong>Sírvanse tomar asiento.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109182'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109183'></a><p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Solicito a la Senadora Alejandra Lagunes Soto Ruiz,  Secretaria de la Mesa Directiva, dé lectura a la histórica proclama del doctor  y Senador Belisario Domínguez, correspondiente a la XXVII Legislatura del  Senado de la República. </p>
+<p align="justify"><strong>LECTURA DEL HISTÓRICO DISCURSO DEL PROCER BELISARIO  DOMÍNGUEZ A CARGO DE LA</strong><strong> SENADORA ALEJANDRA LAGUNES SOTO RUIZ</strong><strong> </strong></p>
+<p align="justify"><strong>La Secretaria  Senadora Alejandra Lagunes Soto Ruiz: </strong>Presidente del Senado: Por  tratarse de un asunto urgentísimo para la salud de la Patria, me veo obligado a  prescindir de las fórmulas acostumbradas y suplicar a usted se sirva dar  principio a esta sesión tomando conocimiento de este pliego y dándolo a conocer  en seguida a los señores     Senadores.  Insisto, señor Presidente, en que este asunto debe ser conocido por el Senado  en este mismo momento, porque dentro de pocas horas lo conocerá el público y  urge que el Senado lo conozca antes que nadie.  <strong> </strong></p>
+<p align="justify">Señores Senadores: Todos vosotros habéis leído con profundo interés el  informe presentado por don Victoriano Huerta ante el Congreso de la Unión el 16  del presente.  </p>
+<p align="justify">Indudablemente, señores Senadores, lo mismo que a mí, os ha llenado de  indignación el cúmulo de falsedades que encierra ese documento. ¿A quién se  pretende engañar, señores? ¿Al Congreso de la Unión? No, señores, todos sus  miembros son hombres ilustrados que se ocupan de política, que están al  corriente de los sucesos del país y que no pueden ser engañados sobre el  particular. Se pretende engañar a la Nación Mexicana, a esta noble Patria que  confiando en vuestra. Honradez y en vuestro valor, ha puesto en vuestras manos  sus más caros intereses.  </p>
+<p align="justify">¿Qué debe hacer en este caso la Representación Nacional?  </p>
+<p align="justify">Corresponder a la confianza con que la Patria la ha honrado, decirle la  verdad y no dejarla caer en el abismo que se abre a sus pies.</p>
+<p align="justify"> La verdad es ésta: Durante el gobierno de don Victoriano Huerta, no  solamente no se ha hecho nada en bien de la pacificación del país, sino que la  situación actual de la república es infinitamente peor que antes: La Revolución  se ha extendido en casi todos los Estados: Muchas naciones, antes buenas amigas  de México, rehúsanse a reconocer su gobierno, por ilegal; nuestra moneda  encuéntrase despreciada en el extranjero; nuestro crédito en agonía; la prensa  entera de la República amordazada o cobardemente vendida al gobierno y  ocultando sistemáticamente la verdad; nuestros campos abandonados; muchos  pueblos arrasados y por último, el hambre y la miseria en todas sus formas  amenazan extenderse rápidamente en toda la superficie de nuestra infortunada  Patria.  </p>
+<p align="justify">¿A qué se debe tan triste situación?  </p>
+<p align="justify">Primero y antes que todo, a que el pueblo mexicano no pueda resignarse a  tener por Presidente de la  República a  don Victoriano Huerta, al soldado que se amparó del poder por medio de la  traición y cuyo primer acto al subir a la Presidencia fue asesinar cobardemente  al Presidente y Vicepresidente legalmente elegidos por el voto popular,  habiendo sido el primero de éstos quien colmó de ascensos, honores y  distinciones a don Victoriano Huerta, y habiendo sido él igualmente a quien don  Victoriano Huerta juró públicamente lealtad y fidelidad inquebrantable.  </p>
+<p align="justify">Y segundo, se debe esta triste situación a los medios que don Victoriano  Huerta se ha propuesto emplear para conseguir la pacificación. Esos medios ya  sabéis cuáles han sido: Únicamente muerte y exterminio para todos los hombres,  familias y pueblos que no simpaticen con su gobierno.</p>
+<p align="justify">La paz se hará, cueste lo que cueste, ha dicho don Victoriano Huerta.  ¿Habéis profundizado, señores Senadores, lo que significan esas palabras en el  criterio egoísta y feroz de don Victoriano Huerta? Esas palabras significan que  don Victoriano Huerta está dispuesto a derramar toda la sangre mexicana, a  cubrir de cadáveres todo el Territorio Nacional, a convertir en una inmensa  ruina toda la extensión de nuestra patria, con tal que él no abandone la  Presidencia ni derrame una sola de su propia sangre.  </p>
+<p align="justify">En su loco afán por conservar la Presidencia, don Victoriano Huerta está  cometiendo otra infamia: Está provocando con el pueblo de los Estados Unidos de  América un conflicto internacional en el que, si llegara a resolverse por las  armas irían estoicamente a dar y a encontrar la muerte todos los mexicanos  sobrevivientes a las amenazas de don Victoriano Huerta; todos, menos don  Victoriano Huerta ni don Aureliano Blanquet, porque esos desgraciados están  manchados con el estigma de la traición, y el pueblo y el ejército los  repudiarían llegado el caso.  </p>
+<p align="justify">Esa es en resumen la triste realidad. Para los espíritus débiles parece  que nuestra ruina es inevitable, porque don Victoriano Huerta se ha adueñado  tanto del poder, que para asegurar el triunfo de su candidatura a la  Presidencia de la República en la parodia de elecciones anunciadas para el 26  de octubre próximo, no ha vacilado en violar la soberanía de la mayor parte de  los Estados quitando a los Gobernadores constitucionales o imponiendo  Gobernadores militares que se encargarán de burlar a los pueblos por medio de farsas  ridículas y criminales.  </p>
+<p align="justify">Sin embargo, señores, un supremo esfuerzo puede salvarlo todo. Cumpla  con su deber la Representación Nacional y la Patria está salvada y volverá a  florecer más grande y más unida y más hermosa que nunca.  </p>
+<p align="justify">La representación nacional debe deponer de la Presidencia de la  República a don Victoriano Huerta, por ser él contra quien protestan con mucha  razón, todos nuestros hermanos alzados en armas y de consiguiente por ser él  quien menos puede llevar a efecto la pacificación, supremo anhelo de todos los  mexicanos.  </p>
+<p align="justify"> Me diréis, señores, que la tentativa es peligrosa, porque don Victoriano  Huerta es un soldado sanguinario y feroz que asesina sin vacilación ni  escrúpulo a todo aquél que le sirve de obstáculo: ¡No importa, señores! La  Patria os exige que cumpláis con vuestro deber aún con el peligro y aún con la  seguridad de perder la existencia. Si en vuestra ansiedad de volver a ver  reinar la paz en la República os habéis equivocado, habéis creído las palabras  falaces de un hombre que os ofreció pacificar a la Nación en dos meses, y le  habéis nombrado Presidente de la República, hoy que veis claramente que este  hombre es un impostor inepto y malvado, que lleva a la Patria con toda  velocidad hacia la ruina. ¿Dejaréis por temor a la muerte que continúe en el  poder?  </p>
+<p align="justify">Penetrad en vosotros mismos, señores, y resolved esta pregunta: ¿qué se  diría de la tripulación de un gran navío que en la más violenta tempestad y en  un mar proceloso nombrara piloto a un carnicero que sin ningún conocimiento  náutico navegara por primera vez y no tuviera más recomendación que la de haber  traicionado y asesinado al Capitán del barco?  </p>
+<p align="justify">Vuestro deber es imprescindible, señores, y la Patria espera de vosotros  que sabréis cumplirla.</p>
+<p align="justify">Cumpliendo ese primer deber, será fácil a la Representación Nacional  cumplir los otros que de él se derivan, solicitándose en seguida de todos los  jefes revolucionarios que cese toda hostilidad y nombren sus delegados para que  de común acuerdo elijan al Presidente que deba convocar a elecciones  presidenciales y cuidar que éstas se efectúen con toda legalidad.  </p>
+<p align="justify">El mundo está pendiente de vosotros, señores miembros del Congreso  Nacional mexicano, y la Patria espera que la honréis ante el mundo evitándole  la vergüenza de tener por Primer Mandatario a un traidor y asesino.</p>
+<p align="justify">&quot;Nota: Urge que el pueblo mexicano conozca este discurso para que  apoye a la Representación Nacional; y no pudiendo disponer de ninguna imprenta,  recomiendo a todo el que lo lea que saque cinco o más copias, insertando  también esta nota y las distribuya a sus amigos y conocidos de la capital y de  los Estados. ¡Ojalá hubiera un impresor honrado y sin miedo!&quot; </p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Continuamos con lo dispuesto por el Acuerdo  aprobado para la entrega de la Medalla Belisario Domínguez 2022.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109183'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109184'></a><p align="justify">Para referirse a la  trayectoria de la escritora y periodista Elena Poniatowska Amor y destacar sus  incuestionables méritos, se concede el uso de la palabra a la Senadora Sasil de  León Villard, a nombre de la Cámara de Senadores. </p>
+<p align="justify"><strong>DISCURSO DE LA SENADORA SASIL DE LEÓN VILLARD,  PRESIDENTA DE LA COMISIÓN DE LA MEDALLA BELISARIO DOMÍNGUEZ</strong></p>
+<p align="justify"><strong>La Senadora Sasil  de León Villard: </strong>Con el permiso del señor Presidente, el Senador Alejandro Armenta.</p>
+<p align="justify">Saludo con mucho  aprecio al licenciado Adán Augusto López Hernández, Secretario de Gobernación,  quien viene en representación del licenciado Andrés Manuel López Obrador, a  quien le reconocemos su compromiso, amor y lealtad al pueblo de México. </p>
+<p align="justify">Y desde aquí le  enviamos un afectuoso saludo donde quiera que se encuentre en esta patria  trabajando por el bien de México, de las mexicanas y los mexicanos. </p>
+<p align="justify">Ministro Alberto  Pérez Dayán, representante de la Suprema Corte de Justicia de la Nación, sea  usted bienvenido a esta sesión solemne.</p>
+<p align="justify"> Diputado Santiago  Creel Miranda, Presidente de la Cámara de Diputadas y Diputados, bienvenido a  esta sesión. </p>
+<p align="justify">Saludo con especial  aprecio al Gobernador de las chiapanecas y de los chiapanecos, a mi amigo, al  doctor Rutilio Escandón Cadenas, Gobernador Constitucional del Estado de  Chiapas, bienvenido. </p>
+<p align="justify">A las autoridades  de Chiapas, en el magistrado Guillermo Ramos Pérez, Presidente del Tribunal  Superior de Justicia. Bienvenido. </p>
+<p align="justify">Al presidente  municipal de Comitán de Domínguez, tierra de don Belisario Domínguez, Mario  Antonio Guillén Domínguez. Bienvenido. </p>
+<p align="justify">Diputadas y  Diputados federales y locales que nos acompañan, sean todos y todas ustedes  bienvenidas. </p>
+<p align="justify">Saludo con especial  cariño a nuestro amigo Jesús Ramírez, muchas gracias por estar aquí. </p>
+<p align="justify">A nuestro amigo  Mario Delgado, gracias por acompañarnos. </p>
+<p align="justify">A nuestro amigo  Óscar Molina, muchas gracias. </p>
+<p align="justify">Y a todos los  invitados especiales. </p>
+<p align="justify">A nuestra muy  querida y admirada Elena Poniatowska Amor, galardonada con la Medalla Belisario  Domínguez 2022. </p>
+<p align="justify">Compañeras y  compañeros Senadores. Invitados especiales. Amigos y amigas todas: </p>
+<p align="justify">A nuestro país  llegó una princesa por mar, humilde y modesta, pero una verdadera princesa  nacida en París en 1932 en una familia formada por el último descendiente del  Rey de Polonia y una distinguida mujer mexicana. </p>
+<p align="justify">Helene Elizabeth Poniatowska Amor llegó a México a la edad de 10 años,  junto a su madre doña Paula Amor y su hermana Kitzya.</p>
+<p align="justify">Contra todo pronóstico por su origen aristocrático, aquella niña que  llegó sin saber hablar español y que poco a poco fue aprendiendo su nuevo  idioma en la calle o platicando con las personas que trabajan en la casa,  crecería para definir el papel de la mujer en el mundo cultural de México. </p>
+<p align="justify">Aquella niña francesa que, a pesar de no haber nacido en México, se  considera a sí misma como más mexicana que el mole. </p>
+<p align="justify">La figura de doña Elena Poniatowska no requiere introducción alguna,  pues ha logrado contribuir desde el mundo de las letras para darle a la mujer  un papel central en nuestra sociedad. Sin excluir a los hombres, ha logrado  darnos un sitio único, a desbaratar las falsedades del machismo, no solamente  de una manera feminista, sino también humana. </p>
+<p align="justify"><em>&ldquo;Hombres necios que acusáis a las mujeres sin  razón&rdquo;,</em> frase que la joven Elena convirtió en una de sus  máximas cuando se sumó a las filas del periodismo, donde siempre se le veía con  cierto recelo de sus colegas varones persiguiendo la noticia. </p>
+<p align="justify">La joven reportera se abrió paso en aquel mundo de hombres aparentemente  inofensiva, sonriente y tranquila.</p>
+<p align="justify"> &ldquo;Poni&rdquo;, como le empezaron a llamar entonces, pudo conocer a fondo la  realidad mexicana de la que ya era su nueva patria. </p>
+<p align="justify">Ahí, en ese ir y venir, pronto descubrió que lo suyo lo suyo era  escribir. Y así, desde la década de los cincuenta, cuando entró a trabajar por  primera vez en un diario nacional, no ha dejado de ejercer su oficio. Aún hoy,  cada domingo podemos leerla en La Jornada; lo mismo con entrevistas, ensayos o  crónicas sobre el acontecer nacional. </p>
+<p align="justify">Como ella misma nos dice, su educación superior fue poco tradicional, no  asistió a la Universidad de La Salle, sino a la de la calle. </p>
+<p align="justify">Mujer y joven en una década donde reportar, investigar los hechos,  redactar noticias, viajar, diseñar periódicos y revistas era una tarea  exclusiva de los hombres. </p>
+<p align="justify">Por ello, Elena, como la mayoría de las mujeres de su época, a los 21  años tuvo que ingresar a periodismo en la sección de Sociales del periódico  Excélsior y sólo un año después logra editar su primer libro &ldquo;Lilus Kilus&rdquo;. </p>
+<p align="justify">A pesar de encontrarse muchas veces en situaciones adversas por su  condición de mujer, ahí donde había una injusticia estaba ella para levantar la  voz y denunciar, comprometida siempre con las causas justas. </p>
+<p align="justify">Fue la suya una lucha que abrió brecha al feminismo en nuestro país y  quizá por esta razón su oficio como periodista se inclinó a contar la historia  de los olvidados, del otro México, el de las de orilla, el de los que se  mezclan, el de los que nos importan. </p>
+<p align="justify">A partir de entonces, entre el periodismo y la literatura, escribió  cuentos, novelas, poemas, ensayos, crónicas, y se convirtió en una autora de  una innumerable cantidad de libros, obras que en su conjunto forman un  testimonio amplio y completo que nos permiten entender los variados contextos  históricos de las últimas cinco décadas. </p>
+<p align="justify">Así, no existiría  ceremonia ni discurso que nos permita sintetizar su vasta obra como escritora y  periodista, pero podemos decir que por medio de esta lo mismo nos ha trasladado  a la Francia y Polonia del siglo XVIII, que al México revolucionario o al  legendario Hotel Regis, llegando hasta los años de Chiapas durante el  movimiento zapatista de 1994.</p>
+<p align="justify">También podemos  decir que Elena Poniatowska ha logrado dar uno de los más duros golpes al  presidencialismo mexicano con su libro: &ldquo;La Noche de Tlatelolco&rdquo;. </p>
+<p align="justify">Este libro no solo  combatió la versión oficial de la matanza de los estudiantes del &rsquo;68 por parte  del régimen, sino que transformó la indignación en denuncia y mantuvo viva la  voz de la sociedad frente a los abusos del poder. </p>
+<p align="justify">Curiosamente ese  libro la haría merecedora del Premio Javier Villaurrutia que entregaba el  gobierno, el cual rechazó, con una frase que se convertiría en célebre: <em>&ldquo;quién va a premiar a los muertos&rdquo;. </em></p>
+<p align="justify">Con esa simple  acción, Elena nos enseñó a que no podíamos ser indiferentes al dolor ajeno y a  no cerrar los ojos frente a las injusticias. </p>
+<p align="justify">Por otro lado, su  obra resulta necesario también hablar de sus mujeres, de las protagonistas de  sus historias, aquellas mujeres guerreras, mujeres que si bien sufrieron  también se atrevieron a romper los estigmas que se les imponían, mujeres de  carne y hueso nunca de ficción, mujeres en esta y otras realidades, a todas  aquellas Elena les dio voz.</p>
+<p align="justify"> Como la describió  Carlos Fuentes: <em>sus retratos de mujeres  famosas e infames, anónimas y estelares fueron creando una gran galería  biográfica del ser femenino en México</em>. </p>
+<p align="justify">Su libro &ldquo;La  Indómitas&rdquo; es un homenaje a las mujeres olvidadas, un tributo a aquellas  mujeres anónimas que lucharon en la Revolución, donde nos dice la autora que  desde ya entonces se apreciaba el tradicional ninguneo de la mujer en México,  por el temor de los jefes militares a que nosotras llegáramos a ocupar un cargo  importante en el Ejército, ahí pudimos conocer la historia de Josefina Bórquez,  la oaxaqueña que la inspiró a crear a Jesusa Palancares, mujer que combatió en  la Revolución, o la de Nellie Campobello la única mujer literata de esa época.</p>
+<p align="justify">Pero también, en  esa misma obra, Elena descubre la vocación de la escritora Rosario Castellanos,  así como de la incansable lucha de una mujer por la búsqueda de su hijo  desaparecido, doña Rosario Ibarra, o el feminismo combatiente de Martha Lamas.</p>
+<p align="justify">Nos narra en esta  obra, la extraordinaria Elena, si la locomotora es la gran protagonista de la  Revolución, las &ldquo;Adelitas y las Valentinas&rdquo; no se quedan atrás, a las mujeres  que participaban activamente en la Revolución se les decía &ldquo;comideras&rdquo;,  &ldquo;soldaderas&rdquo;, &ldquo;Juanas&rdquo;, &ldquo;busconas&rdquo;, &ldquo;argüenderas&rdquo; y hasta &ldquo;mitoteras&rdquo; por el  simple temor de otorgarnos reconocimiento alguno. </p>
+<p align="justify">Y es que es un  hecho que miles de mujeres desempeñaron un papel importantísimo durante este  movimiento, fungiendo como enfermeras, cocineras o espías y, por supuesto miles  de ellas combatieron en el campo de batalla logrando hazañas similares o  incluso superiores a los de sus colegas. </p>
+<p align="justify">Es importante no  dejar de señalar que durante los grandes cambios políticos que nuestro país ha  vivido desde la Independencia, la Reforma y la Revolución mexicana, las mujeres  hemos sido motor de estas grandes transformaciones; sin embargo, la gran  mayoría de estas heroínas eran desconocidas y permanecían en el anonimato. </p>
+<p align="justify">Esto, nos muestra  la importancia de las mujeres en la literatura, a ser nosotras quienes  protagonicemos y contemos nuestras historias para lograr, con ello, trascender  en nuestros legados. </p>
+<p align="justify">Pocas escritoras  han contado la vida de las mujeres anónimas, a través de sus propias voces,  como lo ha hecho nuestra galardonada. </p>
+<p align="justify">Martha Lamas, su  entrañable amiga aquí presente, describe a Elena, cuando afirma: destila un feminismo sensible y crítico que no idealiza a la mujer, ella misma  encarna un ideal feminista, el del trabajo y el de ser autónoma. </p>
+<p align="justify">Pero también encontramos, en la obra de Elena, su profunda sensibilidad  por lo social. </p>
+<p align="justify">Y aquí no puedo dejar de mencionar el especial cariño que le profesa a  la tierra de don Belisario, mi querido Chiapas. </p>
+<p align="justify">Decía don Belisario, <em>&ldquo;a cualquiera  que no conozca Chiapas, le parece exagerado lo que se dice de sus riquezas,  pero lo cierto es que éste es un estado hermosísimo&rdquo;. </em></p>
+<p align="justify">Y es que, en julio de 1994, en pleno conflicto armado, Elena, junto a  sus hijos, Felipe y Paula, salieron a la búsqueda de la noticia, y tomaron el  primer vuelo a encontrarse en San Cristóbal de las Casas su objetivo,  entrevistar, a quien entonces era el hombre más mediático y acechado por la  prensa internacional, el subcomandante Marcos. </p>
+<p align="justify"> Nos narra Elena, a las 10 de la mañana del 24 de julio, <em>&ldquo;bajo el sol que hace que la tierra humee  bonito y platiquen los pericos en los árboles, llegamos a un claro en el bosque,  después de pasar por un retén feroz de zapatistas que cierran el camino con su  fusil&rdquo;. </em></p>
+<p align="justify">La imagen que nos describe es increíble, <em>&ldquo;los zapatistas trepados en los palos del aguacal, los milicianos  carpinteros martillean y amarran los troncos&rdquo;.</em> ¿Dónde están los fusiles?  ¿Dónde están los pasamontañas? Los milicianos solo se los ponen cuando van a  tomarles una foto, aquí puro martillo, puras manos que enderezan, ensamblan,  alisan a golpe de machete, porque no hay de otra. </p>
+<p align="justify">Para sorpresa de Elena y sus hijos la comunidad estaba construyendo una  biblioteca, cuatro mil hombres en pie de guerra, que lo primero que construyen  es una biblioteca, ¿cuándo se había visto? Se pregunta, &ldquo;esta gente es buena,  esta gente tiene voluntad de paz, esta gente es como las lianas, flexible&rdquo;. </p>
+<p align="justify">Describe Elena, en una de sus tantas crónicas, que pasarían a la  historia sobre el movimiento zapatista. </p>
+<p align="justify">En Chiapas Elena ha sido reconocida con el Premio Rosario Castellanos,  que otorga el Congreso Local. Y también fue la primera mujer en recibir un  doctorado en Honoris Causa por la Universidad Autónoma de Chiapas. </p>
+<p align="justify">Para nosotros, los chiapanecos, estos reconocimientos han sido  recíprocos como un justo agradecimiento a todo el amor y cariño que ella le ha  expresado al pueblo chiapaneco. </p>
+<p align="justify">Entre otros muchos reconocimientos, se destaca también que en el 2013  Elena Poniatowska se convierte en la cuarta mujer que recibe el Premio  Cervantes de Literatura, así como la primera mujer mexicana en obtener el  considerado Premio Nobel de la Literatura en la Lengua Hispana. </p>
+<p align="justify">Compañeras y compañeros, invitados, invitadas, invitados especiales,  querida Elena, hoy este Senado de la República le reconoce como referente para  las mujeres mexicanas y para las distintas generaciones que por medio de sus  obras han podido conocer el contexto político e histórico de ese otro México,  el de los olvidados. </p>
+<p align="justify"><em>&ldquo;Es la mejor, más intensa  cronista de la múltiple realidad mexicana, es una institución del periodismo y  de la vida cultural, tanto más necesaria, cuanto más reconocida su lucidez y su  generosidad&rdquo;,</em> escribió su querido amigo, Carlos Monsiváis. </p>
+<p align="justify"><em>&ldquo;Elenita es la mejor  escritora de nuestros días, la más inteligente, pero, sobre todo, la que ha  estado siempre con los que sufren y luchan por los demás, es una santa laica&rdquo;,</em> escribió el Presidente Andrés Manuel López Obrador esta mañana sobre la  galardonada, doña Elena Poniatowska, amiga y compañera de luchas de nuestro  Presidente. </p>
+<p align="justify">Sirva también este reconocimiento para rescatar el legado tan importante  que ha otorgado el periodismo mexicano. </p>
+<p align="justify">Así reconocer hoy a Elena Poniatowska es también reconocer la labor de  miles de mujeres que han realizado y que realizan todos los días en el medio  periodístico. </p>
+<p align="justify">El periodismo es un reflejo del acontecer social político y económico,  que de manera muy importante coadyuva a la transformación de la vida nacional. </p>
+<p align="justify">Ante todo, Elena Poniatowska se sienta y es concebida como periodista y  quien al igual que nuestro Senador chiapaneco, don Belisario Domínguez,  lograron hacer del poder de las palabras su mejor arma. </p>
+<p align="justify"> Desde su creación, en 1954, Elena será la novena mujer en aparecer en el  Muro de Honor de la Medalla Belisario Domínguez y la primera mujer escritora y  periodista. </p>
+<p align="justify">Tras celebrarse la boda entre La Jacaranda y El Limonero de la iglesia de  San Sebastián, narra la extraordinaria Elena Poniatowska en su cuento &ldquo;Boda de  Chimalistac&rdquo;:  </p>
+<p align="justify"><em>&ldquo;Nunca habían visto una  novia más bella, aunque no estuviera envuelta como merengue en tules blancos. </em></p>
+<p align="justify"><em>Todos olvidaron por un  momento sus rencillas y corrieron a la plaza a brindar por los novios en las  copas de oro de tulipanes&rdquo;. </em></p>
+<p align="justify">Hoy, en este Senado, como en tu cuento, brindamos por ti, Elena, pues  todos los aquí presentes dejamos a un lado las diferencias para reconocerte,  para enaltecer tu simpatía y tu empatía y contagiarnos de tu solidaridad,  porque uno de los grandes legados que nos regalas con tu obra es justamente el  amor al prójimo. </p>
+<p align="justify">Hoy, el pensamiento del Senador Belisario Domínguez nuevamente cobra  vigencia y se identifica plenamente con los principios de amor a la patria,  fraternidad a los que invitan por medio de sus letras a través de sus historias  de nuestra galardonada. </p>
+<p align="justify">Ambos por la fuerza y contundencia de sus acciones, entendieron el valor  de la denuncia como un deber cívico y moral para atajar las injusticias y los  atropellos de los poderosos. </p>
+<p align="justify">No tengamos duda que Elena seguirá presente en cada uno de nosotros,  siempre que haya una historia que contar y una causa justa que defender. </p>
+<p align="justify">Y ahí identificamos nuevamente el don del humanismo que nos permite hacer  nuestros los sentimientos y la situación del otro. </p>
+<p align="justify">Compañeras y compañeros Senadores, sea esta Asamblea reflejo de esa  sensibilidad, de ese humanismo en que cada una de las decisiones que tomemos  con el compromiso y responsabilidad social que nos permitan definir el rumbo y  el destino de México. </p>
+<p align="justify">Quiero y aprovecho este recinto histórico, esta tribuna histórica para  condenar enérgicamente la decisión de la Suprema Corte de Justicia sobre la  Guardia Nacional, es inverosímil tal decisión, porque quedaron a la deriva sin  definición sólo 130 mil elementos, que confiamos en nuestras autoridades. </p>
+<p align="justify">¡Que viva don Belisario Domínguez!</p>
+<p align="justify">¡Que viva Chiapas!</p>
+<p align="justify">¡Que viva Elena Poniatowska!</p>
+<p align="justify">¡Viva México!</p>
+<p align="justify">¡Viva México!</p>
+<p align="justify">Es cuanto. </p>
+<p align="justify">Muchas gracias.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109184'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109185'></a><p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Honorable Asamblea, les solicito a todas y a todos los Senadores  mantenerse en sus escaños.</p>
+<p align="justify"> <strong>ENTREGA  DE LA MEDALLA DE HONOR BELISARIO DOMÍNGUEZ, A LA ESCRITORA Y PERIODISTA ELENA  PONIATOWSKA AMOR, CORRESPONDIENTE AL AÑO 2022</strong></p>
+<p align="justify">Les solicito, les solicito ponerse de pie para la entrega de la &ldquo;Medalla  de Honor Belisario Domínguez&rdquo; y el diploma correspondiente para el año 2022 a  la gran escritora y periodista Elena Poniatowska Amor. </p>
+<p align="center">(Todos de pie)</p>
+<p align="center">(Se hace entrega de la presea)</p>
+<p align="justify">Honorable Asamblea, sírvanse tomar asiento. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109185'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109186'></a><p align="justify">Se concede el uso de la palabra a nuestra galardonada, la escritora y  gran periodista Elena Poniatowska Amor.</p>
+<p align="justify"><strong>DISCURSO DE LA CIUDADANA </strong><strong>ELENA PONIATOWSKA AMOR </strong></p>
+<p align="justify"><strong>La Ciudadana Elena Poniatowska Amor: </strong>Muchas gracias.</p>
+<p align="justify">Me da tristeza que no nos acompañe el señor Presidente de la República,  Andrés Manuel López Obrador.</p>
+<p align="justify">Porque tanto mi familia, mis amigos y muchos de los que estamos aquí lo  queremos, y no sólo lo queremos, lo adoramos.</p>
+<p align="justify">Nueve mujeres recibieron la &ldquo;Medalla Belisario Domínguez&rdquo;:</p>
+<p align="justify">Rosaura Zapata, en 1954.</p>
+<p align="justify">María Teresa Montoya, ocho años más tarde, en 1962.</p>
+<p align="justify">Y al año siguiente le tocó a la impresora María Hernández Zarco, quien  ayudó a derrocar a Huerta.</p>
+<p align="justify">En 1969 María Cámara Vales, viuda de Pino Suárez.</p>
+<p align="justify">Y 16 años después, en 1986, María Lavalle Urbina, a quien tuve la  fortuna de escuchar en este mismo recinto.</p>
+<p align="justify">En 1996, la poeta y gobernadora Griselda Álvarez al lado de Alí  Chumacero.</p>
+<p align="justify">En 2017, la presea le tocó a Julia Carabias.</p>
+<p align="justify">En 2019 a Rosario Ibarra de Piedra, a quien acompañé con mucha, mucha  emoción.</p>
+<p align="justify">Y en 2021, la economista Ifigenia Martínez, quien la recibió con Manuel  Velasco-Suárez.</p>
+<p align="justify">A Carlos Payán, director de La Jornada, lo festejamos los periodistas  hace casi tres años.</p>
+<p align="justify">Ahora en 2023, cuando cumplo 91 años, y todavía subo la escalera de la  canción, que dice: &ldquo;<em>Que para subir al  cielo se necesita una escalera grande y otra chiquita&rdquo;</em>, el Senado de la  República me concede la enorme, la enorme distinción entregada a quienes tanto he  admirado. </p>
+<p align="justify"> ¡Alguna vez lo  imaginé! </p>
+<p align="justify">No, no. </p>
+<p align="justify">Los premios son una  puerta que se abre de pronto, un regalo, una posibilidad de futuro y un  reconocimiento al pasado para los que, como yo, se despide. </p>
+<p align="justify">A los 21, después  de tres años en un Convento del Sagrado Corazón, en Torresdale, Filadelfia, al  lado de un asilo para locos y una cárcel preventiva, supe que quería escribir. </p>
+<p align="justify">Y ya en México tomé  clases de taquimecanografía en una escuela en San Juan de Letrán. </p>
+<p align="justify">Desde 1953, escribo  en un ámbito amistoso y competitivo. </p>
+<p align="justify">Si fui una joven  preguntona, sigo siéndolo y todavía insisto en los ¿por qué? ¿para qué? ¿cómo?  ¿cuándo? ¿dónde?</p>
+<p align="justify">En la avenida San  Juan de Letrán, que así se llamaba, el Eje Central Lázaro Cárdenas, caminé  entre personajes populares.</p>
+<p align="justify">Amé a los  cilindreros, hoy a punto de desaparecer. </p>
+<p align="justify">A la quesadillera,  a flor de banqueta. </p>
+<p align="justify">A los vendedores de  billetes de lotería, decían: <em>&ldquo;Cómpreme,  güerita, cómpreme el cachito, cómpremelo para que se vaya a Europa, aunque no  me lleve&rdquo;. </em></p>
+<p align="justify">Aprendí dichos y  pregones. </p>
+<p align="justify">Y ahora me  entristece ya no escucharlos en esquina alguna. </p>
+<p align="justify">Asimismo, tuve la  dicha de entrevistar a personajes como: don Alfonso Reyes, Diego Rivera,  Octavio Paz, Alfonso Caso, María Félix, Dolores del Río, y muchos otros. </p>
+<p align="justify">Pero fue en la  cárcel preventiva, en el Palacio Negro de Lecumberri, donde encontré un mundo  tan distinto al mío que entré a la mejor escuela de vida. </p>
+<p align="justify">Gracias a Rosario  Castellanos conocí las palabras de Belisario Domínguez.</p>
+<p align="justify">Pero además de  admirar su heroica denuncia, fui testigo del heroísmo de damnificados en los  terremotos del 28 de julio de 1957, cuando voló el Ángel de la Independencia y  casi once años después el heroísmo de las madres de familia y sus hijos  estudiantes en 1968. </p>
+<p align="justify">Nunca olvidaré el  heroísmo de los habitantes de Tlatelolco que se quedaron con el paisaje, bueno,  se quedaron sin nada después de la batalla y durante días y días sin agua y sin  luz. </p>
+<p align="justify">Todavía soy de los  que levantan la cabeza cada vez que un helicóptero sobrevuela un caserío porque  en 1968 la aparición de uno sobre la plaza de las Tres Culturas desató la  balacera. </p>
+<p align="justify">Vivir este  acontecimiento sigue siendo una profunda herida hasta el día de hoy. </p>
+<p align="justify">Todavía hoy  escuchamos la voz de Octavio Paz, la de Rosario Castellanos, la de Miguel León  Portilla, la de Carlos Fuentes, la de Demetrio Vallejo y la de José Revueltas,  me acompañan y son una guía en el camino. </p>
+<p align="justify"> El 1 de enero de  1994 un guerrero atrajo la atención del mundo: Rafael Guillén Vicente, y los  jóvenes de nuestro continente lo compararon al Che Guevara. </p>
+<p align="justify">A mis dos hijos  menores les hizo bien estar en la Selva Lacandona al lado de Moisés y de la  comandante Ramona. </p>
+<p align="justify">Si los héroes de  mis hijos fueron los zapatistas, mis héroes han sido más familiares: Paola Amor  y Carolina Amor de Fournier, fundadora de La Prensa Médica Mexicana. </p>
+<p align="justify">En mi lista se  encuentra Guillermo Haro, quien puso a México en el mapa de la astrofísica  moderna; formó a jóvenes y los envió a medirse con científicos de otros países,  cuando se creía que México no necesitaba hace su propia ciencia, sino  importarla de Estados Unidos, con quien compartimos una frontera de tres mil  169 kilómetros. </p>
+<p align="justify">Tuve el privilegio  de tratar al doctor Ignacio Chávez, quien levantó un extraordinario Instituto  de Cardiología, al que llegan aspirantes de toda América Latina. </p>
+<p align="justify">Así como al doctor  Zubirán, quien combatió el hambre con su Instituto de Nutrición. </p>
+<p align="justify">Y al doctor Ismael  Cosío Villegas, el de enfermedades respiratorias, que logró eliminar la  tuberculosis, una de las enfermedades de la pobreza. </p>
+<p align="justify">Escuchar a los  gastroenterólogos Bernardo Sepúlveda y Raoul Fournier fue un privilegio. </p>
+<p align="justify">Gracias al Museo  Fernando Gamboa, Europa pudo asombrarse con nuestro arte que Octavio Paz  ponderó en ensayos luminosos y en su poesía &ldquo;Piedra de sol&rdquo;. </p>
+<p align="justify">El nobel a Octavio  en 1990 nos situó al lado de Chile y de Guatemala, que ya habían recibido otros  ilustres latinoamericanos: Pablo Neruda, Gabriela Mistral y Miguel Ángel  Asturias. </p>
+<p align="justify">A su regreso de  Suecia, a Octavio Paz le asombró que una multitud lo recibiera en el aeropuerto  y lo oí repetir incrédula <em>&ldquo;no es para  tanto, no es para tanto&rdquo;.</em></p>
+<p align="justify">Bertrand Russell  solía decir <em>&ldquo;el amor es sabio, el odio es  tonto&rdquo;.</em></p>
+<p align="justify">Imposible no amar a  Sor Juana Inés de la Cruz, a José Clemente Orozco, a Ramón López Velarde, a  Juan Rulfo, a Francisco Toledo, a Jaime Sabines, a Monsi y a Pacheco, y a  nuestros grandes luchadores sociales los Flores Magón: Ricardo, Jesús y  Enrique. </p>
+<p align="justify">Recuerdo hace más  de 50 años la sorpresa de mi madre cuando le hablé de mi admiración por Zapata.  &ldquo;Pero, Elena, pero si nos quitó la hacienda en Morelos y por su culpa  zapatistas, los villistas, recuperaron la tierra de varios hacendados que  escucharon atónitos el grito: <em>&ldquo;tierra y  libertad&rdquo;. </em></p>
+<p align="justify">Años más tarde,  Paulette Amor, mi madre quien manejó una ambulancia durante la Segunda Guerra  Mundial habría de convenir conmigo en que la mirada de Zapata atravesaba los  siglos. </p>
+<p align="justify">Al mirar yucateco,  Felipe Carrillo Puerto y a Elvia, su hermana; Ermilo Abreu Gómez nos dio el  regalo de su Canek. </p>
+<p align="justify">En la cárcel de  Lecumberri visité a Heberto Castillo protegido por don Lázaro Cárdenas. </p>
+<p align="justify">Admiré al obispo  Samuel Ruíz, no solo por la fuerza de su palabra en San Cristóbal, sino por su  defensa de los chiapanecos más pequeños, como los llama el subcomandante Marcos. </p>
+<p align="justify">Seguí muy de cerca  la lucha de los ferrocarrileros tras la gran huelga del oaxaqueño Demetrio  Vallejo, en 1959. </p>
+<p align="justify">Tuve la fortuna de  conversar con trenistas, ferrocarrileros encarcelados en el &ldquo;Palacio Negro de  Lecumberri&rdquo;, y más tarde en Santa Martha Acatitla. </p>
+<p align="justify"> Quienes me  impactaron, primero, fueron las mujeres, sus esposas, las que iban a la cárcel  a verlo, a ver a su esposa, como doña Cuca Lumbreras, con su itacate; así como  Angélica Arenal alimentaba a Siqueiros todos los mediodías de un largo, largo  encarcelamiento. </p>
+<p align="justify">Imposible olvidar a  las costureras del terremoto del 19 de septiembre de 1985, que se descolgaron  con los rollos de tela y así se salvaron. </p>
+<p align="justify">Imposible no  recordar a Evangelina Corona, quien esperó durante horas a que sacaran los cuerpos  de sus demás compañeras, en San Antonio Abad. A las últimas a quienes atendían  o atendieron fue a las mujeres. </p>
+<p align="justify">Carlos Monsiváis y  yo anduvimos en varias zonas de desastre, subíamos a los techos, a los restos  de un edificio, y además de las cadenas de manos de voluntarios que se pasaban  piedras de mano en mano.</p>
+<p align="justify">Recogimos  testimonios y fotografías de muchachas en su baile de XV años, esas fotografías  las atesoré, como atesoré el llanto de quienes perdieron su casa y todos  nosotros escuchamos conmovidos el relato de quien intentó encontrarle algún  sentido a la desgracia. </p>
+<p align="justify">Imposible no tomar  en cuenta el viacrucis de doña Rosario Ibarra de Piedra en busca de su hijo  Jesús. </p>
+<p align="justify">Imposible no  admirar a Francisco Toledo, que además de su propio arte protegió a Juchitán al  impedir la instalación de un McDonald&rsquo;s en el Zócalo. </p>
+<p align="justify">Imposible no  admirar la Sombra del Caudillo, y también las manos de mamá de Nellie  Campobello, la única escritora de la Revolución mexicana.</p>
+<p align="justify">Imposible no  visitar a José Revueltas a lo largo de su vida de cárceles, la primera cuando  era adolescente.</p>
+<p align="justify">Imposible no tomar  en cuenta a Leopoldo Méndez, Alberto Beltrán, a Mariana Yampolski, a Pablo  O&rsquo;Higgins, al grabador de una madre con su hijo en brazos; de la grabadora  Andrea Gómez, a Fanny Rabel y al rostro redondo, y  la mirada de asombro de sus niños grabados en el Taller de Gráfica Popular. </p>
+<p align="justify">Imposible no recordar los viajes y las horas pasadas con Carlos  Monsiváis y José Emilio Pacheco, con quienes recorrí tantas páginas del  periódico México en la Cultura, tantas voces críticas que se unieron a la de  los líderes, Gilberto Guevara Niebla de la Universidad Autónoma de México y  Raúl Álvarez Garín del Politécnico. </p>
+<p align="justify">Imposible no rendirle homenaje a Luis Barragán, a Manuel M. Ponce, a  Daniel Cosío Villegas, a José Alvarado, al gran Joaquín Diez-Canedo, que  aguantaba las locas exigencias de sus autores.</p>
+<p align="justify">A Renato Leduc y a su dicha inicua de perder el tiempo; a Ignacio López  Tarso, a Tin Tan y a Vitola, a María Victoria, a quien los espectadores le  exigían &ldquo;vuelta, vuelta, vuelta&rdquo;, para admirar su perímetro.</p>
+<p align="justify">A Tongolele, nacida en California; a Dolores del Río, a Teodoro González  de León, a María Grever y a Consuelo Velázquez, que nos enseñó a besar mucho, y  muy bien.</p>
+<p align="justify">A Pérez Prado y a Palillo, quien tenía contra órdenes de detención ya  listas en su bolsillo; a Mario Moreno Cantinflas, a Eduardo del Río, Rius, a  Rafael Barajas, &ldquo;el Fisgón&rdquo;; a Manuel Ahumada, que murió demasiado pronto; a  Gabriel Zaid, su capacidad crítica y analítica; a Luis Alcaraz, a Pita Mor. </p>
+<p align="justify">A tantos mexicanos hoy olvidados, como Juan O´Gorman y, desde luego, a  mi muy querido y admirado Luis Buñuel, con quien visité Lecumberri, porque se  preocupaba por el bienestar de los presos, <em>&ldquo;hay  que hacer fagina&rdquo;</em>, le dijo, <em>&ldquo;hay que hacer  fagina, mire como lo ponen&rdquo;</em>, le dijo a un joven &ldquo;conejo&rdquo;, un preso  reincidente que no había querido despintarse, y el jefe le crujía, lo había  despintado un ladrillo. </p>
+<p align="justify">Imposible no admirar a los tres grandes, recordar el privilegio de  haberlos visto y escuchado. </p>
+<p align="justify">Imposible no recordar la obra de mis contemporáneas, Rosario  Castellanos; la fotógrafa Mariana Yampolsky, que ya mencioné; las feministas,  Martha Lamas y María Consuelo Mejías. </p>
+<p align="justify">Y a las escritoras, que hoy seguimos, Sabina Berman, Carmen Boullosa,  Fernanda Melchor. </p>
+<p align="justify">Me encanta ser parte de los días de Juan Villoro y de Fabricio Mejía. </p>
+<p align="justify">Hoy después de tanta llenadera de palabras, tantas interrogantes, tantos  periódicos que se amontonan, hasta que un día se los lleva el de los &ldquo;fierros  viejos que vendan&rdquo;. </p>
+<p align="justify">Hoy muchos recuerdos zumban como abejas, y repito en voz baja, que hoy  ustedes, Senadores de la República, me conceden la Medalla Belisario Domínguez,  que recibo como una gracia inesperada para la que sólo tengo  una palabra, la más hermosa de todas, a pesar de ocupar tan poco espacio, dos  sílabas que se dejan caer y son tan frágiles como un terremoto, un temblor,  gracias. </p>
+<p align="justify">Gracias a mis hijos, Mane, Felipe y Paula. </p>
+<p align="justify">Y a mis amigos encabezados por Martha Lamas. </p>
+<p align="justify">Gracias, a Conrado y a Yunuen. </p>
+<p align="justify">Gracias a ustedes que me acompañan en este gran día. </p>
+<p align="justify">Gracias a México, el país de mi abuela, Elena Iturbe de Amor. </p>
+<p align="justify">Y el de mi madre, Paula Amor, el de Guillermo Haro, el de nuestros  nietos, Tomás, Andrés, Nicolás, Rodrigo, Inés, Carmen, Pablo, Lucas, Cristóbal  y Luna. </p>
+<p align="justify">Gracias a la vida que me ha permitido escribir lo que pienso. </p>
+<p align="justify">Supongo, supongo, pido perdón, supongo que muchos esperaban un discurso o  un texto político y lamento decepcionarlos, pero estoy tan llena de  agradecimiento que solamente puedo decir:</p>
+<p align="justify">Gracias, gracias y otra vez gracias. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> Muchas gracias, a nuestra galardonada.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109186'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109187'></a><p align="justify">La Mesa Directiva en nombre del Senado de la República, les solicita que,  puestos de pie, guardemos un minuto de silencio, a fin de honrar la memoria de  los miembros de la Orden Mexicana de la Medalla Belisario Domínguez, que han  fallecido. </p>
+<p align="justify"><strong>MINUTO DE SILENCIO</strong></p>
+<p align="center">(Todos de pie guardan un minuto de silencio)</p>
+<p align="justify">Gracias, muchas gracias. Sírvanse tomar asiento. </p>
+<p align="justify"> A nombre del Senado de la República, expreso nuestro agradecimiento por  su presencia en esta sesión solemne. </p>
+<p align="justify">Al representante del titular del Poder Ejecutivo, al Secretario Adán  Augusto López Hernández. </p>
+<p align="justify">Al ministro Alberto Pérez Dayán, de la Suprema Corte de Justicia de la  Nación.  </p>
+<p align="justify">Al Diputado Santiago Creel Miranda, Presidente de la Cámara de Diputados. </p>
+<p align="justify">Así como los demás distinguidos, distinguidas invitadas. </p>
+<p align="justify">Al concluir la sesión, se solicita a los integrantes del presídium y a  las Vicepresidentas y al Vicepresidente de la Mesa Directiva, a las Coordinaras  y a los Coordinadores de los grupos parlamentarios, así como los representantes de los poderes del estado de Chiapas, se trasladen al  Muro de Honor de la Medalla Belisario Domínguez para develar el nombre de  nuestra galardonada. </p>
+<p align="justify">Asimismo, posteriormente, se trasladen también al patrio central para la  guardia de honor ante la estatua del Senador Belisario Domínguez.</p>
+<p align="justify">Se les solicita ponerse de pie a fin de entonar el Himno Nacional  Mexicano.</p>
+<p align="center">(Todos de pie entonan el Himno Nacional)</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109187'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='109188'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify">Honorable Asamblea, se da por finalizada la sesión solemne. Se cita a la  sesión solemne de la Cámara de Senadores, el jueves 20 de abril a las 12:00  horas, en el salón de sesiones de la sede de Paseo de la Reforma 135.</p>
+<p align="justify">Se levanta la sesión.</p>
+<p align="center">(Se levantó la sesión a las 14:40 horas)<strong> </strong></p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a109188'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

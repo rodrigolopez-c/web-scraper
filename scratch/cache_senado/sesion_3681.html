@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 36</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Laura Itzel Castillo Juárez</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 25 de Noviembre de 2025</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/2/PPO/PDF-WEB/PPO_No36_25-NOVIEMBRE-2025-SOLEMNE.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='124322'></a><p align="center"><strong>PRESIDE  LA SENADORA</strong><br>
+  <strong>LAURA  ITZEL CASTILLO JUÁREZ</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>(12:06  horas) Con el quórum de la sesión ordinaria del día de hoy, y con fundamento en  lo dispuesto por el artículo 56, fracción I del Reglamento del Senado, y en el  Acuerdo de la Mesa Directiva, aprobado el pasado 19 de noviembre, iniciamos la  sesión solemne para conmemorar el Día Internacional de la Eliminación de la  Violencia Contra la Mujer. </p>
+<p>La  Cámara de Senadores del Honorable Congreso de la Unión de los Estados Unidos  Mexicanos expresa la más cordial bienvenida a la Maestra Minerva Citlalli  Hernández Mora, Secretaria de las Mujeres.</p>
+<p>A  la Magistrada Celia Maya García, Presidenta del Tribunal de Disciplina Judicial  del Poder Judicial de la Federación. </p>
+<p>A  la Magistrada Mónica Aralí Soto Fregoso, del Tribunal Electoral del Poder  Judicial de la Federación.</p>
+<p>A  la Diputada Anaís Burgos Hernández, Presidenta de la Comisión de Igualdad de  Género de la Cámara de Diputados y Diputados.</p>
+<p>A  la Doctora Gloria Careaga Pérez, profesora de la Facultad de Psicología de la  Universidad Nacional Autónoma de México, la UNAM. </p>
+<p>Es  un honor recibir su visita. Asimismo, damos la bienvenida a las demás  personalidades que nos honran el día de hoy con su presencia. <br>
+  Me  permito presentar a mis compañeras y compañeros senadores de la Mesa Directiva,  presentes en esta sesión solemne. </p>
+<p>La  Senadora Verónica Noemí Camino Farjat, Vicepresidenta. </p>
+<p>La  Senadora Mariela Gutiérrez Escalante, Secretaria. </p>
+<p>La Senadora Sandra Simey Olvera Bautista, Secretaria  también.</p>
+<p>A la Senadora Claudia Edith Anaya Mota, Secretaria.</p>
+<p>A la Senadora Malú Micher Camarena, Presidenta de la  Comisión Para la Igualdad y Género del Senado de la República. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124322'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/iN481OKwVjw?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='124323'></a><p>Compañeras y compañeros; distinguidos invitados e  invitadas:</p>
+<p>Nos encontramos reunidos el día de hoy para  conmemorar el Día Internacional de la Eliminación de la Violencia en contra de  la Mujer, que, como ustedes saben, fue declarado por la Organización de las  Naciones Unidas el 17 de diciembre de 1999 para honrar a las hermanas Minerva,  Patria y María Teresa Mirabal, tres mujeres activistas asesinadas por orden de  Rafael Leónidas Trujillo, exdictador de la República Dominicana. </p>
+<p>Este día tiene el propósito de concientizar a toda  la población y de implementar acciones que permitan prevenir y erradicar todo  tipo de violencias en contra de mujeres y niñas en todo el planeta, por lo que  agradecemos su presencia en esta sesión solemne, que nos permite mostrar con  determinación que, más que nunca, estamos todas y todos unidos trabajando en  coordinación para terminar con este terrible flagelo. </p>
+<p>En cumplimiento a lo dispuesto en el numeral 1 del  Resolutivo Tercero del Acuerdo que norma nuestra sesión solemne, tiene el uso  de la palabra la Senadora Martha Lucía Micher Camarena, Presidenta de la  Comisión Para la Igualdad de Género, hasta por diez minutos. </p>
+<p><strong>CONMEMORACÓN EL DÍA INTERNACIONAL DE LA ELIMINACIÓN  DE LA VIOLENCIA CONTRA LA MUJER</strong></p>
+<p><strong>La Senadora Martha Lucía  Micher Camarena: </strong>Muy buenas tardes.  Gracias, señora Presidenta. </p>
+<p>Estimadas invitadas, bienvenidas a la casa del  pueblo y a la casa feminista del pueblo. </p>
+<p>Saludo con muchísimo gusto a nuestras invitadas y  nos honramos con su presencia, todas ellas guerreras incansables y compañeras  colegas en esta ruta hacia la igualdad. </p>
+<p>Hoy, 25 de noviembre, venimos no solamente a  recordar una fecha, venimos a nombrar lo que duele, lo que indigna y lo que  todavía nos obliga como Estado a redoblar esfuerzos. </p>
+<p>En México ser mujer sigue siendo para millones una  condición marcada por riesgos que ningún país democrático puede permitir y  mientras exista una sola niña violentada, una sola mujer desaparecida, una sola  familia buscando justicia, este Senado de la República tiene la responsabilidad  de legislar, de fortalecer a las instituciones y de actuar con absoluta  seriedad. </p>
+<p>Nuestro país ha avanzado en este año de manera muy  importante, contamos con un marco jurídico cada vez más robusto, reformas  constitucionales que reconocen la perspectiva de género, el derecho de las  mujeres a una vida libre de violencias, la igualdad sustantiva como principio  constitucional, la debida diligencia como obligación del Estado, los derechos  reforzados, los deberes reforzados. </p>
+<p> Hemos legislado contra la violencia política  en razón de género, reforzamos el tipo penal de feminicidio y las medidas de  protección, ampliamos programas que fortalecen la autonomía económica de las  mujeres históricamente que han sido incluidas. </p>
+<p>También  hemos trabajado para avanzar en la construcción de una política nacional de  cuidados. </p>
+<p>Aquí  está el Poder Judicial, está el Poder Legislativo y está el Poder Ejecutivo,  porque hemos cerrado filas para seguir avanzando. </p>
+<p>Este  trabajo es fruto de décadas, de décadas de trabajo de las colectivas, de las  feministas, de las académicas, de las sobrevivientes, de las buscadoras y, por  supuesto, de las feministas, es una convicción política firme. </p>
+<p>La  igualdad sustantiva es y deberá seguir siendo nuestra ruta de navegación y la  prioridad de la nación, pero sería irresponsable decir que la tarea está  concluida, todavía tenemos desafíos, mujeres asesinadas por motivos de género,  adolescentes que desaparecen sin que siempre se actúe con la urgencia  necesaria, niñas violadas por sus hermanos, por sus abuelos. </p>
+<p>Y  todo esto, tenemos que decir que nos falta mucho por avanzar, pero no nos hemos  quedado calladas, pero no nos hemos quedado cruzadas de brazos. </p>
+<p>También  tenemos a mujeres indígenas y afromexicanas que viven violencias múltiples,  agravadas por la discriminación y la pobreza, sobrevivientes que aún encuentran  obstáculos en su camino hacia la justicia. </p>
+<p>Las  violencias que enfrentan las mujeres no aparecen de manera aislada, se  reproducen en los espacios familiares, escolares, comunitarios, laborales,  digitales e institucionales. </p>
+<p>Enfrentar  esta realidad demanda honestidad y compromiso, así lo ha pedido la Presidenta  de la República Claudia Sheinbaum Pardo; reconocer nuestras fallas no debilita  al Estado, lo fortalece porque nos obliga a corregir, a mejorar y a garantizar  justicia. </p>
+<p>La  vida y la seguridad de las mujeres no admiten indiferencia ni simulación,  nuestro deber es consolidar lo que ya hemos avanzado y desde esta alta tribuna  reafirmamos algo fundamental: No hay justicia social sin igualdad sustantiva;  no hay democracia plena si la mitad del país todavía vive condicionada por la  violencia. </p>
+<p>Por  eso, la agenda de las mujeres no es secundaria, no es negociable y no puede  aplazarse, es parte medular de este proyecto de nación que encabeza nuestra  Presidenta. </p>
+<p>Necesitamos  instituciones capaces, fiscalías que comprendan que detrás de cada expediente  hay una vida en riesgo, y juzgados que apliquen la perspectiva de género,  refugios fortalecidos. </p>
+<p>Hemos  trabajado mucho en las órdenes de protección, pero todavía algunos ministerios  no les ofrecen esas órdenes, medidas de protección a las víctimas. </p>
+<p>Hay  que prevenir también que la educación sexual es fundamental, es integral, la  autonomía económica y, sobre todo, eliminar la desigualdad arraigada, incluida  la carga histórica de cuidados que recae sobre nosotros las mujeres. </p>
+<p>Hablar  de cuidados es hablar de libertad. Este gobierno ha asumido el compromiso de  construir una política de cuidados, por supuesto accesible, sólida, progresiva  y universal. </p>
+<p> Compañeras,  no podemos permitir, compañeros, que nosotras las mujeres sigamos renunciando a  nuestros proyectos personales para no participar en la política o no participar  ejerciendo nuestras profesiones. </p>
+<p>Hoy  quiero reconocer a quienes han hecho posible estos avances, a las madres que  buscan a sus hijas, a las familias que exigen justicia, a las colectivas que  han visibilizado lo que años se quiso callar, a las niñas y adolescentes que  aun con miedo alzan su voz, su fuerza y su perseverancia han marcado el rumbo y  hoy siguen siendo una guía ética para nuestro país. </p>
+<p>Y  este gobierno está sentado a su lado para saber cómo avanzar y cómo proteger  todos y cada uno de los derechos de sus familias y de quienes están buscando. </p>
+<p>Su  lucha, compañeras, la lucha de todas estas mujeres es legítima y es necesaria.  Y su voz está presente en la construcción del México que queremos, las  violencias contra las mujeres nos atraviesan a todas. </p>
+<p>Por  eso hoy convoco a todas las fuerzas políticas a colocar esta causa por encima  de cualquier diferencia, necesitamos acuerdos firmes, permanentes que  trasciendan coyunturas y que garanticen sin importar el origen, lo que sea, que  garanticen una vida libre de violencias. </p>
+<p>Por  eso, porque las mujeres de México estamos transformando este país, todos los  días la fuerza feminista vive en las calles, en las comunidades, en las  universidades, en las instituciones, en los hogares. Esa fuerza seguirá siendo  uno de los motores más poderosos del cambio. </p>
+<p>Este  25 de noviembre hablo desde la convicción, la convicción de que la igualdad  sustantiva no es una aspiración lejana, sino un objetivo alcanzable. La  convicción de que las mujeres podemos prevenir, enfrentar y superarnos. </p>
+<p>Y,  por supuesto, la convicción de que éste es el país que nos merecemos, éste es  el país que hemos estado construyendo por años, y que ahora lo encabeza una  mujer. </p>
+<p>Compañeras,  nos merecemos vivir seguras, vivir en paz dentro y fuera de nuestras casas,  vivir con dignidad. </p>
+<p>Y  nuestro compromiso como Estado y como sociedad es no detenernos hasta que cada  niña, adolescente y cada mujer pueda caminar libremente sin miedo y con la  certeza de que su vida es valiosa y es respetada. </p>
+<p>Sigamos  trabajando para construir este país. Y quiero, por último, decir que esto,  además de conmemorar el 25 de noviembre, en 1960 cuando fueron asesinadas por  el brutal régimen de Leónidas Trujillo, estas tres mujeres tienen que saber que  su muerte no silenció su causa, la encendió, aquella ejecución política se  convirtió en símbolo universal de resistencia y de dignidad. </p>
+<p>Y  hoy, después de seis décadas, las razones que dieron origen a esta fecha siguen  vivas. </p>
+<p>Tienen  nombre, están aquí, tienen rostro, tienen historias que no deberían existir,  pero existen. Y no son parte del pasado, son parte de nuestro presente. </p>
+<p>Que  la memoria de quienes ya no están sea guía, que la fuerza de quienes luchan hoy  que sea impulso. </p>
+<p>Y  que el futuro que soñamos para las mujeres y las niñas en México sea una  realidad impostergable. </p>
+<p> Por  ellas, por nosotras, por la vida libre de violencias, para no tener miedo, para  vivir seguras, para que nadie pisotee nuestra dignidad burlándose, pegándonos,  pellizcándonos, abofeteándonos o simplemente no reconociendo que nosotras  tenemos derecho a la patria potestad, y no la familia del agresor. </p>
+<p>Por  todas esas causas, y que el futuro que soñamos para las mujeres y las niñas  pueda y deba ser una realidad impostergable. </p>
+<p>Por  ellas, por nosotras y por todas las que vendrán. </p>
+<p>¡Larga  vida a Las Mariposas! </p>
+<p>Muchas  gracias. </p>
+<p><strong>La  Presidenta Senadora</strong> <strong>Laura Itzel Castillo Juárez:</strong> Muchas  gracias, compañera Senadora Malú Micher. </p>
+<p>Enseguida  observaremos la proyección de un video alusivo al día que estamos conmemorando. </p>
+<p>Proceda  el personal técnico.</p>
+<p>(Proyección  de video)</p>
+<p>Enseguida,  de conformidad con el Acuerdo aprobado daremos el uso de la palabra a la  Doctora Gloria Careaga Pérez, quien es la invitada especial en esta sesión  solemne. </p>
+<p>Ella  es psicóloga egresada del ITESO y cuenta con una maestría en Psicología Social por la UNAM, institución en la  que es profesora desde 1979. Es cofundadora del Programa Universitario de  Estudios de Género, donde se desempeñó como secretaria académica de 1992 a 2004  y desde donde impulsó lo estudios sobre diversidad sexual y masculinidades. </p>
+<p>Ha ocupado cargos relevantes en la defensa de los  derechos humanos como la dirección de programas de Sexualidad y VIH de la  Comisión Nacional de los Derechos Humanos y de la Comisión para los Derechos de  las Personas Trabajadoras Sexuales ante la Organización de los Estados  Americanos. </p>
+<p>Cofundó organizaciones pioneras en la defensa de  los derechos de las personas LGBTIQ+ como el Clóset de Sor Juana y la Fundación  Arcoíris y fue cosecretaria general de la Asociación Internacional de  Lesbianas, Gays, Bisexuales, Trans e Intersex. </p>
+<p>Ha participado activamente en espacios de Naciones  Unidas y la OEA, contribuyendo a incorporar la sexualidad y el género en  agendas globales, forma parte del observatorio de sexualidad y política y ha  asesorado a la ONU Mujeres en México y América Latina. </p>
+<p>Es reconocida investigadora en género y sexualidad  con amplia obra publicada y más de una decena de antologías coordinadas. Su  labor ha sido distinguida por múltiples premios nacionales e internacionales. </p>
+<p>Doctora Careaga Pérez, tiene usted el uso de la  tribuna. </p>
+<p><strong>La Ciudadana Gloria Careaga Pérez: </strong>Muchas gracias. Buen día a todas, todos, y celebro  la invitación. </p>
+<p>Gracias al Pleno por darme esta oportunidad de  compartir con ustedes unas reflexiones en torno a la violencia contra las  mujeres en este día que celebramos la lucha y la resistencia de las hermanas  Mirabal. </p>
+<p> La Conmemoración del Día contra la Violencia a las  Mujeres, resulta para México para México un desafío no menor. </p>
+<p>Las cifras que hemos alcanzado de desaparición y  asesinatos de niñas, jóvenes y mujeres, resultan terriblemente inaceptables. </p>
+<p>Cifras que se han mantenido a lo largo de los años  y parecieran imposibles debatir. </p>
+<p>No obstante, estas cifras muestran sólo la  violencia extrema y no podemos ocultar la violencia que se ciernen sobre los  cuerpos en el cotidiano de sus vidas. </p>
+<p>Es verdad, en las políticas de género instaladas ya  hace más de 30 años abrieron espacios para las mujeres, rompieron barreras  importantes que impedían no sólo su desarrollo, sino la posibilidad de  construir un proyecto propio. </p>
+<p>Para la mayoría de las mujeres de las zonas urbanas  de nuestro país, la idea de conformarse con ser sólo esposa y madre ha quedado  atrás. </p>
+<p>Las políticas de género abrieron sus posibilidades  de inserción en el sistema educativo y se ha alcanzado la paridad en la  matrícula, incluso en las universidades. </p>
+<p>Igualmente, el acceso al trabajo asalariado  evidenció que las mujeres somos tan capaces como los hombres en múltiples  esferas laborales. </p>
+<p>¿Qué ha pasado entonces?  </p>
+<p>Si estamos de manera creciente, continua, en todos  los espacios de la vida social. </p>
+<p>¿Por qué continúa esta violencia contra las  mujeres? </p>
+<p>Las políticas de género se orientaron… </p>
+<p>Para empezar, podríamos decir, uno de los problemas  principales que tenemos es que las políticas de género que se han instrumentado  se orientaron solamente a las mujeres y principalmente en las zonas urbanas. </p>
+<p>No  contemplaron el amplio abanico de representación del género que, por supuesto,  incluye a los hombres.</p>
+<p>El  género es una dimensión con la que contamos todas las personas, con la que nos  definimos de manera muy importante en nuestra sociedad.</p>
+<p>Cómo  es que la política de género está orientada solamente a ciertos sectores de las  mujeres y que no hemos logrado esa intersección con la que se comprometía la  política de género para alcanzar a la amplia diversidad social, cultural,  sexual que tenemos.</p>
+<p>Abrieron  la puerta al desarrollo de las mujeres, pero el sistema de desigualdad ha  quedado intacto y las mujeres caminan como intrusas del espacio público, es  decir, a pesar de esta gran apertura todavía las mujeres estamos participando  en un sistema que no es propio, que no hemos construido nosotras y que hay  fuerte resistencia para su modificación.</p>
+<p>Se  violenta y se discrimina a cualquiera de ellas en el lugar, en la calle, en  cualquier lugar y si consideramos la violencia sexual es otra, otro problema  que tenemos cargando desde hace mucho tiempo.</p>
+<p>La  sexualidad es otra de las dimensiones de la vida que no hemos sabido abordar en  nuestro país y que la sexualidad más que un elemento de gozo, de placer, se  constituye en un arma de dominio, de sumisión.</p>
+<p> Además,  procesos como la modernización han conducido a nuevas formas de violencia  digital, ésta se ha extendido como la tecnología misma, sin controles claros ni  regulaciones que garanticen la protección.</p>
+<p>La  violencia digital ha desacreditado, discriminado y acabado también con la  dignidad y la vida de las mujeres, especialmente, de las mujeres jóvenes, de  las mujeres políticas y periodistas.</p>
+<p>Han  impacto de forma significativa la organización de la vida cotidiana de las  personas modificando su posición y el significado mismo de su definición  personal y profesional.</p>
+<p>Asimismo,  las definiciones identitarias, quiénes somos, de hombres y mujeres han sido  desafiadas ante el fuerte impacto que han enfrentado resultado de estos cambios  acelerados y fuertes resistencias.</p>
+<p>Yo  tengo la impresión de que muchas veces, sobre todo, las mujeres hemos  modificado de una manera muy importante nuestra identidad a partir de estas  políticas, porque las políticas de género no solamente nos apoyaron, nos  desafiaron también para enfrentar retos a los que no estábamos acostumbradas y  han generado nuevas ideas, nuevas concepciones.</p>
+<p>Y  me parece que el hecho de que no hayan tocado a los hombres ha hecho que, para  los hombres muchas veces las políticas de género parecieran algo ajeno, no me  toca, no tiene que ver conmigo o como que no están sucediendo cuando realmente  están impactando a la vida de los hombres también de manera clara y sustantiva.</p>
+<p>Ha  habido muchos esfuerzos, sobre todo, en la vida familiar para empujar a que los  hombres adquieran nuevas responsabilidades.</p>
+<p>Incluso,  que se atrevan a sentir y esto parece fácil, pero lo que nosotros miramos,  precisamente, en los estudios sobre la masculinidad, es que aquellos hombres  que se han orientado mucho más a apoyar en la crianza de sus hijos, de sus  hijas, han modificado de manera muy importante su propia identidad.</p>
+<p>Aquellos  hombres que se involucran en la crianza se han dado la posibilidad de  desarrollar sus emociones, algo que estaba vetado totalmente para los hombres.</p>
+<p>A  los hombres se le reconocía por la fuerza y por la violencia y miren, ahí está  la violencia que aquí estamos tratando de combatir.</p>
+<p>Entonces,  esta posibilidad de involucrarse de otra manera con los hijos ha beneficiado  también la relación con la pareja, porque las emociones no tienen límite y eso  ha posibilitado nuevas construcciones de masculinidad también.</p>
+<p>Pero,  también, tomemos en cuenta que esta construcción social que otorga mayor poder  a los hombres y que está vigente en nuestro país, plantea una posición  subordinada a las mujeres con espacios y tareas claramente diferenciados, pero  ha sufrido cambios importantes este sistema. </p>
+<p>Valores  sociales como el machismo ha logrado descolocarse diametralmente para transitar  de un orgullo a convertirse en una ofensa. Aunque algunos todavía lo defiendan. </p>
+<p>Incluso  los cambios en las representaciones de género muestran también  performatividades interesantes donde las mujeres adoptan comportamientos y  actividades que antes eran propias de los hombres, y los hombres han tenido que  desarrollar mecanismos de reflexión crítica sobre sí mismos o de resistencia al  cambio, incluso, como micromachismos, micromachismos que los entendemos como  aquellas formas que algunos hombres que no logran dar ese salto a una nueva  construcción se muestran como amables a favor de… pero en el fondo mantienen  una resistencia férrea.</p>
+<p> En  ese sentido, habría qué reflexionar en si el género, como el mecanismo mediante  el cual se produce y naturalizan las nociones de masculino y femenino podrían  ser al mismo tiempo el aparato mediante el cual tales concepciones podrían ser  deconstruidos y desnaturalizados.</p>
+<p>Es  decir, desafiar el binario colonial no para multiplicas los géneros, sino para  buscar figuras transicionales del género que no sean reducidos a la insistencia  normativa de uno o dos, una forma de ser hombre, una forma de ser mujer, porque  somos humanos, no existe una persona igual a cada una de nosotras. </p>
+<p>Entonces,  no podemos nosotros centrarnos, limitarnos solamente a una forma de ser, hay  mil posibilidades y eso creo que lo estamos demostrando, sobre todo las  mujeres. </p>
+<p>Así  los avances alcanzados, estos logros de género que hemos logrado, necesitamos  de una redirección, una mejor comprensión del género. </p>
+<p>¿Qué  es el género? </p>
+<p>Llevar  a esa amplia expresión plástica, histórica que el género tiene y de la  sexualidad misma. </p>
+<p>El  hecho de que no tengamos una educación sexual integral todavía. Ha habido  buenos intentos, no lo niego, pero todavía nos cuesta muchísimo realmente  abordar la sexualidad.</p>
+<p>Esto  podríamos decir que abordar estas dos dimensiones de la vida de las personas,  igual que ponderar qué han significado los cambios que hemos generado a partir  de las políticas de género, porque me parecen que se han generado cambios muy  acelerados que no han sido evaluados y que no han sido claramente dirigidos.</p>
+<p>Qué,  entonces, como yo decía antes, las mujeres estamos participando abiertamente en  muchos espacios, pero como intrusas y necesitamos ser ciudadanas igual que  todas las demás personas. </p>
+<p>Necesitamos  definir la ruta que habían de seguir y apuntar hacia cambios claros que  posibiliten las transformaciones necesarias que garanticen avanzar hacia  mejores condiciones de vida para todos, para todas las personas en relaciones  de igualdad. </p>
+<p>Muchas  gracias. </p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Muchas  gracias por su excelente participación, Doctora Careaga. </p>
+<p>Conforme  al Acuerdo referido harán uso de la palabra las personas Senadoras de los  diferentes grupos parlamentarios que integran este Senado. </p>
+<p>Iniciamos  con la participación de la Senadora Alejandra Barrales Magdaleno, del grupo  parlamentario de Movimiento Ciudadano, quien tendrá la palabra hasta por cinco  minutos ya que el grupo parlamentario ha dividido su participación en dos senadoras de esa institución. </p>
+<p>A continuación, la Senadora Alejandra Barrales,  hasta por cinco minutos. </p>
+<p><strong>La Senadora Alejandra  Barrales Magdaleno: </strong>Muchas  gracias, señora Presidenta. Muy buenos días. Bienvenidas, bienvenidos todos  quienes nos acompañan esta mañana.</p>
+<p>De manera particular, saludo con gusto a todas estas  mujeres destacadas que nos visitan, nos saludan esta mañana, de quienes estoy  segura para ninguna ha sido fácil llegar a encabezar las posiciones que hoy  están ocupando. </p>
+<p> Me da mucho gusto que estén aquí, bienvenidas. </p>
+<p>Esta mañana, cuando llevaba a mi hija a la escuela,  escuchábamos en las noticias justamente este recordatorio de que hoy se  conmemora el Día Internacional de la Eliminación de la Violencia contra las  Mujeres. </p>
+<p>¿Qué le contestas a una niña de diez años que  después de escuchar esto te dice: &ldquo;y entonces si hoy se conmemora este día, por  qué en México siguen matando a las niñas y a las mujeres&rdquo;?</p>
+<p>Por eso, en la búsqueda de esa respuesta, es que es  importante el que sigamos trabajando en este sentido. </p>
+<p>Hablar del 25 de noviembre, hablar del Día  Internacional para la Eliminación de la Violencia contra las Mujeres, es justo  hablar de lo que la ONU denomina también una emergencia mundial de derechos  humanos. </p>
+<p>Y es que una de cada tres niñas y mujeres a nivel  mundial son víctimas todavía de violencia machista.</p>
+<p>La violencia contra niñas y mujeres es la forma de  violencia más extendida, más frecuente a escala mundial, pero también es la más  común y de la que menos se habla. </p>
+<p>Por ello, podemos afirmar que la violencia de género  tiene una raíz todavía estructural, con efectos devastadores para las niñas y  mujeres, y entonces, en consecuencia, también para toda la sociedad en  conjunto. </p>
+<p>Hablar, combatir y denunciar la violencia de género  es una obligación para todas nosotras, más todavía para quienes tenemos acceso,  un acceso privilegiado a la más alta tribuna pública de este país. </p>
+<p>Y lo digo privilegiado porque somos 128 senadores  los que podemos acceder y tener voz en esta tribuna. </p>
+<p>En México, en pleno 2025, las cifras nos gritan que  muchas veces las instituciones callan información que hoy es evidente: Diez  mujeres son asesinadas diariamente, contando feminicidios y homicidios dolosos.</p>
+<p>Cada día más de 600 delitos se cometen contra  mujeres; es decir, cada 25 minutos se abren nuevas carpetas por delitos por  violencia de género</p>
+<p>Siete de cada diez mujeres han vivido al menos un  hecho de violencia a lo largo de su vida.</p>
+<p>41 por ciento de las mujeres han sufrido de  violencia sexual.</p>
+<p>43 por ciento de las niñas y adolescentes entre 12 y  17 años han sido acosadas en espacios públicos.</p>
+<p>El 94 por ciento de los delitos sexuales no se  denuncian y, en consecuencia, no se investigan. </p>
+<p>Muchas de nosotras las que hoy estamos aquí  iniciamos defendiendo justamente los derechos de las niñas y de mujeres en este  país. Hoy estas luchas siguen siendo vigentes, estas luchas todavía no las  hemos ganado. </p>
+<p>Y hoy también son plenamente vigentes las palabras  de Norberto Bobbio, quien afirma &ldquo;que el grado de avance de un país se mide  justo por la condición en que viven sus mujeres&rdquo;. </p>
+<p> Desafortunadamente, la realidad de este país sigue  siendo muy dolorosa para niñas y mujeres. </p>
+<p>A pesar de que hemos dado, sí, un gran paso, tenemos  hoy por primera vez a una mujer en la Presidencia de la República,  es un gran paso, pero aún insuficiente porque todavía no hemos logrado  transformar el día a día de muchas mujeres y de muchas niñas que siguen siendo  víctimas de violencia en nuestro país. </p>
+<p>No  basta entonces con que hoy la mitad de este Congreso lo estemos conformando  mujeres. </p>
+<p>No  basta entonces con que muchas de estas mujeres que hoy nos acompañan, mujeres  destacadas que ocupan primeros espacios no es suficiente para poder revertir el  grado de violencia que todavía estamos viviendo. </p>
+<p>No  basta con ocupar espacios de poder, necesitamos que estos espacios se  conviertan en mejoras reales en la vida de niñas y mujeres. </p>
+<p>Por  ello, concluyo, desde Movimiento Ciudadano hacemos un sensible y urgente  llamado para discutir, escuchar y profundizar todavía, ante este enorme reto de  revertir la violencia que todavía viven mujeres y niñas en este país. </p>
+<p>Como  lo hemos hecho en reiteradas ocasiones, en varias ocasiones…</p>
+<p><strong>La Presidenta Senadora Laura Itzel Castillo Juárez:</strong> Si concluye, senadora. </p>
+<p><strong>La  Senadora Alejandra Barrales Magdaleno:</strong> …convocamos a las mujeres para tomarnos de la mano, cerrar filas y trabajar  juntas para poder lograr un México accesible a las mujeres y a las niñas de  nuestro país. </p>
+<p>Es  cuanto, señora Presidenta. </p>
+<p>Muchas  gracias. </p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez:</strong> A continuación, tiene el uso de la palabra la Senadora Amalia Dolores García  Medina, del grupo parlamentario, también, de Movimiento Ciudadano, hasta por  cinco minutos. </p>
+<p><strong>La  Senadora Amalia Dolores García Medina:</strong> Muchas gracias, señora Presidenta. </p>
+<p>Muy  estimadas invitadas, que efectivamente han logrado estar en espacios muy  relevantes a costa de un enorme esfuerzo.</p>
+<p>Y  haciéndome eco de las palabras de la Doctora Gloria Careaga, tenemos que hacer  una reflexión de fondo, y me parece que lo que ella ha expresado aquí debe ser  sujeto de reflexión y de análisis, porque necesitamos cambiar la cultura  predominante. </p>
+<p>Hoy,  25 de noviembre, el mundo entero levanta la voz para recordar que ninguna  mujer, ninguna niña, ninguna joven debe ni merece vivir con miedo. </p>
+<p>Esta  fecha ha sido declarada, por la Organización de Naciones Unidas como el Día  Internacional para la Eliminación de la Violencia Contra las Mujeres. </p>
+<p>A  partir de la batalla que dieron en contra de la dictadura y las violencias en  República Dominicana las hermanas Mirabal, también acompañadas por su padre,  las Mirabal Tavárez, Tavárez Mirabal son mujeres que abrieron camino señalando  que la violencia es inadmisible. Fueron asesinadas por eso. </p>
+<p> Pero  como decían los jóvenes del movimiento estudiantil de 1968 y del movimiento en  contra de los autoritarismos en Checoslovaquia, cuando entraron los tanques y  las tropas soviéticas tratando de acabar con su voz. </p>
+<p><em>&ldquo;Pueden  cortar todas las flores, pero no pueden impedir que regrese la primavera&rdquo;. </em></p>
+<p>Y  por eso el asesinato, la muerte de las hermanas Mirabal y de sus padres  floreció con un reclamo para garantizar, pero como una obligación de los  gobiernos y de las sociedades el derecho a vivir en paz. </p>
+<p>Hay  que decir que la violencia contra las mujeres, lamentablemente, y hoy todavía  en el mundo y en nuestro país, no es un hecho aislado. </p>
+<p>Hoy,  vivir con libertad y con bienestar todavía no es posible, y hay que decir, la  violencia no es normal, no podemos admitir que exista y verlo con indiferencia,  porque en México diez mujeres en promedio sufren de feminicidio, pierden la  vida al día. </p>
+<p>Pero  hay que decir también que más de 12.4 millones de mujeres reportan haber  sufrido violencia sexual durante la infancia. Esto es insoportable. </p>
+<p>Entre  2015 y 2023, 2.6 millones de niñas y adolescentes se convirtieron en madres,  como muchas, a consecuencia de violencia sexual;  solo en 2023 tres mil 134 niñas entre 10 y 14 años tuvieron un parto en México,  y en la mitad de los casos el padre es un hombre adulto. </p>
+<p>Esto no es un hecho normal, no es una relación  normal, es violencia, es un delito. Hay que decirlo, son niñas, no madres. </p>
+<p>Debemos recordarlo, no deben ser madres las niñas,  no deben ser esposas las niñas, no deben ser cuidadoras las niñas, no deben  estar enterradas en el silencio las niñas. </p>
+<p>El 25 de noviembre no es solo un recordatorio, es  un llamado a la responsabilidad colectiva, porque la violencia contra las  mujeres no empieza en la adultez, empieza, lamentablemente, desde la infancia. </p>
+<p>Una de cada dos mujeres declara haber sido  violentada antes de los 15 años, de acuerdo con datos del Inegi, pero menos del  10 por ciento de las niñas, niños y adolescentes logra denunciar la violencia  que ha vivido, la violencia que vive. </p>
+<p>Eso significa que la mayoría de las víctimas sufren  porque no hemos diseñado un sistema para hacerlos escuchar. </p>
+<p>Es por eso que hoy he presentado, presento ante  esta soberanía, una iniciativa para que en el círculo más cercano de la víctima  no existan limitaciones para que puedan presentar las denuncias, para que las  que actúan con valentía, las víctimas, puedan utilizar las tecnologías para  presentar la denuncia sin la necesidad de un adulto, de su círculo familiar y  cercano, que le impida hacerlo. </p>
+<p>Urge transformar el marco legal para que ninguna  niña o niño que sufra lo haga por falta de justicia. </p>
+<p>Urge crear mecanismos digitales accesibles,  confidenciales y amigables que permitan denunciar sin miedo, sin  intermediarios, sin perder tiempo que pueda, incluso, costarles la vida. </p>
+<p>Urge fortalecer las procuradurías de protección,  capacitar al personal, garantizar investigaciones con enfoque de género y  derechos de la niñez. </p>
+<p> Urge que existan medios homologados de denuncias  accesibles para niñas y niños sin que tenga que mediar la presencia de una  persona adulta. </p>
+<p>Termino, ninguna mujer, ninguna niña y ningún  adolescente en México debe ni merece vivir con miedo. </p>
+<p>Ninguna mujer o niña debe ser silenciada. </p>
+<p>Ninguna mujer o niña debe ser olvidada. </p>
+<p>Ninguna mujer o niña debe ser ignorada por el  Estado. </p>
+<p>Niñas, no madres. </p>
+<p>Muchas gracias. </p>
+<p><strong>La  Presidenta Senadora</strong> <strong>Laura Itzel Castillo Juárez:</strong> A continuación, tiene el uso de la palabra la  senadora Yeidckol Polevnsky, del grupo parlamentario del PT. </p>
+<p><strong>La Senadora Yeidckol Polevnsky Gurwitz:</strong> Primero, un saludo muy cariñoso a todo el  presídium, a quien le tengo mucho cariño, de verdad, y mucho reconocimiento. </p>
+<p>En el pasado la violencia contra la mujer no tenía  límite ni sanción alguna, ejemplo de ello es el caso de las hermanas Mirabal  quienes desafiaron a la tiranía de la dictadura de Rafael Leónidas Trujillo,  presidente de República Dominicana. </p>
+<p>Las hermanas Mirabal sufrieron violencia física y  psicológica, fueron amenazadas, perseguidas, humilladas, encarceladas,  golpeadas y torturadas en prisión. </p>
+<p>Sufrieron también la violencia política con la  confiscación de sus bienes y el encarcelamiento de sus maridos. </p>
+<p>Sufrieron violencia de género, su asesinato fue el  resultado de una decisión política de Trujillo quien las consideró una amenaza  por ser mujeres activistas. </p>
+<p>Las hermanas Mirabal luchaban por la justicia y la  libertad, su valentía y sacrificio las convirtió en un símbolo de la  resistencia contra la opresión y la violencia de género. </p>
+<p>El 25 de noviembre de 1960 fueron brutalmente  asesinadas a palos. </p>
+<p>En 1981 el primer encuentro feminista  latinoamericano y del Caribe, celebrado en Bogotá, Colombia, tomó la decisión  de instaurar el 25 de noviembre como el Día Internacional de la Eliminación de  la Violencia contra la Mujer en honor de Patria, Minerva y María Teresa  Mirabal. </p>
+<p>En 1993, la Organización de las Naciones Unidas  definió la violencia contra las mujeres como todo acto de violencia basado la  pertenencia al sexo femenino, que tenga o pueda tener como resultados un daño o  sufrimiento físico, sexual o psicológico para la mujer, así como las amenazas  de tales actos, las coacciones, la privación arbitraria de la libertad, tanto  si se produce en la vida pública como en la vida privada. </p>
+<p>Que se escuche claro, es un evento internacional  que México, de verdad honra en forma muy importante. </p>
+<p>Según la Encuesta Nacional sobre la Dinámica de las  Relaciones en los Hogares, en México el 70 por ciento de las Mujeres de 15 años  y más, ha experimentado, al menos un evento de violencia a lo largo de su vida. </p>
+<p> La violencia psicológica afecta al 52 por ciento de  las mujeres y la violencia sexual al 49. </p>
+<p>Y todo esto, porque por años y años no se hizo  nada, se instauró, régimen donde las mujeres no contaban. </p>
+<p>La mayoría de las madres, hijas, hermanas y  compañeras han sido marcadas por un sistema que normalizó la agresión y la  violencia en nuestras vidas. </p>
+<p>Durante mucho tiempo conmemorábamos este día y  significaba únicamente la opresión, la exclusión, la resistencia de los  márgenes impuestos por un sistema patriarcal. </p>
+<p>Hoy honramos la memoria de quienes nos abrieron  camino y celebraron que esta resistencia histórica se esté transformando en  poder político real. </p>
+<p>La llegada de la Doctora Claudia Sheinbaum Pardo, a  la Presidencia de la República marca el rompimiento epistemológico de nuestra  historia y en nuestra psique colectiva. </p>
+<p>Un hecho histórico y simbólico en México que ha  pulverizado el techo de cristal en la esfera política más alta. </p>
+<p>Hablo de un quiebre en el conocimiento y en lo  establecido para abrazar un nuevo cambio. </p>
+<p>Durante más de 200 años la vida independiente tuvo  rostro, voz y formas exclusivamente masculinas. </p>
+<p>El patriarcado nos repitió hasta el cansancio que  calladitas nos veíamos más bonitas. </p>
+<p>Al ver a una mujer portar la banda presidencial se  rompe este viejo paradigma que en México asociaba la autoridad presidencial  únicamente con los hombres. </p>
+<p>Su perspectiva buscaba enmarcar la igualdad de  género dentro de la defensa de los derechos del pueblo. </p>
+<p>Aborda la desigualdad estructural, eso dice nuestra  Presidenta, considerando a la educación, a la salud, la vivienda como parte de  un mismo proyecto.</p>
+<p>Ese cambio de conciencia es irreversible y se  respalda con acciones como el impulso a la paridad de género o a través de  reformas constitucionales que incluyen iniciativas como la cartilla de derechos  de la mujer. </p>
+<p>A través de frases como: &ldquo;Es tiempo de mujeres&rdquo;, el  gobierno de la Presidenta Sheinbaum abre espacios para generar un cambio  cultural profundo. </p>
+<p>Establece una nueva concepción de la igualdad que  identifica y combate las conductas cotidianas de violencia que habían sido  normalizadas. </p>
+<p>Hoy, las mujeres luchamos para ser reconocidas como  lo que siempre quisimos ser, activos de cambio, arquitectas del bienestar,  pilares de la República. </p>
+<p>No ignoramos que la violencia feminicida y la  violencia vicaria, el acoso y la brecha salarial siguen siendo realidades que  duelen profundamente en todos los hogares mexicanos. </p>
+<p>No podemos negar que el patriarcado se resiste a  morir y que reacciona con virulencia ante nuestro avance. </p>
+<p> La gran diferencia es que hoy no estamos solas  gritando en el desierto. </p>
+<p>Hoy la lucha contra la violencia tiene una alidada  en la Presidencia de la República. </p>
+<p>Hoy existen nuevos caminos para el acceso al  bienestar que no son dádivas, que hoy ya son derechos. </p>
+<p>La reforma en materia de igualdad  sustantiva que eleva a rango constitucional el derecho a la vida libre de  violencia y erradica la brecha salarial son lo que ha establecido la cuarta  transformación, son lo que se constituye con perspectiva de género. </p>
+<p>Desde  el grupo parlamentario del Partido del Trabajo, reafirmamos que nuestra alianza  es con las mujeres trabajadoras, con las madres buscadoras, con las indígenas,  con las estudiantes, con nuestras infancias.</p>
+<p>Entendemos  que la violencia económica es la raíz de muchas de otras formas de violencia. </p>
+<p>Por  eso nuestra agenda legislativa prioriza empoderamiento y autonomía financiera a  las mujeres para liberar su potencial político, económico y humano.</p>
+<p>Hoy  tenemos las leyes, tenemos la voluntad política y tenemos por primera vez una  Presidenta que mira con ojos de mujer a las mujeres y dice: &ldquo;llegamos todas&rdquo;.</p>
+<p>Quiero  se escuche fuerte, en este nuevo régimen quien agreda a una mujer se enfrentará  a todo el peso del Estado y a la fuerza de una sociedad que ya despertó.</p>
+<p>Quiero  terminar con una frase de Julia Álvarez, en su libro &ldquo;El tiempo de las  mariposas&rdquo; dedicado a las hermanas Mirabal, quien escribió: </p>
+<p>&ldquo;Reconozco  que para mí el amor es más profundo que la lucha o que lo que quiero decir es  que el amor es la lucha profunda, por lo que ya no están, por los que ya nos  faltan, por las que luchan y por las que vengan. Ni un paso atrás&rdquo;.</p>
+<p>¡Unidad  nacional! </p>
+<p>¡Todo  el poder al pueblo! </p>
+<p>¡Y  en el pueblo todo el poder a la mujer!</p>
+<p>Es  cuanto, señora Presidenta.</p>
+<p>Muchas  gracias y felicidades a todas y gracias por su ejemplo, su trabajo, su lucha,  porque de estas mujeres yo he aprendido mucho, empezando por Malú Micher, que  fue siempre una gran luchadora y una gran maestra.</p>
+<p>Y  hoy, por nuestra presidenta, de verdad presidenta, porque tenemos una  Presidenta de la que yo estoy muy orgullosa, la que conozco por años y es una  feminista de primera. </p>
+<p>Gracias  y felicidades a todas las mujeres que hoy están en este presídium y que han  luchado siempre incansablemente por acabar con la violencia contra la mujer.</p>
+<p>Es  cuanto, señora Presidenta.</p>
+<p><strong>La Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Muchas gracias, Yeidckol, por tus palabras.</p>
+<p> A continuación, tiene la palabra, la senadora  Carolina Viggiano Austria, del grupo parlamentario del Partido Revolucionario  Institucional, hasta por diez minutos.</p>
+<p><strong>La  Senadora Carolina Viggiano Austria: </strong>Muchas gracias, señora  Presidenta.</p>
+<p>Hoy  celebramos el Día Internacional de la Eliminación de la Violencia contra la  Mujer. No basta recordar cifras.</p>
+<p>Se  instituyó este día, justamente, para movilizar a la acción, para revisar cuál  es la condición de las mujeres y movilizarnos, hacer un balance, porque este  país lo construyeron mujeres que nunca se rindieron, las que abrieron las  escuelas para las niñas cuando no era permitido, las que conquistaron el  derecho al voto, las que hicieron de la igualdad su bandera y no un discurso.</p>
+<p>Pero  también y, sobre todo, lo construyeron las mujeres que hoy despiertan a las  05:00 de la mañana, cuidan, trabajan, estudian, sostienen a sus familias y, aun  así, encuentran fuerza para seguir luchando por sus derechos.</p>
+<p>Ellas  hacen historia sin reflectores, sin homenaje y sin descanso.</p>
+<p>A  todas ellas, México les debe una verdad incómoda, la violencia no es un  episodio aislado, es cotidiana, es estructural y es urgente combatirla con  seriedad.</p>
+<p>Hablemos  con honestidad, vivimos en un país donde la violencia contra las mujeres crece,  mientras el presupuesto para protegerlas se achica. Eso es una contradicción  que duele y que no podemos normalizar.</p>
+<p>En  el presupuesto 2026, desaparece el programa de Apoyo para Refugios  Especializados para Mujeres Víctimas de Violencia, un programa que ha salvado  vidas desde 2021.</p>
+<p>Dicen  que lo van a fusionar en un nuevo esquema llamado &ldquo;prevención y detección de  las violencias feminicidas y atención a las causas&rdquo;.</p>
+<p>Pero  hay un problema gravísimo, no conocemos las reglas a la fecha. </p>
+<p>No  sabemos cómo va a operar y, sobre todo, corremos el riesgo de quedarnos sin  recursos claros y etiquetados para los refugios. </p>
+<p>Y  cuando se diluyen los recursos se diluye también la fuerza de estos espacios. </p>
+<p>No  es menor, en México existen alrededor de 76 refugios y el 85 por ciento de  ellos son operados por organizaciones civiles, no por el gobierno, sólo el 15  por ciento depende directamente de instituciones públicas.</p>
+<p>Y,  aun así, entre 2019 y 2025, estos refugios han protegido a más de 190 mil  mujeres, niñas y niños, personas que encontraron ahí un techo, atención,  acompañamiento y, lo más importante, una oportunidad real de sobrevivir. </p>
+<p>Por  eso, la pregunta es inevitable. </p>
+<p>¿Cómo  justificar recortes cuando la violencia crece todos los días?</p>
+<p>No  es el único golpe, la salud materna, sexual y reproductiva recibe un recorte de  5 por ciento, lo que significa 135 millones de pesos menos. </p>
+<p>Y  el Programa de Igualdad Sustantiva pierde otro 11. por ciento más de 21  millones de pesos. </p>
+<p> Mientras  tanto el presupuesto para la autonomía económica de las mujeres, a cargo de la  Secretaría de Economía, apenas aumenta 2.2 por ciento, un crecimiento mínimo  que no alcanza para revertir desigualdades profundas. </p>
+<p>Hoy  que tenemos paridad en la Cámara de 50 por ciento mujeres sólo haría falta un  hombre que tenemos más para cambiar el presupuesto completo sin preguntar  porque entonces qué caso tiene haber llegado a la Cámara para no hacer cosas en  favor de las mujeres, no tiene ningún sentido seguir hablando de esto. </p>
+<p>Todo  esto está pasando en el país más peligroso para nosotras. </p>
+<p>Un  país donde la violencia marca la vida de siete de cada diez mujeres. </p>
+<p>Yo  presenté recientemente una iniciativa para considerar la violencia política en  razón de género como una causal de nulidad porque no sólo es la determinancia o  el usar mayores recursos que los permitidos, o contratar publicidad, la  violencia también impacta en una elección, también cambia la ruta de una  elección. </p>
+<p>Y  de eso justamente qué bueno que está aquí la presidenta Mónica Soto porque  conoce bien el tema y ojalá que nos ayude a impulsarla. </p>
+<p>Y  también aprovecho para decirle que me gustaría que ocupara esos lentes violetas  para que la magistrada Otárola que dejó su espacio ocupe la magistratura de ese  lugar la magistrada que quedó, o la candidata que quedó en el segundo lugar,  levante la voz para que otra mujer ocupe ese espacio, para que no quede así y  se viole el artículo 98 constitucional que fue reformado. </p>
+<p>Qué  bueno que está aquí, tal vez esos lentes necesitan aumento. </p>
+<p>Y  la realidad hoy es todavía más estremecedora, a 419 días del presente gobierno  se han registrado 4 mil 363 personas desaparecidas, son 11 desapariciones  diarias en promedio.</p>
+<p>Y  lo más doloroso, el 45 por ciento, casi 2 mil, son niñas y mujeres  adolescentes, entre 1 y 18 años de edad.</p>
+<p>Niñas  que no llegaron a su casa. </p>
+<p>Adolescentes  arrancadas de su vida cotidiana. </p>
+<p>Familias  buscando sin descanso. </p>
+<p>Esta  es la dimensión de la crisis que enfrentamos. </p>
+<p>No  son números, son vidas, son historias y merecen políticas públicas a la altura  de la emergencia que enfrentamos. </p>
+<p>Y  frente a este panorama surge una pregunta que nos confronta como país.</p>
+<p>¿Hoy  en la marcha legítima de las mujeres también se les va a imputar delitos de  tentativa de homicidio sólo por defender sus derechos?</p>
+<p>¿De  verdad se va a perseguir a las víctimas en lugar de protegerlas?</p>
+<p>¿Cómo  conciliar estos datos con un presupuesto que retrocede?</p>
+<p>¿Cómo  decir que las mujeres son prioridad mientras se desmantelan los programas que  las protegen?</p>
+<p> ¿Cómo  pueden participar en política las mujeres sin ser violentadas?</p>
+<p>Si  hoy mismo el senador Noroña violenta a Grecia Quiroz, le dice que &ldquo;es una  ambiciosa&rdquo; en el caso de querer aspirar a ser candidata a la gubernatura&rdquo;.</p>
+<p>Acaso  aspirar a un puesto de elección popular es sólo motivo de ambiciosos. Eso no  puede seguir ocurriendo. </p>
+<p>Por  eso, tenemos que castigar la violencia política en razón de género como una  causal de nulidad, para que esto deje  de ocurrir. </p>
+<p>Hoy no basta con discursos, hoy no basta con  celebraciones, hoy toca decirlo con claridad: Un país que no protege a sus  mujeres no puede llamarse democrático.</p>
+<p>Un gobierno que recorta refugios, ahora presupuestos  y abandona la salud de las mujeres, las empuja otra vez a la violencia de la  que intentan escapar. </p>
+<p>Por eso, en este 25 de noviembre levantamos la voz  por las mujeres que abrieron camino, por las que siguen caminando hoy y por las  niñas que merecen un futuro distinto, porque México será un país justo el día  que ninguna mujer tenga que ser valiente para seguir viva.</p>
+<p>Tiene que ser el día que ningún gobernador te pida  demostrar tu valentía todos los días para que te reconozca. </p>
+<p>Ese es el país que vamos a seguir defendiendo. </p>
+<p>Gracias, señora Presidenta.</p>
+<p><strong>La Presidenta Senadora Laura  Itzel Castillo Juárez: </strong>A  continuación, tiene el uso de la palabra la Senadora Virginia Magaña Fonseca,  del grupo parlamentario del Partido Verde Ecologista de México, hasta por diez  minutos. </p>
+<p><strong>La Senadora Virginia Magaña  Fonseca: </strong>Muy buenas tardes a  todas, a todos. Es un gusto saludar a todas nuestras invitadas de honor. </p>
+<p>¡Bienvenidas sean al Senado de la República!</p>
+<p>Y es un privilegio poder pronunciarme respecto a  este tema con tantas mujeres que tanto han hecho por nosotras. </p>
+<p>Con su venia, señora Presidenta. </p>
+<p>Compañeras y compañeros legisladores, hoy es 25 de  noviembre y el silencio no es opción, hace 65 años las hermanas Mirabal fueron  ejecutadas por atreverse a resistir la dictadura de Trujillo en República  Dominicana. </p>
+<p>Patria, Minerva y María Teresa no sólo desafiaron a  un tirano, desafiaron a un sistema que exigía su silencio y sumisión. </p>
+<p>Su legado es un recordatorio de que la violencia  contra las mujeres no es un asunto privado, es un asunto de interés público,  pero, sobre todo, es un asunto político. </p>
+<p>Sin ambigüedades, la antropóloga feminista Rita  Segato nos enseña que la violencia de género no es un acto individual ni  impulsivo, sino un mensaje. El agresor no sólo somete a la víctima, sino que  comunica a otros hombres su capacidad de dominio. </p>
+<p> La violencia, dice Rita, es una pedagogía de la  crueldad que entrena a las sociedades para la insensibilidad, normalizando lo  que debería de indignarnos. </p>
+<p>Esta normalización tiene consecuencias devastadoras,  en Guanajuato, el estado que represento, en abril de este año Jovita, una  panadera de Comonfort, de 54 años, corrió por varias calles pidiendo auxilio,  mientras un empleado de la panadería la amenazaba. </p>
+<p>Nadie abrió su puerta, ni la comandancia de policía  ni los comercios, fue asesinada mientras Guanajuato miraba hacia a otro lado. </p>
+<p>Lorena Jacqueline Morales, joven leonesa de 28 años,  fue acosada por su jefe, desapareció en el mes de mayo mientras buscaba trabajo  y su familia tuvo que empapelar las calles con su fotografía porque las  autoridades no actuaron con diligencia. </p>
+<p>Estas mujeres no murieron, fueron asesinadas por  hombres específicos y por la indiferencia institucional. </p>
+<p>Nombrar con verdad es un primer paso para esa  anhelada justicia. </p>
+<p>La estadística, las historias de vida lo confirman,  de enero a septiembre de 2025 Guanajuato encabezó las cifras de mujeres  víctimas de homicidio doloso, concentrando el 17 por ciento del total nacional. </p>
+<p>También  es una entidad con el mayor reporte de llamadas de nivel nacional pidiendo  auxilio por violencia familiar. Además, ocupa el segundo lugar en lesiones  dolosas, con casi siete mil mujeres agredidas.</p>
+<p>Estas  cifras, que no debemos normalizar, invocan a un Estado de emergencia, y  mientras tanto hay nuevas amenazas que se organizan en línea, la denominada  manosfera, comunidades digitales donde hombres jóvenes están siendo  radicalizados en el odio hacia las mujeres. </p>
+<p>Estos  espacios funcionan exactamente como la pedagogía de la crueldad de la que nos  habla Rita Segato, desensibilizan, progresivamente, normalizan la violencia y  celebran feminicidas como héroes. </p>
+<p>Desde  el Poder Legislativo tenemos la responsabilidad de proteger a las nuevas  generaciones, de estos discursos de odio que se propagan en línea; sin embargo,  quiero advertir algo fundamental, no podemos compartir la violencia solo  aumentando penas y delitos. </p>
+<p>Las  miradas punitivas no solo tienen el riesgo del simplismo, también asoman el  reduccionismo de un complejo tema público. </p>
+<p>Si  queremos transformar debemos desmantelar el mandato de masculinidad que exige  dominación, redistribuir el trabajo de cuidados que recae principalmente sobre  nosotras las mujeres, fortalecer el tejido comunitario que nos sostiene y  educar, en empatía, desde las primeras infancias. </p>
+<p>Sin  esta transformación profunda condenaremos a las próximas generaciones a repetir  nuestra historia, las de ellas, las de las otras, las nuestras, pero esta  transformación cultural no será posible sin leyes que la respalden. </p>
+<p>Guanajuato  presume programas sociales de bajo impacto y cobertura limitada para las  mujeres, mientras su legislación se rezaga frente a las realidades estatales. </p>
+<p> 19  estados ya actualizaron su legislación contra el abuso sexual. Nosotros  seguimos en francos regateos, cuatro de cada 10 mujeres guanajuatenses han  sufrido violencia sexual en espacios públicos, estas mujeres merecen protección  legal efectiva, merecen justicia. </p>
+<p>Desde  la Comisión para la Igualdad de Género de este Senado se identificaron 12 leyes  pendientes de armonización, entre ellas urge aprobar la Ley Ácida, la legítima  defensa con perspectiva de género y la despenalización del aborto, conforme a  los criterios de la Suprema Corte. </p>
+<p>Hace  unos días firmamos el Pacto de Xicoténcatl, como compromiso nacional. </p>
+<p>Desde  el grupo parlamentario del Partido Verde Ecologista de México reiteramos  nuestro compromiso con esta agenda y con las mujeres de Guanajuato y de todo el  país. </p>
+<p>Ahora  toca demostrar que los compromisos se honran con acciones. </p>
+<p>Las  hermanas Mirabal nos enseñaron que resistir es posible, incluso frente al poder  más brutal. </p>
+<p>Jovita  y Lorena nos recuerdan que cada mujer asesinada es una herida en el tejido  social; la violencia contra las mujeres no es inevitable, es construida y, por  tanto, puede ser desmantelada. </p>
+<p>Es  noviembre del 2025, en Guanajuato en menos de dos días mataron a tres mujeres,  una era menor de edad. El tiempo de la indignación estéril ya pasó, ha llegado  el momento de la acción transformadora. </p>
+<p>Empiezo  haciendo este llamado a la acción, el Congreso del estado de Guanajuato. </p>
+<p>¿Cuándo  empezamos con la urgente armonización legislativa? </p>
+<p>Es  cuanto, señora Presidenta. </p>
+<p>Gracias. </p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez:</strong> Muchas gracias. </p>
+<p>A  continuación, tiene el uso de la palabra la senadora María de Jesús Díaz  Marmolejo, del Partido Acción Nacional, hasta por cinco minutos.  </p>
+<p><strong>La  Senadora María de Jesús Díaz Marmolejo:</strong> Muy buenas tardes. Bienvenidas sean todas ustedes. </p>
+<p>Hoy  me dirijo a ustedes en una fecha emblemática. Con el permiso, señora Presidenta. </p>
+<p>Hoy el Senado de la República se enfrenta a una  prueba moral, ética y humana en este Día Internacional para la Eliminación de  la Violencia contra la Mujer. </p>
+<p>México nos exige coherencia, y la historia nos  exige valentía, porque mientras aquí hablamos de igualdad, de respeto y de  derechos; allá afuera miles de mujeres siguen viviendo con miedo, miedo a la  calle, miedo en su casa, miedo a la impunidad y, peor todavía, miedo que desde  el poder público se revictimice, se silencie o se ataque a una mujer por  atreverse a alzar la voz. </p>
+<p>Hoy les pido todo el apoyo que se merece una mujer,  una mujer que su esposo fue asesinado. </p>
+<p> Con absoluta firmeza, Malú, tú que defiendes mucho  este tema. </p>
+<p>Y a usted, secretaria, de favor le pido que tome  cartas en el asunto con el tema del senador Gerardo Fernández Noroña en contra  de Grecia Quiroz, viuda de un hombre asesinado, mujer que atraviesa un duelo  devastador, y que todavía así ha mostrado una valentía ejemplar para exigir  justicia. </p>
+<p>Decir que la ambición la despertó, insinuar que su  dolor es oportunismo político, burlarse de sus señalamientos o minimizar su  derecho a participar en la política. </p>
+<p>La violencia política de género que se está  atravesando el día de hoy es muy grave y muy delicada, más todavía en este día  precisamente, lo que estamos conmemorando, las formas de violencia contra las  mujeres. </p>
+<p>Compañeras y compañeros, Grecia Quiroz no está  sola, cada mujer que ha sido callada, desestimada, señalada o humillada; desde  el poder tampoco está sola. </p>
+<p>Este Senado, el Senado de la paridad no puede  permitir que desde una curul se perpetue la violencia que decimos combatir. </p>
+<p>No podemos normalizar que un legislador use su voz  para revictimizar a una mujer a una mujer con ese gran dolor. </p>
+<p>No podemos quedarnos calladas ante un acto de  insensibilidad tan profundo, tan hiriente y tan contrario a la responsabilidad  que nos confiere el pueblo de México. </p>
+<p>Hoy desde esta tribuna repruebo energéticamente las  declaraciones del senador Fernández Noroña, porque son revictimizantes, porque  son violentas, y porque envían un mensaje devastador, el que la violencia  política contra las mujeres puede venir, incluso, de quienes deberían de  protegerlas. </p>
+<p>A mis compañeras senadoras hoy las convoco a que  cerremos filas, a unirnos por encima de grupos parlamentarios o colores o  ideologías; a demostrarle al país que es momento de defender a una mujer  violentada. </p>
+<p>Aquí no caben las divisiones, les pido que hoy  actuemos con un solo corazón, con una sola voz y con un solo mensaje. </p>
+<p>En este Senado ninguna mujer será atacada sin que  todas nosotras las defendamos, porque si una mujer es violentada desde el  poder, y nosotros guardamos ese silencio, entonces la violencia gana. </p>
+<p>Y hoy precisamente, hoy no podemos permitir que eso  suceda. </p>
+<p>La situación actual de las mujeres en México exige  mucho más que discursos, exige congruencia, México vive una crisis de violencia  contra las mujeres que no se puede minimizar, dos de cada tres mujeres han  sufrido un tipo de violencia, más de dos mil 500 mujeres asesinadas al año, si  sumamos feminicidios y homicidios dolosos. </p>
+<p>A la par crece la violencia política contra las  mujeres, especialmente hacia quienes ocupan o buscan ocupar espacios de  decisión. </p>
+<p>Es cuanto, señora Presidenta. </p>
+<p><strong>La Presidenta Senadora Laura Itzel Castillo Juárez: </strong>A continuación, tiene el uso de la palabra la  senadora Susana Zatarain García, también del grupo parlamentario del Partido  Acción Nacional, hasta por cinco minutos.</p>
+<p> <strong>La Senadora Susana Zatarain García: </strong>Señora<strong> </strong>Presidenta. </p>
+<p>Compañeros, compañeras, hoy en el Día Internacional  de la Violencia contra las Mujeres, México llega con una verdad que nos duele a  todas y a todos, la violencia contra nosotros, contra nosotras las mujeres está  creciendo en México. </p>
+<p>Y el Estado, el gobierno, el gobierno, el régimen  de Morena no está respondiendo con la fuerza, ni con la urgencia, ni con la  seriedad que merece este tema. </p>
+<p>No hay peor crisis que la que se pudo haber evitado  y no hay violencia más devastadora que aquella que el Estado está permitiendo  que avance. </p>
+<p>Yo les quiero preguntara todas y a todos en este  Senado, qué se ha transformado en estos siete años en materia de violencia a la  mujer.</p>
+<p>Absolutamente nada, las cifras son alarmantes, en  nuestro país asesinan a diez mujeres todos los días. </p>
+<p>¿Eso es transformar nuestro país? Las llamadas de  emergencia por violencia familiar han aumentado también un 20 por ciento, más  las que no se han atrevido a llamar. </p>
+<p>A mí me tocó vivir eso en mi hogar. Dieciocho  estados de México tienen incrementos en feminicidios, dieciocho estados, más de  la mitad del país ha aumentado en feminicidio y seguimos siendo uno de los  países que tiene más mujeres y niñas desaparecidas del mundo. </p>
+<p>¿Qué tenemos que festejar el día de hoy? No hay  ninguna transformación. </p>
+<p>En mi estado, en Baja California Sur, las víctimas  de asesinato crecieron 120 por ciento desde que gobierna Morena, del 2021 al  2025; 120 por ciento en Baja California Sur, las extorsiones han aumentado  también un 24 por ciento y bueno la percepción de inseguridad ha aumentado 16  puntos. </p>
+<p>Fíjense que la semana pasada se materializó un  hecho de esto que les estoy contando de Baja California Sur, hubo un  enfrentamiento del crimen organizado que ha tomado el territorio en Baja  California Sur y asesinaron a una familia entera, a dos mujeres dentro de esa  familia y a dos niños, dentro de esa familia en Baja California Sur. </p>
+<p>Seguramente ustedes tienen datos de cómo en sus  estados también han pasado estas tragedias, pero la violencia no se puede  ocultar, no se pueden ocultar las mujeres asesinadas, no se pueden ocultar las  desaparecidas, no se puede ocultar el dolor de las madres que hoy buscan  desesperadamente a sus hijos y que asumen la tarea que las fiscalías de México  no han llevado a cabo con respeto, con responsabilidad y con compromiso, porque  si eso fuera, las cifras de desaparecidos no fueran como están en este momento en  nuestro país, escalofriante. </p>
+<p>Es muy importante para mí decir frente a usted,  secretaria Citlalli que, desde mi punto de vista, la política pública para  proteger a las mujeres no está funcionando, secretaria. </p>
+<p>Se han debilitado la red de refugios, se dejó sin  herramientas a quienes acompañan a las víctimas, las fiscalías están rebasadas,  no tienen perspectiva de género y la institución que debería coordinar la  respuesta nacional.</p>
+<p>La Conavim hoy opera con menos recurso, con menos  recursos, con menos capacidad y menos alcance, bueno, lo que suplió, todo el  sistema que usted coordina en el país tiene menos recursos. </p>
+<p> Y es muy importante que nos explique aquí en el  Senado qué va a hacer para enfrentar esa situación con tan pocas  herramientas. </p>
+<p>Hoy  25 de noviembre faltan miles de mujeres desaparecidas, faltan miles de mujeres  que han sido asesinadas, faltan mujeres que han denunciado mil veces y jamás  han sido escuchadas.</p>
+<p>Por  eso, hoy quiero recordar también el caso de Yeimi Alondra, una joven de 23 años  que ha sido, que desapareció hace más de un año en Los Cabos y que los últimos  registros vieron cómo un hombre salió con ella en una lancha, salió con un  ancla en la lancha, regresó sin ancla y dicen las investigaciones, que  presuntamente porque no hay ni un detenido, ninguna sentencia la tiraron al mar  con un ancla en sus piernas.</p>
+<p>Esa  mujer por más que la han buscado y la hemos buscado, porque como buzo también  he participado en el equipo de búsqueda, no se encontró.</p>
+<p>Quiero,  para terminar, expresar mi profundo respaldo también por supuesto, a Grecia  Quiroz, quien ha sido señalada o ha sido tratada de minimizar por un senador de  la República, que ya está diciendo que le va a ganar las próximas elecciones.</p>
+<p>Bueno,  en qué país vive ese senador de la República, que debería estar aquí en este  Senado promoviendo políticas públicas, legislación para proteger a las mujeres  de México…</p>
+<p><strong>La Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Concluya, senadora. </p>
+<p><strong>La  Senadora Susana Zatarain García:</strong> …no violentándolas.</p>
+<p>Yo  le pido, Secretaría Citlalli, que se pronuncie con ese tema y que no guarde  silencio como sí lo hizo con el caso de Cuauhtémoc Blanco.</p>
+<p>Es  cuanto. </p>
+<p>Y  muchas gracias.</p>
+<p><strong>La Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Orden, por favor.</p>
+<p>Nada más decirles que sí hay, ahora sí, información  que se les puede proporcionar que eso es importante.</p>
+<p>Tiene el uso de la palabra, la senadora Karina  Isabel Ruiz Ruiz, del grupo parlamentario del Partido Morena y les recuerdo que  estamos en una sesión solemne y que debemos de guardar todos y todas respeto.</p>
+<p><strong>La  Senadora Karina Isabel Ruiz Ruiz: </strong>Con el permiso de la  Presidencia.</p>
+<p>Compañeras  y compañeros Senadores, el 25 de noviembre es una fecha de reflexión y acción.</p>
+<p>Si  bien aún queda mucho por hacer para lograr que todas las mujeres vivan libres  de violencia, debemos reconocer los avances recientes que fortalecen las  capacidades del Estado mexicano para atender esta problemática.</p>
+<p>Al  frente del gobierno federal la Presidenta ha implementado diversas acciones  para prevenir las violencias con las mujeres, tal es el caso de la campaña  nacional permanente &ldquo;Es Tiempo de Mujeres sin Violencia. Súmate y Transforma&rdquo;,  cuyo objetivo es fortalecer las capacidades institucionales en temas de  perspectiva de género, atención a las violencias contra la mujer igualdad  sustantiva.</p>
+<p> Asimismo,  en marzo del 2025 se suscribió un convenio de colaboración interinstitucional  orientado a fortalecer la formación del personal responsable de la atención a  víctimas, garantizando el acceso a la justicia con perspectiva de género y  erradicando, prácticas, que perpetúan la revictimización de mujeres  adolescentes y niñas.</p>
+<p>También  se han reforzado los protocolos de prevención, acción, contención, respuesta,  acompañamiento y reparación del daño a víctimas mediante mecanismos de atención  inmediata y herramientas especializadas.</p>
+<p>Cabe  destacar que para este año se asignaron recursos presupuestarios de 103.9  millones de pesos para la creación, fortalecimiento y operación de los centros  de justicia para las mujeres. Sí, porque este gobierno de la transformación no  sólo se queda en discurso esta batalla en contra de la violencia a la mujer,  también se ponen recursos.</p>
+<p>En  materia de infraestructura se aprobó la creación de un centro de justicia, en  Morelos y 17 proyectos en nueva estados, además, de siete proyectos de  fortalecimiento en Chiapas, Colima, Jalisco, Michoacán, Sinaloa y Zacatecas. </p>
+<p>En  2025 se asignaron 307.2 millones de pesos al Programa Presupuestario E015. Promover  la atención y prevención de la violencia contra las mujeres de los cuales 247.9  millones se destinaron a subsidios. </p>
+<p>Y  123.9 millones específicamente a medidas dirigidas a estados y municipios con  alerta de violencia de género.</p>
+<p>Entre  las acciones aprobadas por el Comité de Evaluación de Proyectos destacan el  fortalecimiento del registro en el Banco Nacional de Datos e información sobre  casos de violencia contras las mujeres. </p>
+<p>Asimismo,  se invirtieron 394 millones de pesos para el subsidio de 65 refugios  especializados y 34 centros externos de atención de los cuales 52 por ciento  pertenecen a gobiernos locales y 48 por ciento son administrados por  organizaciones de la sociedad civil.</p>
+<p>Estos  espacios garantizan seguridad y acompañamiento integral para las mujeres y sus  hijas e hijos. </p>
+<p>En  relación con esto no puedo dejar de mencionar los Centros Libre para las  mujeres, espacios comunitarios de atención integral que promueven la autonomía  y previenen la violencia de género. </p>
+<p>Hasta  julio del 2025 ya estaban en operación 678 centros, cumpliendo al 100 por  ciento la meta establecida para este año. </p>
+<p>Cabe  también mencionar que hemos estado distribuyendo las cartillas de derechos de  las mujeres, incluso en la unión americana debido a que nuestras mexicanas en  el exterior también tienen derecho a saber de sus derechos, los cuales estamos  luchando en México en caso de que decidieran regresar o ser repatriadas  forzadamente. </p>
+<p>Compañeras  y compañeros, este gobierno de mujeres y para las mujeres ha hecho un gran  trabajo para avanzar hacia alcanzar el objetivo de erradicar la violencia. </p>
+<p>Desde  el Senado reafirmamos nuestro compromiso de seguir legislando y trabajando para  que todas las mujeres vivan libres de violencia y en un país cada vez más  democrático. </p>
+<p>Es  cuanto. </p>
+<p><strong>La  Presidenta Senadora Laura Itzel Castillo Juárez: </strong>Gracias,  Senadora Ruiz Ruiz. </p>
+<p> Ahora  tiene el uso de la palabra la senadora Alma Anahí González Hernández, del grupo  parlamentario del Partido Morena, hasta por cinco minutos. </p>
+<p><strong>La  Senadora Alma Anahí González Hernández: </strong>Con  su permiso, señora Presidenta. </p>
+<p>Hoy,  en el Día Internacional para la Eliminación de las Violencias Contra las  Mujeres, levantamos la voz para reafirmar con compromiso que ninguna mujer de  este país tenga que vivir con miedo y que cada niña crezca en un entorno que la  respete, la valore y la proteja, porque en México no habrá violencia para ni  una más y no faltará ni una menos. </p>
+<p>Saludo  a mis compañeras y compañeros legisladores, y a todas las instituciones  presentes, que desde su ámbito están construyendo un camino que transforma una  realidad que nos duele, pero que también se convoca a luchar por la  erradicación de todas las violencias. </p>
+<p>Agradezco  a mi compañera, la senadora Malú Micher, presidenta de la Comisión de Igualdad  de Género por su apertura, su ejemplo y su fortaleza incansable, su liderazgo  nos recuerda que la lucha feminista, en México, no tiene marcha atrás y que el  Senado tiene rostro de mujer, de justicia y de dignidad. </p>
+<p>Este  25 de noviembre el gobierno de México dio un inicio a una jornada nacional de  16 días de activismo que concluirá el 10 de diciembre, Día Internacional de los  Derechos Humanos. </p>
+<p>Estos  días no son un gesto simbólico, sino un esfuerzo articulado que integra  actividades territoriales, conferencias de concientización, materiales de  difusión, espacios de formación y reflexión que buscan llegar a cada rincón del  país. </p>
+<p>Se  trata de promover diálogos que  incomodan al machismo, de acompañar a quienes han vivido violencia y de  enseñarnos a actuar de manera correcta y oportuna ante cualquier tipo de  agresión. </p>
+<p>En esta ruta nuestra querida secretaria Citlalli  Hernández, aquí presente y a quien doy la más cordial bienvenida, quien ha  detallado el enfoque integral de la estrategia, que trabaja simultáneamente  contra la violencia sexual, la violencia digital y la normalización cultural de  las agresiones que históricamente han condicionado la vida de las mujeres. </p>
+<p>Este esfuerzo es urgente si consideramos que más del  70 por ciento de las mujeres hemos enfrentado algún tipo de violencia, una  herida que ninguna institución o persona puede o debe ignorar. </p>
+<p>Ante ello, nuestra querida Presidenta, la Doctora  Claudia Sheinbaum, presentó los compromisos centrales de su gobierno para  enfrentar esta problemática; son compromisos que ponen en el centro a la  justicia, que buscan que ninguna denuncia sea desestimada, que fortalece la  coordinación con los estados, que impulsa los senderos seguros y que apuesta  por capacitar y certificar a quienes atienden casos de violencia. </p>
+<p>Se van a garantizar así los derechos de todas las  mujeres, que sean respetados en cada entidad del país. </p>
+<p>A esto se suma el Plan Integral contra el Abuso  Sexual, que propone la modificación del tipo penal federal y reconoce que, sin  justicia efectiva, no habrá verdadera transformación. </p>
+<p>La violencia contra las mujeres no se combate con  discursos, se combate con acciones. </p>
+<p>Desde esta Cámara también hemos trabajado para  construir un país seguro y digno para las mujeres.</p>
+<p> Hemos presentado iniciativas que hoy son una  realidad, que se traduce en prosperidad compartida, en igualdad sustantiva, en  salud mental con perspectiva de género, en iniciativas que fortalecen la salud  ginecológica, el reconocimiento de todas nosotras, incluyendo mujeres indígenas  y afromexicanas.</p>
+<p>Porque el trabajo en el Senado ha sido para las  madres, para las hijas, para las emprendedoras, para todas aquellas cuyo rostro  es también el rostro de nuestro país. </p>
+<p>En la revolución del bienestar tenemos claro que no  debe existir una realidad donde las mujeres y las niñas vivamos bajo prácticas  violentas. </p>
+<p>Todos debemos caminar libres, con acceso a la  justicia, viviendo sin miedo y abriendo camino a las nuevas generaciones, que  crezcan en un país más digno y más humano. </p>
+<p>Como senadora y como mujer, reafirmo las palabras de  la Presidenta, que cuando llega una, llegamos todas.</p>
+<p>Porque es tiempo de mujeres, de mujeres que guían  nuestro país con fortaleza, de inteligencia y amor al pueblo, como lo hacemos  todas y cada una en los espacios que hoy ocupamos. </p>
+<p>Sigamos caminando juntas, en unidad por un México  donde la vida de todas sea segura, respetada, pero, sobre todo, plena. </p>
+<p>Ese es el país que merecemos y ese es el país que  estamos llamadas y llamados a construir. </p>
+<p>Ni una más y ni una menos. </p>
+<p>Muchas gracias. </p>
+<p><strong>La Presidenta Senadora Laura  Itzel Castillo Juárez: </strong>Muchas  gracias, compañera Anahí. </p>
+<p>Compañeras y compañeros Senadores y Senadoras.</p>
+<p>Honorable Presídium, que se encuentra el día de hoy  aquí.</p>
+<p>Que nos acompañan las Magistradas Celia Maya, Mónica  Soto.</p>
+<p>La Doctora Gloria Careaga.</p>
+<p>La representante de la Suprema Corte de Justicia,  Cristina Solano. </p>
+<p>Desde luego, también la diputada Anais Burgos, que  se tuvo que retirar por cuestiones de trabajo.</p>
+<p>Pero desde luego a nuestra compañera querida, la  Secretaria de las Mujeres, Citlalli Hernández, que viene en representación de  la Presidenta de la República, la Doctora Claudia Sheinbaum Pardo.</p>
+<p>Quien ha mostrado desde luego un compromiso y que el  día de hoy en la mañanera, en el marco de este Día Internacional contra la  Violencia Hacia la Mujer, presentaron una gran propuesta para lo que tendrá que  ser la homologación de los códigos penales en los distintos estados de la  República Mexicana. </p>
+<p>El  25 de noviembre, Día Internacional de la Eliminación de la Violencia Contra las  Mujeres, es un luto que se repite. </p>
+<p> Hace  65 años, las mariposas Patria, Minerva y María Teresa Mirabal, como lo han  dicho las compañeras que me antecedieron, fueron asesinadas, y fueron  asesinadas por atreverse a alzar la voz, cortándoles las alas y, sin embargo,  hoy siguen volando dentro de cada una de nosotras. </p>
+<p>Porque  cada una, de nosotras, tiene dentro un aleteo que insiste, que resiste y que no  se rinde. </p>
+<p>Sin  embargo, en los hogares, en los caminos, en las calles, las mujeres seguimos  siendo asesinadas por el simple hecho de ser mujeres, y duele, duele cuando una  niña aprende demasiado temprano a tener miedo. </p>
+<p>Duele  cuando una adolescente deja de soñar porque teme no llegar viva en la noche. </p>
+<p>Duele  cuando una mujer es calladas, descalificada, golpeada o desaparecida. </p>
+<p>Duele,  pero ese dolor también es el que a todas nosotras nos mueve, nos empuja, nos  hermana.</p>
+<p>Porque  una mujer, ni siendo Presidenta de la nación deja de ser blanco de violencia  por el simple hecho de ser mujer.</p>
+<p>Porque  a nosotras nos matan, nos violan, nos humillan, nos desaparecen, nos  cuestionan, nos culpan solo por el hecho de ser quienes somos. </p>
+<p>Por  eso, aunque nos llamen exageradas, sensibles, dramáticas o hasta histéricas.  Les decimos, la verdad es que somos históricas por la lucha que damos a diario.</p>
+<p>Porque  seguimos y resistimos. Nada nos ha sido regalado, cada derecho ha sido  conquistado por quienes nos antecedieron; somos las hijas, las nietas, las  madres, las abuelas y hermanas de todas las que no están. </p>
+<p>Venimos  de mujeres que sembraron semilla en tierra árida, que nos regalaron sus alas y  sus sueños y hoy somos ese bosque que crece. </p>
+<p>A  veces sentimos que avanzamos pequeños pasos, pero nuestros pasos son muy firmes  y eso sí, sin ningún retroceso. </p>
+<p>Las  hermanas Mirabal se identifican como las mariposas. Este día conmemoramos esa  metamorfosis que representa estos bellos seres de la naturaleza que significan  esa metamorfosis hacia el vuelo a la libertad por la que todas nosotras, las  que estamos aquí presentes, hemos luchado. </p>
+<p>Por  eso, el 25 N es un recordatorio de que la violencia contra las mujeres no es  normal, sino que es evitable y de que no es privada, es un problema colectivo,  es un problema público, un problema social, es un problema de todas y de todos. </p>
+<p>Que  el naranja sea un compromiso para unirnos en la eliminación de las violencias  contra las mujeres. </p>
+<p>Nosotras  no pedimos privilegios, exigimos una vida libre de violencia, exigimos  libertad. </p>
+<p>Exigimos  que ninguna niña tenga que aprender a sobrevivir antes de aprender a jugar. </p>
+<p>Exigimos  que ninguna mujer tenga que explicar por qué merece vivir sin violencia, porque acompañamos a la Presidenta, a la  Doctora Claudia Sheinbaum, en todas sus iniciativas a favor de las mujeres. </p>
+<p> Por todas las que  están, por todas las que nos faltan, por las que ya no pueden alzar la voz aquí  estamos, y no nos vamos a rendir nunca.</p>
+<p>Hasta que la igualdad  se haga costumbre. </p>
+<p>Hasta que ninguna  mujer sea asesinada.</p>
+<p>Hasta que las  violencias sean solo un recuerdo del pasado.</p>
+<p>Hasta que todas las  violencias sean erradicadas. </p>
+<p>¡Muchas felicidades!</p>
+<p>Éste es un día de  lucha, el 25 de noviembre.</p>
+<p>Solicito a todas las  personas poner de pie para entonar el Himno Nacional. </p>
+<p align="center">(Todos  de pie <a name="_Hlk139976304">entonan el Himno Nacional)</a></p>
+<p>Favor de tomar  asiento. </p>
+<p>A nombre del Senado  de la República agradecemos la asistencia de las distinguidas personas  invitadas que nos han acompañado en esta importante conmemoración. </p>
+<p>Solicito a las  senadoras y a los senadores integrantes de la Mesa Directiva se sirvan  acompañar a nuestras invitadas hasta las puertas de este recinto cuando deseen  retirarse. </p>
+<p>Asimismo, insto a mis  compañeras y a mis compañeros a que permanezcamos en el salón de sesiones para  que continuemos con nuestra sesión ordinaria. </p>
+<p>Se levanta la sesión  solemne. </p>
+<p align="center">(Se  levantó la sesión a las 13:52 horas)</p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a124323'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

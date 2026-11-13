@@ -1,0 +1,55 @@
+# Plan de Implementación: Detección Automática Multinivel del Autor
+
+Implementación de un sistema en capas (Multi-tier Author Detection) en [`scrapping_rei.py`](file:///c:/Users/PC/OneDrive%20-%20ITESO/Iteso/11vo%20semestre/PAP%20II/Proyectos/scrapping/scrapping_rei.py) para garantizar la extracción correcta y automática del nombre del Rector/Autor, incluso cuando falten metadatos en la API de DSpace 7.
+
+## Estrategia Multinivel de Extracción
+
+```mermaid
+graph TD
+    A[Objeto DSpace / Ítem] --> B{1. Metadatos API DSpace}
+    B -- Encontrado en dc.contributor.author/creator/contributor --> C[Normalizar Nombre]
+    B -- No encontrado / Incompleto --> D{2. Regex & Búsqueda de Patrones}
+    D -- Coincidencia en Título/Descripción/Texto --> C
+    D -- No encontrado --> E{3. Mapeo por Fecha / Período Rectoral}
+    E -- Encontrado por Rango de Fechas --> C
+    E -- Sin coincidencia --> F[Fallback por Defecto: Rector del ITESO]
+```
+
+---
+
+## Cambios Propuestos
+
+### [`scrapping_rei.py`](file:///c:/Users/PC/OneDrive%20-%20ITESO/Iteso/11vo%20semestre/PAP%20II/Proyectos/scrapping/scrapping_rei.py)
+
+#### 1. Extracción de Metadatos Extendidos (`fetch_item_data`)
+- Inspeccionar `dc.contributor.author`, `dc.creator`, `dc.contributor`, y `dc.contributor.other`.
+- Si alguno contiene un valor válido, seleccionarlo como `author_raw`.
+
+#### 2. Mapeo Cronológico por Período Rectoral (`resolve_speaker`)
+- Definir rangos de fechas oficiales de los rectores del ITESO para resolver con 100% de certeza cuando la fecha esté disponible:
+  - **Hasta Jul 1992**: P. Luis González Cosío Elcoro, S.J.
+  - **Ago 1992 - Jul 1998**: P. Pablo H. Posada, S.J.
+  - **Ago 1998 - Jul 2002**: Mtro. David Fernández Dávalos, S.J.
+  - **Ago 2002 - Jul 2008**: Mtro. Héctor M. Acuña Nogueira, S.J.
+  - **Ago 2008 - Oct 2014**: Mtro. Juan Luis Orozco Hernández, S.J.
+  - **Nov 2014 - Oct 2018**: Dr. José Morales Orozco, S.J.
+  - **Nov 2018 - Ene 2022**: Dr. Luis Arriaga Valenzuela, S.J.
+  - **Feb 2022 - Actualidad**: Dr. Alexander Paul Zatyrka Pacheco, S.J.
+
+#### 3. Búsqueda por Regex en Título, Descripción y Texto Limpio
+- Detectar patrones como `Dr.`, `Mtro.`, `P.`, `S.J.`, y apellidos clave dentro de la combinación de título, metadatos y primeras 500 palabras del texto.
+
+#### 4. Formateo y Limpieza Automática de Nombres
+- Invertir automáticamente nombres en formato `Apellido, Nombre`.
+- Normalizar caracteres de codificación y asegurar el sufijo jesuita `, S.J.` cuando corresponda.
+
+---
+
+## Plan de Verificación
+
+### Pruebas Automatizadas
+- Ejecutar `python scrapping_rei.py` para regenerar `informes_rector_iteso.csv` y `informes_rector_iteso.xlsx`.
+- Validar la columna `speaker` de todos los 32 registros generados en el CSV para confirmar que ningún registro quede como nulo o desalineado.
+
+### Verificación Manual
+- Comparar el resultado con la lista cronológica conocida de informes de rectoría.

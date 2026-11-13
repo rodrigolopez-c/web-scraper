@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 6</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Alejandro Armenta Mier</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Ordinaria Celebrada<br>en la Ciudad de M&eacute;xico, el 13 de Septiembre de 2022</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/2/PPO/PDF-WEB/PPO_No6_13-SEPTIEMBRE-2022_VESP.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106232'></a><p align="center"><strong>PRESIDE EL SENADOR </strong><br>
+  <strong>ALEJANDRO ARMENTA  MIER</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>(15:22 horas) Solicito a la Secretaría informe a la  Asamblea el resultado del cómputo de asistencia de las ciudadanas y ciudadanos  Senadores.</p>
+<p align="justify"><strong>La Secretaria  Senadora Verónica Noemí Camino Farjat: </strong>Honorable Asamblea,  conforme al registro de asistencia, se han acreditado un total de 99 ciudadanas  Senadoras y ciudadanos Senadores. En consecuencia, hay quórum.</p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Se abre la sesión vespertina del martes 13 de  septiembre de 2022, correspondiente al primer periodo de sesiones ordinarias  del segundo año de ejercicio de la LXV Legislatura.</p>
+<p align="justify">El Orden del Día  está disponible en el monitor de sus de sus escaños con lo cual se informa de  los asuntos que corresponden a la agenda. </p>
+<p align="right"><strong>ORDEN DEL DÍA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/129029"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Asimismo, el acta de la sesión matutina de este día  se encuentra publicada en la Gaceta Parlamentaria de este día.</p>
+<p align="right"><strong>ACTA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/129030"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/asistencias/2022_09_13/5"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">En consecuencia, consulte la Secretaría a la  Asamblea, en votación económica, si se aprueba el acta referida.</p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí  Camino Farjat: </strong>Con  gusto, señor Presidente. Consulto a la Asamblea, en votación económica, si se  aprueba el acta referida. Quienes estén por la afirmativa, favor de levantar la  mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p align="justify">Quienes estén por la negativa, favor de levantar la  mano </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Quienes se abstengan, favor de levantar la mano.</p>
+<p align="justify">Aprobada el acta de la sesión anterior, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta  Mier: </strong>Aprobada el acta de  la sesión matutina del martes 13 de septiembre de 2022. </p>
+<p align="justify">Pasamos al siguiente asunto.</p>
+<p align="justify">Informo a la Asamblea que se encuentran en nuestro  salón de sesiones los ponentes del Segundo Congreso de Buenas Prácticas de  Comunicación Parlamentaria en América Latina. Este Congreso es organizado por  el Senado de la República y el Canal del Congreso de México, nos visitan las  representaciones de Brasil, de Chile, de Costa Rica, de Guatemala y de  Paraguay, están también las representaciones del Parlatino y del Parlamento  Andino, así como la del estado de Jalisco y de la Ciudad de México. </p>
+<p align="justify">Nuestros visitantes acuden a invitación del Senador  Ricardo Velázquez Meza. </p>
+<p align="justify">A todas las representaciones los acompaña el Director  del Canal del Congreso. </p>
+<p align="justify">¡Sean todas y todos bienvenidos!, al Senado de la  República, ésta es su casa. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106232'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106234'></a><p align="justify"><strong>SECRETARÍA DE GOBERNACIÓN</strong></p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí  Camino Farjat: </strong>Con  gusto, señor Presidente. </p>
+<p align="justify">Se recibió de la Secretaría de Gobernación, oficio  con el que remite de la Secretaría de Economía en formato electrónico las  Fichas de Monitoreo y Evaluación 2021, así como las posiciones institucionales  correspondientes a los programas presupuestarios &ldquo;B002&rdquo;, &ldquo;E005&rdquo;, &ldquo;S220&rdquo; y  &ldquo;U007&rdquo;. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-09-13-2/assets/documentos/Oficio_Economia.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta  Mier: </strong>Se remite a la  Comisión de Economía. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106234'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106235'></a><p align="justify"><strong>RESPUESTAS  A ACUERDOS PROMOVIDOS POR SENADORES</strong></p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí  Camino Farjat: </strong>Se  recibieron tres oficios de diversas dependencias con los que remiten respuestas  a Acuerdos aprobados por la Cámara de Senadores.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/64/gaceta_del_senado/documento/129032"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta  Mier: </strong>Informo a la  Asamblea que las respuestas se remiten a las Senadoras y Senadores promoventes  y se encuentran publicada en la Gaceta Parlamentaria. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106235'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106236'></a><p align="justify"><strong>SUPREMA  CORTE DE JUSTICIA DE LA NACIÓN</strong></p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí  Camino Farjat: </strong>Se  recibió comunicación del Ministro Presidente del Consejo de la Judicatura  Federal y de la Suprema Corte de Justicia de la Nación, por la que solicita al  Senado de la República emitir la declaratoria de inicio de funciones de la  Tercera Etapa de Implementación de la Reforma en Materia de Justicia Laboral,  que tendrá verificativo a partir del 3 de octubre de 2022, en los Circuitos  Judiciales que se comunican.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-09-13-2/assets/documentos/Oficio_Suprema_Corte.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es cuanto, señor Presidente.</p>
+<p align="justify"> <strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Respecto de la comunicación que acaba de anunciar  la Secretaría, les informo que se origina en la reforma sobre justicia laboral  y libertad sindical, publicada el 1 de mayo del 2019, en el Diario Oficial de  la Federación. </p>
+<p align="justify">En consecuencia, se  procederá a emitir la referida declaratoria. </p>
+<p align="justify">Favor de ponerse de  pie. </p>
+<p align="center">(Todos de pie)</p>
+<p align="justify">En cumplimiento a  lo dispuesto al Artículo Sexto Transitorio del Decreto por el que se reforman,  adicionan y derogan diversas disposiciones de la Ley Federal del Trabajo, de la  Ley Orgánica del Poder Judicial de la Federación, de la Ley Federal de la  Defensoría Pública, de la Ley del Instituto del Fondo Nacional de la Vivienda  para los Trabajadores y la Ley del Seguro Social, en materia de justicia  laboral, libertad sindical y negociación colectiva, publicado en el Diario  Oficial de la Federación, el 1 de mayo de 2019, se emite la siguiente  declaratoria: </p>
+<p align="justify">&ldquo;El Senado de la  República declara el inicio de funciones de la Tercera Etapa de Implementación  de la Reforma en Materia de Justicia Laboral, que tendrá verificativo a partir  del 3 de octubre de 2022, en los siguientes Circuitos Judiciales, entidades de  la República y sedes&rdquo;:</p>
+<p align="justify">El Décimo Séptimo  Circuito Judicial en el estado de Chihuahua con sede en Chihuahua y Ciudad Juárez. </p>
+<p align="justify">El Primer Circuito en la Ciudad de México con sede en la Ciudad de  México.</p>
+<p align="justify">El Octavo Circuito en el estado de Coahuila y en los municipios de  General Simón Bolívar, Gómez Palacio, Lerdo, Mapimí, Nazas, San Juan de  Guadalupe, San Luis de Cordero, San Pedro del Gallo y Tlahualilo del estado de  Durango con sede en Saltillo y Torreón. </p>
+<p align="justify">El Tercer Circuito en el estado de Jalisco con sede en Zapopan. </p>
+<p align="justify">El Decimoprimer Circuito en el estado de Michoacán con sede en Morelia. </p>
+<p align="justify">El Vigésimo Cuarto Circuito en el estado de Nayarit con sede en Tepic. </p>
+<p align="justify">El Cuarto Circuito en el estado de Nuevo León con sede en Monterrey. </p>
+<p align="justify">El Decimosegundo Circuito en el estado de Sinaloa y el Archipiélago de  las Islas Marías con sede en Culiacán. </p>
+<p align="justify">El Quinto Circuito en el estado de Sonora con sede en Hermosillo.</p>
+<p align="justify">El Decimonoveno Circuito en el estado de Tamaulipas con sede en Ciudad  Victoria, Tampico y Reynosa, y </p>
+<p align="justify">El Décimo Cuarto Circuito en el estado de Yucatán con sede en Mérida. </p>
+<p align="justify">Se remite al Diario Oficial de la Federación para su publicación. </p>
+<p align="justify">Favor de tomar asiento, Senadoras y Senadores. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106236'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106238'></a><p align="justify">Compañeras Senadoras y Senadores, para cumplir con el Acuerdo de la  Junta de Coordinación Política, aprobada el 8 de septiembre, daremos inicio al  Análisis del Cuarto Informe de Gobierno del Presidente Andrés Manuel López  Obrador. <br>
+  En esta sesión analizaremos la materia de política económica. </p>
+<p align="justify">Solicito a la Secretaría, informe a la Asamblea el formato que  aplicaremos con base en el Acuerdo aprobado. </p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con gusto, señor Presidente. </p>
+<p align="justify">Informo que el formato de las intervenciones será de la siguiente  manera: </p>
+<p align="justify">Habrá una ronda de posicionamientos, hasta por cinco minutos, en el  siguiente orden: Grupo Plural, grupo parlamentario del Partido de la Revolución  Democrática, grupo parlamentario del Partido Encuentro Social, grupo parlamentario  del Partido del Trabajo, grupo parlamentario del Partido verde Ecologista de  México, grupo parlamentario de Movimiento Ciudadano, grupo parlamentario del  Partido Revolucionario Institucional, grupo parlamentario del Partido Acción  Nacional y grupo parlamentario del Partido Morena. </p>
+<p align="justify">Posteriormente habrá una segunda ronda, hasta por cinco minutos, en el  mismo orden que la anterior. </p>
+<p align="justify">No se permitirán intervenciones distintas a las aprobadas en el Acuerdo  de la Junta de Coordinación Política. </p>
+<p align="justify">Es todo, señor presidente. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>En consecuencia, se concede el uso de la palabra al Senador Julen  Rementería del Puerto, del Partido Acción Nacional. Adelante, señor Senador y Coordinador.</p>
+<p align="justify"><strong>ANÁLISIS  DEL CUARTO INFORME DE GOBIERNO, </strong><br>
+  <strong>EN  MATERIA DE POLÍTICA ECONÓMICA</strong></p>
+<p align="justify"><strong>El Senador Julen Rementería del Puerto: </strong>Con su permiso, señor Presidente. </p>
+<p align="justify">Hoy nos ocupa la revisión del tema económico en el análisis del informe,  en el marco de este cuarto informe de gobierno. </p>
+<p align="justify">Y con preocupación tenemos que decir que los resultados que presenta la  Administración Pública Federal no son para nada favorables. </p>
+<p align="justify">En materia económica, que es un área que, por supuesto, incide a su vez  en otras muchas, ha habido, por decirlo menos una desgracia, por decirlo de  manera amable. </p>
+<p align="justify">Llevamos cuatro años sin resultados económicos, se prometió que íbamos a  tener un crecimiento del 6 por ciento, se ajustó al 4 por ciento. Lo  cierto es que llevamos cero por ciento en el crecimiento económico. </p>
+<p align="justify">Hay 3.8 millones de  personas más en estado de pobreza de las que había antes de llegar a esta  administración. </p>
+<p align="justify">¿De qué habla esto?  De un fracaso, de que no se ha podido por lo menos contener lo que ya era un  problema para México: la existencia de la pobreza en una gran extensión del  territorio mexicano. </p>
+<p align="justify">Y la inflación, ahí  están los datos, eso no se puede ni siquiera discutir. El dato histórico, datos  del gobierno, del propio Banco de México, refiere la inflación en 8.7 por  ciento anual, la tasa anual hasta este momento, la más elevada en 22 años. </p>
+<p align="justify"> Algo se está  haciendo mal y hay que corregirlo. Lamentablemente, pareciera que no hay la  intención de hacerlo o no hay la idea o no se explica uno por qué cuando la  lógica indica una cosa, el gobierno viene y hace otra o propone una diferente. </p>
+<p align="justify">Miren, 52 mil  millones de dólares han abandonado la inversión en cartera en este país, 52 mil  millones de dólares, es una cantidad de dinero inmensa. </p>
+<p align="justify">Por supuesto que  eso habla ¿de qué? De la desconfianza que tienen los inversionistas en nuestro  país. Y si no hay confianza, pues no hay posibilidad de generación de empleos y  con la falta de empleos viene la pobreza y se empieza a ir como en cadena toda  la problemática que tenemos. </p>
+<p align="justify">Hay un déficit ya  en este momento de 3.4 millones de empleos; o sea, no se ha cumplido con la  inflación, no se ha cumplido con el crecimiento, no se ha cumplido con el  número de pobres que ha crecido en este país. La verdad es que no hay cómo  defender este informe. </p>
+<p align="justify">Y ahora tenemos lo  que se propone para adelante, que, por supuesto, más parece una ilusión, un  deseo, alguna aspiración, que una posibilidad real de alcanzarlo. </p>
+<p align="justify">Perdimos también  cinco lugares en competitividad y, por otro lado, dice el gobierno que vamos a  crecer a tasa del 3 por ciento, cuando nadie, absolutamente nadie reconoce esa  posibilidad, ni siquiera al 2 por ciento. </p>
+<p align="justify">Fondo Monetario  Internacional, 1.3; Banco Mundial, 1.2; y Banxico, 1.6. Esas son las  estimaciones de esas tres dependencias, por citar sólo tres. Y el gobierno dice  3 por ciento, en algunos casos propone el doble. </p>
+<p align="justify">Es increíble, ¿pero  de qué estamos hablando? Simplemente de espejismos, de ilusiones, de cosas que  por supuesto, aunque lo deseáramos, lo quisiéramos, sería bueno para México. </p>
+<p align="justify">Simplemente no se  van a cumplir. ¿Y qué provoca eso? Simplemente una alerta entre la gente que le  entiende al tema y que dice: No, este gobierno no sabe de lo que está hablando,  no sabe de lo que está proponiendo y vamos a fracasar. </p>
+<p align="justify">Propone una  inflación del 3.2. ¿Alguien lo cree o lo deseamos? Sí, pero creerlo posible  está bien difícil de poderlo sustentar. Cuando tenemos en este año 8.7, pensar  en que vamos a tener un pronóstico del 3.2 para el 2023, cuando no se hace nada  por promover la inversión, cuando no se da certeza jurídica a la inversión en  este país, pues no hay manera de poderlo llevar a cabo. </p>
+<p align="justify">La verdad es que lo  que ha hecho este gobierno, y eso sí muy bien, es cargarles la mano a los contribuyentes;  a los que ya pagan que paguen más. Y eso en ningún lado va a generar la  posibilidad de tener mayor riqueza. </p>
+<p align="justify">Y si no hay  crecimiento, ¿cómo va a haber posibilidades de tener más dinero en este país?  No hay forma. </p>
+<p align="justify">El Presupuesto de  Egresos, sí, por supuesto, privilegia a proyectos específicos, puntuales,  caprichos del gobierno, del propio Presidente, pero deja de lado la educación,  deja de lado la solvencia económica, la seguridad, la salud. </p>
+<p align="justify">Me parece que hoy  estamos padeciendo condiciones que debieran de revertirse, debieran proponerse  de otra manera: 3.3 billones de pesos de deuda en el sexenio, 1.2 billones se  proponen para ahora, más. ¿A dónde vamos a ir a parar?</p>
+<p align="justify"> Y el crecimiento  que se pretende en los ingresos del presupuesto, que anda por allá del 11 por  ciento, pretenden financiarlo justo con eso, en lugar de dedicarlo a otras  cosas. </p>
+<p align="justify">Por otro lado,  tenemos inversiones, eso sí, darle al Tren Maya, 145 mil millones de pesos más  al Tren Maya. Está bien, el Tren que se haga, pero ¿a cambio de los programas  de vacunación, donde se muere gente porque no está vacunada, donde se muere  gente porque no hay medicinas en los hospitales, donde se muere gente por las  condiciones paupérrimas en las que están los hospitales? </p>
+<p align="justify">No me parece justo  y no creo que los ciudadanos de México merezcan esto.</p>
+<p align="justify">La deuda se destina  no a lo urgente, no a atender lo que hemos denominado algunos las tres &ldquo;S&rdquo;, la  solvencia económica, la seguridad y la salud. Se destina a atender proyectos  casi faraónicos, el presupuesto de educación es menor que incluso que el que  había en el 2016. </p>
+<p align="justify">¿Cómo se va a  defender, cómo se va a explicar la posible siquiera añoranza de que haya un  crecimiento para el 2023? No se puede explicar, es simplemente una verdadera ilusión.</p>
+<p align="justify">Hoy tenemos una  desgracia en economía que afecta por supuesto al tema de la salud, que afecta  por supuesto al tema de la seguridad, porque si hubiera la solvencia económica  tendríamos la posibilidad que por lo menos a los ciudadanos de este país les  alcanzara para estar en condiciones decorosas enfrentando la realidad que  tristemente vive este país. </p>
+<p align="justify">La verdad es que  hoy no hay nada que celebrar, no hay nada que rescatar de este informe en  materia económica, porque no hay resultados y no hay resultados porque se han  dejado guiar por la ideología. A este gobierno le interesa más quedar bien con  una franja de la población que realmente dar resultados.</p>
+<p align="justify">Se olvidó de los  resultados, no les interesa ya lo que pueda estar pasando en materia económica  con la población, mientras los tenga contentos y les pueda dar los programas  sociales que, por cierto, qué bueno, aquí se aprobaron para estar en rango  constitucional, lo votamos los Senadores y Senadoras del PAN.</p>
+<p align="justify">Lo votamos a favor,  y qué bueno que así sea, pero no basta con ello, se necesita tener empleos, se  necesita tener crecimiento, se necesita tener la posibilidad que la economía  crezca y no puede crecer si no hay inversión, como no la está habiendo, cincuenta  y dos mil millones de dólares han salido de este país en esta administración,  esa es una cantidad enorme de dinero que por supuesto está afectando y luego  fustigamos a la certeza jurídica en la inversión, los problemas en materia  energética.</p>
+<p align="justify">Los problemas en  hidrocarburos, que la verdad de las cosas de lo único que hablan es de un  gobierno que quiere más darle privilegio a sus ideas que a los resultados para  el país, aunque el país, y por cierto, primero los pobres, como dice, son los  que están pagando las consecuencias de tener este gobierno con esta debacle  económica como la que estamos teniendo.</p>
+<p align="justify">Ojalá corrijan. Los  Senadores y Senadoras del PAN estamos puestos a revisar, corregir el rumbo y  proponer cosas que sí funcionen para la población de México, que es a lo que se  debería dedicar este gobierno y no solamente a quedar bien con sus clientelas  electorales.</p>
+<p align="justify">Es cuanto, señora Presidenta.</p>
+<p align="center"> <strong>PRESIDE LA SENADORA</strong><br>
+  <strong>ANA LILIA RIVERA  RIVERA</strong><strong> </strong></p>
+<p align="justify"><strong>La Presidenta  Senadora Ana Lilia Rivera Rivera:</strong> Gracias, Senador Rementería del Puerto.</p>
+<p align="justify">Tiene el uso de la  palabra el Senador Juan Manuel Fócil Pérez, del grupo parlamentario del PRD,  hasta por cinco minutos.</p>
+<p align="justify">Le pido, por favor,  Senador, me permita. Adelante, Senador Fócil.</p>
+<p align="justify"><strong>El Senador Juan  Manuel Fócil Pérez:</strong> Gracias. Compañeras y compañeros Senadores:</p>
+<p align="justify">El día de hoy  acudimos a esta Soberanía en el marco de la Glosa económica del Informe del  Presidente, del informe económico, en el cual es lamentable que no se encuentre  ningún funcionario de la Secretaría de Hacienda y Crédito Público. No existe en  este informe la posibilidad de resaltar ningún éxito de la gestión actual de  estos cuatro años, quizá por eso, por vergüenza, no haya ningún funcionario  aquí en el Senado de la República.</p>
+<p align="justify">La verdad es que  hay una conducción de la vida económica del país muy poco favorable para los  mexicanos, el Producto Interno Bruto, que es el ingreso nacional del país, nos  arroja datos muy claros: vamos a crecer en todo el sexenio, si Dios quiere y se  apiada de nosotros, un 2 por ciento, en todo el sexenio. </p>
+<p align="justify">Esto es, vamos a  crecer 0.30 por ciento, menos del 1 por ciento por año, cuando se había  ofrecido cifras mucho mayores de crecimiento del país, vamos a crecer menos que  con el sexenio de Miguel De la Madrid Hurtado, que recibió un gobierno  catastrófico del expresidente López Portillo. </p>
+<p align="justify">Lo único que ha  crecido en este actual sexenio son los pobres y la deuda. Hablaremos de los  pobres, el mandatario actual nos ha dejado claro que, bueno, así decía en  campaña que primero los pobres y ahora parecer ser que mientras más pobres  mejor. En el 2018, se recibió un país con 58 millones de personas en pobreza, y  en lo que va del sexenio existen ya casi 60 millones de ciudadanas y ciudadanos  mexicanos en pobreza, no han podido disminuir la pobreza de nuestro país, ha  sido un fracaso esto de disminuir la pobreza del país. </p>
+<p align="justify">Las tasas de  interés en este año, principalmente, han reflejado un aumento muy importante,  la tasa de interés de los bancos, de los créditos, refleja el costo del dinero,  ha pasado del 4 por ciento en febrero del 2021, al 8.5 por ciento en agosto del  2022. Esto es, el costo del dinero ha aumentado más del 100 por ciento en en  15, 16 meses.</p>
+<p align="justify">¿Esto en qué nos  afecta a los ciudadanos? Pues es un costo financiero mayor, más inflación,  menos poder de compra de los ciudadanos y, por supuesto, el empobrecimiento  permanente de las clases que recurren al crédito como modo de cubrir sus gastos  de alimentación, calzado y vestido. La deuda pública es una de las cifras que  también han crecido en este país. Primero, decían que no habían pedido ni un  peso prestado, que como nunca se estaban haciendo muchas obras públicas, que se  estaba pudiendo apoyar a los más pobres con los programas sociales, con puro  ahorro, con pura austeridad, lo cual es desafortunadamente falso. </p>
+<p align="justify">En el 2018, la  deuda de México era de 10 billones 830 mil millones de pesos, actualmente  tenemos una deuda de 13 billones de pesos, ha aumentado más de un 25 por ciento  la deuda de México.</p>
+<p align="justify">¿Qué significa que  la deuda aumente? Bueno, pues que hay que pagar más intereses a la banca.</p>
+<p align="justify"> ¿Y qué significa  que si del presupuesto público tenemos que pagar más intereses a la Banca? Pues  entonces hay menos dinero para atender al ciudadano con salud, con educación,  apoyos sociales, calles, alumbrado, etcétera, etcétera. </p>
+<p align="justify">Valdría la pena que  exploráramos, todos, Senadoras y Senadores, qué tanto influye en este mal  funcionamiento de nuestra economía, mal funcionamiento del presupuesto público,  los sobrecostos por más del 100 por ciento en las obras insignias de este  gobierno; es decir, la refinería que no produce un solo barril, pero que nos  está costando el doble de lo que el Presidente anunció desde el inicio. </p>
+<p align="justify">El Tren Maya ya va  más del 100 por ciento presupuestado que va a ir arriba en su costo. </p>
+<p align="justify">Y el aeropuerto que  se excedió menos, como un 20 por ciento, pero donde solo hay 10, 12 vuelos  diarios y que van semivacíos. </p>
+<p align="justify">La verdad es que  hasta el momento estas obras que se han encarecido en muchos miles de millones  de dólares obviamente impactan el presupuesto público y los beneficios que se  le pueden dar a nuestra población. </p>
+<p align="justify">El exitoso programa  de empobrecimiento nacional del actual sexenio es el crecimiento exorbitante  del desempleo y la subocupación de los mexicanos. </p>
+<p align="justify">Los indicadores al  respecto exponen la pésima administración y la falta de incentivos para crear  empleos formales y se presume que está creciendo el empleo en México, pero  ellos suman que como pagan el Seguro Social a los jóvenes que están en el  Programa Construyendo el Futuro, y como le pagan el Seguro Social a los que están  en Sembrando Vidas, eso lo consideran como un empleo, cuando realmente nos  estamos engañando, es el mismo dinero del gobierno que se paga de una bolsa a  otra sin que se genere un empleo formal y, sobre todo, que con el programa  Sembrando Vidas no se está generando más producción en el país, esto es muy lamentable. </p>
+<p align="justify">Y lo otro lamentable es que el 55 por ciento, más de la mitad de las  personas empleadas, son empleos informales.</p>
+<p align="justify">Se enorgullecen del aumento de las remesas que año con año envían  nuestros connacionales, nuestros paisanos que se van a trabajar a Estados  Unidos. Cuando, sin duda, este aumento de migración de mexicanos a Estados  Unidos refleja el fracaso de la política económica de la cuarta transformación,  que prácticamente está exiliando cada vez más a mexicanos productivos para  convertirnos en un país rémora de la actividad económica de nuestro país vecino  del norte.</p>
+<p align="justify">Y, finalmente, la inflación, compañeros, oficialmente dicen que ha  aumentado 8.7 por ciento la inflación, pero la verdad es que los otros datos  que la población te comenta, los otros datos de la realidad del país, de la  mayoría de los ciudadanos es que el maíz, del 2018 costaba 3.80 centavos el  kilo, hoy cuesta 13 pesos el kilo, ha aumentado casi cuatro veces más.</p>
+<p align="justify">El aceite más del cien por ciento; el huevo más del 50 por ciento; la  tortilla el cien por ciento. Estos son los productos básicos, los que come la  mayoría de la población.</p>
+<p align="justify">Esto significa, en pocas palabras que, si bien presumen un aumento de  salario como nunca, el 60 por ciento, sí, pero si le han aumentado los  productos a las personas casi un cien por ciento, bueno, pues significa que hoy  las personas ganan 70 centavos de lo que en el 2018 valía cada peso.</p>
+<p align="justify"> Así que estamos empobreciéndonos en términos generales. La política  económica no ha funcionado, y yo creo que los funcionarios del gobierno, no  tiene caso, la verdad, que vengan a dar explicaciones, lo que deberían de hacer  es venir a dar disculpas al pueblo de México por lo mal que está nuestro país  en la cuestión económica y en muchas cuestiones más de seguridad, de salud,  etcétera.</p>
+<p align="justify">Y nos queda como un mal recuerdo aquella frase de campaña que decía:  &ldquo;Estaríamos mejor con López Obrador&rdquo;.</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify">Es cuanto, compañeras y compañeros.</p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Muchas gracias, Senador Fócil Pérez.</p>
+<p align="justify">Se concede el uso de la palabra a la Senadora Nuvia Mayorga Delgado, del  grupo parlamentario del PRI, hasta por cinco minutos.</p>
+<p align="justify"><strong>La Senadora Nuvia Mayorga Delgado: </strong>Muchas gracias, señora Presidenta. Con su permiso, compañeras y  compañeros.</p>
+<p align="justify">México está afrontando una de las crisis más importantes de su historia.  El crecimiento económico es, sin duda, el gran pendiente del gobierno, la  promesa de llegar a la meta de crecimiento en el sexenio del 4 por ciento, cada  vez están más lejos.</p>
+<p align="justify">Tan sólo para este año estiman cerrar con un crecimiento del 2.4 por  ciento, cuando la Organización para la Cooperación y el Desarrollo Económicos,  la OCDE, pronostica un crecimiento, que también lo veo muy, muy grande, del 1.9  por ciento.</p>
+<p align="justify">La inflación se encuentra al alza. Tan sólo en el mes de agosto fue del  8.7 por ciento, el mayor nivel desde el año 2000, el cual, sin duda, ha  golpeado a todas las familias, sobre todo las más vulnerables y a la clase  media.</p>
+<p align="justify">En agosto se registró un incremento del 14 por ciento en el costo de la  canasta básica, lo que ha puesto en riesgo la seguridad alimentaria de las  familias mexicanas, especialmente de las más pobres.</p>
+<p align="justify">Y les quiero compartir un ejemplo tal como lo hizo mi compañero Fócil. </p>
+<p align="justify">En el 2018, el huevo estaba a 28 pesos, en cuatro años, hoy el huevo  está a 44 pesos, casi el 50 por ciento más de incremento.</p>
+<p align="justify">La tortilla, que es básica para la dieta de los mexicanos, estaba en el 2018 en 17 pesos,  hoy está a 23 pesos. </p>
+<p align="justify">El pollo estaba en  60 pesos, hoy está en 75 pesos.</p>
+<p align="justify">El frijol, que es  otro de los alimentos de la canasta básica de los mexicanos, estaba en 21  pesos, hoy está en 35 pesos. </p>
+<p align="justify">Si bien la  recaudación tributaria presenta signos de recuperación en el 2022 respecto al 2021,  la realidad es que los ingresos que obtiene el Erario por el pago de impuestos  a los contribuyentes, en el primer semestre de este año, tiene una caída  superior a la registrada desde 2007, tomando en consideración, sólo al mes de  julio, los contribuyentes aportaron en la recaudación 29 mil millones de pesos,  lo que representa una disminución del 9.4 por ciento en relación a la fecha del  2021. </p>
+<p align="justify"> Por otro lado, se  ha manejado un discurso de que el precio del combustible ha ido a la baja. Eso  es mentira, como tantas de las mentiras que han comentado, les puedo decir que  el precio actual del combustible es resultado de la aplicación del 100 por  ciento del Impuesto Especial sobre Producciones y Servicios a los combustibles,  en el cual el SAT dejó de recaudar 88 mil millones de pesos por este impuesto. </p>
+<p align="justify">Si no hubieran  puesto el 100 por ciento de este subsidio del IEPS, el precio de la gasolina  estaría entre 30, 34 pesos el litro. Otra mentira más de cuando iniciaron, que  dijeron que nunca iban a incrementar el precio de la gasolina y esto por  sostenerlo está costando 300 mil millones de pesos, lo que representa al mes de  marzo el estarle incrementando el subsidio a la gasolina. Y qué bueno que lo  están haciendo, pero se están dejando de cubrir rubros como el de educación y  el de salud, que llevan más de 40 mil millones de pesos que según dijeron, y es  otra mentira más, que esto era por subejercicio. </p>
+<p align="justify">Cuando es un  subejercicio es porque las dependencias no han utilizado el recurso a tiempo.  Esto es un recorte que le han hecho a salud y educación cuando lo necesitan  nuestros niños, cuando lo necesitan los niños con cáncer, cuando se necesitan  mayores medicamentos, cuando se necesitan mejores empleos a los médicos, a las  enfermeras y todo este dinero para qué, para enviarlo a las obras insignias de  este gobierno, como el Tren Maya o como lo es Dos Bocas, que si no les gusta  una barda la tiran e inmediatamente hacen otra, así es como están gastando el  dinero de una forma irresponsable y esto es consecuencia de no saber gobernar. </p>
+<p align="justify">Por eso, amigas y  amigos, yo los convoco a que, si este gobierno quiere rectificar, nosotros como  grupo parlamentario del PRI, estaremos con ustedes, pero si este gobierno  quiere seguir hundiendo al país, se quedan solos, y eso las consecuencias y el  reclamo será del pueblo de México. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>La Presidenta  Senadora Ana Lilia Rivera Rivera: </strong>Gracias, Senadora Mayorga Delgado. </p>
+<p align="justify">Tiene ahora el uso  de la palabra la Senadora Martha Cecilia Márquez Alvarado, del grupo  parlamentario del PT, hasta por cinco minutos. </p>
+<p align="justify"><strong>La Senadora Martha  Cecilia Márquez Alvarado: </strong>Muchas gracias. Con su permiso, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta  Senadora Ana Lilia Rivera Rivera: </strong>Será por diez minutos, las dos rondas se  contemplan con usted. </p>
+<p align="justify">Gracias. </p>
+<p align="justify"><strong>La Senadora Martha  Cecilia Márquez Alvarado: </strong>Quizá menos. Senadoras y Senadores: </p>
+<p align="justify">La situación  económica internacional, causada tanto por la pandemia del COVID-19, así como  por el conflicto internacional entre la federación Rusa y Ucrania, han  ocasionado una importante escasez de productos, sobre todo aquellos de carácter  electrónico y tecnológico, ambas situaciones han irrumpido gravemente en la  cadena de suministros a nivel internacional, la oferta de bienes se han  estancado en los últimos años. </p>
+<p align="justify">En consecuencia,  todos los pueblos del mundo son víctimas de una injustificada alza de precios  sin precedentes a nivel mundial. </p>
+<p align="justify">La tasa de  inflación en México alcanzó una tasa del 8.7 por ciento, lo que significa un  incremento del 7 por ciento en comparación con el mes inmediato anterior de  conformidad con el Inegi. </p>
+<p align="justify"> El gobierno de  México ha implementado las medidas adecuadas para combatir la inflación que  afecta principalmente a las personas en situación de pobreza. Esta  administración ha mantenido una impresionante estabilidad económica, se han  tomado las medidas para defender el poder adquisitivo de las familias  mexicanas, por ejemplo, para frenar la escala de precios el Presidente López  Obrador tuvo la sensible decisión de subsidiar a los combustibles para evitar  que la inflación se incremente significativamente. </p>
+<p align="justify">El gobierno de  México, la Secretaría de Hacienda y el Banco de México han tomado las  decisiones correctas para evitar la inflación extremadamente alta. Hoy México  mantiene una tasa de inflación similar a la de Estados Unidos, la cual se  coloca en 8.3 por ciento y por debajo de la del Reino Unido, sexta economía  mundial, la cual se encuentra en 10.1 por ciento, siendo la inflación más alta  en la historia. </p>
+<p align="justify">En comparación, la  inflación ha superado los diez puntos porcentuales en países como China,  Indonesia, Arabia Saudita y Sudáfrica, como consecuencia de las políticas  públicas y económicas progresistas en donde se busca que el desarrollo se  construya de abajo hacia arriba.</p>
+<p align="justify">A pesar del  contexto internacional, en el primer semestre de 2022, la economía mexicana  creció 1.9 por ciento en comparación con el mismo periodo del año anterior.  Hemos tomado el camino de generar bienestar impulsando la redistribución de la  riqueza, así como la capacidad de ejercicio de los derechos fundamentales de la  población. </p>
+<p align="justify">El COVID-19 alteró  por completo el escenario mundial al decretarse la pandemia global a gran parte  de los países del orbe, incluyendo a México. </p>
+<p align="justify">Para combatir los  efectos económicos de la pandemia, la Secretaría de Economía diseñó e  implementó el Plan de Reactivación Económica el cual fue reforzado y  actualizado en este Cuarto Informe de Gobierno. </p>
+<p align="justify">El plan contempla  cuatro ejes. </p>
+<p align="justify">Número uno, el  mercado interno, empleo, regiones y sectores. </p>
+<p align="justify">Número dos, el  fomento a la inversión. </p>
+<p align="justify">Número tres,  comercio internacional. </p>
+<p align="justify">Número cuatro,  competitividad. </p>
+<p align="justify">Impulsamos la  innovación, el fortalecimiento del mercado interno, la creación de las micro,  pequeñas y medianas empresas, así como el combate a la desigualdad que existe  entre las regiones del país. </p>
+<p align="justify">De acuerdo al Cuarto  Informe de Gobierno, se presentaron 20 mil 976 solicitudes de inversiones ante  el Instituto Mexicano de la Propiedad Industrial. </p>
+<p align="justify">De septiembre de  2021 a enero de 2022, por medio de la iniciativa &ldquo;Habilidades Digitales para  las Mexicanas del Siglo XXI&rdquo; se ha capacitado en habilidades digitales básicas  y especializadas a 1,163 mujeres mexicanas mayores de 16 años. </p>
+<p align="justify">El Presidente  Andrés Manuel López Obrador ha señalado correctamente que es menester contar  con un mercado interno robusto para que México crezca y se desarrolle  económicamente. Por ello, fomentamos la inversión y cuidamos a las y los  consumidores, a través de la Profeco se defiende haciendo cumplir la ley y  hacen estudios para informarles sobre la calidad de los productos. </p>
+<p align="justify"> Las micro, pequeñas  y medianas empresas son uno de los principales empleadores del país, por lo que  el gobierno las apoya con programas de financiamiento y capacitación.</p>
+<p align="justify">Para fortalecer y  que existan trabajos y sueldos dignos, la Secretaría de Economía otorgó 3 mil  267 pesos en créditos para las micro, pequeñas y medianas empresas. Asimismo,  en coordinación con la Banca de Desarrollo se otorgaron 19 mil 400 pesos en  créditos para que las y los pequeños empresarios puedan hacer crecer sus  empresas y poner el nombre de México en alto, solidarizándose también con sus  trabajadores. </p>
+<p align="justify">Hoy el gobierno de  México atiende una región olvidada por las administraciones pasadas, por ello,  la Secretaría de Economía apoya constantemente los proyectos de crecimiento  económico y desarrollo social de la región sur-sureste de  nuestro país, como el Tren Maya, el Corredor Transístmico y Dos Bocas. </p>
+<p align="justify">El Cuarto Informe de Gobierno es esperanzador, ya que contamos con un  Presidente con la convicción de democratizar el sistema económico de México,  siendo responsables en todo momento, seguiremos actuando en beneficio de las y  los mexicanos.</p>
+<p align="justify">Es todo, señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Muchas gracias, Senadora Márquez Alvarado. </p>
+<p align="justify">Continúa con el uso de la palabra la Senadora María Graciela Gaitán  Díaz, del grupo parlamentario del PVEM, hasta por cinco minutos. </p>
+<p align="justify"><strong>La Senadora María Graciela Gaitán Díaz: </strong>Con el permiso de la Presidencia. Compañeras y compañeros que están el  día de hoy en esta sesión de suma importancia. </p>
+<p align="justify">El día 1º de septiembre del año 2022, el Presidente de la República, el  licenciado Andrés Manuel López Obrador, presentó en el Congreso de la Unión el Cuarto  Informe de Gobierno, correspondiente a su administración.</p>
+<p align="justify">De conformidad con la facultad prevista en el artículo 69, segundo  párrafo de la Constitución Política de los Estados Unidos Mexicanos, a nombre  de las Senadoras y Senadores que integramos el grupo parlamentario del Partido  Verde Ecologista de México, se hace un pronunciamiento en relación con dicho  Informe de Gobierno en el rubro de política económica. </p>
+<p align="justify">Consideramos fundamental que este canal de interlocución entre Poderes  nos permita ponderar las diferentes visiones y matices de las fracciones  políticas aquí representadas, lo cual nos da una perspectiva más amplia sobre  el trabajo que desarrolló el Ejecutivo Federal durante este cuarto año de  ejercicio de gobierno, en esta importante materia. </p>
+<p align="justify">Lo anterior, permitirá un diálogo republicano y una retroalimentación  para seguir trabajando desde nuestros ámbitos de competencia por la causa común,  que es nuestro país, México. </p>
+<p align="justify">Como ustedes saben, la política económica es el instrumento más  importante con el que cuenta el gobierno para materializar en hechos concretos  los ideales y aspiraciones de un proyecto político. </p>
+<p align="justify">Sólo con el crecimiento económico, un desarrollo igualitario, la  generación de empleos y condiciones de inversión, los polos de desarrollo, se  logra generar condiciones de igualdad, de la eliminación de la pobreza y de la  marginación. </p>
+<p align="justify"> En este sentido, este gobierno, pese a la coyuntura adversa de la  pandemia, ha logrado mantener una estabilidad macroeconómica y sortear los  embates que ha dejado la crisis de la pandemia: la crisis económica y,  recientemente, la inestabilidad económica ocasionada por el conflicto bélico  entre Rusia y Ucrania. </p>
+<p align="justify">Por ello, reconocemos la prudencia y la responsabilidad con la que la  Secretaría de Hacienda y Crédito Público ha manejado las finanzas públicas y la  política fiscal, lo cual ha sido un pilar en el desarrollo de la política  económica mexicana. Esto ha permitido que el producto interno haya registrado  en los dos primeros trimestres una recuperación de la economía de un  crecimiento de 1.1 por ciento en el primer trimestre y del 0.9 por ciento en el  segundo, lo cual nos da un escenario favorable y expectativas positivas. </p>
+<p align="justify">Vale la pena destacar que este resultado obedeció en mayor medida el  fortalecimiento del mercado laboral, los mayores ingresos, las remesas y los  avances del sector turismo, lo cual abonó principalmente al dinamismo del  sector servicios y el consumo privado. </p>
+<p align="justify">Un dato que considero importante resaltar es que el sector de servicios  presentó una recuperación del 98.1 por ciento respecto a su nivel prepandemia,  la cual estuvo asociada con los subsectores de comercio, transporte, así como  la recuperación de los servicios de esparcimiento y de alojamiento. </p>
+<p align="justify">Destacamos también la solidez de las finanzas públicas como reflejo del  incremento de la eficiencia recaudatoria y la orientación del gasto público  hacia los rubros económicos que detonan el crecimiento y generan polos de  crecimiento local y regional. </p>
+<p align="justify">Particularmente en el sureste mexicano, la nueva política de salarios  mínimos vigente desde 2019, contribuyó a dignificar el salario mediante  incrementos graduales y responsables para garantizar un piso de bienestar  mínimo y reducir las brechas de desigualdad, así como garantizar que las  familias mexicanas cuenten con el mínimo indispensable para su manutención y  alimentación. </p>
+<p align="justify">Con los cuatro incrementos consecutivos desde 2019 a 2022, el salario  mínimo recuperó el 65.1 por ciento de su poder adquisitivo a nivel nacional,  mientras que la zona libre de la frontera norte, la recuperación fue del 148.7 por  ciento, lo que benefició a las personas trabajadoras de menor ingreso. </p>
+<p align="justify">Lo anterior permitió alcanzar resultados favorables en el empleo a junio  del 2022. </p>
+<p align="justify">De acuerdo con las cifras del Instituto Mexicano del Seguro Social, se  presentó un aumento anual de 893 mil 328 trabajadores asegurados, equivalente a  una tasa anual de crecimiento del 4.4 por ciento. El número de personas  ocupadas se ubicó en 57.4 millones en junio del 2022, el segundo nivel más alto  desde que se tiene registro a pesar del retroceso registrado en el mes  previo.  </p>
+<p align="justify">Si bien tenemos muchos retos y grandes desafíos, por el clima económico  incierto y las expectativas de desaceleraciones de las potencias económicas,  nuestro país tiene fundamentos sólidos que nos permitirán sortear estos  escenarios. </p>
+<p align="justify">Consideramos que vamos por la ruta correcta. Y por ello, en la bancada  del Partido Verde Ecologista de México, seguiremos apoyando las acciones que  generen crecimiento, que acaben con la pobreza y la desigualdad y que generen  las condiciones para que cualquier mexicana y mexicano tenga las posibilidades  de desarrollarse y vivir en condiciones dignas y conforme a sus anhelos e  ideales. </p>
+<p align="justify">Por su atención, muchas gracias. </p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Muchas gracias, Senadora Gaitán Díaz. </p>
+<p align="justify"> Ahora tiene el uso de la palabra el Senador Luis David Ortiz Salinas,  del grupo parlamentario de Movimiento Ciudadano, hasta por cinco minutos. </p>
+<p align="justify"><strong>El Senador Luis David Ortiz Salinas: </strong>Gracias.</p>
+<p align="justify">A cuatro años de gobierno del Presidente de la República, podemos  afirmar que su política económica ha sido un rotundo fracaso. </p>
+<p align="justify">Esto es el resultado no sólo de la Guerra de Ucrania, de las  complicaciones de cadenas de suministro, de la pandemia, como han pretendido  justificar, sino de una mala gestión y la cerrazón para cambiar la política  económica en México. </p>
+<p align="justify">Como si se tratase de una victoria o un logro por presumir, desde el  gobierno de la República se destaca que la economía mexicana muestra un  desempeño mejor que otras economías del mundo.</p>
+<p align="justify">Esto no es cierto, los números son desoladores, México no crece, no  tiene buena inversión, México tiene una inflación desbordada y México tiene más  pobres. </p>
+<p align="justify">En cuanto al crecimiento, a inicios del 2022 la Secretaría de Hacienda  pronosticaba un crecimiento del 4.1 por ciento, meses después redujo sus  expectativas a un 2.4 por ciento, pero ahora, en el segundo semestre de 2022,  el país apenas percibió un incremento real anual de 2.1 por ciento. Es decir,  ni siquiera estamos cumpliendo con las expectativas más bajas de crecimiento. </p>
+<p align="justify">En este mismo  sentido, el gobierno federal mantiene un optimismo injustificado, que para el  2023 pronostica un crecimiento del 3 por ciento, mientras que la expectativa  del Banco de México es de un crecimiento del 1.6 por ciento, lo que sin duda  traerá recortes al gasto público, y ya sabemos en dónde les gusta meter tijera  en este gobierno, en las medicinas para los niños con cáncer, en los programas  de apoyo al campo, en los centros de justicia para las mujeres, en las  políticas para fortalecer los cuerpos de policías civiles, en los apoyos a  microempresarios, en los servicios de cuidado, como las estancias infantiles y  en la educación de nuestros niños, eliminando las escuelas de tiempo completo. </p>
+<p align="justify">En materia de  inversión, México sigue sin recuperarse, pese a que el gobierno federal afirma  lo contrario, y aquí también lo han afirmado. </p>
+<p align="justify">Durante el último  mes el Inegi reportó un raquítico crecimiento del .7 por ciento, aun así, la  inversión fija bruta se mantiene por debajo de los niveles previos a la  pandemia. </p>
+<p align="justify">No es casualidad  que más del 44 por ciento de la inversión la estén atrayendo gobiernos de Nuevo  León y Jalisco, porque la inversión no se espanta con bravatas hacia los  inversionistas, se atrae con una política económica que garantice el Estado de  derecho, la seguridad pública, la infraestructura productiva y logística, así  como el capital de mente y de obra. </p>
+<p align="justify">La inversión no  viene sola, hay que salir a buscarla y a atraerla con los sentidos adecuados. </p>
+<p align="justify">En cuanto al  consumo privado, tampoco ha recuperado sus niveles previos a la pandemia y, si  bien nos va, se espera que mejore hasta el año próximo. </p>
+<p align="justify">En cuanto a apoyos  a microempresas, el gobierno federal presume los apoyos que otorgaron a  microempresas para que salieran adelante, lo que no dicen es que para el 2022  dejaron sin un solo peso el Programa de Créditos y en 2023 de plano lo  eliminaron del proyecto de Presupuesto de Egresos. </p>
+<p align="justify"> Señoras y señores,  la economía la sostienen estas pequeñas hormiguitas, las micro y pequeñas  empresas, que generan dos tercios de los empleos; representan más del 90 por  ciento de las empresas y generan más del 50 por ciento del Producto Interno  Bruto. </p>
+<p align="justify">Por eso somos la  segunda economía de peor recuperación económica del G20, porque no se apoya a  las principales generadoras de empleo. </p>
+<p align="justify">En cuanto a la  pobreza y la inflación, ¿de qué franca recuperación económica hablan desde  Palacio Nacional, cuando 55.7 millones de personas se encuentra en situación de  pobreza y el 52.8 por ciento de la población percibe ingresos inferiores a la  línea de pobreza?</p>
+<p align="justify">Aunado a una  inflación anual consistente en 8.7 por ciento, en la que por cierto el paquete  contra la inflación y la carestía anunciado en mayo de este año, anunciado con  bombo y platillo, no hizo mella. </p>
+<p align="justify">De muy poco o nada  ha servido la política salarial de este gobierno, mediante la cual la Comisión  Nacional de Salarios Mínimos ha deslizado el monto del salario mínimo general  de 88.36 pesos en 2018, hasta 172.87 en el 2022. ¿De qué ha servido, cuando ese  incremento hace mucho ya se lo comió la inflación, que es el impuesto de los  pobres?</p>
+<p align="justify">En Movimiento  Ciudadano llamamos al gobierno de México a dejar el triunfalismo y optimismo a  un lado y que comience a trabajar bajo una política económica más responsable y  seria que nos lleve a alentar el crecimiento, la inversión y reducir la  inflación, que tanto les hace daños a las familias mexicanas. </p>
+<p align="justify">Concluyo citando al  connotado jurista y ex legislador José Elías Romero Apis, que no lo conozco,  pero en una reciente colaboración hizo alusión a las palabras de su padre, que  decía que los presidentes podían jugar con todo, menos con tres cosas: no se  juega con la Constitución, no se juega con el Ejército y no se juega con el  Banco de México. </p>
+<p align="justify">Este gobierno ha  jugado indebidamente con los tres, así no se genera confianza, inversión ni  crecimiento.</p>
+<p align="justify">Es cuanto. </p>
+<p align="justify"><strong>La Presidenta  Senadora Ana Lilia Rivera Rivera: </strong>Gracias, Senador Ortiz Salinas. </p>
+<p align="justify">A continuación, se  concede el uso de la palabra a la Senadora Katya Elizabeth Ávila Vázquez, del  grupo parlamentario del Partido Encuentro Social, hasta por 10 minutos. Por las  dos rondas participará. </p>
+<p align="justify">Gracias. </p>
+<p align="justify"><strong>La Senadora Katya  Elizabeth Ávila Vázquez: </strong>Con su permiso, señora Presidenta. Buena tarde, Senadoras,  Senadores, invitados que nos acompañan el día de hoy. </p>
+<p align="justify">Me gustaría  comenzar destacando que durante el segundo trimestre del presente año la  economía mexicana mostró signos de fortaleza debido a que el Producto Interno  Bruto de México creció un 0.9 por ciento, lo que representa una noticia  positiva para la economía de nuestro país; sin embargo, no es suficiente  todavía para que recupere su nivel previo a la pandemia. </p>
+<p align="justify">Aun así, según  datos de proyección de la Comisión Económica para América Latina y El Caribe,  dicha meta se alcanzará hacia 2024, si se continúan tomando decisiones  adecuadas. Estas decisiones han consistido en la implementación de diferentes  medidas en pro de la ciudadanía. </p>
+<p align="justify"> Una de ellas es la  aplicación del paquete contra la inflación y la carestía, que regula los  precios de los alimentos en beneficio de la población, que indudablemente ha  cumplido su objetivo y, debido a ello, hoy México está entre los 16 países con  menos inflación del mundo. </p>
+<p align="justify">Dicho paquete  garantiza precios benéficos en alimentos para la economía popular; asimismo,  evita el incremento de tasas de interés y el desplome del consumo. Además,  mantiene el crecimiento económico y ha estabilizado la canasta básica de 24  productos. </p>
+<p align="justify">Los programas  presupuestarios con aportaciones al control de la inflación habían sumado hasta  el mes de agosto 574 mil 624 millones de pesos; contemplan la seguridad  alimentaria a través de &ldquo;Sembrando Vida&rdquo;; producción para el bienestar; precios  de garantía a productos alimentarios básicos; fertilizantes; abasto y  adquisición de leche; programa de abasto rural a cargo de Diconsa; Programa de  Fomento a la Agricultura, Ganadería, Pesca y Acuicultura; el subsidio a la  electricidad doméstica y a los precios de la gasolina; así como el congelamiento  de cuotas en carreteras. </p>
+<p align="justify">Se ha indicado que  sin los estímulos adicionales a los combustibles y la priorización de los  precios de alimentos básicos la inflación se ubicaría en 2.6 puntos  porcentuales, por arriba del 8.16 por ciento actual. </p>
+<p align="justify">La estabilización  de la canasta ha protegido el poder adquisitivo del salario. A junio de 2022,  con los apoyos gubernamentales, el salario promedio mensual se ha ubicado en  ocho mil 943 pesos. Sin ellos, estaría en 12 por ciento menos, es decir, siete  mil 900 pesos. </p>
+<p align="justify">El paquete contra  la inflación y la carestía se está reforzando con los siguientes compromisos:  no aumentar los costos de los energéticos en términos establecidos; acelerar la  apertura a importaciones de básicos; limitar la exportación de maíz blanco para  tener reserva estratégica; asegurar acuerdos con Estados Unidos para tener más  leche y fertilizantes; regular las tarifas de interconexión ferroviaria para  alimentos, insumos y fertilizantes. </p>
+<p align="justify">Gracias al trabajo  del gobierno de la República en la vacunación contra el Covid-19 y, en  consecuencia, de la inmunización de una parte importante de la población, se  permitió una mayor reapertura de la economía, en particular, en los sectores  más afectados por la pandemia como el sector servicios, que conlleva el contacto  entre personas. Esta estrategia evitó cierres totales en la actividad  económica. </p>
+<p align="justify">Ahora bien, nuestro  país no se encuentra aislado y, al igual que todos los países del mundo, es  inevitable no ser arrastrados por los efectos de la guerra, que se han  propagado a lo largo y ancho de los continentes, sumándose a los precios sobre  los precios y exacerbando graves problemas económicos. </p>
+<p align="justify">La crisis ocurre  cuando la economía mundial aún no se ha recuperado por completo de la pandemia;  incluso, antes de la guerra la inflación en muchos países había estado  aumentando por desequilibrios entre la oferta y la demanda, lo cual dio lugar a  un endurecimiento de la política monetaria. </p>
+<p align="justify">Los confinamientos  en China causaron estrangulamientos en las cadenas mundiales de abastecimiento,  así como los mercados de materias primas y los vínculos comerciales y  financieros. </p>
+<p align="justify">Rusia es un  importante proveedor de petróleo, gas y metales, y junto con Ucrania, de trigo  y maíz. La reducción del suministro de estos productos básicos ha hecho que sus  precios se disparen. </p>
+<p align="justify"> Los importadores de  materias primas en Europa, Asia Central, Oriente Medio, Norte de África y la  región de África Subsahariana, han sido los más afectados y, en consecuencia,  el alza de precios de los alimentos y los combustibles ha perjudicado a los  hogares de menores ingresos de todas las regiones del mundo. De tal forma, la  inflación se ha convertido en un riesgo claro e inminente para muchos países;  incluso, antes de la guerra se elevaba debido a la escalada de los precios de  las materias primas y los desequilibrios entre la oferta y la demanda. </p>
+<p align="justify">Muchos bancos  centrales, como la Reserva Federal, ya habían dado pasos hacia un  endurecimiento de la política monetaria y las perturbaciones relacionadas con  las guerras amplifican esas presiones, por lo tanto, la inflación permanecerá  elevada por mucho más tiempo a escala internacional. Estados Unidos y algunos  países de Europa han alcanzado máximos inéditos en más de 40 años, en medio de  escasez de mano de obra. En este contexto, México ha mantenido su estabilidad  económica, ha tenido una apreciación del peso, lo que ha generado las  condiciones que hacen atractivo a México para la inversión extranjera. </p>
+<p align="justify">Como ya lo ha  mencionado el Ejecutivo: &ldquo;Cada vez está llegando más inversión extranjera,  México tiene una situación de ventaja con relación a otros países para la  inversión, tiene la cercanía al mercado de Estados Unidos y Canadá. Ya hay  mucha integración económica entre Estados Unidos, Canadá y México, hay no solo  fábricas, hay plantas de autopartes de la industria de Estados Unidos y Canadá,  que hacen indispensable a México, y todos los analistas están coincidiendo en  que México es la opción para la inversión foránea extranjera&rdquo;.</p>
+<p align="justify">La fortaleza de la  economía de México se evidencia en la estabilidad del peso y la posibilidad de  implementar medidas para contener la inflación, como el subsidio al Impuesto  Especial sobre Producción y Servicios, en gasolinas y diésel.</p>
+<p align="justify">El peso mexicano se  ha apreciado respecto al dólar en 42 meses del gobierno de la &ldquo;Cuarta Transformación&rdquo;,  lo que lo convierte en una de las pocas monedas en el mundo que registran  estabilidad, convirtiéndose así en una de las más fortalecidas durante el  presente año en el contexto mundial.</p>
+<p align="justify">Sin duda alguna en  el grupo parlamentario de Encuentro Social seguiremos acompañando las acciones  realizadas por el gobierno federal en materia económica. Estamos seguras de que  se avanza en la dirección correcta.</p>
+<p align="justify">¡La &ldquo;Cuarta Transformación&rdquo;  va!</p>
+<p align="justify">Es cuanto, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta  Senadora Ana Lilia Rivera Rivera:</strong> Muchas gracias, Senadora Ávila Vázquez.</p>
+<p align="justify">Ahora se concede el  uso de la palabra al Senador Gustavo Madero, del Grupo Plural, hasta por cinco  minutos.</p>
+<p align="justify"><strong>El Senador Gustavo  Madero Muñoz:</strong> Con el permiso de la Presidencia.</p>
+<p align="justify">Pues con la novedad  que el Presidente de la República nos salió balín, nos salió bueno pa´  prometer, nos salió muy malo pa´ cumplir, malo, malísimo.</p>
+<p align="justify">Nos dijo que iba a  arreglar el problema de la inseguridad en seis meses y éste va a ser el sexenio  de mayor homicidios y violencia en la historia de México. Nos dijo que iba a  regresar a los militares a los cuarteles, nos dijo que cambió de opinión, pero  yo creo que cambió de bando, cambió de principios. Nos dijo que iba a crecer 4 por  ciento y éste será el sexenio perdido para todos los mexicanos.</p>
+<p align="justify"> No crece la  economía, pero crece la deuda, crecen los precios, crece la inflación y este es  un golpe terrible a los que dice querer proteger, a los que menos tienen. A  esos afecta con estas políticas, con el crecimiento de la deuda, de la  inflación, del costo del dinero. Es un golpe.</p>
+<p align="justify">Dicen que la  política social es la ambulancia para recoger los heridos de las políticas  económicas, pero este gobierno ni siquiera recoge a los damnificados de las  políticas públicas, porque, como dice México: &ldquo;¿Cómo vamos?&rdquo; </p>
+<p align="justify">El decil de menores  ingresos del país redujo su cobertura de los programas sociales del 60 al   40 por ciento. ¿Qué quiere decir? Que dos de  cada 10 personas en máxima pobreza hoy tienen menos servicios de apoyo, sobre  todo en salud. Al desaparecer el Seguro Popular y ocurrírsele un Insabi los  dejó desamparados.</p>
+<p align="justify">El 83 por ciento de  la población en México, según una encuesta de Open Society, del mes pasado,  tiene miedo de que no le alcance para cubrir sus alimentos, para su familia y  la recesión que viene en Estados Unidos, la inflación, apenas comienza, no  crean que esto ya va de salida, apenas comienza. El golpe se va a sentir más de  aquí en adelante. Las tasas internacionales están subiendo de 0.25 que costaba  la tasa de interés en Estados Unidos al 4, 4.5 por ciento. Nunca en la historia  habíamos visto un crecimiento tan elevado.</p>
+<p align="justify">Es un gobierno  bipolar, conservador para el déficit, dispendioso y opaco para el gasto. Un  jugador de póker en el que no puedes confiar sus políticas públicas en materia  de inversión, porque aprueba un Tratado de Libre Comercio, pero después  aprueba, en la práctica, leyes de la industria eléctrica para contravenir sus  disposiciones.</p>
+<p align="justify">¿Por qué un  gobierno –me lo pregunto– que dice, que afirma, que sostiene que está ahí  porque quiere defender primero a los pobres no se atreve ni a enunciar ni a  concebir una reforma hacendaria progresiva?, ¿porque no quiere tocar a sus  amigos de la tamalada, los dueños del PIB, los que dependen de sus concesiones  para mantener y sostener ese capitalismo de compadres que tanto criticaba? </p>
+<p align="justify">Porque quienes  estudian saben que no es por la vía del gasto como se combate la desigualdad en  un país, es con una profunda reforma fiscal progresiva, que tenga mayor  recaudación para aumentar los ingresos y el gasto en materia de salud, en  materia de educación. Y a esto &ldquo;le saca al parche&rdquo;.</p>
+<p align="justify">Es un gobierno de  las viejas ideas, quiere regresarnos a su nostálgico pasado y por eso hoy, como  nunca, se asoma, revive un fantasma, el fantasma de la crisis del fin del  sexenio. </p>
+<p align="justify">Un gobierno como  éste ya lo hemos tenido en el pasado, un gobierno de ocurrencias, un gobierno  de la soberbia, un gobierno que nos puede dejar a todos embarcados, es el que  tenemos en México y por eso está reprobado.</p>
+<p align="justify"><strong>La Presidenta  Senadora Ana Lilia Rivera Rivera:</strong> Gracias, Senador Gustavo Madero.</p>
+<p align="justify">Para finalizar con  esta primera ronda de intervenciones, tiene el uso de la palabra el Senador  Napoleón Gómez Urrutia, del grupo parlamentario del Partido Morena, hasta por  cinco minutos.</p>
+<p align="justify"><strong>El Senador Napoleón  Gómez Urrutia:</strong> Muchas gracias, señora Presidenta. Buenas tardes, compañeras y  compañeros Senadores.</p>
+<p align="justify">Antes de mencionar  algunos hechos relevantes de la política económica de este gobierno, sí quiero  señalar y destacar que me sorprende la capacidad de improvisación, de mentira,  de calumnias y de cinismo de algunos miembros de la oposición para calificar a  este gobierno. </p>
+<p align="justify"> Lo hacen &ldquo;sobre las  rodillas&rdquo; buscando una debilidad política, para atacar a un gobierno que ha  sido exitoso y se les olvida el pasado de las administraciones recientes del  gobierno de la República y los fracasos del PAN y del PRI en el gobierno en  materia de seguridad, en materia de desigualdad económica, de explotación de la  clase trabajadora de este país, y siguen sustentando y ampliando y repitiendo  las mismas mentiras. </p>
+<p align="justify">En la apertura del periodo  de sesiones, el Presidente Andrés Manuel López Obrador presentó su Cuarto Informe  de Gobierno en el que se destacan los resultados de su administración durante  este periodo; sin embargo, en materia económica hay puntos adicionales a los  que vale la pena profundizar para que se lo graben bien aquellos detractores de  la realidad nacional y para identificar los logros y prepararnos para el futuro.</p>
+<p align="justify">Ante el contexto  internacional de vulnerabilidad que la pandemia de Covid-19 generó, observamos  en muchos países inestabilidad en las principales variables macroeconómicas,  esto hizo más necesaria la intervención estatal para proteger a las familias de  los choques transitorios que tenían sus ingresos por el cierre temporal de  empresas, las restricciones sanitarias y la incertidumbre de las condiciones.</p>
+<p align="justify">Ya quisiera haber  visto a esos gobiernos anteriores en plena épica de crisis sanitaria mundial y  de un desequilibrio político también internacional. El gobierno de México se  destacó por su compromiso y sus resultados respecto a la reactivación  económica, el fomento al empleo y el fortalecimiento del mercado interno para  superar esta contingencia. Ejemplo de ello es la nueva política salarial  centrada en aumentar el poder adquisitivo de las y los trabajadores.</p>
+<p align="justify">Un dato revelador y  contundente, a pesar del contexto internacional desfavorable, el salario  promedio de cotización, verídico ante el Instituto Mexicano del Seguro Social,  aumentó más del 5.2 por ciento en términos reales, una recuperación que no  habíamos visto en todos los sexenios anteriores en términos reales; es decir,  una recuperación gradual, pero constante, de los salarios y de los ingresos de la  clase trabajadora de este país, que es la que genera la riqueza. </p>
+<p align="justify">De igual forma,  esta estrategia ha dado prioridad al compromiso que esta administración tiene  con los más desprotegidos, por ello los incrementos al salario mínimo, estos  cuatro años, han representado un crecimiento de casi 70 por ciento que no  habíamos visto en los sexenios anteriores, aumentando la protección de las  personas trabajadoras con menores ingresos, datos reales, contundentes y hechos  concretos. La pronta recuperación posterior a la pandemia se la debemos, en  principal medida, a las acciones implementadas para la creación de empleos  productivos, permanentes y bien remunerados, con garantías de respeto a sus  derechos. </p>
+<p align="justify">Este resultado,  compañeras y compañeros Senadores también es producto de nuestro acompañamiento  de la política de recuperación que el Presidente mismo trazó desde el inicio de  su administración, me refiero también, específicamente, a la reforma en materia  de subcontratación, que aquí en este Senado de la República aprobamos. De  acuerdo con el Banco de México a partir de las reformas del año 2021 se impulsó  el crecimiento de los salarios gracias a la formalización de los empleos que  hoy ya rebasan los cuatro millones de trabajadores en este nuevo sistema de las  relaciones de producción. </p>
+<p align="justify">Más de 21 millones  de trabajadores están inscritos en el Instituto Mexicano del Seguro Social,  alrededor de 623 mil más antes que la pandemia de Covid-19 y el punto más alto  en los últimos 79 años de la historia del Instituto Mexicano del Seguro Social.  La reactivación de la economía ha pasado por impulsar las cadenas productivas  también, no solo a nivel nacional, también a nivel local, por medio del apoyo  financiero a microempresas familiares, así como de capacitación a distancia en  el trabajo, con el objetivo de incrementar sus competencias, habilidades y  conocimientos. De este modo se propicia y se ha propiciado el incremento en la  productividad y la competitividad de nuestro país. </p>
+<p align="justify"> Igualmente  reconozco y celebro el avance de la actual administración en el reordenamiento  de la actividad minera, una actividad fundamental para nuestro país que hoy ya  representa el 10 por ciento del Producto Interno Bruto del sector industrial. Los  datos del cuarto Informe indican también que los avances en exploración en este  sector, en explotación y comercialización han ascendido y, a diferencia de los  sexenios anteriores centrados en las grandes empresas, el gobierno del  Presidente Andrés Manuel López Obrador también ha impulsado a la pequeña y mediana  minería.</p>
+<p align="justify">En términos de  transparencia se fortaleció la información de la operación y los resultados de  las actividades mineras y también sus actividades fiscales y económicas.  Gracias a todas estas nuevas herramientas hemos avanzado, compañeras y compañeros  y no debemos cegarnos por posturas ideológicas o políticas para reconocer la  realidad y la transformación de nuestro país. Se continúa con la política de no  otorgar, en materia minera, ninguna concesión y, sin embargo, es muy importante  que el Estado sepa y conozca los recursos estratégicos con los cuales cuenta  para el futuro.</p>
+<p align="justify">Por último, es muy  importante destacar un logro del Presidente López Obrador, que nos ha  beneficiado a todas y a todos, la estabilización de la inflación y de la  economía nacional que han permitido, así como el tipo de cambio, avanzar en la  marcha de la recuperación económica nacional. </p>
+<p align="justify">La estrategia de  subsidio al precio de los energéticos ha mantenido el componente subyacente de  la inflación bajo control, la atención que ha puesto el Presidente al control  inflacionario es muy buena noticia para las familias mexicanas, pues la  inflación también ha sido llamada el impuesto a los pobres, porque las personas  más desfavorecidas son quienes padecen, en mayor medida, los incrementos de los  precios. </p>
+<p align="justify">A nivel mundial la  inflación anda alrededor del 15 por ciento, en México está alrededor de la  mitad de este nivel de crecimiento de la inflación. En suma y, para terminar,  pocos gobiernos como el del Presidente López Obrador han conseguido estos  buenos resultados en el contexto de la inestabilidad económica y política  mundial.</p>
+<p align="justify">Aún quedan más de  dos años de resultados y de poner en el centro de las decisiones económicas, a  las y los mexicanos. </p>
+<p align="justify">Con estas medidas  se demuestra que el Presidente entiende que lo más importante de una economía  son las personas, así se ha hecho durante estos cuatro años, por eso hoy más  que nunca es importante reafirmar que los avances y logros de la política  económica en este proceso de transformación han contribuido, sin duda, a  reducir la desigualdad social y a mejorar las perspectivas de recuperación del  crecimiento nacional. </p>
+<p align="justify">Muchas gracias. Es  cuanto, señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera:</strong> Muchas gracias,  Senador Gómez Urrutia.</p>
+<p align="justify">Concluida la  primera ronda de oradores, procederemos a la segunda ronda, conforme lo dispone  el resolutivo tercero del Acuerdo.</p>
+<p align="justify">Por lo tanto, se  concede el uso de la palabra a la Senadora Alejandra León Gastélum, del Grupo  Plural, hasta por cinco minutos. </p>
+<p align="justify"><strong>La Senadora  Alejandra del Carmen León Gastélum:</strong> Con su venía, señora Presidenta. </p>
+<p align="justify">Abro un paréntesis para que, en nombre del Grupo Plural condenamos  enérgicamente los ataques bélicos perpetrados por el gobierno de Azerbaiyán la  madrugada de hoy hacia el pueblo de Armenia, nuestra solidaridad al pueblo de  Armenia.</p>
+<p align="justify">Evaluar el desempeño de un gobierno de forma objetiva no es una tarea  sencilla para nadie, incluso para los profesionales de las ciencias políticas,  económicas y sociales esto puede resultar una tarea complicada dependiendo de  qué es exactamente lo que se pretende evaluar, desde qué enfoque, con qué  métodos y, en comparación con qué parámetro. </p>
+<p align="justify"> Sin embargo, en el campo de las ciencias del Estado, evaluar un gobierno  con honestidad es un acto posible y, sobre todo, necesario para el buen  funcionamiento de la democracia. </p>
+<p align="justify">En ese sentido, un ejercicio como este exige, a las mujeres y hombres  que nos encontramos aquí reunidos, que hablemos con la verdad, cuando esta se  encuentra sustentada en datos, aunque los datos muestren una realidad nos guste  a otros o no nos guste a otros, pues la historia universal ha demostrado que  cuando se pretende ocultar la realidad, detrás del discurso de las ideologías y  las pasiones partidistas, quien realmente paga las consecuencias no es el  populista ni el demagogo, es el pueblo al que se le engaña. </p>
+<p align="justify">La realidad de nuestro ocaso es que la economía de México no va bien, y  esto no es una declaración política, es un hecho que cualquier miembro de esta  Cámara puede reconocer si pone atención a los datos oficiales y a las palabras  del propio Presidente de la República en sus conferencias diarias. </p>
+<p align="justify">Durante este sexenio se ha registrado el peor desempeño económico desde  1935. Y si las cosas continúan haciéndose como hasta ahora, las proyecciones  apuntan que al terminar el sexenio de este Presidente nuestra economía habrá  crecido apenas el 1.5 por ciento, una cifra aún más mediocre que las  experimentadas en la larga pesadilla neoliberal.</p>
+<p align="justify">Y aunque podemos entender que la pandemia tuvo un impacto económico  tremendo, no sólo en México, sino a nivel global, lo cierto es que nuestra  economía viene decayendo desde el 2019 y aún no ha podido recuperar su  desempeño prepandémico a diferencia de lo que está ocurriendo en otros países  latinoamericanos.</p>
+<p align="justify">También hay que decir que hoy en México hay 3.8 millones más de pobres  de los que había al terminar la infame gestión de  Peña Nieto de acuerdo con datos del Coneval.</p>
+<p align="justify">Y durante esta administración también ha caído en más de 5 por ciento la  proporción de personas que viven en la clase media.</p>
+<p align="justify">Aunado a esto, una mala gestión de los programas sociales ha provocado  que menos personas en pobreza y pobreza extrema reciban apoyos del gobierno.</p>
+<p align="justify">Es decir, las personas que verdaderamente más lo necesitan reciben menos  apoyos de los que recibían antes de que comenzara este gobierno.</p>
+<p align="justify">Para terminar, sólo deseo manifestar que más que un arma política los  datos deben de servir para dar pie a una reflexión que nos permita corregir el  rumbo, algo que urge en estos momentos por el bien de nuestro país.</p>
+<p align="justify">Por ello, hago un llamado al Presidente a dejar esa insana obsesión por  su popularidad y preste atención a estos datos que verdaderamente importan a  las mexicanas y a los mexicanos, no a sus propios datos, los mismos que  sirvieron como base para su triunfo en el 2018 y los mismos con los que más  allá de discursos e ideologías la historia lo juzgará.</p>
+<p align="justify">Es cuanto, compañeras y compañeros.</p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Gracias, Senadora León Gastélum.</p>
+<p align="justify"> En su turno del  Partido Verde Ecologista de México ha entregado su participación a esta Mesa,  por lo que se inserta en el Diario de los Debates.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><br><br><img src="/informacion/img/ver_documento.png" border></p>
+<p align="justify">Para continuar con el uso de la palabra se llama a la Senadora Indira  Kempis Martínez, del Partido Movimiento Ciudadano, hasta por cinco minutos en  su participación.</p>
+<p align="justify"><strong>La Senadora Indira Kempis Martínez: </strong>Muchas gracias, señora Presidenta.</p>
+<p align="justify">Tal parece que al gobierno federal que se dice ser el más feminista de  la historia se la ha olvidado el desastre económico que representa para las  mujeres mexicanas esta pandemia, esta inflación y esta crisis que tal parece  históricamente no se resuelve más que con pequeñas dosis, que no son suficientes,  de acciones contundentes.</p>
+<p align="justify">Tal es así que tendríamos que ir al supermercado y entender que ya no  alcanza a comprender la realidad, que además se traduce no solamente en una  violencia económica o estructural para las mujeres, sino que abre las brechas  de la desigualdad.</p>
+<p align="justify">Hoy mismo, las mujeres dedican 1.7 veces más de tiempo al trabajo de  cuidados no remunerados que los hombres. De hecho, una asociación que se llama  &ldquo;Pro-Mujer&rdquo; expone que de los 25 a los 44 años las mujeres ganan 21 por ciento  menos y tienen menor acceso a créditos financieros, 29 por ciento frente a 33 por  ciento de los hombres.</p>
+<p align="justify">En Movimiento Ciudadano hacemos un llamado para que la inclusión, la  educación y la libertad financiera sean objetivos de este gobierno,  principalmente beneficiando a quienes hoy son violentadas desde las acciones  gubernamentales por no considerar esta circunstancia económica que rebasa a  quienes mantienen seguramente un hogar, como es el caso de muchas mujeres en  México.</p>
+<p align="justify">Hoy mismo nuestra gran labor es esta agenda con perspectiva de género,  que no sea abandonada a la hora de contrarrestar lo que tanto le duele a  quienes tienen que pagar escuelas, comida, transporte, y ven minada su  situación no por un contexto circunstancial sino por esa falta de decisiones desde  el gobierno que deberían ser todavía mucho más dirigidas a que las mujeres  vivan en una manera mucho más digna y que enfrenten así sus propias crisis  económicas.</p>
+<p align="justify">Que quienes nos escuchan, las mujeres a quienes representamos no dejan  hoy mentir, ellas tienen otros datos, y sus datos son los tickets y las  facturas que el Presidente no va a pagar.</p>
+<p align="justify">Es cuanto, señora Presidenta.</p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Muchas gracias, Senadora Kempis Martínez.</p>
+<p align="justify">Continuamos con el uso de la palabra, de la Senadora Claudia Anaya Mota,  del PRI, hasta por cinco minutos.</p>
+<p align="justify"><strong>La Senadora Claudia Edith Anaya Mota: </strong>Muchas gracias, señora Presidenta. Con su permiso, compañeras Senadoras  y compañeros Senadores.</p>
+<p align="justify">Estamos en esta revisión de corte económico y me parece que es mucho lo  que tenemos que analizar. No solamente como muchos han hecho acá, revisar los  indicadores macroeconómicos, porque afortunadamente México, y derivado de  varias reformas estructurales que se construyeron en el pasado hoy día tenemos  solidez macroeconómica en muchos rubros.</p>
+<p align="justify">Pero además de la solidez macroeconómica tenemos que hablar, como muy  bien dijeron algunas de mis compañeras y compañeros, del día a día de las  familias mexicanas, eso también es parte del desglose económico.</p>
+<p align="justify"> Primero, quiero irme a los números macro donde nosotros tenemos una gran  responsabilidad que hemos venido eludiendo.</p>
+<p align="justify">Los indicadores con los que se construyen los criterios generales de  política económica salen mal, y salen mal desde aquí porque nos negamos a cambiarlos,  porque nos negamos a hablar con la verdad, porque nos negamos a plasmar números  reales en la Ley de Ingresos de la Federación.</p>
+<p align="justify">Les voy a dar unos ejemplos.</p>
+<p align="justify">En la Ley de Ingresos de la Federación nosotros proyectamos un precio  del crudo de 55.1 dólares por barril.</p>
+<p align="justify">Sí, acá en la Cámara de Senadores, aunque con la mayoría de Morena,  obviamente. Y no, la verdad es que el precio promedio del barril estuvo en 97  dólares en el transcurso del año.</p>
+<p align="justify">Nosotros proyectamos una producción de crudo de 1.8 millones de barriles  diarios en la Cámara de Senadores, y lo cierto es que la variación anual estuvo  en el rango de 1.7 millones de barriles diarios.</p>
+<p align="justify">El tema de la inflación. Acá se aprobó en la Ley de Ingresos de la  Federación una inflación de 3.4 por ciento, cuando estamos por cerrar el año en  un 8.5 cercano al 9 por ciento.</p>
+<p align="justify">Se aprobó en la Ley de Ingresos de la Federación un déficit estimado de  875 mil millones de pesos, esto es menos un 3.5 por ciento del PIB, y son estos  los llamados requerimientos financieros del sector público.</p>
+<p align="justify">¿Cómo acabaron los requerimientos financieros del sector público?</p>
+<p align="justify">Bueno, a la fecha van en un pago de 915 mil millones de pesos, esto es, vamos a  llegar a un déficit cercano al 4 por ciento, si no estoy mal. </p>
+<p align="justify">Y esto significa  también que debemos de ser más cuidadosos que nunca en cómo cierra también el  costo financiero de la deuda, porque lo cierto es que se prevé que las tasas de  interés cierren al punto de los nueve puntos porcentuales en este año, y eso  significará que el costo financiero de la deuda que tenemos aprobada en el  Presupuesto de Egresos de la Federación, que es de cerca de 850 mil millones de  pesos, se logre pegar al casi billón de pesos. </p>
+<p align="justify">Es cierto que mucha  de la gente que trabaja en Hacienda, y el propio Presidente ha dado la  instrucción de mantener los saldos históricos de los requerimientos financieros  del sector público que es la deuda total del país, cercana a los 50 puntos del  PIB, lo cierto es que nuestro PIB ahorita es chiquito porque México ha crecido  en lo que va de este año 1.9, que es lo que están estimando ya casi todos los  estudiosos de las finanzas públicas. Y eso significa que con un producto  interno chiquito nuestros saldos se reflejan en una menor medida.</p>
+<p align="justify">Pero recordemos que  cuando iniciamos este año, lo iniciamos con una deuda total de los 12 billones  de pesos. </p>
+<p align="justify">¿Cómo la vamos a  cerrar? En los 14 billones de pesos, 14 billones de pesos, que es todo el  faltante de los requerimientos financieros del sector público, es decir, este  gobierno ha creado un faltante de 2 billones de pesos en este año, incluidos  los costos financieros de la deuda. </p>
+<p align="justify"> ¿Dónde veo yo los  problemas de este país? </p>
+<p align="justify">¿Dónde veo que  pueden venir?</p>
+<p align="justify">Los veo en la  creciente presión de las pensiones. </p>
+<p align="justify">Ya ahorita está  proyectado un pago pensionario de 1.2 billones de pesos. </p>
+<p align="justify">Pero recordemos  también que se proyectan 250 mil millones de pesos para las llamadas pensiones  de Bienestar que en muchos de los casos están duplicadas, no son justas porque  además de que recibes la Pensión del Bienestar hay quienes reciben además una  pensión del IMSS, del ISSSTE o del sistema pensionario local. ¡Ojo! Con eso.</p>
+<p align="justify">Si no se rediseñan  las políticas públicas en este país, porque vamos a elevar la presión de gasto  y es donde nos podemos meter en muchos problemas rumbo al cierre de año. </p>
+<p align="justify">Y el problema que  veo que es grande, es el tema de Pemex.</p>
+<p align="justify">Pemex también ha  sostenido la presión gracias a que se considera que el gobierno es el aval de  Pemex y que se le ha estado dando presupuesto extraordinario, se le dieron  presupuestos crecientes para la construcción de Dos Bocas adicionales a las que  venían en el Presupuesto de Egresos de la Federación y, también este año,  recibió por parte de Fonadin un recurso superior a los 20 mil millones de  pesos, es decir, el gobierno federal ha estado haciendo fuerza a las presiones  que tiene Pemex a mediano y corto plazo, y eso es lo que ha hecho que por lo  menos a mitad de año tuviera un saldo, un balance positivo, pero las cosas  pueden cambiar para fin de año y eso es algo de lo que tenemos que poner  atención. </p>
+<p align="justify">Por eso mi llamado,  mi reflexión, es a que le demos un seguimiento puntual al gasto público, que se  gaste lo que se deba. </p>
+<p align="justify">El tema de las mega  obras nos puede meter en un severo problema de requerimiento de recurso,  entonces, si no planificamos bien podemos meter al país en un severo riesgo.<br>
+  <br>
+  Yo quiero actuar  con mucha responsabilidad, por eso es que les invito siempre a debatir los  indicadores y, sobre todo, asumamos nuestra responsabilidad, para esta Ley de  Ingresos de la Federación 2023 hagámoslo bajo indicadores responsables y lo más  apegados a la realidad para que no le causemos un daño a México. </p>
+<p align="justify">Es cuanto, señora Presidenta. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>La Presidenta  Senadora Ana Lilia Rivera Rivera: </strong>Muchas gracias, Senadora Anaya Mota. </p>
+<p align="justify">Se concede el uso  de la palabra al Senador Víctor Fuentes Solís, del grupo parlamentario del PAN,  hasta por cinco minutos. </p>
+<p align="justify"><strong>El Senador Víctor  Oswaldo Fuentes Solís: </strong>Comienzo agradeciendo a todos los compañeros que  están presentes, a los aproximadamente 40 Senadores de los 128 que conformamos  este recinto. </p>
+<p align="justify">Si yo pidiera  ahorita, en apego al Reglamento, una revisión de quórum, obviamente que esta  sesión sería cancelada porque no estamos mínimamente<strong> </strong>los Senadores que  se requieren para llevar a cabo una sesión. Eso en la parte de forma, en la  parte del quórum. </p>
+<p align="justify"> Pero lo más triste,  lo más lamentable, es que no estamos en este recinto los Senadores con la  calidad suficiente para poder hacer la labor que corresponde  constitucionalmente a este importante órgano del Estado mexicano a la más alta  tribuna de todo el país. </p>
+<p align="justify">¿Y a qué me refiero  con que no hay la calidad?</p>
+<p align="justify">Este Senado está  constituido para tratar los temas más importantes de México, los más  trascendentes, y el que el día de hoy aquí nos ocupa para nada es menor, tiene  que ver con nuestra economía, tiene que ver con la generación de empleo, tiene  que ver con los sueldos, tiene que ver con los ingresos de las familias  mexicanas, tiene que ver con lo que nos alcanza a todos para poder cubrir el  gasto de nuestras familias. </p>
+<p align="justify">Y lamentablemente  la economía no está nada bien y el Presupuesto de Ingresos y de Egresos, la  Miscelánea, es precisamente para buscar incentivar la economía de un país y,  para ello, para esto, el Presidente de la República, a través de la Secretaría  de Hacienda, remite a este órgano constitucional un proyecto, un proyecto que  tenemos el deber ético, moral y constitucional para analizarlo, para revisarlo,  para discutirlo y, para en su caso, hacer los cambios que esta Soberanía  considere adecuados si el proyecto no convence a todos los representantes de  las entidades federativas que estamos aquí reunidos. </p>
+<p align="justify">Pero, sorpresa,  recibimos hace unos días este proyecto, hoy le damos apertura a la discusión,  seguramente en los próximos días será votado en la Cámara de Diputados y luego  será remitido aquí a la Cámara de Senadores, y lamentablemente quiero compartir  con todos quienes nos escuchan y nos ven, que no le vamos a cambiar ni una  coma, que aquí en adelante el análisis, la discusión, deliberar sobre el mismo,  servirá absolutamente para nada porque este Senado, lejos de estar constituido  en esta legislatura como el órgano constitucional que debe ser, está  tristemente reducido a una oficialía de partes, vamos, así como recibimos el  Presupuesto, a devolverlo al Poder Ejecutivo para que sea publicado en sus  términos.</p>
+<p align="justify">Si la deuda es  mucha, que lo es, no sé si algún compañero Senador de Morena tenga presente  cuál fue la última deuda que pidió el Presidente Peña Nieto en el 2018, para el  Presupuesto 2018, si nos hiciera el favor de comentárnoslo, algún generoso  conocedor profundo de la política económica que este por ahí. Bueno, pues les  comparto. </p>
+<p align="justify">El Presidente Peña  Nieto, en el 2018, pidió poco más de medio billón de pesos de deuda, poco más  de 500 mil millones de pesos. </p>
+<p align="justify">¿Saben ahora cuánto  está pidiendo de deuda el gobierno mexicano, el Presidente de la República?  Medio billón, 500 mil millones de pesos. </p>
+<p align="justify">Tres años después. </p>
+<p align="justify">¿Cuánto está  pidiendo actualmente el Presidente de la República? El doble, más del doble de  la deuda que pidió, el que ya bastante deuda pedía históricamente, que era Peña  Nieto, a ese que todos criticamos mucho por el exceso de deuda que solicitaba. </p>
+<p align="justify">Bueno, este  Presidente, que no iba a pedir deuda, que en la primera sesión de instalación,  cuando toma protesta públicamente, dijo que no iba a pedir deuda, está pidiendo  más del doble. </p>
+<p align="justify">La economía no  crece, la economía mexicana está estancada, para que haya más dinero que cobrar  la economía tendría que crecer para que puedan cobrar más impuestos. Y aún y  cuando la economía no crece absolutamente nada, están con un proyecto de  Presupuesto de Ingresos muy ambicioso en temas de recaudación de impuestos, en  términos textuales, &ldquo;muy cobrón&rdquo;, quieren cobrar bastantes más impuestos sobre  la renta a los mismos contribuyentes, cuyas empresas en este momento están en  crisis y quieren cobrar bastante más impuestos sobre el valor agregado a todos  los consumidores, que de por sí el dinero ya no alcanza. </p>
+<p align="justify"> Así la realidad  económica del país y tristemente así la realidad de este Senado, donde la  mayoría de los Senadores, Ricardo Monreal, entre otros, el día de hoy brilla  por su ausencia, esa es la preocupación que tienen de este importante tema, y  así la calidad de la mayoría de los Senadores de este Senado, que no le moverán  una sola coma a este proyecto de presupuesto y consolidarán a este Senado como  una Oficialía de Partes. </p>
+<p align="justify">Por su atención,  muchas gracias. </p>
+<p align="justify"><strong>La Presidenta  Senadora Ana Lilia Rivera Rivera: </strong>Muchas gracias, Senador Fuentes Solís. </p>
+<p align="justify">Finalmente, tiene  el uso de la palabra la Senadora Imelda Castro Castro, del grupo parlamentario  del Partido Morena, hasta por cinco minutos. </p>
+<p align="justify"><strong>La Senadora Imelda  Castro Castro:</strong> Más allá, más allá de los encuentros y desencuentros que en el análisis  de los informes de gobierno son, como siempre, los números los que hablan. </p>
+<p align="justify">Por esta razón, voy  a iniciar por el manejo de las finanzas públicas, tema por el cual este  gobierno, el gobierno de la &ldquo;Cuarta Transformación&rdquo; ha sido reconocido por su  responsabilidad y prudencia. </p>
+<p align="justify">A pesar de estar  inmersos en la peor crisis económica de los últimos 80 años, la deuda ha  crecido en un 4 por ciento del PIB a propósito de lo que aquí se ha dicho, que  sólo son afirmaciones, pero que en realidad ese crecimiento de la deuda tiene  mucho que ver con pagar el servicio de la deuda que los gobiernos de los que  aquí han hablado contrataron. </p>
+<p align="justify">Asimismo, sin  aumentar los impuestos, ha sido este gobierno el que más ha fortalecido los  ingresos no petroleros, los ingresos del gobierno se han incrementado en 2.4 por  ciento en términos reales, con relación al mismo periodo del año pasado. </p>
+<p align="justify">Se han recuperado  recursos por la cancelación de la condonación de impuestos a grandes  contribuyentes y se ha combatido la evasión fiscal, lo que nos ha dado ingresos  excedentes de un billón 700 mil millones de pesos, además, el combate al  huachicol ha impedido la fuga y robo de 200 mil millones de pesos, desde que  las aduanas, por cierto, están en manos, administrativamente hablando, de las  Fuerzas Armadas, ha habido un aumento del 20 por ciento de ingresos, ya se está  recaudando alrededor de un billón de pesos. Todo ello gracias al combate al  contrabando y la corrupción. </p>
+<p align="justify">Somos conscientes  de la importancia que tiene para México la relación con el exterior. </p>
+<p align="justify">Por eso destaco que  en este periodo nuestro país fue considerado como uno de los que más cuenta con  mayor potencial para invertir y hacer negocios, se han logrado niveles  históricos en materia de inversión extranjera. </p>
+<p align="justify">Tan sólo en el  primer semestre creció en un 12 por ciento, las exportaciones muestran un  aumento de un 18 por ciento en los primeros 7 meses respecto al periodo previo  y las reservas del Banco de México han aumentado en un 14 por ciento. </p>
+<p align="justify">Un tema que nos  importa mucho por el impacto que tiene en la economía familiar es el de la  inflación, la situación que nos ha traído la pandemia ha llevado a encender los  focos amarillos en todo el mundo por esa alta inflación. </p>
+<p align="justify">Sin embargo, en  México se tomó la decisión de actuar con determinación para revertir los  efectos de la inflación del 8.20 por ciento, ejemplo de ello son los subsidios  a las gasolinas por 293 mil millones de pesos y el paquete contra la inflación  y la carestía en apoyo a las familias mexicanas. </p>
+<p align="justify"> El campo, por  ejemplo, es un sector que aun y con la pandemia no ha dejado de crecer, en 2020  la producción de alimentos se incrementó en el 1.1, en 2021 se incrementó en el  1.3 y en el primer semestre de este año ya creció en 3 por ciento. </p>
+<p align="justify">Junto a estos  logros, este Cuarto Informe de Gobierno, nos da cuenta de una gran cantidad de  acciones, como la fuerte inversión pública en la industria energética para garantizar nuestra capacidad  de autoabastecernos de energéticos, además de la inversión de 9 mil 300  millones de dólares en mejorar la capacidad de la Comisión Federal de  Electricidad y los proyectos de energías renovables que están en marcha. </p>
+<p align="justify">En suma, el  análisis del Informe siempre es una oportunidad para el debate en todos los  planos, mayormente frente a las circunstancias actuales de pandemia,  postpandemia, crisis económica y conflictos bélicos. </p>
+<p align="justify">Senadoras y  Senadores, hagamos de la reflexión y el intercambio honesto y respetuoso de  ideas una actividad de nuestra regularidad democrática. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify"><strong>La Presidenta  Senadora Ana Lilia Rivera Rivera: </strong>Muchas gracias, Senadora Castro Castro. </p>
+<p align="justify">Con las  intervenciones anteriores concluimos el Análisis del Cuarto Informe de Gobierno  del Presidente Andrés Manuel López Obrador, en materia de política  económica.  </p>
+<p align="justify">En cumplimiento con  lo dispuesto en el numeral 5, del artículo 7 de la Ley Orgánica del Congreso  General de los Estados Unidos Mexicanos, la versión estenográfica de esta sesión se remitirá al ciudadano  Presidente de la República para su conocimiento.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106238'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106239'></a><p align="justify">Honorable Asamblea,  hago de su conocimiento que la Mesa Directiva recibió de la Junta de  Coordinación Política un Acuerdo por el que se modifica la integración de  comisiones.</p>
+<p align="justify">Consulte la Secretaría  a la Asamblea, en votación económica, si autoriza que se incorpore este asunto  en el Orden del Día de la sesión de hoy. </p>
+<p align="justify"><strong>La Secretaria  Senadora Verónica Noemí Camino Farjat: </strong>Con gusto, señora Presidenta.  Consulto a la Asamblea, en votación económica, se autorice se incorpore el Acuerdo  en el Orden del Día de la sesión de hoy. Quienes estén porque se autorice,  favor de levantar la mano. </p>
+<p align="center">(La Asamblea  asiente)</p>
+<p align="justify">Quienes estén  porque no se autorice, favor de levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p align="justify">Quienes estén en  abstención, favor de levantar la mano. </p>
+<p align="justify">Sí se autoriza,  señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta  Senadora Ana Lilia Rivera Rivera:</strong> Solicito a la Secretaría dé lectura al Acuerdo.</p>
+<p align="justify"> <strong>JUNTA  DE COORDINACIÓN POLÍTICA</strong></p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí  Camino Farjat:</strong> Sí, señora Presidenta. Doy lectura al Acuerdo. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-09-13-2/assets/documentos/Acuerdo_JCP_Integracion_Comisiones.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Es cuanto, señora Presidenta.</p>
+<p align="justify"> <strong>La Presidenta  Senadora Ana Lilia Rivera Rivera: </strong>Gracias, Secretaria. En consecuencia, está  a discusión. En virtud de no haber oradoras ni oradores registrados, consulte  la Secretaría a la Asamblea, en votación económica, si es de aprobarse el Acuerdo  presentado. </p>
+<p align="justify"><strong>La Secretaria  Senadora Verónica Noemí Camino Farjat: </strong>Con gusto, señora Presidenta.  Consulto a la Asamblea, en votación económica, si es de aprobarse el Acuerdo.  Quienes estén porque se apruebe, favor de levantar la mano. </p>
+<p align="center">(La Asamblea  asiente)</p>
+<p align="justify">Quienes estén  porque se rechace, favor de levantar la mano. </p>
+<p align="center">(La Asamblea no  asiente)</p>
+<p align="justify">Quienes estén en  abstención, favor de levantar la mano. </p>
+<p align="justify">Aprobado el Acuerdo,  señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta  Senadora Ana Lilia Rivera Rivera: </strong>Aprobado el Acuerdo por el que se modifica  la integración de comisiones. Comuníquese. </p>
+<p align="justify">Continúe la  Secretaría con los asuntos de la agenda. Perdón, Senador Sergio, ¿con qué  objeto?</p>
+<p align="justify"><strong>El Senador Sergio  Pérez Flores: </strong>(Desde su escaño) Gracias, señora Presidenta. </p>
+<p align="justify">Una vez concluido  este importante análisis que hemos presenciado, se me permitiera exponer un  tema muy importante, relativo a una proposición con punto de Acuerdo que he  presentado. </p>
+<p align="justify"><strong>La Presidenta  Senadora Ana Lilia Rivera Rivera: </strong>Tiene la voz por un minuto, desde su  escaño, Senador Sergio. </p>
+<p align="justify"><strong>El Senador Sergio  Pérez Flores: </strong>(Desde su escaño) Gracias, señora Presidenta. Una vez que se ha  concluido este debate, quiero comentar algo muy importante que está ocurriendo  en mi estado. </p>
+<p align="justify">Quiero informar a  este Pleno que he presentado un punto de Acuerdo para exhortar de forma  respetuosa al Congreso del Estado de Morelos y también a la Fiscalía del Estado  de Morelos, ya que lamentablemente para quienes habitamos en el estado de  Morelos hemos visto que se ha incrementado un clima de impunidad,  particularmente por la falta de resolución de delitos de alto impacto en el  estado de Morelos, como lo es el de homicidio doloso, el feminicidio, el  secuestro y el robo de vehículo. </p>
+<p align="justify">Por tanto, he  solicitado, a través de este exhorto, que el Congreso del Estado de Morelos, de  forma respetuosa, haga comparecer al fiscal en la entidad para que le  establezca un plazo perentorio y que en un plazo perentorio el fiscal del  estado dé respuesta, presente una agenda de trabajo en la que se dé respuesta  cómo se abocará a la resolución y a la investigación de estos delitos que a la  fecha, quiero informar a este Pleno que en el estado de Morelos estamos  prácticamente en último lugar en las entidades del país, en último lugar en la  resolución de esta clase de delitos. </p>
+<p align="justify">Es cuanto, señora Presidenta. </p>
+<p align="justify"><strong>La Presidenta  Senadora Ana Lilia Rivera Rivera: </strong>Gracias, Senador, la Asamblea ha registrado  su comentario. </p>
+<p align="justify"> Continúe la Secretaría. </p>
+<p align="justify"><strong>La Secretaria Senadora Verónica Noemí  Camino Farjat: </strong>Se  han agotado los asuntos de la agenda, señora Presidenta. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106239'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='106240'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Ana Lilia Rivera  Rivera: </strong>Se cita a la  siguiente sesión ordinaria el martes 20 de septiembre a las 11:00 horas. </p>
+<p align="justify">Les recordamos que en esta sesión se llevará a cabo  el Análisis del Cuarto Informe de Gobierno en materia de Política Social. </p>
+<p align="justify">Asimismo, a las 16:00 horas celebraremos sesión  solemne para recibir la Visita del Jefe de Estado de la República Federal de  Alemania. </p>
+<p align="justify">Se levanta la sesión. </p>
+<p align="center">(Se levantó la  sesión a las 17:14 horas)</p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a106240'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

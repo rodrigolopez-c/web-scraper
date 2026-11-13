@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA COMISI&Oacute;N PERMANENTE<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Receso Comisi&oacute;n Permanente</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 5</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Gerardo Fernández Noroña</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica de la Comisi&oacute;n Permanente Celebrada<br>en la Ciudad de M&eacute;xico, el 27 de Mayo de 2025</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/1/SPR/PDF-WEB/CP_No5_27-MAYO-2025.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120746'></a><p align="center"><strong>PRESIDE  EL DIPUTADO</strong><br>
+  <strong>SERGIO  GUTIÉRREZ LUNA</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>El Presidente Diputado  Sergio Gutiérrez Luna: </strong>(11:35 horas) Pido a la Secretaría informe a  la Asamblea del cómputo de asistencia de las personas ciudadanas Legisladoras.</p>
+<p><strong>La Secretaria Diputada  María de los Dolores Padierna Luna: </strong>Consulto a las y los Legisladores si falta  alguno en registrar su asistencia. </p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/permanente/CP66-1ASPR/Asistencia/1041"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Conforme al registro de asistencia, se han  acreditado 28 ciudadanas Legisladoras y ciudadanos Legisladores. En  consecuencia, hay quórum, señor Presidente. </p>
+<p><strong>El Presidente Diputado  Sergio Gutiérrez Luna: </strong>Se abre la sesión de la Comisión Permanente  del martes 27 de mayo de 2025, correspondiente al segundo receso del primer año  de ejercicio de la LXVI Legislatura.</p>
+<p>El Orden del Día se encuentra publicado en la  Gaceta Parlamentaria y está disponible en el monitor de sus escaños; por lo que  se informa de los asuntos correspondientes a la agenda. </p>
+<p align="right"><strong>ORDEN DEL DÍA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/gaceta_comision_permanente/documento/150213"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>El acta de la sesión del pasado 21 de mayo se  encuentra publicada en la Gaceta Parlamentaria y está disponible en el monitor.</p>
+<p align="right"><strong>ACTA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/gaceta_comision_permanente/documento/150214"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Solicito  a la Secretaría que consulte a la Asamblea, en votación económica, si es de  aprobarse el acta referida.</p>
+<p><strong>La  Secretaria Diputada María de los Dolores Padierna Luna: </strong>Consulto  a la Asamblea, en votación económica, si es de aprobarse el acta de la sesión  anterior. Quienes estén porque se apruebe, favor de levantar su mano. </p>
+<p align="center">(La  Asamblea asiente)</p>
+<p>Quienes  estén porque se rechace, favor de levantar su mano.</p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p>Quienes  se abstengan, favor de levantar su mano.</p>
+<p>Aprobada  el acta, señor Presidente. </p>
+<p><strong>El  Presidente Diputado Sergio Gutiérrez Luna: </strong>Aprobada  el acta de la sesión del 21 de mayo de 2025. </p>
+<p>Continúe  la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120746'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120747'></a><p><strong>SECRETARÍA DE GOBERNACIÓN</strong></p>
+<p><strong>La Secretaria Diputada  María de los Dolores Padierna Luna: </strong>Se recibió un oficio de la Secretaría de  Gobernación, con el que envía el segundo informe semestral de actividades 2024  del Consejo Nacional de Prestación de Servicios para la Atención, Cuidado y  Desarrollo Integral Infantil. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ofic_Informe_Semestral_COPSADII.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Diputado  Sergio Gutiérrez Luna: </strong>Remítase a las Comisiones de Derechos de la  Niñez y de la Adolescencia; y de Bienestar de la Cámara de Senadores; y a las  Comisiones de Derechos de la Niñez y Adolescencia; y de Bienestar de la Cámara  de Diputados. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120747'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120748'></a><p><strong>La Secretaria Diputada  María de los Dolores Padierna Luna: </strong>Se recibió otro oficio de la Secretaría de  Gobernación, con el que nos hace llegar el informe trimestral de la Comisión  Nacional del Sistema de Ahorro para el Retiro, correspondiente al período de  enero, febrero y marzo de 2025. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ofic_Informe_Trimestral_Hacienda.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Diputado  Sergio Gutiérrez Luna: </strong>Remítase a las Comisiones de Hacienda y  Crédito Público; de Seguridad Social; y de Trabajo y Previsión Social de la  Cámara de Senadores y de la Cámara de Diputados. </p>
+<p>Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120748'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120749'></a><p><strong>La Secretaria Diputada  María de los Dolores Padierna Luna: </strong>También de la Secretaría de Gobernación se  recibió oficio con el que se remite nombramiento a favor del ciudadano Roberto  Canseco Martínez como Embajador Extraordinario y Plenipotenciario de México en  Jamaica y, de forma concurrente, sujeto a la recepción del beneplácito  correspondiente ante la mancomunidad de las Bahamas, así como Representante  Permanente de México ante la Autoridad Internacional de los Fondos Marinos, con  sede en Kingston, Jamaica. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/SEGOB_Embajador.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Diputado  Sergio Gutiérrez Luna: </strong>Informo a la Asamblea que el asunto quedará  en poder de la Mesa Directiva, en tanto se instalan las comisiones de trabajo. </p>
+<p>Continúe. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120749'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120750'></a><p><strong>La Secretaria Diputada  María de los Dolores Padierna Luna: </strong>Asimismo, se recibió otro oficio de la  Secretaría de Gobernación, por el que remite del titular del Poder Ejecutivo  Federal, la Doctora Claudia Sheinbaum, una INICIATIVA CON PROYECTO DE DECRETO  POR EL QUE SE REFORMAN, ADICIONAN Y DEROGAN DIVERSAS DISPOSICIONES DE LA LEY  GENERAL DE DESARROLLO SOCIAL, DE LA LEY FEDERAL DE PRESUPUESTO Y  RESPONSABILIDAD HACENDARIA Y DE LA LEY DE CONTABILIDAD GUBERNAMENTAL. </p>
+<p align="right"><strong>DOCUMENTOS</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Oficio_Segob_Iniciativa.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Iniciativa_Ley_FPYRH.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/PFF_27052025.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Diputado  Sergio Gutiérrez Luna: </strong>Túrnese a la Comisión de Presupuesto y Cuenta  Pública de la Cámara de Diputados. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120750'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120751'></a><p><strong>SECRETARÍA DE LA DEFENSA NACIONAL</strong></p>
+<p><strong>La Secretaria Diputada  María de los Dolores Padierna Luna: </strong>Se recibió un oficio de la Secretaría de la  Defensa Nacional, con el que se envía el informe geográfico de las actividades  realizadas por 11 militares del Séptimo Grupo de Fuerzas Especiales del Comando  de Operaciones Especiales Norte de los Estados Unidos de América, que  impartieron un entrenamiento de ejercicios combinados conjuntos a 90 militares  de los Cuerpos Especiales, realizado en 2 fases, la primera, el 14 de abril al  1 de mayo, del año en curso, en las instalaciones del Centro de Adiestramiento  Regional de la Primera Región Militar, en San Miguel de los Jagüeyes, México, y  la segunda del 1 al 16 de mayo en las instalaciones del Centro Nacional de Adiestramiento,  en Santa Gertrudis, Chihuahua.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ofic_Defensa_Nacional_Informe_Entrenamiento_de_Ejercicios_Combinados.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente  Diputado Sergio Carlos Gutiérrez Luna: </strong>Remítase a la  Comisión de Defensa Nacional de la Cámara de Senadores. </p>
+<p>Continúe. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120751'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120752'></a><p><strong>CONGRESOS DE LOS ESTADOS</strong></p>
+<p><strong>La Secretaria  Diputada María de los Dolores Padierna Luna: </strong>Se recibió un oficio  del Congreso del Estado de Baja California, con el que se informa de la  elección de la Mesa Directiva que fungirá del 1 de abril al 31 de julio del año  en curso, correspondiente al Tercer Período Ordinario de Sesiones del primer  año de ejercicio de la XXV Legislatura. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Congreso_Baja_California_Eleccion_MD.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente  Diputado Sergio Carlos Gutiérrez Luna: </strong>La Asamblea ha  quedado enterada. </p>
+<p>Continúe. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120752'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120753'></a><p><strong>La Secretaria  Diputada María de los Dolores Padierna Luna: </strong>Se recibió otro  oficio del Congreso del Estado de Baja California, con el que hace llegar un  exhorto a las Cámaras del Congreso de la Unión, con el fin de que presenten y  aprueben la Ley Daryela, para que se cree la Ley General de Capacitación en  Materia de Género, de Prevención y Erradicación de la Violencia Hacia las  Mujeres, para lograr la capacitación obligatoria en materia de género a todas  las personas servidoras de los tres órdenes de gobierno, así como de los  Poderes Ejecutivo, Legislativo y Judicial, y organismos autónomos, como medida  de prevención de la violencia de género en nuestro país.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Congreso_Baja_California_Ley%20Daryela.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente  Diputado Sergio Carlos Gutiérrez Luna: </strong>Túrnese a la Comisión  Para la Igualdad de Género de la Cámara de Senadores y a la Comisión de  Igualdad de Género de la Cámara de Diputados. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120753'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120754'></a><p><strong>RESPUESTAS A ACUERDOS PROMOVIDOS POR  LEGISLADORES    </strong></p>
+<p><strong>La Secretaria  Diputada María de los Dolores Padierna Luna: </strong>Se recibieron dos  oficios de dependencias diversas en respuesta a acuerdos promovidos por  Legisladoras y Legisladores.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/gaceta_comision_permanente/documento/150179"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente  Diputado Sergio Carlos Gutiérrez Luna: </strong>Remítase a las  personas Legisladoras promoventes, según corresponda. Les informo que la  documentación referida se encuentra publicada en la Gaceta Parlamentaria. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120754'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120755'></a><p><strong>COMUNICACIONES </strong></p>
+<p><strong>La Secretaria  Diputada María de los Dolores Padierna Luna: </strong>Se recibieron  comunicaciones de las siguientes personas Senadoras:</p>
+<p>De la Senadora  Beatriz Silvia Robles Gutiérrez, del grupo parlamentario del Partido Morena,  con la que remite el informe de su participación como integrante de la  delegación mexicana en la 31a Reunión de la Comisión Parlamentaria  Mixta-México-Unión Europea, celebrada en Bruselas, Bélgica, del 12 al 16 de  marzo del año actual.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ofic_Informe_Participacion_CPM_Mex_UE_Sen_Beatriz_Robles.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120755'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120756'></a><p>De la Senadora Ruth  González Silva, del grupo parlamentario del Partido Verde Ecologista de México,  con la que remite el informe de su participación en una visita oficial a  Washington, D.C., Estados Unidos de América, celebrada del 20 al 22 de mayo  pasados.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ofic_Informe_Trabajo_Visita_Washington_Sen_Ruth_Silva.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120756'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120757'></a><p>Del Senador Rolando  Rodrigo Zapata Bello, del grupo parlamentario del Partido Revolucionario  Institucional, con la que se remite el informe de su participación en el Octavo  Foro de Alto Nivel sobre Innovación para el Poder Legislativo Mexicano,  celebrado en Washington, D.C., en el mes de enero del año en curso.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ofic_Informe_Participacion_Foro_Alto_Nivel_Innovacion_Sen_Rolando_Bello.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente  Diputado Sergio Carlos Gutiérrez Luna: </strong>La Asamblea ha  quedado enterada. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120757'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120758'></a><p><strong>La Secretaria  Diputada María de los Dolores Padierna Luna: </strong>Se recibió también  una comunicación de la Diputada Laura Iraís Ballesteros Mancilla, del grupo  parlamentario de Movimiento Ciudadano, con la que remite solicitud a que  reciban una petición ciudadana en relación con el desafuero del Diputado  Cuauhtémoc Blanco. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Comunicaci%C3%B3n_Camara_de_Diputados.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente  Diputado Sergio Carlos Gutiérrez Luna: </strong>Remítase a la Cámara  de Diputados. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120758'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/UD7AN_uYTlo?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='120759'></a><p>Nuestro siguiente  apartado del Orden del Día es la presentación de iniciativas. </p>
+<p>Tiene la palabra la  Senadora Lilly Téllez para presentar, a nombre de Legisladores y Legisladoras  del grupo parlamentario del Partido Acción Nacional, una iniciativa con  proyecto de Decreto por el que se adiciona un tercer párrafo al artículo 7 de  la Constitución Política de los Estados Unidos Mexicanos, que propone  proscribir los delitos de opinión. Y tiene el uso de la palabra, hasta por  cinco minutos.</p>
+<p> <strong>INICIATIVA CON PROYECTO DE DECRETO POR EL QUE SE ADICIONA  UN TERCER PÁRRAFO AL ARTÍCULO 7º DE LA CONSTITUCIÓN POLÍTICA DE LOS ESTADOS  UNIDOS MEXICANOS</strong></p>
+<p><strong>(Presentada por la Senadora  Lilly Téllez, a nombre propio y del grupo parlamentario del PAN)</strong></p>
+<p><strong>La  Senadora Lilly Téllez:</strong> Queridas familias  mexicanas, el reyezuelo de los narcopolíticos y de los burócratas de cuarta,  Fernández Noroña, huye muerto de miedo el cobarde cada vez que voy a tomar la  tribuna. </p>
+<p>Pero  ya no sé qué es peor, si tener a ese reyezuelo de las ratas de Noroña acá atrás  de mí, o tener al gánster que está aquí atrás de mí ahora, el gánster que no ha  rendido cuentas por los 80 millones de pesos que desvió. </p>
+<p>Ladrón.  Es el tal &ldquo;Gutierritos&rdquo;, por fortuna va a estar poco tiempo aquí. </p>
+<p>Bueno,  estamos presentando una iniciativa para que ya no se persigan, penalmente, a  los periodistas por injurias, difamación y calumnia, que solo sea por una  responsabilidad civil. </p>
+<p>Y  es muy importante señalarlo, porque ustedes saben que Claudia Sheinbaum quiere  imponer la Ley Censura. </p>
+<p>¿Para  qué? Para que los mexicanos no vean, no escuchen, no sepan nada del aumento de  la violencia, la pobreza, la corrupción, la destrucción de los servicios  educativos, de los servicios de salud.</p>
+<p>Sheinbaum  quiere imponer la Ley Censura para controlar lo que tú vas a ver en redes, en  radio, en televisión.</p>
+<p>Porque  la realidad del &ldquo;cochinero&rdquo; que ha producido el narcopartido de Morena empieza  a salir por todas partes, la corrupción, el enriquecimiento ilícito o el  enriquecimiento inexplicable de todo lo que se han robado los de Morena, que  les dicen a ustedes que sean pobres y les avientan, con tres mil pesos,  mientras ellos se compran casas de millones de dólares o van a los gimnasios  más caros de Masaryk. </p>
+<p>Estoy  aquí para hacer una defensa de Héctor De Mauleón, de El Universal, un  extraordinario periodista que ha informado la forma tan grave en que ha  aumentado la violencia por la asociación de Morena con los cárteles, y ahora lo  están persiguiendo porque lo quieren callar. </p>
+<p>También  estoy aquí para defender a la periodista Adela Navarro Bello, del periódico,  del semanario &ldquo;Zeta&rdquo;, de Tijuana a quien también quieren callar porque ha  denunciado la enorme corrupción de la gobernadora de allá de Baja California y  no solo por su riqueza inexplicable, aunque todos sabemos que es explicable,  sino por la forma brutal en que en Baja California ha aumentado la violencia  por el pacto de Morena con los cárteles. </p>
+<p>Y  también quiero defender, en otro exhorto, a &ldquo;Código Magenta&rdquo; a quien también  persiguen por haber denunciado a la candidata Tania Contreras, esa candidata a  magistrada en Tamaulipas que está relacionada con el huachicol de Américo  Villarreal. </p>
+<p>Es  que son tan corruptos estos de Morena, puras fichitas, y a estos periodistas  que están revelando todo lo que se roban, sus pactos con los criminales.</p>
+<p>¿Qué  hace la Presidenta Sheinbaum? Los quiere callar y para eso es la Ley Censura,  para que tú no sepas lo que pasa. Les está brotando la corrupción por todos  lados a estos narcopolíticos de Morena. </p>
+<p>Tenemos que detener esa Ley Censura, y tenemos que  defender a los heroicos periodistas que están relatando la verdad ante estos  corruptazos de Morena.</p>
+<p> <strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Inic_PAN_Legs_proscribir_los_delitos_de_opini%C3%B3n.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Diputado Sergio Gutiérrez Luna: </strong>Se turna a las Comisiones de Unidas de Puntos  Constitucionales; y de Estudios Legislativos de la Cámara de Senadores. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120759'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/jlZF0BDx8VQ?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='120760'></a><p>Tiene ahora la palabra el Diputado Luis Enrique  Miranda Barrera, del grupo parlamentario del Partido Verde Ecologista de  México, para presentar una iniciativa con proyecto de Decreto por el que se  reforma el artículo 7 de la Ley Federal de Protección al Consumidor, en materia  de garantías en la transparencia de los precios y fortalecimiento de los  derechos de los consumidores en el comercio electrónico. </p>
+<p><strong>INICIATIVA </strong><strong>CON PROYECTO DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 7 DE LA LEY FEDERAL DE  PROTECCIÓN AL CONSUMIDOR</strong><strong> </strong></p>
+<p><strong>(Presentada por el Diputado Luis  Enrique Miranda Barrera, del grupo parlamentario del PVEM)</strong></p>
+<p><strong>El Diputado Luis Enrique Miranda Barrera: </strong>Con su venia, señor Presidente. Buenas tardes,  compañeras y compañeros Senadores y Senadoras, Diputados y Diputadas. Y todos  medios de comunicación que hoy nos acompañan. </p>
+<p>Subo a esta tribuna para presentar una iniciativa  con proyecto de Decreto que reforma el artículo 7 de la Ley Federal de  Protección al Consumidor, con el objetivo de hacer más justo, claro y confiable  el comercio electrónico en nuestro país. </p>
+<p>Hoy millones de personas en México compran  productos y servicios por Internet, este fenómeno no es nuevo, pero sí crece  constantemente y con mucha fuerza. </p>
+<p>En el 2023 el comercio electrónico superó los 600  mil millones de pesos en ventas, según datos de la Asociación Mexicana de  Ventas Online, AMVO. </p>
+<p> Esta cifra representa un aumento considerable del  20 por ciento al año anterior, este tipo de comercio ha venido a cambiar  nuestras vidas, yo personalmente lo utilizó a medianoche para comprar pañales y  fórmula de bebé. </p>
+<p>Aunque comprar por Internet es cada vez más común,  muchos consumidores siguen enfrentando problemas al momento de pagar, el más  frecuente que los precios cambian durante el proceso de compra. </p>
+<p>Y así lo que parece una oferta termina siendo más  caro por cargos que no estaban en la lista, impuestos, costos de envío,  comisiones o tarifas ocultas, por ejemplo, a las Senadoras y Senadores,  Diputados y Diputadas les debe pasar constantemente cuando van a comprar un  boleto de avión les aparece 800 pesos, mil pesos, y luego te dice: Más cargo  del TUA, más cargo del no sé qué. Y termina siendo mucho más caro de lo que  inicialmente parecía una gran oferta. </p>
+<p>Un estudio reciente de la Profeco y de la  Asociación Mexicana de Ventas Online reveló que siete de cada 10 consumidores  en línea han sufrido un incremento en el precio final respecto al precio que  dieron inicialmente. </p>
+<p>Esto genera desconfianza, frustración, y también  perjudica a los negocios formales que sí cumplen con la ley. </p>
+<p>Esta iniciativa busca resolver este problema de  raíz, propone que todas las plataformas digitales y proveedores que vendan  productos o servicios en medios electrónicos estén obligados a mostrar desde el  inicio el precio final, el precio total, incluyendo impuestos, envíos o  cualquier cargo adicional. </p>
+<p>Además, esta reforma contempla un punto clave,  cuando se trate de compras hechas desde el extranjero también se deberá mostrar  desde el inicio el precio final, incluyendo posibles cargos aduanales,  impuestos de importación o tarifas de logísticas adicionales. </p>
+<p>Muchas veces el consumidor se entera de estos  costos hasta que el paquete es retenido o al momento de recibirlo, generando  una molestia o incertidumbre. </p>
+<p>Esta iniciativa pone fin a esas sorpresas y  garantiza que la información del costo total sea clara desde el primer clic,  sin importar si el producto viene de México o del exterior. </p>
+<p>No estamos inventando el hilo negro, la Unión  Europea y Estados Unidos ya aplican estas reglas para evitar confusión y  proteger el bolsillo de los consumidores. </p>
+<p>Hoy México tiene la oportunidad de crear un entorno  comercial más transparente y más competitivo. </p>
+<p>No vamos en contra de las plataformas, al  contrario, queremos que todos, grandes y pequeños vendedores jueguen con las  mismas reglas; cuando hay claridad todos ganan, el consumidor sabe lo que  pague, y el comerciante formal puede competir. </p>
+<p>Compañeras y compañeros, regular los precios  visibles en línea no es censura, ni intervención excesiva, es simplemente  sentido común, es justicia para quienes compran y para quienes venden con  honestidad. </p>
+<p>Por eso les invito a que respaldemos esta reforma,  porque dar certeza en los precios es también dar respeto al consumidor, y con  ello impulsamos un México digital más justo, más accesible y más moderno. </p>
+<p>Muchas  gracias.</p>
+<p> <strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Inic_PVEM_Dip_Luis_Miranda_ref_art_7_de_la_ley_federal_de_proteccion_al_consumidor_comercio_electronico.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Diputado  Carlos Gutiérrez Luna: </strong>Gracias, distinguido Diputado Miranda. Se  turna a la Comisión de Economía, Comercio y Competitividad de la Cámara de  Diputados. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120760'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/_4w4FTAc_6A?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='120761'></a><p>Tiene ahora el uso de la palabra el compañero  Ricardo Mejía Berdeja para presentar a nombre del Diputado Brígido Ramiro  Moreno Hernández, del grupo parlamentario del Partido del Trabajo, una iniciativa con proyecto de Decreto  por el que se reforma el párrafo trece del artículo 2 de la Ley para la  Protección de Personas Defensoras de Derechos Humanos y Periodistas que  proponen incorporar las personas buscadoras, hasta por cinco minutos.</p>
+<p> <strong>INICIATIVA </strong><strong>CON PROYECTO DE DECRETO POR EL QUE SE REFORMA EL PÁRRAFO 13 DEL ARTÍCULO  2°. DE LA LEY PARA LA PROTECCIÓN DE PERSONAS DEFENSORAS DE DERECHOS HUMANOS Y  PERIODISTAS </strong><strong> </strong></p>
+<p><strong>(Presentada por el Diputado  Ricardo Sóstenes Mejía Berdeja, a nombre del Diputado Brígido Ramiro Moreno  Hernández, del grupo parlamentario del PT)</strong></p>
+<p><strong>El  Diputado Ricardo Sóstenes Mejía Berdeja: </strong>Con  su permiso, compañero Presidente. </p>
+<p>Para  presentar a nombre del grupo parlamentario del Partido del Trabajo esta  iniciativa que es autoría del Diputado Brígido Moreno, paisano coahuilense,  pero que es reivindicada por todo el grupo parlamentario. Consideramos  fundamental ampliar la protección a las personas defensoras de derechos humanos  para incorporar también a las personas que han emprendido la defensa del medio  ambiente. </p>
+<p>Que  también implica riesgos mayúsculos por la serie de intereses que hay en torno a  la tala o a otro tipo de pesca también de especies protegidas, y esta gente que  defiende nuestro medio ambiente, pues también enfrenta retos muy importantes.  La intención es hacer eco del artículo 1 de la Constitución Política de la  República que establece la progresividad de los derechos humanos y que todas  las autoridades están obligadas a garantizar, promover, ampliar y proteger los  derechos humanos. </p>
+<p>Buscamos  que las personas buscadoras que han asumido un rol activo y complementario a la  labor institucional que están en colectivos y en asociaciones, puedan tener  mayor protección. Si bien, el Capítulo V de la Ley General, en materia de  desaparición forzada contempla medidas de protección, consideramos que todavía  hay rigideces como la judicialización, el que haya siempre una carpeta como  prerrequisito que impiden una eficaz y efectiva protección. </p>
+<p>También  en el caso de las personas defensoras del medio ambiente, consideramos que han  abundado las agresiones y que también se requiere ampliar la protección a estas  personas. Es decir, esta iniciativa tiene por objeto atender y reconocer a las  personas buscadoras y a las defensoras del medio ambiente como defensoras de  derechos humanas y garantizarles protección efectiva mediante su inclusión  explícita en el mecanismo de protección para las personas defensoras de  derechos humanos y periodistas. </p>
+<p>Referíamos  el artículo 1º constitucional, pero también está el artículo 17 constitucional.  La reforma que planteamos es modificar el párrafo trece del artículo 2 de la  Ley de Protección de Personas Defensoras de Derechos Humanos y Periodistas para  establecer esta definición. </p>
+<p>Persona  defensora de derechos humanos a quien de manera individual o colectiva  promueva, proteja o defienda los derechos humanos reconocidos en la  Constitución, en los tratados internacionales de los que el Estado mexicano sea  parte, así como en las leyes generales o federales en la materia. Esta  definición comprende sin limitarse a ellos a quien ejerzan derechos como la libertad de expresión, el acceso a la justicia, el  derecho a la verdad y el derecho a un medio ambiente sano. Ésta es la  iniciativa. </p>
+<p>Pero, bien, hablando de derechos humanos, de  justicia, de resarcimiento a daños efectuados al Estado mexicano, pues,  queremos resaltar nuevamente el veredicto de la Corte de Circuito del Primer  Distrito Judicial del condado de Miami-Dade, donde dictó sentencia hace unos  días, el pasado 22 de mayo, en contra del corrupto, delincuente confeso y  sentenciado Genaro García Luna y su esposa Cristina Pereira.</p>
+<p>Al primero de ellos la pena de 749 millones de  dólares como producto de una denuncia presentada por la Unidad de Inteligencia  Financiera y a Linda Cristina Pereira, por mil 740 millones de dólares.</p>
+<p> Esta culpabilidad se suma a la resolución que hizo  el juez Brian Cogan, en la Corte Federal de Distrito del Este de Nueva York. </p>
+<p>Estos son casos graves de corrupción, cifras  multimillonarias, colusión con grupos criminales y hay quien todavía aquí viene  a rasgarse las vestiduras y a querer llamar la atención…</p>
+<p><strong>El  Presidente Diputado Sergio Gutiérrez Luna: </strong>Concluya  Diputado</p>
+<p><strong>El Diputado Ricardo Sóstenes Mejía Berdeja: </strong>…concluyo, señor Presidente.</p>
+<p>Estos casos los vamos a seguir diciendo, porque son  la prueba de que el narco estado estaba con Felipe Calderón y toda esa bola de  corruptos.</p>
+<p>Es cuanto, señor Presidente.</p>
+<p><strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ini_PT_Dip_Brigido_Moreno_personas_defensoras_Derechos_Humanos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Diputado  Sergio Gutiérrez Luna: </strong>Se turna a la Comisión de Derechos Humanos de  la Cámara de Diputados.</p>
+<p>Esta Presidencia saluda al doctor Manuel de  Jesús Landeros García, visitante de Torreón, presidente de la Liga Nacional de  Profesionistas, invitados por el Diputado Luis Enrique Miranda Barrera.</p>
+<p>¡Sea usted bienvenido, bienvenidos!</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120761'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/e_9VDj3LFX8?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='120762'></a><p>Ahora tiene la palabra, hasta por cinco  minutos, el Senador Néstor Camarillo Medina, para presentar a nombre del  Partido Revolucionario Institucional, una iniciativa con proyecto de Decreto  por el que se deroga el segundo párrafo, del inciso d) de la fracción IV del  artículo 8 de la Ley del Impuesto Especial sobre Producción y Servicios en  Materia de Exención Fiscal y Acceso a Internet en servicios empaquetados.</p>
+<p> <strong>INICIATIVA </strong><strong>CON PROYECTO DE DECRETO POR EL QUE SE DEROGA EL SEGUNDO PÁRRAFO DEL INCISO D) DE LA  FRACCIÓN IV DEL ARTÍCULO 8 DE LA LEY DEL IMPUESTO ESPECIAL SOBRE PRODUCCIÓN Y  SERVICIOS</strong><strong> </strong></p>
+<p><strong>(Presentada por el Senador  Néstor Camarillo Medina, a nombre propio y de las Senadoras y los Senadores  Alejandro Moreno Cárdenas, Manuel Añorve Baños, Alma Carolina Viggiano Austria,  Pablo Guillermo Angulo Briceño, Cristina Ruíz Sandoval, Rolando Rodrigo Zapata  Bello, Claudia Edith Anaya Mota, Miguel Ángel Riquelme Solís, Mely Romero  Celis, Paloma Sánchez Ramos, Ángel García Yáñez, Karla Guadalupe Toledo Zamora  y Anabell Ávalos Zempoalteca, del grupo parlamentario del PRI)</strong></p>
+<p><strong>El Senador Néstor Camarillo Medina: </strong>Muchas gracias, señor Presidente. Con su venia. Compañeras  y compañeros Legisladores.</p>
+<p>Ya  basta de que conectarse a Internet sea un privilegio y no derecho. Desde esta  tribuna venimos a ponerle un alto al absurdo fiscal que castiga el acceso a la  conectividad.</p>
+<p>Presentamos  esta iniciativa para eliminar de una vez por todas el Impuesto Especial sobre  Producción y Servicios al Internet y hay que decirlo muy claro, porque en pleno  2025 vivir sin Internet es vivir desconectado del mundo, de la educación, de la  salud, del trabajo y de la justicia social. Saben qué es verdaderamente  especial, que mientras en otros países, el Estado subsidia el acceso, en México  lo gravan con impuestos absurdos y todavía hay quienes se atreven a hablar de  digitalización y de cerrar la brecha tecnológica, más de 35 millones de  mexicanas y mexicanos siguen sin Internet en sus hogares y en estados como  Chiapas, Guerrero y Oaxaca, más de la mitad de su población vive desconectada.</p>
+<p>También  en mi querido estado en Puebla, en la Sierra Negra y en zonas de la mixteca  poblana y todo porque el Gobierno federal prefiere cobrar impuestos antes que  garantizar derechos. En el Revolucionario Institucional no lo vamos a permitir,  vamos con todo por la conectividad universal.</p>
+<p>Con  esta iniciativa derribamos el candado fiscal que limita el acceso al Internet  cuando se contrata junto con otros servicios, como si el problema fuera cómo se  factura y no cuántas personas pueden conectarse. De qué sirve presumir una mega  infraestructura si a la gente le sigue saliendo caro llegar a su casa y prender  el módem. </p>
+<p>Vamos  a combatir la censura con más conexión. Vamos a enfrentar la desigualdad con  más acceso. Vamos a empoderar a la gente con más Internet y con menos  impuestos. Y, también, siempre lo vamos a decir fuerte y claro, el Internet no  puede ser rehén ni del autoritarismo ni de la miseria fiscal ni de los  caprichos del poder. </p>
+<p>Este  impuesto es una traba que le cierra la puerta a millones de estudiantes, de  emprendedores, de campesinos, de migrantes, de mujeres y de adultos mayores, y  no lo vamos a tolerar más. </p>
+<p>Desde  el PRI, proponemos sí una reforma fiscal, pero la justicia digital tiene que  llegar a la gente. Que se escuche en todo el país. </p>
+<p>Vamos  a tumbar el IEPS al Internet y a construir un verdadero México que esté libre,  que esté conectado y un México moderno. </p>
+<p>Esta  iniciativa no es en contra de nadie, es a favor de México. Es a favor de  quienes creemos que la libertad de expresión pasa por el Internet. </p>
+<p>Y  hoy, nuevamente, lo repetimos, como ustedes lo repitieron muchas veces:  &ldquo;benditas redes sociales&rdquo;.</p>
+<p> No más censura. </p>
+<p>Sí un México libre. </p>
+<p>Sí un México moderno. </p>
+<p>Y sí un México que crezca del lado del  Internet. </p>
+<p>Muchas gracias. Es cuanto, Presidente.</p>
+<p><strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ini_PRI_Senadores_Art_8_Ley_IESPS.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Diputado  Sergio Gutiérrez Luna: </strong>Se turna a la Comisión de Hacienda y Crédito  Público de la Cámara de Diputados. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120762'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/EZmtylAgDkw?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='120763'></a><p>Tiene  ahora el uso de la tribuna la Senadora Alejandra Barrales, del grupo  parlamentario de Movimiento Ciudadano, para presentar una iniciativa con proyecto de Decreto por el  que se adiciona el artículo 209 Bis Quinquies al Código Penal Federal, en  materia de tipificación del delito grooming. Su participación, su intervención,  es hasta por cinco minutos, Senadora. </p>
+<p><strong>INICIATIVA </strong><strong>CON PROYECTO DE DECRETO POR EL QUE SE ADICIONA EL ARTÍCULO 209 BIS  QUINQUIES AL CÓDIGO PENAL FEDERAL </strong><strong> </strong></p>
+<p><strong>(Presentada por la  Senadora Alejandra Bárrales Magdaleno, del grupo parlamentario de Movimiento  Ciudadano)</strong></p>
+<p><strong>La  Senadora Alejandra Barrales Magdaleno: </strong>Con  su venia, señor Presidente. Muy buenos días, compañeras y compañeros Senadores: </p>
+<p>Hoy  me presento ante este Pleno no solamente como Senadora de la República, sino,  además, como madre de una pequeña de nueve años y, que estoy segura, que al  igual que muchas y muchos de los que estamos aquí, estarán de acuerdo conmigo. </p>
+<p>Día  con día nuestra mayor preocupación es el cuidado de nuestros hijos y cuántas  veces a la hora de despedirnos de ellos les decimos siempre: &ldquo;cuídate mucho&rdquo; y  todavía nos detenemos a decir: &ldquo;no hables con desconocidos&rdquo;, &ldquo;cuídate mucho y  no hables con desconocidos&rdquo;. </p>
+<p>Pero  en el mundo digital las cosas funcionan de una forma diferente, los peligros no  siempre son evidentes.<br>
+  <br>
+  Nuestras  advertencias no son suficientes porque nuestros niños están ajenos a conocer  los peligros que verdaderamente implica el relacionarse con el mundo digital. </p>
+<p>De  acuerdo a datos que nos proporciona la UNICEF, en México, estamos enfrentando  una crisis justamente en materia de violencia sexual infantil. </p>
+<p>Hay  que recordar, como lo hemos dicho en reiteradas ocasiones, que México ocupa el  vergonzoso primer lugar en abuso sexual infantil en todo el mundo. </p>
+<p>La  Guardia Nacional, a través de su división cibernética, nos reporta un alarmante  crecimiento justamente de este caso, de estos casos de acoso, extorsión y  chantaje a menores de edad en redes sociales. </p>
+<p>Esto  lo hacen a través de videojuegos, de las redes sociales, como ya lo señalé, y  también de los servicios de mensajería instantánea que es una nueva modalidad  reciente. </p>
+<p>En  ese sentido, resulta verdaderamente alarmante que, según estos estudios, y uno  que nos comparte también una ONG, Capital Social y Humano Alternativo, nos  dicen que cuatro de cada diez de nuestros niños han mantenido conversaciones  con desconocidos y que ha sido a través de redes sociales y de estos  videojuegos o juegos en línea. </p>
+<p>Quiero  compartir con ustedes, de manera muy rápida, muy breve, una historia real que  me ha conmovido profundamente. </p>
+<p>Tiene  que ver con esta historia que, estoy segura, muchas, muchos de ustedes habrán  escuchado. </p>
+<p> En  septiembre del 2023, una niña, de 9 años, la edad casualmente también, de mi  hija, empezó a mantener contacto, en redes sociales, con un hombre de 42 años  que se hizo pasar por un niño. </p>
+<p>A  través de las redes, donde no siempre se puede conocer la identidad de con  quién se está conversando, este hombre convenció a la niña, se ganó su  confianza, y la llevó hasta Nuevo León. </p>
+<p>En  Nuevo León la pudo encontrar, afortunadamente, la autoridad, la policía, una  vez que su familia presentó la denuncia, y logramos o se logró localizar y  rescatar con vida a esta menor, pero cuántas veces no hemos escuchado, conocido  de estos casos, donde, por desgracia, más del 80 por ciento de estas denuncias  no terminan con buenos resultados, no rescatamos al menor, a la menor, que han  sido raptados. </p>
+<p>Es  por eso que, por desgracia, casos como este que estoy compartiendo con ustedes, no son casos  aislados, con casos cada vez más frecuentes en nuestro país y que es importante  ponerle nombre a este tipo de acosos, a este tipo de casos de abuso sexual que  recientemente se está conociendo a nivel internacional como casos de grooming. </p>
+<p>Y  es muy importante el ponerle nombre, es muy importante el reconocerlo como un  problema ya en nuestra actualidad, porque cada vez más niñas y más niños lo  están padeciendo. </p>
+<p>Son  casos donde los depredadores se esconden tras perfiles falsos en redes para  manipular y explotar la inocencia de nuestros menores. </p>
+<p>Y,  por supuesto, como madre, estos temas me preocupan, me llenan de indignación,  pero también como Senadora es importante que estos casos nos ocupen. </p>
+<p>Por  ello, presento ante ustedes, ante este Pleno, una iniciativa para tipificar el  caso de grooming como un delito en nuestro Código Penal Federal. </p>
+<p>Lo  que buscamos con esta propuesta es, primero, definir claramente este delito de  grooming estableciendo penas concretas proporcionales a la gravedad de este  caso y, dos, buscamos fortalecer…</p>
+<p><strong>El  Presidente Diputado Sergio Gutiérrez Luna: </strong>Concluya,  Senadora. </p>
+<p><strong>La  Senadora Alejandra Barrales Magdaleno:</strong>…concluyo,  presidente. </p>
+<p>Buscamos  fortalecer las capacidades de nuestras autoridades para investigar y también  para sancionar estos delitos garantizando justicia para las víctimas. </p>
+<p>Concluyo,  compañeras y compañeros, solamente solicitándoles su apoyo, su respaldo, a cada  uno de ustedes, para que, al llevar adelante esta propuesta, pensemos en  nuestros hijos, nuestros nietos, nuestros sobrinos, nuestros hermanos, que se  encuentran actualmente desprotegidos ante esta realidad digital. </p>
+<p>Es  cuanto, señor Presidente. </p>
+<p>Muchas  gracias.</p>
+<p> <strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ini_MC_Sen_Alejandra_Barrales_Delito_Grooming.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Diputado  Sergio Gutiérrez Luna: </strong>Se turna a las Comisiones Unidas de Justicia;  y de Estudios Legislativos, Segunda de la Cámara de Senadores. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120763'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/hZS-hLy-0ok?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='120764'></a><p>En  una segunda ronda de presentación de iniciativas, tiene el uso de la tribuna el  Diputado Ricardo Crespo Arroyo, del grupo parlamentario del Partido Morena,  para presentar una iniciativa con proyecto  de Decreto, por el que se reforman y adicionan diversas disposiciones de la Ley  General de Salud, en Materia de Salud Mental y Adicciones, hasta por cinco  minutos.</p>
+<p><strong>INICIATIVA </strong><strong>CON PROYECTO DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSAS DISPOSICIONES DE LA  LEY GENERAL DE SALUD  </strong><strong> </strong></p>
+<p><strong>(Presentada por el  Diputado Ricardo Crespo Arroyo, del grupo parlamentario del Partido Morena)</strong></p>
+<p><strong>El  Diputado Ricardo Crespo Arroyo: </strong>Muchas gracias. Con su  venia, señor Presidente. </p>
+<p>Hoy,  en la Agenda Mundial, que ya no nada más es nacional, atiende a temas muy  importantes. </p>
+<p>En  el caso de México, para un servidor, son tres temas muy importantes. </p>
+<p>El  primero tiene que ver con el cambio climático. </p>
+<p>El  segundo con el tema del consumismo. </p>
+<p>Y  el tercero es el tema de adicciones, que es el caso que voy a tocar hoy, y es  la iniciativa que estoy proponiendo. </p>
+<p>Las  adicciones no únicamente podríamos ejemplificarla en algún tema en específico,  no, hoy hay un crecimiento desmedido en adicciones. </p>
+<p>Y  creo, no creo, estoy seguro de que nuestra función como Legisladores es, en ese  tema de condición humana, de desarrollo social, de desarrollo humano, ir  cerrando las cuestiones que permiten que crezca este tipo de situaciones o  condiciones humanas, pero desde un pensamiento y una política social que viene  emanada desde una propuesta o una iniciativa. </p>
+<p>El  caso de adicciones es alcoholismo, tabaquismo, drogadicción, y hoy tiene que  ver también con el comportamiento humano. </p>
+<p>Esta  iniciativa tiene que seguir creciendo y desarrollándose para generar las  condiciones sociales y humanas. </p>
+<p>En  el caso de tabaquismo el incremento ha sido desmedido, igual el caso de  alcoholismo y tabaquismo, pero hoy me toca el de las adicciones, que es la  drogadicción.</p>
+<p>Hay  estudios de Naciones Unidas, de organismos nacionales, del Consejo Nacional de  Salud Mental y Adicciones, donde hace un estudio claro de lo que está pasando,  pues en esta iniciativa lo que pretendemos es reformar, a través de un Decreto,  los artículos 2, 13, 17, 90, 113, 192 Bis y 192 Sextus de la Ley General de  Salud, en materia de salud mental y adicciones, al tenor de las siguientes  exposiciones: </p>
+<p>Primero,  hay un incremento desmedido, tenemos que poner un alto y esta iniciativa le da  las herramientas a la Secretaría de Salud para que pueda avanzar no solamente  con un tema reactivo, sino preventivo. </p>
+<p> Cuando  las adicciones crecen, tienen que ver no solamente con un ámbito de salud, sino  también con un ámbito social, con el ámbito de trabajo, con el ámbito de  desarrollo. </p>
+<p>Y  esta iniciativa lo ve así. </p>
+<p>No  podemos estigmatizar a una persona que se está drogando. Al aislarlo. </p>
+<p>¿Qué  es lo que sucede? </p>
+<p>Que  no estamos realmente impactando en la sociedad. </p>
+<p>Por  eso esta iniciativa, ya en las modificaciones, en las reformas, atiende ámbitos  educativos.</p>
+<p>Ahí  se le está pidiendo a la Secretaría de Educación que en todas las áreas donde  se estudie medicina se inserte la manera de adictología.</p>
+<p>Eso  es algo muy importante. </p>
+<p>Segundo,  se le da las herramientas a la Secretaría de Salud para que tengan mecanismos  de prevención a través de las distintas instituciones que tiene el sector  salud. </p>
+<p>Por  otro lado, se da la fortaleza no solamente al Estado, sino también a los  distintos estados de la Federación para que intervengan a través de las  capacitaciones y reconozcan a las distintas áreas de adicciones como una no  solamente enfermedad, sino que le den una condición social. </p>
+<p>Como  lo decía al inicio, tiene un impacto mayor. </p>
+<p>Les  quiero preguntar a todos mis compañeros Legisladores, Diputados y Senadores,  hoy estamos preocupados por el juego, por los casinos, por las apuestas;  sabemos perfectamente que hoy mexicanos o mexicanas pierden su patrimonio en  apuestas. Nos preocupan nuestros niños, nuestras niñas, con los juegos  interactivos. </p>
+<p>Esta  iniciativa abre la puerta para esa regulación. </p>
+<p>Así  como hemos tenido el valor de regular el tabaquismo con sellos o productos  alimenticios, bueno, que tienen calorías o distintas sustancias que no son  buenas para el consumo humano, pues así debemos de  tratar las distintas tecnologías, juegos o, como les decía, condiciones que  generan el comportamiento humano, para poder resolverlo. </p>
+<p>Concluyo  agradeciéndole a la doctora Carmen Viveros Domínguez y al doctor Galdino  Mercado Moreno, director de Relaciones Intersectoriales de la Fundación  Recupérate, por el trabajo que hicimos. </p>
+<p>Y,  por último, pedirles a mis compañeros Legisladores que apoyemos esta propuesta,  que va en función de la salud de los mexicanos, y que combatamos a uno de los  enemigos públicos número uno que hoy son las adicciones. </p>
+<p>Es  cuanto, Presidente, muchas gracias. </p>
+<p> <strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ini_Morena_Dip_Crespo_Ley_Salud_salud_menta_adicciones.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Diputado  Sergio Carlos Gutiérrez Luna: </strong>Gracias, Diputado Crespo. Se turna a la  Comisión de Salud de la Cámara de Diputados. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120764'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/0ta6s-V8oco?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='120765'></a><p>Ahora  tiene el uso de la palabra la Diputada Margarita Zavala Gómez del Campo, para  presentar, a nombre del Diputado José Elías Lixa y del Senador Ricardo Anaya  Cortés y de Legisladoras y Legisladores del grupo parlamentario del Partido  Acción Nacional, una iniciativa con proyecto  de Decreto por el que se reforman y adicionan diversos ordenamientos en materia  de protección a personas víctimas de desaparición forzada, hasta por cinco  minutos. </p>
+<p><strong>INICIATIVA </strong><strong>CON PROYECTO DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSAS  DISPOSICIONES DE LA LEY GENERAL EN MATERIA DE DESAPARICIÓN FORZADA DE PERSONAS,  DESAPARICIÓN COMETIDA POR PARTICULARES Y DEL SISTEMA NACIONAL DE BÚSQUEDA DE  PERSONAS, DE LA LEY GENERAL DE VÍCTIMAS, DE LA LEY FEDERAL DE DECLARACIÓN  ESPECIAL DE AUSENCIA PARA PERSONAS DESAPARECIDAS, DEL CÓDIGO PENAL FEDERAL, DE  LA LEY DE AMPARO, REGLAMENTARIA DE LOS ARTÍCULOS 103 Y 107 DE LA CONSTITUCIÓN  POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS Y DE LA LEY FEDERAL CONTRA LA  DELINCUENCIA ORGANIZADA </strong><strong> </strong></p>
+<p><strong>(Presentada por la  Diputada Margarita Zavala Gómez del Campo, a nombre del Diputado  José Elías Lixa Abimerhi y del grupo parlamentario del PAN)</strong></p>
+<p><strong>La  Diputada Margarita Ester Zavala Gómez del Campo: </strong>Con  su venia, señor Presidente. </p>
+<p>La  desaparición forzada no es solo un fenómeno criminal, es una herida abierta, cotidiana, que arrastra a las  familias, a comunidades enteras y a todo nuestro país. </p>
+<p>Más  de 126 mil personas se encuentran desaparecidas en México.</p>
+<p>En  estos días, equivale casi a tener 57 personas al día desaparecidas. </p>
+<p>Déjenme  traer aquí lo que una mamá buscadora, una madre buscadora le decía a la Presidenta,  que lo podemos dirigir a cualquiera de nosotros, incluso al Estado mexicano.</p>
+<p>Es  importante que recuerden, recordemos, pues, que no nos mueve un proyecto político, ni favorable ni contrario al suyo,  porque usted entenderá que quienes padecemos esta angustia vivimos pendientes  en la esperanza de encontrar a nuestros desaparecidos.</p>
+<p>Es  una de las tragedias que debe encontrar en nosotros unidad y esfuerzos.</p>
+<p>Esta  iniciativa que presentamos la verdad es que es bastante completa, está hecha  con base en los foros en que también participaron madres buscadoras, en los  diálogos por la paz y en las recomendaciones internacionales, aparte incluso de  que ya hay otras iniciativas y de las propias leyes. </p>
+<p> Son  seis leyes en que se piden su reforma: la Ley General en Materia de Desaparición Forzada de Personas, desaparición  cometida por particulares del Sistema Nacional de  Búsqueda de Personas; la Ley General de Víctimas; la Ley Federal de Declaración Especial de  Ausencia para Personas Desaparecidas; el Código Penal  Federal; la Ley de Amparo; la Ley Federal de Delincuencia Organizada. </p>
+<p>En  ese sentido, las iniciativas tienen que ver en la Ley en Materia de  Desaparición Forzada, parte, incluso toda la iniciativa de la dignidad de la  persona humana pone una visión de derechos, una perspectiva de derechos; abre  las puertas a lo que no se ha abierto las puertas, a las víctimas y a las  familias, y la abre desde la ley, de tal modo que hay una participación de las  víctimas, de sus representantes, de las organizaciones, incluyendo a las  familias. </p>
+<p>Se  garantiza, además, la disponibilidad de suficientes recursos a través de fondos  en ésta y en la otra Ley General de Víctimas, pero también asegurando la  suficiencia de recursos en el Congreso de la Unión.  </p>
+<p>La  Ley General de Víctimas habla de dos fondos especiales, uno tiene que ver con  la reparación integral de daño colectivo y que ésta sea inmediata, además de  fortalecer los fondos ya reservados. </p>
+<p>La  Ley Federal de Declaración Especial de Ausencia para Personas Desaparecidas  trata precisamente de establecer y de impulsar que esta declaración de ausencia  sea un mecanismo de protección civil, para evitar la revictimización de las  personas y de sus familias.</p>
+<p>El  Código Penal Federal también hace referencia, y precisamos todavía con mayor  distinción el delito de lesa humanidad y otros delitos, para que no haya trabas  en la judicialización.</p>
+<p>La  Ley Amparo que es reglamentaria al 103 y 107 constitucional se refiere, desde  luego a la suspensión del acto reclamado. </p>
+<p>Y  la Ley Federal Contra la Delincuencia Organizada habla de la rendición de  cuentas de quienes se encarguen de estas investigaciones.</p>
+<p>Todo  esto ha sido con arreglo a las recomendaciones del derecho internacional.<strong></strong></p>
+<p>Resalto  pues en esta iniciativa, la dignidad de la persona humana como elemento  principal.</p>
+<p>La  dignidad de las víctimas, de las familias y también de nuestro país. </p>
+<p>La  dignidad del Estado mexicano frente a una de las más grandes tragedias que han  tenido que ver con decisiones, desde luego de no enfrentar al crimen  organizado, pero que independientemente de ello, ahorita nosotros tenemos que  enfrentar para darle camino de paz a miles de familias que requieren de nuestra  atención y devolverle la dignidad al Estado mexicano. </p>
+<p>Muchas  gracias.</p>
+<p> <strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Iniciativa_Sen_Anaya_Dip_Lixa__PAN_Ley_Victimas_27052025.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Diputado  Sergio Gutiérrez Luna:</strong> Gracias. Se turna a las Comisiones Unidas de  Gobernación; y de Estudios Legislativos de la Cámara de Senadores. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120765'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'><iframe width="400" height="225" src="https://www.youtube.com/embed/ODTzP_5xbxg?autoplay=0;start=;end=;rel=0;" width="400" height="225" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div align='justify'><br></strong></a> <a name='120766'></a><p>Ahora tiene el uso de la palabra el Diputado  Reginaldo Sandoval, para presentar, a nombre del Senador Alberto Anaya  Gutiérrez y de los Senadores del grupo parlamentario del Partido del Trabajo,  un proyecto de Decreto por el que se adiciona una fracción VII al artículo 419  Bis del Código Penal Federal, en materia de prohibición de mutilación de los  animales, hasta por cinco minutos. </p>
+<p><strong>INICIATIVA </strong><strong>CON PROYECTO DE  DECRETO POR EL QUE SE ADICIONA UNA FRACCIÓN VII AL ARTÍCULO 419 BIS DEL CÓDIGO  PENAL FEDERAL </strong><strong> </strong></p>
+<p><strong>(Presentada por el Diputado Reginaldo Sandoval  Flores, a nombre del Senador Alberto Anaya Gutiérrez y de las Senadoras  Geovanna Bañuelos, Lizeth Sánchez García, Yeidckol Polevnsky y Ana Karen  Hernández Aceves, del grupo parlamentario del PT)</strong></p>
+<p><strong>El Diputado Reginaldo  Sandoval Flores: </strong>Con su permiso, señor Presidente. </p>
+<p>En representación de los Senadores del grupo  parlamentario del Partido del Trabajo, acudo a esta tribuna para presentar la  iniciativa, que busca añadir una fracción VII al artículo 419 Bis del Código  Penal Federal, con la finalidad de prohibir y castigar la mutilación de seres  sintientes. </p>
+<p>En un país, donde millones de familias  conviven diariamente con animales de compañía, es importante atender la deuda  histórica de reconocer que los seres sintientes no deben de ser objeto de dolor  innecesario, bajo ninguna circunstancia y menos aún por motivos estéticos o de  conveniencia humana. </p>
+<p> Las  mutilaciones estéticas a las que se ven sometidos diversos animales, tales como  el corte de orejas, la amputación de colas, la extracción de garras o cuerdas  vocales que, sin tener justificación médica alteran de forma permanente el  cuerpo y el bienestar de un ser vivo con capacidad de sentido. </p>
+<p>Estas  prácticas, aún comunes en diversas regiones del país, son una forma de  violencia silenciosa, que se ha normalizado a lo largo del tiempo, no aportan  beneficio alguno a la salud del animal. </p>
+<p>Por  el contrario, le generan dolor, estrés, afectaciones neurológicas, dificultades  de comunicación y pérdida de funcionalidad física. </p>
+<p>La  ciencia ha confirmado, de manera contundente, que muchos animales poseen  sistemas nerviosos complejos, emociones, memoria y conciencia; son seres  capaces de experimentar sufrimiento, miedo, angustia, pero también alegría,  afecto y bienestar, esa capacidad de sentir es la base ética y legal sobre la  cual el mundo avanza hacia una nueva relación con los animales no humanos. </p>
+<p>Numerosos  países han dado ya ese paso. En la Unión Europea la sintiencia y reconocido  como principio rector de legislación en materia de bienestar animal, en América  Latina, Colombia Argentina y el propio México han incorporado el concepto en  distintos marcos jurídicos. </p>
+<p>La  iniciativa se alinea con el espíritu de la cuarta transformación que ha  comenzado a redefinir la justicia desde una mirada más amplia e incluyente, la  protección de los seres sintientes no es un tema menor, está profundamente  ligada a la educación, al medio ambiente, a la ética publicada y a la dignidad  como principio universal. </p>
+<p>Por  estas razones, se somete a consideración esta iniciativa, confiando en esta  honorable Asamblea sabrá colocar a México del lado correcto de la historia en  defensa de la dignidad de todos los seres vivientes. </p>
+<p>Y  aprovecho también para decir que, en la 4T, miren nada más nuestra Presidenta,  que nivel de reconocimiento tiene. Esta encuesta no es de la 4T ni nada que se  le parezca, es la encuesta que usa el país y no hay duda de que la 4T va bien. </p>
+<p>Y  por eso también debo de decir que es falso que en la 4T se practique la  censura, que se le viole los derechos a alguien por lo que dice. </p>
+<p>No,  aquí han dicho tanta barbaridad y no les pasa absolutamente nada, porque la 4T  es lucha de plenas libertades. </p>
+<p>No  somos iguales, estamos avanzando en la ruta correcta, en la dirección correcta  y por eso decimos, con toda con toda contundencia, no es verdad que haya  censura ni que queremos censurar a nadie ni castigar a nadie. </p>
+<p>El  pueblo de México es un pueblo feliz, es un pueblo contento que está en la ruta  de una revolución profunda, una revolución pacífica en todos los ámbitos.</p>
+<p>México  es respetado en el mundo y nos sentimos orgullosos de tener una Presidenta que  tiene este nivel de reconocimiento de su pueblo. </p>
+<p>Muchas  gracias, señor Presidente. </p>
+<p>Vamos  para adelante.</p>
+<p> <strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ini_PT_Sens_Art_419_CPF_prohibici%C3%B3n_de_mutilaci%C3%B3n_en_animales.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Diputado  Sergio Gutiérrez Luna:</strong> Se turna a las Comisiones Unidas de  Justicia; y de Estudios Legislativos, Primera, de la Cámara de Senadores. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120766'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120767'></a><p><strong>CONGRESOS  DE LOS ESTADOS </strong></p>
+<p>Informo a la Asamblea que recibimos un oficio  del Congreso del Estado de Puebla, con el que informa que se declara recinto  oficial y sede principal del Honorable Congreso de dicho estado, el inmueble  ubicado en Avenida 32 Orienta, número 202, Colonia Mártires del Trabajo, de la  Ciudad de Puebla. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Acuerdo_Congreso_Puebla.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>La Asamblea ha quedado enterada. </p>
+<p>Les comunico que los textos de la agenda  política y de efemérides se integrarán al Diario de los Debates. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120767'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120768'></a><p><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMAN LOS ARTÍCULOS 36 Y 37 DE LA LEY  GENERAL DE ARCHIVOS  </strong></p>
+<p><strong>(Del Diputado Miguel Angel Monraz Ibarra, y suscrita  por las Diputadas y los Diputados del grupo parlamentario del PAN)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Inic_PAN_Dip_Miguel_Monraz_art_36_37_LGA.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120768'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120769'></a><p><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSAS DISPOSICIONES  DE LA LEY GENERAL DE SALUD </strong></p>
+<p><strong>(Del Senador Emmanuel Reyes Carmona, del grupo  parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ini_Morena_Sen_Emmanuel_Reyes_Ref_Ley_Gral_de_Salud.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120769'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120770'></a><p><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE ADICIONA UN PÁRRAFO SEGUNDO A LA FRACCIÓN I  DEL ARTÍCULO 6 DE LA LEY GENERAL DE SALUD  </strong></p>
+<p><strong>(Del Diputado Jonathan Puertos Chimalhua, del grupo  parlamentario del PVEM)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ini_PVEM_Dip_Jonathan_Puertos_adic_p%C3%A1rrafo_2do_Art_6_LGS.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120770'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120771'></a><p><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMAN DIVERSAS DISPOSICIONES DE LA LEY DEL  INSTITUTO NACIONAL DE LOS PUEBLOS INDÍGENAS </strong></p>
+<p><strong>(De la Diputada Maribel Martínez Ruiz, del grupo  parlamentario del PT)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ini_PT_Dip_Maribel_Ruiz_Ref_Ley_del_INPI_Actualizado_2605025.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120771'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120772'></a><p><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE ADICIONA UN PÁRRAFO SEGUNDO AL ARTÍCULO 218  DE LA LEY GENERAL DE SALUD   </strong></p>
+<p><strong>(Del Senador Emmanuel Reyes Carmona, del grupo  parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ini_Morena_Sen_Emmanuel_Reyes_Ref_Art_218_Ley_Gral_de_Salud.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120772'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120773'></a><p><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE ADICIONAN DIVERSAS DISPOSICIONES DE LA LEY DE  AGUAS NACIONALES  </strong></p>
+<p><strong>(Del Diputado Carlos Alberto Guevara Garza, del  grupo parlamentario del PVEM)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ini_PVEM_Dip_Alberto_Guevara_adic_a_la_ley_de_aguas_nacionales_cultura_del_agua.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120773'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120774'></a><p><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE ADICIONA LA FRACCIÓN VIII BIS AL ARTÍCULO 179  DE LA LEY DE DESARROLLO RURAL SUSTENTABLE   </strong></p>
+<p><strong>(Del Senador Emmanuel Reyes Carmona, del grupo  parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ini_Morena_Sen_Emmanuel_Reyes_Ref_Art_179_Ley_Desarrollo_Rural_Sustentable.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120774'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120775'></a><p><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE ADICIONAN LOS ARTÍCULOS 200 BIS, 200 TER, 200  QUÁTER Y 200 QUÍNTUS Y UN INCISO E) A LA FRACCIÓN V DEL ARTÍCULO 485 DE LA LEY  DE INSTITUCIONES DE SEGUROS Y DE FIANZAS  </strong></p>
+<p><strong>(De la Senadora Maki Esther Ortiz Domínguez, del  grupo parlamentario del PVEM)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ini_PVEM_Sen_Maki_Ortiz_seguros_LISF.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120775'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120776'></a><p><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMAN LOS ARTÍCULOS 26 Y 28 DE LA  CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS  </strong></p>
+<p><strong>(Del Diputado Miguel Angel Monraz Ibarra, y suscrita  por las Diputadas y los Diputados del grupo parlamentario del PAN)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Inic_PAN_Dip_Monraz_art_26_28_CPEUM.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120776'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120777'></a><p><strong>INICIATIVA CON  PROYECTO DE DECRETO QUE REFORMA EL ARTÍCULO 4º. DE LA CONSTITUCIÓN POLÍTICA DE  LOS ESTADOS UNIDOS MEXICANOS  </strong></p>
+<p><strong>(Del Diputado Miguel Ángel Monraz Ibarra, y suscrita  por las Diputadas y los Diputados del grupo parlamentario del PAN)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ini_PAN_Dip_Miguel_Monraz_Art_4_CPEUM_politicas_pub_programas_ni%C3%B1ez.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120777'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120778'></a><p><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSAS DISPOSICIONES  DE LA LEY GENERAL DE EDUCACIÓN </strong></p>
+<p><strong>(Del Senador Luis Donaldo Colosio Riojas, del grupo  parlamentario de Movimiento Ciudadano)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ini_MC_Sen_Luis_Riojas_Ref_Ley_Gral_de_Educaci%C3%B3n.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120778'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120779'></a><p><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSAS DISPOSICIONES  DEL CÓDIGO PENAL FEDERAL Y DE LA LEY FEDERAL DEL DERECHO DE AUTOR  </strong></p>
+<p><strong>(Del Diputado Víctor Manuel Pérez Díaz, y suscrita  por las Diputadas y los Diputados del grupo parlamentario del PAN)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Inic_PAN_Dip_Victor_derecho_autor.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120779'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120780'></a><p><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSOS ARTÍCULOS DE LA  LEY GENERAL DE PROTECCIÓN CIVIL, DE LA LEY FEDERAL DE DERECHOS Y DE LA LEY  GENERAL DE CAMBIO CLIMÁTICO   </strong></p>
+<p><strong>(De la Senadora Mayuli Latifa Martínez Simón, del  grupo parlamentario del PAN)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Inic_PAN_Sen_Mayuli_Mart%C3%ADnez_ref_adic_arts_LGPC_LFDH_LGCC_fen%C3%B3meno_sargazo.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120780'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120781'></a><p><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 18-A, DE LA LEY FEDERAL  DE DERECHOS  </strong></p>
+<p><strong>(De la Senadora Mayuli Latifa Martínez Simón, del  grupo parlamentario del PAN)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Inic_PAN_Sen_Mayuli_art_18A_derechos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120781'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120782'></a><p><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSOS ARTÍCULOS DE LA  LEY GENERAL DE EDUCACIÓN </strong></p>
+<p><strong>(De la Senadora Claudia Edith Anaya Mota, del grupo  parlamentario del PRI)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ini_PRI_Sen_Anaya_Mota_educaci%C3%B3n_indigena_pertinencia_linguistica_LGE.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120782'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120783'></a><p><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE EXPIDE LA LEY GENERAL DE DERECHOS DIGITALES </strong></p>
+<p><strong>(De las Senadoras y los Senadores Clemente Castañeda  Hoeflich, Luis Donaldo Colosio Riojas, Alejandra Bárrales Magdaleno, Amalia  García Medina y Daniel Barreda Pavón, del grupo parlamentario de Movimiento  Ciudadano) </strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ini_MC_Sens_Expide_Ley_Gral_de_Derechos_Digitales.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120783'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120784'></a><p><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMAN LOS ARTÍCULOS 146, 147, 168, 172,  177, 216, 217, 218 Y 294 DEL CÓDIGO CIVIL FEDERAL Y EL ARTÍCULO 9 DEL CÓDIGO DE  COMERCIO  </strong></p>
+<p><strong>(De la Senadora Reyna Celeste Ascencio Ortega del  grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Ini_Morena_Sen_Celeste_Ascencio_matrimonio_igualitario.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120784'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120785'></a><p><strong>PROPOSICIONES CON PUNTO DE ACUERDO</strong></p>
+<p>Del Diputado Ricardo Mejía Berdeja, del grupo parlamentario del PT, con  punto de Acuerdo por el que se exhorta a la Secretaría de Trabajo y Previsión  Social, a la Secretaría de Educación Pública y a la Auditoria Superior de la  Federación a instrumentar las acciones y estrategias necesarias para garantizar  y respetar los derechos laborales y de seguridad social de las y los  trabajadores, así como garantizar la transparencia, rendición de cuentas y el  adecuado uso de recursos públicos de la Universidad Tecnológica de la región  centro de Coahuila. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/PA_PT_Dip_Ricardo_Mejia_Transparencia_Uso_Recursos_Publicos_UTRCC_Actualizado_2605025.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120785'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120786'></a><p>De la Diputada Greycy Durán Alarcón Berdeja, del grupo parlamentario del  PT, con punto de Acuerdo por el que se exhorta al gobierno del estado de  Chihuahua, para que, sea incluida la Unidad Especializada de Género en el  estado, con el fin de garantizar la seguridad de las habitantes, atendiendo a  las víctimas de violencia por razones de género en el estado de Chihuahua. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/PA_PT_Sen_Alarcon_Chihuahua.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120786'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120787'></a><p>Del Senador Luis Donaldo Colosio Riojas, del grupo parlamentario de  Movimiento Ciudadano, con punto de Acuerdo por el que se exhorta a la  Secretaría de Educación Pública y a la Asociación Nacional de Universidades e  Instituciones de Educación Superior a fortalecer los mecanismos de legalización  y verificación de documentos académicos, con el objetivo de reducir cargas  administrativas para las personas egresadas. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/PA_MC_Sen_Luis_Riojas_Titulacion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120787'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120788'></a><p>De las Senadoras y los Senadores Alejandro Moreno Cárdenas, Manuel Añorve  Baños, Alma Carolina Viggiano Austria, Pablo Guillermo Angulo Briceño, Cristina  Ruíz Sandoval, Rolando Rodrigo Zapata Bello, Claudia Edith Anaya Mota, Miguel  Ángel Riquelme Solís, Mely Romero Celis, Néstor Camarillo Medina, Paloma  Sánchez Ramos, Ángel arcía Yáñez, Karla Guadalupe Toledo Zamora y Anabell  Ávalos Zempoalteca, integrantes del grupo parlamentario del PRI, con punto de  Acuerdo por el que se exhorta a la Secretaría de Cultura y al Banco de México  para que atiendan y procedan conforme a derecho ante los diversos señalamientos  sobre la desaparición de obras pictóricas de la artista mexicana Frida Kahlo. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/PA_PRI_Senadores_Obras_Frida_Kahlo.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120788'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120789'></a><p>De la Senadora Claudia Edith Anaya Mota, integrante del grupo  parlamentario del PRI, con punto de Acuerdo por el que se exhorta a la Comisión  Nacional Bancaria de Valores, así como a la Comisión Nacional para la  Protección y Defensa de los Usuarios de Servicios Financieros, para que,  establezcan lineamientos para la atención de las personas adultas mayores que  tengan problemas de movilidad. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/PA_PRI_Sen_Anaya_Mota_Problemas_Movilidad.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120789'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120790'></a><p>Del Senador Miguel Ángel Riquelme Solís, integrante del grupo  parlamentario del PRI, con punto de Acuerdo por el que se exhorta a las  Secretarías de Gobernación y de Seguridad Pública y Protección Ciudadana, así  como a la Guardia Nacional, a la Fiscalía General de la República y al  Instituto Nacional Electoral, remitan a esta Soberanía un informe detallado  sobre los incidentes de violencia política ocurridos en el marco de los  procesos electorales 2024-2025 en Veracruz y Durango, así como del proceso extraordinario  de funcionarios al poder judicial, dentro del ámbito de su competencia. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/PA_PRI_Sen_Riquelme_Violencia_Politica.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120790'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120791'></a><p>De las Senadoras y de los Senadores Alejandro Moreno Cárdenas, Manuel  Añorve Baños, Alma Carolina Viggiano Austria, Pablo Guillermo Angulo Briceño,  Cristina Ruíz Sandoval, Rolando Rodrigo Zapata Bello, Claudia Edith Anaya Mota,  Miguel Ángel Riquelme Solís, Mely Romero Celis, Néstor Camarillo Medina, Paloma  Sánchez Ramos, Ángel García Yáñez, Karla Guadalupe Toledo Zamora y Anabell  Ávalos Zempoalteca, integrantes del grupo parlamentario del PRI, con punto de  Acuerdo por el que se exhorta al Ejecutivo Federal a evaluar la viabilidad  operativa y financiera de mantener en funcionamiento a la aerolínea estatal  mexicana de aviación, a la luz de sus resultados obtenidos durante su primer  año de operación. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/PA_PRI_Senadores_Aerolinea_Mexicana.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120791'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120792'></a><p>Del Senador Miguel Ángel Riquelme Solís, del grupo parlamentario del PRI,  con punto de Acuerdo por el que la Comisión Permanente solicita a la Comisión  Federal de Electricidad garantice el mantenimiento preventivo de estaciones y  subestaciones eléctricas; así como, cree un plan emergente para garantizar el  abasto de energía eléctrica a los hogares y parques industriales del estado de  Coahuila de Zaragoza, durante la temporada de calor y canícula. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/PA_PRI_Sen_Riquelme_Energia_Electrica.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120792'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120793'></a><p>Del Senador Miguel Ángel Riquelme Solís, del grupo parlamentario del PRI,  con punto de Acuerdo por el que la Comisión Permanente solicita al Instituto  Nacional Electoral a que remita un informe a esta Soberanía, sobre los  mecanismos que garanticen la transparencia, rendición de cuentas e  imparcialidad del proceso electoral del Poder Judicial; se informe sobre la  cadena de custodia de los paquetes electorales el día de la jornada electoral,  así como de aquellos que den certeza al cómputo de votos para el proceso  electoral del domingo 1 de junio de 2025; así como a las Secretarías de  Gobernación y de Seguridad Pública y Protección Ciudadana, a la Guardia  Nacional, a la Fiscalía General de la República y al Instituto Nacional  Electoral, remitan a esta Soberanía un informe detallado sobre los incidentes  de violencia ocurridos contra las y los aspirantes a diversos cargos del Poder  Judicial, dentro del ámbito de su competencia. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/PA_PRI_Sen_Riquelme_Proceso_Electoral.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120793'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120794'></a><p>Del Diputado Rubén Ignacio Moreira Valdez, del grupo parlamentario del  PRI, con punto de Acuerdo por el que se exhorta a la Fiscalía Especializada en  Delitos Electorales, a que en el ámbito de sus atribuciones, inicie de manera  inmediata las investigaciones correspondientes respecto a la Comisión de  Delitos Electorales relacionados con la distribución de acordeones para  orientar el sentido del voto, el uso de recursos públicos, el acarreo de  personas y la intervención de estructuras partidistas y servidores públicos en  el proceso de elección de jueces, magistrados y ministros del Poder Judicial de  la Federación. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/PA_PRI_Dip_Moreira_Delitos_Electorales.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120794'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120795'></a><p>De la Diputada María de los Dolores Padierna Luna, del grupo  parlamentario del Partido Morena, con punto de Acuerdo por el que la Comisión  Permanente emite un pronunciamiento sobre la presencia del gusano barrenador  del ganado en México y, exhorta al gobierno estadounidense a impulsar de forma  bilateral la reapertura de la Planta de Moscas Estériles en Chiapas, México. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/PA_Morena_Dip_Padierna_planta_de_moscas.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120795'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120796'></a><p>De la Senadora Alejandra Berenice Arias Trevilla, del grupo parlamentario  del Partido Morena, con punto de Acuerdo por el que se exhorta a la Secretaría  de Medio Ambiente y Recursos Naturales, a la Procuraduría Federal de Protección  al Ambiente y al Instituto de Protección Civil del estado de Tabasco, para que  refuercen las acciones orientadas a la protección, conservación y manejo  sustentable de la Reserva de la Biósfera Pantanos de Centla, ante la alarmante  presencia de incendios activos que están ocasionando un grave deterioro  ambiental en una de las áreas naturales protegidas más importantes del país. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/PA_Morena_Sen_Arias_areas_naturales.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120796'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120797'></a><p>De la Senadora Olga Patricia Sosa Ruíz, del grupo parlamentario del  Partido Morena, con punto de Acuerdo por el que se exhorta a los congresos de  las entidades federativas, para que, consideren reformar sus leyes locales  relativas al ejercicio de las profesiones, con el propósito de establecer el  uso del lenguaje inclusivo en la expedición de títulos profesionales, toda vez  que aun cuando en la mayoría de las carreras profesionales, las mujeres  representan más del 50 por ciento de la población estudiantil, todavía se  decide de manera discrecional, si se emiten los títulos de las alumnas en  femenino o en masculino genérico. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/PA_Morena_Sen_Olga_Sosa_Titulo_con_Perspectiva_de_Genero.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120797'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120798'></a><p>De la Senadora Olga Patricia Sosa Ruíz, del grupo parlamentario del  Partido Morena, con punto de Acuerdo por el que se exhorta a los gobiernos de  las entidades federativas, para que, a través de sus Secretarías de Desarrollo  Agrario, Territorial y Urbano u homólogas, implementen programas dirigidos a  poblaciones que viven en zonas marginadas o en condiciones de vulnerabilidad  para sustituir los pisos de tierra por pisos de concreto en las viviendas, con  el fin de mejorar las condiciones de vida de las familias que habitan estos  hogares, así como reducir la incidencia de enfermedades y, en general,  dignificar la vivienda. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/PA_Morena_Sen_Olga_Sosa_Pisos_de_Tierra.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120798'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120799'></a><p><strong>EFEMÉRIDES</strong></p>
+<p>De las Legisladoras y Legisladores, del grupo parlamentario del PVEM,  relativa al Día Internacional de la Diversidad Biológica.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Efem_PVEM_biodiversidad.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120799'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120800'></a><p>De las Senadoras y Senadores, del grupo parlamentario del PRI, relativa  al Día internacional de la higiene menstrual.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Efem_PRI_Senadores_Dia_Int_Higiene_Menstrual.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120800'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120801'></a><p>De las Legisladoras y Legisladores del grupo parlamentario del PVEM,  relativa al Día Mundial de las Tortugas.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Efem_PVEM_D%C3%ADa_Mundial_Tortugas.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120801'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120802'></a><p>De las Legisladoras y Legisladores del grupo parlamentario del PVEM,  relativa al Día Mundial sin Tabaco.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2025-05-27-1/assets/documentos/Efem_PVEM_D%C3%ADa_Mundial_Sin_Tabaco.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120802'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120803'></a><p><strong>AGENDA POLÍTICA</strong></p>
+<p>De las Legisladoras y Legisladores del grupo parlamentario del Partido  Morena, para referirse a la situación política del país.</p>
+<p align="center">(No se registran intervenciones)</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120803'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120804'></a><p>De las Legisladoras y Legisladores del grupo parlamentario del PAN, para  referirse a la situación política del país.</p>
+<p align="center">(No se registran intervenciones)</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120804'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120805'></a><p>De las Legisladoras y Legisladores del grupo parlamentario del PRI, para  referirse a la situación política del país. </p>
+<p align="center">(No se registran intervenciones)</p>
+<p>Continúe la Secretaría. </p>
+<p><strong>La Secretaria Diputada  María de los Dolores Padierna Luna:</strong> Se va a dar lectura al Orden del Día de la  próxima sesión del miércoles 4 de junio de 2025. Orden del Día. (Leyó)</p>
+<p>Es  cuanto.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120805'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='120806'></a><p><strong>CITA</strong></p>
+<p><strong>El Presidente Diputado  Sergio Gutiérrez Luna:</strong> Se cita a la siguiente sesión de la Comisión  Permanente, el próximo miércoles 4 de junio a las 11:00 horas en este recinto. </p>
+<p>Se levanta la sesión. </p>
+<p align="center">(Se levantó la sesión a las 12:33 horas) </p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a120806'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXIV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 3</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Mónica Fernández Balboa</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 06 de Febrero de 2020</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/64/2/SPO/PDF-WEB/SPO_No.3_6_FEBRERO_2020_SOLEMNE.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='88023'></a><p align="center"><strong>PRESIDENCIA DE LA  SENADORA</strong><br>
+  <strong>MÓNICA FERNÁNDEZ  BALBOA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>(11:51 horas) Con el quórum de nuestra sesión ordinaria del día de hoy, y  con fundamento en lo dispuesto por el artículo 56, fracción III del Reglamento  del Senado y en el Acuerdo de la Mesa Directiva aprobado el pasado 5 de febrero  para normar esta sesión solemne, vamos a pedir, primero, a una comisión de  Senadoras y Senadores que se sirvan recibir al Presidente de la República de  Guatemala, el señor Alejandro Giammattei a su lugar. </p>
+<p align="justify">La comisión estará integrada por el Senador Héctor Vasconcelos. La  Senadora Josefina Vázquez Mota. La Senadora Vanessa Rubio Márquez. La Senadora  Patricia Mercado. La Senadora Geovanna del Carmen Bañuelos De la Torre. El  Senador Rogelio Israel Zamora Guzmán. La Senadora Renata Romo Molina. El  Senador Antonio García Conejo. La Senadora Bertha Alicia Caraveo. La Senadora  Antares Guadalupe Vázquez Alatorre. El Senador Félix Salgado Macedonio. La  Senadora Martha Guerrero Sánchez. La Senadora Alejandra Reynoso. El Senador  Gustavo Madero. Y el Senador Marco Antonio Gama. </p>
+<p align="justify">Solicito a la Senadoras y a los Senadores cumplir con su encargo, en  tanto, se declara un receso.<br>
+  <br>
+  ¿Con qué objeto, Senadora Malú Micher? Sonido al escaño de la Senadora. </p>
+<p align="justify"><strong>La Senadora Martha Lucía Micher Camarena:</strong> (Desde su escaño) Buenos días, señora Presidenta. </p>
+<p align="justify">Por supuesto agradecer esta extraordinaria nueva sala que tenemos, muchas  gracias, han dignificado nuestro espacio, pero le quisiera pedir, por favor, si  fuese posible que subieran un poquito la luz; es decir, está un poquito oscuro.  Es una extraordinaria idea haber cambiado la luz que teníamos, lastimaba mucho  la vista, pero podríamos pedir que subiesen un poquito más la luz, es lo único. </p>
+<p align="justify">Agradeciendo por supuesto a usted y a todo el personal, a Mauricio Farah  y a toda la gente que hizo posible estos cambios que dignifican este Senado.</p>
+<p align="justify">Por su atención, muchas gracias. </p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa:</strong> Gracias. </p>
+<p align="justify">Senadora Jesusa Rodríguez, ¿con qué objeto? </p>
+<p align="justify">Les recuerdo que tengo que mandar al receso porque ya está llegando el  Presidente de Guatemala, por favor. </p>
+<p align="justify"><strong>La Senadora Jesusa Rodríguez Ramírez:</strong> (Desde su escaño) Menos de medio minuto para lo que dijo Malú, he  dedicado 40 años de mi vida en iluminar el teatro, la luz no está mal, solo  hacen falta ciertas cosas puntuales para que no nos veamos como zombis; si hay  manera de que yo pueda hablar con Farah, yo puedo decirle más o menos cómo. </p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa:</strong> Transmitimos de inmediato sus comentarios a la Secretaría de Servicios  Generales. Y le pedimos al maestro Farah que atienda sus comentarios. </p>
+<p align="justify">Solicito a las Senadoras y a los Senadores que han sido nombrados,  Senador Gama, está usted en la comisión de recepción y atención, cumplir con su  encargo. </p>
+<p align="justify">En tanto, se declara un receso. </p>
+<p align="center">(RECESO)</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa:</strong> Se reanuda la sesión solemne. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a88023'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='88024'></a><p align="justify"><strong>VISITA  DEL PRESIDENTE DE LA REPÚBLICA DE GUATEMALA, ALEJANDRO  GIAMMATTEI</strong></p>
+<p align="justify">Realizamos esta sesión para recibir la visita  del señor Alejandro Giammattei, Presidente de la República de Guatemala. </p>
+<p align="justify">¡Le damos una cordial bienvenida!</p>
+<p align="justify">Para el Senado de la República es un honor  recibir la visita de su excelencia, señor Presidente de la República de  Guatemala.</p>
+<p align="justify">Celebramos esta sesión solemne, con el ánimo  de continuar la consolidación desde el ámbito parlamentario, de una relación  que es estratégica para nuestros países.</p>
+<p align="justify">En este contexto, la Cámara de Senadores del  Honorable Congreso de la Unión de los Estados Unidos Mexicanos, expresa la más  cordial bienvenida a su excelencia, el señor Alejandro Giammattei, Presidente  de la República de Guatemala. </p>
+<p align="justify">¡Sea bienvenido a nombre de todo el Senado  mexicano!<br>
+  <br>
+  Y damos también la bienvenida a la comitiva  que acompaña a su excelencia, en especial, al maestro Pedro Brolo Vila,  Ministro de Relaciones Exteriores de la República de Guatemala.</p>
+<p align="justify">Al licenciado Carlos Sandoval, Secretario de  Comunicación Social, de Presidencia de la República de Guatemala.</p>
+<p align="justify">Al señor Carlos José Escobedo Menéndez,  encargado de negocios de la Embajada de Guatemala en México. </p>
+<p align="justify">Al señor José Andrés Oliva González, Tercer  Secretario de la Embajada de Guatemala en México.</p>
+<p align="justify">Al señor Tirso Bejarano López, Tercer  Secretario de la Embajada de Guatemala en México. </p>
+<p align="justify">Al señor Walter Estrada, Tercer Secretario de  la Embajada de Guatemala en México. </p>
+<p align="justify">Sean también bienvenidos los Diputados  Federales del Congreso Mexicano, José Luis Elorza Flores y Luis Javier Alegre  Salazar. </p>
+<p align="justify">A un grupo de alcaldes municipales de la  República de Guatemala, les damos también la más cordial bienvenida. </p>
+<p align="justify">Está presente también en esta sesión solmene  la Senadora María Guadalupe Murguía Gutiérrez, el Senador Salomón Jara Cruz y  el Senador Jorge Carlos Ramírez Marín, Vicepresidenta y Vicepresidentes de la  Mesa Directiva del Senado Mexicano. </p>
+<p align="justify">Asimismo, la Senadora Verónica Delgadillo  García, la Senadora Martha Guerrero Sánchez, la Senadora María Guadalupe  Saldaña Cisneros, la Senadora Verónica Noemí Camino Farjat, la Senadora Katya  Elizabeth Ávila Vázquez y el Senador Primo Dothé Mata, Secretarias y Secretario  de la Mesa Directiva del Senado Mexicano.</p>
+<p align="justify">Conforme al Acuerdo aprobado el pasado 5 de  febrero para normar la celebración de esta sesión solemne, su excelencia, el  señor Alejandro Giammattei, Presidente de la República de Guatemala, dirigirá  un mensaje a la Asamblea. </p>
+<p align="justify">En consecuencia, se le concede el uso de la  palabra. </p>
+<p align="justify"><strong>El Presidente de la República de Guatemala, Alejandro Giammattei: </strong>Excelentísima Senadora Mónica Fernández  Balboa, Presidenta del Senado de la República.</p>
+<p align="justify">Diputada Laura Rojas Hernández, Presidenta de  la Cámara de Diputados. </p>
+<p align="justify">Distinguidas y distinguidos integrantes de la  Mesa Directiva de la Cámara de Senadores. </p>
+<p align="justify">Señores de los distintos medios de  comunicación social. </p>
+<p align="justify">Hermanos mexicanos. Guatemaltecos que viven en  México. </p>
+<p align="justify">Honorables Senadores:</p>
+<p align="justify">Agradezco muy sinceramente esta oportunidad de  venir a este histórico acercamiento entre nuestras naciones, agradezco esta  invitación a dirigirme ante este Honorable y reconocido Senado de la hermana  República de los Estados Unidos Mexicanos. En nombre del pueblo y del gobierno  de Guatemala, muchas gracias. <br>
+  <br>
+  Aquí, donde están representadas las voluntades  de cada una de las entidades federativas que componen a México. </p>
+<p align="justify">Cuando visito México, me reconozco en sus  calles, cuando visito México, me reconozco en sus artesanías, pero cuando  visito México, especialmente me reconozco en su gente, cuando visito México,  siempre encuentro un retazo de mi tierra, porque, como todos ustedes saben,  Guatemala tiene algo de México y México tiene algo de Guatemala, aunque también  somos diferentes, podemos coincidir que compartimos cosas, los mismos retos,  los mismos desafíos, los mismos objetivos.</p>
+<p align="justify">Por este motivo, urge que las relaciones entre  nuestros países sean fortalecidas como jamás en la historia ha sido. </p>
+<p align="justify">En 1848 establecimos relaciones diplomáticas y  hoy, 172 años después, con el mayor de los gustos acepté la honrosa invitación  que me hicieran, así expreso mi más firme voluntad de llevar a cabo estas  relaciones al punto más alto en nuestra historia para el beneficio de nuestras  naciones. </p>
+<p align="justify">Por desgracia, he de reconocer en este momento,  que dadas las consecuencias de gobiernos anteriores que se olvidaron de  promover el desarrollo humano en nuestro país, vemos con tristeza cómo nuestros  connacionales abandonan o desean abandonar su país, personas y familias enteras  que se dirigen al norte para tratar de encontrar las oportunidades que nosotros  les hemos llegado. </p>
+<p align="justify">Ellos son producto de la marginación, de la  exclusión social, del desempleo, de la falta de acceso a los servicios básicos  y muchas otras cosas. </p>
+<p align="justify">Por eso hoy vengo a invitarles a que  trabajemos juntos en la construcción no de muros físicos, sino de muros de  prosperidad, no de muros de armas, sino de muros de prosperidad que alienten a  las personas a quedarse y no a arriesgarse, cada vez que un ciudadano  desesperadamente abandona su tierra, deja a su familia, deja sus costumbres,  deja sus sueños y sus anhelos y con ellos cada vez fracasamos. </p>
+<p align="justify">A nuestros conciudadanos no los frenan los  muros, no los frenan las leyes, no los frena el miedo, lo único que frena a  nuestra gente son la razón para quedarse, lo único que puede detenerlos son las  oportunidades, lo único que los detiene es la seguridad, un empleo digno, un  futuro promisorio, lo que les detiene es el trabajo, el progreso, un techo  sólido, lo que les detiene es una familia que crece, una empresa que crece, un  sueño que crece.</p>
+<p align="justify">Mi invitación es a que hagamos algo juntos,  para lograrlo, constituyamos en la zona fronteriza un auténtico muro de  prosperidad, mismo que abarque del lado de Guatemala a los municipios  fronterizos de los departamentos de Huehuetenango, de San Marcos y de Quiché,  tres de los cuatro departamentos más expulsores de gente, y por el lado  mexicano, los municipios de los estados de Chiapas y una pequeña porción de  Tabasco, como el primer muro de prosperidad.</p>
+<p align="justify">Promovamos juntos ahí, en esa zona, la  instalación de un banco de inversión que brinde la oportunidad de desarrollar  toda la zona de influencia para que logremos que el desarrollo impere, para que  las oportunidades sean las que detengan la migración.</p>
+<p align="justify">Aprovecho esta gran oportunidad que ustedes  tan gentilmente me han brindado a instar a este Honorable Senado, pero a que  también estrechemos las relaciones comerciales entre Guatemala y México.</p>
+<p align="justify">Para nosotros, ustedes, nuestros vecinos, a  duras penas representan el 4 por ciento de nuestro comercio internacional, dado  a que podemos servirles con productos y servicios de calidad de toda índole, si  los consumen nos ayudarían a generar empleos que a la vez repercutan en la  disminución de la inmigración y la reducción de la pobreza en nuestro país.<br>
+  <br>
+  Justo es oportuno reconocer que hemos  encontrado en el gobierno mexicano, presidido por don Andrés Manuel López  Obrador, y en su canciller, don Marcelo Ebrard, una receptividad de amigos y de  hermanos solidarios, eso lo comprobamos cuando planteamos que trabajáramos en el  proyecto de la zona binacional; ese muro de prosperidad lo que hizo  inmediatamente que contactaran a la CEPAL para que apoyaran la definición,  alcance, objetivos y demás elementos del proyecto.</p>
+<p align="justify">Pero también con su apoyo iniciamos la  revisión de la política de cielos abiertos entre nuestros países, con lo que  lograríamos en el corto plazo ver reflejado un mayor flujo de turistas hacia la  zona conocida como el Mundo Maya, el cual tenemos la dicha de compartir. En  nuestra historia común, las raíces de esa gran civilización que cada día  cautiva más al mundo por su grandeza nos unen y nos unirán para siempre.</p>
+<p align="justify">Por ese motivo contamos que podamos suscribir  en el corto plazo ese documento que nos permita abrir los cielos entre nuestros  países. Vengo a dirigirme a ustedes como aquel hermano menor que reconoce en su  hermano mayor que da guía con su ejemplo, al que se le reconoce los éxitos  alcanzados o del que también podemos aprender los infructuosos intentos.</p>
+<p align="justify">Pero también con la sabiduría de oír de vez en  cuando al hermano menor que también puede, con su forma diferente de ver la  vida, externar opiniones que pueden ser beneficiosas para el bien de ambos  países. Debo confesarles que acá me siento recibido como quien va a la casa de  un amigo, como quien va a donde ya conoce, como quien siempre es bien recibido.</p>
+<p align="justify">Que este día sirva para unir nuestros caminos  y nos dediquemos con el esfuerzo de quienes desean construir un futuro  promisorio común; que sirva, sin duda, para dejar atrás los años de  distanciamiento, para comenzar un proceso que haga más grandes aún a nuestros  países, para caminar juntos como naciones hermanas.</p>
+<p align="justify">Muchas gracias, señores Senadores por esta  oportunidad, el futuro nos espera.</p>
+<p align="justify">Unidos podemos hacer que el mismo sea del  mayor beneficio para nuestros países.</p>
+<p align="justify">¡Que Dios bendiga a México!</p>
+<p align="justify">¡Que Dios bendiga a Guatemala!</p>
+<p align="justify">¡Y Dios los bendiga a ustedes!</p>
+<p align="justify"><strong>La Presidenta Senadora Mónica Fernández Balboa: </strong>Muchas gracias por su mensaje, su excelencia,  señor Alejandro Giammattei, Presidente de la República de Guatemala.</p>
+<p align="justify">Agradecemos su distinguida presencia en el  Senado mexicano. Aprovecho para felicitarlo por su triunfo en las elecciones  del año pasado.</p>
+<p align="justify">El 14 de enero de este año tomó usted posesión  de su cargo ante el Congreso Nacional de su país, y el Senado de la República  le desea el mayor de los éxitos en las acciones que emprenda en favor de la  justicia y el desarrollo de su nación. Quiero destacar que es usted una persona  con convicciones y con claridad en sus objetivos, que desde temprana edad  definió su futuro profesional.</p>
+<p align="justify">Es usted un ejemplo de tenacidad, de  fortaleza, de resiliencia, de perseverancia y de fe. Aquel niño que  sobreponiéndose a los contratiempos que la vida le presentó, pudo de adulto  hacer realidad sus sueños de ser bombero y médico, y hoy ocupa la más alta responsabilidad en su país  después de postularse en cuatro ocasiones a la Presidencia.</p>
+<p align="justify">Desde hace siglos, la historia de nuestros  países ha estado estrechamente vinculada, ambas naciones formamos parte de una  continuidad geográfica y una identidad común que nos une y nos hermana en la  historia, en la cultura y en los valores.<br>
+  <br>
+  En el periodo prehispánico compartimos el  esplendor de la Cultura Maya que se desarrolló en toda su plenitud en la  Península de Yucatán y en el territorio de Guatemala. Ese pasado común entre  nuestras dos naciones ha contribuido al avance de los temas de la agenda  bilateral y nos ha permitido mantener el dinamismo de los mecanismos de diálogo  y la cooperación en distintos ámbitos.</p>
+<p align="justify">Al igual que ustedes, nuestros antepasados nos  enseñaron a creer y respetar los signos y señales que provee la naturaleza. Qué  mejor símbolo de unión entre nuestros pueblos, que compartir la admiración por  esa preciosa ave con origen divino para mayas y mexicas como lo es el quetzal,  ave de gran colorido que su país mantiene presente en su moneda de curso  actual, que personaliza sus calles y sus ciudades, y el cual los mexicanos  tenemos presente de manera permanente a través de Quetzalcóatl, Dios de la  vida, de la luz, la fertilidad y el conocimiento, y en ocasiones señor de los  vientos y regidor del oeste.</p>
+<p align="justify">Nuestros gobiernos tienen en sus símbolos  ancestrales la guía que asegura a nuestros pueblos trabajo, bienestar y  progreso, evitando la violencia y hermanándonos en la lucha a favor de los más  desprotegidos.</p>
+<p align="justify">Desde el año de 1848, México y Guatemala  establecieron sus relaciones diplomáticas para asumir los retos que significa  compartir una frontera de casi mil kilómetros. En esa frontera conviven tres  estados, entre ellos: Tabasco, mi estado, y 22 municipios de México con cinco  departamentos y 24 municipios de Guatemala, territorios en los que existen  importantes redes familiares, económicas y culturales.</p>
+<p align="justify">Nuestras relaciones se encuentran en trato  permanente a través de la Comisión Binacional México-Guatemala, mecanismo de  diálogo y cooperación en el que se abordan los temas de la agenda bilateral;  asimismo, las reuniones interparlamentarias entre nuestros dos Congresos,  activas desde 1986, nos han permitido generar un permanente diálogo político,  un incremento de los flujos comerciales y una mayor cooperación que ha  beneficiado a ambos países.</p>
+<p align="justify">Guatemala y México han firmado casi 40  acuerdos bilaterales, lo que refleja un amplio y fructífero conjunto de  programas de cooperación.</p>
+<p align="justify">Conocemos del interés que ha manifestado en  poner en marcha un plan de desarrollo fronterizo entre nuestros países, similar  al que actualmente impulsa México para Centroamérica con el apoyo de la CEPAL;  esos planes son importantes para frenar el fenómeno migratorio generando el  desarrollo de la zona fronteriza y creando áreas de prosperidad que incentiven  a nuestros connacionales seguir en sus respectivos  países. </p>
+<p align="justify">Estamos seguros que sus esfuerzos para impulsar la integración y el  desarrollo de Centroamérica, iniciados con los presidentes de Honduras y El  Salvador, apenas hace unos días de asumir su presidencia, contribuirán de  manera importante a la prosperidad de la región. Estamos seguros de que  nuestros gobiernos trabajarán juntos para no criminalizar a todos aquellos que  quieran emigrar y por respetar los derechos humanos de quienes así lo decidan  en la búsqueda de nuevas perspectivas de vida. </p>
+<p align="justify">En el Senado de la República trabajaremos para garantizar la seguridad,  la integridad y el respeto de los derechos de quienes acuden a México en busca  de refugio. Seremos vigilantes de que la incursión en nuestro país sea con la  participación de la autoridad competente y cumpliendo la función de protección,  ordenamiento e institucionalización de los flujos migratorios. </p>
+<p align="justify">Señor Presidente, desde el inicio de esta nueva época se puso de  manifiesto que las relaciones entre los dos países seguirán incrementándose de  manera sostenida. <br>
+  <br>
+  El cambio de gobierno  ocurrido en Guatemala el pasado 14 de enero y la llegada de usted a la presidencia,  inauguran una nueva era de entendimiento entre ambos países. </p>
+<p align="justify">Deseamos que continúe y  se ensanche la relación de comercio e inversión que históricamente han  sostenido nuestras naciones y que su fortalecimiento sea la clave para impulsar  el desarrollo fronterizo para nosotros. Ese será el mejor tributo a la vecindad  de nuestros pueblos. </p>
+<p align="justify">Es usted el primer  mandatario de Latinoamérica que es recibido por el Pleno de esta Cámara de  Senadores en la LXIV Legislatura. </p>
+<p align="justify">Valoramos y agradecemos  su presencia y la de su comitiva, y esperamos que se hayan sentido como en  casa. </p>
+<p align="justify">Y le reiteramos nuestro  aprecio y amistad con el pueblo guatemalteco, así como nuestros mejores deseos  de un futuro próspero para su país. </p>
+<p align="justify">Muchas gracias por su  visita. </p>
+<p align="justify">Muchas gracias a todas y  todos por acompañarnos. </p>
+<p align="justify">Agradezco a las  distinguidas invitadas e invitados que nos han acompañado en esta sesión  solemne, y solicito a las Senadoras y a los Senadores integrantes de la  comisión de cortesía se sirvan acompañar a nuestras invitadas y a nuestros  invitados hasta las puertas de este recinto en cuanto así lo deseen.</p>
+<p align="center">(La comisión  cumple)</p>
+<p align="justify">Antes de dar por  finalizada la sesión solemne, reiteramos nuestro beneplácito por contar con su  presencia este día. </p>
+<p align="justify">Damos por finalizada la  sesión solemne, y se solicita a las señoras Senadores y a los señores Senadores  permanecer en sus lugares para continuar con la sesión ordinaria de este día. </p>
+<p align="justify">Se levanta la sesión  solemne.</p>
+<p align="center">(Se levantó la sesión solemne a las 13:18  horas)<strong></strong></p>
+<table border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td><p align="center"><strong>Directorio</strong></p>
+      <p align="center"><strong>DIARIO DE LOS DEBATES</strong></p>
+      <p align="center">de la Cámara de Senadores del Congreso<br>
+        de los Estados Unidos Mexicanos</p>
+      <p align="center">Av. Paseo de la Reforma 135,</p>
+      <p align="center">Colonia Tabacalera, Alcaldía Cuauhtémoc,</p>
+      <p align="center">Ciudad de México</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+        Exts. 5405/5406</p>
+      <p align="center">Internet: http://www.senado.gob.mx<br>
+      </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a88024'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

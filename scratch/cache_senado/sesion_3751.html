@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>TERCER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO III</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 10</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Higinio Martínez Miranda</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 29 de Septiembre de 2026</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/3/PPO/PDF-WEB/PPO_No10_29-SEPTIEMBRE-2026_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130467'></a><p align="center"><strong>PRESIDE  EL SENADOR</strong><br>
+  <strong>HIGINIO  MARTÍNEZ MIRANDA</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>El  Presidente Senador Higinio Martínez Miranda:</strong> (09:45 horas) Con el quórum de la sesión ordinaria de hoy, y con fundamento en  lo dispuesto por el artículo 56, fracción III del Reglamento del Senado y en el  Acuerdo recién aprobado, iniciamos la sesión solemne.</p>
+<p>Solicito  a las Senadoras y Senadores Reyna Celeste Ascencio Ortega, Amalia García  Medina, Ana Francis Chiquete Elizalde, Angélica Montes Rentería y Alejandro  García Monroy, acudan a recibir a nuestro invitado, el señor Barham Salih, Alto  Comisionado de las Naciones Unidas para los Refugiados.</p>
+<p align="center">(La  comisión cumple)</p>
+<p>Asimismo,  se designa a las Senadoras y Senadores siguientes:</p>
+<p>Lilia  Margarita Valdez Martínez, Alejandra Barrales Magdaleno, Blanca Elizabeth  Fiesco Diaz, Carlos Humberto Suárez Flores, Óscar Cantón Zetina, Francisco  Chíguil Figueroa y Mariela Gutiérrez Escalante, para que reciban a la  licenciada Rosa Icela Rodríguez Velázquez, Secretaria de Gobernación, quien  asiste en representación de la titular del Poder Ejecutivo Federal.</p>
+<p align="center">(La  comisión cumple)</p>
+<p>En  tanto cumplen su cometido las comisiones, se declara un receso.</p>
+<p align="center">(RECESO)</p>
+<p><strong>El  Presidente Senador Higinio Martínez Miranda:</strong> Se reanuda la sesión solemne.</p>
+<p>La Cámara de Senadores del Honorable Congreso de la  Unión de los Estados Unidos Mexicanos, expresa la más cordial bienvenida al señor Baham  Salih, Alto Comisionado de las Naciones Unidas para los Refugiados, es un honor  recibir su visita.</p>
+<p>Agradecemos la presencia de la licenciada Rosa  Icela Rodríguez Velázquez, Secretaria de Gobernación, quien asiste en  representación de la titular del Poder Ejecutivo, la Doctora Claudia  Sheinbaum Pardo, Presidenta de los Estados  Unidos Mexicanos.</p>
+<p>¡Bienvenida, Secretaria!</p>
+<p> En especial, menciono a la Senadora Amalia García  Medina, Presidenta de la Comisión para Seguimiento de la Implementación de la  Agenda 2030 del Senado de  la República.</p>
+<p>A la Doctora Allegra Baiocchi, Coordinadora  Residente del Sistema de las Naciones Unidas en México.</p>
+<p>A  la Maestra Isabel Márquez, Directora Regional de ACNUR para las Américas.</p>
+<p>A  la Maestra Chiara Cardoletti, Representante de ACNUR en México. </p>
+<p>A  la Licenciada Xadeni Méndez Márquez, Coordinadora General de la Comisión  Mexicana de Ayuda a Refugiados.</p>
+<p>Y  a la Licenciada Fátima Ríos, Directora General de Movilidad Humana y Desarrollo  de la Secretaría de Relaciones Exteriores. </p>
+<p>Asimismo,  saludamos al personal de la Agencia de la ONU para los Refugiados y de la  Comisión Mexicana de Ayuda a Refugiados.</p>
+<p>Saludamos  la presencia del Licenciado Juan Ramiro Robledo Ruiz, titular de la Unidad de  Enlace de la Secretaría de Gobernación. </p>
+<p>Y  al señor Federico Sersa, Asistente Especial del Alto Comisionado.</p>
+<p>Y  acompañando a nuestros invitados, el Senador Alejandro Murat, Presidente de la  Comisión de Relaciones Exteriores del Senado de la República. </p>
+<p>Permítanme  los invitados, todos, presentar a mis compañeras y compañeros Senadores de la  Mesa Directiva, presentes en esta sesión solemne:</p>
+<p>A  la Senadora Verónica Noemí Camino Farjat, Vicepresidenta.</p>
+<p>Al  Senador Mauricio Vila Dosal, Vicepresidente. </p>
+<p>Al  Senador Jorge Carlos Ramírez Marín, Vicepresidente.</p>
+<p>A  la Senadora Alejandra Arias Trevilla.</p>
+<p>La  Senadora Claudia Edith Anaya Mota. </p>
+<p>La  Senadora Lizeth Sánchez García. </p>
+<p>La  Senadora Claudia Tello Espinosa.</p>
+<p>La  Senadora Gina Gerardina Campuzano González. </p>
+<p>La  Senadora Juanita Guerra Mena.</p>
+<p>Y  el Senador Néstor Camarillo Medina, Secretarias y Secretario de esta Mesa  Directiva. </p>
+<p>¡Sean  todos bienvenidas y bienvenidos a esta sesión solemne!</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130467'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130468'></a><p>Conforme  al Acuerdo aprobado para normar la celebración de esta sesión solemne, el Alto  Comisionado de las Naciones Unidas para los Refugiados, dirigirá un mensaje a  la Asamblea. </p>
+<p>En  consecuencia, tiene usted el uso de la palabra, señor Barham Salih, cuando  usted guste.</p>
+<p> <strong>VISITA DEL ALTO COMISIONADO DE LAS NACIONES UNIDAS PARA LOS REFUGIADOS,  BARHAM SALIH</strong></p>
+<p><strong>El Alto Comisionado de  las Naciones Unidas para los Refugiados, Señor Barham Salih: </strong>(No hubo  interpretación. Habló en inglés)</p>
+<p>Tiene un significado especial para nuestra  reunión del día de hoy. </p>
+<p>Excelencias, Secretarios, los invito a que  miremos hacia atrás, pero este aniversario en particular también nos pide que  veamos de forma más cercana al mundo que tenemos ante nosotros. </p>
+<p>Hace 75 años, después de la devastadora  Segunda Guerra Mundial, las naciones del mundo se reunieron alrededor de una  idea simple, pero profunda, de que la gente forzada para huir de la violencia,  persecución y conflicto no tendrían que quedarse sin protección. </p>
+<p>La Convención de Refugiados de 1951 nos dio  este principio, esta idea, y le dio la calidad de ley; estableció derechos para  los refugiados y responsabilidades a los estados. </p>
+<p>En su centro tenemos una promesa de que una  persona que busca seguridad no va a regresarse a un lugar donde sus vidas o sus  libertades están amenazadas. </p>
+<p>Durante 75 años la Convención ha ayudado a  salvar vidas y les ha permitido a millones de personas a reconstruir sus  futuros, y ha dado resultados para la humanidad.  </p>
+<p>Este principio ha permanecido y ha soportado  cambios profundos en el mundo, pero no podemos honrarlo, solamente recordando  lo que ha logrado. </p>
+<p>El día de hoy, excelencias, más de 117  millones de personas han sido obligados y forzados a dejar sus hogares en el  mundo.</p>
+<p>Desafortunadamente, los conflictos se están  multiplicando y muchos se están volviendo más violentos. Y, al mismo tiempo, el  acceso al asilo se está volviendo más difícil en muchas partes del mundo. </p>
+<p>Este Aniversario de la Convención de 1951  hace un llamado a, más que una celebración de la Convención misma y de sus  valores, hace un llamado a la renovación de nuestra determinación de hacer que  su promesa sea algo real. </p>
+<p>México tiene una contribución importante que  realizar, México ha construido un marco jurídico fuerte para la protección de  los refugiados. </p>
+<p>Y en un momento en el que los sistemas de  refugiados de muchos países están bajo presión, sigue demostrando que la  protección se puede mantener en la práctica. </p>
+<p>Esto requiere de un trabajo sostenido,  requiere de instituciones capaces de recibir a la gente, evaluar sus  solicitudes de manera ajusta y que respondan según las circunstancias van  cambiando; requiere tanto de pasión como de rigor.</p>
+<p>Estas calidades se refuerzan mutuamente. </p>
+<p>Un sistema creíble de refugiados debe  identificar quién necesita la protección internacional y proporcionarla, pero  también tiene que identificar quién no la requiere. </p>
+<p>Procedimientos sólidos fortalecen la  confianza pública y la eficiencia importa cuando la gente recibe una respuesta  justa sin dilación. </p>
+<p> La  experiencia de México muestra que un país puede fortalecer su sistema de asilo  sin debilitar la protección que da y sin debilitar el estado de derecho de sus  sistemas. </p>
+<p>De  manera general, las llegadas de migrantes y solicitantes de asilo en México ha  disminuido, y una proporción creciente de los que llegan informan de una huida  de amenazas y de violencia.</p>
+<p>Sus  necesidades, por lo tanto, siguen siendo reales, aunque los números cambien.</p>
+<p>México  está ayudando a asegurar una capacidad para recibir a la gente, escuchar  solicitudes y proteger a aquellos que no pueden regresar de manera segura a sus  hogares. </p>
+<p>Pero  el trabajo no termina cuando a una persona se le reconoce la condición de  refugiado, la seguridad es el inicio de un capítulo nuevo; reconstruir una vida  significa ser capaces de trabajar, aprender, sostener una familia y de  pertenecer. </p>
+<p>Esta  es la razón por la que, excelencias, me han invitado tanto por parte del  gobierno a su compromiso de integración. </p>
+<p>El  día de ayer me reuní con su excelencia el Secretario, la Secretaria de  Gobernación, una dama con una pasión, con compromiso. Que respeta y hace  ejecutar las leyes de la Tierra, conversamos de México Integra y la ambición  del gobierno de hacer avanzar un ecosistema de integración dirigido por el  Estado, integral, es una región importante, es algo que realmente va a tener  consecuencias. </p>
+<p>La  integración no puede depender de los esfuerzos únicamente de los refugiados o  de la buena voluntad de algunos empleadores y comunidades, funciona mejor  cuando el gobierno, las autoridades locales, las empresas, el sector  universitario y la sociedad civil trabajan de manera conjunta, es algo que yo  mismo vi en Aguascalientes. </p>
+<p>Allí  conocí a Melita, que lo dijo de manera muy simple: vean a la persona, no al  refugiado y ustedes van a encontrar a alguien que no le va a decir no al  trabajo duro, y sus palabras quedaron en mi mente. </p>
+<p>En  Aguascalientes, los refugiados están trayendo sus habilidades, su  determinación, a la vez que los empleadores están abriendo puertas a las  oportunidades, y algunos de ustedes. </p>
+<p>Conocí  a personas de negocios que entienden la situación y que crean, que saben que  estos empleados crean valor para sus empresas. Esto no solamente es bueno para  los refugiados, sino también para las empresas, y me atrevo a decirlo, para  México también. </p>
+<p>Como  un empleador me lo dijo: hacer el bien siempre es bueno. Eso es, así es como se  ve la verdadera integración, gente que es obligada a huir y que ahora pueden  sostener a sus familias, reconstruir sus futuros, ganan los empleadores, colegas  y trabajadores comprometidos, las comunidades ganan nuevos vecinos y  contribuyentes, la protección le da a la gente seguridad; la inclusión les da  la oportunidad de avanzar. </p>
+<p>México  ya está demostrando que es posible, a través de los programas de integración  local los refugiados han logrado llegar a lugares donde hay oportunidad de  trabajo y reconstruir sus vidas y los empleadores han visto empleados  comprometidos y las familias que veían incertidumbre, ahora han pedido planear  un futuro y las comunidades se han visto enriquecidas. </p>
+<p>Esto,  sus excelencias, son resultados prácticos y muestran lo que es posible cuando  la protección está conectada con la oportunidad. </p>
+<p> La  ACNUR y el gobierno de México han acordado avanzar una estrategia conjunta para  desarrollar un ecosistema de integración nacional, que se llama México Integra. </p>
+<p>Trabajamos  con la experiencia de programas de integración local y el apoyo de las  instituciones, las autoridades locales, las organizaciones, los socios del  sector privado para hacer avanzar y progresar nuestro programa. </p>
+<p>México  está a la cabeza de este esfuerzo. México es propietario de este esfuerzo junto  con la ACNUR proporcionando apoyo técnico y experiencia técnica. </p>
+<p>Honorables  Senadores y Senadoras, tienen un rol vital en este trabajo. </p>
+<p>Los  principios de la Convención de Refugiados, se vuelve real a través de la  legislación nacional, las instituciones públicas y los recursos necesarios para aplicarlas y ponerlas en prácticas. </p>
+<p>Las decisiones tomadas en esta Cámara afectan si  una persona puede acceder a un procedimiento justo de asilo que un niño pueda  continuar su educación.</p>
+<p>Que una persona de la tercera edad va a trabajar  para apoyar a su familia, y donde las comunidades tengan los recursos para  apoyar a los nuevos residentes de ustedes, pueden ayudar a asegurar de que las  instituciones responsables de la protección tengan las herramientas que  necesitan, y para que la integración sea sostenida como una cuestión de  política nacional. </p>
+<p>Los esfuerzos de México también hablan del gran  desafío al que se enfrenta el mundo, millones de refugiados han pasado años,  incluso, décadas dependiendo de la asistencia humanitaria. Esta asistencia  salva vidas, especialmente en una emergencia, pero la gente quiere más que  solamente sobrevivir, quieren trabajar, quieren evitar esos temas a su familia  y moldear sus propios futuros. </p>
+<p>Ésta es la reflexión, queremos para 2035 se reduzca  a la mitad el número de refugiados en el desplazamiento a largo plazo, y que  depende de la asistencia humanitaria. </p>
+<p>Podemos hacer progresos expandiendo las  oportunidades de inclusión y de autodependencia, para que la gente pueda  reconstruir sus vidas y reducir su dependencia de la ayuda, mientras esperan  una solución duradera. </p>
+<p>Tenemos que buscar sin descanso las soluciones  adecuadas, el regreso voluntario, los permisos de trabajo, las vías de países  terceros y oportunidades de integración local tienen que tener un estatus  legal. </p>
+<p>La experiencia de México habla directamente de esta  visión y muestra que la protección de los refugiados y la creación de  oportunidades no compitan entre sí como objetivos, sino que se refuerzan  mutuamente; muestra que los refugiados que reciben protección y oportunidades  se pueden volver colegas, vecinos, emprendedores, contribuyentes y contribuir a  las oportunidades para acoger a todos. </p>
+<p>Ningún país tendría que cargar con esta  responsabilidad solo, la solidaridad internacional también tiene que  transformarse en apoyo con los países que ofrecen protección e invierten en el  futuro de las personas que reciben. </p>
+<p>Esa es la razón por la cual yo estoy muy agradecido  de la visión de México de servir como coanfitrión del Foro de Refugiados 2027. </p>
+<p>Muchas gracias, México. </p>
+<p> Y también quiero dar las gracias a la  Vicepresidencia de México del Plan Acción Chile que nace del Proceso de  Cartajena+40.</p>
+<p>Esta región tiene una larga tradición de responder  al desplazamiento a través de la cooperación y a la innovación. </p>
+<p>México tiene una experiencia valiosa que compartir  conforme el trabajo continúa. </p>
+<p>Estos compromisos continuarán, el liderazgo de  México que se hace escuchar por una audiencia internacional también crea  oportunidades para cambiar el principio básico en un apoyo mayor. Las políticas  y los resultados tangibles para los refugiados y las comunidades que los  apoyan. </p>
+<p>Señor Presidente, Honorables Senadores y Senadoras.</p>
+<p>Hace 75 años, después de la adopción de la  Convención de Refugiados en 1951 enfrentamos desafíos que no podríamos haber  previsto, incluso, así el principio que nos reunió permanece tan claro y tan  necesario el día de hoy, como lo fue entonces una persona forzada a huir, tiene  que poder buscar seguridad. </p>
+<p>Y un país que proporciona esta seguridad merece el  apoyo de otros; para encontrar la protección tiene que abrir una vía para  reconstruir una vida. </p>
+<p>Durante esta visita he visto a México dar un  significado práctico a estos compromisos y agradezco al gobierno, a este  Senado, a los funcionarios públicos, a las autoridades locales, a las  organizaciones civiles, a empresas y comunidades involucradas en nuestro  trabajo y, sobre todo, realmente le agradezco a la gente de México por la  bienvenida que me han hecho extensa, y que la han hecho extensa a aquellos que  necesitan protección y seguridad son nuestros compañeros humanos. </p>
+<p>Y México, sigue compartiendo humanidad y ayudando a  la gente que está en necesidad. </p>
+<p>Esta es una declaración con respecto a esta gran  nación y esto es algo que se tiene que reconocer. </p>
+<p>Y ACNUR da la bienvenida a seguir trabajando con  México para fortalecer su sistema de asilo para que los refugiados puedan  construir un futuro, pertenecer y proveer. </p>
+<p>Esta Convención que ha durado ya 75 años, nuestra  responsabilidad es mantener esta promesa viva, proteger a la gente que se ha  visto obligada a huir y darle la oportunidad no solamente de sobrevivir, sino  de reconstruir su vida. </p>
+<p>Y yo sé que, en esta gran nación de México, con su  dinamismo, con la humanidad de la que yo he sido testigo, este es un lugar  donde se da esta promesa, se le da un verdadero significado para tanta gente. </p>
+<p>Muchas gracias, señor Presidente. </p>
+<p>Muchas gracias, por este honor y esta oportunidad. </p>
+<p>Muchas gracias. </p>
+<p>Gracias. </p>
+<p><strong>El Presidente Senador Higinio Martínez Miranda:</strong> Muchas gracias por su mensaje Honorable señor  Barham Salih.</p>
+<p> Saludamos también la presencia del Maestro Arturo  Medina Padilla, Subsecretario de Derechos Humanos y Población de la Secretaría  de Gobernación. </p>
+<p>Honorable Asamblea, señor Barham Salih, Alto  Comisionado de las Naciones Unidas para los Refugiados. </p>
+<p>Señora Secretaria de Gobernación Rosa Icela  Rodríguez Velázquez. </p>
+<p>Representantes de ACNUR y de la Comisión Mexicana  de Ayuda a Refugiados. </p>
+<p>Señoras y señores funcionarios. </p>
+<p>Señores integrantes de la delegación que acompañan  al Alto Comisionado. </p>
+<p>A todos los invitados. </p>
+<p>Compañeras y compañeros Senadores.</p>
+<p>Señoras y señores.</p>
+<p>¡Nuevamente sea usted bienvenido al Senado de la  República!</p>
+<p>De la misma forma en que ha sido recibido en su  país, lo recibimos con alta estima y respeto a su persona y a su trabajo. </p>
+<p>La presencia de la Secretaria de Gobernación,  representando a la Doctora Claudia Sheinbaum Pardo, Presidenta de México,  ratifica la importancia que para el gobierno de la Doctora Sheinbuam tiene su  presencia y su trabajo al frente de esa importantísima oficina de la ONU. </p>
+<p>El Senado de la República representa la Unidad de  México a través de un Pacto Federal de 32 entidades que forman nuestra nación. </p>
+<p>Aquí se refleja la pluralidad política del país. </p>
+<p>Defendemos a la nación y a nuestras entidades,  estados desde distintas trincheras, distintos puntos de vista e, incluso con  ideologías diferentes. </p>
+<p>Esa es la democracia que hoy se vive en México. </p>
+<p>Con  motivo de esa visita y, sobre todo, de una conmemoración de enorme importancia,  se cumplen 75 años de la Convención sobre el Estatuto de los Refugiados de  1951; 75 años de que las Naciones Unidas decidieron dar un estatus legal,  solidario y humanitario al tema de los refugiados.</p>
+<p>En  esos 75 años, las causas que dieron origen al tema de los refugiados siguen  presentándose a lo largo y ancho de los continentes.</p>
+<p>Gaza  y Palestina, aunque por el nivel de despojo y del número de refugiados dio  lugar a crear la Agencia de la ONU para los Refugiados Palestinos en Oriente  Próximo, la UNRWA, es el mejor ejemplo o, mejor dicho, el peor ejemplo de cómo  un pueblo tiene que refugiarse en otras naciones, en este caso no de la guerra,  sino del arrebato ilegal de las tierras a los palestinos.</p>
+<p> Hoy  en Gaza, dos millones de personas viven desplazadas en su propio territorio por  el despojo ilegal y el uso indiscriminado de la fuerza y de las armas por el  gobierno israelí.</p>
+<p> Los  habitantes de la Franja de Gaza, más los millones de palestinos que desde el  48, 67 y en otros años, fueron expulsados y viven como refugiados lo mismo que  sus descendientes en el Líbano, en Jordania, en Egipto, en Irak, etcétera,  demuestran el tamaño de la catástrofe del pueblo palestino.</p>
+<p>Ese  drama que viven los palestinos desde 1948 no para y, por ende, los palestinos  buscan refugio forzadamente fuera de su país.</p>
+<p>A  la tragedia del pueblo palestino se han sumado durante todos esos años muchas  desgracias en el mundo. </p>
+<p>Su  mismo país, Irak, Siria, Afganistán y otros de la región, son ejemplos de cómo  la gente tiene que huir de su país por diversas razones.</p>
+<p>En  la misma Europa con la guerra de los Balcanes, miles de personas tuvieron que  salir de esos países, de esas naciones por un conflicto irracional en la Europa  civilizada en los años 90.</p>
+<p>Sería  largo mencionar todos los conflictos que dan pauta a los refugiados, pero otro  drama que ha impactado, que siempre ha impactado al mundo y ha requerido ayuda  del mismo mundo, sea a través de países o de las propias Naciones Unidas, es el  del África subsahariana.</p>
+<p>En  América Latina, el continente al que pertenece nuestro país, la época de los Golpes  de Estado hizo que muchas personas buscaran refugio fuera de sus países.</p>
+<p>El  caso de Chile, el golpe militar de 1973 provocó la muerte de miles de personas  y la salida de miles y miles de chilenos.</p>
+<p>México,  como lo ha demostrado en su historia, en el trato y su política de asilo,  recibió a miles de chilenos que huyeron de la dictadura de Augusto Pinochet.</p>
+<p>Lo  mismo en Argentina, con el Golpe de Estado de los militares, en 1976.</p>
+<p>O  en Honduras o en El Salvador o la misma Guatemala, siempre la gente de estos países y otros más encontraron refugio, techo,  comida y protección en nuestro país, en México.</p>
+<p>Usted  conoce toda esa historia, sólo recuerdo algunas partes de la inflexible  política mexicana de asilo y de refugio para los perseguidos del mundo o  desplazados por los conflictos bélicos o por la actuación de gobiernos  dictatoriales.</p>
+<p>Muchos  años antes de lo que pasó en América Latina, México dio refugio a personajes  del siglo pasado, como León Trotsky, el propio Fidel Castro, su hermano Raúl  Castro, así como otros revolucionarios cubanos y latinoamericanos.</p>
+<p>Uno  de los ejemplos más conocidos en los años cuarenta es el refugio de los  españoles que huyeron de la guerra civil debido al franquismo y a su dictadura  posterior. </p>
+<p>El  refugio comienza muchas veces con una pérdida, pero también significa volver a  empezar. </p>
+<p> En México miles volvieron a iniciar una vida  y miles han aportado a nuestra nación con su trabajo, su conocimiento y su  agradecimiento parte de nuestro desarrollo de nuestra grandeza. </p>
+<p>A finales de los años setenta y principios de  los ochenta los conflictos armados en Centroamérica provocaron desplazamientos  que mencioné hace un momento. Desplazamientos fundamentalmente hacia nuestro  país.</p>
+<p>El 22 de julio de 1980 nació la Comisión  Mexicana de Ayuda a Refugiados, nuestra Comar, que entre 1981 y 84 atendió  alrededor más de cuarenta mil refugiados guatemaltecos, por ejemplo, en  campamentos. </p>
+<p>En este caso, fue fundamental la cooperación  de ACNUR que acompañó nuestra solidaridad con la construcción de capacidades,  asistencia humanitaria y, después, los procesos de integración y retorno con el  respaldo del Grupo Contador. </p>
+<p>Aquel fue otro esfuerzo diplomático para  alcanzar la paz y el retorno de la democracia en la región. Esa colaboración  continúa hasta nuestros días y los datos actuales dicen por qué sigue siendo  necesaria. </p>
+<p>La política de nuestra Presidenta de la  República, la Doctora Claudia Sheinbaum Pardo, sigue siendo inalterable en el  respeto a la soberanía de las naciones, en la no intervención en la vida de  otros países y en mantener la política y colaboración estrecha con las Naciones  Unidas a través de su oficina principalmente. </p>
+<p>Nuestra Presidenta le da una alta importancia  a este tema y el humanismo mexicano da para continuar esta política. </p>
+<p>Por eso, en su visita a México, se desprenden  acuerdos muy importantes para continuar con esta colaboración. </p>
+<p>En México, como se dijo, durante 2025, más de  70 mil personas solicitaron asilo. Ese mismo año más de mil niñas, niños y  adolescentes recibieron apoyo para continuar su educación y más de 300 empresas  participaron en acciones para emplear a personas refugiadas. </p>
+<p>Desde 2016, la iniciativa de integración,  apoyadas por ACNUR, ha alcanzado más de 170 mil personas. Nada de esto es  casual, nuestra Constitución lo dice en su artículo 11: <em>&ldquo;toda persona tiene  derecho a buscar y recibir asilo&rdquo;. </em></p>
+<p>Que las Naciones Unidas cuenten con una  instancia dedicada a procurar la protección de las personas refugiadas es  motivo de aliento, pero esa protección no puede descansar en una sola  organización, es una responsabilidad compartida de los gobiernos, de los  parlamentos, de las organizaciones sociales, del sector privado, de las  universidades y, finalmente, de las propias comunidades que acogen, que reciben  a las personas en refugio. </p>
+<p>Señor Barham Salih, Alto Comisionado,  apreciamos y valoramos su presencia en este Senado de la República. </p>
+<p>Hay algo de su historia personal que nos  parece esencialmente significativo mencionarlo en esta sesión. </p>
+<p>Usted no habla del refugio solamente desde  una oficina de las Naciones Unidas, usted mismo fue refugiado ha dicho y ha  dicho que conoce personalmente cómo la protección y una oportunidad puede  cambiar el rumbo de una vida. Hoy usted, en parte, por esa condición, encabeza la  ACNUR. </p>
+<p> Eso  tiene un significado profundo porque detrás de cada persona refugiada hay una  historia que todavía no sabemos cómo va a terminar. </p>
+<p>El  niño que hoy cruza una frontera, puede ser mañana un médico, una científica,  una maestra, un maestro, incluso, un Alto Comisionado de las Naciones Unidas. </p>
+<p>Su  visita es una oportunidad para seguir construyendo soluciones basadas en la  dignidad humana, el derecho internacional y la responsabilidad compartida.</p>
+<p>Y  en esas tareas el Senado de México no se quedará de espectador, desde las  facultades que la Constitución nos confiere asumiremos tres compromisos, o  asumimos ya.</p>
+<p>Revisar  y fortalecer nuestro marco jurídico, empezando por la Ley sobre Refugiados,  Protección Complementaria y Asilo Político. </p>
+<p>Acompañar  a la Comar y a las instituciones responsables, porque una ley sin capacidad  institucional es una promesa incompleta.</p>
+<p>Y  mantener la voz de México donde le corresponde, insistiendo en el derecho  internacional, en la ayuda humanitaria y en la paz. </p>
+<p>Reconocemos  el trabajo de la ACNUR y el de quienes, sin cámaras y sin reflectores, ayudan a  que alguien que perdió su hogar, pueda construir otro. </p>
+<p>Y,  sobre todo, daremos un reconocimiento a las personas refugiadas, porque hay que  tener una enorme fuerza para dejarlo todo, porque quizá se necesita todavía más  fuerza para empezar de nuevo. </p>
+<p>Que  México siga siendo un país capaz de decirle a quien necesita protección. Aquí  puedes estar seguro, aquí puedes volver a empezar.</p>
+<p>Y  ojalá que muy pronto puedan decirle también a quienes hoy viven entre ruinas en  cualquier rincón del mundo, no en el exilio, sino en su casa. De pie otra vez. </p>
+<p>¡Sea  usted bienvenido!</p>
+<p>Muchas  gracias. </p>
+<p>Señor  Barham Salih, a nombre del Senado de la República, le agradezco su visita y la  de su comitiva a esta sesión solemne.</p>
+<p>También  agradecemos a la señora Secretaria de Gobernación, Rosa Icela Rodríguez, a los  funcionarios y a la comitiva e invitados que nos acompañaron hoy en esta sesión  solemne. </p>
+<p>¡Muchísimas  gracias!</p>
+<p>Que  haya sido de mucha ayuda su presencia en nuestro país y que le vaya muy bien en  su retorno a su trabajo y a su país. </p>
+<p>Muchas  gracias, por esta visita. </p>
+<p> Solicito  a las Senadoras y a los Senadores integrantes de las comisiones de cortesía se  sirvan acompañar a nuestros invitados hasta las puertas de este recinto cuando  deseen retirarse. </p>
+<p>Asimismo,  insto a mis compañeras y compañeros Senadores a que permanezcan en el salón de  sesiones para continuar con la sesión ordinaria. </p>
+<p>Se  levanta la sesión solemne. </p>
+<p align="center">(Se  levantó la sesión a las 10:32 horas) </p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130468'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

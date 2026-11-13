@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>PRIMER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO I</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 3</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Gerardo Fernández Noroña</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Ordinaria Celebrada<br>en la Ciudad de M&eacute;xico, el 05 de Septiembre de 2024</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/1/PPO/PDF-WEB/PPO_No3_05-SEPTIEMBRE-ACT_2024.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116943'></a><p align="center"><strong>PRESIDE EL SENADOR</strong><br>
+  <strong>GERARDO FERNÁNDEZ NOROÑA</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>(13:42 horas) Solicito a la Secretaría informe a la  Asamblea el resultado del cómputo de asistencia de las Senadoras y Senadores.</p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat: </strong>Señor<strong> </strong>Presidente,  conforme al registro de asistencia, se han acreditado 120 ciudadanas Senadoras  y ciudadanos Senadores. En consecuencia, hay quórum, señor Presidente.</p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>Se abre la sesión del jueves 5 de septiembre de  2024, correspondiente al primer periodo ordinario de sesiones del primer año de  ejercicio de la LXVI Legislatura. </p>
+<p>Solicito a la Secretaría dé lectura al Orden del  Día de la sesión. Adicionalmente, si requieren un ejemplar impreso, pueden  solicitarlo a la Secretaría. </p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat: </strong>Con gusto, señor  Presidente. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>Un segundo, Secretaria. Estamos en el Orden del  Día, no hay punto de debate, el Orden del Día no está a debate.</p>
+<p>En el acta, en todo caso, podría participar. No hay  ningún desorden, Senadora. </p>
+<p>Adelante, Secretaria, por favor. </p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat: </strong>Con gusto, señor  Presidente. </p>
+<p align="right"><strong>ORDEN DEL DÍA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/gaceta_del_senado/documento/143964"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es cuanto, señor  Presidente.</p>
+<p> <strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>El acta de la sesión del 3  de septiembre de 2024 se encuentra publicada en la Gaceta Parlamentaria de este  día. </p>
+<p align="right"><strong>ACTA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/gaceta_del_senado/documento/143966"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/asistencias/2024_09_03/1"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>En consecuencia,  consulte la Secretaría a la Asamblea, en votación económica, si se aprueba el  acta referida. </p>
+<p><strong>La Secretaria  Senadora Verónica Noemí Camino Farjat: </strong>Con gusto, señor  Presidente. Consulto a la Asamblea, en votación económica, si se aprueba el  acta referida. Quienes estén porque se apruebe, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea asiente)</p>
+<p>Quienes estén porque  se rechace, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p>Quienes se abstengan,  favor de levantar la mano. </p>
+<p>Aprobada el acta,  señor Presidente. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Aprobada el acta de la  sesión del 3 de septiembre de 2024. </p>
+<p>Continúe la  Secretaría. </p>
+<p align="justify">&nbsp;</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116943'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116944'></a><p>Solicito a la  Secretaría dé lectura a la comunicación que nos ha hecho llegar el Senador  Marcelo Luis Ebrard Casaubón. </p>
+<p><strong>SOLICITUD DE LECENCIAS</strong></p>
+<p><strong>La Secretaria  Senadora Verónica Noemí Camino Farjat: </strong>Con gusto, señor  Presidente, doy lectura a la comunicación.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-05-1/assets/documentos/Licencia_Sen_Marcelo_Ebrard.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es cuanto, señor  Presidente.</p>
+<p> <strong>El Presidente Senador Gerardo Fernández Noroña: </strong>En consecuencia, con fundamento en lo dispuesto por  el artículo 12 del Reglamento del Senado, está a consideración de la Asamblea  el siguiente:</p>
+<p align="center">&ldquo;Punto de Acuerdo:</p>
+<p>Único. Se concede licencia al Senador Marcelo Luis  Ebrard Casaubón para separarse de sus funciones legislativas, por tiempo  indefinido, a partir del 5 de septiembre de 2024&rdquo;. </p>
+<p>Está a discusión. Muy bien, no habiendo oradores ni  oradoras registradas, consulte la Secretaría a la Asamblea…</p>
+<p>¿Sobre este tema? A ver, ¿sobre este tema?</p>
+<p>Lo que está en discusión en este momento, Senadora,  es…</p>
+<p>Muy bien, estamos en este momento sobre la  licencia. </p>
+<p>Si es sobre la licencia, tiene el uso de la palabra  la Senadora Anaya. </p>
+<p>Pido a la Asamblea guardar silencio y escuchar con  respeto a la Senadora Anaya, que hará uso de la palabra. </p>
+<p><strong>La Senadora Claudia Edith Anaya Mota: </strong>(Desde su escaño) Gracias, señor Presidente. </p>
+<p>Quiero hablar sobre las licencias. </p>
+<p>Esta sesión fue convocada únicamente por el  Presidente del Senado, sin Acuerdo de la Mesa Directiva, tal cual marca el  Reglamento. </p>
+<p>Me preocupa que todo lo que aquí se vote carezca de  validez, porque finalmente ésta parece ser una sesión apócrifa, a razón de que  todos los artículos del Reglamento marcan que, por Acuerdo de la Mesa Directiva  o por Acuerdo de la Mesa Directiva y la Jucopo, se puede cambiar de salón de  sesiones. </p>
+<p>Por ejemplo, el Artículo 46 dice: &ldquo;<em>El Senado  puede cambiar temporalmente el lugar en donde sesione el Pleno…&rdquo;</em></p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>A ver, hay dos mociones. </p>
+<p>¿Me permite Senadora?, hay dos mociones de orden.</p>
+<p>Tiene la palabra…</p>
+<p><strong>La Senadora Claudia Edith Anaya Mota: </strong>(Desde su escaño) Sí, señor Presidente, pero estoy  en el uso de la voz. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>A ver, Senadora, nada más que no está en el punto.  El punto que está a discusión…</p>
+<p><strong>La Senadora Claudia Edith Anaya Mota: </strong>(Desde su escaño) Estoy en el punto. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>A ver, podría…</p>
+<p><strong>La Senadora Claudia Edith Anaya Mota: </strong>(Desde su escaño) Carece de validez…</p>
+<p> <strong>El Presidente Senador Gerardo Fernández Noroña: </strong>Senadora, le pido, primero, respeto a la  Presidencia de la Mesa Directiva. </p>
+<p>En segundo lugar, tengo facultades para llamar al  orador a que se circunscriba Al tema. El tema es la licencia del Senador  Marcelo Ebrard Casaubón. A pesar de eso, no la he interrumpido y hay dos  Senadores que me están pidiendo la palabra por moción de orden.</p>
+<p>Por si esto no fuera suficiente, en la Mesa  Directiva le aclaramos perfectamente que esta sesión fue convocada de manera  legal, porque esta antigua sede del Senado es sede del Senado de la República y  el Presidente de la Mesa Directiva de la Cámara de Senadores tiene facultades  para convocar a esta Asamblea. </p>
+<p>Se lo aclaramos pertinente y claramente y, a pesar  de eso, usted vuelve a insistir en el tema fuera de orden. </p>
+<p>Así es que le pido que, si no va a intervenir  sobre…</p>
+<p><strong>La Senadora Claudia Edith Anaya Mota: </strong>(Desde su escaño) Es sobre el tema. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>No, no es el tema. </p>
+<p>Si no va a intervenir sobre la licencia del Senador  Ebrard Casaubón, le pido entonces que permita que siga la sesión. </p>
+<p>De lo contrario, daré la palabra a los Senadores  que me están solicitando una moción de orden. </p>
+<p><strong>La Senadora Claudia Edith Anaya Mota: </strong>(Desde su escaño) Me parece perfecto, nada más  quiero que me permita hablar sobre la licencia del Senador Marcelo Ebrard. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña: </strong>Con mucho gusto, le ha sido otorgada la palabra  para que hable sobre la solicitud de licencia. </p>
+<p><strong>La Senadora Claudia Edith Anaya Mota: </strong>(Desde su escaño) Y siendo al respecto de que, si  se aprueba aquí la licencia del Senador Marcelo Ebrard Casaubón, puede carecer  de efectos legales, porque finalmente, aunque usted puede convocar en el salón  de sesiones, el artículo 46, numeral 3, nos señala que cuando se vaya a cambiar  temporalmente el lugar en donde sesiona el Pleno, tiene que tener la mayoría de  los votos de los Senadores de la Mesa Directiva.</p>
+<p>En todos los artículos del Reglamento nos dice que  usted tiene que tener un Acuerdo de la Mesa Directiva o de la Jucopo, pero en  el Acuerdo que se vota en esta misma semana, en la sesión anterior, nos dice  que podemos cambiar de sede cuando existan causas de fuerza mayor que no  permitan que en nuestra sede sesionemos. </p>
+<p>El tema es que hay un video de los Senadores del  PRI en donde ingresaron al Senado de la República en su sede oficial.</p>
+<p><strong>El Presidente Senador Gerardo Fernández  Noroña: </strong>Senadora, no está tocando el tema, y además sigue  abundando.</p>
+<p>Permítame, Senadora, yo la convoco a que respete a la Asamblea, y trate  el tema que está siendo convocado. </p>
+<p>Porque le fue aclarado en la reunión de la Mesa Directiva, y a pesar de  eso usted vuelve. </p>
+<p> Yo pido, miren, artículo 39. </p>
+<p>Un momento, Senador Añorve. </p>
+<p>El Presidente, además de las atribuciones previstas en la ley tiene la  siguiente:</p>
+<p>Inciso 2) convocar a las sesiones del Pleno y de la Mesa. </p>
+<p>Es una facultad que tiene el Presidente, y la he ejercido. Y se lo  expliqué </p>
+<p>Segundo. El Acuerdo que este Pleno abordó y aprobó dice: En caso de que  se presenten circunstancias de fuerza mayor o caso fortuito, que hagan  imposible el trabajo del Senado de la República, en el salón de sesiones, el  Pleno del Senado de la República autoriza que las sesiones plenarias a  celebrarse en el lapso del Primer Período Ordinario y sesiones del Primer Año  del Ejercicio de la LXVI Legislatura se realicen en sitio diverso al salón de  sesiones dentro del recinto del Senado de la República. </p>
+<p>Estamos en un recinto del Senado de la República, y se respeta mi  facultad para convocar al Pleno. Y así lo hice, y le fue aclarado en la sesión  de la Mesa Directiva. </p>
+<p>A pesar de eso, reitera aquí en el Pleno </p>
+<p>Y, finalmente, el caso en el que su reclamo operaría es en el numeral 2,  del Acuerdo aprobado por el Pleno, que dice: En caso de que ninguna de las  instalaciones dentro del recinto del Senado de la República se cuente con las  condiciones necesarias para las sesiones de la Cámara, el Pleno del Senado  autoriza a la Mesa Directiva para que disponga de un lugar en la Ciudad de  México, de un local en la Ciudad de México que cuente con los servicios que  requiere el trabajo del Pleno del Senado. </p>
+<p>No es lo que está sucediendo, estamos en un recinto del Senado de la  República, es legal y legítima mi convocatoria. </p>
+<p>Y, por consiguiente, pido que podamos continuar con la solicitud de  licencia del Senador Marcelo Ebrard Casaubón. </p>
+<p>Está solicitándome la palabra…</p>
+<p><strong>La Senadora Claudia Edith Anaya Mota:</strong> (Desde su escaño) Sí, señor Presidente, pero lea el artículo, por  favor, el artículo 46, numeral 3, en donde dice que estando en un salón sede  del Senado de la República para cambiar temporalmente el Pleno, se necesita  también un Acuerdo de la Jucopo. </p>
+<p>¿Dónde está?</p>
+<p><strong>El Presidente Senador Gerardo Fernández  Noroña: </strong>Ya leí los Acuerdos que este Pleno me facultó y que  la ley me faculta. </p>
+<p>No voy a seguir debatiendo. </p>
+<p>Pido a la Senadora Anaya respeto, porque ha estado, desde un inicio,  queriendo abordar un tema, que con toda franqueza lo abordamos en la Mesa  Directiva, lo explicamos. Y ella no se dio por enterada de la situación. </p>
+<p>Y a pesar de eso se sigue planteando el tema. </p>
+<p>Así es que, antes me habían pedido la palabra varios. </p>
+<p>Senador Añorve.</p>
+<p> <strong>El Senador Manuel Añorve Baños:</strong> Era sobre el tema, señor Presidente. </p>
+<p>¿Podemos nosotros estar de acuerdo? Por supuesto, que estamos de acuerdo  con la Senadora Claudia Anaya. Y ustedes pudieran no estar de acuerdo. </p>
+<p>Pero lo que le quería yo pedir es que terminara la Senadora Claudia  Anaya de hacer su exposición, que no se le interrumpiera, y después hacer su  argumentación. </p>
+<p>Por la atención, gracias. </p>
+<p>Y gracias por permitir que terminara la Senadora Claudia de manifestar  su inconformidad. </p>
+<p>Pero sí pedirle, atentamente, en próximos debates o próximas sesiones,  este tema tan particular.</p>
+<p>Es cuanto. </p>
+<p>Gracias. </p>
+<p><strong>El Presidente Senador Gerardo Fernández  Noroña: </strong>Sí, Senador Añorve Baños. </p>
+<p>Lo comentamos con mucho detalle en la Mesa Directiva antes de venir acá.</p>
+<p>No estaríamos en una sesión que no tuviera la legalidad y la  legitimidad, de ninguna manera. </p>
+<p>Está aclarado ante el Pleno. </p>
+<p>Así es que pido a la Secretaría poner a votación el Acuerdo.</p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat: </strong>Con gusto, señor Presidente. Consulto a la  Asamblea, en votación económica, si es de aprobarse el Acuerdo.</p>
+<p>Quienes estén por la afirmativa, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén por la negativa, favor de levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p>Quienes se abstengan, favor de levantar la mano. </p>
+<p>Aprobado, señor Presidente. </p>
+<p><strong>El Presidente Senador Gerardo Fernández  Noroña: </strong>Aprobado el Acuerdo. </p>
+<p>En consecuencia, se concede licencia al Senador Marcelo Luis Ebrard  Casaubón para separarse de sus funciones legislativas por tiempo indefinido a  partir de hoy 5 de septiembre del 2024. Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116944'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116945'></a><p>Solicito ahora a la Secretaría dé lectura a la comunicación que nos  remitió el Senador Juan Carlos Loera de La Rosa.</p>
+<p> <strong>La Secretaria Senadora Verónica Noemí Camino Farjat:</strong> Con gusto, señor  Presidente. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-05-1/assets/documentos/Licencia_Sen_Juan_Carlos_Loera.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es cuanto, señor Presidente.</p>
+<p><strong>El Presidente Senador Gerardo Fernández  Noroña:</strong> En consecuencia, con fundamento en lo dispuesto  por el artículo 12 del Reglamento del Senado, está a consideración de la  Asamblea el siguiente:</p>
+<p align="center">&ldquo;Punto de Acuerdo:</p>
+<p>Único. Se concede licencia al Senador Juan Carlos Loera de La Rosa para  separarse de sus funciones legislativas, por tiempo indefinido, a partir del 5  de septiembre de 2024&rdquo;. </p>
+<p>Al no haber oradoras ni oradores inscritos, pido a la Secretaría que  consulte a la Asamblea, en votación económica, si es de aprobarse el Acuerdo.</p>
+<p> <strong>La Secretaria Senadora Verónica Noemí Camino  Farjat:</strong> Con gusto, señor Presidente. Consulto a la  Asamblea, en votación económica, si es de aprobarse el Acuerdo. Quienes estén  por la afirmativa, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén por la negativa, favor de levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p>Quienes se abstengan, favor de levantar la mano. </p>
+<p>Aprobado el Acuerdo, señor Presidente. </p>
+<p><strong>El Presidente Senador Gerardo Fernández  Noroña:</strong> Aprobado el Acuerdo. En consecuencia, se concede  licencia al Senador Juan Carlos Loera de La Rosa para separarse de sus  funciones legislativas, por tiempo indefinido, a partir del 5 de septiembre de  2024. Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116945'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116946'></a><p>Honorable Asamblea, a partir de la licencia que acaba de autorizarse al  Senador Marcelo Luis Ebrard Casaubón, se ha convocado al ciudadano Emanuel  Reyes Carmona, para que rinda la protesta correspondiente. </p>
+<p>El ciudadano Reyes Carmona se encuentra en el salón contiguo. Por esta  razón, solicito a las Senadoras y Senadores: Martha Lucia Micher Camarena,  Minerva Citlalli Hernández Mora, Laura Estrada Mauro, Antonino Morales Toledo y  Yeidckol Polevnsky Gurwitz, lo inviten a pasar a este salón de sesiones y lo  acompañen durante el acto de su protesta. </p>
+<p align="center">(La Comisión cumple)</p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat:</strong> Señor Presidente, en tanto se dé el acto de  protesta, el Senador Alberto Anaya Gutiérrez solicita sea registrada su  asistencia. </p>
+<p><strong>El Presidente Senador Gerardo Fernández  Noroña:</strong> Pido a las Senadoras y Senadores ponerse de pie,  por favor. </p>
+<p align="center">(Todos de pie)</p>
+<p><strong>PROTESTA DE LEY</strong></p>
+<p>Ciudadano Emmanuel Reyes Carmona, esta Soberanía le ha convocado para  que rinda su protesta constitucional y legal como Senador de la República. En  consecuencia, le pregunto: ¿protesta guardar y hacer guardar la Constitución  Política de los Estados Unidos Mexicanos, las leyes que de ella emanen y  desempeñar leal y patrióticamente el cargo que el pueblo le conferido, mirando  en todo por el bien y la prosperidad de la Unión?</p>
+<p><strong>El Ciudadano Emmanuel Reyes Carmona:</strong> ¡Sí, protesto!</p>
+<p><strong>El Presidente Senador Gerardo Fernández  Noroña:</strong> Si así no lo hiciere, que la Nación se lo demande. </p>
+<p>¡Felicidades, compañero Senador!</p>
+<p>Le solicito pase a ocupar el escaño que le ha sido asignado a fin de que  se incorpore inmediatamente a nuestros trabajos. </p>
+<p>Favor de tomar asiento. </p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Señor<strong> </strong>Presidente, también se hace el registro de la presencia de la Senadora  Julieta Ramírez en el Pleno. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Muy  bien.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116946'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116947'></a><p><strong>CÁMARA DE DIPUTADOS</strong></p>
+<p>Antes de pasar al siguiente asunto, informo a  la Asamblea que se recibió de la Cámara de Diputados MINUTA PROYECTO DE DECRETO  POR EL QUE SE REFORMAN, ADICIONAN Y DEROGAN DIVERSAS DISPOSICIONES DE LA  CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS, en materia de reforma  del Poder Judicial. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-05-1/assets/documentos/Minuta_Poder_Judicial.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Con  fundamento en los artículos 67 de la Ley Orgánica del Congreso General y 176  del Reglamento del Senado de la República, se turnó a las Comisiones Unidas de  Puntos Constitucionales; y de Estudios Legislativos el día de ayer, 4 de  septiembre, y desde ayer mismo se encuentra publicado en la Gaceta  Parlamentaria. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116947'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116948'></a><p>Honorable  Asamblea, informo que la Mesa Directiva acordó abrir una ronda de  intervenciones de los grupos parlamentarios para referirse a la fundación del  Partido Mexicano de los Trabajadores. </p>
+<p>Las  participaciones serán en orden creciente y por un tiempo de hasta cinco minutos  cada una. </p>
+<p>Tengo  inscritos solamente a oradores y oradoras por el grupo parlamentario del  Partido del Trabajo y del grupo parlamentario de Morena por los 50 Años de  Fundación del Partido Mexicano de los Trabajadores. </p>
+<p>Tocaría  a Movimiento Ciudadano, si declinan a su participación, que quiero entenderlo  así, entonces tendría sólo la palabra la Senadora Lizeth Sánchez García, del  Partido del Trabajo, y la Senadora Laura Itzel Castillo, de Morena. </p>
+<p>El  Senador Añorve, por parte del PRI. </p>
+<p>Es  que es uno por grupo parlamentario, Senador Martínez. </p>
+<p>Tiene  el uso de la voz, en orden ascendente… Tengo a tres Senadores y Senadoras  registrados. Lo hago de comunicación de la Asamblea. </p>
+<p>Tiene  la palabra la Senadora Lizeth Sánchez García, del PT, hasta por cinco minutos.</p>
+<p><strong>INTERVENCIONES</strong></p>
+<p><strong>La  Senadora Lizeth Sánchez García: </strong>Con el pueblo todo, sin el  pueblo nada. Buenas tardes, compañeros Senadores y Senadoras. </p>
+<p>La  historia de nuestro país es sinónimo de lucha social, cada época ha tenido y  tendrá personas e instituciones cuya labor está encaminada a mejorar las  condiciones sociales y a buscar la protección de los desprotegidos. </p>
+<p>En  esta noble causa el trabajo constante y la entrega diaria son la fuerza que  impulsa el cambio. </p>
+<p>Hoy  conmemoramos el 50 Aniversario de la Fundación del Partido Mexicano de los  Trabajadores, un hito fundamental en la historia de las luchas sociales en  México. </p>
+<p>Fue  fundado en 1974, encabezado por Heberto Castillo, Demetrio Vallejo y César del  Ángel, quienes con su visión clara se comprometieron a ser un partido  revolucionario y de auténtica oposición, siempre con la transformación social  en favor de los oprimidos como su principal objetivo. </p>
+<p>La  visión de estos luchadores sociales era audaz: construir un partido de masas  que representara a aquellos que no tenían voz y forjar una sociedad en la que  los medios e instrumentos de producción fueran de propiedad social, evitando la  concentración de la riqueza en manos de una minoría privilegiada. </p>
+<p>En  su Declaración de Principios el Partido Mexicano de los Trabajadores estableció  23 puntos que resumían sus aspiraciones; entre ellos, la nacionalización de la  banca, las industrias básicas, los medios de comunicación, los transportes y  servicios públicos, conforme al espíritu del artículo 27 constitucional. </p>
+<p> Estos  principios no sólo reflejan la lucha de una época, sino que siguen resonando en  nuestro presente, recordándonos que la justicia social es una tarea que se  construye día a día. </p>
+<p>En  defensa de la economía popular, el PMT proponía el control de precios, una  escala móvil de salarios, la creación de empleos por parte del Estado y la  reducción de la pequeña propiedad agrícola. </p>
+<p>Este  programa de acción no sólo demanda reformas estructurales, sino que planteaba  un cambio profundo en la organización de la sociedad. </p>
+<p>Estas  ideas son testimonio de una lucha constante, una que sigue viva en cada rincón  de nuestro país. </p>
+<p>Es  significativo que, coincidiendo con el momento histórico en el que nos  encontramos, el Partido Mexicano de los Trabajadores incluyó, entre sus  propuestas innovadoras, la elección por el pueblo de los magistrados del Poder  Judicial. </p>
+<p>Estas  propuestas siguen siendo vigentes y necesarias en nuestra lucha por una  sociedad más justa, recordándonos que la participación popular…</p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Si  me permite un momento, Senadora. </p>
+<p>Pido  a la Asamblea guardar silencio y poner atención a la oradora, hay mucho ruido  y, si algunos tienen interés en entablar alguna conversación, hay salones  alternos donde puedan realizar la misma. </p>
+<p>Adelante,  Senadora. </p>
+<p><strong>La  Senadora Lizeth Sánchez García: </strong>Gracias, señor Presidente. </p>
+<p>Recordándonos  que la participación popular es la base de cualquier cambio verdadero.</p>
+<p>Hoy,  a 50 años de su fundación, reconocemos que su legado sigue vivo en las luchas  del presente y que uno de sus herederos directos es el Partido del Trabajo,  porque el Partido del Trabajo, al igual que el PMT, es producto del proceso de  lucha de las masas populares, surgido del seno de las organizaciones sociales. </p>
+<p>Nuestra  historia y nuestra lucha diaria son el testimonio de un compromiso  inquebrantable con las clases trabajadoras, los campesinos, los indígenas, las  mujeres y los jóvenes de México. </p>
+<p>El  Partido del Trabajo vive para servir al pueblo de México. </p>
+<p>En  este 50 Aniversario exaltamos el legado del PMT, una expresión genuina de las  aspiraciones de un pueblo que anhelaba justicia, igualdad y democracia. </p>
+<p>Su  impacto fue profundo no sólo en los movimientos de su época, sino también en  las generaciones posteriores que continuamos con la lucha día a día. </p>
+<p>Hoy,  más que nunca, es necesario recordar que las conquistas sociales no se regalan,  se ganan en las calles, en las fábricas, en el campo y en los centros de  estudio. </p>
+<p>El  Partido Mexicano de los Trabajadores nos enseñó que la cercanía y el interés  real por el pueblo debe ser el eje central de nuestro deber.</p>
+<p> <strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Pedimos  concluya, Senadora, su intervención, por favor. </p>
+<p><strong>La  Senadora Lizeth Sánchez García: </strong>Sí, termino. </p>
+<p>Sigamos  adelante fortaleciendo el poder popular y construyendo un país justo y  solidario donde cada día sea una nueva oportunidad para luchar por un mejor  mañana. </p>
+<p>¡Viva  el Partido Mexicano de los Trabajadores!</p>
+<p>¡Vivan  las luchas del pueblo mexicano!</p>
+<p>¡Unidad  nacional, todo el poder al pueblo de México!</p>
+<p>Muchas  gracias. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Tiene  la palabra, por el Partido Revolucionario Institucional, el Senador Manuel  Añorve. </p>
+<p>Informo  que el Senador Higinio Martínez intervendrá en el espacio del Partido Verde  Ecologista de México, que le ha cedido la participación. </p>
+<p><strong>El  Senador Manuel Añorve Baños: </strong>Con el permiso de la  Presidencia. </p>
+<p>Hoy  se conmemoran 50 años de la creación del Partido Mexicano de los Trabajadores  y, con todo respeto, quiero decirles: ¿Cómo quieren o cómo queremos esta  celebración, dándole la espalda a miles de trabajadores del  Poder Judicial Federal, dándole la espalda a miles de estudiantes de diversas  universidades, y particularmente a la Universidad Nacional Autónoma de México,  estamos en éste, frente a un momento crucial para la República y para la  democracia?</p>
+<p>Esto lo saben miles de ciudadanos, sobre todo estudiantes, que han  levantado la voz y han salido a las calles para defender sus ideas y, por  supuesto un principio fundamental, la independencia y la imparcialidad del  Poder Judicial…</p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña:</strong> Permítame, Senador Añorve, permítame un  momento.</p>
+<p>Vuelvo a pedir a la Asamblea guardar silencio, respetar al orador y que  si quieren entablar alguna conversación lo hagan en algún salón anexo. De  verdad hay muchísimo ruido. </p>
+<p>Entonces, adelante, Senador Añorve. </p>
+<p><strong>El Presidente Manuel Añorve  Baños: </strong>Gracias, señor Presidente. </p>
+<p>Hoy, esos jóvenes comprometidos con el futuro de México, están a la  puerta de este Senado para recordarnos nuestra obligación como representantes  de la Nación, de escucharlos y atender sus demandas. </p>
+<p>Es sólo apoyarlos escuchándolos, obviamente abrir el diálogo y si están  allá afuera y estuvieran en la Cámara de Diputados, por qué no los recibe la  Junta de Coordinación Política, tanto los estudiantes como a los trabajadores  del Poder Judicial, no marquen una tendencia de cerrarse al diálogo que  requiere este país. </p>
+<p>Sin embargo, lo que están demostrando, el oficialismo, una vez más, es  negarse a escuchar. </p>
+<p> Ustedes llaman a los jóvenes a servir y a hacer política, hoy se les  está cerrando la puerta. </p>
+<p>Yo quiero decirles lo siguiente: si Heberto Castillo viviera, sería el  que estaría encabezando, no solamente esta lucha, sino estaría encabezando el  conducto del diálogo que requiere este país. </p>
+<p>Yo les quiero preguntar, porque este es un buen marco de referencia, el  de la conmemoración de 50 años de la creación del Partido Mexicano de los  Trabajadores, ¿por qué quieren seguir argumentando una reforma regresiva y me  refiero al Poder Judicial, a esa reforma regresiva?</p>
+<p>¿Por qué no abrimos el diálogo? Cuando hace pocos días de la legislatura  pasada en el mes de agosto inscribimos con letras de oro a nuestra Universidad  Nacional Autónoma de México en el Senado de la República, donde hemos honrado a  los egresados de nuestra Universidad, ese lema que nos llega en el alma: <em>&ldquo;Por  mi raza hablará el espíritu&rdquo;.</em></p>
+<p>¿Por qué no podemos nosotros ser, en una gran Comisión Plural, los que  hagamos este diálogo y no marcar la tendencia que se dio en Cámara de  Diputados?</p>
+<p>Yo quiero decirles las cosas como son, debemos de escuchar a todos,  aunque no coincidan con el oficialismo, no se dan cuenta que le están  complicando con este movimiento a la futura Presidenta de México, que nadie  niega que ha sido votada por miles de mexicanos, no se dan cuenta que le están  complicando innecesariamente la transición a la nueva Presidenta, que le están  dejando movimientos estudiantiles en las calles, que le están dejando  movimientos de trabajadores en las calles que, por supuesto tenemos plantones  en el Senado de la República, tenemos que venir a sesionar a una sede alterna,  por supuesto que no es agradable, cuando debería este gobierno que está  terminando y ustedes que lo representan, abrir el diálogo no solamente con la  oposición responsable, sino con los sectores, que lo único que quieren es que  reciba una comisión a los estudiantes y a los trabajadores, una comisión en el  Senado de la República que, por cierto, el grupo parlamentario del PRI está  dispuesto a escucharlos en la Junta de Coordinación Política. </p>
+<p>Por eso, compañeras y compañeros, seamos, y lo vamos a seguir siendo una  oposición responsable, pero crítica también, y vamos a demandar que también la  mayoría lo sea. </p>
+<p>Por lo pronto, termino diciéndoles lo siguiente, a los jóvenes que están  aquí afuera de Xicoténcatl, que los vamos a recibir y vamos a escucharlos.</p>
+<p>Podemos estar de acuerdo o no, pero finalmente es una lucha real que se  manifestó en las calles y no podemos culpar a los maestros de que están  promoviendo este tipo de manifestaciones. </p>
+<p>Señores, aquí todos nos jactamos de haber sido universitarios, de venir  de la lucha y del esfuerzo, escuchemos a los estudiantes...</p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Concluya, Senador. </p>
+<p><strong>El Senador Manuel Añorve  Baños: </strong>…escuchemos a los estudiantes y escuchemos a los  trabajadores del Poder Judicial. </p>
+<p>Es cuanto, señor Presidente. </p>
+<p>Muchas gracias. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Muchas gracias, Senador Añorve Baños. </p>
+<p> Tiene el uso de la palabra el Senador Higinio Martínez Miranda, del  grupo parlamentario del Partido Morena, en espacio cedido por el grupo  parlamentario del PVEM.</p>
+<p><strong>El Senador Higinio Martínez  Miranda: </strong>Gracias, señor Presidente. Compañeras y compañeros  Diputados, los que están allá afuera, acá son Senadores. Compañeras y  compañeros Senadores: </p>
+<p>Tal vez para la absoluta mayoría, no quede claro qué significa esto de  conmemorar 50 años de un partido, el Partido Mexicano de los Trabajadores, 50  años, estamos hablando de 1974, cuando se forma un partido, formado, entre  otros, principalmente por un ingeniero llamado, que ahí sí todos lo conocemos,  el ingeniero Heberto Castillo. </p>
+<p>Y se fundó ese partido, en 1974, producto, fundamentalmente de la  estancia que estuvo Heberto Castillo en Lecumberri, preso por el movimiento de  1968, junto con otro líder ferrocarrilero que estuvo cerca de once años en la  cárcel, Demetrio Vallejo, y los líderes estudiantiles, fundamentalmente, y  muchos intelectuales de esa época, que desde entonces en la cárcel y saliendo  en 1971 de la cárcel, y habiendo vivido la represión del 68, por gobiernos  priistas, ellos decían, que el camino, desde entonces no era el PRI, tampoco la  lucha armada que promovían en muchos lugares, la lucha pacífica, la lucha  electoral. </p>
+<p>No el PRI, no el PAN, que representaban los mismos intereses de hoy, la  parte de la derecha, pero el PRI representaba todo lo malo que significaba  haber reprimido a muchos estudiantes y muchos casos que pasaron la década de  los 60s y 70s. </p>
+<p>Por eso decidieron formar un partido político, en ella contribuyeron  gente, entonces como don Luis Villoro, como Carlos Fuentes, el propio Carlos  Monsiváis, mucha gente. </p>
+<p>Y subo aquí a esta tribuna, porque soy Senador de la República, porque  si estoy aquí como Senador de la República, por el Estado de México, por  tercera ocasión que soy Senador, es porque en el año de 1975, no en 74, en  1975, yo joven, decidí afiliarme al Partido Mexicano de los Trabajadores, al  PMT, por voluntad propia. </p>
+<p>No estudié ciencias políticas, estudié medicina y decidí, leyendo a  Heberto Castillo, a Eduardo del Río Rius, que ese era el camino para combatir  el PRI, entonces, el camino no era por el PRI, ni por un partido fantasma, que  crearon el Partido Socialista de los Trabajadores, ni la lucha armada, fue el  del ingeniero Heberto Castillo y, hasta entonces lo seguí. </p>
+<p>Extraño, tal vez ya esto es pura nostalgia, pura añoranza, decía ahorita  Manuel Añorve, claro que se traen muchas cosas, yo extraño, yo me formé así. </p>
+<p>Yo estuve con la gente que estuvo en la cárcel, luchamos siempre contra  el PRI, ya los quitamos del gobierno federal, en mi estado ya lo logramos  después de 70 años, pero extraño esas pláticas, esas reuniones con Heberto  Castillo, incluso poco después don Pepe Álvarez Icaza, que fue parte don Pepe,  dije Álvarez Icaza, no dije Emilio Álvarez Icaza, dije don Pepe Álvarez Icaza,  un hombre con el que convivimos y que fue un, fíjense bien, a él se le atribuye  haber inventado esa frase de &ldquo;comunismo, sí; cristianismo, no&rdquo; en la época de  los sesenta, y don Pepe Álvarez Icaza se unió con Heberto y todos ellos. </p>
+<p>Vale  la pena conmemorar a los que venimos de ese tiempo, a este país hay que  transformarlo, a este país hay que darle lo que todavía no tiene, desde mi  punto de vista. A este país le falta mucho para ser por lo que luchamos y  soñamos hace años mucha gente. Tenemos que adaptarnos a la realidad, claro. </p>
+<p> Hoy  quienes gobernamos somos un gran movimiento donde cabemos gente que antes  estábamos en trincheras distintas, unos veníamos del PMT, después nos  transformamos en PMS, después nos transformamos en PRD…</p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Concluya  su intervención, por favor, Senador Martínez. </p>
+<p><strong>El  Senador Higinio Martínez Miranda: </strong>…termino. </p>
+<p>Y  después nos transformamos en Morena. </p>
+<p>Ahora  varios estamos juntos. </p>
+<p>Lo  que importa es, ojalá todos podamos sacar adelante a este país, que es lo que  se merece. </p>
+<p>Gracias,  señor Presidente. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Muchas  gracias al Senador Higinio Martínez Miranda. </p>
+<p>Tiene  la palabra la Senadora Amalia García, por el grupo parlamentario de Movimiento  Ciudadano. </p>
+<p><strong>La  Senadora Amalia Dolores García Medina: </strong>Señor  Presidente, compañeras y compañeros. </p>
+<p>No  tenía información de que íbamos a hacer esta efeméride dedicada a la fundación  del Partido Mexicano de los Trabajadores, pero, antes que nada, quiero saludar  a la Senadora Laura Itzel Castillo Juárez, hija de Heberto Castillo, que vivió  desde siempre, desde niña, con su familia una historia de lucha. </p>
+<p>Lo  que hoy en esta efeméride se está conmemorando son 50 años de la fundación, la  creación del Partido Mexicano de los Trabajadores. </p>
+<p>¿Por  qué decidió Heberto Castillo, junto con otros mexicanos y mexicanas, entre  ellos Demetrio Vallejo, Carlos Fuentes, Carlos Monsiváis, Villoro, fundar el  PMT? Porque estaban absolutamente en contra del poder absoluto y lo habían  ratificado con su propia historia de vida. Ellos querían, los que fundaron el  PMT, que en México se pasara de la condición de súbditos a la condición de  ciudadanas y ciudadanos. Ese era su objetivo y su lucha. Vivieron en una época  extraordinariamente difícil y compleja, porque habían vivido lo que entonces en  la legislación existía, que era que, ante la protesta, había el delito de  disolución social; quien protestaba tenía como futuro la cárcel, la prisión. No  era un asunto menor. </p>
+<p>Y  lo digo en el caso de Demetrio Vallejo, gran fundador del PMT, porque habiendo  ganado con más de 90 por ciento de los votos la Dirección, la Secretaría  General del Sindicato Ferrocarrilero, por disentir fue llevado a prisión y  junto con Valentín Campa estuvo más de 12 años privado de la libertad. </p>
+<p>Heberto  Castillo, que, por cierto, vale la pena decirlo hoy, en este mes de septiembre,  en el 68, el 15 de septiembre dio el Grito de Independencia en Ciudad  Universitaria. Y ese gran mexicano, no solamente un gran ingeniero, sino un  genio, el inventor de la tridilosa y de tantas iniciativas científicas más, fue  apresado junto con cientos y cientos de jóvenes que lo que estaban reclamando  en ese momento era democracia, libertad y justicia. </p>
+<p> ¿Qué  es lo que querían con el PMT cuando salieron de prisión? Después de que habían  sido perseguidos y que incluso Heberto Castillo en una biografía relataba que  cuando fueron por él, quien le dio cobijo le dijo: <em>&ldquo;si te agarran, te van a  matar&rdquo;.</em> Ese era el régimen absolutista. </p>
+<p>Lo  que querían con ese partido, cuando él salió de la cárcel, era hacer política.  ¿Política en qué sentido? Y yo le doy contenido. Influir en los  acontecimientos. </p>
+<p>Este  es el contenido de política que tenemos que hacer y el que, con el PMT y  Heberto Castillo, reivindico, porque lo que querían era un México justo y con  igualdad, un México con libertad y con democracia. Y se apoyaron en la lucha de  los jóvenes, de la sociedad civil, del pueblo, que quería un México con futuro,  un México en el cual hubiera condiciones para vivir, desarrollarse y crecer. </p>
+<p>No  quiero extenderme, pero diría que hay una frase, un dicho que todas y todos  conocemos, dicen: Es indispensable que la historia se repite, pero hoy lo que  quisiéramos es que la historia no se repita como tragedia, sino que la  historia, en todo caso, sea con el legado de Heberto Castillo, de Demetrio  Vallejo, de todos aquellos luchadores y luchadoras por construir un México  justo, en libertad, democrático. </p>
+<p>Muchas  gracias. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Gracias  a usted, Senadora García Medina. </p>
+<p>Y  cierra esta ronda la Senadora Laura Itzel Casillo Juárez, del grupo  parlamentario del Partido Morena. </p>
+<p><strong>La  Senadora Laura Itzel Castillo Juárez: </strong>Con  su permiso, señor Presidente. </p>
+<p>Le  quiero solicitar que, de acuerdo al Reglamento, al artículo 76, fracción XI, se  pudiera extender mi participación a 10 minutos, como lo indica el Reglamento. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Se  conceden los 10 minutos a la Senadora Laura Itzel Castillo. </p>
+<p><strong>La  Senadora Laura Itzel Castillo Juárez: </strong>No  me voy a tardar tanto. </p>
+<p>Bueno,  es un honor para mí estar en esta alta tribuna de la nación, donde estuvo  legislando el ingeniero Heberto Castillo, mi padre, en este histórico recinto. </p>
+<p>Me  parece también muy importante mencionar que mi madre recibió la medalla para  Heberto Castillo, mi madre Tere Juárez, hace más de 20 años, la Medalla &ldquo;Belisario  Domínguez&rdquo; para el ingeniero Heberto Castillo Martínez. </p>
+<p>Y  el pasado 13 de junio se develaron letras doradas en la nueva sede de este  Poder Legislativo, del Senado de la República. </p>
+<p>Heberto  Castillo, como aquí se ha mencionado, fue un luchador social que construyó el  Partido Mexicano de los Trabajadores junto con Demetrio Vallejo Martínez. Los  dos, también como se ha señalado, habían permanecido en prisión, uno producto  del movimiento estudiantil de 1968 y el otro por el movimiento ferrocarrilero  de 1958. </p>
+<p>A  pesar de haber permanecido en la cárcel, uno por dos años y el otro por más de  11 años, en lugar de declinar en la participación, esto lo que hizo fue lograr  que lucharan y que no cejara realmente su compromiso por la transformación de  nuestro país. Decidieron recorrer la República para formar comités  en cada uno de los estados para la constitución de este proyecto que soñaban,  un partido político de auténtica oposición al régimen autoritario y represivo  que se vivía en esos momentos. </p>
+<p> Porque en lugar de disuadirlos para participar, esta misma lucha los  impulsó para construir con mayor ahínco el proyecto por el que soñaban. </p>
+<p>El 21 de septiembre de 1971, recuerdo, yo era una adolescente, se  realizó un llamamiento al pueblo de México, que se redactó en la biblioteca de  mi casa. Ahí mismo se dio una conferencia de prensa donde estuvieron Carlos  Fuentes y Octavio Paz. Las preguntas fueron dirigidas para Heberto Castillo,  Octavio Paz y Carlos Fuentes. </p>
+<p>Posteriormente, ese documento fue signado por Luis Villoro, un filósofo  muy importante, también participante del movimiento estudiantil de 68. Y por un  periodista, un periodista de la revista &ldquo;Siempre&rdquo;, José Pagés Llergo. </p>
+<p>Ellos firmaron este documento, junto con muchos jóvenes, que era la  semilla de ese gran movimiento del Partido Mexicano de los Trabajadores, como  se conformó posteriormente.   </p>
+<p>También firmaron dos abogadas, Carmen Merino y Silvia Millán, abogadas  defensoras de los presos políticos que había en esos momentos en las cárceles  de Lecumberri. </p>
+<p>Ellos y ellas, eso es muy importante, optaron por la lucha pacífica,  contrario a lo que se consideraba en esos momentos, dado que por la misma  represión el camino que se consideraba por parte de algunas organizaciones de  izquierda, era la lucha armada; solamente a través de la lucha armada a la que  los había orillado el régimen autoritario.</p>
+<p>Sin embargo, los participantes de este Partido Mexicano de los  Trabajadores decidieron la vía pacífica. </p>
+<p>Y mientras la izquierda se debatía entre el maurismo, trotskismo o hasta  el estalinismo, el Partido Mexicano de los Trabajadores consideraba que debería  de haber una propuesta de izquierda nacionalista. </p>
+<p>De esa manera, el 5 de septiembre de 1974, hace 50 años, se funda el  Partido Mexicano de los Trabajadores, se inicia su congreso constituyente. </p>
+<p>Y cito un párrafo, que me parece muy importante y consecuente de la  declaración de principios. </p>
+<p>&ldquo;El PMT surge enarbolando las banderas de Hidalgo, Morelos, Juárez,  Flores Magón, Villa, Zapata, Cárdenas y todos los mexicanos que defendieron los  derechos de los humildes y se enfrentaron con ellos a los poderosos&rdquo;. Y  proclama que luchará con todos los medios constitucionales, &ldquo;mucho ojo&rdquo;,  constitucionales a su alcance para la toma del poder político. </p>
+<p>Esto es lo que venía en la declaración de principio hace, ni más ni  menos, que 50 años. </p>
+<p>Y se basaba el Partido Mexicano de los Trabajadores en la defensa de la  Constitución Política de los Mexicanos, en el artículo 39 de la Constitución  donde se habla de la soberanía, que la soberanía radica en el pueblo, y que el  pueblo tiene en todo momento el derecho a cambiar, a transformar su forma de  gobierno. </p>
+<p>En congruencia con estos postulados es que el Partido Mexicano de los  Trabajadores buscó la unificación de la izquierda. </p>
+<p>Y el Partido Mexicano de los Trabajadores se integró y se fusionó con  otras fuerzas políticas posteriormente. En consecuencia, con su visión de la  transformación del país. </p>
+<p>Como lo ha mencionado Andrés Manuel López Obrador, cito: &ldquo;siempre hemos  reconocido que antes de nosotros muchos mexicanos, mujeres y hombres libres y  conscientes abrieron el camino para impulsar un verdadero cambio, que ahora  estamos haciendo realidad&rdquo;. </p>
+<p> A medio siglo de la fundación del PMT su programa de acción sigue  vigente, como en el punto número tres de su declaración y programa de acción,  donde dice: &ldquo;Se debe restructurar el Poder Judicial para acabar con la  corrupción, que debe ser realmente independiente, y que ministros, magistrados  y jueces sean nombrados por elección popular&rdquo;. </p>
+<p>Por eso, compañeros y compañeras, Senadoras y Senadores: </p>
+<p>El mejor homenaje que le podemos hacer al Partido Mexicano de los  Trabajadores es aprobar la reforma judicial. </p>
+<p>¡Viva México! ¡Viva el PMT!</p>
+<p><strong>El Presidente Senador Gerardo Fernández  Noroña:</strong> Muchas gracias por su intervención, Senadora Castillo  Juárez. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116948'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116949'></a><p>Ha pedido el Senador Félix Salgado Macedonio que otorguemos un minuto de  aplausos al ingeniero Heberto Castillo Martínez. </p>
+<p>Les pido ponernos de pie.</p>
+<p><strong>MINUTO DE APLAUSOS</strong></p>
+<p align="center">(Todos de pie brindan un minuto de aplausos)</p>
+<p>Es concedida la petición </p>
+<p>Tomar asiento.</p>
+<p>El siguiente asunto del Orden del Día es la primera lectura. </p>
+<p>Senadora Yeidckol Polevnsky, ¿con qué objeto?</p>
+<p><strong>La Senadora Yeidckol Polevnsky Gurwitz: </strong>(Desde su escaño)<strong> </strong>Solamente  para decir una frase. </p>
+<p><em>&ldquo;Si Heberto Castillo viviera, con nosotros estuviera&rdquo;. </em></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116949'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116950'></a><p><strong>El Presidente Senador Gerardo Fernández  Noroña:</strong> El siguiente asunto del Orden del Día es la  primera lectura a un dictamen de las Comisiones Unidas de Trabajo y Previsión  Social; y de Estudios Legislativos, Segunda, con proyecto de Decreto por el que  se reforma la fracción VII del artículo 74 de la Ley Federal del Trabajo, para  establecer el 1 de octubre, de cada seis años, como descanso obligatorio. </p>
+<p>Informo a la Asamblea que este dictamen tiene su origen en una  iniciativa del Senador Napoleón Gómez Urrutia, y otra del Senador Rafael Espino  de la Peña. </p>
+<p>Este dictamen fue aprobado por unanimidad por las comisiones  dictaminadoras de la LXV Legislatura y remitido a la Mesa Directiva para  continuar con su trámite. </p>
+<p>El dictamen quedó de primera lectura en la sesión matutina del pasado 17  de abril, con fundamento en lo dispuesto por el artículo 206 del Reglamento de  Senado este dictamen fue publicado en la Gaceta Parlamentaria, y no fue debatido  ni votado en el Pleno, debido a la conclusión de la LXV Legislatura, por lo que  quedó a disposición de la Mesa Directiva de esta Legislatura. </p>
+<p>Adicionalmente, esta mañana la Mesa Directiva acordó que este dictamen  fuera incorporado al Orden del Día de esta sesión para darle el trámite que  corresponda.</p>
+<p>En consecuencia, informo a ustedes, que el dictamen se encuentra  publicado en la Gaceta Parlamentaria, del día de hoy.</p>
+<p> <strong>PROYECTO DE DECRETO POR EL QUE SE REFORMA LA  FRACCIÓN VII DEL ARTÍCULO 74 DE LA LEY FEDERAL DEL TRABAJO</strong><strong> </strong></p>
+<p><strong>(Dictamen de primera lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-05-1/assets/documentos/Dic_Com_TyPS_y_ELS_1_Octubre_Dia_Descanso_Obligatorio.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Consulte la Secretaría a la Asamblea, en votación económica, si autoriza  que se omita su lectura. </p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat: </strong>Con gusto, señor Presidente. Consulto a la  Asamblea, en votación económica, si autoriza que se omita la lectura del  anterior dictamen. Quienes estén por la afirmativa, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén por la negativa, favor de levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p>Quienes se abstengan, favor de levantar la mano. </p>
+<p>Sí se omite la lectura, señor Presidente. </p>
+<p><strong>El Presidente Senador Gerardo Fernández  Noroña:</strong> En consecuencia, con fundamento en lo dispuesto  por el artículo 195 del Reglamento del Senado, queda de primera lectura. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116950'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116951'></a><p>Honorable Asamblea, hemos recibido en la Mesa Directiva una comunicación  suscrita por el Presidente de la Junta de Coordinación Política, en relación  con la integración de las Comisiones de Puntos Constitucionales y de Estudios  Legislativos. </p>
+<p>Solicito a la Secretaría le dé lectura.</p>
+<p> <strong>JUNTA DE COORDINACIÓN POLÍTICA</strong></p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino Farjat:</strong> Con gusto, señor  Presidente. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/1/2024-09-05-1/assets/documentos/Acuerdo_JCP_Comisiones_05092024.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es cuanto, señor Presidente. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña:</strong> Muchas gracias. </p>
+<p> En virtud de que las comunicaciones son en relación con la modificación  en la integración de las comisiones, se pondrá a consideración de la Asamblea. </p>
+<p>Está a discusión. No habiendo oradores ni oradoras inscritos, consulte  la Secretaría a la Asamblea, en votación económica, si es de aprobarse. </p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat:</strong> Con gusto, señor Presidente. Consulto a la  Asamblea, en votación económica, si es de aprobarse la comunicación. Quienes  estén porque se apruebe, favor de levantar la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén porque se rechace, favor de levantar la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p>Quienes se abstengan, favor de levantar la mano. </p>
+<p>Sí se aprueba, señor Presidente. </p>
+<p><strong>El Presidente Senador Gerardo Fernández  Noroña:</strong> Aprobada la modificación en la integración de  comisiones. </p>
+<p>Para claridad de la Asamblea, dé lectura la Secretaría a la integración  de las comisiones. </p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino  Farjat:</strong> Con gusto, señor Presidente. Procedo a dar  lectura. </p>
+<p>Integrantes de la Comisión de Puntos Constitucionales. </p>
+<p>1. - Ernestina Godoy Ramos, Presidenta. <br>
+  2.- Óscar Cantón Zetina, Secretario. <br>
+  3.- Ricardo Anaya Cortés, Secretario. <br>
+  4.- Claudia Anaya Mota, Secretaria. <br>
+  5.- Luis Alfonso Silva Romo, Secretario.<br>
+  6.- Javier Corral Jurado, integrante. <br>
+  7.- Andrea Chávez Treviño, integrante. <br>
+  8.- Alma Anahí González, integrante. <br>
+  9.- Ignacio Miér Velazco, integrante. <br>
+  10.- Adán Augusto López Hernández, integrante. <br>
+  11.- Julieta Ramírez, integrante. <br>
+  12.- Saúl Monreal Ávila, integrante. <br>
+  13.- Juanita Guerra, integrante. <br>
+  14.- Alejandro González Yáñez, integrante. <br>
+  15.- Lizeth Sánchez, integrante. <br>
+  16.- Marko Cortés, integrante. <br>
+  17.- Verónica Rodríguez, integrante. <br>
+  18.- Pablo Angulo, integrante. <br>
+  19.- Luis Donaldo Colosio, integrante. </p>
+<p>Procedo a dar lectura ahora a los integrantes de la Comisión de Estudios  Legislativos. </p>
+<p>1.- Citlalli Hernández Mora, Presidenta. <br>
+  2.- Claudia Anaya Mota, Secretaria. <br>
+  3.- Enrique Inzunza, Secretario. <br>
+  4.- Ana Lilia Rivera Rivera, integrante. <br>
+  5.- Sasil de León Villard, integrante. <br>
+  6.- Blanca Judith Díaz Delgado, integrante. <br>
+  7- Martha Lucía Micher Camarena, integrante. <br>
+  8.- Alejandro Murat, integrante. <br>
+  9.- Miguel Pavel Jarero Velázquez, integrante. <br>
+  10.- Luis Fernando Salazar, integrante. <br>
+  11.- Manuel Huerta Ladrón, integrante. <br>
+  12.- Alejandro Esquer, integrante. <br>
+  13.- Waldo Fernández, integrante. <br>
+  14.- Geovanna Bañuelos, integrante. <br>
+  15.- Gustavo Sánchez Vázquez, integrante. <br>
+  16.- Ricardo Anaya Cortés, integrante. <br>
+  17.- Mayuli Latifa Martínez, integrante. <br>
+  18.- Pablo Angulo, integrante. <br>
+  19.- Alejandra Barrales, integrante. </p>
+<p>Es cuanto, señor Presidente. </p>
+<p><strong>El Presidente Senador Gerardo Fernández  Noroña:</strong> La Asamblea queda enterada de la integración de  las Comisiones de Puntos Constitucionales y de Estudios Legislativos.  Comuníquese. </p>
+<p>Hemos llegado casi al final de la sesión, pero esta Presidencia ha sido  y seguirá siendo flexible. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116951'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116952'></a><p>Pido a los grupos parlamentarios que con los temas de las efemérides los  informen con el tiempo suficiente, la Senadora Edith López Hernández nos ha  informado que es Día de la Mujer Indígena, y ha solicitado el uso de la  palabra. Y esta Presidencia ha determinado otorgarle el uso de la palabra. </p>
+<p>Pase a tribuna, Senadora López Hernández. </p>
+<p><strong>EFEMÉRIDES</strong></p>
+<p><strong>La Senadora María Edith López Hernández: </strong>Nunca más un México sin nosotras, las mujeres indígenas de México, 5 de  septiembre Día Internacional de la Mujer Indígena. </p>
+<p>No estamos en cuevas, sabemos un poquito leer y escribir, no vivimos en  el olvido, muchos años se olvidaron algunos, pero nosotros siempre estábamos.  Un día no representa que cambie nuestra realidad, pero cuando hay voluntad  política no nos ven en las montañas, ni nos usan como relleno para un solo  objeto. </p>
+<p>Nosotras también llegamos a la tribuna. </p>
+<p>Como a las lenguas maternas y la gente indígena no puede estar estático,  también un Poder Judicial no puede estar estático, ni se estanca. </p>
+<p>Muchas gracias. </p>
+<p><strong>El Presidente Senador Gerardo Fernández  Noroña:</strong> Muchas gracias a la Senadora López Hernández. </p>
+<p>Y me han solicitado la palabra la Senadora Cynthia López Castro. Tiene  el uso de la palabra. </p>
+<p><strong>La Senadora Cynthia López Castro: </strong>Gracias, señor Presidente. </p>
+<p>Sumarme a esta conmemoración del Día Internacional de la Mujer Indígena,  respaldando las palabras de nuestra compañera Senadora Edith. </p>
+<p>Porque hace muchos años no había cuotas indígenas en nuestro país, y hoy  vemos una Cámara de Diputados, una Cámara de Senadores con mujeres indígenas  representadas, representando más del 10 por ciento de la población, 12 millones  de personas indígenas. </p>
+<p> Y hoy, gracias a la lucha que se ha dado,  están representadas en ambas Cámaras. </p>
+<p>Me parece importante reconocerlas, decirles  que aquí estaremos en esta Legislatura trayendo sus temas, hablando de lo que  requieren, alzando la voz. Y todos somos defensores de los pueblos indígenas, y  todos tenemos que defender aquellas causas que tanto nos piden. </p>
+<p>Aprovecho para reconocer que es nuevamente  una Legislatura paritaria, somos 64 mujeres, y en la Cámara de Diputados hay  paridad con una mujer más, 50 más uno, en la Cámara de Diputados. </p>
+<p>Entonces, creo que es tiempo de mujeres, y es  tiempo de conmemorar a todas las mujeres indígenas de México, de honrarlas. </p>
+<p>Y qué honor tener aquí en esta Cámara  representantes de los pueblos indígenas.</p>
+<p>Muchas gracias, señor Presidente. </p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña:</strong> Gracias, Senadora  López Castro. </p>
+<p>Continúe la Secretaría con los asuntos en  agenda. </p>
+<p><strong>La Secretaria Senadora Verónica Noemí Camino Farjat:</strong> Se han agotado los  asuntos de la agenda, señor Presidente.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116952'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='116953'></a><p><strong>CITA</strong></p>
+<p><strong>El Presidente Senador Gerardo Fernández Noroña:</strong> Se cita a la  siguiente sesión del próximo martes 10 de septiembre a las 11:00 horas en el  salón de sesiones de Paseo de la Reforma. </p>
+<p>Se levanta la sesión. </p>
+<p align="center">(Se levantó la sesión a las 15:00 horas)<strong> </strong></p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a116953'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

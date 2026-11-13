@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 1</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Laura Itzel Castillo Juárez</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Junta Previa Celebrada<br>en la Ciudad de M&eacute;xico, el 29 de Agosto de 2025</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/2/PPO/PDF-WEB/PPO_No1_29_AGOSTO_2025_JP.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='122812'></a><p align="center"><strong>PRESIDE  EL SENADOR</strong><br>
+  <strong>GERARDO  FERNÁNDEZ NOROÑA</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>(13:53  horas) Compañeros y compañeras Senadores y Senadoras: </p>
+<p>En  cumplimiento a lo dispuesto por el numeral 5 del artículo 61 de la Ley Orgánica  del Congreso General, se les convocó a esta Junta Previa. Solicito a la  Secretaría informe a la Asamblea el resultado del cómputo de asistencia de las  personas Senadoras para conocer si existe el quórum reglamentario.</p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con  gusto, señor Presidente. </p>
+<p>Honorable  Asamblea, conforme al sistema electrónico de asistencia, informo que se  encuentran presentes 80 ciudadanas Senadoras y ciudadanos Senadores. En  consecuencia, hay quórum, señor Presidente. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>En  cumplimiento del artículo 61, numeral 5 de la Ley Orgánica del Congreso  General, y de conformidad con el citatorio publicado el 25 de agosto del año en  curso, se abre la Junta Previa del segundo año de ejercicio de la LXVI  Legislatura de la Cámara de Senadores. El Orden del Día está disponible en la  Gaceta parlamentaria y en el monitor de sus escaños; con lo cual se informa de  los asuntos que corresponden a la Junta Previa de este día. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/gaceta_del_senado/documento/152465"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Compañeras  Senadoras y compañeros Senadores, estos últimos días han sido muy intensos, pero  yo no quiero, en esta última sesión que me toca presidir, en mi condición de Presidente  de la Mesa Directiva de la comisión de Senadores, Senadoras, quiero  agradecerles, de verdad, de corazón, a todos los grupos parlamentarios.</p>
+<p>Al  grupo parlamentario de Movimiento Ciudadano. </p>
+<p>Al  grupo parlamentario del Partido Revolucionario Institucional. </p>
+<p>Al  grupo parlamentario del Partido Acción Nacional. </p>
+<p>Al  grupo parlamentario del Partido del Trabajo. </p>
+<p>Al  grupo parlamentario del Partido Verde Ecologista de México.</p>
+<p>Y al  grupo parlamentario, del que me honro formar parte, al grupo parlamentario del  Partido Morena. </p>
+<p>Quiero  agradecerles, no tengo palabras para expresar el agradecimiento por la  oportunidad que me han dado de servir a mi pueblo y a la patria desde una  posición tan destacada.</p>
+<p>Para  mí Presidir esta Asamblea de la Cámara de Senadores y Senadoras, ha sido una  gran responsabilidad, ha sido un gran privilegio. </p>
+<p>Y más  allá de diferendos, quiero agradecer el que prácticamente por unanimidad me  hayan dado esa oportunidad. </p>
+<p>Y el  que por un año hayamos tenido un intenso trabajo legislativo del cual, más allá  de la visión que cada quien tenemos, debemos sentirnos orgullosos y orgullosas. </p>
+<p>¡Larga  vida al Senado de la República!</p>
+<p>Y  muchísimas gracias, de corazón, por esta oportunidad que me brindaron. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a122812'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='122813'></a><p>A fin  de dar cumplimiento a lo dispuesto por el numeral 5 del artículo 61 de la Ley Orgánica del Congreso General,  procederemos a la elección de la Mesa Directiva que conducirá los trabajos de  la Cámara de Senadores durante el segundo año de ejercicio constitucional de la  LXVI Legislatura, para lo cual realizaremos una votación por cédula. </p>
+<p>Previo  a esto, hago de su conocimiento que las y los integrantes de la Mesa Directiva  suscribimos un Acuerdo en relación con la integración de este órgano de  gobierno a fin de garantizar la participación de todas las fuerzas políticas. </p>
+<p>Dé  cuenta con la Secretaría con la parte resolutiva del mismo. </p>
+<p><strong>MESA  DIRECTIVA</strong></p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Doy  lectura. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-08-29-1/assets/documentos/Acuerdo_MD_29082025.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es cuanto, señor Presidente.</p>
+<p> <strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>En  consecuencia, solicito a la Secretaría que consulte a la Asamblea, en votación  económica, si es de aprobarse el Acuerdo. </p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Con  gusto. Consulto a la Asamblea, en votación económica, si es de aprobarse el  anterior Acuerdo. Quienes estén porque se apruebe, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea asiente)</p>
+<p>Quienes  estén porque no se apruebe, favor de levantar la mano. </p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p>Quienes  se abstengan, favor de levantar la mano. </p>
+<p>Aprobado  el Acuerdo, señor Presidente. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>En  consecuencia, se va a proceder a la elección de la Mesa Directiva en los  términos del Acuerdo que acaba de ser aprobado. </p>
+<p>Informo  a la Asamblea que se entregarán sobres personalizados para la votación. En  éstos se encontrará la cédula para la elección, la cual deberán depositar en la  urna una vez que la Secretaría los llame por orden de lista. </p>
+<p>Solicito  al personal de apoyo proceda a distribuir las cédulas de votación a las  personas senadoras. </p>
+<p align="center">(El  personal de apoyo cumple)</p>
+<p>Pedimos  al personal de apoyo que no tiene tareas en este Pleno, que nos permitan llevar  a cabo esta sesión. </p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Al personal de apoyo parlamentario, por favor, sirva  de traer las cédulas que no han sido entregadas o que no fueron entregadas. </p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña:</strong> Antes de que empiece a llamar, compañera Verónica  Camino… </p>
+<p>Muy bien, compañeros y compañeras, cometí una  lamentable omisión. </p>
+<p>Yo quiero agradecerle a las Senadoras y Senadores  que me acompañaron en la Presidencia de esta Mesa Directiva, a la Senadora  Jasmine Bugarín. </p>
+<p>Muchísimas gracias. </p>
+<p>A la compañera Senadora Imelda. </p>
+<p>Muchísimas gracias. </p>
+<p>A la compañera Senadora Karla Toledo. </p>
+<p>Muchísimas gracias. </p>
+<p>A mi compañera Imelda Castro, que se nos acaba de  mover hace un momento. </p>
+<p>Al Senador Ramírez Marín. </p>
+<p>A la Senadora Lizet Sánchez. </p>
+<p>A la Senadora Verónica Camino Farjat. </p>
+<p>A la Senadora Julieta. </p>
+<p>Muchísimas,  muchísimas gracias. </p>
+<p>Pero claro, al  Senador Luis Donaldo Colosio. </p>
+<p>Y al Senador  Mauricio Vila, que ambos están de licencia. </p>
+<p>Muchas  gracias, Margarita. </p>
+<p> Que nos acompañaron en esta Mesa Directiva. </p>
+<p>Yo le pido a la Asamblea que no seamos avaros en  aplausos, y le hagamos un reconocimiento a mis compañeras y compañeros  Senadores y Senadoras. </p>
+<p>Solicito a la Secretaría dé cuenta del número de  sobres entregados. </p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Pregunto si falta algún Senador o Senadora de los  presentes a la que no haya sido entregado el sobre respectivo.</p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña:</strong> Uno de a milagro, aunque fuera. </p>
+<p><strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Señor  Presidente, le informo que fueron entregados 101 sobres, y no fueron entregados  27 sobres. Le doy lectura, doy lectura a los nombres de las personas a las que  no fueron entregados sus sobres. </p>
+<p>Senador  Gustavo Sánchez Vásquez. <br>
+  Senadora  Mely Romero Celis. <br>
+  Senador  Alejandro Murat Hinojosa.<br>
+  Senadora  Andrea Chávez Treviño.<br>
+  Senador  Adán Augusto López Hernández.<br>
+  Senador  Luis Fernando Salazar Fernández. </p>
+<p>Se hace  entrega en este momento del Senador Óscar Cantón Zetina. </p>
+<p>Se hace  también entrega del sobre del Senador Cuauhtémoc Ochoa, en estos momentos.</p>
+<p>Y  continúo con la lista de los que no han sido entregados. </p>
+<p>Senador  Aníbal Ostoa Ortega. <br>
+  Senador  Alejandro González Yáñez.<br>
+  Senadora  Yeidckol Polevnsky Gurwitz. <br>
+  Senadora  Anahí González Hernández. <br>
+  Senadora  Susana Zatarain García.<br>
+  Senadora  Gina Gerardina Campuzano González.<br>
+  Senadora  Laura Esquivel Torres.<br>
+  Senador  Agustín Dorantes Lámbarri.<br>
+  Senador  Francisco Ricardo Sheffield Padilla.<br>
+  Senador  José Sabino Herrera Dagdug.<br>
+  Senador  Luis Donaldo Colosio Riojas. </p>
+<p>Ah, ya  llegó el Senador Luis Donaldo, procederé a hacerle la entrega de su sobre. </p>
+<p>Continúo  con los que no han llegado. </p>
+<p>Senador  Juan Antonio Martín del Campo Martín del Campo. <br>
+  Senadora  Nora Ruvalcaba Gámez.<br>
+  Senador  Juan Carlos Loera De la Rosa.<br>
+  Senador  Virgilio Mendoza Amezcua.<br>
+  Senadora  Ruth Miriam González Silva.<br>
+  Senador  Luis Armando Melgar Bravo.<br>
+  Senadora  Maki Esther Ortiz Domínguez, y<br>
+  Senadora  Simey Olvera Bautista. </p>
+<p>Por lo  tanto, presidente, para finalizar, no fueron entregados 24 sobres, y fueron  entregados 104.</p>
+<p>Es  cuanto.</p>
+<p><strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>Muchas  gracias. En consecuencia, los sobres no entregados se mantendrán a la vista  para que la Secretaría los proporcione a sus destinatarios en caso de que  ingresen al salón de sesiones durante el proceso de votación.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a122813'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='122814'></a><p><strong>COMUNICACIÓN</strong></p>
+<p>Informo a la Asamblea que recibimos una  comunicación de la Senadora Andrea Chávez Treviño, por la que solicita se le  realice el descuento de su dieta correspondiente a este día 29 de agosto. Se  recibe y se remite a la Secretaría General de Servicios Administrativos, para  los efectos conducentes.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/2/2025-08-29-1/assets/documentos/Comunicaci%C3%B3n_Sen_Andrea_Ch%C3%A1vez_MORENA.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a122814'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='122815'></a><p><strong>ELECCIÓN DE LA MESA DIRECTIVA</strong></p>
+<p>Proceda la Secretaría nombrar a las  personas Senadoras, a fin de que pasen a depositar su cédula en la urna.</p>
+<p><strong>La Secretaria  Senadora Verónica Noemí Camino Farjat:</strong></a><strong> </strong>Con gusto, señor  Presidente. Solicito a las señoras Senadoras y señores Senadores, pasen a  depositar su voto al momento de escuchar su nombre.</p>
+<p align="center">(Pasa lista)</p>
+<p>En esto momentos se está entregando la  cédula del Senador Aníbal Ostoa Ortega.</p>
+<p>Prosigo con la lista. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>¿Con qué objeto? Senadora Michel.</p>
+<p>¿Con qué objeto? </p>
+<p>Estamos en votación, Senadora Malú  Micher.</p>
+<p>Sonido en el escaño de la Senadora.</p>
+<p><strong>La Senadora Martha  Lucía Micher Camarena: </strong>Además de darme mucho gusto el voto de la  Presidenta, señor Senador, hay demasiada gente en los pasillos. </p>
+<p>Hay demasiada gente en este salón. </p>
+<p>Se lo pido, por favor.</p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>Tiene razón la Senadora Malú Micher. </p>
+<p>Quienes estén en los pasillos, si no son  Senadores, Senadoras de la República, les pedimos dejar despejadas las vías de  acceso a la urna.</p>
+<p><strong>La Secretaría Senadora  Verónica Noemí Camino Farjat: </strong>En estos momentos se entrega la cédula de la  Senadora Yeidckol Polevnsky Gurwitz. </p>
+<p>Prosigo con la lista. </p>
+<p>Pregunto si  falta alguna Senadora o </a>Senador de pasar a depositar su voto.</p>
+<p>Pregunto nuevamente si falta algún  Senador o Senadora por pasar a emitir su voto.</p>
+<p>Informo a la Presidencia que finalmente  fueron entregados 106 sobres, y no fueron entregados 22 sobres, y estos quedan  bajo resguardo de esta Secretaría. </p>
+<p><strong>El Presidente Senador  Gerardo Fernández Noroña: </strong>La Asamblea ha quedado enterada del anterior  informe. </p>
+<p>Una vez concluida la votación, solicito  al personal de apoyo que entregue la urna a la Secretaría de la Mesa Directiva  para realizar el escrutinio correspondiente. </p>
+<p align="center">(Se realiza el  escrutinio)</p>
+<p> <strong>La  Secretaria Senadora Verónica Noemí Camino Farjat: </strong>Señor Presidente,  procedo a dar cuenta con el resultado de la votación. Se emitieron un total de  106 votos de los cuales 101 son a favor de la siguiente planilla. </p>
+<p>Presidenta:  Laura Itzel Castillo Juárez.</p>
+<p>Vicepresidenta:  Verónica Noemí Camino Farjat</p>
+<p>Vicepresidencia:  Imelda Sanmiguel Sánchez.</p>
+<p>Vicepresidencia:  Senador Jorge Carlos Ramírez Marín.</p>
+<p>Secretaría:  Sandra Simey Olvera Bautista.</p>
+<p>Secretaría:  Mariela Gutiérrez Escalante. </p>
+<p>Secretaría:  Claudia Edith Anaya Mota. </p>
+<p>Secretaría:  Lizeth Sánchez García. </p>
+<p>Secretaría:  María Martina Kantún Can.</p>
+<p>Secretaría:  Senador Gustavo Sánchez Vásquez.</p>
+<p>Secretaría:  Jasmine María Bugarín Rodríguez. </p>
+<p>Secretaría:Néstor  Camarillo Medina. </p>
+<p>Y  fueron cinco votos para otras diferentes planillas. </p>
+<p>Es  cuanto, señor Presidente.<br>
+  <br>
+  <strong>El  Presidente Senador Gerardo Fernández Noroña: </strong>En  consecuencia, se declara que han sido electas para integrar la Mesa Directiva  del Senado de la República las siguientes personas Senadoras. </p>
+<p>Presidencia:  Senadora Laura Itzel Castillo Juárez. </p>
+<p>Vicepresidencia:  Senadora Verónica Noemí Camino Farjat.</p>
+<p>Vicepresidencia:  Senadora Imelda Margarita Sanmiguel Sánchez. </p>
+<p>Vicepresidencia:  Senador Jorge Carlos Ramírez Marín. </p>
+<p>Secretaría:  Senadora Simey Olvera Bautista. </p>
+<p>Secretaría:  Senadora Mariela Gutiérrez Escalante. </p>
+<p>Secretaría:  Senadora Claudia Edith Anaya Mota. </p>
+<p>Secretaría:  Senadora Lizeth Sánchez García. </p>
+<p>Secretaría:  Senadora María Martina Kantún Can. </p>
+<p>Secretaría:  Senador Gustavo Sánchez Vásquez. </p>
+<p>Secretaría:  Senadora Jasmine María Bugarín.</p>
+<p> Y Secretaría, Senador Néstor Camarillo  Medina.</p>
+<p>Solicito a las y los Senadores que  integrarán la Mesa Directiva que funcionará durante el segundo año de ejercicio  de la LXVI Legislatura acudan a este presídium para que rindan su protesta  legal. </p>
+<p><strong>La Secretaria Senadora  Verónica Noemí Camino Farjat: </strong>Se les solicita a todas y todos ponerse de pie  para los actos de protesta de la Mesa Directiva, como lo disponen los artículos  62 de la Ley Orgánica del Congreso General y 33 del Reglamento del Senado de la  República. </p>
+<p align="center">(Todos de pie)</p>
+<p><strong>La Senadora Laura Itzel  Castillo: </strong>Protesto  guardar y hacer guardar la Constitución Política de los Estados Unidos  Mexicanos, las leyes que de ella emanen y desempeñar leal y patrióticamente el  cargo de Presidenta de la Mesa Directiva del Senado de la República del Senado  de la República que se me ha conferido, mirando en todo por el bien y  prosperidad de la Unión.</p>
+<p>Y si así no lo hiciere, que la Nación me  lo demande.</p>
+<p>Solicito mantenerse de pie para el acto  de protesta de las y los demás integrantes de la Mesa Directiva, conforme a lo  dispuesto por los artículos 62 de la Ley Orgánica del Congreso General y 33 del  Reglamento del Senado.</p>
+<p>Ciudadanas y ciudadanos Senadores:  Informo a ustedes que el Senado de la República los he elegido en los  siguientes cargos:</p>
+<p>Verónica Noemí Camino Farjat, Vicepresidenta. </p>
+<p>Imelda Sanmiguel Sánchez,  Vicepresidenta. </p>
+<p>Jorge Carlos  Ramírez Marín, Vicepresidente. </p>
+<p>Mariela  Gutiérrez Escalante, Secretaria. </p>
+<p>Claudia Edith Anaya Mota, Secretaria. </p>
+<p>Lizeth Sánchez García, Secretaria. </p>
+<p>María Martina Kantún Kan, Secretaria. </p>
+<p>Jasmine María Bugarín, Secretaria. </p>
+<p>Néstor Camarillo Medina,  Secretario.  </p>
+<p>En consecuencia, les pregunto:</p>
+<p>¿Protestan guardar y hacer guardar la  Constitución Política de los Estados Unidos Mexicanos y las leyes que de ella  emanen, y desempeñar leal y patrióticamente los cargos de vicepresidentas,  vicepresidente, secretarias y secretarios de la Mesa Directiva que se les ha  conferido, mirando en todo por el bien y prosperidad de la Unión?</p>
+<p><strong>Los CC Senadores: </strong>¡Sí, protesto!</p>
+<p align="center"> <strong>PRESIDE  LA SENADORA</strong><br>
+  <strong>LAURA  ITZEL CASTILLO JUÁREZ</strong></p>
+<p><strong>La Presidenta Senadora Laura  Itzel Castillo Juárez:</strong> Si así no lo hicieren, que la  nación se los demande. </p>
+<p>Solicito  a los y las integrantes de la Mesa Directiva ocupen sus lugares para el  desempeño de sus funciones. </p>
+<p>Le pido  a la Asamblea que tome asiento. </p>
+<p>Les  informo que la toma de protesta de la Senadora Simey Olvera Bautista y del  Senador Gustavo Sánchez Vásquez, como Secretaria y Secretario de la Mesa  Directiva, se realizará en la sesión posterior. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a122815'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='122816'></a><p>Se  solicita a todas y todos mantenerse de pie para la declaratoria de instalación  de esta Cámara. </p>
+<p><strong>DECLARATORIA</strong></p>
+<p>En  cumplimiento a lo dispuesto por el artículo 61 de la Ley Orgánica del Congreso  General, la Cámara de Senadores se declara legalmente instalada para el  desempeño de sus funciones, correspondientes al Primer Período Ordinario de  Sesiones del Segundo Año de Ejercicio Constitucional de la LXVI Legislatura. </p>
+<p>Favor  de tomar asiento. </p>
+<p>Compañeras  Senadoras y compañeros Senadores, pueblo de México: </p>
+<p>Hoy  recibo con profunda emoción y sincera gratitud el voto de confianza que me han  otorgado para asumir esta gran responsabilidad como Presidenta de la Mesa  Directiva de nuestra Honorable Cámara de Senadores. </p>
+<p>Asumo  esta encomienda como un mandato pleno con la certeza, tal como lo establece  nuestra ley, me debo al Pleno. Y lo hago con la decisión de poner toda mi  capacidad, toda mi experiencia y toda mi convicción democrática al servicio del  buen funcionamiento de esta Asamblea. </p>
+<p>Quiero  expresar mi agradecimiento más sincero al respaldo de los Coordinadores  Parlamentarios, así como de todas y todos quienes integran esta Cámara. </p>
+<p>De  manera especial, reconozco el apoyo de los Senadores Adán Augusto López,  Ricardo Anaya, Manuel Añorve, Manuel Velasco, Alberto Anaya y Clemente  Castañeda. </p>
+<p>Y  extiendo también mi gratitud al Senador Gerardo Fernández Noroña por su  confianza y acompañamiento. </p>
+<p>Este  honor que hoy me confiere lo asumo con responsabilidad plena y con un  compromiso inquebrantable, el servir a México, servirlo fortaleciendo con  respeto y altura de miras y con unidad y trabajo legislativo que nuestra nación  espera de nosotras y nosotros. </p>
+<p>Hace  dos siglos, en esta misma tierra, resonó por primera vez la voz de un Senado  decidido a forjar la República, desde entonces nuestra historia ha sido un  largo camino de lucha, perseverancia y esperanza. </p>
+<p>Esa  historia la ha escrito el pueblo mexicano, mujeres y hombres que jamás  cedieron, que se mantuvieron de pie ante la adversidad y que supieron  organizarse para transformar su destino. </p>
+<p> Mi  gratitud es para las mujeres y hombres libres de ayer y de hoy, para quienes,  en el presente con fe inquebrantable, creyeron en un proyecto de nación forjado  con las manos del pueblo. </p>
+<p>Un  proyecto que encontró en Andrés Manuel López Obrador un liderazgo  transformador. </p>
+<p>Y que  ha sido confirmado con la misma fuerza de la voluntad popular, con la llegada  de la Doctora Claudia Sheinbaum Pardo a la Presidencia de la República. </p>
+<p>Mi  compromiso con la izquierda y con este movimiento es absoluto, pero más allá de  las trincheras ideológicas, convoco a que este Senado sea un espacio de debate  real y de altura donde, con libertad, las ideas fluyan, sin odio, sin racismo  sin clasismo y sin machismo. </p>
+<p>Nada de  eso debe marchar el intercambio del tráfico en esta Cámara. </p>
+<p>Estamos  conmemorando 200 años de la instalación del primer Senado de la República,  cuando nuestra primera Constitución estableció un poder legislativo bicameral,  y el próximo 17 de septiembre celebraremos 150 años de su Restauración, tras  haber sido suprimido durante 17 años. </p>
+<p>Estos  aniversarios no son pieza de museo, son un recordatorio vivo de que el  Legislativo debe ser fuerte, responsable y cercano a la gente, porque el pueblo  hoy, más que nunca nos mira, nos escucha y evalúa nuestro trabajo. </p>
+<p>En este  momento rendimos homenaje a Valentín Gómez Farías, quien Presidió la Primera  Asamblea de esta Cámara y señaló con firmeza la necesidad de combatir  privilegios y garantizar educación para todas y todos los mexicanos. </p>
+<p>Por lo  tanto, quiero decirles que nuestro parlamento, debe ser un parlamento  progresista. </p>
+<p>Y, en  este sentido, estaremos comprometidos para legislar por la igualdad, por la  justicia social y la libertad de expresión y pensamiento. </p>
+<p>Compañeras  y compañeros, honrar a quienes nos antecedieron en esta larga lucha no es sólo  citarlos, es encarnar sus principios en cada ley que aprobamos, en cada debate  que sostenemos y en cada decisión que tomamos. </p>
+<p>Porque  como dijera el Quijote de la Mancha; <em>&ldquo;Por la libertad, así como por la honra  se puede y se debe aventurar la vida&rdquo;. </em></p>
+<p>Con la  fuerza de nuestro pasado, la responsabilidad de nuestro presente y la esperanza  del México que queremos, mantengamos este Senado, no sólo como la casa del  federalismo, sino como la casa de la razón, la justicia y la dignidad. </p>
+<p>Con  debates que fortalezcan la democracia y con acuerdos que respondan al interés  público.</p>
+<p>Sigamos  haciendo historia porque nos debemos al pueblo.</p>
+<p>Seguiremos  transformando esta nación con energía.</p>
+<p>Con el  pueblo todo sin el pueblo nada. </p>
+<p>Muchas  gracias.</p>
+<p>La  Secretaría informará por escrito de la instalación de la Cámara de Senadores y  la elección de la Mesa Directiva a la titular del Poder Ejecutivo Federal, a la  Presidencia de la Suprema Corte de Justicia de la Nación y a las legislaturas  locales de las entidades federativas y de la Ciudad de México.</p>
+<p> La Cámara de Diputados quedará  debidamente notificada en la sesión del Congreso General a celebrarse el 1 de  septiembre.</p>
+<p>Les solicitamos ponerse de pie para  entonar el Himno Nacional.</p>
+<p align="center">(Todos de pie entonan  el Himno Nacional)</p>
+<p><strong>La Secretaria Senadora  Mariela Gutiérrez Escalante:</strong> Favor de tomar asiento.</p>
+<p><strong>La Presidenta Senadora  Laura Itzel Castillo Juárez:</strong> Senadoras y Senadores:</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a122816'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='122817'></a><p><strong>CITA</strong></p>
+<p>Se cita a la primera sesión ordinaria de  esta Cámara en modalidad permanente, el lunes 1 de septiembre a las 19:30 horas  en este recinto.</p>
+<p>Ese mismo día se realizará la sesión  solemne en la que se tomará la protesta constitucional a las personas  juzgadoras que resultaron electas en el proceso electoral extraordinario  2024-2025.</p>
+<p>También les recuerdo la cita a sesión de  Congreso General en el recinto de la Honorable Cámara de Diputados, el mismo  lunes 1 de septiembre a las 17:00 horas.</p>
+<p>Se da por finalizada la Junta Previa.</p>
+<p align="center">(Se levantó la sesión a  las 15:06 horas)<strong> </strong></p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a122817'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

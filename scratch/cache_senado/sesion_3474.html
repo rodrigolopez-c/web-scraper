@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>TERCER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO III</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 25</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidenta de la Mesa Directiva<br> Sen. Ana Lilia Rivera Rivera</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Solemne Celebrada<br>en la Ciudad de M&eacute;xico, el 14 de Noviembre de 2023</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/3/PPO/PDF-WEB/PPO_No25_14-NOVIEMBRE-2023_SS.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113482'></a><p align="center"><strong>PRESIDE LA SENADORA</strong><br>
+  <strong>ANA LILIA RIVERA RIVERA</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera: </strong>(13:13  horas)<strong> </strong>Con el quórum de la sesión ordinaria de hoy, y con  fundamento en lo dispuesto por el artículo 56, fracción III, del Reglamento del  Senado, y en el Acuerdo de la Mesa Directiva, aprobado el 8 de noviembre  pasado, iniciamos la sesión solemne para recibir la visita del Presidente de la  Asamblea Parlamentaria del Consejo de Europa, Honorable señor Kox. </p>
+<p align="justify">Solicito a las Senadoras y  Senadores Héctor Vasconcelos, Gabriela Benavides Cobos, Minerva Hernández  Ramos, José Luis Pech Várguez, Nancy de la Sierra Arámburo, Antonio García  Conejo, Bertha Alicia Caraveo Camarena, Nadia Navarro Acevedo, Freyda Marybel  Villegas Canché y Daniel Gutiérrez Castorena, acudan a recibir a nuestro  invitado, el Honorable señor Martinus Josephus Maria Kox.</p>
+<p align="center">(La  comisión cumple)</p>
+<p align="justify">En tanto, se declara un  receso. </p>
+<p align="center">(RECESO)</p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Se reanuda la sesión  solemne. </p>
+<p align="justify">La Cámara de Senadores del  Honorable Congreso de la Unión de los Estados Unidos Mexicanos, expresa la más  cordial bienvenida al Presidente de la Asamblea Parlamentaria del Consejo de  Europa, Honorable señor Martinus Josephus Maria Kox, es un honor recibir su  visita. </p>
+<p align="justify">Asimismo, damos la  bienvenida al señor Sergy Crishi Kobi, jefe de oficina del señor Kox.</p>
+<p align="justify">Me permito presentar a mis  compañeras y compañeros Senadores de la Mesa Directiva presentes en esta sesión  solemne. </p>
+<p align="justify">El Senador Sergio Pérez  Flores, Vicepresidente. </p>
+<p align="justify"> Y la Senadora Alejandra  Noemí Reynoso Sánchez, Vicepresidenta. </p>
+<p align="justify">Asimismo, a los Senadores  Claudia Edith Anaya Mota y Navor Alberto Rojas Mancera, Secretaria y  Secretario, respectivamente. </p>
+<p align="justify">Muy buenas tardes, estimadas  Senadoras y Senadores;</p>
+<p align="justify">Invitados especiales:</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113482'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='113483'></a><p align="justify"><strong>VISITA DEL SEÑOR PRESIDENTE DE  LA ASAMBLEA PARLAMENTARIA DEL CONSEJO DE EUROPA, SR. MARTINUS JOSEPHUS  MARIA KOX</strong></p>
+<p align="justify">En cumplimiento del Acuerdo  de la Mesa Directiva para normar la sesión solemne que hoy nos convoca, le  extiendo la más cordial de las bienvenidas al muy Honorable señor Martinus  Josephus Maria Kox, Presidente de la Asamblea Parlamentaria del Consejo de  Europa y comitiva que lo acompaña. </p>
+<p align="justify">Las relaciones entre los  continentes americano y europeo se han forjado a lo largo de siglos de historia  compartida en los que se han presentado diversos momentos que han delineado la  amplia y profunda integración entre nosotros. </p>
+<p align="justify">No se puede entender a las  sociedades de este hemisferio sin las ideas y preceptos que surgieron en la  época de la ilustración en Europa que dieron forma a las estructuras estatales  basadas actualmente en valores democráticos y libertades, los cuales fueron  retomados y adaptados según las necesidades y demandas particulares de los pueblos  que conforman a América. </p>
+<p align="justify">En la actual época muchos de  estos principios se encuentran amenazados ante el resurgimiento de ideas que  propician la división, la limitación al diálogo y la sectarización de nuestras  sociedades, este contexto pone a prueba las labores, la capacidad de respuesta  de todas nuestras instituciones políticas para brindar seguridad, bienestar y  una verdadera justicia social. </p>
+<p align="justify">A lo interior se suman  diversos factores como las crisis económicas, los conflictos armados, los fenómenos  relacionados con el cambio climático, el surgimiento de nuevas pandemias, entre  otros, que generan mayor incertidumbre para la sociedad en la que vivimos. </p>
+<p align="justify">Es importante subrayar que  no hemos superado en su totalidad los efectos devastadores generados por la  emergencia sanitaria que siguen afectando la vida de la población del planeta  y, a pesar de las carencias que aún prevalecen, el mundo se encuentra de nueva  cuenta frente a serios desafíos que ponen en grave peligro el desarrollo y la  estabilidad de la comunidad internacional.</p>
+<p align="justify">Este contexto nos exige  tomar medidas inmediatas y, desde el ámbito de acción de los parlamentaos,  nuestra prioridad debe ser salvaguardar la vida de las personas que  involuntariamente se encuentran inmersas en los enfrentamientos bélicos, las  catástrofes naturales y las carencias de las que son víctimas. </p>
+<p align="justify">No debe olvidarse que hace  casi ocho décadas el mundo y, particularmente el Continente Europeo, se  encontraban sumergidos en una de las peores crisis económicas y políticas  producidas tras la devastación ocasionada por la Segunda Guerra Mundial, lo que  obligó a repensar y estructurar los marcos legales anteponiendo el diálogo y la  democracia, la diplomacia para evitar otros conflictos armados. </p>
+<p align="justify"> En este escenario, los  líderes europeos sumaron voluntades para institucionalizar el pleno respeto a  los derechos humanos al Estado de derecho y a los valores democráticos,  materializándose así el surgimiento del Consejo de Europa como uno de los  principales proyectos de paz. </p>
+<p align="justify">Para dar cabida a todas las  ideologías y voces provenientes de los países convocados, fue necesaria la  creación de la Asamblea Parlamentaria que refleja la pluralidad y la diversidad  de la población europea. </p>
+<p align="justify">En aquel momento resultaba  inimaginable que 80 años después el mundo se encontraría enfrentando retos  preexistentes que se creían superados, como la guerra, así como emergencias de  alto impacto, como la crisis climática, la descomposición social, el  surgimiento de organizaciones delictivas con capacidad de actuar más allá de  sus fronteras, el auge de grupos extremistas y el flujo de las migraciones a  niveles sin precedentes. </p>
+<p align="justify">Lo anterior, sin dejar de  mencionar la complejidad que han demostrado los avances científicos y  tecnológicos que, por un lado, otorgan grandes beneficios a la humanidad. Pero,  por otro, generan amenazas a la soberanía de los estados; a la velocidad en la  que avanzan resulta una labor mayúscula crear legislaciones que regulen, de  forma adecuada, cada una de las actividades, como la inteligencia artificial ya  que tienen un fuerte impacto en la vida de las personas. </p>
+<p align="justify">Frente a esta realidad, es  imperativo revolucionar la manera de hacer política, entendiendo la necesidad  urgente de plantear acciones acordes a estos nuevos paradigmas dentro del plano  nacional, considerando que todo lo que acontece en un estado tiene  repercusiones en el contexto internacional. </p>
+<p align="justify">Por ello, los tomadores de  decisiones debemos asumir una mayor responsabilidad y compromisos de reforzar  las instituciones democráticas, tanto en nuestros países, como a nivel  multilateral, con el fin de que se encuentren en capacidad de dar respuesta a  los desafíos presentes y al surgimiento de otros nuevos. </p>
+<p align="justify">Quiero recordar, que hace 24  años el Congreso mexicano tuvo el honor de integrarse como miembro observador a  los importantes trabajos que lleva a cabo la Asamblea Parlamentaria del Consejo  de Europa, siendo el único país de la región latinoamericana que goza de este  estatus. </p>
+<p align="justify">Durante este tiempo, el  organismo que usted representa ha acompañado causas de gran interés para México  en casos relacionados con la pena capital de connacionales sentenciados en  Estados Unidos y la desaparición y muerte de mujeres en nuestro territorio. </p>
+<p align="justify">Asimismo, el Senado mexicano  ha colaborado en campañas de alto valor para la defensa del interés superior de  las niñas y los niños, así como para la lucha contra la violencia hacia las  mujeres. Esto último, relacionado con el Convenio de Estambul.</p>
+<p align="justify">Para las y los legisladores  mexicanos, el poder participar en los debates de las sesiones ordinarias de la  Asamblea Parlamentaria durante estos años, ha sido una herramienta invaluable  para brindar nuevas ideas en la generación de legislaciones, con una mayor  visión de la realidad en la que nos encontramos. </p>
+<p align="justify">Nuestra vinculación  parlamentaria es una muestra del engranaje que conforma la gran relación de  cooperación y amistad que existe entre nosotros y que, sin duda, con el tiempo  se continuará consolidando con lazos cada vez más fuertes. </p>
+<p align="justify"> En 2024, celebraremos los primeros  25 años de lo que estoy segura seguirá  siendo una muy fructífera relación. </p>
+<p align="justify">Enhorabuena  por este primer cuarto de siglo. </p>
+<p align="justify">Conforme  al Acuerdo aprobado para normar la celebración de esta sesión solemne, el  Presidente de la Asamblea Parlamentaria del Consejo de Europa dirigirá un  mensaje a la Asamblea. </p>
+<p align="justify">En  consecuencia, tiene usted el uso de la palabra, señor Martinus Josephus María  Kox. </p>
+<p align="justify"><strong>El Presidente de la Asamblea  Parlamentaria del Consejo de Europa, Martinus Josephus María Kox: </strong>(Interpretación) Muchas gracias, señora  Presidenta. </p>
+<p align="justify">Buenos  días, buenas tardes. </p>
+<p align="justify">Por  favor, disculpen por hablar solamente un poco de español. </p>
+<p align="justify">Y,  por favor, permítanme hablar en inglés. </p>
+<p align="justify">Muchas  gracias, señora Presidenta Ana Lilia Rivera Rivera, por haberme invitado a la  visita oficial a México y a sus parlamentos. </p>
+<p align="justify">Quisiera  primero expresar mis condolencias a las familias y amigos de las víctimas de  este desastroso huracán &ldquo;Otis&rdquo; matando a docenas de personas y creando daño  devastador en la región de Acapulco. </p>
+<p align="justify">Les  deseamos fuerza para sobreponer esta terrible tragedia. </p>
+<p align="justify">El  Consejo de Europa, estimados colegas y señora Presidenta, representan 46  Estados miembro desde Islandia, Turquía, del Polo Norte al Mar del  Mediterráneo. </p>
+<p align="justify">Nosotros  somos la organización de tratados más vieja y más extensa, que desde el 49, su  objetivo es promover y proteger la paz en Europa por medios de los estados  miembro respecto a la democracia, el Estado de derecho y los derechos humanos. </p>
+<p align="justify">Como  Presidente de la Asamblea Parlamentaria del Consejo Europeo tengo el gran  placer de recibir regularmente a la delegación de su parlamento a nuestras  reuniones de asamblea en Estrasburgo y sus representantes y su representante  permanente ahí; veo a muchos de ellos aquí hoy en el Senado, aprecio enormemente  el verlos.</p>
+<p align="justify">Señora  Presidenta, estoy feliz de conocerla presencialmente después de un par de  semanas de su elección y su trabajo maravilloso en el Estado cuando nos  reunimos en la Conferencia de Presidentes Parlamentarios en Dublín, en donde  todos los presidentes de los parlamentos estuvieron con usted en Dublín y nos  reunimos a finales de septiembre. </p>
+<p align="justify">Una  vez más, muchas gracias por permitirme estar aquí, quiero felicitarla por la  Presidencia de la Cámara. </p>
+<p align="justify">Señora  Presidenta de la Asamblea, tiene relaciones con varios países europeos que  están cerca de nosotros, son nuestros vecinos políticos, aunque separados por  una gran distancia geográfica en el Océano Atlántico, me tomó 11 horas para  llegar de Ámsterdam vía el Reino Unido, Islandia y Canadá y Estados Unidos, y  Groenlandia para venir a México; es un país, señora Presidenta, que pertenece a  la comunidad política europea. </p>
+<p align="justify"> Estamos  muy orgullosos de estar aquí y que México y Europa estén juntos, la mitad de  este año por parte del Presidente López Obrador, el Embajador Moreno Toscano,  participó en la cuarta reunión del gobierno de los Estados miembro en Islandia,  el Embajador en su presentación habló que era imperativo que en estos tiempos  tan complejos debemos de seguir promoviendo y fortaleciendo los valores del  Consejo de Europa, la promoción de la democracia, los derechos humanos y el  estado de derecho, es muy fácil de decir, muy difícil de lograr. </p>
+<p align="justify">Y, el Embajador en  Reikiavik, también se refirió a los mexicanos, como usted señaló, señora Presidenta,  se refirió al estatus de observador permanente al Consejo de Europa desde 1999,  México hasta ahora, como usted dijo, es el único observador en América Latina,  el Consejo de Europa. </p>
+<p align="justify">Y, de acuerdo con la  presentación del Cónsul en Reikiavik, ustedes contribuyen enormemente para  encontrar soluciones a problemas comunes que solamente se pueden resolver a  través de consenso y comparación internacional en el 2020. </p>
+<p align="justify">Por ello México y el Consejo  Europeo, recomendaron, asimismo para tener una asociación estratégica y  consultas regulares para intercambiar temas de interés común y áreas de  cooperación en derechos humanos, democracia y el estado de derecho.</p>
+<p align="justify">El año entrante, señora  Presidenta, vamos a celebrar el aniversario número 25 del estatus de observadores  oficiales México, que es único, por favor permítame felicitarla por ese  aniversario y permítame invitar al Presidente de la República para venir a  visitar y a hablar ante nuestra Asamblea, durante el año entrante, para  discutir las grandes oportunidades y retos de esta asociación estratégica entre  su país y nuestro Consejo de Europa, representando a 46 Estados miembros. </p>
+<p align="justify">Señora Presidenta, nosotros  estamos contribuyendo al Consejo de Europa y le agradecemos enormemente por  ello, claramente esto se manifiesta en su participación, en varias de los  importantes convenios y Acuerdos internacionales del Consejo de Europa. </p>
+<p align="justify">Un ejemplo de ello es la  participación de México en la Comisión Europea contra el Racismo y la  Intolerancia, CERI, y otro, la representación de México en la Comisión Europea  para la democracia a través del derecho, también conocida como la Comisión de  Venecia. </p>
+<p align="justify">En total, actualmente, como  usted dijo, señora Presidenta, su país es signatario de ocho Convenios del  Consejo de Europa, incluidos los Convenios contra la Ciberdelincuencia para la  Protección de Datos. </p>
+<p align="justify">Me consta que su gobierno y  su parlamento estén también muy implicados en la posible participación de  México en el llamado Convenio de Estambul sobre Prevención y Lucha contra la Violencia  contra las Mujeres y la Violencia Doméstica a un Convenio, señora Presidenta,  que se considera la norma de oro mundial en la protección de las mujeres contra  todas las formas de violencia que se ejercen contra ellas. </p>
+<p align="justify">Le ánimo, encarecidamente, a  que avancen de manera decidida en esta dirección, como también hemos hecho esos  pasos hacia esa dirección, como nosotros lo hemos hecho también en países como  Ucrania, el Reino Unido, por ejemplo y más reciente es Unión Europea,  recientemente. </p>
+<p align="justify">Seguramente usted me va a  hacer el día, me va a alegrar el día y el de millones de mujeres en Europa y en  México que buscan una mejor protección jurídica contra la violencia. </p>
+<p align="justify"> Si pudiera transmitir un  mensaje en ese sentido, desde la Ciudad de México a Estrasburgo, Francia,  también los invito cordialmente a considerar la posibilidad de adhesión de su  país al Convenio de Consejo de Europa sobre la Protección de los Niños contra  la Explotación y el Abuso Sexual, que se llama el Convenio de Lanzarote.</p>
+<p align="justify">México, señora Presidenta,  estuvo entre los Estados que participaron en las negociaciones de esta  Convención tan relevante. </p>
+<p align="justify">Y, espero, con gran interés,  escuchar sus ideas para aumentar la protección de las víctimas de esa  explotación y abuso de los niños mexicanos y de todos los niños a través de  esta Convención. </p>
+<p align="justify">Aprecio enormemente si  México pudiera ser el ejemplo, la luz de la participación de esas convenciones  europeas, señora presidenta, su país también está conectado a Europa a través  de numerosos vínculos históricos y culturales con 130 millones de ciudadanos,  ustedes son el mayor Estado hispanoparlante del mundo y la cultura mexicana,  además, es el resultado de  milenios de desarrollos indígenas en una de las cunas de la civilización humana  en la tierra, también combinada con el legado de 300 años del dominio español  que convierte a México en una encrucijada para los países y culturas de la  talla América Latina. </p>
+<p align="justify">El señor Presidente me mostró desde su oficina estas pinturas  maravillosas con los pueblos indígenas de su gran país y aprecio enormemente el  poder verlas. Y, como ya les dije, me disculpo terriblemente por no poder  hablar en español, en un buen español, tampoco hablar en náhuatl o cualquier  otro de las tantas y de lenguajes indígenas que existen en México.</p>
+<p align="justify">Y sé que la palabra jitomate, chocolate, aguacate, no la inventamos  nosotros, sino que vienen del náhuatl. Y, de hecho, que es un idioma tan  delicioso con tantas palabras deliciosas, de tantos productos deliciosos.</p>
+<p align="justify">Como le dije, señora Presidenta, el Consejo de Europa tiene 46 miembros,  Estados miembro. Igual son Estados asociados, dentro de los cuales está México  en los 47 Estados miembros que salió el año pasado de la membresía.</p>
+<p align="justify">Nosotros, la Federación Rusa que estuvo con nosotros más de 25 años  cruzó la línea roja de la organización del tratado al brutalmente, ilegalmente  invadir a su vecino, nuestro Estado miembro, Ucrania. </p>
+<p align="justify">El objetivo, bajo la creación del Consejo de Europa en el 49, como se  dijo adecuadamente, señora Presidenta, fue la prevención de la guerra en el  continente después de la Segunda Guerra Mundial devastadora.</p>
+<p align="justify">Y ahora una guerra a gran escala, una agresión de una guerra ha  regresado a la tierra europea con sus terribles consecuencias. Miles de  personas ya perdieron sus vidas desde el inicio de esta guerra tan terrible.</p>
+<p align="justify">Millones de ucranianos han tenido que dejar sus hogares a menudo,  también su país buscando albergue en alguno de los otros miembros, estados  miembro. Y agradezco a los Estados miembro y a los ciudadanos por mostrar la  solidaridad cuando realmente importa, y también agradezco a México, señora  Presidenta, a México por condenar la inversión de Rusia a Ucrania y también por  señalar una y otra vez la importancia de dedicar cada uno de los esfuerzos  posibles para lograr la paz a través de la diplomacia en Europa.</p>
+<p align="justify"> Estoy de acuerdo con ustedes, señora Presidenta, que esa guerra nunca  debió de haber empezado y debe terminar lo antes posible. La paz debe de  regresar de acuerdo con el respeto a la integridad territorial y soberanía  nacional de Ucrania y de cualquier otro Estado miembro, y a la línea con la  necesidad de mantener a aquellos responsables y para compensar lo más posible a  las víctimas de esa violación flagrante de la Ley Internacional.</p>
+<p align="justify">Y también le doy la bienvenida a México por esa cuarta Convocatoria de  la reunión en Reikiavik de los países Estado y ser parte de este acuerdo  parcial para el registro del daño de las víctimas de la guerra en Ucrania.</p>
+<p align="justify">Y yo le agradecería y quisiera escuchar de México, cuándo el país también  va a poder formar este parte de acuerdo junto con otros Estados miembro, que ya  son 40 dentro y fuera de Europa y dentro de la Unión Europea.</p>
+<p align="justify">Señora Presidenta, la violación flagrante de la Ley Internacional  también sucede en otra región vecina de Europa, en Medio Oriente, un ataque  terrorista por los fundamentalistas Hamás que mataron a mil 400 inocentes  ciudadanos israelíes, y hubo una respuesta del Ejército contra Hamás que ha  causado la vida de miles de ciudadanos palestinos viviendo en una prisión más  grande del mundo, que es Gaza.</p>
+<p align="justify">Le voy la bienvenida a México, el apoyo para un cese de fuego, para  permitir el apoyo humanitario a los pobres ciudadanos de Palestina en Gaza. </p>
+<p align="justify">Y también le doy la bienvenida al apoyo de México continuo para tener una  solución, para tener dos Estados y resolver el conflicto entre Israel y  Palestina.</p>
+<p align="justify">Dos Estados que tengan una delegación parlamentaria en nuestra  Asamblea Europea, como lo tiene México. </p>
+<p align="justify">Y en octubre nosotros fuimos  a la Primera Asamblea Internacional para discutir ese nuevo capítulo de miseria  en el Medio Oriente, con la participación de Israel y Palestina, con la  presencia de la delegación mexicana. </p>
+<p align="justify">Señora Presidenta, de  nuestro lado vamos a incrementar los esfuerzos para buscar y seguir buscando con  nuestros colegas israelíes y palestinos en nuestra Asamblea para salir de esa  tragedia y para tener una solución viable. </p>
+<p align="justify">Y quisiera también incluir a  su delegación mexicana en nuestras deliberaciones de la Asamblea. </p>
+<p align="justify">Señora Presidenta, los  conflictos siempre crean otros efectos y movimientos de migrantes y gran escala  de refugiados, que es un reto para la región latinoamericana. </p>
+<p align="justify">Doy la bienvenida de los  gobiernos de varios países latinoamericanos para reunirse en Palenque, en  México, y para tratar de ver y trabajar con la migración, usando la diplomacia  y la diplomacia parlamentaria, en vez de sanciones. </p>
+<p align="justify">Estoy consciente que, al  hablar, miles de hombres, mujeres y niños cada día están en su camino para  encontrar un lugar en donde buscan refugio y asentarse para buscar un mejor  futuro para ellos y sus niños. </p>
+<p align="justify">Y también estoy consciente  de los esfuerzos que México hace para atacar la tragedia humana y de los  enormes retos que tenemos frente a nosotros. </p>
+<p align="justify"> El Consejo de Europa, con  sus 46 miembros Estados, también se ve confrontado con grandes movimientos de  personas migrantes, refugiados y también estamos listos para establecer un  diálogo en ese tema que va a ayudarnos a compartir nuestro conocimiento y su  conocimiento, nuestra experiencia y su experiencia entre México y Europa, y  también en temas legales y en ley internacional. </p>
+<p align="justify">Señora presidenta, hay  muchos otros temas que requieren nuestra atención, también de México y de los  Estados americanos. Y como dijimos en Reikiavik, vamos a  seguir cooperando con estos dos miembros, como México y nuestras colonias  mexicanas. </p>
+<p align="justify">Y uno de los temas vitales  es: ¿Cómo aplicar los principios de democracia? Han confirmado en el Consejo de  Europa en Reikiavik principios de democracia que  incluyan la libertad de expresión, de unión y de tener lucha contra corrupción,  protección de niños, violencia sexual y participación democrática de la  sociedad, de los hombres y los niños, principios que también están en la frente  de los retos que enfrenta la sociedad mexicana. </p>
+<p align="justify">El Consejo  de Europa sigue con gran interés e involucramiento la aventura de la  democratización que el parlamento mexicano y el Senado, como representante de  los ciudadanos mexicanos, tiene que jugar un rol con su fortaleza, sabiduría y  valor. Seguramente lo van a hacer. </p>
+<p align="justify">Y,  finalmente, nosotros en Europa necesitamos su experiencia, necesitamos su  sabiduría, necesitamos su guía para ayudarnos a fortalecer la cooperación  multilateral lo más posible en Europa y en el mundo. </p>
+<p align="justify">Nosotros  estamos viviendo en tiempos retadores y tiempos peligrosos, y tenemos que vivir  juntos.</p>
+<p align="justify">Espero  aprender mucho de ustedes, durante mi visita a México espero tener muchas  discusiones estos días con ustedes y sus colegas. </p>
+<p align="justify">Una  vez más, señora Presidenta, muchísimas gracias por invitarme. </p>
+<p align="justify">Muchísimas  gracias, muchísimas, muchísimas gracias. </p>
+<p align="justify"><strong>La  Presidenta Senadora Ana Lilia Rivera Rivera: </strong>Honorable  señor Martinus Josephus María Kox,  gracias por su mensaje.</p>
+<p align="justify">A  nombre del Senado de la República, agradezco su visita y la de su comitiva a  esta sesión solemne, donde hemos hablado y dialogado sobre el encuentro y el  rencuentro de nuestros pueblos. Su asistencia es muestra de la importancia en  mantener los contactos entre las instituciones parlamentarias. </p>
+<p align="justify">Agradezco a las distinguidas  invitadas e invitados que nos han acompañado e invito al señor Presidente de la  Asamblea Parlamentaria del Consejo de Europa nos acompañe en la toma de la  fotografía oficial. </p>
+<p align="center">(Toma de  fotografía)</p>
+<p align="justify">Asimismo, insto a mis  compañeras y compañeros Senadores permanezcan en el salón de sesiones para  continuar con nuestra sesión e invito a quienes nos han hecho el favor de ser  la comitiva de honor acompañen a nuestro invitado especial a retirarse del  pleno cuando así lo consideren. </p>
+<p align="center">(La  comisión cumple)</p>
+<p align="justify">Se levanta la sesión  solemne.</p>
+<p align="center"> (Se  levantó la sesión a las 13:42 horas)<strong> </strong></p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a113483'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

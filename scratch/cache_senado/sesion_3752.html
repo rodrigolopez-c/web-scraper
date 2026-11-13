@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXIV LEGISLATURA</h2><h3>TERCER AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO III</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Primer  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 9</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Higinio Martínez Miranda</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Ordinaria Celebrada<br>en la Ciudad de M&eacute;xico, el 29 de Septiembre de 2026</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/66/3/PPO/PDF-WEB/PPO_No9_29-SEPTIEMBRE-2026_MAT.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130469'></a><p align="center"><strong>PRESIDE  EL SENADOR</strong><br>
+  <strong>HIGINIO  MARTÍNEZ MIRANDA</strong></p>
+<p><strong>APERTURA</strong></p>
+<p><strong>El  Presidente Senador Higinio Martínez Miranda: </strong>(09:20  horas) Compañeras y compañeros Senadores. Vamos a dar inicio a esta sesión,  pidiéndole primero a la Secretaría que informe  a la Asamblea el resultado del cómputo de asistencia de las Senadoras y los  Senadores.</p>
+<p><strong>La Secretaria Senadora Juanita Guerra Mena:</strong> Por instrucciones del señor Presidente. Honorable  Asamblea, conforme al registro de asistencia, se han acreditado 66 ciudadanas  Senadoras y ciudadanos Senadores. En consecuencia, existe el quórum, señor  Presidente.</p>
+<p><strong>El Presidente Senador Higinio Martínez Miranda:</strong> Muchas gracias, Secretaria. En consecuencia, se  abre la sesión ordinaria del martes 29 de septiembre del 2026, correspondiente  al primer periodo ordinario de sesiones del tercer año de ejercicio de la LXVI  Legislatura. El Orden del Día se encuentra publicado en la Gaceta Parlamentaria  de hoy y está disponible en el monitor de sus escaños, con lo cual se informa  de los asuntos que corresponden a la agenda.</p>
+<p align="right"><strong>ORDEN DEL DÍA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/gaceta_del_senado/documento/163241"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>El acta de la sesión  ordinaria del miércoles 23 de septiembre se encuentra publicada en la Gaceta  Parlamentaria de este día.</p>
+<p align="right"><strong>ACTA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/gaceta_del_senado/documento/163240"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><strong>ASISTENCIA DE LA SESIÓN ANTERIOR</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/asistencias/2026_09_23/8"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>En consecuencia,  consulte la Secretaría a la Asamblea, en votación económica, si se aprueba el  acta referida.</p>
+<p><strong>La Secretaria  Senadora Juanita Guerra Mena:</strong> Consulto a la  Asamblea, en votación económica, si es de aprobarse el acta referida. Quienes  estén a favor, por favor, levantar la mano.</p>
+<p align="center">(La  Asamblea asiente)</p>
+<p>Quienes estén porque  se rechace, favor de levantar la mano.</p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p>Quienes se abstengan.</p>
+<p>Aprobada el acta,  señor Presidente.</p>
+<p><strong>El Presidente Senador  Higinio Martínez Miranda: </strong>Aprobada el acta de la  sesión ordinaria del 23 de septiembre de 2026.</p>
+<p>Continúe la  Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130469'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130470'></a><p><strong>REINCORPORACIÓN</strong></p>
+<p><strong>La Secretaria Senadora  Juanita Guerra Mena: </strong>Se recibió una comunicación suscrita por el  Senador Alfonso Cepeda Salas, del grupo parlamentario de Morena, con la que  informa de su reincorporación a sus actividades legislativas, a partir del día  24 de septiembre del año en curso.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/ComSen_ofic_reincorporacion_sen_alfonso_cepeda.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Higinio Martínez Miranda: </strong>La Asamblea ha quedado enterada. Hago de su  conocimiento que se ha informado a su suplente, la Senadora María Luisa  Gutiérrez Santoyo, y a las Secretarías Generales. </p>
+<p>Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130470'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130471'></a><p><strong>COMUNICACIONES</strong></p>
+<p><strong>La  Secretaria Senadora Juanita Guerra Mena: </strong>Asimismo,  se recibieron comunicaciones de las siguientes Senadoras y de comisiones, con  el que se remiten sus respectivos informes de actividades legislativas del  segundo año del ejercicio legislativo que está en curso.</p>
+<p>La  Senadora Reyna Celeste Ascencio Ortega, del grupo parlamentario de Morena. (Sin oficio).</p>
+<p>La Senadora María de Jesús Díaz Marmolejo y la  Senadora Susana Zatarain García, ambas del grupo parlamentario del Partido  Acción Nacional. (Sin oficio).</p>
+<p>La Comisión de Ciencia, Humanidades, Tecnología e  Innovación; Asuntos de la Frontera Norte; y Hacienda y Crédito Público. (Sin  oficio).</p>
+<p>Se recibieron también comunicaciones de las  siguientes comisiones en las que se remiten.</p>
+<p>La Comisión de Asuntos de la Frontera Norte, su  programa anual de trabajo. (Sin oficio).</p>
+<p>De la Comisión de Hacienda y Crédito Público, su  programa anual de trabajo y su calendario de reuniones, todo correspondiente al  tercer año de ejercicio de la actual Legislatura. (Sin oficio).</p>
+<p>Igualmente recibimos comunicaciones de las  siguientes personas Senadores con las que se remiten.</p>
+<p>Senadora Edith López Hernández, del grupo  parlamentario de Morena, con la que remite el informe de su participación en el  Parlamento Latinoamericano y Caribeño, los días 3 y 4 de septiembre del año en  curso, en la ciudad de Panamá, Panamá. (Sin oficio).</p>
+<p>Y del Senador Francisco Javier Ramírez Acuña, del  grupo parlamentario del Partido Acción Nacional, que informa su participación  en la Tercera Parte de la Sesión Ordinaria de la Asamblea Parlamentaria del  Consejo de Europa, que se llevó a cabo en Estrasburgo, Francia, del día 22 al  26 de junio de 2026. (Sin oficio).</p>
+<p>Es cuanto, señor Presidente.</p>
+<p><strong>El Presidente Senador Higinio Martínez Miranda: </strong>La Presidencia ha quedado enterada. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130471'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130472'></a><p><strong>SECRETARÍA DE GOBERNACIÓN</strong></p>
+<p>Ahora hago del conocimiento del Pleno que recibimos  oficios de la Secretaría de Gobernación, con los que remitió de la Presidenta  de la República, Doctora Claudia Sheinbaum Pardo, las siguientes solicitudes de  autorización:</p>
+<p>Una, para que se permita la salida de la delegación  de tropas nacionales fuera de los límites del país, a efecto de que participen  en el ejercicio &ldquo;Cambrian Patrol 2026&rdquo;, que se realizará del 2 al 14 del año en  curso, en Brecon, Gales, Reino Unido, con fundamento en el numeral 1 del  artículo 67 de la Ley Orgánica del Congreso General de los Estados Unidos  Mexicanos, se turnó directamente a la Comisión de Defensa Nacional, el 24 de  septiembre pasado.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/_segob_cambrian_patrol_2026_reino-unido.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130472'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130473'></a><p>Y otra comunicación  para que se permita la salida de tropas de la Armada de México fuera de los  límites del país para participar en el Evento No SOF 1 &ldquo;Capacitación de las  Fuerzas de Operaciones Especiales Mexicanas en los Estados Unidos  Continentales&rdquo;, (CONUS), que se llevará a cabo del 24 de octubre al 13 de  diciembre del año actual, en las instalaciones del Camp Shelby Joint Forces  Training Center, ubicadas en Mississippi, Estados Unidos de América.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/_segob_conus_mississippi.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Bajo el mismo  fundamento de la anterior solicitud, esa se turnó directamente a la Comisión de  Marina el pasado día 25 de septiembre. </p>
+<p>Continúe la  Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130473'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130474'></a><p><strong>La Secretaria Senadora  Juanita Guerra Mena: </strong>Por instrucciones del Presidente, también de  la Secretaría de Gobernación, se recibió un oficio con el que se remite, de la  Secretaría de Economía, el Informe Estadístico sobre el Comportamiento de la  Inversión Extranjera Directa de México, correspondiente al segundo trimestre  del año 2026.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/_segob_econom%C3%ADa_informe_inversion_extranjera_2do_trimestre.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Higinio Martínez Miranda: </strong>Remítase a la Comisión de Economía. </p>
+<p>Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130474'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130475'></a><p><strong>CONGRESOS DE LOS  ESTADOS</strong></p>
+<p><strong>La Secretaria Senadora  Juanita Guerra Mena: </strong>Se recibió un oficio del Congreso  del Estado de Chihuahua, con el que remite INICIATIVA CON PROYECTO DE DECRETO  POR EL QUE SE REFORMA EL ARTÍCULO 115, FRACCIÓN IV, PÁRRAFO SEGUNDO, DE LA  CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS, en materia de exenciones  o subsidios de los bienes de los municipios. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/ConEdos_congreso_chihuahua_art_115_cpeum.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es cuanto, señor  Presidente. </p>
+<p><strong>El Presidente Senador  Higinio Martínez Miranda: </strong>Túrnese a las Comisiones  Unidas de Puntos Constitucionales; de Desarrollo Municipal; y de Estudios  Legislativos. </p>
+<p>Continúe la  Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130475'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130476'></a><p><strong>La Secretaria  Senadora Juanita Guerra Mena: </strong>Se recibió otro  oficio del Congreso del Estado de Chihuahua, en éste remite INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE ADICIONA LA LEY FEDERAL DE LOS TRABAJADORES  AL SERVICIO DEL ESTADO Y LA LEY FEDERAL DEL TRABAJO, en materia de permisos  laborales para víctimas de violencia y para la atención de diligencias  judiciales en materia familiar o penal.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/ConEdos_congreso_chihuahua_ref_lftse_y_lft.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Higinio Martínez Miranda: </strong>Túrnese a las Comisiones  Unidas de Trabajo y Previsión Social; y de Estudios Legislativos, Primera. </p>
+<p>Continúe la  Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130476'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130477'></a><p><strong>La Secretaria  Senadora Juanita Guerra Mena: </strong>También se informa  que se recibió oficio del Congreso del Estado de Chihuahua, con el que remite  exhorto al Congreso de la Unión, a las Secretarías de Hacienda y Crédito  Público; de Energía; y de Agricultura y Desarrollo Rural; y a la Comisión  Federal de Electricidad, para que evalúen la viabilidad de establecer una  tarifa eléctrica preferencial o un esquema de estímulo energético aplicable a  la cámara de atmósfera controlada y unidades de almacenamiento de productos  frutícolas. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/ConEdos_congreso_chihuahua_esquema_estimulo_energ%C3%A9tico.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es cuanto, señor  Presidente. </p>
+<p><strong>El Presidente Senador  Higinio Martínez Miranda: </strong>Túrnese a la Comisión de  Energía. </p>
+<p>Continúe la  Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130477'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130478'></a><p><strong>La Secretaria  Senadora Juanita Guerra Mena: </strong>Asimismo, el Congreso  del Estado de Chihuahua, remitió otro oficio, en éste nos envía el voto  aprobatorio del Decreto por el que se reforma el artículo 127 de la  Constitución Política de los Estados Unidos Mexicanos, en materia de límite a  las jubilaciones y pensiones de las entidades públicas.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/ConEdos_congreso_chihuahua_aprobacion_ref_art_127_cpeum.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Higinio Martínez Miranda: </strong>La Asamblea ha quedado  enterada. Se integrará al expediente, en virtud de la declaratoria realizada el  8 de abril del año en curso. </p>
+<p>Continúe la  Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130478'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130479'></a><p><strong>La Secretaria  Senadora Juanita Guerra Mena: </strong>Igualmente, se  recibieron oficios de los siguientes congresos estatales:</p>
+<p>Del Estado de  Guerrero, con los que se informa de la clausura de los trabajos del segundo  periodo de receso del segundo año de ejercicio, así como de la instalación del  primer periodo de sesiones ordinarias del tercer año de ejercicio,  correspondientes a la LXIV Legislatura.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/ConEdos_congreso_guerrero_clausura_e_instalaci%C3%B3n.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130479'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130480'></a><p>Así como del Estado  de Nuevo León, con el que se informa de la instalación, apertura y elección de  la Mesa Directiva que fungirá del 1 de septiembre del año 2026 al 31 de agosto  de 2027, correspondiente al primer periodo ordinario de sesiones del tercer año  de ejercicio de la LXXVII Legislatura.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/ConEdos_congreso_nuevo_le%C3%B3n_elecci%C3%B3n_md.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es cuanto, señor  Presidente. </p>
+<p><strong>El Presidente Senador  Higinio Martínez Miranda: </strong>La Asamblea ha quedado  enterada. </p>
+<p>Continúe la  Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130480'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130481'></a><p><strong>RESPUESTAS A ACUERDOS  PROMOVIDOS POR SENADORES</strong></p>
+<p><strong>La Secretaria  Senadora Juanita Guerra Mena: </strong>Se recibieron 13  oficios de dependencias diversas, con los que envían respuesta a Acuerdos  promovidos por Senadoras y Senadores aprobados por el Senado de la República. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/66/gaceta_del_senado/documento/163271"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Higinio Martínez Miranda: </strong>Remítanse a las personas  Senadoras promoventes. Dicha documentación se encuentra publicada en la Gaceta  Parlamentaria. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130481'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130482'></a><p>Solicito a la  Secretaría dé lectura a la comunicación que nos ha hecho llegar la Senadora  Cecilia Guadalupe Guadiana Mandujano.</p>
+<p> <strong>SOLICITUDES DE  LICENCIAS</strong></p>
+<p><strong>La Secretaria  Senadora Juanita Guerra Mena: </strong>Doy lectura a la  comunicación.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/_ofic_licencia_sen_cecilia_mandujano.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador  Higinio Martínez Miranda:</strong> En consecuencia, con fundamento en lo  dispuesto por el artículo 12 del Reglamento del Senado, está a consideración de  la Asamblea el siguiente:</p>
+<p align="center">&ldquo;Punto de Acuerdo</p>
+<p>Único. Se concede licencia a la Senadora  Cecilia Guadalupe Guadiana Mandujano para separarse de sus funciones  legislativas los días 29 y 30 de septiembre de 2026&rdquo;. </p>
+<p>Al no haber personas oradoras registradas  consulte la Secretaría a la Asamblea, en votación económica, si es de aprobarse  el Acuerdo. </p>
+<p><strong>La Secretaria Senadora  Juanita Guerra Mena:</strong> Consulto a esta Honorable Asamblea, en  votación económica, si es de aprobarse el Acuerdo. Quienes estén de por la  afirmativa, favor de expresarlo levantando la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p> Quienes  estén por la negativa, favor de levantar la mano.</p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p> En  abstención. </p>
+<p>Queda  aprobado por unanimidad, señor Presidente, la aprobación. </p>
+<p><strong>El  Presidente Senador Higinio Martínez Miranda:</strong> Aprobado el Acuerdo. En consecuencia, se concede licencia a la Senadora Cecilia  Guadalupe Guadiana Mandujano para separarse de sus funciones legislativas los  días 29 y 30 de septiembre de 2026. Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130482'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130483'></a><p>Dé  cuenta ahora la Secretaría de la comunicación que recibimos del Senador  Virgilio Mendoza Amezcua. </p>
+<p><strong>La  Secretaria Senadora Juanita Guerra Mena:</strong> Por instrucciones del señor Presidente doy cuenta. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/_ofic_licencia_sen_virgilio_mendoza.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es cuanto, señor Presidente. </p>
+<p><strong>El Presidente Senador  Higinio Martínez Miranda:</strong> En consecuencia, con fundamento en lo  dispuesto por el artículo 12 del Reglamento del Senado, está a consideración de  la Asamblea el siguiente:</p>
+<p align="center">&ldquo;Punto de Acuerdo</p>
+<p>Único. Se concede licencia al Senador  Virgilio Mendoza Amezcua para separarse de sus funciones legislativas, del 28  al 30 de septiembre de 2026&rdquo;. </p>
+<p>Al no haber personas oradoras registradas  consulte la Secretaría a la Asamblea, en votación económica, si es de aprobarse  el Acuerdo.</p>
+<p> <strong>La  Secretaria Senadora Juanita Guerra Mena:</strong> Consulto a la Honorable Asamblea, en votación económica, si es de aprobarse el  Acuerdo. Quienes estén por la afirmativa, sean tan amables de expresarlo  levantando la mano. </p>
+<p align="center">(La  Asamblea asiente)</p>
+<p>Quienes  estén por la negativa, favor de levantar la mano.</p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p>En  abstención. </p>
+<p>Informo  a usted que queda aprobado el Acuerdo, señor Presidente. </p>
+<p><strong>El  Presidente Senador Higinio Martínez Miranda:</strong> Aprobado el Acuerdo. En consecuencia, se concede licencia al Senador Virgilio  Mendoza Amezcua para separarse de sus funciones legislativas, del 28 al 30 de  septiembre de 2026. Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130483'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130484'></a><p>Solicito  a la Secretaría ahora dé lectura a la comunicación que nos ha enviado la  Senadora Karina Isabel Ruiz Ruiz. </p>
+<p><strong>La  Secretaria Senadora Juanita Guerra Mena:</strong> Doy lectura a la comunicación. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/_ofic_licencia_sen_karina_ruiz.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es cuanto, señor Presidente. </p>
+<p><strong>El Presidente Senador  Higinio Martínez Miranda:</strong> En consecuencia, con fundamento en lo  dispuesto por el artículo 12 del Reglamento del Senado, está a consideración de  la Asamblea el siguiente:</p>
+<p> &ldquo;Punto  de Acuerdo</p>
+<p>Único.  Se concede licencia a la Senadora Karina  Isabel Ruíz Ruíz para separarse de sus funciones legislativas los días 29 y 30  de septiembre de 2026&rdquo;. </p>
+<p>Al no haber personas oradoras registradas consulte  la Secretaría a la Asamblea, en votación económica, si es de aprobarse el  Acuerdo. </p>
+<p><strong>La Secretaria Senadora Juanita Guerra Mena:</strong> Consulto a la Honorable Asamblea, en votación  económica, si es de aprobarse el Acuerdo. Quienes estén por la afirmativa,  favor expresarlo levantando la mano. </p>
+<p align="center">(La Asamblea asiente) </p>
+<p>Quienes estén por la negativa, favor expresarlo. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p>En abstención. </p>
+<p>Queda aprobado, señor Presidente. </p>
+<p><strong>El Presidente Senador Higinio Martínez Miranda:</strong> Aprobado el Acuerdo. En consecuencia, se concede  licencia a la Senadora Karina Isabel Ruíz Ruíz para separarse de sus funciones  legislativas los días 29 y 30 de septiembre de 2026. Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130484'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130485'></a><p>Solicito ahora a la Secretaría dé cuenta de la  comunicación que recibimos de la Senadora Virginia Magaña Fonseca. </p>
+<p><strong>La Secretaria Senadora Juanita Guerra Mena:</strong> Doy lectura de la comunicación.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/_ofic_licencia_sen_virginia_fonseca.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es cuanto, señor  Presidente.</p>
+<p> <strong>El Presidente Senador Higinio Martínez Miranda:</strong> En consecuencia, con fundamento en lo dispuesto  por el artículo 12 del Reglamento del Senado, está a consideración de la  Asamblea el siguiente:</p>
+<p align="center">&ldquo;Punto de Acuerdo</p>
+<p>Único. Se concede licencia a la Senadora Virginia  Magaña Fonseca para separarse de sus funciones legislativas los días 29 y 30 de  septiembre de 2026&rdquo;. </p>
+<p>Al no haber personas oradoras registradas consulte  la Secretaría a la Asamblea, en votación económica, si es de aprobarse el  Acuerdo. </p>
+<p><strong>La Secretaria Senadora Juanita Guerra Mena:</strong> Consulto a la Asamblea, en votación económica, si  es de aprobarse el Acuerdo. Quienes estén por la afirmativa, por favor, de  levantar la mano. </p>
+<p align="center">(La Asamblea asiente) </p>
+<p>Quienes estén por la negativa, por favor,  expresarlo levantando la mano. </p>
+<p align="center">(La Asamblea no asiente)</p>
+<p>En abstención. </p>
+<p>Queda aprobado el Acuerdo, señor Presidente. </p>
+<p><strong>El Presidente Senador Higinio Martínez Mirnda:</strong> Aprobado el Acuerdo. En consecuencia, se concede  licencia a la Senadora Virginia Magaña Fonseca para separarse de sus funciones  legislativas los días 29 y 30 de septiembre de 2026. Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130485'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130486'></a><p>Enseguida dé cuenta la Secretaría con la  comunicación que nos remitió la Senadora María Martina Kantún Can. </p>
+<p><strong>La Secretaria Senadora Juanita Guerra Mena:</strong> Doy lectura de la comunicación. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/Ofic_licencia_Sen_Mar%C3%ADa_Kant%C3%BAn.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador Higinio Martínez Miranda:</strong> En consecuencia, con fundamento en lo dispuesto  por el artículo 12 del Reglamento del Senado, está a consideración de la  Asamblea el siguiente:</p>
+<p align="center">&ldquo;Punto de Acuerdo</p>
+<p>Único. Se concede licencia a la Senadora María  Martina Kantún Can, para separarse de sus funciones legislativas el 29 de  septiembre de 2026&rdquo;. </p>
+<p>Al no haber personas oradoras registradas, consulte  la Secretaría a la Asamblea, en votación económica, si es de aprobarse el  Acuerdo. </p>
+<p><strong>La Secretaria Senadora Juanita Guerra Mena: </strong>Consulto a la Honorable Asamblea, en votación  económica, si es de aprobarse el Acuerdo.</p>
+<p>Quienes estén por la afirmativa, por favor  expresarlo levantando la mano. </p>
+<p align="center">(La Asamblea asiente)</p>
+<p>Quienes estén por la negativa, favor de levantar la  mano.</p>
+<p align="center">(La Asamblea no asiente)</p>
+<p>En abstención. </p>
+<p>Queda aprobado el Acuerdo, señor Presidente. </p>
+<p><strong>El Presidente Senador Higinio Martínez Miranda:</strong> Aprobado el Acuerdo. En consecuencia, se concede  licencia a la Senadora María Martina Kantún Can, para separarse de sus  funciones legislativas el 29 de septiembre de 2026.</p>
+<p>Comuníquese. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130486'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130487'></a><p><strong>REINCORPORACIONES</strong></p>
+<p>Honorable Asamblea, a partir de la licencia que  aprobamos al Senador Virgilio Mendoza Amezcua y a la Senadora Virginia Magaña  Fonseca, se han reincorporado a sus actividades sus respectivos suplentes. </p>
+<p>Ellos son el Senador Edgar Noé Larios Carrasco,  quien rindió la correspondiente protesta el 11 de diciembre de 2024 y la  Senadora Fraisel Guadalupe Capetillo López, ella rindió su protesta el 28 de  mayo del año en curso. </p>
+<p>¡Sean bienvenidas y bienvenido nuevamente,  compañeros Senadores!</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130487'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130488'></a><p>En otro apartado del día y debido a que se  encuentra publicado en la Gaceta Parlamentaria, solicito a la Secretaría dé  lectura al Acuerdo que suscribimos las personas integrantes de la Mesa  Directiva, para la realización de una sesión solemne en la que se recibiría la  visita del Alto Comisionado de las Naciones Unidas para los Refugiados, señor  Barham Salih.</p>
+<p><strong>MESA DIRECTIVA</strong></p>
+<p><strong>La Secretaria Senadora Juanita Guerra Mena: </strong>Doy lectura al Acuerdo.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/_acuerdo_md_solemne_20260925.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p><strong>El Presidente Senador Higinio Martínez Miranda:</strong> Está a discusión el Acuerdo, en virtud de no haber  personas oradoras registradas, consulte la Secretaría a la Asamblea, en  votación económica, si es de aprobarse el Acuerdo presentado. </p>
+<p><strong>La Secretaria Senadora Juanita Guerra Mena: </strong>Consulto a esta Honorable Asamblea, en votación  económica, si es de aprobarse el Acuerdo. Quienes estén por  la afirmativa, por favor expresarlo levantando la mano. </p>
+<p align="center">(La  Asamblea asiente)</p>
+<p>Quienes estén por la  negativa, favor de levantar la mano.</p>
+<p align="center">(La  Asamblea no asiente)</p>
+<p>En  abstención.</p>
+<p>Informo  a usted, señor Presidente, queda aprobado el Acuerdo.</p>
+<p><strong>El  Presidente Senador Higinio Martínez Miranda:</strong> Aprobado el Acuerdo para la realización de una sesión solemne hoy, 29 de  septiembre, para recibir la visita del Alto Comisionado de las Naciones Unidas  para los Refugiados, señor Barham Salih. Comuníquese.</p>
+<p>Se  instruye a las Secretarías Generales realizar las gestiones necesarias y  cumplir con las tareas de logística que se requieran.</p>
+<p>Compañeras  y compañeros Senadores, haremos un receso en nuestra sesión ordinaria para  iniciar la sesión solemne, en la que recibimos la visita del señor Barham  Salih, Alto Comisionado de las Naciones Unidas para los Refugiados.</p>
+<p align="center">(RECESO)</p>
+<p><strong>El  Presidente Senador Higinio Martínez Miranda:</strong> Se reanuda la sesión ordinaria. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130488'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130489'></a><p>Compañeras  y compañeros Senadores, después de las licencias que autorizamos a las  Senadoras Cecilia Guadalupe Guadiana Mandujano, Karina Isabel Ruiz y María  Martina Kantún Can se ha convocado a sus suplentes, quienes rendirán sus  correspondientes protestas de ley. </p>
+<p>Ellas  son las ciudadanas Rocío Guadalupe de Aguinaga Peraza, Octavia Fernández Farret  e Ixchel Victoria Pat Caamal, quienes se encuentran en el salón contiguo. </p>
+<p>Por  esa razón, solicito a las personas Senadoras Jennifer Kristel Parra Salas,  María del Rocío Corona Nakamura, Luis Reyes Zavala, José Manuel Cruz  Castellanos y la Senadora Edith López Hernández les inviten a pasar a este  salón de sesiones y los acompañen durante el acto de su protesta. </p>
+<p><strong>La  Secretaria Senadora Juanita Guerra Mena:</strong> Se solicita a los presentes sean tan amables de ponerse de pie, a todas y a  todos los presentes. </p>
+<p align="center">(Todos  de pie)</p>
+<p><strong>El  Presidente Senador Higinio Martínez Miranda:</strong> Ciudadanas Rocío Guadalupe de Aguinaga Peraza, Octavia Fernández Farret e  Ixchel Victoria Pat Caamal esta Soberanía les ha convocado para que rindan su  protesta constitucional y legal como Senadoras de la República. </p>
+<p> En consecuencia, les pregunto:</p>
+<p><strong>PROTESTA DE LEY</strong></p>
+<p>¿Protestan guardar y hacer guardar la  Constitución Política de los Estados Unidos Mexicanos, las leyes que de ella  emanen y desempeñar leal y patrióticamente el cargo que el pueblo les ha  conferido mirando en todo por el bien la prosperidad de la Unión?</p>
+<p><strong>Los Ciudadanos Rocío  Guadalupe de Aguinaga Peraza, Octavia Fernández Farret e Ixchel Victoria Pat  Caamal:</strong> ¡Sí, protesto!</p>
+<p><strong>El Presidente Senador  Higinio Martínez Miranda:</strong> Si así no lo hicieren que la nación se los  demande. </p>
+<p>¡Felicidades, compañeras Senadoras!</p>
+<p>Les solicito pasen a ocupar el escaño que les  ha sido asignado, a fin de que se incorporen inmediatamente a nuestros  trabajos. </p>
+<p>Quiero saludar a los familiares y amigos de  las personas Senadoras que hoy tomaron protesta. </p>
+<p>¡Bienvenidas todas y todos ustedes que  acompañaron a las compañeras Senadoras!</p>
+<p>Honorable Asamblea, les informo que tenemos  la visita de un grupo de estudiantes del estado de Aguascalientes. Quienes  acuden por invitación del Senador Juan Antonio Martín del Campo Martín del  Campo para conocer el desarrollo de los trabajos legislativos. </p>
+<p>El Poder Legislativo les da más cordial  bienvenida a la casa del federalismo, donde se construyen las leyes que rigen  nuestra sociedad. </p>
+<p>Muchas gracias. </p>
+<p>¡Bienvenidos al Senado!</p>
+<p>Favor de tomar asiento todas y todos, por  favor, compañeras. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130489'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130490'></a><p>En otro apartado del Orden del Día, informe  la Secretaría sobre los dictámenes inscritos para primera lectura. </p>
+<p><strong>La Secretaria Senadora  Juanita Guerra Mena:</strong> Doy cuenta. </p>
+<p>Tenemos los siguientes dictámenes:</p>
+<p>Uno, de las Comisiones Unidas de Puntos  Constitucionales; y de Estudios Legislativos, Primera, con proyecto de Decreto  por el que se reforman y adicionan los artículos 82, 116 y 122 de la  Constitución Política de los Estados Unidos Mexicanos, en materia de  nacionalidad única para el ejercicio de la titularidad de los poderes  Ejecutivo, Federal y locales. </p>
+<p><strong>PROYECTO DE DECRETO  POR EL QUE SE REFORMAN Y ADICIONAN LOS ARTÍCULOS 82, 116 Y 122 DE LA  CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS</strong></p>
+<p><strong>(Dictamen de primera  lectura)</strong></p>
+<p align="right"><strong>DOCUMENTOS</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/Dictamen_Nacionalidad_%C3%9Anica.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/Asistencias_votaci%C3%B3nes_Dic_Nacionalidad_%C3%9Anica.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130490'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130491'></a><p>Dos, de las Comisiones Unidas de Medio  Ambiente, Recursos Naturales y Cambio Climático; y de Estudios Legislativos,  Primera, el que contiene proyecto de Decreto por el que se reforman y adicionan  diversas disposiciones de la Ley Orgánica de la Administración Pública Federal  y la Ley General de Desarrollo Forestal Sustentable. </p>
+<p><strong>PROYECTO DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSAS  DISPOSICIONES A LA LEY ORGÁNICA DE LA ADMINISTRACIÓN PÚBLICA FEDERAL Y LA LEY  GENERAL DE DESARROLLO FORESTAL SUSTENTABLE</strong></p>
+<p><strong>(Dictamen de primera  lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/Dictamen_Desarrollo_Forestal_Sustentable_Act-29092026.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130491'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130492'></a><p>Y el que contiene proyecto de Decreto por el  que se expide la Ley General, en Materia de Bienestar, Cuidado, Protección de  los Animales y se reforman, adicionan y derogan diversas disposiciones de la  Ley General de Sanidad Animal, de la Ley General de Vida Silvestre, de la Ley  General del Equilibrio Ecológico y la Protección al Ambiente, de la Ley General  de Protección Civil y de la Ley General de Cine y Audiovisual. </p>
+<p><strong>PROYECTO DE DECRETO POR EL QUE SE EXPIDE LA LEY GENERAL EN MATERIA DE  BIENESTAR, CUIDADO Y PROTECCIÓN DE LOS ANIMALES Y SE REFORMAN, ADICIONAN Y  DEROGAN DIVERSAS DISPOSICIONES DE LA LEY FEDERAL DE SANIDAD ANIMAL; DE LA LEY  GENERAL DE VIDA SILVESTRE; DE LA LEY GENERAL DEL EQUILIBRIO ECOLÓGICO Y LA  PROTECCIÓN AL AMBIENTE; DE LA LEY GENERAL DE PROTECCIÓN CIVIL; Y DE LA LEY  FEDERAL DE CINE Y EL AUDIOVISUAL</strong></p>
+<p><strong>(Dictamen de primera  lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/Dictamen_Bienestar_Animal_Act_29092026.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>Es todo, señor Presidente. </p>
+<p><strong>El Presidente Senador  Higinio Martínez Miranda:</strong> Informo a la Asamblea que los dictámenes,  así como los documentos relacionados se encuentran publicados en la Gaceta  Parlamentaria, por lo que con fundamento en lo dispuesto por los artículos 193  y 195 del Reglamento del Senado quedan de primera lectura. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130492'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130493'></a><p>Honorable Asamblea, hago de su conocimiento  que recibimos en la Mesa Directiva un dictamen para su primera lectura. </p>
+<p>Solicito a la Secretaría dé cuenta con él e  inmediatamente consulte a la Asamblea, en votación económica,  si autoriza que se incorpore a la agenda de este día para su trámite. </p>
+<p><strong>La Secretaria Senadora  Juanita Guerra Mena:</strong> Doy cuenta. </p>
+<p>Recibimos para primera lectura el dictamen de  la Comisión de Defensa Nacional, con el proyecto de Decreto por el que se  concede autorización a la persona titular del Poder Ejecutivo Federal para  permitir la salida de elementos que integran una delegación de tropas  nacionales fuera de los límites de nuestro país, a efecto de que participen en  el &ldquo;Ejercicio Cambrian Patrol 2026, que se llevará a cabo del 2 al 14 de  octubre del año 2026&rdquo;, en Brecon, Gales, Reino Unido. </p>
+<p>Consulto a la Honorable Asamblea, en votación  económica si se autoriza que se integre al Orden del Día del día de hoy. Quienes  estén por la afirmativa, por favor expresarlo levantando la mano. </p>
+<p align="center"> (La Asamblea asiente)</p>
+<p>Quienes estén por la negativa, por favor  expresarlo levantando la mano. </p>
+<p align="center">(La Asamblea no  asiente)</p>
+<p> En abstención. Informo a usted, señor Presidente,  queda aprobado la incorporación.</p>
+<p> <strong>El Presidente Senador  Higinio Martínez Miranda:</strong> El dictamen se encuentra publicado en la  Gaceta Parlamentaria y está disponible en el monitor de sus escaños. </p>
+<p><strong>PROYECTO DE DECRETO  POR EL QUE SE CONCEDE AUTORIZACIÓN A LA PERSONA TITULAR DEL PODER EJECUTIVO  FEDERAL PARA PERMITIR LA SALIDA DE ELEMENTOS QUE INTEGRAN UNA DELEGACIÓN DE  TROPAS NACIONALES FUERA DE LOS LÍMITES DE NUESTRO PAÍS, A EFECTO DE QUE  PARTICIPEN EN EL &ldquo;EJERCICIO CAMBRIAN PATROL 2026, QUE SE LLEVARÁ A CABO DEL 2  AL 14 DE OCTUBRE DEL AÑO 2026&rdquo;, EN BRECON, GALES, REINO UNIDO</strong><strong> </strong></p>
+<p><strong>(Dictamen de primera  lectura)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/Dictamen_Salida_de_Tropas_Cambrian-Patrol_2026.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p>En consecuencia, con fundamento en lo  dispuesto por los artículos 193 y 195 del Reglamento del Senado queda de  primera lectura. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130493'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130494'></a><p><strong>INICIATIVA CON PROYECTO DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN  DIVERSAS DISPOSICIONES DE LA LEY GENERAL DE EDUCACIÓN</strong></p>
+<p><strong>(De la Senadora Olga Patricia Sosa Ruiz, del grupo parlamentario del  Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/Inic_Morena_Sen_Olga_Sosa_Ley_Grl_Educacion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130494'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130495'></a><p><strong>INICIATIVA CON PROYECTO DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN  DIVERSAS DISPOSICIONES DE LA LEY GENERAL DE EDUCACIÓN</strong></p>
+<p><strong>(De la Senadora Olga Patricia Sosa Ruiz, del grupo parlamentario del  Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/Inic_Morena_Sen_Olga_Sosa_Educacion_Continua.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130495'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130496'></a><p><strong>INICIATIVA CON PROYECTO DE DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSAS DISPOSICIONES DE LA  LEY GENERAL DE DESARROLLO  SOCIAL, DE LA LEY GENERAL DE SALUD Y DE LA LEY GENERAL DE LOS DERECHOS DE  NIÑAS, NIÑOS Y ADOLESCENTES</strong></p>
+<p><strong>(De la Senadora Olga Patricia Sosa Ruiz, del grupo parlamentario del  Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/Inic_Morena_Sen_Olga_Sosa_Ley_Grl_Salud_y_Derechos_Ninos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130496'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130497'></a><p><strong>PROPOSICIONES CON PUNTO DE ACUERDO</strong></p>
+<p>Del Senador  Luis Fernando Salazar Fernández, del grupo parlamentario del Partido Morena,  con punto de Acuerdo por el que se exhorta al gobierno del estado de Coahuila  de Zaragoza y a los ayuntamientos de sus municipios a impulsar una red integral  de espacios y programas de atención que promuevan el envejecimiento activo de  las personas adultas mayores en la entidad. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_Morena_Sen_Luis_Salazar_adultos-mayores.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130497'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130498'></a><p>De la  Senadora Juanita Guerra Mena, del grupo parlamentario del PVEM, con punto de  Acuerdo por el que se exhorta a la Fiscalía General del Estado de Morelos, a la  Universidad Autónoma del Estado de Morelos y a las Presidentas y Presidentes  Municipales en los que se ubican sus planteles académicos, para que fortalezcan  las acciones de investigación, prevención y seguridad para las y los  estudiantes, ante los casos de feminicidio de alumnas de dicha Universidad, y  refuercen los mecanismos de vigilancia, seguridad y protección en los  planteles, sus alrededores y transporte estudiantil. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_PVEM_Sen_Juanita_Guerra_feminicidios-UAEM.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130498'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130499'></a><p>De la  Senadora Geovanna Bañuelos De la Torre, del grupo parlamentario del PT, con  punto de Acuerdo por el que se exhorta a la Secretaría de Salud del gobierno  del estado de Zacatecas para que establezca una mesa de diálogo con las  trabajadoras y los trabajadores eventuales y suplentes; revise de manera  individual su situación contractual y de seguridad social; presente una ruta  con criterios transparentes y plazos definidos para atender su demanda de  regularización laboral y acceso a plazas, conforme a la normatividad aplicable. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_PT_Sen_Geovanna_Ba%C3%B1uelos_intimidacion_trabajadores.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130499'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130500'></a><p>De la  Senadora Jesús Lucía Trasviña Waldenrath, del grupo parlamentario del Partido Morena, con punto de Acuerdo  relativo a la proliferación de la macroalga invasora Caulerpa Okamura en la laguna  Ojo de Liebre, Guerrero Negro, Baja California Sur. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_Morena_Sen_Jes%C3%BAs_Trasvi%C3%B1a_proliferaci%C3%B3n_macroalga-invasora_BCS.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130500'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130501'></a><p>De la  Senadora Juanita Guerra Mena, del grupo parlamentario del PVEM, con punto de  Acuerdo por el que se exhorta a la titular de la Secretaría de las Mujeres del  estado de Morelos, a fortalecer, implementar y evaluar acciones y políticas  públicas efectivas para prevenir, atender, disminuir y erradicar la violencia  contra las mujeres, particularmente ante el incremento y gravedad de los  feminicidios recientes en la entidad, así como a rendir un informe detallado  sobre los resultados obtenidos. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_PVEM_Sen_Juanita_Guerra_secretaria-de-las-mujeres-morelos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130501'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130502'></a><p>De la  Senadora Verónica Noemí Camino Farjat, del grupo parlamentario del Partido Morena, con punto de  Acuerdo por el que se exhorta a la Comisión Federal de Electricidad a fortalecer las  acciones de mantenimiento y modernización de la infraestructura  eléctrica en el estado de Yucatán, y se solicita un diagnóstico detallado sobre  la situación actual de sus instalaciones. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_Morena_Sen_Ver%C3%B3nica_Camino_instalaciones_CFE.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130502'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130503'></a><p>De la  Senadora Alejandra Berenice Arias Trevilla, del grupo parlamentario del Partido  Morena, con punto de Acuerdo por el que se exhorta a la Secretaría de Economía  a fortalecer los programas de capacitación y acompañamiento para la  digitalización y adopción del comercio electrónico por parte de las micro,  pequeñas y medianas empresas. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_Morena_Sen_Alejandra_Arias_digitalizacion-y-adopcion-del-comercio-electronico.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130503'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130504'></a><p>De la  Senadora Alejandra Berenice Arias Trevilla, del grupo parlamentario del Partido  Morena, con punto de Acuerdo por el que se exhorta a la Secretaría de Salud a  fortalecer las acciones de prevención, detección y atención de problemas de  salud mental en niñas, niños y adolescentes. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_Morena_Sen_Alejandra_Arias_salud-mental.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130504'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130505'></a><p>            De la Senadora Beatriz Robles  Gutiérrez, del grupo parlamentario del Partido Morena, con punto de Acuerdo por  el que se exhorta al titular de la Presidencia de San Juan del Río, Querétaro,  así como a las personas regidoras y síndicas que integran el cabildo, a que  prioricen la implementación de políticas públicas, acciones y estrategias que  resuelvan los problemas de movilidad y escasez de agua en el municipio antes de  seguir autorizando la construcción de nuevos fraccionamientos. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_Morena_Sen_Beatriz_Robles_exhorto-movilidad.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130505'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130506'></a><p>De la  Senadora Ivideliza Reyes Hernández, del grupo parlamentario del PAN, con punto  de Acuerdo por el que se exhorta a la dirección de Aeropuertos y Servicios  Auxiliares y al gobierno del estado de Nayarit, para que realice las acciones  necesarias para preservar y restituir la denominación &quot;Amado Nervo&quot;,  en la identificación pública, institucional, comercial y física de la terminal  aérea de Tepic, sin perjuicio de la utilización complementaria de la marca  turística &quot;Riviera Nayarit&quot;. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_PAN_Sen_Ivideliza_Reyes_riviera_nayarit.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130506'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130507'></a><p>De la  Senadora Mely Romero Celis, del grupo parlamentario del PRI, con punto de  Acuerdo por el que se exhorta al Registro Agrario Nacional y a la Procuraduría  Agraria a implementar brigadas emergentes de regularización patrimonial, abatir  el rezago en la expedición de títulos y proveer asesoría jurídica permanente en  el estado de Colima. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_PRI_Sen_Mely_Romero_paralizaci%C3%B3n-del-registro-agrario-220926.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130507'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130508'></a><p>De la  Senadora Luisa Cortés García, del grupo parlamentario del Partido Morena, con  punto de Acuerdo por el que se exhorta a los Fideicomisos Instituidos en  relación con la Agricultura, para que en coordinación con la Secretaría de  Hacienda y Crédito Público y Financiera para el Bienestar, a establecer  mecanismos de colaboración interinstitucional que permitan canalizar  progresivamente el financiamiento agropecuario, a través de Financiera para el  Bienestar, con el objeto de reducir las tasas de interés, los costos de  intermediación y ampliar el acceso al crédito de los pequeños y medianos  productores del país. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_Morena_Sen_Luisa_Cort%C3%A9s_financiamiento_agropecuario.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130508'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130509'></a><p>Del Senador  Gabriel Elizondo Pérez, del grupo parlamentario del PRI, con punto de Acuerdo  por el que se exhorta a la Comisión Federal de Electricidad, a la Secretaría de  Energía y a la Comisión Nacional de Energía a fortalecer la continuidad y  confiabilidad del suministro eléctrico en Coahuila, atender los apagones  registrados en la entidad, proteger la infraestructura estratégica de  abastecimiento de agua potable y acelerar las acciones e inversiones en  transmisión y distribución de energía eléctrica. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_PRI_Sen_Gabriel_Elizondo_suministro_el%C3%A9ctrico.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130509'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130510'></a><p>De la  Senadora Luisa Cortés García, del grupo parlamentario del Partido Morena, con punto de Acuerdo por el que  se exhorta a la Secretaría de Bienestar a establecer mecanismos alternativos  para garantizar la dispersión oportuna, inmediata y efectiva de los apoyos económicos de  la Estrategia Nacional de Repatriación &ldquo;México te abraza&quot;, así como a implementar  medidas extraordinarias de atención para la personas migrantes repatriadas que  carezcan de documentos de identidad o enfrenten dificultades para disponer de los recursos otorgados. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_Morena_Sen_Luisa_Cort%C3%A9s_m%C3%A9xico_te_abraza.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130510'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130511'></a><p>De la Senadora Mely Romero Celis,  del grupo parlamentario del PRI, con punto de Acuerdo por el que se exhorta a  Petróleos Mexicanos, a su Subdirección de Servicios de Salud y a la Secretaría  de Salud para atender y subsanar de manera inmediata el desabasto crónico de  medicamentos, la falta de médicos especialistas y las deficiencias en los  servicios de consulta, cirugías, y urgencias en el estado de Colima,  particularmente en Colima, Manzanillo y Tecomán, así como garantizar el  estricto cumplimiento del contrato colectivo de trabajo, la regularización  financiera y continuidad de los contratos médicos subrogados sin interrupciones  en tratamientos críticos de hemodiálisis u oncología, la simplificación y pago  expedito de los reembolsos por gastos de bolsillo, a través de la plataforma  digital de la empresa, la evaluación operativa y transparencia presupuestal del  convenio específico de intercambio de servicios de salud de 2025, firmado con  el gobierno del estado, y la integración de una auditoría de cumplimiento  financiero por parte de la Auditoría Superior de la Federación en la entidad. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_PRI_Sen_Mely_Romero_pemex-salud-220926.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130511'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130512'></a><p>Del Senador  Gabriel Elizondo Pérez, del grupo parlamentario del PRI, con punto de Acuerdo  por el que se exhorta a diversas autoridades del Sistema Nacional de Salud a  fortalecer la detección, diagnóstico, atención integral y valoración funcional  de las personas con fibromialgia y dolor crónico. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_PRI_Sen_Gabriel_Elizondo_fibromialgia.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130512'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130513'></a><p>De la  Senadora Mely Romero Celis, del grupo parlamentario del PRI, con punto de Acuerdo por el  que se exhorta a diversas autoridades federales, estatales y municipales a  fortalecer las acciones preventivas, de comunicación y resguardo ciudadano ante  el huracán Polo en el estado de Colima. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_PRI_Sen_Mely_Romero_hurac%C3%A1n-Polo_Colima.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130513'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130514'></a><p>De las  Senadoras y Senadores Alejandro Moreno Cárdenas, Manuel Añorve Baños, Carolina  Viggiano Austria, Pablo Guillermo Angulo Briceño, Cristina Ruíz Sandoval,  Rolando Rodrigo Zapata Bello, Claudia Edith Anaya Mota, Gabriel Elizondo Pérez,  Mely Romero Celis, Paloma Sánchez Ramos, Ángel García Yáñez, Karla Guadalupe  Toledo Zamora y Anabell Ávalos Zempoalteca, del grupo parlamentario del Partido  Revolucionario Institucional, con punto de Acuerdo por el que se exhorta a la  Fiscalía General del Estado de Morelos, al Gobierno del Estado de Morelos y a  la Universidad Autónoma del Estado de Morelos a dar seguimiento a los casos de  feminicidio de estudiantes de dicha institución y a fortalecer las medidas de  prevención y seguridad para  su comunidad  universitaria. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_PRI_casos-de-feminicidio-de-estudiantes-de-la-UAEM.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130514'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130515'></a><p>De las  Senadoras y Senadores Alejandro Moreno Cárdenas, Manuel Añorve Baños, Carolina  Viggiano Austria, Pablo Guillermo Angulo Briceño, Cristina Ruíz Sandoval,  Rolando Rodrigo Zapata Bello, Claudia Edith Anaya Mota, Gabriel Elizondo Pérez,  Mely Romero Celis, Paloma Sánchez Ramos, Ángel García Yáñez, Karla Guadalupe  Toledo Zamora y Anabell Ávalos Zempoalteca, del grupo parlamentario del Partido  Revolucionario Institucional, con punto de Acuerdo por el que se exhorta a las  Secretarías de Economía y de Agricultura y Desarrollo Rural, así como a la  Procuraduría Federal del Consumidor, a fortalecer las acciones de monitoreo,  abasto y vigilancia de los precios de los productos alimenticios de consumo  básico, ante el incremento registrado en los precios del jitomate, la cebolla y  otros bienes esenciales durante la primera quincena de septiembre de 2026. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_PRI_aumento-precio-jitomate.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130515'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130516'></a><p>De la  Senadora Ivideliza Reyes Hernández, del grupo parlamentario del PAN, con punto  de Acuerdo por el que se exhorta a las autoridades competentes a emitir y  publicar el Acuerdo mediante el cual se determine el levantamiento de la veda  temporal de camarón en los sistemas lagunarios-estuarinos, marismas y bahías  del Océano Pacífico. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_PAN_Sen_Ivideliza_Reyes_veda_temporal_camar%C3%B3n.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130516'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130517'></a><p>De las  Senadoras y Senadores Alejandro Moreno Cárdenas, Manuel Añorve Baños, Carolina Viggiano Austria,  Pablo Guillermo Angulo Briceño, Cristina Ruíz Sandoval, Rolando  Rodrigo Zapata Bello, Claudia Edith Anaya Mota, Gabriel Elizondo Pérez, Mely  Romero Celis, Paloma Sánchez Ramos, Ángel García Yáñez, Karla Guadalupe Toledo  Zamora y Anabell Ávalos Zempoalteca, del grupo parlamentario del Partido  Revolucionario Institucional, con punto de Acuerdo por el que se exhorta a la  Fiscalía General de la República, a la Comisión Nacional de Búsqueda y a la  Fiscalía General del Estado de Michoacán, para que, en el ámbito de sus  atribuciones, fortalezcan y agilicen las acciones de investigación,  preservación, procesamiento e identificación forense relacionadas con el  presunto hallazgo de restos y piezas dentales infantiles en un predio del  municipio de Zacapu, Michoacán, así como que informen sobre los avances y  resultados de las diligencias correspondientes. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/PA_PRI_piezas-dentales-infantiles-michoacan.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130517'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130518'></a><p><strong>EFEMÉRIDES</strong></p>
+<p>De la  Senadora Edith López Hernández, del grupo parlamentario del Partido Morena,  relativa al Día Nacional del Maíz Nativo.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/Efem_Morena_Sen_Edith_L%C3%B3pez_D%C3%ADa_Nacional_Ma%C3%ADz-Nativo.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130518'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130519'></a><p>Del Senador  Marko Cortés Mendoza, del grupo parlamentario del PAN, relativa al Día  Internacional del Acceso Universal a la Información.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/Efem_PAN_Sen_Marko_Cort%C3%A9s_D%C3%ADa-Internacional_Acceso-Universal_Informaci%C3%B3n.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130519'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130520'></a><p>De la  Senadora María del Rocío Corona Nakamura, del grupo parlamentario del PVEM,  relativa al Día Nacional del Maíz.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/Efem_PVEM_Sen_Corona_Nakamura_D%C3%ADa-Nacional_del_Ma%C3%ADz.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130520'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130521'></a><p>Del Senador  José Manuel Cruz Castellanos, del grupo parlamentario del Partido Morena,  relativa al Día Nacional de Trasplantes de Órganos y Tejidos.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/Efem_Morena_Sen_Jos%C3%A9_Cruz_D%C3%ADa-Nacional_Trasplantes_de_%C3%93rganos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130521'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130522'></a><p>Del Senador  José Manuel Cruz Castellanos, del grupo parlamentario del Partido Morena,  relativa al Día Mundial del Pulmón.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/Efem_Morena_Sen_Jos%C3%A9_Cruz_D%C3%ADa-Mundial_del_Pulm%C3%B3n.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130522'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130523'></a><p>Del Senador  José Manuel Cruz Castellanos, del grupo parlamentario del Partido Morena,  relativa al Día Mundial contra la Rabia.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/Efem_Morena_Sen_Jos%C3%A9_Cruz_D%C3%ADa_Mundial_contra_la_Rabia.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130523'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130524'></a><p>Del Senador  José Manuel Cruz Castellanos, del grupo parlamentario del Partido Morena,  relativa al Día Mundial del Corazón.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/66/3/2026-09-29-1/assets/documentos/Efem_Morena_Sen_Jos%C3%A9_Cruz_D%C3%ADa-Mundial-del-Coraz%C3%B3n.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130524'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130525'></a><p><strong>AGENDA POLÍTICA</strong></p>
+<p>De las  Senadoras y Senadores del grupo parlamentario del Partido Morena, para  referirse a la situación política del país.</p>
+<p>De las  Senadoras y Senadores del grupo parlamentario del PAN, para referirse a la  situación política del país.</p>
+<p>De las  Senadoras y Senadores del grupo parlamentario del PRI, para referirse a la  situación política del país.</p>
+<p align="center">(No se registran intervenciones)</p>
+<p>Continúe la Secretaría. </p>
+<p><strong>La Secretaria Senadora  Juanita Guerra Mena:</strong> Se han agotado los asuntos de la Agenda,  señor presidente. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130525'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='130526'></a><p><strong>CITA</strong></p>
+<p><strong>El Presidente Senador  Higinio Martínez Miranda:</strong> Se cita a la siguiente sesión ordinaria este  mismo día a las 10:50 horas, es decir, en un minuto. </p>
+<p>El sistema para el registro de su asistencia  permanece abierto. </p>
+<p>Se levanta la sesión. </p>
+<p align="center">(Se levantó la sesión  a las 10:50 horas)</p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a130526'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>

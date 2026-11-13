@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diario de los Debates</title>
+	<meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/informacion/img/favicon.png">
+  <meta name="author" content="Senado de la Rep&uacute;blica">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--  Iconos para IOS, Android y Windows -->
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/informacion/img/favicon.ico" sizes="96x96">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/informacion/img/favicon.png" sizes="152x152">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/informacion/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/bootstrap-social.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/informacion/css/slick-theme.css">
+  <script src="/informacion/js/jquery.min.js"></script>
+  <script src="/informacion/js/bootstrap.min.js"></script>
+  <script src="/informacion/js/slick.js"></script>
+  <script src="/informacion/js/jquery.bxslider.min.js"></script>
+  <script src="/informacion/js/swiper.min.js"></script>
+  <script src="/informacion/js/highcharts.js"></script>
+		<script src="/informacion/js/highcharts-3d.js"></script>
+		<script src="/informacion/js/item-series.js"></script>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top: 15px; ">-->
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 0px;"><img src="/informacion/img/logo_historica2.png" class="img-responsive" style=" max-height:50px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">      
+      <ul class="nav navbar-nav">
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/../64/index.php" style="padding: 5px 5px 5px 5px;"><img src="/informacion/img/logo_transparente_fondo.png" width="35px"></a></li>
+        <li style="border-right: 1px solid; border-color: rgba(255, 255, 255, 0.3); padding: 5px 5px 5px 5px;"><a href="/informacion/index.php" style="padding: 5px 5px 5px 5px;"><i class="fa fa-home fa-2x"></i></a></li>        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Órganos Directivos
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/organosmd/LXVI_Integrantes">Mesa Directiva</a></li>
+            <li><a href="/informacion/organosjcp/LXVI_Integrantes">Junta de Coordinación Política</a></li>            
+          </ul>
+        </li>
+        <!----- Senadores ------>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senadores
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/senadores/LXIV_LXV">LXIV-LXV Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LXII_LXIII">LXII-LXIII Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LX_LXI">LX-LXI Legislaturas</a></li>
+            <li><a href="/informacion/senadores/LVIII_LIX">LVIII-LIX Legislaturas</a></li>
+            <!-- <li><a href="/informacion/senadores/legislaturasAnteriores">Legislaturas anteriores</a></li>-->
+          </ul>
+        </li>
+        <!------ Información Parlamentaria --------->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información Parlamentaria
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/asistencias">Asistencias</a></li>
+            <li><a href="/informacion/diario/home">Diario de los Debates</a></li>
+            <li><a href="/informacion/gaceta/home">Gaceta Parlamentaria</a></li>            
+            <li><a href="/informacion/estenografia">Versión Estenográfica</a></li>
+            <li><a href="/informacion/votaciones">Votaciones</a></li>
+            <!--<li><a href="/informacion/tratados">Tratados Internacionales</a></li>-->
+          </ul>
+        </li>        
+        <!------- Comisiones -------->
+        <li >
+          <a href="/informacion/comisiones">Comisiones</a>
+        </li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comisiones
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/informacion/comisiones/LXII_LXIII_ordinarias">Ordinarias</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_bicamarales">Bicamarales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_especiales">Especiales</a></li>
+            <li><a href="/informacion/comisiones/LXII_LXIII_comites">Cómites</a></li>
+          </ul>
+        </li>-->
+        
+      </ul>
+    </div>
+  </div>
+</nav><p>&nbsp</p><br>
+<style>
+.portada{
+   background: url(/informacion/img/banners_informacion_historica/sintexto/diario_debates.jpg) ;     
+   background-position:center; 
+   width: 100%;   
+   text-align: center;
+   background-size: cover;
+   color: #fff;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.text{
+  margin: 30px 0px 30px 0px;	
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+}
+</style>
+<div class="portada">
+		<div class="text">
+			<h1>Diario de los Debates</h1> 
+			<h3>
+							</h3>
+		</div>
+</div>
+
+	
+
+<div id="gaceta">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>DIARIO DE LOS DEBATES</strong></div>
+    <div class="panel-body">
+    
+        <div class="row">
+            <div class="col-sm-8">
+              <p class="text-justify" id='desktop'>El Diario de los Debates del Senado concentra las deliberaciones y acuerdos adoptados en las sesiones del Pleno, pero también todos aquellos textos y documentos aludidos en las intervenciones a los cuales se puede acceder fácilmente en la versión digital.</p>
+              <p class="text-justify" id='desktop'>Así, el Diario de los Debates, al difundir los debates parlamentarios, busca garantizar el ejercicio del derecho de acceso a la información establecido en nuestra Constitución, bajo el principio de máxima publicidad, considerada ésta como un principio constitucional de la democracia representativa.</p>
+              <p align="justify" id='desktop'><strong>FUNDAMENTO LEGAL:</strong> Ley Orgánica del Congreso General de los Estados Unidos Mexicanos, artículo 142, numeral 1. Reglamento del Senado, artículo 309.</p>
+              <div class="row">
+                <div class="col-xs-3 col-md-3 col-sm-3">
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/home" class="list-group-item"><i class="fa fa-home"></i> <b>inicio</b></a>
+                      <a href="/informacion/diario/LXV" class="list-group-item"><b>LXV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIV" class="list-group-item"><b>LXIV Legislatura</b></a>
+                      <a href="/informacion/diario/LXIII" class="list-group-item"><b>LXIII Legislatura</b></a>
+                      <a href="/informacion/diario/LXII" class="list-group-item"><b>LXII Legislatura</b></a>
+                      <a href="/informacion/diario/LXI" class="list-group-item"><b>LXI Legislatura</b></a>
+                      <a href="/informacion/diario/LX" class="list-group-item"><b>LX Legislatura</b></a>
+                      <a href="/informacion/diario/LIX" class="list-group-item"><b>LIX Legislatura</b></a>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-md-3 col-sm-3"><br id='desktop'><br id='desktop'>
+                  <div class="list-group" style=" text-align: justify;">                     
+                      <a href="/informacion/diario/LVIII" class="list-group-item"><b>LVIII Legislatura</b></a>
+                      <a href="/informacion/diario/LVII" class="list-group-item"><b>LVII Legislatura</b></a>
+                      <a href="/informacion/diario/LVI" class="list-group-item"><b>LVI Legislatura</b></a>
+                      <a href="/informacion/diario/LV" class="list-group-item"><b>LV Legislatura</b></a>
+                      <a href="/informacion/diario/LIV" class="list-group-item"><b>LIV Legislatura</b></a>
+                      <a href="/informacion/diario/LIII" class="list-group-item"><b>LIII Legislatura</b></a>
+                  </div>
+                  <!--<<div class="panel panel-default" style="background: transparent; margin-bottom: 0;">                    
+                    <div class="panel-body" style="background: #2E1B16; padding: 0;">
+                      div id="calendarioOrdenDia"></div>
+                      <div id="loaderCalendario"></div>
+                    </div>
+                  </div>-->                  
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div id="calendarioOrdenDia"></div>
+                  <div id="loaderCalendario"></div>                 
+                </div>
+              </div>
+            </div>                    
+    
+            <div class="col-sm-4" style="position:relative">
+              <img src="/informacion/img/diario.jpg" class="img-thumbnail" style=" width: 100%" id='desktop'>
+            </div>
+        </div>
+
+        <div class="content_titulo">
+          <div class="inner">           
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h2>LXV LEGISLATURA</h2><h3>SEGUNDO AÑO DE EJERCIO</h3>              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                              </div>
+              <div class="col-sm-4">
+              </div>
+            </div>
+          </div>                          
+        </div>
+        <br>
+
+       <!------------------------------------------>
+       <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;" align="center">
+                <span style=" font-size:30px;"><strong>DIARIO DE LOS DEBATES</strong></span><br>
+                <span style=" font-size:20px;">DE LA C&Aacute;MARA DE SENADORES<br>DEL CONGRESO DE LOS ESTADOS UNIDOS MEXICANOS</span>
+                </div>
+              </div><div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:1px solid #000; font-size:18px;" align="center">
+                <table width="100%">
+                  <tr>
+                    <td align="center" width="25%" style="padding-top:10px;">LXV Legislatura</td>
+                    <td align="center" width="25%" style="padding-top:10px;">AÑO II</td>
+                    <td align="center" width="25%" style="padding-top:10px;">Segundo  Periodo Ordinario</td>                   
+                    <td align="center" width="25%" style="padding-top:10px;">Sesi&oacute;n N&uacute;m. 1</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"><hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" align="center"><strong>Presidente de la Mesa Directiva<br> Sen. Alejandro Armenta Mier</strong></td>                    
+                  </tr>
+                </table>                                  
+                </div>
+                
+              </div>
+              <div class="row" >
+                <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px; border:0px solid #000; font-size:18px;" align="center">                
+                <p style=" text-align:center; padding-top:10px;">Sesi&oacute;n P&uacute;blica Ordinaria Celebrada<br>en la Ciudad de M&eacute;xico, el 01 de Febrero de 2023</p>
+                <table width='100%'>
+                    <tr>
+                    <td width='80%'>
+                    <div align='right'><strong>Versi&oacute;n para descarga</strong>
+                    <a href='http://infosen.senado.gob.mx/content/sp/dd/content/cale/diarios/65/2/SPO/PDF-WEB/SPO_No1_1-FEBRERO-2023.pdf' target='_self'><img src='/informacion/img/pdf_descarga.png' border='0' height='60'></a>                                                      
+                  </div>
+                </td>
+                </tr>
+              </table>
+                <hr style=" border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));" />
+                </div>
+              </div>       <!------------------------------------------>
+       <div class="row">
+          <div class="col-sm-12" style="padding-right: 5px; padding-left: 5px;">
+            <table cellspacing='0' cellpadding='0' width='95%'  align='center' style=' border: 0px solid #000'><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='107990'></a><p align="center"><strong>PRESIDE EL SENADOR</strong><br>
+  <strong>ALEJANDRO ARMENTA MIER</strong></p>
+<p align="justify"><strong>APERTURA</strong></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong><strong> </strong>(13:30 horas)  Solicito a la Secretaría informe a la Asamblea el resultado del cómputo de  asistencia de las Senadoras y Senadores. </p>
+<p align="justify"><strong>El Secretario  Senador Ricardo Velázquez Meza:</strong> Con gusto, señor Presidente. </p>
+<p align="justify">Conforme al  registro de asistencia, se han acreditado 66 ciudadanas Senadoras y ciudadanos  Senadores. En consecuencia, hay quórum, señor Presidente. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> Muchas gracias,  señor Secretario. </p>
+<p align="justify">Muy buenas tardes,  compañeras y compañeros Senadores, amigas y amigos que nos ven a través del  Canal del Congreso. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a107990'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='107991'></a><p align="justify">Se abre la sesión  del miércoles 1 de febrero de 2023, correspondiente al segundo periodo  ordinario de sesiones del segundo año de ejercicio de la LXV Legislatura. </p>
+<p align="justify">Solicito a las y  los Senadores ponerse de pie para hacer la declaración correspondiente. </p>
+<p align="center">(Todos de pie)</p>
+<p align="justify"><strong>DECLARATORIA</strong></p>
+<p align="justify">En cumplimiento a  lo que dispone el artículo 65 de la Constitución Política de los Estados Unidos  Mexicanos: &ldquo;Hoy, 1 de febrero del año 2023, la Cámara de Senadores del Congreso  de la Unión abre el segundo periodo de sesiones ordinarias del segundo año de  ejercicio constitucional de la LXV Legislatura&rdquo;;</p>
+<p align="justify">Les solicito  mantenerse de pie para entonar el Himno Nacional Mexicano.  </p>
+<p align="center">(Todos de pie  entonan el Himno Nacional)</p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify">Favor de tomar  asiento. </p>
+<p align="justify">La Secretaría  comunicará por escrito al titular del Poder Ejecutivo Federal; a la Presidenta  de la Suprema Corte de Justicia de la Nación; al Presidente de la Cámara de  Diputados y a las legislaturas de las entidades federativas de la apertura de  sesiones ordinarias del Senado de la República.</p>
+<p align="justify">El Orden del Día  está publicado en la Gaceta del día de hoy y disponible en el monitor de sus  escaños, con lo cual se informa de los asuntos que corresponden a la agenda. </p>
+<p align="right"><strong>ORDEN DEL DÍA</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/65/gaceta_del_senado/documento/131884"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Pasamos al siguiente asunto. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a107991'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='107992'></a><p align="justify"><strong>COMUNICACIONES</strong></p>
+<p align="justify"><strong>El Secretario Senador Ricardo Velázquez  Meza:</strong> Se recibió de la  Senadora Cora Cecilia Pinedo Alonso, del grupo parlamentario del PT, informe de  actividades realizadas en la Cámara de Consejeros del Reino de Marruecos,  celebrada los días 9 al 12 de junio de 2022.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Oficio_Informe_PT_Sen_Pinedo_Visita_Marruecos_junio_2022.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a107992'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='107993'></a><p align="justify">Y en la 30ª Reunión Anual del Foro Parlamentario  Asia-Pacífico, celebrada del 26 al 29 de octubre de 2022 en la ciudad de  Bangkok, Reino de Tailandia. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Oficio_Informe_PT_Sen_Cora_Foro_Parlamentario_APPF_Bangkok_2022.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> La Asamblea queda enterada. Publíquense en  la Gaceta Parlamentaria. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a107993'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='107994'></a><p align="justify"><strong>El Secretario  Senador Ricardo Velázquez Meza: </strong>Se recibieron de la Senadora Geovanna Bañuelos,  del grupo parlamentario del PT, informes de sus particiones en la XVII Reunión  Interparlamentaria Cuba-México, celebrada los días 1 y 2 de abril de 2022 en la  Habana, Cuba.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Oficio_PT_Sen_Banuelos_Reunion_Interpalamentaria_Cuba_Mexico_XVII.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a107994'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='107995'></a><p align="justify">En la &ldquo;Audiencia  Parlamentaria Anual en la Organización de las Naciones Unidas y de la Unión  Interparlamentaria&rdquo;, celebrada los días 17 y 18 de febrero de 2020, en la ciudad  de Nueva York, Estados Unidos.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Oficio_Informe_Audiencia_Parlamentaria_Anual_en_la_ONU.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a107995'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='107996'></a><p align="justify">En la &ldquo;Conferencia de las  Naciones Unidas sobre el Cambio Climático&rdquo;, celebrada del 31 de octubre al 12  de noviembre de 2021, en la ciudad de Glasgow, Escocia.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Oficio_Informe_PT_Sen_Geovanna_COP26.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a107996'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='107997'></a><p align="justify">En la &ldquo;143 Asamblea y  reuniones conexas de La Unión Interparlamentaria&rdquo;, celebrada del 26 al 30 de  noviembre de 2021, en la ciudad de Madrid, España&rdquo;. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Oficio_Informe_PT_Sen_Geovanna_143a_Asamblea_Gnrl_de_la_UIP.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a107997'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='107998'></a><p align="justify">Y en la &ldquo;XVI Reunión  Interparlamentaria México-España&rdquo;, celebrada los días 27 y 28 de noviembre de  2022 en la ciudad de Madrid, España. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Oficio_PT_Sen_Geovanna_Informe_Reunion_Interparlamentaria_Esp-Mex.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>La Asamblea queda enterada. Publíquense en la  Gaceta Parlamentaria. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a107998'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='107999'></a><p align="justify"><strong>El Secretario Senador Ricardo Velázquez  Meza: </strong>Se recibió del  Grupo Plural, comunicación con la que informa su organización a partir del 1 de  febrero de 2023 con los Senadores Gustavo Madero Muñoz, Coordinador; Germán  Martínez Cázares, Vicecoordinador y Nancy de la Sierra Arámburo, representante  ante la Mesa Directiva.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Comunicado_GP_Organizacion_Interna.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta  Mier: </strong>La Asamblea queda  enterada. </p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a107999'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108000'></a><p align="justify"><strong>COMISIÓN  NACIONAL FORESTAL</strong></p>
+<p align="justify"><strong>El Secretario Senador Ricardo Velázquez  Meza: </strong>Se recibió de la  Comisión Nacional Forestal un ejemplar del libro &ldquo;Estado que Guarda el Sector  Forestal en México del año 2021&rdquo;, con el que rinde cuentas sobre los avances,  logros y retos que enfrenta la conducción de la política forestal del país y su  contribución al cumplimiento de los objetivos de desarrollo nacional.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Oficio_Comision_Nacional_Forestal.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Se remite a la Comisión de Medio Ambiente, Recursos Naturales y Cambio  Climático. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108000'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108001'></a><p align="justify"><strong>INSTITUTO NACIONAL DE  TRANSPARENCIA, ACCESO A LA INFORMACIÓN Y PROTECCIÓN DE DATOS PERSONALES</strong></p>
+<p align="justify"><strong>El Secretario Senador Ricardo Velázquez  Meza: </strong>Se recibió del  Instituto Nacional de Transparencia, Acceso a la Información y Protección de  Datos Personales, oficio suscrito por la Comisionada Presidenta, por lo que se  comunica que el 31 de marzo de 2023, concluye el mandato constitucional para el  que le fue designado el Comisionado Francisco Javier Acuña Llamas. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Oficio_Comunica_31_Marzo_2023_Concluye_Mandato_Constitucional.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta  Mier: </strong>Se remite a la  Junta de Coordinación Política. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108001'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108002'></a><p align="justify"><strong>El Secretario Senador Ricardo Velázquez  Meza: </strong>También se recibió  del Instituto Nacional de Transparencia, Acceso a la Información y Protección  de Datos Personales, oficio con el que remite informe de labores correspondiente  al período del mes de octubre de 2021 a septiembre de 2022.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Oficio_Informe_Labores_INAI_2023.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta  Mier: </strong>Se turna a la  Comisión de Anticorrupción, Transparencia y Participación Ciudadana. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108002'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108003'></a><p align="justify"><strong>El Secretario Senador Ricardo Velázquez  Meza: </strong>Asimismo, se  recibió del Instituto Nacional de Transparencia, Acceso a la Información y  Protección de Datos Personales, oficio con el que remite refrendo de  reconocimiento, &ldquo;Comité de Transparencia 100% Capacitado&rdquo; al Comité de  Transparencia del Senado de la República correspondiente al ejercicio 2021. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Comunicado_INAI_Reconocimeinto_Senado.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>La Asamblea queda enterada. </p>
+<p align="justify">Extiendo una felicitación  a las y los integrantes de dicho Comité, por su compromiso institucional para  obtener dicho reconocimiento.</p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108003'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108004'></a><p align="justify"><strong>TRIBUNAL  ELECTORAL DEL ESTADO DE SAN LUIS POTOSÍ</strong></p>
+<p align="justify"><strong>El Secretario  Senador Ricardo Velázquez Meza: </strong>Se recibió del Tribunal Electoral del Estado  de San Luis Potosí, informe de labores correspondiente al ejercicio 2022. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Oficio_Informe_Labores_TESL_2022.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Se remite a la Comisión de Justicia. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108004'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108005'></a><p align="justify"><strong>COMISIÓN  FEDERAL DE COMPETENCIA ECONÓMICA</strong></p>
+<p align="justify"><strong>El Secretario Senador Ricardo Velázquez  Meza: </strong>Se recibió de la  Comisión Federal de Competencia Económica, oficio con el que remite Programa  Anual de Trabajo 2023 y Cuarto Informe Trimestral 2022, correspondiente al  periodo del 1 de octubre al 31 de diciembre del año 2022.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Oficio_Informe_Trimestral_2022_Programa_Anual_2023_COFECE.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta  Mier: </strong>Se remite a la  Comisión de Economía. </p>
+<p align="justify">Continúe la Secretaría. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108005'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108006'></a><p align="justify"><strong>COMISIÓN  NACIONAL DE LOS DERECHOS HUMANOS</strong></p>
+<p align="justify"><strong>El Secretario  Senador Ricardo Velázquez Meza:</strong> Se recibió de la Comisión Nacional de los  Derechos Humanos, oficio en el que, con fundamento  en la fracción VIII del artículo 6 de la Ley de la Comisión Nacional de los  Derechos Humanos, propone se promuevan cambios y modificaciones a diversas  disposiciones.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Ini_Conjunto_Ref_Adic_Apartado_B_Art102_CPEUM_y_Varios_de_la_Ley_CNDH.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Se  turna a la Junta de Coordinación Política.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108006'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108007'></a><p align="justify"><strong>CONGRESOS DE LOS ESTADOS</strong></p>
+<p align="justify"><strong>El Secretario  Senador Ricardo Velázquez Meza: </strong>Se  recibió del Congreso del Estado de Tamaulipas, exhorto al Senado de la  República a buscar consensos necesarios para la aprobación del proyecto de Decreto  por el que se reforman los artículos 1, 25 Bis y 58 de la Ley Federal de  Protección al Consumidor.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Acuerdo_Congreso_Tamaulipas_Exhorto_Cogreso_de_la_Union_Aprobacion_Ini_Proteccion_al_Consumidor.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Se  turna a la Comisión de Economía.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108007'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108008'></a><p align="justify"><strong>El Secretario  Senador Ricardo Velázquez Meza: </strong>También  se recibió del Congreso del Estado de Tamaulipas, exhorto al Senado de la  República, para que se pronuncie y nombre a la Magistratura vacante del  Tribunal Electoral del Estado de Tamaulipas.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Acuerdo_Congreso_Tamaulipas_Exhorto_al_Senado_Magistratura_Vacante.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Se  remite a la Junta de Coordinación Política.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108008'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108009'></a><p align="justify"><strong>El Secretario  Senador Ricardo Velázquez Meza: </strong>Asimismo,  se recibieron del Congreso del Estado de Tamaulipas, oficios con los que  informa de la elección de la Mesa Directiva de la sesión pública extraordinaria  del 13 de enero del año en curso, así como de la clausura de la misma sesión.  También informa de la elección de la Mesa Directiva que presidirá los trabajos  legislativos durante el segundo periodo del segundo año de ejercicio de la LXV  Legislatura.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Comunicado_Congreso_Tamaulipas_Integraci%C3%B3n_Mesa_Directiva.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>La  Asamblea queda enterada.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108009'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108010'></a><p align="justify"><strong>COMISIÓN  PERMANENTE</strong></p>
+<p align="justify"><strong>El Secretario  Senador Ricardo Velázquez Meza: </strong>Se  recibió de la Comisión Permanente, oficio con el que remite el inventario de  asuntos turnados al Senado de la República durante el primer receso del segundo  año de ejercicio de la LXV Legislatura, misma que se integra por:</p>
+<p align="justify">Informes de Senadoras y Senadores, comunicaciones e iniciativas.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/ASUNTOS_REMITIDOS_POR_LA_COMISION-PERMANENTE_VF.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Informo  a la Asamblea que el listado de los asuntos son los que la Comisión Permanente  turnó a las comisiones de esta Cámara durante el receso; el turno respectivo se  publicará en la Gaceta Parlamentaria.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108010'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108011'></a><p align="justify"><strong>El Secretario  Senador Ricardo Velázquez Meza: </strong>También  se recibió de la Comisión Permanente, oficio con el que remite, del Ejecutivo  Federal, nombramiento en favor del ciudadano Rodrigo Alcázar Silva, como  Comisionado de la Comisión Federal de Competencia Económica, por un periodo de  nueve años.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/SEGOB_COFECE_C_Rodrigo_Alcazar_Silva.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Informo  a la Asamblea que, con fundamento en el numeral 1 del artículo 67 de la Ley  Orgánica del Congreso General de los Estados Unidos Mexicanos, se turnó  directamente a las Comisiones Unidas de Economía; y de Estudios Legislativos,  Segunda, el 11 de enero de 2023.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108011'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108012'></a><p align="justify"><strong>El Secretario  Senador Ricardo Velázquez Meza: </strong>Asimismo,  se recibió de la Comisión Permanente, oficio con el que remite, del Ejecutivo  Federal, nombramiento en favor del ciudadano Giovanni Tapia Lezama, como  Comisionado de la Comisión Federal de Competencia Económica, por un periodo de  nueve años.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/SEGOB_COFECE_C_Guivanni_Tapia_Lezama.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Informo  a la Asamblea que, con fundamento en el numeral 1 del artículo 67 de la Ley  Orgánica del Congreso General de los Estados Unidos Mexicanos, se ha turnado a  Comisiones Unidas de Economía; y de Estudios Legislativos, Segunda, el 11 de  enero de 2023.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108012'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108013'></a><p align="justify"><strong>El Secretario  Senador Ricardo Velázquez Meza: </strong>De  igual forma, se recibió de la Comisión Permanente, oficio con el que remite,  del Ejecutivo Federal, nombramiento en favor del ciudadano Alejandro Bichir  Batres, como Embajador Extraordinario y Plenipotenciario de México en la  República de Panamá.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Nombramiento_Embajador_Republica_Panama.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Se  turna a las Comisiones Unidas de Relaciones Exteriores; y de Relaciones  Exteriores América Latina y El Caribe.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108013'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108014'></a><p align="justify"><strong>El Secretario  Senador Ricardo Velázquez Meza: </strong>Del  mismo modo, se recibió de la Comisión Permanente, oficio con el que remite las  observaciones del Ejecutivo Federal al Decreto por el que se reforman y  adicionan los artículos 12 y 17 de la Ley Orgánica de los Tribunales Agrarios.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/SEGOB_Observaciones_Art_12_17_Ley_Organica_Tribunales_Agrarios.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Se  remite a las Comisiones Unidas de Reforma Agraria; y de Estudios Legislativos,  Primera.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108014'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108015'></a><p align="justify"><strong>El Secretario  Senador Ricardo Velázquez Meza: </strong>Finalmente,  se recibió de la Comisión Permanente, oficio con el que informa que han quedado  formalmente terminados los trabajos correspondientes al primer receso del  segundo año de ejercicio de la LXV Legislatura.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Comunicado_Com_Permanente_Congreso_de_la_Union_Clausura_de_Trabajos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>La  Asamblea queda enterada. </p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108015'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108016'></a><p align="justify"><strong>RESPUESTAS  A ACUERDOS PROMOVIDOS POR SENADORES</strong></p>
+<p align="justify"><strong>El Secretario Senador Ricardo Velázquez  Meza: </strong>Se recibieron 152 oficios de diversas dependencias con los que remiten  respuestas a Acuerdos aprobados por la Cámara de Senadores.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/65/gaceta_del_senado/documento/131867"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta  Mier: </strong>Informo a la Asamblea que las respuestas se remiten a las Senadoras y  Senadores promoventes y se encuentran publicados en la Gaceta Parlamentaria.<br>
+  <br>
+  Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108016'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108017'></a><p align="justify"><strong>DIRECCIÓN DE ASUNTOS JURÍDICOS  DEL SENADO DE LA REPÚBLICA</strong></p>
+<p align="justify"><strong>El Secretario Senador Ricardo Velázquez  Meza: </strong>Se recibió de la Dirección de Asuntos Jurídicos del Senado de la  República, oficio con el que remite de la Suprema Corte de Justicia de la  Nación, la declaratoria general de inconstitucionalidad número 10/2022,  relativa a la Ley General de Comunicación Social, derivada de la resolución del  amparo en revisión número 308/2020.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/65/gaceta_del_senado/documento/131892"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta  Mier: </strong>Informo a la Asamblea que dicho oficio se hizo del conocimiento de las  Senadoras y Senadores el 17 de enero de 2023.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108017'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108018'></a><p align="justify"><strong>El Secretario  Senador Ricardo Velázquez Meza: </strong>También se recibió de la  Dirección de Asuntos Jurídicos del Senado de la República, oficio con el que  remite de la Suprema Corte de Justicia de la Nación, la declaratoria general de  inconstitucionalidad número 11/2022, relativa al Código Nacional de  Procedimientos Civiles y Familiares, derivada de la resolución del amparo en  revisión 265/2020. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://www.senado.gob.mx/65/gaceta_del_senado/documento/131894"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Informo a la Asamblea que  dicho oficio se hizo del conocimiento de las Senadoras y Senadores el 17 de  enero de 2023, para su conocimiento.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108018'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108019'></a><p align="justify"><strong>El Secretario  Senador Ricardo Velázquez Meza: </strong>También se recibió de la  Dirección de Asuntos Jurídicos del Senado de la República, oficio con el que  remite de la Suprema Corte de Justicia de la Nación, la sentencia recaída a la  acción de inconstitucionalidad número 63/2019, promovida por la Comisión  Nacional de los Derechos Humanos, relativa a la Ley Nacional del Registro de  Detenciones.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Oficio_SCJN_Inconstitucionalidad_63_2019_CNDH_Ley_Registro_Detenciones.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta  Mier: </strong>Comuníquese a las Senadoras y Senadores para su conocimiento y atención  procedente.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108019'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108020'></a><p align="justify"><strong>CÁMARA DE DIPUTADOS</strong></p>
+<p align="justify"><strong>El Secretario Senador Ricardo Velázquez  Meza: </strong>Se recibió de la Cámara de Diputados, MINUTA PROYECTO DE DECRETO POR EL  QUE SE DECLARA AL &ldquo;2023, AÑO DE FRANCISCO VILLA, EL REVOLUCIONARIO DEL PUEBLO&rdquo;.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Minuta_Drecreto_2023_Ano_Francisco_Villa.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta  Mier: </strong>Se turna a las Comisiones Unidas de Gobernación; y de Estudios  Legislativos, Segunda.</p>
+<p align="justify">Continúe la Secretaría.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108020'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108021'></a><p align="justify"><strong>El Secretario Senador Ricardo Velázquez  Meza: </strong>Asimismo, la Cámara de Diputados devuelve con modificaciones la MINUTA  PROYECTO DE DECRETO POR EL QUE SE REFORMAN, ADICIONAN Y DEROGAN DIVERSAS  DISPOSICIONES DE LA LEY GENERAL DE INSTITUCIONES Y PROCEDIMIENTOS ELECTORALES;  DE LA LEY GENERAL DE PARTIDOS POLÍTICOS; DE LA LEY ORGÁNICA DEL PODER JUDICIAL  DE LA FEDERACIÓN Y SE EXPIDE LA LEY GENERAL DE MEDIOS DE IMPUGNACIÓN EN MATERIA  ELECTORAL.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Minuta_Ref_Adic_Ley_Gnral_Instituciones_y_Procedimientos_Electorales_Gnrl_Partidos_Politicos.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta  Mier: </strong>Informo a la Asamblea que con fundamento en el numeral 2, del artículo  176, se turnó directamente a las Comisiones Unidas de Gobernación; y de  Estudios Legislativos Segunda, con opinión de la Comisión de Justicia, el 30 de  enero de 2023.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108021'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108022'></a><p align="justify">También les informo que  la Cámara de Diputados remite un Acuerdo por el que se autoriza para que de  conformidad con lo que establece la fracción E del artículo 72 constitucional,  remita al Ejecutivo Federal el proyecto antes señalado, con los artículos  aprobados por ambas Cámaras.</p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Minuta_Ref_Adic_Ley_Gnrl_Instituciones_y_Procedimientos_Electorales.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify">Quiero informarles, Honorable Asamblea, que se encuentran con nosotros  integrantes de la Asociación de Luchadores Independientes de Puebla, el Consejo  Nacional de Payasos, los Productores Mexicanos A.C., el Consejo General de  Defensoría de los Derechos Humanos y, desde luego, una serie de comunicadores  de fiesta política y el Quetzal de Cuetzalan, así como Transportistas de la  Coordinadora Siglo XXI y Recolectores de Reciclados del municipio de Puebla.</p>
+<p align="justify">Sean bienvenidas y bienvenidos, paisanos, a esta primera sesión de apertura de la  Cámara de Senadoras y Senadores. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108022'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108023'></a><p align="justify">Procedemos a  otorgar el uso de la voz a la Senadora Alejandra Noemí Reynoso Sánchez, del  grupo parlamentario del PAN, para presentar una iniciativa con proyecto de Decreto  por el que se reforma el artículo 16 de la Ley General del Sistema Nacional  Anticorrupción, en materia de integración del Comité de Participación  Ciudadana. </p>
+<p align="justify">Adelante, Senadora. </p>
+<p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR EL QUE SE  REFORMA EL ARTÍCULO 16 DE LA LEY GENERAL DEL SISTEMA NACIONAL ANTICORRUPCIÓN </strong></p>
+<p align="justify">(Presentada por la Senadora  Alejandra Noemí Reynoso Sánchez, del grupo parlamentario del PAN)</p>
+<p align="justify"><strong>La Senadora  Alejandra Noemí Reynoso Sánchez: </strong>Gracias, señor Presidente, con su permiso. </p>
+<p align="justify">Hoy quiero hablar a  nombre de las y los jóvenes de Guanajuato; quiero hablar a nombre de esos  jóvenes que quieren participar. </p>
+<p align="justify">Hoy quiero  presentar ante ustedes esta iniciativa que tiene que ver, principalmente, con  tres temas: </p>
+<p align="justify">Primero, con la  participación ciudadana, que es lo que enriquece el trabajo de las  instituciones.</p>
+<p align="justify">Segundo, con la  participación de las y los jóvenes en México. </p>
+<p align="justify">Recordemos que más  del 30 por ciento de la población tiene menos de 29 años y más del 50 por  ciento desde que nace hasta esta edad. </p>
+<p align="justify">Pero también el  tercer tema que incluye es la lucha contra la corrupción. </p>
+<p align="justify">¿Y a qué se refiere  esta iniciativa? </p>
+<p align="justify">Es fundamental  incluir a los jóvenes en el Sistema Nacional Anticorrupción. </p>
+<p align="justify">Cuando vemos en  dónde se presenta la corrupción: en educación, en desarrollo social, en la  utilización de los recursos públicos; cómo se define la corrupción cuando se  abusa del recurso público para un beneficio privado. Y esto afecta, sin duda  alguna, absolutamente a toda la población. </p>
+<p align="justify">Y hoy, lo que los  jóvenes nos están pidiendo, es ser tomados en cuenta, lo que los jóvenes nos  están diciendo &ldquo;para combatir la corrupción no es un tema de adultos, es un  tema de todos y por eso queremos ser incluidos&rdquo;. </p>
+<p align="justify"> Esta iniciativa se  trata justo de que, en el Consejo de Participación Ciudadana del Sistema  Nacional Anticorrupción, tanto en lo que corresponde en el Comité Nacional, pero también  en cada una de las localidades, puedan ser incorporados los jóvenes. </p>
+<p align="justify">Actualmente se  compone en los requisitos que marca, que es por supuesto la experiencia, tener  más de 35 años, no haber ejercido algún cargo, pero ¿dónde queda entonces la  juventud en este sentido?</p>
+<p align="justify">Por eso lo que  estamos nosotros, a través de los jóvenes y dándoles voz, es pidiendo la  participación, que en esos espacios el Consejo de Participación Ciudadana,  cuando menos uno de esos espacios sea para la juventud. </p>
+<p align="justify">Según un estudio  realizado por la organización &ldquo;Transparencia Mexicana&rdquo; la corrupción en México  ha costado más de 10 mil millones de dólares anuales y la juventud tiene un papel  importante en la participación política. </p>
+<p align="justify">Además, el hecho de  que los jóvenes participen también es esta lucha constante, permanente, de  todas las generaciones. </p>
+<p align="justify">La inclusión de los  jóvenes en el Sistema Nacional Anticorrupción es un paso importante. </p>
+<p align="justify">Cuando hablamos de  que los jóvenes son el presente y el futuro, que no quede solamente en un  discurso, que podamos involucrarlos en las tareas y en las responsabilidades  que todos tenemos todos los días. </p>
+<p align="justify">Y, sin duda alguna,  me parece que en la lucha contra la corrupción mucho se habla &ldquo;hay que  incluirlos, hay que escuchar sus voces, hay que hacer y que lograr que tengan  este espacio de participación&rdquo;. </p>
+<p align="justify">Por eso, con mucho  gusto les comparto esta iniciativa, porque a través de un mecanismo de  participación ciudadana en Guanajuato, con jóvenes, las embajadas juveniles y a  partir de la Embajada de Jóvenes Contra la Corrupción es que hacemos llegar  esta iniciativa, dándole voz a estos jóvenes, dándole voz a quienes sí quieren  participar, a quienes quieren colaborar en la toma de decisiones, a quienes  quieren combatir la corrupción. </p>
+<p align="justify">Por eso les exhorto  a que puedan hacer esta reflexión y en la Comisión, que seguramente será la  Comisión Contra la Corrupción, la Transparencia y la Participación Ciudadana, pueda ser  considerada, se reflexione en la participación y en la inclusión de los jóvenes  en el artículo 16 de la Ley General del Sistema Nacional Anticorrupción.</p>
+<p align="justify">Y un mensaje  también para las 32 entidades, para que se considere a la juventud en los  sistemas estatales contra la corrupción o anticorrupción y en los consejos de  Participación Ciudadana.</p>
+<p align="justify">A los jóvenes de  Guanajuato, gracias por su participación, gracias porque siempre están  proponiendo cosas. Gracias por ser una juventud con propuesta.</p>
+<p align="justify">Es cuanto, señor Presidente.</p>
+<p align="justify"> <strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Inic_PAN_Sen_Reynoso_art_16_anticorrupcion.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta  Mier: </strong>Muchas gracias,  Senadora Reynoso Sánchez. Se turna a las Comisiones Unidas de Anticorrupción,  Transparencia y Participación Ciudadana; y de Estudios Legislativos, Segunda.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108023'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108024'></a><p align="justify">Se concede ahora el  uso de la palabra al Senador Clemente Castañeda, del grupo parlamentario  de Movimiento Ciudadano, para presentar, a nombre de Senadoras y Senadores de dicho grupo  parlamentario, una iniciativa con proyecto de Decreto por el que se reforman  los artículos 16, 18 y 19 de la Constitución Política de los Estados Unidos  Mexicanos, en materia de figura de arraigo y prisión preventiva oficiosa.</p>
+<p align="justify">Adelante, señor  Senador.</p>
+<p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR EL QUE SE  REFORMAN LOS ARTÍCULOS 16, 18 Y 19 DE LA CONSTITUCIÓN POLÍTICA DE LOS ESTADOS  UNIDOS MEXICANOS </strong></p>
+<p align="justify">(Presentada por el Senador  Clemente Castañeda Hoeflich, a nombre de las Senadoras y Senadores del grupo  parlamentario de Movimiento   Ciudadano)</p>
+<p align="justify"><strong>El Senador Clemente  Castañeda Hoeflich:</strong> Gracias. Saludos a todos. Con el permiso de la Presidencia. Compañeras  y compañeros Senadores:</p>
+<p align="justify">Arrancamos este  periodo legislativo con la enorme tarea de corregir muchos de los temas nocivos de la agenda pública nacional,  particularmente, diría, tenemos la obligación de corregir nuestro  sistema de justicia y adoptar una mayor  disposición para tomar decisiones verdaderamente transformadoras de la vida pública, orientada a que a las  personas les vaya mejor y creo que uno de los temas pendientes en este inicio  tiene que ver con la eliminación de la prisión preventiva oficiosa.</p>
+<p align="justify">La prisión  preventiva oficiosa y el arraigo tiene, ustedes lo saben, a más de 93 mil  personas privadas de su libertad sin una sentencia, sin acceso a una defensa  adecuada y en la mayoría de los casos como consecuencia de la desigualdad e  injusticia en que se vive en México.</p>
+<p align="justify">En nuestro país, la  presunción de inocencia se viola todos los días y, hay que subrayarlo, los  pobres son los primeros que lo pagan. </p>
+<p align="justify">Además de la  injusticia, la prisión preventiva oficiosa representa uno de los mayores  fracasos del sistema de procuración de justicia en nuestro país, el abuso en su  aplicación no solo viola derechos humanos, sino que pinta de cuerpo entero la  ineficacia, la negligencia y las omisiones de las autoridades en la  investigación, persecución y sanción de los delitos.</p>
+<p align="justify">Tenemos un sistema  de justicia que se quedó completamente estancado en la prehistoria, que no se  moderniza y en gran medida esto es por el uso y abuso de la prisión preventiva  oficiosa, que mantiene en la postración y la mediocridad a las autoridades de  procuración de justicia, generando un ciclo de arbitrariedades y de impunidad.</p>
+<p align="justify">Como es de  conocimiento público, hace unos días la Corte Interamericana de Derechos  Humanos resolvió lo que todas y todos sabemos, que el arraigo y la prisión  preventiva oficiosa son contrarios a los parámetros elementales de derechos  humanos, y que su abuso es, cito textual, &ldquo;inadmisible en una sociedad  democrática&rdquo;.</p>
+<p align="justify"> Lo que debió ser  una medida excepcional, proporcional y preventiva de nuestro marco jurídico se  constitucionalizó y se ha convertido en el principal mecanismo de punitivismo  en México. Personas cuyo delito en muchas ocasiones es la pobreza en  flagrancia, que están en prisión preventiva durante años, en muchos casos por  más de una década, no acercan a nuestro país a la justicia y mucho menos a un  clima de seguridad y de paz.</p>
+<p align="justify">Lejos de reducir la  incidencia delictiva, la prisión preventiva oficiosa es un lastre que nos  impide tener justicia, su aplicación, y esto es lo más grave, no tiene una reducción  en los delitos.</p>
+<p align="justify">En los últimos dos  años las personas en las cárceles aumentaron 13 por ciento, sin que las y los  mexicanos se sientan más seguros, y al mismo tiempo aumentaron los delitos como  el feminicidio, el abuso sexual o la desaparición forzada y, al mismo tiempo,  no se reduce ningún indicador en materia de impunidad. </p>
+<p align="justify">Por eso, el grupo  parlamentario de Movimiento Ciudadano, en el 2018, fue el único grupo  parlamentario que votó en contra de esta reforma constitucional del Presidente  López Obrador para ampliar los delitos de prisión preventiva. </p>
+<p align="justify">Por eso, el día de  hoy, quiero hacer un reconocimiento público, sí, a mis compañeras y compañeros  del grupo parlamentario, pero también a otros Senadores que tuvieron la  valentía y la firmeza de votarla en contra. </p>
+<p align="justify">Mi reconocimiento  al Senador Emilio Álvarez Icaza. </p>
+<p align="justify">Mi reconocimiento a  la Senadora Claudia Anaya. </p>
+<p align="justify">Mi reconocimiento  al Senador Noé Castañón.</p>
+<p align="justify">A Verónica  Delgadillo, a Dante Delgado, a Xóchitl Gálvez, a Samuel García, a Indira  Kempis, a Kenia López Rabadán, a Gustavo Madero, a Patricia Mercado, a Leonor  Noyola. a Juan Quiñónez, a Nestora Salgado, a Josefina Vázquez Mota, a Juan  Zepeda y a Damián Zepeda, por su visión y su compromiso. </p>
+<p align="justify">Debo decir que el  día de hoy estamos presentando esta reforma, esta iniciativa, a nombre de todo  el grupo parlamentario de Movimiento Ciudadano para reformar los artículos 16,  18 y 19 constitucional para acabar de una vez por todas con esta figura. </p>
+<p align="justify">La prisión  preventiva oficiosa es una condena del Estado mexicano y erradicarla, como  decía al inicio de mi intervención, requerirá de una profunda voluntad y  convicción, se trata de una discusión cultural que toca los cimientos del  Sistema de Procuración e Impartición de Justicia en México, pero es una discusión  que podemos ganar en esta legislatura si nos colocamos en el lado correcto de  la historia. </p>
+<p align="justify">Hago un llamado, y  con esto concluyo, a todas las fuerzas políticas a corregir este error de  diciembre de 2018, donde la mayoría votó a favor de la sintomática primera  reforma constitucional de este gobierno. </p>
+<p align="justify">La eliminación de  la prisión preventiva es una de las deudas más importantes que tiene este  Senado con las y los mexicanos y con miles de familias destrozadas que esperan  una sentencia y que padecen, en estos momentos, las injusticias de un sistema  punitivo, clasista e inoperante. </p>
+<p align="justify">Muchas gracias. </p>
+<p align="justify">Es cuanto.</p>
+<p align="justify"> <strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Inic_MC_Reforma_Arts_16_18_19_CPEUM.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> Muchas gracias, Senador Castañeda<strong> </strong>Hoeflich.  Se turna a las Comisiones Unidas de Puntos Constitucionales; y de Estudios  Legislativos, Segunda. </p>
+<p align="justify"> Se concede el uso  de la voz a la Senadora Martha Cecilia.</p>
+<p align="justify">Perdón, ¿con qué  objeto, Senadora? Con mucho gusto Senadora. </p>
+<p align="justify">La Senadora Lily.</p>
+<p align="justify">Desde luego,  Senadoras tomamos nota en la Secretaría para lo correspondiente. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108024'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108025'></a><p align="justify">Se concede el uso  de la palabra a la Senadora Martha Cecilia Márquez Alvarado, del grupo  parlamentario del PT, para presentar iniciativa con proyecto de Decreto por el  que se reforma el artículo 113 de la Ley General de Cultura Física y Deporte,  en materia de pensiones a deportistas.</p>
+<p align="justify">Adelante, Senadora. </p>
+<p align="justify"><strong>INICIATIVA  CON PROYECTO DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 113 DE LA LEY GENERAL DE  CULTURA FÍSICA Y DEPORTE</strong></p>
+<p align="justify"><strong>(Presentada  por la Senadora Martha Cecilia Márquez Alvarado, del grupo parlamentario del  PT)</strong></p>
+<p align="justify"><strong>La Senadora Martha  Cecilia Márquez Alvarado:</strong> Muchas gracias, señor Presidente. </p>
+<p align="justify">El motivo de la  presentación de esta iniciativa es modificar la fracción VI del artículo 113 de  la Ley General de Cultura Física y Deporte. </p>
+<p align="justify">Y yo aquí les  cuento una historia que todos sabemos y que todos, ojalá que todos recibamos a  los deportistas en nuestras oficinas, en nuestros estados. </p>
+<p align="justify">Hay el ejemplo de  un joven, Adolfo, en el municipio de Cosío, uno de los municipios más pobres de  Aguascalientes, él fue campeón del deporte paralímpico Boccia, él tiene una  discapacidad que lo tiene en una silla de ruedas, y él puso en algún momento el  nombre de Aguascalientes y de México muy alto al ir a competencias internacionales.</p>
+<p align="justify">Y hoy él está ahí,  hasta cierto punto, olvidado en ese municipio. </p>
+<p align="justify">¿Y qué está  haciendo el gobierno de México para apoyar a este tipo de deportistas?</p>
+<p align="justify">Es por eso que  propongo en esta iniciativa, a nombre de mi grupo parlamentario, que los deportistas  paralímpicos que pusieron en alto el nombre de México a nivel mundial tengan  una beca de por vida, una pensión.</p>
+<p align="justify">Porque no es justo  que sean hasta cierto punto, me atrevo a decirlo, utilizados, solo en el  momento en que ellos compitieron, en el que sus familias, ¿porque quiénes son  los que apoyan más a un deportista sea paralímpico o sea de cualquier  disciplina?, sus papás, sus papás son quienes hacen el gasto, quienes se  sacrifican, quienes hacen el esfuerzo económico y moral en la familia. </p>
+<p align="justify">Y quiero pedirles  que ojalá se apruebe esta iniciativa muy pronto en este Senado, creo que sería  incongruente de nuestra parte como Senadores no apoyar a los deportistas paralímpicos. </p>
+<p align="justify"> Y aprovecho la  ocasión para decir que el fomento deportivo en nuestro país se ha visto  afectado por diversas circunstancias y factores, algunos de ellos que permean  desde la esfera gubernamental.</p>
+<p align="justify">Y toco aquí un tema  muy delicado.</p>
+<p align="justify">Es por todos sabido  en los estados la corrupción que hay en las federaciones deportivas. </p>
+<p align="justify">¿Hasta cuándo?  Administraciones del PRI, del PAN, de todas han pasado y sigue siendo una  historia, en los estados, la corrupción en las federaciones deportivas. </p>
+<p align="justify">¿Hasta cuándo? </p>
+<p align="justify">Lamentablemente, el  6 de noviembre de 2020 se publicó en el Diario Oficial de la Federación un  decreto por el cual se extinguía el fondo para el deporte de alto rendimiento,  el cual estaba a cargo de la Conade a través de un comité técnico en el cual  también participaba el Comité Olímpico Mexicano. </p>
+<p align="justify">Desde la  desaparición de este fideicomiso, el apoyo y becas que se daban a los atletas  de alto rendimiento sufrió un recorte de 63 por ciento de los beneficiarios en  los últimos dos años; es decir, de los 279 deportistas en todo el país que eran  beneficiados del fondo, desde su desaparición solo se apoya a 103 deportistas.  Imagínense, divídanlo entre los estados de la Federación. </p>
+<p align="justify">El segundo tema y  muy importante, es que quiero solicitar a la Mesa Directiva y a este Pleno la  comparecencia de Ana Gabriela Guevara. Y sí, porque aunado a la corrupción que  es conocida, lamentablemente, por los deportistas a nivel nacional en las  federaciones, lamentablemente han sido conocidas amenazas por parte de esta  servidora pública. </p>
+<p align="justify">Yo aquí les quiero  decir, Senadores, alcaldes, regidores, gobernadoras, gobernadores, el recurso  público no es del servidor público que está en turno, el recurso público es de  los mexicanos y en el caso de los deportistas es de ellos y no lo podemos  condicionar en ningún momento. </p>
+<p align="justify">Creo que,  lamentablemente, hemos tenido malas noticias por parte de la Conade, se ha  hablado solamente mal desde el inicio de esta Administración y esto tiene que  parar.</p>
+<p align="justify">Una de las  funciones del Senado de la República es llamar a comparecer a los funcionarios  y hoy yo pido la comparecencia de Ana Gabriela Guevara por las graves  acusaciones de los deportistas, no se vale que tengan una historia, tengan el  esfuerzo de toda su familia, que vayan con toda la ilusión a representar a sus  estados y a México y luego se les amenace. </p>
+<p align="justify">Esto se da,  concretamente, busquen las notas, hay notas a nivel nacional en donde refieren,  concretamente, la Federación de Natación, además de la corrupción las amenazas  en donde ella, hay audios en donde ella dice que les quitará las becas y que  les quitará el recurso. </p>
+<p align="justify">Yo creo que esto no  se vale y pido la comparecencia de Ana Gabriela Guevara en el Pleno de este  Senado. </p>
+<p align="justify">Es cuanto, señor Presidente. </p>
+<p align="justify">Muchas gracias.</p>
+<p align="justify"> <strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2022-11-24-1/assets/documentos/Ini_PT_Sen_Cecilia_Alvarado_Adic_Art_113_Deporte_Alto_Rendimiento.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier:</strong> Muchas gracias.</p>
+<p align="justify">Quiero aclarar que  la Senadora Martha Cecilia Márquez Alvarado, del grupo parlamentario del PT,  presentó una iniciativa con proyecto de Decreto por el que se reforma el  artículo 113 de la Ley General de Cultura Física y Deporte, en materia de  pensión a deportistas. Misma que se va a turnar a las Comisiones Unidas de  Juventud y Deporte; y de Estudios Legislativos, Primera. </p>
+<p align="justify">Senadora, ¿con qué  objeto, Senadora Gina? </p>
+<p align="justify"><strong>La Senadora Gina Andrea Cruz Blackledge: </strong>(Desde su escaño) Solicitarle a la proponente la posibilidad de que me  acepte suscribir la iniciativa, por favor. </p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Muy bien.</p>
+<p align="justify">Queda aceptado por la proponente. </p>
+<p align="justify">Se turna a las comisiones que he comentado. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108025'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108026'></a><p align="justify">Se concede el uso de la palabra al Senador Manuel Añorve Baños, del grupo  parlamentario del PRI, para presentar una iniciativa con proyecto de Decreto  por el que se reforma el Artículo Décimo Primero Transitorio del Decreto por el  que se expide la Ley General en Materia de Desaparición Forzada de Personas, Desaparición  Cometida por Particulares y del Sistema Nacional de Búsqueda de Personas, y se  reforman y derogan diversas disposiciones del Código Penal Federal y de la Ley  General de Salud, publicado en el Diario Oficial de la Federación el 17 de  noviembre de 2017, para la armonización de disposiciones reglamentarias. </p>
+<p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR EL QUE SE  REFORMA EL ARTÍCULO DÉCIMO PRIMERO TRANSITORIO DEL DECRETO POR EL QUE SE EXPIDE  LA LEY GENERAL EN MATERIA DE DESAPARICIÓN FORZADA DE PERSONAS, DESAPARICIÓN  COMETIDA POR PARTICULARES Y DEL SISTEMA NACIONAL DE BÚSQUEDA DE PERSONAS, Y SE  REFORMAN Y DEROGAN DIVERSAS DISPOSICIONES DEL CÓDIGO PENAL FEDERAL Y DE LA LEY  GENERAL DE SALUD, PUBLICADO EN EL DIARIO OFICIAL DE LA FEDERACIÓN EL 17 DE  NOVIEMBRE DE 2017 </strong></p>
+<p align="justify">(Presentada por el Senador  Manuel Añorve Baños, del grupo parlamentario del PRI)</p>
+<p align="justify"><strong>El Senador Manuel Añorve Baños: </strong>Con la venia de la Presidencia. </p>
+<p align="justify">La desaparición de personas es uno de los delitos más graves que pueda  sufrir un ser humano, independientemente de su nacionalidad, ya que se despoja  a las víctimas de todo, incluso de su memoria. </p>
+<p align="justify">En el Plan Internacional, la desaparición constituye un delito permanente  que se prolonga cada día de desaparición, es imprescriptible y se supone la  indefensión jurídica absoluta de las víctimas. </p>
+<p align="justify">Por eso, en la Convención Internacional para la Protección de Todas las  Personas contra las desapariciones forzadas se estableció que cada Estado parte  tomará las medidas necesarias para que la desaparición forzada sea tipificada  como delito en su legislación penal. </p>
+<p align="justify">Para cumplir con esto, el Congreso de la Unión expidió la Ley General en  Materia de Desaparición Forzada de Personas, desaparición forzada cometida por  particulares y del Sistema Nacional de Búsqueda de Personas  que entró en vigor el 16 de enero de 2018. </p>
+<p align="justify">Esta Ley General regula las actividades de búsqueda de personas y de  investigación del delito poniendo énfasis en la necesidad de la localización de  la víctima y en dar con los responsables del delito a través de la coordinación  entre autoridades y tareas. </p>
+<p align="justify">Para las tareas de investigación se creó la Fiscalía Especializada en  Investigación de los Delitos de Desaparición Forzada y se establecieron sus  atribuciones, de conformidad con lo mandatado en la Ley General. </p>
+<p align="justify">Por su parte, para cumplir las tareas de coordinación de búsqueda, la Ley  General mandató la creación de la Comisión Nacional de Búsqueda de Personas y  de comisiones locales en cada entidad federativa para este fin.</p>
+<p align="justify"> De igual manera, con el objeto de impulsar los esfuerzos de vinculación,  operación, gestión, evaluación y seguimiento de las acciones entre autoridades  que participan en la búsqueda, localización, identificación de personas, en la  Ley General se prevé la emisión de un Programa Nacional de Búsqueda de Personas  Desaparecidas como el instrumento rector de las mismas. </p>
+<p align="justify">Para fortalecer las funciones de búsqueda, investigación  e identificación, en la Ley General  se dispuso la creación de un Sistema Nacional de Búsqueda de Personas, a fin de  diseñar y evaluar de manera eficiente y armónica los recursos  del Estado mexicano para establecer las bases generales, políticas públicas y  procedimientos entre las autoridades de todos los órdenes de gobierno para la  búsqueda, localización, identificación de personas desaparecidas y no  localizadas, así como para la prevención, investigación y sanción de los  delitos en la materia. </p>
+<p align="justify">Sin embargo, a pesar de este esfuerzo legislativo, todavía hace falta  reforzar estas tareas con la emisión del Reglamento correspondiente por parte  del Poder Ejecutivo, puesto que la legislación general sólo puede establecer  marco de actuación, pero es en el Reglamento donde se desarrolla conciencia,  cada uno de los procesos y procedimientos necesarios. </p>
+<p align="justify">Cuando se aprobó la Ley General, se estableció un plazo de 180 días a  partir de la entrada en vigor del decreto para la expedición y armonización de  las disposiciones reglamentarias que correspondan. </p>
+<p align="justify">No obstante, a la fecha no ha sido expedida ninguna disposición  reglamentaria. </p>
+<p align="justify">En este orden de ideas, frente a la inactividad de las autoridades  ejecutivas para la expedición del Reglamento al que se hace referencia, en Ley  General en Materia de Desaparición Forzada de Personas, Desaparición Cometida  por Particulares y del Sistema Nacional de Búsqueda de Personas, es necesario  reforzar el mandato legal, a efecto de que se dé cumplimiento a la expedición y  armonización de las disposiciones reglamentarias correspondientes.  </p>
+<p align="justify">En este sentido, se propone la presente iniciativa para reformar el  artículo Décimo Primero Transitorio de la Ley General en Materia de  Desaparición Forzada de Personas, Desaparición Cometida por Particulares y del  Sistema Nacional de Búsqueda de Personas, para hacer obligatorio e  improrrogable el plazo de 180 días para la expedición del Reglamento  correspondiente. </p>
+<p align="justify">Con ello, se logra contribuir a que la Comisión Nacional de Búsqueda de  Personas y la Fiscalía General de la República, dispongan de los elementos  necesarios para desarrollar sus funciones en materia de coordinación de  acciones para la búsqueda de personas desaparecidas y no localizadas. </p>
+<p align="justify">Por su atención, muchas gracias. </p>
+<p align="justify">Es cuanto, señor Presidente. </p>
+<p align="justify">Gracias.</p>
+<p align="justify"> <strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Inic_Sen.MAB_busqueda_de_personas.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta  Mier: </strong>Muchas gracias, Senador Añorve Baños. Se turna a las Comisiones Unidas de  Justicia; y de Estudios Legislativos, Segunda. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108026'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108027'></a><p align="justify">Se concede el uso de la palabra a la Senadora Sasil de León Villard, del  grupo parlamentario del Partido Encuentro Social, para presentar la iniciativa  con proyecto de Decreto por el que se reforman y adicionan diversas  disposiciones de la Ley General de Educación de la Ley del Instituto Mexicano  de la Juventud y de la Ley del Servicio de Administración Tributaria, en  Materia de Cultura Fiscal. </p>
+<p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR EL QUE  SE REFORMAN Y ADICIONAN DIVERSAS DISPOSICIONES DE LA LEY GENERAL DE EDUCACIÓN,  DE LA LEY DEL INSTITUTO MEXICANO DE LA JUVENTUD Y DE LA LEY DEL SERVICIO DE  ADMINISTRACIÓN TRIBUTARIA </strong></p>
+<p align="justify">(Presentada por la Senadora  Sasil de León Villard, del grupo parlamentario del PES)</p>
+<p align="justify"><strong>La Senadora Sasil de  León Villard:</strong> Gracias. Con su permiso, señor Presidente. </p>
+<p align="justify">Saludo con gusto en  este inicio de periodo ordinario a mis compañeras y compañeros Senadores,  deseando que este sea un gran año y provechoso para el bien de México y de las  familias mexicanas. Uno de los grandes problemas que aqueja al mundo entero es  el de la desigualdad, sin lugar a duda. </p>
+<p align="justify">La creciente  desigualdad, tanto en países en desarrollo como en los ricos, amplía la  división social y hace más lento el desarrollo económico y social.  Desafortunadamente América Latina es una de las regiones con niveles de  desigualdad más altos y México no es la excepción. De igual forma, la evasión  fiscal en México se mantiene como uno de los problemas que impide la justa  distribución de la riqueza, donde el 52 por ciento pertenece a grandes  contribuyentes y el restante se divide en personas físicas con actividad  empresarial y asalariados. </p>
+<p align="justify">En nuestro país, de  acuerdo con el reporte mundial de desigualdad 2022, tan sólo el 10 por ciento  de la población alcanza a acaparar el casi 80 por ciento de la riqueza  nacional. Esta gran brecha de desigualdad solamente puede reducirse mediante  una correcta política tributaria. </p>
+<p align="justify">Para poder lograr  esto, es necesario promover una fuerte cultura fiscal capaz de erradicar la  cultura del no pago de impuesto y la desconfianza que genera en los  contribuyentes el hecho de que el dinero recaudado por medio de los impuestos  no sea administrado de manera correcta. Así, la desigualdad se puede enfrentar  con un desarrollo dinámico que fomente la recaudación fiscal y las condiciones  para distribuir el ingreso con criterios de justicia social. </p>
+<p align="justify">Por lo que esta iniciativa  que presento ante esta Soberanía tiene como principal objetivo, contribuir a la  formación de mexicanas y mexicanos responsables, solidarios y con una visión de  compromiso social mediante el fortalecimiento de la educación fiscal. Por ello,  se busca que en los planes y programas de estudios de las escuelas se incluya  la enseñanza y promoción de la cultura fiscal desde etapas tempranas. </p>
+<p align="justify">Desafortunadamente  hoy en día sigue existiendo entre la sociedad mexicana un gran desconocimiento  sobre la importancia de la recaudación fiscal para el desarrollo social y  equitativo de nuestro país. Adultos, estudiantes e incluso dueños de empresas  pueden no entender con claridad el funcionamiento de nuestro sistema fiscal,  pues no han recibido la formación necesaria en esta materia. </p>
+<p align="justify">Está claro que el mecanismo necesario para el cumplimiento voluntario de  las obligaciones fiscales es la educación, pues esta etapa permite a las  personas conocer sus derechos y obligaciones tributarias haciéndonos partícipes  del desarrollo de sus comunidades. Por eso, sobre todo, permite comprender que  el pago de impuestos no es una simple obligación, sino que es un mecanismo a  través del cual se garantiza la solidaridad social.</p>
+<p align="justify"> Hay que recordar que de acuerdo con la Organización para la Cooperación  y el Desarrollo Económico la edad es uno de los principales factores  determinantes de la ética tributaria. Centrarse en persuadir a las generaciones  más jóvenes sobre la importancia de los impuestos. </p>
+<p align="justify">Compañeras y compañero Senadores, desarrollar una fuerte cultura fiscal  requiere de la implementación de políticas públicas diversas, pero también de  la coordinación de distintos sectores y dependencias. Es por ello que la  presente iniciativa busca que el SAT, la Secretaría de Educación Pública y el  Instituto Mexicano de la Juventud redoblen esfuerzos para promover una cultura  fiscal adecuada en niñas, niños y adolescentes y en la población en general.</p>
+<p align="justify">Las sociedades que son muy desiguales son menos efectivas a la hora de  reducir la pobreza, crecen más despacio. Por lo que promocionar la igualdad de  oportunidades y una cultura fiscal solidaria ayudaría, sin lugar a duda, a  disminuir la desigualdad y con ello generar mejores condiciones para el  desarrollo social y económico de nuestro país.</p>
+<p align="justify">Por su atención, muchísimas gracias. Es cuanto, señora Presidenta.</p>
+<p align="justify"><strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Inic_PES_Sen_Sasil_administracion_tributaria.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="center"><strong>PRESIDE LA SENADORA</strong><br>
+  <strong>ALEJANDRA NOEMÍ REYNOSO  SÁNCHEZ</strong></p>
+<p align="justify"><strong>La Presidenta  Senadora Alejandra Noemí Reynoso Sánchez: </strong>Gracias, Senadora De León Villard. Se turna a las  Comisiones Unidas de Educación; y de Estudios Legislativos.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108027'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108028'></a><p align="justify">Se concede enseguida el uso de la palabra al Senador Miguel Ángel  Mancera Espinosa, del grupo parlamentario del PRD, para presentar una  iniciativa con proyecto de Decreto por el que se reforma el Apartado B,  fracciones I y II del Artículo 123 de la Constitución Política de los Estados  Unidos Mexicanos, en materia de jornada laboral.</p>
+<p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR EL QUE SE  REFORMA EL APARTADO B, FRACCIONES I Y II DEL ARTÍCULO  123 DE LA  CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS </strong></p>
+<p align="justify">(Presentada por el Senador  Miguel Ángel Mancera Espinosa, del grupo parlamentario del PRD)</p>
+<p align="justify"><strong>El Senador Miguel Ángel Mancera Espinosa: </strong>Buenas tardes, compañeras y compañeros. Primero, desearles feliz año a  todas y a todos ustedes.</p>
+<p align="justify">Y decirles que en el grupo parlamentario del PRD estamos presentando una  iniciativa a fin de buscar una modificación, una reforma al Apartado B,  fracciones I y II del Artículo 123 de la Constitución Política de los Estados  Unidos Mexicanos, en materia de jornada laboral. Hemos estado trabajando aquí  en el Senado de la República de manera constante en la búsqueda de mejorar las  condiciones laborales de las y los trabajadores mexicanos. Recientemente se  aprobó una reforma que tiene que ver con las vacaciones, se han hecho esfuerzos  importantes.</p>
+<p align="justify">Hoy lo que estamos planteando nosotros tiene que ver con el avance de la  tecnología, tiene que ver con el análisis que desde varios institutos  internacionales de observación de las y de los trabajadores en el mundo se  advierte. Es una revolución tecnológica que permite hoy tomar en consideración  lo que se conoce como el burnout o &quot;síndrome de estar quemado por desgaste  laboral&rdquo;, estoy hablándoles de al menos el 75 por ciento de las y los  trabajadores que presentan estrés laboral según el Instituto Mexicano del  Seguro Social.</p>
+<p align="justify">Hoy las y los especialistas nos dicen que este estrés laboral crónico no  sólo afecta a las y los trabajadores, sino a su familia, a sus lugares de  trabajo y, por supuesto, al desempeño en general del país. En ese sentido, a  nombre del grupo parlamentario estamos presentando esta iniciativa para hacer  una modificación en la jornada máxima. O sea, jornada máxima data ya de cientos  de años, esa jornada máxima de ocho horas.</p>
+<p align="justify">Hoy en el mundo son muchísimos los países que han encontrado un  beneficio sustancial en la reducción de la jornada laboral, en cumplir con  parámetros mucho más cercanos a lo que puede ser un beneficio generalizado en  producción, pero de manera significativa en el ámbito de la salud. Son muy  relevantes las cifras que tenemos de incrementos de muertes de trabajadoras y  de trabajadores precisamente por accidentes cardiovasculares, por accidentes  cerebrales en jornadas extendidas.</p>
+<p align="justify">Hay una línea en la OCDE de un grupo importante de países que han  logrado una reducción abajo en el promedio, abajo de 42 horas laborales. México  sigue estando muy por encima de esta cifra. Hay en América Latina también varios  de los países que han optado por esta política laboral.</p>
+<p align="justify">Hoy el planteamiento que estamos haciendo lo estamos señalando para las  y los trabajadores del derecho burocrático; es decir, las y los trabajadores al  servicio del Estado. Lo que estamos planteando es que la modificación en la  fracción I diga: &ldquo;que la jornada máxima de trabajo diurna y nocturna en lugar  de ocho y siete horas, como actualmente lo señala, sea de seis y de cinco  horas&rdquo;.</p>
+<p align="justify">Y en la fracción II, que actualmente dice: &ldquo;por cada seis días de  trabajo el trabajador disfrutará de dos días de descanso&rdquo;. Que diga: &ldquo;por cada  cinco días disfrutará, por supuesto, de dos la persona trabajadora&rdquo;.</p>
+<p align="justify"> Porque en la realidad ni siquiera le están dando esos dos días que marca  la Constitución, están dándoles un día, ni siquiera se está cumpliendo con eso.  Entonces de lo que se trata es que los aparatos de gobierno optimicen sus  horarios a fin de mejorar la calidad de vida de las y los trabajadores.</p>
+<p align="justify">Aquí todos los discursos que dimos cuando hablamos de las vacaciones  fueron en favor de la calidad de vida de las y los trabajadores, todos. No  puede ser que no observemos esto que a nivel mundial se está señalando y que  está hablando de trabajadoras y trabajadores que pierden la vida por exceso en  la jornada laboral, que además se vuelve ineficiente.</p>
+<p align="justify">Hay muchas trabajadoras y trabajadores que terminan con sus tareas y  sólo se quedan porque el reloj checador es obligatorio, si no, no pagan. Y  conste que no estamos hablando de reducción de salario, estamos hablando de que  los salarios, de que los niveles deben permanecer iguales, solamente tener la  reducción de la jornada laboral.</p>
+<p align="justify">Hagamos pues eco de lo que aquí hemos sostenido, veamos por las  trabajadoras y trabajadores y acompáñenos en esta propuesta del PRD, de reducción  de jornada laboral para las trabajadoras y trabajadores del derecho  burocrático; es decir, al servicio del Estado.</p>
+<p align="justify">Es cuanto, señor Presidente. Gracias.</p>
+<p align="justify"><strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Ini_Prd_Sen_Mancera_Reforma_apartado_B_Art_123_CPEUM_(Actual_enero_31).pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="center"><strong>PRESIDE EL SENADOR</strong><br>
+  <strong>ALEJANDRO ARMENTA MIER</strong></p>
+<p align="justify"><strong>El Presidente  Senador Alejandro Armenta Mier: </strong>Muchas gracias, Senador  Mancera Espinosa. Se turna a las Comisiones Unidas de Puntos Constitucionales;  y de Estudios Legislativos, con opinión de las Comisiones de Trabajo y  Previsión Social.</p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108028'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108029'></a><p align="justify">Se concede el uso de la palabra al Senador Sergio Pérez Flores, del  grupo parlamentario del Partido Morena, para presentar una iniciativa con  proyecto de Decreto por el que se adicionan diversas disposiciones de la Ley de  Disciplina Financiera de las Entidades Federativas y los Municipios, en materia  de deuda pública.</p>
+<p align="justify">Adelante, señor Senador. Permítame, señor Senador.</p>
+<p align="justify">¿Con qué objeto, Senador Patricia Mercado?</p>
+<p align="justify"><strong>La Senadora Patricia Mercado: </strong>(Desde su escaño) Podría repetir el turno, por favor, de la iniciativa  del Senador Mancera.</p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta Mier: </strong>Con mucho gusto. Se turna a las Comisiones Unidas de Puntos  Constitucionales; y de Estudios Legislativos, con opinión de la Comisión de  Trabajo y Previsión Social.</p>
+<p align="justify">¿Algún comentario? Muchas gracias, Senadora Patricia Mercado.</p>
+<p align="justify">Adelante, Senador Pérez Flores.</p>
+<p align="justify"><strong>INICIATIVA CON PROYECTO DE DECRETO POR EL QUE SE  ADICIONAN DIVERSAS DISPOSICIONES DE LA LEY DE DISCIPLINA FINANCIERA DE LAS  ENTIDADES FEDERATIVAS Y LOS MUNICIPIOS </strong></p>
+<p align="justify">(Presentada por el Senador  Sergio Pérez Flores, del grupo parlamentario del Partido Morena)</p>
+<p align="justify"><strong>El Senador Sergio Pérez Flores: </strong>Gracias. Con su venia, señor Presidente. Con el permiso de la Mesa  Directiva.</p>
+<p align="justify">La iniciativa que presento, propone adicionar diversos artículos, pero  estamos hablando en materia de contratación de deuda pública, artículos  relacionados con la Ley de Disciplina Financiera de las Entidades Federativas y  los Municipios, con el objeto de transparentar el manejo de recursos públicos por  parte de gobernadores y presidentes municipales en esta materia. </p>
+<p align="justify">De acuerdo con esta  ley, la deuda pública, es de cualquier tipo, debe entenderse como el  financiamiento contratado por entes públicos dentro de los que se encuentran  las entidades federativas y los municipios, entendiéndose por financiamiento cualquier  operación constitutiva de un pasivo a cargo de entes públicos, derivada de un  crédito, empréstito o préstamo principalmente. </p>
+<p align="justify">No obstante, las  entidades federativas y municipios no pueden contratar deuda pública de manera  indiscriminada, ya que el artículo 117 de la Constitución los limita a  contratar deuda pública sólo cuando ésta se destine a inversiones públicas,  productivas y su financiamiento vaya orientado a la reestructuración. </p>
+<p align="justify">Para dimensionar el  problema de la deuda pública en nuestro país, en los mencionados órdenes de  gobierno, me permito citar algunos datos muy importantes, de acuerdo con el  estudio Obligaciones Financieras de las Entidades Federativas en México, en el  primer trimestre de 2021, publicado por el Centro de Estudios de Finanzas  Públicas de la Cámara de Diputados, la deuda subnacional que incluye,  precisamente, las obligaciones contratadas por gobiernos estatales y  municipales presenta una tendencia alarmante, preocupante de crecimiento  ininterrumpidos durante 14 años continuos, del 2006 al 2020, periodo que en el  saldo de la deuda pública pasó de 160 mil 93.5 millones de pesos a 637 mil  246.6 millones de pesos, con un incremento total de 477 mil 18.1 millones de  pesos. </p>
+<p align="justify"> Entre las entidades  federativas, los estados del país que incrementaron más o que contrataron más deuda en este periodo  de tiempo destaca Yucatán, en donde la deuda aumentó de 4  mil 112 millones de pesos a 7 mil 714 millones de pesos; después el estado de  Guanajuato de 6 mil 126 a 8 mil 801 millones de pesos; posteriormente  el estado de Jalisco de 27 mil 123 a 36 mil 432 millones de pesos; continuando con el estado  de Aguascalientes, de 2 mil 939 a 3 mil 536 millones de pesos. </p>
+<p align="justify">En virtud de lo  anterior, es necesario que reflexionemos acerca del problema de la deuda pública  en las entidades del país y en los municipios también, pues si bien la contratación de financiamiento debe  ayudar a resolver las necesidades de la población a través de inversiones  públicas productivas, el endeudamiento en estos órdenes de gobierno  es alarmante y debe atenderse a fin de evitar que se hereden más problemas financieros a las  siguientes administraciones estatales y municipales  porque se está comprometiendo, sin duda, también el futuro de las y de los  jóvenes que pronto se incorporarán a la vida productiva y social de nuestro  país. </p>
+<p align="justify">En ese sentido,  resulta necesario que los gobiernos estatales y municipales transparenten su  deuda, transparente, su actuar de cara a las y los ciudadanos, sobre todo  cuando se trata de la adquisición de deuda pública, pues lo que se está  heredando a los gobiernos de estos órdenes son deudas para futuras generaciones  que prácticamente se vuelven imposibles de pagar y, por ende, esta deuda  pública afectará a miles o a millones de mexicanas y mexicanos. </p>
+<p align="justify">Por tanto, es  importante que las legislaturas locales intervengan para transparentar la  contratación de deuda pública por parte de los estados y municipios,  estableciendo con claridad y visibilizando en los decretos de autorización  respectivos que se trata de contratación de deuda  por gobiernos estatales y municipales, por tanto, propongo adicionar un tercer  párrafo al artículo 22 de la Ley de Disciplina Financiera de las  Entidades Federativas y los Municipios para que las iniciativas que presenten los titulares de los  estados y de los municipios, ante las legislaturas locales para la contratación  de deuda, contengan tanto en su encabezado como en su exposición de motivos la  precisión de que se trata de contratación de deuda pública. </p>
+<p align="justify">De igual forma  planteo adicionar un tercer párrafo al artículo 24 de la misma ley, con la  finalidad de que en los decretos en las legislaturas locales cuando se aprueben  financiamientos y obligaciones, así como refinanciamientos o reestructuras, se  soliciten a las entidades federativas y municipios que éstas soliciten a los  congresos también se especifique que se trata de contratación de deuda pública.</p>
+<p align="justify">Como Senadores y  como Senadoras de la República es nuestra obligación legislar para que exista  mayor transparencia en el manejo de recursos públicos, el pueblo tiene derecho  a conocer cómo y en qué se gastan los recursos públicos los gobernantes, sobre  todo cuando se está comprometiendo las finanzas y el futuro de las y de los  jóvenes, las acciones legislativas que hoy tendremos podrán repercutir en la  disminución de la deuda pública que hoy en días representa uno de los mayores  problemas de las administraciones públicas estatales y municipales. </p>
+<p align="justify">Es cuanto, señor Presidente.</p>
+<p align="justify"> <strong>Iniciativa</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Ini_Morena_Sen_Flores_Ley_Disciplina_Financiera.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta  Mier: </strong>Muchas gracias,  Senador Pérez Flores.  Se turna a las Comisiones Unidas de Hacienda y Crédito Público; y de Estudios  Legislativos, Primera. </p>
+<p align="justify">Adelante, claro que sí, toma nota la Secretaría de  prácticamente todo el grupo parlamentario de Morena que se adhiere a esta  iniciativa. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108029'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108030'></a><p align="justify">La solicitud de excitativa y los textos de iniciativas,  proposiciones con punto de Acuerdo y agenda política, inscritos en el Orden del  Día de esta sesión, se publicarán en la Gaceta del Senado en el trámite  correspondiente. </p>
+<p align="justify"><strong>EXCITATIVA</strong></p>
+<p align="justify">Del  Senador Víctor Oswaldo Fuentes Solís, del grupo parlamentario del PAN, relativa  al proyecto de Decreto por el que se reforma el artículo 27 de la Constitución  Política de los Estados Unidos Mexicanos. Se emite excitativa a las Comisiones  Unidas de Puntos Constitucionales; y de Estudios Legislativos, Segunda. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/SolExt_Sen.Fuentes_art_27_CPEUM.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108030'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108031'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMAN LOS ARTÍCULOS 234 Y 479 DE LA LEY  GENERAL DE SALUD; EL ARTÍCULO 198 DEL CÓDIGO PENAL FEDERAL Y LOS ARTÍCULOS 3 Y  5 DE LA LEY FEDERAL DE PRODUCCIÓN, CERTIFICACIÓN Y COMERCIO DE SEMILLAS </strong></p>
+<p align="justify"><strong>(Presentada por la Senadora Eva Eugenia Galaz  Caletti, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Ini_Morena_Sen_Galaz_Cannabis_para_Uso_Industrial.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108031'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108032'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE DEROGA EL PÁRRAFO OCTAVO DEL ARTÍCULO 16 Y SE  REFORMA EL SEGUNDO PÁRRAFO DEL ARTÍCULO 19 DE LA CONSTITUCIÓN POLÍTICA DE LOS  ESTADOS UNIDOS MEXICANOS </strong></p>
+<p align="justify"><strong>(Presentada por la Senadora Lilly Téllez, del grupo  parlamentario del PAN)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Inic_PAN_Sen_Tellez_art_16_19_CPEUM.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108032'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108033'></a><p align="justify"><strong>INICIATIVA CON PROYECTO  DE DECRETO POR EL QUE SE REFORMA EL PÁRRAFO SEGUNDO DEL ARTÍCULO 19 DE LA  CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS </strong></p>
+<p align="justify"><strong>(Presentada por la Senadora Kenia López Rabadán, del  grupo parlamentario del PAN)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Ini_PAN_Sen_Kenia_deroga_Art_19_CPEUM.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108033'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108034'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMA EL ARTÍCULO 12 DE LA LEY GENERAL PARA  LA INCLUSIÓN DE LAS PERSONAS CON DISCAPACIDAD </strong></p>
+<p align="justify"><strong>(Presentada por el Senador Ricardo Monreal Ávila,  del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Ini_Morena_Sen_Monreal_Ref_Art_12_LGIPD.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108034'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108035'></a><p align="justify"><strong>INICIATIVA CON  PROYECTO DE DECRETO POR EL QUE SE REFORMA EL QUINTO PÁRRAFO DEL ARTÍCULO 4o. DE  LA CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS </strong></p>
+<p align="justify"><strong>(Presentada por la Senadora Rocío Adriana Abreu  Artiñano, del grupo parlamentario del Partido Morena)</strong></p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/Ini_Sen_Abreu_Ref_Art_4_CPEUM.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108035'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108036'></a><p align="justify"><strong>PROPOSICIONES CON PUNTO DE  ACUERDO</strong></p>
+<p align="justify">Del  Senador Gustavo Madero Muñoz, del Grupo Plural, con punto de Acuerdo por  el que se exhorta a la Comisión de  Ciencia y Tecnología de la Cámara de Senadores, a realizar un Parlamento Abierto sobre  la Iniciativa con proyecto de Decreto por el que se expide la Ley General en materia de  Humanidades, Ciencias, Tecnologías e Innovación, y se reforman y adicionan diversas  disposiciones de la Ley Federal de las Entidades Paraestatales y de la Ley de  Planeación. </p>
+<p align="right"><strong>DOCUMENTO</strong></p>
+<p align="right"><a href="https://infosen.senado.gob.mx/sgsp/gaceta/65/2/2023-02-01-1/assets/documentos/PA_GP_Sen.Madero_Parlamento_Abierto.pdf"><br><br><img src="/informacion/img/ver_documento.png" border></a></p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108036'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108037'></a><p align="justify"><strong>AGENDA POLÍTICA</strong></p>
+<p align="justify">De las  Senadoras y Senadores del grupo parlamentario del Partido Morena, para  referirse a la situación política del país.</p>
+<p align="justify">De las  Senadoras y Senadores del grupo parlamentario del PAN, para referirse a la  situación política del país.</p>
+<p align="justify">De las  Senadoras y Senadores del grupo parlamentario del PRI, para referirse a la  situación política del país.</p>
+<p align="justify">Continúe la Secretaría con los asuntos de la  agenda. </p>
+<p align="justify"><strong>El Secretario Senador Ricardo Velázquez  Meza: </strong>Se han agotado los  asuntos de la agenda, señor Presidente. </p></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108037'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'><td width='100%'><div align='center'></div><div align='justify'><br></strong></a> <a name='108038'></a><p align="justify"><strong>CITA</strong></p>
+<p align="justify"><strong>El Presidente Senador Alejandro Armenta  Mier: </strong>Se cita a la  siguiente sesión ordinaria el jueves 2 de febrero a las 11:00 horas. </p>
+<p align="justify">Se levanta la sesión.</p>
+<p align="center">(Se levantó la sesión a las 14:36 horas)</p>
+<table width="370" border="10" align="center" cellpadding="10"  class="forma_tabla">
+  <tr>
+    <td width="272"><h2 align="center"><strong>Directorio</strong></h2>
+      <p align="center">Av. Paseo de la Reforma No. 135,<br>
+      Colonia Tabacalera, Alcaldía Cuauhtémoc,<br>
+      CDMX</p>
+      <p align="center">Teléfono: 53-45-30-00<br>
+      Exts. 5405/5406</p>
+      <p align="center">Portal del Senado <br>
+      http://www.senado.gob.mx</p>
+      <p align="center">Correo Electrónico:<br>
+      diario_debates@senado.gob.mx</p>
+      <p align="center"><strong>Dr. Arturo Garita A.</strong><br>
+      Secretario General de Servicios Parlamentarios</p>
+      <p align="center"><strong>Mtro. Fernando A. Hernández Mosqueda</strong><br>
+      Director General de Proceso Legislativo</p>
+      <p align="center"><strong>Lic. Arturo Domínguez Sarmiento</strong><br>
+        Director de Registro y Publicación del Debate
+        <br>
+    </p></td>
+  </tr>
+</table></div></td></tr><tr><td align='right' colspan='2'><br><div align='right'><a href='#a108038'><img src='/informacion/img/regresar.png' border='0'><br></a></div><br><img src='/informacion/img/separador.jpg' width='100%' height='10'><br></td></tr><tr valign='top'colspan='2'><td >&nbsp;</td></tr>
+        </table>          </div>
+       </div>
+    
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    loadCalendario(2026, 11);
+  });
+/*
+  function abreVentana(tipoAsunto) {    
+    if (tipoAsunto.tramitados.selectedIndex != 0) {
+      miPopup = window.open("/informacion/emergente/asuntosTurnados/index.php?tipo=" + tipoAsunto.tramitados.options[tipoAsunto.tramitados.selectedIndex].value, "miwin", "width=950, height=550, scrollbars=yes, toolbar=yes");
+      miPopup.focus();
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+*/
+
+  function loadCalendario(anio, mes){
+    var parametros = { "action":"ajax", "anio":anio, "mes":mes };
+    $("#loaderCalendario").fadeIn('slow');
+    $.ajax({
+      url:'/informacion/app/diario/functions/calendarioMes.php',
+      data: parametros,
+      beforeSend: function(objeto){
+        $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+      },
+      success:function(data){
+        $("#calendarioOrdenDia").html(data).fadeIn('slow');
+        $("#loaderCalendario").html("");
+      }
+    })
+  }
+
+  function ChangeUrl(formulaire) {
+    if (formulaire.ListeUrl.selectedIndex != 0) {
+      $("#loaderCalendario").fadeIn('slow');
+      console.log(formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value);
+      $.ajax({
+        url:'/informacion/app/diario/functions/calendarioMes.php',
+        data: formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value,
+        beforeSend: function(objeto){
+          $("#loaderCalendario").html("<img src='/informacion/img/loader.gif' width='25px'>");
+        },
+        success:function(data){
+          $("#calendarioOrdenDia").html(data).fadeIn('slow');
+          $("#loaderCalendario").html("");
+        }
+      })
+    } else  {
+      alert('Tienes que elegir un destino.');
+    }
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    $('.animsition').animsition({
+      inClass: 'zoom-in',
+      outClass: 'zoom-out',
+      inDuration: 2000,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      loadingInner: '',
+      timeout: false,
+      timeoutCountdown: 800,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    })
+  });
+</script><br>
+<footer style=" color: #fff; background-color: #000;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <p style="color: #FFFFFF; text-align: center;">"El contenido de esta página es sólo de carácter informativo".</p>
+        <div style=" text-align: center;"><img src="/informacion/img/--logo_2018.png" alt="" width="128" height="120"/></div>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Contacto</b></h5>
+        <i class="fa fa-phone"></i> <span style="color: #FFFFFF">5345 3000-5130 2200 </span><br>
+        <i class="fa fa-envelope"></i> <span style="color: #FFFFFF"><a href="https://www.senado.gob.mx/64/notificaciones/index.php" style=" color: #fff;">Suscríbete a notificaciones por E-Mail</a></span>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Dirección</b></h5>
+        <i class="fa fa-map-marker"></i><span>Av. Paseo de la Reforma 135, esq. Insurgentes Centro, Colonia Tabacalera, Alcaldía Cuauhtémoc, Ciudad de México C.P. 06030</span><br>
+        <a href="https://goo.gl/maps/r8ag6q1UeXpF43EUA" target="_blank"  class="btn" style=" color: #fff; text-decoration: none; border-color: rgba(255, 255, 255, 1.0); ">Abrir en Google Maps</a>
+      </div>
+      <div class="col-sm-3">
+        <h5 class="color_dark m_bottom_20 fw_light"><b>Enlaces</b></h5>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://www.diputados.gob.mx/inicio.htm" style=" color: #fff;">Cámara de Diputados</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/enlace_institucional"style=" color: #fff;">Enlace Institucional</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="http://stcs.senado.gob.mx" style=" color: #fff;">Sindicato de Trabajadores</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/organos_electorales"style=" color: #fff;">Directorio de Órganos Electorales</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/mapa_del_sitio"style=" color: #fff;">Mapa del sitio</a></span><br>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <span><a href="/informacion/privacidad"style=" color: #fff;">Avisos de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript y Jquery -->
+<!--  <script>
+    var text = encodeURIComponent('Información histórica del Senado de la República');
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20685272-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NPD6RLC83X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NPD6RLC83X');
+</script>
+
+</body>
+</html>
